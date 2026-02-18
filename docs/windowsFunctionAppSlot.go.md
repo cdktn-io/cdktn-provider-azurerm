@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlot(scope Construct, id *string, config WindowsFunctionAppSlotConfig) WindowsFunctionAppSlot
 ```
@@ -329,7 +329,7 @@ func ImportFrom(id *string, provider TerraformProvider)
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.importFrom.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
@@ -692,14 +692,14 @@ func ResetWebdeployPublishBasicAuthenticationEnabled()
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a WindowsFunctionAppSlot resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTN code for importing a WindowsFunctionAppSlot resource upon running "cdktn plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.WindowsFunctionAppSlot_IsConstruct(x interface{}) *bool
 ```
@@ -731,7 +731,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.WindowsFunctionAppSlot_IsTerraformElement(x interface{}) *bool
 ```
@@ -745,7 +745,7 @@ windowsfunctionappslot.WindowsFunctionAppSlot_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.WindowsFunctionAppSlot_IsTerraformResource(x interface{}) *bool
 ```
@@ -759,12 +759,12 @@ windowsfunctionappslot.WindowsFunctionAppSlot_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.WindowsFunctionAppSlot_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
-Generates CDKTF code for importing a WindowsFunctionAppSlot resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a WindowsFunctionAppSlot resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.generateConfigForImport.parameter.scope"></a>
 
@@ -794,7 +794,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ? Optional instance of the provider where the WindowsFunctionAppSlot to import is found.
 
@@ -805,18 +805,18 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.property.cdktfStack">CdktfStack</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.property.authSettings">AuthSettings</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsOutputReference">WindowsFunctionAppSlotAuthSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlot.property.authSettingsV2">AuthSettingsV2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2OutputReference">WindowsFunctionAppSlotAuthSettingsV2OutputReference</a></code> | *No description.* |
@@ -916,7 +916,7 @@ The tree node.
 func CdktfStack() TerraformStack
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack
 
 ---
 
@@ -966,7 +966,7 @@ func TerraformResourceType() *string
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -1006,7 +1006,7 @@ func DependsOn() *[]*string
 func ForEach() ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
@@ -1016,7 +1016,7 @@ func ForEach() ITerraformIterator
 func Lifecycle() TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1026,7 +1026,7 @@ func Lifecycle() TerraformResourceLifecycle
 func Provider() TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
@@ -1835,23 +1835,23 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 &windowsfunctionappslot.WindowsFunctionAppSlotAuthSettings {
 	Enabled: interface{},
-	ActiveDirectory: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsActiveDirectory,
+	ActiveDirectory: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsActiveDirectory,
 	AdditionalLoginParameters: *map[string]*string,
 	AllowedExternalRedirectUrls: *[]*string,
 	DefaultProvider: *string,
-	Facebook: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsFacebook,
-	Github: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsGithub,
-	Google: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsGoogle,
+	Facebook: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsFacebook,
+	Github: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsGithub,
+	Google: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsGoogle,
 	Issuer: *string,
-	Microsoft: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsMicrosoft,
+	Microsoft: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsMicrosoft,
 	RuntimeVersion: *string,
 	TokenRefreshExtensionHours: *f64,
 	TokenStoreEnabled: interface{},
-	Twitter: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsTwitter,
+	Twitter: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsTwitter,
 	UnauthenticatedClientAction: *string,
 }
 ```
@@ -2097,7 +2097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsActiveDirectory.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 &windowsfunctionappslot.WindowsFunctionAppSlotAuthSettingsActiveDirectory {
 	ClientId: *string,
@@ -2179,7 +2179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsFacebook.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 &windowsfunctionappslot.WindowsFunctionAppSlotAuthSettingsFacebook {
 	AppId: *string,
@@ -2261,7 +2261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsGithub.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 &windowsfunctionappslot.WindowsFunctionAppSlotAuthSettingsGithub {
 	ClientId: *string,
@@ -2343,7 +2343,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsGoogle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 &windowsfunctionappslot.WindowsFunctionAppSlotAuthSettingsGoogle {
 	ClientId: *string,
@@ -2425,7 +2425,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsMicrosoft.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 &windowsfunctionappslot.WindowsFunctionAppSlotAuthSettingsMicrosoft {
 	ClientId: *string,
@@ -2507,7 +2507,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsTwitter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 &windowsfunctionappslot.WindowsFunctionAppSlotAuthSettingsTwitter {
 	ConsumerKey: *string,
@@ -2573,30 +2573,30 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 &windowsfunctionappslot.WindowsFunctionAppSlotAuthSettingsV2 {
-	Login: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2Login,
-	ActiveDirectoryV2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2ActiveDirectoryV2,
-	AppleV2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2AppleV2,
+	Login: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2Login,
+	ActiveDirectoryV2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2ActiveDirectoryV2,
+	AppleV2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2AppleV2,
 	AuthEnabled: interface{},
-	AzureStaticWebAppV2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2AzureStaticWebAppV2,
+	AzureStaticWebAppV2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2AzureStaticWebAppV2,
 	ConfigFilePath: *string,
 	CustomOidcV2: interface{},
 	DefaultProvider: *string,
 	ExcludedPaths: *[]*string,
-	FacebookV2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2FacebookV2,
+	FacebookV2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2FacebookV2,
 	ForwardProxyConvention: *string,
 	ForwardProxyCustomHostHeaderName: *string,
 	ForwardProxyCustomSchemeHeaderName: *string,
-	GithubV2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2GithubV2,
-	GoogleV2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2GoogleV2,
+	GithubV2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2GithubV2,
+	GoogleV2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2GoogleV2,
 	HttpRouteApiPrefix: *string,
-	MicrosoftV2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2MicrosoftV2,
+	MicrosoftV2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2MicrosoftV2,
 	RequireAuthentication: interface{},
 	RequireHttps: interface{},
 	RuntimeVersion: *string,
-	TwitterV2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2TwitterV2,
+	TwitterV2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2TwitterV2,
 	UnauthenticatedAction: *string,
 }
 ```
@@ -2949,7 +2949,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2ActiveDirectoryV2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 &windowsfunctionappslot.WindowsFunctionAppSlotAuthSettingsV2ActiveDirectoryV2 {
 	ClientId: *string,
@@ -3159,7 +3159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2AppleV2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 &windowsfunctionappslot.WindowsFunctionAppSlotAuthSettingsV2AppleV2 {
 	ClientId: *string,
@@ -3209,7 +3209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2AzureStaticWebAppV2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 &windowsfunctionappslot.WindowsFunctionAppSlotAuthSettingsV2AzureStaticWebAppV2 {
 	ClientId: *string,
@@ -3243,7 +3243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2CustomOidcV2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 &windowsfunctionappslot.WindowsFunctionAppSlotAuthSettingsV2CustomOidcV2 {
 	ClientId: *string,
@@ -3341,7 +3341,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2FacebookV2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 &windowsfunctionappslot.WindowsFunctionAppSlotAuthSettingsV2FacebookV2 {
 	AppId: *string,
@@ -3423,7 +3423,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2GithubV2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 &windowsfunctionappslot.WindowsFunctionAppSlotAuthSettingsV2GithubV2 {
 	ClientId: *string,
@@ -3489,7 +3489,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2GoogleV2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 &windowsfunctionappslot.WindowsFunctionAppSlotAuthSettingsV2GoogleV2 {
 	ClientId: *string,
@@ -3571,7 +3571,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2Login.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 &windowsfunctionappslot.WindowsFunctionAppSlotAuthSettingsV2Login {
 	AllowedExternalRedirectUrls: *[]*string,
@@ -3769,7 +3769,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2MicrosoftV2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 &windowsfunctionappslot.WindowsFunctionAppSlotAuthSettingsV2MicrosoftV2 {
 	ClientId: *string,
@@ -3851,7 +3851,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2TwitterV2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 &windowsfunctionappslot.WindowsFunctionAppSlotAuthSettingsV2TwitterV2 {
 	ConsumerKey: *string,
@@ -3901,11 +3901,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotBackup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 &windowsfunctionappslot.WindowsFunctionAppSlotBackup {
 	Name: *string,
-	Schedule: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.windowsFunctionAppSlot.WindowsFunctionAppSlotBackupSchedule,
+	Schedule: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.windowsFunctionAppSlot.WindowsFunctionAppSlotBackupSchedule,
 	StorageAccountUrl: *string,
 	Enabled: interface{},
 }
@@ -3983,7 +3983,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotBackupSchedule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 &windowsfunctionappslot.WindowsFunctionAppSlotBackupSchedule {
 	FrequencyInterval: *f64,
@@ -4081,23 +4081,23 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 &windowsfunctionappslot.WindowsFunctionAppSlotConfig {
 	Connection: interface{},
 	Count: interface{},
-	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
-	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
-	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
-	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
+	DependsOn: *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable,
+	ForEach: github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator,
+	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
+	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	FunctionAppId: *string,
 	Name: *string,
-	SiteConfig: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig,
+	SiteConfig: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig,
 	AppSettings: *map[string]*string,
-	AuthSettings: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettings,
-	AuthSettingsV2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2,
-	Backup: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.windowsFunctionAppSlot.WindowsFunctionAppSlotBackup,
+	AuthSettings: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettings,
+	AuthSettingsV2: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2,
+	Backup: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.windowsFunctionAppSlot.WindowsFunctionAppSlotBackup,
 	BuiltinLoggingEnabled: interface{},
 	ClientCertificateEnabled: interface{},
 	ClientCertificateExclusionPaths: *string,
@@ -4110,7 +4110,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctio
 	FunctionsExtensionVersion: *string,
 	HttpsOnly: interface{},
 	Id: *string,
-	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.windowsFunctionAppSlot.WindowsFunctionAppSlotIdentity,
+	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.windowsFunctionAppSlot.WindowsFunctionAppSlotIdentity,
 	KeyVaultReferenceIdentityId: *string,
 	PublicNetworkAccessEnabled: interface{},
 	ServicePlanId: *string,
@@ -4120,7 +4120,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctio
 	StorageKeyVaultSecretId: *string,
 	StorageUsesManagedIdentity: interface{},
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.windowsFunctionAppSlot.WindowsFunctionAppSlotTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.windowsFunctionAppSlot.WindowsFunctionAppSlotTimeouts,
 	VirtualNetworkBackupRestoreEnabled: interface{},
 	VirtualNetworkSubnetId: *string,
 	VnetImagePullEnabled: interface{},
@@ -4134,10 +4134,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctio
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.functionAppId">FunctionAppId</a></code> | <code>*string</code> | The ID of the Windows Function App this Slot is a member of. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConfig.property.name">Name</a></code> | <code>*string</code> | Specifies the name of the Windows Function App Slot. |
@@ -4202,7 +4202,7 @@ Count interface{}
 DependsOn *[]ITerraformDependable
 ```
 
-- *Type:* *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable
+- *Type:* *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable
 
 ---
 
@@ -4212,7 +4212,7 @@ DependsOn *[]ITerraformDependable
 ForEach ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
@@ -4222,7 +4222,7 @@ ForEach ITerraformIterator
 Lifecycle TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -4232,7 +4232,7 @@ Lifecycle TerraformResourceLifecycle
 Provider TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
@@ -4718,7 +4718,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConnectionString.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 &windowsfunctionappslot.WindowsFunctionAppSlotConnectionString {
 	Name: *string,
@@ -4784,7 +4784,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 &windowsfunctionappslot.WindowsFunctionAppSlotIdentity {
 	Type: *string,
@@ -4830,7 +4830,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 &windowsfunctionappslot.WindowsFunctionAppSlotSiteConfig {
 	AlwaysOn: interface{},
@@ -4839,11 +4839,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctio
 	AppCommandLine: *string,
 	ApplicationInsightsConnectionString: *string,
 	ApplicationInsightsKey: *string,
-	ApplicationStack: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigApplicationStack,
+	ApplicationStack: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigApplicationStack,
 	AppScaleLimit: *f64,
-	AppServiceLogs: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigAppServiceLogs,
+	AppServiceLogs: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigAppServiceLogs,
 	AutoSwapSlotName: *string,
-	Cors: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigCors,
+	Cors: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigCors,
 	DefaultDocuments: *[]*string,
 	ElasticInstanceMinimum: *f64,
 	FtpsState: *string,
@@ -5394,7 +5394,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigApplicationStack.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 &windowsfunctionappslot.WindowsFunctionAppSlotSiteConfigApplicationStack {
 	DotnetVersion: *string,
@@ -5508,7 +5508,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigAppServiceLogs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 &windowsfunctionappslot.WindowsFunctionAppSlotSiteConfigAppServiceLogs {
 	DiskQuotaMb: *f64,
@@ -5558,7 +5558,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigCors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 &windowsfunctionappslot.WindowsFunctionAppSlotSiteConfigCors {
 	AllowedOrigins: *[]*string,
@@ -5608,7 +5608,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestriction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 &windowsfunctionappslot.WindowsFunctionAppSlotSiteConfigIpRestriction {
 	Action: *string,
@@ -5754,7 +5754,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 &windowsfunctionappslot.WindowsFunctionAppSlotSiteConfigIpRestrictionHeaders {
 	XAzureFdid: *[]*string,
@@ -5828,7 +5828,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestriction.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 &windowsfunctionappslot.WindowsFunctionAppSlotSiteConfigScmIpRestriction {
 	Action: *string,
@@ -5974,7 +5974,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 &windowsfunctionappslot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionHeaders {
 	XAzureFdid: *[]*string,
@@ -6048,7 +6048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteCredential.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 &windowsfunctionappslot.WindowsFunctionAppSlotSiteCredential {
 
@@ -6061,7 +6061,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctio
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotStorageAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 &windowsfunctionappslot.WindowsFunctionAppSlotStorageAccount {
 	AccessKey: *string,
@@ -6163,7 +6163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 &windowsfunctionappslot.WindowsFunctionAppSlotTimeouts {
 	Create: *string,
@@ -6239,21 +6239,21 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsActiveDirectoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotAuthSettingsActiveDirectoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsFunctionAppSlotAuthSettingsActiveDirectoryOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsActiveDirectoryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsActiveDirectoryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsActiveDirectoryOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsActiveDirectoryOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6426,7 +6426,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsActiveDirectoryOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -6597,21 +6597,21 @@ func InternalValue() WindowsFunctionAppSlotAuthSettingsActiveDirectory
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsFacebookOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotAuthSettingsFacebookOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsFunctionAppSlotAuthSettingsFacebookOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsFacebookOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsFacebookOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsFacebookOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsFacebookOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6784,7 +6784,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsFacebookOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -6955,21 +6955,21 @@ func InternalValue() WindowsFunctionAppSlotAuthSettingsFacebook
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsGithubOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotAuthSettingsGithubOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsFunctionAppSlotAuthSettingsGithubOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsGithubOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsGithubOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsGithubOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsGithubOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7142,7 +7142,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsGithubOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -7313,21 +7313,21 @@ func InternalValue() WindowsFunctionAppSlotAuthSettingsGithub
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsGoogleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotAuthSettingsGoogleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsFunctionAppSlotAuthSettingsGoogleOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsGoogleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsGoogleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsGoogleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsGoogleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7500,7 +7500,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsGoogleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -7671,21 +7671,21 @@ func InternalValue() WindowsFunctionAppSlotAuthSettingsGoogle
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsMicrosoftOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotAuthSettingsMicrosoftOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsFunctionAppSlotAuthSettingsMicrosoftOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsMicrosoftOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsMicrosoftOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsMicrosoftOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsMicrosoftOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7858,7 +7858,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsMicrosoftOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -8029,21 +8029,21 @@ func InternalValue() WindowsFunctionAppSlotAuthSettingsMicrosoft
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotAuthSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsFunctionAppSlotAuthSettingsOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8233,7 +8233,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -8784,21 +8784,21 @@ func InternalValue() WindowsFunctionAppSlotAuthSettings
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsTwitterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotAuthSettingsTwitterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsFunctionAppSlotAuthSettingsTwitterOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsTwitterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsTwitterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsTwitterOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsTwitterOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8970,7 +8970,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsTwitterOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -9113,21 +9113,21 @@ func InternalValue() WindowsFunctionAppSlotAuthSettingsTwitter
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsFunctionAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9307,7 +9307,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -9696,21 +9696,21 @@ func InternalValue() WindowsFunctionAppSlotAuthSettingsV2ActiveDirectoryV2
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2AppleV2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotAuthSettingsV2AppleV2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsFunctionAppSlotAuthSettingsV2AppleV2OutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2AppleV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2AppleV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2AppleV2OutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2AppleV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9880,7 +9880,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2AppleV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -10000,21 +10000,21 @@ func InternalValue() WindowsFunctionAppSlotAuthSettingsV2AppleV2
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2AzureStaticWebAppV2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotAuthSettingsV2AzureStaticWebAppV2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsFunctionAppSlotAuthSettingsV2AzureStaticWebAppV2OutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2AzureStaticWebAppV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2AzureStaticWebAppV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2AzureStaticWebAppV2OutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2AzureStaticWebAppV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10184,7 +10184,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2AzureStaticWebAppV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -10271,14 +10271,14 @@ func InternalValue() WindowsFunctionAppSlotAuthSettingsV2AzureStaticWebAppV2
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2CustomOidcV2List.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotAuthSettingsV2CustomOidcV2List(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WindowsFunctionAppSlotAuthSettingsV2CustomOidcV2List
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2CustomOidcV2List.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2CustomOidcV2List.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2CustomOidcV2List.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2CustomOidcV2List.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -10286,7 +10286,7 @@ windowsfunctionappslot.NewWindowsFunctionAppSlotAuthSettingsV2CustomOidcV2List(t
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2CustomOidcV2List.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10352,7 +10352,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2CustomOidcV2List.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -10431,14 +10431,14 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2CustomOidcV2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotAuthSettingsV2CustomOidcV2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WindowsFunctionAppSlotAuthSettingsV2CustomOidcV2OutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2CustomOidcV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2CustomOidcV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2CustomOidcV2OutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2CustomOidcV2OutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2CustomOidcV2OutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -10447,7 +10447,7 @@ windowsfunctionappslot.NewWindowsFunctionAppSlotAuthSettingsV2CustomOidcV2Output
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2CustomOidcV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10635,7 +10635,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2CustomOidcV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -10888,21 +10888,21 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2FacebookV2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotAuthSettingsV2FacebookV2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsFunctionAppSlotAuthSettingsV2FacebookV2OutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2FacebookV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2FacebookV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2FacebookV2OutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2FacebookV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11074,7 +11074,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2FacebookV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -11239,21 +11239,21 @@ func InternalValue() WindowsFunctionAppSlotAuthSettingsV2FacebookV2
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2GithubV2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotAuthSettingsV2GithubV2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsFunctionAppSlotAuthSettingsV2GithubV2OutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2GithubV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2GithubV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2GithubV2OutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2GithubV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11424,7 +11424,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2GithubV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -11561,21 +11561,21 @@ func InternalValue() WindowsFunctionAppSlotAuthSettingsV2GithubV2
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2GoogleV2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotAuthSettingsV2GoogleV2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsFunctionAppSlotAuthSettingsV2GoogleV2OutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2GoogleV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2GoogleV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2GoogleV2OutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2GoogleV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11747,7 +11747,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2GoogleV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -11912,21 +11912,21 @@ func InternalValue() WindowsFunctionAppSlotAuthSettingsV2GoogleV2
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2LoginOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotAuthSettingsV2LoginOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsFunctionAppSlotAuthSettingsV2LoginOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2LoginOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2LoginOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2LoginOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2LoginOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12107,7 +12107,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2LoginOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -12480,21 +12480,21 @@ func InternalValue() WindowsFunctionAppSlotAuthSettingsV2Login
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2MicrosoftV2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotAuthSettingsV2MicrosoftV2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsFunctionAppSlotAuthSettingsV2MicrosoftV2OutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2MicrosoftV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2MicrosoftV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2MicrosoftV2OutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2MicrosoftV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12666,7 +12666,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2MicrosoftV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -12831,21 +12831,21 @@ func InternalValue() WindowsFunctionAppSlotAuthSettingsV2MicrosoftV2
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotAuthSettingsV2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsFunctionAppSlotAuthSettingsV2OutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2OutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13046,7 +13046,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -13841,21 +13841,21 @@ func InternalValue() WindowsFunctionAppSlotAuthSettingsV2
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2TwitterV2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotAuthSettingsV2TwitterV2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsFunctionAppSlotAuthSettingsV2TwitterV2OutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2TwitterV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2TwitterV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2TwitterV2OutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2TwitterV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14025,7 +14025,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotAuthSettingsV2TwitterV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -14134,21 +14134,21 @@ func InternalValue() WindowsFunctionAppSlotAuthSettingsV2TwitterV2
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotBackupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotBackupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsFunctionAppSlotBackupOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotBackupOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotBackupOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotBackupOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotBackupOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14320,7 +14320,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotBackupOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -14491,21 +14491,21 @@ func InternalValue() WindowsFunctionAppSlotBackup
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotBackupScheduleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotBackupScheduleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsFunctionAppSlotBackupScheduleOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotBackupScheduleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotBackupScheduleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotBackupScheduleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotBackupScheduleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14678,7 +14678,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotBackupScheduleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -14882,14 +14882,14 @@ func InternalValue() WindowsFunctionAppSlotBackupSchedule
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConnectionStringList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotConnectionStringList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WindowsFunctionAppSlotConnectionStringList
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConnectionStringList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConnectionStringList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConnectionStringList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConnectionStringList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -14897,7 +14897,7 @@ windowsfunctionappslot.NewWindowsFunctionAppSlotConnectionStringList(terraformRe
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConnectionStringList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14963,7 +14963,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConnectionStringList.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -15042,14 +15042,14 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConnectionStringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotConnectionStringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WindowsFunctionAppSlotConnectionStringOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConnectionStringOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConnectionStringOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConnectionStringOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConnectionStringOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConnectionStringOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -15058,7 +15058,7 @@ windowsfunctionappslot.NewWindowsFunctionAppSlotConnectionStringOutputReference(
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConnectionStringOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15244,7 +15244,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotConnectionStringOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -15375,21 +15375,21 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsFunctionAppSlotIdentityOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotIdentityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotIdentityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotIdentityOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotIdentityOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15560,7 +15560,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotIdentityOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -15697,21 +15697,21 @@ func InternalValue() WindowsFunctionAppSlotIdentity
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigApplicationStackOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotSiteConfigApplicationStackOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsFunctionAppSlotSiteConfigApplicationStackOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigApplicationStackOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigApplicationStackOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigApplicationStackOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigApplicationStackOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15887,7 +15887,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigApplicationStackOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -16120,21 +16120,21 @@ func InternalValue() WindowsFunctionAppSlotSiteConfigApplicationStack
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigAppServiceLogsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotSiteConfigAppServiceLogsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsFunctionAppSlotSiteConfigAppServiceLogsOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigAppServiceLogsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigAppServiceLogsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigAppServiceLogsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigAppServiceLogsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16306,7 +16306,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigAppServiceLogsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -16427,21 +16427,21 @@ func InternalValue() WindowsFunctionAppSlotSiteConfigAppServiceLogs
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigCorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotSiteConfigCorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsFunctionAppSlotSiteConfigCorsOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigCorsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigCorsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigCorsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigCorsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16613,7 +16613,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigCorsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -16734,14 +16734,14 @@ func InternalValue() WindowsFunctionAppSlotSiteConfigCors
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotSiteConfigIpRestrictionHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WindowsFunctionAppSlotSiteConfigIpRestrictionHeadersList
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionHeadersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionHeadersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionHeadersList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionHeadersList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -16749,7 +16749,7 @@ windowsfunctionappslot.NewWindowsFunctionAppSlotSiteConfigIpRestrictionHeadersLi
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionHeadersList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16815,7 +16815,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionHeadersList.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -16894,14 +16894,14 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotSiteConfigIpRestrictionHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WindowsFunctionAppSlotSiteConfigIpRestrictionHeadersOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionHeadersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionHeadersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionHeadersOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionHeadersOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionHeadersOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -16910,7 +16910,7 @@ windowsfunctionappslot.NewWindowsFunctionAppSlotSiteConfigIpRestrictionHeadersOu
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionHeadersOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17100,7 +17100,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionHeadersOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -17277,14 +17277,14 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotSiteConfigIpRestrictionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WindowsFunctionAppSlotSiteConfigIpRestrictionList
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -17292,7 +17292,7 @@ windowsfunctionappslot.NewWindowsFunctionAppSlotSiteConfigIpRestrictionList(terr
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17358,7 +17358,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionList.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -17437,14 +17437,14 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotSiteConfigIpRestrictionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WindowsFunctionAppSlotSiteConfigIpRestrictionOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -17453,7 +17453,7 @@ windowsfunctionappslot.NewWindowsFunctionAppSlotSiteConfigIpRestrictionOutputRef
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17648,7 +17648,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -17949,21 +17949,21 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotSiteConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsFunctionAppSlotSiteConfigOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18172,7 +18172,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -18460,7 +18460,7 @@ func ResetWorkerCount()
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigOutputReference.property.applicationStack">ApplicationStack</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigApplicationStackOutputReference">WindowsFunctionAppSlotSiteConfigApplicationStackOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigOutputReference.property.appServiceLogs">AppServiceLogs</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigAppServiceLogsOutputReference">WindowsFunctionAppSlotSiteConfigAppServiceLogsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigOutputReference.property.cors">Cors</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigCorsOutputReference">WindowsFunctionAppSlotSiteConfigCorsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigOutputReference.property.detailedErrorLoggingEnabled">DetailedErrorLoggingEnabled</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigOutputReference.property.detailedErrorLoggingEnabled">DetailedErrorLoggingEnabled</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigOutputReference.property.ipRestriction">IpRestriction</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigIpRestrictionList">WindowsFunctionAppSlotSiteConfigIpRestrictionList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigOutputReference.property.scmIpRestriction">ScmIpRestriction</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionList">WindowsFunctionAppSlotSiteConfigScmIpRestrictionList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigOutputReference.property.scmType">ScmType</a></code> | <code>*string</code> | *No description.* |
@@ -18592,7 +18592,7 @@ func Cors() WindowsFunctionAppSlotSiteConfigCorsOutputReference
 func DetailedErrorLoggingEnabled() IResolvable
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable
 
 ---
 
@@ -19282,14 +19282,14 @@ func InternalValue() WindowsFunctionAppSlotSiteConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotSiteConfigScmIpRestrictionHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WindowsFunctionAppSlotSiteConfigScmIpRestrictionHeadersList
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionHeadersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionHeadersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionHeadersList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionHeadersList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -19297,7 +19297,7 @@ windowsfunctionappslot.NewWindowsFunctionAppSlotSiteConfigScmIpRestrictionHeader
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionHeadersList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19363,7 +19363,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionHeadersList.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -19442,14 +19442,14 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotSiteConfigScmIpRestrictionHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WindowsFunctionAppSlotSiteConfigScmIpRestrictionHeadersOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionHeadersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionHeadersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionHeadersOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionHeadersOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionHeadersOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -19458,7 +19458,7 @@ windowsfunctionappslot.NewWindowsFunctionAppSlotSiteConfigScmIpRestrictionHeader
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionHeadersOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19648,7 +19648,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionHeadersOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -19825,14 +19825,14 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotSiteConfigScmIpRestrictionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WindowsFunctionAppSlotSiteConfigScmIpRestrictionList
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -19840,7 +19840,7 @@ windowsfunctionappslot.NewWindowsFunctionAppSlotSiteConfigScmIpRestrictionList(t
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19906,7 +19906,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionList.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -19985,14 +19985,14 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotSiteConfigScmIpRestrictionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WindowsFunctionAppSlotSiteConfigScmIpRestrictionOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -20001,7 +20001,7 @@ windowsfunctionappslot.NewWindowsFunctionAppSlotSiteConfigScmIpRestrictionOutput
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20196,7 +20196,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteConfigScmIpRestrictionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -20497,14 +20497,14 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteCredentialList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotSiteCredentialList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WindowsFunctionAppSlotSiteCredentialList
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteCredentialList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteCredentialList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteCredentialList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteCredentialList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -20512,7 +20512,7 @@ windowsfunctionappslot.NewWindowsFunctionAppSlotSiteCredentialList(terraformReso
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteCredentialList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20578,7 +20578,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteCredentialList.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -20646,14 +20646,14 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteCredentialOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotSiteCredentialOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WindowsFunctionAppSlotSiteCredentialOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteCredentialOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteCredentialOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteCredentialOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteCredentialOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteCredentialOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -20662,7 +20662,7 @@ windowsfunctionappslot.NewWindowsFunctionAppSlotSiteCredentialOutputReference(te
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteCredentialOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20848,7 +20848,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotSiteCredentialOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -20935,14 +20935,14 @@ func InternalValue() WindowsFunctionAppSlotSiteCredential
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotStorageAccountList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotStorageAccountList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WindowsFunctionAppSlotStorageAccountList
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotStorageAccountList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotStorageAccountList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotStorageAccountList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotStorageAccountList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -20950,7 +20950,7 @@ windowsfunctionappslot.NewWindowsFunctionAppSlotStorageAccountList(terraformReso
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotStorageAccountList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21016,7 +21016,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotStorageAccountList.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -21095,14 +21095,14 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotStorageAccountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotStorageAccountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) WindowsFunctionAppSlotStorageAccountOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotStorageAccountOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotStorageAccountOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotStorageAccountOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotStorageAccountOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotStorageAccountOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -21111,7 +21111,7 @@ windowsfunctionappslot.NewWindowsFunctionAppSlotStorageAccountOutputReference(te
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotStorageAccountOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21298,7 +21298,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotStorageAccountOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
@@ -21501,21 +21501,21 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/windowsfunctionappslot"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/windowsfunctionappslot"
 
 windowsfunctionappslot.NewWindowsFunctionAppSlotTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WindowsFunctionAppSlotTimeoutsOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21689,7 +21689,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionAppSlot.WindowsFunctionAppSlotTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 

@@ -57,13 +57,13 @@ windowsWebAppSlot.WindowsWebAppSlot(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.appServiceId">app_service_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#app_service_id WindowsWebAppSlot#app_service_id}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#name WindowsWebAppSlot#name}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.siteConfig">site_config</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig">WindowsWebAppSlotSiteConfig</a></code> | site_config block. |
@@ -71,27 +71,27 @@ windowsWebAppSlot.WindowsWebAppSlot(
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.authSettings">auth_settings</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettings">WindowsWebAppSlotAuthSettings</a></code> | auth_settings block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.authSettingsV2">auth_settings_v2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2">WindowsWebAppSlotAuthSettingsV2</a></code> | auth_settings_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.backup">backup</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackup">WindowsWebAppSlotBackup</a></code> | backup block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.clientAffinityEnabled">client_affinity_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#client_affinity_enabled WindowsWebAppSlot#client_affinity_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.clientCertificateEnabled">client_certificate_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#client_certificate_enabled WindowsWebAppSlot#client_certificate_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.clientAffinityEnabled">client_affinity_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#client_affinity_enabled WindowsWebAppSlot#client_affinity_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.clientCertificateEnabled">client_certificate_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#client_certificate_enabled WindowsWebAppSlot#client_certificate_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.clientCertificateExclusionPaths">client_certificate_exclusion_paths</a></code> | <code>str</code> | Paths to exclude when using client certificates, separated by ; |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.clientCertificateMode">client_certificate_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#client_certificate_mode WindowsWebAppSlot#client_certificate_mode}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.connectionString">connection_string</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionString">WindowsWebAppSlotConnectionString</a>]</code> | connection_string block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#enabled WindowsWebAppSlot#enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.ftpPublishBasicAuthenticationEnabled">ftp_publish_basic_authentication_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#ftp_publish_basic_authentication_enabled WindowsWebAppSlot#ftp_publish_basic_authentication_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.httpsOnly">https_only</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#https_only WindowsWebAppSlot#https_only}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.connectionString">connection_string</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionString">WindowsWebAppSlotConnectionString</a>]</code> | connection_string block. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#enabled WindowsWebAppSlot#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.ftpPublishBasicAuthenticationEnabled">ftp_publish_basic_authentication_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#ftp_publish_basic_authentication_enabled WindowsWebAppSlot#ftp_publish_basic_authentication_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.httpsOnly">https_only</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#https_only WindowsWebAppSlot#https_only}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#id WindowsWebAppSlot#id}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotIdentity">WindowsWebAppSlotIdentity</a></code> | identity block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.keyVaultReferenceIdentityId">key_vault_reference_identity_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#key_vault_reference_identity_id WindowsWebAppSlot#key_vault_reference_identity_id}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.logs">logs</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogs">WindowsWebAppSlotLogs</a></code> | logs block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.publicNetworkAccessEnabled">public_network_access_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#public_network_access_enabled WindowsWebAppSlot#public_network_access_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.publicNetworkAccessEnabled">public_network_access_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#public_network_access_enabled WindowsWebAppSlot#public_network_access_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.servicePlanId">service_plan_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#service_plan_id WindowsWebAppSlot#service_plan_id}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.storageAccount">storage_account</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccount">WindowsWebAppSlotStorageAccount</a>]</code> | storage_account block. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.storageAccount">storage_account</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccount">WindowsWebAppSlotStorageAccount</a>]</code> | storage_account block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#tags WindowsWebAppSlot#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotTimeouts">WindowsWebAppSlotTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.virtualNetworkBackupRestoreEnabled">virtual_network_backup_restore_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#virtual_network_backup_restore_enabled WindowsWebAppSlot#virtual_network_backup_restore_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.virtualNetworkImagePullEnabled">virtual_network_image_pull_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#virtual_network_image_pull_enabled WindowsWebAppSlot#virtual_network_image_pull_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.virtualNetworkBackupRestoreEnabled">virtual_network_backup_restore_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#virtual_network_backup_restore_enabled WindowsWebAppSlot#virtual_network_backup_restore_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.virtualNetworkImagePullEnabled">virtual_network_image_pull_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#virtual_network_image_pull_enabled WindowsWebAppSlot#virtual_network_image_pull_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.virtualNetworkSubnetId">virtual_network_subnet_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#virtual_network_subnet_id WindowsWebAppSlot#virtual_network_subnet_id}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.webdeployPublishBasicAuthenticationEnabled">webdeploy_publish_basic_authentication_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#webdeploy_publish_basic_authentication_enabled WindowsWebAppSlot#webdeploy_publish_basic_authentication_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.webdeployPublishBasicAuthenticationEnabled">webdeploy_publish_basic_authentication_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#webdeploy_publish_basic_authentication_enabled WindowsWebAppSlot#webdeploy_publish_basic_authentication_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.zipDeployFile">zip_deploy_file</a></code> | <code>str</code> | The local path and filename of the Zip packaged application to deploy to this Windows Web App. |
 
 ---
@@ -116,43 +116,43 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -222,7 +222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `client_affinity_enabled`<sup>Optional</sup> <a name="client_affinity_enabled" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.clientAffinityEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#client_affinity_enabled WindowsWebAppSlot#client_affinity_enabled}.
 
@@ -230,7 +230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `client_certificate_enabled`<sup>Optional</sup> <a name="client_certificate_enabled" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.clientCertificateEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#client_certificate_enabled WindowsWebAppSlot#client_certificate_enabled}.
 
@@ -256,7 +256,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `connection_string`<sup>Optional</sup> <a name="connection_string" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.connectionString"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionString">WindowsWebAppSlotConnectionString</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionString">WindowsWebAppSlotConnectionString</a>]
 
 connection_string block.
 
@@ -266,7 +266,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.enabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#enabled WindowsWebAppSlot#enabled}.
 
@@ -274,7 +274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `ftp_publish_basic_authentication_enabled`<sup>Optional</sup> <a name="ftp_publish_basic_authentication_enabled" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.ftpPublishBasicAuthenticationEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#ftp_publish_basic_authentication_enabled WindowsWebAppSlot#ftp_publish_basic_authentication_enabled}.
 
@@ -282,7 +282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `https_only`<sup>Optional</sup> <a name="https_only" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.httpsOnly"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#https_only WindowsWebAppSlot#https_only}.
 
@@ -329,7 +329,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `public_network_access_enabled`<sup>Optional</sup> <a name="public_network_access_enabled" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.publicNetworkAccessEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#public_network_access_enabled WindowsWebAppSlot#public_network_access_enabled}.
 
@@ -345,7 +345,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `storage_account`<sup>Optional</sup> <a name="storage_account" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.storageAccount"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccount">WindowsWebAppSlotStorageAccount</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccount">WindowsWebAppSlotStorageAccount</a>]
 
 storage_account block.
 
@@ -373,7 +373,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `virtual_network_backup_restore_enabled`<sup>Optional</sup> <a name="virtual_network_backup_restore_enabled" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.virtualNetworkBackupRestoreEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#virtual_network_backup_restore_enabled WindowsWebAppSlot#virtual_network_backup_restore_enabled}.
 
@@ -381,7 +381,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `virtual_network_image_pull_enabled`<sup>Optional</sup> <a name="virtual_network_image_pull_enabled" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.virtualNetworkImagePullEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#virtual_network_image_pull_enabled WindowsWebAppSlot#virtual_network_image_pull_enabled}.
 
@@ -397,7 +397,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `webdeploy_publish_basic_authentication_enabled`<sup>Optional</sup> <a name="webdeploy_publish_basic_authentication_enabled" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.Initializer.parameter.webdeployPublishBasicAuthenticationEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#webdeploy_publish_basic_authentication_enabled WindowsWebAppSlot#webdeploy_publish_basic_authentication_enabled}.
 
@@ -722,7 +722,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -829,7 +829,7 @@ def put_auth_settings(
 
 ###### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.putAuthSettings.parameter.enabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the Authentication / Authorization feature be enabled?
 
@@ -953,7 +953,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `token_store_enabled`<sup>Optional</sup> <a name="token_store_enabled" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.putAuthSettings.parameter.tokenStoreEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the Windows Web App durably store platform-specific security tokens that are obtained during login flows? Defaults to `false`.
 
@@ -1042,7 +1042,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `auth_enabled`<sup>Optional</sup> <a name="auth_enabled" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.putAuthSettingsV2.parameter.authEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the AuthV2 Settings be enabled. Defaults to `false`.
 
@@ -1072,7 +1072,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `custom_oidc_v2`<sup>Optional</sup> <a name="custom_oidc_v2" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.putAuthSettingsV2.parameter.customOidcV2"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2">WindowsWebAppSlotAuthSettingsV2CustomOidcV2</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2">WindowsWebAppSlotAuthSettingsV2CustomOidcV2</a>]
 
 custom_oidc_v2 block.
 
@@ -1186,7 +1186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `require_authentication`<sup>Optional</sup> <a name="require_authentication" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.putAuthSettingsV2.parameter.requireAuthentication"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the authentication flow be used for all requests.
 
@@ -1196,7 +1196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `require_https`<sup>Optional</sup> <a name="require_https" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.putAuthSettingsV2.parameter.requireHttps"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should HTTPS be required on connections? Defaults to true.
 
@@ -1279,7 +1279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.putBackup.parameter.enabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should this backup job be enabled?
 
@@ -1297,7 +1297,7 @@ def put_connection_string(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.putConnectionString.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionString">WindowsWebAppSlotConnectionString</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionString">WindowsWebAppSlotConnectionString</a>]
 
 ---
 
@@ -1349,7 +1349,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `detailed_error_messages`<sup>Optional</sup> <a name="detailed_error_messages" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.putLogs.parameter.detailedErrorMessages"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#detailed_error_messages WindowsWebAppSlot#detailed_error_messages}.
 
@@ -1357,7 +1357,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `failed_request_tracing`<sup>Optional</sup> <a name="failed_request_tracing" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.putLogs.parameter.failedRequestTracing"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#failed_request_tracing WindowsWebAppSlot#failed_request_tracing}.
 
@@ -1415,7 +1415,7 @@ def put_site_config(
 
 ###### `always_on`<sup>Optional</sup> <a name="always_on" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.putSiteConfig.parameter.alwaysOn"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#always_on WindowsWebAppSlot#always_on}.
 
@@ -1483,7 +1483,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `container_registry_use_managed_identity`<sup>Optional</sup> <a name="container_registry_use_managed_identity" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.putSiteConfig.parameter.containerRegistryUseManagedIdentity"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#container_registry_use_managed_identity WindowsWebAppSlot#container_registry_use_managed_identity}.
 
@@ -1517,7 +1517,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `handler_mapping`<sup>Optional</sup> <a name="handler_mapping" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.putSiteConfig.parameter.handlerMapping"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMapping">WindowsWebAppSlotSiteConfigHandlerMapping</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMapping">WindowsWebAppSlotSiteConfigHandlerMapping</a>]
 
 handler_mapping block.
 
@@ -1547,7 +1547,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `http2_enabled`<sup>Optional</sup> <a name="http2_enabled" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.putSiteConfig.parameter.http2Enabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#http2_enabled WindowsWebAppSlot#http2_enabled}.
 
@@ -1555,7 +1555,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `ip_restriction`<sup>Optional</sup> <a name="ip_restriction" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.putSiteConfig.parameter.ipRestriction"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestriction">WindowsWebAppSlotSiteConfigIpRestriction</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestriction">WindowsWebAppSlotSiteConfigIpRestriction</a>]
 
 ip_restriction block.
 
@@ -1581,7 +1581,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `local_mysql_enabled`<sup>Optional</sup> <a name="local_mysql_enabled" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.putSiteConfig.parameter.localMysqlEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#local_mysql_enabled WindowsWebAppSlot#local_mysql_enabled}.
 
@@ -1605,7 +1605,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `remote_debugging_enabled`<sup>Optional</sup> <a name="remote_debugging_enabled" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.putSiteConfig.parameter.remoteDebuggingEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#remote_debugging_enabled WindowsWebAppSlot#remote_debugging_enabled}.
 
@@ -1621,7 +1621,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `scm_ip_restriction`<sup>Optional</sup> <a name="scm_ip_restriction" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.putSiteConfig.parameter.scmIpRestriction"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestriction">WindowsWebAppSlotSiteConfigScmIpRestriction</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestriction">WindowsWebAppSlotSiteConfigScmIpRestriction</a>]
 
 scm_ip_restriction block.
 
@@ -1647,7 +1647,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `scm_use_main_ip_restriction`<sup>Optional</sup> <a name="scm_use_main_ip_restriction" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.putSiteConfig.parameter.scmUseMainIpRestriction"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#scm_use_main_ip_restriction WindowsWebAppSlot#scm_use_main_ip_restriction}.
 
@@ -1655,7 +1655,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `use32_bit_worker`<sup>Optional</sup> <a name="use32_bit_worker" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.putSiteConfig.parameter.use32BitWorker"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#use_32_bit_worker WindowsWebAppSlot#use_32_bit_worker}.
 
@@ -1663,7 +1663,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `virtual_application`<sup>Optional</sup> <a name="virtual_application" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.putSiteConfig.parameter.virtualApplication"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplication">WindowsWebAppSlotSiteConfigVirtualApplication</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplication">WindowsWebAppSlotSiteConfigVirtualApplication</a>]
 
 virtual_application block.
 
@@ -1673,7 +1673,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `vnet_route_all_enabled`<sup>Optional</sup> <a name="vnet_route_all_enabled" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.putSiteConfig.parameter.vnetRouteAllEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied? Defaults to `false`.
 
@@ -1683,7 +1683,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `websockets_enabled`<sup>Optional</sup> <a name="websockets_enabled" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.putSiteConfig.parameter.websocketsEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#websockets_enabled WindowsWebAppSlot#websockets_enabled}.
 
@@ -1707,7 +1707,7 @@ def put_storage_account(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.putStorageAccount.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccount">WindowsWebAppSlotStorageAccount</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccount">WindowsWebAppSlotStorageAccount</a>]
 
 ---
 
@@ -1917,7 +1917,7 @@ def reset_zip_deploy_file() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a WindowsWebAppSlot resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a WindowsWebAppSlot resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -2000,7 +2000,7 @@ windowsWebAppSlot.WindowsWebAppSlot.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a WindowsWebAppSlot resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a WindowsWebAppSlot resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.generateConfigForImport.parameter.scope"></a>
 
@@ -2030,7 +2030,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the WindowsWebAppSlot to import is found.
 
@@ -2041,19 +2041,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.authSettings">auth_settings</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsOutputReference">WindowsWebAppSlotAuthSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.authSettingsV2">auth_settings_v2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference">WindowsWebAppSlotAuthSettingsV2OutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.backup">backup</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupOutputReference">WindowsWebAppSlotBackupOutputReference</a></code> | *No description.* |
@@ -2077,49 +2077,49 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.authSettingsInput">auth_settings_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettings">WindowsWebAppSlotAuthSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.authSettingsV2Input">auth_settings_v2_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2">WindowsWebAppSlotAuthSettingsV2</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.backupInput">backup_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackup">WindowsWebAppSlotBackup</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.clientAffinityEnabledInput">client_affinity_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.clientCertificateEnabledInput">client_certificate_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.clientAffinityEnabledInput">client_affinity_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.clientCertificateEnabledInput">client_certificate_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.clientCertificateExclusionPathsInput">client_certificate_exclusion_paths_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.clientCertificateModeInput">client_certificate_mode_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.connectionStringInput">connection_string_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionString">WindowsWebAppSlotConnectionString</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.ftpPublishBasicAuthenticationEnabledInput">ftp_publish_basic_authentication_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.httpsOnlyInput">https_only_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.connectionStringInput">connection_string_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionString">WindowsWebAppSlotConnectionString</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.ftpPublishBasicAuthenticationEnabledInput">ftp_publish_basic_authentication_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.httpsOnlyInput">https_only_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.identityInput">identity_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotIdentity">WindowsWebAppSlotIdentity</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.keyVaultReferenceIdentityIdInput">key_vault_reference_identity_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.logsInput">logs_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogs">WindowsWebAppSlotLogs</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.publicNetworkAccessEnabledInput">public_network_access_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.publicNetworkAccessEnabledInput">public_network_access_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.servicePlanIdInput">service_plan_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.siteConfigInput">site_config_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig">WindowsWebAppSlotSiteConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.storageAccountInput">storage_account_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccount">WindowsWebAppSlotStorageAccount</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.storageAccountInput">storage_account_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccount">WindowsWebAppSlotStorageAccount</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotTimeouts">WindowsWebAppSlotTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.virtualNetworkBackupRestoreEnabledInput">virtual_network_backup_restore_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.virtualNetworkImagePullEnabledInput">virtual_network_image_pull_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotTimeouts">WindowsWebAppSlotTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.virtualNetworkBackupRestoreEnabledInput">virtual_network_backup_restore_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.virtualNetworkImagePullEnabledInput">virtual_network_image_pull_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.virtualNetworkSubnetIdInput">virtual_network_subnet_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.webdeployPublishBasicAuthenticationEnabledInput">webdeploy_publish_basic_authentication_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.webdeployPublishBasicAuthenticationEnabledInput">webdeploy_publish_basic_authentication_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.zipDeployFileInput">zip_deploy_file_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.appServiceId">app_service_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.appSettings">app_settings</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.clientAffinityEnabled">client_affinity_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.clientCertificateEnabled">client_certificate_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.clientAffinityEnabled">client_affinity_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.clientCertificateEnabled">client_certificate_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.clientCertificateExclusionPaths">client_certificate_exclusion_paths</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.clientCertificateMode">client_certificate_mode</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.ftpPublishBasicAuthenticationEnabled">ftp_publish_basic_authentication_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.httpsOnly">https_only</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.ftpPublishBasicAuthenticationEnabled">ftp_publish_basic_authentication_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.httpsOnly">https_only</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.keyVaultReferenceIdentityId">key_vault_reference_identity_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.publicNetworkAccessEnabled">public_network_access_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.publicNetworkAccessEnabled">public_network_access_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.servicePlanId">service_plan_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.virtualNetworkBackupRestoreEnabled">virtual_network_backup_restore_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.virtualNetworkImagePullEnabled">virtual_network_image_pull_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.virtualNetworkBackupRestoreEnabled">virtual_network_backup_restore_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.virtualNetworkImagePullEnabled">virtual_network_image_pull_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.virtualNetworkSubnetId">virtual_network_subnet_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.webdeployPublishBasicAuthenticationEnabled">webdeploy_publish_basic_authentication_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.webdeployPublishBasicAuthenticationEnabled">webdeploy_publish_basic_authentication_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlot.property.zipDeployFile">zip_deploy_file</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -2142,7 +2142,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -2192,7 +2192,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -2202,7 +2202,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -2212,7 +2212,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -2232,7 +2232,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -2242,7 +2242,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -2252,7 +2252,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -2262,7 +2262,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -2502,7 +2502,7 @@ backup_input: WindowsWebAppSlotBackup
 client_affinity_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2512,7 +2512,7 @@ client_affinity_enabled_input: bool | IResolvable
 client_certificate_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2542,7 +2542,7 @@ client_certificate_mode_input: str
 connection_string_input: IResolvable | typing.List[WindowsWebAppSlotConnectionString]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionString">WindowsWebAppSlotConnectionString</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionString">WindowsWebAppSlotConnectionString</a>]
 
 ---
 
@@ -2552,7 +2552,7 @@ connection_string_input: IResolvable | typing.List[WindowsWebAppSlotConnectionSt
 enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2562,7 +2562,7 @@ enabled_input: bool | IResolvable
 ftp_publish_basic_authentication_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2572,7 +2572,7 @@ ftp_publish_basic_authentication_enabled_input: bool | IResolvable
 https_only_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2632,7 +2632,7 @@ name_input: str
 public_network_access_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2662,7 +2662,7 @@ site_config_input: WindowsWebAppSlotSiteConfig
 storage_account_input: IResolvable | typing.List[WindowsWebAppSlotStorageAccount]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccount">WindowsWebAppSlotStorageAccount</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccount">WindowsWebAppSlotStorageAccount</a>]
 
 ---
 
@@ -2682,7 +2682,7 @@ tags_input: typing.Mapping[str]
 timeouts_input: IResolvable | WindowsWebAppSlotTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotTimeouts">WindowsWebAppSlotTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotTimeouts">WindowsWebAppSlotTimeouts</a>
 
 ---
 
@@ -2692,7 +2692,7 @@ timeouts_input: IResolvable | WindowsWebAppSlotTimeouts
 virtual_network_backup_restore_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2702,7 +2702,7 @@ virtual_network_backup_restore_enabled_input: bool | IResolvable
 virtual_network_image_pull_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2722,7 +2722,7 @@ virtual_network_subnet_id_input: str
 webdeploy_publish_basic_authentication_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2762,7 +2762,7 @@ app_settings: typing.Mapping[str]
 client_affinity_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2772,7 +2772,7 @@ client_affinity_enabled: bool | IResolvable
 client_certificate_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2802,7 +2802,7 @@ client_certificate_mode: str
 enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2812,7 +2812,7 @@ enabled: bool | IResolvable
 ftp_publish_basic_authentication_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2822,7 +2822,7 @@ ftp_publish_basic_authentication_enabled: bool | IResolvable
 https_only: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2862,7 +2862,7 @@ name: str
 public_network_access_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2892,7 +2892,7 @@ tags: typing.Mapping[str]
 virtual_network_backup_restore_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2902,7 +2902,7 @@ virtual_network_backup_restore_enabled: bool | IResolvable
 virtual_network_image_pull_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2922,7 +2922,7 @@ virtual_network_subnet_id: str
 webdeploy_publish_basic_authentication_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2986,7 +2986,7 @@ windowsWebAppSlot.WindowsWebAppSlotAuthSettings(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettings.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Should the Authentication / Authorization feature be enabled? |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettings.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the Authentication / Authorization feature be enabled? |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettings.property.activeDirectory">active_directory</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsActiveDirectory">WindowsWebAppSlotAuthSettingsActiveDirectory</a></code> | active_directory block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettings.property.additionalLoginParameters">additional_login_parameters</a></code> | <code>typing.Mapping[str]</code> | Specifies a map of Login Parameters to send to the OpenID Connect authorization endpoint when a user logs in. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettings.property.allowedExternalRedirectUrls">allowed_external_redirect_urls</a></code> | <code>typing.List[str]</code> | Specifies a list of External URLs that can be redirected to as part of logging in or logging out of the Windows Web App. |
@@ -2998,7 +2998,7 @@ windowsWebAppSlot.WindowsWebAppSlotAuthSettings(
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettings.property.microsoft">microsoft</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsMicrosoft">WindowsWebAppSlotAuthSettingsMicrosoft</a></code> | microsoft block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettings.property.runtimeVersion">runtime_version</a></code> | <code>str</code> | The RuntimeVersion of the Authentication / Authorization feature in use. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettings.property.tokenRefreshExtensionHours">token_refresh_extension_hours</a></code> | <code>typing.Union[int, float]</code> | The number of hours after session token expiration that a session token can be used to call the token refresh API. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettings.property.tokenStoreEnabled">token_store_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Should the Windows Web App durably store platform-specific security tokens that are obtained during login flows? Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettings.property.tokenStoreEnabled">token_store_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the Windows Web App durably store platform-specific security tokens that are obtained during login flows? Defaults to `false`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettings.property.twitter">twitter</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsTwitter">WindowsWebAppSlotAuthSettingsTwitter</a></code> | twitter block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettings.property.unauthenticatedClientAction">unauthenticated_client_action</a></code> | <code>str</code> | The action to take when an unauthenticated client attempts to access the app. Possible values include: `RedirectToLoginPage`, `AllowAnonymous`. |
 
@@ -3010,7 +3010,7 @@ windowsWebAppSlot.WindowsWebAppSlotAuthSettings(
 enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the Authentication / Authorization feature be enabled?
 
@@ -3182,7 +3182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 token_store_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the Windows Web App durably store platform-specific security tokens that are obtained during login flows? Defaults to `false`.
 
@@ -3734,10 +3734,10 @@ windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2(
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2.property.login">login</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2Login">WindowsWebAppSlotAuthSettingsV2Login</a></code> | login block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2.property.activeDirectoryV2">active_directory_v2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2ActiveDirectoryV2">WindowsWebAppSlotAuthSettingsV2ActiveDirectoryV2</a></code> | active_directory_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2.property.appleV2">apple_v2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2AppleV2">WindowsWebAppSlotAuthSettingsV2AppleV2</a></code> | apple_v2 block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2.property.authEnabled">auth_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Should the AuthV2 Settings be enabled. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2.property.authEnabled">auth_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the AuthV2 Settings be enabled. Defaults to `false`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2.property.azureStaticWebAppV2">azure_static_web_app_v2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2AzureStaticWebAppV2">WindowsWebAppSlotAuthSettingsV2AzureStaticWebAppV2</a></code> | azure_static_web_app_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2.property.configFilePath">config_file_path</a></code> | <code>str</code> | The path to the App Auth settings. **Note:** Relative Paths are evaluated from the Site Root directory. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2.property.customOidcV2">custom_oidc_v2</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2">WindowsWebAppSlotAuthSettingsV2CustomOidcV2</a>]</code> | custom_oidc_v2 block. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2.property.customOidcV2">custom_oidc_v2</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2">WindowsWebAppSlotAuthSettingsV2CustomOidcV2</a>]</code> | custom_oidc_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2.property.defaultProvider">default_provider</a></code> | <code>str</code> | The Default Authentication Provider to use when the `unauthenticated_action` is set to `RedirectToLoginPage`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2.property.excludedPaths">excluded_paths</a></code> | <code>typing.List[str]</code> | The paths which should be excluded from the `unauthenticated_action` when it is set to `RedirectToLoginPage`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2.property.facebookV2">facebook_v2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2FacebookV2">WindowsWebAppSlotAuthSettingsV2FacebookV2</a></code> | facebook_v2 block. |
@@ -3748,8 +3748,8 @@ windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2(
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2.property.googleV2">google_v2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2GoogleV2">WindowsWebAppSlotAuthSettingsV2GoogleV2</a></code> | google_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2.property.httpRouteApiPrefix">http_route_api_prefix</a></code> | <code>str</code> | The prefix that should precede all the authentication and authorisation paths. Defaults to `/.auth`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2.property.microsoftV2">microsoft_v2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2MicrosoftV2">WindowsWebAppSlotAuthSettingsV2MicrosoftV2</a></code> | microsoft_v2 block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2.property.requireAuthentication">require_authentication</a></code> | <code>bool \| cdktf.IResolvable</code> | Should the authentication flow be used for all requests. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2.property.requireHttps">require_https</a></code> | <code>bool \| cdktf.IResolvable</code> | Should HTTPS be required on connections? Defaults to true. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2.property.requireAuthentication">require_authentication</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the authentication flow be used for all requests. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2.property.requireHttps">require_https</a></code> | <code>bool \| cdktn.IResolvable</code> | Should HTTPS be required on connections? Defaults to true. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2.property.runtimeVersion">runtime_version</a></code> | <code>str</code> | The Runtime Version of the Authentication and Authorisation feature of this App. Defaults to `~1`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2.property.twitterV2">twitter_v2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2TwitterV2">WindowsWebAppSlotAuthSettingsV2TwitterV2</a></code> | twitter_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2.property.unauthenticatedAction">unauthenticated_action</a></code> | <code>str</code> | The action to take for requests made without authentication. |
@@ -3804,7 +3804,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 auth_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the AuthV2 Settings be enabled. Defaults to `false`.
 
@@ -3846,7 +3846,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 custom_oidc_v2: IResolvable | typing.List[WindowsWebAppSlotAuthSettingsV2CustomOidcV2]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2">WindowsWebAppSlotAuthSettingsV2CustomOidcV2</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2">WindowsWebAppSlotAuthSettingsV2CustomOidcV2</a>]
 
 custom_oidc_v2 block.
 
@@ -4004,7 +4004,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 require_authentication: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the authentication flow be used for all requests.
 
@@ -4018,7 +4018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 require_https: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should HTTPS be required on connections? Defaults to true.
 
@@ -4108,7 +4108,7 @@ windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2ActiveDirectoryV2(
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2ActiveDirectoryV2.property.jwtAllowedClientApplications">jwt_allowed_client_applications</a></code> | <code>typing.List[str]</code> | A list of Allowed Client Applications in the JWT Claim. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2ActiveDirectoryV2.property.jwtAllowedGroups">jwt_allowed_groups</a></code> | <code>typing.List[str]</code> | A list of Allowed Groups in the JWT Claim. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2ActiveDirectoryV2.property.loginParameters">login_parameters</a></code> | <code>typing.Mapping[str]</code> | A map of key-value pairs to send to the Authorisation Endpoint when a user logs in. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2ActiveDirectoryV2.property.wwwAuthenticationDisabled">www_authentication_disabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Should the www-authenticate provider should be omitted from the request? Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2ActiveDirectoryV2.property.wwwAuthenticationDisabled">www_authentication_disabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the www-authenticate provider should be omitted from the request? Defaults to `false`. |
 
 ---
 
@@ -4272,7 +4272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 www_authentication_disabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the www-authenticate provider should be omitted from the request? Defaults to `false`.
 
@@ -4723,12 +4723,12 @@ windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2Login(
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2Login.property.cookieExpirationTime">cookie_expiration_time</a></code> | <code>str</code> | The time after the request is made when the session cookie should expire. Defaults to `08:00:00`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2Login.property.logoutEndpoint">logout_endpoint</a></code> | <code>str</code> | The endpoint to which logout requests should be made. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2Login.property.nonceExpirationTime">nonce_expiration_time</a></code> | <code>str</code> | The time after the request is made when the nonce should expire. Defaults to `00:05:00`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2Login.property.preserveUrlFragmentsForLogins">preserve_url_fragments_for_logins</a></code> | <code>bool \| cdktf.IResolvable</code> | Should the fragments from the request be preserved after the login request is made. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2Login.property.preserveUrlFragmentsForLogins">preserve_url_fragments_for_logins</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the fragments from the request be preserved after the login request is made. Defaults to `false`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2Login.property.tokenRefreshExtensionTime">token_refresh_extension_time</a></code> | <code>typing.Union[int, float]</code> | The number of hours after session token expiration that a session token can be used to call the token refresh API. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2Login.property.tokenStoreEnabled">token_store_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Should the Token Store configuration Enabled. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2Login.property.tokenStoreEnabled">token_store_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the Token Store configuration Enabled. Defaults to `false`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2Login.property.tokenStorePath">token_store_path</a></code> | <code>str</code> | The directory path in the App Filesystem in which the tokens will be stored. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2Login.property.tokenStoreSasSettingName">token_store_sas_setting_name</a></code> | <code>str</code> | The name of the app setting which contains the SAS URL of the blob storage containing the tokens. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2Login.property.validateNonce">validate_nonce</a></code> | <code>bool \| cdktf.IResolvable</code> | Should the nonce be validated while completing the login flow. Defaults to `true`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2Login.property.validateNonce">validate_nonce</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the nonce be validated while completing the login flow. Defaults to `true`. |
 
 ---
 
@@ -4810,7 +4810,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 preserve_url_fragments_for_logins: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the fragments from the request be preserved after the login request is made. Defaults to `false`.
 
@@ -4840,7 +4840,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 token_store_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the Token Store configuration Enabled. Defaults to `false`.
 
@@ -4882,7 +4882,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 validate_nonce: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the nonce be validated while completing the login flow. Defaults to `true`.
 
@@ -5044,7 +5044,7 @@ windowsWebAppSlot.WindowsWebAppSlotBackup(
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackup.property.name">name</a></code> | <code>str</code> | The name which should be used for this Backup. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackup.property.schedule">schedule</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupSchedule">WindowsWebAppSlotBackupSchedule</a></code> | schedule block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackup.property.storageAccountUrl">storage_account_url</a></code> | <code>str</code> | The SAS URL to the container. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackup.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Should this backup job be enabled? |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackup.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should this backup job be enabled? |
 
 ---
 
@@ -5096,7 +5096,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should this backup job be enabled?
 
@@ -5126,7 +5126,7 @@ windowsWebAppSlot.WindowsWebAppSlotBackupSchedule(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupSchedule.property.frequencyInterval">frequency_interval</a></code> | <code>typing.Union[int, float]</code> | How often the backup should be executed (e.g. for weekly backup, this should be set to `7` and `frequency_unit` should be set to `Day`). |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupSchedule.property.frequencyUnit">frequency_unit</a></code> | <code>str</code> | The unit of time for how often the backup should take place. Possible values include: `Day` and `Hour`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupSchedule.property.keepAtLeastOneBackup">keep_at_least_one_backup</a></code> | <code>bool \| cdktf.IResolvable</code> | Should the service keep at least one backup, regardless of age of backup. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupSchedule.property.keepAtLeastOneBackup">keep_at_least_one_backup</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the service keep at least one backup, regardless of age of backup. Defaults to `false`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupSchedule.property.retentionPeriodDays">retention_period_days</a></code> | <code>typing.Union[int, float]</code> | After how many days backups should be deleted. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupSchedule.property.startTime">start_time</a></code> | <code>str</code> | When the schedule should start working in RFC-3339 format. |
 
@@ -5166,7 +5166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 keep_at_least_one_backup: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the service keep at least one backup, regardless of age of backup. Defaults to `false`.
 
@@ -5253,13 +5253,13 @@ windowsWebAppSlot.WindowsWebAppSlotConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.appServiceId">app_service_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#app_service_id WindowsWebAppSlot#app_service_id}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#name WindowsWebAppSlot#name}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.siteConfig">site_config</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig">WindowsWebAppSlotSiteConfig</a></code> | site_config block. |
@@ -5267,27 +5267,27 @@ windowsWebAppSlot.WindowsWebAppSlotConfig(
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.authSettings">auth_settings</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettings">WindowsWebAppSlotAuthSettings</a></code> | auth_settings block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.authSettingsV2">auth_settings_v2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2">WindowsWebAppSlotAuthSettingsV2</a></code> | auth_settings_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.backup">backup</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackup">WindowsWebAppSlotBackup</a></code> | backup block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.clientAffinityEnabled">client_affinity_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#client_affinity_enabled WindowsWebAppSlot#client_affinity_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.clientCertificateEnabled">client_certificate_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#client_certificate_enabled WindowsWebAppSlot#client_certificate_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.clientAffinityEnabled">client_affinity_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#client_affinity_enabled WindowsWebAppSlot#client_affinity_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.clientCertificateEnabled">client_certificate_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#client_certificate_enabled WindowsWebAppSlot#client_certificate_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.clientCertificateExclusionPaths">client_certificate_exclusion_paths</a></code> | <code>str</code> | Paths to exclude when using client certificates, separated by ; |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.clientCertificateMode">client_certificate_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#client_certificate_mode WindowsWebAppSlot#client_certificate_mode}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.connectionString">connection_string</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionString">WindowsWebAppSlotConnectionString</a>]</code> | connection_string block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#enabled WindowsWebAppSlot#enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.ftpPublishBasicAuthenticationEnabled">ftp_publish_basic_authentication_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#ftp_publish_basic_authentication_enabled WindowsWebAppSlot#ftp_publish_basic_authentication_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.httpsOnly">https_only</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#https_only WindowsWebAppSlot#https_only}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.connectionString">connection_string</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionString">WindowsWebAppSlotConnectionString</a>]</code> | connection_string block. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#enabled WindowsWebAppSlot#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.ftpPublishBasicAuthenticationEnabled">ftp_publish_basic_authentication_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#ftp_publish_basic_authentication_enabled WindowsWebAppSlot#ftp_publish_basic_authentication_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.httpsOnly">https_only</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#https_only WindowsWebAppSlot#https_only}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#id WindowsWebAppSlot#id}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotIdentity">WindowsWebAppSlotIdentity</a></code> | identity block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.keyVaultReferenceIdentityId">key_vault_reference_identity_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#key_vault_reference_identity_id WindowsWebAppSlot#key_vault_reference_identity_id}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.logs">logs</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogs">WindowsWebAppSlotLogs</a></code> | logs block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.publicNetworkAccessEnabled">public_network_access_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#public_network_access_enabled WindowsWebAppSlot#public_network_access_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.publicNetworkAccessEnabled">public_network_access_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#public_network_access_enabled WindowsWebAppSlot#public_network_access_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.servicePlanId">service_plan_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#service_plan_id WindowsWebAppSlot#service_plan_id}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.storageAccount">storage_account</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccount">WindowsWebAppSlotStorageAccount</a>]</code> | storage_account block. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.storageAccount">storage_account</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccount">WindowsWebAppSlotStorageAccount</a>]</code> | storage_account block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#tags WindowsWebAppSlot#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotTimeouts">WindowsWebAppSlotTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.virtualNetworkBackupRestoreEnabled">virtual_network_backup_restore_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#virtual_network_backup_restore_enabled WindowsWebAppSlot#virtual_network_backup_restore_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.virtualNetworkImagePullEnabled">virtual_network_image_pull_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#virtual_network_image_pull_enabled WindowsWebAppSlot#virtual_network_image_pull_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.virtualNetworkBackupRestoreEnabled">virtual_network_backup_restore_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#virtual_network_backup_restore_enabled WindowsWebAppSlot#virtual_network_backup_restore_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.virtualNetworkImagePullEnabled">virtual_network_image_pull_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#virtual_network_image_pull_enabled WindowsWebAppSlot#virtual_network_image_pull_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.virtualNetworkSubnetId">virtual_network_subnet_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#virtual_network_subnet_id WindowsWebAppSlot#virtual_network_subnet_id}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.webdeployPublishBasicAuthenticationEnabled">webdeploy_publish_basic_authentication_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#webdeploy_publish_basic_authentication_enabled WindowsWebAppSlot#webdeploy_publish_basic_authentication_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.webdeployPublishBasicAuthenticationEnabled">webdeploy_publish_basic_authentication_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#webdeploy_publish_basic_authentication_enabled WindowsWebAppSlot#webdeploy_publish_basic_authentication_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConfig.property.zipDeployFile">zip_deploy_file</a></code> | <code>str</code> | The local path and filename of the Zip packaged application to deploy to this Windows Web App. |
 
 ---
@@ -5298,7 +5298,7 @@ windowsWebAppSlot.WindowsWebAppSlotConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -5308,7 +5308,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -5318,7 +5318,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -5328,7 +5328,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -5338,7 +5338,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -5348,7 +5348,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -5358,7 +5358,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -5460,7 +5460,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 client_affinity_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#client_affinity_enabled WindowsWebAppSlot#client_affinity_enabled}.
 
@@ -5472,7 +5472,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 client_certificate_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#client_certificate_enabled WindowsWebAppSlot#client_certificate_enabled}.
 
@@ -5510,7 +5510,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 connection_string: IResolvable | typing.List[WindowsWebAppSlotConnectionString]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionString">WindowsWebAppSlotConnectionString</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionString">WindowsWebAppSlotConnectionString</a>]
 
 connection_string block.
 
@@ -5524,7 +5524,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#enabled WindowsWebAppSlot#enabled}.
 
@@ -5536,7 +5536,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ftp_publish_basic_authentication_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#ftp_publish_basic_authentication_enabled WindowsWebAppSlot#ftp_publish_basic_authentication_enabled}.
 
@@ -5548,7 +5548,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 https_only: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#https_only WindowsWebAppSlot#https_only}.
 
@@ -5615,7 +5615,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public_network_access_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#public_network_access_enabled WindowsWebAppSlot#public_network_access_enabled}.
 
@@ -5639,7 +5639,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 storage_account: IResolvable | typing.List[WindowsWebAppSlotStorageAccount]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccount">WindowsWebAppSlotStorageAccount</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccount">WindowsWebAppSlotStorageAccount</a>]
 
 storage_account block.
 
@@ -5679,7 +5679,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 virtual_network_backup_restore_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#virtual_network_backup_restore_enabled WindowsWebAppSlot#virtual_network_backup_restore_enabled}.
 
@@ -5691,7 +5691,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 virtual_network_image_pull_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#virtual_network_image_pull_enabled WindowsWebAppSlot#virtual_network_image_pull_enabled}.
 
@@ -5715,7 +5715,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 webdeploy_publish_basic_authentication_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#webdeploy_publish_basic_authentication_enabled WindowsWebAppSlot#webdeploy_publish_basic_authentication_enabled}.
 
@@ -5869,8 +5869,8 @@ windowsWebAppSlot.WindowsWebAppSlotLogs(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogs.property.applicationLogs">application_logs</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsApplicationLogs">WindowsWebAppSlotLogsApplicationLogs</a></code> | application_logs block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogs.property.detailedErrorMessages">detailed_error_messages</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#detailed_error_messages WindowsWebAppSlot#detailed_error_messages}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogs.property.failedRequestTracing">failed_request_tracing</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#failed_request_tracing WindowsWebAppSlot#failed_request_tracing}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogs.property.detailedErrorMessages">detailed_error_messages</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#detailed_error_messages WindowsWebAppSlot#detailed_error_messages}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogs.property.failedRequestTracing">failed_request_tracing</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#failed_request_tracing WindowsWebAppSlot#failed_request_tracing}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogs.property.httpLogs">http_logs</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsHttpLogs">WindowsWebAppSlotLogsHttpLogs</a></code> | http_logs block. |
 
 ---
@@ -5895,7 +5895,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 detailed_error_messages: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#detailed_error_messages WindowsWebAppSlot#detailed_error_messages}.
 
@@ -5907,7 +5907,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 failed_request_tracing: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#failed_request_tracing WindowsWebAppSlot#failed_request_tracing}.
 
@@ -6225,7 +6225,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.alwaysOn">always_on</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#always_on WindowsWebAppSlot#always_on}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.alwaysOn">always_on</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#always_on WindowsWebAppSlot#always_on}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.apiDefinitionUrl">api_definition_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#api_definition_url WindowsWebAppSlot#api_definition_url}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.apiManagementApiId">api_management_api_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#api_management_api_id WindowsWebAppSlot#api_management_api_id}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.appCommandLine">app_command_line</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#app_command_line WindowsWebAppSlot#app_command_line}. |
@@ -6233,30 +6233,30 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfig(
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.autoHealSetting">auto_heal_setting</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSetting">WindowsWebAppSlotSiteConfigAutoHealSetting</a></code> | auto_heal_setting block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.autoSwapSlotName">auto_swap_slot_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#auto_swap_slot_name WindowsWebAppSlot#auto_swap_slot_name}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.containerRegistryManagedIdentityClientId">container_registry_managed_identity_client_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#container_registry_managed_identity_client_id WindowsWebAppSlot#container_registry_managed_identity_client_id}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.containerRegistryUseManagedIdentity">container_registry_use_managed_identity</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#container_registry_use_managed_identity WindowsWebAppSlot#container_registry_use_managed_identity}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.containerRegistryUseManagedIdentity">container_registry_use_managed_identity</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#container_registry_use_managed_identity WindowsWebAppSlot#container_registry_use_managed_identity}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.cors">cors</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigCors">WindowsWebAppSlotSiteConfigCors</a></code> | cors block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.defaultDocuments">default_documents</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#default_documents WindowsWebAppSlot#default_documents}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.ftpsState">ftps_state</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#ftps_state WindowsWebAppSlot#ftps_state}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.handlerMapping">handler_mapping</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMapping">WindowsWebAppSlotSiteConfigHandlerMapping</a>]</code> | handler_mapping block. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.handlerMapping">handler_mapping</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMapping">WindowsWebAppSlotSiteConfigHandlerMapping</a>]</code> | handler_mapping block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.healthCheckEvictionTimeInMin">health_check_eviction_time_in_min</a></code> | <code>typing.Union[int, float]</code> | The amount of time in minutes that a node is unhealthy before being removed from the load balancer. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.healthCheckPath">health_check_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#health_check_path WindowsWebAppSlot#health_check_path}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.http2Enabled">http2_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#http2_enabled WindowsWebAppSlot#http2_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.ipRestriction">ip_restriction</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestriction">WindowsWebAppSlotSiteConfigIpRestriction</a>]</code> | ip_restriction block. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.http2Enabled">http2_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#http2_enabled WindowsWebAppSlot#http2_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.ipRestriction">ip_restriction</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestriction">WindowsWebAppSlotSiteConfigIpRestriction</a>]</code> | ip_restriction block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.ipRestrictionDefaultAction">ip_restriction_default_action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#ip_restriction_default_action WindowsWebAppSlot#ip_restriction_default_action}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.loadBalancingMode">load_balancing_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#load_balancing_mode WindowsWebAppSlot#load_balancing_mode}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.localMysqlEnabled">local_mysql_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#local_mysql_enabled WindowsWebAppSlot#local_mysql_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.localMysqlEnabled">local_mysql_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#local_mysql_enabled WindowsWebAppSlot#local_mysql_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.managedPipelineMode">managed_pipeline_mode</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#managed_pipeline_mode WindowsWebAppSlot#managed_pipeline_mode}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.minimumTlsVersion">minimum_tls_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#minimum_tls_version WindowsWebAppSlot#minimum_tls_version}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.remoteDebuggingEnabled">remote_debugging_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#remote_debugging_enabled WindowsWebAppSlot#remote_debugging_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.remoteDebuggingEnabled">remote_debugging_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#remote_debugging_enabled WindowsWebAppSlot#remote_debugging_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.remoteDebuggingVersion">remote_debugging_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#remote_debugging_version WindowsWebAppSlot#remote_debugging_version}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.scmIpRestriction">scm_ip_restriction</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestriction">WindowsWebAppSlotSiteConfigScmIpRestriction</a>]</code> | scm_ip_restriction block. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.scmIpRestriction">scm_ip_restriction</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestriction">WindowsWebAppSlotSiteConfigScmIpRestriction</a>]</code> | scm_ip_restriction block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.scmIpRestrictionDefaultAction">scm_ip_restriction_default_action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#scm_ip_restriction_default_action WindowsWebAppSlot#scm_ip_restriction_default_action}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.scmMinimumTlsVersion">scm_minimum_tls_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#scm_minimum_tls_version WindowsWebAppSlot#scm_minimum_tls_version}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.scmUseMainIpRestriction">scm_use_main_ip_restriction</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#scm_use_main_ip_restriction WindowsWebAppSlot#scm_use_main_ip_restriction}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.use32BitWorker">use32_bit_worker</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#use_32_bit_worker WindowsWebAppSlot#use_32_bit_worker}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.virtualApplication">virtual_application</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplication">WindowsWebAppSlotSiteConfigVirtualApplication</a>]</code> | virtual_application block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.vnetRouteAllEnabled">vnet_route_all_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Should all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied? Defaults to `false`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.websocketsEnabled">websockets_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#websockets_enabled WindowsWebAppSlot#websockets_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.scmUseMainIpRestriction">scm_use_main_ip_restriction</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#scm_use_main_ip_restriction WindowsWebAppSlot#scm_use_main_ip_restriction}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.use32BitWorker">use32_bit_worker</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#use_32_bit_worker WindowsWebAppSlot#use_32_bit_worker}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.virtualApplication">virtual_application</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplication">WindowsWebAppSlotSiteConfigVirtualApplication</a>]</code> | virtual_application block. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.vnetRouteAllEnabled">vnet_route_all_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied? Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.websocketsEnabled">websockets_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#websockets_enabled WindowsWebAppSlot#websockets_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig.property.workerCount">worker_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#worker_count WindowsWebAppSlot#worker_count}. |
 
 ---
@@ -6267,7 +6267,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfig(
 always_on: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#always_on WindowsWebAppSlot#always_on}.
 
@@ -6367,7 +6367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 container_registry_use_managed_identity: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#container_registry_use_managed_identity WindowsWebAppSlot#container_registry_use_managed_identity}.
 
@@ -6417,7 +6417,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 handler_mapping: IResolvable | typing.List[WindowsWebAppSlotSiteConfigHandlerMapping]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMapping">WindowsWebAppSlotSiteConfigHandlerMapping</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMapping">WindowsWebAppSlotSiteConfigHandlerMapping</a>]
 
 handler_mapping block.
 
@@ -6459,7 +6459,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 http2_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#http2_enabled WindowsWebAppSlot#http2_enabled}.
 
@@ -6471,7 +6471,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ip_restriction: IResolvable | typing.List[WindowsWebAppSlotSiteConfigIpRestriction]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestriction">WindowsWebAppSlotSiteConfigIpRestriction</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestriction">WindowsWebAppSlotSiteConfigIpRestriction</a>]
 
 ip_restriction block.
 
@@ -6509,7 +6509,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 local_mysql_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#local_mysql_enabled WindowsWebAppSlot#local_mysql_enabled}.
 
@@ -6545,7 +6545,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 remote_debugging_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#remote_debugging_enabled WindowsWebAppSlot#remote_debugging_enabled}.
 
@@ -6569,7 +6569,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 scm_ip_restriction: IResolvable | typing.List[WindowsWebAppSlotSiteConfigScmIpRestriction]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestriction">WindowsWebAppSlotSiteConfigScmIpRestriction</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestriction">WindowsWebAppSlotSiteConfigScmIpRestriction</a>]
 
 scm_ip_restriction block.
 
@@ -6607,7 +6607,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 scm_use_main_ip_restriction: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#scm_use_main_ip_restriction WindowsWebAppSlot#scm_use_main_ip_restriction}.
 
@@ -6619,7 +6619,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 use32_bit_worker: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#use_32_bit_worker WindowsWebAppSlot#use_32_bit_worker}.
 
@@ -6631,7 +6631,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 virtual_application: IResolvable | typing.List[WindowsWebAppSlotSiteConfigVirtualApplication]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplication">WindowsWebAppSlotSiteConfigVirtualApplication</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplication">WindowsWebAppSlotSiteConfigVirtualApplication</a>]
 
 virtual_application block.
 
@@ -6645,7 +6645,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 vnet_route_all_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied? Defaults to `false`.
 
@@ -6659,7 +6659,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 websockets_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#websockets_enabled WindowsWebAppSlot#websockets_enabled}.
 
@@ -6716,11 +6716,11 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStack(
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStack.property.dotnetVersion">dotnet_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#dotnet_version WindowsWebAppSlot#dotnet_version}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStack.property.javaContainer">java_container</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#java_container WindowsWebAppSlot#java_container}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStack.property.javaContainerVersion">java_container_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#java_container_version WindowsWebAppSlot#java_container_version}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStack.property.javaEmbeddedServerEnabled">java_embedded_server_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Should the application use the embedded web server for the version of Java in use. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStack.property.javaEmbeddedServerEnabled">java_embedded_server_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the application use the embedded web server for the version of Java in use. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStack.property.javaVersion">java_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#java_version WindowsWebAppSlot#java_version}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStack.property.nodeVersion">node_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#node_version WindowsWebAppSlot#node_version}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStack.property.phpVersion">php_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#php_version WindowsWebAppSlot#php_version}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStack.property.python">python</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#python WindowsWebAppSlot#python}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStack.property.python">python</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#python WindowsWebAppSlot#python}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStack.property.tomcatVersion">tomcat_version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#tomcat_version WindowsWebAppSlot#tomcat_version}. |
 
 ---
@@ -6841,7 +6841,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 java_embedded_server_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the application use the embedded web server for the version of Java in use.
 
@@ -6891,7 +6891,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 python: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#python WindowsWebAppSlot#python}.
 
@@ -7090,8 +7090,8 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTrigger(
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTrigger.property.privateMemoryKb">private_memory_kb</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#private_memory_kb WindowsWebAppSlot#private_memory_kb}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTrigger.property.requests">requests</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerRequests">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerRequests</a></code> | requests block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTrigger.property.slowRequest">slow_request</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequest">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequest</a></code> | slow_request block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTrigger.property.slowRequestWithPath">slow_request_with_path</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath</a>]</code> | slow_request_with_path block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTrigger.property.statusCode">status_code</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode</a>]</code> | status_code block. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTrigger.property.slowRequestWithPath">slow_request_with_path</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath</a>]</code> | slow_request_with_path block. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTrigger.property.statusCode">status_code</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode</a>]</code> | status_code block. |
 
 ---
 
@@ -7141,7 +7141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 slow_request_with_path: IResolvable | typing.List[WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath</a>]
 
 slow_request_with_path block.
 
@@ -7155,7 +7155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 status_code: IResolvable | typing.List[WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode</a>]
 
 status_code block.
 
@@ -7463,7 +7463,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigCors(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigCors.property.allowedOrigins">allowed_origins</a></code> | <code>typing.List[str]</code> | Specifies a list of origins that should be allowed to make cross-origin calls. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigCors.property.supportCredentials">support_credentials</a></code> | <code>bool \| cdktf.IResolvable</code> | Are credentials allowed in CORS requests? Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigCors.property.supportCredentials">support_credentials</a></code> | <code>bool \| cdktn.IResolvable</code> | Are credentials allowed in CORS requests? Defaults to `false`. |
 
 ---
 
@@ -7487,7 +7487,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 support_credentials: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Are credentials allowed in CORS requests? Defaults to `false`.
 
@@ -7580,7 +7580,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestriction(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestriction.property.action">action</a></code> | <code>str</code> | The action to take. Possible values are `Allow` or `Deny`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestriction.property.description">description</a></code> | <code>str</code> | The description of the IP restriction rule. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestriction.property.headers">headers</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeaders">WindowsWebAppSlotSiteConfigIpRestrictionHeaders</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#headers WindowsWebAppSlot#headers}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestriction.property.headers">headers</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeaders">WindowsWebAppSlotSiteConfigIpRestrictionHeaders</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#headers WindowsWebAppSlot#headers}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestriction.property.ipAddress">ip_address</a></code> | <code>str</code> | The CIDR notation of the IP or IP Range to match. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestriction.property.name">name</a></code> | <code>str</code> | The name which should be used for this `ip_restriction`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestriction.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | The priority value of this `ip_restriction`. |
@@ -7623,7 +7623,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 headers: IResolvable | typing.List[WindowsWebAppSlotSiteConfigIpRestrictionHeaders]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeaders">WindowsWebAppSlotSiteConfigIpRestrictionHeaders</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeaders">WindowsWebAppSlotSiteConfigIpRestrictionHeaders</a>]
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#headers WindowsWebAppSlot#headers}.
 
@@ -7800,7 +7800,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestriction(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestriction.property.action">action</a></code> | <code>str</code> | The action to take. Possible values are `Allow` or `Deny`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestriction.property.description">description</a></code> | <code>str</code> | The description of the IP restriction rule. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestriction.property.headers">headers</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders">WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#headers WindowsWebAppSlot#headers}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestriction.property.headers">headers</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders">WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#headers WindowsWebAppSlot#headers}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestriction.property.ipAddress">ip_address</a></code> | <code>str</code> | The CIDR notation of the IP or IP Range to match. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestriction.property.name">name</a></code> | <code>str</code> | The name which should be used for this `ip_restriction`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestriction.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | The priority value of this `ip_restriction`. |
@@ -7843,7 +7843,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 headers: IResolvable | typing.List[WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders">WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders">WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders</a>]
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#headers WindowsWebAppSlot#headers}.
 
@@ -8015,9 +8015,9 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplication(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplication.property.physicalPath">physical_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#physical_path WindowsWebAppSlot#physical_path}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplication.property.preload">preload</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#preload WindowsWebAppSlot#preload}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplication.property.preload">preload</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#preload WindowsWebAppSlot#preload}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplication.property.virtualPath">virtual_path</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#virtual_path WindowsWebAppSlot#virtual_path}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplication.property.virtualDirectory">virtual_directory</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory">WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory</a>]</code> | virtual_directory block. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplication.property.virtualDirectory">virtual_directory</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory">WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory</a>]</code> | virtual_directory block. |
 
 ---
 
@@ -8039,7 +8039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 preload: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#preload WindowsWebAppSlot#preload}.
 
@@ -8063,7 +8063,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 virtual_directory: IResolvable | typing.List[WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory">WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory">WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory</a>]
 
 virtual_directory block.
 
@@ -8321,14 +8321,14 @@ windowsWebAppSlot.WindowsWebAppSlotAuthSettingsActiveDirectoryOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsActiveDirectoryOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsActiveDirectoryOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsActiveDirectoryOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsActiveDirectoryOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8523,7 +8523,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsActiveDirectoryOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8704,14 +8704,14 @@ windowsWebAppSlot.WindowsWebAppSlotAuthSettingsFacebookOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsFacebookOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsFacebookOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsFacebookOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsFacebookOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8906,7 +8906,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsFacebookOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9087,14 +9087,14 @@ windowsWebAppSlot.WindowsWebAppSlotAuthSettingsGithubOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsGithubOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsGithubOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsGithubOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsGithubOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9289,7 +9289,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsGithubOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9470,14 +9470,14 @@ windowsWebAppSlot.WindowsWebAppSlotAuthSettingsGoogleOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsGoogleOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsGoogleOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsGoogleOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsGoogleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9672,7 +9672,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsGoogleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9853,14 +9853,14 @@ windowsWebAppSlot.WindowsWebAppSlotAuthSettingsMicrosoftOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsMicrosoftOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsMicrosoftOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsMicrosoftOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsMicrosoftOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10055,7 +10055,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsMicrosoftOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10236,14 +10236,14 @@ windowsWebAppSlot.WindowsWebAppSlotAuthSettingsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10455,7 +10455,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10865,7 +10865,7 @@ def reset_unauthenticated_client_action() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsOutputReference.property.additionalLoginParametersInput">additional_login_parameters_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsOutputReference.property.allowedExternalRedirectUrlsInput">allowed_external_redirect_urls_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsOutputReference.property.defaultProviderInput">default_provider_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsOutputReference.property.facebookInput">facebook_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsFacebook">WindowsWebAppSlotAuthSettingsFacebook</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsOutputReference.property.githubInput">github_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsGithub">WindowsWebAppSlotAuthSettingsGithub</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsOutputReference.property.googleInput">google_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsGoogle">WindowsWebAppSlotAuthSettingsGoogle</a></code> | *No description.* |
@@ -10873,17 +10873,17 @@ def reset_unauthenticated_client_action() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsOutputReference.property.microsoftInput">microsoft_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsMicrosoft">WindowsWebAppSlotAuthSettingsMicrosoft</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsOutputReference.property.runtimeVersionInput">runtime_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsOutputReference.property.tokenRefreshExtensionHoursInput">token_refresh_extension_hours_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsOutputReference.property.tokenStoreEnabledInput">token_store_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsOutputReference.property.tokenStoreEnabledInput">token_store_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsOutputReference.property.twitterInput">twitter_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsTwitter">WindowsWebAppSlotAuthSettingsTwitter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsOutputReference.property.unauthenticatedClientActionInput">unauthenticated_client_action_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsOutputReference.property.additionalLoginParameters">additional_login_parameters</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsOutputReference.property.allowedExternalRedirectUrls">allowed_external_redirect_urls</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsOutputReference.property.defaultProvider">default_provider</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsOutputReference.property.issuer">issuer</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsOutputReference.property.runtimeVersion">runtime_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsOutputReference.property.tokenRefreshExtensionHours">token_refresh_extension_hours</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsOutputReference.property.tokenStoreEnabled">token_store_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsOutputReference.property.tokenStoreEnabled">token_store_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsOutputReference.property.unauthenticatedClientAction">unauthenticated_client_action</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettings">WindowsWebAppSlotAuthSettings</a></code> | *No description.* |
 
@@ -11019,7 +11019,7 @@ default_provider_input: str
 enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -11099,7 +11099,7 @@ token_refresh_extension_hours_input: typing.Union[int, float]
 token_store_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -11159,7 +11159,7 @@ default_provider: str
 enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -11199,7 +11199,7 @@ token_refresh_extension_hours: typing.Union[int, float]
 token_store_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -11239,14 +11239,14 @@ windowsWebAppSlot.WindowsWebAppSlotAuthSettingsTwitterOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsTwitterOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsTwitterOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsTwitterOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsTwitterOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11440,7 +11440,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsTwitterOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11593,14 +11593,14 @@ windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2ActiveDirectoryV2OutputReferenc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11802,7 +11802,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11894,7 +11894,7 @@ def reset_www_authentication_disabled() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.property.jwtAllowedGroupsInput">jwt_allowed_groups_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.property.loginParametersInput">login_parameters_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.property.tenantAuthEndpointInput">tenant_auth_endpoint_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.property.wwwAuthenticationDisabledInput">www_authentication_disabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.property.wwwAuthenticationDisabledInput">www_authentication_disabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.property.allowedApplications">allowed_applications</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.property.allowedAudiences">allowed_audiences</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.property.allowedGroups">allowed_groups</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -11906,7 +11906,7 @@ def reset_www_authentication_disabled() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.property.jwtAllowedGroups">jwt_allowed_groups</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.property.loginParameters">login_parameters</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.property.tenantAuthEndpoint">tenant_auth_endpoint</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.property.wwwAuthenticationDisabled">www_authentication_disabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.property.wwwAuthenticationDisabled">www_authentication_disabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2ActiveDirectoryV2">WindowsWebAppSlotAuthSettingsV2ActiveDirectoryV2</a></code> | *No description.* |
 
 ---
@@ -12051,7 +12051,7 @@ tenant_auth_endpoint_input: str
 www_authentication_disabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -12171,7 +12171,7 @@ tenant_auth_endpoint: str
 www_authentication_disabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -12201,14 +12201,14 @@ windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2AppleV2OutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2AppleV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2AppleV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2AppleV2OutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2AppleV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12400,7 +12400,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2AppleV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12530,14 +12530,14 @@ windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2AzureStaticWebAppV2OutputRefere
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2AzureStaticWebAppV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2AzureStaticWebAppV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2AzureStaticWebAppV2OutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2AzureStaticWebAppV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12729,7 +12729,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2AzureStaticWebAppV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12827,7 +12827,7 @@ windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2List(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2List.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2List.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2List.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2List.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -12835,7 +12835,7 @@ windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2List(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2List.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12905,7 +12905,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2List.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12942,7 +12942,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2List.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2List.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2List.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2">WindowsWebAppSlotAuthSettingsV2CustomOidcV2</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2List.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2">WindowsWebAppSlotAuthSettingsV2CustomOidcV2</a>]</code> | *No description.* |
 
 ---
 
@@ -12976,7 +12976,7 @@ fqn: str
 internal_value: IResolvable | typing.List[WindowsWebAppSlotAuthSettingsV2CustomOidcV2]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2">WindowsWebAppSlotAuthSettingsV2CustomOidcV2</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2">WindowsWebAppSlotAuthSettingsV2CustomOidcV2</a>]
 
 ---
 
@@ -12998,7 +12998,7 @@ windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2OutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2OutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2OutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2OutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -13007,7 +13007,7 @@ windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2OutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13217,7 +13217,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13266,7 +13266,7 @@ def reset_scopes() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2OutputReference.property.nameClaimType">name_claim_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2OutputReference.property.openidConfigurationEndpoint">openid_configuration_endpoint</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2OutputReference.property.scopes">scopes</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2OutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2">WindowsWebAppSlotAuthSettingsV2CustomOidcV2</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2OutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2">WindowsWebAppSlotAuthSettingsV2CustomOidcV2</a></code> | *No description.* |
 
 ---
 
@@ -13460,7 +13460,7 @@ scopes: typing.List[str]
 internal_value: IResolvable | WindowsWebAppSlotAuthSettingsV2CustomOidcV2
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2">WindowsWebAppSlotAuthSettingsV2CustomOidcV2</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2">WindowsWebAppSlotAuthSettingsV2CustomOidcV2</a>
 
 ---
 
@@ -13480,14 +13480,14 @@ windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2FacebookV2OutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2FacebookV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2FacebookV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2FacebookV2OutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2FacebookV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13681,7 +13681,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2FacebookV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13856,14 +13856,14 @@ windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2GithubV2OutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2GithubV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2GithubV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2GithubV2OutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2GithubV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14056,7 +14056,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2GithubV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14203,14 +14203,14 @@ windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2GoogleV2OutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2GoogleV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2GoogleV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2GoogleV2OutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2GoogleV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14404,7 +14404,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2GoogleV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14579,14 +14579,14 @@ windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2LoginOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2LoginOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2LoginOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2LoginOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2LoginOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14789,7 +14789,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2LoginOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14881,23 +14881,23 @@ def reset_validate_nonce() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2LoginOutputReference.property.cookieExpirationTimeInput">cookie_expiration_time_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2LoginOutputReference.property.logoutEndpointInput">logout_endpoint_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2LoginOutputReference.property.nonceExpirationTimeInput">nonce_expiration_time_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2LoginOutputReference.property.preserveUrlFragmentsForLoginsInput">preserve_url_fragments_for_logins_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2LoginOutputReference.property.preserveUrlFragmentsForLoginsInput">preserve_url_fragments_for_logins_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2LoginOutputReference.property.tokenRefreshExtensionTimeInput">token_refresh_extension_time_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2LoginOutputReference.property.tokenStoreEnabledInput">token_store_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2LoginOutputReference.property.tokenStoreEnabledInput">token_store_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2LoginOutputReference.property.tokenStorePathInput">token_store_path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2LoginOutputReference.property.tokenStoreSasSettingNameInput">token_store_sas_setting_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2LoginOutputReference.property.validateNonceInput">validate_nonce_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2LoginOutputReference.property.validateNonceInput">validate_nonce_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2LoginOutputReference.property.allowedExternalRedirectUrls">allowed_external_redirect_urls</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2LoginOutputReference.property.cookieExpirationConvention">cookie_expiration_convention</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2LoginOutputReference.property.cookieExpirationTime">cookie_expiration_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2LoginOutputReference.property.logoutEndpoint">logout_endpoint</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2LoginOutputReference.property.nonceExpirationTime">nonce_expiration_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2LoginOutputReference.property.preserveUrlFragmentsForLogins">preserve_url_fragments_for_logins</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2LoginOutputReference.property.preserveUrlFragmentsForLogins">preserve_url_fragments_for_logins</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2LoginOutputReference.property.tokenRefreshExtensionTime">token_refresh_extension_time</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2LoginOutputReference.property.tokenStoreEnabled">token_store_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2LoginOutputReference.property.tokenStoreEnabled">token_store_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2LoginOutputReference.property.tokenStorePath">token_store_path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2LoginOutputReference.property.tokenStoreSasSettingName">token_store_sas_setting_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2LoginOutputReference.property.validateNonce">validate_nonce</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2LoginOutputReference.property.validateNonce">validate_nonce</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2LoginOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2Login">WindowsWebAppSlotAuthSettingsV2Login</a></code> | *No description.* |
 
 ---
@@ -14982,7 +14982,7 @@ nonce_expiration_time_input: str
 preserve_url_fragments_for_logins_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -15002,7 +15002,7 @@ token_refresh_extension_time_input: typing.Union[int, float]
 token_store_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -15032,7 +15032,7 @@ token_store_sas_setting_name_input: str
 validate_nonce_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -15092,7 +15092,7 @@ nonce_expiration_time: str
 preserve_url_fragments_for_logins: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -15112,7 +15112,7 @@ token_refresh_extension_time: typing.Union[int, float]
 token_store_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -15142,7 +15142,7 @@ token_store_sas_setting_name: str
 validate_nonce: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -15172,14 +15172,14 @@ windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2MicrosoftV2OutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2MicrosoftV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2MicrosoftV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2MicrosoftV2OutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2MicrosoftV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15373,7 +15373,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2MicrosoftV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15548,14 +15548,14 @@ windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15778,7 +15778,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15923,7 +15923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `www_authentication_disabled`<sup>Optional</sup> <a name="www_authentication_disabled" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.putActiveDirectoryV2.parameter.wwwAuthenticationDisabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the www-authenticate provider should be omitted from the request? Defaults to `false`.
 
@@ -15988,7 +15988,7 @@ def put_custom_oidc_v2(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.putCustomOidcV2.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2">WindowsWebAppSlotAuthSettingsV2CustomOidcV2</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2">WindowsWebAppSlotAuthSettingsV2CustomOidcV2</a>]
 
 ---
 
@@ -16206,7 +16206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `preserve_url_fragments_for_logins`<sup>Optional</sup> <a name="preserve_url_fragments_for_logins" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.putLogin.parameter.preserveUrlFragmentsForLogins"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the fragments from the request be preserved after the login request is made. Defaults to `false`.
 
@@ -16228,7 +16228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `token_store_enabled`<sup>Optional</sup> <a name="token_store_enabled" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.putLogin.parameter.tokenStoreEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the Token Store configuration Enabled. Defaults to `false`.
 
@@ -16258,7 +16258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `validate_nonce`<sup>Optional</sup> <a name="validate_nonce" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.putLogin.parameter.validateNonce"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the nonce be validated while completing the login flow. Defaults to `true`.
 
@@ -16491,10 +16491,10 @@ def reset_unauthenticated_action() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.property.twitterV2">twitter_v2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2TwitterV2OutputReference">WindowsWebAppSlotAuthSettingsV2TwitterV2OutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.property.activeDirectoryV2Input">active_directory_v2_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2ActiveDirectoryV2">WindowsWebAppSlotAuthSettingsV2ActiveDirectoryV2</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.property.appleV2Input">apple_v2_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2AppleV2">WindowsWebAppSlotAuthSettingsV2AppleV2</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.property.authEnabledInput">auth_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.property.authEnabledInput">auth_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.property.azureStaticWebAppV2Input">azure_static_web_app_v2_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2AzureStaticWebAppV2">WindowsWebAppSlotAuthSettingsV2AzureStaticWebAppV2</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.property.configFilePathInput">config_file_path_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.property.customOidcV2Input">custom_oidc_v2_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2">WindowsWebAppSlotAuthSettingsV2CustomOidcV2</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.property.customOidcV2Input">custom_oidc_v2_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2">WindowsWebAppSlotAuthSettingsV2CustomOidcV2</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.property.defaultProviderInput">default_provider_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.property.excludedPathsInput">excluded_paths_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.property.facebookV2Input">facebook_v2_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2FacebookV2">WindowsWebAppSlotAuthSettingsV2FacebookV2</a></code> | *No description.* |
@@ -16506,12 +16506,12 @@ def reset_unauthenticated_action() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.property.httpRouteApiPrefixInput">http_route_api_prefix_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.property.loginInput">login_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2Login">WindowsWebAppSlotAuthSettingsV2Login</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.property.microsoftV2Input">microsoft_v2_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2MicrosoftV2">WindowsWebAppSlotAuthSettingsV2MicrosoftV2</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.property.requireAuthenticationInput">require_authentication_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.property.requireHttpsInput">require_https_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.property.requireAuthenticationInput">require_authentication_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.property.requireHttpsInput">require_https_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.property.runtimeVersionInput">runtime_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.property.twitterV2Input">twitter_v2_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2TwitterV2">WindowsWebAppSlotAuthSettingsV2TwitterV2</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.property.unauthenticatedActionInput">unauthenticated_action_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.property.authEnabled">auth_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.property.authEnabled">auth_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.property.configFilePath">config_file_path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.property.defaultProvider">default_provider</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.property.excludedPaths">excluded_paths</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -16519,8 +16519,8 @@ def reset_unauthenticated_action() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.property.forwardProxyCustomHostHeaderName">forward_proxy_custom_host_header_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.property.forwardProxyCustomSchemeHeaderName">forward_proxy_custom_scheme_header_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.property.httpRouteApiPrefix">http_route_api_prefix</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.property.requireAuthentication">require_authentication</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.property.requireHttps">require_https</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.property.requireAuthentication">require_authentication</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.property.requireHttps">require_https</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.property.runtimeVersion">runtime_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.property.unauthenticatedAction">unauthenticated_action</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2OutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2">WindowsWebAppSlotAuthSettingsV2</a></code> | *No description.* |
@@ -16677,7 +16677,7 @@ apple_v2_input: WindowsWebAppSlotAuthSettingsV2AppleV2
 auth_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -16707,7 +16707,7 @@ config_file_path_input: str
 custom_oidc_v2_input: IResolvable | typing.List[WindowsWebAppSlotAuthSettingsV2CustomOidcV2]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2">WindowsWebAppSlotAuthSettingsV2CustomOidcV2</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2CustomOidcV2">WindowsWebAppSlotAuthSettingsV2CustomOidcV2</a>]
 
 ---
 
@@ -16827,7 +16827,7 @@ microsoft_v2_input: WindowsWebAppSlotAuthSettingsV2MicrosoftV2
 require_authentication_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -16837,7 +16837,7 @@ require_authentication_input: bool | IResolvable
 require_https_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -16877,7 +16877,7 @@ unauthenticated_action_input: str
 auth_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -16957,7 +16957,7 @@ http_route_api_prefix: str
 require_authentication: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -16967,7 +16967,7 @@ require_authentication: bool | IResolvable
 require_https: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17017,14 +17017,14 @@ windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2TwitterV2OutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2TwitterV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2TwitterV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2TwitterV2OutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2TwitterV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17216,7 +17216,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotAuthSettingsV2TwitterV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17335,14 +17335,14 @@ windowsWebAppSlot.WindowsWebAppSlotBackupOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17536,7 +17536,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17584,7 +17584,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `keep_at_least_one_backup`<sup>Optional</sup> <a name="keep_at_least_one_backup" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupOutputReference.putSchedule.parameter.keepAtLeastOneBackup"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the service keep at least one backup, regardless of age of backup. Defaults to `false`.
 
@@ -17626,11 +17626,11 @@ def reset_enabled() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupOutputReference.property.schedule">schedule</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupScheduleOutputReference">WindowsWebAppSlotBackupScheduleOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupOutputReference.property.scheduleInput">schedule_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupSchedule">WindowsWebAppSlotBackupSchedule</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupOutputReference.property.storageAccountUrlInput">storage_account_url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupOutputReference.property.storageAccountUrl">storage_account_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackup">WindowsWebAppSlotBackup</a></code> | *No description.* |
@@ -17677,7 +17677,7 @@ schedule: WindowsWebAppSlotBackupScheduleOutputReference
 enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17717,7 +17717,7 @@ storage_account_url_input: str
 enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17767,14 +17767,14 @@ windowsWebAppSlot.WindowsWebAppSlotBackupScheduleOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupScheduleOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupScheduleOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupScheduleOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupScheduleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17969,7 +17969,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupScheduleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18011,12 +18011,12 @@ def reset_start_time() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupScheduleOutputReference.property.lastExecutionTime">last_execution_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupScheduleOutputReference.property.frequencyIntervalInput">frequency_interval_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupScheduleOutputReference.property.frequencyUnitInput">frequency_unit_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupScheduleOutputReference.property.keepAtLeastOneBackupInput">keep_at_least_one_backup_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupScheduleOutputReference.property.keepAtLeastOneBackupInput">keep_at_least_one_backup_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupScheduleOutputReference.property.retentionPeriodDaysInput">retention_period_days_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupScheduleOutputReference.property.startTimeInput">start_time_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupScheduleOutputReference.property.frequencyInterval">frequency_interval</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupScheduleOutputReference.property.frequencyUnit">frequency_unit</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupScheduleOutputReference.property.keepAtLeastOneBackup">keep_at_least_one_backup</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupScheduleOutputReference.property.keepAtLeastOneBackup">keep_at_least_one_backup</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupScheduleOutputReference.property.retentionPeriodDays">retention_period_days</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupScheduleOutputReference.property.startTime">start_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupScheduleOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotBackupSchedule">WindowsWebAppSlotBackupSchedule</a></code> | *No description.* |
@@ -18083,7 +18083,7 @@ frequency_unit_input: str
 keep_at_least_one_backup_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -18133,7 +18133,7 @@ frequency_unit: str
 keep_at_least_one_backup: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -18184,7 +18184,7 @@ windowsWebAppSlot.WindowsWebAppSlotConnectionStringList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionStringList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionStringList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionStringList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionStringList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -18192,7 +18192,7 @@ windowsWebAppSlot.WindowsWebAppSlotConnectionStringList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionStringList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18262,7 +18262,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionStringList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18299,7 +18299,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionStringList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionStringList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionStringList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionString">WindowsWebAppSlotConnectionString</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionStringList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionString">WindowsWebAppSlotConnectionString</a>]</code> | *No description.* |
 
 ---
 
@@ -18333,7 +18333,7 @@ fqn: str
 internal_value: IResolvable | typing.List[WindowsWebAppSlotConnectionString]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionString">WindowsWebAppSlotConnectionString</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionString">WindowsWebAppSlotConnectionString</a>]
 
 ---
 
@@ -18355,7 +18355,7 @@ windowsWebAppSlot.WindowsWebAppSlotConnectionStringOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionStringOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionStringOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionStringOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionStringOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionStringOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -18364,7 +18364,7 @@ windowsWebAppSlot.WindowsWebAppSlotConnectionStringOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionStringOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18572,7 +18572,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionStringOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18599,7 +18599,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionStringOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionStringOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionStringOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionStringOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionString">WindowsWebAppSlotConnectionString</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionStringOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionString">WindowsWebAppSlotConnectionString</a></code> | *No description.* |
 
 ---
 
@@ -18693,7 +18693,7 @@ value: str
 internal_value: IResolvable | WindowsWebAppSlotConnectionString
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionString">WindowsWebAppSlotConnectionString</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotConnectionString">WindowsWebAppSlotConnectionString</a>
 
 ---
 
@@ -18713,14 +18713,14 @@ windowsWebAppSlot.WindowsWebAppSlotIdentityOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotIdentityOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotIdentityOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotIdentityOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotIdentityOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18913,7 +18913,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotIdentityOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19060,14 +19060,14 @@ windowsWebAppSlot.WindowsWebAppSlotLogsApplicationLogsAzureBlobStorageOutputRefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsApplicationLogsAzureBlobStorageOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsApplicationLogsAzureBlobStorageOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsApplicationLogsAzureBlobStorageOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsApplicationLogsAzureBlobStorageOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19259,7 +19259,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsApplicationLogsAzureBlobStorageOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19400,14 +19400,14 @@ windowsWebAppSlot.WindowsWebAppSlotLogsApplicationLogsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsApplicationLogsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsApplicationLogsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsApplicationLogsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsApplicationLogsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19601,7 +19601,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsApplicationLogsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19760,14 +19760,14 @@ windowsWebAppSlot.WindowsWebAppSlotLogsHttpLogsAzureBlobStorageOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsHttpLogsAzureBlobStorageOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsHttpLogsAzureBlobStorageOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsHttpLogsAzureBlobStorageOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsHttpLogsAzureBlobStorageOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19960,7 +19960,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsHttpLogsAzureBlobStorageOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20085,14 +20085,14 @@ windowsWebAppSlot.WindowsWebAppSlotLogsHttpLogsFileSystemOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsHttpLogsFileSystemOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsHttpLogsFileSystemOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsHttpLogsFileSystemOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsHttpLogsFileSystemOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20284,7 +20284,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsHttpLogsFileSystemOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20403,14 +20403,14 @@ windowsWebAppSlot.WindowsWebAppSlotLogsHttpLogsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsHttpLogsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsHttpLogsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsHttpLogsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsHttpLogsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20606,7 +20606,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsHttpLogsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20787,14 +20787,14 @@ windowsWebAppSlot.WindowsWebAppSlotLogsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20992,7 +20992,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21096,11 +21096,11 @@ def reset_http_logs() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsOutputReference.property.applicationLogs">application_logs</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsApplicationLogsOutputReference">WindowsWebAppSlotLogsApplicationLogsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsOutputReference.property.httpLogs">http_logs</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsHttpLogsOutputReference">WindowsWebAppSlotLogsHttpLogsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsOutputReference.property.applicationLogsInput">application_logs_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsApplicationLogs">WindowsWebAppSlotLogsApplicationLogs</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsOutputReference.property.detailedErrorMessagesInput">detailed_error_messages_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsOutputReference.property.failedRequestTracingInput">failed_request_tracing_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsOutputReference.property.detailedErrorMessagesInput">detailed_error_messages_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsOutputReference.property.failedRequestTracingInput">failed_request_tracing_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsOutputReference.property.httpLogsInput">http_logs_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsHttpLogs">WindowsWebAppSlotLogsHttpLogs</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsOutputReference.property.detailedErrorMessages">detailed_error_messages</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsOutputReference.property.failedRequestTracing">failed_request_tracing</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsOutputReference.property.detailedErrorMessages">detailed_error_messages</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsOutputReference.property.failedRequestTracing">failed_request_tracing</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotLogs">WindowsWebAppSlotLogs</a></code> | *No description.* |
 
 ---
@@ -21165,7 +21165,7 @@ application_logs_input: WindowsWebAppSlotLogsApplicationLogs
 detailed_error_messages_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -21175,7 +21175,7 @@ detailed_error_messages_input: bool | IResolvable
 failed_request_tracing_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -21195,7 +21195,7 @@ http_logs_input: WindowsWebAppSlotLogsHttpLogs
 detailed_error_messages: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -21205,7 +21205,7 @@ detailed_error_messages: bool | IResolvable
 failed_request_tracing: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -21235,14 +21235,14 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStackOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStackOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStackOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStackOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStackOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21449,7 +21449,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStackOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21569,11 +21569,11 @@ def reset_tomcat_version() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStackOutputReference.property.dotnetVersionInput">dotnet_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStackOutputReference.property.javaContainerInput">java_container_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStackOutputReference.property.javaContainerVersionInput">java_container_version_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStackOutputReference.property.javaEmbeddedServerEnabledInput">java_embedded_server_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStackOutputReference.property.javaEmbeddedServerEnabledInput">java_embedded_server_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStackOutputReference.property.javaVersionInput">java_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStackOutputReference.property.nodeVersionInput">node_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStackOutputReference.property.phpVersionInput">php_version_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStackOutputReference.property.pythonInput">python_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStackOutputReference.property.pythonInput">python_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStackOutputReference.property.tomcatVersionInput">tomcat_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStackOutputReference.property.currentStack">current_stack</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStackOutputReference.property.dockerImageName">docker_image_name</a></code> | <code>str</code> | *No description.* |
@@ -21584,11 +21584,11 @@ def reset_tomcat_version() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStackOutputReference.property.dotnetVersion">dotnet_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStackOutputReference.property.javaContainer">java_container</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStackOutputReference.property.javaContainerVersion">java_container_version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStackOutputReference.property.javaEmbeddedServerEnabled">java_embedded_server_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStackOutputReference.property.javaEmbeddedServerEnabled">java_embedded_server_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStackOutputReference.property.javaVersion">java_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStackOutputReference.property.nodeVersion">node_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStackOutputReference.property.phpVersion">php_version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStackOutputReference.property.python">python</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStackOutputReference.property.python">python</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStackOutputReference.property.tomcatVersion">tomcat_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStackOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStack">WindowsWebAppSlotSiteConfigApplicationStack</a></code> | *No description.* |
 
@@ -21714,7 +21714,7 @@ java_container_version_input: str
 java_embedded_server_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -21754,7 +21754,7 @@ php_version_input: str
 python_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -21864,7 +21864,7 @@ java_container_version: str
 java_embedded_server_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -21904,7 +21904,7 @@ php_version: str
 python: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -21944,14 +21944,14 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingActionCustomActionOu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingActionCustomActionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingActionCustomActionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingActionCustomActionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingActionCustomActionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22144,7 +22144,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingActionCustomActionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22269,14 +22269,14 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingActionOutputReferenc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingActionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingActionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingActionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingActionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22471,7 +22471,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingActionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22649,14 +22649,14 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22850,7 +22850,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22942,7 +22942,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `slow_request_with_path`<sup>Optional</sup> <a name="slow_request_with_path" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingOutputReference.putTrigger.parameter.slowRequestWithPath"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath</a>]
 
 slow_request_with_path block.
 
@@ -22952,7 +22952,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `status_code`<sup>Optional</sup> <a name="status_code" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingOutputReference.putTrigger.parameter.statusCode"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode</a>]
 
 status_code block.
 
@@ -23065,14 +23065,14 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23273,7 +23273,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23356,7 +23356,7 @@ def put_slow_request_with_path(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference.putSlowRequestWithPath.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath</a>]
 
 ---
 
@@ -23370,7 +23370,7 @@ def put_status_code(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference.putStatusCode.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode</a>]
 
 ---
 
@@ -23418,8 +23418,8 @@ def reset_status_code() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference.property.privateMemoryKbInput">private_memory_kb_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference.property.requestsInput">requests_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerRequests">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerRequests</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference.property.slowRequestInput">slow_request_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequest">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequest</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference.property.slowRequestWithPathInput">slow_request_with_path_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference.property.statusCodeInput">status_code_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference.property.slowRequestWithPathInput">slow_request_with_path_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference.property.statusCodeInput">status_code_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference.property.privateMemoryKb">private_memory_kb</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTrigger">WindowsWebAppSlotSiteConfigAutoHealSettingTrigger</a></code> | *No description.* |
 
@@ -23525,7 +23525,7 @@ slow_request_input: WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequest
 slow_request_with_path_input: IResolvable | typing.List[WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath</a>]
 
 ---
 
@@ -23535,7 +23535,7 @@ slow_request_with_path_input: IResolvable | typing.List[WindowsWebAppSlotSiteCon
 status_code_input: IResolvable | typing.List[WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode</a>]
 
 ---
 
@@ -23575,14 +23575,14 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerRequestsOutpu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerRequestsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerRequestsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerRequestsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerRequestsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23774,7 +23774,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerRequestsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23893,14 +23893,14 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestOu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24092,7 +24092,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24234,7 +24234,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -24242,7 +24242,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWi
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24312,7 +24312,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24349,7 +24349,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath</a>]</code> | *No description.* |
 
 ---
 
@@ -24383,7 +24383,7 @@ fqn: str
 internal_value: IResolvable | typing.List[WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath</a>]
 
 ---
 
@@ -24405,7 +24405,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -24414,7 +24414,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWi
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24623,7 +24623,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24658,7 +24658,7 @@ def reset_path() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathOutputReference.property.interval">interval</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathOutputReference.property.path">path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathOutputReference.property.timeTaken">time_taken</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPathOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath</a></code> | *No description.* |
 
 ---
 
@@ -24772,7 +24772,7 @@ time_taken: str
 internal_value: IResolvable | WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerSlowRequestWithPath</a>
 
 ---
 
@@ -24793,7 +24793,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeLis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -24801,7 +24801,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeLis
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24871,7 +24871,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24908,7 +24908,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode</a>]</code> | *No description.* |
 
 ---
 
@@ -24942,7 +24942,7 @@ fqn: str
 internal_value: IResolvable | typing.List[WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode</a>]
 
 ---
 
@@ -24964,7 +24964,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -24973,7 +24973,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeOut
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25184,7 +25184,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25235,7 +25235,7 @@ def reset_win32_status_code() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeOutputReference.property.statusCodeRange">status_code_range</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeOutputReference.property.subStatus">sub_status</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeOutputReference.property.win32StatusCode">win32_status_code</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCodeOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode</a></code> | *No description.* |
 
 ---
 
@@ -25389,7 +25389,7 @@ win32_status_code: typing.Union[int, float]
 internal_value: IResolvable | WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode">WindowsWebAppSlotSiteConfigAutoHealSettingTriggerStatusCode</a>
 
 ---
 
@@ -25409,14 +25409,14 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigCorsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigCorsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigCorsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigCorsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigCorsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25610,7 +25610,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigCorsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25644,9 +25644,9 @@ def reset_support_credentials() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigCorsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigCorsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigCorsOutputReference.property.allowedOriginsInput">allowed_origins_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigCorsOutputReference.property.supportCredentialsInput">support_credentials_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigCorsOutputReference.property.supportCredentialsInput">support_credentials_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigCorsOutputReference.property.allowedOrigins">allowed_origins</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigCorsOutputReference.property.supportCredentials">support_credentials</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigCorsOutputReference.property.supportCredentials">support_credentials</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigCorsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigCors">WindowsWebAppSlotSiteConfigCors</a></code> | *No description.* |
 
 ---
@@ -25691,7 +25691,7 @@ allowed_origins_input: typing.List[str]
 support_credentials_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -25711,7 +25711,7 @@ allowed_origins: typing.List[str]
 support_credentials: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -25742,7 +25742,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMappingList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMappingList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMappingList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMappingList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMappingList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -25750,7 +25750,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMappingList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMappingList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25820,7 +25820,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMappingList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25857,7 +25857,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMappingList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMappingList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMappingList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMapping">WindowsWebAppSlotSiteConfigHandlerMapping</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMappingList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMapping">WindowsWebAppSlotSiteConfigHandlerMapping</a>]</code> | *No description.* |
 
 ---
 
@@ -25891,7 +25891,7 @@ fqn: str
 internal_value: IResolvable | typing.List[WindowsWebAppSlotSiteConfigHandlerMapping]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMapping">WindowsWebAppSlotSiteConfigHandlerMapping</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMapping">WindowsWebAppSlotSiteConfigHandlerMapping</a>]
 
 ---
 
@@ -25913,7 +25913,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMappingOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMappingOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMappingOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMappingOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMappingOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMappingOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -25922,7 +25922,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMappingOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMappingOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -26131,7 +26131,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMappingOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -26164,7 +26164,7 @@ def reset_arguments() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMappingOutputReference.property.arguments">arguments</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMappingOutputReference.property.extension">extension</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMappingOutputReference.property.scriptProcessorPath">script_processor_path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMappingOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMapping">WindowsWebAppSlotSiteConfigHandlerMapping</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMappingOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMapping">WindowsWebAppSlotSiteConfigHandlerMapping</a></code> | *No description.* |
 
 ---
 
@@ -26258,7 +26258,7 @@ script_processor_path: str
 internal_value: IResolvable | WindowsWebAppSlotSiteConfigHandlerMapping
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMapping">WindowsWebAppSlotSiteConfigHandlerMapping</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMapping">WindowsWebAppSlotSiteConfigHandlerMapping</a>
 
 ---
 
@@ -26279,7 +26279,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeadersList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeadersList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeadersList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeadersList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeadersList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -26287,7 +26287,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeadersList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeadersList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -26357,7 +26357,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeadersList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -26394,7 +26394,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeadersList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeadersList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeadersList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeaders">WindowsWebAppSlotSiteConfigIpRestrictionHeaders</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeadersList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeaders">WindowsWebAppSlotSiteConfigIpRestrictionHeaders</a>]</code> | *No description.* |
 
 ---
 
@@ -26428,7 +26428,7 @@ fqn: str
 internal_value: IResolvable | typing.List[WindowsWebAppSlotSiteConfigIpRestrictionHeaders]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeaders">WindowsWebAppSlotSiteConfigIpRestrictionHeaders</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeaders">WindowsWebAppSlotSiteConfigIpRestrictionHeaders</a>]
 
 ---
 
@@ -26450,7 +26450,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeadersOutputReference
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeadersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeadersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeadersOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeadersOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeadersOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -26459,7 +26459,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeadersOutputReference
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeadersOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -26671,7 +26671,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeadersOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -26724,7 +26724,7 @@ def reset_x_forwarded_host() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeadersOutputReference.property.xFdHealthProbe">x_fd_health_probe</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeadersOutputReference.property.xForwardedFor">x_forwarded_for</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeadersOutputReference.property.xForwardedHost">x_forwarded_host</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeadersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeaders">WindowsWebAppSlotSiteConfigIpRestrictionHeaders</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeadersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeaders">WindowsWebAppSlotSiteConfigIpRestrictionHeaders</a></code> | *No description.* |
 
 ---
 
@@ -26838,7 +26838,7 @@ x_forwarded_host: typing.List[str]
 internal_value: IResolvable | WindowsWebAppSlotSiteConfigIpRestrictionHeaders
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeaders">WindowsWebAppSlotSiteConfigIpRestrictionHeaders</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeaders">WindowsWebAppSlotSiteConfigIpRestrictionHeaders</a>
 
 ---
 
@@ -26859,7 +26859,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -26867,7 +26867,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -26937,7 +26937,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -26974,7 +26974,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestriction">WindowsWebAppSlotSiteConfigIpRestriction</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestriction">WindowsWebAppSlotSiteConfigIpRestriction</a>]</code> | *No description.* |
 
 ---
 
@@ -27008,7 +27008,7 @@ fqn: str
 internal_value: IResolvable | typing.List[WindowsWebAppSlotSiteConfigIpRestriction]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestriction">WindowsWebAppSlotSiteConfigIpRestriction</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestriction">WindowsWebAppSlotSiteConfigIpRestriction</a>]
 
 ---
 
@@ -27030,7 +27030,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -27039,7 +27039,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -27256,7 +27256,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -27280,7 +27280,7 @@ def put_headers(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionOutputReference.putHeaders.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeaders">WindowsWebAppSlotSiteConfigIpRestrictionHeaders</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeaders">WindowsWebAppSlotSiteConfigIpRestrictionHeaders</a>]
 
 ---
 
@@ -27342,7 +27342,7 @@ def reset_virtual_network_subnet_id() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionOutputReference.property.headers">headers</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeadersList">WindowsWebAppSlotSiteConfigIpRestrictionHeadersList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionOutputReference.property.actionInput">action_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionOutputReference.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionOutputReference.property.headersInput">headers_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeaders">WindowsWebAppSlotSiteConfigIpRestrictionHeaders</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionOutputReference.property.headersInput">headers_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeaders">WindowsWebAppSlotSiteConfigIpRestrictionHeaders</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionOutputReference.property.ipAddressInput">ip_address_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionOutputReference.property.priorityInput">priority_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -27355,7 +27355,7 @@ def reset_virtual_network_subnet_id() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionOutputReference.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionOutputReference.property.serviceTag">service_tag</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionOutputReference.property.virtualNetworkSubnetId">virtual_network_subnet_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestriction">WindowsWebAppSlotSiteConfigIpRestriction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestriction">WindowsWebAppSlotSiteConfigIpRestriction</a></code> | *No description.* |
 
 ---
 
@@ -27419,7 +27419,7 @@ description_input: str
 headers_input: IResolvable | typing.List[WindowsWebAppSlotSiteConfigIpRestrictionHeaders]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeaders">WindowsWebAppSlotSiteConfigIpRestrictionHeaders</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionHeaders">WindowsWebAppSlotSiteConfigIpRestrictionHeaders</a>]
 
 ---
 
@@ -27549,7 +27549,7 @@ virtual_network_subnet_id: str
 internal_value: IResolvable | WindowsWebAppSlotSiteConfigIpRestriction
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestriction">WindowsWebAppSlotSiteConfigIpRestriction</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestriction">WindowsWebAppSlotSiteConfigIpRestriction</a>
 
 ---
 
@@ -27569,14 +27569,14 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -27808,7 +27808,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -27920,7 +27920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `java_embedded_server_enabled`<sup>Optional</sup> <a name="java_embedded_server_enabled" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.putApplicationStack.parameter.javaEmbeddedServerEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the application use the embedded web server for the version of Java in use.
 
@@ -27954,7 +27954,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `python`<sup>Optional</sup> <a name="python" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.putApplicationStack.parameter.python"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_web_app_slot#python WindowsWebAppSlot#python}.
 
@@ -28018,7 +28018,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `support_credentials`<sup>Optional</sup> <a name="support_credentials" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.putCors.parameter.supportCredentials"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Are credentials allowed in CORS requests? Defaults to `false`.
 
@@ -28036,7 +28036,7 @@ def put_handler_mapping(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.putHandlerMapping.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMapping">WindowsWebAppSlotSiteConfigHandlerMapping</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMapping">WindowsWebAppSlotSiteConfigHandlerMapping</a>]
 
 ---
 
@@ -28050,7 +28050,7 @@ def put_ip_restriction(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.putIpRestriction.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestriction">WindowsWebAppSlotSiteConfigIpRestriction</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestriction">WindowsWebAppSlotSiteConfigIpRestriction</a>]
 
 ---
 
@@ -28064,7 +28064,7 @@ def put_scm_ip_restriction(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.putScmIpRestriction.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestriction">WindowsWebAppSlotSiteConfigScmIpRestriction</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestriction">WindowsWebAppSlotSiteConfigScmIpRestriction</a>]
 
 ---
 
@@ -28078,7 +28078,7 @@ def put_virtual_application(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.putVirtualApplication.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplication">WindowsWebAppSlotSiteConfigVirtualApplication</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplication">WindowsWebAppSlotSiteConfigVirtualApplication</a>]
 
 ---
 
@@ -28290,14 +28290,14 @@ def reset_worker_count() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.applicationStack">application_stack</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigApplicationStackOutputReference">WindowsWebAppSlotSiteConfigApplicationStackOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.autoHealSetting">auto_heal_setting</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSettingOutputReference">WindowsWebAppSlotSiteConfigAutoHealSettingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.cors">cors</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigCorsOutputReference">WindowsWebAppSlotSiteConfigCorsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.detailedErrorLoggingEnabled">detailed_error_logging_enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.detailedErrorLoggingEnabled">detailed_error_logging_enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.handlerMapping">handler_mapping</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMappingList">WindowsWebAppSlotSiteConfigHandlerMappingList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.ipRestriction">ip_restriction</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestrictionList">WindowsWebAppSlotSiteConfigIpRestrictionList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.scmIpRestriction">scm_ip_restriction</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionList">WindowsWebAppSlotSiteConfigScmIpRestrictionList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.scmType">scm_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.virtualApplication">virtual_application</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationList">WindowsWebAppSlotSiteConfigVirtualApplicationList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.windowsFxVersion">windows_fx_version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.alwaysOnInput">always_on_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.alwaysOnInput">always_on_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.apiDefinitionUrlInput">api_definition_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.apiManagementApiIdInput">api_management_api_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.appCommandLineInput">app_command_line_input</a></code> | <code>str</code> | *No description.* |
@@ -28305,56 +28305,56 @@ def reset_worker_count() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.autoHealSettingInput">auto_heal_setting_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigAutoHealSetting">WindowsWebAppSlotSiteConfigAutoHealSetting</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.autoSwapSlotNameInput">auto_swap_slot_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.containerRegistryManagedIdentityClientIdInput">container_registry_managed_identity_client_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.containerRegistryUseManagedIdentityInput">container_registry_use_managed_identity_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.containerRegistryUseManagedIdentityInput">container_registry_use_managed_identity_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.corsInput">cors_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigCors">WindowsWebAppSlotSiteConfigCors</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.defaultDocumentsInput">default_documents_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.ftpsStateInput">ftps_state_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.handlerMappingInput">handler_mapping_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMapping">WindowsWebAppSlotSiteConfigHandlerMapping</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.handlerMappingInput">handler_mapping_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMapping">WindowsWebAppSlotSiteConfigHandlerMapping</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.healthCheckEvictionTimeInMinInput">health_check_eviction_time_in_min_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.healthCheckPathInput">health_check_path_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.http2EnabledInput">http2_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.http2EnabledInput">http2_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.ipRestrictionDefaultActionInput">ip_restriction_default_action_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.ipRestrictionInput">ip_restriction_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestriction">WindowsWebAppSlotSiteConfigIpRestriction</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.ipRestrictionInput">ip_restriction_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestriction">WindowsWebAppSlotSiteConfigIpRestriction</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.loadBalancingModeInput">load_balancing_mode_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.localMysqlEnabledInput">local_mysql_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.localMysqlEnabledInput">local_mysql_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.managedPipelineModeInput">managed_pipeline_mode_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.minimumTlsVersionInput">minimum_tls_version_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.remoteDebuggingEnabledInput">remote_debugging_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.remoteDebuggingEnabledInput">remote_debugging_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.remoteDebuggingVersionInput">remote_debugging_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.scmIpRestrictionDefaultActionInput">scm_ip_restriction_default_action_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.scmIpRestrictionInput">scm_ip_restriction_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestriction">WindowsWebAppSlotSiteConfigScmIpRestriction</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.scmIpRestrictionInput">scm_ip_restriction_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestriction">WindowsWebAppSlotSiteConfigScmIpRestriction</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.scmMinimumTlsVersionInput">scm_minimum_tls_version_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.scmUseMainIpRestrictionInput">scm_use_main_ip_restriction_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.use32BitWorkerInput">use32_bit_worker_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.virtualApplicationInput">virtual_application_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplication">WindowsWebAppSlotSiteConfigVirtualApplication</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.vnetRouteAllEnabledInput">vnet_route_all_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.websocketsEnabledInput">websockets_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.scmUseMainIpRestrictionInput">scm_use_main_ip_restriction_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.use32BitWorkerInput">use32_bit_worker_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.virtualApplicationInput">virtual_application_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplication">WindowsWebAppSlotSiteConfigVirtualApplication</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.vnetRouteAllEnabledInput">vnet_route_all_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.websocketsEnabledInput">websockets_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.workerCountInput">worker_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.alwaysOn">always_on</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.alwaysOn">always_on</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.apiDefinitionUrl">api_definition_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.apiManagementApiId">api_management_api_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.appCommandLine">app_command_line</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.autoSwapSlotName">auto_swap_slot_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.containerRegistryManagedIdentityClientId">container_registry_managed_identity_client_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.containerRegistryUseManagedIdentity">container_registry_use_managed_identity</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.containerRegistryUseManagedIdentity">container_registry_use_managed_identity</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.defaultDocuments">default_documents</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.ftpsState">ftps_state</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.healthCheckEvictionTimeInMin">health_check_eviction_time_in_min</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.healthCheckPath">health_check_path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.http2Enabled">http2_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.http2Enabled">http2_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.ipRestrictionDefaultAction">ip_restriction_default_action</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.loadBalancingMode">load_balancing_mode</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.localMysqlEnabled">local_mysql_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.localMysqlEnabled">local_mysql_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.managedPipelineMode">managed_pipeline_mode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.minimumTlsVersion">minimum_tls_version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.remoteDebuggingEnabled">remote_debugging_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.remoteDebuggingEnabled">remote_debugging_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.remoteDebuggingVersion">remote_debugging_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.scmIpRestrictionDefaultAction">scm_ip_restriction_default_action</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.scmMinimumTlsVersion">scm_minimum_tls_version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.scmUseMainIpRestriction">scm_use_main_ip_restriction</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.use32BitWorker">use32_bit_worker</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.vnetRouteAllEnabled">vnet_route_all_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.websocketsEnabled">websockets_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.scmUseMainIpRestriction">scm_use_main_ip_restriction</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.use32BitWorker">use32_bit_worker</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.vnetRouteAllEnabled">vnet_route_all_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.websocketsEnabled">websockets_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.workerCount">worker_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfig">WindowsWebAppSlotSiteConfig</a></code> | *No description.* |
 
@@ -28420,7 +28420,7 @@ cors: WindowsWebAppSlotSiteConfigCorsOutputReference
 detailed_error_logging_enabled: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -28490,7 +28490,7 @@ windows_fx_version: str
 always_on_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -28570,7 +28570,7 @@ container_registry_managed_identity_client_id_input: str
 container_registry_use_managed_identity_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -28610,7 +28610,7 @@ ftps_state_input: str
 handler_mapping_input: IResolvable | typing.List[WindowsWebAppSlotSiteConfigHandlerMapping]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMapping">WindowsWebAppSlotSiteConfigHandlerMapping</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigHandlerMapping">WindowsWebAppSlotSiteConfigHandlerMapping</a>]
 
 ---
 
@@ -28640,7 +28640,7 @@ health_check_path_input: str
 http2_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -28660,7 +28660,7 @@ ip_restriction_default_action_input: str
 ip_restriction_input: IResolvable | typing.List[WindowsWebAppSlotSiteConfigIpRestriction]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestriction">WindowsWebAppSlotSiteConfigIpRestriction</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigIpRestriction">WindowsWebAppSlotSiteConfigIpRestriction</a>]
 
 ---
 
@@ -28680,7 +28680,7 @@ load_balancing_mode_input: str
 local_mysql_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -28710,7 +28710,7 @@ minimum_tls_version_input: str
 remote_debugging_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -28740,7 +28740,7 @@ scm_ip_restriction_default_action_input: str
 scm_ip_restriction_input: IResolvable | typing.List[WindowsWebAppSlotSiteConfigScmIpRestriction]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestriction">WindowsWebAppSlotSiteConfigScmIpRestriction</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestriction">WindowsWebAppSlotSiteConfigScmIpRestriction</a>]
 
 ---
 
@@ -28760,7 +28760,7 @@ scm_minimum_tls_version_input: str
 scm_use_main_ip_restriction_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -28770,7 +28770,7 @@ scm_use_main_ip_restriction_input: bool | IResolvable
 use32_bit_worker_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -28780,7 +28780,7 @@ use32_bit_worker_input: bool | IResolvable
 virtual_application_input: IResolvable | typing.List[WindowsWebAppSlotSiteConfigVirtualApplication]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplication">WindowsWebAppSlotSiteConfigVirtualApplication</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplication">WindowsWebAppSlotSiteConfigVirtualApplication</a>]
 
 ---
 
@@ -28790,7 +28790,7 @@ virtual_application_input: IResolvable | typing.List[WindowsWebAppSlotSiteConfig
 vnet_route_all_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -28800,7 +28800,7 @@ vnet_route_all_enabled_input: bool | IResolvable
 websockets_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -28820,7 +28820,7 @@ worker_count_input: typing.Union[int, float]
 always_on: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -28880,7 +28880,7 @@ container_registry_managed_identity_client_id: str
 container_registry_use_managed_identity: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -28930,7 +28930,7 @@ health_check_path: str
 http2_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -28960,7 +28960,7 @@ load_balancing_mode: str
 local_mysql_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -28990,7 +28990,7 @@ minimum_tls_version: str
 remote_debugging_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -29030,7 +29030,7 @@ scm_minimum_tls_version: str
 scm_use_main_ip_restriction: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -29040,7 +29040,7 @@ scm_use_main_ip_restriction: bool | IResolvable
 use32_bit_worker: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -29050,7 +29050,7 @@ use32_bit_worker: bool | IResolvable
 vnet_route_all_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -29060,7 +29060,7 @@ vnet_route_all_enabled: bool | IResolvable
 websockets_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -29101,7 +29101,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeadersList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeadersList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeadersList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeadersList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeadersList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -29109,7 +29109,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeadersList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeadersList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -29179,7 +29179,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeadersList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -29216,7 +29216,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeadersList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeadersList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeadersList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders">WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeadersList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders">WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders</a>]</code> | *No description.* |
 
 ---
 
@@ -29250,7 +29250,7 @@ fqn: str
 internal_value: IResolvable | typing.List[WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders">WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders">WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders</a>]
 
 ---
 
@@ -29272,7 +29272,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeadersOutputRefere
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeadersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeadersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeadersOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeadersOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeadersOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -29281,7 +29281,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeadersOutputRefere
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeadersOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -29493,7 +29493,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeadersOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -29546,7 +29546,7 @@ def reset_x_forwarded_host() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeadersOutputReference.property.xFdHealthProbe">x_fd_health_probe</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeadersOutputReference.property.xForwardedFor">x_forwarded_for</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeadersOutputReference.property.xForwardedHost">x_forwarded_host</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeadersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders">WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeadersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders">WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders</a></code> | *No description.* |
 
 ---
 
@@ -29660,7 +29660,7 @@ x_forwarded_host: typing.List[str]
 internal_value: IResolvable | WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders">WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders">WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders</a>
 
 ---
 
@@ -29681,7 +29681,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -29689,7 +29689,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -29759,7 +29759,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -29796,7 +29796,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestriction">WindowsWebAppSlotSiteConfigScmIpRestriction</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestriction">WindowsWebAppSlotSiteConfigScmIpRestriction</a>]</code> | *No description.* |
 
 ---
 
@@ -29830,7 +29830,7 @@ fqn: str
 internal_value: IResolvable | typing.List[WindowsWebAppSlotSiteConfigScmIpRestriction]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestriction">WindowsWebAppSlotSiteConfigScmIpRestriction</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestriction">WindowsWebAppSlotSiteConfigScmIpRestriction</a>]
 
 ---
 
@@ -29852,7 +29852,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -29861,7 +29861,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -30078,7 +30078,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -30102,7 +30102,7 @@ def put_headers(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionOutputReference.putHeaders.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders">WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders">WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders</a>]
 
 ---
 
@@ -30164,7 +30164,7 @@ def reset_virtual_network_subnet_id() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionOutputReference.property.headers">headers</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeadersList">WindowsWebAppSlotSiteConfigScmIpRestrictionHeadersList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionOutputReference.property.actionInput">action_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionOutputReference.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionOutputReference.property.headersInput">headers_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders">WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionOutputReference.property.headersInput">headers_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders">WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionOutputReference.property.ipAddressInput">ip_address_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionOutputReference.property.priorityInput">priority_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -30177,7 +30177,7 @@ def reset_virtual_network_subnet_id() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionOutputReference.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionOutputReference.property.serviceTag">service_tag</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionOutputReference.property.virtualNetworkSubnetId">virtual_network_subnet_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestriction">WindowsWebAppSlotSiteConfigScmIpRestriction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestriction">WindowsWebAppSlotSiteConfigScmIpRestriction</a></code> | *No description.* |
 
 ---
 
@@ -30241,7 +30241,7 @@ description_input: str
 headers_input: IResolvable | typing.List[WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders">WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders">WindowsWebAppSlotSiteConfigScmIpRestrictionHeaders</a>]
 
 ---
 
@@ -30371,7 +30371,7 @@ virtual_network_subnet_id: str
 internal_value: IResolvable | WindowsWebAppSlotSiteConfigScmIpRestriction
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestriction">WindowsWebAppSlotSiteConfigScmIpRestriction</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigScmIpRestriction">WindowsWebAppSlotSiteConfigScmIpRestriction</a>
 
 ---
 
@@ -30392,7 +30392,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -30400,7 +30400,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -30470,7 +30470,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -30507,7 +30507,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplication">WindowsWebAppSlotSiteConfigVirtualApplication</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplication">WindowsWebAppSlotSiteConfigVirtualApplication</a>]</code> | *No description.* |
 
 ---
 
@@ -30541,7 +30541,7 @@ fqn: str
 internal_value: IResolvable | typing.List[WindowsWebAppSlotSiteConfigVirtualApplication]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplication">WindowsWebAppSlotSiteConfigVirtualApplication</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplication">WindowsWebAppSlotSiteConfigVirtualApplication</a>]
 
 ---
 
@@ -30563,7 +30563,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -30572,7 +30572,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -30782,7 +30782,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -30806,7 +30806,7 @@ def put_virtual_directory(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationOutputReference.putVirtualDirectory.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory">WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory">WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory</a>]
 
 ---
 
@@ -30825,13 +30825,13 @@ def reset_virtual_directory() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationOutputReference.property.virtualDirectory">virtual_directory</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectoryList">WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectoryList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationOutputReference.property.physicalPathInput">physical_path_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationOutputReference.property.preloadInput">preload_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationOutputReference.property.virtualDirectoryInput">virtual_directory_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory">WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationOutputReference.property.preloadInput">preload_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationOutputReference.property.virtualDirectoryInput">virtual_directory_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory">WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationOutputReference.property.virtualPathInput">virtual_path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationOutputReference.property.physicalPath">physical_path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationOutputReference.property.preload">preload</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationOutputReference.property.preload">preload</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationOutputReference.property.virtualPath">virtual_path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplication">WindowsWebAppSlotSiteConfigVirtualApplication</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplication">WindowsWebAppSlotSiteConfigVirtualApplication</a></code> | *No description.* |
 
 ---
 
@@ -30885,7 +30885,7 @@ physical_path_input: str
 preload_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -30895,7 +30895,7 @@ preload_input: bool | IResolvable
 virtual_directory_input: IResolvable | typing.List[WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory">WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory">WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory</a>]
 
 ---
 
@@ -30925,7 +30925,7 @@ physical_path: str
 preload: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -30945,7 +30945,7 @@ virtual_path: str
 internal_value: IResolvable | WindowsWebAppSlotSiteConfigVirtualApplication
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplication">WindowsWebAppSlotSiteConfigVirtualApplication</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplication">WindowsWebAppSlotSiteConfigVirtualApplication</a>
 
 ---
 
@@ -30966,7 +30966,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectoryL
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectoryList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectoryList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectoryList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectoryList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -30974,7 +30974,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectoryL
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectoryList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -31044,7 +31044,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectoryList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -31081,7 +31081,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectoryList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectoryList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectoryList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory">WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectoryList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory">WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory</a>]</code> | *No description.* |
 
 ---
 
@@ -31115,7 +31115,7 @@ fqn: str
 internal_value: IResolvable | typing.List[WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory">WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory">WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory</a>]
 
 ---
 
@@ -31137,7 +31137,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectoryO
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectoryOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectoryOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectoryOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectoryOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectoryOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -31146,7 +31146,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectoryO
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectoryOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -31356,7 +31356,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectoryOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -31393,7 +31393,7 @@ def reset_virtual_path() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectoryOutputReference.property.virtualPathInput">virtual_path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectoryOutputReference.property.physicalPath">physical_path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectoryOutputReference.property.virtualPath">virtual_path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectoryOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory">WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectoryOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory">WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory</a></code> | *No description.* |
 
 ---
 
@@ -31467,7 +31467,7 @@ virtual_path: str
 internal_value: IResolvable | WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory">WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory">WindowsWebAppSlotSiteConfigVirtualApplicationVirtualDirectory</a>
 
 ---
 
@@ -31488,7 +31488,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteCredentialList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteCredentialList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteCredentialList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteCredentialList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteCredentialList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -31496,7 +31496,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteCredentialList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteCredentialList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -31566,7 +31566,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteCredentialList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -31648,7 +31648,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteCredentialOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteCredentialOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteCredentialOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteCredentialOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteCredentialOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteCredentialOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -31657,7 +31657,7 @@ windowsWebAppSlot.WindowsWebAppSlotSiteCredentialOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteCredentialOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -31865,7 +31865,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotSiteCredentialOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -31963,7 +31963,7 @@ windowsWebAppSlot.WindowsWebAppSlotStorageAccountList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccountList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccountList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccountList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccountList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -31971,7 +31971,7 @@ windowsWebAppSlot.WindowsWebAppSlotStorageAccountList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccountList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -32041,7 +32041,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccountList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -32078,7 +32078,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccountList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccountList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccountList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccount">WindowsWebAppSlotStorageAccount</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccountList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccount">WindowsWebAppSlotStorageAccount</a>]</code> | *No description.* |
 
 ---
 
@@ -32112,7 +32112,7 @@ fqn: str
 internal_value: IResolvable | typing.List[WindowsWebAppSlotStorageAccount]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccount">WindowsWebAppSlotStorageAccount</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccount">WindowsWebAppSlotStorageAccount</a>]
 
 ---
 
@@ -32134,7 +32134,7 @@ windowsWebAppSlot.WindowsWebAppSlotStorageAccountOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccountOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccountOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccountOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccountOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccountOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -32143,7 +32143,7 @@ windowsWebAppSlot.WindowsWebAppSlotStorageAccountOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccountOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -32352,7 +32352,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccountOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -32391,7 +32391,7 @@ def reset_mount_path() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccountOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccountOutputReference.property.shareName">share_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccountOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccountOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccount">WindowsWebAppSlotStorageAccount</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccountOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccount">WindowsWebAppSlotStorageAccount</a></code> | *No description.* |
 
 ---
 
@@ -32545,7 +32545,7 @@ type: str
 internal_value: IResolvable | WindowsWebAppSlotStorageAccount
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccount">WindowsWebAppSlotStorageAccount</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotStorageAccount">WindowsWebAppSlotStorageAccount</a>
 
 ---
 
@@ -32565,14 +32565,14 @@ windowsWebAppSlot.WindowsWebAppSlotTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -32768,7 +32768,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -32821,7 +32821,7 @@ def reset_update() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotTimeouts">WindowsWebAppSlotTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotTimeouts">WindowsWebAppSlotTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -32935,7 +32935,7 @@ update: str
 internal_value: IResolvable | WindowsWebAppSlotTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotTimeouts">WindowsWebAppSlotTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.windowsWebAppSlot.WindowsWebAppSlotTimeouts">WindowsWebAppSlotTimeouts</a>
 
 ---
 

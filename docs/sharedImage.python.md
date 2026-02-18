@@ -58,29 +58,29 @@ sharedImage.SharedImage(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.galleryName">gallery_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#gallery_name SharedImage#gallery_name}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.identifier">identifier</a></code> | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageIdentifier">SharedImageIdentifier</a></code> | identifier block. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#location SharedImage#location}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#name SharedImage#name}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.osType">os_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#os_type SharedImage#os_type}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#resource_group_name SharedImage#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.acceleratedNetworkSupportEnabled">accelerated_network_support_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#accelerated_network_support_enabled SharedImage#accelerated_network_support_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.acceleratedNetworkSupportEnabled">accelerated_network_support_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#accelerated_network_support_enabled SharedImage#accelerated_network_support_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.architecture">architecture</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#architecture SharedImage#architecture}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.confidentialVmEnabled">confidential_vm_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#confidential_vm_enabled SharedImage#confidential_vm_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.confidentialVmSupported">confidential_vm_supported</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#confidential_vm_supported SharedImage#confidential_vm_supported}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.confidentialVmEnabled">confidential_vm_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#confidential_vm_enabled SharedImage#confidential_vm_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.confidentialVmSupported">confidential_vm_supported</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#confidential_vm_supported SharedImage#confidential_vm_supported}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#description SharedImage#description}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.diskControllerTypeNvmeEnabled">disk_controller_type_nvme_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#disk_controller_type_nvme_enabled SharedImage#disk_controller_type_nvme_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.diskControllerTypeNvmeEnabled">disk_controller_type_nvme_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#disk_controller_type_nvme_enabled SharedImage#disk_controller_type_nvme_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.diskTypesNotAllowed">disk_types_not_allowed</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#disk_types_not_allowed SharedImage#disk_types_not_allowed}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.endOfLifeDate">end_of_life_date</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#end_of_life_date SharedImage#end_of_life_date}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.eula">eula</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#eula SharedImage#eula}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.hibernationEnabled">hibernation_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#hibernation_enabled SharedImage#hibernation_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.hibernationEnabled">hibernation_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#hibernation_enabled SharedImage#hibernation_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.hyperVGeneration">hyper_v_generation</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#hyper_v_generation SharedImage#hyper_v_generation}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#id SharedImage#id}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.maxRecommendedMemoryInGb">max_recommended_memory_in_gb</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#max_recommended_memory_in_gb SharedImage#max_recommended_memory_in_gb}. |
@@ -90,11 +90,11 @@ sharedImage.SharedImage(
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.privacyStatementUri">privacy_statement_uri</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#privacy_statement_uri SharedImage#privacy_statement_uri}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.purchasePlan">purchase_plan</a></code> | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImagePurchasePlan">SharedImagePurchasePlan</a></code> | purchase_plan block. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.releaseNoteUri">release_note_uri</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#release_note_uri SharedImage#release_note_uri}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.specialized">specialized</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#specialized SharedImage#specialized}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.specialized">specialized</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#specialized SharedImage#specialized}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#tags SharedImage#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageTimeouts">SharedImageTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.trustedLaunchEnabled">trusted_launch_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#trusted_launch_enabled SharedImage#trusted_launch_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.trustedLaunchSupported">trusted_launch_supported</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#trusted_launch_supported SharedImage#trusted_launch_supported}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.trustedLaunchEnabled">trusted_launch_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#trusted_launch_enabled SharedImage#trusted_launch_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.trustedLaunchSupported">trusted_launch_supported</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#trusted_launch_supported SharedImage#trusted_launch_supported}. |
 
 ---
 
@@ -118,43 +118,43 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -210,7 +210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `accelerated_network_support_enabled`<sup>Optional</sup> <a name="accelerated_network_support_enabled" id="@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.acceleratedNetworkSupportEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#accelerated_network_support_enabled SharedImage#accelerated_network_support_enabled}.
 
@@ -226,7 +226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `confidential_vm_enabled`<sup>Optional</sup> <a name="confidential_vm_enabled" id="@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.confidentialVmEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#confidential_vm_enabled SharedImage#confidential_vm_enabled}.
 
@@ -234,7 +234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `confidential_vm_supported`<sup>Optional</sup> <a name="confidential_vm_supported" id="@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.confidentialVmSupported"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#confidential_vm_supported SharedImage#confidential_vm_supported}.
 
@@ -250,7 +250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `disk_controller_type_nvme_enabled`<sup>Optional</sup> <a name="disk_controller_type_nvme_enabled" id="@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.diskControllerTypeNvmeEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#disk_controller_type_nvme_enabled SharedImage#disk_controller_type_nvme_enabled}.
 
@@ -282,7 +282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `hibernation_enabled`<sup>Optional</sup> <a name="hibernation_enabled" id="@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.hibernationEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#hibernation_enabled SharedImage#hibernation_enabled}.
 
@@ -367,7 +367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `specialized`<sup>Optional</sup> <a name="specialized" id="@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.specialized"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#specialized SharedImage#specialized}.
 
@@ -393,7 +393,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `trusted_launch_enabled`<sup>Optional</sup> <a name="trusted_launch_enabled" id="@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.trustedLaunchEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#trusted_launch_enabled SharedImage#trusted_launch_enabled}.
 
@@ -401,7 +401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `trusted_launch_supported`<sup>Optional</sup> <a name="trusted_launch_supported" id="@cdktn/provider-azurerm.sharedImage.SharedImage.Initializer.parameter.trustedLaunchSupported"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#trusted_launch_supported SharedImage#trusted_launch_supported}.
 
@@ -706,7 +706,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.sharedImage.SharedImage.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1051,7 +1051,7 @@ def reset_trusted_launch_supported() -> None
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a SharedImage resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a SharedImage resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -1134,7 +1134,7 @@ sharedImage.SharedImage.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a SharedImage resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a SharedImage resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.sharedImage.SharedImage.generateConfigForImport.parameter.scope"></a>
 
@@ -1164,7 +1164,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.sharedImage.SharedImage.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the SharedImage to import is found.
 
@@ -1175,33 +1175,33 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.identifier">identifier</a></code> | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageIdentifierOutputReference">SharedImageIdentifierOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.purchasePlan">purchase_plan</a></code> | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImagePurchasePlanOutputReference">SharedImagePurchasePlanOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageTimeoutsOutputReference">SharedImageTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.acceleratedNetworkSupportEnabledInput">accelerated_network_support_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.acceleratedNetworkSupportEnabledInput">accelerated_network_support_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.architectureInput">architecture_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.confidentialVmEnabledInput">confidential_vm_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.confidentialVmSupportedInput">confidential_vm_supported_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.confidentialVmEnabledInput">confidential_vm_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.confidentialVmSupportedInput">confidential_vm_supported_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.diskControllerTypeNvmeEnabledInput">disk_controller_type_nvme_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.diskControllerTypeNvmeEnabledInput">disk_controller_type_nvme_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.diskTypesNotAllowedInput">disk_types_not_allowed_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.endOfLifeDateInput">end_of_life_date_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.eulaInput">eula_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.galleryNameInput">gallery_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.hibernationEnabledInput">hibernation_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.hibernationEnabledInput">hibernation_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.hyperVGenerationInput">hyper_v_generation_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.identifierInput">identifier_input</a></code> | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageIdentifier">SharedImageIdentifier</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
@@ -1216,22 +1216,22 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.purchasePlanInput">purchase_plan_input</a></code> | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImagePurchasePlan">SharedImagePurchasePlan</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.releaseNoteUriInput">release_note_uri_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.resourceGroupNameInput">resource_group_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.specializedInput">specialized_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.specializedInput">specialized_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.sharedImage.SharedImageTimeouts">SharedImageTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.trustedLaunchEnabledInput">trusted_launch_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.trustedLaunchSupportedInput">trusted_launch_supported_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.acceleratedNetworkSupportEnabled">accelerated_network_support_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.sharedImage.SharedImageTimeouts">SharedImageTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.trustedLaunchEnabledInput">trusted_launch_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.trustedLaunchSupportedInput">trusted_launch_supported_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.acceleratedNetworkSupportEnabled">accelerated_network_support_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.architecture">architecture</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.confidentialVmEnabled">confidential_vm_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.confidentialVmSupported">confidential_vm_supported</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.confidentialVmEnabled">confidential_vm_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.confidentialVmSupported">confidential_vm_supported</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.diskControllerTypeNvmeEnabled">disk_controller_type_nvme_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.diskControllerTypeNvmeEnabled">disk_controller_type_nvme_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.diskTypesNotAllowed">disk_types_not_allowed</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.endOfLifeDate">end_of_life_date</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.eula">eula</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.galleryName">gallery_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.hibernationEnabled">hibernation_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.hibernationEnabled">hibernation_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.hyperVGeneration">hyper_v_generation</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.location">location</a></code> | <code>str</code> | *No description.* |
@@ -1244,10 +1244,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.privacyStatementUri">privacy_statement_uri</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.releaseNoteUri">release_note_uri</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.specialized">specialized</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.specialized">specialized</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.trustedLaunchEnabled">trusted_launch_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.trustedLaunchSupported">trusted_launch_supported</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.trustedLaunchEnabled">trusted_launch_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImage.property.trustedLaunchSupported">trusted_launch_supported</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 
 ---
 
@@ -1269,7 +1269,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -1319,7 +1319,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -1329,7 +1329,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1339,7 +1339,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1359,7 +1359,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1369,7 +1369,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1379,7 +1379,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1389,7 +1389,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1429,7 +1429,7 @@ timeouts: SharedImageTimeoutsOutputReference
 accelerated_network_support_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1449,7 +1449,7 @@ architecture_input: str
 confidential_vm_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1459,7 +1459,7 @@ confidential_vm_enabled_input: bool | IResolvable
 confidential_vm_supported_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1479,7 +1479,7 @@ description_input: str
 disk_controller_type_nvme_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1529,7 +1529,7 @@ gallery_name_input: str
 hibernation_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1679,7 +1679,7 @@ resource_group_name_input: str
 specialized_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1699,7 +1699,7 @@ tags_input: typing.Mapping[str]
 timeouts_input: IResolvable | SharedImageTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.sharedImage.SharedImageTimeouts">SharedImageTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.sharedImage.SharedImageTimeouts">SharedImageTimeouts</a>
 
 ---
 
@@ -1709,7 +1709,7 @@ timeouts_input: IResolvable | SharedImageTimeouts
 trusted_launch_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1719,7 +1719,7 @@ trusted_launch_enabled_input: bool | IResolvable
 trusted_launch_supported_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1729,7 +1729,7 @@ trusted_launch_supported_input: bool | IResolvable
 accelerated_network_support_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1749,7 +1749,7 @@ architecture: str
 confidential_vm_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1759,7 +1759,7 @@ confidential_vm_enabled: bool | IResolvable
 confidential_vm_supported: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1779,7 +1779,7 @@ description: str
 disk_controller_type_nvme_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1829,7 +1829,7 @@ gallery_name: str
 hibernation_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1959,7 +1959,7 @@ resource_group_name: str
 specialized: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1979,7 +1979,7 @@ tags: typing.Mapping[str]
 trusted_launch_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1989,7 +1989,7 @@ trusted_launch_enabled: bool | IResolvable
 trusted_launch_supported: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2065,29 +2065,29 @@ sharedImage.SharedImageConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.galleryName">gallery_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#gallery_name SharedImage#gallery_name}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.identifier">identifier</a></code> | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageIdentifier">SharedImageIdentifier</a></code> | identifier block. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#location SharedImage#location}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#name SharedImage#name}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.osType">os_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#os_type SharedImage#os_type}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#resource_group_name SharedImage#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.acceleratedNetworkSupportEnabled">accelerated_network_support_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#accelerated_network_support_enabled SharedImage#accelerated_network_support_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.acceleratedNetworkSupportEnabled">accelerated_network_support_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#accelerated_network_support_enabled SharedImage#accelerated_network_support_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.architecture">architecture</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#architecture SharedImage#architecture}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.confidentialVmEnabled">confidential_vm_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#confidential_vm_enabled SharedImage#confidential_vm_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.confidentialVmSupported">confidential_vm_supported</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#confidential_vm_supported SharedImage#confidential_vm_supported}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.confidentialVmEnabled">confidential_vm_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#confidential_vm_enabled SharedImage#confidential_vm_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.confidentialVmSupported">confidential_vm_supported</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#confidential_vm_supported SharedImage#confidential_vm_supported}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#description SharedImage#description}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.diskControllerTypeNvmeEnabled">disk_controller_type_nvme_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#disk_controller_type_nvme_enabled SharedImage#disk_controller_type_nvme_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.diskControllerTypeNvmeEnabled">disk_controller_type_nvme_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#disk_controller_type_nvme_enabled SharedImage#disk_controller_type_nvme_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.diskTypesNotAllowed">disk_types_not_allowed</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#disk_types_not_allowed SharedImage#disk_types_not_allowed}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.endOfLifeDate">end_of_life_date</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#end_of_life_date SharedImage#end_of_life_date}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.eula">eula</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#eula SharedImage#eula}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.hibernationEnabled">hibernation_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#hibernation_enabled SharedImage#hibernation_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.hibernationEnabled">hibernation_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#hibernation_enabled SharedImage#hibernation_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.hyperVGeneration">hyper_v_generation</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#hyper_v_generation SharedImage#hyper_v_generation}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#id SharedImage#id}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.maxRecommendedMemoryInGb">max_recommended_memory_in_gb</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#max_recommended_memory_in_gb SharedImage#max_recommended_memory_in_gb}. |
@@ -2097,11 +2097,11 @@ sharedImage.SharedImageConfig(
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.privacyStatementUri">privacy_statement_uri</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#privacy_statement_uri SharedImage#privacy_statement_uri}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.purchasePlan">purchase_plan</a></code> | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImagePurchasePlan">SharedImagePurchasePlan</a></code> | purchase_plan block. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.releaseNoteUri">release_note_uri</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#release_note_uri SharedImage#release_note_uri}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.specialized">specialized</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#specialized SharedImage#specialized}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.specialized">specialized</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#specialized SharedImage#specialized}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#tags SharedImage#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageTimeouts">SharedImageTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.trustedLaunchEnabled">trusted_launch_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#trusted_launch_enabled SharedImage#trusted_launch_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.trustedLaunchSupported">trusted_launch_supported</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#trusted_launch_supported SharedImage#trusted_launch_supported}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.trustedLaunchEnabled">trusted_launch_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#trusted_launch_enabled SharedImage#trusted_launch_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageConfig.property.trustedLaunchSupported">trusted_launch_supported</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#trusted_launch_supported SharedImage#trusted_launch_supported}. |
 
 ---
 
@@ -2111,7 +2111,7 @@ sharedImage.SharedImageConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -2121,7 +2121,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -2131,7 +2131,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -2141,7 +2141,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -2151,7 +2151,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -2161,7 +2161,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -2171,7 +2171,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -2255,7 +2255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 accelerated_network_support_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#accelerated_network_support_enabled SharedImage#accelerated_network_support_enabled}.
 
@@ -2279,7 +2279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 confidential_vm_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#confidential_vm_enabled SharedImage#confidential_vm_enabled}.
 
@@ -2291,7 +2291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 confidential_vm_supported: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#confidential_vm_supported SharedImage#confidential_vm_supported}.
 
@@ -2315,7 +2315,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 disk_controller_type_nvme_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#disk_controller_type_nvme_enabled SharedImage#disk_controller_type_nvme_enabled}.
 
@@ -2363,7 +2363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 hibernation_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#hibernation_enabled SharedImage#hibernation_enabled}.
 
@@ -2488,7 +2488,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 specialized: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#specialized SharedImage#specialized}.
 
@@ -2526,7 +2526,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 trusted_launch_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#trusted_launch_enabled SharedImage#trusted_launch_enabled}.
 
@@ -2538,7 +2538,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 trusted_launch_supported: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#trusted_launch_supported SharedImage#trusted_launch_supported}.
 
@@ -2755,14 +2755,14 @@ sharedImage.SharedImageIdentifierOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageIdentifierOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageIdentifierOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageIdentifierOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.sharedImage.SharedImageIdentifierOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2954,7 +2954,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.sharedImage.SharedImageIdentifierOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3095,14 +3095,14 @@ sharedImage.SharedImagePurchasePlanOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImagePurchasePlanOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImagePurchasePlanOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImagePurchasePlanOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.sharedImage.SharedImagePurchasePlanOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3296,7 +3296,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.sharedImage.SharedImagePurchasePlanOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3449,14 +3449,14 @@ sharedImage.SharedImageTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.sharedImage.SharedImageTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3652,7 +3652,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.sharedImage.SharedImageTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3705,7 +3705,7 @@ def reset_update() -> None
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.sharedImage.SharedImageTimeouts">SharedImageTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.sharedImage.SharedImageTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.sharedImage.SharedImageTimeouts">SharedImageTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -3819,7 +3819,7 @@ update: str
 internal_value: IResolvable | SharedImageTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.sharedImage.SharedImageTimeouts">SharedImageTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.sharedImage.SharedImageTimeouts">SharedImageTimeouts</a>
 
 ---
 

@@ -331,7 +331,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -449,7 +449,7 @@ public putConnectionString(value: IResolvable | LinuxFunctionAppConnectionString
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.putConnectionString.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionString">LinuxFunctionAppConnectionString</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionString">LinuxFunctionAppConnectionString</a>[]
 
 ---
 
@@ -497,7 +497,7 @@ public putStorageAccount(value: IResolvable | LinuxFunctionAppStorageAccount[]):
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.putStorageAccount.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccount">LinuxFunctionAppStorageAccount</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccount">LinuxFunctionAppStorageAccount</a>[]
 
 ---
 
@@ -712,7 +712,7 @@ public resetZipDeployFile(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a LinuxFunctionApp resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a LinuxFunctionApp resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -784,7 +784,7 @@ import { linuxFunctionApp } from '@cdktn/provider-azurerm'
 linuxFunctionApp.LinuxFunctionApp.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a LinuxFunctionApp resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a LinuxFunctionApp resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.generateConfigForImport.parameter.scope"></a>
 
@@ -814,7 +814,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the LinuxFunctionApp to import is found.
 
@@ -825,19 +825,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.authSettings">authSettings</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsOutputReference">LinuxFunctionAppAuthSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.authSettingsV2">authSettingsV2</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference">LinuxFunctionAppAuthSettingsV2OutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.backup">backup</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupOutputReference">LinuxFunctionAppBackupOutputReference</a></code> | *No description.* |
@@ -860,66 +860,66 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.authSettingsInput">authSettingsInput</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettings">LinuxFunctionAppAuthSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.authSettingsV2Input">authSettingsV2Input</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2">LinuxFunctionAppAuthSettingsV2</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.backupInput">backupInput</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackup">LinuxFunctionAppBackup</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.builtinLoggingEnabledInput">builtinLoggingEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.clientCertificateEnabledInput">clientCertificateEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.builtinLoggingEnabledInput">builtinLoggingEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.clientCertificateEnabledInput">clientCertificateEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.clientCertificateExclusionPathsInput">clientCertificateExclusionPathsInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.clientCertificateModeInput">clientCertificateModeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.connectionStringInput">connectionStringInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionString">LinuxFunctionAppConnectionString</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.contentShareForceDisabledInput">contentShareForceDisabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.connectionStringInput">connectionStringInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionString">LinuxFunctionAppConnectionString</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.contentShareForceDisabledInput">contentShareForceDisabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.dailyMemoryTimeQuotaInput">dailyMemoryTimeQuotaInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.ftpPublishBasicAuthenticationEnabledInput">ftpPublishBasicAuthenticationEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.ftpPublishBasicAuthenticationEnabledInput">ftpPublishBasicAuthenticationEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.functionsExtensionVersionInput">functionsExtensionVersionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.httpsOnlyInput">httpsOnlyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.httpsOnlyInput">httpsOnlyInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.identityInput">identityInput</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppIdentity">LinuxFunctionAppIdentity</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.keyVaultReferenceIdentityIdInput">keyVaultReferenceIdentityIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.locationInput">locationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.publicNetworkAccessEnabledInput">publicNetworkAccessEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.publicNetworkAccessEnabledInput">publicNetworkAccessEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.resourceGroupNameInput">resourceGroupNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.servicePlanIdInput">servicePlanIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.siteConfigInput">siteConfigInput</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig">LinuxFunctionAppSiteConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.stickySettingsInput">stickySettingsInput</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStickySettings">LinuxFunctionAppStickySettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.storageAccountAccessKeyInput">storageAccountAccessKeyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.storageAccountInput">storageAccountInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccount">LinuxFunctionAppStorageAccount</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.storageAccountInput">storageAccountInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccount">LinuxFunctionAppStorageAccount</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.storageAccountNameInput">storageAccountNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.storageKeyVaultSecretIdInput">storageKeyVaultSecretIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.storageUsesManagedIdentityInput">storageUsesManagedIdentityInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.storageUsesManagedIdentityInput">storageUsesManagedIdentityInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppTimeouts">LinuxFunctionAppTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.virtualNetworkBackupRestoreEnabledInput">virtualNetworkBackupRestoreEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppTimeouts">LinuxFunctionAppTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.virtualNetworkBackupRestoreEnabledInput">virtualNetworkBackupRestoreEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.virtualNetworkSubnetIdInput">virtualNetworkSubnetIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.vnetImagePullEnabledInput">vnetImagePullEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.webdeployPublishBasicAuthenticationEnabledInput">webdeployPublishBasicAuthenticationEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.vnetImagePullEnabledInput">vnetImagePullEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.webdeployPublishBasicAuthenticationEnabledInput">webdeployPublishBasicAuthenticationEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.zipDeployFileInput">zipDeployFileInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.appSettings">appSettings</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.builtinLoggingEnabled">builtinLoggingEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.clientCertificateEnabled">clientCertificateEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.builtinLoggingEnabled">builtinLoggingEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.clientCertificateEnabled">clientCertificateEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.clientCertificateExclusionPaths">clientCertificateExclusionPaths</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.clientCertificateMode">clientCertificateMode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.contentShareForceDisabled">contentShareForceDisabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.contentShareForceDisabled">contentShareForceDisabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.dailyMemoryTimeQuota">dailyMemoryTimeQuota</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.ftpPublishBasicAuthenticationEnabled">ftpPublishBasicAuthenticationEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.ftpPublishBasicAuthenticationEnabled">ftpPublishBasicAuthenticationEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.functionsExtensionVersion">functionsExtensionVersion</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.httpsOnly">httpsOnly</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.httpsOnly">httpsOnly</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.keyVaultReferenceIdentityId">keyVaultReferenceIdentityId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.location">location</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.publicNetworkAccessEnabled">publicNetworkAccessEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.publicNetworkAccessEnabled">publicNetworkAccessEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.servicePlanId">servicePlanId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.storageAccountAccessKey">storageAccountAccessKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.storageAccountName">storageAccountName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.storageKeyVaultSecretId">storageKeyVaultSecretId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.storageUsesManagedIdentity">storageUsesManagedIdentity</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.storageUsesManagedIdentity">storageUsesManagedIdentity</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.virtualNetworkBackupRestoreEnabled">virtualNetworkBackupRestoreEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.virtualNetworkBackupRestoreEnabled">virtualNetworkBackupRestoreEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.virtualNetworkSubnetId">virtualNetworkSubnetId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.vnetImagePullEnabled">vnetImagePullEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.webdeployPublishBasicAuthenticationEnabled">webdeployPublishBasicAuthenticationEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.vnetImagePullEnabled">vnetImagePullEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.webdeployPublishBasicAuthenticationEnabled">webdeployPublishBasicAuthenticationEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionApp.property.zipDeployFile">zipDeployFile</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -942,7 +942,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -992,7 +992,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -1002,7 +1002,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1012,7 +1012,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1032,7 +1032,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1042,7 +1042,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1052,7 +1052,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1062,7 +1062,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1292,7 +1292,7 @@ public readonly backupInput: LinuxFunctionAppBackup;
 public readonly builtinLoggingEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1302,7 +1302,7 @@ public readonly builtinLoggingEnabledInput: boolean | IResolvable;
 public readonly clientCertificateEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1332,7 +1332,7 @@ public readonly clientCertificateModeInput: string;
 public readonly connectionStringInput: IResolvable | LinuxFunctionAppConnectionString[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionString">LinuxFunctionAppConnectionString</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionString">LinuxFunctionAppConnectionString</a>[]
 
 ---
 
@@ -1342,7 +1342,7 @@ public readonly connectionStringInput: IResolvable | LinuxFunctionAppConnectionS
 public readonly contentShareForceDisabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1362,7 +1362,7 @@ public readonly dailyMemoryTimeQuotaInput: number;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1372,7 +1372,7 @@ public readonly enabledInput: boolean | IResolvable;
 public readonly ftpPublishBasicAuthenticationEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1392,7 +1392,7 @@ public readonly functionsExtensionVersionInput: string;
 public readonly httpsOnlyInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1452,7 +1452,7 @@ public readonly nameInput: string;
 public readonly publicNetworkAccessEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1512,7 +1512,7 @@ public readonly storageAccountAccessKeyInput: string;
 public readonly storageAccountInput: IResolvable | LinuxFunctionAppStorageAccount[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccount">LinuxFunctionAppStorageAccount</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccount">LinuxFunctionAppStorageAccount</a>[]
 
 ---
 
@@ -1542,7 +1542,7 @@ public readonly storageKeyVaultSecretIdInput: string;
 public readonly storageUsesManagedIdentityInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1562,7 +1562,7 @@ public readonly tagsInput: {[ key: string ]: string};
 public readonly timeoutsInput: IResolvable | LinuxFunctionAppTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppTimeouts">LinuxFunctionAppTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppTimeouts">LinuxFunctionAppTimeouts</a>
 
 ---
 
@@ -1572,7 +1572,7 @@ public readonly timeoutsInput: IResolvable | LinuxFunctionAppTimeouts;
 public readonly virtualNetworkBackupRestoreEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1592,7 +1592,7 @@ public readonly virtualNetworkSubnetIdInput: string;
 public readonly vnetImagePullEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1602,7 +1602,7 @@ public readonly vnetImagePullEnabledInput: boolean | IResolvable;
 public readonly webdeployPublishBasicAuthenticationEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1632,7 +1632,7 @@ public readonly appSettings: {[ key: string ]: string};
 public readonly builtinLoggingEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1642,7 +1642,7 @@ public readonly builtinLoggingEnabled: boolean | IResolvable;
 public readonly clientCertificateEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1672,7 +1672,7 @@ public readonly clientCertificateMode: string;
 public readonly contentShareForceDisabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1692,7 +1692,7 @@ public readonly dailyMemoryTimeQuota: number;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1702,7 +1702,7 @@ public readonly enabled: boolean | IResolvable;
 public readonly ftpPublishBasicAuthenticationEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1722,7 +1722,7 @@ public readonly functionsExtensionVersion: string;
 public readonly httpsOnly: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1772,7 +1772,7 @@ public readonly name: string;
 public readonly publicNetworkAccessEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1832,7 +1832,7 @@ public readonly storageKeyVaultSecretId: string;
 public readonly storageUsesManagedIdentity: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1852,7 +1852,7 @@ public readonly tags: {[ key: string ]: string};
 public readonly virtualNetworkBackupRestoreEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1872,7 +1872,7 @@ public readonly virtualNetworkSubnetId: string;
 public readonly vnetImagePullEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1882,7 +1882,7 @@ public readonly vnetImagePullEnabled: boolean | IResolvable;
 public readonly webdeployPublishBasicAuthenticationEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1930,7 +1930,7 @@ const linuxFunctionAppAuthSettings: linuxFunctionApp.LinuxFunctionAppAuthSetting
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettings.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should the Authentication / Authorization feature be enabled? |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettings.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should the Authentication / Authorization feature be enabled? |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettings.property.activeDirectory">activeDirectory</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsActiveDirectory">LinuxFunctionAppAuthSettingsActiveDirectory</a></code> | active_directory block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettings.property.additionalLoginParameters">additionalLoginParameters</a></code> | <code>{[ key: string ]: string}</code> | Specifies a map of Login Parameters to send to the OpenID Connect authorization endpoint when a user logs in. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettings.property.allowedExternalRedirectUrls">allowedExternalRedirectUrls</a></code> | <code>string[]</code> | Specifies a list of External URLs that can be redirected to as part of logging in or logging out of the Windows Web App. |
@@ -1942,7 +1942,7 @@ const linuxFunctionAppAuthSettings: linuxFunctionApp.LinuxFunctionAppAuthSetting
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettings.property.microsoft">microsoft</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsMicrosoft">LinuxFunctionAppAuthSettingsMicrosoft</a></code> | microsoft block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettings.property.runtimeVersion">runtimeVersion</a></code> | <code>string</code> | The RuntimeVersion of the Authentication / Authorization feature in use. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettings.property.tokenRefreshExtensionHours">tokenRefreshExtensionHours</a></code> | <code>number</code> | The number of hours after session token expiration that a session token can be used to call the token refresh API. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettings.property.tokenStoreEnabled">tokenStoreEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should the Windows Web App durably store platform-specific security tokens that are obtained during login flows? Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettings.property.tokenStoreEnabled">tokenStoreEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should the Windows Web App durably store platform-specific security tokens that are obtained during login flows? Defaults to `false`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettings.property.twitter">twitter</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsTwitter">LinuxFunctionAppAuthSettingsTwitter</a></code> | twitter block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettings.property.unauthenticatedClientAction">unauthenticatedClientAction</a></code> | <code>string</code> | The action to take when an unauthenticated client attempts to access the app. Possible values include: `RedirectToLoginPage`, `AllowAnonymous`. |
 
@@ -1954,7 +1954,7 @@ const linuxFunctionAppAuthSettings: linuxFunctionApp.LinuxFunctionAppAuthSetting
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should the Authentication / Authorization feature be enabled?
 
@@ -2126,7 +2126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly tokenStoreEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should the Windows Web App durably store platform-specific security tokens that are obtained during login flows? Defaults to `false`.
 
@@ -2626,10 +2626,10 @@ const linuxFunctionAppAuthSettingsV2: linuxFunctionApp.LinuxFunctionAppAuthSetti
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2.property.login">login</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2Login">LinuxFunctionAppAuthSettingsV2Login</a></code> | login block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2.property.activeDirectoryV2">activeDirectoryV2</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2ActiveDirectoryV2">LinuxFunctionAppAuthSettingsV2ActiveDirectoryV2</a></code> | active_directory_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2.property.appleV2">appleV2</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2AppleV2">LinuxFunctionAppAuthSettingsV2AppleV2</a></code> | apple_v2 block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2.property.authEnabled">authEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should the AuthV2 Settings be enabled. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2.property.authEnabled">authEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should the AuthV2 Settings be enabled. Defaults to `false`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2.property.azureStaticWebAppV2">azureStaticWebAppV2</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2AzureStaticWebAppV2">LinuxFunctionAppAuthSettingsV2AzureStaticWebAppV2</a></code> | azure_static_web_app_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2.property.configFilePath">configFilePath</a></code> | <code>string</code> | The path to the App Auth settings. **Note:** Relative Paths are evaluated from the Site Root directory. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2.property.customOidcV2">customOidcV2</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2">LinuxFunctionAppAuthSettingsV2CustomOidcV2</a>[]</code> | custom_oidc_v2 block. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2.property.customOidcV2">customOidcV2</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2">LinuxFunctionAppAuthSettingsV2CustomOidcV2</a>[]</code> | custom_oidc_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2.property.defaultProvider">defaultProvider</a></code> | <code>string</code> | The Default Authentication Provider to use when the `unauthenticated_action` is set to `RedirectToLoginPage`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2.property.excludedPaths">excludedPaths</a></code> | <code>string[]</code> | The paths which should be excluded from the `unauthenticated_action` when it is set to `RedirectToLoginPage`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2.property.facebookV2">facebookV2</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2FacebookV2">LinuxFunctionAppAuthSettingsV2FacebookV2</a></code> | facebook_v2 block. |
@@ -2640,8 +2640,8 @@ const linuxFunctionAppAuthSettingsV2: linuxFunctionApp.LinuxFunctionAppAuthSetti
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2.property.googleV2">googleV2</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2GoogleV2">LinuxFunctionAppAuthSettingsV2GoogleV2</a></code> | google_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2.property.httpRouteApiPrefix">httpRouteApiPrefix</a></code> | <code>string</code> | The prefix that should precede all the authentication and authorisation paths. Defaults to `/.auth`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2.property.microsoftV2">microsoftV2</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2MicrosoftV2">LinuxFunctionAppAuthSettingsV2MicrosoftV2</a></code> | microsoft_v2 block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2.property.requireAuthentication">requireAuthentication</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should the authentication flow be used for all requests. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2.property.requireHttps">requireHttps</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should HTTPS be required on connections? Defaults to true. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2.property.requireAuthentication">requireAuthentication</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should the authentication flow be used for all requests. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2.property.requireHttps">requireHttps</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should HTTPS be required on connections? Defaults to true. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2.property.runtimeVersion">runtimeVersion</a></code> | <code>string</code> | The Runtime Version of the Authentication and Authorisation feature of this App. Defaults to `~1`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2.property.twitterV2">twitterV2</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2TwitterV2">LinuxFunctionAppAuthSettingsV2TwitterV2</a></code> | twitter_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2.property.unauthenticatedAction">unauthenticatedAction</a></code> | <code>string</code> | The action to take for requests made without authentication. |
@@ -2696,7 +2696,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly authEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should the AuthV2 Settings be enabled. Defaults to `false`.
 
@@ -2738,7 +2738,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly customOidcV2: IResolvable | LinuxFunctionAppAuthSettingsV2CustomOidcV2[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2">LinuxFunctionAppAuthSettingsV2CustomOidcV2</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2">LinuxFunctionAppAuthSettingsV2CustomOidcV2</a>[]
 
 custom_oidc_v2 block.
 
@@ -2896,7 +2896,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly requireAuthentication: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should the authentication flow be used for all requests.
 
@@ -2910,7 +2910,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly requireHttps: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should HTTPS be required on connections? Defaults to true.
 
@@ -2987,7 +2987,7 @@ const linuxFunctionAppAuthSettingsV2ActiveDirectoryV2: linuxFunctionApp.LinuxFun
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2ActiveDirectoryV2.property.jwtAllowedClientApplications">jwtAllowedClientApplications</a></code> | <code>string[]</code> | A list of Allowed Client Applications in the JWT Claim. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2ActiveDirectoryV2.property.jwtAllowedGroups">jwtAllowedGroups</a></code> | <code>string[]</code> | A list of Allowed Groups in the JWT Claim. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2ActiveDirectoryV2.property.loginParameters">loginParameters</a></code> | <code>{[ key: string ]: string}</code> | A map of key-value pairs to send to the Authorisation Endpoint when a user logs in. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2ActiveDirectoryV2.property.wwwAuthenticationDisabled">wwwAuthenticationDisabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should the www-authenticate provider should be omitted from the request? Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2ActiveDirectoryV2.property.wwwAuthenticationDisabled">wwwAuthenticationDisabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should the www-authenticate provider should be omitted from the request? Defaults to `false`. |
 
 ---
 
@@ -3151,7 +3151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly wwwAuthenticationDisabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should the www-authenticate provider should be omitted from the request? Defaults to `false`.
 
@@ -3565,12 +3565,12 @@ const linuxFunctionAppAuthSettingsV2Login: linuxFunctionApp.LinuxFunctionAppAuth
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2Login.property.cookieExpirationTime">cookieExpirationTime</a></code> | <code>string</code> | The time after the request is made when the session cookie should expire. Defaults to `08:00:00`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2Login.property.logoutEndpoint">logoutEndpoint</a></code> | <code>string</code> | The endpoint to which logout requests should be made. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2Login.property.nonceExpirationTime">nonceExpirationTime</a></code> | <code>string</code> | The time after the request is made when the nonce should expire. Defaults to `00:05:00`. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2Login.property.preserveUrlFragmentsForLogins">preserveUrlFragmentsForLogins</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should the fragments from the request be preserved after the login request is made. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2Login.property.preserveUrlFragmentsForLogins">preserveUrlFragmentsForLogins</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should the fragments from the request be preserved after the login request is made. Defaults to `false`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2Login.property.tokenRefreshExtensionTime">tokenRefreshExtensionTime</a></code> | <code>number</code> | The number of hours after session token expiration that a session token can be used to call the token refresh API. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2Login.property.tokenStoreEnabled">tokenStoreEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should the Token Store configuration Enabled. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2Login.property.tokenStoreEnabled">tokenStoreEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should the Token Store configuration Enabled. Defaults to `false`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2Login.property.tokenStorePath">tokenStorePath</a></code> | <code>string</code> | The directory path in the App Filesystem in which the tokens will be stored. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2Login.property.tokenStoreSasSettingName">tokenStoreSasSettingName</a></code> | <code>string</code> | The name of the app setting which contains the SAS URL of the blob storage containing the tokens. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2Login.property.validateNonce">validateNonce</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should the nonce be validated while completing the login flow. Defaults to `true`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2Login.property.validateNonce">validateNonce</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should the nonce be validated while completing the login flow. Defaults to `true`. |
 
 ---
 
@@ -3652,7 +3652,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly preserveUrlFragmentsForLogins: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should the fragments from the request be preserved after the login request is made. Defaults to `false`.
 
@@ -3682,7 +3682,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly tokenStoreEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should the Token Store configuration Enabled. Defaults to `false`.
 
@@ -3724,7 +3724,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly validateNonce: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should the nonce be validated while completing the login flow. Defaults to `true`.
 
@@ -3873,7 +3873,7 @@ const linuxFunctionAppBackup: linuxFunctionApp.LinuxFunctionAppBackup = { ... }
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackup.property.name">name</a></code> | <code>string</code> | The name which should be used for this Backup. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackup.property.schedule">schedule</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupSchedule">LinuxFunctionAppBackupSchedule</a></code> | schedule block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackup.property.storageAccountUrl">storageAccountUrl</a></code> | <code>string</code> | The SAS URL to the container. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackup.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should this backup job be enabled? |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackup.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should this backup job be enabled? |
 
 ---
 
@@ -3925,7 +3925,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should this backup job be enabled?
 
@@ -3949,7 +3949,7 @@ const linuxFunctionAppBackupSchedule: linuxFunctionApp.LinuxFunctionAppBackupSch
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupSchedule.property.frequencyInterval">frequencyInterval</a></code> | <code>number</code> | How often the backup should be executed (e.g. for weekly backup, this should be set to `7` and `frequency_unit` should be set to `Day`). |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupSchedule.property.frequencyUnit">frequencyUnit</a></code> | <code>string</code> | The unit of time for how often the backup should take place. Possible values include: `Day` and `Hour`. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupSchedule.property.keepAtLeastOneBackup">keepAtLeastOneBackup</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should the service keep at least one backup, regardless of age of backup. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupSchedule.property.keepAtLeastOneBackup">keepAtLeastOneBackup</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should the service keep at least one backup, regardless of age of backup. Defaults to `false`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupSchedule.property.retentionPeriodDays">retentionPeriodDays</a></code> | <code>number</code> | After how many days backups should be deleted. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupSchedule.property.startTime">startTime</a></code> | <code>string</code> | When the schedule should start working in RFC-3339 format. |
 
@@ -3989,7 +3989,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly keepAtLeastOneBackup: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should the service keep at least one backup, regardless of age of backup. Defaults to `false`.
 
@@ -4039,13 +4039,13 @@ const linuxFunctionAppConfig: linuxFunctionApp.LinuxFunctionAppConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app#location LinuxFunctionApp#location}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.name">name</a></code> | <code>string</code> | Specifies the name of the Function App. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app#resource_group_name LinuxFunctionApp#resource_group_name}. |
@@ -4055,33 +4055,33 @@ const linuxFunctionAppConfig: linuxFunctionApp.LinuxFunctionAppConfig = { ... }
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.authSettings">authSettings</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettings">LinuxFunctionAppAuthSettings</a></code> | auth_settings block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.authSettingsV2">authSettingsV2</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2">LinuxFunctionAppAuthSettingsV2</a></code> | auth_settings_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.backup">backup</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackup">LinuxFunctionAppBackup</a></code> | backup block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.builtinLoggingEnabled">builtinLoggingEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should built in logging be enabled. Configures `AzureWebJobsDashboard` app setting based on the configured storage setting. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.clientCertificateEnabled">clientCertificateEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should the function app use Client Certificates. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.builtinLoggingEnabled">builtinLoggingEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should built in logging be enabled. Configures `AzureWebJobsDashboard` app setting based on the configured storage setting. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.clientCertificateEnabled">clientCertificateEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should the function app use Client Certificates. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.clientCertificateExclusionPaths">clientCertificateExclusionPaths</a></code> | <code>string</code> | Paths to exclude when using client certificates, separated by ; |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.clientCertificateMode">clientCertificateMode</a></code> | <code>string</code> | The mode of the Function App's client certificates requirement for incoming requests. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.connectionString">connectionString</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionString">LinuxFunctionAppConnectionString</a>[]</code> | connection_string block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.contentShareForceDisabled">contentShareForceDisabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Force disable the content share settings. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.connectionString">connectionString</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionString">LinuxFunctionAppConnectionString</a>[]</code> | connection_string block. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.contentShareForceDisabled">contentShareForceDisabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Force disable the content share settings. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.dailyMemoryTimeQuota">dailyMemoryTimeQuota</a></code> | <code>number</code> | The amount of memory in gigabyte-seconds that your application is allowed to consume per day. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Is the Linux Function App enabled. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.ftpPublishBasicAuthenticationEnabled">ftpPublishBasicAuthenticationEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app#ftp_publish_basic_authentication_enabled LinuxFunctionApp#ftp_publish_basic_authentication_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Is the Linux Function App enabled. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.ftpPublishBasicAuthenticationEnabled">ftpPublishBasicAuthenticationEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app#ftp_publish_basic_authentication_enabled LinuxFunctionApp#ftp_publish_basic_authentication_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.functionsExtensionVersion">functionsExtensionVersion</a></code> | <code>string</code> | The runtime version associated with the Function App. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.httpsOnly">httpsOnly</a></code> | <code>boolean \| cdktf.IResolvable</code> | Can the Function App only be accessed via HTTPS? |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.httpsOnly">httpsOnly</a></code> | <code>boolean \| cdktn.IResolvable</code> | Can the Function App only be accessed via HTTPS? |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app#id LinuxFunctionApp#id}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppIdentity">LinuxFunctionAppIdentity</a></code> | identity block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.keyVaultReferenceIdentityId">keyVaultReferenceIdentityId</a></code> | <code>string</code> | The User Assigned Identity to use for Key Vault access. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.publicNetworkAccessEnabled">publicNetworkAccessEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app#public_network_access_enabled LinuxFunctionApp#public_network_access_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.publicNetworkAccessEnabled">publicNetworkAccessEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app#public_network_access_enabled LinuxFunctionApp#public_network_access_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.stickySettings">stickySettings</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStickySettings">LinuxFunctionAppStickySettings</a></code> | sticky_settings block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.storageAccount">storageAccount</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccount">LinuxFunctionAppStorageAccount</a>[]</code> | storage_account block. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.storageAccount">storageAccount</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccount">LinuxFunctionAppStorageAccount</a>[]</code> | storage_account block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.storageAccountAccessKey">storageAccountAccessKey</a></code> | <code>string</code> | The access key which will be used to access the storage account for the Function App. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.storageAccountName">storageAccountName</a></code> | <code>string</code> | The backend storage account name which will be used by this Function App. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.storageKeyVaultSecretId">storageKeyVaultSecretId</a></code> | <code>string</code> | The Key Vault Secret ID, including version, that contains the Connection String to connect to the storage account for this Function App. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.storageUsesManagedIdentity">storageUsesManagedIdentity</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should the Function App use its Managed Identity to access storage? |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.storageUsesManagedIdentity">storageUsesManagedIdentity</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should the Function App use its Managed Identity to access storage? |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app#tags LinuxFunctionApp#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppTimeouts">LinuxFunctionAppTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.virtualNetworkBackupRestoreEnabled">virtualNetworkBackupRestoreEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app#virtual_network_backup_restore_enabled LinuxFunctionApp#virtual_network_backup_restore_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.virtualNetworkBackupRestoreEnabled">virtualNetworkBackupRestoreEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app#virtual_network_backup_restore_enabled LinuxFunctionApp#virtual_network_backup_restore_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.virtualNetworkSubnetId">virtualNetworkSubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app#virtual_network_subnet_id LinuxFunctionApp#virtual_network_subnet_id}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.vnetImagePullEnabled">vnetImagePullEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Is container image pull over virtual network enabled? Defaults to `false`. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.webdeployPublishBasicAuthenticationEnabled">webdeployPublishBasicAuthenticationEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app#webdeploy_publish_basic_authentication_enabled LinuxFunctionApp#webdeploy_publish_basic_authentication_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.vnetImagePullEnabled">vnetImagePullEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Is container image pull over virtual network enabled? Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.webdeployPublishBasicAuthenticationEnabled">webdeployPublishBasicAuthenticationEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app#webdeploy_publish_basic_authentication_enabled LinuxFunctionApp#webdeploy_publish_basic_authentication_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConfig.property.zipDeployFile">zipDeployFile</a></code> | <code>string</code> | The local path and filename of the Zip packaged application to deploy to this Linux Function App. |
 
 ---
@@ -4092,7 +4092,7 @@ const linuxFunctionAppConfig: linuxFunctionApp.LinuxFunctionAppConfig = { ... }
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -4102,7 +4102,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -4112,7 +4112,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -4122,7 +4122,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -4132,7 +4132,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -4142,7 +4142,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -4152,7 +4152,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -4284,7 +4284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly builtinLoggingEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should built in logging be enabled. Configures `AzureWebJobsDashboard` app setting based on the configured storage setting.
 
@@ -4298,7 +4298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly clientCertificateEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should the function app use Client Certificates.
 
@@ -4342,7 +4342,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly connectionString: IResolvable | LinuxFunctionAppConnectionString[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionString">LinuxFunctionAppConnectionString</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionString">LinuxFunctionAppConnectionString</a>[]
 
 connection_string block.
 
@@ -4356,7 +4356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly contentShareForceDisabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Force disable the content share settings.
 
@@ -4386,7 +4386,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Is the Linux Function App enabled.
 
@@ -4400,7 +4400,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly ftpPublishBasicAuthenticationEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app#ftp_publish_basic_authentication_enabled LinuxFunctionApp#ftp_publish_basic_authentication_enabled}.
 
@@ -4426,7 +4426,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly httpsOnly: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Can the Function App only be accessed via HTTPS?
 
@@ -4483,7 +4483,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly publicNetworkAccessEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app#public_network_access_enabled LinuxFunctionApp#public_network_access_enabled}.
 
@@ -4509,7 +4509,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly storageAccount: IResolvable | LinuxFunctionAppStorageAccount[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccount">LinuxFunctionAppStorageAccount</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccount">LinuxFunctionAppStorageAccount</a>[]
 
 storage_account block.
 
@@ -4565,7 +4565,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly storageUsesManagedIdentity: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should the Function App use its Managed Identity to access storage?
 
@@ -4605,7 +4605,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly virtualNetworkBackupRestoreEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app#virtual_network_backup_restore_enabled LinuxFunctionApp#virtual_network_backup_restore_enabled}.
 
@@ -4629,7 +4629,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly vnetImagePullEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Is container image pull over virtual network enabled? Defaults to `false`.
 
@@ -4643,7 +4643,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly webdeployPublishBasicAuthenticationEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app#webdeploy_publish_basic_authentication_enabled LinuxFunctionApp#webdeploy_publish_basic_authentication_enabled}.
 
@@ -4784,7 +4784,7 @@ const linuxFunctionAppSiteConfig: linuxFunctionApp.LinuxFunctionAppSiteConfig = 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.alwaysOn">alwaysOn</a></code> | <code>boolean \| cdktf.IResolvable</code> | If this Linux Web App is Always On enabled. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.alwaysOn">alwaysOn</a></code> | <code>boolean \| cdktn.IResolvable</code> | If this Linux Web App is Always On enabled. Defaults to `false`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.apiDefinitionUrl">apiDefinitionUrl</a></code> | <code>string</code> | The URL of the API definition that describes this Linux Function App. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.apiManagementApiId">apiManagementApiId</a></code> | <code>string</code> | The ID of the API Management API for this Linux Function App. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.appCommandLine">appCommandLine</a></code> | <code>string</code> | The program and any arguments used to launch this app via the command line. (Example `node myapp.js`). |
@@ -4794,30 +4794,30 @@ const linuxFunctionAppSiteConfig: linuxFunctionApp.LinuxFunctionAppSiteConfig = 
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.appScaleLimit">appScaleLimit</a></code> | <code>number</code> | The number of workers this function app can scale out to. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.appServiceLogs">appServiceLogs</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigAppServiceLogs">LinuxFunctionAppSiteConfigAppServiceLogs</a></code> | app_service_logs block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.containerRegistryManagedIdentityClientId">containerRegistryManagedIdentityClientId</a></code> | <code>string</code> | The Client ID of the Managed Service Identity to use for connections to the Azure Container Registry. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.containerRegistryUseManagedIdentity">containerRegistryUseManagedIdentity</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should connections for Azure Container Registry use Managed Identity. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.containerRegistryUseManagedIdentity">containerRegistryUseManagedIdentity</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should connections for Azure Container Registry use Managed Identity. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.cors">cors</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigCors">LinuxFunctionAppSiteConfigCors</a></code> | cors block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.defaultDocuments">defaultDocuments</a></code> | <code>string[]</code> | Specifies a list of Default Documents for the Linux Web App. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.elasticInstanceMinimum">elasticInstanceMinimum</a></code> | <code>number</code> | The number of minimum instances for this Linux Function App. Only affects apps on Elastic Premium plans. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.ftpsState">ftpsState</a></code> | <code>string</code> | State of FTP / FTPS service for this function app. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.healthCheckEvictionTimeInMin">healthCheckEvictionTimeInMin</a></code> | <code>number</code> | The amount of time in minutes that a node is unhealthy before being removed from the load balancer. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.healthCheckPath">healthCheckPath</a></code> | <code>string</code> | The path to be checked for this function app health. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.http2Enabled">http2Enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies if the http2 protocol should be enabled. Defaults to `false`. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.ipRestriction">ipRestriction</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestriction">LinuxFunctionAppSiteConfigIpRestriction</a>[]</code> | ip_restriction block. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.http2Enabled">http2Enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies if the http2 protocol should be enabled. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.ipRestriction">ipRestriction</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestriction">LinuxFunctionAppSiteConfigIpRestriction</a>[]</code> | ip_restriction block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.ipRestrictionDefaultAction">ipRestrictionDefaultAction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app#ip_restriction_default_action LinuxFunctionApp#ip_restriction_default_action}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.loadBalancingMode">loadBalancingMode</a></code> | <code>string</code> | The Site load balancing mode. Possible values include: `WeightedRoundRobin`, `LeastRequests`, `LeastResponseTime`, `WeightedTotalTraffic`, `RequestHash`, `PerSiteRoundRobin`. Defaults to `LeastRequests` if omitted. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.managedPipelineMode">managedPipelineMode</a></code> | <code>string</code> | The Managed Pipeline mode. Possible values include: `Integrated`, `Classic`. Defaults to `Integrated`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.minimumTlsVersion">minimumTlsVersion</a></code> | <code>string</code> | The configures the minimum version of TLS required for SSL requests. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.preWarmedInstanceCount">preWarmedInstanceCount</a></code> | <code>number</code> | The number of pre-warmed instances for this function app. Only affects apps on an Elastic Premium plan. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.remoteDebuggingEnabled">remoteDebuggingEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should Remote Debugging be enabled. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.remoteDebuggingEnabled">remoteDebuggingEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should Remote Debugging be enabled. Defaults to `false`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.remoteDebuggingVersion">remoteDebuggingVersion</a></code> | <code>string</code> | The Remote Debugging Version. Currently only `VS2022` is supported. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.runtimeScaleMonitoringEnabled">runtimeScaleMonitoringEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should Functions Runtime Scale Monitoring be enabled. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.scmIpRestriction">scmIpRestriction</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestriction">LinuxFunctionAppSiteConfigScmIpRestriction</a>[]</code> | scm_ip_restriction block. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.runtimeScaleMonitoringEnabled">runtimeScaleMonitoringEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should Functions Runtime Scale Monitoring be enabled. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.scmIpRestriction">scmIpRestriction</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestriction">LinuxFunctionAppSiteConfigScmIpRestriction</a>[]</code> | scm_ip_restriction block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.scmIpRestrictionDefaultAction">scmIpRestrictionDefaultAction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app#scm_ip_restriction_default_action LinuxFunctionApp#scm_ip_restriction_default_action}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.scmMinimumTlsVersion">scmMinimumTlsVersion</a></code> | <code>string</code> | Configures the minimum version of TLS required for SSL requests to the SCM site Possible values include: `1.0`, `1.1`, `1.2` and  `1.3`. Defaults to `1.2`. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.scmUseMainIpRestriction">scmUseMainIpRestriction</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should the Linux Function App `ip_restriction` configuration be used for the SCM also. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.use32BitWorker">use32BitWorker</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should the Linux Web App use a 32-bit worker. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.vnetRouteAllEnabled">vnetRouteAllEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied? Defaults to `false`. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.websocketsEnabled">websocketsEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should Web Sockets be enabled. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.scmUseMainIpRestriction">scmUseMainIpRestriction</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should the Linux Function App `ip_restriction` configuration be used for the SCM also. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.use32BitWorker">use32BitWorker</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should the Linux Web App use a 32-bit worker. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.vnetRouteAllEnabled">vnetRouteAllEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied? Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.websocketsEnabled">websocketsEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should Web Sockets be enabled. Defaults to `false`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig.property.workerCount">workerCount</a></code> | <code>number</code> | The number of Workers for this Linux Function App. |
 
 ---
@@ -4828,7 +4828,7 @@ const linuxFunctionAppSiteConfig: linuxFunctionApp.LinuxFunctionAppSiteConfig = 
 public readonly alwaysOn: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If this Linux Web App is Always On enabled. Defaults to `false`.
 
@@ -4970,7 +4970,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly containerRegistryUseManagedIdentity: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should connections for Azure Container Registry use Managed Identity.
 
@@ -5072,7 +5072,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly http2Enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies if the http2 protocol should be enabled. Defaults to `false`.
 
@@ -5086,7 +5086,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly ipRestriction: IResolvable | LinuxFunctionAppSiteConfigIpRestriction[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestriction">LinuxFunctionAppSiteConfigIpRestriction</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestriction">LinuxFunctionAppSiteConfigIpRestriction</a>[]
 
 ip_restriction block.
 
@@ -5170,7 +5170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly remoteDebuggingEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should Remote Debugging be enabled. Defaults to `false`.
 
@@ -5198,7 +5198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly runtimeScaleMonitoringEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should Functions Runtime Scale Monitoring be enabled.
 
@@ -5212,7 +5212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly scmIpRestriction: IResolvable | LinuxFunctionAppSiteConfigScmIpRestriction[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestriction">LinuxFunctionAppSiteConfigScmIpRestriction</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestriction">LinuxFunctionAppSiteConfigScmIpRestriction</a>[]
 
 scm_ip_restriction block.
 
@@ -5252,7 +5252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly scmUseMainIpRestriction: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should the Linux Function App `ip_restriction` configuration be used for the SCM also.
 
@@ -5266,7 +5266,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly use32BitWorker: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should the Linux Web App use a 32-bit worker.
 
@@ -5280,7 +5280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly vnetRouteAllEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied? Defaults to `false`.
 
@@ -5294,7 +5294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly websocketsEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should Web Sockets be enabled. Defaults to `false`.
 
@@ -5330,14 +5330,14 @@ const linuxFunctionAppSiteConfigApplicationStack: linuxFunctionApp.LinuxFunction
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStack.property.docker">docker</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDocker">LinuxFunctionAppSiteConfigApplicationStackDocker</a>[]</code> | docker block. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStack.property.docker">docker</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDocker">LinuxFunctionAppSiteConfigApplicationStackDocker</a>[]</code> | docker block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStack.property.dotnetVersion">dotnetVersion</a></code> | <code>string</code> | The version of .Net. Possible values are `3.1`, `6.0`, `7.0`, `8.0` and `9.0`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStack.property.javaVersion">javaVersion</a></code> | <code>string</code> | The version of Java to use. Possible values are `8`, `11`, `17`, and `21`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStack.property.nodeVersion">nodeVersion</a></code> | <code>string</code> | The version of Node to use. Possible values include `12`, `14`, `16`, `18`, `20`, `22` and `24`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStack.property.powershellCoreVersion">powershellCoreVersion</a></code> | <code>string</code> | The version of PowerShell Core to use. Possibles values are `7`, `7.2`, and `7.4`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStack.property.pythonVersion">pythonVersion</a></code> | <code>string</code> | The version of Python to use. Possible values include `3.14`, `3.13`, `3.12`, `3.11`, `3.10`, `3.9`, `3.8`, and `3.7`. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStack.property.useCustomRuntime">useCustomRuntime</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app#use_custom_runtime LinuxFunctionApp#use_custom_runtime}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStack.property.useDotnetIsolatedRuntime">useDotnetIsolatedRuntime</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should the DotNet process use an isolated runtime. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStack.property.useCustomRuntime">useCustomRuntime</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app#use_custom_runtime LinuxFunctionApp#use_custom_runtime}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStack.property.useDotnetIsolatedRuntime">useDotnetIsolatedRuntime</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should the DotNet process use an isolated runtime. Defaults to `false`. |
 
 ---
 
@@ -5347,7 +5347,7 @@ const linuxFunctionAppSiteConfigApplicationStack: linuxFunctionApp.LinuxFunction
 public readonly docker: IResolvable | LinuxFunctionAppSiteConfigApplicationStackDocker[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDocker">LinuxFunctionAppSiteConfigApplicationStackDocker</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDocker">LinuxFunctionAppSiteConfigApplicationStackDocker</a>[]
 
 docker block.
 
@@ -5431,7 +5431,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly useCustomRuntime: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app#use_custom_runtime LinuxFunctionApp#use_custom_runtime}.
 
@@ -5443,7 +5443,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly useDotnetIsolatedRuntime: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should the DotNet process use an isolated runtime. Defaults to `false`.
 
@@ -5605,7 +5605,7 @@ const linuxFunctionAppSiteConfigCors: linuxFunctionApp.LinuxFunctionAppSiteConfi
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigCors.property.allowedOrigins">allowedOrigins</a></code> | <code>string[]</code> | Specifies a list of origins that should be allowed to make cross-origin calls. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigCors.property.supportCredentials">supportCredentials</a></code> | <code>boolean \| cdktf.IResolvable</code> | Are credentials allowed in CORS requests? Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigCors.property.supportCredentials">supportCredentials</a></code> | <code>boolean \| cdktn.IResolvable</code> | Are credentials allowed in CORS requests? Defaults to `false`. |
 
 ---
 
@@ -5629,7 +5629,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly supportCredentials: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Are credentials allowed in CORS requests? Defaults to `false`.
 
@@ -5653,7 +5653,7 @@ const linuxFunctionAppSiteConfigIpRestriction: linuxFunctionApp.LinuxFunctionApp
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestriction.property.action">action</a></code> | <code>string</code> | The action to take. Possible values are `Allow` or `Deny`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestriction.property.description">description</a></code> | <code>string</code> | The description of the IP restriction rule. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestriction.property.headers">headers</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeaders">LinuxFunctionAppSiteConfigIpRestrictionHeaders</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app#headers LinuxFunctionApp#headers}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestriction.property.headers">headers</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeaders">LinuxFunctionAppSiteConfigIpRestrictionHeaders</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app#headers LinuxFunctionApp#headers}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestriction.property.ipAddress">ipAddress</a></code> | <code>string</code> | The CIDR notation of the IP or IP Range to match. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestriction.property.name">name</a></code> | <code>string</code> | The name which should be used for this `ip_restriction`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestriction.property.priority">priority</a></code> | <code>number</code> | The priority value of this `ip_restriction`. |
@@ -5696,7 +5696,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly headers: IResolvable | LinuxFunctionAppSiteConfigIpRestrictionHeaders[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeaders">LinuxFunctionAppSiteConfigIpRestrictionHeaders</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeaders">LinuxFunctionAppSiteConfigIpRestrictionHeaders</a>[]
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app#headers LinuxFunctionApp#headers}.
 
@@ -5859,7 +5859,7 @@ const linuxFunctionAppSiteConfigScmIpRestriction: linuxFunctionApp.LinuxFunction
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestriction.property.action">action</a></code> | <code>string</code> | The action to take. Possible values are `Allow` or `Deny`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestriction.property.description">description</a></code> | <code>string</code> | The description of the IP restriction rule. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestriction.property.headers">headers</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeaders">LinuxFunctionAppSiteConfigScmIpRestrictionHeaders</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app#headers LinuxFunctionApp#headers}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestriction.property.headers">headers</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeaders">LinuxFunctionAppSiteConfigScmIpRestrictionHeaders</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app#headers LinuxFunctionApp#headers}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestriction.property.ipAddress">ipAddress</a></code> | <code>string</code> | The CIDR notation of the IP or IP Range to match. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestriction.property.name">name</a></code> | <code>string</code> | The name which should be used for this `ip_restriction`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestriction.property.priority">priority</a></code> | <code>number</code> | The priority value of this `ip_restriction`. |
@@ -5902,7 +5902,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly headers: IResolvable | LinuxFunctionAppSiteConfigScmIpRestrictionHeaders[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeaders">LinuxFunctionAppSiteConfigScmIpRestrictionHeaders</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeaders">LinuxFunctionAppSiteConfigScmIpRestrictionHeaders</a>[]
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app#headers LinuxFunctionApp#headers}.
 
@@ -6281,14 +6281,14 @@ new linuxFunctionApp.LinuxFunctionAppAuthSettingsActiveDirectoryOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsActiveDirectoryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsActiveDirectoryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsActiveDirectoryOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsActiveDirectoryOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6461,7 +6461,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsActiveDirectoryOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6639,14 +6639,14 @@ new linuxFunctionApp.LinuxFunctionAppAuthSettingsFacebookOutputReference(terrafo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsFacebookOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsFacebookOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsFacebookOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsFacebookOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6819,7 +6819,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsFacebookOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6997,14 +6997,14 @@ new linuxFunctionApp.LinuxFunctionAppAuthSettingsGithubOutputReference(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsGithubOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsGithubOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsGithubOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsGithubOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7177,7 +7177,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsGithubOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7355,14 +7355,14 @@ new linuxFunctionApp.LinuxFunctionAppAuthSettingsGoogleOutputReference(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsGoogleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsGoogleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsGoogleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsGoogleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7535,7 +7535,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsGoogleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7713,14 +7713,14 @@ new linuxFunctionApp.LinuxFunctionAppAuthSettingsMicrosoftOutputReference(terraf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsMicrosoftOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsMicrosoftOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsMicrosoftOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsMicrosoftOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7893,7 +7893,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsMicrosoftOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8071,14 +8071,14 @@ new linuxFunctionApp.LinuxFunctionAppAuthSettingsOutputReference(terraformResour
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8268,7 +8268,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8455,7 +8455,7 @@ public resetUnauthenticatedClientAction(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsOutputReference.property.additionalLoginParametersInput">additionalLoginParametersInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsOutputReference.property.allowedExternalRedirectUrlsInput">allowedExternalRedirectUrlsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsOutputReference.property.defaultProviderInput">defaultProviderInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsOutputReference.property.facebookInput">facebookInput</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsFacebook">LinuxFunctionAppAuthSettingsFacebook</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsOutputReference.property.githubInput">githubInput</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsGithub">LinuxFunctionAppAuthSettingsGithub</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsOutputReference.property.googleInput">googleInput</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsGoogle">LinuxFunctionAppAuthSettingsGoogle</a></code> | *No description.* |
@@ -8463,17 +8463,17 @@ public resetUnauthenticatedClientAction(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsOutputReference.property.microsoftInput">microsoftInput</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsMicrosoft">LinuxFunctionAppAuthSettingsMicrosoft</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsOutputReference.property.runtimeVersionInput">runtimeVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsOutputReference.property.tokenRefreshExtensionHoursInput">tokenRefreshExtensionHoursInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsOutputReference.property.tokenStoreEnabledInput">tokenStoreEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsOutputReference.property.tokenStoreEnabledInput">tokenStoreEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsOutputReference.property.twitterInput">twitterInput</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsTwitter">LinuxFunctionAppAuthSettingsTwitter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsOutputReference.property.unauthenticatedClientActionInput">unauthenticatedClientActionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsOutputReference.property.additionalLoginParameters">additionalLoginParameters</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsOutputReference.property.allowedExternalRedirectUrls">allowedExternalRedirectUrls</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsOutputReference.property.defaultProvider">defaultProvider</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsOutputReference.property.issuer">issuer</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsOutputReference.property.runtimeVersion">runtimeVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsOutputReference.property.tokenRefreshExtensionHours">tokenRefreshExtensionHours</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsOutputReference.property.tokenStoreEnabled">tokenStoreEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsOutputReference.property.tokenStoreEnabled">tokenStoreEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsOutputReference.property.unauthenticatedClientAction">unauthenticatedClientAction</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettings">LinuxFunctionAppAuthSettings</a></code> | *No description.* |
 
@@ -8609,7 +8609,7 @@ public readonly defaultProviderInput: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -8689,7 +8689,7 @@ public readonly tokenRefreshExtensionHoursInput: number;
 public readonly tokenStoreEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -8749,7 +8749,7 @@ public readonly defaultProvider: string;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -8789,7 +8789,7 @@ public readonly tokenRefreshExtensionHours: number;
 public readonly tokenStoreEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -8826,14 +8826,14 @@ new linuxFunctionApp.LinuxFunctionAppAuthSettingsTwitterOutputReference(terrafor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsTwitterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsTwitterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsTwitterOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsTwitterOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9005,7 +9005,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsTwitterOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9155,14 +9155,14 @@ new linuxFunctionApp.LinuxFunctionAppAuthSettingsV2ActiveDirectoryV2OutputRefere
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9342,7 +9342,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9434,7 +9434,7 @@ public resetWwwAuthenticationDisabled(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.property.jwtAllowedGroupsInput">jwtAllowedGroupsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.property.loginParametersInput">loginParametersInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.property.tenantAuthEndpointInput">tenantAuthEndpointInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.property.wwwAuthenticationDisabledInput">wwwAuthenticationDisabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.property.wwwAuthenticationDisabledInput">wwwAuthenticationDisabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.property.allowedApplications">allowedApplications</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.property.allowedAudiences">allowedAudiences</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.property.allowedGroups">allowedGroups</a></code> | <code>string[]</code> | *No description.* |
@@ -9446,7 +9446,7 @@ public resetWwwAuthenticationDisabled(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.property.jwtAllowedGroups">jwtAllowedGroups</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.property.loginParameters">loginParameters</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.property.tenantAuthEndpoint">tenantAuthEndpoint</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.property.wwwAuthenticationDisabled">wwwAuthenticationDisabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.property.wwwAuthenticationDisabled">wwwAuthenticationDisabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2ActiveDirectoryV2">LinuxFunctionAppAuthSettingsV2ActiveDirectoryV2</a></code> | *No description.* |
 
 ---
@@ -9591,7 +9591,7 @@ public readonly tenantAuthEndpointInput: string;
 public readonly wwwAuthenticationDisabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -9711,7 +9711,7 @@ public readonly tenantAuthEndpoint: string;
 public readonly wwwAuthenticationDisabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -9738,14 +9738,14 @@ new linuxFunctionApp.LinuxFunctionAppAuthSettingsV2AppleV2OutputReference(terraf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2AppleV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2AppleV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2AppleV2OutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2AppleV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9915,7 +9915,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2AppleV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10042,14 +10042,14 @@ new linuxFunctionApp.LinuxFunctionAppAuthSettingsV2AzureStaticWebAppV2OutputRefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2AzureStaticWebAppV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2AzureStaticWebAppV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2AzureStaticWebAppV2OutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2AzureStaticWebAppV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10219,7 +10219,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2AzureStaticWebAppV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10313,7 +10313,7 @@ new linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2List(terraformRes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2List.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2List.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2List.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2List.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -10321,7 +10321,7 @@ new linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2List(terraformRes
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2List.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10387,7 +10387,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2List.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10422,7 +10422,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2List.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2List.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2List.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2">LinuxFunctionAppAuthSettingsV2CustomOidcV2</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2List.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2">LinuxFunctionAppAuthSettingsV2CustomOidcV2</a>[]</code> | *No description.* |
 
 ---
 
@@ -10456,7 +10456,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | LinuxFunctionAppAuthSettingsV2CustomOidcV2[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2">LinuxFunctionAppAuthSettingsV2CustomOidcV2</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2">LinuxFunctionAppAuthSettingsV2CustomOidcV2</a>[]
 
 ---
 
@@ -10473,7 +10473,7 @@ new linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2OutputReference(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2OutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2OutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2OutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -10482,7 +10482,7 @@ new linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2OutputReference(t
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10670,7 +10670,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10719,7 +10719,7 @@ public resetScopes(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2OutputReference.property.nameClaimType">nameClaimType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2OutputReference.property.openidConfigurationEndpoint">openidConfigurationEndpoint</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2OutputReference.property.scopes">scopes</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2OutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2">LinuxFunctionAppAuthSettingsV2CustomOidcV2</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2OutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2">LinuxFunctionAppAuthSettingsV2CustomOidcV2</a></code> | *No description.* |
 
 ---
 
@@ -10913,7 +10913,7 @@ public readonly scopes: string[];
 public readonly internalValue: IResolvable | LinuxFunctionAppAuthSettingsV2CustomOidcV2;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2">LinuxFunctionAppAuthSettingsV2CustomOidcV2</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2">LinuxFunctionAppAuthSettingsV2CustomOidcV2</a>
 
 ---
 
@@ -10930,14 +10930,14 @@ new linuxFunctionApp.LinuxFunctionAppAuthSettingsV2FacebookV2OutputReference(ter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2FacebookV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2FacebookV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2FacebookV2OutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2FacebookV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11109,7 +11109,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2FacebookV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11281,14 +11281,14 @@ new linuxFunctionApp.LinuxFunctionAppAuthSettingsV2GithubV2OutputReference(terra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2GithubV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2GithubV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2GithubV2OutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2GithubV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11459,7 +11459,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2GithubV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11603,14 +11603,14 @@ new linuxFunctionApp.LinuxFunctionAppAuthSettingsV2GoogleV2OutputReference(terra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2GoogleV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2GoogleV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2GoogleV2OutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2GoogleV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11782,7 +11782,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2GoogleV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11954,14 +11954,14 @@ new linuxFunctionApp.LinuxFunctionAppAuthSettingsV2LoginOutputReference(terrafor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2LoginOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2LoginOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2LoginOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2LoginOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12142,7 +12142,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2LoginOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12234,23 +12234,23 @@ public resetValidateNonce(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2LoginOutputReference.property.cookieExpirationTimeInput">cookieExpirationTimeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2LoginOutputReference.property.logoutEndpointInput">logoutEndpointInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2LoginOutputReference.property.nonceExpirationTimeInput">nonceExpirationTimeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2LoginOutputReference.property.preserveUrlFragmentsForLoginsInput">preserveUrlFragmentsForLoginsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2LoginOutputReference.property.preserveUrlFragmentsForLoginsInput">preserveUrlFragmentsForLoginsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2LoginOutputReference.property.tokenRefreshExtensionTimeInput">tokenRefreshExtensionTimeInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2LoginOutputReference.property.tokenStoreEnabledInput">tokenStoreEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2LoginOutputReference.property.tokenStoreEnabledInput">tokenStoreEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2LoginOutputReference.property.tokenStorePathInput">tokenStorePathInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2LoginOutputReference.property.tokenStoreSasSettingNameInput">tokenStoreSasSettingNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2LoginOutputReference.property.validateNonceInput">validateNonceInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2LoginOutputReference.property.validateNonceInput">validateNonceInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2LoginOutputReference.property.allowedExternalRedirectUrls">allowedExternalRedirectUrls</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2LoginOutputReference.property.cookieExpirationConvention">cookieExpirationConvention</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2LoginOutputReference.property.cookieExpirationTime">cookieExpirationTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2LoginOutputReference.property.logoutEndpoint">logoutEndpoint</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2LoginOutputReference.property.nonceExpirationTime">nonceExpirationTime</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2LoginOutputReference.property.preserveUrlFragmentsForLogins">preserveUrlFragmentsForLogins</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2LoginOutputReference.property.preserveUrlFragmentsForLogins">preserveUrlFragmentsForLogins</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2LoginOutputReference.property.tokenRefreshExtensionTime">tokenRefreshExtensionTime</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2LoginOutputReference.property.tokenStoreEnabled">tokenStoreEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2LoginOutputReference.property.tokenStoreEnabled">tokenStoreEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2LoginOutputReference.property.tokenStorePath">tokenStorePath</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2LoginOutputReference.property.tokenStoreSasSettingName">tokenStoreSasSettingName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2LoginOutputReference.property.validateNonce">validateNonce</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2LoginOutputReference.property.validateNonce">validateNonce</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2LoginOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2Login">LinuxFunctionAppAuthSettingsV2Login</a></code> | *No description.* |
 
 ---
@@ -12335,7 +12335,7 @@ public readonly nonceExpirationTimeInput: string;
 public readonly preserveUrlFragmentsForLoginsInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -12355,7 +12355,7 @@ public readonly tokenRefreshExtensionTimeInput: number;
 public readonly tokenStoreEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -12385,7 +12385,7 @@ public readonly tokenStoreSasSettingNameInput: string;
 public readonly validateNonceInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -12445,7 +12445,7 @@ public readonly nonceExpirationTime: string;
 public readonly preserveUrlFragmentsForLogins: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -12465,7 +12465,7 @@ public readonly tokenRefreshExtensionTime: number;
 public readonly tokenStoreEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -12495,7 +12495,7 @@ public readonly tokenStoreSasSettingName: string;
 public readonly validateNonce: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -12522,14 +12522,14 @@ new linuxFunctionApp.LinuxFunctionAppAuthSettingsV2MicrosoftV2OutputReference(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2MicrosoftV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2MicrosoftV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2MicrosoftV2OutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2MicrosoftV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12701,7 +12701,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2MicrosoftV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12873,14 +12873,14 @@ new linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13081,7 +13081,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13139,7 +13139,7 @@ public putCustomOidcV2(value: IResolvable | LinuxFunctionAppAuthSettingsV2Custom
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.putCustomOidcV2.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2">LinuxFunctionAppAuthSettingsV2CustomOidcV2</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2">LinuxFunctionAppAuthSettingsV2CustomOidcV2</a>[]
 
 ---
 
@@ -13360,10 +13360,10 @@ public resetUnauthenticatedAction(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.property.twitterV2">twitterV2</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2TwitterV2OutputReference">LinuxFunctionAppAuthSettingsV2TwitterV2OutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.property.activeDirectoryV2Input">activeDirectoryV2Input</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2ActiveDirectoryV2">LinuxFunctionAppAuthSettingsV2ActiveDirectoryV2</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.property.appleV2Input">appleV2Input</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2AppleV2">LinuxFunctionAppAuthSettingsV2AppleV2</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.property.authEnabledInput">authEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.property.authEnabledInput">authEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.property.azureStaticWebAppV2Input">azureStaticWebAppV2Input</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2AzureStaticWebAppV2">LinuxFunctionAppAuthSettingsV2AzureStaticWebAppV2</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.property.configFilePathInput">configFilePathInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.property.customOidcV2Input">customOidcV2Input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2">LinuxFunctionAppAuthSettingsV2CustomOidcV2</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.property.customOidcV2Input">customOidcV2Input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2">LinuxFunctionAppAuthSettingsV2CustomOidcV2</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.property.defaultProviderInput">defaultProviderInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.property.excludedPathsInput">excludedPathsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.property.facebookV2Input">facebookV2Input</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2FacebookV2">LinuxFunctionAppAuthSettingsV2FacebookV2</a></code> | *No description.* |
@@ -13375,12 +13375,12 @@ public resetUnauthenticatedAction(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.property.httpRouteApiPrefixInput">httpRouteApiPrefixInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.property.loginInput">loginInput</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2Login">LinuxFunctionAppAuthSettingsV2Login</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.property.microsoftV2Input">microsoftV2Input</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2MicrosoftV2">LinuxFunctionAppAuthSettingsV2MicrosoftV2</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.property.requireAuthenticationInput">requireAuthenticationInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.property.requireHttpsInput">requireHttpsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.property.requireAuthenticationInput">requireAuthenticationInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.property.requireHttpsInput">requireHttpsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.property.runtimeVersionInput">runtimeVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.property.twitterV2Input">twitterV2Input</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2TwitterV2">LinuxFunctionAppAuthSettingsV2TwitterV2</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.property.unauthenticatedActionInput">unauthenticatedActionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.property.authEnabled">authEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.property.authEnabled">authEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.property.configFilePath">configFilePath</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.property.defaultProvider">defaultProvider</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.property.excludedPaths">excludedPaths</a></code> | <code>string[]</code> | *No description.* |
@@ -13388,8 +13388,8 @@ public resetUnauthenticatedAction(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.property.forwardProxyCustomHostHeaderName">forwardProxyCustomHostHeaderName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.property.forwardProxyCustomSchemeHeaderName">forwardProxyCustomSchemeHeaderName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.property.httpRouteApiPrefix">httpRouteApiPrefix</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.property.requireAuthentication">requireAuthentication</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.property.requireHttps">requireHttps</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.property.requireAuthentication">requireAuthentication</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.property.requireHttps">requireHttps</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.property.runtimeVersion">runtimeVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.property.unauthenticatedAction">unauthenticatedAction</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2OutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2">LinuxFunctionAppAuthSettingsV2</a></code> | *No description.* |
@@ -13546,7 +13546,7 @@ public readonly appleV2Input: LinuxFunctionAppAuthSettingsV2AppleV2;
 public readonly authEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -13576,7 +13576,7 @@ public readonly configFilePathInput: string;
 public readonly customOidcV2Input: IResolvable | LinuxFunctionAppAuthSettingsV2CustomOidcV2[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2">LinuxFunctionAppAuthSettingsV2CustomOidcV2</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2CustomOidcV2">LinuxFunctionAppAuthSettingsV2CustomOidcV2</a>[]
 
 ---
 
@@ -13696,7 +13696,7 @@ public readonly microsoftV2Input: LinuxFunctionAppAuthSettingsV2MicrosoftV2;
 public readonly requireAuthenticationInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -13706,7 +13706,7 @@ public readonly requireAuthenticationInput: boolean | IResolvable;
 public readonly requireHttpsInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -13746,7 +13746,7 @@ public readonly unauthenticatedActionInput: string;
 public readonly authEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -13826,7 +13826,7 @@ public readonly httpRouteApiPrefix: string;
 public readonly requireAuthentication: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -13836,7 +13836,7 @@ public readonly requireAuthentication: boolean | IResolvable;
 public readonly requireHttps: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -13883,14 +13883,14 @@ new linuxFunctionApp.LinuxFunctionAppAuthSettingsV2TwitterV2OutputReference(terr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2TwitterV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2TwitterV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2TwitterV2OutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2TwitterV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14060,7 +14060,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppAuthSettingsV2TwitterV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14176,14 +14176,14 @@ new linuxFunctionApp.LinuxFunctionAppBackupOutputReference(terraformResource: II
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14355,7 +14355,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14395,11 +14395,11 @@ public resetEnabled(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupOutputReference.property.schedule">schedule</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupScheduleOutputReference">LinuxFunctionAppBackupScheduleOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupOutputReference.property.scheduleInput">scheduleInput</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupSchedule">LinuxFunctionAppBackupSchedule</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupOutputReference.property.storageAccountUrlInput">storageAccountUrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupOutputReference.property.storageAccountUrl">storageAccountUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackup">LinuxFunctionAppBackup</a></code> | *No description.* |
@@ -14446,7 +14446,7 @@ public readonly schedule: LinuxFunctionAppBackupScheduleOutputReference;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -14486,7 +14486,7 @@ public readonly storageAccountUrlInput: string;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -14533,14 +14533,14 @@ new linuxFunctionApp.LinuxFunctionAppBackupScheduleOutputReference(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupScheduleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupScheduleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupScheduleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupScheduleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14713,7 +14713,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupScheduleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14755,12 +14755,12 @@ public resetStartTime(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupScheduleOutputReference.property.lastExecutionTime">lastExecutionTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupScheduleOutputReference.property.frequencyIntervalInput">frequencyIntervalInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupScheduleOutputReference.property.frequencyUnitInput">frequencyUnitInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupScheduleOutputReference.property.keepAtLeastOneBackupInput">keepAtLeastOneBackupInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupScheduleOutputReference.property.keepAtLeastOneBackupInput">keepAtLeastOneBackupInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupScheduleOutputReference.property.retentionPeriodDaysInput">retentionPeriodDaysInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupScheduleOutputReference.property.startTimeInput">startTimeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupScheduleOutputReference.property.frequencyInterval">frequencyInterval</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupScheduleOutputReference.property.frequencyUnit">frequencyUnit</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupScheduleOutputReference.property.keepAtLeastOneBackup">keepAtLeastOneBackup</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupScheduleOutputReference.property.keepAtLeastOneBackup">keepAtLeastOneBackup</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupScheduleOutputReference.property.retentionPeriodDays">retentionPeriodDays</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupScheduleOutputReference.property.startTime">startTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupScheduleOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppBackupSchedule">LinuxFunctionAppBackupSchedule</a></code> | *No description.* |
@@ -14827,7 +14827,7 @@ public readonly frequencyUnitInput: string;
 public readonly keepAtLeastOneBackupInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -14877,7 +14877,7 @@ public readonly frequencyUnit: string;
 public readonly keepAtLeastOneBackup: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -14924,7 +14924,7 @@ new linuxFunctionApp.LinuxFunctionAppConnectionStringList(terraformResource: IIn
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionStringList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionStringList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionStringList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionStringList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -14932,7 +14932,7 @@ new linuxFunctionApp.LinuxFunctionAppConnectionStringList(terraformResource: IIn
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionStringList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14998,7 +14998,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionStringList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15033,7 +15033,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionStringList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionStringList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionStringList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionString">LinuxFunctionAppConnectionString</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionStringList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionString">LinuxFunctionAppConnectionString</a>[]</code> | *No description.* |
 
 ---
 
@@ -15067,7 +15067,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | LinuxFunctionAppConnectionString[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionString">LinuxFunctionAppConnectionString</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionString">LinuxFunctionAppConnectionString</a>[]
 
 ---
 
@@ -15084,7 +15084,7 @@ new linuxFunctionApp.LinuxFunctionAppConnectionStringOutputReference(terraformRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionStringOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionStringOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionStringOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionStringOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionStringOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -15093,7 +15093,7 @@ new linuxFunctionApp.LinuxFunctionAppConnectionStringOutputReference(terraformRe
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionStringOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15279,7 +15279,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionStringOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15306,7 +15306,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionStringOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionStringOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionStringOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionStringOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionString">LinuxFunctionAppConnectionString</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionStringOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionString">LinuxFunctionAppConnectionString</a></code> | *No description.* |
 
 ---
 
@@ -15400,7 +15400,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | LinuxFunctionAppConnectionString;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionString">LinuxFunctionAppConnectionString</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppConnectionString">LinuxFunctionAppConnectionString</a>
 
 ---
 
@@ -15417,14 +15417,14 @@ new linuxFunctionApp.LinuxFunctionAppIdentityOutputReference(terraformResource: 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppIdentityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppIdentityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppIdentityOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppIdentityOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15595,7 +15595,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppIdentityOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15739,7 +15739,7 @@ new linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDockerList(terraf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDockerList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDockerList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDockerList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDockerList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -15747,7 +15747,7 @@ new linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDockerList(terraf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDockerList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15813,7 +15813,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDockerList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15848,7 +15848,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDockerList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDockerList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDockerList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDocker">LinuxFunctionAppSiteConfigApplicationStackDocker</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDockerList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDocker">LinuxFunctionAppSiteConfigApplicationStackDocker</a>[]</code> | *No description.* |
 
 ---
 
@@ -15882,7 +15882,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | LinuxFunctionAppSiteConfigApplicationStackDocker[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDocker">LinuxFunctionAppSiteConfigApplicationStackDocker</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDocker">LinuxFunctionAppSiteConfigApplicationStackDocker</a>[]
 
 ---
 
@@ -15899,7 +15899,7 @@ new linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDockerOutputRefer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDockerOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDockerOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDockerOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDockerOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDockerOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -15908,7 +15908,7 @@ new linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDockerOutputRefer
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDockerOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16096,7 +16096,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDockerOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16139,7 +16139,7 @@ public resetRegistryUsername(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDockerOutputReference.property.registryPassword">registryPassword</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDockerOutputReference.property.registryUrl">registryUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDockerOutputReference.property.registryUsername">registryUsername</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDockerOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDocker">LinuxFunctionAppSiteConfigApplicationStackDocker</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDockerOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDocker">LinuxFunctionAppSiteConfigApplicationStackDocker</a></code> | *No description.* |
 
 ---
 
@@ -16273,7 +16273,7 @@ public readonly registryUsername: string;
 public readonly internalValue: IResolvable | LinuxFunctionAppSiteConfigApplicationStackDocker;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDocker">LinuxFunctionAppSiteConfigApplicationStackDocker</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDocker">LinuxFunctionAppSiteConfigApplicationStackDocker</a>
 
 ---
 
@@ -16290,14 +16290,14 @@ new linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackOutputReference(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16476,7 +16476,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16498,7 +16498,7 @@ public putDocker(value: IResolvable | LinuxFunctionAppSiteConfigApplicationStack
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackOutputReference.putDocker.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDocker">LinuxFunctionAppSiteConfigApplicationStackDocker</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDocker">LinuxFunctionAppSiteConfigApplicationStackDocker</a>[]
 
 ---
 
@@ -16558,21 +16558,21 @@ public resetUseDotnetIsolatedRuntime(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackOutputReference.property.docker">docker</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDockerList">LinuxFunctionAppSiteConfigApplicationStackDockerList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackOutputReference.property.dockerInput">dockerInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDocker">LinuxFunctionAppSiteConfigApplicationStackDocker</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackOutputReference.property.dockerInput">dockerInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDocker">LinuxFunctionAppSiteConfigApplicationStackDocker</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackOutputReference.property.dotnetVersionInput">dotnetVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackOutputReference.property.javaVersionInput">javaVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackOutputReference.property.nodeVersionInput">nodeVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackOutputReference.property.powershellCoreVersionInput">powershellCoreVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackOutputReference.property.pythonVersionInput">pythonVersionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackOutputReference.property.useCustomRuntimeInput">useCustomRuntimeInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackOutputReference.property.useDotnetIsolatedRuntimeInput">useDotnetIsolatedRuntimeInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackOutputReference.property.useCustomRuntimeInput">useCustomRuntimeInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackOutputReference.property.useDotnetIsolatedRuntimeInput">useDotnetIsolatedRuntimeInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackOutputReference.property.dotnetVersion">dotnetVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackOutputReference.property.javaVersion">javaVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackOutputReference.property.nodeVersion">nodeVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackOutputReference.property.powershellCoreVersion">powershellCoreVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackOutputReference.property.pythonVersion">pythonVersion</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackOutputReference.property.useCustomRuntime">useCustomRuntime</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackOutputReference.property.useDotnetIsolatedRuntime">useDotnetIsolatedRuntime</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackOutputReference.property.useCustomRuntime">useCustomRuntime</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackOutputReference.property.useDotnetIsolatedRuntime">useDotnetIsolatedRuntime</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStack">LinuxFunctionAppSiteConfigApplicationStack</a></code> | *No description.* |
 
 ---
@@ -16617,7 +16617,7 @@ public readonly docker: LinuxFunctionAppSiteConfigApplicationStackDockerList;
 public readonly dockerInput: IResolvable | LinuxFunctionAppSiteConfigApplicationStackDocker[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDocker">LinuxFunctionAppSiteConfigApplicationStackDocker</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackDocker">LinuxFunctionAppSiteConfigApplicationStackDocker</a>[]
 
 ---
 
@@ -16677,7 +16677,7 @@ public readonly pythonVersionInput: string;
 public readonly useCustomRuntimeInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -16687,7 +16687,7 @@ public readonly useCustomRuntimeInput: boolean | IResolvable;
 public readonly useDotnetIsolatedRuntimeInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -16747,7 +16747,7 @@ public readonly pythonVersion: string;
 public readonly useCustomRuntime: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -16757,7 +16757,7 @@ public readonly useCustomRuntime: boolean | IResolvable;
 public readonly useDotnetIsolatedRuntime: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -16784,14 +16784,14 @@ new linuxFunctionApp.LinuxFunctionAppSiteConfigAppServiceLogsOutputReference(ter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigAppServiceLogsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigAppServiceLogsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigAppServiceLogsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigAppServiceLogsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16963,7 +16963,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigAppServiceLogsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17091,14 +17091,14 @@ new linuxFunctionApp.LinuxFunctionAppSiteConfigCorsOutputReference(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigCorsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigCorsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigCorsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigCorsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17270,7 +17270,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigCorsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17304,9 +17304,9 @@ public resetSupportCredentials(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigCorsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigCorsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigCorsOutputReference.property.allowedOriginsInput">allowedOriginsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigCorsOutputReference.property.supportCredentialsInput">supportCredentialsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigCorsOutputReference.property.supportCredentialsInput">supportCredentialsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigCorsOutputReference.property.allowedOrigins">allowedOrigins</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigCorsOutputReference.property.supportCredentials">supportCredentials</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigCorsOutputReference.property.supportCredentials">supportCredentials</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigCorsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigCors">LinuxFunctionAppSiteConfigCors</a></code> | *No description.* |
 
 ---
@@ -17351,7 +17351,7 @@ public readonly allowedOriginsInput: string[];
 public readonly supportCredentialsInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -17371,7 +17371,7 @@ public readonly allowedOrigins: string[];
 public readonly supportCredentials: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -17398,7 +17398,7 @@ new linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeadersList(terrafor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeadersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeadersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeadersList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeadersList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -17406,7 +17406,7 @@ new linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeadersList(terrafor
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeadersList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17472,7 +17472,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeadersList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17507,7 +17507,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeadersList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeadersList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeadersList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeaders">LinuxFunctionAppSiteConfigIpRestrictionHeaders</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeadersList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeaders">LinuxFunctionAppSiteConfigIpRestrictionHeaders</a>[]</code> | *No description.* |
 
 ---
 
@@ -17541,7 +17541,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | LinuxFunctionAppSiteConfigIpRestrictionHeaders[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeaders">LinuxFunctionAppSiteConfigIpRestrictionHeaders</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeaders">LinuxFunctionAppSiteConfigIpRestrictionHeaders</a>[]
 
 ---
 
@@ -17558,7 +17558,7 @@ new linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeadersOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeadersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeadersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeadersOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeadersOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeadersOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -17567,7 +17567,7 @@ new linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeadersOutputReferen
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeadersOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17757,7 +17757,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeadersOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17810,7 +17810,7 @@ public resetXForwardedHost(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeadersOutputReference.property.xFdHealthProbe">xFdHealthProbe</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeadersOutputReference.property.xForwardedFor">xForwardedFor</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeadersOutputReference.property.xForwardedHost">xForwardedHost</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeadersOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeaders">LinuxFunctionAppSiteConfigIpRestrictionHeaders</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeadersOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeaders">LinuxFunctionAppSiteConfigIpRestrictionHeaders</a></code> | *No description.* |
 
 ---
 
@@ -17924,7 +17924,7 @@ public readonly xForwardedHost: string[];
 public readonly internalValue: IResolvable | LinuxFunctionAppSiteConfigIpRestrictionHeaders;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeaders">LinuxFunctionAppSiteConfigIpRestrictionHeaders</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeaders">LinuxFunctionAppSiteConfigIpRestrictionHeaders</a>
 
 ---
 
@@ -17941,7 +17941,7 @@ new linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionList(terraformResour
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -17949,7 +17949,7 @@ new linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionList(terraformResour
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18015,7 +18015,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18050,7 +18050,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestriction">LinuxFunctionAppSiteConfigIpRestriction</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestriction">LinuxFunctionAppSiteConfigIpRestriction</a>[]</code> | *No description.* |
 
 ---
 
@@ -18084,7 +18084,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | LinuxFunctionAppSiteConfigIpRestriction[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestriction">LinuxFunctionAppSiteConfigIpRestriction</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestriction">LinuxFunctionAppSiteConfigIpRestriction</a>[]
 
 ---
 
@@ -18101,7 +18101,7 @@ new linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionOutputReference(terr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -18110,7 +18110,7 @@ new linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionOutputReference(terr
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18305,7 +18305,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18327,7 +18327,7 @@ public putHeaders(value: IResolvable | LinuxFunctionAppSiteConfigIpRestrictionHe
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionOutputReference.putHeaders.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeaders">LinuxFunctionAppSiteConfigIpRestrictionHeaders</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeaders">LinuxFunctionAppSiteConfigIpRestrictionHeaders</a>[]
 
 ---
 
@@ -18389,7 +18389,7 @@ public resetVirtualNetworkSubnetId(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionOutputReference.property.headers">headers</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeadersList">LinuxFunctionAppSiteConfigIpRestrictionHeadersList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionOutputReference.property.actionInput">actionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionOutputReference.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionOutputReference.property.headersInput">headersInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeaders">LinuxFunctionAppSiteConfigIpRestrictionHeaders</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionOutputReference.property.headersInput">headersInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeaders">LinuxFunctionAppSiteConfigIpRestrictionHeaders</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionOutputReference.property.ipAddressInput">ipAddressInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionOutputReference.property.priorityInput">priorityInput</a></code> | <code>number</code> | *No description.* |
@@ -18402,7 +18402,7 @@ public resetVirtualNetworkSubnetId(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionOutputReference.property.priority">priority</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionOutputReference.property.serviceTag">serviceTag</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionOutputReference.property.virtualNetworkSubnetId">virtualNetworkSubnetId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestriction">LinuxFunctionAppSiteConfigIpRestriction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestriction">LinuxFunctionAppSiteConfigIpRestriction</a></code> | *No description.* |
 
 ---
 
@@ -18466,7 +18466,7 @@ public readonly descriptionInput: string;
 public readonly headersInput: IResolvable | LinuxFunctionAppSiteConfigIpRestrictionHeaders[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeaders">LinuxFunctionAppSiteConfigIpRestrictionHeaders</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionHeaders">LinuxFunctionAppSiteConfigIpRestrictionHeaders</a>[]
 
 ---
 
@@ -18596,7 +18596,7 @@ public readonly virtualNetworkSubnetId: string;
 public readonly internalValue: IResolvable | LinuxFunctionAppSiteConfigIpRestriction;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestriction">LinuxFunctionAppSiteConfigIpRestriction</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestriction">LinuxFunctionAppSiteConfigIpRestriction</a>
 
 ---
 
@@ -18613,14 +18613,14 @@ new linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference(terraformResource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18830,7 +18830,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18888,7 +18888,7 @@ public putIpRestriction(value: IResolvable | LinuxFunctionAppSiteConfigIpRestric
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.putIpRestriction.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestriction">LinuxFunctionAppSiteConfigIpRestriction</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestriction">LinuxFunctionAppSiteConfigIpRestriction</a>[]
 
 ---
 
@@ -18900,7 +18900,7 @@ public putScmIpRestriction(value: IResolvable | LinuxFunctionAppSiteConfigScmIpR
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.putScmIpRestriction.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestriction">LinuxFunctionAppSiteConfigScmIpRestriction</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestriction">LinuxFunctionAppSiteConfigScmIpRestriction</a>[]
 
 ---
 
@@ -19124,12 +19124,12 @@ public resetWorkerCount(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.applicationStack">applicationStack</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigApplicationStackOutputReference">LinuxFunctionAppSiteConfigApplicationStackOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.appServiceLogs">appServiceLogs</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigAppServiceLogsOutputReference">LinuxFunctionAppSiteConfigAppServiceLogsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.cors">cors</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigCorsOutputReference">LinuxFunctionAppSiteConfigCorsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.detailedErrorLoggingEnabled">detailedErrorLoggingEnabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.detailedErrorLoggingEnabled">detailedErrorLoggingEnabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.ipRestriction">ipRestriction</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestrictionList">LinuxFunctionAppSiteConfigIpRestrictionList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.linuxFxVersion">linuxFxVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.scmIpRestriction">scmIpRestriction</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionList">LinuxFunctionAppSiteConfigScmIpRestrictionList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.scmType">scmType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.alwaysOnInput">alwaysOnInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.alwaysOnInput">alwaysOnInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.apiDefinitionUrlInput">apiDefinitionUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.apiManagementApiIdInput">apiManagementApiIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.appCommandLineInput">appCommandLineInput</a></code> | <code>string</code> | *No description.* |
@@ -19139,32 +19139,32 @@ public resetWorkerCount(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.appScaleLimitInput">appScaleLimitInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.appServiceLogsInput">appServiceLogsInput</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigAppServiceLogs">LinuxFunctionAppSiteConfigAppServiceLogs</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.containerRegistryManagedIdentityClientIdInput">containerRegistryManagedIdentityClientIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.containerRegistryUseManagedIdentityInput">containerRegistryUseManagedIdentityInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.containerRegistryUseManagedIdentityInput">containerRegistryUseManagedIdentityInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.corsInput">corsInput</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigCors">LinuxFunctionAppSiteConfigCors</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.defaultDocumentsInput">defaultDocumentsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.elasticInstanceMinimumInput">elasticInstanceMinimumInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.ftpsStateInput">ftpsStateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.healthCheckEvictionTimeInMinInput">healthCheckEvictionTimeInMinInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.healthCheckPathInput">healthCheckPathInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.http2EnabledInput">http2EnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.http2EnabledInput">http2EnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.ipRestrictionDefaultActionInput">ipRestrictionDefaultActionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.ipRestrictionInput">ipRestrictionInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestriction">LinuxFunctionAppSiteConfigIpRestriction</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.ipRestrictionInput">ipRestrictionInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestriction">LinuxFunctionAppSiteConfigIpRestriction</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.loadBalancingModeInput">loadBalancingModeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.managedPipelineModeInput">managedPipelineModeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.minimumTlsVersionInput">minimumTlsVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.preWarmedInstanceCountInput">preWarmedInstanceCountInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.remoteDebuggingEnabledInput">remoteDebuggingEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.remoteDebuggingEnabledInput">remoteDebuggingEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.remoteDebuggingVersionInput">remoteDebuggingVersionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.runtimeScaleMonitoringEnabledInput">runtimeScaleMonitoringEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.runtimeScaleMonitoringEnabledInput">runtimeScaleMonitoringEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.scmIpRestrictionDefaultActionInput">scmIpRestrictionDefaultActionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.scmIpRestrictionInput">scmIpRestrictionInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestriction">LinuxFunctionAppSiteConfigScmIpRestriction</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.scmIpRestrictionInput">scmIpRestrictionInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestriction">LinuxFunctionAppSiteConfigScmIpRestriction</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.scmMinimumTlsVersionInput">scmMinimumTlsVersionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.scmUseMainIpRestrictionInput">scmUseMainIpRestrictionInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.use32BitWorkerInput">use32BitWorkerInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.vnetRouteAllEnabledInput">vnetRouteAllEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.websocketsEnabledInput">websocketsEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.scmUseMainIpRestrictionInput">scmUseMainIpRestrictionInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.use32BitWorkerInput">use32BitWorkerInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.vnetRouteAllEnabledInput">vnetRouteAllEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.websocketsEnabledInput">websocketsEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.workerCountInput">workerCountInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.alwaysOn">alwaysOn</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.alwaysOn">alwaysOn</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.apiDefinitionUrl">apiDefinitionUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.apiManagementApiId">apiManagementApiId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.appCommandLine">appCommandLine</a></code> | <code>string</code> | *No description.* |
@@ -19172,27 +19172,27 @@ public resetWorkerCount(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.applicationInsightsKey">applicationInsightsKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.appScaleLimit">appScaleLimit</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.containerRegistryManagedIdentityClientId">containerRegistryManagedIdentityClientId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.containerRegistryUseManagedIdentity">containerRegistryUseManagedIdentity</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.containerRegistryUseManagedIdentity">containerRegistryUseManagedIdentity</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.defaultDocuments">defaultDocuments</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.elasticInstanceMinimum">elasticInstanceMinimum</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.ftpsState">ftpsState</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.healthCheckEvictionTimeInMin">healthCheckEvictionTimeInMin</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.healthCheckPath">healthCheckPath</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.http2Enabled">http2Enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.http2Enabled">http2Enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.ipRestrictionDefaultAction">ipRestrictionDefaultAction</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.loadBalancingMode">loadBalancingMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.managedPipelineMode">managedPipelineMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.minimumTlsVersion">minimumTlsVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.preWarmedInstanceCount">preWarmedInstanceCount</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.remoteDebuggingEnabled">remoteDebuggingEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.remoteDebuggingEnabled">remoteDebuggingEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.remoteDebuggingVersion">remoteDebuggingVersion</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.runtimeScaleMonitoringEnabled">runtimeScaleMonitoringEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.runtimeScaleMonitoringEnabled">runtimeScaleMonitoringEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.scmIpRestrictionDefaultAction">scmIpRestrictionDefaultAction</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.scmMinimumTlsVersion">scmMinimumTlsVersion</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.scmUseMainIpRestriction">scmUseMainIpRestriction</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.use32BitWorker">use32BitWorker</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.vnetRouteAllEnabled">vnetRouteAllEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.websocketsEnabled">websocketsEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.scmUseMainIpRestriction">scmUseMainIpRestriction</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.use32BitWorker">use32BitWorker</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.vnetRouteAllEnabled">vnetRouteAllEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.websocketsEnabled">websocketsEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.workerCount">workerCount</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfig">LinuxFunctionAppSiteConfig</a></code> | *No description.* |
 
@@ -19258,7 +19258,7 @@ public readonly cors: LinuxFunctionAppSiteConfigCorsOutputReference;
 public readonly detailedErrorLoggingEnabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -19308,7 +19308,7 @@ public readonly scmType: string;
 public readonly alwaysOnInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19408,7 +19408,7 @@ public readonly containerRegistryManagedIdentityClientIdInput: string;
 public readonly containerRegistryUseManagedIdentityInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19478,7 +19478,7 @@ public readonly healthCheckPathInput: string;
 public readonly http2EnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19498,7 +19498,7 @@ public readonly ipRestrictionDefaultActionInput: string;
 public readonly ipRestrictionInput: IResolvable | LinuxFunctionAppSiteConfigIpRestriction[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestriction">LinuxFunctionAppSiteConfigIpRestriction</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigIpRestriction">LinuxFunctionAppSiteConfigIpRestriction</a>[]
 
 ---
 
@@ -19548,7 +19548,7 @@ public readonly preWarmedInstanceCountInput: number;
 public readonly remoteDebuggingEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19568,7 +19568,7 @@ public readonly remoteDebuggingVersionInput: string;
 public readonly runtimeScaleMonitoringEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19588,7 +19588,7 @@ public readonly scmIpRestrictionDefaultActionInput: string;
 public readonly scmIpRestrictionInput: IResolvable | LinuxFunctionAppSiteConfigScmIpRestriction[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestriction">LinuxFunctionAppSiteConfigScmIpRestriction</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestriction">LinuxFunctionAppSiteConfigScmIpRestriction</a>[]
 
 ---
 
@@ -19608,7 +19608,7 @@ public readonly scmMinimumTlsVersionInput: string;
 public readonly scmUseMainIpRestrictionInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19618,7 +19618,7 @@ public readonly scmUseMainIpRestrictionInput: boolean | IResolvable;
 public readonly use32BitWorkerInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19628,7 +19628,7 @@ public readonly use32BitWorkerInput: boolean | IResolvable;
 public readonly vnetRouteAllEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19638,7 +19638,7 @@ public readonly vnetRouteAllEnabledInput: boolean | IResolvable;
 public readonly websocketsEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19658,7 +19658,7 @@ public readonly workerCountInput: number;
 public readonly alwaysOn: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19738,7 +19738,7 @@ public readonly containerRegistryManagedIdentityClientId: string;
 public readonly containerRegistryUseManagedIdentity: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19798,7 +19798,7 @@ public readonly healthCheckPath: string;
 public readonly http2Enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19858,7 +19858,7 @@ public readonly preWarmedInstanceCount: number;
 public readonly remoteDebuggingEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19878,7 +19878,7 @@ public readonly remoteDebuggingVersion: string;
 public readonly runtimeScaleMonitoringEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19908,7 +19908,7 @@ public readonly scmMinimumTlsVersion: string;
 public readonly scmUseMainIpRestriction: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19918,7 +19918,7 @@ public readonly scmUseMainIpRestriction: boolean | IResolvable;
 public readonly use32BitWorker: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19928,7 +19928,7 @@ public readonly use32BitWorker: boolean | IResolvable;
 public readonly vnetRouteAllEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19938,7 +19938,7 @@ public readonly vnetRouteAllEnabled: boolean | IResolvable;
 public readonly websocketsEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19975,7 +19975,7 @@ new linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeadersList(terra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeadersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeadersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeadersList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeadersList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -19983,7 +19983,7 @@ new linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeadersList(terra
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeadersList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20049,7 +20049,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeadersList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20084,7 +20084,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeadersList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeadersList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeadersList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeaders">LinuxFunctionAppSiteConfigScmIpRestrictionHeaders</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeadersList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeaders">LinuxFunctionAppSiteConfigScmIpRestrictionHeaders</a>[]</code> | *No description.* |
 
 ---
 
@@ -20118,7 +20118,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | LinuxFunctionAppSiteConfigScmIpRestrictionHeaders[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeaders">LinuxFunctionAppSiteConfigScmIpRestrictionHeaders</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeaders">LinuxFunctionAppSiteConfigScmIpRestrictionHeaders</a>[]
 
 ---
 
@@ -20135,7 +20135,7 @@ new linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeadersOutputRefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeadersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeadersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeadersOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeadersOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeadersOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -20144,7 +20144,7 @@ new linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeadersOutputRefe
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeadersOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20334,7 +20334,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeadersOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20387,7 +20387,7 @@ public resetXForwardedHost(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeadersOutputReference.property.xFdHealthProbe">xFdHealthProbe</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeadersOutputReference.property.xForwardedFor">xForwardedFor</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeadersOutputReference.property.xForwardedHost">xForwardedHost</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeadersOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeaders">LinuxFunctionAppSiteConfigScmIpRestrictionHeaders</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeadersOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeaders">LinuxFunctionAppSiteConfigScmIpRestrictionHeaders</a></code> | *No description.* |
 
 ---
 
@@ -20501,7 +20501,7 @@ public readonly xForwardedHost: string[];
 public readonly internalValue: IResolvable | LinuxFunctionAppSiteConfigScmIpRestrictionHeaders;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeaders">LinuxFunctionAppSiteConfigScmIpRestrictionHeaders</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeaders">LinuxFunctionAppSiteConfigScmIpRestrictionHeaders</a>
 
 ---
 
@@ -20518,7 +20518,7 @@ new linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionList(terraformRes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -20526,7 +20526,7 @@ new linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionList(terraformRes
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20592,7 +20592,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20627,7 +20627,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestriction">LinuxFunctionAppSiteConfigScmIpRestriction</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestriction">LinuxFunctionAppSiteConfigScmIpRestriction</a>[]</code> | *No description.* |
 
 ---
 
@@ -20661,7 +20661,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | LinuxFunctionAppSiteConfigScmIpRestriction[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestriction">LinuxFunctionAppSiteConfigScmIpRestriction</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestriction">LinuxFunctionAppSiteConfigScmIpRestriction</a>[]
 
 ---
 
@@ -20678,7 +20678,7 @@ new linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionOutputReference(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -20687,7 +20687,7 @@ new linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionOutputReference(t
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20882,7 +20882,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20904,7 +20904,7 @@ public putHeaders(value: IResolvable | LinuxFunctionAppSiteConfigScmIpRestrictio
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionOutputReference.putHeaders.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeaders">LinuxFunctionAppSiteConfigScmIpRestrictionHeaders</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeaders">LinuxFunctionAppSiteConfigScmIpRestrictionHeaders</a>[]
 
 ---
 
@@ -20966,7 +20966,7 @@ public resetVirtualNetworkSubnetId(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionOutputReference.property.headers">headers</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeadersList">LinuxFunctionAppSiteConfigScmIpRestrictionHeadersList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionOutputReference.property.actionInput">actionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionOutputReference.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionOutputReference.property.headersInput">headersInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeaders">LinuxFunctionAppSiteConfigScmIpRestrictionHeaders</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionOutputReference.property.headersInput">headersInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeaders">LinuxFunctionAppSiteConfigScmIpRestrictionHeaders</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionOutputReference.property.ipAddressInput">ipAddressInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionOutputReference.property.priorityInput">priorityInput</a></code> | <code>number</code> | *No description.* |
@@ -20979,7 +20979,7 @@ public resetVirtualNetworkSubnetId(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionOutputReference.property.priority">priority</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionOutputReference.property.serviceTag">serviceTag</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionOutputReference.property.virtualNetworkSubnetId">virtualNetworkSubnetId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestriction">LinuxFunctionAppSiteConfigScmIpRestriction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestriction">LinuxFunctionAppSiteConfigScmIpRestriction</a></code> | *No description.* |
 
 ---
 
@@ -21043,7 +21043,7 @@ public readonly descriptionInput: string;
 public readonly headersInput: IResolvable | LinuxFunctionAppSiteConfigScmIpRestrictionHeaders[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeaders">LinuxFunctionAppSiteConfigScmIpRestrictionHeaders</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestrictionHeaders">LinuxFunctionAppSiteConfigScmIpRestrictionHeaders</a>[]
 
 ---
 
@@ -21173,7 +21173,7 @@ public readonly virtualNetworkSubnetId: string;
 public readonly internalValue: IResolvable | LinuxFunctionAppSiteConfigScmIpRestriction;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestriction">LinuxFunctionAppSiteConfigScmIpRestriction</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteConfigScmIpRestriction">LinuxFunctionAppSiteConfigScmIpRestriction</a>
 
 ---
 
@@ -21190,7 +21190,7 @@ new linuxFunctionApp.LinuxFunctionAppSiteCredentialList(terraformResource: IInte
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteCredentialList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteCredentialList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteCredentialList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteCredentialList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -21198,7 +21198,7 @@ new linuxFunctionApp.LinuxFunctionAppSiteCredentialList(terraformResource: IInte
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteCredentialList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21264,7 +21264,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteCredentialList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21339,7 +21339,7 @@ new linuxFunctionApp.LinuxFunctionAppSiteCredentialOutputReference(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteCredentialOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteCredentialOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteCredentialOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteCredentialOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteCredentialOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -21348,7 +21348,7 @@ new linuxFunctionApp.LinuxFunctionAppSiteCredentialOutputReference(terraformReso
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteCredentialOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21534,7 +21534,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppSiteCredentialOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21628,14 +21628,14 @@ new linuxFunctionApp.LinuxFunctionAppStickySettingsOutputReference(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStickySettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStickySettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStickySettingsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStickySettingsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21807,7 +21807,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStickySettingsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21935,7 +21935,7 @@ new linuxFunctionApp.LinuxFunctionAppStorageAccountList(terraformResource: IInte
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccountList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccountList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccountList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccountList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -21943,7 +21943,7 @@ new linuxFunctionApp.LinuxFunctionAppStorageAccountList(terraformResource: IInte
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccountList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22009,7 +22009,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccountList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22044,7 +22044,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccountList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccountList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccountList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccount">LinuxFunctionAppStorageAccount</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccountList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccount">LinuxFunctionAppStorageAccount</a>[]</code> | *No description.* |
 
 ---
 
@@ -22078,7 +22078,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | LinuxFunctionAppStorageAccount[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccount">LinuxFunctionAppStorageAccount</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccount">LinuxFunctionAppStorageAccount</a>[]
 
 ---
 
@@ -22095,7 +22095,7 @@ new linuxFunctionApp.LinuxFunctionAppStorageAccountOutputReference(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccountOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccountOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccountOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccountOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccountOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -22104,7 +22104,7 @@ new linuxFunctionApp.LinuxFunctionAppStorageAccountOutputReference(terraformReso
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccountOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22291,7 +22291,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccountOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22330,7 +22330,7 @@ public resetMountPath(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccountOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccountOutputReference.property.shareName">shareName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccountOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccountOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccount">LinuxFunctionAppStorageAccount</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccountOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccount">LinuxFunctionAppStorageAccount</a></code> | *No description.* |
 
 ---
 
@@ -22484,7 +22484,7 @@ public readonly type: string;
 public readonly internalValue: IResolvable | LinuxFunctionAppStorageAccount;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccount">LinuxFunctionAppStorageAccount</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppStorageAccount">LinuxFunctionAppStorageAccount</a>
 
 ---
 
@@ -22501,14 +22501,14 @@ new linuxFunctionApp.LinuxFunctionAppTimeoutsOutputReference(terraformResource: 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22682,7 +22682,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22735,7 +22735,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppTimeouts">LinuxFunctionAppTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppTimeouts">LinuxFunctionAppTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -22849,7 +22849,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | LinuxFunctionAppTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppTimeouts">LinuxFunctionAppTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionApp.LinuxFunctionAppTimeouts">LinuxFunctionAppTimeouts</a>
 
 ---
 

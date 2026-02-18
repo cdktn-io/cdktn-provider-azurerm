@@ -377,7 +377,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1160,7 +1160,7 @@ public resetWorkloadIdentityEnabled(): void
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a KubernetesCluster resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a KubernetesCluster resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -1232,7 +1232,7 @@ import { kubernetesCluster } from '@cdktn/provider-azurerm'
 kubernetesCluster.KubernetesCluster.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a KubernetesCluster resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a KubernetesCluster resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.generateConfigForImport.parameter.scope"></a>
 
@@ -1262,7 +1262,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the KubernetesCluster to import is found.
 
@@ -1273,19 +1273,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.aciConnectorLinux">aciConnectorLinux</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAciConnectorLinuxOutputReference">KubernetesClusterAciConnectorLinuxOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.apiServerAccessProfile">apiServerAccessProfile</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterApiServerAccessProfileOutputReference">KubernetesClusterApiServerAccessProfileOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.autoScalerProfile">autoScalerProfile</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference">KubernetesClusterAutoScalerProfileOutputReference</a></code> | *No description.* |
@@ -1328,26 +1328,26 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.windowsProfile">windowsProfile</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWindowsProfileOutputReference">KubernetesClusterWindowsProfileOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.workloadAutoscalerProfile">workloadAutoscalerProfile</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWorkloadAutoscalerProfileOutputReference">KubernetesClusterWorkloadAutoscalerProfileOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.aciConnectorLinuxInput">aciConnectorLinuxInput</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAciConnectorLinux">KubernetesClusterAciConnectorLinux</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.aiToolchainOperatorEnabledInput">aiToolchainOperatorEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.aiToolchainOperatorEnabledInput">aiToolchainOperatorEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.apiServerAccessProfileInput">apiServerAccessProfileInput</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterApiServerAccessProfile">KubernetesClusterApiServerAccessProfile</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.automaticUpgradeChannelInput">automaticUpgradeChannelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.autoScalerProfileInput">autoScalerProfileInput</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfile">KubernetesClusterAutoScalerProfile</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.azureActiveDirectoryRoleBasedAccessControlInput">azureActiveDirectoryRoleBasedAccessControlInput</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAzureActiveDirectoryRoleBasedAccessControl">KubernetesClusterAzureActiveDirectoryRoleBasedAccessControl</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.azurePolicyEnabledInput">azurePolicyEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.azurePolicyEnabledInput">azurePolicyEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.bootstrapProfileInput">bootstrapProfileInput</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterBootstrapProfile">KubernetesClusterBootstrapProfile</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.confidentialComputingInput">confidentialComputingInput</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfidentialComputing">KubernetesClusterConfidentialComputing</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.costAnalysisEnabledInput">costAnalysisEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.costAnalysisEnabledInput">costAnalysisEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.customCaTrustCertificatesBase64Input">customCaTrustCertificatesBase64Input</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.defaultNodePoolInput">defaultNodePoolInput</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePool">KubernetesClusterDefaultNodePool</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.diskEncryptionSetIdInput">diskEncryptionSetIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.dnsPrefixInput">dnsPrefixInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.dnsPrefixPrivateClusterInput">dnsPrefixPrivateClusterInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.edgeZoneInput">edgeZoneInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.httpApplicationRoutingEnabledInput">httpApplicationRoutingEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.httpApplicationRoutingEnabledInput">httpApplicationRoutingEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.httpProxyConfigInput">httpProxyConfigInput</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterHttpProxyConfig">KubernetesClusterHttpProxyConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.identityInput">identityInput</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterIdentity">KubernetesClusterIdentity</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.imageCleanerEnabledInput">imageCleanerEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.imageCleanerEnabledInput">imageCleanerEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.imageCleanerIntervalHoursInput">imageCleanerIntervalHoursInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.ingressApplicationGatewayInput">ingressApplicationGatewayInput</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterIngressApplicationGateway">KubernetesClusterIngressApplicationGateway</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.keyManagementServiceInput">keyManagementServiceInput</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyManagementService">KubernetesClusterKeyManagementService</a></code> | *No description.* |
@@ -1355,7 +1355,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.kubeletIdentityInput">kubeletIdentityInput</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeletIdentity">KubernetesClusterKubeletIdentity</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.kubernetesVersionInput">kubernetesVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.linuxProfileInput">linuxProfileInput</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterLinuxProfile">KubernetesClusterLinuxProfile</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.localAccountDisabledInput">localAccountDisabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.localAccountDisabledInput">localAccountDisabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.locationInput">locationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.maintenanceWindowAutoUpgradeInput">maintenanceWindowAutoUpgradeInput</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgrade">KubernetesClusterMaintenanceWindowAutoUpgrade</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.maintenanceWindowInput">maintenanceWindowInput</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindow">KubernetesClusterMaintenanceWindow</a></code> | *No description.* |
@@ -1367,58 +1367,58 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.nodeOsUpgradeChannelInput">nodeOsUpgradeChannelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.nodeProvisioningProfileInput">nodeProvisioningProfileInput</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNodeProvisioningProfile">KubernetesClusterNodeProvisioningProfile</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.nodeResourceGroupInput">nodeResourceGroupInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.oidcIssuerEnabledInput">oidcIssuerEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.oidcIssuerEnabledInput">oidcIssuerEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.omsAgentInput">omsAgentInput</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgent">KubernetesClusterOmsAgent</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.openServiceMeshEnabledInput">openServiceMeshEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.privateClusterEnabledInput">privateClusterEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.privateClusterPublicFqdnEnabledInput">privateClusterPublicFqdnEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.openServiceMeshEnabledInput">openServiceMeshEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.privateClusterEnabledInput">privateClusterEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.privateClusterPublicFqdnEnabledInput">privateClusterPublicFqdnEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.privateDnsZoneIdInput">privateDnsZoneIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.resourceGroupNameInput">resourceGroupNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.roleBasedAccessControlEnabledInput">roleBasedAccessControlEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.runCommandEnabledInput">runCommandEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.roleBasedAccessControlEnabledInput">roleBasedAccessControlEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.runCommandEnabledInput">runCommandEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.serviceMeshProfileInput">serviceMeshProfileInput</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfile">KubernetesClusterServiceMeshProfile</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.servicePrincipalInput">servicePrincipalInput</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServicePrincipal">KubernetesClusterServicePrincipal</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.skuTierInput">skuTierInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.storageProfileInput">storageProfileInput</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterStorageProfile">KubernetesClusterStorageProfile</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.supportPlanInput">supportPlanInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterTimeouts">KubernetesClusterTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterTimeouts">KubernetesClusterTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.upgradeOverrideInput">upgradeOverrideInput</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterUpgradeOverride">KubernetesClusterUpgradeOverride</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.webAppRoutingInput">webAppRoutingInput</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWebAppRouting">KubernetesClusterWebAppRouting</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.windowsProfileInput">windowsProfileInput</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWindowsProfile">KubernetesClusterWindowsProfile</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.workloadAutoscalerProfileInput">workloadAutoscalerProfileInput</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWorkloadAutoscalerProfile">KubernetesClusterWorkloadAutoscalerProfile</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.workloadIdentityEnabledInput">workloadIdentityEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.aiToolchainOperatorEnabled">aiToolchainOperatorEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.workloadIdentityEnabledInput">workloadIdentityEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.aiToolchainOperatorEnabled">aiToolchainOperatorEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.automaticUpgradeChannel">automaticUpgradeChannel</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.azurePolicyEnabled">azurePolicyEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.costAnalysisEnabled">costAnalysisEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.azurePolicyEnabled">azurePolicyEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.costAnalysisEnabled">costAnalysisEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.customCaTrustCertificatesBase64">customCaTrustCertificatesBase64</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.diskEncryptionSetId">diskEncryptionSetId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.dnsPrefix">dnsPrefix</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.dnsPrefixPrivateCluster">dnsPrefixPrivateCluster</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.edgeZone">edgeZone</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.httpApplicationRoutingEnabled">httpApplicationRoutingEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.httpApplicationRoutingEnabled">httpApplicationRoutingEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.imageCleanerEnabled">imageCleanerEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.imageCleanerEnabled">imageCleanerEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.imageCleanerIntervalHours">imageCleanerIntervalHours</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.kubernetesVersion">kubernetesVersion</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.localAccountDisabled">localAccountDisabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.localAccountDisabled">localAccountDisabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.location">location</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.nodeOsUpgradeChannel">nodeOsUpgradeChannel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.nodeResourceGroup">nodeResourceGroup</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.oidcIssuerEnabled">oidcIssuerEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.openServiceMeshEnabled">openServiceMeshEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.privateClusterEnabled">privateClusterEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.privateClusterPublicFqdnEnabled">privateClusterPublicFqdnEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.oidcIssuerEnabled">oidcIssuerEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.openServiceMeshEnabled">openServiceMeshEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.privateClusterEnabled">privateClusterEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.privateClusterPublicFqdnEnabled">privateClusterPublicFqdnEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.privateDnsZoneId">privateDnsZoneId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.roleBasedAccessControlEnabled">roleBasedAccessControlEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.runCommandEnabled">runCommandEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.roleBasedAccessControlEnabled">roleBasedAccessControlEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.runCommandEnabled">runCommandEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.skuTier">skuTier</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.supportPlan">supportPlan</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.workloadIdentityEnabled">workloadIdentityEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesCluster.property.workloadIdentityEnabled">workloadIdentityEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 
 ---
 
@@ -1440,7 +1440,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -1490,7 +1490,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -1500,7 +1500,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1510,7 +1510,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1530,7 +1530,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1540,7 +1540,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1550,7 +1550,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1560,7 +1560,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1990,7 +1990,7 @@ public readonly aciConnectorLinuxInput: KubernetesClusterAciConnectorLinux;
 public readonly aiToolchainOperatorEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2040,7 +2040,7 @@ public readonly azureActiveDirectoryRoleBasedAccessControlInput: KubernetesClust
 public readonly azurePolicyEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2070,7 +2070,7 @@ public readonly confidentialComputingInput: KubernetesClusterConfidentialComputi
 public readonly costAnalysisEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2140,7 +2140,7 @@ public readonly edgeZoneInput: string;
 public readonly httpApplicationRoutingEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2180,7 +2180,7 @@ public readonly idInput: string;
 public readonly imageCleanerEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2260,7 +2260,7 @@ public readonly linuxProfileInput: KubernetesClusterLinuxProfile;
 public readonly localAccountDisabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2380,7 +2380,7 @@ public readonly nodeResourceGroupInput: string;
 public readonly oidcIssuerEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2400,7 +2400,7 @@ public readonly omsAgentInput: KubernetesClusterOmsAgent;
 public readonly openServiceMeshEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2410,7 +2410,7 @@ public readonly openServiceMeshEnabledInput: boolean | IResolvable;
 public readonly privateClusterEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2420,7 +2420,7 @@ public readonly privateClusterEnabledInput: boolean | IResolvable;
 public readonly privateClusterPublicFqdnEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2450,7 +2450,7 @@ public readonly resourceGroupNameInput: string;
 public readonly roleBasedAccessControlEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2460,7 +2460,7 @@ public readonly roleBasedAccessControlEnabledInput: boolean | IResolvable;
 public readonly runCommandEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2530,7 +2530,7 @@ public readonly tagsInput: {[ key: string ]: string};
 public readonly timeoutsInput: IResolvable | KubernetesClusterTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterTimeouts">KubernetesClusterTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterTimeouts">KubernetesClusterTimeouts</a>
 
 ---
 
@@ -2580,7 +2580,7 @@ public readonly workloadAutoscalerProfileInput: KubernetesClusterWorkloadAutosca
 public readonly workloadIdentityEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2590,7 +2590,7 @@ public readonly workloadIdentityEnabledInput: boolean | IResolvable;
 public readonly aiToolchainOperatorEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2610,7 +2610,7 @@ public readonly automaticUpgradeChannel: string;
 public readonly azurePolicyEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2620,7 +2620,7 @@ public readonly azurePolicyEnabled: boolean | IResolvable;
 public readonly costAnalysisEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2680,7 +2680,7 @@ public readonly edgeZone: string;
 public readonly httpApplicationRoutingEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2700,7 +2700,7 @@ public readonly id: string;
 public readonly imageCleanerEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2730,7 +2730,7 @@ public readonly kubernetesVersion: string;
 public readonly localAccountDisabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2780,7 +2780,7 @@ public readonly nodeResourceGroup: string;
 public readonly oidcIssuerEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2790,7 +2790,7 @@ public readonly oidcIssuerEnabled: boolean | IResolvable;
 public readonly openServiceMeshEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2800,7 +2800,7 @@ public readonly openServiceMeshEnabled: boolean | IResolvable;
 public readonly privateClusterEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2810,7 +2810,7 @@ public readonly privateClusterEnabled: boolean | IResolvable;
 public readonly privateClusterPublicFqdnEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2840,7 +2840,7 @@ public readonly resourceGroupName: string;
 public readonly roleBasedAccessControlEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2850,7 +2850,7 @@ public readonly roleBasedAccessControlEnabled: boolean | IResolvable;
 public readonly runCommandEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2890,7 +2890,7 @@ public readonly tags: {[ key: string ]: string};
 public readonly workloadIdentityEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2971,7 +2971,7 @@ const kubernetesClusterApiServerAccessProfile: kubernetesCluster.KubernetesClust
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterApiServerAccessProfile.property.authorizedIpRanges">authorizedIpRanges</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#authorized_ip_ranges KubernetesCluster#authorized_ip_ranges}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterApiServerAccessProfile.property.subnetId">subnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#subnet_id KubernetesCluster#subnet_id}. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterApiServerAccessProfile.property.virtualNetworkIntegrationEnabled">virtualNetworkIntegrationEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#virtual_network_integration_enabled KubernetesCluster#virtual_network_integration_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterApiServerAccessProfile.property.virtualNetworkIntegrationEnabled">virtualNetworkIntegrationEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#virtual_network_integration_enabled KubernetesCluster#virtual_network_integration_enabled}. |
 
 ---
 
@@ -3005,7 +3005,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly virtualNetworkIntegrationEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#virtual_network_integration_enabled KubernetesCluster#virtual_network_integration_enabled}.
 
@@ -3025,12 +3025,12 @@ const kubernetesClusterAutoScalerProfile: kubernetesCluster.KubernetesClusterAut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfile.property.balanceSimilarNodeGroups">balanceSimilarNodeGroups</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#balance_similar_node_groups KubernetesCluster#balance_similar_node_groups}. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfile.property.daemonsetEvictionForEmptyNodesEnabled">daemonsetEvictionForEmptyNodesEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#daemonset_eviction_for_empty_nodes_enabled KubernetesCluster#daemonset_eviction_for_empty_nodes_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfile.property.daemonsetEvictionForOccupiedNodesEnabled">daemonsetEvictionForOccupiedNodesEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#daemonset_eviction_for_occupied_nodes_enabled KubernetesCluster#daemonset_eviction_for_occupied_nodes_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfile.property.balanceSimilarNodeGroups">balanceSimilarNodeGroups</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#balance_similar_node_groups KubernetesCluster#balance_similar_node_groups}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfile.property.daemonsetEvictionForEmptyNodesEnabled">daemonsetEvictionForEmptyNodesEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#daemonset_eviction_for_empty_nodes_enabled KubernetesCluster#daemonset_eviction_for_empty_nodes_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfile.property.daemonsetEvictionForOccupiedNodesEnabled">daemonsetEvictionForOccupiedNodesEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#daemonset_eviction_for_occupied_nodes_enabled KubernetesCluster#daemonset_eviction_for_occupied_nodes_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfile.property.emptyBulkDeleteMax">emptyBulkDeleteMax</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#empty_bulk_delete_max KubernetesCluster#empty_bulk_delete_max}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfile.property.expander">expander</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#expander KubernetesCluster#expander}. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfile.property.ignoreDaemonsetsUtilizationEnabled">ignoreDaemonsetsUtilizationEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#ignore_daemonsets_utilization_enabled KubernetesCluster#ignore_daemonsets_utilization_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfile.property.ignoreDaemonsetsUtilizationEnabled">ignoreDaemonsetsUtilizationEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#ignore_daemonsets_utilization_enabled KubernetesCluster#ignore_daemonsets_utilization_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfile.property.maxGracefulTerminationSec">maxGracefulTerminationSec</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#max_graceful_termination_sec KubernetesCluster#max_graceful_termination_sec}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfile.property.maxNodeProvisioningTime">maxNodeProvisioningTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#max_node_provisioning_time KubernetesCluster#max_node_provisioning_time}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfile.property.maxUnreadyNodes">maxUnreadyNodes</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#max_unready_nodes KubernetesCluster#max_unready_nodes}. |
@@ -3043,8 +3043,8 @@ const kubernetesClusterAutoScalerProfile: kubernetesCluster.KubernetesClusterAut
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfile.property.scaleDownUnready">scaleDownUnready</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#scale_down_unready KubernetesCluster#scale_down_unready}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfile.property.scaleDownUtilizationThreshold">scaleDownUtilizationThreshold</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#scale_down_utilization_threshold KubernetesCluster#scale_down_utilization_threshold}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfile.property.scanInterval">scanInterval</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#scan_interval KubernetesCluster#scan_interval}. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfile.property.skipNodesWithLocalStorage">skipNodesWithLocalStorage</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#skip_nodes_with_local_storage KubernetesCluster#skip_nodes_with_local_storage}. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfile.property.skipNodesWithSystemPods">skipNodesWithSystemPods</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#skip_nodes_with_system_pods KubernetesCluster#skip_nodes_with_system_pods}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfile.property.skipNodesWithLocalStorage">skipNodesWithLocalStorage</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#skip_nodes_with_local_storage KubernetesCluster#skip_nodes_with_local_storage}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfile.property.skipNodesWithSystemPods">skipNodesWithSystemPods</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#skip_nodes_with_system_pods KubernetesCluster#skip_nodes_with_system_pods}. |
 
 ---
 
@@ -3054,7 +3054,7 @@ const kubernetesClusterAutoScalerProfile: kubernetesCluster.KubernetesClusterAut
 public readonly balanceSimilarNodeGroups: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#balance_similar_node_groups KubernetesCluster#balance_similar_node_groups}.
 
@@ -3066,7 +3066,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly daemonsetEvictionForEmptyNodesEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#daemonset_eviction_for_empty_nodes_enabled KubernetesCluster#daemonset_eviction_for_empty_nodes_enabled}.
 
@@ -3078,7 +3078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly daemonsetEvictionForOccupiedNodesEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#daemonset_eviction_for_occupied_nodes_enabled KubernetesCluster#daemonset_eviction_for_occupied_nodes_enabled}.
 
@@ -3114,7 +3114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly ignoreDaemonsetsUtilizationEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#ignore_daemonsets_utilization_enabled KubernetesCluster#ignore_daemonsets_utilization_enabled}.
 
@@ -3270,7 +3270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly skipNodesWithLocalStorage: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#skip_nodes_with_local_storage KubernetesCluster#skip_nodes_with_local_storage}.
 
@@ -3282,7 +3282,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly skipNodesWithSystemPods: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#skip_nodes_with_system_pods KubernetesCluster#skip_nodes_with_system_pods}.
 
@@ -3303,7 +3303,7 @@ const kubernetesClusterAzureActiveDirectoryRoleBasedAccessControl: kubernetesClu
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAzureActiveDirectoryRoleBasedAccessControl.property.adminGroupObjectIds">adminGroupObjectIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#admin_group_object_ids KubernetesCluster#admin_group_object_ids}. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAzureActiveDirectoryRoleBasedAccessControl.property.azureRbacEnabled">azureRbacEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#azure_rbac_enabled KubernetesCluster#azure_rbac_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAzureActiveDirectoryRoleBasedAccessControl.property.azureRbacEnabled">azureRbacEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#azure_rbac_enabled KubernetesCluster#azure_rbac_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAzureActiveDirectoryRoleBasedAccessControl.property.tenantId">tenantId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#tenant_id KubernetesCluster#tenant_id}. |
 
 ---
@@ -3326,7 +3326,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly azureRbacEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#azure_rbac_enabled KubernetesCluster#azure_rbac_enabled}.
 
@@ -3401,7 +3401,7 @@ const kubernetesClusterConfidentialComputing: kubernetesCluster.KubernetesCluste
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfidentialComputing.property.sgxQuoteHelperEnabled">sgxQuoteHelperEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#sgx_quote_helper_enabled KubernetesCluster#sgx_quote_helper_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfidentialComputing.property.sgxQuoteHelperEnabled">sgxQuoteHelperEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#sgx_quote_helper_enabled KubernetesCluster#sgx_quote_helper_enabled}. |
 
 ---
 
@@ -3411,7 +3411,7 @@ const kubernetesClusterConfidentialComputing: kubernetesCluster.KubernetesCluste
 public readonly sgxQuoteHelperEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#sgx_quote_helper_enabled KubernetesCluster#sgx_quote_helper_enabled}.
 
@@ -3431,37 +3431,37 @@ const kubernetesClusterConfig: kubernetesCluster.KubernetesClusterConfig = { ...
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.defaultNodePool">defaultNodePool</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePool">KubernetesClusterDefaultNodePool</a></code> | default_node_pool block. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#location KubernetesCluster#location}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#name KubernetesCluster#name}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#resource_group_name KubernetesCluster#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.aciConnectorLinux">aciConnectorLinux</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAciConnectorLinux">KubernetesClusterAciConnectorLinux</a></code> | aci_connector_linux block. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.aiToolchainOperatorEnabled">aiToolchainOperatorEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#ai_toolchain_operator_enabled KubernetesCluster#ai_toolchain_operator_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.aiToolchainOperatorEnabled">aiToolchainOperatorEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#ai_toolchain_operator_enabled KubernetesCluster#ai_toolchain_operator_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.apiServerAccessProfile">apiServerAccessProfile</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterApiServerAccessProfile">KubernetesClusterApiServerAccessProfile</a></code> | api_server_access_profile block. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.automaticUpgradeChannel">automaticUpgradeChannel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#automatic_upgrade_channel KubernetesCluster#automatic_upgrade_channel}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.autoScalerProfile">autoScalerProfile</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfile">KubernetesClusterAutoScalerProfile</a></code> | auto_scaler_profile block. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.azureActiveDirectoryRoleBasedAccessControl">azureActiveDirectoryRoleBasedAccessControl</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAzureActiveDirectoryRoleBasedAccessControl">KubernetesClusterAzureActiveDirectoryRoleBasedAccessControl</a></code> | azure_active_directory_role_based_access_control block. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.azurePolicyEnabled">azurePolicyEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#azure_policy_enabled KubernetesCluster#azure_policy_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.azurePolicyEnabled">azurePolicyEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#azure_policy_enabled KubernetesCluster#azure_policy_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.bootstrapProfile">bootstrapProfile</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterBootstrapProfile">KubernetesClusterBootstrapProfile</a></code> | bootstrap_profile block. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.confidentialComputing">confidentialComputing</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfidentialComputing">KubernetesClusterConfidentialComputing</a></code> | confidential_computing block. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.costAnalysisEnabled">costAnalysisEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#cost_analysis_enabled KubernetesCluster#cost_analysis_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.costAnalysisEnabled">costAnalysisEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#cost_analysis_enabled KubernetesCluster#cost_analysis_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.customCaTrustCertificatesBase64">customCaTrustCertificatesBase64</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#custom_ca_trust_certificates_base64 KubernetesCluster#custom_ca_trust_certificates_base64}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.diskEncryptionSetId">diskEncryptionSetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#disk_encryption_set_id KubernetesCluster#disk_encryption_set_id}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.dnsPrefix">dnsPrefix</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#dns_prefix KubernetesCluster#dns_prefix}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.dnsPrefixPrivateCluster">dnsPrefixPrivateCluster</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#dns_prefix_private_cluster KubernetesCluster#dns_prefix_private_cluster}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.edgeZone">edgeZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#edge_zone KubernetesCluster#edge_zone}. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.httpApplicationRoutingEnabled">httpApplicationRoutingEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#http_application_routing_enabled KubernetesCluster#http_application_routing_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.httpApplicationRoutingEnabled">httpApplicationRoutingEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#http_application_routing_enabled KubernetesCluster#http_application_routing_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.httpProxyConfig">httpProxyConfig</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterHttpProxyConfig">KubernetesClusterHttpProxyConfig</a></code> | http_proxy_config block. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#id KubernetesCluster#id}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterIdentity">KubernetesClusterIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.imageCleanerEnabled">imageCleanerEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#image_cleaner_enabled KubernetesCluster#image_cleaner_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.imageCleanerEnabled">imageCleanerEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#image_cleaner_enabled KubernetesCluster#image_cleaner_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.imageCleanerIntervalHours">imageCleanerIntervalHours</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#image_cleaner_interval_hours KubernetesCluster#image_cleaner_interval_hours}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.ingressApplicationGateway">ingressApplicationGateway</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterIngressApplicationGateway">KubernetesClusterIngressApplicationGateway</a></code> | ingress_application_gateway block. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.keyManagementService">keyManagementService</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyManagementService">KubernetesClusterKeyManagementService</a></code> | key_management_service block. |
@@ -3469,7 +3469,7 @@ const kubernetesClusterConfig: kubernetesCluster.KubernetesClusterConfig = { ...
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.kubeletIdentity">kubeletIdentity</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeletIdentity">KubernetesClusterKubeletIdentity</a></code> | kubelet_identity block. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.kubernetesVersion">kubernetesVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#kubernetes_version KubernetesCluster#kubernetes_version}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.linuxProfile">linuxProfile</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterLinuxProfile">KubernetesClusterLinuxProfile</a></code> | linux_profile block. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.localAccountDisabled">localAccountDisabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#local_account_disabled KubernetesCluster#local_account_disabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.localAccountDisabled">localAccountDisabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#local_account_disabled KubernetesCluster#local_account_disabled}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.maintenanceWindow">maintenanceWindow</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindow">KubernetesClusterMaintenanceWindow</a></code> | maintenance_window block. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.maintenanceWindowAutoUpgrade">maintenanceWindowAutoUpgrade</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgrade">KubernetesClusterMaintenanceWindowAutoUpgrade</a></code> | maintenance_window_auto_upgrade block. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.maintenanceWindowNodeOs">maintenanceWindowNodeOs</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOs">KubernetesClusterMaintenanceWindowNodeOs</a></code> | maintenance_window_node_os block. |
@@ -3479,14 +3479,14 @@ const kubernetesClusterConfig: kubernetesCluster.KubernetesClusterConfig = { ...
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.nodeOsUpgradeChannel">nodeOsUpgradeChannel</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#node_os_upgrade_channel KubernetesCluster#node_os_upgrade_channel}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.nodeProvisioningProfile">nodeProvisioningProfile</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNodeProvisioningProfile">KubernetesClusterNodeProvisioningProfile</a></code> | node_provisioning_profile block. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.nodeResourceGroup">nodeResourceGroup</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#node_resource_group KubernetesCluster#node_resource_group}. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.oidcIssuerEnabled">oidcIssuerEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#oidc_issuer_enabled KubernetesCluster#oidc_issuer_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.oidcIssuerEnabled">oidcIssuerEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#oidc_issuer_enabled KubernetesCluster#oidc_issuer_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.omsAgent">omsAgent</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgent">KubernetesClusterOmsAgent</a></code> | oms_agent block. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.openServiceMeshEnabled">openServiceMeshEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#open_service_mesh_enabled KubernetesCluster#open_service_mesh_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.privateClusterEnabled">privateClusterEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#private_cluster_enabled KubernetesCluster#private_cluster_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.privateClusterPublicFqdnEnabled">privateClusterPublicFqdnEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#private_cluster_public_fqdn_enabled KubernetesCluster#private_cluster_public_fqdn_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.openServiceMeshEnabled">openServiceMeshEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#open_service_mesh_enabled KubernetesCluster#open_service_mesh_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.privateClusterEnabled">privateClusterEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#private_cluster_enabled KubernetesCluster#private_cluster_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.privateClusterPublicFqdnEnabled">privateClusterPublicFqdnEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#private_cluster_public_fqdn_enabled KubernetesCluster#private_cluster_public_fqdn_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.privateDnsZoneId">privateDnsZoneId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#private_dns_zone_id KubernetesCluster#private_dns_zone_id}. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.roleBasedAccessControlEnabled">roleBasedAccessControlEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#role_based_access_control_enabled KubernetesCluster#role_based_access_control_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.runCommandEnabled">runCommandEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#run_command_enabled KubernetesCluster#run_command_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.roleBasedAccessControlEnabled">roleBasedAccessControlEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#role_based_access_control_enabled KubernetesCluster#role_based_access_control_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.runCommandEnabled">runCommandEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#run_command_enabled KubernetesCluster#run_command_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.serviceMeshProfile">serviceMeshProfile</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfile">KubernetesClusterServiceMeshProfile</a></code> | service_mesh_profile block. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.servicePrincipal">servicePrincipal</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServicePrincipal">KubernetesClusterServicePrincipal</a></code> | service_principal block. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.skuTier">skuTier</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#sku_tier KubernetesCluster#sku_tier}. |
@@ -3498,7 +3498,7 @@ const kubernetesClusterConfig: kubernetesCluster.KubernetesClusterConfig = { ...
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.webAppRouting">webAppRouting</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWebAppRouting">KubernetesClusterWebAppRouting</a></code> | web_app_routing block. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.windowsProfile">windowsProfile</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWindowsProfile">KubernetesClusterWindowsProfile</a></code> | windows_profile block. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.workloadAutoscalerProfile">workloadAutoscalerProfile</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWorkloadAutoscalerProfile">KubernetesClusterWorkloadAutoscalerProfile</a></code> | workload_autoscaler_profile block. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.workloadIdentityEnabled">workloadIdentityEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#workload_identity_enabled KubernetesCluster#workload_identity_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfig.property.workloadIdentityEnabled">workloadIdentityEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#workload_identity_enabled KubernetesCluster#workload_identity_enabled}. |
 
 ---
 
@@ -3508,7 +3508,7 @@ const kubernetesClusterConfig: kubernetesCluster.KubernetesClusterConfig = { ...
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -3518,7 +3518,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -3528,7 +3528,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -3538,7 +3538,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -3548,7 +3548,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -3558,7 +3558,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -3568,7 +3568,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -3642,7 +3642,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly aiToolchainOperatorEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#ai_toolchain_operator_enabled KubernetesCluster#ai_toolchain_operator_enabled}.
 
@@ -3708,7 +3708,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly azurePolicyEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#azure_policy_enabled KubernetesCluster#azure_policy_enabled}.
 
@@ -3748,7 +3748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly costAnalysisEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#cost_analysis_enabled KubernetesCluster#cost_analysis_enabled}.
 
@@ -3820,7 +3820,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly httpApplicationRoutingEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#http_application_routing_enabled KubernetesCluster#http_application_routing_enabled}.
 
@@ -3875,7 +3875,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly imageCleanerEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#image_cleaner_enabled KubernetesCluster#image_cleaner_enabled}.
 
@@ -3981,7 +3981,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly localAccountDisabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#local_account_disabled KubernetesCluster#local_account_disabled}.
 
@@ -4115,7 +4115,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly oidcIssuerEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#oidc_issuer_enabled KubernetesCluster#oidc_issuer_enabled}.
 
@@ -4141,7 +4141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly openServiceMeshEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#open_service_mesh_enabled KubernetesCluster#open_service_mesh_enabled}.
 
@@ -4153,7 +4153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly privateClusterEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#private_cluster_enabled KubernetesCluster#private_cluster_enabled}.
 
@@ -4165,7 +4165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly privateClusterPublicFqdnEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#private_cluster_public_fqdn_enabled KubernetesCluster#private_cluster_public_fqdn_enabled}.
 
@@ -4189,7 +4189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly roleBasedAccessControlEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#role_based_access_control_enabled KubernetesCluster#role_based_access_control_enabled}.
 
@@ -4201,7 +4201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly runCommandEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#run_command_enabled KubernetesCluster#run_command_enabled}.
 
@@ -4361,7 +4361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly workloadIdentityEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#workload_identity_enabled KubernetesCluster#workload_identity_enabled}.
 
@@ -4382,12 +4382,12 @@ const kubernetesClusterDefaultNodePool: kubernetesCluster.KubernetesClusterDefau
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePool.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#name KubernetesCluster#name}. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePool.property.autoScalingEnabled">autoScalingEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#auto_scaling_enabled KubernetesCluster#auto_scaling_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePool.property.autoScalingEnabled">autoScalingEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#auto_scaling_enabled KubernetesCluster#auto_scaling_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePool.property.capacityReservationGroupId">capacityReservationGroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#capacity_reservation_group_id KubernetesCluster#capacity_reservation_group_id}. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePool.property.fipsEnabled">fipsEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#fips_enabled KubernetesCluster#fips_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePool.property.fipsEnabled">fipsEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#fips_enabled KubernetesCluster#fips_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePool.property.gpuDriver">gpuDriver</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#gpu_driver KubernetesCluster#gpu_driver}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePool.property.gpuInstance">gpuInstance</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#gpu_instance KubernetesCluster#gpu_instance}. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePool.property.hostEncryptionEnabled">hostEncryptionEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#host_encryption_enabled KubernetesCluster#host_encryption_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePool.property.hostEncryptionEnabled">hostEncryptionEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#host_encryption_enabled KubernetesCluster#host_encryption_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePool.property.hostGroupId">hostGroupId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#host_group_id KubernetesCluster#host_group_id}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePool.property.kubeletConfig">kubeletConfig</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolKubeletConfig">KubernetesClusterDefaultNodePoolKubeletConfig</a></code> | kubelet_config block. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePool.property.kubeletDiskType">kubeletDiskType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#kubelet_disk_type KubernetesCluster#kubelet_disk_type}. |
@@ -4398,9 +4398,9 @@ const kubernetesClusterDefaultNodePool: kubernetesCluster.KubernetesClusterDefau
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePool.property.nodeCount">nodeCount</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#node_count KubernetesCluster#node_count}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePool.property.nodeLabels">nodeLabels</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#node_labels KubernetesCluster#node_labels}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePool.property.nodeNetworkProfile">nodeNetworkProfile</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfile">KubernetesClusterDefaultNodePoolNodeNetworkProfile</a></code> | node_network_profile block. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePool.property.nodePublicIpEnabled">nodePublicIpEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#node_public_ip_enabled KubernetesCluster#node_public_ip_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePool.property.nodePublicIpEnabled">nodePublicIpEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#node_public_ip_enabled KubernetesCluster#node_public_ip_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePool.property.nodePublicIpPrefixId">nodePublicIpPrefixId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#node_public_ip_prefix_id KubernetesCluster#node_public_ip_prefix_id}. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePool.property.onlyCriticalAddonsEnabled">onlyCriticalAddonsEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#only_critical_addons_enabled KubernetesCluster#only_critical_addons_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePool.property.onlyCriticalAddonsEnabled">onlyCriticalAddonsEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#only_critical_addons_enabled KubernetesCluster#only_critical_addons_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePool.property.orchestratorVersion">orchestratorVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#orchestrator_version KubernetesCluster#orchestrator_version}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePool.property.osDiskSizeGb">osDiskSizeGb</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#os_disk_size_gb KubernetesCluster#os_disk_size_gb}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePool.property.osDiskType">osDiskType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#os_disk_type KubernetesCluster#os_disk_type}. |
@@ -4412,7 +4412,7 @@ const kubernetesClusterDefaultNodePool: kubernetesCluster.KubernetesClusterDefau
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePool.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#tags KubernetesCluster#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePool.property.temporaryNameForRotation">temporaryNameForRotation</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#temporary_name_for_rotation KubernetesCluster#temporary_name_for_rotation}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePool.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#type KubernetesCluster#type}. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePool.property.ultraSsdEnabled">ultraSsdEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#ultra_ssd_enabled KubernetesCluster#ultra_ssd_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePool.property.ultraSsdEnabled">ultraSsdEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#ultra_ssd_enabled KubernetesCluster#ultra_ssd_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePool.property.upgradeSettings">upgradeSettings</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolUpgradeSettings">KubernetesClusterDefaultNodePoolUpgradeSettings</a></code> | upgrade_settings block. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePool.property.vmSize">vmSize</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#vm_size KubernetesCluster#vm_size}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePool.property.vnetSubnetId">vnetSubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#vnet_subnet_id KubernetesCluster#vnet_subnet_id}. |
@@ -4439,7 +4439,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly autoScalingEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#auto_scaling_enabled KubernetesCluster#auto_scaling_enabled}.
 
@@ -4463,7 +4463,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly fipsEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#fips_enabled KubernetesCluster#fips_enabled}.
 
@@ -4499,7 +4499,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly hostEncryptionEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#host_encryption_enabled KubernetesCluster#host_encryption_enabled}.
 
@@ -4637,7 +4637,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly nodePublicIpEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#node_public_ip_enabled KubernetesCluster#node_public_ip_enabled}.
 
@@ -4661,7 +4661,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly onlyCriticalAddonsEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#only_critical_addons_enabled KubernetesCluster#only_critical_addons_enabled}.
 
@@ -4805,7 +4805,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly ultraSsdEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#ultra_ssd_enabled KubernetesCluster#ultra_ssd_enabled}.
 
@@ -4890,7 +4890,7 @@ const kubernetesClusterDefaultNodePoolKubeletConfig: kubernetesCluster.Kubernete
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolKubeletConfig.property.allowedUnsafeSysctls">allowedUnsafeSysctls</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#allowed_unsafe_sysctls KubernetesCluster#allowed_unsafe_sysctls}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolKubeletConfig.property.containerLogMaxLine">containerLogMaxLine</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#container_log_max_line KubernetesCluster#container_log_max_line}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolKubeletConfig.property.containerLogMaxSizeMb">containerLogMaxSizeMb</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#container_log_max_size_mb KubernetesCluster#container_log_max_size_mb}. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolKubeletConfig.property.cpuCfsQuotaEnabled">cpuCfsQuotaEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#cpu_cfs_quota_enabled KubernetesCluster#cpu_cfs_quota_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolKubeletConfig.property.cpuCfsQuotaEnabled">cpuCfsQuotaEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#cpu_cfs_quota_enabled KubernetesCluster#cpu_cfs_quota_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolKubeletConfig.property.cpuCfsQuotaPeriod">cpuCfsQuotaPeriod</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#cpu_cfs_quota_period KubernetesCluster#cpu_cfs_quota_period}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolKubeletConfig.property.cpuManagerPolicy">cpuManagerPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#cpu_manager_policy KubernetesCluster#cpu_manager_policy}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolKubeletConfig.property.imageGcHighThreshold">imageGcHighThreshold</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#image_gc_high_threshold KubernetesCluster#image_gc_high_threshold}. |
@@ -4942,7 +4942,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly cpuCfsQuotaEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#cpu_cfs_quota_enabled KubernetesCluster#cpu_cfs_quota_enabled}.
 
@@ -5141,7 +5141,7 @@ const kubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfig: kubernetesClust
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfig.property.netIpv4TcpKeepaliveTime">netIpv4TcpKeepaliveTime</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#net_ipv4_tcp_keepalive_time KubernetesCluster#net_ipv4_tcp_keepalive_time}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfig.property.netIpv4TcpMaxSynBacklog">netIpv4TcpMaxSynBacklog</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#net_ipv4_tcp_max_syn_backlog KubernetesCluster#net_ipv4_tcp_max_syn_backlog}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfig.property.netIpv4TcpMaxTwBuckets">netIpv4TcpMaxTwBuckets</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#net_ipv4_tcp_max_tw_buckets KubernetesCluster#net_ipv4_tcp_max_tw_buckets}. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfig.property.netIpv4TcpTwReuse">netIpv4TcpTwReuse</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#net_ipv4_tcp_tw_reuse KubernetesCluster#net_ipv4_tcp_tw_reuse}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfig.property.netIpv4TcpTwReuse">netIpv4TcpTwReuse</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#net_ipv4_tcp_tw_reuse KubernetesCluster#net_ipv4_tcp_tw_reuse}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfig.property.netNetfilterNfConntrackBuckets">netNetfilterNfConntrackBuckets</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#net_netfilter_nf_conntrack_buckets KubernetesCluster#net_netfilter_nf_conntrack_buckets}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfig.property.netNetfilterNfConntrackMax">netNetfilterNfConntrackMax</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#net_netfilter_nf_conntrack_max KubernetesCluster#net_netfilter_nf_conntrack_max}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfig.property.vmMaxMapCount">vmMaxMapCount</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#vm_max_map_count KubernetesCluster#vm_max_map_count}. |
@@ -5432,7 +5432,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly netIpv4TcpTwReuse: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#net_ipv4_tcp_tw_reuse KubernetesCluster#net_ipv4_tcp_tw_reuse}.
 
@@ -5512,7 +5512,7 @@ const kubernetesClusterDefaultNodePoolNodeNetworkProfile: kubernetesCluster.Kube
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfile.property.allowedHostPorts">allowedHostPorts</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts">KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts</a>[]</code> | allowed_host_ports block. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfile.property.allowedHostPorts">allowedHostPorts</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts">KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts</a>[]</code> | allowed_host_ports block. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfile.property.applicationSecurityGroupIds">applicationSecurityGroupIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#application_security_group_ids KubernetesCluster#application_security_group_ids}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfile.property.nodePublicIpTags">nodePublicIpTags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#node_public_ip_tags KubernetesCluster#node_public_ip_tags}. |
 
@@ -5524,7 +5524,7 @@ const kubernetesClusterDefaultNodePoolNodeNetworkProfile: kubernetesCluster.Kube
 public readonly allowedHostPorts: IResolvable | KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts">KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts">KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts</a>[]
 
 allowed_host_ports block.
 
@@ -5930,7 +5930,7 @@ const kubernetesClusterKeyVaultSecretsProvider: kubernetesCluster.KubernetesClus
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProvider.property.secretRotationEnabled">secretRotationEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#secret_rotation_enabled KubernetesCluster#secret_rotation_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProvider.property.secretRotationEnabled">secretRotationEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#secret_rotation_enabled KubernetesCluster#secret_rotation_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProvider.property.secretRotationInterval">secretRotationInterval</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#secret_rotation_interval KubernetesCluster#secret_rotation_interval}. |
 
 ---
@@ -5941,7 +5941,7 @@ const kubernetesClusterKeyVaultSecretsProvider: kubernetesCluster.KubernetesClus
 public readonly secretRotationEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#secret_rotation_enabled KubernetesCluster#secret_rotation_enabled}.
 
@@ -6137,8 +6137,8 @@ const kubernetesClusterMaintenanceWindow: kubernetesCluster.KubernetesClusterMai
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindow.property.allowed">allowed</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowed">KubernetesClusterMaintenanceWindowAllowed</a>[]</code> | allowed block. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindow.property.notAllowed">notAllowed</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowed">KubernetesClusterMaintenanceWindowNotAllowed</a>[]</code> | not_allowed block. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindow.property.allowed">allowed</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowed">KubernetesClusterMaintenanceWindowAllowed</a>[]</code> | allowed block. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindow.property.notAllowed">notAllowed</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowed">KubernetesClusterMaintenanceWindowNotAllowed</a>[]</code> | not_allowed block. |
 
 ---
 
@@ -6148,7 +6148,7 @@ const kubernetesClusterMaintenanceWindow: kubernetesCluster.KubernetesClusterMai
 public readonly allowed: IResolvable | KubernetesClusterMaintenanceWindowAllowed[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowed">KubernetesClusterMaintenanceWindowAllowed</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowed">KubernetesClusterMaintenanceWindowAllowed</a>[]
 
 allowed block.
 
@@ -6162,7 +6162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly notAllowed: IResolvable | KubernetesClusterMaintenanceWindowNotAllowed[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowed">KubernetesClusterMaintenanceWindowNotAllowed</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowed">KubernetesClusterMaintenanceWindowNotAllowed</a>[]
 
 not_allowed block.
 
@@ -6232,7 +6232,7 @@ const kubernetesClusterMaintenanceWindowAutoUpgrade: kubernetesCluster.Kubernete
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgrade.property.interval">interval</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#interval KubernetesCluster#interval}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgrade.property.dayOfMonth">dayOfMonth</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#day_of_month KubernetesCluster#day_of_month}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgrade.property.dayOfWeek">dayOfWeek</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#day_of_week KubernetesCluster#day_of_week}. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgrade.property.notAllowed">notAllowed</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed">KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed</a>[]</code> | not_allowed block. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgrade.property.notAllowed">notAllowed</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed">KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed</a>[]</code> | not_allowed block. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgrade.property.startDate">startDate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#start_date KubernetesCluster#start_date}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgrade.property.startTime">startTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#start_time KubernetesCluster#start_time}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgrade.property.utcOffset">utcOffset</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#utc_offset KubernetesCluster#utc_offset}. |
@@ -6306,7 +6306,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly notAllowed: IResolvable | KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed">KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed">KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed</a>[]
 
 not_allowed block.
 
@@ -6424,7 +6424,7 @@ const kubernetesClusterMaintenanceWindowNodeOs: kubernetesCluster.KubernetesClus
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOs.property.interval">interval</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#interval KubernetesCluster#interval}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOs.property.dayOfMonth">dayOfMonth</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#day_of_month KubernetesCluster#day_of_month}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOs.property.dayOfWeek">dayOfWeek</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#day_of_week KubernetesCluster#day_of_week}. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOs.property.notAllowed">notAllowed</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowed">KubernetesClusterMaintenanceWindowNodeOsNotAllowed</a>[]</code> | not_allowed block. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOs.property.notAllowed">notAllowed</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowed">KubernetesClusterMaintenanceWindowNodeOsNotAllowed</a>[]</code> | not_allowed block. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOs.property.startDate">startDate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#start_date KubernetesCluster#start_date}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOs.property.startTime">startTime</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#start_time KubernetesCluster#start_time}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOs.property.utcOffset">utcOffset</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#utc_offset KubernetesCluster#utc_offset}. |
@@ -6498,7 +6498,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly notAllowed: IResolvable | KubernetesClusterMaintenanceWindowNodeOsNotAllowed[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowed">KubernetesClusterMaintenanceWindowNodeOsNotAllowed</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowed">KubernetesClusterMaintenanceWindowNodeOsNotAllowed</a>[]
 
 not_allowed block.
 
@@ -6958,8 +6958,8 @@ const kubernetesClusterNetworkProfileAdvancedNetworking: kubernetesCluster.Kuber
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileAdvancedNetworking.property.observabilityEnabled">observabilityEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#observability_enabled KubernetesCluster#observability_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileAdvancedNetworking.property.securityEnabled">securityEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#security_enabled KubernetesCluster#security_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileAdvancedNetworking.property.observabilityEnabled">observabilityEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#observability_enabled KubernetesCluster#observability_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileAdvancedNetworking.property.securityEnabled">securityEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#security_enabled KubernetesCluster#security_enabled}. |
 
 ---
 
@@ -6969,7 +6969,7 @@ const kubernetesClusterNetworkProfileAdvancedNetworking: kubernetesCluster.Kuber
 public readonly observabilityEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#observability_enabled KubernetesCluster#observability_enabled}.
 
@@ -6981,7 +6981,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly securityEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#security_enabled KubernetesCluster#security_enabled}.
 
@@ -7196,7 +7196,7 @@ const kubernetesClusterOmsAgent: kubernetesCluster.KubernetesClusterOmsAgent = {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgent.property.logAnalyticsWorkspaceId">logAnalyticsWorkspaceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#log_analytics_workspace_id KubernetesCluster#log_analytics_workspace_id}. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgent.property.msiAuthForMonitoringEnabled">msiAuthForMonitoringEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#msi_auth_for_monitoring_enabled KubernetesCluster#msi_auth_for_monitoring_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgent.property.msiAuthForMonitoringEnabled">msiAuthForMonitoringEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#msi_auth_for_monitoring_enabled KubernetesCluster#msi_auth_for_monitoring_enabled}. |
 
 ---
 
@@ -7218,7 +7218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly msiAuthForMonitoringEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#msi_auth_for_monitoring_enabled KubernetesCluster#msi_auth_for_monitoring_enabled}.
 
@@ -7252,8 +7252,8 @@ const kubernetesClusterServiceMeshProfile: kubernetesCluster.KubernetesClusterSe
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfile.property.mode">mode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#mode KubernetesCluster#mode}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfile.property.revisions">revisions</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#revisions KubernetesCluster#revisions}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfile.property.certificateAuthority">certificateAuthority</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfileCertificateAuthority">KubernetesClusterServiceMeshProfileCertificateAuthority</a></code> | certificate_authority block. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfile.property.externalIngressGatewayEnabled">externalIngressGatewayEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#external_ingress_gateway_enabled KubernetesCluster#external_ingress_gateway_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfile.property.internalIngressGatewayEnabled">internalIngressGatewayEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#internal_ingress_gateway_enabled KubernetesCluster#internal_ingress_gateway_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfile.property.externalIngressGatewayEnabled">externalIngressGatewayEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#external_ingress_gateway_enabled KubernetesCluster#external_ingress_gateway_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfile.property.internalIngressGatewayEnabled">internalIngressGatewayEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#internal_ingress_gateway_enabled KubernetesCluster#internal_ingress_gateway_enabled}. |
 
 ---
 
@@ -7301,7 +7301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly externalIngressGatewayEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#external_ingress_gateway_enabled KubernetesCluster#external_ingress_gateway_enabled}.
 
@@ -7313,7 +7313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly internalIngressGatewayEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#internal_ingress_gateway_enabled KubernetesCluster#internal_ingress_gateway_enabled}.
 
@@ -7458,10 +7458,10 @@ const kubernetesClusterStorageProfile: kubernetesCluster.KubernetesClusterStorag
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterStorageProfile.property.blobDriverEnabled">blobDriverEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#blob_driver_enabled KubernetesCluster#blob_driver_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterStorageProfile.property.diskDriverEnabled">diskDriverEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#disk_driver_enabled KubernetesCluster#disk_driver_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterStorageProfile.property.fileDriverEnabled">fileDriverEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#file_driver_enabled KubernetesCluster#file_driver_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterStorageProfile.property.snapshotControllerEnabled">snapshotControllerEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#snapshot_controller_enabled KubernetesCluster#snapshot_controller_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterStorageProfile.property.blobDriverEnabled">blobDriverEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#blob_driver_enabled KubernetesCluster#blob_driver_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterStorageProfile.property.diskDriverEnabled">diskDriverEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#disk_driver_enabled KubernetesCluster#disk_driver_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterStorageProfile.property.fileDriverEnabled">fileDriverEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#file_driver_enabled KubernetesCluster#file_driver_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterStorageProfile.property.snapshotControllerEnabled">snapshotControllerEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#snapshot_controller_enabled KubernetesCluster#snapshot_controller_enabled}. |
 
 ---
 
@@ -7471,7 +7471,7 @@ const kubernetesClusterStorageProfile: kubernetesCluster.KubernetesClusterStorag
 public readonly blobDriverEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#blob_driver_enabled KubernetesCluster#blob_driver_enabled}.
 
@@ -7483,7 +7483,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly diskDriverEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#disk_driver_enabled KubernetesCluster#disk_driver_enabled}.
 
@@ -7495,7 +7495,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly fileDriverEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#file_driver_enabled KubernetesCluster#file_driver_enabled}.
 
@@ -7507,7 +7507,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly snapshotControllerEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#snapshot_controller_enabled KubernetesCluster#snapshot_controller_enabled}.
 
@@ -7596,7 +7596,7 @@ const kubernetesClusterUpgradeOverride: kubernetesCluster.KubernetesClusterUpgra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterUpgradeOverride.property.forceUpgradeEnabled">forceUpgradeEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#force_upgrade_enabled KubernetesCluster#force_upgrade_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterUpgradeOverride.property.forceUpgradeEnabled">forceUpgradeEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#force_upgrade_enabled KubernetesCluster#force_upgrade_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterUpgradeOverride.property.effectiveUntil">effectiveUntil</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#effective_until KubernetesCluster#effective_until}. |
 
 ---
@@ -7607,7 +7607,7 @@ const kubernetesClusterUpgradeOverride: kubernetesCluster.KubernetesClusterUpgra
 public readonly forceUpgradeEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#force_upgrade_enabled KubernetesCluster#force_upgrade_enabled}.
 
@@ -7807,8 +7807,8 @@ const kubernetesClusterWorkloadAutoscalerProfile: kubernetesCluster.KubernetesCl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWorkloadAutoscalerProfile.property.kedaEnabled">kedaEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#keda_enabled KubernetesCluster#keda_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWorkloadAutoscalerProfile.property.verticalPodAutoscalerEnabled">verticalPodAutoscalerEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#vertical_pod_autoscaler_enabled KubernetesCluster#vertical_pod_autoscaler_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWorkloadAutoscalerProfile.property.kedaEnabled">kedaEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#keda_enabled KubernetesCluster#keda_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWorkloadAutoscalerProfile.property.verticalPodAutoscalerEnabled">verticalPodAutoscalerEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#vertical_pod_autoscaler_enabled KubernetesCluster#vertical_pod_autoscaler_enabled}. |
 
 ---
 
@@ -7818,7 +7818,7 @@ const kubernetesClusterWorkloadAutoscalerProfile: kubernetesCluster.KubernetesCl
 public readonly kedaEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#keda_enabled KubernetesCluster#keda_enabled}.
 
@@ -7830,7 +7830,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly verticalPodAutoscalerEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kubernetes_cluster#vertical_pod_autoscaler_enabled KubernetesCluster#vertical_pod_autoscaler_enabled}.
 
@@ -7850,7 +7850,7 @@ new kubernetesCluster.KubernetesClusterAciConnectorLinuxConnectorIdentityList(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAciConnectorLinuxConnectorIdentityList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAciConnectorLinuxConnectorIdentityList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAciConnectorLinuxConnectorIdentityList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAciConnectorLinuxConnectorIdentityList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7858,7 +7858,7 @@ new kubernetesCluster.KubernetesClusterAciConnectorLinuxConnectorIdentityList(te
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAciConnectorLinuxConnectorIdentityList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7924,7 +7924,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAciConnectorLinuxConnectorIdentityList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7999,7 +7999,7 @@ new kubernetesCluster.KubernetesClusterAciConnectorLinuxConnectorIdentityOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAciConnectorLinuxConnectorIdentityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAciConnectorLinuxConnectorIdentityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAciConnectorLinuxConnectorIdentityOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAciConnectorLinuxConnectorIdentityOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAciConnectorLinuxConnectorIdentityOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -8008,7 +8008,7 @@ new kubernetesCluster.KubernetesClusterAciConnectorLinuxConnectorIdentityOutputR
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAciConnectorLinuxConnectorIdentityOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8194,7 +8194,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAciConnectorLinuxConnectorIdentityOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8299,14 +8299,14 @@ new kubernetesCluster.KubernetesClusterAciConnectorLinuxOutputReference(terrafor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAciConnectorLinuxOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAciConnectorLinuxOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAciConnectorLinuxOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAciConnectorLinuxOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8476,7 +8476,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAciConnectorLinuxOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8581,14 +8581,14 @@ new kubernetesCluster.KubernetesClusterApiServerAccessProfileOutputReference(ter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterApiServerAccessProfileOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterApiServerAccessProfileOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterApiServerAccessProfileOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterApiServerAccessProfileOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8761,7 +8761,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterApiServerAccessProfileOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8802,10 +8802,10 @@ public resetVirtualNetworkIntegrationEnabled(): void
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterApiServerAccessProfileOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterApiServerAccessProfileOutputReference.property.authorizedIpRangesInput">authorizedIpRangesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterApiServerAccessProfileOutputReference.property.subnetIdInput">subnetIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterApiServerAccessProfileOutputReference.property.virtualNetworkIntegrationEnabledInput">virtualNetworkIntegrationEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterApiServerAccessProfileOutputReference.property.virtualNetworkIntegrationEnabledInput">virtualNetworkIntegrationEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterApiServerAccessProfileOutputReference.property.authorizedIpRanges">authorizedIpRanges</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterApiServerAccessProfileOutputReference.property.subnetId">subnetId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterApiServerAccessProfileOutputReference.property.virtualNetworkIntegrationEnabled">virtualNetworkIntegrationEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterApiServerAccessProfileOutputReference.property.virtualNetworkIntegrationEnabled">virtualNetworkIntegrationEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterApiServerAccessProfileOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterApiServerAccessProfile">KubernetesClusterApiServerAccessProfile</a></code> | *No description.* |
 
 ---
@@ -8860,7 +8860,7 @@ public readonly subnetIdInput: string;
 public readonly virtualNetworkIntegrationEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -8890,7 +8890,7 @@ public readonly subnetId: string;
 public readonly virtualNetworkIntegrationEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -8917,14 +8917,14 @@ new kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference(terrafor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9114,7 +9114,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9255,12 +9255,12 @@ public resetSkipNodesWithSystemPods(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.balanceSimilarNodeGroupsInput">balanceSimilarNodeGroupsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.daemonsetEvictionForEmptyNodesEnabledInput">daemonsetEvictionForEmptyNodesEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.daemonsetEvictionForOccupiedNodesEnabledInput">daemonsetEvictionForOccupiedNodesEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.balanceSimilarNodeGroupsInput">balanceSimilarNodeGroupsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.daemonsetEvictionForEmptyNodesEnabledInput">daemonsetEvictionForEmptyNodesEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.daemonsetEvictionForOccupiedNodesEnabledInput">daemonsetEvictionForOccupiedNodesEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.emptyBulkDeleteMaxInput">emptyBulkDeleteMaxInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.expanderInput">expanderInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.ignoreDaemonsetsUtilizationEnabledInput">ignoreDaemonsetsUtilizationEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.ignoreDaemonsetsUtilizationEnabledInput">ignoreDaemonsetsUtilizationEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.maxGracefulTerminationSecInput">maxGracefulTerminationSecInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.maxNodeProvisioningTimeInput">maxNodeProvisioningTimeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.maxUnreadyNodesInput">maxUnreadyNodesInput</a></code> | <code>number</code> | *No description.* |
@@ -9273,14 +9273,14 @@ public resetSkipNodesWithSystemPods(): void
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.scaleDownUnreadyInput">scaleDownUnreadyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.scaleDownUtilizationThresholdInput">scaleDownUtilizationThresholdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.scanIntervalInput">scanIntervalInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.skipNodesWithLocalStorageInput">skipNodesWithLocalStorageInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.skipNodesWithSystemPodsInput">skipNodesWithSystemPodsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.balanceSimilarNodeGroups">balanceSimilarNodeGroups</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.daemonsetEvictionForEmptyNodesEnabled">daemonsetEvictionForEmptyNodesEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.daemonsetEvictionForOccupiedNodesEnabled">daemonsetEvictionForOccupiedNodesEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.skipNodesWithLocalStorageInput">skipNodesWithLocalStorageInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.skipNodesWithSystemPodsInput">skipNodesWithSystemPodsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.balanceSimilarNodeGroups">balanceSimilarNodeGroups</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.daemonsetEvictionForEmptyNodesEnabled">daemonsetEvictionForEmptyNodesEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.daemonsetEvictionForOccupiedNodesEnabled">daemonsetEvictionForOccupiedNodesEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.emptyBulkDeleteMax">emptyBulkDeleteMax</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.expander">expander</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.ignoreDaemonsetsUtilizationEnabled">ignoreDaemonsetsUtilizationEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.ignoreDaemonsetsUtilizationEnabled">ignoreDaemonsetsUtilizationEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.maxGracefulTerminationSec">maxGracefulTerminationSec</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.maxNodeProvisioningTime">maxNodeProvisioningTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.maxUnreadyNodes">maxUnreadyNodes</a></code> | <code>number</code> | *No description.* |
@@ -9293,8 +9293,8 @@ public resetSkipNodesWithSystemPods(): void
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.scaleDownUnready">scaleDownUnready</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.scaleDownUtilizationThreshold">scaleDownUtilizationThreshold</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.scanInterval">scanInterval</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.skipNodesWithLocalStorage">skipNodesWithLocalStorage</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.skipNodesWithSystemPods">skipNodesWithSystemPods</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.skipNodesWithLocalStorage">skipNodesWithLocalStorage</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.skipNodesWithSystemPods">skipNodesWithSystemPods</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfileOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAutoScalerProfile">KubernetesClusterAutoScalerProfile</a></code> | *No description.* |
 
 ---
@@ -9329,7 +9329,7 @@ public readonly fqn: string;
 public readonly balanceSimilarNodeGroupsInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -9339,7 +9339,7 @@ public readonly balanceSimilarNodeGroupsInput: boolean | IResolvable;
 public readonly daemonsetEvictionForEmptyNodesEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -9349,7 +9349,7 @@ public readonly daemonsetEvictionForEmptyNodesEnabledInput: boolean | IResolvabl
 public readonly daemonsetEvictionForOccupiedNodesEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -9379,7 +9379,7 @@ public readonly expanderInput: string;
 public readonly ignoreDaemonsetsUtilizationEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -9509,7 +9509,7 @@ public readonly scanIntervalInput: string;
 public readonly skipNodesWithLocalStorageInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -9519,7 +9519,7 @@ public readonly skipNodesWithLocalStorageInput: boolean | IResolvable;
 public readonly skipNodesWithSystemPodsInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -9529,7 +9529,7 @@ public readonly skipNodesWithSystemPodsInput: boolean | IResolvable;
 public readonly balanceSimilarNodeGroups: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -9539,7 +9539,7 @@ public readonly balanceSimilarNodeGroups: boolean | IResolvable;
 public readonly daemonsetEvictionForEmptyNodesEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -9549,7 +9549,7 @@ public readonly daemonsetEvictionForEmptyNodesEnabled: boolean | IResolvable;
 public readonly daemonsetEvictionForOccupiedNodesEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -9579,7 +9579,7 @@ public readonly expander: string;
 public readonly ignoreDaemonsetsUtilizationEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -9709,7 +9709,7 @@ public readonly scanInterval: string;
 public readonly skipNodesWithLocalStorage: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -9719,7 +9719,7 @@ public readonly skipNodesWithLocalStorage: boolean | IResolvable;
 public readonly skipNodesWithSystemPods: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -9746,14 +9746,14 @@ new kubernetesCluster.KubernetesClusterAzureActiveDirectoryRoleBasedAccessContro
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9926,7 +9926,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9966,10 +9966,10 @@ public resetTenantId(): void
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference.property.adminGroupObjectIdsInput">adminGroupObjectIdsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference.property.azureRbacEnabledInput">azureRbacEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference.property.azureRbacEnabledInput">azureRbacEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference.property.tenantIdInput">tenantIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference.property.adminGroupObjectIds">adminGroupObjectIds</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference.property.azureRbacEnabled">azureRbacEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference.property.azureRbacEnabled">azureRbacEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference.property.tenantId">tenantId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterAzureActiveDirectoryRoleBasedAccessControl">KubernetesClusterAzureActiveDirectoryRoleBasedAccessControl</a></code> | *No description.* |
 
@@ -10015,7 +10015,7 @@ public readonly adminGroupObjectIdsInput: string[];
 public readonly azureRbacEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -10045,7 +10045,7 @@ public readonly adminGroupObjectIds: string[];
 public readonly azureRbacEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -10082,14 +10082,14 @@ new kubernetesCluster.KubernetesClusterBootstrapProfileOutputReference(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterBootstrapProfileOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterBootstrapProfileOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterBootstrapProfileOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterBootstrapProfileOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10261,7 +10261,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterBootstrapProfileOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10389,14 +10389,14 @@ new kubernetesCluster.KubernetesClusterConfidentialComputingOutputReference(terr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfidentialComputingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfidentialComputingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfidentialComputingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfidentialComputingOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10566,7 +10566,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfidentialComputingOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10587,8 +10587,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfidentialComputingOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfidentialComputingOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfidentialComputingOutputReference.property.sgxQuoteHelperEnabledInput">sgxQuoteHelperEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfidentialComputingOutputReference.property.sgxQuoteHelperEnabled">sgxQuoteHelperEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfidentialComputingOutputReference.property.sgxQuoteHelperEnabledInput">sgxQuoteHelperEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfidentialComputingOutputReference.property.sgxQuoteHelperEnabled">sgxQuoteHelperEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfidentialComputingOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterConfidentialComputing">KubernetesClusterConfidentialComputing</a></code> | *No description.* |
 
 ---
@@ -10623,7 +10623,7 @@ public readonly fqn: string;
 public readonly sgxQuoteHelperEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -10633,7 +10633,7 @@ public readonly sgxQuoteHelperEnabledInput: boolean | IResolvable;
 public readonly sgxQuoteHelperEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -10660,14 +10660,14 @@ new kubernetesCluster.KubernetesClusterDefaultNodePoolKubeletConfigOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolKubeletConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolKubeletConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolKubeletConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolKubeletConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10847,7 +10847,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolKubeletConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10931,7 +10931,7 @@ public resetTopologyManagerPolicy(): void
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolKubeletConfigOutputReference.property.allowedUnsafeSysctlsInput">allowedUnsafeSysctlsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolKubeletConfigOutputReference.property.containerLogMaxLineInput">containerLogMaxLineInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolKubeletConfigOutputReference.property.containerLogMaxSizeMbInput">containerLogMaxSizeMbInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolKubeletConfigOutputReference.property.cpuCfsQuotaEnabledInput">cpuCfsQuotaEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolKubeletConfigOutputReference.property.cpuCfsQuotaEnabledInput">cpuCfsQuotaEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolKubeletConfigOutputReference.property.cpuCfsQuotaPeriodInput">cpuCfsQuotaPeriodInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolKubeletConfigOutputReference.property.cpuManagerPolicyInput">cpuManagerPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolKubeletConfigOutputReference.property.imageGcHighThresholdInput">imageGcHighThresholdInput</a></code> | <code>number</code> | *No description.* |
@@ -10941,7 +10941,7 @@ public resetTopologyManagerPolicy(): void
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolKubeletConfigOutputReference.property.allowedUnsafeSysctls">allowedUnsafeSysctls</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolKubeletConfigOutputReference.property.containerLogMaxLine">containerLogMaxLine</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolKubeletConfigOutputReference.property.containerLogMaxSizeMb">containerLogMaxSizeMb</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolKubeletConfigOutputReference.property.cpuCfsQuotaEnabled">cpuCfsQuotaEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolKubeletConfigOutputReference.property.cpuCfsQuotaEnabled">cpuCfsQuotaEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolKubeletConfigOutputReference.property.cpuCfsQuotaPeriod">cpuCfsQuotaPeriod</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolKubeletConfigOutputReference.property.cpuManagerPolicy">cpuManagerPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolKubeletConfigOutputReference.property.imageGcHighThreshold">imageGcHighThreshold</a></code> | <code>number</code> | *No description.* |
@@ -11012,7 +11012,7 @@ public readonly containerLogMaxSizeMbInput: number;
 public readonly cpuCfsQuotaEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -11112,7 +11112,7 @@ public readonly containerLogMaxSizeMb: number;
 public readonly cpuCfsQuotaEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -11199,14 +11199,14 @@ new kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11382,7 +11382,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11606,14 +11606,14 @@ new kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfigO
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11812,7 +11812,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12030,7 +12030,7 @@ public resetVmVfsCachePressure(): void
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfigOutputReference.property.netIpv4TcpKeepaliveTimeInput">netIpv4TcpKeepaliveTimeInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfigOutputReference.property.netIpv4TcpMaxSynBacklogInput">netIpv4TcpMaxSynBacklogInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfigOutputReference.property.netIpv4TcpMaxTwBucketsInput">netIpv4TcpMaxTwBucketsInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfigOutputReference.property.netIpv4TcpTwReuseInput">netIpv4TcpTwReuseInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfigOutputReference.property.netIpv4TcpTwReuseInput">netIpv4TcpTwReuseInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfigOutputReference.property.netNetfilterNfConntrackBucketsInput">netNetfilterNfConntrackBucketsInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfigOutputReference.property.netNetfilterNfConntrackMaxInput">netNetfilterNfConntrackMaxInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfigOutputReference.property.vmMaxMapCountInput">vmMaxMapCountInput</a></code> | <code>number</code> | *No description.* |
@@ -12059,7 +12059,7 @@ public resetVmVfsCachePressure(): void
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfigOutputReference.property.netIpv4TcpKeepaliveTime">netIpv4TcpKeepaliveTime</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfigOutputReference.property.netIpv4TcpMaxSynBacklog">netIpv4TcpMaxSynBacklog</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfigOutputReference.property.netIpv4TcpMaxTwBuckets">netIpv4TcpMaxTwBuckets</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfigOutputReference.property.netIpv4TcpTwReuse">netIpv4TcpTwReuse</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfigOutputReference.property.netIpv4TcpTwReuse">netIpv4TcpTwReuse</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfigOutputReference.property.netNetfilterNfConntrackBuckets">netNetfilterNfConntrackBuckets</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfigOutputReference.property.netNetfilterNfConntrackMax">netNetfilterNfConntrackMax</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigSysctlConfigOutputReference.property.vmMaxMapCount">vmMaxMapCount</a></code> | <code>number</code> | *No description.* |
@@ -12329,7 +12329,7 @@ public readonly netIpv4TcpMaxTwBucketsInput: number;
 public readonly netIpv4TcpTwReuseInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -12619,7 +12619,7 @@ public readonly netIpv4TcpMaxTwBuckets: number;
 public readonly netIpv4TcpTwReuse: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -12696,7 +12696,7 @@ new kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedH
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPortsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPortsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPortsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPortsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -12704,7 +12704,7 @@ new kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedH
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPortsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12770,7 +12770,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPortsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12805,7 +12805,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPortsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPortsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPortsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts">KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPortsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts">KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts</a>[]</code> | *No description.* |
 
 ---
 
@@ -12839,7 +12839,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts">KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts">KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts</a>[]
 
 ---
 
@@ -12856,7 +12856,7 @@ new kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedH
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPortsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPortsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPortsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPortsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPortsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -12865,7 +12865,7 @@ new kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedH
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPortsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13054,7 +13054,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPortsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13099,7 +13099,7 @@ public resetProtocol(): void
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPortsOutputReference.property.portEnd">portEnd</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPortsOutputReference.property.portStart">portStart</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPortsOutputReference.property.protocol">protocol</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPortsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts">KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPortsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts">KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts</a></code> | *No description.* |
 
 ---
 
@@ -13193,7 +13193,7 @@ public readonly protocol: string;
 public readonly internalValue: IResolvable | KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts">KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts">KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts</a>
 
 ---
 
@@ -13210,14 +13210,14 @@ new kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileOutputRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13391,7 +13391,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13413,7 +13413,7 @@ public putAllowedHostPorts(value: IResolvable | KubernetesClusterDefaultNodePool
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileOutputReference.putAllowedHostPorts.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts">KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts">KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts</a>[]
 
 ---
 
@@ -13443,7 +13443,7 @@ public resetNodePublicIpTags(): void
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileOutputReference.property.allowedHostPorts">allowedHostPorts</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPortsList">KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPortsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileOutputReference.property.allowedHostPortsInput">allowedHostPortsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts">KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileOutputReference.property.allowedHostPortsInput">allowedHostPortsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts">KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileOutputReference.property.applicationSecurityGroupIdsInput">applicationSecurityGroupIdsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileOutputReference.property.nodePublicIpTagsInput">nodePublicIpTagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileOutputReference.property.applicationSecurityGroupIds">applicationSecurityGroupIds</a></code> | <code>string[]</code> | *No description.* |
@@ -13492,7 +13492,7 @@ public readonly allowedHostPorts: KubernetesClusterDefaultNodePoolNodeNetworkPro
 public readonly allowedHostPortsInput: IResolvable | KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts">KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts">KubernetesClusterDefaultNodePoolNodeNetworkProfileAllowedHostPorts</a>[]
 
 ---
 
@@ -13559,14 +13559,14 @@ new kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference(terraformR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13776,7 +13776,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14065,12 +14065,12 @@ public resetZones(): void
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.linuxOsConfig">linuxOsConfig</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolLinuxOsConfigOutputReference">KubernetesClusterDefaultNodePoolLinuxOsConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.nodeNetworkProfile">nodeNetworkProfile</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfileOutputReference">KubernetesClusterDefaultNodePoolNodeNetworkProfileOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.upgradeSettings">upgradeSettings</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference">KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.autoScalingEnabledInput">autoScalingEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.autoScalingEnabledInput">autoScalingEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.capacityReservationGroupIdInput">capacityReservationGroupIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.fipsEnabledInput">fipsEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.fipsEnabledInput">fipsEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.gpuDriverInput">gpuDriverInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.gpuInstanceInput">gpuInstanceInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.hostEncryptionEnabledInput">hostEncryptionEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.hostEncryptionEnabledInput">hostEncryptionEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.hostGroupIdInput">hostGroupIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.kubeletConfigInput">kubeletConfigInput</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolKubeletConfig">KubernetesClusterDefaultNodePoolKubeletConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.kubeletDiskTypeInput">kubeletDiskTypeInput</a></code> | <code>string</code> | *No description.* |
@@ -14082,9 +14082,9 @@ public resetZones(): void
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.nodeCountInput">nodeCountInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.nodeLabelsInput">nodeLabelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.nodeNetworkProfileInput">nodeNetworkProfileInput</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolNodeNetworkProfile">KubernetesClusterDefaultNodePoolNodeNetworkProfile</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.nodePublicIpEnabledInput">nodePublicIpEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.nodePublicIpEnabledInput">nodePublicIpEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.nodePublicIpPrefixIdInput">nodePublicIpPrefixIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.onlyCriticalAddonsEnabledInput">onlyCriticalAddonsEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.onlyCriticalAddonsEnabledInput">onlyCriticalAddonsEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.orchestratorVersionInput">orchestratorVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.osDiskSizeGbInput">osDiskSizeGbInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.osDiskTypeInput">osDiskTypeInput</a></code> | <code>string</code> | *No description.* |
@@ -14096,18 +14096,18 @@ public resetZones(): void
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.temporaryNameForRotationInput">temporaryNameForRotationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.ultraSsdEnabledInput">ultraSsdEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.ultraSsdEnabledInput">ultraSsdEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.upgradeSettingsInput">upgradeSettingsInput</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolUpgradeSettings">KubernetesClusterDefaultNodePoolUpgradeSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.vmSizeInput">vmSizeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.vnetSubnetIdInput">vnetSubnetIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.workloadRuntimeInput">workloadRuntimeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.zonesInput">zonesInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.autoScalingEnabled">autoScalingEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.autoScalingEnabled">autoScalingEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.capacityReservationGroupId">capacityReservationGroupId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.fipsEnabled">fipsEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.fipsEnabled">fipsEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.gpuDriver">gpuDriver</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.gpuInstance">gpuInstance</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.hostEncryptionEnabled">hostEncryptionEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.hostEncryptionEnabled">hostEncryptionEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.hostGroupId">hostGroupId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.kubeletDiskType">kubeletDiskType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.maxCount">maxCount</a></code> | <code>number</code> | *No description.* |
@@ -14116,9 +14116,9 @@ public resetZones(): void
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.nodeCount">nodeCount</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.nodeLabels">nodeLabels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.nodePublicIpEnabled">nodePublicIpEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.nodePublicIpEnabled">nodePublicIpEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.nodePublicIpPrefixId">nodePublicIpPrefixId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.onlyCriticalAddonsEnabled">onlyCriticalAddonsEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.onlyCriticalAddonsEnabled">onlyCriticalAddonsEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.orchestratorVersion">orchestratorVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.osDiskSizeGb">osDiskSizeGb</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.osDiskType">osDiskType</a></code> | <code>string</code> | *No description.* |
@@ -14130,7 +14130,7 @@ public resetZones(): void
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.temporaryNameForRotation">temporaryNameForRotation</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.ultraSsdEnabled">ultraSsdEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.ultraSsdEnabled">ultraSsdEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.vmSize">vmSize</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.vnetSubnetId">vnetSubnetId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolOutputReference.property.workloadRuntime">workloadRuntime</a></code> | <code>string</code> | *No description.* |
@@ -14209,7 +14209,7 @@ public readonly upgradeSettings: KubernetesClusterDefaultNodePoolUpgradeSettings
 public readonly autoScalingEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -14229,7 +14229,7 @@ public readonly capacityReservationGroupIdInput: string;
 public readonly fipsEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -14259,7 +14259,7 @@ public readonly gpuInstanceInput: string;
 public readonly hostEncryptionEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -14379,7 +14379,7 @@ public readonly nodeNetworkProfileInput: KubernetesClusterDefaultNodePoolNodeNet
 public readonly nodePublicIpEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -14399,7 +14399,7 @@ public readonly nodePublicIpPrefixIdInput: string;
 public readonly onlyCriticalAddonsEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -14519,7 +14519,7 @@ public readonly typeInput: string;
 public readonly ultraSsdEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -14579,7 +14579,7 @@ public readonly zonesInput: string[];
 public readonly autoScalingEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -14599,7 +14599,7 @@ public readonly capacityReservationGroupId: string;
 public readonly fipsEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -14629,7 +14629,7 @@ public readonly gpuInstance: string;
 public readonly hostEncryptionEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -14719,7 +14719,7 @@ public readonly nodeLabels: {[ key: string ]: string};
 public readonly nodePublicIpEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -14739,7 +14739,7 @@ public readonly nodePublicIpPrefixId: string;
 public readonly onlyCriticalAddonsEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -14859,7 +14859,7 @@ public readonly type: string;
 public readonly ultraSsdEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -14926,14 +14926,14 @@ new kubernetesCluster.KubernetesClusterDefaultNodePoolUpgradeSettingsOutputRefer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15106,7 +15106,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterDefaultNodePoolUpgradeSettingsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15284,14 +15284,14 @@ new kubernetesCluster.KubernetesClusterHttpProxyConfigOutputReference(terraformR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterHttpProxyConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterHttpProxyConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterHttpProxyConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterHttpProxyConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15465,7 +15465,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterHttpProxyConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15649,14 +15649,14 @@ new kubernetesCluster.KubernetesClusterIdentityOutputReference(terraformResource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterIdentityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterIdentityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterIdentityOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterIdentityOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15827,7 +15827,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterIdentityOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15971,7 +15971,7 @@ new kubernetesCluster.KubernetesClusterIngressApplicationGatewayIngressApplicati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterIngressApplicationGatewayIngressApplicationGatewayIdentityList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterIngressApplicationGatewayIngressApplicationGatewayIdentityList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterIngressApplicationGatewayIngressApplicationGatewayIdentityList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterIngressApplicationGatewayIngressApplicationGatewayIdentityList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -15979,7 +15979,7 @@ new kubernetesCluster.KubernetesClusterIngressApplicationGatewayIngressApplicati
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterIngressApplicationGatewayIngressApplicationGatewayIdentityList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16045,7 +16045,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterIngressApplicationGatewayIngressApplicationGatewayIdentityList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16120,7 +16120,7 @@ new kubernetesCluster.KubernetesClusterIngressApplicationGatewayIngressApplicati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterIngressApplicationGatewayIngressApplicationGatewayIdentityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterIngressApplicationGatewayIngressApplicationGatewayIdentityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterIngressApplicationGatewayIngressApplicationGatewayIdentityOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterIngressApplicationGatewayIngressApplicationGatewayIdentityOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterIngressApplicationGatewayIngressApplicationGatewayIdentityOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -16129,7 +16129,7 @@ new kubernetesCluster.KubernetesClusterIngressApplicationGatewayIngressApplicati
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterIngressApplicationGatewayIngressApplicationGatewayIdentityOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16315,7 +16315,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterIngressApplicationGatewayIngressApplicationGatewayIdentityOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16420,14 +16420,14 @@ new kubernetesCluster.KubernetesClusterIngressApplicationGatewayOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterIngressApplicationGatewayOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterIngressApplicationGatewayOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterIngressApplicationGatewayOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterIngressApplicationGatewayOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16601,7 +16601,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterIngressApplicationGatewayOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16807,14 +16807,14 @@ new kubernetesCluster.KubernetesClusterKeyManagementServiceOutputReference(terra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyManagementServiceOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyManagementServiceOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyManagementServiceOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyManagementServiceOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16985,7 +16985,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyManagementServiceOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17107,14 +17107,14 @@ new kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderOutputReference(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17286,7 +17286,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17320,9 +17320,9 @@ public resetSecretRotationInterval(): void
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderOutputReference.property.secretIdentity">secretIdentity</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderSecretIdentityList">KubernetesClusterKeyVaultSecretsProviderSecretIdentityList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderOutputReference.property.secretRotationEnabledInput">secretRotationEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderOutputReference.property.secretRotationEnabledInput">secretRotationEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderOutputReference.property.secretRotationIntervalInput">secretRotationIntervalInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderOutputReference.property.secretRotationEnabled">secretRotationEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderOutputReference.property.secretRotationEnabled">secretRotationEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderOutputReference.property.secretRotationInterval">secretRotationInterval</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProvider">KubernetesClusterKeyVaultSecretsProvider</a></code> | *No description.* |
 
@@ -17368,7 +17368,7 @@ public readonly secretIdentity: KubernetesClusterKeyVaultSecretsProviderSecretId
 public readonly secretRotationEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -17388,7 +17388,7 @@ public readonly secretRotationIntervalInput: string;
 public readonly secretRotationEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -17425,7 +17425,7 @@ new kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderSecretIdentityList
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderSecretIdentityList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderSecretIdentityList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderSecretIdentityList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderSecretIdentityList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -17433,7 +17433,7 @@ new kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderSecretIdentityList
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderSecretIdentityList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17499,7 +17499,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderSecretIdentityList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17574,7 +17574,7 @@ new kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderSecretIdentityOutp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderSecretIdentityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderSecretIdentityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderSecretIdentityOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderSecretIdentityOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderSecretIdentityOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -17583,7 +17583,7 @@ new kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderSecretIdentityOutp
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderSecretIdentityOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17769,7 +17769,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKeyVaultSecretsProviderSecretIdentityOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17874,7 +17874,7 @@ new kubernetesCluster.KubernetesClusterKubeAdminConfigList(terraformResource: II
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeAdminConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeAdminConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeAdminConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeAdminConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -17882,7 +17882,7 @@ new kubernetesCluster.KubernetesClusterKubeAdminConfigList(terraformResource: II
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeAdminConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17948,7 +17948,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeAdminConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18023,7 +18023,7 @@ new kubernetesCluster.KubernetesClusterKubeAdminConfigOutputReference(terraformR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeAdminConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeAdminConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeAdminConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeAdminConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeAdminConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -18032,7 +18032,7 @@ new kubernetesCluster.KubernetesClusterKubeAdminConfigOutputReference(terraformR
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeAdminConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18218,7 +18218,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeAdminConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18356,7 +18356,7 @@ new kubernetesCluster.KubernetesClusterKubeConfigList(terraformResource: IInterp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -18364,7 +18364,7 @@ new kubernetesCluster.KubernetesClusterKubeConfigList(terraformResource: IInterp
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18430,7 +18430,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18505,7 +18505,7 @@ new kubernetesCluster.KubernetesClusterKubeConfigOutputReference(terraformResour
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -18514,7 +18514,7 @@ new kubernetesCluster.KubernetesClusterKubeConfigOutputReference(terraformResour
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18700,7 +18700,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18838,14 +18838,14 @@ new kubernetesCluster.KubernetesClusterKubeletIdentityOutputReference(terraformR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeletIdentityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeletIdentityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeletIdentityOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeletIdentityOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19018,7 +19018,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterKubeletIdentityOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19174,14 +19174,14 @@ new kubernetesCluster.KubernetesClusterLinuxProfileOutputReference(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterLinuxProfileOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterLinuxProfileOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterLinuxProfileOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterLinuxProfileOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19352,7 +19352,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterLinuxProfileOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19480,14 +19480,14 @@ new kubernetesCluster.KubernetesClusterLinuxProfileSshKeyOutputReference(terrafo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterLinuxProfileSshKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterLinuxProfileSshKeyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterLinuxProfileSshKeyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterLinuxProfileSshKeyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19657,7 +19657,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterLinuxProfileSshKeyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19751,7 +19751,7 @@ new kubernetesCluster.KubernetesClusterMaintenanceWindowAllowedList(terraformRes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowedList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowedList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowedList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowedList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -19759,7 +19759,7 @@ new kubernetesCluster.KubernetesClusterMaintenanceWindowAllowedList(terraformRes
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowedList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19825,7 +19825,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowedList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19860,7 +19860,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowedList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowedList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowedList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowed">KubernetesClusterMaintenanceWindowAllowed</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowedList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowed">KubernetesClusterMaintenanceWindowAllowed</a>[]</code> | *No description.* |
 
 ---
 
@@ -19894,7 +19894,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | KubernetesClusterMaintenanceWindowAllowed[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowed">KubernetesClusterMaintenanceWindowAllowed</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowed">KubernetesClusterMaintenanceWindowAllowed</a>[]
 
 ---
 
@@ -19911,7 +19911,7 @@ new kubernetesCluster.KubernetesClusterMaintenanceWindowAllowedOutputReference(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowedOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowedOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowedOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowedOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowedOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -19920,7 +19920,7 @@ new kubernetesCluster.KubernetesClusterMaintenanceWindowAllowedOutputReference(t
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowedOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20106,7 +20106,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowedOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20131,7 +20131,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowedOutputReference.property.hoursInput">hoursInput</a></code> | <code>number[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowedOutputReference.property.day">day</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowedOutputReference.property.hours">hours</a></code> | <code>number[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowedOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowed">KubernetesClusterMaintenanceWindowAllowed</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowedOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowed">KubernetesClusterMaintenanceWindowAllowed</a></code> | *No description.* |
 
 ---
 
@@ -20205,7 +20205,7 @@ public readonly hours: number[];
 public readonly internalValue: IResolvable | KubernetesClusterMaintenanceWindowAllowed;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowed">KubernetesClusterMaintenanceWindowAllowed</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowed">KubernetesClusterMaintenanceWindowAllowed</a>
 
 ---
 
@@ -20222,7 +20222,7 @@ new kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedLis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -20230,7 +20230,7 @@ new kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedLis
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20296,7 +20296,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20331,7 +20331,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed">KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed">KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed</a>[]</code> | *No description.* |
 
 ---
 
@@ -20365,7 +20365,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed">KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed">KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed</a>[]
 
 ---
 
@@ -20382,7 +20382,7 @@ new kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -20391,7 +20391,7 @@ new kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedOut
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20577,7 +20577,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20602,7 +20602,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedOutputReference.property.startInput">startInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedOutputReference.property.end">end</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedOutputReference.property.start">start</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed">KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowedOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed">KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed</a></code> | *No description.* |
 
 ---
 
@@ -20676,7 +20676,7 @@ public readonly start: string;
 public readonly internalValue: IResolvable | KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed">KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed">KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed</a>
 
 ---
 
@@ -20693,14 +20693,14 @@ new kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20878,7 +20878,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20900,7 +20900,7 @@ public putNotAllowed(value: IResolvable | KubernetesClusterMaintenanceWindowAuto
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeOutputReference.putNotAllowed.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed">KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed">KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed</a>[]
 
 ---
 
@@ -20959,7 +20959,7 @@ public resetWeekIndex(): void
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeOutputReference.property.durationInput">durationInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeOutputReference.property.frequencyInput">frequencyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeOutputReference.property.intervalInput">intervalInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeOutputReference.property.notAllowedInput">notAllowedInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed">KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeOutputReference.property.notAllowedInput">notAllowedInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed">KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeOutputReference.property.startDateInput">startDateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeOutputReference.property.startTimeInput">startTimeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeOutputReference.property.utcOffsetInput">utcOffsetInput</a></code> | <code>string</code> | *No description.* |
@@ -21067,7 +21067,7 @@ public readonly intervalInput: number;
 public readonly notAllowedInput: IResolvable | KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed">KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed">KubernetesClusterMaintenanceWindowAutoUpgradeNotAllowed</a>[]
 
 ---
 
@@ -21224,7 +21224,7 @@ new kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowedList(ter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowedList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowedList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowedList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowedList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -21232,7 +21232,7 @@ new kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowedList(ter
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowedList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21298,7 +21298,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowedList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21333,7 +21333,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowedList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowedList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowedList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowed">KubernetesClusterMaintenanceWindowNodeOsNotAllowed</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowedList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowed">KubernetesClusterMaintenanceWindowNodeOsNotAllowed</a>[]</code> | *No description.* |
 
 ---
 
@@ -21367,7 +21367,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | KubernetesClusterMaintenanceWindowNodeOsNotAllowed[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowed">KubernetesClusterMaintenanceWindowNodeOsNotAllowed</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowed">KubernetesClusterMaintenanceWindowNodeOsNotAllowed</a>[]
 
 ---
 
@@ -21384,7 +21384,7 @@ new kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowedOutputRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowedOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowedOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowedOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowedOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowedOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -21393,7 +21393,7 @@ new kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowedOutputRe
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowedOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21579,7 +21579,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowedOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21604,7 +21604,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowedOutputReference.property.startInput">startInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowedOutputReference.property.end">end</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowedOutputReference.property.start">start</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowedOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowed">KubernetesClusterMaintenanceWindowNodeOsNotAllowed</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowedOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowed">KubernetesClusterMaintenanceWindowNodeOsNotAllowed</a></code> | *No description.* |
 
 ---
 
@@ -21678,7 +21678,7 @@ public readonly start: string;
 public readonly internalValue: IResolvable | KubernetesClusterMaintenanceWindowNodeOsNotAllowed;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowed">KubernetesClusterMaintenanceWindowNodeOsNotAllowed</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowed">KubernetesClusterMaintenanceWindowNodeOsNotAllowed</a>
 
 ---
 
@@ -21695,14 +21695,14 @@ new kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsOutputReference(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21880,7 +21880,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21902,7 +21902,7 @@ public putNotAllowed(value: IResolvable | KubernetesClusterMaintenanceWindowNode
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsOutputReference.putNotAllowed.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowed">KubernetesClusterMaintenanceWindowNodeOsNotAllowed</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowed">KubernetesClusterMaintenanceWindowNodeOsNotAllowed</a>[]
 
 ---
 
@@ -21961,7 +21961,7 @@ public resetWeekIndex(): void
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsOutputReference.property.durationInput">durationInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsOutputReference.property.frequencyInput">frequencyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsOutputReference.property.intervalInput">intervalInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsOutputReference.property.notAllowedInput">notAllowedInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowed">KubernetesClusterMaintenanceWindowNodeOsNotAllowed</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsOutputReference.property.notAllowedInput">notAllowedInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowed">KubernetesClusterMaintenanceWindowNodeOsNotAllowed</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsOutputReference.property.startDateInput">startDateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsOutputReference.property.startTimeInput">startTimeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsOutputReference.property.utcOffsetInput">utcOffsetInput</a></code> | <code>string</code> | *No description.* |
@@ -22069,7 +22069,7 @@ public readonly intervalInput: number;
 public readonly notAllowedInput: IResolvable | KubernetesClusterMaintenanceWindowNodeOsNotAllowed[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowed">KubernetesClusterMaintenanceWindowNodeOsNotAllowed</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNodeOsNotAllowed">KubernetesClusterMaintenanceWindowNodeOsNotAllowed</a>[]
 
 ---
 
@@ -22226,7 +22226,7 @@ new kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowedList(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowedList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowedList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowedList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowedList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -22234,7 +22234,7 @@ new kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowedList(terraform
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowedList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22300,7 +22300,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowedList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22335,7 +22335,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowedList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowedList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowedList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowed">KubernetesClusterMaintenanceWindowNotAllowed</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowedList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowed">KubernetesClusterMaintenanceWindowNotAllowed</a>[]</code> | *No description.* |
 
 ---
 
@@ -22369,7 +22369,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | KubernetesClusterMaintenanceWindowNotAllowed[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowed">KubernetesClusterMaintenanceWindowNotAllowed</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowed">KubernetesClusterMaintenanceWindowNotAllowed</a>[]
 
 ---
 
@@ -22386,7 +22386,7 @@ new kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowedOutputReferenc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowedOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowedOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowedOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowedOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowedOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -22395,7 +22395,7 @@ new kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowedOutputReferenc
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowedOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22581,7 +22581,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowedOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22606,7 +22606,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowedOutputReference.property.startInput">startInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowedOutputReference.property.end">end</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowedOutputReference.property.start">start</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowedOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowed">KubernetesClusterMaintenanceWindowNotAllowed</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowedOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowed">KubernetesClusterMaintenanceWindowNotAllowed</a></code> | *No description.* |
 
 ---
 
@@ -22680,7 +22680,7 @@ public readonly start: string;
 public readonly internalValue: IResolvable | KubernetesClusterMaintenanceWindowNotAllowed;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowed">KubernetesClusterMaintenanceWindowNotAllowed</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowed">KubernetesClusterMaintenanceWindowNotAllowed</a>
 
 ---
 
@@ -22697,14 +22697,14 @@ new kubernetesCluster.KubernetesClusterMaintenanceWindowOutputReference(terrafor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22878,7 +22878,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22900,7 +22900,7 @@ public putAllowed(value: IResolvable | KubernetesClusterMaintenanceWindowAllowed
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowOutputReference.putAllowed.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowed">KubernetesClusterMaintenanceWindowAllowed</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowed">KubernetesClusterMaintenanceWindowAllowed</a>[]
 
 ---
 
@@ -22912,7 +22912,7 @@ public putNotAllowed(value: IResolvable | KubernetesClusterMaintenanceWindowNotA
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowOutputReference.putNotAllowed.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowed">KubernetesClusterMaintenanceWindowNotAllowed</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowed">KubernetesClusterMaintenanceWindowNotAllowed</a>[]
 
 ---
 
@@ -22937,8 +22937,8 @@ public resetNotAllowed(): void
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowOutputReference.property.allowed">allowed</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowedList">KubernetesClusterMaintenanceWindowAllowedList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowOutputReference.property.notAllowed">notAllowed</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowedList">KubernetesClusterMaintenanceWindowNotAllowedList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowOutputReference.property.allowedInput">allowedInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowed">KubernetesClusterMaintenanceWindowAllowed</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowOutputReference.property.notAllowedInput">notAllowedInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowed">KubernetesClusterMaintenanceWindowNotAllowed</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowOutputReference.property.allowedInput">allowedInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowed">KubernetesClusterMaintenanceWindowAllowed</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowOutputReference.property.notAllowedInput">notAllowedInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowed">KubernetesClusterMaintenanceWindowNotAllowed</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindow">KubernetesClusterMaintenanceWindow</a></code> | *No description.* |
 
 ---
@@ -22993,7 +22993,7 @@ public readonly notAllowed: KubernetesClusterMaintenanceWindowNotAllowedList;
 public readonly allowedInput: IResolvable | KubernetesClusterMaintenanceWindowAllowed[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowed">KubernetesClusterMaintenanceWindowAllowed</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowAllowed">KubernetesClusterMaintenanceWindowAllowed</a>[]
 
 ---
 
@@ -23003,7 +23003,7 @@ public readonly allowedInput: IResolvable | KubernetesClusterMaintenanceWindowAl
 public readonly notAllowedInput: IResolvable | KubernetesClusterMaintenanceWindowNotAllowed[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowed">KubernetesClusterMaintenanceWindowNotAllowed</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMaintenanceWindowNotAllowed">KubernetesClusterMaintenanceWindowNotAllowed</a>[]
 
 ---
 
@@ -23030,14 +23030,14 @@ new kubernetesCluster.KubernetesClusterMicrosoftDefenderOutputReference(terrafor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMicrosoftDefenderOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMicrosoftDefenderOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMicrosoftDefenderOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMicrosoftDefenderOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23207,7 +23207,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMicrosoftDefenderOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23301,14 +23301,14 @@ new kubernetesCluster.KubernetesClusterMonitorMetricsOutputReference(terraformRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMonitorMetricsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMonitorMetricsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMonitorMetricsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMonitorMetricsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23480,7 +23480,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterMonitorMetricsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23608,14 +23608,14 @@ new kubernetesCluster.KubernetesClusterNetworkProfileAdvancedNetworkingOutputRef
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileAdvancedNetworkingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileAdvancedNetworkingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileAdvancedNetworkingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileAdvancedNetworkingOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23787,7 +23787,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileAdvancedNetworkingOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23820,10 +23820,10 @@ public resetSecurityEnabled(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileAdvancedNetworkingOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileAdvancedNetworkingOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileAdvancedNetworkingOutputReference.property.observabilityEnabledInput">observabilityEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileAdvancedNetworkingOutputReference.property.securityEnabledInput">securityEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileAdvancedNetworkingOutputReference.property.observabilityEnabled">observabilityEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileAdvancedNetworkingOutputReference.property.securityEnabled">securityEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileAdvancedNetworkingOutputReference.property.observabilityEnabledInput">observabilityEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileAdvancedNetworkingOutputReference.property.securityEnabledInput">securityEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileAdvancedNetworkingOutputReference.property.observabilityEnabled">observabilityEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileAdvancedNetworkingOutputReference.property.securityEnabled">securityEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileAdvancedNetworkingOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileAdvancedNetworking">KubernetesClusterNetworkProfileAdvancedNetworking</a></code> | *No description.* |
 
 ---
@@ -23858,7 +23858,7 @@ public readonly fqn: string;
 public readonly observabilityEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -23868,7 +23868,7 @@ public readonly observabilityEnabledInput: boolean | IResolvable;
 public readonly securityEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -23878,7 +23878,7 @@ public readonly securityEnabledInput: boolean | IResolvable;
 public readonly observabilityEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -23888,7 +23888,7 @@ public readonly observabilityEnabled: boolean | IResolvable;
 public readonly securityEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -23915,14 +23915,14 @@ new kubernetesCluster.KubernetesClusterNetworkProfileLoadBalancerProfileOutputRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileLoadBalancerProfileOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileLoadBalancerProfileOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileLoadBalancerProfileOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileLoadBalancerProfileOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24099,7 +24099,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileLoadBalancerProfileOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24378,14 +24378,14 @@ new kubernetesCluster.KubernetesClusterNetworkProfileNatGatewayProfileOutputRefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileNatGatewayProfileOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileNatGatewayProfileOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileNatGatewayProfileOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileNatGatewayProfileOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24557,7 +24557,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileNatGatewayProfileOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24696,14 +24696,14 @@ new kubernetesCluster.KubernetesClusterNetworkProfileOutputReference(terraformRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24891,7 +24891,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNetworkProfileOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25441,14 +25441,14 @@ new kubernetesCluster.KubernetesClusterNodeProvisioningProfileOutputReference(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNodeProvisioningProfileOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNodeProvisioningProfileOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNodeProvisioningProfileOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNodeProvisioningProfileOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25620,7 +25620,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterNodeProvisioningProfileOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25748,7 +25748,7 @@ new kubernetesCluster.KubernetesClusterOmsAgentOmsAgentIdentityList(terraformRes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgentOmsAgentIdentityList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgentOmsAgentIdentityList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgentOmsAgentIdentityList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgentOmsAgentIdentityList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -25756,7 +25756,7 @@ new kubernetesCluster.KubernetesClusterOmsAgentOmsAgentIdentityList(terraformRes
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgentOmsAgentIdentityList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25822,7 +25822,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgentOmsAgentIdentityList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25897,7 +25897,7 @@ new kubernetesCluster.KubernetesClusterOmsAgentOmsAgentIdentityOutputReference(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgentOmsAgentIdentityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgentOmsAgentIdentityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgentOmsAgentIdentityOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgentOmsAgentIdentityOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgentOmsAgentIdentityOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -25906,7 +25906,7 @@ new kubernetesCluster.KubernetesClusterOmsAgentOmsAgentIdentityOutputReference(t
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgentOmsAgentIdentityOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -26092,7 +26092,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgentOmsAgentIdentityOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -26197,14 +26197,14 @@ new kubernetesCluster.KubernetesClusterOmsAgentOutputReference(terraformResource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgentOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgentOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgentOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgentOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -26375,7 +26375,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgentOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -26404,9 +26404,9 @@ public resetMsiAuthForMonitoringEnabled(): void
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgentOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgentOutputReference.property.omsAgentIdentity">omsAgentIdentity</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgentOmsAgentIdentityList">KubernetesClusterOmsAgentOmsAgentIdentityList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgentOutputReference.property.logAnalyticsWorkspaceIdInput">logAnalyticsWorkspaceIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgentOutputReference.property.msiAuthForMonitoringEnabledInput">msiAuthForMonitoringEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgentOutputReference.property.msiAuthForMonitoringEnabledInput">msiAuthForMonitoringEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgentOutputReference.property.logAnalyticsWorkspaceId">logAnalyticsWorkspaceId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgentOutputReference.property.msiAuthForMonitoringEnabled">msiAuthForMonitoringEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgentOutputReference.property.msiAuthForMonitoringEnabled">msiAuthForMonitoringEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgentOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterOmsAgent">KubernetesClusterOmsAgent</a></code> | *No description.* |
 
 ---
@@ -26461,7 +26461,7 @@ public readonly logAnalyticsWorkspaceIdInput: string;
 public readonly msiAuthForMonitoringEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -26481,7 +26481,7 @@ public readonly logAnalyticsWorkspaceId: string;
 public readonly msiAuthForMonitoringEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -26508,14 +26508,14 @@ new kubernetesCluster.KubernetesClusterServiceMeshProfileCertificateAuthorityOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfileCertificateAuthorityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfileCertificateAuthorityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfileCertificateAuthorityOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfileCertificateAuthorityOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -26685,7 +26685,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfileCertificateAuthorityOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -26867,14 +26867,14 @@ new kubernetesCluster.KubernetesClusterServiceMeshProfileOutputReference(terrafo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfileOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfileOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfileOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfileOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -27048,7 +27048,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfileOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -27101,12 +27101,12 @@ public resetInternalIngressGatewayEnabled(): void
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfileOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfileOutputReference.property.certificateAuthority">certificateAuthority</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfileCertificateAuthorityOutputReference">KubernetesClusterServiceMeshProfileCertificateAuthorityOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfileOutputReference.property.certificateAuthorityInput">certificateAuthorityInput</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfileCertificateAuthority">KubernetesClusterServiceMeshProfileCertificateAuthority</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfileOutputReference.property.externalIngressGatewayEnabledInput">externalIngressGatewayEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfileOutputReference.property.internalIngressGatewayEnabledInput">internalIngressGatewayEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfileOutputReference.property.externalIngressGatewayEnabledInput">externalIngressGatewayEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfileOutputReference.property.internalIngressGatewayEnabledInput">internalIngressGatewayEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfileOutputReference.property.modeInput">modeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfileOutputReference.property.revisionsInput">revisionsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfileOutputReference.property.externalIngressGatewayEnabled">externalIngressGatewayEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfileOutputReference.property.internalIngressGatewayEnabled">internalIngressGatewayEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfileOutputReference.property.externalIngressGatewayEnabled">externalIngressGatewayEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfileOutputReference.property.internalIngressGatewayEnabled">internalIngressGatewayEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfileOutputReference.property.mode">mode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfileOutputReference.property.revisions">revisions</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfileOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServiceMeshProfile">KubernetesClusterServiceMeshProfile</a></code> | *No description.* |
@@ -27163,7 +27163,7 @@ public readonly certificateAuthorityInput: KubernetesClusterServiceMeshProfileCe
 public readonly externalIngressGatewayEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -27173,7 +27173,7 @@ public readonly externalIngressGatewayEnabledInput: boolean | IResolvable;
 public readonly internalIngressGatewayEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -27203,7 +27203,7 @@ public readonly revisionsInput: string[];
 public readonly externalIngressGatewayEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -27213,7 +27213,7 @@ public readonly externalIngressGatewayEnabled: boolean | IResolvable;
 public readonly internalIngressGatewayEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -27260,14 +27260,14 @@ new kubernetesCluster.KubernetesClusterServicePrincipalOutputReference(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServicePrincipalOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServicePrincipalOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServicePrincipalOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServicePrincipalOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -27437,7 +27437,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterServicePrincipalOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -27553,14 +27553,14 @@ new kubernetesCluster.KubernetesClusterStorageProfileOutputReference(terraformRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterStorageProfileOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterStorageProfileOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterStorageProfileOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterStorageProfileOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -27734,7 +27734,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterStorageProfileOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -27779,14 +27779,14 @@ public resetSnapshotControllerEnabled(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterStorageProfileOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterStorageProfileOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterStorageProfileOutputReference.property.blobDriverEnabledInput">blobDriverEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterStorageProfileOutputReference.property.diskDriverEnabledInput">diskDriverEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterStorageProfileOutputReference.property.fileDriverEnabledInput">fileDriverEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterStorageProfileOutputReference.property.snapshotControllerEnabledInput">snapshotControllerEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterStorageProfileOutputReference.property.blobDriverEnabled">blobDriverEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterStorageProfileOutputReference.property.diskDriverEnabled">diskDriverEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterStorageProfileOutputReference.property.fileDriverEnabled">fileDriverEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterStorageProfileOutputReference.property.snapshotControllerEnabled">snapshotControllerEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterStorageProfileOutputReference.property.blobDriverEnabledInput">blobDriverEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterStorageProfileOutputReference.property.diskDriverEnabledInput">diskDriverEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterStorageProfileOutputReference.property.fileDriverEnabledInput">fileDriverEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterStorageProfileOutputReference.property.snapshotControllerEnabledInput">snapshotControllerEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterStorageProfileOutputReference.property.blobDriverEnabled">blobDriverEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterStorageProfileOutputReference.property.diskDriverEnabled">diskDriverEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterStorageProfileOutputReference.property.fileDriverEnabled">fileDriverEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterStorageProfileOutputReference.property.snapshotControllerEnabled">snapshotControllerEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterStorageProfileOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterStorageProfile">KubernetesClusterStorageProfile</a></code> | *No description.* |
 
 ---
@@ -27821,7 +27821,7 @@ public readonly fqn: string;
 public readonly blobDriverEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -27831,7 +27831,7 @@ public readonly blobDriverEnabledInput: boolean | IResolvable;
 public readonly diskDriverEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -27841,7 +27841,7 @@ public readonly diskDriverEnabledInput: boolean | IResolvable;
 public readonly fileDriverEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -27851,7 +27851,7 @@ public readonly fileDriverEnabledInput: boolean | IResolvable;
 public readonly snapshotControllerEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -27861,7 +27861,7 @@ public readonly snapshotControllerEnabledInput: boolean | IResolvable;
 public readonly blobDriverEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -27871,7 +27871,7 @@ public readonly blobDriverEnabled: boolean | IResolvable;
 public readonly diskDriverEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -27881,7 +27881,7 @@ public readonly diskDriverEnabled: boolean | IResolvable;
 public readonly fileDriverEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -27891,7 +27891,7 @@ public readonly fileDriverEnabled: boolean | IResolvable;
 public readonly snapshotControllerEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -27918,14 +27918,14 @@ new kubernetesCluster.KubernetesClusterTimeoutsOutputReference(terraformResource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -28099,7 +28099,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -28152,7 +28152,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterTimeouts">KubernetesClusterTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterTimeouts">KubernetesClusterTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -28266,7 +28266,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | KubernetesClusterTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterTimeouts">KubernetesClusterTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterTimeouts">KubernetesClusterTimeouts</a>
 
 ---
 
@@ -28283,14 +28283,14 @@ new kubernetesCluster.KubernetesClusterUpgradeOverrideOutputReference(terraformR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterUpgradeOverrideOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterUpgradeOverrideOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterUpgradeOverrideOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterUpgradeOverrideOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -28461,7 +28461,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterUpgradeOverrideOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -28489,9 +28489,9 @@ public resetEffectiveUntil(): void
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterUpgradeOverrideOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterUpgradeOverrideOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterUpgradeOverrideOutputReference.property.effectiveUntilInput">effectiveUntilInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterUpgradeOverrideOutputReference.property.forceUpgradeEnabledInput">forceUpgradeEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterUpgradeOverrideOutputReference.property.forceUpgradeEnabledInput">forceUpgradeEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterUpgradeOverrideOutputReference.property.effectiveUntil">effectiveUntil</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterUpgradeOverrideOutputReference.property.forceUpgradeEnabled">forceUpgradeEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterUpgradeOverrideOutputReference.property.forceUpgradeEnabled">forceUpgradeEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterUpgradeOverrideOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterUpgradeOverride">KubernetesClusterUpgradeOverride</a></code> | *No description.* |
 
 ---
@@ -28536,7 +28536,7 @@ public readonly effectiveUntilInput: string;
 public readonly forceUpgradeEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -28556,7 +28556,7 @@ public readonly effectiveUntil: string;
 public readonly forceUpgradeEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -28583,14 +28583,14 @@ new kubernetesCluster.KubernetesClusterWebAppRoutingOutputReference(terraformRes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWebAppRoutingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWebAppRoutingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWebAppRoutingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWebAppRoutingOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -28761,7 +28761,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWebAppRoutingOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -28894,7 +28894,7 @@ new kubernetesCluster.KubernetesClusterWebAppRoutingWebAppRoutingIdentityList(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWebAppRoutingWebAppRoutingIdentityList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWebAppRoutingWebAppRoutingIdentityList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWebAppRoutingWebAppRoutingIdentityList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWebAppRoutingWebAppRoutingIdentityList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -28902,7 +28902,7 @@ new kubernetesCluster.KubernetesClusterWebAppRoutingWebAppRoutingIdentityList(te
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWebAppRoutingWebAppRoutingIdentityList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -28968,7 +28968,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWebAppRoutingWebAppRoutingIdentityList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -29043,7 +29043,7 @@ new kubernetesCluster.KubernetesClusterWebAppRoutingWebAppRoutingIdentityOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWebAppRoutingWebAppRoutingIdentityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWebAppRoutingWebAppRoutingIdentityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWebAppRoutingWebAppRoutingIdentityOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWebAppRoutingWebAppRoutingIdentityOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWebAppRoutingWebAppRoutingIdentityOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -29052,7 +29052,7 @@ new kubernetesCluster.KubernetesClusterWebAppRoutingWebAppRoutingIdentityOutputR
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWebAppRoutingWebAppRoutingIdentityOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -29238,7 +29238,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWebAppRoutingWebAppRoutingIdentityOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -29343,14 +29343,14 @@ new kubernetesCluster.KubernetesClusterWindowsProfileGmsaOutputReference(terrafo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWindowsProfileGmsaOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWindowsProfileGmsaOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWindowsProfileGmsaOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWindowsProfileGmsaOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -29520,7 +29520,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWindowsProfileGmsaOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -29636,14 +29636,14 @@ new kubernetesCluster.KubernetesClusterWindowsProfileOutputReference(terraformRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWindowsProfileOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWindowsProfileOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWindowsProfileOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWindowsProfileOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -29816,7 +29816,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWindowsProfileOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -30000,14 +30000,14 @@ new kubernetesCluster.KubernetesClusterWorkloadAutoscalerProfileOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWorkloadAutoscalerProfileOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWorkloadAutoscalerProfileOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWorkloadAutoscalerProfileOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWorkloadAutoscalerProfileOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -30179,7 +30179,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWorkloadAutoscalerProfileOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -30212,10 +30212,10 @@ public resetVerticalPodAutoscalerEnabled(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWorkloadAutoscalerProfileOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWorkloadAutoscalerProfileOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWorkloadAutoscalerProfileOutputReference.property.kedaEnabledInput">kedaEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWorkloadAutoscalerProfileOutputReference.property.verticalPodAutoscalerEnabledInput">verticalPodAutoscalerEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWorkloadAutoscalerProfileOutputReference.property.kedaEnabled">kedaEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWorkloadAutoscalerProfileOutputReference.property.verticalPodAutoscalerEnabled">verticalPodAutoscalerEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWorkloadAutoscalerProfileOutputReference.property.kedaEnabledInput">kedaEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWorkloadAutoscalerProfileOutputReference.property.verticalPodAutoscalerEnabledInput">verticalPodAutoscalerEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWorkloadAutoscalerProfileOutputReference.property.kedaEnabled">kedaEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWorkloadAutoscalerProfileOutputReference.property.verticalPodAutoscalerEnabled">verticalPodAutoscalerEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWorkloadAutoscalerProfileOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.kubernetesCluster.KubernetesClusterWorkloadAutoscalerProfile">KubernetesClusterWorkloadAutoscalerProfile</a></code> | *No description.* |
 
 ---
@@ -30250,7 +30250,7 @@ public readonly fqn: string;
 public readonly kedaEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -30260,7 +30260,7 @@ public readonly kedaEnabledInput: boolean | IResolvable;
 public readonly verticalPodAutoscalerEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -30270,7 +30270,7 @@ public readonly verticalPodAutoscalerEnabledInput: boolean | IResolvable;
 public readonly kedaEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -30280,7 +30280,7 @@ public readonly kedaEnabled: boolean | IResolvable;
 public readonly verticalPodAutoscalerEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 

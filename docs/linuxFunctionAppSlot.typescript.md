@@ -329,7 +329,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -447,7 +447,7 @@ public putConnectionString(value: IResolvable | LinuxFunctionAppSlotConnectionSt
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.putConnectionString.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionString">LinuxFunctionAppSlotConnectionString</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionString">LinuxFunctionAppSlotConnectionString</a>[]
 
 ---
 
@@ -483,7 +483,7 @@ public putStorageAccount(value: IResolvable | LinuxFunctionAppSlotStorageAccount
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.putStorageAccount.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccount">LinuxFunctionAppSlotStorageAccount</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccount">LinuxFunctionAppSlotStorageAccount</a>[]
 
 ---
 
@@ -692,7 +692,7 @@ public resetWebdeployPublishBasicAuthenticationEnabled(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a LinuxFunctionAppSlot resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a LinuxFunctionAppSlot resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -764,7 +764,7 @@ import { linuxFunctionAppSlot } from '@cdktn/provider-azurerm'
 linuxFunctionAppSlot.LinuxFunctionAppSlot.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a LinuxFunctionAppSlot resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a LinuxFunctionAppSlot resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.generateConfigForImport.parameter.scope"></a>
 
@@ -794,7 +794,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the LinuxFunctionAppSlot to import is found.
 
@@ -805,19 +805,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.authSettings">authSettings</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsOutputReference">LinuxFunctionAppSlotAuthSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.authSettingsV2">authSettingsV2</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference">LinuxFunctionAppSlotAuthSettingsV2OutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.backup">backup</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupOutputReference">LinuxFunctionAppSlotBackupOutputReference</a></code> | *No description.* |
@@ -839,62 +839,62 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.authSettingsInput">authSettingsInput</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettings">LinuxFunctionAppSlotAuthSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.authSettingsV2Input">authSettingsV2Input</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2">LinuxFunctionAppSlotAuthSettingsV2</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.backupInput">backupInput</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackup">LinuxFunctionAppSlotBackup</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.builtinLoggingEnabledInput">builtinLoggingEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.clientCertificateEnabledInput">clientCertificateEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.builtinLoggingEnabledInput">builtinLoggingEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.clientCertificateEnabledInput">clientCertificateEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.clientCertificateExclusionPathsInput">clientCertificateExclusionPathsInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.clientCertificateModeInput">clientCertificateModeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.connectionStringInput">connectionStringInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionString">LinuxFunctionAppSlotConnectionString</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.contentShareForceDisabledInput">contentShareForceDisabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.connectionStringInput">connectionStringInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionString">LinuxFunctionAppSlotConnectionString</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.contentShareForceDisabledInput">contentShareForceDisabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.dailyMemoryTimeQuotaInput">dailyMemoryTimeQuotaInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.ftpPublishBasicAuthenticationEnabledInput">ftpPublishBasicAuthenticationEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.ftpPublishBasicAuthenticationEnabledInput">ftpPublishBasicAuthenticationEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.functionAppIdInput">functionAppIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.functionsExtensionVersionInput">functionsExtensionVersionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.httpsOnlyInput">httpsOnlyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.httpsOnlyInput">httpsOnlyInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.identityInput">identityInput</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotIdentity">LinuxFunctionAppSlotIdentity</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.keyVaultReferenceIdentityIdInput">keyVaultReferenceIdentityIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.publicNetworkAccessEnabledInput">publicNetworkAccessEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.publicNetworkAccessEnabledInput">publicNetworkAccessEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.servicePlanIdInput">servicePlanIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.siteConfigInput">siteConfigInput</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig">LinuxFunctionAppSlotSiteConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.storageAccountAccessKeyInput">storageAccountAccessKeyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.storageAccountInput">storageAccountInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccount">LinuxFunctionAppSlotStorageAccount</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.storageAccountInput">storageAccountInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccount">LinuxFunctionAppSlotStorageAccount</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.storageAccountNameInput">storageAccountNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.storageKeyVaultSecretIdInput">storageKeyVaultSecretIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.storageUsesManagedIdentityInput">storageUsesManagedIdentityInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.storageUsesManagedIdentityInput">storageUsesManagedIdentityInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotTimeouts">LinuxFunctionAppSlotTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.virtualNetworkBackupRestoreEnabledInput">virtualNetworkBackupRestoreEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotTimeouts">LinuxFunctionAppSlotTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.virtualNetworkBackupRestoreEnabledInput">virtualNetworkBackupRestoreEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.virtualNetworkSubnetIdInput">virtualNetworkSubnetIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.vnetImagePullEnabledInput">vnetImagePullEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.webdeployPublishBasicAuthenticationEnabledInput">webdeployPublishBasicAuthenticationEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.vnetImagePullEnabledInput">vnetImagePullEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.webdeployPublishBasicAuthenticationEnabledInput">webdeployPublishBasicAuthenticationEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.appSettings">appSettings</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.builtinLoggingEnabled">builtinLoggingEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.clientCertificateEnabled">clientCertificateEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.builtinLoggingEnabled">builtinLoggingEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.clientCertificateEnabled">clientCertificateEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.clientCertificateExclusionPaths">clientCertificateExclusionPaths</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.clientCertificateMode">clientCertificateMode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.contentShareForceDisabled">contentShareForceDisabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.contentShareForceDisabled">contentShareForceDisabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.dailyMemoryTimeQuota">dailyMemoryTimeQuota</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.ftpPublishBasicAuthenticationEnabled">ftpPublishBasicAuthenticationEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.ftpPublishBasicAuthenticationEnabled">ftpPublishBasicAuthenticationEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.functionAppId">functionAppId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.functionsExtensionVersion">functionsExtensionVersion</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.httpsOnly">httpsOnly</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.httpsOnly">httpsOnly</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.keyVaultReferenceIdentityId">keyVaultReferenceIdentityId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.publicNetworkAccessEnabled">publicNetworkAccessEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.publicNetworkAccessEnabled">publicNetworkAccessEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.servicePlanId">servicePlanId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.storageAccountAccessKey">storageAccountAccessKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.storageAccountName">storageAccountName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.storageKeyVaultSecretId">storageKeyVaultSecretId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.storageUsesManagedIdentity">storageUsesManagedIdentity</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.storageUsesManagedIdentity">storageUsesManagedIdentity</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.virtualNetworkBackupRestoreEnabled">virtualNetworkBackupRestoreEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.virtualNetworkBackupRestoreEnabled">virtualNetworkBackupRestoreEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.virtualNetworkSubnetId">virtualNetworkSubnetId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.vnetImagePullEnabled">vnetImagePullEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.webdeployPublishBasicAuthenticationEnabled">webdeployPublishBasicAuthenticationEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.vnetImagePullEnabled">vnetImagePullEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlot.property.webdeployPublishBasicAuthenticationEnabled">webdeployPublishBasicAuthenticationEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 
 ---
 
@@ -916,7 +916,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -966,7 +966,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -976,7 +976,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -986,7 +986,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1006,7 +1006,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1016,7 +1016,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1026,7 +1026,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1036,7 +1036,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1256,7 +1256,7 @@ public readonly backupInput: LinuxFunctionAppSlotBackup;
 public readonly builtinLoggingEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1266,7 +1266,7 @@ public readonly builtinLoggingEnabledInput: boolean | IResolvable;
 public readonly clientCertificateEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1296,7 +1296,7 @@ public readonly clientCertificateModeInput: string;
 public readonly connectionStringInput: IResolvable | LinuxFunctionAppSlotConnectionString[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionString">LinuxFunctionAppSlotConnectionString</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionString">LinuxFunctionAppSlotConnectionString</a>[]
 
 ---
 
@@ -1306,7 +1306,7 @@ public readonly connectionStringInput: IResolvable | LinuxFunctionAppSlotConnect
 public readonly contentShareForceDisabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1326,7 +1326,7 @@ public readonly dailyMemoryTimeQuotaInput: number;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1336,7 +1336,7 @@ public readonly enabledInput: boolean | IResolvable;
 public readonly ftpPublishBasicAuthenticationEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1366,7 +1366,7 @@ public readonly functionsExtensionVersionInput: string;
 public readonly httpsOnlyInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1416,7 +1416,7 @@ public readonly nameInput: string;
 public readonly publicNetworkAccessEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1456,7 +1456,7 @@ public readonly storageAccountAccessKeyInput: string;
 public readonly storageAccountInput: IResolvable | LinuxFunctionAppSlotStorageAccount[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccount">LinuxFunctionAppSlotStorageAccount</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccount">LinuxFunctionAppSlotStorageAccount</a>[]
 
 ---
 
@@ -1486,7 +1486,7 @@ public readonly storageKeyVaultSecretIdInput: string;
 public readonly storageUsesManagedIdentityInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1506,7 +1506,7 @@ public readonly tagsInput: {[ key: string ]: string};
 public readonly timeoutsInput: IResolvable | LinuxFunctionAppSlotTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotTimeouts">LinuxFunctionAppSlotTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotTimeouts">LinuxFunctionAppSlotTimeouts</a>
 
 ---
 
@@ -1516,7 +1516,7 @@ public readonly timeoutsInput: IResolvable | LinuxFunctionAppSlotTimeouts;
 public readonly virtualNetworkBackupRestoreEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1536,7 +1536,7 @@ public readonly virtualNetworkSubnetIdInput: string;
 public readonly vnetImagePullEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1546,7 +1546,7 @@ public readonly vnetImagePullEnabledInput: boolean | IResolvable;
 public readonly webdeployPublishBasicAuthenticationEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1566,7 +1566,7 @@ public readonly appSettings: {[ key: string ]: string};
 public readonly builtinLoggingEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1576,7 +1576,7 @@ public readonly builtinLoggingEnabled: boolean | IResolvable;
 public readonly clientCertificateEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1606,7 +1606,7 @@ public readonly clientCertificateMode: string;
 public readonly contentShareForceDisabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1626,7 +1626,7 @@ public readonly dailyMemoryTimeQuota: number;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1636,7 +1636,7 @@ public readonly enabled: boolean | IResolvable;
 public readonly ftpPublishBasicAuthenticationEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1666,7 +1666,7 @@ public readonly functionsExtensionVersion: string;
 public readonly httpsOnly: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1706,7 +1706,7 @@ public readonly name: string;
 public readonly publicNetworkAccessEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1756,7 +1756,7 @@ public readonly storageKeyVaultSecretId: string;
 public readonly storageUsesManagedIdentity: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1776,7 +1776,7 @@ public readonly tags: {[ key: string ]: string};
 public readonly virtualNetworkBackupRestoreEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1796,7 +1796,7 @@ public readonly virtualNetworkSubnetId: string;
 public readonly vnetImagePullEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1806,7 +1806,7 @@ public readonly vnetImagePullEnabled: boolean | IResolvable;
 public readonly webdeployPublishBasicAuthenticationEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1844,7 +1844,7 @@ const linuxFunctionAppSlotAuthSettings: linuxFunctionAppSlot.LinuxFunctionAppSlo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettings.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should the Authentication / Authorization feature be enabled? |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettings.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should the Authentication / Authorization feature be enabled? |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettings.property.activeDirectory">activeDirectory</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsActiveDirectory">LinuxFunctionAppSlotAuthSettingsActiveDirectory</a></code> | active_directory block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettings.property.additionalLoginParameters">additionalLoginParameters</a></code> | <code>{[ key: string ]: string}</code> | Specifies a map of Login Parameters to send to the OpenID Connect authorization endpoint when a user logs in. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettings.property.allowedExternalRedirectUrls">allowedExternalRedirectUrls</a></code> | <code>string[]</code> | Specifies a list of External URLs that can be redirected to as part of logging in or logging out of the Windows Web App. |
@@ -1856,7 +1856,7 @@ const linuxFunctionAppSlotAuthSettings: linuxFunctionAppSlot.LinuxFunctionAppSlo
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettings.property.microsoft">microsoft</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsMicrosoft">LinuxFunctionAppSlotAuthSettingsMicrosoft</a></code> | microsoft block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettings.property.runtimeVersion">runtimeVersion</a></code> | <code>string</code> | The RuntimeVersion of the Authentication / Authorization feature in use. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettings.property.tokenRefreshExtensionHours">tokenRefreshExtensionHours</a></code> | <code>number</code> | The number of hours after session token expiration that a session token can be used to call the token refresh API. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettings.property.tokenStoreEnabled">tokenStoreEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should the Windows Web App durably store platform-specific security tokens that are obtained during login flows? Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettings.property.tokenStoreEnabled">tokenStoreEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should the Windows Web App durably store platform-specific security tokens that are obtained during login flows? Defaults to `false`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettings.property.twitter">twitter</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsTwitter">LinuxFunctionAppSlotAuthSettingsTwitter</a></code> | twitter block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettings.property.unauthenticatedClientAction">unauthenticatedClientAction</a></code> | <code>string</code> | The action to take when an unauthenticated client attempts to access the app. Possible values include: `RedirectToLoginPage`, `AllowAnonymous`. |
 
@@ -1868,7 +1868,7 @@ const linuxFunctionAppSlotAuthSettings: linuxFunctionAppSlot.LinuxFunctionAppSlo
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should the Authentication / Authorization feature be enabled?
 
@@ -2040,7 +2040,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly tokenStoreEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should the Windows Web App durably store platform-specific security tokens that are obtained during login flows? Defaults to `false`.
 
@@ -2540,10 +2540,10 @@ const linuxFunctionAppSlotAuthSettingsV2: linuxFunctionAppSlot.LinuxFunctionAppS
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2.property.login">login</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2Login">LinuxFunctionAppSlotAuthSettingsV2Login</a></code> | login block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2.property.activeDirectoryV2">activeDirectoryV2</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2">LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2</a></code> | active_directory_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2.property.appleV2">appleV2</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2AppleV2">LinuxFunctionAppSlotAuthSettingsV2AppleV2</a></code> | apple_v2 block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2.property.authEnabled">authEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should the AuthV2 Settings be enabled. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2.property.authEnabled">authEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should the AuthV2 Settings be enabled. Defaults to `false`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2.property.azureStaticWebAppV2">azureStaticWebAppV2</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2AzureStaticWebAppV2">LinuxFunctionAppSlotAuthSettingsV2AzureStaticWebAppV2</a></code> | azure_static_web_app_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2.property.configFilePath">configFilePath</a></code> | <code>string</code> | The path to the App Auth settings. **Note:** Relative Paths are evaluated from the Site Root directory. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2.property.customOidcV2">customOidcV2</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2">LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2</a>[]</code> | custom_oidc_v2 block. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2.property.customOidcV2">customOidcV2</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2">LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2</a>[]</code> | custom_oidc_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2.property.defaultProvider">defaultProvider</a></code> | <code>string</code> | The Default Authentication Provider to use when the `unauthenticated_action` is set to `RedirectToLoginPage`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2.property.excludedPaths">excludedPaths</a></code> | <code>string[]</code> | The paths which should be excluded from the `unauthenticated_action` when it is set to `RedirectToLoginPage`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2.property.facebookV2">facebookV2</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2FacebookV2">LinuxFunctionAppSlotAuthSettingsV2FacebookV2</a></code> | facebook_v2 block. |
@@ -2554,8 +2554,8 @@ const linuxFunctionAppSlotAuthSettingsV2: linuxFunctionAppSlot.LinuxFunctionAppS
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2.property.googleV2">googleV2</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2GoogleV2">LinuxFunctionAppSlotAuthSettingsV2GoogleV2</a></code> | google_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2.property.httpRouteApiPrefix">httpRouteApiPrefix</a></code> | <code>string</code> | The prefix that should precede all the authentication and authorisation paths. Defaults to `/.auth`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2.property.microsoftV2">microsoftV2</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2MicrosoftV2">LinuxFunctionAppSlotAuthSettingsV2MicrosoftV2</a></code> | microsoft_v2 block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2.property.requireAuthentication">requireAuthentication</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should the authentication flow be used for all requests. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2.property.requireHttps">requireHttps</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should HTTPS be required on connections? Defaults to true. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2.property.requireAuthentication">requireAuthentication</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should the authentication flow be used for all requests. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2.property.requireHttps">requireHttps</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should HTTPS be required on connections? Defaults to true. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2.property.runtimeVersion">runtimeVersion</a></code> | <code>string</code> | The Runtime Version of the Authentication and Authorisation feature of this App. Defaults to `~1`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2.property.twitterV2">twitterV2</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2TwitterV2">LinuxFunctionAppSlotAuthSettingsV2TwitterV2</a></code> | twitter_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2.property.unauthenticatedAction">unauthenticatedAction</a></code> | <code>string</code> | The action to take for requests made without authentication. |
@@ -2610,7 +2610,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly authEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should the AuthV2 Settings be enabled. Defaults to `false`.
 
@@ -2652,7 +2652,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly customOidcV2: IResolvable | LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2">LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2">LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2</a>[]
 
 custom_oidc_v2 block.
 
@@ -2810,7 +2810,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly requireAuthentication: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should the authentication flow be used for all requests.
 
@@ -2824,7 +2824,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly requireHttps: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should HTTPS be required on connections? Defaults to true.
 
@@ -2901,7 +2901,7 @@ const linuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2: linuxFunctionAppSlot.
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2.property.jwtAllowedClientApplications">jwtAllowedClientApplications</a></code> | <code>string[]</code> | A list of Allowed Client Applications in the JWT Claim. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2.property.jwtAllowedGroups">jwtAllowedGroups</a></code> | <code>string[]</code> | A list of Allowed Groups in the JWT Claim. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2.property.loginParameters">loginParameters</a></code> | <code>{[ key: string ]: string}</code> | A map of key-value pairs to send to the Authorisation Endpoint when a user logs in. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2.property.wwwAuthenticationDisabled">wwwAuthenticationDisabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should the www-authenticate provider should be omitted from the request? Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2.property.wwwAuthenticationDisabled">wwwAuthenticationDisabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should the www-authenticate provider should be omitted from the request? Defaults to `false`. |
 
 ---
 
@@ -3065,7 +3065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly wwwAuthenticationDisabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should the www-authenticate provider should be omitted from the request? Defaults to `false`.
 
@@ -3479,12 +3479,12 @@ const linuxFunctionAppSlotAuthSettingsV2Login: linuxFunctionAppSlot.LinuxFunctio
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2Login.property.cookieExpirationTime">cookieExpirationTime</a></code> | <code>string</code> | The time after the request is made when the session cookie should expire. Defaults to `08:00:00`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2Login.property.logoutEndpoint">logoutEndpoint</a></code> | <code>string</code> | The endpoint to which logout requests should be made. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2Login.property.nonceExpirationTime">nonceExpirationTime</a></code> | <code>string</code> | The time after the request is made when the nonce should expire. Defaults to `00:05:00`. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2Login.property.preserveUrlFragmentsForLogins">preserveUrlFragmentsForLogins</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should the fragments from the request be preserved after the login request is made. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2Login.property.preserveUrlFragmentsForLogins">preserveUrlFragmentsForLogins</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should the fragments from the request be preserved after the login request is made. Defaults to `false`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2Login.property.tokenRefreshExtensionTime">tokenRefreshExtensionTime</a></code> | <code>number</code> | The number of hours after session token expiration that a session token can be used to call the token refresh API. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2Login.property.tokenStoreEnabled">tokenStoreEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should the Token Store configuration Enabled. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2Login.property.tokenStoreEnabled">tokenStoreEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should the Token Store configuration Enabled. Defaults to `false`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2Login.property.tokenStorePath">tokenStorePath</a></code> | <code>string</code> | The directory path in the App Filesystem in which the tokens will be stored. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2Login.property.tokenStoreSasSettingName">tokenStoreSasSettingName</a></code> | <code>string</code> | The name of the app setting which contains the SAS URL of the blob storage containing the tokens. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2Login.property.validateNonce">validateNonce</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should the nonce be validated while completing the login flow. Defaults to `true`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2Login.property.validateNonce">validateNonce</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should the nonce be validated while completing the login flow. Defaults to `true`. |
 
 ---
 
@@ -3566,7 +3566,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly preserveUrlFragmentsForLogins: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should the fragments from the request be preserved after the login request is made. Defaults to `false`.
 
@@ -3596,7 +3596,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly tokenStoreEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should the Token Store configuration Enabled. Defaults to `false`.
 
@@ -3638,7 +3638,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly validateNonce: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should the nonce be validated while completing the login flow. Defaults to `true`.
 
@@ -3787,7 +3787,7 @@ const linuxFunctionAppSlotBackup: linuxFunctionAppSlot.LinuxFunctionAppSlotBacku
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackup.property.name">name</a></code> | <code>string</code> | The name which should be used for this Backup. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackup.property.schedule">schedule</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupSchedule">LinuxFunctionAppSlotBackupSchedule</a></code> | schedule block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackup.property.storageAccountUrl">storageAccountUrl</a></code> | <code>string</code> | The SAS URL to the container. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackup.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should this backup job be enabled? |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackup.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should this backup job be enabled? |
 
 ---
 
@@ -3839,7 +3839,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should this backup job be enabled?
 
@@ -3863,7 +3863,7 @@ const linuxFunctionAppSlotBackupSchedule: linuxFunctionAppSlot.LinuxFunctionAppS
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupSchedule.property.frequencyInterval">frequencyInterval</a></code> | <code>number</code> | How often the backup should be executed (e.g. for weekly backup, this should be set to `7` and `frequency_unit` should be set to `Day`). |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupSchedule.property.frequencyUnit">frequencyUnit</a></code> | <code>string</code> | The unit of time for how often the backup should take place. Possible values include: `Day` and `Hour`. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupSchedule.property.keepAtLeastOneBackup">keepAtLeastOneBackup</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should the service keep at least one backup, regardless of age of backup. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupSchedule.property.keepAtLeastOneBackup">keepAtLeastOneBackup</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should the service keep at least one backup, regardless of age of backup. Defaults to `false`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupSchedule.property.retentionPeriodDays">retentionPeriodDays</a></code> | <code>number</code> | After how many days backups should be deleted. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupSchedule.property.startTime">startTime</a></code> | <code>string</code> | When the schedule should start working in RFC-3339 format. |
 
@@ -3903,7 +3903,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly keepAtLeastOneBackup: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should the service keep at least one backup, regardless of age of backup. Defaults to `false`.
 
@@ -3953,13 +3953,13 @@ const linuxFunctionAppSlotConfig: linuxFunctionAppSlot.LinuxFunctionAppSlotConfi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.functionAppId">functionAppId</a></code> | <code>string</code> | The ID of the Linux Function App this Slot is a member of. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.name">name</a></code> | <code>string</code> | Specifies the name of the Function App Slot. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.siteConfig">siteConfig</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig">LinuxFunctionAppSlotSiteConfig</a></code> | site_config block. |
@@ -3967,33 +3967,33 @@ const linuxFunctionAppSlotConfig: linuxFunctionAppSlot.LinuxFunctionAppSlotConfi
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.authSettings">authSettings</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettings">LinuxFunctionAppSlotAuthSettings</a></code> | auth_settings block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.authSettingsV2">authSettingsV2</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2">LinuxFunctionAppSlotAuthSettingsV2</a></code> | auth_settings_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.backup">backup</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackup">LinuxFunctionAppSlotBackup</a></code> | backup block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.builtinLoggingEnabled">builtinLoggingEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should built in logging be enabled. Configures `AzureWebJobsDashboard` app setting based on the configured storage setting. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.clientCertificateEnabled">clientCertificateEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should the Function App Slot use Client Certificates. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.builtinLoggingEnabled">builtinLoggingEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should built in logging be enabled. Configures `AzureWebJobsDashboard` app setting based on the configured storage setting. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.clientCertificateEnabled">clientCertificateEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should the Function App Slot use Client Certificates. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.clientCertificateExclusionPaths">clientCertificateExclusionPaths</a></code> | <code>string</code> | Paths to exclude when using client certificates, separated by ; |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.clientCertificateMode">clientCertificateMode</a></code> | <code>string</code> | The mode of the Function App Slot's client certificates requirement for incoming requests. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.connectionString">connectionString</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionString">LinuxFunctionAppSlotConnectionString</a>[]</code> | connection_string block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.contentShareForceDisabled">contentShareForceDisabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Force disable the content share settings. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.connectionString">connectionString</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionString">LinuxFunctionAppSlotConnectionString</a>[]</code> | connection_string block. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.contentShareForceDisabled">contentShareForceDisabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Force disable the content share settings. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.dailyMemoryTimeQuota">dailyMemoryTimeQuota</a></code> | <code>number</code> | The amount of memory in gigabyte-seconds that your application is allowed to consume per day. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Is the Linux Function App Slot enabled. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.ftpPublishBasicAuthenticationEnabled">ftpPublishBasicAuthenticationEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app_slot#ftp_publish_basic_authentication_enabled LinuxFunctionAppSlot#ftp_publish_basic_authentication_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Is the Linux Function App Slot enabled. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.ftpPublishBasicAuthenticationEnabled">ftpPublishBasicAuthenticationEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app_slot#ftp_publish_basic_authentication_enabled LinuxFunctionAppSlot#ftp_publish_basic_authentication_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.functionsExtensionVersion">functionsExtensionVersion</a></code> | <code>string</code> | The runtime version associated with the Function App Slot. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.httpsOnly">httpsOnly</a></code> | <code>boolean \| cdktf.IResolvable</code> | Can the Function App Slot only be accessed via HTTPS? |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.httpsOnly">httpsOnly</a></code> | <code>boolean \| cdktn.IResolvable</code> | Can the Function App Slot only be accessed via HTTPS? |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app_slot#id LinuxFunctionAppSlot#id}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotIdentity">LinuxFunctionAppSlotIdentity</a></code> | identity block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.keyVaultReferenceIdentityId">keyVaultReferenceIdentityId</a></code> | <code>string</code> | The User Assigned Identity to use for Key Vault access. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.publicNetworkAccessEnabled">publicNetworkAccessEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app_slot#public_network_access_enabled LinuxFunctionAppSlot#public_network_access_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.publicNetworkAccessEnabled">publicNetworkAccessEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app_slot#public_network_access_enabled LinuxFunctionAppSlot#public_network_access_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.servicePlanId">servicePlanId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app_slot#service_plan_id LinuxFunctionAppSlot#service_plan_id}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.storageAccount">storageAccount</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccount">LinuxFunctionAppSlotStorageAccount</a>[]</code> | storage_account block. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.storageAccount">storageAccount</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccount">LinuxFunctionAppSlotStorageAccount</a>[]</code> | storage_account block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.storageAccountAccessKey">storageAccountAccessKey</a></code> | <code>string</code> | The access key which will be used to access the storage account for the Function App Slot. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.storageAccountName">storageAccountName</a></code> | <code>string</code> | The backend storage account name which will be used by this Function App Slot. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.storageKeyVaultSecretId">storageKeyVaultSecretId</a></code> | <code>string</code> | The Key Vault Secret ID, including version, that contains the Connection String to connect to the storage account for this Function App. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.storageUsesManagedIdentity">storageUsesManagedIdentity</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should the Function App Slot use its Managed Identity to access storage? |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.storageUsesManagedIdentity">storageUsesManagedIdentity</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should the Function App Slot use its Managed Identity to access storage? |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app_slot#tags LinuxFunctionAppSlot#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotTimeouts">LinuxFunctionAppSlotTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.virtualNetworkBackupRestoreEnabled">virtualNetworkBackupRestoreEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app_slot#virtual_network_backup_restore_enabled LinuxFunctionAppSlot#virtual_network_backup_restore_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.virtualNetworkBackupRestoreEnabled">virtualNetworkBackupRestoreEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app_slot#virtual_network_backup_restore_enabled LinuxFunctionAppSlot#virtual_network_backup_restore_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.virtualNetworkSubnetId">virtualNetworkSubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app_slot#virtual_network_subnet_id LinuxFunctionAppSlot#virtual_network_subnet_id}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.vnetImagePullEnabled">vnetImagePullEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Is container image pull over virtual network enabled? Defaults to `false`. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.webdeployPublishBasicAuthenticationEnabled">webdeployPublishBasicAuthenticationEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app_slot#webdeploy_publish_basic_authentication_enabled LinuxFunctionAppSlot#webdeploy_publish_basic_authentication_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.vnetImagePullEnabled">vnetImagePullEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Is container image pull over virtual network enabled? Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConfig.property.webdeployPublishBasicAuthenticationEnabled">webdeployPublishBasicAuthenticationEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app_slot#webdeploy_publish_basic_authentication_enabled LinuxFunctionAppSlot#webdeploy_publish_basic_authentication_enabled}. |
 
 ---
 
@@ -4003,7 +4003,7 @@ const linuxFunctionAppSlotConfig: linuxFunctionAppSlot.LinuxFunctionAppSlotConfi
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -4013,7 +4013,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -4023,7 +4023,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -4033,7 +4033,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -4043,7 +4043,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -4053,7 +4053,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -4063,7 +4063,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -4171,7 +4171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly builtinLoggingEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should built in logging be enabled. Configures `AzureWebJobsDashboard` app setting based on the configured storage setting.
 
@@ -4185,7 +4185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly clientCertificateEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should the Function App Slot use Client Certificates.
 
@@ -4229,7 +4229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly connectionString: IResolvable | LinuxFunctionAppSlotConnectionString[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionString">LinuxFunctionAppSlotConnectionString</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionString">LinuxFunctionAppSlotConnectionString</a>[]
 
 connection_string block.
 
@@ -4243,7 +4243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly contentShareForceDisabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Force disable the content share settings.
 
@@ -4273,7 +4273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Is the Linux Function App Slot enabled.
 
@@ -4287,7 +4287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly ftpPublishBasicAuthenticationEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app_slot#ftp_publish_basic_authentication_enabled LinuxFunctionAppSlot#ftp_publish_basic_authentication_enabled}.
 
@@ -4313,7 +4313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly httpsOnly: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Can the Function App Slot only be accessed via HTTPS?
 
@@ -4370,7 +4370,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly publicNetworkAccessEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app_slot#public_network_access_enabled LinuxFunctionAppSlot#public_network_access_enabled}.
 
@@ -4394,7 +4394,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly storageAccount: IResolvable | LinuxFunctionAppSlotStorageAccount[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccount">LinuxFunctionAppSlotStorageAccount</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccount">LinuxFunctionAppSlotStorageAccount</a>[]
 
 storage_account block.
 
@@ -4450,7 +4450,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly storageUsesManagedIdentity: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should the Function App Slot use its Managed Identity to access storage?
 
@@ -4490,7 +4490,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly virtualNetworkBackupRestoreEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app_slot#virtual_network_backup_restore_enabled LinuxFunctionAppSlot#virtual_network_backup_restore_enabled}.
 
@@ -4514,7 +4514,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly vnetImagePullEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Is container image pull over virtual network enabled? Defaults to `false`.
 
@@ -4528,7 +4528,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly webdeployPublishBasicAuthenticationEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app_slot#webdeploy_publish_basic_authentication_enabled LinuxFunctionAppSlot#webdeploy_publish_basic_authentication_enabled}.
 
@@ -4653,7 +4653,7 @@ const linuxFunctionAppSlotSiteConfig: linuxFunctionAppSlot.LinuxFunctionAppSlotS
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.alwaysOn">alwaysOn</a></code> | <code>boolean \| cdktf.IResolvable</code> | If this Linux Web App is Always On enabled. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.alwaysOn">alwaysOn</a></code> | <code>boolean \| cdktn.IResolvable</code> | If this Linux Web App is Always On enabled. Defaults to `false`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.apiDefinitionUrl">apiDefinitionUrl</a></code> | <code>string</code> | The URL of the API definition that describes this Linux Function App. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.apiManagementApiId">apiManagementApiId</a></code> | <code>string</code> | The ID of the API Management API for this Linux Function App. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.appCommandLine">appCommandLine</a></code> | <code>string</code> | The program and any arguments used to launch this app via the command line. (Example `node myapp.js`). |
@@ -4664,30 +4664,30 @@ const linuxFunctionAppSlotSiteConfig: linuxFunctionAppSlot.LinuxFunctionAppSlotS
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.appServiceLogs">appServiceLogs</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigAppServiceLogs">LinuxFunctionAppSlotSiteConfigAppServiceLogs</a></code> | app_service_logs block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.autoSwapSlotName">autoSwapSlotName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app_slot#auto_swap_slot_name LinuxFunctionAppSlot#auto_swap_slot_name}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.containerRegistryManagedIdentityClientId">containerRegistryManagedIdentityClientId</a></code> | <code>string</code> | The Client ID of the Managed Service Identity to use for connections to the Azure Container Registry. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.containerRegistryUseManagedIdentity">containerRegistryUseManagedIdentity</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should connections for Azure Container Registry use Managed Identity. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.containerRegistryUseManagedIdentity">containerRegistryUseManagedIdentity</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should connections for Azure Container Registry use Managed Identity. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.cors">cors</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigCors">LinuxFunctionAppSlotSiteConfigCors</a></code> | cors block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.defaultDocuments">defaultDocuments</a></code> | <code>string[]</code> | Specifies a list of Default Documents for the Linux Web App. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.elasticInstanceMinimum">elasticInstanceMinimum</a></code> | <code>number</code> | The number of minimum instances for this Linux Function App. Only affects apps on Elastic Premium plans. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.ftpsState">ftpsState</a></code> | <code>string</code> | State of FTP / FTPS service for this function app. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.healthCheckEvictionTimeInMin">healthCheckEvictionTimeInMin</a></code> | <code>number</code> | The amount of time in minutes that a node is unhealthy before being removed from the load balancer. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.healthCheckPath">healthCheckPath</a></code> | <code>string</code> | The path to be checked for this function app health. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.http2Enabled">http2Enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies if the http2 protocol should be enabled. Defaults to `false`. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.ipRestriction">ipRestriction</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestriction">LinuxFunctionAppSlotSiteConfigIpRestriction</a>[]</code> | ip_restriction block. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.http2Enabled">http2Enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies if the http2 protocol should be enabled. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.ipRestriction">ipRestriction</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestriction">LinuxFunctionAppSlotSiteConfigIpRestriction</a>[]</code> | ip_restriction block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.ipRestrictionDefaultAction">ipRestrictionDefaultAction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app_slot#ip_restriction_default_action LinuxFunctionAppSlot#ip_restriction_default_action}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.loadBalancingMode">loadBalancingMode</a></code> | <code>string</code> | The Site load balancing mode. Possible values include: `WeightedRoundRobin`, `LeastRequests`, `LeastResponseTime`, `WeightedTotalTraffic`, `RequestHash`, `PerSiteRoundRobin`. Defaults to `LeastRequests` if omitted. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.managedPipelineMode">managedPipelineMode</a></code> | <code>string</code> | The Managed Pipeline mode. Possible values include: `Integrated`, `Classic`. Defaults to `Integrated`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.minimumTlsVersion">minimumTlsVersion</a></code> | <code>string</code> | The configures the minimum version of TLS required for SSL requests. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.preWarmedInstanceCount">preWarmedInstanceCount</a></code> | <code>number</code> | The number of pre-warmed instances for this function app. Only affects apps on an Elastic Premium plan. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.remoteDebuggingEnabled">remoteDebuggingEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should Remote Debugging be enabled. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.remoteDebuggingEnabled">remoteDebuggingEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should Remote Debugging be enabled. Defaults to `false`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.remoteDebuggingVersion">remoteDebuggingVersion</a></code> | <code>string</code> | The Remote Debugging Version. Currently only `VS2022` is supported. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.runtimeScaleMonitoringEnabled">runtimeScaleMonitoringEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should Functions Runtime Scale Monitoring be enabled. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.scmIpRestriction">scmIpRestriction</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestriction">LinuxFunctionAppSlotSiteConfigScmIpRestriction</a>[]</code> | scm_ip_restriction block. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.runtimeScaleMonitoringEnabled">runtimeScaleMonitoringEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should Functions Runtime Scale Monitoring be enabled. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.scmIpRestriction">scmIpRestriction</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestriction">LinuxFunctionAppSlotSiteConfigScmIpRestriction</a>[]</code> | scm_ip_restriction block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.scmIpRestrictionDefaultAction">scmIpRestrictionDefaultAction</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app_slot#scm_ip_restriction_default_action LinuxFunctionAppSlot#scm_ip_restriction_default_action}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.scmMinimumTlsVersion">scmMinimumTlsVersion</a></code> | <code>string</code> | Configures the minimum version of TLS required for SSL requests to the SCM site Possible values include: `1.0`, `1.1`, `1.2` and `1.3`. Defaults to `1.2`. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.scmUseMainIpRestriction">scmUseMainIpRestriction</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should the Linux Function App `ip_restriction` configuration be used for the SCM also. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.use32BitWorker">use32BitWorker</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should the Linux Web App use a 32-bit worker. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.vnetRouteAllEnabled">vnetRouteAllEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied? Defaults to `false`. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.websocketsEnabled">websocketsEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should Web Sockets be enabled. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.scmUseMainIpRestriction">scmUseMainIpRestriction</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should the Linux Function App `ip_restriction` configuration be used for the SCM also. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.use32BitWorker">use32BitWorker</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should the Linux Web App use a 32-bit worker. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.vnetRouteAllEnabled">vnetRouteAllEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied? Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.websocketsEnabled">websocketsEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should Web Sockets be enabled. Defaults to `false`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig.property.workerCount">workerCount</a></code> | <code>number</code> | The number of Workers for this Linux Function App. |
 
 ---
@@ -4698,7 +4698,7 @@ const linuxFunctionAppSlotSiteConfig: linuxFunctionAppSlot.LinuxFunctionAppSlotS
 public readonly alwaysOn: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If this Linux Web App is Always On enabled. Defaults to `false`.
 
@@ -4852,7 +4852,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly containerRegistryUseManagedIdentity: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should connections for Azure Container Registry use Managed Identity.
 
@@ -4954,7 +4954,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly http2Enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies if the http2 protocol should be enabled. Defaults to `false`.
 
@@ -4968,7 +4968,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly ipRestriction: IResolvable | LinuxFunctionAppSlotSiteConfigIpRestriction[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestriction">LinuxFunctionAppSlotSiteConfigIpRestriction</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestriction">LinuxFunctionAppSlotSiteConfigIpRestriction</a>[]
 
 ip_restriction block.
 
@@ -5052,7 +5052,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly remoteDebuggingEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should Remote Debugging be enabled. Defaults to `false`.
 
@@ -5080,7 +5080,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly runtimeScaleMonitoringEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should Functions Runtime Scale Monitoring be enabled.
 
@@ -5094,7 +5094,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly scmIpRestriction: IResolvable | LinuxFunctionAppSlotSiteConfigScmIpRestriction[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestriction">LinuxFunctionAppSlotSiteConfigScmIpRestriction</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestriction">LinuxFunctionAppSlotSiteConfigScmIpRestriction</a>[]
 
 scm_ip_restriction block.
 
@@ -5134,7 +5134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly scmUseMainIpRestriction: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should the Linux Function App `ip_restriction` configuration be used for the SCM also.
 
@@ -5148,7 +5148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly use32BitWorker: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should the Linux Web App use a 32-bit worker.
 
@@ -5162,7 +5162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly vnetRouteAllEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied? Defaults to `false`.
 
@@ -5176,7 +5176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly websocketsEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should Web Sockets be enabled. Defaults to `false`.
 
@@ -5212,14 +5212,14 @@ const linuxFunctionAppSlotSiteConfigApplicationStack: linuxFunctionAppSlot.Linux
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStack.property.docker">docker</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDocker">LinuxFunctionAppSlotSiteConfigApplicationStackDocker</a>[]</code> | docker block. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStack.property.docker">docker</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDocker">LinuxFunctionAppSlotSiteConfigApplicationStackDocker</a>[]</code> | docker block. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStack.property.dotnetVersion">dotnetVersion</a></code> | <code>string</code> | The version of .Net. Possible values are `3.1`, `6.0`, `7.0`, `8.0` and `9.0`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStack.property.javaVersion">javaVersion</a></code> | <code>string</code> | The version of Java to use. Possible values are `8`, `11`, `17`, and `21`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStack.property.nodeVersion">nodeVersion</a></code> | <code>string</code> | The version of Node to use. Possible values include `12`, `14`, `16`, `18`, `20`, `22` and `24`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStack.property.powershellCoreVersion">powershellCoreVersion</a></code> | <code>string</code> | The version of PowerShell Core to use. Possibles values are `7`, `7.2`, and `7.4`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStack.property.pythonVersion">pythonVersion</a></code> | <code>string</code> | The version of Python to use. Possible values include `3.14`, `3.13`, `3.12`, `3.11`, `3.10`, `3.9`, `3.8`, and `3.7`. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStack.property.useCustomRuntime">useCustomRuntime</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app_slot#use_custom_runtime LinuxFunctionAppSlot#use_custom_runtime}. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStack.property.useDotnetIsolatedRuntime">useDotnetIsolatedRuntime</a></code> | <code>boolean \| cdktf.IResolvable</code> | Should the DotNet process use an isolated runtime. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStack.property.useCustomRuntime">useCustomRuntime</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app_slot#use_custom_runtime LinuxFunctionAppSlot#use_custom_runtime}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStack.property.useDotnetIsolatedRuntime">useDotnetIsolatedRuntime</a></code> | <code>boolean \| cdktn.IResolvable</code> | Should the DotNet process use an isolated runtime. Defaults to `false`. |
 
 ---
 
@@ -5229,7 +5229,7 @@ const linuxFunctionAppSlotSiteConfigApplicationStack: linuxFunctionAppSlot.Linux
 public readonly docker: IResolvable | LinuxFunctionAppSlotSiteConfigApplicationStackDocker[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDocker">LinuxFunctionAppSlotSiteConfigApplicationStackDocker</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDocker">LinuxFunctionAppSlotSiteConfigApplicationStackDocker</a>[]
 
 docker block.
 
@@ -5313,7 +5313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly useCustomRuntime: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app_slot#use_custom_runtime LinuxFunctionAppSlot#use_custom_runtime}.
 
@@ -5325,7 +5325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly useDotnetIsolatedRuntime: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Should the DotNet process use an isolated runtime. Defaults to `false`.
 
@@ -5487,7 +5487,7 @@ const linuxFunctionAppSlotSiteConfigCors: linuxFunctionAppSlot.LinuxFunctionAppS
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigCors.property.allowedOrigins">allowedOrigins</a></code> | <code>string[]</code> | Specifies a list of origins that should be allowed to make cross-origin calls. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigCors.property.supportCredentials">supportCredentials</a></code> | <code>boolean \| cdktf.IResolvable</code> | Are credentials allowed in CORS requests? Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigCors.property.supportCredentials">supportCredentials</a></code> | <code>boolean \| cdktn.IResolvable</code> | Are credentials allowed in CORS requests? Defaults to `false`. |
 
 ---
 
@@ -5511,7 +5511,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly supportCredentials: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Are credentials allowed in CORS requests? Defaults to `false`.
 
@@ -5535,7 +5535,7 @@ const linuxFunctionAppSlotSiteConfigIpRestriction: linuxFunctionAppSlot.LinuxFun
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestriction.property.action">action</a></code> | <code>string</code> | The action to take. Possible values are `Allow` or `Deny`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestriction.property.description">description</a></code> | <code>string</code> | The description of the IP restriction rule. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestriction.property.headers">headers</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders">LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app_slot#headers LinuxFunctionAppSlot#headers}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestriction.property.headers">headers</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders">LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app_slot#headers LinuxFunctionAppSlot#headers}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestriction.property.ipAddress">ipAddress</a></code> | <code>string</code> | The CIDR notation of the IP or IP Range to match. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestriction.property.name">name</a></code> | <code>string</code> | The name which should be used for this `ip_restriction`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestriction.property.priority">priority</a></code> | <code>number</code> | The priority value of this `ip_restriction`. |
@@ -5578,7 +5578,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly headers: IResolvable | LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders">LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders">LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders</a>[]
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app_slot#headers LinuxFunctionAppSlot#headers}.
 
@@ -5741,7 +5741,7 @@ const linuxFunctionAppSlotSiteConfigScmIpRestriction: linuxFunctionAppSlot.Linux
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestriction.property.action">action</a></code> | <code>string</code> | The action to take. Possible values are `Allow` or `Deny`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestriction.property.description">description</a></code> | <code>string</code> | The description of the IP restriction rule. |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestriction.property.headers">headers</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders">LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app_slot#headers LinuxFunctionAppSlot#headers}. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestriction.property.headers">headers</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders">LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app_slot#headers LinuxFunctionAppSlot#headers}. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestriction.property.ipAddress">ipAddress</a></code> | <code>string</code> | The CIDR notation of the IP or IP Range to match. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestriction.property.name">name</a></code> | <code>string</code> | The name which should be used for this `ip_restriction`. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestriction.property.priority">priority</a></code> | <code>number</code> | The priority value of this `ip_restriction`. |
@@ -5784,7 +5784,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly headers: IResolvable | LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders">LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders">LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders</a>[]
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_function_app_slot#headers LinuxFunctionAppSlot#headers}.
 
@@ -6120,14 +6120,14 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsActiveDirectoryOutputRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsActiveDirectoryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsActiveDirectoryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsActiveDirectoryOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsActiveDirectoryOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6300,7 +6300,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsActiveDirectoryOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6478,14 +6478,14 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsFacebookOutputReference
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsFacebookOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsFacebookOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsFacebookOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsFacebookOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6658,7 +6658,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsFacebookOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6836,14 +6836,14 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsGithubOutputReference(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsGithubOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsGithubOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsGithubOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsGithubOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7016,7 +7016,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsGithubOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7194,14 +7194,14 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsGoogleOutputReference(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsGoogleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsGoogleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsGoogleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsGoogleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7374,7 +7374,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsGoogleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7552,14 +7552,14 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsMicrosoftOutputReferenc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsMicrosoftOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsMicrosoftOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsMicrosoftOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsMicrosoftOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7732,7 +7732,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsMicrosoftOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7910,14 +7910,14 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsOutputReference(terrafo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8107,7 +8107,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8294,7 +8294,7 @@ public resetUnauthenticatedClientAction(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsOutputReference.property.additionalLoginParametersInput">additionalLoginParametersInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsOutputReference.property.allowedExternalRedirectUrlsInput">allowedExternalRedirectUrlsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsOutputReference.property.defaultProviderInput">defaultProviderInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsOutputReference.property.facebookInput">facebookInput</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsFacebook">LinuxFunctionAppSlotAuthSettingsFacebook</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsOutputReference.property.githubInput">githubInput</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsGithub">LinuxFunctionAppSlotAuthSettingsGithub</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsOutputReference.property.googleInput">googleInput</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsGoogle">LinuxFunctionAppSlotAuthSettingsGoogle</a></code> | *No description.* |
@@ -8302,17 +8302,17 @@ public resetUnauthenticatedClientAction(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsOutputReference.property.microsoftInput">microsoftInput</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsMicrosoft">LinuxFunctionAppSlotAuthSettingsMicrosoft</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsOutputReference.property.runtimeVersionInput">runtimeVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsOutputReference.property.tokenRefreshExtensionHoursInput">tokenRefreshExtensionHoursInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsOutputReference.property.tokenStoreEnabledInput">tokenStoreEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsOutputReference.property.tokenStoreEnabledInput">tokenStoreEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsOutputReference.property.twitterInput">twitterInput</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsTwitter">LinuxFunctionAppSlotAuthSettingsTwitter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsOutputReference.property.unauthenticatedClientActionInput">unauthenticatedClientActionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsOutputReference.property.additionalLoginParameters">additionalLoginParameters</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsOutputReference.property.allowedExternalRedirectUrls">allowedExternalRedirectUrls</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsOutputReference.property.defaultProvider">defaultProvider</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsOutputReference.property.issuer">issuer</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsOutputReference.property.runtimeVersion">runtimeVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsOutputReference.property.tokenRefreshExtensionHours">tokenRefreshExtensionHours</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsOutputReference.property.tokenStoreEnabled">tokenStoreEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsOutputReference.property.tokenStoreEnabled">tokenStoreEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsOutputReference.property.unauthenticatedClientAction">unauthenticatedClientAction</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettings">LinuxFunctionAppSlotAuthSettings</a></code> | *No description.* |
 
@@ -8448,7 +8448,7 @@ public readonly defaultProviderInput: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -8528,7 +8528,7 @@ public readonly tokenRefreshExtensionHoursInput: number;
 public readonly tokenStoreEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -8588,7 +8588,7 @@ public readonly defaultProvider: string;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -8628,7 +8628,7 @@ public readonly tokenRefreshExtensionHours: number;
 public readonly tokenStoreEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -8665,14 +8665,14 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsTwitterOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsTwitterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsTwitterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsTwitterOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsTwitterOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8844,7 +8844,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsTwitterOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8994,14 +8994,14 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2Outp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9181,7 +9181,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9273,7 +9273,7 @@ public resetWwwAuthenticationDisabled(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.property.jwtAllowedGroupsInput">jwtAllowedGroupsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.property.loginParametersInput">loginParametersInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.property.tenantAuthEndpointInput">tenantAuthEndpointInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.property.wwwAuthenticationDisabledInput">wwwAuthenticationDisabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.property.wwwAuthenticationDisabledInput">wwwAuthenticationDisabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.property.allowedApplications">allowedApplications</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.property.allowedAudiences">allowedAudiences</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.property.allowedGroups">allowedGroups</a></code> | <code>string[]</code> | *No description.* |
@@ -9285,7 +9285,7 @@ public resetWwwAuthenticationDisabled(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.property.jwtAllowedGroups">jwtAllowedGroups</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.property.loginParameters">loginParameters</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.property.tenantAuthEndpoint">tenantAuthEndpoint</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.property.wwwAuthenticationDisabled">wwwAuthenticationDisabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.property.wwwAuthenticationDisabled">wwwAuthenticationDisabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2OutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2">LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2</a></code> | *No description.* |
 
 ---
@@ -9430,7 +9430,7 @@ public readonly tenantAuthEndpointInput: string;
 public readonly wwwAuthenticationDisabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -9550,7 +9550,7 @@ public readonly tenantAuthEndpoint: string;
 public readonly wwwAuthenticationDisabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -9577,14 +9577,14 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2AppleV2OutputReferenc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2AppleV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2AppleV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2AppleV2OutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2AppleV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9754,7 +9754,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2AppleV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9881,14 +9881,14 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2AzureStaticWebAppV2Ou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2AzureStaticWebAppV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2AzureStaticWebAppV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2AzureStaticWebAppV2OutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2AzureStaticWebAppV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10058,7 +10058,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2AzureStaticWebAppV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10152,7 +10152,7 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2List(terr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2List.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2List.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2List.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2List.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -10160,7 +10160,7 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2List(terr
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2List.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10226,7 +10226,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2List.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10261,7 +10261,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2List.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2List.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2List.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2">LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2List.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2">LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2</a>[]</code> | *No description.* |
 
 ---
 
@@ -10295,7 +10295,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2">LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2">LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2</a>[]
 
 ---
 
@@ -10312,7 +10312,7 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2OutputRef
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2OutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2OutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2OutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -10321,7 +10321,7 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2OutputRef
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10509,7 +10509,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10558,7 +10558,7 @@ public resetScopes(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2OutputReference.property.nameClaimType">nameClaimType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2OutputReference.property.openidConfigurationEndpoint">openidConfigurationEndpoint</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2OutputReference.property.scopes">scopes</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2OutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2">LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2OutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2">LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2</a></code> | *No description.* |
 
 ---
 
@@ -10752,7 +10752,7 @@ public readonly scopes: string[];
 public readonly internalValue: IResolvable | LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2">LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2">LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2</a>
 
 ---
 
@@ -10769,14 +10769,14 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2FacebookV2OutputRefer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2FacebookV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2FacebookV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2FacebookV2OutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2FacebookV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10948,7 +10948,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2FacebookV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11120,14 +11120,14 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2GithubV2OutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2GithubV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2GithubV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2GithubV2OutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2GithubV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11298,7 +11298,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2GithubV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11442,14 +11442,14 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2GoogleV2OutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2GoogleV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2GoogleV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2GoogleV2OutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2GoogleV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11621,7 +11621,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2GoogleV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11793,14 +11793,14 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2LoginOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2LoginOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2LoginOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2LoginOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2LoginOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11981,7 +11981,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2LoginOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12073,23 +12073,23 @@ public resetValidateNonce(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2LoginOutputReference.property.cookieExpirationTimeInput">cookieExpirationTimeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2LoginOutputReference.property.logoutEndpointInput">logoutEndpointInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2LoginOutputReference.property.nonceExpirationTimeInput">nonceExpirationTimeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2LoginOutputReference.property.preserveUrlFragmentsForLoginsInput">preserveUrlFragmentsForLoginsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2LoginOutputReference.property.preserveUrlFragmentsForLoginsInput">preserveUrlFragmentsForLoginsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2LoginOutputReference.property.tokenRefreshExtensionTimeInput">tokenRefreshExtensionTimeInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2LoginOutputReference.property.tokenStoreEnabledInput">tokenStoreEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2LoginOutputReference.property.tokenStoreEnabledInput">tokenStoreEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2LoginOutputReference.property.tokenStorePathInput">tokenStorePathInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2LoginOutputReference.property.tokenStoreSasSettingNameInput">tokenStoreSasSettingNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2LoginOutputReference.property.validateNonceInput">validateNonceInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2LoginOutputReference.property.validateNonceInput">validateNonceInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2LoginOutputReference.property.allowedExternalRedirectUrls">allowedExternalRedirectUrls</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2LoginOutputReference.property.cookieExpirationConvention">cookieExpirationConvention</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2LoginOutputReference.property.cookieExpirationTime">cookieExpirationTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2LoginOutputReference.property.logoutEndpoint">logoutEndpoint</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2LoginOutputReference.property.nonceExpirationTime">nonceExpirationTime</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2LoginOutputReference.property.preserveUrlFragmentsForLogins">preserveUrlFragmentsForLogins</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2LoginOutputReference.property.preserveUrlFragmentsForLogins">preserveUrlFragmentsForLogins</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2LoginOutputReference.property.tokenRefreshExtensionTime">tokenRefreshExtensionTime</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2LoginOutputReference.property.tokenStoreEnabled">tokenStoreEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2LoginOutputReference.property.tokenStoreEnabled">tokenStoreEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2LoginOutputReference.property.tokenStorePath">tokenStorePath</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2LoginOutputReference.property.tokenStoreSasSettingName">tokenStoreSasSettingName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2LoginOutputReference.property.validateNonce">validateNonce</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2LoginOutputReference.property.validateNonce">validateNonce</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2LoginOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2Login">LinuxFunctionAppSlotAuthSettingsV2Login</a></code> | *No description.* |
 
 ---
@@ -12174,7 +12174,7 @@ public readonly nonceExpirationTimeInput: string;
 public readonly preserveUrlFragmentsForLoginsInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -12194,7 +12194,7 @@ public readonly tokenRefreshExtensionTimeInput: number;
 public readonly tokenStoreEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -12224,7 +12224,7 @@ public readonly tokenStoreSasSettingNameInput: string;
 public readonly validateNonceInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -12284,7 +12284,7 @@ public readonly nonceExpirationTime: string;
 public readonly preserveUrlFragmentsForLogins: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -12304,7 +12304,7 @@ public readonly tokenRefreshExtensionTime: number;
 public readonly tokenStoreEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -12334,7 +12334,7 @@ public readonly tokenStoreSasSettingName: string;
 public readonly validateNonce: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -12361,14 +12361,14 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2MicrosoftV2OutputRefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2MicrosoftV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2MicrosoftV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2MicrosoftV2OutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2MicrosoftV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12540,7 +12540,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2MicrosoftV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12712,14 +12712,14 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference(terra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12920,7 +12920,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12978,7 +12978,7 @@ public putCustomOidcV2(value: IResolvable | LinuxFunctionAppSlotAuthSettingsV2Cu
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.putCustomOidcV2.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2">LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2">LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2</a>[]
 
 ---
 
@@ -13199,10 +13199,10 @@ public resetUnauthenticatedAction(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.property.twitterV2">twitterV2</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2TwitterV2OutputReference">LinuxFunctionAppSlotAuthSettingsV2TwitterV2OutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.property.activeDirectoryV2Input">activeDirectoryV2Input</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2">LinuxFunctionAppSlotAuthSettingsV2ActiveDirectoryV2</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.property.appleV2Input">appleV2Input</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2AppleV2">LinuxFunctionAppSlotAuthSettingsV2AppleV2</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.property.authEnabledInput">authEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.property.authEnabledInput">authEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.property.azureStaticWebAppV2Input">azureStaticWebAppV2Input</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2AzureStaticWebAppV2">LinuxFunctionAppSlotAuthSettingsV2AzureStaticWebAppV2</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.property.configFilePathInput">configFilePathInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.property.customOidcV2Input">customOidcV2Input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2">LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.property.customOidcV2Input">customOidcV2Input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2">LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.property.defaultProviderInput">defaultProviderInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.property.excludedPathsInput">excludedPathsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.property.facebookV2Input">facebookV2Input</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2FacebookV2">LinuxFunctionAppSlotAuthSettingsV2FacebookV2</a></code> | *No description.* |
@@ -13214,12 +13214,12 @@ public resetUnauthenticatedAction(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.property.httpRouteApiPrefixInput">httpRouteApiPrefixInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.property.loginInput">loginInput</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2Login">LinuxFunctionAppSlotAuthSettingsV2Login</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.property.microsoftV2Input">microsoftV2Input</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2MicrosoftV2">LinuxFunctionAppSlotAuthSettingsV2MicrosoftV2</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.property.requireAuthenticationInput">requireAuthenticationInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.property.requireHttpsInput">requireHttpsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.property.requireAuthenticationInput">requireAuthenticationInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.property.requireHttpsInput">requireHttpsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.property.runtimeVersionInput">runtimeVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.property.twitterV2Input">twitterV2Input</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2TwitterV2">LinuxFunctionAppSlotAuthSettingsV2TwitterV2</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.property.unauthenticatedActionInput">unauthenticatedActionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.property.authEnabled">authEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.property.authEnabled">authEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.property.configFilePath">configFilePath</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.property.defaultProvider">defaultProvider</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.property.excludedPaths">excludedPaths</a></code> | <code>string[]</code> | *No description.* |
@@ -13227,8 +13227,8 @@ public resetUnauthenticatedAction(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.property.forwardProxyCustomHostHeaderName">forwardProxyCustomHostHeaderName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.property.forwardProxyCustomSchemeHeaderName">forwardProxyCustomSchemeHeaderName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.property.httpRouteApiPrefix">httpRouteApiPrefix</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.property.requireAuthentication">requireAuthentication</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.property.requireHttps">requireHttps</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.property.requireAuthentication">requireAuthentication</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.property.requireHttps">requireHttps</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.property.runtimeVersion">runtimeVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.property.unauthenticatedAction">unauthenticatedAction</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2OutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2">LinuxFunctionAppSlotAuthSettingsV2</a></code> | *No description.* |
@@ -13385,7 +13385,7 @@ public readonly appleV2Input: LinuxFunctionAppSlotAuthSettingsV2AppleV2;
 public readonly authEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -13415,7 +13415,7 @@ public readonly configFilePathInput: string;
 public readonly customOidcV2Input: IResolvable | LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2">LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2">LinuxFunctionAppSlotAuthSettingsV2CustomOidcV2</a>[]
 
 ---
 
@@ -13535,7 +13535,7 @@ public readonly microsoftV2Input: LinuxFunctionAppSlotAuthSettingsV2MicrosoftV2;
 public readonly requireAuthenticationInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -13545,7 +13545,7 @@ public readonly requireAuthenticationInput: boolean | IResolvable;
 public readonly requireHttpsInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -13585,7 +13585,7 @@ public readonly unauthenticatedActionInput: string;
 public readonly authEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -13665,7 +13665,7 @@ public readonly httpRouteApiPrefix: string;
 public readonly requireAuthentication: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -13675,7 +13675,7 @@ public readonly requireAuthentication: boolean | IResolvable;
 public readonly requireHttps: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -13722,14 +13722,14 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2TwitterV2OutputRefere
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2TwitterV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2TwitterV2OutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2TwitterV2OutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2TwitterV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13899,7 +13899,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotAuthSettingsV2TwitterV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14015,14 +14015,14 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotBackupOutputReference(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14194,7 +14194,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14234,11 +14234,11 @@ public resetEnabled(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupOutputReference.property.schedule">schedule</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupScheduleOutputReference">LinuxFunctionAppSlotBackupScheduleOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupOutputReference.property.scheduleInput">scheduleInput</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupSchedule">LinuxFunctionAppSlotBackupSchedule</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupOutputReference.property.storageAccountUrlInput">storageAccountUrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupOutputReference.property.storageAccountUrl">storageAccountUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackup">LinuxFunctionAppSlotBackup</a></code> | *No description.* |
@@ -14285,7 +14285,7 @@ public readonly schedule: LinuxFunctionAppSlotBackupScheduleOutputReference;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -14325,7 +14325,7 @@ public readonly storageAccountUrlInput: string;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -14372,14 +14372,14 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotBackupScheduleOutputReference(terra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupScheduleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupScheduleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupScheduleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupScheduleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14552,7 +14552,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupScheduleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14594,12 +14594,12 @@ public resetStartTime(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupScheduleOutputReference.property.lastExecutionTime">lastExecutionTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupScheduleOutputReference.property.frequencyIntervalInput">frequencyIntervalInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupScheduleOutputReference.property.frequencyUnitInput">frequencyUnitInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupScheduleOutputReference.property.keepAtLeastOneBackupInput">keepAtLeastOneBackupInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupScheduleOutputReference.property.keepAtLeastOneBackupInput">keepAtLeastOneBackupInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupScheduleOutputReference.property.retentionPeriodDaysInput">retentionPeriodDaysInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupScheduleOutputReference.property.startTimeInput">startTimeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupScheduleOutputReference.property.frequencyInterval">frequencyInterval</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupScheduleOutputReference.property.frequencyUnit">frequencyUnit</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupScheduleOutputReference.property.keepAtLeastOneBackup">keepAtLeastOneBackup</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupScheduleOutputReference.property.keepAtLeastOneBackup">keepAtLeastOneBackup</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupScheduleOutputReference.property.retentionPeriodDays">retentionPeriodDays</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupScheduleOutputReference.property.startTime">startTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupScheduleOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotBackupSchedule">LinuxFunctionAppSlotBackupSchedule</a></code> | *No description.* |
@@ -14666,7 +14666,7 @@ public readonly frequencyUnitInput: string;
 public readonly keepAtLeastOneBackupInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -14716,7 +14716,7 @@ public readonly frequencyUnit: string;
 public readonly keepAtLeastOneBackup: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -14763,7 +14763,7 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionStringList(terraformResou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionStringList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionStringList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionStringList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionStringList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -14771,7 +14771,7 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionStringList(terraformResou
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionStringList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14837,7 +14837,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionStringList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14872,7 +14872,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionStringList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionStringList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionStringList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionString">LinuxFunctionAppSlotConnectionString</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionStringList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionString">LinuxFunctionAppSlotConnectionString</a>[]</code> | *No description.* |
 
 ---
 
@@ -14906,7 +14906,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | LinuxFunctionAppSlotConnectionString[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionString">LinuxFunctionAppSlotConnectionString</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionString">LinuxFunctionAppSlotConnectionString</a>[]
 
 ---
 
@@ -14923,7 +14923,7 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionStringOutputReference(ter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionStringOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionStringOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionStringOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionStringOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionStringOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -14932,7 +14932,7 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionStringOutputReference(ter
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionStringOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15118,7 +15118,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionStringOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15145,7 +15145,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionStringOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionStringOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionStringOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionStringOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionString">LinuxFunctionAppSlotConnectionString</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionStringOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionString">LinuxFunctionAppSlotConnectionString</a></code> | *No description.* |
 
 ---
 
@@ -15239,7 +15239,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | LinuxFunctionAppSlotConnectionString;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionString">LinuxFunctionAppSlotConnectionString</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotConnectionString">LinuxFunctionAppSlotConnectionString</a>
 
 ---
 
@@ -15256,14 +15256,14 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotIdentityOutputReference(terraformRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotIdentityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotIdentityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotIdentityOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotIdentityOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15434,7 +15434,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotIdentityOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15578,7 +15578,7 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDockerLis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDockerList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDockerList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDockerList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDockerList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -15586,7 +15586,7 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDockerLis
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDockerList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15652,7 +15652,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDockerList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15687,7 +15687,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDockerList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDockerList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDockerList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDocker">LinuxFunctionAppSlotSiteConfigApplicationStackDocker</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDockerList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDocker">LinuxFunctionAppSlotSiteConfigApplicationStackDocker</a>[]</code> | *No description.* |
 
 ---
 
@@ -15721,7 +15721,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | LinuxFunctionAppSlotSiteConfigApplicationStackDocker[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDocker">LinuxFunctionAppSlotSiteConfigApplicationStackDocker</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDocker">LinuxFunctionAppSlotSiteConfigApplicationStackDocker</a>[]
 
 ---
 
@@ -15738,7 +15738,7 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDockerOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDockerOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDockerOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDockerOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDockerOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDockerOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -15747,7 +15747,7 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDockerOut
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDockerOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15935,7 +15935,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDockerOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15978,7 +15978,7 @@ public resetRegistryUsername(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDockerOutputReference.property.registryPassword">registryPassword</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDockerOutputReference.property.registryUrl">registryUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDockerOutputReference.property.registryUsername">registryUsername</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDockerOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDocker">LinuxFunctionAppSlotSiteConfigApplicationStackDocker</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDockerOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDocker">LinuxFunctionAppSlotSiteConfigApplicationStackDocker</a></code> | *No description.* |
 
 ---
 
@@ -16112,7 +16112,7 @@ public readonly registryUsername: string;
 public readonly internalValue: IResolvable | LinuxFunctionAppSlotSiteConfigApplicationStackDocker;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDocker">LinuxFunctionAppSlotSiteConfigApplicationStackDocker</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDocker">LinuxFunctionAppSlotSiteConfigApplicationStackDocker</a>
 
 ---
 
@@ -16129,14 +16129,14 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackOutputRef
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16315,7 +16315,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16337,7 +16337,7 @@ public putDocker(value: IResolvable | LinuxFunctionAppSlotSiteConfigApplicationS
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackOutputReference.putDocker.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDocker">LinuxFunctionAppSlotSiteConfigApplicationStackDocker</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDocker">LinuxFunctionAppSlotSiteConfigApplicationStackDocker</a>[]
 
 ---
 
@@ -16397,21 +16397,21 @@ public resetUseDotnetIsolatedRuntime(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackOutputReference.property.docker">docker</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDockerList">LinuxFunctionAppSlotSiteConfigApplicationStackDockerList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackOutputReference.property.dockerInput">dockerInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDocker">LinuxFunctionAppSlotSiteConfigApplicationStackDocker</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackOutputReference.property.dockerInput">dockerInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDocker">LinuxFunctionAppSlotSiteConfigApplicationStackDocker</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackOutputReference.property.dotnetVersionInput">dotnetVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackOutputReference.property.javaVersionInput">javaVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackOutputReference.property.nodeVersionInput">nodeVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackOutputReference.property.powershellCoreVersionInput">powershellCoreVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackOutputReference.property.pythonVersionInput">pythonVersionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackOutputReference.property.useCustomRuntimeInput">useCustomRuntimeInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackOutputReference.property.useDotnetIsolatedRuntimeInput">useDotnetIsolatedRuntimeInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackOutputReference.property.useCustomRuntimeInput">useCustomRuntimeInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackOutputReference.property.useDotnetIsolatedRuntimeInput">useDotnetIsolatedRuntimeInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackOutputReference.property.dotnetVersion">dotnetVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackOutputReference.property.javaVersion">javaVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackOutputReference.property.nodeVersion">nodeVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackOutputReference.property.powershellCoreVersion">powershellCoreVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackOutputReference.property.pythonVersion">pythonVersion</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackOutputReference.property.useCustomRuntime">useCustomRuntime</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackOutputReference.property.useDotnetIsolatedRuntime">useDotnetIsolatedRuntime</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackOutputReference.property.useCustomRuntime">useCustomRuntime</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackOutputReference.property.useDotnetIsolatedRuntime">useDotnetIsolatedRuntime</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStack">LinuxFunctionAppSlotSiteConfigApplicationStack</a></code> | *No description.* |
 
 ---
@@ -16456,7 +16456,7 @@ public readonly docker: LinuxFunctionAppSlotSiteConfigApplicationStackDockerList
 public readonly dockerInput: IResolvable | LinuxFunctionAppSlotSiteConfigApplicationStackDocker[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDocker">LinuxFunctionAppSlotSiteConfigApplicationStackDocker</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackDocker">LinuxFunctionAppSlotSiteConfigApplicationStackDocker</a>[]
 
 ---
 
@@ -16516,7 +16516,7 @@ public readonly pythonVersionInput: string;
 public readonly useCustomRuntimeInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -16526,7 +16526,7 @@ public readonly useCustomRuntimeInput: boolean | IResolvable;
 public readonly useDotnetIsolatedRuntimeInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -16586,7 +16586,7 @@ public readonly pythonVersion: string;
 public readonly useCustomRuntime: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -16596,7 +16596,7 @@ public readonly useCustomRuntime: boolean | IResolvable;
 public readonly useDotnetIsolatedRuntime: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -16623,14 +16623,14 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigAppServiceLogsOutputRefer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigAppServiceLogsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigAppServiceLogsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigAppServiceLogsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigAppServiceLogsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16802,7 +16802,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigAppServiceLogsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16930,14 +16930,14 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigCorsOutputReference(terra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigCorsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigCorsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigCorsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigCorsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17109,7 +17109,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigCorsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17143,9 +17143,9 @@ public resetSupportCredentials(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigCorsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigCorsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigCorsOutputReference.property.allowedOriginsInput">allowedOriginsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigCorsOutputReference.property.supportCredentialsInput">supportCredentialsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigCorsOutputReference.property.supportCredentialsInput">supportCredentialsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigCorsOutputReference.property.allowedOrigins">allowedOrigins</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigCorsOutputReference.property.supportCredentials">supportCredentials</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigCorsOutputReference.property.supportCredentials">supportCredentials</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigCorsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigCors">LinuxFunctionAppSlotSiteConfigCors</a></code> | *No description.* |
 
 ---
@@ -17190,7 +17190,7 @@ public readonly allowedOriginsInput: string[];
 public readonly supportCredentialsInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -17210,7 +17210,7 @@ public readonly allowedOrigins: string[];
 public readonly supportCredentials: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -17237,7 +17237,7 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeadersList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeadersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeadersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeadersList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeadersList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -17245,7 +17245,7 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeadersList(
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeadersList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17311,7 +17311,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeadersList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17346,7 +17346,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeadersList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeadersList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeadersList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders">LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeadersList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders">LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders</a>[]</code> | *No description.* |
 
 ---
 
@@ -17380,7 +17380,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders">LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders">LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders</a>[]
 
 ---
 
@@ -17397,7 +17397,7 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeadersOutpu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeadersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeadersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeadersOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeadersOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeadersOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -17406,7 +17406,7 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeadersOutpu
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeadersOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17596,7 +17596,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeadersOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17649,7 +17649,7 @@ public resetXForwardedHost(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeadersOutputReference.property.xFdHealthProbe">xFdHealthProbe</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeadersOutputReference.property.xForwardedFor">xForwardedFor</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeadersOutputReference.property.xForwardedHost">xForwardedHost</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeadersOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders">LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeadersOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders">LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders</a></code> | *No description.* |
 
 ---
 
@@ -17763,7 +17763,7 @@ public readonly xForwardedHost: string[];
 public readonly internalValue: IResolvable | LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders">LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders">LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders</a>
 
 ---
 
@@ -17780,7 +17780,7 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionList(terrafo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -17788,7 +17788,7 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionList(terrafo
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17854,7 +17854,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17889,7 +17889,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestriction">LinuxFunctionAppSlotSiteConfigIpRestriction</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestriction">LinuxFunctionAppSlotSiteConfigIpRestriction</a>[]</code> | *No description.* |
 
 ---
 
@@ -17923,7 +17923,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | LinuxFunctionAppSlotSiteConfigIpRestriction[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestriction">LinuxFunctionAppSlotSiteConfigIpRestriction</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestriction">LinuxFunctionAppSlotSiteConfigIpRestriction</a>[]
 
 ---
 
@@ -17940,7 +17940,7 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionOutputRefere
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -17949,7 +17949,7 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionOutputRefere
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18144,7 +18144,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18166,7 +18166,7 @@ public putHeaders(value: IResolvable | LinuxFunctionAppSlotSiteConfigIpRestricti
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionOutputReference.putHeaders.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders">LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders">LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders</a>[]
 
 ---
 
@@ -18228,7 +18228,7 @@ public resetVirtualNetworkSubnetId(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionOutputReference.property.headers">headers</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeadersList">LinuxFunctionAppSlotSiteConfigIpRestrictionHeadersList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionOutputReference.property.actionInput">actionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionOutputReference.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionOutputReference.property.headersInput">headersInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders">LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionOutputReference.property.headersInput">headersInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders">LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionOutputReference.property.ipAddressInput">ipAddressInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionOutputReference.property.priorityInput">priorityInput</a></code> | <code>number</code> | *No description.* |
@@ -18241,7 +18241,7 @@ public resetVirtualNetworkSubnetId(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionOutputReference.property.priority">priority</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionOutputReference.property.serviceTag">serviceTag</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionOutputReference.property.virtualNetworkSubnetId">virtualNetworkSubnetId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestriction">LinuxFunctionAppSlotSiteConfigIpRestriction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestriction">LinuxFunctionAppSlotSiteConfigIpRestriction</a></code> | *No description.* |
 
 ---
 
@@ -18305,7 +18305,7 @@ public readonly descriptionInput: string;
 public readonly headersInput: IResolvable | LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders">LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders">LinuxFunctionAppSlotSiteConfigIpRestrictionHeaders</a>[]
 
 ---
 
@@ -18435,7 +18435,7 @@ public readonly virtualNetworkSubnetId: string;
 public readonly internalValue: IResolvable | LinuxFunctionAppSlotSiteConfigIpRestriction;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestriction">LinuxFunctionAppSlotSiteConfigIpRestriction</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestriction">LinuxFunctionAppSlotSiteConfigIpRestriction</a>
 
 ---
 
@@ -18452,14 +18452,14 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18670,7 +18670,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18728,7 +18728,7 @@ public putIpRestriction(value: IResolvable | LinuxFunctionAppSlotSiteConfigIpRes
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.putIpRestriction.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestriction">LinuxFunctionAppSlotSiteConfigIpRestriction</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestriction">LinuxFunctionAppSlotSiteConfigIpRestriction</a>[]
 
 ---
 
@@ -18740,7 +18740,7 @@ public putScmIpRestriction(value: IResolvable | LinuxFunctionAppSlotSiteConfigSc
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.putScmIpRestriction.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestriction">LinuxFunctionAppSlotSiteConfigScmIpRestriction</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestriction">LinuxFunctionAppSlotSiteConfigScmIpRestriction</a>[]
 
 ---
 
@@ -18970,12 +18970,12 @@ public resetWorkerCount(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.applicationStack">applicationStack</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigApplicationStackOutputReference">LinuxFunctionAppSlotSiteConfigApplicationStackOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.appServiceLogs">appServiceLogs</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigAppServiceLogsOutputReference">LinuxFunctionAppSlotSiteConfigAppServiceLogsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.cors">cors</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigCorsOutputReference">LinuxFunctionAppSlotSiteConfigCorsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.detailedErrorLoggingEnabled">detailedErrorLoggingEnabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.detailedErrorLoggingEnabled">detailedErrorLoggingEnabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.ipRestriction">ipRestriction</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestrictionList">LinuxFunctionAppSlotSiteConfigIpRestrictionList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.linuxFxVersion">linuxFxVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.scmIpRestriction">scmIpRestriction</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionList">LinuxFunctionAppSlotSiteConfigScmIpRestrictionList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.scmType">scmType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.alwaysOnInput">alwaysOnInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.alwaysOnInput">alwaysOnInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.apiDefinitionUrlInput">apiDefinitionUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.apiManagementApiIdInput">apiManagementApiIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.appCommandLineInput">appCommandLineInput</a></code> | <code>string</code> | *No description.* |
@@ -18986,32 +18986,32 @@ public resetWorkerCount(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.appServiceLogsInput">appServiceLogsInput</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigAppServiceLogs">LinuxFunctionAppSlotSiteConfigAppServiceLogs</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.autoSwapSlotNameInput">autoSwapSlotNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.containerRegistryManagedIdentityClientIdInput">containerRegistryManagedIdentityClientIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.containerRegistryUseManagedIdentityInput">containerRegistryUseManagedIdentityInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.containerRegistryUseManagedIdentityInput">containerRegistryUseManagedIdentityInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.corsInput">corsInput</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigCors">LinuxFunctionAppSlotSiteConfigCors</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.defaultDocumentsInput">defaultDocumentsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.elasticInstanceMinimumInput">elasticInstanceMinimumInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.ftpsStateInput">ftpsStateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.healthCheckEvictionTimeInMinInput">healthCheckEvictionTimeInMinInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.healthCheckPathInput">healthCheckPathInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.http2EnabledInput">http2EnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.http2EnabledInput">http2EnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.ipRestrictionDefaultActionInput">ipRestrictionDefaultActionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.ipRestrictionInput">ipRestrictionInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestriction">LinuxFunctionAppSlotSiteConfigIpRestriction</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.ipRestrictionInput">ipRestrictionInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestriction">LinuxFunctionAppSlotSiteConfigIpRestriction</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.loadBalancingModeInput">loadBalancingModeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.managedPipelineModeInput">managedPipelineModeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.minimumTlsVersionInput">minimumTlsVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.preWarmedInstanceCountInput">preWarmedInstanceCountInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.remoteDebuggingEnabledInput">remoteDebuggingEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.remoteDebuggingEnabledInput">remoteDebuggingEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.remoteDebuggingVersionInput">remoteDebuggingVersionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.runtimeScaleMonitoringEnabledInput">runtimeScaleMonitoringEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.runtimeScaleMonitoringEnabledInput">runtimeScaleMonitoringEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.scmIpRestrictionDefaultActionInput">scmIpRestrictionDefaultActionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.scmIpRestrictionInput">scmIpRestrictionInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestriction">LinuxFunctionAppSlotSiteConfigScmIpRestriction</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.scmIpRestrictionInput">scmIpRestrictionInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestriction">LinuxFunctionAppSlotSiteConfigScmIpRestriction</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.scmMinimumTlsVersionInput">scmMinimumTlsVersionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.scmUseMainIpRestrictionInput">scmUseMainIpRestrictionInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.use32BitWorkerInput">use32BitWorkerInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.vnetRouteAllEnabledInput">vnetRouteAllEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.websocketsEnabledInput">websocketsEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.scmUseMainIpRestrictionInput">scmUseMainIpRestrictionInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.use32BitWorkerInput">use32BitWorkerInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.vnetRouteAllEnabledInput">vnetRouteAllEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.websocketsEnabledInput">websocketsEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.workerCountInput">workerCountInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.alwaysOn">alwaysOn</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.alwaysOn">alwaysOn</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.apiDefinitionUrl">apiDefinitionUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.apiManagementApiId">apiManagementApiId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.appCommandLine">appCommandLine</a></code> | <code>string</code> | *No description.* |
@@ -19020,27 +19020,27 @@ public resetWorkerCount(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.appScaleLimit">appScaleLimit</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.autoSwapSlotName">autoSwapSlotName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.containerRegistryManagedIdentityClientId">containerRegistryManagedIdentityClientId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.containerRegistryUseManagedIdentity">containerRegistryUseManagedIdentity</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.containerRegistryUseManagedIdentity">containerRegistryUseManagedIdentity</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.defaultDocuments">defaultDocuments</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.elasticInstanceMinimum">elasticInstanceMinimum</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.ftpsState">ftpsState</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.healthCheckEvictionTimeInMin">healthCheckEvictionTimeInMin</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.healthCheckPath">healthCheckPath</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.http2Enabled">http2Enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.http2Enabled">http2Enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.ipRestrictionDefaultAction">ipRestrictionDefaultAction</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.loadBalancingMode">loadBalancingMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.managedPipelineMode">managedPipelineMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.minimumTlsVersion">minimumTlsVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.preWarmedInstanceCount">preWarmedInstanceCount</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.remoteDebuggingEnabled">remoteDebuggingEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.remoteDebuggingEnabled">remoteDebuggingEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.remoteDebuggingVersion">remoteDebuggingVersion</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.runtimeScaleMonitoringEnabled">runtimeScaleMonitoringEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.runtimeScaleMonitoringEnabled">runtimeScaleMonitoringEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.scmIpRestrictionDefaultAction">scmIpRestrictionDefaultAction</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.scmMinimumTlsVersion">scmMinimumTlsVersion</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.scmUseMainIpRestriction">scmUseMainIpRestriction</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.use32BitWorker">use32BitWorker</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.vnetRouteAllEnabled">vnetRouteAllEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.websocketsEnabled">websocketsEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.scmUseMainIpRestriction">scmUseMainIpRestriction</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.use32BitWorker">use32BitWorker</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.vnetRouteAllEnabled">vnetRouteAllEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.websocketsEnabled">websocketsEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.workerCount">workerCount</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfig">LinuxFunctionAppSlotSiteConfig</a></code> | *No description.* |
 
@@ -19106,7 +19106,7 @@ public readonly cors: LinuxFunctionAppSlotSiteConfigCorsOutputReference;
 public readonly detailedErrorLoggingEnabled: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -19156,7 +19156,7 @@ public readonly scmType: string;
 public readonly alwaysOnInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19266,7 +19266,7 @@ public readonly containerRegistryManagedIdentityClientIdInput: string;
 public readonly containerRegistryUseManagedIdentityInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19336,7 +19336,7 @@ public readonly healthCheckPathInput: string;
 public readonly http2EnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19356,7 +19356,7 @@ public readonly ipRestrictionDefaultActionInput: string;
 public readonly ipRestrictionInput: IResolvable | LinuxFunctionAppSlotSiteConfigIpRestriction[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestriction">LinuxFunctionAppSlotSiteConfigIpRestriction</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigIpRestriction">LinuxFunctionAppSlotSiteConfigIpRestriction</a>[]
 
 ---
 
@@ -19406,7 +19406,7 @@ public readonly preWarmedInstanceCountInput: number;
 public readonly remoteDebuggingEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19426,7 +19426,7 @@ public readonly remoteDebuggingVersionInput: string;
 public readonly runtimeScaleMonitoringEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19446,7 +19446,7 @@ public readonly scmIpRestrictionDefaultActionInput: string;
 public readonly scmIpRestrictionInput: IResolvable | LinuxFunctionAppSlotSiteConfigScmIpRestriction[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestriction">LinuxFunctionAppSlotSiteConfigScmIpRestriction</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestriction">LinuxFunctionAppSlotSiteConfigScmIpRestriction</a>[]
 
 ---
 
@@ -19466,7 +19466,7 @@ public readonly scmMinimumTlsVersionInput: string;
 public readonly scmUseMainIpRestrictionInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19476,7 +19476,7 @@ public readonly scmUseMainIpRestrictionInput: boolean | IResolvable;
 public readonly use32BitWorkerInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19486,7 +19486,7 @@ public readonly use32BitWorkerInput: boolean | IResolvable;
 public readonly vnetRouteAllEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19496,7 +19496,7 @@ public readonly vnetRouteAllEnabledInput: boolean | IResolvable;
 public readonly websocketsEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19516,7 +19516,7 @@ public readonly workerCountInput: number;
 public readonly alwaysOn: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19606,7 +19606,7 @@ public readonly containerRegistryManagedIdentityClientId: string;
 public readonly containerRegistryUseManagedIdentity: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19666,7 +19666,7 @@ public readonly healthCheckPath: string;
 public readonly http2Enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19726,7 +19726,7 @@ public readonly preWarmedInstanceCount: number;
 public readonly remoteDebuggingEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19746,7 +19746,7 @@ public readonly remoteDebuggingVersion: string;
 public readonly runtimeScaleMonitoringEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19776,7 +19776,7 @@ public readonly scmMinimumTlsVersion: string;
 public readonly scmUseMainIpRestriction: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19786,7 +19786,7 @@ public readonly scmUseMainIpRestriction: boolean | IResolvable;
 public readonly use32BitWorker: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19796,7 +19796,7 @@ public readonly use32BitWorker: boolean | IResolvable;
 public readonly vnetRouteAllEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19806,7 +19806,7 @@ public readonly vnetRouteAllEnabled: boolean | IResolvable;
 public readonly websocketsEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19843,7 +19843,7 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeadersLi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeadersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeadersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeadersList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeadersList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -19851,7 +19851,7 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeadersLi
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeadersList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19917,7 +19917,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeadersList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19952,7 +19952,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeadersList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeadersList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeadersList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders">LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeadersList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders">LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders</a>[]</code> | *No description.* |
 
 ---
 
@@ -19986,7 +19986,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders">LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders">LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders</a>[]
 
 ---
 
@@ -20003,7 +20003,7 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeadersOu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeadersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeadersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeadersOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeadersOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeadersOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -20012,7 +20012,7 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeadersOu
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeadersOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20202,7 +20202,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeadersOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20255,7 +20255,7 @@ public resetXForwardedHost(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeadersOutputReference.property.xFdHealthProbe">xFdHealthProbe</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeadersOutputReference.property.xForwardedFor">xForwardedFor</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeadersOutputReference.property.xForwardedHost">xForwardedHost</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeadersOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders">LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeadersOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders">LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders</a></code> | *No description.* |
 
 ---
 
@@ -20369,7 +20369,7 @@ public readonly xForwardedHost: string[];
 public readonly internalValue: IResolvable | LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders">LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders">LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders</a>
 
 ---
 
@@ -20386,7 +20386,7 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionList(terr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -20394,7 +20394,7 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionList(terr
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20460,7 +20460,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20495,7 +20495,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestriction">LinuxFunctionAppSlotSiteConfigScmIpRestriction</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestriction">LinuxFunctionAppSlotSiteConfigScmIpRestriction</a>[]</code> | *No description.* |
 
 ---
 
@@ -20529,7 +20529,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | LinuxFunctionAppSlotSiteConfigScmIpRestriction[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestriction">LinuxFunctionAppSlotSiteConfigScmIpRestriction</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestriction">LinuxFunctionAppSlotSiteConfigScmIpRestriction</a>[]
 
 ---
 
@@ -20546,7 +20546,7 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionOutputRef
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -20555,7 +20555,7 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionOutputRef
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20750,7 +20750,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20772,7 +20772,7 @@ public putHeaders(value: IResolvable | LinuxFunctionAppSlotSiteConfigScmIpRestri
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionOutputReference.putHeaders.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders">LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders">LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders</a>[]
 
 ---
 
@@ -20834,7 +20834,7 @@ public resetVirtualNetworkSubnetId(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionOutputReference.property.headers">headers</a></code> | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeadersList">LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeadersList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionOutputReference.property.actionInput">actionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionOutputReference.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionOutputReference.property.headersInput">headersInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders">LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionOutputReference.property.headersInput">headersInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders">LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionOutputReference.property.ipAddressInput">ipAddressInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionOutputReference.property.priorityInput">priorityInput</a></code> | <code>number</code> | *No description.* |
@@ -20847,7 +20847,7 @@ public resetVirtualNetworkSubnetId(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionOutputReference.property.priority">priority</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionOutputReference.property.serviceTag">serviceTag</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionOutputReference.property.virtualNetworkSubnetId">virtualNetworkSubnetId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestriction">LinuxFunctionAppSlotSiteConfigScmIpRestriction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestriction">LinuxFunctionAppSlotSiteConfigScmIpRestriction</a></code> | *No description.* |
 
 ---
 
@@ -20911,7 +20911,7 @@ public readonly descriptionInput: string;
 public readonly headersInput: IResolvable | LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders">LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders">LinuxFunctionAppSlotSiteConfigScmIpRestrictionHeaders</a>[]
 
 ---
 
@@ -21041,7 +21041,7 @@ public readonly virtualNetworkSubnetId: string;
 public readonly internalValue: IResolvable | LinuxFunctionAppSlotSiteConfigScmIpRestriction;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestriction">LinuxFunctionAppSlotSiteConfigScmIpRestriction</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteConfigScmIpRestriction">LinuxFunctionAppSlotSiteConfigScmIpRestriction</a>
 
 ---
 
@@ -21058,7 +21058,7 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotSiteCredentialList(terraformResourc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteCredentialList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteCredentialList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteCredentialList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteCredentialList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -21066,7 +21066,7 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotSiteCredentialList(terraformResourc
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteCredentialList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21132,7 +21132,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteCredentialList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21207,7 +21207,7 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotSiteCredentialOutputReference(terra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteCredentialOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteCredentialOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteCredentialOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteCredentialOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteCredentialOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -21216,7 +21216,7 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotSiteCredentialOutputReference(terra
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteCredentialOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21402,7 +21402,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotSiteCredentialOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21496,7 +21496,7 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccountList(terraformResourc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccountList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccountList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccountList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccountList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -21504,7 +21504,7 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccountList(terraformResourc
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccountList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21570,7 +21570,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccountList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21605,7 +21605,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccountList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccountList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccountList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccount">LinuxFunctionAppSlotStorageAccount</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccountList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccount">LinuxFunctionAppSlotStorageAccount</a>[]</code> | *No description.* |
 
 ---
 
@@ -21639,7 +21639,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | LinuxFunctionAppSlotStorageAccount[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccount">LinuxFunctionAppSlotStorageAccount</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccount">LinuxFunctionAppSlotStorageAccount</a>[]
 
 ---
 
@@ -21656,7 +21656,7 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccountOutputReference(terra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccountOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccountOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccountOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccountOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccountOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -21665,7 +21665,7 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccountOutputReference(terra
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccountOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21852,7 +21852,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccountOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21891,7 +21891,7 @@ public resetMountPath(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccountOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccountOutputReference.property.shareName">shareName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccountOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccountOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccount">LinuxFunctionAppSlotStorageAccount</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccountOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccount">LinuxFunctionAppSlotStorageAccount</a></code> | *No description.* |
 
 ---
 
@@ -22045,7 +22045,7 @@ public readonly type: string;
 public readonly internalValue: IResolvable | LinuxFunctionAppSlotStorageAccount;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccount">LinuxFunctionAppSlotStorageAccount</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotStorageAccount">LinuxFunctionAppSlotStorageAccount</a>
 
 ---
 
@@ -22062,14 +22062,14 @@ new linuxFunctionAppSlot.LinuxFunctionAppSlotTimeoutsOutputReference(terraformRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22243,7 +22243,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22296,7 +22296,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotTimeouts">LinuxFunctionAppSlotTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotTimeouts">LinuxFunctionAppSlotTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -22410,7 +22410,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | LinuxFunctionAppSlotTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotTimeouts">LinuxFunctionAppSlotTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.linuxFunctionAppSlot.LinuxFunctionAppSlotTimeouts">LinuxFunctionAppSlotTimeouts</a>
 
 ---
 

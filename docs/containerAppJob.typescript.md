@@ -309,7 +309,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -427,7 +427,7 @@ public putRegistry(value: IResolvable | ContainerAppJobRegistry[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.putRegistry.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistry">ContainerAppJobRegistry</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistry">ContainerAppJobRegistry</a>[]
 
 ---
 
@@ -451,7 +451,7 @@ public putSecret(value: IResolvable | ContainerAppJobSecret[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.putSecret.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecret">ContainerAppJobSecret</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecret">ContainerAppJobSecret</a>[]
 
 ---
 
@@ -552,7 +552,7 @@ public resetWorkloadProfileName(): void
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a ContainerAppJob resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a ContainerAppJob resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -624,7 +624,7 @@ import { containerAppJob } from '@cdktn/provider-azurerm'
 containerAppJob.ContainerAppJob.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a ContainerAppJob resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a ContainerAppJob resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.generateConfigForImport.parameter.scope"></a>
 
@@ -654,7 +654,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the ContainerAppJob to import is found.
 
@@ -665,19 +665,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.eventStreamEndpoint">eventStreamEndpoint</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.eventTriggerConfig">eventTriggerConfig</a></code> | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigOutputReference">ContainerAppJobEventTriggerConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobIdentityOutputReference">ContainerAppJobIdentityOutputReference</a></code> | *No description.* |
@@ -695,15 +695,15 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.locationInput">locationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.manualTriggerConfigInput">manualTriggerConfigInput</a></code> | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobManualTriggerConfig">ContainerAppJobManualTriggerConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.registryInput">registryInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistry">ContainerAppJobRegistry</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.registryInput">registryInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistry">ContainerAppJobRegistry</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.replicaRetryLimitInput">replicaRetryLimitInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.replicaTimeoutInSecondsInput">replicaTimeoutInSecondsInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.resourceGroupNameInput">resourceGroupNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.scheduleTriggerConfigInput">scheduleTriggerConfigInput</a></code> | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobScheduleTriggerConfig">ContainerAppJobScheduleTriggerConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.secretInput">secretInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecret">ContainerAppJobSecret</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.secretInput">secretInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecret">ContainerAppJobSecret</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.tagsInput">tagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.templateInput">templateInput</a></code> | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplate">ContainerAppJobTemplate</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTimeouts">ContainerAppJobTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTimeouts">ContainerAppJobTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.workloadProfileNameInput">workloadProfileNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.containerAppEnvironmentId">containerAppEnvironmentId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJob.property.id">id</a></code> | <code>string</code> | *No description.* |
@@ -735,7 +735,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -785,7 +785,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -795,7 +795,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -805,7 +805,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -825,7 +825,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -835,7 +835,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -845,7 +845,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -855,7 +855,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1035,7 +1035,7 @@ public readonly nameInput: string;
 public readonly registryInput: IResolvable | ContainerAppJobRegistry[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistry">ContainerAppJobRegistry</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistry">ContainerAppJobRegistry</a>[]
 
 ---
 
@@ -1085,7 +1085,7 @@ public readonly scheduleTriggerConfigInput: ContainerAppJobScheduleTriggerConfig
 public readonly secretInput: IResolvable | ContainerAppJobSecret[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecret">ContainerAppJobSecret</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecret">ContainerAppJobSecret</a>[]
 
 ---
 
@@ -1115,7 +1115,7 @@ public readonly templateInput: ContainerAppJobTemplate;
 public readonly timeoutsInput: IResolvable | ContainerAppJobTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTimeouts">ContainerAppJobTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTimeouts">ContainerAppJobTimeouts</a>
 
 ---
 
@@ -1253,13 +1253,13 @@ const containerAppJobConfig: containerAppJob.ContainerAppJobConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.containerAppEnvironmentId">containerAppEnvironmentId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/container_app_job#container_app_environment_id ContainerAppJob#container_app_environment_id}. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/container_app_job#location ContainerAppJob#location}. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/container_app_job#name ContainerAppJob#name}. |
@@ -1270,10 +1270,10 @@ const containerAppJobConfig: containerAppJob.ContainerAppJobConfig = { ... }
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/container_app_job#id ContainerAppJob#id}. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobIdentity">ContainerAppJobIdentity</a></code> | identity block. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.manualTriggerConfig">manualTriggerConfig</a></code> | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobManualTriggerConfig">ContainerAppJobManualTriggerConfig</a></code> | manual_trigger_config block. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.registry">registry</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistry">ContainerAppJobRegistry</a>[]</code> | registry block. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.registry">registry</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistry">ContainerAppJobRegistry</a>[]</code> | registry block. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.replicaRetryLimit">replicaRetryLimit</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/container_app_job#replica_retry_limit ContainerAppJob#replica_retry_limit}. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.scheduleTriggerConfig">scheduleTriggerConfig</a></code> | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobScheduleTriggerConfig">ContainerAppJobScheduleTriggerConfig</a></code> | schedule_trigger_config block. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.secret">secret</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecret">ContainerAppJobSecret</a>[]</code> | secret block. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.secret">secret</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecret">ContainerAppJobSecret</a>[]</code> | secret block. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/container_app_job#tags ContainerAppJob#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTimeouts">ContainerAppJobTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobConfig.property.workloadProfileName">workloadProfileName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/container_app_job#workload_profile_name ContainerAppJob#workload_profile_name}. |
@@ -1286,7 +1286,7 @@ const containerAppJobConfig: containerAppJob.ContainerAppJobConfig = { ... }
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1296,7 +1296,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1306,7 +1306,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -1316,7 +1316,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1326,7 +1326,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1336,7 +1336,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1346,7 +1346,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1487,7 +1487,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly registry: IResolvable | ContainerAppJobRegistry[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistry">ContainerAppJobRegistry</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistry">ContainerAppJobRegistry</a>[]
 
 registry block.
 
@@ -1527,7 +1527,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly secret: IResolvable | ContainerAppJobSecret[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecret">ContainerAppJobSecret</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecret">ContainerAppJobSecret</a>[]
 
 secret block.
 
@@ -1589,7 +1589,7 @@ const containerAppJobEventTriggerConfig: containerAppJob.ContainerAppJobEventTri
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfig.property.parallelism">parallelism</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/container_app_job#parallelism ContainerAppJob#parallelism}. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfig.property.replicaCompletionCount">replicaCompletionCount</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/container_app_job#replica_completion_count ContainerAppJob#replica_completion_count}. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfig.property.scale">scale</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScale">ContainerAppJobEventTriggerConfigScale</a>[]</code> | scale block. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfig.property.scale">scale</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScale">ContainerAppJobEventTriggerConfigScale</a>[]</code> | scale block. |
 
 ---
 
@@ -1623,7 +1623,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly scale: IResolvable | ContainerAppJobEventTriggerConfigScale[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScale">ContainerAppJobEventTriggerConfigScale</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScale">ContainerAppJobEventTriggerConfigScale</a>[]
 
 scale block.
 
@@ -1648,7 +1648,7 @@ const containerAppJobEventTriggerConfigScale: containerAppJob.ContainerAppJobEve
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScale.property.maxExecutions">maxExecutions</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/container_app_job#max_executions ContainerAppJob#max_executions}. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScale.property.minExecutions">minExecutions</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/container_app_job#min_executions ContainerAppJob#min_executions}. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScale.property.pollingIntervalInSeconds">pollingIntervalInSeconds</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/container_app_job#polling_interval_in_seconds ContainerAppJob#polling_interval_in_seconds}. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScale.property.rules">rules</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRules">ContainerAppJobEventTriggerConfigScaleRules</a>[]</code> | rules block. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScale.property.rules">rules</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRules">ContainerAppJobEventTriggerConfigScaleRules</a>[]</code> | rules block. |
 
 ---
 
@@ -1694,7 +1694,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly rules: IResolvable | ContainerAppJobEventTriggerConfigScaleRules[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRules">ContainerAppJobEventTriggerConfigScaleRules</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRules">ContainerAppJobEventTriggerConfigScaleRules</a>[]
 
 rules block.
 
@@ -1719,7 +1719,7 @@ const containerAppJobEventTriggerConfigScaleRules: containerAppJob.ContainerAppJ
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRules.property.customRuleType">customRuleType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/container_app_job#custom_rule_type ContainerAppJob#custom_rule_type}. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRules.property.metadata">metadata</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/container_app_job#metadata ContainerAppJob#metadata}. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRules.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/container_app_job#name ContainerAppJob#name}. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRules.property.authentication">authentication</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthentication">ContainerAppJobEventTriggerConfigScaleRulesAuthentication</a>[]</code> | authentication block. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRules.property.authentication">authentication</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthentication">ContainerAppJobEventTriggerConfigScaleRulesAuthentication</a>[]</code> | authentication block. |
 
 ---
 
@@ -1765,7 +1765,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly authentication: IResolvable | ContainerAppJobEventTriggerConfigScaleRulesAuthentication[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthentication">ContainerAppJobEventTriggerConfigScaleRulesAuthentication</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthentication">ContainerAppJobEventTriggerConfigScaleRulesAuthentication</a>[]
 
 authentication block.
 
@@ -2126,9 +2126,9 @@ const containerAppJobTemplate: containerAppJob.ContainerAppJobTemplate = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplate.property.container">container</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainer">ContainerAppJobTemplateContainer</a>[]</code> | container block. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplate.property.initContainer">initContainer</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainer">ContainerAppJobTemplateInitContainer</a>[]</code> | init_container block. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplate.property.volume">volume</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolume">ContainerAppJobTemplateVolume</a>[]</code> | volume block. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplate.property.container">container</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainer">ContainerAppJobTemplateContainer</a>[]</code> | container block. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplate.property.initContainer">initContainer</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainer">ContainerAppJobTemplateInitContainer</a>[]</code> | init_container block. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplate.property.volume">volume</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolume">ContainerAppJobTemplateVolume</a>[]</code> | volume block. |
 
 ---
 
@@ -2138,7 +2138,7 @@ const containerAppJobTemplate: containerAppJob.ContainerAppJobTemplate = { ... }
 public readonly container: IResolvable | ContainerAppJobTemplateContainer[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainer">ContainerAppJobTemplateContainer</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainer">ContainerAppJobTemplateContainer</a>[]
 
 container block.
 
@@ -2152,7 +2152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly initContainer: IResolvable | ContainerAppJobTemplateInitContainer[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainer">ContainerAppJobTemplateInitContainer</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainer">ContainerAppJobTemplateInitContainer</a>[]
 
 init_container block.
 
@@ -2166,7 +2166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly volume: IResolvable | ContainerAppJobTemplateVolume[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolume">ContainerAppJobTemplateVolume</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolume">ContainerAppJobTemplateVolume</a>[]
 
 volume block.
 
@@ -2194,11 +2194,11 @@ const containerAppJobTemplateContainer: containerAppJob.ContainerAppJobTemplateC
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainer.property.name">name</a></code> | <code>string</code> | The name of the container. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainer.property.args">args</a></code> | <code>string[]</code> | A list of args to pass to the container. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainer.property.command">command</a></code> | <code>string[]</code> | A command to pass to the container to override the default. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainer.property.env">env</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnv">ContainerAppJobTemplateContainerEnv</a>[]</code> | env block. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainer.property.livenessProbe">livenessProbe</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe">ContainerAppJobTemplateContainerLivenessProbe</a>[]</code> | liveness_probe block. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainer.property.readinessProbe">readinessProbe</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe">ContainerAppJobTemplateContainerReadinessProbe</a>[]</code> | readiness_probe block. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainer.property.startupProbe">startupProbe</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe">ContainerAppJobTemplateContainerStartupProbe</a>[]</code> | startup_probe block. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainer.property.volumeMounts">volumeMounts</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMounts">ContainerAppJobTemplateContainerVolumeMounts</a>[]</code> | volume_mounts block. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainer.property.env">env</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnv">ContainerAppJobTemplateContainerEnv</a>[]</code> | env block. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainer.property.livenessProbe">livenessProbe</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe">ContainerAppJobTemplateContainerLivenessProbe</a>[]</code> | liveness_probe block. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainer.property.readinessProbe">readinessProbe</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe">ContainerAppJobTemplateContainerReadinessProbe</a>[]</code> | readiness_probe block. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainer.property.startupProbe">startupProbe</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe">ContainerAppJobTemplateContainerStartupProbe</a>[]</code> | startup_probe block. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainer.property.volumeMounts">volumeMounts</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMounts">ContainerAppJobTemplateContainerVolumeMounts</a>[]</code> | volume_mounts block. |
 
 ---
 
@@ -2294,7 +2294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly env: IResolvable | ContainerAppJobTemplateContainerEnv[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnv">ContainerAppJobTemplateContainerEnv</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnv">ContainerAppJobTemplateContainerEnv</a>[]
 
 env block.
 
@@ -2308,7 +2308,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly livenessProbe: IResolvable | ContainerAppJobTemplateContainerLivenessProbe[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe">ContainerAppJobTemplateContainerLivenessProbe</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe">ContainerAppJobTemplateContainerLivenessProbe</a>[]
 
 liveness_probe block.
 
@@ -2322,7 +2322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly readinessProbe: IResolvable | ContainerAppJobTemplateContainerReadinessProbe[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe">ContainerAppJobTemplateContainerReadinessProbe</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe">ContainerAppJobTemplateContainerReadinessProbe</a>[]
 
 readiness_probe block.
 
@@ -2336,7 +2336,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly startupProbe: IResolvable | ContainerAppJobTemplateContainerStartupProbe[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe">ContainerAppJobTemplateContainerStartupProbe</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe">ContainerAppJobTemplateContainerStartupProbe</a>[]
 
 startup_probe block.
 
@@ -2350,7 +2350,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly volumeMounts: IResolvable | ContainerAppJobTemplateContainerVolumeMounts[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMounts">ContainerAppJobTemplateContainerVolumeMounts</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMounts">ContainerAppJobTemplateContainerVolumeMounts</a>[]
 
 volume_mounts block.
 
@@ -2437,7 +2437,7 @@ const containerAppJobTemplateContainerLivenessProbe: containerAppJob.ContainerAp
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe.property.port">port</a></code> | <code>number</code> | The port number on which to connect. Possible values are between `1` and `65535`. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe.property.transport">transport</a></code> | <code>string</code> | Type of probe. Possible values are `TCP`, `HTTP`, and `HTTPS`. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe.property.failureCountThreshold">failureCountThreshold</a></code> | <code>number</code> | The number of consecutive failures required to consider this probe as failed. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe.property.header">header</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeader">ContainerAppJobTemplateContainerLivenessProbeHeader</a>[]</code> | header block. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe.property.header">header</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeader">ContainerAppJobTemplateContainerLivenessProbeHeader</a>[]</code> | header block. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe.property.host">host</a></code> | <code>string</code> | The probe hostname. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe.property.initialDelay">initialDelay</a></code> | <code>number</code> | The number of seconds elapsed after the container has started before the probe is initiated. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe.property.intervalSeconds">intervalSeconds</a></code> | <code>number</code> | How often, in seconds, the probe should run. Possible values are between `1` and `240`. Defaults to `10`. |
@@ -2496,7 +2496,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly header: IResolvable | ContainerAppJobTemplateContainerLivenessProbeHeader[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeader">ContainerAppJobTemplateContainerLivenessProbeHeader</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeader">ContainerAppJobTemplateContainerLivenessProbeHeader</a>[]
 
 header block.
 
@@ -2644,7 +2644,7 @@ const containerAppJobTemplateContainerReadinessProbe: containerAppJob.ContainerA
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe.property.port">port</a></code> | <code>number</code> | The port number on which to connect. Possible values are between `1` and `65535`. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe.property.transport">transport</a></code> | <code>string</code> | Type of probe. Possible values are `TCP`, `HTTP`, and `HTTPS`. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe.property.failureCountThreshold">failureCountThreshold</a></code> | <code>number</code> | The number of consecutive failures required to consider this probe as failed. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe.property.header">header</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeader">ContainerAppJobTemplateContainerReadinessProbeHeader</a>[]</code> | header block. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe.property.header">header</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeader">ContainerAppJobTemplateContainerReadinessProbeHeader</a>[]</code> | header block. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe.property.host">host</a></code> | <code>string</code> | The probe hostname. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe.property.initialDelay">initialDelay</a></code> | <code>number</code> | The number of seconds elapsed after the container has started before the probe is initiated. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe.property.intervalSeconds">intervalSeconds</a></code> | <code>number</code> | How often, in seconds, the probe should run. Possible values are between `1` and `240`. Defaults to `10`. |
@@ -2704,7 +2704,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly header: IResolvable | ContainerAppJobTemplateContainerReadinessProbeHeader[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeader">ContainerAppJobTemplateContainerReadinessProbeHeader</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeader">ContainerAppJobTemplateContainerReadinessProbeHeader</a>[]
 
 header block.
 
@@ -2866,7 +2866,7 @@ const containerAppJobTemplateContainerStartupProbe: containerAppJob.ContainerApp
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe.property.port">port</a></code> | <code>number</code> | The port number on which to connect. Possible values are between `1` and `65535`. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe.property.transport">transport</a></code> | <code>string</code> | Type of probe. Possible values are `TCP`, `HTTP`, and `HTTPS`. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe.property.failureCountThreshold">failureCountThreshold</a></code> | <code>number</code> | The number of consecutive failures required to consider this probe as failed. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe.property.header">header</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeader">ContainerAppJobTemplateContainerStartupProbeHeader</a>[]</code> | header block. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe.property.header">header</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeader">ContainerAppJobTemplateContainerStartupProbeHeader</a>[]</code> | header block. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe.property.host">host</a></code> | <code>string</code> | The probe hostname. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe.property.initialDelay">initialDelay</a></code> | <code>number</code> | The number of seconds elapsed after the container has started before the probe is initiated. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe.property.intervalSeconds">intervalSeconds</a></code> | <code>number</code> | How often, in seconds, the probe should run. Possible values are between `1` and `240`. Defaults to `10`. |
@@ -2925,7 +2925,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly header: IResolvable | ContainerAppJobTemplateContainerStartupProbeHeader[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeader">ContainerAppJobTemplateContainerStartupProbeHeader</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeader">ContainerAppJobTemplateContainerStartupProbeHeader</a>[]
 
 header block.
 
@@ -3137,9 +3137,9 @@ const containerAppJobTemplateInitContainer: containerAppJob.ContainerAppJobTempl
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainer.property.args">args</a></code> | <code>string[]</code> | A list of args to pass to the container. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainer.property.command">command</a></code> | <code>string[]</code> | A command to pass to the container to override the default. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainer.property.cpu">cpu</a></code> | <code>number</code> | The amount of vCPU to allocate to the container. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainer.property.env">env</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnv">ContainerAppJobTemplateInitContainerEnv</a>[]</code> | env block. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainer.property.env">env</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnv">ContainerAppJobTemplateInitContainerEnv</a>[]</code> | env block. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainer.property.memory">memory</a></code> | <code>string</code> | The amount of memory to allocate to the container. |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainer.property.volumeMounts">volumeMounts</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMounts">ContainerAppJobTemplateInitContainerVolumeMounts</a>[]</code> | volume_mounts block. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainer.property.volumeMounts">volumeMounts</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMounts">ContainerAppJobTemplateInitContainerVolumeMounts</a>[]</code> | volume_mounts block. |
 
 ---
 
@@ -3221,7 +3221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly env: IResolvable | ContainerAppJobTemplateInitContainerEnv[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnv">ContainerAppJobTemplateInitContainerEnv</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnv">ContainerAppJobTemplateInitContainerEnv</a>[]
 
 env block.
 
@@ -3249,7 +3249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly volumeMounts: IResolvable | ContainerAppJobTemplateInitContainerVolumeMounts[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMounts">ContainerAppJobTemplateInitContainerVolumeMounts</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMounts">ContainerAppJobTemplateInitContainerVolumeMounts</a>[]
 
 volume_mounts block.
 
@@ -3541,14 +3541,14 @@ new containerAppJob.ContainerAppJobEventTriggerConfigOutputReference(terraformRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3722,7 +3722,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3744,7 +3744,7 @@ public putScale(value: IResolvable | ContainerAppJobEventTriggerConfigScale[]): 
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigOutputReference.putScale.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScale">ContainerAppJobEventTriggerConfigScale</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScale">ContainerAppJobEventTriggerConfigScale</a>[]
 
 ---
 
@@ -3776,7 +3776,7 @@ public resetScale(): void
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigOutputReference.property.scale">scale</a></code> | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleList">ContainerAppJobEventTriggerConfigScaleList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigOutputReference.property.parallelismInput">parallelismInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigOutputReference.property.replicaCompletionCountInput">replicaCompletionCountInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigOutputReference.property.scaleInput">scaleInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScale">ContainerAppJobEventTriggerConfigScale</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigOutputReference.property.scaleInput">scaleInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScale">ContainerAppJobEventTriggerConfigScale</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigOutputReference.property.parallelism">parallelism</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigOutputReference.property.replicaCompletionCount">replicaCompletionCount</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfig">ContainerAppJobEventTriggerConfig</a></code> | *No description.* |
@@ -3843,7 +3843,7 @@ public readonly replicaCompletionCountInput: number;
 public readonly scaleInput: IResolvable | ContainerAppJobEventTriggerConfigScale[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScale">ContainerAppJobEventTriggerConfigScale</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScale">ContainerAppJobEventTriggerConfigScale</a>[]
 
 ---
 
@@ -3890,7 +3890,7 @@ new containerAppJob.ContainerAppJobEventTriggerConfigScaleList(terraformResource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3898,7 +3898,7 @@ new containerAppJob.ContainerAppJobEventTriggerConfigScaleList(terraformResource
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3964,7 +3964,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3999,7 +3999,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScale">ContainerAppJobEventTriggerConfigScale</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScale">ContainerAppJobEventTriggerConfigScale</a>[]</code> | *No description.* |
 
 ---
 
@@ -4033,7 +4033,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ContainerAppJobEventTriggerConfigScale[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScale">ContainerAppJobEventTriggerConfigScale</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScale">ContainerAppJobEventTriggerConfigScale</a>[]
 
 ---
 
@@ -4050,7 +4050,7 @@ new containerAppJob.ContainerAppJobEventTriggerConfigScaleOutputReference(terraf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -4059,7 +4059,7 @@ new containerAppJob.ContainerAppJobEventTriggerConfigScaleOutputReference(terraf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4250,7 +4250,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4272,7 +4272,7 @@ public putRules(value: IResolvable | ContainerAppJobEventTriggerConfigScaleRules
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleOutputReference.putRules.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRules">ContainerAppJobEventTriggerConfigScaleRules</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRules">ContainerAppJobEventTriggerConfigScaleRules</a>[]
 
 ---
 
@@ -4311,11 +4311,11 @@ public resetRules(): void
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleOutputReference.property.maxExecutionsInput">maxExecutionsInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleOutputReference.property.minExecutionsInput">minExecutionsInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleOutputReference.property.pollingIntervalInSecondsInput">pollingIntervalInSecondsInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleOutputReference.property.rulesInput">rulesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRules">ContainerAppJobEventTriggerConfigScaleRules</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleOutputReference.property.rulesInput">rulesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRules">ContainerAppJobEventTriggerConfigScaleRules</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleOutputReference.property.maxExecutions">maxExecutions</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleOutputReference.property.minExecutions">minExecutions</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleOutputReference.property.pollingIntervalInSeconds">pollingIntervalInSeconds</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScale">ContainerAppJobEventTriggerConfigScale</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScale">ContainerAppJobEventTriggerConfigScale</a></code> | *No description.* |
 
 ---
 
@@ -4389,7 +4389,7 @@ public readonly pollingIntervalInSecondsInput: number;
 public readonly rulesInput: IResolvable | ContainerAppJobEventTriggerConfigScaleRules[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRules">ContainerAppJobEventTriggerConfigScaleRules</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRules">ContainerAppJobEventTriggerConfigScaleRules</a>[]
 
 ---
 
@@ -4429,7 +4429,7 @@ public readonly pollingIntervalInSeconds: number;
 public readonly internalValue: IResolvable | ContainerAppJobEventTriggerConfigScale;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScale">ContainerAppJobEventTriggerConfigScale</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScale">ContainerAppJobEventTriggerConfigScale</a>
 
 ---
 
@@ -4446,7 +4446,7 @@ new containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthenticationLis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthenticationList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthenticationList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthenticationList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthenticationList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -4454,7 +4454,7 @@ new containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthenticationLis
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthenticationList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4520,7 +4520,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthenticationList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4555,7 +4555,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthenticationList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthenticationList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthenticationList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthentication">ContainerAppJobEventTriggerConfigScaleRulesAuthentication</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthenticationList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthentication">ContainerAppJobEventTriggerConfigScaleRulesAuthentication</a>[]</code> | *No description.* |
 
 ---
 
@@ -4589,7 +4589,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ContainerAppJobEventTriggerConfigScaleRulesAuthentication[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthentication">ContainerAppJobEventTriggerConfigScaleRulesAuthentication</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthentication">ContainerAppJobEventTriggerConfigScaleRulesAuthentication</a>[]
 
 ---
 
@@ -4606,7 +4606,7 @@ new containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthenticationOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthenticationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthenticationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthenticationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthenticationOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthenticationOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -4615,7 +4615,7 @@ new containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthenticationOut
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthenticationOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4801,7 +4801,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthenticationOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4826,7 +4826,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthenticationOutputReference.property.triggerParameterInput">triggerParameterInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthenticationOutputReference.property.secretName">secretName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthenticationOutputReference.property.triggerParameter">triggerParameter</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthenticationOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthentication">ContainerAppJobEventTriggerConfigScaleRulesAuthentication</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthenticationOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthentication">ContainerAppJobEventTriggerConfigScaleRulesAuthentication</a></code> | *No description.* |
 
 ---
 
@@ -4900,7 +4900,7 @@ public readonly triggerParameter: string;
 public readonly internalValue: IResolvable | ContainerAppJobEventTriggerConfigScaleRulesAuthentication;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthentication">ContainerAppJobEventTriggerConfigScaleRulesAuthentication</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthentication">ContainerAppJobEventTriggerConfigScaleRulesAuthentication</a>
 
 ---
 
@@ -4917,7 +4917,7 @@ new containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesList(terraformRes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -4925,7 +4925,7 @@ new containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesList(terraformRes
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4991,7 +4991,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5026,7 +5026,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRules">ContainerAppJobEventTriggerConfigScaleRules</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRules">ContainerAppJobEventTriggerConfigScaleRules</a>[]</code> | *No description.* |
 
 ---
 
@@ -5060,7 +5060,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ContainerAppJobEventTriggerConfigScaleRules[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRules">ContainerAppJobEventTriggerConfigScaleRules</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRules">ContainerAppJobEventTriggerConfigScaleRules</a>[]
 
 ---
 
@@ -5077,7 +5077,7 @@ new containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesOutputReference(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -5086,7 +5086,7 @@ new containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesOutputReference(t
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5274,7 +5274,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5296,7 +5296,7 @@ public putAuthentication(value: IResolvable | ContainerAppJobEventTriggerConfigS
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesOutputReference.putAuthentication.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthentication">ContainerAppJobEventTriggerConfigScaleRulesAuthentication</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthentication">ContainerAppJobEventTriggerConfigScaleRulesAuthentication</a>[]
 
 ---
 
@@ -5314,14 +5314,14 @@ public resetAuthentication(): void
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesOutputReference.property.authentication">authentication</a></code> | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthenticationList">ContainerAppJobEventTriggerConfigScaleRulesAuthenticationList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesOutputReference.property.authenticationInput">authenticationInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthentication">ContainerAppJobEventTriggerConfigScaleRulesAuthentication</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesOutputReference.property.authenticationInput">authenticationInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthentication">ContainerAppJobEventTriggerConfigScaleRulesAuthentication</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesOutputReference.property.customRuleTypeInput">customRuleTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesOutputReference.property.metadataInput">metadataInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesOutputReference.property.customRuleType">customRuleType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesOutputReference.property.metadata">metadata</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRules">ContainerAppJobEventTriggerConfigScaleRules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRules">ContainerAppJobEventTriggerConfigScaleRules</a></code> | *No description.* |
 
 ---
 
@@ -5365,7 +5365,7 @@ public readonly authentication: ContainerAppJobEventTriggerConfigScaleRulesAuthe
 public readonly authenticationInput: IResolvable | ContainerAppJobEventTriggerConfigScaleRulesAuthentication[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthentication">ContainerAppJobEventTriggerConfigScaleRulesAuthentication</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRulesAuthentication">ContainerAppJobEventTriggerConfigScaleRulesAuthentication</a>[]
 
 ---
 
@@ -5435,7 +5435,7 @@ public readonly name: string;
 public readonly internalValue: IResolvable | ContainerAppJobEventTriggerConfigScaleRules;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRules">ContainerAppJobEventTriggerConfigScaleRules</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobEventTriggerConfigScaleRules">ContainerAppJobEventTriggerConfigScaleRules</a>
 
 ---
 
@@ -5452,14 +5452,14 @@ new containerAppJob.ContainerAppJobIdentityOutputReference(terraformResource: II
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobIdentityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobIdentityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobIdentityOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobIdentityOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5630,7 +5630,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobIdentityOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5774,14 +5774,14 @@ new containerAppJob.ContainerAppJobManualTriggerConfigOutputReference(terraformR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobManualTriggerConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobManualTriggerConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobManualTriggerConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobManualTriggerConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5953,7 +5953,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobManualTriggerConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6081,7 +6081,7 @@ new containerAppJob.ContainerAppJobRegistryList(terraformResource: IInterpolatin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistryList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistryList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistryList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistryList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -6089,7 +6089,7 @@ new containerAppJob.ContainerAppJobRegistryList(terraformResource: IInterpolatin
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistryList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6155,7 +6155,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistryList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6190,7 +6190,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistryList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistryList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistryList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistry">ContainerAppJobRegistry</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistryList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistry">ContainerAppJobRegistry</a>[]</code> | *No description.* |
 
 ---
 
@@ -6224,7 +6224,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ContainerAppJobRegistry[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistry">ContainerAppJobRegistry</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistry">ContainerAppJobRegistry</a>[]
 
 ---
 
@@ -6241,7 +6241,7 @@ new containerAppJob.ContainerAppJobRegistryOutputReference(terraformResource: II
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistryOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistryOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistryOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -6250,7 +6250,7 @@ new containerAppJob.ContainerAppJobRegistryOutputReference(terraformResource: II
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistryOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6439,7 +6439,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistryOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6486,7 +6486,7 @@ public resetUsername(): void
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistryOutputReference.property.passwordSecretName">passwordSecretName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistryOutputReference.property.server">server</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistryOutputReference.property.username">username</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistryOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistry">ContainerAppJobRegistry</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistryOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistry">ContainerAppJobRegistry</a></code> | *No description.* |
 
 ---
 
@@ -6600,7 +6600,7 @@ public readonly username: string;
 public readonly internalValue: IResolvable | ContainerAppJobRegistry;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistry">ContainerAppJobRegistry</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobRegistry">ContainerAppJobRegistry</a>
 
 ---
 
@@ -6617,14 +6617,14 @@ new containerAppJob.ContainerAppJobScheduleTriggerConfigOutputReference(terrafor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobScheduleTriggerConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobScheduleTriggerConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobScheduleTriggerConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobScheduleTriggerConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6796,7 +6796,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobScheduleTriggerConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6946,7 +6946,7 @@ new containerAppJob.ContainerAppJobSecretList(terraformResource: IInterpolatingP
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecretList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecretList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecretList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecretList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -6954,7 +6954,7 @@ new containerAppJob.ContainerAppJobSecretList(terraformResource: IInterpolatingP
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecretList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7020,7 +7020,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecretList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7055,7 +7055,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecretList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecretList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecretList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecret">ContainerAppJobSecret</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecretList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecret">ContainerAppJobSecret</a>[]</code> | *No description.* |
 
 ---
 
@@ -7089,7 +7089,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ContainerAppJobSecret[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecret">ContainerAppJobSecret</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecret">ContainerAppJobSecret</a>[]
 
 ---
 
@@ -7106,7 +7106,7 @@ new containerAppJob.ContainerAppJobSecretOutputReference(terraformResource: IInt
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecretOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecretOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecretOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecretOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecretOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -7115,7 +7115,7 @@ new containerAppJob.ContainerAppJobSecretOutputReference(terraformResource: IInt
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecretOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7304,7 +7304,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecretOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7351,7 +7351,7 @@ public resetValue(): void
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecretOutputReference.property.keyVaultSecretId">keyVaultSecretId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecretOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecretOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecretOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecret">ContainerAppJobSecret</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecretOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecret">ContainerAppJobSecret</a></code> | *No description.* |
 
 ---
 
@@ -7465,7 +7465,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | ContainerAppJobSecret;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecret">ContainerAppJobSecret</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobSecret">ContainerAppJobSecret</a>
 
 ---
 
@@ -7482,7 +7482,7 @@ new containerAppJob.ContainerAppJobTemplateContainerEnvList(terraformResource: I
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnvList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnvList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnvList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnvList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7490,7 +7490,7 @@ new containerAppJob.ContainerAppJobTemplateContainerEnvList(terraformResource: I
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnvList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7556,7 +7556,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnvList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7591,7 +7591,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnvList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnvList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnvList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnv">ContainerAppJobTemplateContainerEnv</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnvList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnv">ContainerAppJobTemplateContainerEnv</a>[]</code> | *No description.* |
 
 ---
 
@@ -7625,7 +7625,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ContainerAppJobTemplateContainerEnv[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnv">ContainerAppJobTemplateContainerEnv</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnv">ContainerAppJobTemplateContainerEnv</a>[]
 
 ---
 
@@ -7642,7 +7642,7 @@ new containerAppJob.ContainerAppJobTemplateContainerEnvOutputReference(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnvOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnvOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnvOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnvOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnvOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -7651,7 +7651,7 @@ new containerAppJob.ContainerAppJobTemplateContainerEnvOutputReference(terraform
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnvOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7839,7 +7839,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnvOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7878,7 +7878,7 @@ public resetValue(): void
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnvOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnvOutputReference.property.secretName">secretName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnvOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnvOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnv">ContainerAppJobTemplateContainerEnv</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnvOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnv">ContainerAppJobTemplateContainerEnv</a></code> | *No description.* |
 
 ---
 
@@ -7972,7 +7972,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | ContainerAppJobTemplateContainerEnv;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnv">ContainerAppJobTemplateContainerEnv</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnv">ContainerAppJobTemplateContainerEnv</a>
 
 ---
 
@@ -7989,7 +7989,7 @@ new containerAppJob.ContainerAppJobTemplateContainerList(terraformResource: IInt
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7997,7 +7997,7 @@ new containerAppJob.ContainerAppJobTemplateContainerList(terraformResource: IInt
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8063,7 +8063,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8098,7 +8098,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainer">ContainerAppJobTemplateContainer</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainer">ContainerAppJobTemplateContainer</a>[]</code> | *No description.* |
 
 ---
 
@@ -8132,7 +8132,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ContainerAppJobTemplateContainer[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainer">ContainerAppJobTemplateContainer</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainer">ContainerAppJobTemplateContainer</a>[]
 
 ---
 
@@ -8149,7 +8149,7 @@ new containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeaderList(terr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeaderList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeaderList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeaderList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeaderList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -8157,7 +8157,7 @@ new containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeaderList(terr
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeaderList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8223,7 +8223,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeaderList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8258,7 +8258,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeaderList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeaderList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeaderList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeader">ContainerAppJobTemplateContainerLivenessProbeHeader</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeaderList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeader">ContainerAppJobTemplateContainerLivenessProbeHeader</a>[]</code> | *No description.* |
 
 ---
 
@@ -8292,7 +8292,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ContainerAppJobTemplateContainerLivenessProbeHeader[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeader">ContainerAppJobTemplateContainerLivenessProbeHeader</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeader">ContainerAppJobTemplateContainerLivenessProbeHeader</a>[]
 
 ---
 
@@ -8309,7 +8309,7 @@ new containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeaderOutputRef
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeaderOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeaderOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeaderOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeaderOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeaderOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -8318,7 +8318,7 @@ new containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeaderOutputRef
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeaderOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8504,7 +8504,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeaderOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8529,7 +8529,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeaderOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeaderOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeaderOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeaderOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeader">ContainerAppJobTemplateContainerLivenessProbeHeader</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeaderOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeader">ContainerAppJobTemplateContainerLivenessProbeHeader</a></code> | *No description.* |
 
 ---
 
@@ -8603,7 +8603,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | ContainerAppJobTemplateContainerLivenessProbeHeader;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeader">ContainerAppJobTemplateContainerLivenessProbeHeader</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeader">ContainerAppJobTemplateContainerLivenessProbeHeader</a>
 
 ---
 
@@ -8620,7 +8620,7 @@ new containerAppJob.ContainerAppJobTemplateContainerLivenessProbeList(terraformR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -8628,7 +8628,7 @@ new containerAppJob.ContainerAppJobTemplateContainerLivenessProbeList(terraformR
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8694,7 +8694,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8729,7 +8729,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe">ContainerAppJobTemplateContainerLivenessProbe</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe">ContainerAppJobTemplateContainerLivenessProbe</a>[]</code> | *No description.* |
 
 ---
 
@@ -8763,7 +8763,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ContainerAppJobTemplateContainerLivenessProbe[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe">ContainerAppJobTemplateContainerLivenessProbe</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe">ContainerAppJobTemplateContainerLivenessProbe</a>[]
 
 ---
 
@@ -8780,7 +8780,7 @@ new containerAppJob.ContainerAppJobTemplateContainerLivenessProbeOutputReference
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -8789,7 +8789,7 @@ new containerAppJob.ContainerAppJobTemplateContainerLivenessProbeOutputReference
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8983,7 +8983,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9005,7 +9005,7 @@ public putHeader(value: IResolvable | ContainerAppJobTemplateContainerLivenessPr
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeOutputReference.putHeader.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeader">ContainerAppJobTemplateContainerLivenessProbeHeader</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeader">ContainerAppJobTemplateContainerLivenessProbeHeader</a>[]
 
 ---
 
@@ -9061,7 +9061,7 @@ public resetTimeout(): void
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeOutputReference.property.header">header</a></code> | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeaderList">ContainerAppJobTemplateContainerLivenessProbeHeaderList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeOutputReference.property.terminationGracePeriodSeconds">terminationGracePeriodSeconds</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeOutputReference.property.failureCountThresholdInput">failureCountThresholdInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeOutputReference.property.headerInput">headerInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeader">ContainerAppJobTemplateContainerLivenessProbeHeader</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeOutputReference.property.headerInput">headerInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeader">ContainerAppJobTemplateContainerLivenessProbeHeader</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeOutputReference.property.hostInput">hostInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeOutputReference.property.initialDelayInput">initialDelayInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeOutputReference.property.intervalSecondsInput">intervalSecondsInput</a></code> | <code>number</code> | *No description.* |
@@ -9077,7 +9077,7 @@ public resetTimeout(): void
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeOutputReference.property.port">port</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeOutputReference.property.timeout">timeout</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeOutputReference.property.transport">transport</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe">ContainerAppJobTemplateContainerLivenessProbe</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe">ContainerAppJobTemplateContainerLivenessProbe</a></code> | *No description.* |
 
 ---
 
@@ -9141,7 +9141,7 @@ public readonly failureCountThresholdInput: number;
 public readonly headerInput: IResolvable | ContainerAppJobTemplateContainerLivenessProbeHeader[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeader">ContainerAppJobTemplateContainerLivenessProbeHeader</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbeHeader">ContainerAppJobTemplateContainerLivenessProbeHeader</a>[]
 
 ---
 
@@ -9301,7 +9301,7 @@ public readonly transport: string;
 public readonly internalValue: IResolvable | ContainerAppJobTemplateContainerLivenessProbe;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe">ContainerAppJobTemplateContainerLivenessProbe</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe">ContainerAppJobTemplateContainerLivenessProbe</a>
 
 ---
 
@@ -9318,7 +9318,7 @@ new containerAppJob.ContainerAppJobTemplateContainerOutputReference(terraformRes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -9327,7 +9327,7 @@ new containerAppJob.ContainerAppJobTemplateContainerOutputReference(terraformRes
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9525,7 +9525,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9547,7 +9547,7 @@ public putEnv(value: IResolvable | ContainerAppJobTemplateContainerEnv[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerOutputReference.putEnv.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnv">ContainerAppJobTemplateContainerEnv</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnv">ContainerAppJobTemplateContainerEnv</a>[]
 
 ---
 
@@ -9559,7 +9559,7 @@ public putLivenessProbe(value: IResolvable | ContainerAppJobTemplateContainerLiv
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerOutputReference.putLivenessProbe.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe">ContainerAppJobTemplateContainerLivenessProbe</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe">ContainerAppJobTemplateContainerLivenessProbe</a>[]
 
 ---
 
@@ -9571,7 +9571,7 @@ public putReadinessProbe(value: IResolvable | ContainerAppJobTemplateContainerRe
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerOutputReference.putReadinessProbe.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe">ContainerAppJobTemplateContainerReadinessProbe</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe">ContainerAppJobTemplateContainerReadinessProbe</a>[]
 
 ---
 
@@ -9583,7 +9583,7 @@ public putStartupProbe(value: IResolvable | ContainerAppJobTemplateContainerStar
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerOutputReference.putStartupProbe.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe">ContainerAppJobTemplateContainerStartupProbe</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe">ContainerAppJobTemplateContainerStartupProbe</a>[]
 
 ---
 
@@ -9595,7 +9595,7 @@ public putVolumeMounts(value: IResolvable | ContainerAppJobTemplateContainerVolu
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerOutputReference.putVolumeMounts.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMounts">ContainerAppJobTemplateContainerVolumeMounts</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMounts">ContainerAppJobTemplateContainerVolumeMounts</a>[]
 
 ---
 
@@ -9657,21 +9657,21 @@ public resetVolumeMounts(): void
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerOutputReference.property.argsInput">argsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerOutputReference.property.commandInput">commandInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerOutputReference.property.cpuInput">cpuInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerOutputReference.property.envInput">envInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnv">ContainerAppJobTemplateContainerEnv</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerOutputReference.property.envInput">envInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnv">ContainerAppJobTemplateContainerEnv</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerOutputReference.property.imageInput">imageInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerOutputReference.property.livenessProbeInput">livenessProbeInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe">ContainerAppJobTemplateContainerLivenessProbe</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerOutputReference.property.livenessProbeInput">livenessProbeInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe">ContainerAppJobTemplateContainerLivenessProbe</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerOutputReference.property.memoryInput">memoryInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerOutputReference.property.readinessProbeInput">readinessProbeInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe">ContainerAppJobTemplateContainerReadinessProbe</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerOutputReference.property.startupProbeInput">startupProbeInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe">ContainerAppJobTemplateContainerStartupProbe</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerOutputReference.property.volumeMountsInput">volumeMountsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMounts">ContainerAppJobTemplateContainerVolumeMounts</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerOutputReference.property.readinessProbeInput">readinessProbeInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe">ContainerAppJobTemplateContainerReadinessProbe</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerOutputReference.property.startupProbeInput">startupProbeInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe">ContainerAppJobTemplateContainerStartupProbe</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerOutputReference.property.volumeMountsInput">volumeMountsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMounts">ContainerAppJobTemplateContainerVolumeMounts</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerOutputReference.property.args">args</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerOutputReference.property.command">command</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerOutputReference.property.cpu">cpu</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerOutputReference.property.image">image</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerOutputReference.property.memory">memory</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainer">ContainerAppJobTemplateContainer</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainer">ContainerAppJobTemplateContainer</a></code> | *No description.* |
 
 ---
 
@@ -9795,7 +9795,7 @@ public readonly cpuInput: number;
 public readonly envInput: IResolvable | ContainerAppJobTemplateContainerEnv[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnv">ContainerAppJobTemplateContainerEnv</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerEnv">ContainerAppJobTemplateContainerEnv</a>[]
 
 ---
 
@@ -9815,7 +9815,7 @@ public readonly imageInput: string;
 public readonly livenessProbeInput: IResolvable | ContainerAppJobTemplateContainerLivenessProbe[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe">ContainerAppJobTemplateContainerLivenessProbe</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerLivenessProbe">ContainerAppJobTemplateContainerLivenessProbe</a>[]
 
 ---
 
@@ -9845,7 +9845,7 @@ public readonly nameInput: string;
 public readonly readinessProbeInput: IResolvable | ContainerAppJobTemplateContainerReadinessProbe[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe">ContainerAppJobTemplateContainerReadinessProbe</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe">ContainerAppJobTemplateContainerReadinessProbe</a>[]
 
 ---
 
@@ -9855,7 +9855,7 @@ public readonly readinessProbeInput: IResolvable | ContainerAppJobTemplateContai
 public readonly startupProbeInput: IResolvable | ContainerAppJobTemplateContainerStartupProbe[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe">ContainerAppJobTemplateContainerStartupProbe</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe">ContainerAppJobTemplateContainerStartupProbe</a>[]
 
 ---
 
@@ -9865,7 +9865,7 @@ public readonly startupProbeInput: IResolvable | ContainerAppJobTemplateContaine
 public readonly volumeMountsInput: IResolvable | ContainerAppJobTemplateContainerVolumeMounts[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMounts">ContainerAppJobTemplateContainerVolumeMounts</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMounts">ContainerAppJobTemplateContainerVolumeMounts</a>[]
 
 ---
 
@@ -9935,7 +9935,7 @@ public readonly name: string;
 public readonly internalValue: IResolvable | ContainerAppJobTemplateContainer;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainer">ContainerAppJobTemplateContainer</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainer">ContainerAppJobTemplateContainer</a>
 
 ---
 
@@ -9952,7 +9952,7 @@ new containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeaderList(ter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeaderList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeaderList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeaderList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeaderList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -9960,7 +9960,7 @@ new containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeaderList(ter
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeaderList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10026,7 +10026,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeaderList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10061,7 +10061,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeaderList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeaderList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeaderList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeader">ContainerAppJobTemplateContainerReadinessProbeHeader</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeaderList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeader">ContainerAppJobTemplateContainerReadinessProbeHeader</a>[]</code> | *No description.* |
 
 ---
 
@@ -10095,7 +10095,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ContainerAppJobTemplateContainerReadinessProbeHeader[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeader">ContainerAppJobTemplateContainerReadinessProbeHeader</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeader">ContainerAppJobTemplateContainerReadinessProbeHeader</a>[]
 
 ---
 
@@ -10112,7 +10112,7 @@ new containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeaderOutputRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeaderOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeaderOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeaderOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeaderOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeaderOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -10121,7 +10121,7 @@ new containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeaderOutputRe
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeaderOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10307,7 +10307,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeaderOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10332,7 +10332,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeaderOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeaderOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeaderOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeaderOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeader">ContainerAppJobTemplateContainerReadinessProbeHeader</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeaderOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeader">ContainerAppJobTemplateContainerReadinessProbeHeader</a></code> | *No description.* |
 
 ---
 
@@ -10406,7 +10406,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | ContainerAppJobTemplateContainerReadinessProbeHeader;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeader">ContainerAppJobTemplateContainerReadinessProbeHeader</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeader">ContainerAppJobTemplateContainerReadinessProbeHeader</a>
 
 ---
 
@@ -10423,7 +10423,7 @@ new containerAppJob.ContainerAppJobTemplateContainerReadinessProbeList(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -10431,7 +10431,7 @@ new containerAppJob.ContainerAppJobTemplateContainerReadinessProbeList(terraform
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10497,7 +10497,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10532,7 +10532,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe">ContainerAppJobTemplateContainerReadinessProbe</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe">ContainerAppJobTemplateContainerReadinessProbe</a>[]</code> | *No description.* |
 
 ---
 
@@ -10566,7 +10566,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ContainerAppJobTemplateContainerReadinessProbe[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe">ContainerAppJobTemplateContainerReadinessProbe</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe">ContainerAppJobTemplateContainerReadinessProbe</a>[]
 
 ---
 
@@ -10583,7 +10583,7 @@ new containerAppJob.ContainerAppJobTemplateContainerReadinessProbeOutputReferenc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -10592,7 +10592,7 @@ new containerAppJob.ContainerAppJobTemplateContainerReadinessProbeOutputReferenc
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10787,7 +10787,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10809,7 +10809,7 @@ public putHeader(value: IResolvable | ContainerAppJobTemplateContainerReadinessP
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeOutputReference.putHeader.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeader">ContainerAppJobTemplateContainerReadinessProbeHeader</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeader">ContainerAppJobTemplateContainerReadinessProbeHeader</a>[]
 
 ---
 
@@ -10870,7 +10870,7 @@ public resetTimeout(): void
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeOutputReference.property.header">header</a></code> | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeaderList">ContainerAppJobTemplateContainerReadinessProbeHeaderList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeOutputReference.property.failureCountThresholdInput">failureCountThresholdInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeOutputReference.property.headerInput">headerInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeader">ContainerAppJobTemplateContainerReadinessProbeHeader</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeOutputReference.property.headerInput">headerInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeader">ContainerAppJobTemplateContainerReadinessProbeHeader</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeOutputReference.property.hostInput">hostInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeOutputReference.property.initialDelayInput">initialDelayInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeOutputReference.property.intervalSecondsInput">intervalSecondsInput</a></code> | <code>number</code> | *No description.* |
@@ -10888,7 +10888,7 @@ public resetTimeout(): void
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeOutputReference.property.successCountThreshold">successCountThreshold</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeOutputReference.property.timeout">timeout</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeOutputReference.property.transport">transport</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe">ContainerAppJobTemplateContainerReadinessProbe</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe">ContainerAppJobTemplateContainerReadinessProbe</a></code> | *No description.* |
 
 ---
 
@@ -10942,7 +10942,7 @@ public readonly failureCountThresholdInput: number;
 public readonly headerInput: IResolvable | ContainerAppJobTemplateContainerReadinessProbeHeader[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeader">ContainerAppJobTemplateContainerReadinessProbeHeader</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbeHeader">ContainerAppJobTemplateContainerReadinessProbeHeader</a>[]
 
 ---
 
@@ -11122,7 +11122,7 @@ public readonly transport: string;
 public readonly internalValue: IResolvable | ContainerAppJobTemplateContainerReadinessProbe;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe">ContainerAppJobTemplateContainerReadinessProbe</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerReadinessProbe">ContainerAppJobTemplateContainerReadinessProbe</a>
 
 ---
 
@@ -11139,7 +11139,7 @@ new containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeaderList(terra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeaderList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeaderList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeaderList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeaderList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -11147,7 +11147,7 @@ new containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeaderList(terra
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeaderList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11213,7 +11213,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeaderList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11248,7 +11248,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeaderList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeaderList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeaderList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeader">ContainerAppJobTemplateContainerStartupProbeHeader</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeaderList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeader">ContainerAppJobTemplateContainerStartupProbeHeader</a>[]</code> | *No description.* |
 
 ---
 
@@ -11282,7 +11282,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ContainerAppJobTemplateContainerStartupProbeHeader[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeader">ContainerAppJobTemplateContainerStartupProbeHeader</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeader">ContainerAppJobTemplateContainerStartupProbeHeader</a>[]
 
 ---
 
@@ -11299,7 +11299,7 @@ new containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeaderOutputRefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeaderOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeaderOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeaderOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeaderOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeaderOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -11308,7 +11308,7 @@ new containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeaderOutputRefe
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeaderOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11494,7 +11494,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeaderOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11519,7 +11519,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeaderOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeaderOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeaderOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeaderOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeader">ContainerAppJobTemplateContainerStartupProbeHeader</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeaderOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeader">ContainerAppJobTemplateContainerStartupProbeHeader</a></code> | *No description.* |
 
 ---
 
@@ -11593,7 +11593,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | ContainerAppJobTemplateContainerStartupProbeHeader;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeader">ContainerAppJobTemplateContainerStartupProbeHeader</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeader">ContainerAppJobTemplateContainerStartupProbeHeader</a>
 
 ---
 
@@ -11610,7 +11610,7 @@ new containerAppJob.ContainerAppJobTemplateContainerStartupProbeList(terraformRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -11618,7 +11618,7 @@ new containerAppJob.ContainerAppJobTemplateContainerStartupProbeList(terraformRe
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11684,7 +11684,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11719,7 +11719,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe">ContainerAppJobTemplateContainerStartupProbe</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe">ContainerAppJobTemplateContainerStartupProbe</a>[]</code> | *No description.* |
 
 ---
 
@@ -11753,7 +11753,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ContainerAppJobTemplateContainerStartupProbe[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe">ContainerAppJobTemplateContainerStartupProbe</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe">ContainerAppJobTemplateContainerStartupProbe</a>[]
 
 ---
 
@@ -11770,7 +11770,7 @@ new containerAppJob.ContainerAppJobTemplateContainerStartupProbeOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -11779,7 +11779,7 @@ new containerAppJob.ContainerAppJobTemplateContainerStartupProbeOutputReference(
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11973,7 +11973,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11995,7 +11995,7 @@ public putHeader(value: IResolvable | ContainerAppJobTemplateContainerStartupPro
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeOutputReference.putHeader.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeader">ContainerAppJobTemplateContainerStartupProbeHeader</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeader">ContainerAppJobTemplateContainerStartupProbeHeader</a>[]
 
 ---
 
@@ -12051,7 +12051,7 @@ public resetTimeout(): void
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeOutputReference.property.header">header</a></code> | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeaderList">ContainerAppJobTemplateContainerStartupProbeHeaderList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeOutputReference.property.terminationGracePeriodSeconds">terminationGracePeriodSeconds</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeOutputReference.property.failureCountThresholdInput">failureCountThresholdInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeOutputReference.property.headerInput">headerInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeader">ContainerAppJobTemplateContainerStartupProbeHeader</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeOutputReference.property.headerInput">headerInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeader">ContainerAppJobTemplateContainerStartupProbeHeader</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeOutputReference.property.hostInput">hostInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeOutputReference.property.initialDelayInput">initialDelayInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeOutputReference.property.intervalSecondsInput">intervalSecondsInput</a></code> | <code>number</code> | *No description.* |
@@ -12067,7 +12067,7 @@ public resetTimeout(): void
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeOutputReference.property.port">port</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeOutputReference.property.timeout">timeout</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeOutputReference.property.transport">transport</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe">ContainerAppJobTemplateContainerStartupProbe</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe">ContainerAppJobTemplateContainerStartupProbe</a></code> | *No description.* |
 
 ---
 
@@ -12131,7 +12131,7 @@ public readonly failureCountThresholdInput: number;
 public readonly headerInput: IResolvable | ContainerAppJobTemplateContainerStartupProbeHeader[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeader">ContainerAppJobTemplateContainerStartupProbeHeader</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbeHeader">ContainerAppJobTemplateContainerStartupProbeHeader</a>[]
 
 ---
 
@@ -12291,7 +12291,7 @@ public readonly transport: string;
 public readonly internalValue: IResolvable | ContainerAppJobTemplateContainerStartupProbe;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe">ContainerAppJobTemplateContainerStartupProbe</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerStartupProbe">ContainerAppJobTemplateContainerStartupProbe</a>
 
 ---
 
@@ -12308,7 +12308,7 @@ new containerAppJob.ContainerAppJobTemplateContainerVolumeMountsList(terraformRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMountsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMountsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMountsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMountsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -12316,7 +12316,7 @@ new containerAppJob.ContainerAppJobTemplateContainerVolumeMountsList(terraformRe
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMountsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12382,7 +12382,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMountsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12417,7 +12417,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMountsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMountsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMountsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMounts">ContainerAppJobTemplateContainerVolumeMounts</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMountsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMounts">ContainerAppJobTemplateContainerVolumeMounts</a>[]</code> | *No description.* |
 
 ---
 
@@ -12451,7 +12451,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ContainerAppJobTemplateContainerVolumeMounts[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMounts">ContainerAppJobTemplateContainerVolumeMounts</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMounts">ContainerAppJobTemplateContainerVolumeMounts</a>[]
 
 ---
 
@@ -12468,7 +12468,7 @@ new containerAppJob.ContainerAppJobTemplateContainerVolumeMountsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMountsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMountsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMountsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMountsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMountsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -12477,7 +12477,7 @@ new containerAppJob.ContainerAppJobTemplateContainerVolumeMountsOutputReference(
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMountsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12664,7 +12664,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMountsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12697,7 +12697,7 @@ public resetSubPath(): void
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMountsOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMountsOutputReference.property.path">path</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMountsOutputReference.property.subPath">subPath</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMountsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMounts">ContainerAppJobTemplateContainerVolumeMounts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMountsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMounts">ContainerAppJobTemplateContainerVolumeMounts</a></code> | *No description.* |
 
 ---
 
@@ -12791,7 +12791,7 @@ public readonly subPath: string;
 public readonly internalValue: IResolvable | ContainerAppJobTemplateContainerVolumeMounts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMounts">ContainerAppJobTemplateContainerVolumeMounts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerVolumeMounts">ContainerAppJobTemplateContainerVolumeMounts</a>
 
 ---
 
@@ -12808,7 +12808,7 @@ new containerAppJob.ContainerAppJobTemplateInitContainerEnvList(terraformResourc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnvList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnvList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnvList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnvList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -12816,7 +12816,7 @@ new containerAppJob.ContainerAppJobTemplateInitContainerEnvList(terraformResourc
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnvList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12882,7 +12882,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnvList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12917,7 +12917,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnvList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnvList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnvList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnv">ContainerAppJobTemplateInitContainerEnv</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnvList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnv">ContainerAppJobTemplateInitContainerEnv</a>[]</code> | *No description.* |
 
 ---
 
@@ -12951,7 +12951,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ContainerAppJobTemplateInitContainerEnv[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnv">ContainerAppJobTemplateInitContainerEnv</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnv">ContainerAppJobTemplateInitContainerEnv</a>[]
 
 ---
 
@@ -12968,7 +12968,7 @@ new containerAppJob.ContainerAppJobTemplateInitContainerEnvOutputReference(terra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnvOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnvOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnvOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnvOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnvOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -12977,7 +12977,7 @@ new containerAppJob.ContainerAppJobTemplateInitContainerEnvOutputReference(terra
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnvOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13165,7 +13165,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnvOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13204,7 +13204,7 @@ public resetValue(): void
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnvOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnvOutputReference.property.secretName">secretName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnvOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnvOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnv">ContainerAppJobTemplateInitContainerEnv</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnvOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnv">ContainerAppJobTemplateInitContainerEnv</a></code> | *No description.* |
 
 ---
 
@@ -13298,7 +13298,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | ContainerAppJobTemplateInitContainerEnv;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnv">ContainerAppJobTemplateInitContainerEnv</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnv">ContainerAppJobTemplateInitContainerEnv</a>
 
 ---
 
@@ -13315,7 +13315,7 @@ new containerAppJob.ContainerAppJobTemplateInitContainerList(terraformResource: 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -13323,7 +13323,7 @@ new containerAppJob.ContainerAppJobTemplateInitContainerList(terraformResource: 
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13389,7 +13389,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13424,7 +13424,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainer">ContainerAppJobTemplateInitContainer</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainer">ContainerAppJobTemplateInitContainer</a>[]</code> | *No description.* |
 
 ---
 
@@ -13458,7 +13458,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ContainerAppJobTemplateInitContainer[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainer">ContainerAppJobTemplateInitContainer</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainer">ContainerAppJobTemplateInitContainer</a>[]
 
 ---
 
@@ -13475,7 +13475,7 @@ new containerAppJob.ContainerAppJobTemplateInitContainerOutputReference(terrafor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -13484,7 +13484,7 @@ new containerAppJob.ContainerAppJobTemplateInitContainerOutputReference(terrafor
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13678,7 +13678,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13700,7 +13700,7 @@ public putEnv(value: IResolvable | ContainerAppJobTemplateInitContainerEnv[]): v
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerOutputReference.putEnv.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnv">ContainerAppJobTemplateInitContainerEnv</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnv">ContainerAppJobTemplateInitContainerEnv</a>[]
 
 ---
 
@@ -13712,7 +13712,7 @@ public putVolumeMounts(value: IResolvable | ContainerAppJobTemplateInitContainer
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerOutputReference.putVolumeMounts.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMounts">ContainerAppJobTemplateInitContainerVolumeMounts</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMounts">ContainerAppJobTemplateInitContainerVolumeMounts</a>[]
 
 ---
 
@@ -13765,18 +13765,18 @@ public resetVolumeMounts(): void
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerOutputReference.property.argsInput">argsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerOutputReference.property.commandInput">commandInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerOutputReference.property.cpuInput">cpuInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerOutputReference.property.envInput">envInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnv">ContainerAppJobTemplateInitContainerEnv</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerOutputReference.property.envInput">envInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnv">ContainerAppJobTemplateInitContainerEnv</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerOutputReference.property.imageInput">imageInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerOutputReference.property.memoryInput">memoryInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerOutputReference.property.volumeMountsInput">volumeMountsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMounts">ContainerAppJobTemplateInitContainerVolumeMounts</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerOutputReference.property.volumeMountsInput">volumeMountsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMounts">ContainerAppJobTemplateInitContainerVolumeMounts</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerOutputReference.property.args">args</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerOutputReference.property.command">command</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerOutputReference.property.cpu">cpu</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerOutputReference.property.image">image</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerOutputReference.property.memory">memory</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainer">ContainerAppJobTemplateInitContainer</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainer">ContainerAppJobTemplateInitContainer</a></code> | *No description.* |
 
 ---
 
@@ -13870,7 +13870,7 @@ public readonly cpuInput: number;
 public readonly envInput: IResolvable | ContainerAppJobTemplateInitContainerEnv[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnv">ContainerAppJobTemplateInitContainerEnv</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerEnv">ContainerAppJobTemplateInitContainerEnv</a>[]
 
 ---
 
@@ -13910,7 +13910,7 @@ public readonly nameInput: string;
 public readonly volumeMountsInput: IResolvable | ContainerAppJobTemplateInitContainerVolumeMounts[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMounts">ContainerAppJobTemplateInitContainerVolumeMounts</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMounts">ContainerAppJobTemplateInitContainerVolumeMounts</a>[]
 
 ---
 
@@ -13980,7 +13980,7 @@ public readonly name: string;
 public readonly internalValue: IResolvable | ContainerAppJobTemplateInitContainer;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainer">ContainerAppJobTemplateInitContainer</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainer">ContainerAppJobTemplateInitContainer</a>
 
 ---
 
@@ -13997,7 +13997,7 @@ new containerAppJob.ContainerAppJobTemplateInitContainerVolumeMountsList(terrafo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMountsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMountsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMountsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMountsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -14005,7 +14005,7 @@ new containerAppJob.ContainerAppJobTemplateInitContainerVolumeMountsList(terrafo
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMountsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14071,7 +14071,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMountsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14106,7 +14106,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMountsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMountsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMountsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMounts">ContainerAppJobTemplateInitContainerVolumeMounts</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMountsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMounts">ContainerAppJobTemplateInitContainerVolumeMounts</a>[]</code> | *No description.* |
 
 ---
 
@@ -14140,7 +14140,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ContainerAppJobTemplateInitContainerVolumeMounts[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMounts">ContainerAppJobTemplateInitContainerVolumeMounts</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMounts">ContainerAppJobTemplateInitContainerVolumeMounts</a>[]
 
 ---
 
@@ -14157,7 +14157,7 @@ new containerAppJob.ContainerAppJobTemplateInitContainerVolumeMountsOutputRefere
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMountsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMountsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMountsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMountsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMountsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -14166,7 +14166,7 @@ new containerAppJob.ContainerAppJobTemplateInitContainerVolumeMountsOutputRefere
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMountsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14353,7 +14353,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMountsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14386,7 +14386,7 @@ public resetSubPath(): void
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMountsOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMountsOutputReference.property.path">path</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMountsOutputReference.property.subPath">subPath</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMountsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMounts">ContainerAppJobTemplateInitContainerVolumeMounts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMountsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMounts">ContainerAppJobTemplateInitContainerVolumeMounts</a></code> | *No description.* |
 
 ---
 
@@ -14480,7 +14480,7 @@ public readonly subPath: string;
 public readonly internalValue: IResolvable | ContainerAppJobTemplateInitContainerVolumeMounts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMounts">ContainerAppJobTemplateInitContainerVolumeMounts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerVolumeMounts">ContainerAppJobTemplateInitContainerVolumeMounts</a>
 
 ---
 
@@ -14497,14 +14497,14 @@ new containerAppJob.ContainerAppJobTemplateOutputReference(terraformResource: II
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14679,7 +14679,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14701,7 +14701,7 @@ public putContainer(value: IResolvable | ContainerAppJobTemplateContainer[]): vo
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateOutputReference.putContainer.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainer">ContainerAppJobTemplateContainer</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainer">ContainerAppJobTemplateContainer</a>[]
 
 ---
 
@@ -14713,7 +14713,7 @@ public putInitContainer(value: IResolvable | ContainerAppJobTemplateInitContaine
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateOutputReference.putInitContainer.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainer">ContainerAppJobTemplateInitContainer</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainer">ContainerAppJobTemplateInitContainer</a>[]
 
 ---
 
@@ -14725,7 +14725,7 @@ public putVolume(value: IResolvable | ContainerAppJobTemplateVolume[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateOutputReference.putVolume.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolume">ContainerAppJobTemplateVolume</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolume">ContainerAppJobTemplateVolume</a>[]
 
 ---
 
@@ -14751,9 +14751,9 @@ public resetVolume(): void
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateOutputReference.property.container">container</a></code> | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainerList">ContainerAppJobTemplateContainerList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateOutputReference.property.initContainer">initContainer</a></code> | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainerList">ContainerAppJobTemplateInitContainerList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateOutputReference.property.volume">volume</a></code> | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolumeList">ContainerAppJobTemplateVolumeList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateOutputReference.property.containerInput">containerInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainer">ContainerAppJobTemplateContainer</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateOutputReference.property.initContainerInput">initContainerInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainer">ContainerAppJobTemplateInitContainer</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateOutputReference.property.volumeInput">volumeInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolume">ContainerAppJobTemplateVolume</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateOutputReference.property.containerInput">containerInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainer">ContainerAppJobTemplateContainer</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateOutputReference.property.initContainerInput">initContainerInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainer">ContainerAppJobTemplateInitContainer</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateOutputReference.property.volumeInput">volumeInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolume">ContainerAppJobTemplateVolume</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplate">ContainerAppJobTemplate</a></code> | *No description.* |
 
 ---
@@ -14818,7 +14818,7 @@ public readonly volume: ContainerAppJobTemplateVolumeList;
 public readonly containerInput: IResolvable | ContainerAppJobTemplateContainer[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainer">ContainerAppJobTemplateContainer</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateContainer">ContainerAppJobTemplateContainer</a>[]
 
 ---
 
@@ -14828,7 +14828,7 @@ public readonly containerInput: IResolvable | ContainerAppJobTemplateContainer[]
 public readonly initContainerInput: IResolvable | ContainerAppJobTemplateInitContainer[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainer">ContainerAppJobTemplateInitContainer</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateInitContainer">ContainerAppJobTemplateInitContainer</a>[]
 
 ---
 
@@ -14838,7 +14838,7 @@ public readonly initContainerInput: IResolvable | ContainerAppJobTemplateInitCon
 public readonly volumeInput: IResolvable | ContainerAppJobTemplateVolume[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolume">ContainerAppJobTemplateVolume</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolume">ContainerAppJobTemplateVolume</a>[]
 
 ---
 
@@ -14865,7 +14865,7 @@ new containerAppJob.ContainerAppJobTemplateVolumeList(terraformResource: IInterp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolumeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolumeList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolumeList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolumeList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -14873,7 +14873,7 @@ new containerAppJob.ContainerAppJobTemplateVolumeList(terraformResource: IInterp
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolumeList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14939,7 +14939,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolumeList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14974,7 +14974,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolumeList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolumeList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolumeList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolume">ContainerAppJobTemplateVolume</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolumeList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolume">ContainerAppJobTemplateVolume</a>[]</code> | *No description.* |
 
 ---
 
@@ -15008,7 +15008,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ContainerAppJobTemplateVolume[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolume">ContainerAppJobTemplateVolume</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolume">ContainerAppJobTemplateVolume</a>[]
 
 ---
 
@@ -15025,7 +15025,7 @@ new containerAppJob.ContainerAppJobTemplateVolumeOutputReference(terraformResour
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolumeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolumeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolumeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolumeOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolumeOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -15034,7 +15034,7 @@ new containerAppJob.ContainerAppJobTemplateVolumeOutputReference(terraformResour
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolumeOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15223,7 +15223,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolumeOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15270,7 +15270,7 @@ public resetStorageType(): void
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolumeOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolumeOutputReference.property.storageName">storageName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolumeOutputReference.property.storageType">storageType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolumeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolume">ContainerAppJobTemplateVolume</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolumeOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolume">ContainerAppJobTemplateVolume</a></code> | *No description.* |
 
 ---
 
@@ -15384,7 +15384,7 @@ public readonly storageType: string;
 public readonly internalValue: IResolvable | ContainerAppJobTemplateVolume;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolume">ContainerAppJobTemplateVolume</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTemplateVolume">ContainerAppJobTemplateVolume</a>
 
 ---
 
@@ -15401,14 +15401,14 @@ new containerAppJob.ContainerAppJobTimeoutsOutputReference(terraformResource: II
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15582,7 +15582,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15635,7 +15635,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTimeouts">ContainerAppJobTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTimeouts">ContainerAppJobTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -15749,7 +15749,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | ContainerAppJobTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTimeouts">ContainerAppJobTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.containerAppJob.ContainerAppJobTimeouts">ContainerAppJobTimeouts</a>
 
 ---
 

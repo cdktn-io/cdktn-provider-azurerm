@@ -65,13 +65,13 @@ windowsFunctionApp.WindowsFunctionApp(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#location WindowsFunctionApp#location}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.name">name</a></code> | <code>str</code> | Specifies the name of the Function App. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#resource_group_name WindowsFunctionApp#resource_group_name}. |
@@ -81,33 +81,33 @@ windowsFunctionApp.WindowsFunctionApp(
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.authSettings">auth_settings</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettings">WindowsFunctionAppAuthSettings</a></code> | auth_settings block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.authSettingsV2">auth_settings_v2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2">WindowsFunctionAppAuthSettingsV2</a></code> | auth_settings_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.backup">backup</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackup">WindowsFunctionAppBackup</a></code> | backup block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.builtinLoggingEnabled">builtin_logging_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Should built in logging be enabled. Configures `AzureWebJobsDashboard` app setting based on the configured storage setting. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.clientCertificateEnabled">client_certificate_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Should the function app use Client Certificates. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.builtinLoggingEnabled">builtin_logging_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should built in logging be enabled. Configures `AzureWebJobsDashboard` app setting based on the configured storage setting. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.clientCertificateEnabled">client_certificate_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the function app use Client Certificates. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.clientCertificateExclusionPaths">client_certificate_exclusion_paths</a></code> | <code>str</code> | Paths to exclude when using client certificates, separated by ; |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.clientCertificateMode">client_certificate_mode</a></code> | <code>str</code> | The mode of the Function App's client certificates requirement for incoming requests. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.connectionString">connection_string</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionString">WindowsFunctionAppConnectionString</a>]</code> | connection_string block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.contentShareForceDisabled">content_share_force_disabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Force disable the content share settings. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.connectionString">connection_string</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionString">WindowsFunctionAppConnectionString</a>]</code> | connection_string block. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.contentShareForceDisabled">content_share_force_disabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Force disable the content share settings. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.dailyMemoryTimeQuota">daily_memory_time_quota</a></code> | <code>typing.Union[int, float]</code> | The amount of memory in gigabyte-seconds that your application is allowed to consume per day. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Is the Windows Function App enabled. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.ftpPublishBasicAuthenticationEnabled">ftp_publish_basic_authentication_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#ftp_publish_basic_authentication_enabled WindowsFunctionApp#ftp_publish_basic_authentication_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Is the Windows Function App enabled. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.ftpPublishBasicAuthenticationEnabled">ftp_publish_basic_authentication_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#ftp_publish_basic_authentication_enabled WindowsFunctionApp#ftp_publish_basic_authentication_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.functionsExtensionVersion">functions_extension_version</a></code> | <code>str</code> | The runtime version associated with the Function App. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.httpsOnly">https_only</a></code> | <code>bool \| cdktf.IResolvable</code> | Can the Function App only be accessed via HTTPS? |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.httpsOnly">https_only</a></code> | <code>bool \| cdktn.IResolvable</code> | Can the Function App only be accessed via HTTPS? |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#id WindowsFunctionApp#id}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppIdentity">WindowsFunctionAppIdentity</a></code> | identity block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.keyVaultReferenceIdentityId">key_vault_reference_identity_id</a></code> | <code>str</code> | The User Assigned Identity to use for Key Vault access. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.publicNetworkAccessEnabled">public_network_access_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#public_network_access_enabled WindowsFunctionApp#public_network_access_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.publicNetworkAccessEnabled">public_network_access_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#public_network_access_enabled WindowsFunctionApp#public_network_access_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.stickySettings">sticky_settings</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStickySettings">WindowsFunctionAppStickySettings</a></code> | sticky_settings block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.storageAccount">storage_account</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccount">WindowsFunctionAppStorageAccount</a>]</code> | storage_account block. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.storageAccount">storage_account</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccount">WindowsFunctionAppStorageAccount</a>]</code> | storage_account block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.storageAccountAccessKey">storage_account_access_key</a></code> | <code>str</code> | The access key which will be used to access the storage account for the Function App. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.storageAccountName">storage_account_name</a></code> | <code>str</code> | The backend storage account name which will be used by this Function App. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.storageKeyVaultSecretId">storage_key_vault_secret_id</a></code> | <code>str</code> | The Key Vault Secret ID, including version, that contains the Connection String to connect to the storage account for this Function App. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.storageUsesManagedIdentity">storage_uses_managed_identity</a></code> | <code>bool \| cdktf.IResolvable</code> | Should the Function App use its Managed Identity to access storage? |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.storageUsesManagedIdentity">storage_uses_managed_identity</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the Function App use its Managed Identity to access storage? |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#tags WindowsFunctionApp#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppTimeouts">WindowsFunctionAppTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.virtualNetworkBackupRestoreEnabled">virtual_network_backup_restore_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#virtual_network_backup_restore_enabled WindowsFunctionApp#virtual_network_backup_restore_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.virtualNetworkBackupRestoreEnabled">virtual_network_backup_restore_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#virtual_network_backup_restore_enabled WindowsFunctionApp#virtual_network_backup_restore_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.virtualNetworkSubnetId">virtual_network_subnet_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#virtual_network_subnet_id WindowsFunctionApp#virtual_network_subnet_id}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.vnetImagePullEnabled">vnet_image_pull_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Is container image pull over virtual network enabled? Defaults to `false`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.webdeployPublishBasicAuthenticationEnabled">webdeploy_publish_basic_authentication_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#webdeploy_publish_basic_authentication_enabled WindowsFunctionApp#webdeploy_publish_basic_authentication_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.vnetImagePullEnabled">vnet_image_pull_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Is container image pull over virtual network enabled? Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.webdeployPublishBasicAuthenticationEnabled">webdeploy_publish_basic_authentication_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#webdeploy_publish_basic_authentication_enabled WindowsFunctionApp#webdeploy_publish_basic_authentication_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.zipDeployFile">zip_deploy_file</a></code> | <code>str</code> | The local path and filename of the Zip packaged application to deploy to this Windows Function App. |
 
 ---
@@ -132,43 +132,43 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -260,7 +260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `builtin_logging_enabled`<sup>Optional</sup> <a name="builtin_logging_enabled" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.builtinLoggingEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should built in logging be enabled. Configures `AzureWebJobsDashboard` app setting based on the configured storage setting.
 
@@ -270,7 +270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `client_certificate_enabled`<sup>Optional</sup> <a name="client_certificate_enabled" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.clientCertificateEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the function app use Client Certificates.
 
@@ -302,7 +302,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `connection_string`<sup>Optional</sup> <a name="connection_string" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.connectionString"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionString">WindowsFunctionAppConnectionString</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionString">WindowsFunctionAppConnectionString</a>]
 
 connection_string block.
 
@@ -312,7 +312,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `content_share_force_disabled`<sup>Optional</sup> <a name="content_share_force_disabled" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.contentShareForceDisabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Force disable the content share settings.
 
@@ -334,7 +334,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.enabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Is the Windows Function App enabled.
 
@@ -344,7 +344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `ftp_publish_basic_authentication_enabled`<sup>Optional</sup> <a name="ftp_publish_basic_authentication_enabled" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.ftpPublishBasicAuthenticationEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#ftp_publish_basic_authentication_enabled WindowsFunctionApp#ftp_publish_basic_authentication_enabled}.
 
@@ -362,7 +362,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `https_only`<sup>Optional</sup> <a name="https_only" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.httpsOnly"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Can the Function App only be accessed via HTTPS?
 
@@ -403,7 +403,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `public_network_access_enabled`<sup>Optional</sup> <a name="public_network_access_enabled" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.publicNetworkAccessEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#public_network_access_enabled WindowsFunctionApp#public_network_access_enabled}.
 
@@ -421,7 +421,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `storage_account`<sup>Optional</sup> <a name="storage_account" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.storageAccount"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccount">WindowsFunctionAppStorageAccount</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccount">WindowsFunctionAppStorageAccount</a>]
 
 storage_account block.
 
@@ -461,7 +461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `storage_uses_managed_identity`<sup>Optional</sup> <a name="storage_uses_managed_identity" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.storageUsesManagedIdentity"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the Function App use its Managed Identity to access storage?
 
@@ -489,7 +489,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `virtual_network_backup_restore_enabled`<sup>Optional</sup> <a name="virtual_network_backup_restore_enabled" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.virtualNetworkBackupRestoreEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#virtual_network_backup_restore_enabled WindowsFunctionApp#virtual_network_backup_restore_enabled}.
 
@@ -505,7 +505,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `vnet_image_pull_enabled`<sup>Optional</sup> <a name="vnet_image_pull_enabled" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.vnetImagePullEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Is container image pull over virtual network enabled? Defaults to `false`.
 
@@ -515,7 +515,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `webdeploy_publish_basic_authentication_enabled`<sup>Optional</sup> <a name="webdeploy_publish_basic_authentication_enabled" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.Initializer.parameter.webdeployPublishBasicAuthenticationEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#webdeploy_publish_basic_authentication_enabled WindowsFunctionApp#webdeploy_publish_basic_authentication_enabled}.
 
@@ -846,7 +846,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -953,7 +953,7 @@ def put_auth_settings(
 
 ###### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.putAuthSettings.parameter.enabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the Authentication / Authorization feature be enabled?
 
@@ -1077,7 +1077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `token_store_enabled`<sup>Optional</sup> <a name="token_store_enabled" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.putAuthSettings.parameter.tokenStoreEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the Windows Web App durably store platform-specific security tokens that are obtained during login flows? Defaults to `false`.
 
@@ -1166,7 +1166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `auth_enabled`<sup>Optional</sup> <a name="auth_enabled" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.putAuthSettingsV2.parameter.authEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the AuthV2 Settings be enabled. Defaults to `false`.
 
@@ -1196,7 +1196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `custom_oidc_v2`<sup>Optional</sup> <a name="custom_oidc_v2" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.putAuthSettingsV2.parameter.customOidcV2"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2">WindowsFunctionAppAuthSettingsV2CustomOidcV2</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2">WindowsFunctionAppAuthSettingsV2CustomOidcV2</a>]
 
 custom_oidc_v2 block.
 
@@ -1310,7 +1310,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `require_authentication`<sup>Optional</sup> <a name="require_authentication" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.putAuthSettingsV2.parameter.requireAuthentication"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the authentication flow be used for all requests.
 
@@ -1320,7 +1320,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `require_https`<sup>Optional</sup> <a name="require_https" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.putAuthSettingsV2.parameter.requireHttps"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should HTTPS be required on connections? Defaults to true.
 
@@ -1403,7 +1403,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.putBackup.parameter.enabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should this backup job be enabled?
 
@@ -1421,7 +1421,7 @@ def put_connection_string(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.putConnectionString.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionString">WindowsFunctionAppConnectionString</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionString">WindowsFunctionAppConnectionString</a>]
 
 ---
 
@@ -1492,7 +1492,7 @@ def put_site_config(
 
 ###### `always_on`<sup>Optional</sup> <a name="always_on" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.putSiteConfig.parameter.alwaysOn"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If this Windows Web App is Always On enabled. Defaults to `false`.
 
@@ -1648,7 +1648,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `http2_enabled`<sup>Optional</sup> <a name="http2_enabled" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.putSiteConfig.parameter.http2Enabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Specifies if the http2 protocol should be enabled. Defaults to `false`.
 
@@ -1658,7 +1658,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `ip_restriction`<sup>Optional</sup> <a name="ip_restriction" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.putSiteConfig.parameter.ipRestriction"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestriction">WindowsFunctionAppSiteConfigIpRestriction</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestriction">WindowsFunctionAppSiteConfigIpRestriction</a>]
 
 ip_restriction block.
 
@@ -1718,7 +1718,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `remote_debugging_enabled`<sup>Optional</sup> <a name="remote_debugging_enabled" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.putSiteConfig.parameter.remoteDebuggingEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should Remote Debugging be enabled. Defaults to `false`.
 
@@ -1738,7 +1738,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `runtime_scale_monitoring_enabled`<sup>Optional</sup> <a name="runtime_scale_monitoring_enabled" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.putSiteConfig.parameter.runtimeScaleMonitoringEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should Functions Runtime Scale Monitoring be enabled.
 
@@ -1748,7 +1748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `scm_ip_restriction`<sup>Optional</sup> <a name="scm_ip_restriction" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.putSiteConfig.parameter.scmIpRestriction"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestriction">WindowsFunctionAppSiteConfigScmIpRestriction</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestriction">WindowsFunctionAppSiteConfigScmIpRestriction</a>]
 
 scm_ip_restriction block.
 
@@ -1776,7 +1776,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `scm_use_main_ip_restriction`<sup>Optional</sup> <a name="scm_use_main_ip_restriction" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.putSiteConfig.parameter.scmUseMainIpRestriction"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the Windows Function App `ip_restriction` configuration be used for the SCM also.
 
@@ -1786,7 +1786,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `use32_bit_worker`<sup>Optional</sup> <a name="use32_bit_worker" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.putSiteConfig.parameter.use32BitWorker"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the Windows Web App use a 32-bit worker.
 
@@ -1796,7 +1796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `vnet_route_all_enabled`<sup>Optional</sup> <a name="vnet_route_all_enabled" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.putSiteConfig.parameter.vnetRouteAllEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied? Defaults to `false`.
 
@@ -1806,7 +1806,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `websockets_enabled`<sup>Optional</sup> <a name="websockets_enabled" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.putSiteConfig.parameter.websocketsEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should Web Sockets be enabled. Defaults to `false`.
 
@@ -1859,7 +1859,7 @@ def put_storage_account(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.putStorageAccount.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccount">WindowsFunctionAppStorageAccount</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccount">WindowsFunctionAppStorageAccount</a>]
 
 ---
 
@@ -2105,7 +2105,7 @@ def reset_zip_deploy_file() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a WindowsFunctionApp resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a WindowsFunctionApp resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -2188,7 +2188,7 @@ windowsFunctionApp.WindowsFunctionApp.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a WindowsFunctionApp resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a WindowsFunctionApp resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.generateConfigForImport.parameter.scope"></a>
 
@@ -2218,7 +2218,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the WindowsFunctionApp to import is found.
 
@@ -2229,19 +2229,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.authSettings">auth_settings</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsOutputReference">WindowsFunctionAppAuthSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.authSettingsV2">auth_settings_v2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference">WindowsFunctionAppAuthSettingsV2OutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.backup">backup</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupOutputReference">WindowsFunctionAppBackupOutputReference</a></code> | *No description.* |
@@ -2264,66 +2264,66 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.authSettingsInput">auth_settings_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettings">WindowsFunctionAppAuthSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.authSettingsV2Input">auth_settings_v2_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2">WindowsFunctionAppAuthSettingsV2</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.backupInput">backup_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackup">WindowsFunctionAppBackup</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.builtinLoggingEnabledInput">builtin_logging_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.clientCertificateEnabledInput">client_certificate_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.builtinLoggingEnabledInput">builtin_logging_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.clientCertificateEnabledInput">client_certificate_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.clientCertificateExclusionPathsInput">client_certificate_exclusion_paths_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.clientCertificateModeInput">client_certificate_mode_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.connectionStringInput">connection_string_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionString">WindowsFunctionAppConnectionString</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.contentShareForceDisabledInput">content_share_force_disabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.connectionStringInput">connection_string_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionString">WindowsFunctionAppConnectionString</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.contentShareForceDisabledInput">content_share_force_disabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.dailyMemoryTimeQuotaInput">daily_memory_time_quota_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.ftpPublishBasicAuthenticationEnabledInput">ftp_publish_basic_authentication_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.ftpPublishBasicAuthenticationEnabledInput">ftp_publish_basic_authentication_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.functionsExtensionVersionInput">functions_extension_version_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.httpsOnlyInput">https_only_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.httpsOnlyInput">https_only_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.identityInput">identity_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppIdentity">WindowsFunctionAppIdentity</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.keyVaultReferenceIdentityIdInput">key_vault_reference_identity_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.publicNetworkAccessEnabledInput">public_network_access_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.publicNetworkAccessEnabledInput">public_network_access_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.resourceGroupNameInput">resource_group_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.servicePlanIdInput">service_plan_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.siteConfigInput">site_config_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig">WindowsFunctionAppSiteConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.stickySettingsInput">sticky_settings_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStickySettings">WindowsFunctionAppStickySettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.storageAccountAccessKeyInput">storage_account_access_key_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.storageAccountInput">storage_account_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccount">WindowsFunctionAppStorageAccount</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.storageAccountInput">storage_account_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccount">WindowsFunctionAppStorageAccount</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.storageAccountNameInput">storage_account_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.storageKeyVaultSecretIdInput">storage_key_vault_secret_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.storageUsesManagedIdentityInput">storage_uses_managed_identity_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.storageUsesManagedIdentityInput">storage_uses_managed_identity_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppTimeouts">WindowsFunctionAppTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.virtualNetworkBackupRestoreEnabledInput">virtual_network_backup_restore_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppTimeouts">WindowsFunctionAppTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.virtualNetworkBackupRestoreEnabledInput">virtual_network_backup_restore_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.virtualNetworkSubnetIdInput">virtual_network_subnet_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.vnetImagePullEnabledInput">vnet_image_pull_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.webdeployPublishBasicAuthenticationEnabledInput">webdeploy_publish_basic_authentication_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.vnetImagePullEnabledInput">vnet_image_pull_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.webdeployPublishBasicAuthenticationEnabledInput">webdeploy_publish_basic_authentication_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.zipDeployFileInput">zip_deploy_file_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.appSettings">app_settings</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.builtinLoggingEnabled">builtin_logging_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.clientCertificateEnabled">client_certificate_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.builtinLoggingEnabled">builtin_logging_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.clientCertificateEnabled">client_certificate_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.clientCertificateExclusionPaths">client_certificate_exclusion_paths</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.clientCertificateMode">client_certificate_mode</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.contentShareForceDisabled">content_share_force_disabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.contentShareForceDisabled">content_share_force_disabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.dailyMemoryTimeQuota">daily_memory_time_quota</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.ftpPublishBasicAuthenticationEnabled">ftp_publish_basic_authentication_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.ftpPublishBasicAuthenticationEnabled">ftp_publish_basic_authentication_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.functionsExtensionVersion">functions_extension_version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.httpsOnly">https_only</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.httpsOnly">https_only</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.keyVaultReferenceIdentityId">key_vault_reference_identity_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.location">location</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.publicNetworkAccessEnabled">public_network_access_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.publicNetworkAccessEnabled">public_network_access_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.servicePlanId">service_plan_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.storageAccountAccessKey">storage_account_access_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.storageAccountName">storage_account_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.storageKeyVaultSecretId">storage_key_vault_secret_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.storageUsesManagedIdentity">storage_uses_managed_identity</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.storageUsesManagedIdentity">storage_uses_managed_identity</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.virtualNetworkBackupRestoreEnabled">virtual_network_backup_restore_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.virtualNetworkBackupRestoreEnabled">virtual_network_backup_restore_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.virtualNetworkSubnetId">virtual_network_subnet_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.vnetImagePullEnabled">vnet_image_pull_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.webdeployPublishBasicAuthenticationEnabled">webdeploy_publish_basic_authentication_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.vnetImagePullEnabled">vnet_image_pull_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.webdeployPublishBasicAuthenticationEnabled">webdeploy_publish_basic_authentication_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionApp.property.zipDeployFile">zip_deploy_file</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -2346,7 +2346,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -2396,7 +2396,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -2406,7 +2406,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -2416,7 +2416,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -2436,7 +2436,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -2446,7 +2446,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -2456,7 +2456,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -2466,7 +2466,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -2696,7 +2696,7 @@ backup_input: WindowsFunctionAppBackup
 builtin_logging_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2706,7 +2706,7 @@ builtin_logging_enabled_input: bool | IResolvable
 client_certificate_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2736,7 +2736,7 @@ client_certificate_mode_input: str
 connection_string_input: IResolvable | typing.List[WindowsFunctionAppConnectionString]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionString">WindowsFunctionAppConnectionString</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionString">WindowsFunctionAppConnectionString</a>]
 
 ---
 
@@ -2746,7 +2746,7 @@ connection_string_input: IResolvable | typing.List[WindowsFunctionAppConnectionS
 content_share_force_disabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2766,7 +2766,7 @@ daily_memory_time_quota_input: typing.Union[int, float]
 enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2776,7 +2776,7 @@ enabled_input: bool | IResolvable
 ftp_publish_basic_authentication_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2796,7 +2796,7 @@ functions_extension_version_input: str
 https_only_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2856,7 +2856,7 @@ name_input: str
 public_network_access_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2916,7 +2916,7 @@ storage_account_access_key_input: str
 storage_account_input: IResolvable | typing.List[WindowsFunctionAppStorageAccount]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccount">WindowsFunctionAppStorageAccount</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccount">WindowsFunctionAppStorageAccount</a>]
 
 ---
 
@@ -2946,7 +2946,7 @@ storage_key_vault_secret_id_input: str
 storage_uses_managed_identity_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2966,7 +2966,7 @@ tags_input: typing.Mapping[str]
 timeouts_input: IResolvable | WindowsFunctionAppTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppTimeouts">WindowsFunctionAppTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppTimeouts">WindowsFunctionAppTimeouts</a>
 
 ---
 
@@ -2976,7 +2976,7 @@ timeouts_input: IResolvable | WindowsFunctionAppTimeouts
 virtual_network_backup_restore_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -2996,7 +2996,7 @@ virtual_network_subnet_id_input: str
 vnet_image_pull_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -3006,7 +3006,7 @@ vnet_image_pull_enabled_input: bool | IResolvable
 webdeploy_publish_basic_authentication_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -3036,7 +3036,7 @@ app_settings: typing.Mapping[str]
 builtin_logging_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -3046,7 +3046,7 @@ builtin_logging_enabled: bool | IResolvable
 client_certificate_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -3076,7 +3076,7 @@ client_certificate_mode: str
 content_share_force_disabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -3096,7 +3096,7 @@ daily_memory_time_quota: typing.Union[int, float]
 enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -3106,7 +3106,7 @@ enabled: bool | IResolvable
 ftp_publish_basic_authentication_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -3126,7 +3126,7 @@ functions_extension_version: str
 https_only: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -3176,7 +3176,7 @@ name: str
 public_network_access_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -3236,7 +3236,7 @@ storage_key_vault_secret_id: str
 storage_uses_managed_identity: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -3256,7 +3256,7 @@ tags: typing.Mapping[str]
 virtual_network_backup_restore_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -3276,7 +3276,7 @@ virtual_network_subnet_id: str
 vnet_image_pull_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -3286,7 +3286,7 @@ vnet_image_pull_enabled: bool | IResolvable
 webdeploy_publish_basic_authentication_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -3350,7 +3350,7 @@ windowsFunctionApp.WindowsFunctionAppAuthSettings(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettings.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Should the Authentication / Authorization feature be enabled? |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettings.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the Authentication / Authorization feature be enabled? |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettings.property.activeDirectory">active_directory</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsActiveDirectory">WindowsFunctionAppAuthSettingsActiveDirectory</a></code> | active_directory block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettings.property.additionalLoginParameters">additional_login_parameters</a></code> | <code>typing.Mapping[str]</code> | Specifies a map of Login Parameters to send to the OpenID Connect authorization endpoint when a user logs in. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettings.property.allowedExternalRedirectUrls">allowed_external_redirect_urls</a></code> | <code>typing.List[str]</code> | Specifies a list of External URLs that can be redirected to as part of logging in or logging out of the Windows Web App. |
@@ -3362,7 +3362,7 @@ windowsFunctionApp.WindowsFunctionAppAuthSettings(
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettings.property.microsoft">microsoft</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsMicrosoft">WindowsFunctionAppAuthSettingsMicrosoft</a></code> | microsoft block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettings.property.runtimeVersion">runtime_version</a></code> | <code>str</code> | The RuntimeVersion of the Authentication / Authorization feature in use. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettings.property.tokenRefreshExtensionHours">token_refresh_extension_hours</a></code> | <code>typing.Union[int, float]</code> | The number of hours after session token expiration that a session token can be used to call the token refresh API. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettings.property.tokenStoreEnabled">token_store_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Should the Windows Web App durably store platform-specific security tokens that are obtained during login flows? Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettings.property.tokenStoreEnabled">token_store_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the Windows Web App durably store platform-specific security tokens that are obtained during login flows? Defaults to `false`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettings.property.twitter">twitter</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsTwitter">WindowsFunctionAppAuthSettingsTwitter</a></code> | twitter block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettings.property.unauthenticatedClientAction">unauthenticated_client_action</a></code> | <code>str</code> | The action to take when an unauthenticated client attempts to access the app. Possible values include: `RedirectToLoginPage`, `AllowAnonymous`. |
 
@@ -3374,7 +3374,7 @@ windowsFunctionApp.WindowsFunctionAppAuthSettings(
 enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the Authentication / Authorization feature be enabled?
 
@@ -3546,7 +3546,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 token_store_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the Windows Web App durably store platform-specific security tokens that are obtained during login flows? Defaults to `false`.
 
@@ -4098,10 +4098,10 @@ windowsFunctionApp.WindowsFunctionAppAuthSettingsV2(
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.login">login</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2Login">WindowsFunctionAppAuthSettingsV2Login</a></code> | login block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.activeDirectoryV2">active_directory_v2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2">WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2</a></code> | active_directory_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.appleV2">apple_v2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2AppleV2">WindowsFunctionAppAuthSettingsV2AppleV2</a></code> | apple_v2 block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.authEnabled">auth_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Should the AuthV2 Settings be enabled. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.authEnabled">auth_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the AuthV2 Settings be enabled. Defaults to `false`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.azureStaticWebAppV2">azure_static_web_app_v2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2AzureStaticWebAppV2">WindowsFunctionAppAuthSettingsV2AzureStaticWebAppV2</a></code> | azure_static_web_app_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.configFilePath">config_file_path</a></code> | <code>str</code> | The path to the App Auth settings. **Note:** Relative Paths are evaluated from the Site Root directory. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.customOidcV2">custom_oidc_v2</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2">WindowsFunctionAppAuthSettingsV2CustomOidcV2</a>]</code> | custom_oidc_v2 block. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.customOidcV2">custom_oidc_v2</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2">WindowsFunctionAppAuthSettingsV2CustomOidcV2</a>]</code> | custom_oidc_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.defaultProvider">default_provider</a></code> | <code>str</code> | The Default Authentication Provider to use when the `unauthenticated_action` is set to `RedirectToLoginPage`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.excludedPaths">excluded_paths</a></code> | <code>typing.List[str]</code> | The paths which should be excluded from the `unauthenticated_action` when it is set to `RedirectToLoginPage`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.facebookV2">facebook_v2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2FacebookV2">WindowsFunctionAppAuthSettingsV2FacebookV2</a></code> | facebook_v2 block. |
@@ -4112,8 +4112,8 @@ windowsFunctionApp.WindowsFunctionAppAuthSettingsV2(
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.googleV2">google_v2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2GoogleV2">WindowsFunctionAppAuthSettingsV2GoogleV2</a></code> | google_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.httpRouteApiPrefix">http_route_api_prefix</a></code> | <code>str</code> | The prefix that should precede all the authentication and authorisation paths. Defaults to `/.auth`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.microsoftV2">microsoft_v2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2MicrosoftV2">WindowsFunctionAppAuthSettingsV2MicrosoftV2</a></code> | microsoft_v2 block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.requireAuthentication">require_authentication</a></code> | <code>bool \| cdktf.IResolvable</code> | Should the authentication flow be used for all requests. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.requireHttps">require_https</a></code> | <code>bool \| cdktf.IResolvable</code> | Should HTTPS be required on connections? Defaults to true. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.requireAuthentication">require_authentication</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the authentication flow be used for all requests. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.requireHttps">require_https</a></code> | <code>bool \| cdktn.IResolvable</code> | Should HTTPS be required on connections? Defaults to true. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.runtimeVersion">runtime_version</a></code> | <code>str</code> | The Runtime Version of the Authentication and Authorisation feature of this App. Defaults to `~1`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.twitterV2">twitter_v2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2TwitterV2">WindowsFunctionAppAuthSettingsV2TwitterV2</a></code> | twitter_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2.property.unauthenticatedAction">unauthenticated_action</a></code> | <code>str</code> | The action to take for requests made without authentication. |
@@ -4168,7 +4168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 auth_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the AuthV2 Settings be enabled. Defaults to `false`.
 
@@ -4210,7 +4210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 custom_oidc_v2: IResolvable | typing.List[WindowsFunctionAppAuthSettingsV2CustomOidcV2]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2">WindowsFunctionAppAuthSettingsV2CustomOidcV2</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2">WindowsFunctionAppAuthSettingsV2CustomOidcV2</a>]
 
 custom_oidc_v2 block.
 
@@ -4368,7 +4368,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 require_authentication: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the authentication flow be used for all requests.
 
@@ -4382,7 +4382,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 require_https: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should HTTPS be required on connections? Defaults to true.
 
@@ -4472,7 +4472,7 @@ windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2(
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2.property.jwtAllowedClientApplications">jwt_allowed_client_applications</a></code> | <code>typing.List[str]</code> | A list of Allowed Client Applications in the JWT Claim. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2.property.jwtAllowedGroups">jwt_allowed_groups</a></code> | <code>typing.List[str]</code> | A list of Allowed Groups in the JWT Claim. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2.property.loginParameters">login_parameters</a></code> | <code>typing.Mapping[str]</code> | A map of key-value pairs to send to the Authorisation Endpoint when a user logs in. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2.property.wwwAuthenticationDisabled">www_authentication_disabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Should the www-authenticate provider should be omitted from the request? Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2.property.wwwAuthenticationDisabled">www_authentication_disabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the www-authenticate provider should be omitted from the request? Defaults to `false`. |
 
 ---
 
@@ -4636,7 +4636,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 www_authentication_disabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the www-authenticate provider should be omitted from the request? Defaults to `false`.
 
@@ -5087,12 +5087,12 @@ windowsFunctionApp.WindowsFunctionAppAuthSettingsV2Login(
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2Login.property.cookieExpirationTime">cookie_expiration_time</a></code> | <code>str</code> | The time after the request is made when the session cookie should expire. Defaults to `08:00:00`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2Login.property.logoutEndpoint">logout_endpoint</a></code> | <code>str</code> | The endpoint to which logout requests should be made. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2Login.property.nonceExpirationTime">nonce_expiration_time</a></code> | <code>str</code> | The time after the request is made when the nonce should expire. Defaults to `00:05:00`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2Login.property.preserveUrlFragmentsForLogins">preserve_url_fragments_for_logins</a></code> | <code>bool \| cdktf.IResolvable</code> | Should the fragments from the request be preserved after the login request is made. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2Login.property.preserveUrlFragmentsForLogins">preserve_url_fragments_for_logins</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the fragments from the request be preserved after the login request is made. Defaults to `false`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2Login.property.tokenRefreshExtensionTime">token_refresh_extension_time</a></code> | <code>typing.Union[int, float]</code> | The number of hours after session token expiration that a session token can be used to call the token refresh API. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2Login.property.tokenStoreEnabled">token_store_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Should the Token Store configuration Enabled. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2Login.property.tokenStoreEnabled">token_store_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the Token Store configuration Enabled. Defaults to `false`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2Login.property.tokenStorePath">token_store_path</a></code> | <code>str</code> | The directory path in the App Filesystem in which the tokens will be stored. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2Login.property.tokenStoreSasSettingName">token_store_sas_setting_name</a></code> | <code>str</code> | The name of the app setting which contains the SAS URL of the blob storage containing the tokens. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2Login.property.validateNonce">validate_nonce</a></code> | <code>bool \| cdktf.IResolvable</code> | Should the nonce be validated while completing the login flow. Defaults to `true`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2Login.property.validateNonce">validate_nonce</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the nonce be validated while completing the login flow. Defaults to `true`. |
 
 ---
 
@@ -5174,7 +5174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 preserve_url_fragments_for_logins: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the fragments from the request be preserved after the login request is made. Defaults to `false`.
 
@@ -5204,7 +5204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 token_store_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the Token Store configuration Enabled. Defaults to `false`.
 
@@ -5246,7 +5246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 validate_nonce: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the nonce be validated while completing the login flow. Defaults to `true`.
 
@@ -5408,7 +5408,7 @@ windowsFunctionApp.WindowsFunctionAppBackup(
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackup.property.name">name</a></code> | <code>str</code> | The name which should be used for this Backup. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackup.property.schedule">schedule</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupSchedule">WindowsFunctionAppBackupSchedule</a></code> | schedule block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackup.property.storageAccountUrl">storage_account_url</a></code> | <code>str</code> | The SAS URL to the container. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackup.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Should this backup job be enabled? |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackup.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should this backup job be enabled? |
 
 ---
 
@@ -5460,7 +5460,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should this backup job be enabled?
 
@@ -5490,7 +5490,7 @@ windowsFunctionApp.WindowsFunctionAppBackupSchedule(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupSchedule.property.frequencyInterval">frequency_interval</a></code> | <code>typing.Union[int, float]</code> | How often the backup should be executed (e.g. for weekly backup, this should be set to `7` and `frequency_unit` should be set to `Day`). |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupSchedule.property.frequencyUnit">frequency_unit</a></code> | <code>str</code> | The unit of time for how often the backup should take place. Possible values include: `Day` and `Hour`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupSchedule.property.keepAtLeastOneBackup">keep_at_least_one_backup</a></code> | <code>bool \| cdktf.IResolvable</code> | Should the service keep at least one backup, regardless of age of backup. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupSchedule.property.keepAtLeastOneBackup">keep_at_least_one_backup</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the service keep at least one backup, regardless of age of backup. Defaults to `false`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupSchedule.property.retentionPeriodDays">retention_period_days</a></code> | <code>typing.Union[int, float]</code> | After how many days backups should be deleted. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupSchedule.property.startTime">start_time</a></code> | <code>str</code> | When the schedule should start working in RFC-3339 format. |
 
@@ -5530,7 +5530,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 keep_at_least_one_backup: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the service keep at least one backup, regardless of age of backup. Defaults to `false`.
 
@@ -5625,13 +5625,13 @@ windowsFunctionApp.WindowsFunctionAppConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#location WindowsFunctionApp#location}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.name">name</a></code> | <code>str</code> | Specifies the name of the Function App. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#resource_group_name WindowsFunctionApp#resource_group_name}. |
@@ -5641,33 +5641,33 @@ windowsFunctionApp.WindowsFunctionAppConfig(
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.authSettings">auth_settings</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettings">WindowsFunctionAppAuthSettings</a></code> | auth_settings block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.authSettingsV2">auth_settings_v2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2">WindowsFunctionAppAuthSettingsV2</a></code> | auth_settings_v2 block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.backup">backup</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackup">WindowsFunctionAppBackup</a></code> | backup block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.builtinLoggingEnabled">builtin_logging_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Should built in logging be enabled. Configures `AzureWebJobsDashboard` app setting based on the configured storage setting. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.clientCertificateEnabled">client_certificate_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Should the function app use Client Certificates. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.builtinLoggingEnabled">builtin_logging_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should built in logging be enabled. Configures `AzureWebJobsDashboard` app setting based on the configured storage setting. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.clientCertificateEnabled">client_certificate_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the function app use Client Certificates. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.clientCertificateExclusionPaths">client_certificate_exclusion_paths</a></code> | <code>str</code> | Paths to exclude when using client certificates, separated by ; |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.clientCertificateMode">client_certificate_mode</a></code> | <code>str</code> | The mode of the Function App's client certificates requirement for incoming requests. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.connectionString">connection_string</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionString">WindowsFunctionAppConnectionString</a>]</code> | connection_string block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.contentShareForceDisabled">content_share_force_disabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Force disable the content share settings. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.connectionString">connection_string</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionString">WindowsFunctionAppConnectionString</a>]</code> | connection_string block. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.contentShareForceDisabled">content_share_force_disabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Force disable the content share settings. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.dailyMemoryTimeQuota">daily_memory_time_quota</a></code> | <code>typing.Union[int, float]</code> | The amount of memory in gigabyte-seconds that your application is allowed to consume per day. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Is the Windows Function App enabled. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.ftpPublishBasicAuthenticationEnabled">ftp_publish_basic_authentication_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#ftp_publish_basic_authentication_enabled WindowsFunctionApp#ftp_publish_basic_authentication_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Is the Windows Function App enabled. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.ftpPublishBasicAuthenticationEnabled">ftp_publish_basic_authentication_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#ftp_publish_basic_authentication_enabled WindowsFunctionApp#ftp_publish_basic_authentication_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.functionsExtensionVersion">functions_extension_version</a></code> | <code>str</code> | The runtime version associated with the Function App. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.httpsOnly">https_only</a></code> | <code>bool \| cdktf.IResolvable</code> | Can the Function App only be accessed via HTTPS? |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.httpsOnly">https_only</a></code> | <code>bool \| cdktn.IResolvable</code> | Can the Function App only be accessed via HTTPS? |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#id WindowsFunctionApp#id}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppIdentity">WindowsFunctionAppIdentity</a></code> | identity block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.keyVaultReferenceIdentityId">key_vault_reference_identity_id</a></code> | <code>str</code> | The User Assigned Identity to use for Key Vault access. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.publicNetworkAccessEnabled">public_network_access_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#public_network_access_enabled WindowsFunctionApp#public_network_access_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.publicNetworkAccessEnabled">public_network_access_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#public_network_access_enabled WindowsFunctionApp#public_network_access_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.stickySettings">sticky_settings</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStickySettings">WindowsFunctionAppStickySettings</a></code> | sticky_settings block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.storageAccount">storage_account</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccount">WindowsFunctionAppStorageAccount</a>]</code> | storage_account block. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.storageAccount">storage_account</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccount">WindowsFunctionAppStorageAccount</a>]</code> | storage_account block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.storageAccountAccessKey">storage_account_access_key</a></code> | <code>str</code> | The access key which will be used to access the storage account for the Function App. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.storageAccountName">storage_account_name</a></code> | <code>str</code> | The backend storage account name which will be used by this Function App. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.storageKeyVaultSecretId">storage_key_vault_secret_id</a></code> | <code>str</code> | The Key Vault Secret ID, including version, that contains the Connection String to connect to the storage account for this Function App. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.storageUsesManagedIdentity">storage_uses_managed_identity</a></code> | <code>bool \| cdktf.IResolvable</code> | Should the Function App use its Managed Identity to access storage? |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.storageUsesManagedIdentity">storage_uses_managed_identity</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the Function App use its Managed Identity to access storage? |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#tags WindowsFunctionApp#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppTimeouts">WindowsFunctionAppTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.virtualNetworkBackupRestoreEnabled">virtual_network_backup_restore_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#virtual_network_backup_restore_enabled WindowsFunctionApp#virtual_network_backup_restore_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.virtualNetworkBackupRestoreEnabled">virtual_network_backup_restore_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#virtual_network_backup_restore_enabled WindowsFunctionApp#virtual_network_backup_restore_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.virtualNetworkSubnetId">virtual_network_subnet_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#virtual_network_subnet_id WindowsFunctionApp#virtual_network_subnet_id}. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.vnetImagePullEnabled">vnet_image_pull_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Is container image pull over virtual network enabled? Defaults to `false`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.webdeployPublishBasicAuthenticationEnabled">webdeploy_publish_basic_authentication_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#webdeploy_publish_basic_authentication_enabled WindowsFunctionApp#webdeploy_publish_basic_authentication_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.vnetImagePullEnabled">vnet_image_pull_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Is container image pull over virtual network enabled? Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.webdeployPublishBasicAuthenticationEnabled">webdeploy_publish_basic_authentication_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#webdeploy_publish_basic_authentication_enabled WindowsFunctionApp#webdeploy_publish_basic_authentication_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConfig.property.zipDeployFile">zip_deploy_file</a></code> | <code>str</code> | The local path and filename of the Zip packaged application to deploy to this Windows Function App. |
 
 ---
@@ -5678,7 +5678,7 @@ windowsFunctionApp.WindowsFunctionAppConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -5688,7 +5688,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -5698,7 +5698,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -5708,7 +5708,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -5718,7 +5718,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -5728,7 +5728,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -5738,7 +5738,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -5870,7 +5870,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 builtin_logging_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should built in logging be enabled. Configures `AzureWebJobsDashboard` app setting based on the configured storage setting.
 
@@ -5884,7 +5884,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 client_certificate_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the function app use Client Certificates.
 
@@ -5928,7 +5928,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 connection_string: IResolvable | typing.List[WindowsFunctionAppConnectionString]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionString">WindowsFunctionAppConnectionString</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionString">WindowsFunctionAppConnectionString</a>]
 
 connection_string block.
 
@@ -5942,7 +5942,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 content_share_force_disabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Force disable the content share settings.
 
@@ -5972,7 +5972,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Is the Windows Function App enabled.
 
@@ -5986,7 +5986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ftp_publish_basic_authentication_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#ftp_publish_basic_authentication_enabled WindowsFunctionApp#ftp_publish_basic_authentication_enabled}.
 
@@ -6012,7 +6012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 https_only: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Can the Function App only be accessed via HTTPS?
 
@@ -6069,7 +6069,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public_network_access_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#public_network_access_enabled WindowsFunctionApp#public_network_access_enabled}.
 
@@ -6095,7 +6095,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 storage_account: IResolvable | typing.List[WindowsFunctionAppStorageAccount]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccount">WindowsFunctionAppStorageAccount</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccount">WindowsFunctionAppStorageAccount</a>]
 
 storage_account block.
 
@@ -6151,7 +6151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 storage_uses_managed_identity: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the Function App use its Managed Identity to access storage?
 
@@ -6191,7 +6191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 virtual_network_backup_restore_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#virtual_network_backup_restore_enabled WindowsFunctionApp#virtual_network_backup_restore_enabled}.
 
@@ -6215,7 +6215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 vnet_image_pull_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Is container image pull over virtual network enabled? Defaults to `false`.
 
@@ -6229,7 +6229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 webdeploy_publish_basic_authentication_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#webdeploy_publish_basic_authentication_enabled WindowsFunctionApp#webdeploy_publish_basic_authentication_enabled}.
 
@@ -6411,7 +6411,7 @@ windowsFunctionApp.WindowsFunctionAppSiteConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.alwaysOn">always_on</a></code> | <code>bool \| cdktf.IResolvable</code> | If this Windows Web App is Always On enabled. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.alwaysOn">always_on</a></code> | <code>bool \| cdktn.IResolvable</code> | If this Windows Web App is Always On enabled. Defaults to `false`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.apiDefinitionUrl">api_definition_url</a></code> | <code>str</code> | The URL of the API definition that describes this Windows Function App. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.apiManagementApiId">api_management_api_id</a></code> | <code>str</code> | The ID of the API Management API for this Windows Function App. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.appCommandLine">app_command_line</a></code> | <code>str</code> | The program and any arguments used to launch this app via the command line. (Example `node myapp.js`). |
@@ -6426,23 +6426,23 @@ windowsFunctionApp.WindowsFunctionAppSiteConfig(
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.ftpsState">ftps_state</a></code> | <code>str</code> | State of FTP / FTPS service for this function app. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.healthCheckEvictionTimeInMin">health_check_eviction_time_in_min</a></code> | <code>typing.Union[int, float]</code> | The amount of time in minutes that a node is unhealthy before being removed from the load balancer. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.healthCheckPath">health_check_path</a></code> | <code>str</code> | The path to be checked for this function app health. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.http2Enabled">http2_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies if the http2 protocol should be enabled. Defaults to `false`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.ipRestriction">ip_restriction</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestriction">WindowsFunctionAppSiteConfigIpRestriction</a>]</code> | ip_restriction block. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.http2Enabled">http2_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies if the http2 protocol should be enabled. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.ipRestriction">ip_restriction</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestriction">WindowsFunctionAppSiteConfigIpRestriction</a>]</code> | ip_restriction block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.ipRestrictionDefaultAction">ip_restriction_default_action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#ip_restriction_default_action WindowsFunctionApp#ip_restriction_default_action}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.loadBalancingMode">load_balancing_mode</a></code> | <code>str</code> | The Site load balancing mode. Possible values include: `WeightedRoundRobin`, `LeastRequests`, `LeastResponseTime`, `WeightedTotalTraffic`, `RequestHash`, `PerSiteRoundRobin`. Defaults to `LeastRequests` if omitted. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.managedPipelineMode">managed_pipeline_mode</a></code> | <code>str</code> | The Managed Pipeline mode. Possible values include: `Integrated`, `Classic`. Defaults to `Integrated`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.minimumTlsVersion">minimum_tls_version</a></code> | <code>str</code> | The configures the minimum version of TLS required for SSL requests. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.preWarmedInstanceCount">pre_warmed_instance_count</a></code> | <code>typing.Union[int, float]</code> | The number of pre-warmed instances for this function app. Only affects apps on an Elastic Premium plan. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.remoteDebuggingEnabled">remote_debugging_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Should Remote Debugging be enabled. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.remoteDebuggingEnabled">remote_debugging_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should Remote Debugging be enabled. Defaults to `false`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.remoteDebuggingVersion">remote_debugging_version</a></code> | <code>str</code> | The Remote Debugging Version. Currently only `VS2022` is supported. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.runtimeScaleMonitoringEnabled">runtime_scale_monitoring_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Should Functions Runtime Scale Monitoring be enabled. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.scmIpRestriction">scm_ip_restriction</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestriction">WindowsFunctionAppSiteConfigScmIpRestriction</a>]</code> | scm_ip_restriction block. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.runtimeScaleMonitoringEnabled">runtime_scale_monitoring_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should Functions Runtime Scale Monitoring be enabled. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.scmIpRestriction">scm_ip_restriction</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestriction">WindowsFunctionAppSiteConfigScmIpRestriction</a>]</code> | scm_ip_restriction block. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.scmIpRestrictionDefaultAction">scm_ip_restriction_default_action</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#scm_ip_restriction_default_action WindowsFunctionApp#scm_ip_restriction_default_action}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.scmMinimumTlsVersion">scm_minimum_tls_version</a></code> | <code>str</code> | Configures the minimum version of TLS required for SSL requests to the SCM site Possible values include: `1.0`, `1.1`, `1.2` and  `1.3`. Defaults to `1.2`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.scmUseMainIpRestriction">scm_use_main_ip_restriction</a></code> | <code>bool \| cdktf.IResolvable</code> | Should the Windows Function App `ip_restriction` configuration be used for the SCM also. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.use32BitWorker">use32_bit_worker</a></code> | <code>bool \| cdktf.IResolvable</code> | Should the Windows Web App use a 32-bit worker. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.vnetRouteAllEnabled">vnet_route_all_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Should all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied? Defaults to `false`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.websocketsEnabled">websockets_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Should Web Sockets be enabled. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.scmUseMainIpRestriction">scm_use_main_ip_restriction</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the Windows Function App `ip_restriction` configuration be used for the SCM also. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.use32BitWorker">use32_bit_worker</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the Windows Web App use a 32-bit worker. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.vnetRouteAllEnabled">vnet_route_all_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied? Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.websocketsEnabled">websockets_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Should Web Sockets be enabled. Defaults to `false`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig.property.workerCount">worker_count</a></code> | <code>typing.Union[int, float]</code> | The number of Workers for this Windows Function App. |
 
 ---
@@ -6453,7 +6453,7 @@ windowsFunctionApp.WindowsFunctionAppSiteConfig(
 always_on: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If this Windows Web App is Always On enabled. Defaults to `false`.
 
@@ -6669,7 +6669,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 http2_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Specifies if the http2 protocol should be enabled. Defaults to `false`.
 
@@ -6683,7 +6683,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ip_restriction: IResolvable | typing.List[WindowsFunctionAppSiteConfigIpRestriction]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestriction">WindowsFunctionAppSiteConfigIpRestriction</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestriction">WindowsFunctionAppSiteConfigIpRestriction</a>]
 
 ip_restriction block.
 
@@ -6767,7 +6767,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 remote_debugging_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should Remote Debugging be enabled. Defaults to `false`.
 
@@ -6795,7 +6795,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 runtime_scale_monitoring_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should Functions Runtime Scale Monitoring be enabled.
 
@@ -6809,7 +6809,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 scm_ip_restriction: IResolvable | typing.List[WindowsFunctionAppSiteConfigScmIpRestriction]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestriction">WindowsFunctionAppSiteConfigScmIpRestriction</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestriction">WindowsFunctionAppSiteConfigScmIpRestriction</a>]
 
 scm_ip_restriction block.
 
@@ -6849,7 +6849,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 scm_use_main_ip_restriction: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the Windows Function App `ip_restriction` configuration be used for the SCM also.
 
@@ -6863,7 +6863,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 use32_bit_worker: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the Windows Web App use a 32-bit worker.
 
@@ -6877,7 +6877,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 vnet_route_all_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should all outbound traffic to have Virtual Network Security Groups and User Defined Routes applied? Defaults to `false`.
 
@@ -6891,7 +6891,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 websockets_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should Web Sockets be enabled. Defaults to `false`.
 
@@ -6938,8 +6938,8 @@ windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStack(
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStack.property.javaVersion">java_version</a></code> | <code>str</code> | The version of Java to use. Possible values are `1.8`, `11`, `17`, and `21`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStack.property.nodeVersion">node_version</a></code> | <code>str</code> | The version of Node to use. Possible values include `~12`, `~14`, `~16`, `~18`, `~20` and `~22`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStack.property.powershellCoreVersion">powershell_core_version</a></code> | <code>str</code> | The PowerShell Core version to use. Possible values are `7`, `7.2`, and `7.4`. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStack.property.useCustomRuntime">use_custom_runtime</a></code> | <code>bool \| cdktf.IResolvable</code> | Does the Function App use a custom Application Stack? |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStack.property.useDotnetIsolatedRuntime">use_dotnet_isolated_runtime</a></code> | <code>bool \| cdktf.IResolvable</code> | Should the DotNet process use an isolated runtime. Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStack.property.useCustomRuntime">use_custom_runtime</a></code> | <code>bool \| cdktn.IResolvable</code> | Does the Function App use a custom Application Stack? |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStack.property.useDotnetIsolatedRuntime">use_dotnet_isolated_runtime</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the DotNet process use an isolated runtime. Defaults to `false`. |
 
 ---
 
@@ -7005,7 +7005,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 use_custom_runtime: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Does the Function App use a custom Application Stack?
 
@@ -7019,7 +7019,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 use_dotnet_isolated_runtime: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the DotNet process use an isolated runtime. Defaults to `false`.
 
@@ -7095,7 +7095,7 @@ windowsFunctionApp.WindowsFunctionAppSiteConfigCors(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigCors.property.allowedOrigins">allowed_origins</a></code> | <code>typing.List[str]</code> | Specifies a list of origins that should be allowed to make cross-origin calls. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigCors.property.supportCredentials">support_credentials</a></code> | <code>bool \| cdktf.IResolvable</code> | Are credentials allowed in CORS requests? Defaults to `false`. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigCors.property.supportCredentials">support_credentials</a></code> | <code>bool \| cdktn.IResolvable</code> | Are credentials allowed in CORS requests? Defaults to `false`. |
 
 ---
 
@@ -7119,7 +7119,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 support_credentials: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Are credentials allowed in CORS requests? Defaults to `false`.
 
@@ -7152,7 +7152,7 @@ windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestriction(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestriction.property.action">action</a></code> | <code>str</code> | The action to take. Possible values are `Allow` or `Deny`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestriction.property.description">description</a></code> | <code>str</code> | The description of the IP restriction rule. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestriction.property.headers">headers</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeaders">WindowsFunctionAppSiteConfigIpRestrictionHeaders</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#headers WindowsFunctionApp#headers}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestriction.property.headers">headers</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeaders">WindowsFunctionAppSiteConfigIpRestrictionHeaders</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#headers WindowsFunctionApp#headers}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestriction.property.ipAddress">ip_address</a></code> | <code>str</code> | The CIDR notation of the IP or IP Range to match. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestriction.property.name">name</a></code> | <code>str</code> | The name which should be used for this `ip_restriction`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestriction.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | The priority value of this `ip_restriction`. |
@@ -7195,7 +7195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 headers: IResolvable | typing.List[WindowsFunctionAppSiteConfigIpRestrictionHeaders]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeaders">WindowsFunctionAppSiteConfigIpRestrictionHeaders</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeaders">WindowsFunctionAppSiteConfigIpRestrictionHeaders</a>]
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#headers WindowsFunctionApp#headers}.
 
@@ -7372,7 +7372,7 @@ windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestriction(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestriction.property.action">action</a></code> | <code>str</code> | The action to take. Possible values are `Allow` or `Deny`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestriction.property.description">description</a></code> | <code>str</code> | The description of the IP restriction rule. |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestriction.property.headers">headers</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeaders">WindowsFunctionAppSiteConfigScmIpRestrictionHeaders</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#headers WindowsFunctionApp#headers}. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestriction.property.headers">headers</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeaders">WindowsFunctionAppSiteConfigScmIpRestrictionHeaders</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#headers WindowsFunctionApp#headers}. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestriction.property.ipAddress">ip_address</a></code> | <code>str</code> | The CIDR notation of the IP or IP Range to match. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestriction.property.name">name</a></code> | <code>str</code> | The name which should be used for this `ip_restriction`. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestriction.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | The priority value of this `ip_restriction`. |
@@ -7415,7 +7415,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 headers: IResolvable | typing.List[WindowsFunctionAppSiteConfigScmIpRestrictionHeaders]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeaders">WindowsFunctionAppSiteConfigScmIpRestrictionHeaders</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeaders">WindowsFunctionAppSiteConfigScmIpRestrictionHeaders</a>]
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/windows_function_app#headers WindowsFunctionApp#headers}.
 
@@ -7817,14 +7817,14 @@ windowsFunctionApp.WindowsFunctionAppAuthSettingsActiveDirectoryOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsActiveDirectoryOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsActiveDirectoryOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsActiveDirectoryOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsActiveDirectoryOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8019,7 +8019,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsActiveDirectoryOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8200,14 +8200,14 @@ windowsFunctionApp.WindowsFunctionAppAuthSettingsFacebookOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsFacebookOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsFacebookOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsFacebookOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsFacebookOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8402,7 +8402,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsFacebookOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8583,14 +8583,14 @@ windowsFunctionApp.WindowsFunctionAppAuthSettingsGithubOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsGithubOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsGithubOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsGithubOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsGithubOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8785,7 +8785,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsGithubOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8966,14 +8966,14 @@ windowsFunctionApp.WindowsFunctionAppAuthSettingsGoogleOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsGoogleOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsGoogleOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsGoogleOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsGoogleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9168,7 +9168,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsGoogleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9349,14 +9349,14 @@ windowsFunctionApp.WindowsFunctionAppAuthSettingsMicrosoftOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsMicrosoftOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsMicrosoftOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsMicrosoftOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsMicrosoftOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9551,7 +9551,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsMicrosoftOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9732,14 +9732,14 @@ windowsFunctionApp.WindowsFunctionAppAuthSettingsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9951,7 +9951,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10361,7 +10361,7 @@ def reset_unauthenticated_client_action() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsOutputReference.property.additionalLoginParametersInput">additional_login_parameters_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsOutputReference.property.allowedExternalRedirectUrlsInput">allowed_external_redirect_urls_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsOutputReference.property.defaultProviderInput">default_provider_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsOutputReference.property.facebookInput">facebook_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsFacebook">WindowsFunctionAppAuthSettingsFacebook</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsOutputReference.property.githubInput">github_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsGithub">WindowsFunctionAppAuthSettingsGithub</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsOutputReference.property.googleInput">google_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsGoogle">WindowsFunctionAppAuthSettingsGoogle</a></code> | *No description.* |
@@ -10369,17 +10369,17 @@ def reset_unauthenticated_client_action() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsOutputReference.property.microsoftInput">microsoft_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsMicrosoft">WindowsFunctionAppAuthSettingsMicrosoft</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsOutputReference.property.runtimeVersionInput">runtime_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsOutputReference.property.tokenRefreshExtensionHoursInput">token_refresh_extension_hours_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsOutputReference.property.tokenStoreEnabledInput">token_store_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsOutputReference.property.tokenStoreEnabledInput">token_store_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsOutputReference.property.twitterInput">twitter_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsTwitter">WindowsFunctionAppAuthSettingsTwitter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsOutputReference.property.unauthenticatedClientActionInput">unauthenticated_client_action_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsOutputReference.property.additionalLoginParameters">additional_login_parameters</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsOutputReference.property.allowedExternalRedirectUrls">allowed_external_redirect_urls</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsOutputReference.property.defaultProvider">default_provider</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsOutputReference.property.issuer">issuer</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsOutputReference.property.runtimeVersion">runtime_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsOutputReference.property.tokenRefreshExtensionHours">token_refresh_extension_hours</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsOutputReference.property.tokenStoreEnabled">token_store_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsOutputReference.property.tokenStoreEnabled">token_store_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsOutputReference.property.unauthenticatedClientAction">unauthenticated_client_action</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettings">WindowsFunctionAppAuthSettings</a></code> | *No description.* |
 
@@ -10515,7 +10515,7 @@ default_provider_input: str
 enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -10595,7 +10595,7 @@ token_refresh_extension_hours_input: typing.Union[int, float]
 token_store_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -10655,7 +10655,7 @@ default_provider: str
 enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -10695,7 +10695,7 @@ token_refresh_extension_hours: typing.Union[int, float]
 token_store_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -10735,14 +10735,14 @@ windowsFunctionApp.WindowsFunctionAppAuthSettingsTwitterOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsTwitterOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsTwitterOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsTwitterOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsTwitterOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10936,7 +10936,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsTwitterOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11089,14 +11089,14 @@ windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2OutputRefere
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11298,7 +11298,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11390,7 +11390,7 @@ def reset_www_authentication_disabled() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.property.jwtAllowedGroupsInput">jwt_allowed_groups_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.property.loginParametersInput">login_parameters_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.property.tenantAuthEndpointInput">tenant_auth_endpoint_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.property.wwwAuthenticationDisabledInput">www_authentication_disabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.property.wwwAuthenticationDisabledInput">www_authentication_disabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.property.allowedApplications">allowed_applications</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.property.allowedAudiences">allowed_audiences</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.property.allowedGroups">allowed_groups</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -11402,7 +11402,7 @@ def reset_www_authentication_disabled() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.property.jwtAllowedGroups">jwt_allowed_groups</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.property.loginParameters">login_parameters</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.property.tenantAuthEndpoint">tenant_auth_endpoint</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.property.wwwAuthenticationDisabled">www_authentication_disabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.property.wwwAuthenticationDisabled">www_authentication_disabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2OutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2">WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2</a></code> | *No description.* |
 
 ---
@@ -11547,7 +11547,7 @@ tenant_auth_endpoint_input: str
 www_authentication_disabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -11667,7 +11667,7 @@ tenant_auth_endpoint: str
 www_authentication_disabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -11697,14 +11697,14 @@ windowsFunctionApp.WindowsFunctionAppAuthSettingsV2AppleV2OutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2AppleV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2AppleV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2AppleV2OutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2AppleV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11896,7 +11896,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2AppleV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12026,14 +12026,14 @@ windowsFunctionApp.WindowsFunctionAppAuthSettingsV2AzureStaticWebAppV2OutputRefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2AzureStaticWebAppV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2AzureStaticWebAppV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2AzureStaticWebAppV2OutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2AzureStaticWebAppV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12225,7 +12225,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2AzureStaticWebAppV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12323,7 +12323,7 @@ windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2List(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2List.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2List.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2List.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2List.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -12331,7 +12331,7 @@ windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2List(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2List.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12401,7 +12401,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2List.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12438,7 +12438,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2List.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2List.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2List.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2">WindowsFunctionAppAuthSettingsV2CustomOidcV2</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2List.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2">WindowsFunctionAppAuthSettingsV2CustomOidcV2</a>]</code> | *No description.* |
 
 ---
 
@@ -12472,7 +12472,7 @@ fqn: str
 internal_value: IResolvable | typing.List[WindowsFunctionAppAuthSettingsV2CustomOidcV2]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2">WindowsFunctionAppAuthSettingsV2CustomOidcV2</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2">WindowsFunctionAppAuthSettingsV2CustomOidcV2</a>]
 
 ---
 
@@ -12494,7 +12494,7 @@ windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2OutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2OutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2OutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2OutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -12503,7 +12503,7 @@ windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2OutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12713,7 +12713,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12762,7 +12762,7 @@ def reset_scopes() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2OutputReference.property.nameClaimType">name_claim_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2OutputReference.property.openidConfigurationEndpoint">openid_configuration_endpoint</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2OutputReference.property.scopes">scopes</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2OutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2">WindowsFunctionAppAuthSettingsV2CustomOidcV2</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2OutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2">WindowsFunctionAppAuthSettingsV2CustomOidcV2</a></code> | *No description.* |
 
 ---
 
@@ -12956,7 +12956,7 @@ scopes: typing.List[str]
 internal_value: IResolvable | WindowsFunctionAppAuthSettingsV2CustomOidcV2
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2">WindowsFunctionAppAuthSettingsV2CustomOidcV2</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2">WindowsFunctionAppAuthSettingsV2CustomOidcV2</a>
 
 ---
 
@@ -12976,14 +12976,14 @@ windowsFunctionApp.WindowsFunctionAppAuthSettingsV2FacebookV2OutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2FacebookV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2FacebookV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2FacebookV2OutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2FacebookV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13177,7 +13177,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2FacebookV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13352,14 +13352,14 @@ windowsFunctionApp.WindowsFunctionAppAuthSettingsV2GithubV2OutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2GithubV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2GithubV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2GithubV2OutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2GithubV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13552,7 +13552,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2GithubV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13699,14 +13699,14 @@ windowsFunctionApp.WindowsFunctionAppAuthSettingsV2GoogleV2OutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2GoogleV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2GoogleV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2GoogleV2OutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2GoogleV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13900,7 +13900,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2GoogleV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14075,14 +14075,14 @@ windowsFunctionApp.WindowsFunctionAppAuthSettingsV2LoginOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2LoginOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2LoginOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2LoginOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2LoginOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14285,7 +14285,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2LoginOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14377,23 +14377,23 @@ def reset_validate_nonce() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2LoginOutputReference.property.cookieExpirationTimeInput">cookie_expiration_time_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2LoginOutputReference.property.logoutEndpointInput">logout_endpoint_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2LoginOutputReference.property.nonceExpirationTimeInput">nonce_expiration_time_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2LoginOutputReference.property.preserveUrlFragmentsForLoginsInput">preserve_url_fragments_for_logins_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2LoginOutputReference.property.preserveUrlFragmentsForLoginsInput">preserve_url_fragments_for_logins_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2LoginOutputReference.property.tokenRefreshExtensionTimeInput">token_refresh_extension_time_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2LoginOutputReference.property.tokenStoreEnabledInput">token_store_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2LoginOutputReference.property.tokenStoreEnabledInput">token_store_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2LoginOutputReference.property.tokenStorePathInput">token_store_path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2LoginOutputReference.property.tokenStoreSasSettingNameInput">token_store_sas_setting_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2LoginOutputReference.property.validateNonceInput">validate_nonce_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2LoginOutputReference.property.validateNonceInput">validate_nonce_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2LoginOutputReference.property.allowedExternalRedirectUrls">allowed_external_redirect_urls</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2LoginOutputReference.property.cookieExpirationConvention">cookie_expiration_convention</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2LoginOutputReference.property.cookieExpirationTime">cookie_expiration_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2LoginOutputReference.property.logoutEndpoint">logout_endpoint</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2LoginOutputReference.property.nonceExpirationTime">nonce_expiration_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2LoginOutputReference.property.preserveUrlFragmentsForLogins">preserve_url_fragments_for_logins</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2LoginOutputReference.property.preserveUrlFragmentsForLogins">preserve_url_fragments_for_logins</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2LoginOutputReference.property.tokenRefreshExtensionTime">token_refresh_extension_time</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2LoginOutputReference.property.tokenStoreEnabled">token_store_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2LoginOutputReference.property.tokenStoreEnabled">token_store_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2LoginOutputReference.property.tokenStorePath">token_store_path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2LoginOutputReference.property.tokenStoreSasSettingName">token_store_sas_setting_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2LoginOutputReference.property.validateNonce">validate_nonce</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2LoginOutputReference.property.validateNonce">validate_nonce</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2LoginOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2Login">WindowsFunctionAppAuthSettingsV2Login</a></code> | *No description.* |
 
 ---
@@ -14478,7 +14478,7 @@ nonce_expiration_time_input: str
 preserve_url_fragments_for_logins_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -14498,7 +14498,7 @@ token_refresh_extension_time_input: typing.Union[int, float]
 token_store_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -14528,7 +14528,7 @@ token_store_sas_setting_name_input: str
 validate_nonce_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -14588,7 +14588,7 @@ nonce_expiration_time: str
 preserve_url_fragments_for_logins: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -14608,7 +14608,7 @@ token_refresh_extension_time: typing.Union[int, float]
 token_store_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -14638,7 +14638,7 @@ token_store_sas_setting_name: str
 validate_nonce: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -14668,14 +14668,14 @@ windowsFunctionApp.WindowsFunctionAppAuthSettingsV2MicrosoftV2OutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2MicrosoftV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2MicrosoftV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2MicrosoftV2OutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2MicrosoftV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14869,7 +14869,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2MicrosoftV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15044,14 +15044,14 @@ windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15274,7 +15274,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15419,7 +15419,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `www_authentication_disabled`<sup>Optional</sup> <a name="www_authentication_disabled" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.putActiveDirectoryV2.parameter.wwwAuthenticationDisabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the www-authenticate provider should be omitted from the request? Defaults to `false`.
 
@@ -15484,7 +15484,7 @@ def put_custom_oidc_v2(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.putCustomOidcV2.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2">WindowsFunctionAppAuthSettingsV2CustomOidcV2</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2">WindowsFunctionAppAuthSettingsV2CustomOidcV2</a>]
 
 ---
 
@@ -15702,7 +15702,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `preserve_url_fragments_for_logins`<sup>Optional</sup> <a name="preserve_url_fragments_for_logins" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.putLogin.parameter.preserveUrlFragmentsForLogins"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the fragments from the request be preserved after the login request is made. Defaults to `false`.
 
@@ -15724,7 +15724,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `token_store_enabled`<sup>Optional</sup> <a name="token_store_enabled" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.putLogin.parameter.tokenStoreEnabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the Token Store configuration Enabled. Defaults to `false`.
 
@@ -15754,7 +15754,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `validate_nonce`<sup>Optional</sup> <a name="validate_nonce" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.putLogin.parameter.validateNonce"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the nonce be validated while completing the login flow. Defaults to `true`.
 
@@ -15987,10 +15987,10 @@ def reset_unauthenticated_action() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.property.twitterV2">twitter_v2</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2TwitterV2OutputReference">WindowsFunctionAppAuthSettingsV2TwitterV2OutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.property.activeDirectoryV2Input">active_directory_v2_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2">WindowsFunctionAppAuthSettingsV2ActiveDirectoryV2</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.property.appleV2Input">apple_v2_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2AppleV2">WindowsFunctionAppAuthSettingsV2AppleV2</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.property.authEnabledInput">auth_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.property.authEnabledInput">auth_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.property.azureStaticWebAppV2Input">azure_static_web_app_v2_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2AzureStaticWebAppV2">WindowsFunctionAppAuthSettingsV2AzureStaticWebAppV2</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.property.configFilePathInput">config_file_path_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.property.customOidcV2Input">custom_oidc_v2_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2">WindowsFunctionAppAuthSettingsV2CustomOidcV2</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.property.customOidcV2Input">custom_oidc_v2_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2">WindowsFunctionAppAuthSettingsV2CustomOidcV2</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.property.defaultProviderInput">default_provider_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.property.excludedPathsInput">excluded_paths_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.property.facebookV2Input">facebook_v2_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2FacebookV2">WindowsFunctionAppAuthSettingsV2FacebookV2</a></code> | *No description.* |
@@ -16002,12 +16002,12 @@ def reset_unauthenticated_action() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.property.httpRouteApiPrefixInput">http_route_api_prefix_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.property.loginInput">login_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2Login">WindowsFunctionAppAuthSettingsV2Login</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.property.microsoftV2Input">microsoft_v2_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2MicrosoftV2">WindowsFunctionAppAuthSettingsV2MicrosoftV2</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.property.requireAuthenticationInput">require_authentication_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.property.requireHttpsInput">require_https_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.property.requireAuthenticationInput">require_authentication_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.property.requireHttpsInput">require_https_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.property.runtimeVersionInput">runtime_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.property.twitterV2Input">twitter_v2_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2TwitterV2">WindowsFunctionAppAuthSettingsV2TwitterV2</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.property.unauthenticatedActionInput">unauthenticated_action_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.property.authEnabled">auth_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.property.authEnabled">auth_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.property.configFilePath">config_file_path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.property.defaultProvider">default_provider</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.property.excludedPaths">excluded_paths</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -16015,8 +16015,8 @@ def reset_unauthenticated_action() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.property.forwardProxyCustomHostHeaderName">forward_proxy_custom_host_header_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.property.forwardProxyCustomSchemeHeaderName">forward_proxy_custom_scheme_header_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.property.httpRouteApiPrefix">http_route_api_prefix</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.property.requireAuthentication">require_authentication</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.property.requireHttps">require_https</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.property.requireAuthentication">require_authentication</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.property.requireHttps">require_https</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.property.runtimeVersion">runtime_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.property.unauthenticatedAction">unauthenticated_action</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2OutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2">WindowsFunctionAppAuthSettingsV2</a></code> | *No description.* |
@@ -16173,7 +16173,7 @@ apple_v2_input: WindowsFunctionAppAuthSettingsV2AppleV2
 auth_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -16203,7 +16203,7 @@ config_file_path_input: str
 custom_oidc_v2_input: IResolvable | typing.List[WindowsFunctionAppAuthSettingsV2CustomOidcV2]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2">WindowsFunctionAppAuthSettingsV2CustomOidcV2</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2CustomOidcV2">WindowsFunctionAppAuthSettingsV2CustomOidcV2</a>]
 
 ---
 
@@ -16323,7 +16323,7 @@ microsoft_v2_input: WindowsFunctionAppAuthSettingsV2MicrosoftV2
 require_authentication_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -16333,7 +16333,7 @@ require_authentication_input: bool | IResolvable
 require_https_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -16373,7 +16373,7 @@ unauthenticated_action_input: str
 auth_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -16453,7 +16453,7 @@ http_route_api_prefix: str
 require_authentication: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -16463,7 +16463,7 @@ require_authentication: bool | IResolvable
 require_https: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -16513,14 +16513,14 @@ windowsFunctionApp.WindowsFunctionAppAuthSettingsV2TwitterV2OutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2TwitterV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2TwitterV2OutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2TwitterV2OutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2TwitterV2OutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16712,7 +16712,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppAuthSettingsV2TwitterV2OutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16831,14 +16831,14 @@ windowsFunctionApp.WindowsFunctionAppBackupOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17032,7 +17032,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17080,7 +17080,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `keep_at_least_one_backup`<sup>Optional</sup> <a name="keep_at_least_one_backup" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupOutputReference.putSchedule.parameter.keepAtLeastOneBackup"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the service keep at least one backup, regardless of age of backup. Defaults to `false`.
 
@@ -17122,11 +17122,11 @@ def reset_enabled() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupOutputReference.property.schedule">schedule</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupScheduleOutputReference">WindowsFunctionAppBackupScheduleOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupOutputReference.property.scheduleInput">schedule_input</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupSchedule">WindowsFunctionAppBackupSchedule</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupOutputReference.property.storageAccountUrlInput">storage_account_url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupOutputReference.property.storageAccountUrl">storage_account_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackup">WindowsFunctionAppBackup</a></code> | *No description.* |
@@ -17173,7 +17173,7 @@ schedule: WindowsFunctionAppBackupScheduleOutputReference
 enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17213,7 +17213,7 @@ storage_account_url_input: str
 enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17263,14 +17263,14 @@ windowsFunctionApp.WindowsFunctionAppBackupScheduleOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupScheduleOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupScheduleOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupScheduleOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupScheduleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17465,7 +17465,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupScheduleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17507,12 +17507,12 @@ def reset_start_time() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupScheduleOutputReference.property.lastExecutionTime">last_execution_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupScheduleOutputReference.property.frequencyIntervalInput">frequency_interval_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupScheduleOutputReference.property.frequencyUnitInput">frequency_unit_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupScheduleOutputReference.property.keepAtLeastOneBackupInput">keep_at_least_one_backup_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupScheduleOutputReference.property.keepAtLeastOneBackupInput">keep_at_least_one_backup_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupScheduleOutputReference.property.retentionPeriodDaysInput">retention_period_days_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupScheduleOutputReference.property.startTimeInput">start_time_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupScheduleOutputReference.property.frequencyInterval">frequency_interval</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupScheduleOutputReference.property.frequencyUnit">frequency_unit</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupScheduleOutputReference.property.keepAtLeastOneBackup">keep_at_least_one_backup</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupScheduleOutputReference.property.keepAtLeastOneBackup">keep_at_least_one_backup</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupScheduleOutputReference.property.retentionPeriodDays">retention_period_days</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupScheduleOutputReference.property.startTime">start_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupScheduleOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppBackupSchedule">WindowsFunctionAppBackupSchedule</a></code> | *No description.* |
@@ -17579,7 +17579,7 @@ frequency_unit_input: str
 keep_at_least_one_backup_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17629,7 +17629,7 @@ frequency_unit: str
 keep_at_least_one_backup: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -17680,7 +17680,7 @@ windowsFunctionApp.WindowsFunctionAppConnectionStringList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionStringList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionStringList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionStringList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionStringList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -17688,7 +17688,7 @@ windowsFunctionApp.WindowsFunctionAppConnectionStringList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionStringList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17758,7 +17758,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionStringList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17795,7 +17795,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionStringList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionStringList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionStringList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionString">WindowsFunctionAppConnectionString</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionStringList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionString">WindowsFunctionAppConnectionString</a>]</code> | *No description.* |
 
 ---
 
@@ -17829,7 +17829,7 @@ fqn: str
 internal_value: IResolvable | typing.List[WindowsFunctionAppConnectionString]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionString">WindowsFunctionAppConnectionString</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionString">WindowsFunctionAppConnectionString</a>]
 
 ---
 
@@ -17851,7 +17851,7 @@ windowsFunctionApp.WindowsFunctionAppConnectionStringOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionStringOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionStringOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionStringOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionStringOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionStringOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -17860,7 +17860,7 @@ windowsFunctionApp.WindowsFunctionAppConnectionStringOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionStringOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18068,7 +18068,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionStringOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18095,7 +18095,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionStringOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionStringOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionStringOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionStringOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionString">WindowsFunctionAppConnectionString</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionStringOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionString">WindowsFunctionAppConnectionString</a></code> | *No description.* |
 
 ---
 
@@ -18189,7 +18189,7 @@ value: str
 internal_value: IResolvable | WindowsFunctionAppConnectionString
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionString">WindowsFunctionAppConnectionString</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppConnectionString">WindowsFunctionAppConnectionString</a>
 
 ---
 
@@ -18209,14 +18209,14 @@ windowsFunctionApp.WindowsFunctionAppIdentityOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppIdentityOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppIdentityOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppIdentityOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppIdentityOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18409,7 +18409,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppIdentityOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18556,14 +18556,14 @@ windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStackOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStackOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStackOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStackOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStackOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18761,7 +18761,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStackOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18822,14 +18822,14 @@ def reset_use_dotnet_isolated_runtime() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStackOutputReference.property.javaVersionInput">java_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStackOutputReference.property.nodeVersionInput">node_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStackOutputReference.property.powershellCoreVersionInput">powershell_core_version_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStackOutputReference.property.useCustomRuntimeInput">use_custom_runtime_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStackOutputReference.property.useDotnetIsolatedRuntimeInput">use_dotnet_isolated_runtime_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStackOutputReference.property.useCustomRuntimeInput">use_custom_runtime_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStackOutputReference.property.useDotnetIsolatedRuntimeInput">use_dotnet_isolated_runtime_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStackOutputReference.property.dotnetVersion">dotnet_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStackOutputReference.property.javaVersion">java_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStackOutputReference.property.nodeVersion">node_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStackOutputReference.property.powershellCoreVersion">powershell_core_version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStackOutputReference.property.useCustomRuntime">use_custom_runtime</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStackOutputReference.property.useDotnetIsolatedRuntime">use_dotnet_isolated_runtime</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStackOutputReference.property.useCustomRuntime">use_custom_runtime</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStackOutputReference.property.useDotnetIsolatedRuntime">use_dotnet_isolated_runtime</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStackOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStack">WindowsFunctionAppSiteConfigApplicationStack</a></code> | *No description.* |
 
 ---
@@ -18904,7 +18904,7 @@ powershell_core_version_input: str
 use_custom_runtime_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -18914,7 +18914,7 @@ use_custom_runtime_input: bool | IResolvable
 use_dotnet_isolated_runtime_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -18964,7 +18964,7 @@ powershell_core_version: str
 use_custom_runtime: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -18974,7 +18974,7 @@ use_custom_runtime: bool | IResolvable
 use_dotnet_isolated_runtime: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -19004,14 +19004,14 @@ windowsFunctionApp.WindowsFunctionAppSiteConfigAppServiceLogsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigAppServiceLogsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigAppServiceLogsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigAppServiceLogsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigAppServiceLogsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19205,7 +19205,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigAppServiceLogsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19336,14 +19336,14 @@ windowsFunctionApp.WindowsFunctionAppSiteConfigCorsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigCorsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigCorsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigCorsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigCorsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19537,7 +19537,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigCorsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19571,9 +19571,9 @@ def reset_support_credentials() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigCorsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigCorsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigCorsOutputReference.property.allowedOriginsInput">allowed_origins_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigCorsOutputReference.property.supportCredentialsInput">support_credentials_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigCorsOutputReference.property.supportCredentialsInput">support_credentials_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigCorsOutputReference.property.allowedOrigins">allowed_origins</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigCorsOutputReference.property.supportCredentials">support_credentials</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigCorsOutputReference.property.supportCredentials">support_credentials</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigCorsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigCors">WindowsFunctionAppSiteConfigCors</a></code> | *No description.* |
 
 ---
@@ -19618,7 +19618,7 @@ allowed_origins_input: typing.List[str]
 support_credentials_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -19638,7 +19638,7 @@ allowed_origins: typing.List[str]
 support_credentials: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -19669,7 +19669,7 @@ windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeadersList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeadersList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeadersList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeadersList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeadersList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -19677,7 +19677,7 @@ windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeadersList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeadersList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19747,7 +19747,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeadersList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19784,7 +19784,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeadersList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeadersList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeadersList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeaders">WindowsFunctionAppSiteConfigIpRestrictionHeaders</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeadersList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeaders">WindowsFunctionAppSiteConfigIpRestrictionHeaders</a>]</code> | *No description.* |
 
 ---
 
@@ -19818,7 +19818,7 @@ fqn: str
 internal_value: IResolvable | typing.List[WindowsFunctionAppSiteConfigIpRestrictionHeaders]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeaders">WindowsFunctionAppSiteConfigIpRestrictionHeaders</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeaders">WindowsFunctionAppSiteConfigIpRestrictionHeaders</a>]
 
 ---
 
@@ -19840,7 +19840,7 @@ windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeadersOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeadersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeadersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeadersOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeadersOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeadersOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -19849,7 +19849,7 @@ windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeadersOutputReferen
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeadersOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20061,7 +20061,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeadersOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20114,7 +20114,7 @@ def reset_x_forwarded_host() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeadersOutputReference.property.xFdHealthProbe">x_fd_health_probe</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeadersOutputReference.property.xForwardedFor">x_forwarded_for</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeadersOutputReference.property.xForwardedHost">x_forwarded_host</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeadersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeaders">WindowsFunctionAppSiteConfigIpRestrictionHeaders</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeadersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeaders">WindowsFunctionAppSiteConfigIpRestrictionHeaders</a></code> | *No description.* |
 
 ---
 
@@ -20228,7 +20228,7 @@ x_forwarded_host: typing.List[str]
 internal_value: IResolvable | WindowsFunctionAppSiteConfigIpRestrictionHeaders
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeaders">WindowsFunctionAppSiteConfigIpRestrictionHeaders</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeaders">WindowsFunctionAppSiteConfigIpRestrictionHeaders</a>
 
 ---
 
@@ -20249,7 +20249,7 @@ windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -20257,7 +20257,7 @@ windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20327,7 +20327,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20364,7 +20364,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestriction">WindowsFunctionAppSiteConfigIpRestriction</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestriction">WindowsFunctionAppSiteConfigIpRestriction</a>]</code> | *No description.* |
 
 ---
 
@@ -20398,7 +20398,7 @@ fqn: str
 internal_value: IResolvable | typing.List[WindowsFunctionAppSiteConfigIpRestriction]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestriction">WindowsFunctionAppSiteConfigIpRestriction</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestriction">WindowsFunctionAppSiteConfigIpRestriction</a>]
 
 ---
 
@@ -20420,7 +20420,7 @@ windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -20429,7 +20429,7 @@ windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20646,7 +20646,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20670,7 +20670,7 @@ def put_headers(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionOutputReference.putHeaders.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeaders">WindowsFunctionAppSiteConfigIpRestrictionHeaders</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeaders">WindowsFunctionAppSiteConfigIpRestrictionHeaders</a>]
 
 ---
 
@@ -20732,7 +20732,7 @@ def reset_virtual_network_subnet_id() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionOutputReference.property.headers">headers</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeadersList">WindowsFunctionAppSiteConfigIpRestrictionHeadersList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionOutputReference.property.actionInput">action_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionOutputReference.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionOutputReference.property.headersInput">headers_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeaders">WindowsFunctionAppSiteConfigIpRestrictionHeaders</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionOutputReference.property.headersInput">headers_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeaders">WindowsFunctionAppSiteConfigIpRestrictionHeaders</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionOutputReference.property.ipAddressInput">ip_address_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionOutputReference.property.priorityInput">priority_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -20745,7 +20745,7 @@ def reset_virtual_network_subnet_id() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionOutputReference.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionOutputReference.property.serviceTag">service_tag</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionOutputReference.property.virtualNetworkSubnetId">virtual_network_subnet_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestriction">WindowsFunctionAppSiteConfigIpRestriction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestriction">WindowsFunctionAppSiteConfigIpRestriction</a></code> | *No description.* |
 
 ---
 
@@ -20809,7 +20809,7 @@ description_input: str
 headers_input: IResolvable | typing.List[WindowsFunctionAppSiteConfigIpRestrictionHeaders]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeaders">WindowsFunctionAppSiteConfigIpRestrictionHeaders</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionHeaders">WindowsFunctionAppSiteConfigIpRestrictionHeaders</a>]
 
 ---
 
@@ -20939,7 +20939,7 @@ virtual_network_subnet_id: str
 internal_value: IResolvable | WindowsFunctionAppSiteConfigIpRestriction
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestriction">WindowsFunctionAppSiteConfigIpRestriction</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestriction">WindowsFunctionAppSiteConfigIpRestriction</a>
 
 ---
 
@@ -20959,14 +20959,14 @@ windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21196,7 +21196,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21265,7 +21265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `use_custom_runtime`<sup>Optional</sup> <a name="use_custom_runtime" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.putApplicationStack.parameter.useCustomRuntime"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Does the Function App use a custom Application Stack?
 
@@ -21275,7 +21275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `use_dotnet_isolated_runtime`<sup>Optional</sup> <a name="use_dotnet_isolated_runtime" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.putApplicationStack.parameter.useDotnetIsolatedRuntime"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the DotNet process use an isolated runtime. Defaults to `false`.
 
@@ -21333,7 +21333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `support_credentials`<sup>Optional</sup> <a name="support_credentials" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.putCors.parameter.supportCredentials"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Are credentials allowed in CORS requests? Defaults to `false`.
 
@@ -21351,7 +21351,7 @@ def put_ip_restriction(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.putIpRestriction.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestriction">WindowsFunctionAppSiteConfigIpRestriction</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestriction">WindowsFunctionAppSiteConfigIpRestriction</a>]
 
 ---
 
@@ -21365,7 +21365,7 @@ def put_scm_ip_restriction(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.putScmIpRestriction.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestriction">WindowsFunctionAppSiteConfigScmIpRestriction</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestriction">WindowsFunctionAppSiteConfigScmIpRestriction</a>]
 
 ---
 
@@ -21577,12 +21577,12 @@ def reset_worker_count() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.applicationStack">application_stack</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigApplicationStackOutputReference">WindowsFunctionAppSiteConfigApplicationStackOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.appServiceLogs">app_service_logs</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigAppServiceLogsOutputReference">WindowsFunctionAppSiteConfigAppServiceLogsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.cors">cors</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigCorsOutputReference">WindowsFunctionAppSiteConfigCorsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.detailedErrorLoggingEnabled">detailed_error_logging_enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.detailedErrorLoggingEnabled">detailed_error_logging_enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.ipRestriction">ip_restriction</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestrictionList">WindowsFunctionAppSiteConfigIpRestrictionList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.scmIpRestriction">scm_ip_restriction</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionList">WindowsFunctionAppSiteConfigScmIpRestrictionList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.scmType">scm_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.windowsFxVersion">windows_fx_version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.alwaysOnInput">always_on_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.alwaysOnInput">always_on_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.apiDefinitionUrlInput">api_definition_url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.apiManagementApiIdInput">api_management_api_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.appCommandLineInput">app_command_line_input</a></code> | <code>str</code> | *No description.* |
@@ -21597,25 +21597,25 @@ def reset_worker_count() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.ftpsStateInput">ftps_state_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.healthCheckEvictionTimeInMinInput">health_check_eviction_time_in_min_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.healthCheckPathInput">health_check_path_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.http2EnabledInput">http2_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.http2EnabledInput">http2_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.ipRestrictionDefaultActionInput">ip_restriction_default_action_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.ipRestrictionInput">ip_restriction_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestriction">WindowsFunctionAppSiteConfigIpRestriction</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.ipRestrictionInput">ip_restriction_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestriction">WindowsFunctionAppSiteConfigIpRestriction</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.loadBalancingModeInput">load_balancing_mode_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.managedPipelineModeInput">managed_pipeline_mode_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.minimumTlsVersionInput">minimum_tls_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.preWarmedInstanceCountInput">pre_warmed_instance_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.remoteDebuggingEnabledInput">remote_debugging_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.remoteDebuggingEnabledInput">remote_debugging_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.remoteDebuggingVersionInput">remote_debugging_version_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.runtimeScaleMonitoringEnabledInput">runtime_scale_monitoring_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.runtimeScaleMonitoringEnabledInput">runtime_scale_monitoring_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.scmIpRestrictionDefaultActionInput">scm_ip_restriction_default_action_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.scmIpRestrictionInput">scm_ip_restriction_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestriction">WindowsFunctionAppSiteConfigScmIpRestriction</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.scmIpRestrictionInput">scm_ip_restriction_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestriction">WindowsFunctionAppSiteConfigScmIpRestriction</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.scmMinimumTlsVersionInput">scm_minimum_tls_version_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.scmUseMainIpRestrictionInput">scm_use_main_ip_restriction_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.use32BitWorkerInput">use32_bit_worker_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.vnetRouteAllEnabledInput">vnet_route_all_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.websocketsEnabledInput">websockets_enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.scmUseMainIpRestrictionInput">scm_use_main_ip_restriction_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.use32BitWorkerInput">use32_bit_worker_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.vnetRouteAllEnabledInput">vnet_route_all_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.websocketsEnabledInput">websockets_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.workerCountInput">worker_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.alwaysOn">always_on</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.alwaysOn">always_on</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.apiDefinitionUrl">api_definition_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.apiManagementApiId">api_management_api_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.appCommandLine">app_command_line</a></code> | <code>str</code> | *No description.* |
@@ -21627,21 +21627,21 @@ def reset_worker_count() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.ftpsState">ftps_state</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.healthCheckEvictionTimeInMin">health_check_eviction_time_in_min</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.healthCheckPath">health_check_path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.http2Enabled">http2_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.http2Enabled">http2_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.ipRestrictionDefaultAction">ip_restriction_default_action</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.loadBalancingMode">load_balancing_mode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.managedPipelineMode">managed_pipeline_mode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.minimumTlsVersion">minimum_tls_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.preWarmedInstanceCount">pre_warmed_instance_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.remoteDebuggingEnabled">remote_debugging_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.remoteDebuggingEnabled">remote_debugging_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.remoteDebuggingVersion">remote_debugging_version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.runtimeScaleMonitoringEnabled">runtime_scale_monitoring_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.runtimeScaleMonitoringEnabled">runtime_scale_monitoring_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.scmIpRestrictionDefaultAction">scm_ip_restriction_default_action</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.scmMinimumTlsVersion">scm_minimum_tls_version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.scmUseMainIpRestriction">scm_use_main_ip_restriction</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.use32BitWorker">use32_bit_worker</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.vnetRouteAllEnabled">vnet_route_all_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.websocketsEnabled">websockets_enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.scmUseMainIpRestriction">scm_use_main_ip_restriction</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.use32BitWorker">use32_bit_worker</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.vnetRouteAllEnabled">vnet_route_all_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.websocketsEnabled">websockets_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.workerCount">worker_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfig">WindowsFunctionAppSiteConfig</a></code> | *No description.* |
 
@@ -21707,7 +21707,7 @@ cors: WindowsFunctionAppSiteConfigCorsOutputReference
 detailed_error_logging_enabled: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -21757,7 +21757,7 @@ windows_fx_version: str
 always_on_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -21907,7 +21907,7 @@ health_check_path_input: str
 http2_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -21927,7 +21927,7 @@ ip_restriction_default_action_input: str
 ip_restriction_input: IResolvable | typing.List[WindowsFunctionAppSiteConfigIpRestriction]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestriction">WindowsFunctionAppSiteConfigIpRestriction</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigIpRestriction">WindowsFunctionAppSiteConfigIpRestriction</a>]
 
 ---
 
@@ -21977,7 +21977,7 @@ pre_warmed_instance_count_input: typing.Union[int, float]
 remote_debugging_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -21997,7 +21997,7 @@ remote_debugging_version_input: str
 runtime_scale_monitoring_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -22017,7 +22017,7 @@ scm_ip_restriction_default_action_input: str
 scm_ip_restriction_input: IResolvable | typing.List[WindowsFunctionAppSiteConfigScmIpRestriction]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestriction">WindowsFunctionAppSiteConfigScmIpRestriction</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestriction">WindowsFunctionAppSiteConfigScmIpRestriction</a>]
 
 ---
 
@@ -22037,7 +22037,7 @@ scm_minimum_tls_version_input: str
 scm_use_main_ip_restriction_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -22047,7 +22047,7 @@ scm_use_main_ip_restriction_input: bool | IResolvable
 use32_bit_worker_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -22057,7 +22057,7 @@ use32_bit_worker_input: bool | IResolvable
 vnet_route_all_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -22067,7 +22067,7 @@ vnet_route_all_enabled_input: bool | IResolvable
 websockets_enabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -22087,7 +22087,7 @@ worker_count_input: typing.Union[int, float]
 always_on: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -22207,7 +22207,7 @@ health_check_path: str
 http2_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -22267,7 +22267,7 @@ pre_warmed_instance_count: typing.Union[int, float]
 remote_debugging_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -22287,7 +22287,7 @@ remote_debugging_version: str
 runtime_scale_monitoring_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -22317,7 +22317,7 @@ scm_minimum_tls_version: str
 scm_use_main_ip_restriction: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -22327,7 +22327,7 @@ scm_use_main_ip_restriction: bool | IResolvable
 use32_bit_worker: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -22337,7 +22337,7 @@ use32_bit_worker: bool | IResolvable
 vnet_route_all_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -22347,7 +22347,7 @@ vnet_route_all_enabled: bool | IResolvable
 websockets_enabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -22388,7 +22388,7 @@ windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeadersList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeadersList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeadersList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeadersList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeadersList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -22396,7 +22396,7 @@ windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeadersList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeadersList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22466,7 +22466,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeadersList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22503,7 +22503,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeadersList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeadersList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeadersList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeaders">WindowsFunctionAppSiteConfigScmIpRestrictionHeaders</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeadersList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeaders">WindowsFunctionAppSiteConfigScmIpRestrictionHeaders</a>]</code> | *No description.* |
 
 ---
 
@@ -22537,7 +22537,7 @@ fqn: str
 internal_value: IResolvable | typing.List[WindowsFunctionAppSiteConfigScmIpRestrictionHeaders]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeaders">WindowsFunctionAppSiteConfigScmIpRestrictionHeaders</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeaders">WindowsFunctionAppSiteConfigScmIpRestrictionHeaders</a>]
 
 ---
 
@@ -22559,7 +22559,7 @@ windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeadersOutputRefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeadersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeadersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeadersOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeadersOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeadersOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -22568,7 +22568,7 @@ windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeadersOutputRefe
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeadersOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22780,7 +22780,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeadersOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22833,7 +22833,7 @@ def reset_x_forwarded_host() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeadersOutputReference.property.xFdHealthProbe">x_fd_health_probe</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeadersOutputReference.property.xForwardedFor">x_forwarded_for</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeadersOutputReference.property.xForwardedHost">x_forwarded_host</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeadersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeaders">WindowsFunctionAppSiteConfigScmIpRestrictionHeaders</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeadersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeaders">WindowsFunctionAppSiteConfigScmIpRestrictionHeaders</a></code> | *No description.* |
 
 ---
 
@@ -22947,7 +22947,7 @@ x_forwarded_host: typing.List[str]
 internal_value: IResolvable | WindowsFunctionAppSiteConfigScmIpRestrictionHeaders
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeaders">WindowsFunctionAppSiteConfigScmIpRestrictionHeaders</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeaders">WindowsFunctionAppSiteConfigScmIpRestrictionHeaders</a>
 
 ---
 
@@ -22968,7 +22968,7 @@ windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -22976,7 +22976,7 @@ windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23046,7 +23046,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23083,7 +23083,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestriction">WindowsFunctionAppSiteConfigScmIpRestriction</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestriction">WindowsFunctionAppSiteConfigScmIpRestriction</a>]</code> | *No description.* |
 
 ---
 
@@ -23117,7 +23117,7 @@ fqn: str
 internal_value: IResolvable | typing.List[WindowsFunctionAppSiteConfigScmIpRestriction]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestriction">WindowsFunctionAppSiteConfigScmIpRestriction</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestriction">WindowsFunctionAppSiteConfigScmIpRestriction</a>]
 
 ---
 
@@ -23139,7 +23139,7 @@ windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -23148,7 +23148,7 @@ windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23365,7 +23365,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23389,7 +23389,7 @@ def put_headers(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionOutputReference.putHeaders.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeaders">WindowsFunctionAppSiteConfigScmIpRestrictionHeaders</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeaders">WindowsFunctionAppSiteConfigScmIpRestrictionHeaders</a>]
 
 ---
 
@@ -23451,7 +23451,7 @@ def reset_virtual_network_subnet_id() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionOutputReference.property.headers">headers</a></code> | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeadersList">WindowsFunctionAppSiteConfigScmIpRestrictionHeadersList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionOutputReference.property.actionInput">action_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionOutputReference.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionOutputReference.property.headersInput">headers_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeaders">WindowsFunctionAppSiteConfigScmIpRestrictionHeaders</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionOutputReference.property.headersInput">headers_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeaders">WindowsFunctionAppSiteConfigScmIpRestrictionHeaders</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionOutputReference.property.ipAddressInput">ip_address_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionOutputReference.property.priorityInput">priority_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -23464,7 +23464,7 @@ def reset_virtual_network_subnet_id() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionOutputReference.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionOutputReference.property.serviceTag">service_tag</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionOutputReference.property.virtualNetworkSubnetId">virtual_network_subnet_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestriction">WindowsFunctionAppSiteConfigScmIpRestriction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestriction">WindowsFunctionAppSiteConfigScmIpRestriction</a></code> | *No description.* |
 
 ---
 
@@ -23528,7 +23528,7 @@ description_input: str
 headers_input: IResolvable | typing.List[WindowsFunctionAppSiteConfigScmIpRestrictionHeaders]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeaders">WindowsFunctionAppSiteConfigScmIpRestrictionHeaders</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestrictionHeaders">WindowsFunctionAppSiteConfigScmIpRestrictionHeaders</a>]
 
 ---
 
@@ -23658,7 +23658,7 @@ virtual_network_subnet_id: str
 internal_value: IResolvable | WindowsFunctionAppSiteConfigScmIpRestriction
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestriction">WindowsFunctionAppSiteConfigScmIpRestriction</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteConfigScmIpRestriction">WindowsFunctionAppSiteConfigScmIpRestriction</a>
 
 ---
 
@@ -23679,7 +23679,7 @@ windowsFunctionApp.WindowsFunctionAppSiteCredentialList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteCredentialList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteCredentialList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteCredentialList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteCredentialList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -23687,7 +23687,7 @@ windowsFunctionApp.WindowsFunctionAppSiteCredentialList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteCredentialList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23757,7 +23757,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteCredentialList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23839,7 +23839,7 @@ windowsFunctionApp.WindowsFunctionAppSiteCredentialOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteCredentialOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteCredentialOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteCredentialOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteCredentialOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteCredentialOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -23848,7 +23848,7 @@ windowsFunctionApp.WindowsFunctionAppSiteCredentialOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteCredentialOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24056,7 +24056,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppSiteCredentialOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24153,14 +24153,14 @@ windowsFunctionApp.WindowsFunctionAppStickySettingsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStickySettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStickySettingsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStickySettingsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStickySettingsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24354,7 +24354,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStickySettingsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24486,7 +24486,7 @@ windowsFunctionApp.WindowsFunctionAppStorageAccountList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccountList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccountList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccountList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccountList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -24494,7 +24494,7 @@ windowsFunctionApp.WindowsFunctionAppStorageAccountList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccountList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24564,7 +24564,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccountList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24601,7 +24601,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccountList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccountList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccountList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccount">WindowsFunctionAppStorageAccount</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccountList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccount">WindowsFunctionAppStorageAccount</a>]</code> | *No description.* |
 
 ---
 
@@ -24635,7 +24635,7 @@ fqn: str
 internal_value: IResolvable | typing.List[WindowsFunctionAppStorageAccount]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccount">WindowsFunctionAppStorageAccount</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccount">WindowsFunctionAppStorageAccount</a>]
 
 ---
 
@@ -24657,7 +24657,7 @@ windowsFunctionApp.WindowsFunctionAppStorageAccountOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccountOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccountOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccountOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccountOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccountOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -24666,7 +24666,7 @@ windowsFunctionApp.WindowsFunctionAppStorageAccountOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccountOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24875,7 +24875,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccountOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24914,7 +24914,7 @@ def reset_mount_path() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccountOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccountOutputReference.property.shareName">share_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccountOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccountOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccount">WindowsFunctionAppStorageAccount</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccountOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccount">WindowsFunctionAppStorageAccount</a></code> | *No description.* |
 
 ---
 
@@ -25068,7 +25068,7 @@ type: str
 internal_value: IResolvable | WindowsFunctionAppStorageAccount
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccount">WindowsFunctionAppStorageAccount</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppStorageAccount">WindowsFunctionAppStorageAccount</a>
 
 ---
 
@@ -25088,14 +25088,14 @@ windowsFunctionApp.WindowsFunctionAppTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25291,7 +25291,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25344,7 +25344,7 @@ def reset_update() -> None
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppTimeouts">WindowsFunctionAppTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppTimeouts">WindowsFunctionAppTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -25458,7 +25458,7 @@ update: str
 internal_value: IResolvable | WindowsFunctionAppTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppTimeouts">WindowsFunctionAppTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.windowsFunctionApp.WindowsFunctionAppTimeouts">WindowsFunctionAppTimeouts</a>
 
 ---
 

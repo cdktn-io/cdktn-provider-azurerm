@@ -63,10 +63,10 @@ provider.AzurermProvider(
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.clientIdFilePath">client_id_file_path</a></code> | <code>str</code> | The path to a file containing the Client ID which should be used. |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.clientSecret">client_secret</a></code> | <code>str</code> | The Client Secret which should be used. For use When authenticating as a Service Principal using a Client Secret. |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.clientSecretFilePath">client_secret_file_path</a></code> | <code>str</code> | The path to a file containing the Client Secret which should be used. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.disableCorrelationRequestId">disable_correlation_request_id</a></code> | <code>bool \| cdktf.IResolvable</code> | This will disable the x-ms-correlation-request-id header. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.disableTerraformPartnerId">disable_terraform_partner_id</a></code> | <code>bool \| cdktf.IResolvable</code> | This will disable the Terraform Partner ID which is used if a custom `partner_id` isn't specified. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.disableCorrelationRequestId">disable_correlation_request_id</a></code> | <code>bool \| cdktn.IResolvable</code> | This will disable the x-ms-correlation-request-id header. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.disableTerraformPartnerId">disable_terraform_partner_id</a></code> | <code>bool \| cdktn.IResolvable</code> | This will disable the Terraform Partner ID which is used if a custom `partner_id` isn't specified. |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.environment">environment</a></code> | <code>str</code> | The Cloud Environment which should be used. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.features">features</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures">AzurermProviderFeatures</a>]</code> | features block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.features">features</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures">AzurermProviderFeatures</a>]</code> | features block. |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.metadataHost">metadata_host</a></code> | <code>str</code> | The Hostname which should be used for the Azure Metadata Service. |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.msiApiVersion">msi_api_version</a></code> | <code>str</code> | The API version to use for Managed Service Identity (IMDS) - for cases where the default API version is not supported by the endpoint. |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.msiEndpoint">msi_endpoint</a></code> | <code>str</code> | The path to a custom endpoint for Managed Service Identity - in most circumstances this should be detected automatically. |
@@ -77,14 +77,14 @@ provider.AzurermProvider(
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.partnerId">partner_id</a></code> | <code>str</code> | A GUID/UUID that is registered with Microsoft to facilitate partner resource usage attribution. |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.resourceProviderRegistrations">resource_provider_registrations</a></code> | <code>str</code> | The set of Resource Providers which should be automatically registered for the subscription. |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.resourceProvidersToRegister">resource_providers_to_register</a></code> | <code>typing.List[str]</code> | A list of Resource Providers to explicitly register for the subscription, in addition to those specified by the `resource_provider_registrations` property. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.skipProviderRegistration">skip_provider_registration</a></code> | <code>bool \| cdktf.IResolvable</code> | Should the AzureRM Provider skip registering all of the Resource Providers that it supports, if they're not already registered? |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.storageUseAzuread">storage_use_azuread</a></code> | <code>bool \| cdktf.IResolvable</code> | Should the AzureRM Provider use Azure AD Authentication when accessing the Storage Data Plane APIs? |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.skipProviderRegistration">skip_provider_registration</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the AzureRM Provider skip registering all of the Resource Providers that it supports, if they're not already registered? |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.storageUseAzuread">storage_use_azuread</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the AzureRM Provider use Azure AD Authentication when accessing the Storage Data Plane APIs? |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.subscriptionId">subscription_id</a></code> | <code>str</code> | The Subscription ID which should be used. |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.tenantId">tenant_id</a></code> | <code>str</code> | The Tenant ID which should be used. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.useAksWorkloadIdentity">use_aks_workload_identity</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow Azure AKS Workload Identity to be used for Authentication. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.useCli">use_cli</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow Azure CLI to be used for Authentication. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.useMsi">use_msi</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow Managed Service Identity to be used for Authentication. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.useOidc">use_oidc</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow OpenID Connect to be used for authentication. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.useAksWorkloadIdentity">use_aks_workload_identity</a></code> | <code>bool \| cdktn.IResolvable</code> | Allow Azure AKS Workload Identity to be used for Authentication. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.useCli">use_cli</a></code> | <code>bool \| cdktn.IResolvable</code> | Allow Azure CLI to be used for Authentication. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.useMsi">use_msi</a></code> | <code>bool \| cdktn.IResolvable</code> | Allow Managed Service Identity to be used for Authentication. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.useOidc">use_oidc</a></code> | <code>bool \| cdktn.IResolvable</code> | Allow OpenID Connect to be used for authentication. |
 
 ---
 
@@ -208,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `disable_correlation_request_id`<sup>Optional</sup> <a name="disable_correlation_request_id" id="@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.disableCorrelationRequestId"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 This will disable the x-ms-correlation-request-id header.
 
@@ -218,7 +218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `disable_terraform_partner_id`<sup>Optional</sup> <a name="disable_terraform_partner_id" id="@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.disableTerraformPartnerId"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 This will disable the Terraform Partner ID which is used if a custom `partner_id` isn't specified.
 
@@ -240,7 +240,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `features`<sup>Optional</sup> <a name="features" id="@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.features"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures">AzurermProviderFeatures</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures">AzurermProviderFeatures</a>]
 
 features block.
 
@@ -356,7 +356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `skip_provider_registration`<sup>Optional</sup> <a name="skip_provider_registration" id="@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.skipProviderRegistration"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the AzureRM Provider skip registering all of the Resource Providers that it supports, if they're not already registered?
 
@@ -366,7 +366,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `storage_use_azuread`<sup>Optional</sup> <a name="storage_use_azuread" id="@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.storageUseAzuread"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the AzureRM Provider use Azure AD Authentication when accessing the Storage Data Plane APIs?
 
@@ -396,7 +396,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `use_aks_workload_identity`<sup>Optional</sup> <a name="use_aks_workload_identity" id="@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.useAksWorkloadIdentity"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Allow Azure AKS Workload Identity to be used for Authentication.
 
@@ -406,7 +406,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `use_cli`<sup>Optional</sup> <a name="use_cli" id="@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.useCli"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Allow Azure CLI to be used for Authentication.
 
@@ -416,7 +416,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `use_msi`<sup>Optional</sup> <a name="use_msi" id="@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.useMsi"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Allow Managed Service Identity to be used for Authentication.
 
@@ -426,7 +426,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `use_oidc`<sup>Optional</sup> <a name="use_oidc" id="@cdktn/provider-azurerm.provider.AzurermProvider.Initializer.parameter.useOidc"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Allow OpenID Connect to be used for authentication.
 
@@ -754,7 +754,7 @@ def reset_use_oidc() -> None
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.isTerraformProvider">is_terraform_provider</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a AzurermProvider resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a AzurermProvider resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -837,7 +837,7 @@ provider.AzurermProvider.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a AzurermProvider resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a AzurermProvider resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.provider.AzurermProvider.generateConfigForImport.parameter.scope"></a>
 
@@ -867,7 +867,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.provider.AzurermProvider.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the AzurermProvider to import is found.
 
@@ -878,12 +878,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.metaAttributes">meta_attributes</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.terraformProviderSource">terraform_provider_source</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.alias">alias</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.adoPipelineServiceConnectionIdInput">ado_pipeline_service_connection_id_input</a></code> | <code>str</code> | *No description.* |
@@ -896,10 +896,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.clientIdInput">client_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.clientSecretFilePathInput">client_secret_file_path_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.clientSecretInput">client_secret_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.disableCorrelationRequestIdInput">disable_correlation_request_id_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.disableTerraformPartnerIdInput">disable_terraform_partner_id_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.disableCorrelationRequestIdInput">disable_correlation_request_id_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.disableTerraformPartnerIdInput">disable_terraform_partner_id_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.environmentInput">environment_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.featuresInput">features_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures">AzurermProviderFeatures</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.featuresInput">features_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures">AzurermProviderFeatures</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.metadataHostInput">metadata_host_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.msiApiVersionInput">msi_api_version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.msiEndpointInput">msi_endpoint_input</a></code> | <code>str</code> | *No description.* |
@@ -910,14 +910,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.partnerIdInput">partner_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.resourceProviderRegistrationsInput">resource_provider_registrations_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.resourceProvidersToRegisterInput">resource_providers_to_register_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.skipProviderRegistrationInput">skip_provider_registration_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.storageUseAzureadInput">storage_use_azuread_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.skipProviderRegistrationInput">skip_provider_registration_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.storageUseAzureadInput">storage_use_azuread_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.subscriptionIdInput">subscription_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.tenantIdInput">tenant_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.useAksWorkloadIdentityInput">use_aks_workload_identity_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.useCliInput">use_cli_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.useMsiInput">use_msi_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.useOidcInput">use_oidc_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.useAksWorkloadIdentityInput">use_aks_workload_identity_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.useCliInput">use_cli_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.useMsiInput">use_msi_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.useOidcInput">use_oidc_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.adoPipelineServiceConnectionId">ado_pipeline_service_connection_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.auxiliaryTenantIds">auxiliary_tenant_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.clientCertificate">client_certificate</a></code> | <code>str</code> | *No description.* |
@@ -927,10 +927,10 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.clientIdFilePath">client_id_file_path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.clientSecret">client_secret</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.clientSecretFilePath">client_secret_file_path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.disableCorrelationRequestId">disable_correlation_request_id</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.disableTerraformPartnerId">disable_terraform_partner_id</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.disableCorrelationRequestId">disable_correlation_request_id</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.disableTerraformPartnerId">disable_terraform_partner_id</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.environment">environment</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.features">features</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures">AzurermProviderFeatures</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.features">features</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures">AzurermProviderFeatures</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.metadataHost">metadata_host</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.msiApiVersion">msi_api_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.msiEndpoint">msi_endpoint</a></code> | <code>str</code> | *No description.* |
@@ -941,14 +941,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.partnerId">partner_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.resourceProviderRegistrations">resource_provider_registrations</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.resourceProvidersToRegister">resource_providers_to_register</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.skipProviderRegistration">skip_provider_registration</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.storageUseAzuread">storage_use_azuread</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.skipProviderRegistration">skip_provider_registration</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.storageUseAzuread">storage_use_azuread</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.subscriptionId">subscription_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.tenantId">tenant_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.useAksWorkloadIdentity">use_aks_workload_identity</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.useCli">use_cli</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.useMsi">use_msi</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.useOidc">use_oidc</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.useAksWorkloadIdentity">use_aks_workload_identity</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.useCli">use_cli</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.useMsi">use_msi</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProvider.property.useOidc">use_oidc</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 
 ---
 
@@ -970,7 +970,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -1020,7 +1020,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -1150,7 +1150,7 @@ client_secret_input: str
 disable_correlation_request_id_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1160,7 +1160,7 @@ disable_correlation_request_id_input: bool | IResolvable
 disable_terraform_partner_id_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1180,7 +1180,7 @@ environment_input: str
 features_input: IResolvable | typing.List[AzurermProviderFeatures]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures">AzurermProviderFeatures</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures">AzurermProviderFeatures</a>]
 
 ---
 
@@ -1290,7 +1290,7 @@ resource_providers_to_register_input: typing.List[str]
 skip_provider_registration_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1300,7 +1300,7 @@ skip_provider_registration_input: bool | IResolvable
 storage_use_azuread_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1330,7 +1330,7 @@ tenant_id_input: str
 use_aks_workload_identity_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1340,7 +1340,7 @@ use_aks_workload_identity_input: bool | IResolvable
 use_cli_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1350,7 +1350,7 @@ use_cli_input: bool | IResolvable
 use_msi_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1360,7 +1360,7 @@ use_msi_input: bool | IResolvable
 use_oidc_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1460,7 +1460,7 @@ client_secret_file_path: str
 disable_correlation_request_id: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1470,7 +1470,7 @@ disable_correlation_request_id: bool | IResolvable
 disable_terraform_partner_id: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1490,7 +1490,7 @@ environment: str
 features: IResolvable | typing.List[AzurermProviderFeatures]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures">AzurermProviderFeatures</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures">AzurermProviderFeatures</a>]
 
 ---
 
@@ -1600,7 +1600,7 @@ resource_providers_to_register: typing.List[str]
 skip_provider_registration: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1610,7 +1610,7 @@ skip_provider_registration: bool | IResolvable
 storage_use_azuread: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1640,7 +1640,7 @@ tenant_id: str
 use_aks_workload_identity: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1650,7 +1650,7 @@ use_aks_workload_identity: bool | IResolvable
 use_cli: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1660,7 +1660,7 @@ use_cli: bool | IResolvable
 use_msi: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1670,7 +1670,7 @@ use_msi: bool | IResolvable
 use_oidc: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1751,10 +1751,10 @@ provider.AzurermProviderConfig(
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.clientIdFilePath">client_id_file_path</a></code> | <code>str</code> | The path to a file containing the Client ID which should be used. |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.clientSecret">client_secret</a></code> | <code>str</code> | The Client Secret which should be used. For use When authenticating as a Service Principal using a Client Secret. |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.clientSecretFilePath">client_secret_file_path</a></code> | <code>str</code> | The path to a file containing the Client Secret which should be used. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.disableCorrelationRequestId">disable_correlation_request_id</a></code> | <code>bool \| cdktf.IResolvable</code> | This will disable the x-ms-correlation-request-id header. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.disableTerraformPartnerId">disable_terraform_partner_id</a></code> | <code>bool \| cdktf.IResolvable</code> | This will disable the Terraform Partner ID which is used if a custom `partner_id` isn't specified. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.disableCorrelationRequestId">disable_correlation_request_id</a></code> | <code>bool \| cdktn.IResolvable</code> | This will disable the x-ms-correlation-request-id header. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.disableTerraformPartnerId">disable_terraform_partner_id</a></code> | <code>bool \| cdktn.IResolvable</code> | This will disable the Terraform Partner ID which is used if a custom `partner_id` isn't specified. |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.environment">environment</a></code> | <code>str</code> | The Cloud Environment which should be used. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.features">features</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures">AzurermProviderFeatures</a>]</code> | features block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.features">features</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures">AzurermProviderFeatures</a>]</code> | features block. |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.metadataHost">metadata_host</a></code> | <code>str</code> | The Hostname which should be used for the Azure Metadata Service. |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.msiApiVersion">msi_api_version</a></code> | <code>str</code> | The API version to use for Managed Service Identity (IMDS) - for cases where the default API version is not supported by the endpoint. |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.msiEndpoint">msi_endpoint</a></code> | <code>str</code> | The path to a custom endpoint for Managed Service Identity - in most circumstances this should be detected automatically. |
@@ -1765,14 +1765,14 @@ provider.AzurermProviderConfig(
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.partnerId">partner_id</a></code> | <code>str</code> | A GUID/UUID that is registered with Microsoft to facilitate partner resource usage attribution. |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.resourceProviderRegistrations">resource_provider_registrations</a></code> | <code>str</code> | The set of Resource Providers which should be automatically registered for the subscription. |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.resourceProvidersToRegister">resource_providers_to_register</a></code> | <code>typing.List[str]</code> | A list of Resource Providers to explicitly register for the subscription, in addition to those specified by the `resource_provider_registrations` property. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.skipProviderRegistration">skip_provider_registration</a></code> | <code>bool \| cdktf.IResolvable</code> | Should the AzureRM Provider skip registering all of the Resource Providers that it supports, if they're not already registered? |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.storageUseAzuread">storage_use_azuread</a></code> | <code>bool \| cdktf.IResolvable</code> | Should the AzureRM Provider use Azure AD Authentication when accessing the Storage Data Plane APIs? |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.skipProviderRegistration">skip_provider_registration</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the AzureRM Provider skip registering all of the Resource Providers that it supports, if they're not already registered? |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.storageUseAzuread">storage_use_azuread</a></code> | <code>bool \| cdktn.IResolvable</code> | Should the AzureRM Provider use Azure AD Authentication when accessing the Storage Data Plane APIs? |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.subscriptionId">subscription_id</a></code> | <code>str</code> | The Subscription ID which should be used. |
 | <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.tenantId">tenant_id</a></code> | <code>str</code> | The Tenant ID which should be used. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.useAksWorkloadIdentity">use_aks_workload_identity</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow Azure AKS Workload Identity to be used for Authentication. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.useCli">use_cli</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow Azure CLI to be used for Authentication. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.useMsi">use_msi</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow Managed Service Identity to be used for Authentication. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.useOidc">use_oidc</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow OpenID Connect to be used for authentication. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.useAksWorkloadIdentity">use_aks_workload_identity</a></code> | <code>bool \| cdktn.IResolvable</code> | Allow Azure AKS Workload Identity to be used for Authentication. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.useCli">use_cli</a></code> | <code>bool \| cdktn.IResolvable</code> | Allow Azure CLI to be used for Authentication. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.useMsi">use_msi</a></code> | <code>bool \| cdktn.IResolvable</code> | Allow Managed Service Identity to be used for Authentication. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderConfig.property.useOidc">use_oidc</a></code> | <code>bool \| cdktn.IResolvable</code> | Allow OpenID Connect to be used for authentication. |
 
 ---
 
@@ -1922,7 +1922,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 disable_correlation_request_id: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 This will disable the x-ms-correlation-request-id header.
 
@@ -1936,7 +1936,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 disable_terraform_partner_id: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 This will disable the Terraform Partner ID which is used if a custom `partner_id` isn't specified.
 
@@ -1966,7 +1966,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 features: IResolvable | typing.List[AzurermProviderFeatures]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures">AzurermProviderFeatures</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures">AzurermProviderFeatures</a>]
 
 features block.
 
@@ -2126,7 +2126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 skip_provider_registration: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the AzureRM Provider skip registering all of the Resource Providers that it supports, if they're not already registered?
 
@@ -2140,7 +2140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 storage_use_azuread: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Should the AzureRM Provider use Azure AD Authentication when accessing the Storage Data Plane APIs?
 
@@ -2182,7 +2182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 use_aks_workload_identity: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Allow Azure AKS Workload Identity to be used for Authentication.
 
@@ -2196,7 +2196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 use_cli: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Allow Azure CLI to be used for Authentication.
 
@@ -2210,7 +2210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 use_msi: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Allow Managed Service Identity to be used for Authentication.
 
@@ -2224,7 +2224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 use_oidc: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Allow OpenID Connect to be used for authentication.
 
@@ -2266,25 +2266,25 @@ provider.AzurermProviderFeatures(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.apiManagement">api_management</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesApiManagement">AzurermProviderFeaturesApiManagement</a>]</code> | api_management block. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.appConfiguration">app_configuration</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesAppConfiguration">AzurermProviderFeaturesAppConfiguration</a>]</code> | app_configuration block. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.applicationInsights">application_insights</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesApplicationInsights">AzurermProviderFeaturesApplicationInsights</a>]</code> | application_insights block. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.cognitiveAccount">cognitive_account</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesCognitiveAccount">AzurermProviderFeaturesCognitiveAccount</a>]</code> | cognitive_account block. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.databricksWorkspace">databricks_workspace</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesDatabricksWorkspace">AzurermProviderFeaturesDatabricksWorkspace</a>]</code> | databricks_workspace block. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.keyVault">key_vault</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault">AzurermProviderFeaturesKeyVault</a>]</code> | key_vault block. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.logAnalyticsWorkspace">log_analytics_workspace</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesLogAnalyticsWorkspace">AzurermProviderFeaturesLogAnalyticsWorkspace</a>]</code> | log_analytics_workspace block. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.machineLearning">machine_learning</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesMachineLearning">AzurermProviderFeaturesMachineLearning</a>]</code> | machine_learning block. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.managedDisk">managed_disk</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesManagedDisk">AzurermProviderFeaturesManagedDisk</a>]</code> | managed_disk block. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.netapp">netapp</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesNetapp">AzurermProviderFeaturesNetapp</a>]</code> | netapp block. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.postgresqlFlexibleServer">postgresql_flexible_server</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesPostgresqlFlexibleServer">AzurermProviderFeaturesPostgresqlFlexibleServer</a>]</code> | postgresql_flexible_server block. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.recoveryService">recovery_service</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesRecoveryService">AzurermProviderFeaturesRecoveryService</a>]</code> | recovery_service block. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.recoveryServicesVaults">recovery_services_vaults</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesRecoveryServicesVaults">AzurermProviderFeaturesRecoveryServicesVaults</a>]</code> | recovery_services_vaults block. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.resourceGroup">resource_group</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesResourceGroup">AzurermProviderFeaturesResourceGroup</a>]</code> | resource_group block. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.storage">storage</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesStorage">AzurermProviderFeaturesStorage</a>]</code> | storage block. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.subscription">subscription</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesSubscription">AzurermProviderFeaturesSubscription</a>]</code> | subscription block. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.templateDeployment">template_deployment</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesTemplateDeployment">AzurermProviderFeaturesTemplateDeployment</a>]</code> | template_deployment block. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.virtualMachine">virtual_machine</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachine">AzurermProviderFeaturesVirtualMachine</a>]</code> | virtual_machine block. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.virtualMachineScaleSet">virtual_machine_scale_set</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachineScaleSet">AzurermProviderFeaturesVirtualMachineScaleSet</a>]</code> | virtual_machine_scale_set block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.apiManagement">api_management</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesApiManagement">AzurermProviderFeaturesApiManagement</a>]</code> | api_management block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.appConfiguration">app_configuration</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesAppConfiguration">AzurermProviderFeaturesAppConfiguration</a>]</code> | app_configuration block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.applicationInsights">application_insights</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesApplicationInsights">AzurermProviderFeaturesApplicationInsights</a>]</code> | application_insights block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.cognitiveAccount">cognitive_account</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesCognitiveAccount">AzurermProviderFeaturesCognitiveAccount</a>]</code> | cognitive_account block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.databricksWorkspace">databricks_workspace</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesDatabricksWorkspace">AzurermProviderFeaturesDatabricksWorkspace</a>]</code> | databricks_workspace block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.keyVault">key_vault</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault">AzurermProviderFeaturesKeyVault</a>]</code> | key_vault block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.logAnalyticsWorkspace">log_analytics_workspace</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesLogAnalyticsWorkspace">AzurermProviderFeaturesLogAnalyticsWorkspace</a>]</code> | log_analytics_workspace block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.machineLearning">machine_learning</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesMachineLearning">AzurermProviderFeaturesMachineLearning</a>]</code> | machine_learning block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.managedDisk">managed_disk</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesManagedDisk">AzurermProviderFeaturesManagedDisk</a>]</code> | managed_disk block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.netapp">netapp</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesNetapp">AzurermProviderFeaturesNetapp</a>]</code> | netapp block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.postgresqlFlexibleServer">postgresql_flexible_server</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesPostgresqlFlexibleServer">AzurermProviderFeaturesPostgresqlFlexibleServer</a>]</code> | postgresql_flexible_server block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.recoveryService">recovery_service</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesRecoveryService">AzurermProviderFeaturesRecoveryService</a>]</code> | recovery_service block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.recoveryServicesVaults">recovery_services_vaults</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesRecoveryServicesVaults">AzurermProviderFeaturesRecoveryServicesVaults</a>]</code> | recovery_services_vaults block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.resourceGroup">resource_group</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesResourceGroup">AzurermProviderFeaturesResourceGroup</a>]</code> | resource_group block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.storage">storage</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesStorage">AzurermProviderFeaturesStorage</a>]</code> | storage block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.subscription">subscription</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesSubscription">AzurermProviderFeaturesSubscription</a>]</code> | subscription block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.templateDeployment">template_deployment</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesTemplateDeployment">AzurermProviderFeaturesTemplateDeployment</a>]</code> | template_deployment block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.virtualMachine">virtual_machine</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachine">AzurermProviderFeaturesVirtualMachine</a>]</code> | virtual_machine block. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeatures.property.virtualMachineScaleSet">virtual_machine_scale_set</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachineScaleSet">AzurermProviderFeaturesVirtualMachineScaleSet</a>]</code> | virtual_machine_scale_set block. |
 
 ---
 
@@ -2294,7 +2294,7 @@ provider.AzurermProviderFeatures(
 api_management: IResolvable | typing.List[AzurermProviderFeaturesApiManagement]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesApiManagement">AzurermProviderFeaturesApiManagement</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesApiManagement">AzurermProviderFeaturesApiManagement</a>]
 
 api_management block.
 
@@ -2308,7 +2308,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 app_configuration: IResolvable | typing.List[AzurermProviderFeaturesAppConfiguration]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesAppConfiguration">AzurermProviderFeaturesAppConfiguration</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesAppConfiguration">AzurermProviderFeaturesAppConfiguration</a>]
 
 app_configuration block.
 
@@ -2322,7 +2322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 application_insights: IResolvable | typing.List[AzurermProviderFeaturesApplicationInsights]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesApplicationInsights">AzurermProviderFeaturesApplicationInsights</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesApplicationInsights">AzurermProviderFeaturesApplicationInsights</a>]
 
 application_insights block.
 
@@ -2336,7 +2336,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 cognitive_account: IResolvable | typing.List[AzurermProviderFeaturesCognitiveAccount]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesCognitiveAccount">AzurermProviderFeaturesCognitiveAccount</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesCognitiveAccount">AzurermProviderFeaturesCognitiveAccount</a>]
 
 cognitive_account block.
 
@@ -2350,7 +2350,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 databricks_workspace: IResolvable | typing.List[AzurermProviderFeaturesDatabricksWorkspace]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesDatabricksWorkspace">AzurermProviderFeaturesDatabricksWorkspace</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesDatabricksWorkspace">AzurermProviderFeaturesDatabricksWorkspace</a>]
 
 databricks_workspace block.
 
@@ -2364,7 +2364,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 key_vault: IResolvable | typing.List[AzurermProviderFeaturesKeyVault]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault">AzurermProviderFeaturesKeyVault</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault">AzurermProviderFeaturesKeyVault</a>]
 
 key_vault block.
 
@@ -2378,7 +2378,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 log_analytics_workspace: IResolvable | typing.List[AzurermProviderFeaturesLogAnalyticsWorkspace]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesLogAnalyticsWorkspace">AzurermProviderFeaturesLogAnalyticsWorkspace</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesLogAnalyticsWorkspace">AzurermProviderFeaturesLogAnalyticsWorkspace</a>]
 
 log_analytics_workspace block.
 
@@ -2392,7 +2392,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 machine_learning: IResolvable | typing.List[AzurermProviderFeaturesMachineLearning]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesMachineLearning">AzurermProviderFeaturesMachineLearning</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesMachineLearning">AzurermProviderFeaturesMachineLearning</a>]
 
 machine_learning block.
 
@@ -2406,7 +2406,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 managed_disk: IResolvable | typing.List[AzurermProviderFeaturesManagedDisk]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesManagedDisk">AzurermProviderFeaturesManagedDisk</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesManagedDisk">AzurermProviderFeaturesManagedDisk</a>]
 
 managed_disk block.
 
@@ -2420,7 +2420,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 netapp: IResolvable | typing.List[AzurermProviderFeaturesNetapp]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesNetapp">AzurermProviderFeaturesNetapp</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesNetapp">AzurermProviderFeaturesNetapp</a>]
 
 netapp block.
 
@@ -2434,7 +2434,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 postgresql_flexible_server: IResolvable | typing.List[AzurermProviderFeaturesPostgresqlFlexibleServer]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesPostgresqlFlexibleServer">AzurermProviderFeaturesPostgresqlFlexibleServer</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesPostgresqlFlexibleServer">AzurermProviderFeaturesPostgresqlFlexibleServer</a>]
 
 postgresql_flexible_server block.
 
@@ -2448,7 +2448,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 recovery_service: IResolvable | typing.List[AzurermProviderFeaturesRecoveryService]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesRecoveryService">AzurermProviderFeaturesRecoveryService</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesRecoveryService">AzurermProviderFeaturesRecoveryService</a>]
 
 recovery_service block.
 
@@ -2462,7 +2462,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 recovery_services_vaults: IResolvable | typing.List[AzurermProviderFeaturesRecoveryServicesVaults]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesRecoveryServicesVaults">AzurermProviderFeaturesRecoveryServicesVaults</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesRecoveryServicesVaults">AzurermProviderFeaturesRecoveryServicesVaults</a>]
 
 recovery_services_vaults block.
 
@@ -2476,7 +2476,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 resource_group: IResolvable | typing.List[AzurermProviderFeaturesResourceGroup]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesResourceGroup">AzurermProviderFeaturesResourceGroup</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesResourceGroup">AzurermProviderFeaturesResourceGroup</a>]
 
 resource_group block.
 
@@ -2490,7 +2490,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 storage: IResolvable | typing.List[AzurermProviderFeaturesStorage]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesStorage">AzurermProviderFeaturesStorage</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesStorage">AzurermProviderFeaturesStorage</a>]
 
 storage block.
 
@@ -2504,7 +2504,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 subscription: IResolvable | typing.List[AzurermProviderFeaturesSubscription]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesSubscription">AzurermProviderFeaturesSubscription</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesSubscription">AzurermProviderFeaturesSubscription</a>]
 
 subscription block.
 
@@ -2518,7 +2518,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 template_deployment: IResolvable | typing.List[AzurermProviderFeaturesTemplateDeployment]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesTemplateDeployment">AzurermProviderFeaturesTemplateDeployment</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesTemplateDeployment">AzurermProviderFeaturesTemplateDeployment</a>]
 
 template_deployment block.
 
@@ -2532,7 +2532,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 virtual_machine: IResolvable | typing.List[AzurermProviderFeaturesVirtualMachine]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachine">AzurermProviderFeaturesVirtualMachine</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachine">AzurermProviderFeaturesVirtualMachine</a>]
 
 virtual_machine block.
 
@@ -2546,7 +2546,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 virtual_machine_scale_set: IResolvable | typing.List[AzurermProviderFeaturesVirtualMachineScaleSet]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachineScaleSet">AzurermProviderFeaturesVirtualMachineScaleSet</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachineScaleSet">AzurermProviderFeaturesVirtualMachineScaleSet</a>]
 
 virtual_machine_scale_set block.
 
@@ -2571,8 +2571,8 @@ provider.AzurermProviderFeaturesApiManagement(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesApiManagement.property.purgeSoftDeleteOnDestroy">purge_soft_delete_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#purge_soft_delete_on_destroy AzurermProvider#purge_soft_delete_on_destroy}. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesApiManagement.property.recoverSoftDeleted">recover_soft_deleted</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#recover_soft_deleted AzurermProvider#recover_soft_deleted}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesApiManagement.property.purgeSoftDeleteOnDestroy">purge_soft_delete_on_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#purge_soft_delete_on_destroy AzurermProvider#purge_soft_delete_on_destroy}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesApiManagement.property.recoverSoftDeleted">recover_soft_deleted</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#recover_soft_deleted AzurermProvider#recover_soft_deleted}. |
 
 ---
 
@@ -2582,7 +2582,7 @@ provider.AzurermProviderFeaturesApiManagement(
 purge_soft_delete_on_destroy: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#purge_soft_delete_on_destroy AzurermProvider#purge_soft_delete_on_destroy}.
 
@@ -2594,7 +2594,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 recover_soft_deleted: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#recover_soft_deleted AzurermProvider#recover_soft_deleted}.
 
@@ -2617,8 +2617,8 @@ provider.AzurermProviderFeaturesAppConfiguration(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesAppConfiguration.property.purgeSoftDeleteOnDestroy">purge_soft_delete_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#purge_soft_delete_on_destroy AzurermProvider#purge_soft_delete_on_destroy}. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesAppConfiguration.property.recoverSoftDeleted">recover_soft_deleted</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#recover_soft_deleted AzurermProvider#recover_soft_deleted}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesAppConfiguration.property.purgeSoftDeleteOnDestroy">purge_soft_delete_on_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#purge_soft_delete_on_destroy AzurermProvider#purge_soft_delete_on_destroy}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesAppConfiguration.property.recoverSoftDeleted">recover_soft_deleted</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#recover_soft_deleted AzurermProvider#recover_soft_deleted}. |
 
 ---
 
@@ -2628,7 +2628,7 @@ provider.AzurermProviderFeaturesAppConfiguration(
 purge_soft_delete_on_destroy: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#purge_soft_delete_on_destroy AzurermProvider#purge_soft_delete_on_destroy}.
 
@@ -2640,7 +2640,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 recover_soft_deleted: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#recover_soft_deleted AzurermProvider#recover_soft_deleted}.
 
@@ -2662,7 +2662,7 @@ provider.AzurermProviderFeaturesApplicationInsights(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesApplicationInsights.property.disableGeneratedRule">disable_generated_rule</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#disable_generated_rule AzurermProvider#disable_generated_rule}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesApplicationInsights.property.disableGeneratedRule">disable_generated_rule</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#disable_generated_rule AzurermProvider#disable_generated_rule}. |
 
 ---
 
@@ -2672,7 +2672,7 @@ provider.AzurermProviderFeaturesApplicationInsights(
 disable_generated_rule: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#disable_generated_rule AzurermProvider#disable_generated_rule}.
 
@@ -2694,7 +2694,7 @@ provider.AzurermProviderFeaturesCognitiveAccount(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesCognitiveAccount.property.purgeSoftDeleteOnDestroy">purge_soft_delete_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#purge_soft_delete_on_destroy AzurermProvider#purge_soft_delete_on_destroy}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesCognitiveAccount.property.purgeSoftDeleteOnDestroy">purge_soft_delete_on_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#purge_soft_delete_on_destroy AzurermProvider#purge_soft_delete_on_destroy}. |
 
 ---
 
@@ -2704,7 +2704,7 @@ provider.AzurermProviderFeaturesCognitiveAccount(
 purge_soft_delete_on_destroy: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#purge_soft_delete_on_destroy AzurermProvider#purge_soft_delete_on_destroy}.
 
@@ -2726,7 +2726,7 @@ provider.AzurermProviderFeaturesDatabricksWorkspace(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesDatabricksWorkspace.property.forceDelete">force_delete</a></code> | <code>bool \| cdktf.IResolvable</code> | When enabled, the managed resource group that contains the Unity Catalog data will be forcibly deleted when the workspace is destroyed, regardless of contents. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesDatabricksWorkspace.property.forceDelete">force_delete</a></code> | <code>bool \| cdktn.IResolvable</code> | When enabled, the managed resource group that contains the Unity Catalog data will be forcibly deleted when the workspace is destroyed, regardless of contents. |
 
 ---
 
@@ -2736,7 +2736,7 @@ provider.AzurermProviderFeaturesDatabricksWorkspace(
 force_delete: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 When enabled, the managed resource group that contains the Unity Catalog data will be forcibly deleted when the workspace is destroyed, regardless of contents.
 
@@ -2770,17 +2770,17 @@ provider.AzurermProviderFeaturesKeyVault(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.purgeSoftDeletedCertificatesOnDestroy">purge_soft_deleted_certificates_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault_certificate` resources will be permanently deleted (e.g purged), when destroyed. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.purgeSoftDeletedHardwareSecurityModuleKeysOnDestroy">purge_soft_deleted_hardware_security_module_keys_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault_managed_hardware_security_module_key` resources will be permanently deleted (e.g purged), when destroyed. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.purgeSoftDeletedHardwareSecurityModulesOnDestroy">purge_soft_deleted_hardware_security_modules_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault_managed_hardware_security_module` resources will be permanently deleted (e.g purged), when destroyed. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.purgeSoftDeletedKeysOnDestroy">purge_soft_deleted_keys_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault_key` resources will be permanently deleted (e.g purged), when destroyed. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.purgeSoftDeletedSecretsOnDestroy">purge_soft_deleted_secrets_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault_secret` resources will be permanently deleted (e.g purged), when destroyed. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.purgeSoftDeleteOnDestroy">purge_soft_delete_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault` resources will be permanently deleted (e.g purged), when destroyed. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.recoverSoftDeletedCertificates">recover_soft_deleted_certificates</a></code> | <code>bool \| cdktf.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault_certificate` resources will be restored, instead of creating new ones. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.recoverSoftDeletedHardwareSecurityModuleKeys">recover_soft_deleted_hardware_security_module_keys</a></code> | <code>bool \| cdktf.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault_managed_hardware_security_module_key` resources will be restored, instead of creating new ones. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.recoverSoftDeletedKeys">recover_soft_deleted_keys</a></code> | <code>bool \| cdktf.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault_key` resources will be restored, instead of creating new ones. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.recoverSoftDeletedKeyVaults">recover_soft_deleted_key_vaults</a></code> | <code>bool \| cdktf.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault` resources will be restored, instead of creating new ones. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.recoverSoftDeletedSecrets">recover_soft_deleted_secrets</a></code> | <code>bool \| cdktf.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault_secret` resources will be restored, instead of creating new ones. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.purgeSoftDeletedCertificatesOnDestroy">purge_soft_deleted_certificates_on_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault_certificate` resources will be permanently deleted (e.g purged), when destroyed. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.purgeSoftDeletedHardwareSecurityModuleKeysOnDestroy">purge_soft_deleted_hardware_security_module_keys_on_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault_managed_hardware_security_module_key` resources will be permanently deleted (e.g purged), when destroyed. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.purgeSoftDeletedHardwareSecurityModulesOnDestroy">purge_soft_deleted_hardware_security_modules_on_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault_managed_hardware_security_module` resources will be permanently deleted (e.g purged), when destroyed. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.purgeSoftDeletedKeysOnDestroy">purge_soft_deleted_keys_on_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault_key` resources will be permanently deleted (e.g purged), when destroyed. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.purgeSoftDeletedSecretsOnDestroy">purge_soft_deleted_secrets_on_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault_secret` resources will be permanently deleted (e.g purged), when destroyed. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.purgeSoftDeleteOnDestroy">purge_soft_delete_on_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault` resources will be permanently deleted (e.g purged), when destroyed. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.recoverSoftDeletedCertificates">recover_soft_deleted_certificates</a></code> | <code>bool \| cdktn.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault_certificate` resources will be restored, instead of creating new ones. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.recoverSoftDeletedHardwareSecurityModuleKeys">recover_soft_deleted_hardware_security_module_keys</a></code> | <code>bool \| cdktn.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault_managed_hardware_security_module_key` resources will be restored, instead of creating new ones. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.recoverSoftDeletedKeys">recover_soft_deleted_keys</a></code> | <code>bool \| cdktn.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault_key` resources will be restored, instead of creating new ones. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.recoverSoftDeletedKeyVaults">recover_soft_deleted_key_vaults</a></code> | <code>bool \| cdktn.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault` resources will be restored, instead of creating new ones. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesKeyVault.property.recoverSoftDeletedSecrets">recover_soft_deleted_secrets</a></code> | <code>bool \| cdktn.IResolvable</code> | When enabled soft-deleted `azurerm_key_vault_secret` resources will be restored, instead of creating new ones. |
 
 ---
 
@@ -2790,7 +2790,7 @@ provider.AzurermProviderFeaturesKeyVault(
 purge_soft_deleted_certificates_on_destroy: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 When enabled soft-deleted `azurerm_key_vault_certificate` resources will be permanently deleted (e.g purged), when destroyed.
 
@@ -2804,7 +2804,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 purge_soft_deleted_hardware_security_module_keys_on_destroy: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 When enabled soft-deleted `azurerm_key_vault_managed_hardware_security_module_key` resources will be permanently deleted (e.g purged), when destroyed.
 
@@ -2818,7 +2818,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 purge_soft_deleted_hardware_security_modules_on_destroy: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 When enabled soft-deleted `azurerm_key_vault_managed_hardware_security_module` resources will be permanently deleted (e.g purged), when destroyed.
 
@@ -2832,7 +2832,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 purge_soft_deleted_keys_on_destroy: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 When enabled soft-deleted `azurerm_key_vault_key` resources will be permanently deleted (e.g purged), when destroyed.
 
@@ -2846,7 +2846,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 purge_soft_deleted_secrets_on_destroy: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 When enabled soft-deleted `azurerm_key_vault_secret` resources will be permanently deleted (e.g purged), when destroyed.
 
@@ -2860,7 +2860,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 purge_soft_delete_on_destroy: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 When enabled soft-deleted `azurerm_key_vault` resources will be permanently deleted (e.g purged), when destroyed.
 
@@ -2874,7 +2874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 recover_soft_deleted_certificates: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 When enabled soft-deleted `azurerm_key_vault_certificate` resources will be restored, instead of creating new ones.
 
@@ -2888,7 +2888,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 recover_soft_deleted_hardware_security_module_keys: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 When enabled soft-deleted `azurerm_key_vault_managed_hardware_security_module_key` resources will be restored, instead of creating new ones.
 
@@ -2902,7 +2902,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 recover_soft_deleted_keys: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 When enabled soft-deleted `azurerm_key_vault_key` resources will be restored, instead of creating new ones.
 
@@ -2916,7 +2916,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 recover_soft_deleted_key_vaults: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 When enabled soft-deleted `azurerm_key_vault` resources will be restored, instead of creating new ones.
 
@@ -2930,7 +2930,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 recover_soft_deleted_secrets: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 When enabled soft-deleted `azurerm_key_vault_secret` resources will be restored, instead of creating new ones.
 
@@ -2954,7 +2954,7 @@ provider.AzurermProviderFeaturesLogAnalyticsWorkspace(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesLogAnalyticsWorkspace.property.permanentlyDeleteOnDestroy">permanently_delete_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#permanently_delete_on_destroy AzurermProvider#permanently_delete_on_destroy}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesLogAnalyticsWorkspace.property.permanentlyDeleteOnDestroy">permanently_delete_on_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#permanently_delete_on_destroy AzurermProvider#permanently_delete_on_destroy}. |
 
 ---
 
@@ -2964,7 +2964,7 @@ provider.AzurermProviderFeaturesLogAnalyticsWorkspace(
 permanently_delete_on_destroy: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#permanently_delete_on_destroy AzurermProvider#permanently_delete_on_destroy}.
 
@@ -2986,7 +2986,7 @@ provider.AzurermProviderFeaturesMachineLearning(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesMachineLearning.property.purgeSoftDeletedWorkspaceOnDestroy">purge_soft_deleted_workspace_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#purge_soft_deleted_workspace_on_destroy AzurermProvider#purge_soft_deleted_workspace_on_destroy}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesMachineLearning.property.purgeSoftDeletedWorkspaceOnDestroy">purge_soft_deleted_workspace_on_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#purge_soft_deleted_workspace_on_destroy AzurermProvider#purge_soft_deleted_workspace_on_destroy}. |
 
 ---
 
@@ -2996,7 +2996,7 @@ provider.AzurermProviderFeaturesMachineLearning(
 purge_soft_deleted_workspace_on_destroy: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#purge_soft_deleted_workspace_on_destroy AzurermProvider#purge_soft_deleted_workspace_on_destroy}.
 
@@ -3018,7 +3018,7 @@ provider.AzurermProviderFeaturesManagedDisk(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesManagedDisk.property.expandWithoutDowntime">expand_without_downtime</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#expand_without_downtime AzurermProvider#expand_without_downtime}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesManagedDisk.property.expandWithoutDowntime">expand_without_downtime</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#expand_without_downtime AzurermProvider#expand_without_downtime}. |
 
 ---
 
@@ -3028,7 +3028,7 @@ provider.AzurermProviderFeaturesManagedDisk(
 expand_without_downtime: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#expand_without_downtime AzurermProvider#expand_without_downtime}.
 
@@ -3051,8 +3051,8 @@ provider.AzurermProviderFeaturesNetapp(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesNetapp.property.deleteBackupsOnBackupVaultDestroy">delete_backups_on_backup_vault_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | When enabled, backups will be deleted when the `azurerm_netapp_backup_vault` resource is destroyed. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesNetapp.property.preventVolumeDestruction">prevent_volume_destruction</a></code> | <code>bool \| cdktf.IResolvable</code> | When enabled, the volume will not be destroyed, safeguarding from severe data loss. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesNetapp.property.deleteBackupsOnBackupVaultDestroy">delete_backups_on_backup_vault_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | When enabled, backups will be deleted when the `azurerm_netapp_backup_vault` resource is destroyed. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesNetapp.property.preventVolumeDestruction">prevent_volume_destruction</a></code> | <code>bool \| cdktn.IResolvable</code> | When enabled, the volume will not be destroyed, safeguarding from severe data loss. |
 
 ---
 
@@ -3062,7 +3062,7 @@ provider.AzurermProviderFeaturesNetapp(
 delete_backups_on_backup_vault_destroy: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 When enabled, backups will be deleted when the `azurerm_netapp_backup_vault` resource is destroyed.
 
@@ -3076,7 +3076,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 prevent_volume_destruction: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 When enabled, the volume will not be destroyed, safeguarding from severe data loss.
 
@@ -3100,7 +3100,7 @@ provider.AzurermProviderFeaturesPostgresqlFlexibleServer(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesPostgresqlFlexibleServer.property.restartServerOnConfigurationValueChange">restart_server_on_configuration_value_change</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#restart_server_on_configuration_value_change AzurermProvider#restart_server_on_configuration_value_change}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesPostgresqlFlexibleServer.property.restartServerOnConfigurationValueChange">restart_server_on_configuration_value_change</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#restart_server_on_configuration_value_change AzurermProvider#restart_server_on_configuration_value_change}. |
 
 ---
 
@@ -3110,7 +3110,7 @@ provider.AzurermProviderFeaturesPostgresqlFlexibleServer(
 restart_server_on_configuration_value_change: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#restart_server_on_configuration_value_change AzurermProvider#restart_server_on_configuration_value_change}.
 
@@ -3134,9 +3134,9 @@ provider.AzurermProviderFeaturesRecoveryService(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesRecoveryService.property.purgeProtectedItemsFromVaultOnDestroy">purge_protected_items_from_vault_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#purge_protected_items_from_vault_on_destroy AzurermProvider#purge_protected_items_from_vault_on_destroy}. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesRecoveryService.property.vmBackupStopProtectionAndRetainDataOnDestroy">vm_backup_stop_protection_and_retain_data_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#vm_backup_stop_protection_and_retain_data_on_destroy AzurermProvider#vm_backup_stop_protection_and_retain_data_on_destroy}. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesRecoveryService.property.vmBackupSuspendProtectionAndRetainDataOnDestroy">vm_backup_suspend_protection_and_retain_data_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#vm_backup_suspend_protection_and_retain_data_on_destroy AzurermProvider#vm_backup_suspend_protection_and_retain_data_on_destroy}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesRecoveryService.property.purgeProtectedItemsFromVaultOnDestroy">purge_protected_items_from_vault_on_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#purge_protected_items_from_vault_on_destroy AzurermProvider#purge_protected_items_from_vault_on_destroy}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesRecoveryService.property.vmBackupStopProtectionAndRetainDataOnDestroy">vm_backup_stop_protection_and_retain_data_on_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#vm_backup_stop_protection_and_retain_data_on_destroy AzurermProvider#vm_backup_stop_protection_and_retain_data_on_destroy}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesRecoveryService.property.vmBackupSuspendProtectionAndRetainDataOnDestroy">vm_backup_suspend_protection_and_retain_data_on_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#vm_backup_suspend_protection_and_retain_data_on_destroy AzurermProvider#vm_backup_suspend_protection_and_retain_data_on_destroy}. |
 
 ---
 
@@ -3146,7 +3146,7 @@ provider.AzurermProviderFeaturesRecoveryService(
 purge_protected_items_from_vault_on_destroy: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#purge_protected_items_from_vault_on_destroy AzurermProvider#purge_protected_items_from_vault_on_destroy}.
 
@@ -3158,7 +3158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 vm_backup_stop_protection_and_retain_data_on_destroy: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#vm_backup_stop_protection_and_retain_data_on_destroy AzurermProvider#vm_backup_stop_protection_and_retain_data_on_destroy}.
 
@@ -3170,7 +3170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 vm_backup_suspend_protection_and_retain_data_on_destroy: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#vm_backup_suspend_protection_and_retain_data_on_destroy AzurermProvider#vm_backup_suspend_protection_and_retain_data_on_destroy}.
 
@@ -3192,7 +3192,7 @@ provider.AzurermProviderFeaturesRecoveryServicesVaults(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesRecoveryServicesVaults.property.recoverSoftDeletedBackupProtectedVm">recover_soft_deleted_backup_protected_vm</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#recover_soft_deleted_backup_protected_vm AzurermProvider#recover_soft_deleted_backup_protected_vm}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesRecoveryServicesVaults.property.recoverSoftDeletedBackupProtectedVm">recover_soft_deleted_backup_protected_vm</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#recover_soft_deleted_backup_protected_vm AzurermProvider#recover_soft_deleted_backup_protected_vm}. |
 
 ---
 
@@ -3202,7 +3202,7 @@ provider.AzurermProviderFeaturesRecoveryServicesVaults(
 recover_soft_deleted_backup_protected_vm: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#recover_soft_deleted_backup_protected_vm AzurermProvider#recover_soft_deleted_backup_protected_vm}.
 
@@ -3224,7 +3224,7 @@ provider.AzurermProviderFeaturesResourceGroup(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesResourceGroup.property.preventDeletionIfContainsResources">prevent_deletion_if_contains_resources</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#prevent_deletion_if_contains_resources AzurermProvider#prevent_deletion_if_contains_resources}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesResourceGroup.property.preventDeletionIfContainsResources">prevent_deletion_if_contains_resources</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#prevent_deletion_if_contains_resources AzurermProvider#prevent_deletion_if_contains_resources}. |
 
 ---
 
@@ -3234,7 +3234,7 @@ provider.AzurermProviderFeaturesResourceGroup(
 prevent_deletion_if_contains_resources: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#prevent_deletion_if_contains_resources AzurermProvider#prevent_deletion_if_contains_resources}.
 
@@ -3256,7 +3256,7 @@ provider.AzurermProviderFeaturesStorage(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesStorage.property.dataPlaneAvailable">data_plane_available</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#data_plane_available AzurermProvider#data_plane_available}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesStorage.property.dataPlaneAvailable">data_plane_available</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#data_plane_available AzurermProvider#data_plane_available}. |
 
 ---
 
@@ -3266,7 +3266,7 @@ provider.AzurermProviderFeaturesStorage(
 data_plane_available: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#data_plane_available AzurermProvider#data_plane_available}.
 
@@ -3288,7 +3288,7 @@ provider.AzurermProviderFeaturesSubscription(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesSubscription.property.preventCancellationOnDestroy">prevent_cancellation_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#prevent_cancellation_on_destroy AzurermProvider#prevent_cancellation_on_destroy}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesSubscription.property.preventCancellationOnDestroy">prevent_cancellation_on_destroy</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#prevent_cancellation_on_destroy AzurermProvider#prevent_cancellation_on_destroy}. |
 
 ---
 
@@ -3298,7 +3298,7 @@ provider.AzurermProviderFeaturesSubscription(
 prevent_cancellation_on_destroy: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#prevent_cancellation_on_destroy AzurermProvider#prevent_cancellation_on_destroy}.
 
@@ -3320,7 +3320,7 @@ provider.AzurermProviderFeaturesTemplateDeployment(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesTemplateDeployment.property.deleteNestedItemsDuringDeletion">delete_nested_items_during_deletion</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#delete_nested_items_during_deletion AzurermProvider#delete_nested_items_during_deletion}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesTemplateDeployment.property.deleteNestedItemsDuringDeletion">delete_nested_items_during_deletion</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#delete_nested_items_during_deletion AzurermProvider#delete_nested_items_during_deletion}. |
 
 ---
 
@@ -3330,7 +3330,7 @@ provider.AzurermProviderFeaturesTemplateDeployment(
 delete_nested_items_during_deletion: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#delete_nested_items_during_deletion AzurermProvider#delete_nested_items_during_deletion}.
 
@@ -3355,10 +3355,10 @@ provider.AzurermProviderFeaturesVirtualMachine(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachine.property.deleteOsDiskOnDeletion">delete_os_disk_on_deletion</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#delete_os_disk_on_deletion AzurermProvider#delete_os_disk_on_deletion}. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachine.property.detachImplicitDataDiskOnDeletion">detach_implicit_data_disk_on_deletion</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#detach_implicit_data_disk_on_deletion AzurermProvider#detach_implicit_data_disk_on_deletion}. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachine.property.gracefulShutdown">graceful_shutdown</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#graceful_shutdown AzurermProvider#graceful_shutdown}. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachine.property.skipShutdownAndForceDelete">skip_shutdown_and_force_delete</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#skip_shutdown_and_force_delete AzurermProvider#skip_shutdown_and_force_delete}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachine.property.deleteOsDiskOnDeletion">delete_os_disk_on_deletion</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#delete_os_disk_on_deletion AzurermProvider#delete_os_disk_on_deletion}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachine.property.detachImplicitDataDiskOnDeletion">detach_implicit_data_disk_on_deletion</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#detach_implicit_data_disk_on_deletion AzurermProvider#detach_implicit_data_disk_on_deletion}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachine.property.gracefulShutdown">graceful_shutdown</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#graceful_shutdown AzurermProvider#graceful_shutdown}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachine.property.skipShutdownAndForceDelete">skip_shutdown_and_force_delete</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#skip_shutdown_and_force_delete AzurermProvider#skip_shutdown_and_force_delete}. |
 
 ---
 
@@ -3368,7 +3368,7 @@ provider.AzurermProviderFeaturesVirtualMachine(
 delete_os_disk_on_deletion: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#delete_os_disk_on_deletion AzurermProvider#delete_os_disk_on_deletion}.
 
@@ -3380,7 +3380,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 detach_implicit_data_disk_on_deletion: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#detach_implicit_data_disk_on_deletion AzurermProvider#detach_implicit_data_disk_on_deletion}.
 
@@ -3392,7 +3392,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 graceful_shutdown: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#graceful_shutdown AzurermProvider#graceful_shutdown}.
 
@@ -3404,7 +3404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 skip_shutdown_and_force_delete: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#skip_shutdown_and_force_delete AzurermProvider#skip_shutdown_and_force_delete}.
 
@@ -3429,10 +3429,10 @@ provider.AzurermProviderFeaturesVirtualMachineScaleSet(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachineScaleSet.property.forceDelete">force_delete</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#force_delete AzurermProvider#force_delete}. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachineScaleSet.property.reimageOnManualUpgrade">reimage_on_manual_upgrade</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#reimage_on_manual_upgrade AzurermProvider#reimage_on_manual_upgrade}. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachineScaleSet.property.rollInstancesWhenRequired">roll_instances_when_required</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#roll_instances_when_required AzurermProvider#roll_instances_when_required}. |
-| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachineScaleSet.property.scaleToZeroBeforeDeletion">scale_to_zero_before_deletion</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#scale_to_zero_before_deletion AzurermProvider#scale_to_zero_before_deletion}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachineScaleSet.property.forceDelete">force_delete</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#force_delete AzurermProvider#force_delete}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachineScaleSet.property.reimageOnManualUpgrade">reimage_on_manual_upgrade</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#reimage_on_manual_upgrade AzurermProvider#reimage_on_manual_upgrade}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachineScaleSet.property.rollInstancesWhenRequired">roll_instances_when_required</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#roll_instances_when_required AzurermProvider#roll_instances_when_required}. |
+| <code><a href="#@cdktn/provider-azurerm.provider.AzurermProviderFeaturesVirtualMachineScaleSet.property.scaleToZeroBeforeDeletion">scale_to_zero_before_deletion</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#scale_to_zero_before_deletion AzurermProvider#scale_to_zero_before_deletion}. |
 
 ---
 
@@ -3442,7 +3442,7 @@ provider.AzurermProviderFeaturesVirtualMachineScaleSet(
 force_delete: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#force_delete AzurermProvider#force_delete}.
 
@@ -3454,7 +3454,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 reimage_on_manual_upgrade: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#reimage_on_manual_upgrade AzurermProvider#reimage_on_manual_upgrade}.
 
@@ -3466,7 +3466,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 roll_instances_when_required: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#roll_instances_when_required AzurermProvider#roll_instances_when_required}.
 
@@ -3478,7 +3478,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 scale_to_zero_before_deletion: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#scale_to_zero_before_deletion AzurermProvider#scale_to_zero_before_deletion}.
 

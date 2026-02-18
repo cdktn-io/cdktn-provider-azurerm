@@ -300,7 +300,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -394,7 +394,7 @@ public putResponse(value: IResolvable | ApiManagementApiOperationResponse[]): vo
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.putResponse.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponse">ApiManagementApiOperationResponse</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponse">ApiManagementApiOperationResponse</a>[]
 
 ---
 
@@ -406,7 +406,7 @@ public putTemplateParameter(value: IResolvable | ApiManagementApiOperationTempla
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.putTemplateParameter.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameter">ApiManagementApiOperationTemplateParameter</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameter">ApiManagementApiOperationTemplateParameter</a>[]
 
 ---
 
@@ -465,7 +465,7 @@ public resetTimeouts(): void
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a ApiManagementApiOperation resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a ApiManagementApiOperation resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -537,7 +537,7 @@ import { apiManagementApiOperation } from '@cdktn/provider-azurerm'
 apiManagementApiOperation.ApiManagementApiOperation.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a ApiManagementApiOperation resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a ApiManagementApiOperation resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.generateConfigForImport.parameter.scope"></a>
 
@@ -567,7 +567,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the ApiManagementApiOperation to import is found.
 
@@ -578,19 +578,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.property.request">request</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestOutputReference">ApiManagementApiOperationRequestOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.property.response">response</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseList">ApiManagementApiOperationResponseList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.property.templateParameter">templateParameter</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterList">ApiManagementApiOperationTemplateParameterList</a></code> | *No description.* |
@@ -604,9 +604,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.property.operationIdInput">operationIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.property.requestInput">requestInput</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequest">ApiManagementApiOperationRequest</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.property.resourceGroupNameInput">resourceGroupNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.property.responseInput">responseInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponse">ApiManagementApiOperationResponse</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.property.templateParameterInput">templateParameterInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameter">ApiManagementApiOperationTemplateParameter</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTimeouts">ApiManagementApiOperationTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.property.responseInput">responseInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponse">ApiManagementApiOperationResponse</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.property.templateParameterInput">templateParameterInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameter">ApiManagementApiOperationTemplateParameter</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTimeouts">ApiManagementApiOperationTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.property.urlTemplateInput">urlTemplateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.property.apiManagementName">apiManagementName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperation.property.apiName">apiName</a></code> | <code>string</code> | *No description.* |
@@ -638,7 +638,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -688,7 +688,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -698,7 +698,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -708,7 +708,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -728,7 +728,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -738,7 +738,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -748,7 +748,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -758,7 +758,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -898,7 +898,7 @@ public readonly resourceGroupNameInput: string;
 public readonly responseInput: IResolvable | ApiManagementApiOperationResponse[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponse">ApiManagementApiOperationResponse</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponse">ApiManagementApiOperationResponse</a>[]
 
 ---
 
@@ -908,7 +908,7 @@ public readonly responseInput: IResolvable | ApiManagementApiOperationResponse[]
 public readonly templateParameterInput: IResolvable | ApiManagementApiOperationTemplateParameter[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameter">ApiManagementApiOperationTemplateParameter</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameter">ApiManagementApiOperationTemplateParameter</a>[]
 
 ---
 
@@ -918,7 +918,7 @@ public readonly templateParameterInput: IResolvable | ApiManagementApiOperationT
 public readonly timeoutsInput: IResolvable | ApiManagementApiOperationTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTimeouts">ApiManagementApiOperationTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTimeouts">ApiManagementApiOperationTimeouts</a>
 
 ---
 
@@ -1056,13 +1056,13 @@ const apiManagementApiOperationConfig: apiManagementApiOperation.ApiManagementAp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationConfig.property.apiManagementName">apiManagementName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#api_management_name ApiManagementApiOperation#api_management_name}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationConfig.property.apiName">apiName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#api_name ApiManagementApiOperation#api_name}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationConfig.property.displayName">displayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#display_name ApiManagementApiOperation#display_name}. |
@@ -1073,8 +1073,8 @@ const apiManagementApiOperationConfig: apiManagementApiOperation.ApiManagementAp
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#description ApiManagementApiOperation#description}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#id ApiManagementApiOperation#id}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationConfig.property.request">request</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequest">ApiManagementApiOperationRequest</a></code> | request block. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationConfig.property.response">response</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponse">ApiManagementApiOperationResponse</a>[]</code> | response block. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationConfig.property.templateParameter">templateParameter</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameter">ApiManagementApiOperationTemplateParameter</a>[]</code> | template_parameter block. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationConfig.property.response">response</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponse">ApiManagementApiOperationResponse</a>[]</code> | response block. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationConfig.property.templateParameter">templateParameter</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameter">ApiManagementApiOperationTemplateParameter</a>[]</code> | template_parameter block. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTimeouts">ApiManagementApiOperationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1085,7 +1085,7 @@ const apiManagementApiOperationConfig: apiManagementApiOperation.ApiManagementAp
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1095,7 +1095,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1105,7 +1105,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -1115,7 +1115,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1125,7 +1125,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1135,7 +1135,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1145,7 +1145,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1280,7 +1280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly response: IResolvable | ApiManagementApiOperationResponse[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponse">ApiManagementApiOperationResponse</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponse">ApiManagementApiOperationResponse</a>[]
 
 response block.
 
@@ -1294,7 +1294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly templateParameter: IResolvable | ApiManagementApiOperationTemplateParameter[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameter">ApiManagementApiOperationTemplateParameter</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameter">ApiManagementApiOperationTemplateParameter</a>[]
 
 template_parameter block.
 
@@ -1331,9 +1331,9 @@ const apiManagementApiOperationRequest: apiManagementApiOperation.ApiManagementA
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequest.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#description ApiManagementApiOperation#description}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequest.property.header">header</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeader">ApiManagementApiOperationRequestHeader</a>[]</code> | header block. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequest.property.queryParameter">queryParameter</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameter">ApiManagementApiOperationRequestQueryParameter</a>[]</code> | query_parameter block. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequest.property.representation">representation</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentation">ApiManagementApiOperationRequestRepresentation</a>[]</code> | representation block. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequest.property.header">header</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeader">ApiManagementApiOperationRequestHeader</a>[]</code> | header block. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequest.property.queryParameter">queryParameter</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameter">ApiManagementApiOperationRequestQueryParameter</a>[]</code> | query_parameter block. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequest.property.representation">representation</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentation">ApiManagementApiOperationRequestRepresentation</a>[]</code> | representation block. |
 
 ---
 
@@ -1355,7 +1355,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly header: IResolvable | ApiManagementApiOperationRequestHeader[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeader">ApiManagementApiOperationRequestHeader</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeader">ApiManagementApiOperationRequestHeader</a>[]
 
 header block.
 
@@ -1369,7 +1369,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly queryParameter: IResolvable | ApiManagementApiOperationRequestQueryParameter[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameter">ApiManagementApiOperationRequestQueryParameter</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameter">ApiManagementApiOperationRequestQueryParameter</a>[]
 
 query_parameter block.
 
@@ -1383,7 +1383,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly representation: IResolvable | ApiManagementApiOperationRequestRepresentation[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentation">ApiManagementApiOperationRequestRepresentation</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentation">ApiManagementApiOperationRequestRepresentation</a>[]
 
 representation block.
 
@@ -1406,11 +1406,11 @@ const apiManagementApiOperationRequestHeader: apiManagementApiOperation.ApiManag
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeader.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#name ApiManagementApiOperation#name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeader.property.required">required</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#required ApiManagementApiOperation#required}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeader.property.required">required</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#required ApiManagementApiOperation#required}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeader.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#type ApiManagementApiOperation#type}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeader.property.defaultValue">defaultValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#default_value ApiManagementApiOperation#default_value}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeader.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#description ApiManagementApiOperation#description}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeader.property.example">example</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExample">ApiManagementApiOperationRequestHeaderExample</a>[]</code> | example block. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeader.property.example">example</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExample">ApiManagementApiOperationRequestHeaderExample</a>[]</code> | example block. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeader.property.schemaId">schemaId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#schema_id ApiManagementApiOperation#schema_id}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeader.property.typeName">typeName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#type_name ApiManagementApiOperation#type_name}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeader.property.values">values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#values ApiManagementApiOperation#values}. |
@@ -1435,7 +1435,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly required: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#required ApiManagementApiOperation#required}.
 
@@ -1483,7 +1483,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly example: IResolvable | ApiManagementApiOperationRequestHeaderExample[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExample">ApiManagementApiOperationRequestHeaderExample</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExample">ApiManagementApiOperationRequestHeaderExample</a>[]
 
 example block.
 
@@ -1624,11 +1624,11 @@ const apiManagementApiOperationRequestQueryParameter: apiManagementApiOperation.
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameter.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#name ApiManagementApiOperation#name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameter.property.required">required</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#required ApiManagementApiOperation#required}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameter.property.required">required</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#required ApiManagementApiOperation#required}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameter.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#type ApiManagementApiOperation#type}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameter.property.defaultValue">defaultValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#default_value ApiManagementApiOperation#default_value}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameter.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#description ApiManagementApiOperation#description}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameter.property.example">example</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExample">ApiManagementApiOperationRequestQueryParameterExample</a>[]</code> | example block. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameter.property.example">example</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExample">ApiManagementApiOperationRequestQueryParameterExample</a>[]</code> | example block. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameter.property.schemaId">schemaId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#schema_id ApiManagementApiOperation#schema_id}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameter.property.typeName">typeName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#type_name ApiManagementApiOperation#type_name}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameter.property.values">values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#values ApiManagementApiOperation#values}. |
@@ -1653,7 +1653,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly required: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#required ApiManagementApiOperation#required}.
 
@@ -1701,7 +1701,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly example: IResolvable | ApiManagementApiOperationRequestQueryParameterExample[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExample">ApiManagementApiOperationRequestQueryParameterExample</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExample">ApiManagementApiOperationRequestQueryParameterExample</a>[]
 
 example block.
 
@@ -1842,8 +1842,8 @@ const apiManagementApiOperationRequestRepresentation: apiManagementApiOperation.
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentation.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#content_type ApiManagementApiOperation#content_type}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentation.property.example">example</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExample">ApiManagementApiOperationRequestRepresentationExample</a>[]</code> | example block. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentation.property.formParameter">formParameter</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameter">ApiManagementApiOperationRequestRepresentationFormParameter</a>[]</code> | form_parameter block. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentation.property.example">example</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExample">ApiManagementApiOperationRequestRepresentationExample</a>[]</code> | example block. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentation.property.formParameter">formParameter</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameter">ApiManagementApiOperationRequestRepresentationFormParameter</a>[]</code> | form_parameter block. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentation.property.schemaId">schemaId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#schema_id ApiManagementApiOperation#schema_id}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentation.property.typeName">typeName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#type_name ApiManagementApiOperation#type_name}. |
 
@@ -1867,7 +1867,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly example: IResolvable | ApiManagementApiOperationRequestRepresentationExample[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExample">ApiManagementApiOperationRequestRepresentationExample</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExample">ApiManagementApiOperationRequestRepresentationExample</a>[]
 
 example block.
 
@@ -1881,7 +1881,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly formParameter: IResolvable | ApiManagementApiOperationRequestRepresentationFormParameter[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameter">ApiManagementApiOperationRequestRepresentationFormParameter</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameter">ApiManagementApiOperationRequestRepresentationFormParameter</a>[]
 
 form_parameter block.
 
@@ -2010,11 +2010,11 @@ const apiManagementApiOperationRequestRepresentationFormParameter: apiManagement
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameter.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#name ApiManagementApiOperation#name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameter.property.required">required</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#required ApiManagementApiOperation#required}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameter.property.required">required</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#required ApiManagementApiOperation#required}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameter.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#type ApiManagementApiOperation#type}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameter.property.defaultValue">defaultValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#default_value ApiManagementApiOperation#default_value}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameter.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#description ApiManagementApiOperation#description}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameter.property.example">example</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExample">ApiManagementApiOperationRequestRepresentationFormParameterExample</a>[]</code> | example block. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameter.property.example">example</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExample">ApiManagementApiOperationRequestRepresentationFormParameterExample</a>[]</code> | example block. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameter.property.schemaId">schemaId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#schema_id ApiManagementApiOperation#schema_id}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameter.property.typeName">typeName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#type_name ApiManagementApiOperation#type_name}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameter.property.values">values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#values ApiManagementApiOperation#values}. |
@@ -2039,7 +2039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly required: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#required ApiManagementApiOperation#required}.
 
@@ -2087,7 +2087,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly example: IResolvable | ApiManagementApiOperationRequestRepresentationFormParameterExample[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExample">ApiManagementApiOperationRequestRepresentationFormParameterExample</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExample">ApiManagementApiOperationRequestRepresentationFormParameterExample</a>[]
 
 example block.
 
@@ -2229,8 +2229,8 @@ const apiManagementApiOperationResponse: apiManagementApiOperation.ApiManagement
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponse.property.statusCode">statusCode</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#status_code ApiManagementApiOperation#status_code}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponse.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#description ApiManagementApiOperation#description}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponse.property.header">header</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeader">ApiManagementApiOperationResponseHeader</a>[]</code> | header block. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponse.property.representation">representation</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentation">ApiManagementApiOperationResponseRepresentation</a>[]</code> | representation block. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponse.property.header">header</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeader">ApiManagementApiOperationResponseHeader</a>[]</code> | header block. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponse.property.representation">representation</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentation">ApiManagementApiOperationResponseRepresentation</a>[]</code> | representation block. |
 
 ---
 
@@ -2264,7 +2264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly header: IResolvable | ApiManagementApiOperationResponseHeader[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeader">ApiManagementApiOperationResponseHeader</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeader">ApiManagementApiOperationResponseHeader</a>[]
 
 header block.
 
@@ -2278,7 +2278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly representation: IResolvable | ApiManagementApiOperationResponseRepresentation[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentation">ApiManagementApiOperationResponseRepresentation</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentation">ApiManagementApiOperationResponseRepresentation</a>[]
 
 representation block.
 
@@ -2301,11 +2301,11 @@ const apiManagementApiOperationResponseHeader: apiManagementApiOperation.ApiMana
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeader.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#name ApiManagementApiOperation#name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeader.property.required">required</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#required ApiManagementApiOperation#required}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeader.property.required">required</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#required ApiManagementApiOperation#required}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeader.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#type ApiManagementApiOperation#type}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeader.property.defaultValue">defaultValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#default_value ApiManagementApiOperation#default_value}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeader.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#description ApiManagementApiOperation#description}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeader.property.example">example</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExample">ApiManagementApiOperationResponseHeaderExample</a>[]</code> | example block. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeader.property.example">example</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExample">ApiManagementApiOperationResponseHeaderExample</a>[]</code> | example block. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeader.property.schemaId">schemaId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#schema_id ApiManagementApiOperation#schema_id}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeader.property.typeName">typeName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#type_name ApiManagementApiOperation#type_name}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeader.property.values">values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#values ApiManagementApiOperation#values}. |
@@ -2330,7 +2330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly required: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#required ApiManagementApiOperation#required}.
 
@@ -2378,7 +2378,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly example: IResolvable | ApiManagementApiOperationResponseHeaderExample[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExample">ApiManagementApiOperationResponseHeaderExample</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExample">ApiManagementApiOperationResponseHeaderExample</a>[]
 
 example block.
 
@@ -2519,8 +2519,8 @@ const apiManagementApiOperationResponseRepresentation: apiManagementApiOperation
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentation.property.contentType">contentType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#content_type ApiManagementApiOperation#content_type}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentation.property.example">example</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExample">ApiManagementApiOperationResponseRepresentationExample</a>[]</code> | example block. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentation.property.formParameter">formParameter</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameter">ApiManagementApiOperationResponseRepresentationFormParameter</a>[]</code> | form_parameter block. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentation.property.example">example</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExample">ApiManagementApiOperationResponseRepresentationExample</a>[]</code> | example block. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentation.property.formParameter">formParameter</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameter">ApiManagementApiOperationResponseRepresentationFormParameter</a>[]</code> | form_parameter block. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentation.property.schemaId">schemaId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#schema_id ApiManagementApiOperation#schema_id}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentation.property.typeName">typeName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#type_name ApiManagementApiOperation#type_name}. |
 
@@ -2544,7 +2544,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly example: IResolvable | ApiManagementApiOperationResponseRepresentationExample[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExample">ApiManagementApiOperationResponseRepresentationExample</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExample">ApiManagementApiOperationResponseRepresentationExample</a>[]
 
 example block.
 
@@ -2558,7 +2558,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly formParameter: IResolvable | ApiManagementApiOperationResponseRepresentationFormParameter[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameter">ApiManagementApiOperationResponseRepresentationFormParameter</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameter">ApiManagementApiOperationResponseRepresentationFormParameter</a>[]
 
 form_parameter block.
 
@@ -2687,11 +2687,11 @@ const apiManagementApiOperationResponseRepresentationFormParameter: apiManagemen
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameter.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#name ApiManagementApiOperation#name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameter.property.required">required</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#required ApiManagementApiOperation#required}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameter.property.required">required</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#required ApiManagementApiOperation#required}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameter.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#type ApiManagementApiOperation#type}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameter.property.defaultValue">defaultValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#default_value ApiManagementApiOperation#default_value}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameter.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#description ApiManagementApiOperation#description}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameter.property.example">example</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExample">ApiManagementApiOperationResponseRepresentationFormParameterExample</a>[]</code> | example block. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameter.property.example">example</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExample">ApiManagementApiOperationResponseRepresentationFormParameterExample</a>[]</code> | example block. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameter.property.schemaId">schemaId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#schema_id ApiManagementApiOperation#schema_id}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameter.property.typeName">typeName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#type_name ApiManagementApiOperation#type_name}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameter.property.values">values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#values ApiManagementApiOperation#values}. |
@@ -2716,7 +2716,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly required: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#required ApiManagementApiOperation#required}.
 
@@ -2764,7 +2764,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly example: IResolvable | ApiManagementApiOperationResponseRepresentationFormParameterExample[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExample">ApiManagementApiOperationResponseRepresentationFormParameterExample</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExample">ApiManagementApiOperationResponseRepresentationFormParameterExample</a>[]
 
 example block.
 
@@ -2905,11 +2905,11 @@ const apiManagementApiOperationTemplateParameter: apiManagementApiOperation.ApiM
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameter.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#name ApiManagementApiOperation#name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameter.property.required">required</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#required ApiManagementApiOperation#required}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameter.property.required">required</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#required ApiManagementApiOperation#required}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameter.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#type ApiManagementApiOperation#type}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameter.property.defaultValue">defaultValue</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#default_value ApiManagementApiOperation#default_value}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameter.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#description ApiManagementApiOperation#description}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameter.property.example">example</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExample">ApiManagementApiOperationTemplateParameterExample</a>[]</code> | example block. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameter.property.example">example</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExample">ApiManagementApiOperationTemplateParameterExample</a>[]</code> | example block. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameter.property.schemaId">schemaId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#schema_id ApiManagementApiOperation#schema_id}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameter.property.typeName">typeName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#type_name ApiManagementApiOperation#type_name}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameter.property.values">values</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#values ApiManagementApiOperation#values}. |
@@ -2934,7 +2934,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly required: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api_operation#required ApiManagementApiOperation#required}.
 
@@ -2982,7 +2982,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly example: IResolvable | ApiManagementApiOperationTemplateParameterExample[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExample">ApiManagementApiOperationTemplateParameterExample</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExample">ApiManagementApiOperationTemplateParameterExample</a>[]
 
 example block.
 
@@ -3191,7 +3191,7 @@ new apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExampleList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExampleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExampleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExampleList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExampleList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3199,7 +3199,7 @@ new apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExampleList(
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExampleList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3265,7 +3265,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExampleList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3300,7 +3300,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExampleList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExampleList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExampleList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExample">ApiManagementApiOperationRequestHeaderExample</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExampleList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExample">ApiManagementApiOperationRequestHeaderExample</a>[]</code> | *No description.* |
 
 ---
 
@@ -3334,7 +3334,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ApiManagementApiOperationRequestHeaderExample[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExample">ApiManagementApiOperationRequestHeaderExample</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExample">ApiManagementApiOperationRequestHeaderExample</a>[]
 
 ---
 
@@ -3351,7 +3351,7 @@ new apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExampleOutpu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExampleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExampleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExampleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExampleOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExampleOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -3360,7 +3360,7 @@ new apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExampleOutpu
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExampleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3550,7 +3550,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExampleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3605,7 +3605,7 @@ public resetValue(): void
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExampleOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExampleOutputReference.property.summary">summary</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExampleOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExampleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExample">ApiManagementApiOperationRequestHeaderExample</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExampleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExample">ApiManagementApiOperationRequestHeaderExample</a></code> | *No description.* |
 
 ---
 
@@ -3739,7 +3739,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | ApiManagementApiOperationRequestHeaderExample;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExample">ApiManagementApiOperationRequestHeaderExample</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExample">ApiManagementApiOperationRequestHeaderExample</a>
 
 ---
 
@@ -3756,7 +3756,7 @@ new apiManagementApiOperation.ApiManagementApiOperationRequestHeaderList(terrafo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3764,7 +3764,7 @@ new apiManagementApiOperation.ApiManagementApiOperationRequestHeaderList(terrafo
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3830,7 +3830,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3865,7 +3865,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeader">ApiManagementApiOperationRequestHeader</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeader">ApiManagementApiOperationRequestHeader</a>[]</code> | *No description.* |
 
 ---
 
@@ -3899,7 +3899,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ApiManagementApiOperationRequestHeader[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeader">ApiManagementApiOperationRequestHeader</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeader">ApiManagementApiOperationRequestHeader</a>[]
 
 ---
 
@@ -3916,7 +3916,7 @@ new apiManagementApiOperation.ApiManagementApiOperationRequestHeaderOutputRefere
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -3925,7 +3925,7 @@ new apiManagementApiOperation.ApiManagementApiOperationRequestHeaderOutputRefere
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4118,7 +4118,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4140,7 +4140,7 @@ public putExample(value: IResolvable | ApiManagementApiOperationRequestHeaderExa
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderOutputReference.putExample.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExample">ApiManagementApiOperationRequestHeaderExample</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExample">ApiManagementApiOperationRequestHeaderExample</a>[]
 
 ---
 
@@ -4190,9 +4190,9 @@ public resetValues(): void
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderOutputReference.property.example">example</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExampleList">ApiManagementApiOperationRequestHeaderExampleList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderOutputReference.property.defaultValueInput">defaultValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderOutputReference.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderOutputReference.property.exampleInput">exampleInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExample">ApiManagementApiOperationRequestHeaderExample</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderOutputReference.property.exampleInput">exampleInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExample">ApiManagementApiOperationRequestHeaderExample</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderOutputReference.property.requiredInput">requiredInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderOutputReference.property.requiredInput">requiredInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderOutputReference.property.schemaIdInput">schemaIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderOutputReference.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderOutputReference.property.typeNameInput">typeNameInput</a></code> | <code>string</code> | *No description.* |
@@ -4200,12 +4200,12 @@ public resetValues(): void
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderOutputReference.property.defaultValue">defaultValue</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderOutputReference.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderOutputReference.property.required">required</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderOutputReference.property.required">required</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderOutputReference.property.schemaId">schemaId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderOutputReference.property.typeName">typeName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderOutputReference.property.values">values</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeader">ApiManagementApiOperationRequestHeader</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeader">ApiManagementApiOperationRequestHeader</a></code> | *No description.* |
 
 ---
 
@@ -4269,7 +4269,7 @@ public readonly descriptionInput: string;
 public readonly exampleInput: IResolvable | ApiManagementApiOperationRequestHeaderExample[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExample">ApiManagementApiOperationRequestHeaderExample</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeaderExample">ApiManagementApiOperationRequestHeaderExample</a>[]
 
 ---
 
@@ -4289,7 +4289,7 @@ public readonly nameInput: string;
 public readonly requiredInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -4369,7 +4369,7 @@ public readonly name: string;
 public readonly required: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -4419,7 +4419,7 @@ public readonly values: string[];
 public readonly internalValue: IResolvable | ApiManagementApiOperationRequestHeader;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeader">ApiManagementApiOperationRequestHeader</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeader">ApiManagementApiOperationRequestHeader</a>
 
 ---
 
@@ -4436,14 +4436,14 @@ new apiManagementApiOperation.ApiManagementApiOperationRequestOutputReference(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4620,7 +4620,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4642,7 +4642,7 @@ public putHeader(value: IResolvable | ApiManagementApiOperationRequestHeader[]):
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestOutputReference.putHeader.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeader">ApiManagementApiOperationRequestHeader</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeader">ApiManagementApiOperationRequestHeader</a>[]
 
 ---
 
@@ -4654,7 +4654,7 @@ public putQueryParameter(value: IResolvable | ApiManagementApiOperationRequestQu
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestOutputReference.putQueryParameter.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameter">ApiManagementApiOperationRequestQueryParameter</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameter">ApiManagementApiOperationRequestQueryParameter</a>[]
 
 ---
 
@@ -4666,7 +4666,7 @@ public putRepresentation(value: IResolvable | ApiManagementApiOperationRequestRe
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestOutputReference.putRepresentation.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentation">ApiManagementApiOperationRequestRepresentation</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentation">ApiManagementApiOperationRequestRepresentation</a>[]
 
 ---
 
@@ -4705,9 +4705,9 @@ public resetRepresentation(): void
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestOutputReference.property.queryParameter">queryParameter</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterList">ApiManagementApiOperationRequestQueryParameterList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestOutputReference.property.representation">representation</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationList">ApiManagementApiOperationRequestRepresentationList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestOutputReference.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestOutputReference.property.headerInput">headerInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeader">ApiManagementApiOperationRequestHeader</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestOutputReference.property.queryParameterInput">queryParameterInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameter">ApiManagementApiOperationRequestQueryParameter</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestOutputReference.property.representationInput">representationInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentation">ApiManagementApiOperationRequestRepresentation</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestOutputReference.property.headerInput">headerInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeader">ApiManagementApiOperationRequestHeader</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestOutputReference.property.queryParameterInput">queryParameterInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameter">ApiManagementApiOperationRequestQueryParameter</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestOutputReference.property.representationInput">representationInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentation">ApiManagementApiOperationRequestRepresentation</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestOutputReference.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequest">ApiManagementApiOperationRequest</a></code> | *No description.* |
 
@@ -4783,7 +4783,7 @@ public readonly descriptionInput: string;
 public readonly headerInput: IResolvable | ApiManagementApiOperationRequestHeader[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeader">ApiManagementApiOperationRequestHeader</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestHeader">ApiManagementApiOperationRequestHeader</a>[]
 
 ---
 
@@ -4793,7 +4793,7 @@ public readonly headerInput: IResolvable | ApiManagementApiOperationRequestHeade
 public readonly queryParameterInput: IResolvable | ApiManagementApiOperationRequestQueryParameter[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameter">ApiManagementApiOperationRequestQueryParameter</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameter">ApiManagementApiOperationRequestQueryParameter</a>[]
 
 ---
 
@@ -4803,7 +4803,7 @@ public readonly queryParameterInput: IResolvable | ApiManagementApiOperationRequ
 public readonly representationInput: IResolvable | ApiManagementApiOperationRequestRepresentation[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentation">ApiManagementApiOperationRequestRepresentation</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentation">ApiManagementApiOperationRequestRepresentation</a>[]
 
 ---
 
@@ -4840,7 +4840,7 @@ new apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExam
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExampleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExampleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExampleList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExampleList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -4848,7 +4848,7 @@ new apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExam
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExampleList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4914,7 +4914,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExampleList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4949,7 +4949,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExampleList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExampleList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExampleList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExample">ApiManagementApiOperationRequestQueryParameterExample</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExampleList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExample">ApiManagementApiOperationRequestQueryParameterExample</a>[]</code> | *No description.* |
 
 ---
 
@@ -4983,7 +4983,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ApiManagementApiOperationRequestQueryParameterExample[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExample">ApiManagementApiOperationRequestQueryParameterExample</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExample">ApiManagementApiOperationRequestQueryParameterExample</a>[]
 
 ---
 
@@ -5000,7 +5000,7 @@ new apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExam
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExampleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExampleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExampleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExampleOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExampleOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -5009,7 +5009,7 @@ new apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExam
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExampleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5199,7 +5199,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExampleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5254,7 +5254,7 @@ public resetValue(): void
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExampleOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExampleOutputReference.property.summary">summary</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExampleOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExampleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExample">ApiManagementApiOperationRequestQueryParameterExample</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExampleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExample">ApiManagementApiOperationRequestQueryParameterExample</a></code> | *No description.* |
 
 ---
 
@@ -5388,7 +5388,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | ApiManagementApiOperationRequestQueryParameterExample;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExample">ApiManagementApiOperationRequestQueryParameterExample</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExample">ApiManagementApiOperationRequestQueryParameterExample</a>
 
 ---
 
@@ -5405,7 +5405,7 @@ new apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterList
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -5413,7 +5413,7 @@ new apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterList
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5479,7 +5479,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5514,7 +5514,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameter">ApiManagementApiOperationRequestQueryParameter</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameter">ApiManagementApiOperationRequestQueryParameter</a>[]</code> | *No description.* |
 
 ---
 
@@ -5548,7 +5548,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ApiManagementApiOperationRequestQueryParameter[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameter">ApiManagementApiOperationRequestQueryParameter</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameter">ApiManagementApiOperationRequestQueryParameter</a>[]
 
 ---
 
@@ -5565,7 +5565,7 @@ new apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterOutp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -5574,7 +5574,7 @@ new apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterOutp
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5767,7 +5767,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5789,7 +5789,7 @@ public putExample(value: IResolvable | ApiManagementApiOperationRequestQueryPara
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterOutputReference.putExample.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExample">ApiManagementApiOperationRequestQueryParameterExample</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExample">ApiManagementApiOperationRequestQueryParameterExample</a>[]
 
 ---
 
@@ -5839,9 +5839,9 @@ public resetValues(): void
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterOutputReference.property.example">example</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExampleList">ApiManagementApiOperationRequestQueryParameterExampleList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterOutputReference.property.defaultValueInput">defaultValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterOutputReference.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterOutputReference.property.exampleInput">exampleInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExample">ApiManagementApiOperationRequestQueryParameterExample</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterOutputReference.property.exampleInput">exampleInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExample">ApiManagementApiOperationRequestQueryParameterExample</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterOutputReference.property.requiredInput">requiredInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterOutputReference.property.requiredInput">requiredInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterOutputReference.property.schemaIdInput">schemaIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterOutputReference.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterOutputReference.property.typeNameInput">typeNameInput</a></code> | <code>string</code> | *No description.* |
@@ -5849,12 +5849,12 @@ public resetValues(): void
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterOutputReference.property.defaultValue">defaultValue</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterOutputReference.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterOutputReference.property.required">required</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterOutputReference.property.required">required</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterOutputReference.property.schemaId">schemaId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterOutputReference.property.typeName">typeName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterOutputReference.property.values">values</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameter">ApiManagementApiOperationRequestQueryParameter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameter">ApiManagementApiOperationRequestQueryParameter</a></code> | *No description.* |
 
 ---
 
@@ -5918,7 +5918,7 @@ public readonly descriptionInput: string;
 public readonly exampleInput: IResolvable | ApiManagementApiOperationRequestQueryParameterExample[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExample">ApiManagementApiOperationRequestQueryParameterExample</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameterExample">ApiManagementApiOperationRequestQueryParameterExample</a>[]
 
 ---
 
@@ -5938,7 +5938,7 @@ public readonly nameInput: string;
 public readonly requiredInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -6018,7 +6018,7 @@ public readonly name: string;
 public readonly required: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -6068,7 +6068,7 @@ public readonly values: string[];
 public readonly internalValue: IResolvable | ApiManagementApiOperationRequestQueryParameter;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameter">ApiManagementApiOperationRequestQueryParameter</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestQueryParameter">ApiManagementApiOperationRequestQueryParameter</a>
 
 ---
 
@@ -6085,7 +6085,7 @@ new apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExam
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExampleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExampleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExampleList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExampleList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -6093,7 +6093,7 @@ new apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExam
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExampleList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6159,7 +6159,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExampleList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6194,7 +6194,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExampleList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExampleList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExampleList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExample">ApiManagementApiOperationRequestRepresentationExample</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExampleList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExample">ApiManagementApiOperationRequestRepresentationExample</a>[]</code> | *No description.* |
 
 ---
 
@@ -6228,7 +6228,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ApiManagementApiOperationRequestRepresentationExample[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExample">ApiManagementApiOperationRequestRepresentationExample</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExample">ApiManagementApiOperationRequestRepresentationExample</a>[]
 
 ---
 
@@ -6245,7 +6245,7 @@ new apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExam
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExampleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExampleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExampleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExampleOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExampleOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -6254,7 +6254,7 @@ new apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExam
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExampleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6444,7 +6444,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExampleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6499,7 +6499,7 @@ public resetValue(): void
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExampleOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExampleOutputReference.property.summary">summary</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExampleOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExampleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExample">ApiManagementApiOperationRequestRepresentationExample</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExampleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExample">ApiManagementApiOperationRequestRepresentationExample</a></code> | *No description.* |
 
 ---
 
@@ -6633,7 +6633,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | ApiManagementApiOperationRequestRepresentationExample;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExample">ApiManagementApiOperationRequestRepresentationExample</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExample">ApiManagementApiOperationRequestRepresentationExample</a>
 
 ---
 
@@ -6650,7 +6650,7 @@ new apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationForm
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExampleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExampleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExampleList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExampleList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -6658,7 +6658,7 @@ new apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationForm
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExampleList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6724,7 +6724,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExampleList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6759,7 +6759,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExampleList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExampleList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExampleList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExample">ApiManagementApiOperationRequestRepresentationFormParameterExample</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExampleList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExample">ApiManagementApiOperationRequestRepresentationFormParameterExample</a>[]</code> | *No description.* |
 
 ---
 
@@ -6793,7 +6793,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ApiManagementApiOperationRequestRepresentationFormParameterExample[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExample">ApiManagementApiOperationRequestRepresentationFormParameterExample</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExample">ApiManagementApiOperationRequestRepresentationFormParameterExample</a>[]
 
 ---
 
@@ -6810,7 +6810,7 @@ new apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationForm
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExampleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExampleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExampleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExampleOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExampleOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -6819,7 +6819,7 @@ new apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationForm
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExampleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7009,7 +7009,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExampleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7064,7 +7064,7 @@ public resetValue(): void
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExampleOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExampleOutputReference.property.summary">summary</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExampleOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExampleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExample">ApiManagementApiOperationRequestRepresentationFormParameterExample</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExampleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExample">ApiManagementApiOperationRequestRepresentationFormParameterExample</a></code> | *No description.* |
 
 ---
 
@@ -7198,7 +7198,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | ApiManagementApiOperationRequestRepresentationFormParameterExample;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExample">ApiManagementApiOperationRequestRepresentationFormParameterExample</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExample">ApiManagementApiOperationRequestRepresentationFormParameterExample</a>
 
 ---
 
@@ -7215,7 +7215,7 @@ new apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationForm
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7223,7 +7223,7 @@ new apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationForm
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7289,7 +7289,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7324,7 +7324,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameter">ApiManagementApiOperationRequestRepresentationFormParameter</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameter">ApiManagementApiOperationRequestRepresentationFormParameter</a>[]</code> | *No description.* |
 
 ---
 
@@ -7358,7 +7358,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ApiManagementApiOperationRequestRepresentationFormParameter[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameter">ApiManagementApiOperationRequestRepresentationFormParameter</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameter">ApiManagementApiOperationRequestRepresentationFormParameter</a>[]
 
 ---
 
@@ -7375,7 +7375,7 @@ new apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationForm
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -7384,7 +7384,7 @@ new apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationForm
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7577,7 +7577,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7599,7 +7599,7 @@ public putExample(value: IResolvable | ApiManagementApiOperationRequestRepresent
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterOutputReference.putExample.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExample">ApiManagementApiOperationRequestRepresentationFormParameterExample</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExample">ApiManagementApiOperationRequestRepresentationFormParameterExample</a>[]
 
 ---
 
@@ -7649,9 +7649,9 @@ public resetValues(): void
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterOutputReference.property.example">example</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExampleList">ApiManagementApiOperationRequestRepresentationFormParameterExampleList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterOutputReference.property.defaultValueInput">defaultValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterOutputReference.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterOutputReference.property.exampleInput">exampleInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExample">ApiManagementApiOperationRequestRepresentationFormParameterExample</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterOutputReference.property.exampleInput">exampleInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExample">ApiManagementApiOperationRequestRepresentationFormParameterExample</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterOutputReference.property.requiredInput">requiredInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterOutputReference.property.requiredInput">requiredInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterOutputReference.property.schemaIdInput">schemaIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterOutputReference.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterOutputReference.property.typeNameInput">typeNameInput</a></code> | <code>string</code> | *No description.* |
@@ -7659,12 +7659,12 @@ public resetValues(): void
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterOutputReference.property.defaultValue">defaultValue</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterOutputReference.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterOutputReference.property.required">required</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterOutputReference.property.required">required</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterOutputReference.property.schemaId">schemaId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterOutputReference.property.typeName">typeName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterOutputReference.property.values">values</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameter">ApiManagementApiOperationRequestRepresentationFormParameter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameter">ApiManagementApiOperationRequestRepresentationFormParameter</a></code> | *No description.* |
 
 ---
 
@@ -7728,7 +7728,7 @@ public readonly descriptionInput: string;
 public readonly exampleInput: IResolvable | ApiManagementApiOperationRequestRepresentationFormParameterExample[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExample">ApiManagementApiOperationRequestRepresentationFormParameterExample</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterExample">ApiManagementApiOperationRequestRepresentationFormParameterExample</a>[]
 
 ---
 
@@ -7748,7 +7748,7 @@ public readonly nameInput: string;
 public readonly requiredInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -7828,7 +7828,7 @@ public readonly name: string;
 public readonly required: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -7878,7 +7878,7 @@ public readonly values: string[];
 public readonly internalValue: IResolvable | ApiManagementApiOperationRequestRepresentationFormParameter;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameter">ApiManagementApiOperationRequestRepresentationFormParameter</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameter">ApiManagementApiOperationRequestRepresentationFormParameter</a>
 
 ---
 
@@ -7895,7 +7895,7 @@ new apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationList
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -7903,7 +7903,7 @@ new apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationList
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7969,7 +7969,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8004,7 +8004,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentation">ApiManagementApiOperationRequestRepresentation</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentation">ApiManagementApiOperationRequestRepresentation</a>[]</code> | *No description.* |
 
 ---
 
@@ -8038,7 +8038,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ApiManagementApiOperationRequestRepresentation[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentation">ApiManagementApiOperationRequestRepresentation</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentation">ApiManagementApiOperationRequestRepresentation</a>[]
 
 ---
 
@@ -8055,7 +8055,7 @@ new apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationOutp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -8064,7 +8064,7 @@ new apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationOutp
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8256,7 +8256,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8278,7 +8278,7 @@ public putExample(value: IResolvable | ApiManagementApiOperationRequestRepresent
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationOutputReference.putExample.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExample">ApiManagementApiOperationRequestRepresentationExample</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExample">ApiManagementApiOperationRequestRepresentationExample</a>[]
 
 ---
 
@@ -8290,7 +8290,7 @@ public putFormParameter(value: IResolvable | ApiManagementApiOperationRequestRep
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationOutputReference.putFormParameter.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameter">ApiManagementApiOperationRequestRepresentationFormParameter</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameter">ApiManagementApiOperationRequestRepresentationFormParameter</a>[]
 
 ---
 
@@ -8328,14 +8328,14 @@ public resetTypeName(): void
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationOutputReference.property.example">example</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExampleList">ApiManagementApiOperationRequestRepresentationExampleList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationOutputReference.property.formParameter">formParameter</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameterList">ApiManagementApiOperationRequestRepresentationFormParameterList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationOutputReference.property.contentTypeInput">contentTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationOutputReference.property.exampleInput">exampleInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExample">ApiManagementApiOperationRequestRepresentationExample</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationOutputReference.property.formParameterInput">formParameterInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameter">ApiManagementApiOperationRequestRepresentationFormParameter</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationOutputReference.property.exampleInput">exampleInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExample">ApiManagementApiOperationRequestRepresentationExample</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationOutputReference.property.formParameterInput">formParameterInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameter">ApiManagementApiOperationRequestRepresentationFormParameter</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationOutputReference.property.schemaIdInput">schemaIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationOutputReference.property.typeNameInput">typeNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationOutputReference.property.contentType">contentType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationOutputReference.property.schemaId">schemaId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationOutputReference.property.typeName">typeName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentation">ApiManagementApiOperationRequestRepresentation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentation">ApiManagementApiOperationRequestRepresentation</a></code> | *No description.* |
 
 ---
 
@@ -8399,7 +8399,7 @@ public readonly contentTypeInput: string;
 public readonly exampleInput: IResolvable | ApiManagementApiOperationRequestRepresentationExample[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExample">ApiManagementApiOperationRequestRepresentationExample</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationExample">ApiManagementApiOperationRequestRepresentationExample</a>[]
 
 ---
 
@@ -8409,7 +8409,7 @@ public readonly exampleInput: IResolvable | ApiManagementApiOperationRequestRepr
 public readonly formParameterInput: IResolvable | ApiManagementApiOperationRequestRepresentationFormParameter[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameter">ApiManagementApiOperationRequestRepresentationFormParameter</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentationFormParameter">ApiManagementApiOperationRequestRepresentationFormParameter</a>[]
 
 ---
 
@@ -8469,7 +8469,7 @@ public readonly typeName: string;
 public readonly internalValue: IResolvable | ApiManagementApiOperationRequestRepresentation;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentation">ApiManagementApiOperationRequestRepresentation</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationRequestRepresentation">ApiManagementApiOperationRequestRepresentation</a>
 
 ---
 
@@ -8486,7 +8486,7 @@ new apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExampleList
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExampleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExampleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExampleList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExampleList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -8494,7 +8494,7 @@ new apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExampleList
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExampleList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8560,7 +8560,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExampleList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8595,7 +8595,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExampleList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExampleList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExampleList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExample">ApiManagementApiOperationResponseHeaderExample</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExampleList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExample">ApiManagementApiOperationResponseHeaderExample</a>[]</code> | *No description.* |
 
 ---
 
@@ -8629,7 +8629,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ApiManagementApiOperationResponseHeaderExample[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExample">ApiManagementApiOperationResponseHeaderExample</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExample">ApiManagementApiOperationResponseHeaderExample</a>[]
 
 ---
 
@@ -8646,7 +8646,7 @@ new apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExampleOutp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExampleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExampleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExampleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExampleOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExampleOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -8655,7 +8655,7 @@ new apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExampleOutp
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExampleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8845,7 +8845,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExampleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8900,7 +8900,7 @@ public resetValue(): void
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExampleOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExampleOutputReference.property.summary">summary</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExampleOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExampleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExample">ApiManagementApiOperationResponseHeaderExample</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExampleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExample">ApiManagementApiOperationResponseHeaderExample</a></code> | *No description.* |
 
 ---
 
@@ -9034,7 +9034,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | ApiManagementApiOperationResponseHeaderExample;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExample">ApiManagementApiOperationResponseHeaderExample</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExample">ApiManagementApiOperationResponseHeaderExample</a>
 
 ---
 
@@ -9051,7 +9051,7 @@ new apiManagementApiOperation.ApiManagementApiOperationResponseHeaderList(terraf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -9059,7 +9059,7 @@ new apiManagementApiOperation.ApiManagementApiOperationResponseHeaderList(terraf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9125,7 +9125,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9160,7 +9160,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeader">ApiManagementApiOperationResponseHeader</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeader">ApiManagementApiOperationResponseHeader</a>[]</code> | *No description.* |
 
 ---
 
@@ -9194,7 +9194,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ApiManagementApiOperationResponseHeader[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeader">ApiManagementApiOperationResponseHeader</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeader">ApiManagementApiOperationResponseHeader</a>[]
 
 ---
 
@@ -9211,7 +9211,7 @@ new apiManagementApiOperation.ApiManagementApiOperationResponseHeaderOutputRefer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -9220,7 +9220,7 @@ new apiManagementApiOperation.ApiManagementApiOperationResponseHeaderOutputRefer
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9413,7 +9413,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9435,7 +9435,7 @@ public putExample(value: IResolvable | ApiManagementApiOperationResponseHeaderEx
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderOutputReference.putExample.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExample">ApiManagementApiOperationResponseHeaderExample</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExample">ApiManagementApiOperationResponseHeaderExample</a>[]
 
 ---
 
@@ -9485,9 +9485,9 @@ public resetValues(): void
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderOutputReference.property.example">example</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExampleList">ApiManagementApiOperationResponseHeaderExampleList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderOutputReference.property.defaultValueInput">defaultValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderOutputReference.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderOutputReference.property.exampleInput">exampleInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExample">ApiManagementApiOperationResponseHeaderExample</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderOutputReference.property.exampleInput">exampleInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExample">ApiManagementApiOperationResponseHeaderExample</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderOutputReference.property.requiredInput">requiredInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderOutputReference.property.requiredInput">requiredInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderOutputReference.property.schemaIdInput">schemaIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderOutputReference.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderOutputReference.property.typeNameInput">typeNameInput</a></code> | <code>string</code> | *No description.* |
@@ -9495,12 +9495,12 @@ public resetValues(): void
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderOutputReference.property.defaultValue">defaultValue</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderOutputReference.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderOutputReference.property.required">required</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderOutputReference.property.required">required</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderOutputReference.property.schemaId">schemaId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderOutputReference.property.typeName">typeName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderOutputReference.property.values">values</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeader">ApiManagementApiOperationResponseHeader</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeader">ApiManagementApiOperationResponseHeader</a></code> | *No description.* |
 
 ---
 
@@ -9564,7 +9564,7 @@ public readonly descriptionInput: string;
 public readonly exampleInput: IResolvable | ApiManagementApiOperationResponseHeaderExample[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExample">ApiManagementApiOperationResponseHeaderExample</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderExample">ApiManagementApiOperationResponseHeaderExample</a>[]
 
 ---
 
@@ -9584,7 +9584,7 @@ public readonly nameInput: string;
 public readonly requiredInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -9664,7 +9664,7 @@ public readonly name: string;
 public readonly required: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -9714,7 +9714,7 @@ public readonly values: string[];
 public readonly internalValue: IResolvable | ApiManagementApiOperationResponseHeader;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeader">ApiManagementApiOperationResponseHeader</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeader">ApiManagementApiOperationResponseHeader</a>
 
 ---
 
@@ -9731,7 +9731,7 @@ new apiManagementApiOperation.ApiManagementApiOperationResponseList(terraformRes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -9739,7 +9739,7 @@ new apiManagementApiOperation.ApiManagementApiOperationResponseList(terraformRes
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9805,7 +9805,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -9840,7 +9840,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponse">ApiManagementApiOperationResponse</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponse">ApiManagementApiOperationResponse</a>[]</code> | *No description.* |
 
 ---
 
@@ -9874,7 +9874,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ApiManagementApiOperationResponse[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponse">ApiManagementApiOperationResponse</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponse">ApiManagementApiOperationResponse</a>[]
 
 ---
 
@@ -9891,7 +9891,7 @@ new apiManagementApiOperation.ApiManagementApiOperationResponseOutputReference(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -9900,7 +9900,7 @@ new apiManagementApiOperation.ApiManagementApiOperationResponseOutputReference(t
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10091,7 +10091,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10113,7 +10113,7 @@ public putHeader(value: IResolvable | ApiManagementApiOperationResponseHeader[])
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseOutputReference.putHeader.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeader">ApiManagementApiOperationResponseHeader</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeader">ApiManagementApiOperationResponseHeader</a>[]
 
 ---
 
@@ -10125,7 +10125,7 @@ public putRepresentation(value: IResolvable | ApiManagementApiOperationResponseR
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseOutputReference.putRepresentation.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentation">ApiManagementApiOperationResponseRepresentation</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentation">ApiManagementApiOperationResponseRepresentation</a>[]
 
 ---
 
@@ -10157,12 +10157,12 @@ public resetRepresentation(): void
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseOutputReference.property.header">header</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeaderList">ApiManagementApiOperationResponseHeaderList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseOutputReference.property.representation">representation</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationList">ApiManagementApiOperationResponseRepresentationList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseOutputReference.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseOutputReference.property.headerInput">headerInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeader">ApiManagementApiOperationResponseHeader</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseOutputReference.property.representationInput">representationInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentation">ApiManagementApiOperationResponseRepresentation</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseOutputReference.property.headerInput">headerInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeader">ApiManagementApiOperationResponseHeader</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseOutputReference.property.representationInput">representationInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentation">ApiManagementApiOperationResponseRepresentation</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseOutputReference.property.statusCodeInput">statusCodeInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseOutputReference.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseOutputReference.property.statusCode">statusCode</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponse">ApiManagementApiOperationResponse</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponse">ApiManagementApiOperationResponse</a></code> | *No description.* |
 
 ---
 
@@ -10226,7 +10226,7 @@ public readonly descriptionInput: string;
 public readonly headerInput: IResolvable | ApiManagementApiOperationResponseHeader[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeader">ApiManagementApiOperationResponseHeader</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseHeader">ApiManagementApiOperationResponseHeader</a>[]
 
 ---
 
@@ -10236,7 +10236,7 @@ public readonly headerInput: IResolvable | ApiManagementApiOperationResponseHead
 public readonly representationInput: IResolvable | ApiManagementApiOperationResponseRepresentation[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentation">ApiManagementApiOperationResponseRepresentation</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentation">ApiManagementApiOperationResponseRepresentation</a>[]
 
 ---
 
@@ -10276,7 +10276,7 @@ public readonly statusCode: number;
 public readonly internalValue: IResolvable | ApiManagementApiOperationResponse;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponse">ApiManagementApiOperationResponse</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponse">ApiManagementApiOperationResponse</a>
 
 ---
 
@@ -10293,7 +10293,7 @@ new apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExampleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExampleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExampleList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExampleList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -10301,7 +10301,7 @@ new apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExa
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExampleList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10367,7 +10367,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExampleList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10402,7 +10402,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExampleList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExampleList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExampleList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExample">ApiManagementApiOperationResponseRepresentationExample</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExampleList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExample">ApiManagementApiOperationResponseRepresentationExample</a>[]</code> | *No description.* |
 
 ---
 
@@ -10436,7 +10436,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ApiManagementApiOperationResponseRepresentationExample[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExample">ApiManagementApiOperationResponseRepresentationExample</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExample">ApiManagementApiOperationResponseRepresentationExample</a>[]
 
 ---
 
@@ -10453,7 +10453,7 @@ new apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExampleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExampleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExampleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExampleOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExampleOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -10462,7 +10462,7 @@ new apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExa
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExampleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10652,7 +10652,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExampleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10707,7 +10707,7 @@ public resetValue(): void
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExampleOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExampleOutputReference.property.summary">summary</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExampleOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExampleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExample">ApiManagementApiOperationResponseRepresentationExample</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExampleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExample">ApiManagementApiOperationResponseRepresentationExample</a></code> | *No description.* |
 
 ---
 
@@ -10841,7 +10841,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | ApiManagementApiOperationResponseRepresentationExample;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExample">ApiManagementApiOperationResponseRepresentationExample</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExample">ApiManagementApiOperationResponseRepresentationExample</a>
 
 ---
 
@@ -10858,7 +10858,7 @@ new apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExampleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExampleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExampleList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExampleList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -10866,7 +10866,7 @@ new apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFor
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExampleList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -10932,7 +10932,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExampleList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -10967,7 +10967,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExampleList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExampleList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExampleList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExample">ApiManagementApiOperationResponseRepresentationFormParameterExample</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExampleList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExample">ApiManagementApiOperationResponseRepresentationFormParameterExample</a>[]</code> | *No description.* |
 
 ---
 
@@ -11001,7 +11001,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ApiManagementApiOperationResponseRepresentationFormParameterExample[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExample">ApiManagementApiOperationResponseRepresentationFormParameterExample</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExample">ApiManagementApiOperationResponseRepresentationFormParameterExample</a>[]
 
 ---
 
@@ -11018,7 +11018,7 @@ new apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExampleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExampleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExampleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExampleOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExampleOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -11027,7 +11027,7 @@ new apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFor
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExampleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11217,7 +11217,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExampleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11272,7 +11272,7 @@ public resetValue(): void
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExampleOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExampleOutputReference.property.summary">summary</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExampleOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExampleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExample">ApiManagementApiOperationResponseRepresentationFormParameterExample</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExampleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExample">ApiManagementApiOperationResponseRepresentationFormParameterExample</a></code> | *No description.* |
 
 ---
 
@@ -11406,7 +11406,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | ApiManagementApiOperationResponseRepresentationFormParameterExample;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExample">ApiManagementApiOperationResponseRepresentationFormParameterExample</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExample">ApiManagementApiOperationResponseRepresentationFormParameterExample</a>
 
 ---
 
@@ -11423,7 +11423,7 @@ new apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -11431,7 +11431,7 @@ new apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFor
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11497,7 +11497,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11532,7 +11532,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameter">ApiManagementApiOperationResponseRepresentationFormParameter</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameter">ApiManagementApiOperationResponseRepresentationFormParameter</a>[]</code> | *No description.* |
 
 ---
 
@@ -11566,7 +11566,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ApiManagementApiOperationResponseRepresentationFormParameter[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameter">ApiManagementApiOperationResponseRepresentationFormParameter</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameter">ApiManagementApiOperationResponseRepresentationFormParameter</a>[]
 
 ---
 
@@ -11583,7 +11583,7 @@ new apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -11592,7 +11592,7 @@ new apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFor
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -11785,7 +11785,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -11807,7 +11807,7 @@ public putExample(value: IResolvable | ApiManagementApiOperationResponseRepresen
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterOutputReference.putExample.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExample">ApiManagementApiOperationResponseRepresentationFormParameterExample</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExample">ApiManagementApiOperationResponseRepresentationFormParameterExample</a>[]
 
 ---
 
@@ -11857,9 +11857,9 @@ public resetValues(): void
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterOutputReference.property.example">example</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExampleList">ApiManagementApiOperationResponseRepresentationFormParameterExampleList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterOutputReference.property.defaultValueInput">defaultValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterOutputReference.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterOutputReference.property.exampleInput">exampleInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExample">ApiManagementApiOperationResponseRepresentationFormParameterExample</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterOutputReference.property.exampleInput">exampleInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExample">ApiManagementApiOperationResponseRepresentationFormParameterExample</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterOutputReference.property.requiredInput">requiredInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterOutputReference.property.requiredInput">requiredInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterOutputReference.property.schemaIdInput">schemaIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterOutputReference.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterOutputReference.property.typeNameInput">typeNameInput</a></code> | <code>string</code> | *No description.* |
@@ -11867,12 +11867,12 @@ public resetValues(): void
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterOutputReference.property.defaultValue">defaultValue</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterOutputReference.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterOutputReference.property.required">required</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterOutputReference.property.required">required</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterOutputReference.property.schemaId">schemaId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterOutputReference.property.typeName">typeName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterOutputReference.property.values">values</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameter">ApiManagementApiOperationResponseRepresentationFormParameter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameter">ApiManagementApiOperationResponseRepresentationFormParameter</a></code> | *No description.* |
 
 ---
 
@@ -11936,7 +11936,7 @@ public readonly descriptionInput: string;
 public readonly exampleInput: IResolvable | ApiManagementApiOperationResponseRepresentationFormParameterExample[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExample">ApiManagementApiOperationResponseRepresentationFormParameterExample</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterExample">ApiManagementApiOperationResponseRepresentationFormParameterExample</a>[]
 
 ---
 
@@ -11956,7 +11956,7 @@ public readonly nameInput: string;
 public readonly requiredInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -12036,7 +12036,7 @@ public readonly name: string;
 public readonly required: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -12086,7 +12086,7 @@ public readonly values: string[];
 public readonly internalValue: IResolvable | ApiManagementApiOperationResponseRepresentationFormParameter;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameter">ApiManagementApiOperationResponseRepresentationFormParameter</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameter">ApiManagementApiOperationResponseRepresentationFormParameter</a>
 
 ---
 
@@ -12103,7 +12103,7 @@ new apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationLis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -12111,7 +12111,7 @@ new apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationLis
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12177,7 +12177,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12212,7 +12212,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentation">ApiManagementApiOperationResponseRepresentation</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentation">ApiManagementApiOperationResponseRepresentation</a>[]</code> | *No description.* |
 
 ---
 
@@ -12246,7 +12246,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ApiManagementApiOperationResponseRepresentation[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentation">ApiManagementApiOperationResponseRepresentation</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentation">ApiManagementApiOperationResponseRepresentation</a>[]
 
 ---
 
@@ -12263,7 +12263,7 @@ new apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -12272,7 +12272,7 @@ new apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationOut
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12464,7 +12464,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12486,7 +12486,7 @@ public putExample(value: IResolvable | ApiManagementApiOperationResponseRepresen
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationOutputReference.putExample.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExample">ApiManagementApiOperationResponseRepresentationExample</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExample">ApiManagementApiOperationResponseRepresentationExample</a>[]
 
 ---
 
@@ -12498,7 +12498,7 @@ public putFormParameter(value: IResolvable | ApiManagementApiOperationResponseRe
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationOutputReference.putFormParameter.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameter">ApiManagementApiOperationResponseRepresentationFormParameter</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameter">ApiManagementApiOperationResponseRepresentationFormParameter</a>[]
 
 ---
 
@@ -12536,14 +12536,14 @@ public resetTypeName(): void
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationOutputReference.property.example">example</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExampleList">ApiManagementApiOperationResponseRepresentationExampleList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationOutputReference.property.formParameter">formParameter</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameterList">ApiManagementApiOperationResponseRepresentationFormParameterList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationOutputReference.property.contentTypeInput">contentTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationOutputReference.property.exampleInput">exampleInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExample">ApiManagementApiOperationResponseRepresentationExample</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationOutputReference.property.formParameterInput">formParameterInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameter">ApiManagementApiOperationResponseRepresentationFormParameter</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationOutputReference.property.exampleInput">exampleInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExample">ApiManagementApiOperationResponseRepresentationExample</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationOutputReference.property.formParameterInput">formParameterInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameter">ApiManagementApiOperationResponseRepresentationFormParameter</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationOutputReference.property.schemaIdInput">schemaIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationOutputReference.property.typeNameInput">typeNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationOutputReference.property.contentType">contentType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationOutputReference.property.schemaId">schemaId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationOutputReference.property.typeName">typeName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentation">ApiManagementApiOperationResponseRepresentation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentation">ApiManagementApiOperationResponseRepresentation</a></code> | *No description.* |
 
 ---
 
@@ -12607,7 +12607,7 @@ public readonly contentTypeInput: string;
 public readonly exampleInput: IResolvable | ApiManagementApiOperationResponseRepresentationExample[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExample">ApiManagementApiOperationResponseRepresentationExample</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationExample">ApiManagementApiOperationResponseRepresentationExample</a>[]
 
 ---
 
@@ -12617,7 +12617,7 @@ public readonly exampleInput: IResolvable | ApiManagementApiOperationResponseRep
 public readonly formParameterInput: IResolvable | ApiManagementApiOperationResponseRepresentationFormParameter[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameter">ApiManagementApiOperationResponseRepresentationFormParameter</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentationFormParameter">ApiManagementApiOperationResponseRepresentationFormParameter</a>[]
 
 ---
 
@@ -12677,7 +12677,7 @@ public readonly typeName: string;
 public readonly internalValue: IResolvable | ApiManagementApiOperationResponseRepresentation;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentation">ApiManagementApiOperationResponseRepresentation</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationResponseRepresentation">ApiManagementApiOperationResponseRepresentation</a>
 
 ---
 
@@ -12694,7 +12694,7 @@ new apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExampleL
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExampleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExampleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExampleList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExampleList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -12702,7 +12702,7 @@ new apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExampleL
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExampleList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -12768,7 +12768,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExampleList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -12803,7 +12803,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExampleList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExampleList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExampleList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExample">ApiManagementApiOperationTemplateParameterExample</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExampleList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExample">ApiManagementApiOperationTemplateParameterExample</a>[]</code> | *No description.* |
 
 ---
 
@@ -12837,7 +12837,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ApiManagementApiOperationTemplateParameterExample[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExample">ApiManagementApiOperationTemplateParameterExample</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExample">ApiManagementApiOperationTemplateParameterExample</a>[]
 
 ---
 
@@ -12854,7 +12854,7 @@ new apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExampleO
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExampleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExampleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExampleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExampleOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExampleOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -12863,7 +12863,7 @@ new apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExampleO
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExampleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13053,7 +13053,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExampleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13108,7 +13108,7 @@ public resetValue(): void
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExampleOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExampleOutputReference.property.summary">summary</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExampleOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExampleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExample">ApiManagementApiOperationTemplateParameterExample</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExampleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExample">ApiManagementApiOperationTemplateParameterExample</a></code> | *No description.* |
 
 ---
 
@@ -13242,7 +13242,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | ApiManagementApiOperationTemplateParameterExample;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExample">ApiManagementApiOperationTemplateParameterExample</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExample">ApiManagementApiOperationTemplateParameterExample</a>
 
 ---
 
@@ -13259,7 +13259,7 @@ new apiManagementApiOperation.ApiManagementApiOperationTemplateParameterList(ter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -13267,7 +13267,7 @@ new apiManagementApiOperation.ApiManagementApiOperationTemplateParameterList(ter
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13333,7 +13333,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13368,7 +13368,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameter">ApiManagementApiOperationTemplateParameter</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameter">ApiManagementApiOperationTemplateParameter</a>[]</code> | *No description.* |
 
 ---
 
@@ -13402,7 +13402,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ApiManagementApiOperationTemplateParameter[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameter">ApiManagementApiOperationTemplateParameter</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameter">ApiManagementApiOperationTemplateParameter</a>[]
 
 ---
 
@@ -13419,7 +13419,7 @@ new apiManagementApiOperation.ApiManagementApiOperationTemplateParameterOutputRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -13428,7 +13428,7 @@ new apiManagementApiOperation.ApiManagementApiOperationTemplateParameterOutputRe
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -13621,7 +13621,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -13643,7 +13643,7 @@ public putExample(value: IResolvable | ApiManagementApiOperationTemplateParamete
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterOutputReference.putExample.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExample">ApiManagementApiOperationTemplateParameterExample</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExample">ApiManagementApiOperationTemplateParameterExample</a>[]
 
 ---
 
@@ -13693,9 +13693,9 @@ public resetValues(): void
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterOutputReference.property.example">example</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExampleList">ApiManagementApiOperationTemplateParameterExampleList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterOutputReference.property.defaultValueInput">defaultValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterOutputReference.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterOutputReference.property.exampleInput">exampleInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExample">ApiManagementApiOperationTemplateParameterExample</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterOutputReference.property.exampleInput">exampleInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExample">ApiManagementApiOperationTemplateParameterExample</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterOutputReference.property.requiredInput">requiredInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterOutputReference.property.requiredInput">requiredInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterOutputReference.property.schemaIdInput">schemaIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterOutputReference.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterOutputReference.property.typeNameInput">typeNameInput</a></code> | <code>string</code> | *No description.* |
@@ -13703,12 +13703,12 @@ public resetValues(): void
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterOutputReference.property.defaultValue">defaultValue</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterOutputReference.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterOutputReference.property.required">required</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterOutputReference.property.required">required</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterOutputReference.property.schemaId">schemaId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterOutputReference.property.typeName">typeName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterOutputReference.property.values">values</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameter">ApiManagementApiOperationTemplateParameter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameter">ApiManagementApiOperationTemplateParameter</a></code> | *No description.* |
 
 ---
 
@@ -13772,7 +13772,7 @@ public readonly descriptionInput: string;
 public readonly exampleInput: IResolvable | ApiManagementApiOperationTemplateParameterExample[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExample">ApiManagementApiOperationTemplateParameterExample</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameterExample">ApiManagementApiOperationTemplateParameterExample</a>[]
 
 ---
 
@@ -13792,7 +13792,7 @@ public readonly nameInput: string;
 public readonly requiredInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -13872,7 +13872,7 @@ public readonly name: string;
 public readonly required: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -13922,7 +13922,7 @@ public readonly values: string[];
 public readonly internalValue: IResolvable | ApiManagementApiOperationTemplateParameter;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameter">ApiManagementApiOperationTemplateParameter</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTemplateParameter">ApiManagementApiOperationTemplateParameter</a>
 
 ---
 
@@ -13939,14 +13939,14 @@ new apiManagementApiOperation.ApiManagementApiOperationTimeoutsOutputReference(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -14120,7 +14120,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -14173,7 +14173,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTimeouts">ApiManagementApiOperationTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTimeouts">ApiManagementApiOperationTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -14287,7 +14287,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | ApiManagementApiOperationTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTimeouts">ApiManagementApiOperationTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.apiManagementApiOperation.ApiManagementApiOperationTimeouts">ApiManagementApiOperationTimeouts</a>
 
 ---
 
