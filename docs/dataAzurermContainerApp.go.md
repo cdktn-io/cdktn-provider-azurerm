@@ -4,7 +4,7 @@
 
 ### DataAzurermContainerApp <a name="DataAzurermContainerApp" id="@cdktn/provider-azurerm.dataAzurermContainerApp.DataAzurermContainerApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/container_app azurerm_container_app}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/container_app azurerm_container_app}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermContainerApp.DataAzurermContainerApp.Initializer"></a>
 
@@ -69,6 +69,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermContainerApp.DataAzurermContainerApp.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermContainerApp.DataAzurermContainerApp.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermContainerApp.DataAzurermContainerApp.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermContainerApp.DataAzurermContainerApp.resetReadSecrets">ResetReadSecrets</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermContainerApp.DataAzurermContainerApp.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
@@ -283,6 +284,12 @@ func PutTimeouts(value DataAzurermContainerAppTimeouts)
 func ResetId()
 ```
 
+##### `ResetReadSecrets` <a name="ResetReadSecrets" id="@cdktn/provider-azurerm.dataAzurermContainerApp.DataAzurermContainerApp.resetReadSecrets"></a>
+
+```go
+func ResetReadSecrets()
+```
+
 ##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-azurerm.dataAzurermContainerApp.DataAzurermContainerApp.resetTimeouts"></a>
 
 ```go
@@ -392,7 +399,7 @@ The construct id used in the generated config for the DataAzurermContainerApp to
 
 The id of the existing DataAzurermContainerApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/container_app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/container_app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -439,10 +446,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermContainerApp.DataAzurermContainerApp.property.workloadProfileName">WorkloadProfileName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermContainerApp.DataAzurermContainerApp.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermContainerApp.DataAzurermContainerApp.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermContainerApp.DataAzurermContainerApp.property.readSecretsInput">ReadSecretsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermContainerApp.DataAzurermContainerApp.property.resourceGroupNameInput">ResourceGroupNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermContainerApp.DataAzurermContainerApp.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermContainerApp.DataAzurermContainerApp.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermContainerApp.DataAzurermContainerApp.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermContainerApp.DataAzurermContainerApp.property.readSecrets">ReadSecrets</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermContainerApp.DataAzurermContainerApp.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -759,6 +768,16 @@ func NameInput() *string
 
 ---
 
+##### `ReadSecretsInput`<sup>Optional</sup> <a name="ReadSecretsInput" id="@cdktn/provider-azurerm.dataAzurermContainerApp.DataAzurermContainerApp.property.readSecretsInput"></a>
+
+```go
+func ReadSecretsInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `ResourceGroupNameInput`<sup>Optional</sup> <a name="ResourceGroupNameInput" id="@cdktn/provider-azurerm.dataAzurermContainerApp.DataAzurermContainerApp.property.resourceGroupNameInput"></a>
 
 ```go
@@ -796,6 +815,16 @@ func Name() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `ReadSecrets`<sup>Required</sup> <a name="ReadSecrets" id="@cdktn/provider-azurerm.dataAzurermContainerApp.DataAzurermContainerApp.property.readSecrets"></a>
+
+```go
+func ReadSecrets() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -847,6 +876,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermcon
 	Name: *string,
 	ResourceGroupName: *string,
 	Id: *string,
+	ReadSecrets: interface{},
 	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14.dataAzurermContainerApp.DataAzurermContainerAppTimeouts,
 }
 ```
@@ -862,9 +892,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermcon
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermContainerApp.DataAzurermContainerAppConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermContainerApp.DataAzurermContainerAppConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermContainerApp.DataAzurermContainerAppConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermContainerApp.DataAzurermContainerAppConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/container_app#name DataAzurermContainerApp#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermContainerApp.DataAzurermContainerAppConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/container_app#resource_group_name DataAzurermContainerApp#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermContainerApp.DataAzurermContainerAppConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/container_app#id DataAzurermContainerApp#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermContainerApp.DataAzurermContainerAppConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/container_app#name DataAzurermContainerApp#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermContainerApp.DataAzurermContainerAppConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/container_app#resource_group_name DataAzurermContainerApp#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermContainerApp.DataAzurermContainerAppConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/container_app#id DataAzurermContainerApp#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermContainerApp.DataAzurermContainerAppConfig.property.readSecrets">ReadSecrets</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/container_app#read_secrets DataAzurermContainerApp#read_secrets}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermContainerApp.DataAzurermContainerAppConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermContainerApp.DataAzurermContainerAppTimeouts">DataAzurermContainerAppTimeouts</a></code> | timeouts block. |
 
 ---
@@ -947,7 +978,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/container_app#name DataAzurermContainerApp#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/container_app#name DataAzurermContainerApp#name}.
 
 ---
 
@@ -959,7 +990,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/container_app#resource_group_name DataAzurermContainerApp#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/container_app#resource_group_name DataAzurermContainerApp#resource_group_name}.
 
 ---
 
@@ -971,10 +1002,22 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/container_app#id DataAzurermContainerApp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/container_app#id DataAzurermContainerApp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `ReadSecrets`<sup>Optional</sup> <a name="ReadSecrets" id="@cdktn/provider-azurerm.dataAzurermContainerApp.DataAzurermContainerAppConfig.property.readSecrets"></a>
+
+```go
+ReadSecrets interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/container_app#read_secrets DataAzurermContainerApp#read_secrets}.
 
 ---
 
@@ -988,7 +1031,7 @@ Timeouts DataAzurermContainerAppTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/container_app#timeouts DataAzurermContainerApp#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/container_app#timeouts DataAzurermContainerApp#timeouts}
 
 ---
 
@@ -1411,7 +1454,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v14/dataazurermcon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermContainerApp.DataAzurermContainerAppTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/container_app#read DataAzurermContainerApp#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermContainerApp.DataAzurermContainerAppTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/container_app#read DataAzurermContainerApp#read}. |
 
 ---
 
@@ -1423,7 +1466,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/container_app#read DataAzurermContainerApp#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/container_app#read DataAzurermContainerApp#read}.
 
 ---
 
