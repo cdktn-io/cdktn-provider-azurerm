@@ -66,6 +66,7 @@ export * as apiManagementUser from './api-management-user';
 export * as apiManagementWorkspace from './api-management-workspace';
 export * as apiManagementWorkspaceApiVersionSet from './api-management-workspace-api-version-set';
 export * as apiManagementWorkspaceCertificate from './api-management-workspace-certificate';
+export * as apiManagementWorkspaceNamedValue from './api-management-workspace-named-value';
 export * as apiManagementWorkspacePolicy from './api-management-workspace-policy';
 export * as apiManagementWorkspacePolicyFragment from './api-management-workspace-policy-fragment';
 export * as appConfiguration from './app-configuration';
@@ -296,6 +297,7 @@ export * as dataFactoryLinkedServiceOdbc from './data-factory-linked-service-odb
 export * as dataFactoryLinkedServicePostgresql from './data-factory-linked-service-postgresql';
 export * as dataFactoryLinkedServiceSftp from './data-factory-linked-service-sftp';
 export * as dataFactoryLinkedServiceSnowflake from './data-factory-linked-service-snowflake';
+export * as dataFactoryLinkedServiceSqlManagedInstance from './data-factory-linked-service-sql-managed-instance';
 export * as dataFactoryLinkedServiceSqlServer from './data-factory-linked-service-sql-server';
 export * as dataFactoryLinkedServiceSynapse from './data-factory-linked-service-synapse';
 export * as dataFactoryLinkedServiceWeb from './data-factory-linked-service-web';
@@ -584,6 +586,7 @@ export * as managedDisk from './managed-disk';
 export * as managedDiskSasToken from './managed-disk-sas-token';
 export * as managedLustreFileSystem from './managed-lustre-file-system';
 export * as managedRedis from './managed-redis';
+export * as managedRedisAccessPolicyAssignment from './managed-redis-access-policy-assignment';
 export * as managedRedisGeoReplication from './managed-redis-geo-replication';
 export * as managementGroup from './management-group';
 export * as managementGroupPolicyAssignment from './management-group-policy-assignment';
@@ -1184,6 +1187,7 @@ export * as dataAzurermCdnFrontdoorSecret from './data-azurerm-cdn-frontdoor-sec
 export * as dataAzurermCdnProfile from './data-azurerm-cdn-profile';
 export * as dataAzurermClientConfig from './data-azurerm-client-config';
 export * as dataAzurermCognitiveAccount from './data-azurerm-cognitive-account';
+export * as dataAzurermCognitiveAccountProject from './data-azurerm-cognitive-account-project';
 export * as dataAzurermCommunicationService from './data-azurerm-communication-service';
 export * as dataAzurermConfidentialLedger from './data-azurerm-confidential-ledger';
 export * as dataAzurermConsumptionBudgetResourceGroup from './data-azurerm-consumption-budget-resource-group';
@@ -1328,6 +1332,7 @@ export * as dataAzurermManagedApplicationDefinition from './data-azurerm-managed
 export * as dataAzurermManagedDisk from './data-azurerm-managed-disk';
 export * as dataAzurermManagedDisks from './data-azurerm-managed-disks';
 export * as dataAzurermManagedRedis from './data-azurerm-managed-redis';
+export * as dataAzurermManagedRedisAccessPolicyAssignment from './data-azurerm-managed-redis-access-policy-assignment';
 export * as dataAzurermManagementGroup from './data-azurerm-management-group';
 export * as dataAzurermManagementGroupTemplateDeployment from './data-azurerm-management-group-template-deployment';
 export * as dataAzurermMapsAccount from './data-azurerm-maps-account';
@@ -1383,6 +1388,7 @@ export * as dataAzurermOracleAutonomousDatabaseBackups from './data-azurerm-orac
 export * as dataAzurermOracleAutonomousDatabaseCloneFromBackup from './data-azurerm-oracle-autonomous-database-clone-from-backup';
 export * as dataAzurermOracleAutonomousDatabaseCloneFromDatabase from './data-azurerm-oracle-autonomous-database-clone-from-database';
 export * as dataAzurermOracleCloudVmCluster from './data-azurerm-oracle-cloud-vm-cluster';
+export * as dataAzurermOracleDatabaseSystemVersions from './data-azurerm-oracle-database-system-versions';
 export * as dataAzurermOracleDbNodes from './data-azurerm-oracle-db-nodes';
 export * as dataAzurermOracleDbServers from './data-azurerm-oracle-db-servers';
 export * as dataAzurermOracleDbSystemShapes from './data-azurerm-oracle-db-system-shapes';

@@ -1,3 +1,3 @@
 # `provider`
 
-Refer to the Terraform Registry for docs: [`azurerm`](https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs).
+Refer to the Terraform Registry for docs: [`azurerm`](https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs).
