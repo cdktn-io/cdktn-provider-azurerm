@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/container_app
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/container_app
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,28 @@ import * as cdktf from 'cdktf';
 
 export interface DataAzurermContainerAppConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/container_app#id DataAzurermContainerApp#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/container_app#id DataAzurermContainerApp#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/container_app#name DataAzurermContainerApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/container_app#name DataAzurermContainerApp#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/container_app#resource_group_name DataAzurermContainerApp#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/container_app#read_secrets DataAzurermContainerApp#read_secrets}
+  */
+  readonly readSecrets?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/container_app#resource_group_name DataAzurermContainerApp#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/container_app#timeouts DataAzurermContainerApp#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/container_app#timeouts DataAzurermContainerApp#timeouts}
   */
   readonly timeouts?: DataAzurermContainerAppTimeouts;
 }
@@ -2987,7 +2991,7 @@ export class DataAzurermContainerAppTemplateList extends cdktf.ComplexList {
 }
 export interface DataAzurermContainerAppTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/container_app#read DataAzurermContainerApp#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/container_app#read DataAzurermContainerApp#read}
   */
   readonly read?: string;
 }
@@ -3081,7 +3085,7 @@ export class DataAzurermContainerAppTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/container_app azurerm_container_app}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/container_app azurerm_container_app}
 */
 export class DataAzurermContainerApp extends cdktf.TerraformDataSource {
 
@@ -3097,7 +3101,7 @@ export class DataAzurermContainerApp extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataAzurermContainerApp resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermContainerApp to import
-  * @param importFromId The id of the existing DataAzurermContainerApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/container_app#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzurermContainerApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/container_app#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermContainerApp to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -3109,7 +3113,7 @@ export class DataAzurermContainerApp extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.59.0/docs/data-sources/container_app azurerm_container_app} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/container_app azurerm_container_app} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3120,7 +3124,7 @@ export class DataAzurermContainerApp extends cdktf.TerraformDataSource {
       terraformResourceType: 'azurerm_container_app',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.59.0',
+        providerVersion: '4.60.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -3133,6 +3137,7 @@ export class DataAzurermContainerApp extends cdktf.TerraformDataSource {
     });
     this._id = config.id;
     this._name = config.name;
+    this._readSecrets = config.readSecrets;
     this._resourceGroupName = config.resourceGroupName;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -3223,6 +3228,22 @@ export class DataAzurermContainerApp extends cdktf.TerraformDataSource {
     return this.getListAttribute('outbound_ip_addresses');
   }
 
+  // read_secrets - computed: false, optional: true, required: false
+  private _readSecrets?: boolean | cdktf.IResolvable; 
+  public get readSecrets() {
+    return this.getBooleanAttribute('read_secrets');
+  }
+  public set readSecrets(value: boolean | cdktf.IResolvable) {
+    this._readSecrets = value;
+  }
+  public resetReadSecrets() {
+    this._readSecrets = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readSecretsInput() {
+    return this._readSecrets;
+  }
+
   // registry - computed: true, optional: false, required: false
   private _registry = new DataAzurermContainerAppRegistryList(this, "registry", false);
   public get registry() {
@@ -3294,6 +3315,7 @@ export class DataAzurermContainerApp extends cdktf.TerraformDataSource {
     return {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
+      read_secrets: cdktf.booleanToTerraform(this._readSecrets),
       resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
       timeouts: dataAzurermContainerAppTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -3312,6 +3334,12 @@ export class DataAzurermContainerApp extends cdktf.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      read_secrets: {
+        value: cdktf.booleanToHclTerraform(this._readSecrets),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       resource_group_name: {
         value: cdktf.stringToHclTerraform(this._resourceGroupName),
