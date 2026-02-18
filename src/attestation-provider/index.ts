@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AttestationProviderConfig extends cdktf.TerraformMetaArguments {
+export interface AttestationProviderConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/attestation_provider#id AttestationProvider#id}
   *
@@ -81,46 +81,46 @@ export interface AttestationProviderTimeouts {
   readonly update?: string;
 }
 
-export function attestationProviderTimeoutsToTerraform(struct?: AttestationProviderTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function attestationProviderTimeoutsToTerraform(struct?: AttestationProviderTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function attestationProviderTimeoutsToHclTerraform(struct?: AttestationProviderTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function attestationProviderTimeoutsToHclTerraform(struct?: AttestationProviderTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -131,19 +131,19 @@ export function attestationProviderTimeoutsToHclTerraform(struct?: AttestationPr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AttestationProviderTimeoutsOutputReference extends cdktf.ComplexObject {
+export class AttestationProviderTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AttestationProviderTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AttestationProviderTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -168,7 +168,7 @@ export class AttestationProviderTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AttestationProviderTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AttestationProviderTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -177,7 +177,7 @@ export class AttestationProviderTimeoutsOutputReference extends cdktf.ComplexObj
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -259,7 +259,7 @@ export class AttestationProviderTimeoutsOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/attestation_provider azurerm_attestation_provider}
 */
-export class AttestationProvider extends cdktf.TerraformResource {
+export class AttestationProvider extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -270,14 +270,14 @@ export class AttestationProvider extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AttestationProvider resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AttestationProvider resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AttestationProvider to import
   * @param importFromId The id of the existing AttestationProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/attestation_provider#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AttestationProvider to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_attestation_provider", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_attestation_provider", importId: importFromId, provider });
       }
 
   // ===========
@@ -507,16 +507,16 @@ export class AttestationProvider extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      open_enclave_policy_base64: cdktf.stringToTerraform(this._openEnclavePolicyBase64),
-      policy_signing_certificate_data: cdktf.stringToTerraform(this._policySigningCertificateData),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      sev_snp_policy_base64: cdktf.stringToTerraform(this._sevSnpPolicyBase64),
-      sgx_enclave_policy_base64: cdktf.stringToTerraform(this._sgxEnclavePolicyBase64),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tpm_policy_base64: cdktf.stringToTerraform(this._tpmPolicyBase64),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      open_enclave_policy_base64: cdktn.stringToTerraform(this._openEnclavePolicyBase64),
+      policy_signing_certificate_data: cdktn.stringToTerraform(this._policySigningCertificateData),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      sev_snp_policy_base64: cdktn.stringToTerraform(this._sevSnpPolicyBase64),
+      sgx_enclave_policy_base64: cdktn.stringToTerraform(this._sgxEnclavePolicyBase64),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tpm_policy_base64: cdktn.stringToTerraform(this._tpmPolicyBase64),
       timeouts: attestationProviderTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -524,61 +524,61 @@ export class AttestationProvider extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       open_enclave_policy_base64: {
-        value: cdktf.stringToHclTerraform(this._openEnclavePolicyBase64),
+        value: cdktn.stringToHclTerraform(this._openEnclavePolicyBase64),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy_signing_certificate_data: {
-        value: cdktf.stringToHclTerraform(this._policySigningCertificateData),
+        value: cdktn.stringToHclTerraform(this._policySigningCertificateData),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sev_snp_policy_base64: {
-        value: cdktf.stringToHclTerraform(this._sevSnpPolicyBase64),
+        value: cdktn.stringToHclTerraform(this._sevSnpPolicyBase64),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sgx_enclave_policy_base64: {
-        value: cdktf.stringToHclTerraform(this._sgxEnclavePolicyBase64),
+        value: cdktn.stringToHclTerraform(this._sgxEnclavePolicyBase64),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tpm_policy_base64: {
-        value: cdktf.stringToHclTerraform(this._tpmPolicyBase64),
+        value: cdktn.stringToHclTerraform(this._tpmPolicyBase64),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

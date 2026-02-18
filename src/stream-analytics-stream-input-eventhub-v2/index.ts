@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface StreamAnalyticsStreamInputEventhubV2Config extends cdktf.TerraformMetaArguments {
+export interface StreamAnalyticsStreamInputEventhubV2Config extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stream_analytics_stream_input_eventhub_v2#authentication_mode StreamAnalyticsStreamInputEventhubV2#authentication_mode}
   */
@@ -84,38 +84,38 @@ export interface StreamAnalyticsStreamInputEventhubV2Serialization {
 }
 
 export function streamAnalyticsStreamInputEventhubV2SerializationToTerraform(struct?: StreamAnalyticsStreamInputEventhubV2SerializationOutputReference | StreamAnalyticsStreamInputEventhubV2Serialization): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    encoding: cdktf.stringToTerraform(struct!.encoding),
-    field_delimiter: cdktf.stringToTerraform(struct!.fieldDelimiter),
-    type: cdktf.stringToTerraform(struct!.type),
+    encoding: cdktn.stringToTerraform(struct!.encoding),
+    field_delimiter: cdktn.stringToTerraform(struct!.fieldDelimiter),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function streamAnalyticsStreamInputEventhubV2SerializationToHclTerraform(struct?: StreamAnalyticsStreamInputEventhubV2SerializationOutputReference | StreamAnalyticsStreamInputEventhubV2Serialization): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     encoding: {
-      value: cdktf.stringToHclTerraform(struct!.encoding),
+      value: cdktn.stringToHclTerraform(struct!.encoding),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     field_delimiter: {
-      value: cdktf.stringToHclTerraform(struct!.fieldDelimiter),
+      value: cdktn.stringToHclTerraform(struct!.fieldDelimiter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -126,14 +126,14 @@ export function streamAnalyticsStreamInputEventhubV2SerializationToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StreamAnalyticsStreamInputEventhubV2SerializationOutputReference extends cdktf.ComplexObject {
+export class StreamAnalyticsStreamInputEventhubV2SerializationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -234,46 +234,46 @@ export interface StreamAnalyticsStreamInputEventhubV2Timeouts {
   readonly update?: string;
 }
 
-export function streamAnalyticsStreamInputEventhubV2TimeoutsToTerraform(struct?: StreamAnalyticsStreamInputEventhubV2Timeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function streamAnalyticsStreamInputEventhubV2TimeoutsToTerraform(struct?: StreamAnalyticsStreamInputEventhubV2Timeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function streamAnalyticsStreamInputEventhubV2TimeoutsToHclTerraform(struct?: StreamAnalyticsStreamInputEventhubV2Timeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function streamAnalyticsStreamInputEventhubV2TimeoutsToHclTerraform(struct?: StreamAnalyticsStreamInputEventhubV2Timeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -284,19 +284,19 @@ export function streamAnalyticsStreamInputEventhubV2TimeoutsToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StreamAnalyticsStreamInputEventhubV2TimeoutsOutputReference extends cdktf.ComplexObject {
+export class StreamAnalyticsStreamInputEventhubV2TimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): StreamAnalyticsStreamInputEventhubV2Timeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): StreamAnalyticsStreamInputEventhubV2Timeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -321,7 +321,7 @@ export class StreamAnalyticsStreamInputEventhubV2TimeoutsOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StreamAnalyticsStreamInputEventhubV2Timeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: StreamAnalyticsStreamInputEventhubV2Timeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -330,7 +330,7 @@ export class StreamAnalyticsStreamInputEventhubV2TimeoutsOutputReference extends
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -412,7 +412,7 @@ export class StreamAnalyticsStreamInputEventhubV2TimeoutsOutputReference extends
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stream_analytics_stream_input_eventhub_v2 azurerm_stream_analytics_stream_input_eventhub_v2}
 */
-export class StreamAnalyticsStreamInputEventhubV2 extends cdktf.TerraformResource {
+export class StreamAnalyticsStreamInputEventhubV2 extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -423,14 +423,14 @@ export class StreamAnalyticsStreamInputEventhubV2 extends cdktf.TerraformResourc
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a StreamAnalyticsStreamInputEventhubV2 resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a StreamAnalyticsStreamInputEventhubV2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StreamAnalyticsStreamInputEventhubV2 to import
   * @param importFromId The id of the existing StreamAnalyticsStreamInputEventhubV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stream_analytics_stream_input_eventhub_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StreamAnalyticsStreamInputEventhubV2 to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_stream_analytics_stream_input_eventhub_v2", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_stream_analytics_stream_input_eventhub_v2", importId: importFromId, provider });
       }
 
   // ===========
@@ -661,16 +661,16 @@ export class StreamAnalyticsStreamInputEventhubV2 extends cdktf.TerraformResourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      authentication_mode: cdktf.stringToTerraform(this._authenticationMode),
-      eventhub_consumer_group_name: cdktf.stringToTerraform(this._eventhubConsumerGroupName),
-      eventhub_name: cdktf.stringToTerraform(this._eventhubName),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      partition_key: cdktf.stringToTerraform(this._partitionKey),
-      servicebus_namespace: cdktf.stringToTerraform(this._servicebusNamespace),
-      shared_access_policy_key: cdktf.stringToTerraform(this._sharedAccessPolicyKey),
-      shared_access_policy_name: cdktf.stringToTerraform(this._sharedAccessPolicyName),
-      stream_analytics_job_id: cdktf.stringToTerraform(this._streamAnalyticsJobId),
+      authentication_mode: cdktn.stringToTerraform(this._authenticationMode),
+      eventhub_consumer_group_name: cdktn.stringToTerraform(this._eventhubConsumerGroupName),
+      eventhub_name: cdktn.stringToTerraform(this._eventhubName),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      partition_key: cdktn.stringToTerraform(this._partitionKey),
+      servicebus_namespace: cdktn.stringToTerraform(this._servicebusNamespace),
+      shared_access_policy_key: cdktn.stringToTerraform(this._sharedAccessPolicyKey),
+      shared_access_policy_name: cdktn.stringToTerraform(this._sharedAccessPolicyName),
+      stream_analytics_job_id: cdktn.stringToTerraform(this._streamAnalyticsJobId),
       serialization: streamAnalyticsStreamInputEventhubV2SerializationToTerraform(this._serialization.internalValue),
       timeouts: streamAnalyticsStreamInputEventhubV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -679,61 +679,61 @@ export class StreamAnalyticsStreamInputEventhubV2 extends cdktf.TerraformResourc
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       authentication_mode: {
-        value: cdktf.stringToHclTerraform(this._authenticationMode),
+        value: cdktn.stringToHclTerraform(this._authenticationMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       eventhub_consumer_group_name: {
-        value: cdktf.stringToHclTerraform(this._eventhubConsumerGroupName),
+        value: cdktn.stringToHclTerraform(this._eventhubConsumerGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       eventhub_name: {
-        value: cdktf.stringToHclTerraform(this._eventhubName),
+        value: cdktn.stringToHclTerraform(this._eventhubName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       partition_key: {
-        value: cdktf.stringToHclTerraform(this._partitionKey),
+        value: cdktn.stringToHclTerraform(this._partitionKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       servicebus_namespace: {
-        value: cdktf.stringToHclTerraform(this._servicebusNamespace),
+        value: cdktn.stringToHclTerraform(this._servicebusNamespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       shared_access_policy_key: {
-        value: cdktf.stringToHclTerraform(this._sharedAccessPolicyKey),
+        value: cdktn.stringToHclTerraform(this._sharedAccessPolicyKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       shared_access_policy_name: {
-        value: cdktf.stringToHclTerraform(this._sharedAccessPolicyName),
+        value: cdktn.stringToHclTerraform(this._sharedAccessPolicyName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       stream_analytics_job_id: {
-        value: cdktf.stringToHclTerraform(this._streamAnalyticsJobId),
+        value: cdktn.stringToHclTerraform(this._streamAnalyticsJobId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

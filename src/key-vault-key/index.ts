@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface KeyVaultKeyConfig extends cdktf.TerraformMetaArguments {
+export interface KeyVaultKeyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/key_vault_key#curve KeyVaultKey#curve}
   */
@@ -80,31 +80,31 @@ export interface KeyVaultKeyRotationPolicyAutomatic {
 }
 
 export function keyVaultKeyRotationPolicyAutomaticToTerraform(struct?: KeyVaultKeyRotationPolicyAutomaticOutputReference | KeyVaultKeyRotationPolicyAutomatic): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    time_after_creation: cdktf.stringToTerraform(struct!.timeAfterCreation),
-    time_before_expiry: cdktf.stringToTerraform(struct!.timeBeforeExpiry),
+    time_after_creation: cdktn.stringToTerraform(struct!.timeAfterCreation),
+    time_before_expiry: cdktn.stringToTerraform(struct!.timeBeforeExpiry),
   }
 }
 
 
 export function keyVaultKeyRotationPolicyAutomaticToHclTerraform(struct?: KeyVaultKeyRotationPolicyAutomaticOutputReference | KeyVaultKeyRotationPolicyAutomatic): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     time_after_creation: {
-      value: cdktf.stringToHclTerraform(struct!.timeAfterCreation),
+      value: cdktn.stringToHclTerraform(struct!.timeAfterCreation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     time_before_expiry: {
-      value: cdktf.stringToHclTerraform(struct!.timeBeforeExpiry),
+      value: cdktn.stringToHclTerraform(struct!.timeBeforeExpiry),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -115,14 +115,14 @@ export function keyVaultKeyRotationPolicyAutomaticToHclTerraform(struct?: KeyVau
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KeyVaultKeyRotationPolicyAutomaticOutputReference extends cdktf.ComplexObject {
+export class KeyVaultKeyRotationPolicyAutomaticOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -203,32 +203,32 @@ export interface KeyVaultKeyRotationPolicy {
 }
 
 export function keyVaultKeyRotationPolicyToTerraform(struct?: KeyVaultKeyRotationPolicyOutputReference | KeyVaultKeyRotationPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    expire_after: cdktf.stringToTerraform(struct!.expireAfter),
-    notify_before_expiry: cdktf.stringToTerraform(struct!.notifyBeforeExpiry),
+    expire_after: cdktn.stringToTerraform(struct!.expireAfter),
+    notify_before_expiry: cdktn.stringToTerraform(struct!.notifyBeforeExpiry),
     automatic: keyVaultKeyRotationPolicyAutomaticToTerraform(struct!.automatic),
   }
 }
 
 
 export function keyVaultKeyRotationPolicyToHclTerraform(struct?: KeyVaultKeyRotationPolicyOutputReference | KeyVaultKeyRotationPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     expire_after: {
-      value: cdktf.stringToHclTerraform(struct!.expireAfter),
+      value: cdktn.stringToHclTerraform(struct!.expireAfter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     notify_before_expiry: {
-      value: cdktf.stringToHclTerraform(struct!.notifyBeforeExpiry),
+      value: cdktn.stringToHclTerraform(struct!.notifyBeforeExpiry),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -245,14 +245,14 @@ export function keyVaultKeyRotationPolicyToHclTerraform(struct?: KeyVaultKeyRota
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KeyVaultKeyRotationPolicyOutputReference extends cdktf.ComplexObject {
+export class KeyVaultKeyRotationPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -356,46 +356,46 @@ export interface KeyVaultKeyTimeouts {
   readonly update?: string;
 }
 
-export function keyVaultKeyTimeoutsToTerraform(struct?: KeyVaultKeyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function keyVaultKeyTimeoutsToTerraform(struct?: KeyVaultKeyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function keyVaultKeyTimeoutsToHclTerraform(struct?: KeyVaultKeyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function keyVaultKeyTimeoutsToHclTerraform(struct?: KeyVaultKeyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -406,19 +406,19 @@ export function keyVaultKeyTimeoutsToHclTerraform(struct?: KeyVaultKeyTimeouts |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KeyVaultKeyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class KeyVaultKeyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): KeyVaultKeyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): KeyVaultKeyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -443,7 +443,7 @@ export class KeyVaultKeyTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KeyVaultKeyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KeyVaultKeyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -452,7 +452,7 @@ export class KeyVaultKeyTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -534,7 +534,7 @@ export class KeyVaultKeyTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/key_vault_key azurerm_key_vault_key}
 */
-export class KeyVaultKey extends cdktf.TerraformResource {
+export class KeyVaultKey extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -545,14 +545,14 @@ export class KeyVaultKey extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a KeyVaultKey resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a KeyVaultKey resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KeyVaultKey to import
   * @param importFromId The id of the existing KeyVaultKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/key_vault_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KeyVaultKey to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_key_vault_key", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_key_vault_key", importId: importFromId, provider });
       }
 
   // ===========
@@ -836,16 +836,16 @@ export class KeyVaultKey extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      curve: cdktf.stringToTerraform(this._curve),
-      expiration_date: cdktf.stringToTerraform(this._expirationDate),
-      id: cdktf.stringToTerraform(this._id),
-      key_opts: cdktf.listMapper(cdktf.stringToTerraform, false)(this._keyOpts),
-      key_size: cdktf.numberToTerraform(this._keySize),
-      key_type: cdktf.stringToTerraform(this._keyType),
-      key_vault_id: cdktf.stringToTerraform(this._keyVaultId),
-      name: cdktf.stringToTerraform(this._name),
-      not_before_date: cdktf.stringToTerraform(this._notBeforeDate),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      curve: cdktn.stringToTerraform(this._curve),
+      expiration_date: cdktn.stringToTerraform(this._expirationDate),
+      id: cdktn.stringToTerraform(this._id),
+      key_opts: cdktn.listMapper(cdktn.stringToTerraform, false)(this._keyOpts),
+      key_size: cdktn.numberToTerraform(this._keySize),
+      key_type: cdktn.stringToTerraform(this._keyType),
+      key_vault_id: cdktn.stringToTerraform(this._keyVaultId),
+      name: cdktn.stringToTerraform(this._name),
+      not_before_date: cdktn.stringToTerraform(this._notBeforeDate),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       rotation_policy: keyVaultKeyRotationPolicyToTerraform(this._rotationPolicy.internalValue),
       timeouts: keyVaultKeyTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -854,61 +854,61 @@ export class KeyVaultKey extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       curve: {
-        value: cdktf.stringToHclTerraform(this._curve),
+        value: cdktn.stringToHclTerraform(this._curve),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       expiration_date: {
-        value: cdktf.stringToHclTerraform(this._expirationDate),
+        value: cdktn.stringToHclTerraform(this._expirationDate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_opts: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._keyOpts),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._keyOpts),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       key_size: {
-        value: cdktf.numberToHclTerraform(this._keySize),
+        value: cdktn.numberToHclTerraform(this._keySize),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       key_type: {
-        value: cdktf.stringToHclTerraform(this._keyType),
+        value: cdktn.stringToHclTerraform(this._keyType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_vault_id: {
-        value: cdktf.stringToHclTerraform(this._keyVaultId),
+        value: cdktn.stringToHclTerraform(this._keyVaultId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       not_before_date: {
-        value: cdktf.stringToHclTerraform(this._notBeforeDate),
+        value: cdktn.stringToHclTerraform(this._notBeforeDate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

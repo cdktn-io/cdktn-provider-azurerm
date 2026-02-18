@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VirtualHubBgpConnectionConfig extends cdktf.TerraformMetaArguments {
+export interface VirtualHubBgpConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_hub_bgp_connection#id VirtualHubBgpConnection#id}
   *
@@ -65,46 +65,46 @@ export interface VirtualHubBgpConnectionTimeouts {
   readonly update?: string;
 }
 
-export function virtualHubBgpConnectionTimeoutsToTerraform(struct?: VirtualHubBgpConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualHubBgpConnectionTimeoutsToTerraform(struct?: VirtualHubBgpConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function virtualHubBgpConnectionTimeoutsToHclTerraform(struct?: VirtualHubBgpConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualHubBgpConnectionTimeoutsToHclTerraform(struct?: VirtualHubBgpConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -115,19 +115,19 @@ export function virtualHubBgpConnectionTimeoutsToHclTerraform(struct?: VirtualHu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VirtualHubBgpConnectionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VirtualHubBgpConnectionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VirtualHubBgpConnectionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VirtualHubBgpConnectionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -152,7 +152,7 @@ export class VirtualHubBgpConnectionTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VirtualHubBgpConnectionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VirtualHubBgpConnectionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -161,7 +161,7 @@ export class VirtualHubBgpConnectionTimeoutsOutputReference extends cdktf.Comple
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -243,7 +243,7 @@ export class VirtualHubBgpConnectionTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_hub_bgp_connection azurerm_virtual_hub_bgp_connection}
 */
-export class VirtualHubBgpConnection extends cdktf.TerraformResource {
+export class VirtualHubBgpConnection extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -254,14 +254,14 @@ export class VirtualHubBgpConnection extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VirtualHubBgpConnection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VirtualHubBgpConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VirtualHubBgpConnection to import
   * @param importFromId The id of the existing VirtualHubBgpConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_hub_bgp_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VirtualHubBgpConnection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_virtual_hub_bgp_connection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_virtual_hub_bgp_connection", importId: importFromId, provider });
       }
 
   // ===========
@@ -410,12 +410,12 @@ export class VirtualHubBgpConnection extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      peer_asn: cdktf.numberToTerraform(this._peerAsn),
-      peer_ip: cdktf.stringToTerraform(this._peerIp),
-      virtual_hub_id: cdktf.stringToTerraform(this._virtualHubId),
-      virtual_network_connection_id: cdktf.stringToTerraform(this._virtualNetworkConnectionId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      peer_asn: cdktn.numberToTerraform(this._peerAsn),
+      peer_ip: cdktn.stringToTerraform(this._peerIp),
+      virtual_hub_id: cdktn.stringToTerraform(this._virtualHubId),
+      virtual_network_connection_id: cdktn.stringToTerraform(this._virtualNetworkConnectionId),
       timeouts: virtualHubBgpConnectionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -423,37 +423,37 @@ export class VirtualHubBgpConnection extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       peer_asn: {
-        value: cdktf.numberToHclTerraform(this._peerAsn),
+        value: cdktn.numberToHclTerraform(this._peerAsn),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       peer_ip: {
-        value: cdktf.stringToHclTerraform(this._peerIp),
+        value: cdktn.stringToHclTerraform(this._peerIp),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       virtual_hub_id: {
-        value: cdktf.stringToHclTerraform(this._virtualHubId),
+        value: cdktn.stringToHclTerraform(this._virtualHubId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       virtual_network_connection_id: {
-        value: cdktf.stringToHclTerraform(this._virtualNetworkConnectionId),
+        value: cdktn.stringToHclTerraform(this._virtualNetworkConnectionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

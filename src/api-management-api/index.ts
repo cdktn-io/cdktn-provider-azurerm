@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApiManagementApiConfig extends cdktf.TerraformMetaArguments {
+export interface ApiManagementApiConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api#api_management_name ApiManagementApi#api_management_name}
   */
@@ -70,7 +70,7 @@ export interface ApiManagementApiConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api#subscription_required ApiManagementApi#subscription_required}
   */
-  readonly subscriptionRequired?: boolean | cdktf.IResolvable;
+  readonly subscriptionRequired?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api#terms_of_service_url ApiManagementApi#terms_of_service_url}
   */
@@ -146,38 +146,38 @@ export interface ApiManagementApiContact {
 }
 
 export function apiManagementApiContactToTerraform(struct?: ApiManagementApiContactOutputReference | ApiManagementApiContact): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    email: cdktf.stringToTerraform(struct!.email),
-    name: cdktf.stringToTerraform(struct!.name),
-    url: cdktf.stringToTerraform(struct!.url),
+    email: cdktn.stringToTerraform(struct!.email),
+    name: cdktn.stringToTerraform(struct!.name),
+    url: cdktn.stringToTerraform(struct!.url),
   }
 }
 
 
 export function apiManagementApiContactToHclTerraform(struct?: ApiManagementApiContactOutputReference | ApiManagementApiContact): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     email: {
-      value: cdktf.stringToHclTerraform(struct!.email),
+      value: cdktn.stringToHclTerraform(struct!.email),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     url: {
-      value: cdktf.stringToHclTerraform(struct!.url),
+      value: cdktn.stringToHclTerraform(struct!.url),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -188,14 +188,14 @@ export function apiManagementApiContactToHclTerraform(struct?: ApiManagementApiC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementApiContactOutputReference extends cdktf.ComplexObject {
+export class ApiManagementApiContactOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -292,31 +292,31 @@ export interface ApiManagementApiImportWsdlSelector {
 }
 
 export function apiManagementApiImportWsdlSelectorToTerraform(struct?: ApiManagementApiImportWsdlSelectorOutputReference | ApiManagementApiImportWsdlSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    endpoint_name: cdktf.stringToTerraform(struct!.endpointName),
-    service_name: cdktf.stringToTerraform(struct!.serviceName),
+    endpoint_name: cdktn.stringToTerraform(struct!.endpointName),
+    service_name: cdktn.stringToTerraform(struct!.serviceName),
   }
 }
 
 
 export function apiManagementApiImportWsdlSelectorToHclTerraform(struct?: ApiManagementApiImportWsdlSelectorOutputReference | ApiManagementApiImportWsdlSelector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     endpoint_name: {
-      value: cdktf.stringToHclTerraform(struct!.endpointName),
+      value: cdktn.stringToHclTerraform(struct!.endpointName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service_name: {
-      value: cdktf.stringToHclTerraform(struct!.serviceName),
+      value: cdktn.stringToHclTerraform(struct!.serviceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -327,14 +327,14 @@ export function apiManagementApiImportWsdlSelectorToHclTerraform(struct?: ApiMan
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementApiImportWsdlSelectorOutputReference extends cdktf.ComplexObject {
+export class ApiManagementApiImportWsdlSelectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -409,32 +409,32 @@ export interface ApiManagementApiImport {
 }
 
 export function apiManagementApiImportToTerraform(struct?: ApiManagementApiImportOutputReference | ApiManagementApiImport): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    content_format: cdktf.stringToTerraform(struct!.contentFormat),
-    content_value: cdktf.stringToTerraform(struct!.contentValue),
+    content_format: cdktn.stringToTerraform(struct!.contentFormat),
+    content_value: cdktn.stringToTerraform(struct!.contentValue),
     wsdl_selector: apiManagementApiImportWsdlSelectorToTerraform(struct!.wsdlSelector),
   }
 }
 
 
 export function apiManagementApiImportToHclTerraform(struct?: ApiManagementApiImportOutputReference | ApiManagementApiImport): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     content_format: {
-      value: cdktf.stringToHclTerraform(struct!.contentFormat),
+      value: cdktn.stringToHclTerraform(struct!.contentFormat),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     content_value: {
-      value: cdktf.stringToHclTerraform(struct!.contentValue),
+      value: cdktn.stringToHclTerraform(struct!.contentValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -451,14 +451,14 @@ export function apiManagementApiImportToHclTerraform(struct?: ApiManagementApiIm
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementApiImportOutputReference extends cdktf.ComplexObject {
+export class ApiManagementApiImportOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -549,31 +549,31 @@ export interface ApiManagementApiLicense {
 }
 
 export function apiManagementApiLicenseToTerraform(struct?: ApiManagementApiLicenseOutputReference | ApiManagementApiLicense): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    url: cdktf.stringToTerraform(struct!.url),
+    name: cdktn.stringToTerraform(struct!.name),
+    url: cdktn.stringToTerraform(struct!.url),
   }
 }
 
 
 export function apiManagementApiLicenseToHclTerraform(struct?: ApiManagementApiLicenseOutputReference | ApiManagementApiLicense): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     url: {
-      value: cdktf.stringToHclTerraform(struct!.url),
+      value: cdktn.stringToHclTerraform(struct!.url),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -584,14 +584,14 @@ export function apiManagementApiLicenseToHclTerraform(struct?: ApiManagementApiL
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementApiLicenseOutputReference extends cdktf.ComplexObject {
+export class ApiManagementApiLicenseOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -666,31 +666,31 @@ export interface ApiManagementApiOauth2Authorization {
 }
 
 export function apiManagementApiOauth2AuthorizationToTerraform(struct?: ApiManagementApiOauth2AuthorizationOutputReference | ApiManagementApiOauth2Authorization): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    authorization_server_name: cdktf.stringToTerraform(struct!.authorizationServerName),
-    scope: cdktf.stringToTerraform(struct!.scope),
+    authorization_server_name: cdktn.stringToTerraform(struct!.authorizationServerName),
+    scope: cdktn.stringToTerraform(struct!.scope),
   }
 }
 
 
 export function apiManagementApiOauth2AuthorizationToHclTerraform(struct?: ApiManagementApiOauth2AuthorizationOutputReference | ApiManagementApiOauth2Authorization): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     authorization_server_name: {
-      value: cdktf.stringToHclTerraform(struct!.authorizationServerName),
+      value: cdktn.stringToHclTerraform(struct!.authorizationServerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scope: {
-      value: cdktf.stringToHclTerraform(struct!.scope),
+      value: cdktn.stringToHclTerraform(struct!.scope),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -701,14 +701,14 @@ export function apiManagementApiOauth2AuthorizationToHclTerraform(struct?: ApiMa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementApiOauth2AuthorizationOutputReference extends cdktf.ComplexObject {
+export class ApiManagementApiOauth2AuthorizationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -780,31 +780,31 @@ export interface ApiManagementApiOpenidAuthentication {
 }
 
 export function apiManagementApiOpenidAuthenticationToTerraform(struct?: ApiManagementApiOpenidAuthenticationOutputReference | ApiManagementApiOpenidAuthentication): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bearer_token_sending_methods: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.bearerTokenSendingMethods),
-    openid_provider_name: cdktf.stringToTerraform(struct!.openidProviderName),
+    bearer_token_sending_methods: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.bearerTokenSendingMethods),
+    openid_provider_name: cdktn.stringToTerraform(struct!.openidProviderName),
   }
 }
 
 
 export function apiManagementApiOpenidAuthenticationToHclTerraform(struct?: ApiManagementApiOpenidAuthenticationOutputReference | ApiManagementApiOpenidAuthentication): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bearer_token_sending_methods: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.bearerTokenSendingMethods),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.bearerTokenSendingMethods),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     openid_provider_name: {
-      value: cdktf.stringToHclTerraform(struct!.openidProviderName),
+      value: cdktn.stringToHclTerraform(struct!.openidProviderName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -815,14 +815,14 @@ export function apiManagementApiOpenidAuthenticationToHclTerraform(struct?: ApiM
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementApiOpenidAuthenticationOutputReference extends cdktf.ComplexObject {
+export class ApiManagementApiOpenidAuthenticationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -856,7 +856,7 @@ export class ApiManagementApiOpenidAuthenticationOutputReference extends cdktf.C
   // bearer_token_sending_methods - computed: false, optional: true, required: false
   private _bearerTokenSendingMethods?: string[]; 
   public get bearerTokenSendingMethods() {
-    return cdktf.Fn.tolist(this.getListAttribute('bearer_token_sending_methods'));
+    return cdktn.Fn.tolist(this.getListAttribute('bearer_token_sending_methods'));
   }
   public set bearerTokenSendingMethods(value: string[]) {
     this._bearerTokenSendingMethods = value;
@@ -894,31 +894,31 @@ export interface ApiManagementApiSubscriptionKeyParameterNames {
 }
 
 export function apiManagementApiSubscriptionKeyParameterNamesToTerraform(struct?: ApiManagementApiSubscriptionKeyParameterNamesOutputReference | ApiManagementApiSubscriptionKeyParameterNames): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    header: cdktf.stringToTerraform(struct!.header),
-    query: cdktf.stringToTerraform(struct!.query),
+    header: cdktn.stringToTerraform(struct!.header),
+    query: cdktn.stringToTerraform(struct!.query),
   }
 }
 
 
 export function apiManagementApiSubscriptionKeyParameterNamesToHclTerraform(struct?: ApiManagementApiSubscriptionKeyParameterNamesOutputReference | ApiManagementApiSubscriptionKeyParameterNames): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     header: {
-      value: cdktf.stringToHclTerraform(struct!.header),
+      value: cdktn.stringToHclTerraform(struct!.header),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -929,14 +929,14 @@ export function apiManagementApiSubscriptionKeyParameterNamesToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementApiSubscriptionKeyParameterNamesOutputReference extends cdktf.ComplexObject {
+export class ApiManagementApiSubscriptionKeyParameterNamesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1012,46 +1012,46 @@ export interface ApiManagementApiTimeouts {
   readonly update?: string;
 }
 
-export function apiManagementApiTimeoutsToTerraform(struct?: ApiManagementApiTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementApiTimeoutsToTerraform(struct?: ApiManagementApiTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function apiManagementApiTimeoutsToHclTerraform(struct?: ApiManagementApiTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementApiTimeoutsToHclTerraform(struct?: ApiManagementApiTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1062,19 +1062,19 @@ export function apiManagementApiTimeoutsToHclTerraform(struct?: ApiManagementApi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementApiTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApiManagementApiTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApiManagementApiTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApiManagementApiTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1099,7 +1099,7 @@ export class ApiManagementApiTimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApiManagementApiTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApiManagementApiTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1108,7 +1108,7 @@ export class ApiManagementApiTimeoutsOutputReference extends cdktf.ComplexObject
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1190,7 +1190,7 @@ export class ApiManagementApiTimeoutsOutputReference extends cdktf.ComplexObject
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api azurerm_api_management_api}
 */
-export class ApiManagementApi extends cdktf.TerraformResource {
+export class ApiManagementApi extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1201,14 +1201,14 @@ export class ApiManagementApi extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApiManagementApi resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApiManagementApi resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiManagementApi to import
   * @param importFromId The id of the existing ApiManagementApi that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_api#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiManagementApi to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_api_management_api", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_api_management_api", importId: importFromId, provider });
       }
 
   // ===========
@@ -1388,7 +1388,7 @@ export class ApiManagementApi extends cdktf.TerraformResource {
   // protocols - computed: true, optional: true, required: false
   private _protocols?: string[]; 
   public get protocols() {
-    return cdktf.Fn.tolist(this.getListAttribute('protocols'));
+    return cdktn.Fn.tolist(this.getListAttribute('protocols'));
   }
   public set protocols(value: string[]) {
     this._protocols = value;
@@ -1476,11 +1476,11 @@ export class ApiManagementApi extends cdktf.TerraformResource {
   }
 
   // subscription_required - computed: false, optional: true, required: false
-  private _subscriptionRequired?: boolean | cdktf.IResolvable; 
+  private _subscriptionRequired?: boolean | cdktn.IResolvable; 
   public get subscriptionRequired() {
     return this.getBooleanAttribute('subscription_required');
   }
-  public set subscriptionRequired(value: boolean | cdktf.IResolvable) {
+  public set subscriptionRequired(value: boolean | cdktn.IResolvable) {
     this._subscriptionRequired = value;
   }
   public resetSubscriptionRequired() {
@@ -1673,24 +1673,24 @@ export class ApiManagementApi extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_management_name: cdktf.stringToTerraform(this._apiManagementName),
-      api_type: cdktf.stringToTerraform(this._apiType),
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      path: cdktf.stringToTerraform(this._path),
-      protocols: cdktf.listMapper(cdktf.stringToTerraform, false)(this._protocols),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      revision: cdktf.stringToTerraform(this._revision),
-      revision_description: cdktf.stringToTerraform(this._revisionDescription),
-      service_url: cdktf.stringToTerraform(this._serviceUrl),
-      source_api_id: cdktf.stringToTerraform(this._sourceApiId),
-      subscription_required: cdktf.booleanToTerraform(this._subscriptionRequired),
-      terms_of_service_url: cdktf.stringToTerraform(this._termsOfServiceUrl),
-      version: cdktf.stringToTerraform(this._version),
-      version_description: cdktf.stringToTerraform(this._versionDescription),
-      version_set_id: cdktf.stringToTerraform(this._versionSetId),
+      api_management_name: cdktn.stringToTerraform(this._apiManagementName),
+      api_type: cdktn.stringToTerraform(this._apiType),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      path: cdktn.stringToTerraform(this._path),
+      protocols: cdktn.listMapper(cdktn.stringToTerraform, false)(this._protocols),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      revision: cdktn.stringToTerraform(this._revision),
+      revision_description: cdktn.stringToTerraform(this._revisionDescription),
+      service_url: cdktn.stringToTerraform(this._serviceUrl),
+      source_api_id: cdktn.stringToTerraform(this._sourceApiId),
+      subscription_required: cdktn.booleanToTerraform(this._subscriptionRequired),
+      terms_of_service_url: cdktn.stringToTerraform(this._termsOfServiceUrl),
+      version: cdktn.stringToTerraform(this._version),
+      version_description: cdktn.stringToTerraform(this._versionDescription),
+      version_set_id: cdktn.stringToTerraform(this._versionSetId),
       contact: apiManagementApiContactToTerraform(this._contact.internalValue),
       import: apiManagementApiImportToTerraform(this._import.internalValue),
       license: apiManagementApiLicenseToTerraform(this._license.internalValue),
@@ -1704,109 +1704,109 @@ export class ApiManagementApi extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_management_name: {
-        value: cdktf.stringToHclTerraform(this._apiManagementName),
+        value: cdktn.stringToHclTerraform(this._apiManagementName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       api_type: {
-        value: cdktf.stringToHclTerraform(this._apiType),
+        value: cdktn.stringToHclTerraform(this._apiType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       path: {
-        value: cdktf.stringToHclTerraform(this._path),
+        value: cdktn.stringToHclTerraform(this._path),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       protocols: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._protocols),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._protocols),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       revision: {
-        value: cdktf.stringToHclTerraform(this._revision),
+        value: cdktn.stringToHclTerraform(this._revision),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       revision_description: {
-        value: cdktf.stringToHclTerraform(this._revisionDescription),
+        value: cdktn.stringToHclTerraform(this._revisionDescription),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_url: {
-        value: cdktf.stringToHclTerraform(this._serviceUrl),
+        value: cdktn.stringToHclTerraform(this._serviceUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_api_id: {
-        value: cdktf.stringToHclTerraform(this._sourceApiId),
+        value: cdktn.stringToHclTerraform(this._sourceApiId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subscription_required: {
-        value: cdktf.booleanToHclTerraform(this._subscriptionRequired),
+        value: cdktn.booleanToHclTerraform(this._subscriptionRequired),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       terms_of_service_url: {
-        value: cdktf.stringToHclTerraform(this._termsOfServiceUrl),
+        value: cdktn.stringToHclTerraform(this._termsOfServiceUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       version: {
-        value: cdktf.stringToHclTerraform(this._version),
+        value: cdktn.stringToHclTerraform(this._version),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       version_description: {
-        value: cdktf.stringToHclTerraform(this._versionDescription),
+        value: cdktn.stringToHclTerraform(this._versionDescription),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       version_set_id: {
-        value: cdktf.stringToHclTerraform(this._versionSetId),
+        value: cdktn.stringToHclTerraform(this._versionSetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

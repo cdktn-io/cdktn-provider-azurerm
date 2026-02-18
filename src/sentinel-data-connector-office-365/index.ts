@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SentinelDataConnectorOffice365Config extends cdktf.TerraformMetaArguments {
+export interface SentinelDataConnectorOffice365Config extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_data_connector_office_365#exchange_enabled SentinelDataConnectorOffice365#exchange_enabled}
   */
-  readonly exchangeEnabled?: boolean | cdktf.IResolvable;
+  readonly exchangeEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_data_connector_office_365#id SentinelDataConnectorOffice365#id}
   *
@@ -34,11 +34,11 @@ export interface SentinelDataConnectorOffice365Config extends cdktf.TerraformMet
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_data_connector_office_365#sharepoint_enabled SentinelDataConnectorOffice365#sharepoint_enabled}
   */
-  readonly sharepointEnabled?: boolean | cdktf.IResolvable;
+  readonly sharepointEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_data_connector_office_365#teams_enabled SentinelDataConnectorOffice365#teams_enabled}
   */
-  readonly teamsEnabled?: boolean | cdktf.IResolvable;
+  readonly teamsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_data_connector_office_365#tenant_id SentinelDataConnectorOffice365#tenant_id}
   */
@@ -69,46 +69,46 @@ export interface SentinelDataConnectorOffice365Timeouts {
   readonly update?: string;
 }
 
-export function sentinelDataConnectorOffice365TimeoutsToTerraform(struct?: SentinelDataConnectorOffice365Timeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sentinelDataConnectorOffice365TimeoutsToTerraform(struct?: SentinelDataConnectorOffice365Timeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function sentinelDataConnectorOffice365TimeoutsToHclTerraform(struct?: SentinelDataConnectorOffice365Timeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sentinelDataConnectorOffice365TimeoutsToHclTerraform(struct?: SentinelDataConnectorOffice365Timeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -119,19 +119,19 @@ export function sentinelDataConnectorOffice365TimeoutsToHclTerraform(struct?: Se
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SentinelDataConnectorOffice365TimeoutsOutputReference extends cdktf.ComplexObject {
+export class SentinelDataConnectorOffice365TimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SentinelDataConnectorOffice365Timeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SentinelDataConnectorOffice365Timeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -156,7 +156,7 @@ export class SentinelDataConnectorOffice365TimeoutsOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SentinelDataConnectorOffice365Timeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SentinelDataConnectorOffice365Timeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -165,7 +165,7 @@ export class SentinelDataConnectorOffice365TimeoutsOutputReference extends cdktf
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -247,7 +247,7 @@ export class SentinelDataConnectorOffice365TimeoutsOutputReference extends cdktf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_data_connector_office_365 azurerm_sentinel_data_connector_office_365}
 */
-export class SentinelDataConnectorOffice365 extends cdktf.TerraformResource {
+export class SentinelDataConnectorOffice365 extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -258,14 +258,14 @@ export class SentinelDataConnectorOffice365 extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SentinelDataConnectorOffice365 resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SentinelDataConnectorOffice365 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SentinelDataConnectorOffice365 to import
   * @param importFromId The id of the existing SentinelDataConnectorOffice365 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_data_connector_office_365#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SentinelDataConnectorOffice365 to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_sentinel_data_connector_office_365", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_sentinel_data_connector_office_365", importId: importFromId, provider });
       }
 
   // ===========
@@ -310,11 +310,11 @@ export class SentinelDataConnectorOffice365 extends cdktf.TerraformResource {
   // ==========
 
   // exchange_enabled - computed: false, optional: true, required: false
-  private _exchangeEnabled?: boolean | cdktf.IResolvable; 
+  private _exchangeEnabled?: boolean | cdktn.IResolvable; 
   public get exchangeEnabled() {
     return this.getBooleanAttribute('exchange_enabled');
   }
-  public set exchangeEnabled(value: boolean | cdktf.IResolvable) {
+  public set exchangeEnabled(value: boolean | cdktn.IResolvable) {
     this._exchangeEnabled = value;
   }
   public resetExchangeEnabled() {
@@ -368,11 +368,11 @@ export class SentinelDataConnectorOffice365 extends cdktf.TerraformResource {
   }
 
   // sharepoint_enabled - computed: false, optional: true, required: false
-  private _sharepointEnabled?: boolean | cdktf.IResolvable; 
+  private _sharepointEnabled?: boolean | cdktn.IResolvable; 
   public get sharepointEnabled() {
     return this.getBooleanAttribute('sharepoint_enabled');
   }
-  public set sharepointEnabled(value: boolean | cdktf.IResolvable) {
+  public set sharepointEnabled(value: boolean | cdktn.IResolvable) {
     this._sharepointEnabled = value;
   }
   public resetSharepointEnabled() {
@@ -384,11 +384,11 @@ export class SentinelDataConnectorOffice365 extends cdktf.TerraformResource {
   }
 
   // teams_enabled - computed: false, optional: true, required: false
-  private _teamsEnabled?: boolean | cdktf.IResolvable; 
+  private _teamsEnabled?: boolean | cdktn.IResolvable; 
   public get teamsEnabled() {
     return this.getBooleanAttribute('teams_enabled');
   }
-  public set teamsEnabled(value: boolean | cdktf.IResolvable) {
+  public set teamsEnabled(value: boolean | cdktn.IResolvable) {
     this._teamsEnabled = value;
   }
   public resetTeamsEnabled() {
@@ -437,13 +437,13 @@ export class SentinelDataConnectorOffice365 extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      exchange_enabled: cdktf.booleanToTerraform(this._exchangeEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      log_analytics_workspace_id: cdktf.stringToTerraform(this._logAnalyticsWorkspaceId),
-      name: cdktf.stringToTerraform(this._name),
-      sharepoint_enabled: cdktf.booleanToTerraform(this._sharepointEnabled),
-      teams_enabled: cdktf.booleanToTerraform(this._teamsEnabled),
-      tenant_id: cdktf.stringToTerraform(this._tenantId),
+      exchange_enabled: cdktn.booleanToTerraform(this._exchangeEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      log_analytics_workspace_id: cdktn.stringToTerraform(this._logAnalyticsWorkspaceId),
+      name: cdktn.stringToTerraform(this._name),
+      sharepoint_enabled: cdktn.booleanToTerraform(this._sharepointEnabled),
+      teams_enabled: cdktn.booleanToTerraform(this._teamsEnabled),
+      tenant_id: cdktn.stringToTerraform(this._tenantId),
       timeouts: sentinelDataConnectorOffice365TimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -451,43 +451,43 @@ export class SentinelDataConnectorOffice365 extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       exchange_enabled: {
-        value: cdktf.booleanToHclTerraform(this._exchangeEnabled),
+        value: cdktn.booleanToHclTerraform(this._exchangeEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       log_analytics_workspace_id: {
-        value: cdktf.stringToHclTerraform(this._logAnalyticsWorkspaceId),
+        value: cdktn.stringToHclTerraform(this._logAnalyticsWorkspaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sharepoint_enabled: {
-        value: cdktf.booleanToHclTerraform(this._sharepointEnabled),
+        value: cdktn.booleanToHclTerraform(this._sharepointEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       teams_enabled: {
-        value: cdktf.booleanToHclTerraform(this._teamsEnabled),
+        value: cdktn.booleanToHclTerraform(this._teamsEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tenant_id: {
-        value: cdktf.stringToHclTerraform(this._tenantId),
+        value: cdktn.stringToHclTerraform(this._tenantId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

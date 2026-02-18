@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SubscriptionTemplateDeploymentConfig extends cdktf.TerraformMetaArguments {
+export interface SubscriptionTemplateDeploymentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/subscription_template_deployment#debug_level SubscriptionTemplateDeployment#debug_level}
   */
@@ -73,46 +73,46 @@ export interface SubscriptionTemplateDeploymentTimeouts {
   readonly update?: string;
 }
 
-export function subscriptionTemplateDeploymentTimeoutsToTerraform(struct?: SubscriptionTemplateDeploymentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function subscriptionTemplateDeploymentTimeoutsToTerraform(struct?: SubscriptionTemplateDeploymentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function subscriptionTemplateDeploymentTimeoutsToHclTerraform(struct?: SubscriptionTemplateDeploymentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function subscriptionTemplateDeploymentTimeoutsToHclTerraform(struct?: SubscriptionTemplateDeploymentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -123,19 +123,19 @@ export function subscriptionTemplateDeploymentTimeoutsToHclTerraform(struct?: Su
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SubscriptionTemplateDeploymentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SubscriptionTemplateDeploymentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SubscriptionTemplateDeploymentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SubscriptionTemplateDeploymentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -160,7 +160,7 @@ export class SubscriptionTemplateDeploymentTimeoutsOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SubscriptionTemplateDeploymentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SubscriptionTemplateDeploymentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -169,7 +169,7 @@ export class SubscriptionTemplateDeploymentTimeoutsOutputReference extends cdktf
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -251,7 +251,7 @@ export class SubscriptionTemplateDeploymentTimeoutsOutputReference extends cdktf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/subscription_template_deployment azurerm_subscription_template_deployment}
 */
-export class SubscriptionTemplateDeployment extends cdktf.TerraformResource {
+export class SubscriptionTemplateDeployment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -262,14 +262,14 @@ export class SubscriptionTemplateDeployment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SubscriptionTemplateDeployment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SubscriptionTemplateDeployment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SubscriptionTemplateDeployment to import
   * @param importFromId The id of the existing SubscriptionTemplateDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/subscription_template_deployment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SubscriptionTemplateDeployment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_subscription_template_deployment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_subscription_template_deployment", importId: importFromId, provider });
       }
 
   // ===========
@@ -463,14 +463,14 @@ export class SubscriptionTemplateDeployment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      debug_level: cdktf.stringToTerraform(this._debugLevel),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      parameters_content: cdktf.stringToTerraform(this._parametersContent),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      template_content: cdktf.stringToTerraform(this._templateContent),
-      template_spec_version_id: cdktf.stringToTerraform(this._templateSpecVersionId),
+      debug_level: cdktn.stringToTerraform(this._debugLevel),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      parameters_content: cdktn.stringToTerraform(this._parametersContent),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      template_content: cdktn.stringToTerraform(this._templateContent),
+      template_spec_version_id: cdktn.stringToTerraform(this._templateSpecVersionId),
       timeouts: subscriptionTemplateDeploymentTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -478,49 +478,49 @@ export class SubscriptionTemplateDeployment extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       debug_level: {
-        value: cdktf.stringToHclTerraform(this._debugLevel),
+        value: cdktn.stringToHclTerraform(this._debugLevel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parameters_content: {
-        value: cdktf.stringToHclTerraform(this._parametersContent),
+        value: cdktn.stringToHclTerraform(this._parametersContent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       template_content: {
-        value: cdktf.stringToHclTerraform(this._templateContent),
+        value: cdktn.stringToHclTerraform(this._templateContent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       template_spec_version_id: {
-        value: cdktf.stringToHclTerraform(this._templateSpecVersionId),
+        value: cdktn.stringToHclTerraform(this._templateSpecVersionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

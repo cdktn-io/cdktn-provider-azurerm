@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CosmosdbSqlTriggerConfig extends cdktf.TerraformMetaArguments {
+export interface CosmosdbSqlTriggerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cosmosdb_sql_trigger#body CosmosdbSqlTrigger#body}
   */
@@ -65,46 +65,46 @@ export interface CosmosdbSqlTriggerTimeouts {
   readonly update?: string;
 }
 
-export function cosmosdbSqlTriggerTimeoutsToTerraform(struct?: CosmosdbSqlTriggerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cosmosdbSqlTriggerTimeoutsToTerraform(struct?: CosmosdbSqlTriggerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function cosmosdbSqlTriggerTimeoutsToHclTerraform(struct?: CosmosdbSqlTriggerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cosmosdbSqlTriggerTimeoutsToHclTerraform(struct?: CosmosdbSqlTriggerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -115,19 +115,19 @@ export function cosmosdbSqlTriggerTimeoutsToHclTerraform(struct?: CosmosdbSqlTri
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CosmosdbSqlTriggerTimeoutsOutputReference extends cdktf.ComplexObject {
+export class CosmosdbSqlTriggerTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CosmosdbSqlTriggerTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): CosmosdbSqlTriggerTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -152,7 +152,7 @@ export class CosmosdbSqlTriggerTimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CosmosdbSqlTriggerTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CosmosdbSqlTriggerTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -161,7 +161,7 @@ export class CosmosdbSqlTriggerTimeoutsOutputReference extends cdktf.ComplexObje
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -243,7 +243,7 @@ export class CosmosdbSqlTriggerTimeoutsOutputReference extends cdktf.ComplexObje
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cosmosdb_sql_trigger azurerm_cosmosdb_sql_trigger}
 */
-export class CosmosdbSqlTrigger extends cdktf.TerraformResource {
+export class CosmosdbSqlTrigger extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -254,14 +254,14 @@ export class CosmosdbSqlTrigger extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CosmosdbSqlTrigger resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CosmosdbSqlTrigger resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CosmosdbSqlTrigger to import
   * @param importFromId The id of the existing CosmosdbSqlTrigger that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cosmosdb_sql_trigger#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CosmosdbSqlTrigger to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_cosmosdb_sql_trigger", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_cosmosdb_sql_trigger", importId: importFromId, provider });
       }
 
   // ===========
@@ -407,12 +407,12 @@ export class CosmosdbSqlTrigger extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      body: cdktf.stringToTerraform(this._body),
-      container_id: cdktf.stringToTerraform(this._containerId),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      operation: cdktf.stringToTerraform(this._operation),
-      type: cdktf.stringToTerraform(this._type),
+      body: cdktn.stringToTerraform(this._body),
+      container_id: cdktn.stringToTerraform(this._containerId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      operation: cdktn.stringToTerraform(this._operation),
+      type: cdktn.stringToTerraform(this._type),
       timeouts: cosmosdbSqlTriggerTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -420,37 +420,37 @@ export class CosmosdbSqlTrigger extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       body: {
-        value: cdktf.stringToHclTerraform(this._body),
+        value: cdktn.stringToHclTerraform(this._body),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       container_id: {
-        value: cdktf.stringToHclTerraform(this._containerId),
+        value: cdktn.stringToHclTerraform(this._containerId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       operation: {
-        value: cdktf.stringToHclTerraform(this._operation),
+        value: cdktn.stringToHclTerraform(this._operation),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

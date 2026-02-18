@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BotChannelFacebookConfig extends cdktf.TerraformMetaArguments {
+export interface BotChannelFacebookConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_channel_facebook#bot_name BotChannelFacebook#bot_name}
   */
@@ -44,7 +44,7 @@ export interface BotChannelFacebookConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_channel_facebook#page BotChannelFacebook#page}
   */
-  readonly page: BotChannelFacebookPage[] | cdktf.IResolvable;
+  readonly page: BotChannelFacebookPage[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -66,32 +66,32 @@ export interface BotChannelFacebookPage {
   readonly id: string;
 }
 
-export function botChannelFacebookPageToTerraform(struct?: BotChannelFacebookPage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function botChannelFacebookPageToTerraform(struct?: BotChannelFacebookPage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_token: cdktf.stringToTerraform(struct!.accessToken),
-    id: cdktf.stringToTerraform(struct!.id),
+    access_token: cdktn.stringToTerraform(struct!.accessToken),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function botChannelFacebookPageToHclTerraform(struct?: BotChannelFacebookPage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function botChannelFacebookPageToHclTerraform(struct?: BotChannelFacebookPage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_token: {
-      value: cdktf.stringToHclTerraform(struct!.accessToken),
+      value: cdktn.stringToHclTerraform(struct!.accessToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -102,9 +102,9 @@ export function botChannelFacebookPageToHclTerraform(struct?: BotChannelFacebook
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BotChannelFacebookPageOutputReference extends cdktf.ComplexObject {
+export class BotChannelFacebookPageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -112,11 +112,11 @@ export class BotChannelFacebookPageOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): BotChannelFacebookPage | cdktf.IResolvable | undefined {
+  public get internalValue(): BotChannelFacebookPage | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -133,14 +133,14 @@ export class BotChannelFacebookPageOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BotChannelFacebookPage | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BotChannelFacebookPage | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._accessToken = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -179,15 +179,15 @@ export class BotChannelFacebookPageOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class BotChannelFacebookPageList extends cdktf.ComplexList {
-  public internalValue? : BotChannelFacebookPage[] | cdktf.IResolvable
+export class BotChannelFacebookPageList extends cdktn.ComplexList {
+  public internalValue? : BotChannelFacebookPage[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -217,46 +217,46 @@ export interface BotChannelFacebookTimeouts {
   readonly update?: string;
 }
 
-export function botChannelFacebookTimeoutsToTerraform(struct?: BotChannelFacebookTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function botChannelFacebookTimeoutsToTerraform(struct?: BotChannelFacebookTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function botChannelFacebookTimeoutsToHclTerraform(struct?: BotChannelFacebookTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function botChannelFacebookTimeoutsToHclTerraform(struct?: BotChannelFacebookTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -267,19 +267,19 @@ export function botChannelFacebookTimeoutsToHclTerraform(struct?: BotChannelFace
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BotChannelFacebookTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BotChannelFacebookTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BotChannelFacebookTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BotChannelFacebookTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -304,7 +304,7 @@ export class BotChannelFacebookTimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BotChannelFacebookTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BotChannelFacebookTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -313,7 +313,7 @@ export class BotChannelFacebookTimeoutsOutputReference extends cdktf.ComplexObje
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -395,7 +395,7 @@ export class BotChannelFacebookTimeoutsOutputReference extends cdktf.ComplexObje
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_channel_facebook azurerm_bot_channel_facebook}
 */
-export class BotChannelFacebook extends cdktf.TerraformResource {
+export class BotChannelFacebook extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -406,14 +406,14 @@ export class BotChannelFacebook extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BotChannelFacebook resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BotChannelFacebook resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BotChannelFacebook to import
   * @param importFromId The id of the existing BotChannelFacebook that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_channel_facebook#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BotChannelFacebook to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_bot_channel_facebook", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_bot_channel_facebook", importId: importFromId, provider });
       }
 
   // ===========
@@ -543,7 +543,7 @@ export class BotChannelFacebook extends cdktf.TerraformResource {
   public get page() {
     return this._page;
   }
-  public putPage(value: BotChannelFacebookPage[] | cdktf.IResolvable) {
+  public putPage(value: BotChannelFacebookPage[] | cdktn.IResolvable) {
     this._page.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -573,13 +573,13 @@ export class BotChannelFacebook extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bot_name: cdktf.stringToTerraform(this._botName),
-      facebook_application_id: cdktf.stringToTerraform(this._facebookApplicationId),
-      facebook_application_secret: cdktf.stringToTerraform(this._facebookApplicationSecret),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      page: cdktf.listMapper(botChannelFacebookPageToTerraform, true)(this._page.internalValue),
+      bot_name: cdktn.stringToTerraform(this._botName),
+      facebook_application_id: cdktn.stringToTerraform(this._facebookApplicationId),
+      facebook_application_secret: cdktn.stringToTerraform(this._facebookApplicationSecret),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      page: cdktn.listMapper(botChannelFacebookPageToTerraform, true)(this._page.internalValue),
       timeouts: botChannelFacebookTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -587,43 +587,43 @@ export class BotChannelFacebook extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bot_name: {
-        value: cdktf.stringToHclTerraform(this._botName),
+        value: cdktn.stringToHclTerraform(this._botName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       facebook_application_id: {
-        value: cdktf.stringToHclTerraform(this._facebookApplicationId),
+        value: cdktn.stringToHclTerraform(this._facebookApplicationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       facebook_application_secret: {
-        value: cdktf.stringToHclTerraform(this._facebookApplicationSecret),
+        value: cdktn.stringToHclTerraform(this._facebookApplicationSecret),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       page: {
-        value: cdktf.listMapperHcl(botChannelFacebookPageToHclTerraform, true)(this._page.internalValue),
+        value: cdktn.listMapperHcl(botChannelFacebookPageToHclTerraform, true)(this._page.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "BotChannelFacebookPageList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PaloAltoNextGenerationFirewallVirtualNetworkPanoramaConfig extends cdktf.TerraformMetaArguments {
+export interface PaloAltoNextGenerationFirewallVirtualNetworkPanoramaConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/palo_alto_next_generation_firewall_virtual_network_panorama#id PaloAltoNextGenerationFirewallVirtualNetworkPanorama#id}
   *
@@ -52,7 +52,7 @@ export interface PaloAltoNextGenerationFirewallVirtualNetworkPanoramaConfig exte
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/palo_alto_next_generation_firewall_virtual_network_panorama#destination_nat PaloAltoNextGenerationFirewallVirtualNetworkPanorama#destination_nat}
   */
-  readonly destinationNat?: PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNat[] | cdktf.IResolvable;
+  readonly destinationNat?: PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNat[] | cdktn.IResolvable;
   /**
   * dns_settings block
   *
@@ -76,8 +76,8 @@ export interface PaloAltoNextGenerationFirewallVirtualNetworkPanoramaPanorama {
 }
 
 export function paloAltoNextGenerationFirewallVirtualNetworkPanoramaPanoramaToTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkPanoramaPanorama): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -86,8 +86,8 @@ export function paloAltoNextGenerationFirewallVirtualNetworkPanoramaPanoramaToTe
 
 
 export function paloAltoNextGenerationFirewallVirtualNetworkPanoramaPanoramaToHclTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkPanoramaPanorama): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -95,7 +95,7 @@ export function paloAltoNextGenerationFirewallVirtualNetworkPanoramaPanoramaToHc
   return attrs;
 }
 
-export class PaloAltoNextGenerationFirewallVirtualNetworkPanoramaPanoramaOutputReference extends cdktf.ComplexObject {
+export class PaloAltoNextGenerationFirewallVirtualNetworkPanoramaPanoramaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -104,7 +104,7 @@ export class PaloAltoNextGenerationFirewallVirtualNetworkPanoramaPanoramaOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -159,14 +159,14 @@ export class PaloAltoNextGenerationFirewallVirtualNetworkPanoramaPanoramaOutputR
   }
 }
 
-export class PaloAltoNextGenerationFirewallVirtualNetworkPanoramaPanoramaList extends cdktf.ComplexList {
+export class PaloAltoNextGenerationFirewallVirtualNetworkPanoramaPanoramaList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -189,31 +189,31 @@ export interface PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestination
 }
 
 export function paloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNatBackendConfigToTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNatBackendConfigOutputReference | PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNatBackendConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    port: cdktf.numberToTerraform(struct!.port),
-    public_ip_address: cdktf.stringToTerraform(struct!.publicIpAddress),
+    port: cdktn.numberToTerraform(struct!.port),
+    public_ip_address: cdktn.stringToTerraform(struct!.publicIpAddress),
   }
 }
 
 
 export function paloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNatBackendConfigToHclTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNatBackendConfigOutputReference | PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNatBackendConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     public_ip_address: {
-      value: cdktf.stringToHclTerraform(struct!.publicIpAddress),
+      value: cdktn.stringToHclTerraform(struct!.publicIpAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -224,14 +224,14 @@ export function paloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationN
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNatBackendConfigOutputReference extends cdktf.ComplexObject {
+export class PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNatBackendConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -300,31 +300,31 @@ export interface PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestination
 }
 
 export function paloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNatFrontendConfigToTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNatFrontendConfigOutputReference | PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNatFrontendConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    port: cdktf.numberToTerraform(struct!.port),
-    public_ip_address_id: cdktf.stringToTerraform(struct!.publicIpAddressId),
+    port: cdktn.numberToTerraform(struct!.port),
+    public_ip_address_id: cdktn.stringToTerraform(struct!.publicIpAddressId),
   }
 }
 
 
 export function paloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNatFrontendConfigToHclTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNatFrontendConfigOutputReference | PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNatFrontendConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     public_ip_address_id: {
-      value: cdktf.stringToHclTerraform(struct!.publicIpAddressId),
+      value: cdktn.stringToHclTerraform(struct!.publicIpAddressId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -335,14 +335,14 @@ export function paloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationN
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNatFrontendConfigOutputReference extends cdktf.ComplexObject {
+export class PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNatFrontendConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -422,34 +422,34 @@ export interface PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestination
   readonly frontendConfig?: PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNatFrontendConfig;
 }
 
-export function paloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNatToTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNat | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function paloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNatToTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNat | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
+    name: cdktn.stringToTerraform(struct!.name),
+    protocol: cdktn.stringToTerraform(struct!.protocol),
     backend_config: paloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNatBackendConfigToTerraform(struct!.backendConfig),
     frontend_config: paloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNatFrontendConfigToTerraform(struct!.frontendConfig),
   }
 }
 
 
-export function paloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNatToHclTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNat | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function paloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNatToHclTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNat | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     protocol: {
-      value: cdktf.stringToHclTerraform(struct!.protocol),
+      value: cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -472,9 +472,9 @@ export function paloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationN
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNatOutputReference extends cdktf.ComplexObject {
+export class PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -482,11 +482,11 @@ export class PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNatO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNat | cdktf.IResolvable | undefined {
+  public get internalValue(): PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNat | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -511,7 +511,7 @@ export class PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNatO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNat | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNat | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -520,7 +520,7 @@ export class PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNatO
       this._backendConfig.internalValue = undefined;
       this._frontendConfig.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -593,15 +593,15 @@ export class PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNatO
   }
 }
 
-export class PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNatList extends cdktf.ComplexList {
-  public internalValue? : PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNat[] | cdktf.IResolvable
+export class PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNatList extends cdktn.ComplexList {
+  public internalValue? : PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNat[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -620,35 +620,35 @@ export interface PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDnsSettings
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/palo_alto_next_generation_firewall_virtual_network_panorama#use_azure_dns PaloAltoNextGenerationFirewallVirtualNetworkPanorama#use_azure_dns}
   */
-  readonly useAzureDns?: boolean | cdktf.IResolvable;
+  readonly useAzureDns?: boolean | cdktn.IResolvable;
 }
 
 export function paloAltoNextGenerationFirewallVirtualNetworkPanoramaDnsSettingsToTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDnsSettingsOutputReference | PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDnsSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dns_servers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.dnsServers),
-    use_azure_dns: cdktf.booleanToTerraform(struct!.useAzureDns),
+    dns_servers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.dnsServers),
+    use_azure_dns: cdktn.booleanToTerraform(struct!.useAzureDns),
   }
 }
 
 
 export function paloAltoNextGenerationFirewallVirtualNetworkPanoramaDnsSettingsToHclTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDnsSettingsOutputReference | PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDnsSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dns_servers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dnsServers),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.dnsServers),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     use_azure_dns: {
-      value: cdktf.booleanToHclTerraform(struct!.useAzureDns),
+      value: cdktn.booleanToHclTerraform(struct!.useAzureDns),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -659,14 +659,14 @@ export function paloAltoNextGenerationFirewallVirtualNetworkPanoramaDnsSettingsT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDnsSettingsOutputReference extends cdktf.ComplexObject {
+export class PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDnsSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -719,11 +719,11 @@ export class PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDnsSettingsOutp
   }
 
   // use_azure_dns - computed: false, optional: true, required: false
-  private _useAzureDns?: boolean | cdktf.IResolvable; 
+  private _useAzureDns?: boolean | cdktn.IResolvable; 
   public get useAzureDns() {
     return this.getBooleanAttribute('use_azure_dns');
   }
-  public set useAzureDns(value: boolean | cdktf.IResolvable) {
+  public set useAzureDns(value: boolean | cdktn.IResolvable) {
     this._useAzureDns = value;
   }
   public resetUseAzureDns() {
@@ -750,38 +750,38 @@ export interface PaloAltoNextGenerationFirewallVirtualNetworkPanoramaNetworkProf
 }
 
 export function paloAltoNextGenerationFirewallVirtualNetworkPanoramaNetworkProfileVnetConfigurationToTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkPanoramaNetworkProfileVnetConfigurationOutputReference | PaloAltoNextGenerationFirewallVirtualNetworkPanoramaNetworkProfileVnetConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    trusted_subnet_id: cdktf.stringToTerraform(struct!.trustedSubnetId),
-    untrusted_subnet_id: cdktf.stringToTerraform(struct!.untrustedSubnetId),
-    virtual_network_id: cdktf.stringToTerraform(struct!.virtualNetworkId),
+    trusted_subnet_id: cdktn.stringToTerraform(struct!.trustedSubnetId),
+    untrusted_subnet_id: cdktn.stringToTerraform(struct!.untrustedSubnetId),
+    virtual_network_id: cdktn.stringToTerraform(struct!.virtualNetworkId),
   }
 }
 
 
 export function paloAltoNextGenerationFirewallVirtualNetworkPanoramaNetworkProfileVnetConfigurationToHclTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkPanoramaNetworkProfileVnetConfigurationOutputReference | PaloAltoNextGenerationFirewallVirtualNetworkPanoramaNetworkProfileVnetConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     trusted_subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.trustedSubnetId),
+      value: cdktn.stringToHclTerraform(struct!.trustedSubnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     untrusted_subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.untrustedSubnetId),
+      value: cdktn.stringToHclTerraform(struct!.untrustedSubnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     virtual_network_id: {
-      value: cdktf.stringToHclTerraform(struct!.virtualNetworkId),
+      value: cdktn.stringToHclTerraform(struct!.virtualNetworkId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -792,14 +792,14 @@ export function paloAltoNextGenerationFirewallVirtualNetworkPanoramaNetworkProfi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PaloAltoNextGenerationFirewallVirtualNetworkPanoramaNetworkProfileVnetConfigurationOutputReference extends cdktf.ComplexObject {
+export class PaloAltoNextGenerationFirewallVirtualNetworkPanoramaNetworkProfileVnetConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -908,39 +908,39 @@ export interface PaloAltoNextGenerationFirewallVirtualNetworkPanoramaNetworkProf
 }
 
 export function paloAltoNextGenerationFirewallVirtualNetworkPanoramaNetworkProfileToTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkPanoramaNetworkProfileOutputReference | PaloAltoNextGenerationFirewallVirtualNetworkPanoramaNetworkProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    egress_nat_ip_address_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.egressNatIpAddressIds),
-    public_ip_address_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.publicIpAddressIds),
-    trusted_address_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.trustedAddressRanges),
+    egress_nat_ip_address_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.egressNatIpAddressIds),
+    public_ip_address_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.publicIpAddressIds),
+    trusted_address_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.trustedAddressRanges),
     vnet_configuration: paloAltoNextGenerationFirewallVirtualNetworkPanoramaNetworkProfileVnetConfigurationToTerraform(struct!.vnetConfiguration),
   }
 }
 
 
 export function paloAltoNextGenerationFirewallVirtualNetworkPanoramaNetworkProfileToHclTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkPanoramaNetworkProfileOutputReference | PaloAltoNextGenerationFirewallVirtualNetworkPanoramaNetworkProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     egress_nat_ip_address_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.egressNatIpAddressIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.egressNatIpAddressIds),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     public_ip_address_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.publicIpAddressIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.publicIpAddressIds),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     trusted_address_ranges: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.trustedAddressRanges),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.trustedAddressRanges),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -957,14 +957,14 @@ export function paloAltoNextGenerationFirewallVirtualNetworkPanoramaNetworkProfi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PaloAltoNextGenerationFirewallVirtualNetworkPanoramaNetworkProfileOutputReference extends cdktf.ComplexObject {
+export class PaloAltoNextGenerationFirewallVirtualNetworkPanoramaNetworkProfileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1094,46 +1094,46 @@ export interface PaloAltoNextGenerationFirewallVirtualNetworkPanoramaTimeouts {
   readonly update?: string;
 }
 
-export function paloAltoNextGenerationFirewallVirtualNetworkPanoramaTimeoutsToTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkPanoramaTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function paloAltoNextGenerationFirewallVirtualNetworkPanoramaTimeoutsToTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkPanoramaTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function paloAltoNextGenerationFirewallVirtualNetworkPanoramaTimeoutsToHclTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkPanoramaTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function paloAltoNextGenerationFirewallVirtualNetworkPanoramaTimeoutsToHclTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkPanoramaTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1144,19 +1144,19 @@ export function paloAltoNextGenerationFirewallVirtualNetworkPanoramaTimeoutsToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PaloAltoNextGenerationFirewallVirtualNetworkPanoramaTimeoutsOutputReference extends cdktf.ComplexObject {
+export class PaloAltoNextGenerationFirewallVirtualNetworkPanoramaTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PaloAltoNextGenerationFirewallVirtualNetworkPanoramaTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): PaloAltoNextGenerationFirewallVirtualNetworkPanoramaTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1181,7 +1181,7 @@ export class PaloAltoNextGenerationFirewallVirtualNetworkPanoramaTimeoutsOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PaloAltoNextGenerationFirewallVirtualNetworkPanoramaTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PaloAltoNextGenerationFirewallVirtualNetworkPanoramaTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1190,7 +1190,7 @@ export class PaloAltoNextGenerationFirewallVirtualNetworkPanoramaTimeoutsOutputR
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1272,7 +1272,7 @@ export class PaloAltoNextGenerationFirewallVirtualNetworkPanoramaTimeoutsOutputR
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/palo_alto_next_generation_firewall_virtual_network_panorama azurerm_palo_alto_next_generation_firewall_virtual_network_panorama}
 */
-export class PaloAltoNextGenerationFirewallVirtualNetworkPanorama extends cdktf.TerraformResource {
+export class PaloAltoNextGenerationFirewallVirtualNetworkPanorama extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1283,14 +1283,14 @@ export class PaloAltoNextGenerationFirewallVirtualNetworkPanorama extends cdktf.
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PaloAltoNextGenerationFirewallVirtualNetworkPanorama resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PaloAltoNextGenerationFirewallVirtualNetworkPanorama resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PaloAltoNextGenerationFirewallVirtualNetworkPanorama to import
   * @param importFromId The id of the existing PaloAltoNextGenerationFirewallVirtualNetworkPanorama that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/palo_alto_next_generation_firewall_virtual_network_panorama#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PaloAltoNextGenerationFirewallVirtualNetworkPanorama to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_palo_alto_next_generation_firewall_virtual_network_panorama", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_palo_alto_next_generation_firewall_virtual_network_panorama", importId: importFromId, provider });
       }
 
   // ===========
@@ -1465,7 +1465,7 @@ export class PaloAltoNextGenerationFirewallVirtualNetworkPanorama extends cdktf.
   public get destinationNat() {
     return this._destinationNat;
   }
-  public putDestinationNat(value: PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNat[] | cdktf.IResolvable) {
+  public putDestinationNat(value: PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNat[] | cdktn.IResolvable) {
     this._destinationNat.internalValue = value;
   }
   public resetDestinationNat() {
@@ -1527,15 +1527,15 @@ export class PaloAltoNextGenerationFirewallVirtualNetworkPanorama extends cdktf.
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      marketplace_offer_id: cdktf.stringToTerraform(this._marketplaceOfferId),
-      name: cdktf.stringToTerraform(this._name),
-      panorama_base64_config: cdktf.stringToTerraform(this._panoramaBase64Config),
-      plan_id: cdktf.stringToTerraform(this._planId),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      destination_nat: cdktf.listMapper(paloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNatToTerraform, true)(this._destinationNat.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      marketplace_offer_id: cdktn.stringToTerraform(this._marketplaceOfferId),
+      name: cdktn.stringToTerraform(this._name),
+      panorama_base64_config: cdktn.stringToTerraform(this._panoramaBase64Config),
+      plan_id: cdktn.stringToTerraform(this._planId),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      destination_nat: cdktn.listMapper(paloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNatToTerraform, true)(this._destinationNat.internalValue),
       dns_settings: paloAltoNextGenerationFirewallVirtualNetworkPanoramaDnsSettingsToTerraform(this._dnsSettings.internalValue),
       network_profile: paloAltoNextGenerationFirewallVirtualNetworkPanoramaNetworkProfileToTerraform(this._networkProfile.internalValue),
       timeouts: paloAltoNextGenerationFirewallVirtualNetworkPanoramaTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1545,55 +1545,55 @@ export class PaloAltoNextGenerationFirewallVirtualNetworkPanorama extends cdktf.
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       marketplace_offer_id: {
-        value: cdktf.stringToHclTerraform(this._marketplaceOfferId),
+        value: cdktn.stringToHclTerraform(this._marketplaceOfferId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       panorama_base64_config: {
-        value: cdktf.stringToHclTerraform(this._panoramaBase64Config),
+        value: cdktn.stringToHclTerraform(this._panoramaBase64Config),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       plan_id: {
-        value: cdktf.stringToHclTerraform(this._planId),
+        value: cdktn.stringToHclTerraform(this._planId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       destination_nat: {
-        value: cdktf.listMapperHcl(paloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNatToHclTerraform, true)(this._destinationNat.internalValue),
+        value: cdktn.listMapperHcl(paloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNatToHclTerraform, true)(this._destinationNat.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "PaloAltoNextGenerationFirewallVirtualNetworkPanoramaDestinationNatList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SiteRecoveryReplicatedVmConfig extends cdktf.TerraformMetaArguments {
+export interface SiteRecoveryReplicatedVmConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/site_recovery_replicated_vm#id SiteRecoveryReplicatedVm#id}
   *
@@ -22,7 +22,7 @@ export interface SiteRecoveryReplicatedVmConfig extends cdktf.TerraformMetaArgum
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/site_recovery_replicated_vm#managed_disk SiteRecoveryReplicatedVm#managed_disk}
   */
-  readonly managedDisk?: SiteRecoveryReplicatedVmManagedDisk[] | cdktf.IResolvable;
+  readonly managedDisk?: SiteRecoveryReplicatedVmManagedDisk[] | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/site_recovery_replicated_vm#multi_vm_group_name SiteRecoveryReplicatedVm#multi_vm_group_name}
   */
@@ -34,7 +34,7 @@ export interface SiteRecoveryReplicatedVmConfig extends cdktf.TerraformMetaArgum
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/site_recovery_replicated_vm#network_interface SiteRecoveryReplicatedVm#network_interface}
   */
-  readonly networkInterface?: SiteRecoveryReplicatedVmNetworkInterface[] | cdktf.IResolvable;
+  readonly networkInterface?: SiteRecoveryReplicatedVmNetworkInterface[] | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/site_recovery_replicated_vm#recovery_replication_policy_id SiteRecoveryReplicatedVm#recovery_replication_policy_id}
   */
@@ -114,7 +114,7 @@ export interface SiteRecoveryReplicatedVmConfig extends cdktf.TerraformMetaArgum
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/site_recovery_replicated_vm#unmanaged_disk SiteRecoveryReplicatedVm#unmanaged_disk}
   */
-  readonly unmanagedDisk?: SiteRecoveryReplicatedVmUnmanagedDisk[] | cdktf.IResolvable;
+  readonly unmanagedDisk?: SiteRecoveryReplicatedVmUnmanagedDisk[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -133,32 +133,32 @@ export interface SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionDiskEncr
   readonly vaultId?: string;
 }
 
-export function siteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionDiskEncryptionKeyToTerraform(struct?: SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionDiskEncryptionKey | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function siteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionDiskEncryptionKeyToTerraform(struct?: SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionDiskEncryptionKey | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    secret_url: cdktf.stringToTerraform(struct!.secretUrl),
-    vault_id: cdktf.stringToTerraform(struct!.vaultId),
+    secret_url: cdktn.stringToTerraform(struct!.secretUrl),
+    vault_id: cdktn.stringToTerraform(struct!.vaultId),
   }
 }
 
 
-export function siteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionDiskEncryptionKeyToHclTerraform(struct?: SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionDiskEncryptionKey | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function siteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionDiskEncryptionKeyToHclTerraform(struct?: SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionDiskEncryptionKey | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     secret_url: {
-      value: cdktf.stringToHclTerraform(struct!.secretUrl),
+      value: cdktn.stringToHclTerraform(struct!.secretUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vault_id: {
-      value: cdktf.stringToHclTerraform(struct!.vaultId),
+      value: cdktn.stringToHclTerraform(struct!.vaultId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -169,9 +169,9 @@ export function siteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionDiskEncry
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionDiskEncryptionKeyOutputReference extends cdktf.ComplexObject {
+export class SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionDiskEncryptionKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -179,11 +179,11 @@ export class SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionDiskEncrypti
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionDiskEncryptionKey | cdktf.IResolvable | undefined {
+  public get internalValue(): SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionDiskEncryptionKey | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -200,14 +200,14 @@ export class SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionDiskEncrypti
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionDiskEncryptionKey | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionDiskEncryptionKey | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._secretUrl = undefined;
       this._vaultId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -252,15 +252,15 @@ export class SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionDiskEncrypti
   }
 }
 
-export class SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionDiskEncryptionKeyList extends cdktf.ComplexList {
-  public internalValue? : SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionDiskEncryptionKey[] | cdktf.IResolvable
+export class SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionDiskEncryptionKeyList extends cdktn.ComplexList {
+  public internalValue? : SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionDiskEncryptionKey[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -282,32 +282,32 @@ export interface SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionKeyEncry
   readonly vaultId?: string;
 }
 
-export function siteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionKeyEncryptionKeyToTerraform(struct?: SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionKeyEncryptionKey | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function siteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionKeyEncryptionKeyToTerraform(struct?: SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionKeyEncryptionKey | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key_url: cdktf.stringToTerraform(struct!.keyUrl),
-    vault_id: cdktf.stringToTerraform(struct!.vaultId),
+    key_url: cdktn.stringToTerraform(struct!.keyUrl),
+    vault_id: cdktn.stringToTerraform(struct!.vaultId),
   }
 }
 
 
-export function siteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionKeyEncryptionKeyToHclTerraform(struct?: SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionKeyEncryptionKey | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function siteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionKeyEncryptionKeyToHclTerraform(struct?: SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionKeyEncryptionKey | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key_url: {
-      value: cdktf.stringToHclTerraform(struct!.keyUrl),
+      value: cdktn.stringToHclTerraform(struct!.keyUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vault_id: {
-      value: cdktf.stringToHclTerraform(struct!.vaultId),
+      value: cdktn.stringToHclTerraform(struct!.vaultId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -318,9 +318,9 @@ export function siteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionKeyEncryp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionKeyEncryptionKeyOutputReference extends cdktf.ComplexObject {
+export class SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionKeyEncryptionKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -328,11 +328,11 @@ export class SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionKeyEncryptio
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionKeyEncryptionKey | cdktf.IResolvable | undefined {
+  public get internalValue(): SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionKeyEncryptionKey | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -349,14 +349,14 @@ export class SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionKeyEncryptio
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionKeyEncryptionKey | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionKeyEncryptionKey | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._keyUrl = undefined;
       this._vaultId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -401,15 +401,15 @@ export class SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionKeyEncryptio
   }
 }
 
-export class SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionKeyEncryptionKeyList extends cdktf.ComplexList {
-  public internalValue? : SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionKeyEncryptionKey[] | cdktf.IResolvable
+export class SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionKeyEncryptionKeyList extends cdktn.ComplexList {
+  public internalValue? : SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionKeyEncryptionKey[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -424,39 +424,39 @@ export interface SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryption {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/site_recovery_replicated_vm#disk_encryption_key SiteRecoveryReplicatedVm#disk_encryption_key}
   */
-  readonly diskEncryptionKey?: SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionDiskEncryptionKey[] | cdktf.IResolvable;
+  readonly diskEncryptionKey?: SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionDiskEncryptionKey[] | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/site_recovery_replicated_vm#key_encryption_key SiteRecoveryReplicatedVm#key_encryption_key}
   */
-  readonly keyEncryptionKey?: SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionKeyEncryptionKey[] | cdktf.IResolvable;
+  readonly keyEncryptionKey?: SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionKeyEncryptionKey[] | cdktn.IResolvable;
 }
 
-export function siteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionToTerraform(struct?: SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryption | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function siteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionToTerraform(struct?: SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryption | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    disk_encryption_key: cdktf.listMapper(siteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionDiskEncryptionKeyToTerraform, false)(struct!.diskEncryptionKey),
-    key_encryption_key: cdktf.listMapper(siteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionKeyEncryptionKeyToTerraform, false)(struct!.keyEncryptionKey),
+    disk_encryption_key: cdktn.listMapper(siteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionDiskEncryptionKeyToTerraform, false)(struct!.diskEncryptionKey),
+    key_encryption_key: cdktn.listMapper(siteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionKeyEncryptionKeyToTerraform, false)(struct!.keyEncryptionKey),
   }
 }
 
 
-export function siteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionToHclTerraform(struct?: SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryption | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function siteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionToHclTerraform(struct?: SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryption | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     disk_encryption_key: {
-      value: cdktf.listMapperHcl(siteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionDiskEncryptionKeyToHclTerraform, false)(struct!.diskEncryptionKey),
+      value: cdktn.listMapperHcl(siteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionDiskEncryptionKeyToHclTerraform, false)(struct!.diskEncryptionKey),
       isBlock: true,
       type: "list",
       storageClassType: "SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionDiskEncryptionKeyList",
     },
     key_encryption_key: {
-      value: cdktf.listMapperHcl(siteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionKeyEncryptionKeyToHclTerraform, false)(struct!.keyEncryptionKey),
+      value: cdktn.listMapperHcl(siteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionKeyEncryptionKeyToHclTerraform, false)(struct!.keyEncryptionKey),
       isBlock: true,
       type: "list",
       storageClassType: "SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionKeyEncryptionKeyList",
@@ -467,9 +467,9 @@ export function siteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionOutputReference extends cdktf.ComplexObject {
+export class SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -477,11 +477,11 @@ export class SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryption | cdktf.IResolvable | undefined {
+  public get internalValue(): SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryption | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -498,14 +498,14 @@ export class SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryption | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryption | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._diskEncryptionKey.internalValue = undefined;
       this._keyEncryptionKey.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -522,7 +522,7 @@ export class SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionOutputRefere
   public get diskEncryptionKey() {
     return this._diskEncryptionKey;
   }
-  public putDiskEncryptionKey(value: SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionDiskEncryptionKey[] | cdktf.IResolvable) {
+  public putDiskEncryptionKey(value: SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionDiskEncryptionKey[] | cdktn.IResolvable) {
     this._diskEncryptionKey.internalValue = value;
   }
   public resetDiskEncryptionKey() {
@@ -538,7 +538,7 @@ export class SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionOutputRefere
   public get keyEncryptionKey() {
     return this._keyEncryptionKey;
   }
-  public putKeyEncryptionKey(value: SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionKeyEncryptionKey[] | cdktf.IResolvable) {
+  public putKeyEncryptionKey(value: SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionKeyEncryptionKey[] | cdktn.IResolvable) {
     this._keyEncryptionKey.internalValue = value;
   }
   public resetKeyEncryptionKey() {
@@ -550,15 +550,15 @@ export class SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionOutputRefere
   }
 }
 
-export class SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionList extends cdktf.ComplexList {
-  public internalValue? : SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryption[] | cdktf.IResolvable
+export class SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionList extends cdktn.ComplexList {
+  public internalValue? : SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryption[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -581,7 +581,7 @@ export interface SiteRecoveryReplicatedVmManagedDisk {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/site_recovery_replicated_vm#target_disk_encryption SiteRecoveryReplicatedVm#target_disk_encryption}
   */
-  readonly targetDiskEncryption?: SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryption[] | cdktf.IResolvable;
+  readonly targetDiskEncryption?: SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryption[] | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/site_recovery_replicated_vm#target_disk_encryption_set_id SiteRecoveryReplicatedVm#target_disk_encryption_set_id}
   */
@@ -600,67 +600,67 @@ export interface SiteRecoveryReplicatedVmManagedDisk {
   readonly targetResourceGroupId?: string;
 }
 
-export function siteRecoveryReplicatedVmManagedDiskToTerraform(struct?: SiteRecoveryReplicatedVmManagedDisk | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function siteRecoveryReplicatedVmManagedDiskToTerraform(struct?: SiteRecoveryReplicatedVmManagedDisk | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    disk_id: struct!.diskId === undefined ? null : cdktf.stringToTerraform(struct!.diskId),
-    staging_storage_account_id: struct!.stagingStorageAccountId === undefined ? null : cdktf.stringToTerraform(struct!.stagingStorageAccountId),
-    target_disk_encryption: struct!.targetDiskEncryption === undefined ? null : cdktf.listMapper(siteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionToTerraform, false)(struct!.targetDiskEncryption),
-    target_disk_encryption_set_id: struct!.targetDiskEncryptionSetId === undefined ? null : cdktf.stringToTerraform(struct!.targetDiskEncryptionSetId),
-    target_disk_type: struct!.targetDiskType === undefined ? null : cdktf.stringToTerraform(struct!.targetDiskType),
-    target_replica_disk_type: struct!.targetReplicaDiskType === undefined ? null : cdktf.stringToTerraform(struct!.targetReplicaDiskType),
-    target_resource_group_id: struct!.targetResourceGroupId === undefined ? null : cdktf.stringToTerraform(struct!.targetResourceGroupId),
+    disk_id: struct!.diskId === undefined ? null : cdktn.stringToTerraform(struct!.diskId),
+    staging_storage_account_id: struct!.stagingStorageAccountId === undefined ? null : cdktn.stringToTerraform(struct!.stagingStorageAccountId),
+    target_disk_encryption: struct!.targetDiskEncryption === undefined ? null : cdktn.listMapper(siteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionToTerraform, false)(struct!.targetDiskEncryption),
+    target_disk_encryption_set_id: struct!.targetDiskEncryptionSetId === undefined ? null : cdktn.stringToTerraform(struct!.targetDiskEncryptionSetId),
+    target_disk_type: struct!.targetDiskType === undefined ? null : cdktn.stringToTerraform(struct!.targetDiskType),
+    target_replica_disk_type: struct!.targetReplicaDiskType === undefined ? null : cdktn.stringToTerraform(struct!.targetReplicaDiskType),
+    target_resource_group_id: struct!.targetResourceGroupId === undefined ? null : cdktn.stringToTerraform(struct!.targetResourceGroupId),
   }
 }
 
 
-export function siteRecoveryReplicatedVmManagedDiskToHclTerraform(struct?: SiteRecoveryReplicatedVmManagedDisk | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function siteRecoveryReplicatedVmManagedDiskToHclTerraform(struct?: SiteRecoveryReplicatedVmManagedDisk | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     disk_id: {
-      value: struct!.diskId === undefined ? null : cdktf.stringToHclTerraform(struct!.diskId),
+      value: struct!.diskId === undefined ? null : cdktn.stringToHclTerraform(struct!.diskId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     staging_storage_account_id: {
-      value: struct!.stagingStorageAccountId === undefined ? null : cdktf.stringToHclTerraform(struct!.stagingStorageAccountId),
+      value: struct!.stagingStorageAccountId === undefined ? null : cdktn.stringToHclTerraform(struct!.stagingStorageAccountId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_disk_encryption: {
-      value: struct!.targetDiskEncryption === undefined ? null : cdktf.listMapperHcl(siteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionToHclTerraform, false)(struct!.targetDiskEncryption),
+      value: struct!.targetDiskEncryption === undefined ? null : cdktn.listMapperHcl(siteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionToHclTerraform, false)(struct!.targetDiskEncryption),
       isBlock: true,
       type: "list",
       storageClassType: "SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryptionList",
     },
     target_disk_encryption_set_id: {
-      value: struct!.targetDiskEncryptionSetId === undefined ? null : cdktf.stringToHclTerraform(struct!.targetDiskEncryptionSetId),
+      value: struct!.targetDiskEncryptionSetId === undefined ? null : cdktn.stringToHclTerraform(struct!.targetDiskEncryptionSetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_disk_type: {
-      value: struct!.targetDiskType === undefined ? null : cdktf.stringToHclTerraform(struct!.targetDiskType),
+      value: struct!.targetDiskType === undefined ? null : cdktn.stringToHclTerraform(struct!.targetDiskType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_replica_disk_type: {
-      value: struct!.targetReplicaDiskType === undefined ? null : cdktf.stringToHclTerraform(struct!.targetReplicaDiskType),
+      value: struct!.targetReplicaDiskType === undefined ? null : cdktn.stringToHclTerraform(struct!.targetReplicaDiskType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_resource_group_id: {
-      value: struct!.targetResourceGroupId === undefined ? null : cdktf.stringToHclTerraform(struct!.targetResourceGroupId),
+      value: struct!.targetResourceGroupId === undefined ? null : cdktn.stringToHclTerraform(struct!.targetResourceGroupId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -671,9 +671,9 @@ export function siteRecoveryReplicatedVmManagedDiskToHclTerraform(struct?: SiteR
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SiteRecoveryReplicatedVmManagedDiskOutputReference extends cdktf.ComplexObject {
+export class SiteRecoveryReplicatedVmManagedDiskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -681,11 +681,11 @@ export class SiteRecoveryReplicatedVmManagedDiskOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SiteRecoveryReplicatedVmManagedDisk | cdktf.IResolvable | undefined {
+  public get internalValue(): SiteRecoveryReplicatedVmManagedDisk | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -722,7 +722,7 @@ export class SiteRecoveryReplicatedVmManagedDiskOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SiteRecoveryReplicatedVmManagedDisk | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SiteRecoveryReplicatedVmManagedDisk | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -734,7 +734,7 @@ export class SiteRecoveryReplicatedVmManagedDiskOutputReference extends cdktf.Co
       this._targetReplicaDiskType = undefined;
       this._targetResourceGroupId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -788,7 +788,7 @@ export class SiteRecoveryReplicatedVmManagedDiskOutputReference extends cdktf.Co
   public get targetDiskEncryption() {
     return this._targetDiskEncryption;
   }
-  public putTargetDiskEncryption(value: SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryption[] | cdktf.IResolvable) {
+  public putTargetDiskEncryption(value: SiteRecoveryReplicatedVmManagedDiskTargetDiskEncryption[] | cdktn.IResolvable) {
     this._targetDiskEncryption.internalValue = value;
   }
   public resetTargetDiskEncryption() {
@@ -864,15 +864,15 @@ export class SiteRecoveryReplicatedVmManagedDiskOutputReference extends cdktf.Co
   }
 }
 
-export class SiteRecoveryReplicatedVmManagedDiskList extends cdktf.ComplexList {
-  public internalValue? : SiteRecoveryReplicatedVmManagedDisk[] | cdktf.IResolvable
+export class SiteRecoveryReplicatedVmManagedDiskList extends cdktn.ComplexList {
+  public internalValue? : SiteRecoveryReplicatedVmManagedDisk[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -918,74 +918,74 @@ export interface SiteRecoveryReplicatedVmNetworkInterface {
   readonly targetSubnetName?: string;
 }
 
-export function siteRecoveryReplicatedVmNetworkInterfaceToTerraform(struct?: SiteRecoveryReplicatedVmNetworkInterface | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function siteRecoveryReplicatedVmNetworkInterfaceToTerraform(struct?: SiteRecoveryReplicatedVmNetworkInterface | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    failover_test_public_ip_address_id: cdktf.stringToTerraform(struct!.failoverTestPublicIpAddressId),
-    failover_test_static_ip: cdktf.stringToTerraform(struct!.failoverTestStaticIp),
-    failover_test_subnet_name: cdktf.stringToTerraform(struct!.failoverTestSubnetName),
-    recovery_load_balancer_backend_address_pool_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.recoveryLoadBalancerBackendAddressPoolIds),
-    recovery_public_ip_address_id: struct!.recoveryPublicIpAddressId === undefined ? null : cdktf.stringToTerraform(struct!.recoveryPublicIpAddressId),
-    source_network_interface_id: struct!.sourceNetworkInterfaceId === undefined ? null : cdktf.stringToTerraform(struct!.sourceNetworkInterfaceId),
-    target_static_ip: struct!.targetStaticIp === undefined ? null : cdktf.stringToTerraform(struct!.targetStaticIp),
-    target_subnet_name: struct!.targetSubnetName === undefined ? null : cdktf.stringToTerraform(struct!.targetSubnetName),
+    failover_test_public_ip_address_id: cdktn.stringToTerraform(struct!.failoverTestPublicIpAddressId),
+    failover_test_static_ip: cdktn.stringToTerraform(struct!.failoverTestStaticIp),
+    failover_test_subnet_name: cdktn.stringToTerraform(struct!.failoverTestSubnetName),
+    recovery_load_balancer_backend_address_pool_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.recoveryLoadBalancerBackendAddressPoolIds),
+    recovery_public_ip_address_id: struct!.recoveryPublicIpAddressId === undefined ? null : cdktn.stringToTerraform(struct!.recoveryPublicIpAddressId),
+    source_network_interface_id: struct!.sourceNetworkInterfaceId === undefined ? null : cdktn.stringToTerraform(struct!.sourceNetworkInterfaceId),
+    target_static_ip: struct!.targetStaticIp === undefined ? null : cdktn.stringToTerraform(struct!.targetStaticIp),
+    target_subnet_name: struct!.targetSubnetName === undefined ? null : cdktn.stringToTerraform(struct!.targetSubnetName),
   }
 }
 
 
-export function siteRecoveryReplicatedVmNetworkInterfaceToHclTerraform(struct?: SiteRecoveryReplicatedVmNetworkInterface | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function siteRecoveryReplicatedVmNetworkInterfaceToHclTerraform(struct?: SiteRecoveryReplicatedVmNetworkInterface | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     failover_test_public_ip_address_id: {
-      value: cdktf.stringToHclTerraform(struct!.failoverTestPublicIpAddressId),
+      value: cdktn.stringToHclTerraform(struct!.failoverTestPublicIpAddressId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     failover_test_static_ip: {
-      value: cdktf.stringToHclTerraform(struct!.failoverTestStaticIp),
+      value: cdktn.stringToHclTerraform(struct!.failoverTestStaticIp),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     failover_test_subnet_name: {
-      value: cdktf.stringToHclTerraform(struct!.failoverTestSubnetName),
+      value: cdktn.stringToHclTerraform(struct!.failoverTestSubnetName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     recovery_load_balancer_backend_address_pool_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.recoveryLoadBalancerBackendAddressPoolIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.recoveryLoadBalancerBackendAddressPoolIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     recovery_public_ip_address_id: {
-      value: struct!.recoveryPublicIpAddressId === undefined ? null : cdktf.stringToHclTerraform(struct!.recoveryPublicIpAddressId),
+      value: struct!.recoveryPublicIpAddressId === undefined ? null : cdktn.stringToHclTerraform(struct!.recoveryPublicIpAddressId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_network_interface_id: {
-      value: struct!.sourceNetworkInterfaceId === undefined ? null : cdktf.stringToHclTerraform(struct!.sourceNetworkInterfaceId),
+      value: struct!.sourceNetworkInterfaceId === undefined ? null : cdktn.stringToHclTerraform(struct!.sourceNetworkInterfaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_static_ip: {
-      value: struct!.targetStaticIp === undefined ? null : cdktf.stringToHclTerraform(struct!.targetStaticIp),
+      value: struct!.targetStaticIp === undefined ? null : cdktn.stringToHclTerraform(struct!.targetStaticIp),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_subnet_name: {
-      value: struct!.targetSubnetName === undefined ? null : cdktf.stringToHclTerraform(struct!.targetSubnetName),
+      value: struct!.targetSubnetName === undefined ? null : cdktn.stringToHclTerraform(struct!.targetSubnetName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -996,9 +996,9 @@ export function siteRecoveryReplicatedVmNetworkInterfaceToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SiteRecoveryReplicatedVmNetworkInterfaceOutputReference extends cdktf.ComplexObject {
+export class SiteRecoveryReplicatedVmNetworkInterfaceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1006,11 +1006,11 @@ export class SiteRecoveryReplicatedVmNetworkInterfaceOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SiteRecoveryReplicatedVmNetworkInterface | cdktf.IResolvable | undefined {
+  public get internalValue(): SiteRecoveryReplicatedVmNetworkInterface | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1051,7 +1051,7 @@ export class SiteRecoveryReplicatedVmNetworkInterfaceOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SiteRecoveryReplicatedVmNetworkInterface | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SiteRecoveryReplicatedVmNetworkInterface | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1064,7 +1064,7 @@ export class SiteRecoveryReplicatedVmNetworkInterfaceOutputReference extends cdk
       this._targetStaticIp = undefined;
       this._targetSubnetName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1133,7 +1133,7 @@ export class SiteRecoveryReplicatedVmNetworkInterfaceOutputReference extends cdk
   // recovery_load_balancer_backend_address_pool_ids - computed: true, optional: true, required: false
   private _recoveryLoadBalancerBackendAddressPoolIds?: string[]; 
   public get recoveryLoadBalancerBackendAddressPoolIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('recovery_load_balancer_backend_address_pool_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('recovery_load_balancer_backend_address_pool_ids'));
   }
   public set recoveryLoadBalancerBackendAddressPoolIds(value: string[]) {
     this._recoveryLoadBalancerBackendAddressPoolIds = value;
@@ -1211,15 +1211,15 @@ export class SiteRecoveryReplicatedVmNetworkInterfaceOutputReference extends cdk
   }
 }
 
-export class SiteRecoveryReplicatedVmNetworkInterfaceList extends cdktf.ComplexList {
-  public internalValue? : SiteRecoveryReplicatedVmNetworkInterface[] | cdktf.IResolvable
+export class SiteRecoveryReplicatedVmNetworkInterfaceList extends cdktn.ComplexList {
+  public internalValue? : SiteRecoveryReplicatedVmNetworkInterface[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1245,39 +1245,39 @@ export interface SiteRecoveryReplicatedVmUnmanagedDisk {
   readonly targetStorageAccountId?: string;
 }
 
-export function siteRecoveryReplicatedVmUnmanagedDiskToTerraform(struct?: SiteRecoveryReplicatedVmUnmanagedDisk | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function siteRecoveryReplicatedVmUnmanagedDiskToTerraform(struct?: SiteRecoveryReplicatedVmUnmanagedDisk | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    disk_uri: cdktf.stringToTerraform(struct!.diskUri),
-    staging_storage_account_id: cdktf.stringToTerraform(struct!.stagingStorageAccountId),
-    target_storage_account_id: cdktf.stringToTerraform(struct!.targetStorageAccountId),
+    disk_uri: cdktn.stringToTerraform(struct!.diskUri),
+    staging_storage_account_id: cdktn.stringToTerraform(struct!.stagingStorageAccountId),
+    target_storage_account_id: cdktn.stringToTerraform(struct!.targetStorageAccountId),
   }
 }
 
 
-export function siteRecoveryReplicatedVmUnmanagedDiskToHclTerraform(struct?: SiteRecoveryReplicatedVmUnmanagedDisk | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function siteRecoveryReplicatedVmUnmanagedDiskToHclTerraform(struct?: SiteRecoveryReplicatedVmUnmanagedDisk | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     disk_uri: {
-      value: cdktf.stringToHclTerraform(struct!.diskUri),
+      value: cdktn.stringToHclTerraform(struct!.diskUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     staging_storage_account_id: {
-      value: cdktf.stringToHclTerraform(struct!.stagingStorageAccountId),
+      value: cdktn.stringToHclTerraform(struct!.stagingStorageAccountId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_storage_account_id: {
-      value: cdktf.stringToHclTerraform(struct!.targetStorageAccountId),
+      value: cdktn.stringToHclTerraform(struct!.targetStorageAccountId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1288,9 +1288,9 @@ export function siteRecoveryReplicatedVmUnmanagedDiskToHclTerraform(struct?: Sit
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SiteRecoveryReplicatedVmUnmanagedDiskOutputReference extends cdktf.ComplexObject {
+export class SiteRecoveryReplicatedVmUnmanagedDiskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1298,11 +1298,11 @@ export class SiteRecoveryReplicatedVmUnmanagedDiskOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SiteRecoveryReplicatedVmUnmanagedDisk | cdktf.IResolvable | undefined {
+  public get internalValue(): SiteRecoveryReplicatedVmUnmanagedDisk | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1323,7 +1323,7 @@ export class SiteRecoveryReplicatedVmUnmanagedDiskOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SiteRecoveryReplicatedVmUnmanagedDisk | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SiteRecoveryReplicatedVmUnmanagedDisk | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1331,7 +1331,7 @@ export class SiteRecoveryReplicatedVmUnmanagedDiskOutputReference extends cdktf.
       this._stagingStorageAccountId = undefined;
       this._targetStorageAccountId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1393,15 +1393,15 @@ export class SiteRecoveryReplicatedVmUnmanagedDiskOutputReference extends cdktf.
   }
 }
 
-export class SiteRecoveryReplicatedVmUnmanagedDiskList extends cdktf.ComplexList {
-  public internalValue? : SiteRecoveryReplicatedVmUnmanagedDisk[] | cdktf.IResolvable
+export class SiteRecoveryReplicatedVmUnmanagedDiskList extends cdktn.ComplexList {
+  public internalValue? : SiteRecoveryReplicatedVmUnmanagedDisk[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1431,46 +1431,46 @@ export interface SiteRecoveryReplicatedVmTimeouts {
   readonly update?: string;
 }
 
-export function siteRecoveryReplicatedVmTimeoutsToTerraform(struct?: SiteRecoveryReplicatedVmTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function siteRecoveryReplicatedVmTimeoutsToTerraform(struct?: SiteRecoveryReplicatedVmTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function siteRecoveryReplicatedVmTimeoutsToHclTerraform(struct?: SiteRecoveryReplicatedVmTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function siteRecoveryReplicatedVmTimeoutsToHclTerraform(struct?: SiteRecoveryReplicatedVmTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1481,19 +1481,19 @@ export function siteRecoveryReplicatedVmTimeoutsToHclTerraform(struct?: SiteReco
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SiteRecoveryReplicatedVmTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SiteRecoveryReplicatedVmTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SiteRecoveryReplicatedVmTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SiteRecoveryReplicatedVmTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1518,7 +1518,7 @@ export class SiteRecoveryReplicatedVmTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SiteRecoveryReplicatedVmTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SiteRecoveryReplicatedVmTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1527,7 +1527,7 @@ export class SiteRecoveryReplicatedVmTimeoutsOutputReference extends cdktf.Compl
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1609,7 +1609,7 @@ export class SiteRecoveryReplicatedVmTimeoutsOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/site_recovery_replicated_vm azurerm_site_recovery_replicated_vm}
 */
-export class SiteRecoveryReplicatedVm extends cdktf.TerraformResource {
+export class SiteRecoveryReplicatedVm extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1620,14 +1620,14 @@ export class SiteRecoveryReplicatedVm extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SiteRecoveryReplicatedVm resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SiteRecoveryReplicatedVm resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SiteRecoveryReplicatedVm to import
   * @param importFromId The id of the existing SiteRecoveryReplicatedVm that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/site_recovery_replicated_vm#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SiteRecoveryReplicatedVm to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_site_recovery_replicated_vm", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_site_recovery_replicated_vm", importId: importFromId, provider });
       }
 
   // ===========
@@ -1710,7 +1710,7 @@ export class SiteRecoveryReplicatedVm extends cdktf.TerraformResource {
   public get managedDisk() {
     return this._managedDisk;
   }
-  public putManagedDisk(value: SiteRecoveryReplicatedVmManagedDisk[] | cdktf.IResolvable) {
+  public putManagedDisk(value: SiteRecoveryReplicatedVmManagedDisk[] | cdktn.IResolvable) {
     this._managedDisk.internalValue = value;
   }
   public resetManagedDisk() {
@@ -1755,7 +1755,7 @@ export class SiteRecoveryReplicatedVm extends cdktf.TerraformResource {
   public get networkInterface() {
     return this._networkInterface;
   }
-  public putNetworkInterface(value: SiteRecoveryReplicatedVmNetworkInterface[] | cdktf.IResolvable) {
+  public putNetworkInterface(value: SiteRecoveryReplicatedVmNetworkInterface[] | cdktn.IResolvable) {
     this._networkInterface.internalValue = value;
   }
   public resetNetworkInterface() {
@@ -2048,7 +2048,7 @@ export class SiteRecoveryReplicatedVm extends cdktf.TerraformResource {
   public get unmanagedDisk() {
     return this._unmanagedDisk;
   }
-  public putUnmanagedDisk(value: SiteRecoveryReplicatedVmUnmanagedDisk[] | cdktf.IResolvable) {
+  public putUnmanagedDisk(value: SiteRecoveryReplicatedVmUnmanagedDisk[] | cdktn.IResolvable) {
     this._unmanagedDisk.internalValue = value;
   }
   public resetUnmanagedDisk() {
@@ -2081,31 +2081,31 @@ export class SiteRecoveryReplicatedVm extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      managed_disk: cdktf.listMapper(siteRecoveryReplicatedVmManagedDiskToTerraform, false)(this._managedDisk.internalValue),
-      multi_vm_group_name: cdktf.stringToTerraform(this._multiVmGroupName),
-      name: cdktf.stringToTerraform(this._name),
-      network_interface: cdktf.listMapper(siteRecoveryReplicatedVmNetworkInterfaceToTerraform, false)(this._networkInterface.internalValue),
-      recovery_replication_policy_id: cdktf.stringToTerraform(this._recoveryReplicationPolicyId),
-      recovery_vault_name: cdktf.stringToTerraform(this._recoveryVaultName),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      source_recovery_fabric_name: cdktf.stringToTerraform(this._sourceRecoveryFabricName),
-      source_recovery_protection_container_name: cdktf.stringToTerraform(this._sourceRecoveryProtectionContainerName),
-      source_vm_id: cdktf.stringToTerraform(this._sourceVmId),
-      target_availability_set_id: cdktf.stringToTerraform(this._targetAvailabilitySetId),
-      target_boot_diagnostic_storage_account_id: cdktf.stringToTerraform(this._targetBootDiagnosticStorageAccountId),
-      target_capacity_reservation_group_id: cdktf.stringToTerraform(this._targetCapacityReservationGroupId),
-      target_edge_zone: cdktf.stringToTerraform(this._targetEdgeZone),
-      target_network_id: cdktf.stringToTerraform(this._targetNetworkId),
-      target_proximity_placement_group_id: cdktf.stringToTerraform(this._targetProximityPlacementGroupId),
-      target_recovery_fabric_id: cdktf.stringToTerraform(this._targetRecoveryFabricId),
-      target_recovery_protection_container_id: cdktf.stringToTerraform(this._targetRecoveryProtectionContainerId),
-      target_resource_group_id: cdktf.stringToTerraform(this._targetResourceGroupId),
-      target_virtual_machine_scale_set_id: cdktf.stringToTerraform(this._targetVirtualMachineScaleSetId),
-      target_virtual_machine_size: cdktf.stringToTerraform(this._targetVirtualMachineSize),
-      target_zone: cdktf.stringToTerraform(this._targetZone),
-      test_network_id: cdktf.stringToTerraform(this._testNetworkId),
-      unmanaged_disk: cdktf.listMapper(siteRecoveryReplicatedVmUnmanagedDiskToTerraform, false)(this._unmanagedDisk.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      managed_disk: cdktn.listMapper(siteRecoveryReplicatedVmManagedDiskToTerraform, false)(this._managedDisk.internalValue),
+      multi_vm_group_name: cdktn.stringToTerraform(this._multiVmGroupName),
+      name: cdktn.stringToTerraform(this._name),
+      network_interface: cdktn.listMapper(siteRecoveryReplicatedVmNetworkInterfaceToTerraform, false)(this._networkInterface.internalValue),
+      recovery_replication_policy_id: cdktn.stringToTerraform(this._recoveryReplicationPolicyId),
+      recovery_vault_name: cdktn.stringToTerraform(this._recoveryVaultName),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      source_recovery_fabric_name: cdktn.stringToTerraform(this._sourceRecoveryFabricName),
+      source_recovery_protection_container_name: cdktn.stringToTerraform(this._sourceRecoveryProtectionContainerName),
+      source_vm_id: cdktn.stringToTerraform(this._sourceVmId),
+      target_availability_set_id: cdktn.stringToTerraform(this._targetAvailabilitySetId),
+      target_boot_diagnostic_storage_account_id: cdktn.stringToTerraform(this._targetBootDiagnosticStorageAccountId),
+      target_capacity_reservation_group_id: cdktn.stringToTerraform(this._targetCapacityReservationGroupId),
+      target_edge_zone: cdktn.stringToTerraform(this._targetEdgeZone),
+      target_network_id: cdktn.stringToTerraform(this._targetNetworkId),
+      target_proximity_placement_group_id: cdktn.stringToTerraform(this._targetProximityPlacementGroupId),
+      target_recovery_fabric_id: cdktn.stringToTerraform(this._targetRecoveryFabricId),
+      target_recovery_protection_container_id: cdktn.stringToTerraform(this._targetRecoveryProtectionContainerId),
+      target_resource_group_id: cdktn.stringToTerraform(this._targetResourceGroupId),
+      target_virtual_machine_scale_set_id: cdktn.stringToTerraform(this._targetVirtualMachineScaleSetId),
+      target_virtual_machine_size: cdktn.stringToTerraform(this._targetVirtualMachineSize),
+      target_zone: cdktn.stringToTerraform(this._targetZone),
+      test_network_id: cdktn.stringToTerraform(this._testNetworkId),
+      unmanaged_disk: cdktn.listMapper(siteRecoveryReplicatedVmUnmanagedDiskToTerraform, false)(this._unmanagedDisk.internalValue),
       timeouts: siteRecoveryReplicatedVmTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -2113,151 +2113,151 @@ export class SiteRecoveryReplicatedVm extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       managed_disk: {
-        value: cdktf.listMapperHcl(siteRecoveryReplicatedVmManagedDiskToHclTerraform, false)(this._managedDisk.internalValue),
+        value: cdktn.listMapperHcl(siteRecoveryReplicatedVmManagedDiskToHclTerraform, false)(this._managedDisk.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "SiteRecoveryReplicatedVmManagedDiskList",
       },
       multi_vm_group_name: {
-        value: cdktf.stringToHclTerraform(this._multiVmGroupName),
+        value: cdktn.stringToHclTerraform(this._multiVmGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_interface: {
-        value: cdktf.listMapperHcl(siteRecoveryReplicatedVmNetworkInterfaceToHclTerraform, false)(this._networkInterface.internalValue),
+        value: cdktn.listMapperHcl(siteRecoveryReplicatedVmNetworkInterfaceToHclTerraform, false)(this._networkInterface.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "SiteRecoveryReplicatedVmNetworkInterfaceList",
       },
       recovery_replication_policy_id: {
-        value: cdktf.stringToHclTerraform(this._recoveryReplicationPolicyId),
+        value: cdktn.stringToHclTerraform(this._recoveryReplicationPolicyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       recovery_vault_name: {
-        value: cdktf.stringToHclTerraform(this._recoveryVaultName),
+        value: cdktn.stringToHclTerraform(this._recoveryVaultName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_recovery_fabric_name: {
-        value: cdktf.stringToHclTerraform(this._sourceRecoveryFabricName),
+        value: cdktn.stringToHclTerraform(this._sourceRecoveryFabricName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_recovery_protection_container_name: {
-        value: cdktf.stringToHclTerraform(this._sourceRecoveryProtectionContainerName),
+        value: cdktn.stringToHclTerraform(this._sourceRecoveryProtectionContainerName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_vm_id: {
-        value: cdktf.stringToHclTerraform(this._sourceVmId),
+        value: cdktn.stringToHclTerraform(this._sourceVmId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_availability_set_id: {
-        value: cdktf.stringToHclTerraform(this._targetAvailabilitySetId),
+        value: cdktn.stringToHclTerraform(this._targetAvailabilitySetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_boot_diagnostic_storage_account_id: {
-        value: cdktf.stringToHclTerraform(this._targetBootDiagnosticStorageAccountId),
+        value: cdktn.stringToHclTerraform(this._targetBootDiagnosticStorageAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_capacity_reservation_group_id: {
-        value: cdktf.stringToHclTerraform(this._targetCapacityReservationGroupId),
+        value: cdktn.stringToHclTerraform(this._targetCapacityReservationGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_edge_zone: {
-        value: cdktf.stringToHclTerraform(this._targetEdgeZone),
+        value: cdktn.stringToHclTerraform(this._targetEdgeZone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_network_id: {
-        value: cdktf.stringToHclTerraform(this._targetNetworkId),
+        value: cdktn.stringToHclTerraform(this._targetNetworkId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_proximity_placement_group_id: {
-        value: cdktf.stringToHclTerraform(this._targetProximityPlacementGroupId),
+        value: cdktn.stringToHclTerraform(this._targetProximityPlacementGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_recovery_fabric_id: {
-        value: cdktf.stringToHclTerraform(this._targetRecoveryFabricId),
+        value: cdktn.stringToHclTerraform(this._targetRecoveryFabricId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_recovery_protection_container_id: {
-        value: cdktf.stringToHclTerraform(this._targetRecoveryProtectionContainerId),
+        value: cdktn.stringToHclTerraform(this._targetRecoveryProtectionContainerId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_resource_group_id: {
-        value: cdktf.stringToHclTerraform(this._targetResourceGroupId),
+        value: cdktn.stringToHclTerraform(this._targetResourceGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_virtual_machine_scale_set_id: {
-        value: cdktf.stringToHclTerraform(this._targetVirtualMachineScaleSetId),
+        value: cdktn.stringToHclTerraform(this._targetVirtualMachineScaleSetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_virtual_machine_size: {
-        value: cdktf.stringToHclTerraform(this._targetVirtualMachineSize),
+        value: cdktn.stringToHclTerraform(this._targetVirtualMachineSize),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_zone: {
-        value: cdktf.stringToHclTerraform(this._targetZone),
+        value: cdktn.stringToHclTerraform(this._targetZone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       test_network_id: {
-        value: cdktf.stringToHclTerraform(this._testNetworkId),
+        value: cdktn.stringToHclTerraform(this._testNetworkId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       unmanaged_disk: {
-        value: cdktf.listMapperHcl(siteRecoveryReplicatedVmUnmanagedDiskToHclTerraform, false)(this._unmanagedDisk.internalValue),
+        value: cdktn.listMapperHcl(siteRecoveryReplicatedVmUnmanagedDiskToHclTerraform, false)(this._unmanagedDisk.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "SiteRecoveryReplicatedVmUnmanagedDiskList",

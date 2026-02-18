@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SearchServiceConfig extends cdktf.TerraformMetaArguments {
+export interface SearchServiceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/search_service#allowed_ips SearchService#allowed_ips}
   */
@@ -23,7 +23,7 @@ export interface SearchServiceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/search_service#customer_managed_key_enforcement_enabled SearchService#customer_managed_key_enforcement_enabled}
   */
-  readonly customerManagedKeyEnforcementEnabled?: boolean | cdktf.IResolvable;
+  readonly customerManagedKeyEnforcementEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/search_service#hosting_mode SearchService#hosting_mode}
   */
@@ -38,7 +38,7 @@ export interface SearchServiceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/search_service#local_authentication_enabled SearchService#local_authentication_enabled}
   */
-  readonly localAuthenticationEnabled?: boolean | cdktf.IResolvable;
+  readonly localAuthenticationEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/search_service#location SearchService#location}
   */
@@ -58,7 +58,7 @@ export interface SearchServiceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/search_service#public_network_access_enabled SearchService#public_network_access_enabled}
   */
-  readonly publicNetworkAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly publicNetworkAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/search_service#replica_count SearchService#replica_count}
   */
@@ -96,8 +96,8 @@ export interface SearchServiceQueryKeys {
 }
 
 export function searchServiceQueryKeysToTerraform(struct?: SearchServiceQueryKeys): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -106,8 +106,8 @@ export function searchServiceQueryKeysToTerraform(struct?: SearchServiceQueryKey
 
 
 export function searchServiceQueryKeysToHclTerraform(struct?: SearchServiceQueryKeys): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -115,7 +115,7 @@ export function searchServiceQueryKeysToHclTerraform(struct?: SearchServiceQuery
   return attrs;
 }
 
-export class SearchServiceQueryKeysOutputReference extends cdktf.ComplexObject {
+export class SearchServiceQueryKeysOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -124,7 +124,7 @@ export class SearchServiceQueryKeysOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -154,14 +154,14 @@ export class SearchServiceQueryKeysOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class SearchServiceQueryKeysList extends cdktf.ComplexList {
+export class SearchServiceQueryKeysList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -184,31 +184,31 @@ export interface SearchServiceIdentity {
 }
 
 export function searchServiceIdentityToTerraform(struct?: SearchServiceIdentityOutputReference | SearchServiceIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function searchServiceIdentityToHclTerraform(struct?: SearchServiceIdentityOutputReference | SearchServiceIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -219,14 +219,14 @@ export function searchServiceIdentityToHclTerraform(struct?: SearchServiceIdenti
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SearchServiceIdentityOutputReference extends cdktf.ComplexObject {
+export class SearchServiceIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -260,7 +260,7 @@ export class SearchServiceIdentityOutputReference extends cdktf.ComplexObject {
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -315,46 +315,46 @@ export interface SearchServiceTimeouts {
   readonly update?: string;
 }
 
-export function searchServiceTimeoutsToTerraform(struct?: SearchServiceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function searchServiceTimeoutsToTerraform(struct?: SearchServiceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function searchServiceTimeoutsToHclTerraform(struct?: SearchServiceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function searchServiceTimeoutsToHclTerraform(struct?: SearchServiceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -365,19 +365,19 @@ export function searchServiceTimeoutsToHclTerraform(struct?: SearchServiceTimeou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SearchServiceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SearchServiceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SearchServiceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SearchServiceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -402,7 +402,7 @@ export class SearchServiceTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SearchServiceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SearchServiceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -411,7 +411,7 @@ export class SearchServiceTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -493,7 +493,7 @@ export class SearchServiceTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/search_service azurerm_search_service}
 */
-export class SearchService extends cdktf.TerraformResource {
+export class SearchService extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -504,14 +504,14 @@ export class SearchService extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SearchService resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SearchService resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SearchService to import
   * @param importFromId The id of the existing SearchService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/search_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SearchService to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_search_service", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_search_service", importId: importFromId, provider });
       }
 
   // ===========
@@ -568,7 +568,7 @@ export class SearchService extends cdktf.TerraformResource {
   // allowed_ips - computed: false, optional: true, required: false
   private _allowedIps?: string[]; 
   public get allowedIps() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_ips'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_ips'));
   }
   public set allowedIps(value: string[]) {
     this._allowedIps = value;
@@ -603,11 +603,11 @@ export class SearchService extends cdktf.TerraformResource {
   }
 
   // customer_managed_key_enforcement_enabled - computed: false, optional: true, required: false
-  private _customerManagedKeyEnforcementEnabled?: boolean | cdktf.IResolvable; 
+  private _customerManagedKeyEnforcementEnabled?: boolean | cdktn.IResolvable; 
   public get customerManagedKeyEnforcementEnabled() {
     return this.getBooleanAttribute('customer_managed_key_enforcement_enabled');
   }
-  public set customerManagedKeyEnforcementEnabled(value: boolean | cdktf.IResolvable) {
+  public set customerManagedKeyEnforcementEnabled(value: boolean | cdktn.IResolvable) {
     this._customerManagedKeyEnforcementEnabled = value;
   }
   public resetCustomerManagedKeyEnforcementEnabled() {
@@ -651,11 +651,11 @@ export class SearchService extends cdktf.TerraformResource {
   }
 
   // local_authentication_enabled - computed: false, optional: true, required: false
-  private _localAuthenticationEnabled?: boolean | cdktf.IResolvable; 
+  private _localAuthenticationEnabled?: boolean | cdktn.IResolvable; 
   public get localAuthenticationEnabled() {
     return this.getBooleanAttribute('local_authentication_enabled');
   }
-  public set localAuthenticationEnabled(value: boolean | cdktf.IResolvable) {
+  public set localAuthenticationEnabled(value: boolean | cdktn.IResolvable) {
     this._localAuthenticationEnabled = value;
   }
   public resetLocalAuthenticationEnabled() {
@@ -730,11 +730,11 @@ export class SearchService extends cdktf.TerraformResource {
   }
 
   // public_network_access_enabled - computed: false, optional: true, required: false
-  private _publicNetworkAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _publicNetworkAccessEnabled?: boolean | cdktn.IResolvable; 
   public get publicNetworkAccessEnabled() {
     return this.getBooleanAttribute('public_network_access_enabled');
   }
-  public set publicNetworkAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set publicNetworkAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._publicNetworkAccessEnabled = value;
   }
   public resetPublicNetworkAccessEnabled() {
@@ -868,22 +868,22 @@ export class SearchService extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allowed_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedIps),
-      authentication_failure_mode: cdktf.stringToTerraform(this._authenticationFailureMode),
-      customer_managed_key_enforcement_enabled: cdktf.booleanToTerraform(this._customerManagedKeyEnforcementEnabled),
-      hosting_mode: cdktf.stringToTerraform(this._hostingMode),
-      id: cdktf.stringToTerraform(this._id),
-      local_authentication_enabled: cdktf.booleanToTerraform(this._localAuthenticationEnabled),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      network_rule_bypass_option: cdktf.stringToTerraform(this._networkRuleBypassOption),
-      partition_count: cdktf.numberToTerraform(this._partitionCount),
-      public_network_access_enabled: cdktf.booleanToTerraform(this._publicNetworkAccessEnabled),
-      replica_count: cdktf.numberToTerraform(this._replicaCount),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      semantic_search_sku: cdktf.stringToTerraform(this._semanticSearchSku),
-      sku: cdktf.stringToTerraform(this._sku),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      allowed_ips: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedIps),
+      authentication_failure_mode: cdktn.stringToTerraform(this._authenticationFailureMode),
+      customer_managed_key_enforcement_enabled: cdktn.booleanToTerraform(this._customerManagedKeyEnforcementEnabled),
+      hosting_mode: cdktn.stringToTerraform(this._hostingMode),
+      id: cdktn.stringToTerraform(this._id),
+      local_authentication_enabled: cdktn.booleanToTerraform(this._localAuthenticationEnabled),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      network_rule_bypass_option: cdktn.stringToTerraform(this._networkRuleBypassOption),
+      partition_count: cdktn.numberToTerraform(this._partitionCount),
+      public_network_access_enabled: cdktn.booleanToTerraform(this._publicNetworkAccessEnabled),
+      replica_count: cdktn.numberToTerraform(this._replicaCount),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      semantic_search_sku: cdktn.stringToTerraform(this._semanticSearchSku),
+      sku: cdktn.stringToTerraform(this._sku),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       identity: searchServiceIdentityToTerraform(this._identity.internalValue),
       timeouts: searchServiceTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -892,97 +892,97 @@ export class SearchService extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allowed_ips: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedIps),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedIps),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       authentication_failure_mode: {
-        value: cdktf.stringToHclTerraform(this._authenticationFailureMode),
+        value: cdktn.stringToHclTerraform(this._authenticationFailureMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       customer_managed_key_enforcement_enabled: {
-        value: cdktf.booleanToHclTerraform(this._customerManagedKeyEnforcementEnabled),
+        value: cdktn.booleanToHclTerraform(this._customerManagedKeyEnforcementEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       hosting_mode: {
-        value: cdktf.stringToHclTerraform(this._hostingMode),
+        value: cdktn.stringToHclTerraform(this._hostingMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       local_authentication_enabled: {
-        value: cdktf.booleanToHclTerraform(this._localAuthenticationEnabled),
+        value: cdktn.booleanToHclTerraform(this._localAuthenticationEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_rule_bypass_option: {
-        value: cdktf.stringToHclTerraform(this._networkRuleBypassOption),
+        value: cdktn.stringToHclTerraform(this._networkRuleBypassOption),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       partition_count: {
-        value: cdktf.numberToHclTerraform(this._partitionCount),
+        value: cdktn.numberToHclTerraform(this._partitionCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       public_network_access_enabled: {
-        value: cdktf.booleanToHclTerraform(this._publicNetworkAccessEnabled),
+        value: cdktn.booleanToHclTerraform(this._publicNetworkAccessEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       replica_count: {
-        value: cdktf.numberToHclTerraform(this._replicaCount),
+        value: cdktn.numberToHclTerraform(this._replicaCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       semantic_search_sku: {
-        value: cdktf.stringToHclTerraform(this._semanticSearchSku),
+        value: cdktn.stringToHclTerraform(this._semanticSearchSku),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sku: {
-        value: cdktf.stringToHclTerraform(this._sku),
+        value: cdktn.stringToHclTerraform(this._sku),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

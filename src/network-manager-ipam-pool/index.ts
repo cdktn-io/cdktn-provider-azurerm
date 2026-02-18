@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkManagerIpamPoolConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkManagerIpamPoolConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_manager_ipam_pool#address_prefixes NetworkManagerIpamPool#address_prefixes}
   */
@@ -77,46 +77,46 @@ export interface NetworkManagerIpamPoolTimeouts {
   readonly update?: string;
 }
 
-export function networkManagerIpamPoolTimeoutsToTerraform(struct?: NetworkManagerIpamPoolTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkManagerIpamPoolTimeoutsToTerraform(struct?: NetworkManagerIpamPoolTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function networkManagerIpamPoolTimeoutsToHclTerraform(struct?: NetworkManagerIpamPoolTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkManagerIpamPoolTimeoutsToHclTerraform(struct?: NetworkManagerIpamPoolTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -127,19 +127,19 @@ export function networkManagerIpamPoolTimeoutsToHclTerraform(struct?: NetworkMan
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkManagerIpamPoolTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetworkManagerIpamPoolTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetworkManagerIpamPoolTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkManagerIpamPoolTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -164,7 +164,7 @@ export class NetworkManagerIpamPoolTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkManagerIpamPoolTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkManagerIpamPoolTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -173,7 +173,7 @@ export class NetworkManagerIpamPoolTimeoutsOutputReference extends cdktf.Complex
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -255,7 +255,7 @@ export class NetworkManagerIpamPoolTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_manager_ipam_pool azurerm_network_manager_ipam_pool}
 */
-export class NetworkManagerIpamPool extends cdktf.TerraformResource {
+export class NetworkManagerIpamPool extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -266,14 +266,14 @@ export class NetworkManagerIpamPool extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkManagerIpamPool resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkManagerIpamPool resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkManagerIpamPool to import
   * @param importFromId The id of the existing NetworkManagerIpamPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_manager_ipam_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkManagerIpamPool to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_network_manager_ipam_pool", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_network_manager_ipam_pool", importId: importFromId, provider });
       }
 
   // ===========
@@ -473,15 +473,15 @@ export class NetworkManagerIpamPool extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      address_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._addressPrefixes),
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      network_manager_id: cdktf.stringToTerraform(this._networkManagerId),
-      parent_pool_name: cdktf.stringToTerraform(this._parentPoolName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      address_prefixes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._addressPrefixes),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      network_manager_id: cdktn.stringToTerraform(this._networkManagerId),
+      parent_pool_name: cdktn.stringToTerraform(this._parentPoolName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       timeouts: networkManagerIpamPoolTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -489,55 +489,55 @@ export class NetworkManagerIpamPool extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       address_prefixes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._addressPrefixes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._addressPrefixes),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_manager_id: {
-        value: cdktf.stringToHclTerraform(this._networkManagerId),
+        value: cdktn.stringToHclTerraform(this._networkManagerId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parent_pool_name: {
-        value: cdktf.stringToHclTerraform(this._parentPoolName),
+        value: cdktn.stringToHclTerraform(this._parentPoolName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

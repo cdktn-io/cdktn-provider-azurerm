@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface StorageContainerImmutabilityPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface StorageContainerImmutabilityPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_container_immutability_policy#id StorageContainerImmutabilityPolicy#id}
   *
@@ -26,15 +26,15 @@ export interface StorageContainerImmutabilityPolicyConfig extends cdktf.Terrafor
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_container_immutability_policy#locked StorageContainerImmutabilityPolicy#locked}
   */
-  readonly locked?: boolean | cdktf.IResolvable;
+  readonly locked?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_container_immutability_policy#protected_append_writes_all_enabled StorageContainerImmutabilityPolicy#protected_append_writes_all_enabled}
   */
-  readonly protectedAppendWritesAllEnabled?: boolean | cdktf.IResolvable;
+  readonly protectedAppendWritesAllEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_container_immutability_policy#protected_append_writes_enabled StorageContainerImmutabilityPolicy#protected_append_writes_enabled}
   */
-  readonly protectedAppendWritesEnabled?: boolean | cdktf.IResolvable;
+  readonly protectedAppendWritesEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_container_immutability_policy#storage_container_resource_manager_id StorageContainerImmutabilityPolicy#storage_container_resource_manager_id}
   */
@@ -65,46 +65,46 @@ export interface StorageContainerImmutabilityPolicyTimeouts {
   readonly update?: string;
 }
 
-export function storageContainerImmutabilityPolicyTimeoutsToTerraform(struct?: StorageContainerImmutabilityPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storageContainerImmutabilityPolicyTimeoutsToTerraform(struct?: StorageContainerImmutabilityPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function storageContainerImmutabilityPolicyTimeoutsToHclTerraform(struct?: StorageContainerImmutabilityPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storageContainerImmutabilityPolicyTimeoutsToHclTerraform(struct?: StorageContainerImmutabilityPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -115,19 +115,19 @@ export function storageContainerImmutabilityPolicyTimeoutsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StorageContainerImmutabilityPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class StorageContainerImmutabilityPolicyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): StorageContainerImmutabilityPolicyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): StorageContainerImmutabilityPolicyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -152,7 +152,7 @@ export class StorageContainerImmutabilityPolicyTimeoutsOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StorageContainerImmutabilityPolicyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: StorageContainerImmutabilityPolicyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -161,7 +161,7 @@ export class StorageContainerImmutabilityPolicyTimeoutsOutputReference extends c
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -243,7 +243,7 @@ export class StorageContainerImmutabilityPolicyTimeoutsOutputReference extends c
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_container_immutability_policy azurerm_storage_container_immutability_policy}
 */
-export class StorageContainerImmutabilityPolicy extends cdktf.TerraformResource {
+export class StorageContainerImmutabilityPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -254,14 +254,14 @@ export class StorageContainerImmutabilityPolicy extends cdktf.TerraformResource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a StorageContainerImmutabilityPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a StorageContainerImmutabilityPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StorageContainerImmutabilityPolicy to import
   * @param importFromId The id of the existing StorageContainerImmutabilityPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_container_immutability_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StorageContainerImmutabilityPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_storage_container_immutability_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_storage_container_immutability_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -334,11 +334,11 @@ export class StorageContainerImmutabilityPolicy extends cdktf.TerraformResource 
   }
 
   // locked - computed: false, optional: true, required: false
-  private _locked?: boolean | cdktf.IResolvable; 
+  private _locked?: boolean | cdktn.IResolvable; 
   public get locked() {
     return this.getBooleanAttribute('locked');
   }
-  public set locked(value: boolean | cdktf.IResolvable) {
+  public set locked(value: boolean | cdktn.IResolvable) {
     this._locked = value;
   }
   public resetLocked() {
@@ -350,11 +350,11 @@ export class StorageContainerImmutabilityPolicy extends cdktf.TerraformResource 
   }
 
   // protected_append_writes_all_enabled - computed: false, optional: true, required: false
-  private _protectedAppendWritesAllEnabled?: boolean | cdktf.IResolvable; 
+  private _protectedAppendWritesAllEnabled?: boolean | cdktn.IResolvable; 
   public get protectedAppendWritesAllEnabled() {
     return this.getBooleanAttribute('protected_append_writes_all_enabled');
   }
-  public set protectedAppendWritesAllEnabled(value: boolean | cdktf.IResolvable) {
+  public set protectedAppendWritesAllEnabled(value: boolean | cdktn.IResolvable) {
     this._protectedAppendWritesAllEnabled = value;
   }
   public resetProtectedAppendWritesAllEnabled() {
@@ -366,11 +366,11 @@ export class StorageContainerImmutabilityPolicy extends cdktf.TerraformResource 
   }
 
   // protected_append_writes_enabled - computed: false, optional: true, required: false
-  private _protectedAppendWritesEnabled?: boolean | cdktf.IResolvable; 
+  private _protectedAppendWritesEnabled?: boolean | cdktn.IResolvable; 
   public get protectedAppendWritesEnabled() {
     return this.getBooleanAttribute('protected_append_writes_enabled');
   }
-  public set protectedAppendWritesEnabled(value: boolean | cdktf.IResolvable) {
+  public set protectedAppendWritesEnabled(value: boolean | cdktn.IResolvable) {
     this._protectedAppendWritesEnabled = value;
   }
   public resetProtectedAppendWritesEnabled() {
@@ -416,12 +416,12 @@ export class StorageContainerImmutabilityPolicy extends cdktf.TerraformResource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      immutability_period_in_days: cdktf.numberToTerraform(this._immutabilityPeriodInDays),
-      locked: cdktf.booleanToTerraform(this._locked),
-      protected_append_writes_all_enabled: cdktf.booleanToTerraform(this._protectedAppendWritesAllEnabled),
-      protected_append_writes_enabled: cdktf.booleanToTerraform(this._protectedAppendWritesEnabled),
-      storage_container_resource_manager_id: cdktf.stringToTerraform(this._storageContainerResourceManagerId),
+      id: cdktn.stringToTerraform(this._id),
+      immutability_period_in_days: cdktn.numberToTerraform(this._immutabilityPeriodInDays),
+      locked: cdktn.booleanToTerraform(this._locked),
+      protected_append_writes_all_enabled: cdktn.booleanToTerraform(this._protectedAppendWritesAllEnabled),
+      protected_append_writes_enabled: cdktn.booleanToTerraform(this._protectedAppendWritesEnabled),
+      storage_container_resource_manager_id: cdktn.stringToTerraform(this._storageContainerResourceManagerId),
       timeouts: storageContainerImmutabilityPolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -429,37 +429,37 @@ export class StorageContainerImmutabilityPolicy extends cdktf.TerraformResource 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       immutability_period_in_days: {
-        value: cdktf.numberToHclTerraform(this._immutabilityPeriodInDays),
+        value: cdktn.numberToHclTerraform(this._immutabilityPeriodInDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       locked: {
-        value: cdktf.booleanToHclTerraform(this._locked),
+        value: cdktn.booleanToHclTerraform(this._locked),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       protected_append_writes_all_enabled: {
-        value: cdktf.booleanToHclTerraform(this._protectedAppendWritesAllEnabled),
+        value: cdktn.booleanToHclTerraform(this._protectedAppendWritesAllEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       protected_append_writes_enabled: {
-        value: cdktf.booleanToHclTerraform(this._protectedAppendWritesEnabled),
+        value: cdktn.booleanToHclTerraform(this._protectedAppendWritesEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       storage_container_resource_manager_id: {
-        value: cdktf.stringToHclTerraform(this._storageContainerResourceManagerId),
+        value: cdktn.stringToHclTerraform(this._storageContainerResourceManagerId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

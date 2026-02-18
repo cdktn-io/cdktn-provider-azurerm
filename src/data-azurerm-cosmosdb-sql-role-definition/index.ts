@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermCosmosdbSqlRoleDefinitionConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermCosmosdbSqlRoleDefinitionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/cosmosdb_sql_role_definition#account_name DataAzurermCosmosdbSqlRoleDefinition#account_name}
   */
@@ -42,8 +42,8 @@ export interface DataAzurermCosmosdbSqlRoleDefinitionPermissions {
 }
 
 export function dataAzurermCosmosdbSqlRoleDefinitionPermissionsToTerraform(struct?: DataAzurermCosmosdbSqlRoleDefinitionPermissions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -52,8 +52,8 @@ export function dataAzurermCosmosdbSqlRoleDefinitionPermissionsToTerraform(struc
 
 
 export function dataAzurermCosmosdbSqlRoleDefinitionPermissionsToHclTerraform(struct?: DataAzurermCosmosdbSqlRoleDefinitionPermissions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -61,7 +61,7 @@ export function dataAzurermCosmosdbSqlRoleDefinitionPermissionsToHclTerraform(st
   return attrs;
 }
 
-export class DataAzurermCosmosdbSqlRoleDefinitionPermissionsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermCosmosdbSqlRoleDefinitionPermissionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -70,7 +70,7 @@ export class DataAzurermCosmosdbSqlRoleDefinitionPermissionsOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -91,18 +91,18 @@ export class DataAzurermCosmosdbSqlRoleDefinitionPermissionsOutputReference exte
 
   // data_actions - computed: true, optional: false, required: false
   public get dataActions() {
-    return cdktf.Fn.tolist(this.getListAttribute('data_actions'));
+    return cdktn.Fn.tolist(this.getListAttribute('data_actions'));
   }
 }
 
-export class DataAzurermCosmosdbSqlRoleDefinitionPermissionsList extends cdktf.ComplexList {
+export class DataAzurermCosmosdbSqlRoleDefinitionPermissionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -120,25 +120,25 @@ export interface DataAzurermCosmosdbSqlRoleDefinitionTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermCosmosdbSqlRoleDefinitionTimeoutsToTerraform(struct?: DataAzurermCosmosdbSqlRoleDefinitionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermCosmosdbSqlRoleDefinitionTimeoutsToTerraform(struct?: DataAzurermCosmosdbSqlRoleDefinitionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermCosmosdbSqlRoleDefinitionTimeoutsToHclTerraform(struct?: DataAzurermCosmosdbSqlRoleDefinitionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermCosmosdbSqlRoleDefinitionTimeoutsToHclTerraform(struct?: DataAzurermCosmosdbSqlRoleDefinitionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -149,19 +149,19 @@ export function dataAzurermCosmosdbSqlRoleDefinitionTimeoutsToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermCosmosdbSqlRoleDefinitionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermCosmosdbSqlRoleDefinitionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermCosmosdbSqlRoleDefinitionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermCosmosdbSqlRoleDefinitionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -174,13 +174,13 @@ export class DataAzurermCosmosdbSqlRoleDefinitionTimeoutsOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermCosmosdbSqlRoleDefinitionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermCosmosdbSqlRoleDefinitionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -211,7 +211,7 @@ export class DataAzurermCosmosdbSqlRoleDefinitionTimeoutsOutputReference extends
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/cosmosdb_sql_role_definition azurerm_cosmosdb_sql_role_definition}
 */
-export class DataAzurermCosmosdbSqlRoleDefinition extends cdktf.TerraformDataSource {
+export class DataAzurermCosmosdbSqlRoleDefinition extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -222,14 +222,14 @@ export class DataAzurermCosmosdbSqlRoleDefinition extends cdktf.TerraformDataSou
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermCosmosdbSqlRoleDefinition resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermCosmosdbSqlRoleDefinition resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermCosmosdbSqlRoleDefinition to import
   * @param importFromId The id of the existing DataAzurermCosmosdbSqlRoleDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/cosmosdb_sql_role_definition#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermCosmosdbSqlRoleDefinition to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_cosmosdb_sql_role_definition", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_cosmosdb_sql_role_definition", importId: importFromId, provider });
       }
 
   // ===========
@@ -285,7 +285,7 @@ export class DataAzurermCosmosdbSqlRoleDefinition extends cdktf.TerraformDataSou
 
   // assignable_scopes - computed: true, optional: false, required: false
   public get assignableScopes() {
-    return cdktf.Fn.tolist(this.getListAttribute('assignable_scopes'));
+    return cdktn.Fn.tolist(this.getListAttribute('assignable_scopes'));
   }
 
   // id - computed: true, optional: true, required: false
@@ -368,10 +368,10 @@ export class DataAzurermCosmosdbSqlRoleDefinition extends cdktf.TerraformDataSou
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_name: cdktf.stringToTerraform(this._accountName),
-      id: cdktf.stringToTerraform(this._id),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      role_definition_id: cdktf.stringToTerraform(this._roleDefinitionId),
+      account_name: cdktn.stringToTerraform(this._accountName),
+      id: cdktn.stringToTerraform(this._id),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      role_definition_id: cdktn.stringToTerraform(this._roleDefinitionId),
       timeouts: dataAzurermCosmosdbSqlRoleDefinitionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -379,25 +379,25 @@ export class DataAzurermCosmosdbSqlRoleDefinition extends cdktf.TerraformDataSou
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_name: {
-        value: cdktf.stringToHclTerraform(this._accountName),
+        value: cdktn.stringToHclTerraform(this._accountName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_definition_id: {
-        value: cdktf.stringToHclTerraform(this._roleDefinitionId),
+        value: cdktn.stringToHclTerraform(this._roleDefinitionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

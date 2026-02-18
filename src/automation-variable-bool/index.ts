@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AutomationVariableBoolConfig extends cdktf.TerraformMetaArguments {
+export interface AutomationVariableBoolConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_variable_bool#automation_account_name AutomationVariableBool#automation_account_name}
   */
@@ -23,7 +23,7 @@ export interface AutomationVariableBoolConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_variable_bool#encrypted AutomationVariableBool#encrypted}
   */
-  readonly encrypted?: boolean | cdktf.IResolvable;
+  readonly encrypted?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_variable_bool#id AutomationVariableBool#id}
   *
@@ -42,7 +42,7 @@ export interface AutomationVariableBoolConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_variable_bool#value AutomationVariableBool#value}
   */
-  readonly value?: boolean | cdktf.IResolvable;
+  readonly value?: boolean | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -69,46 +69,46 @@ export interface AutomationVariableBoolTimeouts {
   readonly update?: string;
 }
 
-export function automationVariableBoolTimeoutsToTerraform(struct?: AutomationVariableBoolTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function automationVariableBoolTimeoutsToTerraform(struct?: AutomationVariableBoolTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function automationVariableBoolTimeoutsToHclTerraform(struct?: AutomationVariableBoolTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function automationVariableBoolTimeoutsToHclTerraform(struct?: AutomationVariableBoolTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -119,19 +119,19 @@ export function automationVariableBoolTimeoutsToHclTerraform(struct?: Automation
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AutomationVariableBoolTimeoutsOutputReference extends cdktf.ComplexObject {
+export class AutomationVariableBoolTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AutomationVariableBoolTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AutomationVariableBoolTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -156,7 +156,7 @@ export class AutomationVariableBoolTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AutomationVariableBoolTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AutomationVariableBoolTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -165,7 +165,7 @@ export class AutomationVariableBoolTimeoutsOutputReference extends cdktf.Complex
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -247,7 +247,7 @@ export class AutomationVariableBoolTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_variable_bool azurerm_automation_variable_bool}
 */
-export class AutomationVariableBool extends cdktf.TerraformResource {
+export class AutomationVariableBool extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -258,14 +258,14 @@ export class AutomationVariableBool extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AutomationVariableBool resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AutomationVariableBool resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AutomationVariableBool to import
   * @param importFromId The id of the existing AutomationVariableBool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_variable_bool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AutomationVariableBool to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_automation_variable_bool", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_automation_variable_bool", importId: importFromId, provider });
       }
 
   // ===========
@@ -339,11 +339,11 @@ export class AutomationVariableBool extends cdktf.TerraformResource {
   }
 
   // encrypted - computed: false, optional: true, required: false
-  private _encrypted?: boolean | cdktf.IResolvable; 
+  private _encrypted?: boolean | cdktn.IResolvable; 
   public get encrypted() {
     return this.getBooleanAttribute('encrypted');
   }
-  public set encrypted(value: boolean | cdktf.IResolvable) {
+  public set encrypted(value: boolean | cdktn.IResolvable) {
     this._encrypted = value;
   }
   public resetEncrypted() {
@@ -397,11 +397,11 @@ export class AutomationVariableBool extends cdktf.TerraformResource {
   }
 
   // value - computed: false, optional: true, required: false
-  private _value?: boolean | cdktf.IResolvable; 
+  private _value?: boolean | cdktn.IResolvable; 
   public get value() {
     return this.getBooleanAttribute('value');
   }
-  public set value(value: boolean | cdktf.IResolvable) {
+  public set value(value: boolean | cdktn.IResolvable) {
     this._value = value;
   }
   public resetValue() {
@@ -434,13 +434,13 @@ export class AutomationVariableBool extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      automation_account_name: cdktf.stringToTerraform(this._automationAccountName),
-      description: cdktf.stringToTerraform(this._description),
-      encrypted: cdktf.booleanToTerraform(this._encrypted),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      value: cdktf.booleanToTerraform(this._value),
+      automation_account_name: cdktn.stringToTerraform(this._automationAccountName),
+      description: cdktn.stringToTerraform(this._description),
+      encrypted: cdktn.booleanToTerraform(this._encrypted),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      value: cdktn.booleanToTerraform(this._value),
       timeouts: automationVariableBoolTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -448,43 +448,43 @@ export class AutomationVariableBool extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       automation_account_name: {
-        value: cdktf.stringToHclTerraform(this._automationAccountName),
+        value: cdktn.stringToHclTerraform(this._automationAccountName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       encrypted: {
-        value: cdktf.booleanToHclTerraform(this._encrypted),
+        value: cdktn.booleanToHclTerraform(this._encrypted),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       value: {
-        value: cdktf.booleanToHclTerraform(this._value),
+        value: cdktn.booleanToHclTerraform(this._value),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

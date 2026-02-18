@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface StorageObjectReplicationConfig extends cdktf.TerraformMetaArguments {
+export interface StorageObjectReplicationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_object_replication#destination_storage_account_id StorageObjectReplication#destination_storage_account_id}
   */
@@ -32,7 +32,7 @@ export interface StorageObjectReplicationConfig extends cdktf.TerraformMetaArgum
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_object_replication#rules StorageObjectReplication#rules}
   */
-  readonly rules: StorageObjectReplicationRules[] | cdktf.IResolvable;
+  readonly rules: StorageObjectReplicationRules[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -59,46 +59,46 @@ export interface StorageObjectReplicationRules {
   readonly sourceContainerName: string;
 }
 
-export function storageObjectReplicationRulesToTerraform(struct?: StorageObjectReplicationRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storageObjectReplicationRulesToTerraform(struct?: StorageObjectReplicationRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    copy_blobs_created_after: cdktf.stringToTerraform(struct!.copyBlobsCreatedAfter),
-    destination_container_name: cdktf.stringToTerraform(struct!.destinationContainerName),
-    filter_out_blobs_with_prefix: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.filterOutBlobsWithPrefix),
-    source_container_name: cdktf.stringToTerraform(struct!.sourceContainerName),
+    copy_blobs_created_after: cdktn.stringToTerraform(struct!.copyBlobsCreatedAfter),
+    destination_container_name: cdktn.stringToTerraform(struct!.destinationContainerName),
+    filter_out_blobs_with_prefix: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.filterOutBlobsWithPrefix),
+    source_container_name: cdktn.stringToTerraform(struct!.sourceContainerName),
   }
 }
 
 
-export function storageObjectReplicationRulesToHclTerraform(struct?: StorageObjectReplicationRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storageObjectReplicationRulesToHclTerraform(struct?: StorageObjectReplicationRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     copy_blobs_created_after: {
-      value: cdktf.stringToHclTerraform(struct!.copyBlobsCreatedAfter),
+      value: cdktn.stringToHclTerraform(struct!.copyBlobsCreatedAfter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     destination_container_name: {
-      value: cdktf.stringToHclTerraform(struct!.destinationContainerName),
+      value: cdktn.stringToHclTerraform(struct!.destinationContainerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     filter_out_blobs_with_prefix: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.filterOutBlobsWithPrefix),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.filterOutBlobsWithPrefix),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     source_container_name: {
-      value: cdktf.stringToHclTerraform(struct!.sourceContainerName),
+      value: cdktn.stringToHclTerraform(struct!.sourceContainerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -109,9 +109,9 @@ export function storageObjectReplicationRulesToHclTerraform(struct?: StorageObje
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StorageObjectReplicationRulesOutputReference extends cdktf.ComplexObject {
+export class StorageObjectReplicationRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -119,11 +119,11 @@ export class StorageObjectReplicationRulesOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): StorageObjectReplicationRules | cdktf.IResolvable | undefined {
+  public get internalValue(): StorageObjectReplicationRules | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -148,7 +148,7 @@ export class StorageObjectReplicationRulesOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StorageObjectReplicationRules | cdktf.IResolvable | undefined) {
+  public set internalValue(value: StorageObjectReplicationRules | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -157,7 +157,7 @@ export class StorageObjectReplicationRulesOutputReference extends cdktf.ComplexO
       this._filterOutBlobsWithPrefix = undefined;
       this._sourceContainerName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -203,7 +203,7 @@ export class StorageObjectReplicationRulesOutputReference extends cdktf.ComplexO
   // filter_out_blobs_with_prefix - computed: false, optional: true, required: false
   private _filterOutBlobsWithPrefix?: string[]; 
   public get filterOutBlobsWithPrefix() {
-    return cdktf.Fn.tolist(this.getListAttribute('filter_out_blobs_with_prefix'));
+    return cdktn.Fn.tolist(this.getListAttribute('filter_out_blobs_with_prefix'));
   }
   public set filterOutBlobsWithPrefix(value: string[]) {
     this._filterOutBlobsWithPrefix = value;
@@ -235,15 +235,15 @@ export class StorageObjectReplicationRulesOutputReference extends cdktf.ComplexO
   }
 }
 
-export class StorageObjectReplicationRulesList extends cdktf.ComplexList {
-  public internalValue? : StorageObjectReplicationRules[] | cdktf.IResolvable
+export class StorageObjectReplicationRulesList extends cdktn.ComplexList {
+  public internalValue? : StorageObjectReplicationRules[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -273,46 +273,46 @@ export interface StorageObjectReplicationTimeouts {
   readonly update?: string;
 }
 
-export function storageObjectReplicationTimeoutsToTerraform(struct?: StorageObjectReplicationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storageObjectReplicationTimeoutsToTerraform(struct?: StorageObjectReplicationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function storageObjectReplicationTimeoutsToHclTerraform(struct?: StorageObjectReplicationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storageObjectReplicationTimeoutsToHclTerraform(struct?: StorageObjectReplicationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -323,19 +323,19 @@ export function storageObjectReplicationTimeoutsToHclTerraform(struct?: StorageO
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StorageObjectReplicationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class StorageObjectReplicationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): StorageObjectReplicationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): StorageObjectReplicationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -360,7 +360,7 @@ export class StorageObjectReplicationTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StorageObjectReplicationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: StorageObjectReplicationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -369,7 +369,7 @@ export class StorageObjectReplicationTimeoutsOutputReference extends cdktf.Compl
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -451,7 +451,7 @@ export class StorageObjectReplicationTimeoutsOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_object_replication azurerm_storage_object_replication}
 */
-export class StorageObjectReplication extends cdktf.TerraformResource {
+export class StorageObjectReplication extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -462,14 +462,14 @@ export class StorageObjectReplication extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a StorageObjectReplication resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a StorageObjectReplication resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StorageObjectReplication to import
   * @param importFromId The id of the existing StorageObjectReplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_object_replication#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StorageObjectReplication to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_storage_object_replication", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_storage_object_replication", importId: importFromId, provider });
       }
 
   // ===========
@@ -567,7 +567,7 @@ export class StorageObjectReplication extends cdktf.TerraformResource {
   public get rules() {
     return this._rules;
   }
-  public putRules(value: StorageObjectReplicationRules[] | cdktf.IResolvable) {
+  public putRules(value: StorageObjectReplicationRules[] | cdktn.IResolvable) {
     this._rules.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -597,10 +597,10 @@ export class StorageObjectReplication extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      destination_storage_account_id: cdktf.stringToTerraform(this._destinationStorageAccountId),
-      id: cdktf.stringToTerraform(this._id),
-      source_storage_account_id: cdktf.stringToTerraform(this._sourceStorageAccountId),
-      rules: cdktf.listMapper(storageObjectReplicationRulesToTerraform, true)(this._rules.internalValue),
+      destination_storage_account_id: cdktn.stringToTerraform(this._destinationStorageAccountId),
+      id: cdktn.stringToTerraform(this._id),
+      source_storage_account_id: cdktn.stringToTerraform(this._sourceStorageAccountId),
+      rules: cdktn.listMapper(storageObjectReplicationRulesToTerraform, true)(this._rules.internalValue),
       timeouts: storageObjectReplicationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -608,25 +608,25 @@ export class StorageObjectReplication extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       destination_storage_account_id: {
-        value: cdktf.stringToHclTerraform(this._destinationStorageAccountId),
+        value: cdktn.stringToHclTerraform(this._destinationStorageAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_storage_account_id: {
-        value: cdktf.stringToHclTerraform(this._sourceStorageAccountId),
+        value: cdktn.stringToHclTerraform(this._sourceStorageAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rules: {
-        value: cdktf.listMapperHcl(storageObjectReplicationRulesToHclTerraform, true)(this._rules.internalValue),
+        value: cdktn.listMapperHcl(storageObjectReplicationRulesToHclTerraform, true)(this._rules.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "StorageObjectReplicationRulesList",

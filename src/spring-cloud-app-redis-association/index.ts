@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SpringCloudAppRedisAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface SpringCloudAppRedisAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_app_redis_association#id SpringCloudAppRedisAssociation#id}
   *
@@ -38,7 +38,7 @@ export interface SpringCloudAppRedisAssociationConfig extends cdktf.TerraformMet
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_app_redis_association#ssl_enabled SpringCloudAppRedisAssociation#ssl_enabled}
   */
-  readonly sslEnabled?: boolean | cdktf.IResolvable;
+  readonly sslEnabled?: boolean | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -65,46 +65,46 @@ export interface SpringCloudAppRedisAssociationTimeouts {
   readonly update?: string;
 }
 
-export function springCloudAppRedisAssociationTimeoutsToTerraform(struct?: SpringCloudAppRedisAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function springCloudAppRedisAssociationTimeoutsToTerraform(struct?: SpringCloudAppRedisAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function springCloudAppRedisAssociationTimeoutsToHclTerraform(struct?: SpringCloudAppRedisAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function springCloudAppRedisAssociationTimeoutsToHclTerraform(struct?: SpringCloudAppRedisAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -115,19 +115,19 @@ export function springCloudAppRedisAssociationTimeoutsToHclTerraform(struct?: Sp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SpringCloudAppRedisAssociationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SpringCloudAppRedisAssociationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SpringCloudAppRedisAssociationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SpringCloudAppRedisAssociationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -152,7 +152,7 @@ export class SpringCloudAppRedisAssociationTimeoutsOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SpringCloudAppRedisAssociationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SpringCloudAppRedisAssociationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -161,7 +161,7 @@ export class SpringCloudAppRedisAssociationTimeoutsOutputReference extends cdktf
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -243,7 +243,7 @@ export class SpringCloudAppRedisAssociationTimeoutsOutputReference extends cdktf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_app_redis_association azurerm_spring_cloud_app_redis_association}
 */
-export class SpringCloudAppRedisAssociation extends cdktf.TerraformResource {
+export class SpringCloudAppRedisAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -254,14 +254,14 @@ export class SpringCloudAppRedisAssociation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SpringCloudAppRedisAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SpringCloudAppRedisAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SpringCloudAppRedisAssociation to import
   * @param importFromId The id of the existing SpringCloudAppRedisAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_app_redis_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SpringCloudAppRedisAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_spring_cloud_app_redis_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_spring_cloud_app_redis_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -373,11 +373,11 @@ export class SpringCloudAppRedisAssociation extends cdktf.TerraformResource {
   }
 
   // ssl_enabled - computed: false, optional: true, required: false
-  private _sslEnabled?: boolean | cdktf.IResolvable; 
+  private _sslEnabled?: boolean | cdktn.IResolvable; 
   public get sslEnabled() {
     return this.getBooleanAttribute('ssl_enabled');
   }
-  public set sslEnabled(value: boolean | cdktf.IResolvable) {
+  public set sslEnabled(value: boolean | cdktn.IResolvable) {
     this._sslEnabled = value;
   }
   public resetSslEnabled() {
@@ -410,12 +410,12 @@ export class SpringCloudAppRedisAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      redis_access_key: cdktf.stringToTerraform(this._redisAccessKey),
-      redis_cache_id: cdktf.stringToTerraform(this._redisCacheId),
-      spring_cloud_app_id: cdktf.stringToTerraform(this._springCloudAppId),
-      ssl_enabled: cdktf.booleanToTerraform(this._sslEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      redis_access_key: cdktn.stringToTerraform(this._redisAccessKey),
+      redis_cache_id: cdktn.stringToTerraform(this._redisCacheId),
+      spring_cloud_app_id: cdktn.stringToTerraform(this._springCloudAppId),
+      ssl_enabled: cdktn.booleanToTerraform(this._sslEnabled),
       timeouts: springCloudAppRedisAssociationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -423,37 +423,37 @@ export class SpringCloudAppRedisAssociation extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       redis_access_key: {
-        value: cdktf.stringToHclTerraform(this._redisAccessKey),
+        value: cdktn.stringToHclTerraform(this._redisAccessKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       redis_cache_id: {
-        value: cdktf.stringToHclTerraform(this._redisCacheId),
+        value: cdktn.stringToHclTerraform(this._redisCacheId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       spring_cloud_app_id: {
-        value: cdktf.stringToHclTerraform(this._springCloudAppId),
+        value: cdktn.stringToHclTerraform(this._springCloudAppId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ssl_enabled: {
-        value: cdktf.booleanToHclTerraform(this._sslEnabled),
+        value: cdktn.booleanToHclTerraform(this._sslEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

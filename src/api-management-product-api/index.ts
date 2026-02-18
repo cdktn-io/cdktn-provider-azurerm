@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApiManagementProductApiConfig extends cdktf.TerraformMetaArguments {
+export interface ApiManagementProductApiConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_product_api#api_management_name ApiManagementProductApi#api_management_name}
   */
@@ -57,39 +57,39 @@ export interface ApiManagementProductApiTimeouts {
   readonly read?: string;
 }
 
-export function apiManagementProductApiTimeoutsToTerraform(struct?: ApiManagementProductApiTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementProductApiTimeoutsToTerraform(struct?: ApiManagementProductApiTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function apiManagementProductApiTimeoutsToHclTerraform(struct?: ApiManagementProductApiTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementProductApiTimeoutsToHclTerraform(struct?: ApiManagementProductApiTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -100,19 +100,19 @@ export function apiManagementProductApiTimeoutsToHclTerraform(struct?: ApiManage
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementProductApiTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApiManagementProductApiTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApiManagementProductApiTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApiManagementProductApiTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -133,7 +133,7 @@ export class ApiManagementProductApiTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApiManagementProductApiTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApiManagementProductApiTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -141,7 +141,7 @@ export class ApiManagementProductApiTimeoutsOutputReference extends cdktf.Comple
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -206,7 +206,7 @@ export class ApiManagementProductApiTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_product_api azurerm_api_management_product_api}
 */
-export class ApiManagementProductApi extends cdktf.TerraformResource {
+export class ApiManagementProductApi extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -217,14 +217,14 @@ export class ApiManagementProductApi extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApiManagementProductApi resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApiManagementProductApi resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiManagementProductApi to import
   * @param importFromId The id of the existing ApiManagementProductApi that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_product_api#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiManagementProductApi to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_api_management_product_api", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_api_management_product_api", importId: importFromId, provider });
       }
 
   // ===========
@@ -356,11 +356,11 @@ export class ApiManagementProductApi extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_management_name: cdktf.stringToTerraform(this._apiManagementName),
-      api_name: cdktf.stringToTerraform(this._apiName),
-      id: cdktf.stringToTerraform(this._id),
-      product_id: cdktf.stringToTerraform(this._productId),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
+      api_management_name: cdktn.stringToTerraform(this._apiManagementName),
+      api_name: cdktn.stringToTerraform(this._apiName),
+      id: cdktn.stringToTerraform(this._id),
+      product_id: cdktn.stringToTerraform(this._productId),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
       timeouts: apiManagementProductApiTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -368,31 +368,31 @@ export class ApiManagementProductApi extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_management_name: {
-        value: cdktf.stringToHclTerraform(this._apiManagementName),
+        value: cdktn.stringToHclTerraform(this._apiManagementName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       api_name: {
-        value: cdktf.stringToHclTerraform(this._apiName),
+        value: cdktn.stringToHclTerraform(this._apiName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       product_id: {
-        value: cdktf.stringToHclTerraform(this._productId),
+        value: cdktn.stringToHclTerraform(this._productId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

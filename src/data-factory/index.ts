@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataFactoryConfig extends cdktf.TerraformMetaArguments {
+export interface DataFactoryConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory#customer_managed_key_id DataFactory#customer_managed_key_id}
   */
@@ -34,7 +34,7 @@ export interface DataFactoryConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory#managed_virtual_network_enabled DataFactory#managed_virtual_network_enabled}
   */
-  readonly managedVirtualNetworkEnabled?: boolean | cdktf.IResolvable;
+  readonly managedVirtualNetworkEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory#name DataFactory#name}
   */
@@ -42,7 +42,7 @@ export interface DataFactoryConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory#public_network_enabled DataFactory#public_network_enabled}
   */
-  readonly publicNetworkEnabled?: boolean | cdktf.IResolvable;
+  readonly publicNetworkEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory#purview_id DataFactory#purview_id}
   */
@@ -66,7 +66,7 @@ export interface DataFactoryConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory#global_parameter DataFactory#global_parameter}
   */
-  readonly globalParameter?: DataFactoryGlobalParameter[] | cdktf.IResolvable;
+  readonly globalParameter?: DataFactoryGlobalParameter[] | cdktn.IResolvable;
   /**
   * identity block
   *
@@ -102,7 +102,7 @@ export interface DataFactoryGithubConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory#publishing_enabled DataFactory#publishing_enabled}
   */
-  readonly publishingEnabled?: boolean | cdktf.IResolvable;
+  readonly publishingEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory#repository_name DataFactory#repository_name}
   */
@@ -114,59 +114,59 @@ export interface DataFactoryGithubConfiguration {
 }
 
 export function dataFactoryGithubConfigurationToTerraform(struct?: DataFactoryGithubConfigurationOutputReference | DataFactoryGithubConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    account_name: cdktf.stringToTerraform(struct!.accountName),
-    branch_name: cdktf.stringToTerraform(struct!.branchName),
-    git_url: cdktf.stringToTerraform(struct!.gitUrl),
-    publishing_enabled: cdktf.booleanToTerraform(struct!.publishingEnabled),
-    repository_name: cdktf.stringToTerraform(struct!.repositoryName),
-    root_folder: cdktf.stringToTerraform(struct!.rootFolder),
+    account_name: cdktn.stringToTerraform(struct!.accountName),
+    branch_name: cdktn.stringToTerraform(struct!.branchName),
+    git_url: cdktn.stringToTerraform(struct!.gitUrl),
+    publishing_enabled: cdktn.booleanToTerraform(struct!.publishingEnabled),
+    repository_name: cdktn.stringToTerraform(struct!.repositoryName),
+    root_folder: cdktn.stringToTerraform(struct!.rootFolder),
   }
 }
 
 
 export function dataFactoryGithubConfigurationToHclTerraform(struct?: DataFactoryGithubConfigurationOutputReference | DataFactoryGithubConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     account_name: {
-      value: cdktf.stringToHclTerraform(struct!.accountName),
+      value: cdktn.stringToHclTerraform(struct!.accountName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     branch_name: {
-      value: cdktf.stringToHclTerraform(struct!.branchName),
+      value: cdktn.stringToHclTerraform(struct!.branchName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     git_url: {
-      value: cdktf.stringToHclTerraform(struct!.gitUrl),
+      value: cdktn.stringToHclTerraform(struct!.gitUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     publishing_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.publishingEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.publishingEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     repository_name: {
-      value: cdktf.stringToHclTerraform(struct!.repositoryName),
+      value: cdktn.stringToHclTerraform(struct!.repositoryName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     root_folder: {
-      value: cdktf.stringToHclTerraform(struct!.rootFolder),
+      value: cdktn.stringToHclTerraform(struct!.rootFolder),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -177,14 +177,14 @@ export function dataFactoryGithubConfigurationToHclTerraform(struct?: DataFactor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryGithubConfigurationOutputReference extends cdktf.ComplexObject {
+export class DataFactoryGithubConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -282,11 +282,11 @@ export class DataFactoryGithubConfigurationOutputReference extends cdktf.Complex
   }
 
   // publishing_enabled - computed: false, optional: true, required: false
-  private _publishingEnabled?: boolean | cdktf.IResolvable; 
+  private _publishingEnabled?: boolean | cdktn.IResolvable; 
   public get publishingEnabled() {
     return this.getBooleanAttribute('publishing_enabled');
   }
-  public set publishingEnabled(value: boolean | cdktf.IResolvable) {
+  public set publishingEnabled(value: boolean | cdktn.IResolvable) {
     this._publishingEnabled = value;
   }
   public resetPublishingEnabled() {
@@ -338,39 +338,39 @@ export interface DataFactoryGlobalParameter {
   readonly value: string;
 }
 
-export function dataFactoryGlobalParameterToTerraform(struct?: DataFactoryGlobalParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryGlobalParameterToTerraform(struct?: DataFactoryGlobalParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    type: cdktn.stringToTerraform(struct!.type),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function dataFactoryGlobalParameterToHclTerraform(struct?: DataFactoryGlobalParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryGlobalParameterToHclTerraform(struct?: DataFactoryGlobalParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -381,9 +381,9 @@ export function dataFactoryGlobalParameterToHclTerraform(struct?: DataFactoryGlo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryGlobalParameterOutputReference extends cdktf.ComplexObject {
+export class DataFactoryGlobalParameterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -391,11 +391,11 @@ export class DataFactoryGlobalParameterOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataFactoryGlobalParameter | cdktf.IResolvable | undefined {
+  public get internalValue(): DataFactoryGlobalParameter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -416,7 +416,7 @@ export class DataFactoryGlobalParameterOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataFactoryGlobalParameter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataFactoryGlobalParameter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -424,7 +424,7 @@ export class DataFactoryGlobalParameterOutputReference extends cdktf.ComplexObje
       this._type = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -477,15 +477,15 @@ export class DataFactoryGlobalParameterOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class DataFactoryGlobalParameterList extends cdktf.ComplexList {
-  public internalValue? : DataFactoryGlobalParameter[] | cdktf.IResolvable
+export class DataFactoryGlobalParameterList extends cdktn.ComplexList {
+  public internalValue? : DataFactoryGlobalParameter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -508,31 +508,31 @@ export interface DataFactoryIdentity {
 }
 
 export function dataFactoryIdentityToTerraform(struct?: DataFactoryIdentityOutputReference | DataFactoryIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function dataFactoryIdentityToHclTerraform(struct?: DataFactoryIdentityOutputReference | DataFactoryIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -543,14 +543,14 @@ export function dataFactoryIdentityToHclTerraform(struct?: DataFactoryIdentityOu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryIdentityOutputReference extends cdktf.ComplexObject {
+export class DataFactoryIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -584,7 +584,7 @@ export class DataFactoryIdentityOutputReference extends cdktf.ComplexObject {
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -639,46 +639,46 @@ export interface DataFactoryTimeouts {
   readonly update?: string;
 }
 
-export function dataFactoryTimeoutsToTerraform(struct?: DataFactoryTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryTimeoutsToTerraform(struct?: DataFactoryTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dataFactoryTimeoutsToHclTerraform(struct?: DataFactoryTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryTimeoutsToHclTerraform(struct?: DataFactoryTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -689,19 +689,19 @@ export function dataFactoryTimeoutsToHclTerraform(struct?: DataFactoryTimeouts |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataFactoryTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataFactoryTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataFactoryTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -726,7 +726,7 @@ export class DataFactoryTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataFactoryTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataFactoryTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -735,7 +735,7 @@ export class DataFactoryTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -829,7 +829,7 @@ export interface DataFactoryVstsConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory#publishing_enabled DataFactory#publishing_enabled}
   */
-  readonly publishingEnabled?: boolean | cdktf.IResolvable;
+  readonly publishingEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory#repository_name DataFactory#repository_name}
   */
@@ -845,66 +845,66 @@ export interface DataFactoryVstsConfiguration {
 }
 
 export function dataFactoryVstsConfigurationToTerraform(struct?: DataFactoryVstsConfigurationOutputReference | DataFactoryVstsConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    account_name: cdktf.stringToTerraform(struct!.accountName),
-    branch_name: cdktf.stringToTerraform(struct!.branchName),
-    project_name: cdktf.stringToTerraform(struct!.projectName),
-    publishing_enabled: cdktf.booleanToTerraform(struct!.publishingEnabled),
-    repository_name: cdktf.stringToTerraform(struct!.repositoryName),
-    root_folder: cdktf.stringToTerraform(struct!.rootFolder),
-    tenant_id: cdktf.stringToTerraform(struct!.tenantId),
+    account_name: cdktn.stringToTerraform(struct!.accountName),
+    branch_name: cdktn.stringToTerraform(struct!.branchName),
+    project_name: cdktn.stringToTerraform(struct!.projectName),
+    publishing_enabled: cdktn.booleanToTerraform(struct!.publishingEnabled),
+    repository_name: cdktn.stringToTerraform(struct!.repositoryName),
+    root_folder: cdktn.stringToTerraform(struct!.rootFolder),
+    tenant_id: cdktn.stringToTerraform(struct!.tenantId),
   }
 }
 
 
 export function dataFactoryVstsConfigurationToHclTerraform(struct?: DataFactoryVstsConfigurationOutputReference | DataFactoryVstsConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     account_name: {
-      value: cdktf.stringToHclTerraform(struct!.accountName),
+      value: cdktn.stringToHclTerraform(struct!.accountName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     branch_name: {
-      value: cdktf.stringToHclTerraform(struct!.branchName),
+      value: cdktn.stringToHclTerraform(struct!.branchName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     project_name: {
-      value: cdktf.stringToHclTerraform(struct!.projectName),
+      value: cdktn.stringToHclTerraform(struct!.projectName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     publishing_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.publishingEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.publishingEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     repository_name: {
-      value: cdktf.stringToHclTerraform(struct!.repositoryName),
+      value: cdktn.stringToHclTerraform(struct!.repositoryName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     root_folder: {
-      value: cdktf.stringToHclTerraform(struct!.rootFolder),
+      value: cdktn.stringToHclTerraform(struct!.rootFolder),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tenant_id: {
-      value: cdktf.stringToHclTerraform(struct!.tenantId),
+      value: cdktn.stringToHclTerraform(struct!.tenantId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -915,14 +915,14 @@ export function dataFactoryVstsConfigurationToHclTerraform(struct?: DataFactoryV
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryVstsConfigurationOutputReference extends cdktf.ComplexObject {
+export class DataFactoryVstsConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1023,11 +1023,11 @@ export class DataFactoryVstsConfigurationOutputReference extends cdktf.ComplexOb
   }
 
   // publishing_enabled - computed: false, optional: true, required: false
-  private _publishingEnabled?: boolean | cdktf.IResolvable; 
+  private _publishingEnabled?: boolean | cdktn.IResolvable; 
   public get publishingEnabled() {
     return this.getBooleanAttribute('publishing_enabled');
   }
-  public set publishingEnabled(value: boolean | cdktf.IResolvable) {
+  public set publishingEnabled(value: boolean | cdktn.IResolvable) {
     this._publishingEnabled = value;
   }
   public resetPublishingEnabled() {
@@ -1081,7 +1081,7 @@ export class DataFactoryVstsConfigurationOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory azurerm_data_factory}
 */
-export class DataFactory extends cdktf.TerraformResource {
+export class DataFactory extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1092,14 +1092,14 @@ export class DataFactory extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataFactory resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataFactory resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataFactory to import
   * @param importFromId The id of the existing DataFactory that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataFactory to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_factory", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_factory", importId: importFromId, provider });
       }
 
   // ===========
@@ -1212,11 +1212,11 @@ export class DataFactory extends cdktf.TerraformResource {
   }
 
   // managed_virtual_network_enabled - computed: false, optional: true, required: false
-  private _managedVirtualNetworkEnabled?: boolean | cdktf.IResolvable; 
+  private _managedVirtualNetworkEnabled?: boolean | cdktn.IResolvable; 
   public get managedVirtualNetworkEnabled() {
     return this.getBooleanAttribute('managed_virtual_network_enabled');
   }
-  public set managedVirtualNetworkEnabled(value: boolean | cdktf.IResolvable) {
+  public set managedVirtualNetworkEnabled(value: boolean | cdktn.IResolvable) {
     this._managedVirtualNetworkEnabled = value;
   }
   public resetManagedVirtualNetworkEnabled() {
@@ -1241,11 +1241,11 @@ export class DataFactory extends cdktf.TerraformResource {
   }
 
   // public_network_enabled - computed: false, optional: true, required: false
-  private _publicNetworkEnabled?: boolean | cdktf.IResolvable; 
+  private _publicNetworkEnabled?: boolean | cdktn.IResolvable; 
   public get publicNetworkEnabled() {
     return this.getBooleanAttribute('public_network_enabled');
   }
-  public set publicNetworkEnabled(value: boolean | cdktf.IResolvable) {
+  public set publicNetworkEnabled(value: boolean | cdktn.IResolvable) {
     this._publicNetworkEnabled = value;
   }
   public resetPublicNetworkEnabled() {
@@ -1322,7 +1322,7 @@ export class DataFactory extends cdktf.TerraformResource {
   public get globalParameter() {
     return this._globalParameter;
   }
-  public putGlobalParameter(value: DataFactoryGlobalParameter[] | cdktf.IResolvable) {
+  public putGlobalParameter(value: DataFactoryGlobalParameter[] | cdktn.IResolvable) {
     this._globalParameter.internalValue = value;
   }
   public resetGlobalParameter() {
@@ -1387,18 +1387,18 @@ export class DataFactory extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      customer_managed_key_id: cdktf.stringToTerraform(this._customerManagedKeyId),
-      customer_managed_key_identity_id: cdktf.stringToTerraform(this._customerManagedKeyIdentityId),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      managed_virtual_network_enabled: cdktf.booleanToTerraform(this._managedVirtualNetworkEnabled),
-      name: cdktf.stringToTerraform(this._name),
-      public_network_enabled: cdktf.booleanToTerraform(this._publicNetworkEnabled),
-      purview_id: cdktf.stringToTerraform(this._purviewId),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      customer_managed_key_id: cdktn.stringToTerraform(this._customerManagedKeyId),
+      customer_managed_key_identity_id: cdktn.stringToTerraform(this._customerManagedKeyIdentityId),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      managed_virtual_network_enabled: cdktn.booleanToTerraform(this._managedVirtualNetworkEnabled),
+      name: cdktn.stringToTerraform(this._name),
+      public_network_enabled: cdktn.booleanToTerraform(this._publicNetworkEnabled),
+      purview_id: cdktn.stringToTerraform(this._purviewId),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       github_configuration: dataFactoryGithubConfigurationToTerraform(this._githubConfiguration.internalValue),
-      global_parameter: cdktf.listMapper(dataFactoryGlobalParameterToTerraform, true)(this._globalParameter.internalValue),
+      global_parameter: cdktn.listMapper(dataFactoryGlobalParameterToTerraform, true)(this._globalParameter.internalValue),
       identity: dataFactoryIdentityToTerraform(this._identity.internalValue),
       timeouts: dataFactoryTimeoutsToTerraform(this._timeouts.internalValue),
       vsts_configuration: dataFactoryVstsConfigurationToTerraform(this._vstsConfiguration.internalValue),
@@ -1408,61 +1408,61 @@ export class DataFactory extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       customer_managed_key_id: {
-        value: cdktf.stringToHclTerraform(this._customerManagedKeyId),
+        value: cdktn.stringToHclTerraform(this._customerManagedKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       customer_managed_key_identity_id: {
-        value: cdktf.stringToHclTerraform(this._customerManagedKeyIdentityId),
+        value: cdktn.stringToHclTerraform(this._customerManagedKeyIdentityId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       managed_virtual_network_enabled: {
-        value: cdktf.booleanToHclTerraform(this._managedVirtualNetworkEnabled),
+        value: cdktn.booleanToHclTerraform(this._managedVirtualNetworkEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_network_enabled: {
-        value: cdktf.booleanToHclTerraform(this._publicNetworkEnabled),
+        value: cdktn.booleanToHclTerraform(this._publicNetworkEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       purview_id: {
-        value: cdktf.stringToHclTerraform(this._purviewId),
+        value: cdktn.stringToHclTerraform(this._purviewId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
@@ -1474,7 +1474,7 @@ export class DataFactory extends cdktf.TerraformResource {
         storageClassType: "DataFactoryGithubConfigurationList",
       },
       global_parameter: {
-        value: cdktf.listMapperHcl(dataFactoryGlobalParameterToHclTerraform, true)(this._globalParameter.internalValue),
+        value: cdktn.listMapperHcl(dataFactoryGlobalParameterToHclTerraform, true)(this._globalParameter.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DataFactoryGlobalParameterList",

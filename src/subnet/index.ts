@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SubnetConfig extends cdktf.TerraformMetaArguments {
+export interface SubnetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/subnet#address_prefixes Subnet#address_prefixes}
   */
@@ -19,7 +19,7 @@ export interface SubnetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/subnet#default_outbound_access_enabled Subnet#default_outbound_access_enabled}
   */
-  readonly defaultOutboundAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly defaultOutboundAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/subnet#id Subnet#id}
   *
@@ -38,7 +38,7 @@ export interface SubnetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/subnet#private_link_service_network_policies_enabled Subnet#private_link_service_network_policies_enabled}
   */
-  readonly privateLinkServiceNetworkPoliciesEnabled?: boolean | cdktf.IResolvable;
+  readonly privateLinkServiceNetworkPoliciesEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/subnet#resource_group_name Subnet#resource_group_name}
   */
@@ -64,7 +64,7 @@ export interface SubnetConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/subnet#delegation Subnet#delegation}
   */
-  readonly delegation?: SubnetDelegation[] | cdktf.IResolvable;
+  readonly delegation?: SubnetDelegation[] | cdktn.IResolvable;
   /**
   * ip_address_pool block
   *
@@ -90,31 +90,31 @@ export interface SubnetDelegationServiceDelegation {
 }
 
 export function subnetDelegationServiceDelegationToTerraform(struct?: SubnetDelegationServiceDelegationOutputReference | SubnetDelegationServiceDelegation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.actions),
-    name: cdktf.stringToTerraform(struct!.name),
+    actions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.actions),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function subnetDelegationServiceDelegationToHclTerraform(struct?: SubnetDelegationServiceDelegationOutputReference | SubnetDelegationServiceDelegation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     actions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.actions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.actions),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -125,14 +125,14 @@ export function subnetDelegationServiceDelegationToHclTerraform(struct?: SubnetD
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SubnetDelegationServiceDelegationOutputReference extends cdktf.ComplexObject {
+export class SubnetDelegationServiceDelegationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -166,7 +166,7 @@ export class SubnetDelegationServiceDelegationOutputReference extends cdktf.Comp
   // actions - computed: false, optional: true, required: false
   private _actions?: string[]; 
   public get actions() {
-    return cdktf.Fn.tolist(this.getListAttribute('actions'));
+    return cdktn.Fn.tolist(this.getListAttribute('actions'));
   }
   public set actions(value: string[]) {
     this._actions = value;
@@ -205,26 +205,26 @@ export interface SubnetDelegation {
   readonly serviceDelegation: SubnetDelegationServiceDelegation;
 }
 
-export function subnetDelegationToTerraform(struct?: SubnetDelegation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function subnetDelegationToTerraform(struct?: SubnetDelegation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
     service_delegation: subnetDelegationServiceDelegationToTerraform(struct!.serviceDelegation),
   }
 }
 
 
-export function subnetDelegationToHclTerraform(struct?: SubnetDelegation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function subnetDelegationToHclTerraform(struct?: SubnetDelegation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -241,9 +241,9 @@ export function subnetDelegationToHclTerraform(struct?: SubnetDelegation | cdktf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SubnetDelegationOutputReference extends cdktf.ComplexObject {
+export class SubnetDelegationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -251,11 +251,11 @@ export class SubnetDelegationOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SubnetDelegation | cdktf.IResolvable | undefined {
+  public get internalValue(): SubnetDelegation | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -272,14 +272,14 @@ export class SubnetDelegationOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SubnetDelegation | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SubnetDelegation | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._serviceDelegation.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -318,15 +318,15 @@ export class SubnetDelegationOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class SubnetDelegationList extends cdktf.ComplexList {
-  public internalValue? : SubnetDelegation[] | cdktf.IResolvable
+export class SubnetDelegationList extends cdktn.ComplexList {
+  public internalValue? : SubnetDelegation[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -352,31 +352,31 @@ export interface SubnetIpAddressPool {
 }
 
 export function subnetIpAddressPoolToTerraform(struct?: SubnetIpAddressPoolOutputReference | SubnetIpAddressPool): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    number_of_ip_addresses: cdktf.stringToTerraform(struct!.numberOfIpAddresses),
+    id: cdktn.stringToTerraform(struct!.id),
+    number_of_ip_addresses: cdktn.stringToTerraform(struct!.numberOfIpAddresses),
   }
 }
 
 
 export function subnetIpAddressPoolToHclTerraform(struct?: SubnetIpAddressPoolOutputReference | SubnetIpAddressPool): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     number_of_ip_addresses: {
-      value: cdktf.stringToHclTerraform(struct!.numberOfIpAddresses),
+      value: cdktn.stringToHclTerraform(struct!.numberOfIpAddresses),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -387,14 +387,14 @@ export function subnetIpAddressPoolToHclTerraform(struct?: SubnetIpAddressPoolOu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SubnetIpAddressPoolOutputReference extends cdktf.ComplexObject {
+export class SubnetIpAddressPoolOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -475,46 +475,46 @@ export interface SubnetTimeouts {
   readonly update?: string;
 }
 
-export function subnetTimeoutsToTerraform(struct?: SubnetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function subnetTimeoutsToTerraform(struct?: SubnetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function subnetTimeoutsToHclTerraform(struct?: SubnetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function subnetTimeoutsToHclTerraform(struct?: SubnetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -525,19 +525,19 @@ export function subnetTimeoutsToHclTerraform(struct?: SubnetTimeouts | cdktf.IRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SubnetTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SubnetTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SubnetTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SubnetTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -562,7 +562,7 @@ export class SubnetTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SubnetTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SubnetTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -571,7 +571,7 @@ export class SubnetTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -653,7 +653,7 @@ export class SubnetTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/subnet azurerm_subnet}
 */
-export class Subnet extends cdktf.TerraformResource {
+export class Subnet extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -664,14 +664,14 @@ export class Subnet extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Subnet resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Subnet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Subnet to import
   * @param importFromId The id of the existing Subnet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/subnet#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Subnet to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_subnet", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_subnet", importId: importFromId, provider });
       }
 
   // ===========
@@ -738,11 +738,11 @@ export class Subnet extends cdktf.TerraformResource {
   }
 
   // default_outbound_access_enabled - computed: false, optional: true, required: false
-  private _defaultOutboundAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _defaultOutboundAccessEnabled?: boolean | cdktn.IResolvable; 
   public get defaultOutboundAccessEnabled() {
     return this.getBooleanAttribute('default_outbound_access_enabled');
   }
-  public set defaultOutboundAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set defaultOutboundAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._defaultOutboundAccessEnabled = value;
   }
   public resetDefaultOutboundAccessEnabled() {
@@ -799,11 +799,11 @@ export class Subnet extends cdktf.TerraformResource {
   }
 
   // private_link_service_network_policies_enabled - computed: false, optional: true, required: false
-  private _privateLinkServiceNetworkPoliciesEnabled?: boolean | cdktf.IResolvable; 
+  private _privateLinkServiceNetworkPoliciesEnabled?: boolean | cdktn.IResolvable; 
   public get privateLinkServiceNetworkPoliciesEnabled() {
     return this.getBooleanAttribute('private_link_service_network_policies_enabled');
   }
-  public set privateLinkServiceNetworkPoliciesEnabled(value: boolean | cdktf.IResolvable) {
+  public set privateLinkServiceNetworkPoliciesEnabled(value: boolean | cdktn.IResolvable) {
     this._privateLinkServiceNetworkPoliciesEnabled = value;
   }
   public resetPrivateLinkServiceNetworkPoliciesEnabled() {
@@ -830,7 +830,7 @@ export class Subnet extends cdktf.TerraformResource {
   // service_endpoint_policy_ids - computed: false, optional: true, required: false
   private _serviceEndpointPolicyIds?: string[]; 
   public get serviceEndpointPolicyIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('service_endpoint_policy_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('service_endpoint_policy_ids'));
   }
   public set serviceEndpointPolicyIds(value: string[]) {
     this._serviceEndpointPolicyIds = value;
@@ -846,7 +846,7 @@ export class Subnet extends cdktf.TerraformResource {
   // service_endpoints - computed: false, optional: true, required: false
   private _serviceEndpoints?: string[]; 
   public get serviceEndpoints() {
-    return cdktf.Fn.tolist(this.getListAttribute('service_endpoints'));
+    return cdktn.Fn.tolist(this.getListAttribute('service_endpoints'));
   }
   public set serviceEndpoints(value: string[]) {
     this._serviceEndpoints = value;
@@ -893,7 +893,7 @@ export class Subnet extends cdktf.TerraformResource {
   public get delegation() {
     return this._delegation;
   }
-  public putDelegation(value: SubnetDelegation[] | cdktf.IResolvable) {
+  public putDelegation(value: SubnetDelegation[] | cdktn.IResolvable) {
     this._delegation.internalValue = value;
   }
   public resetDelegation() {
@@ -942,18 +942,18 @@ export class Subnet extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      address_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._addressPrefixes),
-      default_outbound_access_enabled: cdktf.booleanToTerraform(this._defaultOutboundAccessEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      private_endpoint_network_policies: cdktf.stringToTerraform(this._privateEndpointNetworkPolicies),
-      private_link_service_network_policies_enabled: cdktf.booleanToTerraform(this._privateLinkServiceNetworkPoliciesEnabled),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      service_endpoint_policy_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._serviceEndpointPolicyIds),
-      service_endpoints: cdktf.listMapper(cdktf.stringToTerraform, false)(this._serviceEndpoints),
-      sharing_scope: cdktf.stringToTerraform(this._sharingScope),
-      virtual_network_name: cdktf.stringToTerraform(this._virtualNetworkName),
-      delegation: cdktf.listMapper(subnetDelegationToTerraform, true)(this._delegation.internalValue),
+      address_prefixes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._addressPrefixes),
+      default_outbound_access_enabled: cdktn.booleanToTerraform(this._defaultOutboundAccessEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      private_endpoint_network_policies: cdktn.stringToTerraform(this._privateEndpointNetworkPolicies),
+      private_link_service_network_policies_enabled: cdktn.booleanToTerraform(this._privateLinkServiceNetworkPoliciesEnabled),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      service_endpoint_policy_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._serviceEndpointPolicyIds),
+      service_endpoints: cdktn.listMapper(cdktn.stringToTerraform, false)(this._serviceEndpoints),
+      sharing_scope: cdktn.stringToTerraform(this._sharingScope),
+      virtual_network_name: cdktn.stringToTerraform(this._virtualNetworkName),
+      delegation: cdktn.listMapper(subnetDelegationToTerraform, true)(this._delegation.internalValue),
       ip_address_pool: subnetIpAddressPoolToTerraform(this._ipAddressPool.internalValue),
       timeouts: subnetTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -962,73 +962,73 @@ export class Subnet extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       address_prefixes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._addressPrefixes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._addressPrefixes),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       default_outbound_access_enabled: {
-        value: cdktf.booleanToHclTerraform(this._defaultOutboundAccessEnabled),
+        value: cdktn.booleanToHclTerraform(this._defaultOutboundAccessEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       private_endpoint_network_policies: {
-        value: cdktf.stringToHclTerraform(this._privateEndpointNetworkPolicies),
+        value: cdktn.stringToHclTerraform(this._privateEndpointNetworkPolicies),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       private_link_service_network_policies_enabled: {
-        value: cdktf.booleanToHclTerraform(this._privateLinkServiceNetworkPoliciesEnabled),
+        value: cdktn.booleanToHclTerraform(this._privateLinkServiceNetworkPoliciesEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_endpoint_policy_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._serviceEndpointPolicyIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._serviceEndpointPolicyIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       service_endpoints: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._serviceEndpoints),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._serviceEndpoints),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       sharing_scope: {
-        value: cdktf.stringToHclTerraform(this._sharingScope),
+        value: cdktn.stringToHclTerraform(this._sharingScope),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       virtual_network_name: {
-        value: cdktf.stringToHclTerraform(this._virtualNetworkName),
+        value: cdktn.stringToHclTerraform(this._virtualNetworkName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       delegation: {
-        value: cdktf.listMapperHcl(subnetDelegationToHclTerraform, true)(this._delegation.internalValue),
+        value: cdktn.listMapperHcl(subnetDelegationToHclTerraform, true)(this._delegation.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SubnetDelegationList",

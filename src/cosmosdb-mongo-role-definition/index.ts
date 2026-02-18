@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CosmosdbMongoRoleDefinitionConfig extends cdktf.TerraformMetaArguments {
+export interface CosmosdbMongoRoleDefinitionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cosmosdb_mongo_role_definition#cosmos_mongo_database_id CosmosdbMongoRoleDefinition#cosmos_mongo_database_id}
   */
@@ -36,7 +36,7 @@ export interface CosmosdbMongoRoleDefinitionConfig extends cdktf.TerraformMetaAr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cosmosdb_mongo_role_definition#privilege CosmosdbMongoRoleDefinition#privilege}
   */
-  readonly privilege?: CosmosdbMongoRoleDefinitionPrivilege[] | cdktf.IResolvable;
+  readonly privilege?: CosmosdbMongoRoleDefinitionPrivilege[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -56,31 +56,31 @@ export interface CosmosdbMongoRoleDefinitionPrivilegeResource {
 }
 
 export function cosmosdbMongoRoleDefinitionPrivilegeResourceToTerraform(struct?: CosmosdbMongoRoleDefinitionPrivilegeResourceOutputReference | CosmosdbMongoRoleDefinitionPrivilegeResource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    collection_name: cdktf.stringToTerraform(struct!.collectionName),
-    db_name: cdktf.stringToTerraform(struct!.dbName),
+    collection_name: cdktn.stringToTerraform(struct!.collectionName),
+    db_name: cdktn.stringToTerraform(struct!.dbName),
   }
 }
 
 
 export function cosmosdbMongoRoleDefinitionPrivilegeResourceToHclTerraform(struct?: CosmosdbMongoRoleDefinitionPrivilegeResourceOutputReference | CosmosdbMongoRoleDefinitionPrivilegeResource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     collection_name: {
-      value: cdktf.stringToHclTerraform(struct!.collectionName),
+      value: cdktn.stringToHclTerraform(struct!.collectionName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     db_name: {
-      value: cdktf.stringToHclTerraform(struct!.dbName),
+      value: cdktn.stringToHclTerraform(struct!.dbName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -91,14 +91,14 @@ export function cosmosdbMongoRoleDefinitionPrivilegeResourceToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CosmosdbMongoRoleDefinitionPrivilegeResourceOutputReference extends cdktf.ComplexObject {
+export class CosmosdbMongoRoleDefinitionPrivilegeResourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -174,26 +174,26 @@ export interface CosmosdbMongoRoleDefinitionPrivilege {
   readonly resource: CosmosdbMongoRoleDefinitionPrivilegeResource;
 }
 
-export function cosmosdbMongoRoleDefinitionPrivilegeToTerraform(struct?: CosmosdbMongoRoleDefinitionPrivilege | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cosmosdbMongoRoleDefinitionPrivilegeToTerraform(struct?: CosmosdbMongoRoleDefinitionPrivilege | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.actions),
+    actions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.actions),
     resource: cosmosdbMongoRoleDefinitionPrivilegeResourceToTerraform(struct!.resource),
   }
 }
 
 
-export function cosmosdbMongoRoleDefinitionPrivilegeToHclTerraform(struct?: CosmosdbMongoRoleDefinitionPrivilege | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cosmosdbMongoRoleDefinitionPrivilegeToHclTerraform(struct?: CosmosdbMongoRoleDefinitionPrivilege | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     actions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.actions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.actions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -210,9 +210,9 @@ export function cosmosdbMongoRoleDefinitionPrivilegeToHclTerraform(struct?: Cosm
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CosmosdbMongoRoleDefinitionPrivilegeOutputReference extends cdktf.ComplexObject {
+export class CosmosdbMongoRoleDefinitionPrivilegeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -220,11 +220,11 @@ export class CosmosdbMongoRoleDefinitionPrivilegeOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CosmosdbMongoRoleDefinitionPrivilege | cdktf.IResolvable | undefined {
+  public get internalValue(): CosmosdbMongoRoleDefinitionPrivilege | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -241,14 +241,14 @@ export class CosmosdbMongoRoleDefinitionPrivilegeOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CosmosdbMongoRoleDefinitionPrivilege | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CosmosdbMongoRoleDefinitionPrivilege | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._actions = undefined;
       this._resource.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -287,15 +287,15 @@ export class CosmosdbMongoRoleDefinitionPrivilegeOutputReference extends cdktf.C
   }
 }
 
-export class CosmosdbMongoRoleDefinitionPrivilegeList extends cdktf.ComplexList {
-  public internalValue? : CosmosdbMongoRoleDefinitionPrivilege[] | cdktf.IResolvable
+export class CosmosdbMongoRoleDefinitionPrivilegeList extends cdktn.ComplexList {
+  public internalValue? : CosmosdbMongoRoleDefinitionPrivilege[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -325,46 +325,46 @@ export interface CosmosdbMongoRoleDefinitionTimeouts {
   readonly update?: string;
 }
 
-export function cosmosdbMongoRoleDefinitionTimeoutsToTerraform(struct?: CosmosdbMongoRoleDefinitionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cosmosdbMongoRoleDefinitionTimeoutsToTerraform(struct?: CosmosdbMongoRoleDefinitionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function cosmosdbMongoRoleDefinitionTimeoutsToHclTerraform(struct?: CosmosdbMongoRoleDefinitionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cosmosdbMongoRoleDefinitionTimeoutsToHclTerraform(struct?: CosmosdbMongoRoleDefinitionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -375,19 +375,19 @@ export function cosmosdbMongoRoleDefinitionTimeoutsToHclTerraform(struct?: Cosmo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CosmosdbMongoRoleDefinitionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class CosmosdbMongoRoleDefinitionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CosmosdbMongoRoleDefinitionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): CosmosdbMongoRoleDefinitionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -412,7 +412,7 @@ export class CosmosdbMongoRoleDefinitionTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CosmosdbMongoRoleDefinitionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CosmosdbMongoRoleDefinitionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -421,7 +421,7 @@ export class CosmosdbMongoRoleDefinitionTimeoutsOutputReference extends cdktf.Co
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -503,7 +503,7 @@ export class CosmosdbMongoRoleDefinitionTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cosmosdb_mongo_role_definition azurerm_cosmosdb_mongo_role_definition}
 */
-export class CosmosdbMongoRoleDefinition extends cdktf.TerraformResource {
+export class CosmosdbMongoRoleDefinition extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -514,14 +514,14 @@ export class CosmosdbMongoRoleDefinition extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CosmosdbMongoRoleDefinition resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CosmosdbMongoRoleDefinition resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CosmosdbMongoRoleDefinition to import
   * @param importFromId The id of the existing CosmosdbMongoRoleDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cosmosdb_mongo_role_definition#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CosmosdbMongoRoleDefinition to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_cosmosdb_mongo_role_definition", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_cosmosdb_mongo_role_definition", importId: importFromId, provider });
       }
 
   // ===========
@@ -626,7 +626,7 @@ export class CosmosdbMongoRoleDefinition extends cdktf.TerraformResource {
   public get privilege() {
     return this._privilege;
   }
-  public putPrivilege(value: CosmosdbMongoRoleDefinitionPrivilege[] | cdktf.IResolvable) {
+  public putPrivilege(value: CosmosdbMongoRoleDefinitionPrivilege[] | cdktn.IResolvable) {
     this._privilege.internalValue = value;
   }
   public resetPrivilege() {
@@ -659,11 +659,11 @@ export class CosmosdbMongoRoleDefinition extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cosmos_mongo_database_id: cdktf.stringToTerraform(this._cosmosMongoDatabaseId),
-      id: cdktf.stringToTerraform(this._id),
-      inherited_role_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._inheritedRoleNames),
-      role_name: cdktf.stringToTerraform(this._roleName),
-      privilege: cdktf.listMapper(cosmosdbMongoRoleDefinitionPrivilegeToTerraform, true)(this._privilege.internalValue),
+      cosmos_mongo_database_id: cdktn.stringToTerraform(this._cosmosMongoDatabaseId),
+      id: cdktn.stringToTerraform(this._id),
+      inherited_role_names: cdktn.listMapper(cdktn.stringToTerraform, false)(this._inheritedRoleNames),
+      role_name: cdktn.stringToTerraform(this._roleName),
+      privilege: cdktn.listMapper(cosmosdbMongoRoleDefinitionPrivilegeToTerraform, true)(this._privilege.internalValue),
       timeouts: cosmosdbMongoRoleDefinitionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -671,31 +671,31 @@ export class CosmosdbMongoRoleDefinition extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cosmos_mongo_database_id: {
-        value: cdktf.stringToHclTerraform(this._cosmosMongoDatabaseId),
+        value: cdktn.stringToHclTerraform(this._cosmosMongoDatabaseId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       inherited_role_names: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._inheritedRoleNames),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._inheritedRoleNames),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       role_name: {
-        value: cdktf.stringToHclTerraform(this._roleName),
+        value: cdktn.stringToHclTerraform(this._roleName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       privilege: {
-        value: cdktf.listMapperHcl(cosmosdbMongoRoleDefinitionPrivilegeToHclTerraform, true)(this._privilege.internalValue),
+        value: cdktn.listMapperHcl(cosmosdbMongoRoleDefinitionPrivilegeToHclTerraform, true)(this._privilege.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "CosmosdbMongoRoleDefinitionPrivilegeList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermStorageTableConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermStorageTableConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/storage_table#name DataAzurermStorageTable#name}
   */
@@ -31,8 +31,8 @@ export interface DataAzurermStorageTableAclAccessPolicy {
 }
 
 export function dataAzurermStorageTableAclAccessPolicyToTerraform(struct?: DataAzurermStorageTableAclAccessPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -41,8 +41,8 @@ export function dataAzurermStorageTableAclAccessPolicyToTerraform(struct?: DataA
 
 
 export function dataAzurermStorageTableAclAccessPolicyToHclTerraform(struct?: DataAzurermStorageTableAclAccessPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -50,7 +50,7 @@ export function dataAzurermStorageTableAclAccessPolicyToHclTerraform(struct?: Da
   return attrs;
 }
 
-export class DataAzurermStorageTableAclAccessPolicyOutputReference extends cdktf.ComplexObject {
+export class DataAzurermStorageTableAclAccessPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -59,7 +59,7 @@ export class DataAzurermStorageTableAclAccessPolicyOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -94,14 +94,14 @@ export class DataAzurermStorageTableAclAccessPolicyOutputReference extends cdktf
   }
 }
 
-export class DataAzurermStorageTableAclAccessPolicyList extends cdktf.ComplexList {
+export class DataAzurermStorageTableAclAccessPolicyList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -116,8 +116,8 @@ export interface DataAzurermStorageTableAcl {
 }
 
 export function dataAzurermStorageTableAclToTerraform(struct?: DataAzurermStorageTableAcl): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -126,8 +126,8 @@ export function dataAzurermStorageTableAclToTerraform(struct?: DataAzurermStorag
 
 
 export function dataAzurermStorageTableAclToHclTerraform(struct?: DataAzurermStorageTableAcl): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -135,7 +135,7 @@ export function dataAzurermStorageTableAclToHclTerraform(struct?: DataAzurermSto
   return attrs;
 }
 
-export class DataAzurermStorageTableAclOutputReference extends cdktf.ComplexObject {
+export class DataAzurermStorageTableAclOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -144,7 +144,7 @@ export class DataAzurermStorageTableAclOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -175,14 +175,14 @@ export class DataAzurermStorageTableAclOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class DataAzurermStorageTableAclList extends cdktf.ComplexList {
+export class DataAzurermStorageTableAclList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -200,25 +200,25 @@ export interface DataAzurermStorageTableTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermStorageTableTimeoutsToTerraform(struct?: DataAzurermStorageTableTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermStorageTableTimeoutsToTerraform(struct?: DataAzurermStorageTableTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermStorageTableTimeoutsToHclTerraform(struct?: DataAzurermStorageTableTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermStorageTableTimeoutsToHclTerraform(struct?: DataAzurermStorageTableTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -229,19 +229,19 @@ export function dataAzurermStorageTableTimeoutsToHclTerraform(struct?: DataAzure
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermStorageTableTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermStorageTableTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermStorageTableTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermStorageTableTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -254,13 +254,13 @@ export class DataAzurermStorageTableTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermStorageTableTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermStorageTableTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -291,7 +291,7 @@ export class DataAzurermStorageTableTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/storage_table azurerm_storage_table}
 */
-export class DataAzurermStorageTable extends cdktf.TerraformDataSource {
+export class DataAzurermStorageTable extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -302,14 +302,14 @@ export class DataAzurermStorageTable extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermStorageTable resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermStorageTable resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermStorageTable to import
   * @param importFromId The id of the existing DataAzurermStorageTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/storage_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermStorageTable to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_storage_table", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_storage_table", importId: importFromId, provider });
       }
 
   // ===========
@@ -412,8 +412,8 @@ export class DataAzurermStorageTable extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      storage_account_name: cdktf.stringToTerraform(this._storageAccountName),
+      name: cdktn.stringToTerraform(this._name),
+      storage_account_name: cdktn.stringToTerraform(this._storageAccountName),
       timeouts: dataAzurermStorageTableTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -421,13 +421,13 @@ export class DataAzurermStorageTable extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_account_name: {
-        value: cdktf.stringToHclTerraform(this._storageAccountName),
+        value: cdktn.stringToHclTerraform(this._storageAccountName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

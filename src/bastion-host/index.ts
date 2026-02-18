@@ -7,19 +7,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BastionHostConfig extends cdktf.TerraformMetaArguments {
+export interface BastionHostConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bastion_host#copy_paste_enabled BastionHost#copy_paste_enabled}
   */
-  readonly copyPasteEnabled?: boolean | cdktf.IResolvable;
+  readonly copyPasteEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bastion_host#file_copy_enabled BastionHost#file_copy_enabled}
   */
-  readonly fileCopyEnabled?: boolean | cdktf.IResolvable;
+  readonly fileCopyEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bastion_host#id BastionHost#id}
   *
@@ -30,11 +30,11 @@ export interface BastionHostConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bastion_host#ip_connect_enabled BastionHost#ip_connect_enabled}
   */
-  readonly ipConnectEnabled?: boolean | cdktf.IResolvable;
+  readonly ipConnectEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bastion_host#kerberos_enabled BastionHost#kerberos_enabled}
   */
-  readonly kerberosEnabled?: boolean | cdktf.IResolvable;
+  readonly kerberosEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bastion_host#location BastionHost#location}
   */
@@ -54,11 +54,11 @@ export interface BastionHostConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bastion_host#session_recording_enabled BastionHost#session_recording_enabled}
   */
-  readonly sessionRecordingEnabled?: boolean | cdktf.IResolvable;
+  readonly sessionRecordingEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bastion_host#shareable_link_enabled BastionHost#shareable_link_enabled}
   */
-  readonly shareableLinkEnabled?: boolean | cdktf.IResolvable;
+  readonly shareableLinkEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bastion_host#sku BastionHost#sku}
   */
@@ -70,7 +70,7 @@ export interface BastionHostConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bastion_host#tunneling_enabled BastionHost#tunneling_enabled}
   */
-  readonly tunnelingEnabled?: boolean | cdktf.IResolvable;
+  readonly tunnelingEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bastion_host#virtual_network_id BastionHost#virtual_network_id}
   */
@@ -108,38 +108,38 @@ export interface BastionHostIpConfiguration {
 }
 
 export function bastionHostIpConfigurationToTerraform(struct?: BastionHostIpConfigurationOutputReference | BastionHostIpConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    public_ip_address_id: cdktf.stringToTerraform(struct!.publicIpAddressId),
-    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
+    name: cdktn.stringToTerraform(struct!.name),
+    public_ip_address_id: cdktn.stringToTerraform(struct!.publicIpAddressId),
+    subnet_id: cdktn.stringToTerraform(struct!.subnetId),
   }
 }
 
 
 export function bastionHostIpConfigurationToHclTerraform(struct?: BastionHostIpConfigurationOutputReference | BastionHostIpConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     public_ip_address_id: {
-      value: cdktf.stringToHclTerraform(struct!.publicIpAddressId),
+      value: cdktn.stringToHclTerraform(struct!.publicIpAddressId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.subnetId),
+      value: cdktn.stringToHclTerraform(struct!.subnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -150,14 +150,14 @@ export function bastionHostIpConfigurationToHclTerraform(struct?: BastionHostIpC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BastionHostIpConfigurationOutputReference extends cdktf.ComplexObject {
+export class BastionHostIpConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -252,46 +252,46 @@ export interface BastionHostTimeouts {
   readonly update?: string;
 }
 
-export function bastionHostTimeoutsToTerraform(struct?: BastionHostTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bastionHostTimeoutsToTerraform(struct?: BastionHostTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function bastionHostTimeoutsToHclTerraform(struct?: BastionHostTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function bastionHostTimeoutsToHclTerraform(struct?: BastionHostTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -302,19 +302,19 @@ export function bastionHostTimeoutsToHclTerraform(struct?: BastionHostTimeouts |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BastionHostTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BastionHostTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BastionHostTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BastionHostTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -339,7 +339,7 @@ export class BastionHostTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BastionHostTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BastionHostTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -348,7 +348,7 @@ export class BastionHostTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -430,7 +430,7 @@ export class BastionHostTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bastion_host azurerm_bastion_host}
 */
-export class BastionHost extends cdktf.TerraformResource {
+export class BastionHost extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -441,14 +441,14 @@ export class BastionHost extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BastionHost resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BastionHost resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BastionHost to import
   * @param importFromId The id of the existing BastionHost that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bastion_host#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BastionHost to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_bastion_host", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_bastion_host", importId: importFromId, provider });
       }
 
   // ===========
@@ -503,11 +503,11 @@ export class BastionHost extends cdktf.TerraformResource {
   // ==========
 
   // copy_paste_enabled - computed: false, optional: true, required: false
-  private _copyPasteEnabled?: boolean | cdktf.IResolvable; 
+  private _copyPasteEnabled?: boolean | cdktn.IResolvable; 
   public get copyPasteEnabled() {
     return this.getBooleanAttribute('copy_paste_enabled');
   }
-  public set copyPasteEnabled(value: boolean | cdktf.IResolvable) {
+  public set copyPasteEnabled(value: boolean | cdktn.IResolvable) {
     this._copyPasteEnabled = value;
   }
   public resetCopyPasteEnabled() {
@@ -524,11 +524,11 @@ export class BastionHost extends cdktf.TerraformResource {
   }
 
   // file_copy_enabled - computed: false, optional: true, required: false
-  private _fileCopyEnabled?: boolean | cdktf.IResolvable; 
+  private _fileCopyEnabled?: boolean | cdktn.IResolvable; 
   public get fileCopyEnabled() {
     return this.getBooleanAttribute('file_copy_enabled');
   }
-  public set fileCopyEnabled(value: boolean | cdktf.IResolvable) {
+  public set fileCopyEnabled(value: boolean | cdktn.IResolvable) {
     this._fileCopyEnabled = value;
   }
   public resetFileCopyEnabled() {
@@ -556,11 +556,11 @@ export class BastionHost extends cdktf.TerraformResource {
   }
 
   // ip_connect_enabled - computed: false, optional: true, required: false
-  private _ipConnectEnabled?: boolean | cdktf.IResolvable; 
+  private _ipConnectEnabled?: boolean | cdktn.IResolvable; 
   public get ipConnectEnabled() {
     return this.getBooleanAttribute('ip_connect_enabled');
   }
-  public set ipConnectEnabled(value: boolean | cdktf.IResolvable) {
+  public set ipConnectEnabled(value: boolean | cdktn.IResolvable) {
     this._ipConnectEnabled = value;
   }
   public resetIpConnectEnabled() {
@@ -572,11 +572,11 @@ export class BastionHost extends cdktf.TerraformResource {
   }
 
   // kerberos_enabled - computed: false, optional: true, required: false
-  private _kerberosEnabled?: boolean | cdktf.IResolvable; 
+  private _kerberosEnabled?: boolean | cdktn.IResolvable; 
   public get kerberosEnabled() {
     return this.getBooleanAttribute('kerberos_enabled');
   }
-  public set kerberosEnabled(value: boolean | cdktf.IResolvable) {
+  public set kerberosEnabled(value: boolean | cdktn.IResolvable) {
     this._kerberosEnabled = value;
   }
   public resetKerberosEnabled() {
@@ -643,11 +643,11 @@ export class BastionHost extends cdktf.TerraformResource {
   }
 
   // session_recording_enabled - computed: false, optional: true, required: false
-  private _sessionRecordingEnabled?: boolean | cdktf.IResolvable; 
+  private _sessionRecordingEnabled?: boolean | cdktn.IResolvable; 
   public get sessionRecordingEnabled() {
     return this.getBooleanAttribute('session_recording_enabled');
   }
-  public set sessionRecordingEnabled(value: boolean | cdktf.IResolvable) {
+  public set sessionRecordingEnabled(value: boolean | cdktn.IResolvable) {
     this._sessionRecordingEnabled = value;
   }
   public resetSessionRecordingEnabled() {
@@ -659,11 +659,11 @@ export class BastionHost extends cdktf.TerraformResource {
   }
 
   // shareable_link_enabled - computed: false, optional: true, required: false
-  private _shareableLinkEnabled?: boolean | cdktf.IResolvable; 
+  private _shareableLinkEnabled?: boolean | cdktn.IResolvable; 
   public get shareableLinkEnabled() {
     return this.getBooleanAttribute('shareable_link_enabled');
   }
-  public set shareableLinkEnabled(value: boolean | cdktf.IResolvable) {
+  public set shareableLinkEnabled(value: boolean | cdktn.IResolvable) {
     this._shareableLinkEnabled = value;
   }
   public resetShareableLinkEnabled() {
@@ -707,11 +707,11 @@ export class BastionHost extends cdktf.TerraformResource {
   }
 
   // tunneling_enabled - computed: false, optional: true, required: false
-  private _tunnelingEnabled?: boolean | cdktf.IResolvable; 
+  private _tunnelingEnabled?: boolean | cdktn.IResolvable; 
   public get tunnelingEnabled() {
     return this.getBooleanAttribute('tunneling_enabled');
   }
-  public set tunnelingEnabled(value: boolean | cdktf.IResolvable) {
+  public set tunnelingEnabled(value: boolean | cdktn.IResolvable) {
     this._tunnelingEnabled = value;
   }
   public resetTunnelingEnabled() {
@@ -741,7 +741,7 @@ export class BastionHost extends cdktf.TerraformResource {
   // zones - computed: false, optional: true, required: false
   private _zones?: string[]; 
   public get zones() {
-    return cdktf.Fn.tolist(this.getListAttribute('zones'));
+    return cdktn.Fn.tolist(this.getListAttribute('zones'));
   }
   public set zones(value: string[]) {
     this._zones = value;
@@ -792,22 +792,22 @@ export class BastionHost extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      copy_paste_enabled: cdktf.booleanToTerraform(this._copyPasteEnabled),
-      file_copy_enabled: cdktf.booleanToTerraform(this._fileCopyEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      ip_connect_enabled: cdktf.booleanToTerraform(this._ipConnectEnabled),
-      kerberos_enabled: cdktf.booleanToTerraform(this._kerberosEnabled),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      scale_units: cdktf.numberToTerraform(this._scaleUnits),
-      session_recording_enabled: cdktf.booleanToTerraform(this._sessionRecordingEnabled),
-      shareable_link_enabled: cdktf.booleanToTerraform(this._shareableLinkEnabled),
-      sku: cdktf.stringToTerraform(this._sku),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tunneling_enabled: cdktf.booleanToTerraform(this._tunnelingEnabled),
-      virtual_network_id: cdktf.stringToTerraform(this._virtualNetworkId),
-      zones: cdktf.listMapper(cdktf.stringToTerraform, false)(this._zones),
+      copy_paste_enabled: cdktn.booleanToTerraform(this._copyPasteEnabled),
+      file_copy_enabled: cdktn.booleanToTerraform(this._fileCopyEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      ip_connect_enabled: cdktn.booleanToTerraform(this._ipConnectEnabled),
+      kerberos_enabled: cdktn.booleanToTerraform(this._kerberosEnabled),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      scale_units: cdktn.numberToTerraform(this._scaleUnits),
+      session_recording_enabled: cdktn.booleanToTerraform(this._sessionRecordingEnabled),
+      shareable_link_enabled: cdktn.booleanToTerraform(this._shareableLinkEnabled),
+      sku: cdktn.stringToTerraform(this._sku),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tunneling_enabled: cdktn.booleanToTerraform(this._tunnelingEnabled),
+      virtual_network_id: cdktn.stringToTerraform(this._virtualNetworkId),
+      zones: cdktn.listMapper(cdktn.stringToTerraform, false)(this._zones),
       ip_configuration: bastionHostIpConfigurationToTerraform(this._ipConfiguration.internalValue),
       timeouts: bastionHostTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -816,97 +816,97 @@ export class BastionHost extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       copy_paste_enabled: {
-        value: cdktf.booleanToHclTerraform(this._copyPasteEnabled),
+        value: cdktn.booleanToHclTerraform(this._copyPasteEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       file_copy_enabled: {
-        value: cdktf.booleanToHclTerraform(this._fileCopyEnabled),
+        value: cdktn.booleanToHclTerraform(this._fileCopyEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ip_connect_enabled: {
-        value: cdktf.booleanToHclTerraform(this._ipConnectEnabled),
+        value: cdktn.booleanToHclTerraform(this._ipConnectEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       kerberos_enabled: {
-        value: cdktf.booleanToHclTerraform(this._kerberosEnabled),
+        value: cdktn.booleanToHclTerraform(this._kerberosEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scale_units: {
-        value: cdktf.numberToHclTerraform(this._scaleUnits),
+        value: cdktn.numberToHclTerraform(this._scaleUnits),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       session_recording_enabled: {
-        value: cdktf.booleanToHclTerraform(this._sessionRecordingEnabled),
+        value: cdktn.booleanToHclTerraform(this._sessionRecordingEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       shareable_link_enabled: {
-        value: cdktf.booleanToHclTerraform(this._shareableLinkEnabled),
+        value: cdktn.booleanToHclTerraform(this._shareableLinkEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       sku: {
-        value: cdktf.stringToHclTerraform(this._sku),
+        value: cdktn.stringToHclTerraform(this._sku),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tunneling_enabled: {
-        value: cdktf.booleanToHclTerraform(this._tunnelingEnabled),
+        value: cdktn.booleanToHclTerraform(this._tunnelingEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       virtual_network_id: {
-        value: cdktf.stringToHclTerraform(this._virtualNetworkId),
+        value: cdktn.stringToHclTerraform(this._virtualNetworkId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zones: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._zones),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._zones),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

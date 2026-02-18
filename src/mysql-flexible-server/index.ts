@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MysqlFlexibleServerConfig extends cdktf.TerraformMetaArguments {
+export interface MysqlFlexibleServerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mysql_flexible_server#administrator_login MysqlFlexibleServer#administrator_login}
   */
@@ -43,7 +43,7 @@ export interface MysqlFlexibleServerConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mysql_flexible_server#geo_redundant_backup_enabled MysqlFlexibleServer#geo_redundant_backup_enabled}
   */
-  readonly geoRedundantBackupEnabled?: boolean | cdktf.IResolvable;
+  readonly geoRedundantBackupEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mysql_flexible_server#id MysqlFlexibleServer#id}
   *
@@ -160,52 +160,52 @@ export interface MysqlFlexibleServerCustomerManagedKey {
 }
 
 export function mysqlFlexibleServerCustomerManagedKeyToTerraform(struct?: MysqlFlexibleServerCustomerManagedKeyOutputReference | MysqlFlexibleServerCustomerManagedKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    geo_backup_key_vault_key_id: cdktf.stringToTerraform(struct!.geoBackupKeyVaultKeyId),
-    geo_backup_user_assigned_identity_id: cdktf.stringToTerraform(struct!.geoBackupUserAssignedIdentityId),
-    key_vault_key_id: cdktf.stringToTerraform(struct!.keyVaultKeyId),
-    managed_hsm_key_id: cdktf.stringToTerraform(struct!.managedHsmKeyId),
-    primary_user_assigned_identity_id: cdktf.stringToTerraform(struct!.primaryUserAssignedIdentityId),
+    geo_backup_key_vault_key_id: cdktn.stringToTerraform(struct!.geoBackupKeyVaultKeyId),
+    geo_backup_user_assigned_identity_id: cdktn.stringToTerraform(struct!.geoBackupUserAssignedIdentityId),
+    key_vault_key_id: cdktn.stringToTerraform(struct!.keyVaultKeyId),
+    managed_hsm_key_id: cdktn.stringToTerraform(struct!.managedHsmKeyId),
+    primary_user_assigned_identity_id: cdktn.stringToTerraform(struct!.primaryUserAssignedIdentityId),
   }
 }
 
 
 export function mysqlFlexibleServerCustomerManagedKeyToHclTerraform(struct?: MysqlFlexibleServerCustomerManagedKeyOutputReference | MysqlFlexibleServerCustomerManagedKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     geo_backup_key_vault_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.geoBackupKeyVaultKeyId),
+      value: cdktn.stringToHclTerraform(struct!.geoBackupKeyVaultKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     geo_backup_user_assigned_identity_id: {
-      value: cdktf.stringToHclTerraform(struct!.geoBackupUserAssignedIdentityId),
+      value: cdktn.stringToHclTerraform(struct!.geoBackupUserAssignedIdentityId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_vault_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultKeyId),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     managed_hsm_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.managedHsmKeyId),
+      value: cdktn.stringToHclTerraform(struct!.managedHsmKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     primary_user_assigned_identity_id: {
-      value: cdktf.stringToHclTerraform(struct!.primaryUserAssignedIdentityId),
+      value: cdktn.stringToHclTerraform(struct!.primaryUserAssignedIdentityId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -216,14 +216,14 @@ export function mysqlFlexibleServerCustomerManagedKeyToHclTerraform(struct?: Mys
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MysqlFlexibleServerCustomerManagedKeyOutputReference extends cdktf.ComplexObject {
+export class MysqlFlexibleServerCustomerManagedKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -364,31 +364,31 @@ export interface MysqlFlexibleServerHighAvailability {
 }
 
 export function mysqlFlexibleServerHighAvailabilityToTerraform(struct?: MysqlFlexibleServerHighAvailabilityOutputReference | MysqlFlexibleServerHighAvailability): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mode: cdktf.stringToTerraform(struct!.mode),
-    standby_availability_zone: cdktf.stringToTerraform(struct!.standbyAvailabilityZone),
+    mode: cdktn.stringToTerraform(struct!.mode),
+    standby_availability_zone: cdktn.stringToTerraform(struct!.standbyAvailabilityZone),
   }
 }
 
 
 export function mysqlFlexibleServerHighAvailabilityToHclTerraform(struct?: MysqlFlexibleServerHighAvailabilityOutputReference | MysqlFlexibleServerHighAvailability): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     standby_availability_zone: {
-      value: cdktf.stringToHclTerraform(struct!.standbyAvailabilityZone),
+      value: cdktn.stringToHclTerraform(struct!.standbyAvailabilityZone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -399,14 +399,14 @@ export function mysqlFlexibleServerHighAvailabilityToHclTerraform(struct?: Mysql
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MysqlFlexibleServerHighAvailabilityOutputReference extends cdktf.ComplexObject {
+export class MysqlFlexibleServerHighAvailabilityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -478,31 +478,31 @@ export interface MysqlFlexibleServerIdentity {
 }
 
 export function mysqlFlexibleServerIdentityToTerraform(struct?: MysqlFlexibleServerIdentityOutputReference | MysqlFlexibleServerIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function mysqlFlexibleServerIdentityToHclTerraform(struct?: MysqlFlexibleServerIdentityOutputReference | MysqlFlexibleServerIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -513,14 +513,14 @@ export function mysqlFlexibleServerIdentityToHclTerraform(struct?: MysqlFlexible
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MysqlFlexibleServerIdentityOutputReference extends cdktf.ComplexObject {
+export class MysqlFlexibleServerIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -554,7 +554,7 @@ export class MysqlFlexibleServerIdentityOutputReference extends cdktf.ComplexObj
   // identity_ids - computed: false, optional: false, required: true
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -593,38 +593,38 @@ export interface MysqlFlexibleServerMaintenanceWindow {
 }
 
 export function mysqlFlexibleServerMaintenanceWindowToTerraform(struct?: MysqlFlexibleServerMaintenanceWindowOutputReference | MysqlFlexibleServerMaintenanceWindow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    day_of_week: cdktf.numberToTerraform(struct!.dayOfWeek),
-    start_hour: cdktf.numberToTerraform(struct!.startHour),
-    start_minute: cdktf.numberToTerraform(struct!.startMinute),
+    day_of_week: cdktn.numberToTerraform(struct!.dayOfWeek),
+    start_hour: cdktn.numberToTerraform(struct!.startHour),
+    start_minute: cdktn.numberToTerraform(struct!.startMinute),
   }
 }
 
 
 export function mysqlFlexibleServerMaintenanceWindowToHclTerraform(struct?: MysqlFlexibleServerMaintenanceWindowOutputReference | MysqlFlexibleServerMaintenanceWindow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     day_of_week: {
-      value: cdktf.numberToHclTerraform(struct!.dayOfWeek),
+      value: cdktn.numberToHclTerraform(struct!.dayOfWeek),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     start_hour: {
-      value: cdktf.numberToHclTerraform(struct!.startHour),
+      value: cdktn.numberToHclTerraform(struct!.startHour),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     start_minute: {
-      value: cdktf.numberToHclTerraform(struct!.startMinute),
+      value: cdktn.numberToHclTerraform(struct!.startMinute),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -635,14 +635,14 @@ export function mysqlFlexibleServerMaintenanceWindowToHclTerraform(struct?: Mysq
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MysqlFlexibleServerMaintenanceWindowOutputReference extends cdktf.ComplexObject {
+export class MysqlFlexibleServerMaintenanceWindowOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -731,11 +731,11 @@ export interface MysqlFlexibleServerStorage {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mysql_flexible_server#auto_grow_enabled MysqlFlexibleServer#auto_grow_enabled}
   */
-  readonly autoGrowEnabled?: boolean | cdktf.IResolvable;
+  readonly autoGrowEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mysql_flexible_server#io_scaling_enabled MysqlFlexibleServer#io_scaling_enabled}
   */
-  readonly ioScalingEnabled?: boolean | cdktf.IResolvable;
+  readonly ioScalingEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mysql_flexible_server#iops MysqlFlexibleServer#iops}
   */
@@ -743,7 +743,7 @@ export interface MysqlFlexibleServerStorage {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mysql_flexible_server#log_on_disk_enabled MysqlFlexibleServer#log_on_disk_enabled}
   */
-  readonly logOnDiskEnabled?: boolean | cdktf.IResolvable;
+  readonly logOnDiskEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mysql_flexible_server#size_gb MysqlFlexibleServer#size_gb}
   */
@@ -751,52 +751,52 @@ export interface MysqlFlexibleServerStorage {
 }
 
 export function mysqlFlexibleServerStorageToTerraform(struct?: MysqlFlexibleServerStorageOutputReference | MysqlFlexibleServerStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auto_grow_enabled: cdktf.booleanToTerraform(struct!.autoGrowEnabled),
-    io_scaling_enabled: cdktf.booleanToTerraform(struct!.ioScalingEnabled),
-    iops: cdktf.numberToTerraform(struct!.iops),
-    log_on_disk_enabled: cdktf.booleanToTerraform(struct!.logOnDiskEnabled),
-    size_gb: cdktf.numberToTerraform(struct!.sizeGb),
+    auto_grow_enabled: cdktn.booleanToTerraform(struct!.autoGrowEnabled),
+    io_scaling_enabled: cdktn.booleanToTerraform(struct!.ioScalingEnabled),
+    iops: cdktn.numberToTerraform(struct!.iops),
+    log_on_disk_enabled: cdktn.booleanToTerraform(struct!.logOnDiskEnabled),
+    size_gb: cdktn.numberToTerraform(struct!.sizeGb),
   }
 }
 
 
 export function mysqlFlexibleServerStorageToHclTerraform(struct?: MysqlFlexibleServerStorageOutputReference | MysqlFlexibleServerStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auto_grow_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.autoGrowEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.autoGrowEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     io_scaling_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.ioScalingEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.ioScalingEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     iops: {
-      value: cdktf.numberToHclTerraform(struct!.iops),
+      value: cdktn.numberToHclTerraform(struct!.iops),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     log_on_disk_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.logOnDiskEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.logOnDiskEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     size_gb: {
-      value: cdktf.numberToHclTerraform(struct!.sizeGb),
+      value: cdktn.numberToHclTerraform(struct!.sizeGb),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -807,14 +807,14 @@ export function mysqlFlexibleServerStorageToHclTerraform(struct?: MysqlFlexibleS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MysqlFlexibleServerStorageOutputReference extends cdktf.ComplexObject {
+export class MysqlFlexibleServerStorageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -864,11 +864,11 @@ export class MysqlFlexibleServerStorageOutputReference extends cdktf.ComplexObje
   }
 
   // auto_grow_enabled - computed: false, optional: true, required: false
-  private _autoGrowEnabled?: boolean | cdktf.IResolvable; 
+  private _autoGrowEnabled?: boolean | cdktn.IResolvable; 
   public get autoGrowEnabled() {
     return this.getBooleanAttribute('auto_grow_enabled');
   }
-  public set autoGrowEnabled(value: boolean | cdktf.IResolvable) {
+  public set autoGrowEnabled(value: boolean | cdktn.IResolvable) {
     this._autoGrowEnabled = value;
   }
   public resetAutoGrowEnabled() {
@@ -880,11 +880,11 @@ export class MysqlFlexibleServerStorageOutputReference extends cdktf.ComplexObje
   }
 
   // io_scaling_enabled - computed: false, optional: true, required: false
-  private _ioScalingEnabled?: boolean | cdktf.IResolvable; 
+  private _ioScalingEnabled?: boolean | cdktn.IResolvable; 
   public get ioScalingEnabled() {
     return this.getBooleanAttribute('io_scaling_enabled');
   }
-  public set ioScalingEnabled(value: boolean | cdktf.IResolvable) {
+  public set ioScalingEnabled(value: boolean | cdktn.IResolvable) {
     this._ioScalingEnabled = value;
   }
   public resetIoScalingEnabled() {
@@ -912,11 +912,11 @@ export class MysqlFlexibleServerStorageOutputReference extends cdktf.ComplexObje
   }
 
   // log_on_disk_enabled - computed: false, optional: true, required: false
-  private _logOnDiskEnabled?: boolean | cdktf.IResolvable; 
+  private _logOnDiskEnabled?: boolean | cdktn.IResolvable; 
   public get logOnDiskEnabled() {
     return this.getBooleanAttribute('log_on_disk_enabled');
   }
-  public set logOnDiskEnabled(value: boolean | cdktf.IResolvable) {
+  public set logOnDiskEnabled(value: boolean | cdktn.IResolvable) {
     this._logOnDiskEnabled = value;
   }
   public resetLogOnDiskEnabled() {
@@ -962,46 +962,46 @@ export interface MysqlFlexibleServerTimeouts {
   readonly update?: string;
 }
 
-export function mysqlFlexibleServerTimeoutsToTerraform(struct?: MysqlFlexibleServerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mysqlFlexibleServerTimeoutsToTerraform(struct?: MysqlFlexibleServerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function mysqlFlexibleServerTimeoutsToHclTerraform(struct?: MysqlFlexibleServerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mysqlFlexibleServerTimeoutsToHclTerraform(struct?: MysqlFlexibleServerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1012,19 +1012,19 @@ export function mysqlFlexibleServerTimeoutsToHclTerraform(struct?: MysqlFlexible
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MysqlFlexibleServerTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MysqlFlexibleServerTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MysqlFlexibleServerTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MysqlFlexibleServerTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1049,7 +1049,7 @@ export class MysqlFlexibleServerTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MysqlFlexibleServerTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MysqlFlexibleServerTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1058,7 +1058,7 @@ export class MysqlFlexibleServerTimeoutsOutputReference extends cdktf.ComplexObj
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1140,7 +1140,7 @@ export class MysqlFlexibleServerTimeoutsOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mysql_flexible_server azurerm_mysql_flexible_server}
 */
-export class MysqlFlexibleServer extends cdktf.TerraformResource {
+export class MysqlFlexibleServer extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1151,14 +1151,14 @@ export class MysqlFlexibleServer extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MysqlFlexibleServer resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MysqlFlexibleServer resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MysqlFlexibleServer to import
   * @param importFromId The id of the existing MysqlFlexibleServer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mysql_flexible_server#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MysqlFlexibleServer to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_mysql_flexible_server", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_mysql_flexible_server", importId: importFromId, provider });
       }
 
   // ===========
@@ -1339,11 +1339,11 @@ export class MysqlFlexibleServer extends cdktf.TerraformResource {
   }
 
   // geo_redundant_backup_enabled - computed: false, optional: true, required: false
-  private _geoRedundantBackupEnabled?: boolean | cdktf.IResolvable; 
+  private _geoRedundantBackupEnabled?: boolean | cdktn.IResolvable; 
   public get geoRedundantBackupEnabled() {
     return this.getBooleanAttribute('geo_redundant_backup_enabled');
   }
-  public set geoRedundantBackupEnabled(value: boolean | cdktf.IResolvable) {
+  public set geoRedundantBackupEnabled(value: boolean | cdktn.IResolvable) {
     this._geoRedundantBackupEnabled = value;
   }
   public resetGeoRedundantBackupEnabled() {
@@ -1665,27 +1665,27 @@ export class MysqlFlexibleServer extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      administrator_login: cdktf.stringToTerraform(this._administratorLogin),
-      administrator_password: cdktf.stringToTerraform(this._administratorPassword),
-      administrator_password_wo: cdktf.stringToTerraform(this._administratorPasswordWo),
-      administrator_password_wo_version: cdktf.numberToTerraform(this._administratorPasswordWoVersion),
-      backup_retention_days: cdktf.numberToTerraform(this._backupRetentionDays),
-      create_mode: cdktf.stringToTerraform(this._createMode),
-      delegated_subnet_id: cdktf.stringToTerraform(this._delegatedSubnetId),
-      geo_redundant_backup_enabled: cdktf.booleanToTerraform(this._geoRedundantBackupEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      point_in_time_restore_time_in_utc: cdktf.stringToTerraform(this._pointInTimeRestoreTimeInUtc),
-      private_dns_zone_id: cdktf.stringToTerraform(this._privateDnsZoneId),
-      public_network_access: cdktf.stringToTerraform(this._publicNetworkAccess),
-      replication_role: cdktf.stringToTerraform(this._replicationRole),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      sku_name: cdktf.stringToTerraform(this._skuName),
-      source_server_id: cdktf.stringToTerraform(this._sourceServerId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      version: cdktf.stringToTerraform(this._version),
-      zone: cdktf.stringToTerraform(this._zone),
+      administrator_login: cdktn.stringToTerraform(this._administratorLogin),
+      administrator_password: cdktn.stringToTerraform(this._administratorPassword),
+      administrator_password_wo: cdktn.stringToTerraform(this._administratorPasswordWo),
+      administrator_password_wo_version: cdktn.numberToTerraform(this._administratorPasswordWoVersion),
+      backup_retention_days: cdktn.numberToTerraform(this._backupRetentionDays),
+      create_mode: cdktn.stringToTerraform(this._createMode),
+      delegated_subnet_id: cdktn.stringToTerraform(this._delegatedSubnetId),
+      geo_redundant_backup_enabled: cdktn.booleanToTerraform(this._geoRedundantBackupEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      point_in_time_restore_time_in_utc: cdktn.stringToTerraform(this._pointInTimeRestoreTimeInUtc),
+      private_dns_zone_id: cdktn.stringToTerraform(this._privateDnsZoneId),
+      public_network_access: cdktn.stringToTerraform(this._publicNetworkAccess),
+      replication_role: cdktn.stringToTerraform(this._replicationRole),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      sku_name: cdktn.stringToTerraform(this._skuName),
+      source_server_id: cdktn.stringToTerraform(this._sourceServerId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      version: cdktn.stringToTerraform(this._version),
+      zone: cdktn.stringToTerraform(this._zone),
       customer_managed_key: mysqlFlexibleServerCustomerManagedKeyToTerraform(this._customerManagedKey.internalValue),
       high_availability: mysqlFlexibleServerHighAvailabilityToTerraform(this._highAvailability.internalValue),
       identity: mysqlFlexibleServerIdentityToTerraform(this._identity.internalValue),
@@ -1698,127 +1698,127 @@ export class MysqlFlexibleServer extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       administrator_login: {
-        value: cdktf.stringToHclTerraform(this._administratorLogin),
+        value: cdktn.stringToHclTerraform(this._administratorLogin),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       administrator_password: {
-        value: cdktf.stringToHclTerraform(this._administratorPassword),
+        value: cdktn.stringToHclTerraform(this._administratorPassword),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       administrator_password_wo: {
-        value: cdktf.stringToHclTerraform(this._administratorPasswordWo),
+        value: cdktn.stringToHclTerraform(this._administratorPasswordWo),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       administrator_password_wo_version: {
-        value: cdktf.numberToHclTerraform(this._administratorPasswordWoVersion),
+        value: cdktn.numberToHclTerraform(this._administratorPasswordWoVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       backup_retention_days: {
-        value: cdktf.numberToHclTerraform(this._backupRetentionDays),
+        value: cdktn.numberToHclTerraform(this._backupRetentionDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       create_mode: {
-        value: cdktf.stringToHclTerraform(this._createMode),
+        value: cdktn.stringToHclTerraform(this._createMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       delegated_subnet_id: {
-        value: cdktf.stringToHclTerraform(this._delegatedSubnetId),
+        value: cdktn.stringToHclTerraform(this._delegatedSubnetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       geo_redundant_backup_enabled: {
-        value: cdktf.booleanToHclTerraform(this._geoRedundantBackupEnabled),
+        value: cdktn.booleanToHclTerraform(this._geoRedundantBackupEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       point_in_time_restore_time_in_utc: {
-        value: cdktf.stringToHclTerraform(this._pointInTimeRestoreTimeInUtc),
+        value: cdktn.stringToHclTerraform(this._pointInTimeRestoreTimeInUtc),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       private_dns_zone_id: {
-        value: cdktf.stringToHclTerraform(this._privateDnsZoneId),
+        value: cdktn.stringToHclTerraform(this._privateDnsZoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_network_access: {
-        value: cdktf.stringToHclTerraform(this._publicNetworkAccess),
+        value: cdktn.stringToHclTerraform(this._publicNetworkAccess),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       replication_role: {
-        value: cdktf.stringToHclTerraform(this._replicationRole),
+        value: cdktn.stringToHclTerraform(this._replicationRole),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sku_name: {
-        value: cdktf.stringToHclTerraform(this._skuName),
+        value: cdktn.stringToHclTerraform(this._skuName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_server_id: {
-        value: cdktf.stringToHclTerraform(this._sourceServerId),
+        value: cdktn.stringToHclTerraform(this._sourceServerId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       version: {
-        value: cdktf.stringToHclTerraform(this._version),
+        value: cdktn.stringToHclTerraform(this._version),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zone: {
-        value: cdktf.stringToHclTerraform(this._zone),
+        value: cdktn.stringToHclTerraform(this._zone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

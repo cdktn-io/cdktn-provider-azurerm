@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApiManagementGatewayHostNameConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface ApiManagementGatewayHostNameConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_gateway_host_name_configuration#api_management_id ApiManagementGatewayHostNameConfiguration#api_management_id}
   */
@@ -31,7 +31,7 @@ export interface ApiManagementGatewayHostNameConfigurationConfig extends cdktf.T
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_gateway_host_name_configuration#http2_enabled ApiManagementGatewayHostNameConfiguration#http2_enabled}
   */
-  readonly http2Enabled?: boolean | cdktf.IResolvable;
+  readonly http2Enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_gateway_host_name_configuration#id ApiManagementGatewayHostNameConfiguration#id}
   *
@@ -46,15 +46,15 @@ export interface ApiManagementGatewayHostNameConfigurationConfig extends cdktf.T
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_gateway_host_name_configuration#request_client_certificate_enabled ApiManagementGatewayHostNameConfiguration#request_client_certificate_enabled}
   */
-  readonly requestClientCertificateEnabled?: boolean | cdktf.IResolvable;
+  readonly requestClientCertificateEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_gateway_host_name_configuration#tls10_enabled ApiManagementGatewayHostNameConfiguration#tls10_enabled}
   */
-  readonly tls10Enabled?: boolean | cdktf.IResolvable;
+  readonly tls10Enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_gateway_host_name_configuration#tls11_enabled ApiManagementGatewayHostNameConfiguration#tls11_enabled}
   */
-  readonly tls11Enabled?: boolean | cdktf.IResolvable;
+  readonly tls11Enabled?: boolean | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -81,46 +81,46 @@ export interface ApiManagementGatewayHostNameConfigurationTimeouts {
   readonly update?: string;
 }
 
-export function apiManagementGatewayHostNameConfigurationTimeoutsToTerraform(struct?: ApiManagementGatewayHostNameConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementGatewayHostNameConfigurationTimeoutsToTerraform(struct?: ApiManagementGatewayHostNameConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function apiManagementGatewayHostNameConfigurationTimeoutsToHclTerraform(struct?: ApiManagementGatewayHostNameConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementGatewayHostNameConfigurationTimeoutsToHclTerraform(struct?: ApiManagementGatewayHostNameConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -131,19 +131,19 @@ export function apiManagementGatewayHostNameConfigurationTimeoutsToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementGatewayHostNameConfigurationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApiManagementGatewayHostNameConfigurationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApiManagementGatewayHostNameConfigurationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApiManagementGatewayHostNameConfigurationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -168,7 +168,7 @@ export class ApiManagementGatewayHostNameConfigurationTimeoutsOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApiManagementGatewayHostNameConfigurationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApiManagementGatewayHostNameConfigurationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -177,7 +177,7 @@ export class ApiManagementGatewayHostNameConfigurationTimeoutsOutputReference ex
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -259,7 +259,7 @@ export class ApiManagementGatewayHostNameConfigurationTimeoutsOutputReference ex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_gateway_host_name_configuration azurerm_api_management_gateway_host_name_configuration}
 */
-export class ApiManagementGatewayHostNameConfiguration extends cdktf.TerraformResource {
+export class ApiManagementGatewayHostNameConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -270,14 +270,14 @@ export class ApiManagementGatewayHostNameConfiguration extends cdktf.TerraformRe
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApiManagementGatewayHostNameConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApiManagementGatewayHostNameConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiManagementGatewayHostNameConfiguration to import
   * @param importFromId The id of the existing ApiManagementGatewayHostNameConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_gateway_host_name_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiManagementGatewayHostNameConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_api_management_gateway_host_name_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_api_management_gateway_host_name_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -377,11 +377,11 @@ export class ApiManagementGatewayHostNameConfiguration extends cdktf.TerraformRe
   }
 
   // http2_enabled - computed: false, optional: true, required: false
-  private _http2Enabled?: boolean | cdktf.IResolvable; 
+  private _http2Enabled?: boolean | cdktn.IResolvable; 
   public get http2Enabled() {
     return this.getBooleanAttribute('http2_enabled');
   }
-  public set http2Enabled(value: boolean | cdktf.IResolvable) {
+  public set http2Enabled(value: boolean | cdktn.IResolvable) {
     this._http2Enabled = value;
   }
   public resetHttp2Enabled() {
@@ -422,11 +422,11 @@ export class ApiManagementGatewayHostNameConfiguration extends cdktf.TerraformRe
   }
 
   // request_client_certificate_enabled - computed: false, optional: true, required: false
-  private _requestClientCertificateEnabled?: boolean | cdktf.IResolvable; 
+  private _requestClientCertificateEnabled?: boolean | cdktn.IResolvable; 
   public get requestClientCertificateEnabled() {
     return this.getBooleanAttribute('request_client_certificate_enabled');
   }
-  public set requestClientCertificateEnabled(value: boolean | cdktf.IResolvable) {
+  public set requestClientCertificateEnabled(value: boolean | cdktn.IResolvable) {
     this._requestClientCertificateEnabled = value;
   }
   public resetRequestClientCertificateEnabled() {
@@ -438,11 +438,11 @@ export class ApiManagementGatewayHostNameConfiguration extends cdktf.TerraformRe
   }
 
   // tls10_enabled - computed: false, optional: true, required: false
-  private _tls10Enabled?: boolean | cdktf.IResolvable; 
+  private _tls10Enabled?: boolean | cdktn.IResolvable; 
   public get tls10Enabled() {
     return this.getBooleanAttribute('tls10_enabled');
   }
-  public set tls10Enabled(value: boolean | cdktf.IResolvable) {
+  public set tls10Enabled(value: boolean | cdktn.IResolvable) {
     this._tls10Enabled = value;
   }
   public resetTls10Enabled() {
@@ -454,11 +454,11 @@ export class ApiManagementGatewayHostNameConfiguration extends cdktf.TerraformRe
   }
 
   // tls11_enabled - computed: false, optional: true, required: false
-  private _tls11Enabled?: boolean | cdktf.IResolvable; 
+  private _tls11Enabled?: boolean | cdktn.IResolvable; 
   public get tls11Enabled() {
     return this.getBooleanAttribute('tls11_enabled');
   }
-  public set tls11Enabled(value: boolean | cdktf.IResolvable) {
+  public set tls11Enabled(value: boolean | cdktn.IResolvable) {
     this._tls11Enabled = value;
   }
   public resetTls11Enabled() {
@@ -491,16 +491,16 @@ export class ApiManagementGatewayHostNameConfiguration extends cdktf.TerraformRe
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_management_id: cdktf.stringToTerraform(this._apiManagementId),
-      certificate_id: cdktf.stringToTerraform(this._certificateId),
-      gateway_name: cdktf.stringToTerraform(this._gatewayName),
-      host_name: cdktf.stringToTerraform(this._hostName),
-      http2_enabled: cdktf.booleanToTerraform(this._http2Enabled),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      request_client_certificate_enabled: cdktf.booleanToTerraform(this._requestClientCertificateEnabled),
-      tls10_enabled: cdktf.booleanToTerraform(this._tls10Enabled),
-      tls11_enabled: cdktf.booleanToTerraform(this._tls11Enabled),
+      api_management_id: cdktn.stringToTerraform(this._apiManagementId),
+      certificate_id: cdktn.stringToTerraform(this._certificateId),
+      gateway_name: cdktn.stringToTerraform(this._gatewayName),
+      host_name: cdktn.stringToTerraform(this._hostName),
+      http2_enabled: cdktn.booleanToTerraform(this._http2Enabled),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      request_client_certificate_enabled: cdktn.booleanToTerraform(this._requestClientCertificateEnabled),
+      tls10_enabled: cdktn.booleanToTerraform(this._tls10Enabled),
+      tls11_enabled: cdktn.booleanToTerraform(this._tls11Enabled),
       timeouts: apiManagementGatewayHostNameConfigurationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -508,61 +508,61 @@ export class ApiManagementGatewayHostNameConfiguration extends cdktf.TerraformRe
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_management_id: {
-        value: cdktf.stringToHclTerraform(this._apiManagementId),
+        value: cdktn.stringToHclTerraform(this._apiManagementId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       certificate_id: {
-        value: cdktf.stringToHclTerraform(this._certificateId),
+        value: cdktn.stringToHclTerraform(this._certificateId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       gateway_name: {
-        value: cdktf.stringToHclTerraform(this._gatewayName),
+        value: cdktn.stringToHclTerraform(this._gatewayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       host_name: {
-        value: cdktf.stringToHclTerraform(this._hostName),
+        value: cdktn.stringToHclTerraform(this._hostName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       http2_enabled: {
-        value: cdktf.booleanToHclTerraform(this._http2Enabled),
+        value: cdktn.booleanToHclTerraform(this._http2Enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       request_client_certificate_enabled: {
-        value: cdktf.booleanToHclTerraform(this._requestClientCertificateEnabled),
+        value: cdktn.booleanToHclTerraform(this._requestClientCertificateEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tls10_enabled: {
-        value: cdktf.booleanToHclTerraform(this._tls10Enabled),
+        value: cdktn.booleanToHclTerraform(this._tls10Enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tls11_enabled: {
-        value: cdktf.booleanToHclTerraform(this._tls11Enabled),
+        value: cdktn.booleanToHclTerraform(this._tls11Enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

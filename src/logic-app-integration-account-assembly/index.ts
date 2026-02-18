@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LogicAppIntegrationAccountAssemblyConfig extends cdktf.TerraformMetaArguments {
+export interface LogicAppIntegrationAccountAssemblyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/logic_app_integration_account_assembly#assembly_name LogicAppIntegrationAccountAssembly#assembly_name}
   */
@@ -77,46 +77,46 @@ export interface LogicAppIntegrationAccountAssemblyTimeouts {
   readonly update?: string;
 }
 
-export function logicAppIntegrationAccountAssemblyTimeoutsToTerraform(struct?: LogicAppIntegrationAccountAssemblyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logicAppIntegrationAccountAssemblyTimeoutsToTerraform(struct?: LogicAppIntegrationAccountAssemblyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function logicAppIntegrationAccountAssemblyTimeoutsToHclTerraform(struct?: LogicAppIntegrationAccountAssemblyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logicAppIntegrationAccountAssemblyTimeoutsToHclTerraform(struct?: LogicAppIntegrationAccountAssemblyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -127,19 +127,19 @@ export function logicAppIntegrationAccountAssemblyTimeoutsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogicAppIntegrationAccountAssemblyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class LogicAppIntegrationAccountAssemblyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LogicAppIntegrationAccountAssemblyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): LogicAppIntegrationAccountAssemblyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -164,7 +164,7 @@ export class LogicAppIntegrationAccountAssemblyTimeoutsOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogicAppIntegrationAccountAssemblyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogicAppIntegrationAccountAssemblyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -173,7 +173,7 @@ export class LogicAppIntegrationAccountAssemblyTimeoutsOutputReference extends c
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -255,7 +255,7 @@ export class LogicAppIntegrationAccountAssemblyTimeoutsOutputReference extends c
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/logic_app_integration_account_assembly azurerm_logic_app_integration_account_assembly}
 */
-export class LogicAppIntegrationAccountAssembly extends cdktf.TerraformResource {
+export class LogicAppIntegrationAccountAssembly extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -266,14 +266,14 @@ export class LogicAppIntegrationAccountAssembly extends cdktf.TerraformResource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LogicAppIntegrationAccountAssembly resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LogicAppIntegrationAccountAssembly resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LogicAppIntegrationAccountAssembly to import
   * @param importFromId The id of the existing LogicAppIntegrationAccountAssembly that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/logic_app_integration_account_assembly#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LogicAppIntegrationAccountAssembly to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_logic_app_integration_account_assembly", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_logic_app_integration_account_assembly", importId: importFromId, provider });
       }
 
   // ===========
@@ -473,15 +473,15 @@ export class LogicAppIntegrationAccountAssembly extends cdktf.TerraformResource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      assembly_name: cdktf.stringToTerraform(this._assemblyName),
-      assembly_version: cdktf.stringToTerraform(this._assemblyVersion),
-      content: cdktf.stringToTerraform(this._content),
-      content_link_uri: cdktf.stringToTerraform(this._contentLinkUri),
-      id: cdktf.stringToTerraform(this._id),
-      integration_account_name: cdktf.stringToTerraform(this._integrationAccountName),
-      metadata: cdktf.hashMapper(cdktf.stringToTerraform)(this._metadata),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
+      assembly_name: cdktn.stringToTerraform(this._assemblyName),
+      assembly_version: cdktn.stringToTerraform(this._assemblyVersion),
+      content: cdktn.stringToTerraform(this._content),
+      content_link_uri: cdktn.stringToTerraform(this._contentLinkUri),
+      id: cdktn.stringToTerraform(this._id),
+      integration_account_name: cdktn.stringToTerraform(this._integrationAccountName),
+      metadata: cdktn.hashMapper(cdktn.stringToTerraform)(this._metadata),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
       timeouts: logicAppIntegrationAccountAssemblyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -489,55 +489,55 @@ export class LogicAppIntegrationAccountAssembly extends cdktf.TerraformResource 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       assembly_name: {
-        value: cdktf.stringToHclTerraform(this._assemblyName),
+        value: cdktn.stringToHclTerraform(this._assemblyName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       assembly_version: {
-        value: cdktf.stringToHclTerraform(this._assemblyVersion),
+        value: cdktn.stringToHclTerraform(this._assemblyVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       content: {
-        value: cdktf.stringToHclTerraform(this._content),
+        value: cdktn.stringToHclTerraform(this._content),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       content_link_uri: {
-        value: cdktf.stringToHclTerraform(this._contentLinkUri),
+        value: cdktn.stringToHclTerraform(this._contentLinkUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       integration_account_name: {
-        value: cdktf.stringToHclTerraform(this._integrationAccountName),
+        value: cdktn.stringToHclTerraform(this._integrationAccountName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       metadata: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._metadata),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._metadata),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

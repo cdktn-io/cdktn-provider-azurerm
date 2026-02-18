@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NginxDeploymentConfig extends cdktf.TerraformMetaArguments {
+export interface NginxDeploymentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/nginx_deployment#automatic_upgrade_channel NginxDeployment#automatic_upgrade_channel}
   */
@@ -23,7 +23,7 @@ export interface NginxDeploymentConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/nginx_deployment#diagnose_support_enabled NginxDeployment#diagnose_support_enabled}
   */
-  readonly diagnoseSupportEnabled?: boolean | cdktf.IResolvable;
+  readonly diagnoseSupportEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/nginx_deployment#email NginxDeployment#email}
   */
@@ -64,13 +64,13 @@ export interface NginxDeploymentConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/nginx_deployment#auto_scale_profile NginxDeployment#auto_scale_profile}
   */
-  readonly autoScaleProfile?: NginxDeploymentAutoScaleProfile[] | cdktf.IResolvable;
+  readonly autoScaleProfile?: NginxDeploymentAutoScaleProfile[] | cdktn.IResolvable;
   /**
   * frontend_private block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/nginx_deployment#frontend_private NginxDeployment#frontend_private}
   */
-  readonly frontendPrivate?: NginxDeploymentFrontendPrivate[] | cdktf.IResolvable;
+  readonly frontendPrivate?: NginxDeploymentFrontendPrivate[] | cdktn.IResolvable;
   /**
   * frontend_public block
   *
@@ -88,13 +88,13 @@ export interface NginxDeploymentConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/nginx_deployment#logging_storage_account NginxDeployment#logging_storage_account}
   */
-  readonly loggingStorageAccount?: NginxDeploymentLoggingStorageAccount[] | cdktf.IResolvable;
+  readonly loggingStorageAccount?: NginxDeploymentLoggingStorageAccount[] | cdktn.IResolvable;
   /**
   * network_interface block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/nginx_deployment#network_interface NginxDeployment#network_interface}
   */
-  readonly networkInterface?: NginxDeploymentNetworkInterface[] | cdktf.IResolvable;
+  readonly networkInterface?: NginxDeploymentNetworkInterface[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -123,39 +123,39 @@ export interface NginxDeploymentAutoScaleProfile {
   readonly name: string;
 }
 
-export function nginxDeploymentAutoScaleProfileToTerraform(struct?: NginxDeploymentAutoScaleProfile | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function nginxDeploymentAutoScaleProfileToTerraform(struct?: NginxDeploymentAutoScaleProfile | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_capacity: cdktf.numberToTerraform(struct!.maxCapacity),
-    min_capacity: cdktf.numberToTerraform(struct!.minCapacity),
-    name: cdktf.stringToTerraform(struct!.name),
+    max_capacity: cdktn.numberToTerraform(struct!.maxCapacity),
+    min_capacity: cdktn.numberToTerraform(struct!.minCapacity),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function nginxDeploymentAutoScaleProfileToHclTerraform(struct?: NginxDeploymentAutoScaleProfile | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function nginxDeploymentAutoScaleProfileToHclTerraform(struct?: NginxDeploymentAutoScaleProfile | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_capacity: {
-      value: cdktf.numberToHclTerraform(struct!.maxCapacity),
+      value: cdktn.numberToHclTerraform(struct!.maxCapacity),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     min_capacity: {
-      value: cdktf.numberToHclTerraform(struct!.minCapacity),
+      value: cdktn.numberToHclTerraform(struct!.minCapacity),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -166,9 +166,9 @@ export function nginxDeploymentAutoScaleProfileToHclTerraform(struct?: NginxDepl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NginxDeploymentAutoScaleProfileOutputReference extends cdktf.ComplexObject {
+export class NginxDeploymentAutoScaleProfileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -176,11 +176,11 @@ export class NginxDeploymentAutoScaleProfileOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NginxDeploymentAutoScaleProfile | cdktf.IResolvable | undefined {
+  public get internalValue(): NginxDeploymentAutoScaleProfile | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -201,7 +201,7 @@ export class NginxDeploymentAutoScaleProfileOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NginxDeploymentAutoScaleProfile | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NginxDeploymentAutoScaleProfile | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -209,7 +209,7 @@ export class NginxDeploymentAutoScaleProfileOutputReference extends cdktf.Comple
       this._minCapacity = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -262,15 +262,15 @@ export class NginxDeploymentAutoScaleProfileOutputReference extends cdktf.Comple
   }
 }
 
-export class NginxDeploymentAutoScaleProfileList extends cdktf.ComplexList {
-  public internalValue? : NginxDeploymentAutoScaleProfile[] | cdktf.IResolvable
+export class NginxDeploymentAutoScaleProfileList extends cdktn.ComplexList {
+  public internalValue? : NginxDeploymentAutoScaleProfile[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -296,39 +296,39 @@ export interface NginxDeploymentFrontendPrivate {
   readonly subnetId: string;
 }
 
-export function nginxDeploymentFrontendPrivateToTerraform(struct?: NginxDeploymentFrontendPrivate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function nginxDeploymentFrontendPrivateToTerraform(struct?: NginxDeploymentFrontendPrivate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allocation_method: cdktf.stringToTerraform(struct!.allocationMethod),
-    ip_address: cdktf.stringToTerraform(struct!.ipAddress),
-    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
+    allocation_method: cdktn.stringToTerraform(struct!.allocationMethod),
+    ip_address: cdktn.stringToTerraform(struct!.ipAddress),
+    subnet_id: cdktn.stringToTerraform(struct!.subnetId),
   }
 }
 
 
-export function nginxDeploymentFrontendPrivateToHclTerraform(struct?: NginxDeploymentFrontendPrivate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function nginxDeploymentFrontendPrivateToHclTerraform(struct?: NginxDeploymentFrontendPrivate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allocation_method: {
-      value: cdktf.stringToHclTerraform(struct!.allocationMethod),
+      value: cdktn.stringToHclTerraform(struct!.allocationMethod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ip_address: {
-      value: cdktf.stringToHclTerraform(struct!.ipAddress),
+      value: cdktn.stringToHclTerraform(struct!.ipAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.subnetId),
+      value: cdktn.stringToHclTerraform(struct!.subnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -339,9 +339,9 @@ export function nginxDeploymentFrontendPrivateToHclTerraform(struct?: NginxDeplo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NginxDeploymentFrontendPrivateOutputReference extends cdktf.ComplexObject {
+export class NginxDeploymentFrontendPrivateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -349,11 +349,11 @@ export class NginxDeploymentFrontendPrivateOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NginxDeploymentFrontendPrivate | cdktf.IResolvable | undefined {
+  public get internalValue(): NginxDeploymentFrontendPrivate | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -374,7 +374,7 @@ export class NginxDeploymentFrontendPrivateOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NginxDeploymentFrontendPrivate | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NginxDeploymentFrontendPrivate | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -382,7 +382,7 @@ export class NginxDeploymentFrontendPrivateOutputReference extends cdktf.Complex
       this._ipAddress = undefined;
       this._subnetId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -435,15 +435,15 @@ export class NginxDeploymentFrontendPrivateOutputReference extends cdktf.Complex
   }
 }
 
-export class NginxDeploymentFrontendPrivateList extends cdktf.ComplexList {
-  public internalValue? : NginxDeploymentFrontendPrivate[] | cdktf.IResolvable
+export class NginxDeploymentFrontendPrivateList extends cdktn.ComplexList {
+  public internalValue? : NginxDeploymentFrontendPrivate[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -462,24 +462,24 @@ export interface NginxDeploymentFrontendPublic {
 }
 
 export function nginxDeploymentFrontendPublicToTerraform(struct?: NginxDeploymentFrontendPublicOutputReference | NginxDeploymentFrontendPublic): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ip_address: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ipAddress),
+    ip_address: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.ipAddress),
   }
 }
 
 
 export function nginxDeploymentFrontendPublicToHclTerraform(struct?: NginxDeploymentFrontendPublicOutputReference | NginxDeploymentFrontendPublic): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ip_address: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ipAddress),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.ipAddress),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -490,14 +490,14 @@ export function nginxDeploymentFrontendPublicToHclTerraform(struct?: NginxDeploy
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NginxDeploymentFrontendPublicOutputReference extends cdktf.ComplexObject {
+export class NginxDeploymentFrontendPublicOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -550,31 +550,31 @@ export interface NginxDeploymentIdentity {
 }
 
 export function nginxDeploymentIdentityToTerraform(struct?: NginxDeploymentIdentityOutputReference | NginxDeploymentIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function nginxDeploymentIdentityToHclTerraform(struct?: NginxDeploymentIdentityOutputReference | NginxDeploymentIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -585,14 +585,14 @@ export function nginxDeploymentIdentityToHclTerraform(struct?: NginxDeploymentId
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NginxDeploymentIdentityOutputReference extends cdktf.ComplexObject {
+export class NginxDeploymentIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -626,7 +626,7 @@ export class NginxDeploymentIdentityOutputReference extends cdktf.ComplexObject 
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -673,32 +673,32 @@ export interface NginxDeploymentLoggingStorageAccount {
   readonly name?: string;
 }
 
-export function nginxDeploymentLoggingStorageAccountToTerraform(struct?: NginxDeploymentLoggingStorageAccount | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function nginxDeploymentLoggingStorageAccountToTerraform(struct?: NginxDeploymentLoggingStorageAccount | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    container_name: cdktf.stringToTerraform(struct!.containerName),
-    name: cdktf.stringToTerraform(struct!.name),
+    container_name: cdktn.stringToTerraform(struct!.containerName),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function nginxDeploymentLoggingStorageAccountToHclTerraform(struct?: NginxDeploymentLoggingStorageAccount | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function nginxDeploymentLoggingStorageAccountToHclTerraform(struct?: NginxDeploymentLoggingStorageAccount | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     container_name: {
-      value: cdktf.stringToHclTerraform(struct!.containerName),
+      value: cdktn.stringToHclTerraform(struct!.containerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -709,9 +709,9 @@ export function nginxDeploymentLoggingStorageAccountToHclTerraform(struct?: Ngin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NginxDeploymentLoggingStorageAccountOutputReference extends cdktf.ComplexObject {
+export class NginxDeploymentLoggingStorageAccountOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -719,11 +719,11 @@ export class NginxDeploymentLoggingStorageAccountOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NginxDeploymentLoggingStorageAccount | cdktf.IResolvable | undefined {
+  public get internalValue(): NginxDeploymentLoggingStorageAccount | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -740,14 +740,14 @@ export class NginxDeploymentLoggingStorageAccountOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NginxDeploymentLoggingStorageAccount | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NginxDeploymentLoggingStorageAccount | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._containerName = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -792,15 +792,15 @@ export class NginxDeploymentLoggingStorageAccountOutputReference extends cdktf.C
   }
 }
 
-export class NginxDeploymentLoggingStorageAccountList extends cdktf.ComplexList {
-  public internalValue? : NginxDeploymentLoggingStorageAccount[] | cdktf.IResolvable
+export class NginxDeploymentLoggingStorageAccountList extends cdktn.ComplexList {
+  public internalValue? : NginxDeploymentLoggingStorageAccount[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -818,25 +818,25 @@ export interface NginxDeploymentNetworkInterface {
   readonly subnetId: string;
 }
 
-export function nginxDeploymentNetworkInterfaceToTerraform(struct?: NginxDeploymentNetworkInterface | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function nginxDeploymentNetworkInterfaceToTerraform(struct?: NginxDeploymentNetworkInterface | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
+    subnet_id: cdktn.stringToTerraform(struct!.subnetId),
   }
 }
 
 
-export function nginxDeploymentNetworkInterfaceToHclTerraform(struct?: NginxDeploymentNetworkInterface | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function nginxDeploymentNetworkInterfaceToHclTerraform(struct?: NginxDeploymentNetworkInterface | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.subnetId),
+      value: cdktn.stringToHclTerraform(struct!.subnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -847,9 +847,9 @@ export function nginxDeploymentNetworkInterfaceToHclTerraform(struct?: NginxDepl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NginxDeploymentNetworkInterfaceOutputReference extends cdktf.ComplexObject {
+export class NginxDeploymentNetworkInterfaceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -857,11 +857,11 @@ export class NginxDeploymentNetworkInterfaceOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NginxDeploymentNetworkInterface | cdktf.IResolvable | undefined {
+  public get internalValue(): NginxDeploymentNetworkInterface | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -874,13 +874,13 @@ export class NginxDeploymentNetworkInterfaceOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NginxDeploymentNetworkInterface | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NginxDeploymentNetworkInterface | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._subnetId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -905,15 +905,15 @@ export class NginxDeploymentNetworkInterfaceOutputReference extends cdktf.Comple
   }
 }
 
-export class NginxDeploymentNetworkInterfaceList extends cdktf.ComplexList {
-  public internalValue? : NginxDeploymentNetworkInterface[] | cdktf.IResolvable
+export class NginxDeploymentNetworkInterfaceList extends cdktn.ComplexList {
+  public internalValue? : NginxDeploymentNetworkInterface[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -943,46 +943,46 @@ export interface NginxDeploymentTimeouts {
   readonly update?: string;
 }
 
-export function nginxDeploymentTimeoutsToTerraform(struct?: NginxDeploymentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function nginxDeploymentTimeoutsToTerraform(struct?: NginxDeploymentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function nginxDeploymentTimeoutsToHclTerraform(struct?: NginxDeploymentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function nginxDeploymentTimeoutsToHclTerraform(struct?: NginxDeploymentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -993,19 +993,19 @@ export function nginxDeploymentTimeoutsToHclTerraform(struct?: NginxDeploymentTi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NginxDeploymentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NginxDeploymentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NginxDeploymentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NginxDeploymentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1030,7 +1030,7 @@ export class NginxDeploymentTimeoutsOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NginxDeploymentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NginxDeploymentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1039,7 +1039,7 @@ export class NginxDeploymentTimeoutsOutputReference extends cdktf.ComplexObject 
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1121,8 +1121,8 @@ export interface NginxDeploymentWebApplicationFirewallStatusAttackSignaturesPack
 }
 
 export function nginxDeploymentWebApplicationFirewallStatusAttackSignaturesPackageToTerraform(struct?: NginxDeploymentWebApplicationFirewallStatusAttackSignaturesPackage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1131,8 +1131,8 @@ export function nginxDeploymentWebApplicationFirewallStatusAttackSignaturesPacka
 
 
 export function nginxDeploymentWebApplicationFirewallStatusAttackSignaturesPackageToHclTerraform(struct?: NginxDeploymentWebApplicationFirewallStatusAttackSignaturesPackage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1140,7 +1140,7 @@ export function nginxDeploymentWebApplicationFirewallStatusAttackSignaturesPacka
   return attrs;
 }
 
-export class NginxDeploymentWebApplicationFirewallStatusAttackSignaturesPackageOutputReference extends cdktf.ComplexObject {
+export class NginxDeploymentWebApplicationFirewallStatusAttackSignaturesPackageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1149,7 +1149,7 @@ export class NginxDeploymentWebApplicationFirewallStatusAttackSignaturesPackageO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1179,14 +1179,14 @@ export class NginxDeploymentWebApplicationFirewallStatusAttackSignaturesPackageO
   }
 }
 
-export class NginxDeploymentWebApplicationFirewallStatusAttackSignaturesPackageList extends cdktf.ComplexList {
+export class NginxDeploymentWebApplicationFirewallStatusAttackSignaturesPackageList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1201,8 +1201,8 @@ export interface NginxDeploymentWebApplicationFirewallStatusBotSignaturesPackage
 }
 
 export function nginxDeploymentWebApplicationFirewallStatusBotSignaturesPackageToTerraform(struct?: NginxDeploymentWebApplicationFirewallStatusBotSignaturesPackage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1211,8 +1211,8 @@ export function nginxDeploymentWebApplicationFirewallStatusBotSignaturesPackageT
 
 
 export function nginxDeploymentWebApplicationFirewallStatusBotSignaturesPackageToHclTerraform(struct?: NginxDeploymentWebApplicationFirewallStatusBotSignaturesPackage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1220,7 +1220,7 @@ export function nginxDeploymentWebApplicationFirewallStatusBotSignaturesPackageT
   return attrs;
 }
 
-export class NginxDeploymentWebApplicationFirewallStatusBotSignaturesPackageOutputReference extends cdktf.ComplexObject {
+export class NginxDeploymentWebApplicationFirewallStatusBotSignaturesPackageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1229,7 +1229,7 @@ export class NginxDeploymentWebApplicationFirewallStatusBotSignaturesPackageOutp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1259,14 +1259,14 @@ export class NginxDeploymentWebApplicationFirewallStatusBotSignaturesPackageOutp
   }
 }
 
-export class NginxDeploymentWebApplicationFirewallStatusBotSignaturesPackageList extends cdktf.ComplexList {
+export class NginxDeploymentWebApplicationFirewallStatusBotSignaturesPackageList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1281,8 +1281,8 @@ export interface NginxDeploymentWebApplicationFirewallStatusComponentVersions {
 }
 
 export function nginxDeploymentWebApplicationFirewallStatusComponentVersionsToTerraform(struct?: NginxDeploymentWebApplicationFirewallStatusComponentVersions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1291,8 +1291,8 @@ export function nginxDeploymentWebApplicationFirewallStatusComponentVersionsToTe
 
 
 export function nginxDeploymentWebApplicationFirewallStatusComponentVersionsToHclTerraform(struct?: NginxDeploymentWebApplicationFirewallStatusComponentVersions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1300,7 +1300,7 @@ export function nginxDeploymentWebApplicationFirewallStatusComponentVersionsToHc
   return attrs;
 }
 
-export class NginxDeploymentWebApplicationFirewallStatusComponentVersionsOutputReference extends cdktf.ComplexObject {
+export class NginxDeploymentWebApplicationFirewallStatusComponentVersionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1309,7 +1309,7 @@ export class NginxDeploymentWebApplicationFirewallStatusComponentVersionsOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1339,14 +1339,14 @@ export class NginxDeploymentWebApplicationFirewallStatusComponentVersionsOutputR
   }
 }
 
-export class NginxDeploymentWebApplicationFirewallStatusComponentVersionsList extends cdktf.ComplexList {
+export class NginxDeploymentWebApplicationFirewallStatusComponentVersionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1361,8 +1361,8 @@ export interface NginxDeploymentWebApplicationFirewallStatusThreatCampaignsPacka
 }
 
 export function nginxDeploymentWebApplicationFirewallStatusThreatCampaignsPackageToTerraform(struct?: NginxDeploymentWebApplicationFirewallStatusThreatCampaignsPackage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1371,8 +1371,8 @@ export function nginxDeploymentWebApplicationFirewallStatusThreatCampaignsPackag
 
 
 export function nginxDeploymentWebApplicationFirewallStatusThreatCampaignsPackageToHclTerraform(struct?: NginxDeploymentWebApplicationFirewallStatusThreatCampaignsPackage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1380,7 +1380,7 @@ export function nginxDeploymentWebApplicationFirewallStatusThreatCampaignsPackag
   return attrs;
 }
 
-export class NginxDeploymentWebApplicationFirewallStatusThreatCampaignsPackageOutputReference extends cdktf.ComplexObject {
+export class NginxDeploymentWebApplicationFirewallStatusThreatCampaignsPackageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1389,7 +1389,7 @@ export class NginxDeploymentWebApplicationFirewallStatusThreatCampaignsPackageOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1419,14 +1419,14 @@ export class NginxDeploymentWebApplicationFirewallStatusThreatCampaignsPackageOu
   }
 }
 
-export class NginxDeploymentWebApplicationFirewallStatusThreatCampaignsPackageList extends cdktf.ComplexList {
+export class NginxDeploymentWebApplicationFirewallStatusThreatCampaignsPackageList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1441,8 +1441,8 @@ export interface NginxDeploymentWebApplicationFirewallStatus {
 }
 
 export function nginxDeploymentWebApplicationFirewallStatusToTerraform(struct?: NginxDeploymentWebApplicationFirewallStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1451,8 +1451,8 @@ export function nginxDeploymentWebApplicationFirewallStatusToTerraform(struct?: 
 
 
 export function nginxDeploymentWebApplicationFirewallStatusToHclTerraform(struct?: NginxDeploymentWebApplicationFirewallStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1460,7 +1460,7 @@ export function nginxDeploymentWebApplicationFirewallStatusToHclTerraform(struct
   return attrs;
 }
 
-export class NginxDeploymentWebApplicationFirewallStatusOutputReference extends cdktf.ComplexObject {
+export class NginxDeploymentWebApplicationFirewallStatusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1469,7 +1469,7 @@ export class NginxDeploymentWebApplicationFirewallStatusOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1513,14 +1513,14 @@ export class NginxDeploymentWebApplicationFirewallStatusOutputReference extends 
   }
 }
 
-export class NginxDeploymentWebApplicationFirewallStatusList extends cdktf.ComplexList {
+export class NginxDeploymentWebApplicationFirewallStatusList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1535,28 +1535,28 @@ export interface NginxDeploymentWebApplicationFirewall {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/nginx_deployment#activation_state_enabled NginxDeployment#activation_state_enabled}
   */
-  readonly activationStateEnabled: boolean | cdktf.IResolvable;
+  readonly activationStateEnabled: boolean | cdktn.IResolvable;
 }
 
 export function nginxDeploymentWebApplicationFirewallToTerraform(struct?: NginxDeploymentWebApplicationFirewallOutputReference | NginxDeploymentWebApplicationFirewall): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    activation_state_enabled: cdktf.booleanToTerraform(struct!.activationStateEnabled),
+    activation_state_enabled: cdktn.booleanToTerraform(struct!.activationStateEnabled),
   }
 }
 
 
 export function nginxDeploymentWebApplicationFirewallToHclTerraform(struct?: NginxDeploymentWebApplicationFirewallOutputReference | NginxDeploymentWebApplicationFirewall): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     activation_state_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.activationStateEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.activationStateEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1567,14 +1567,14 @@ export function nginxDeploymentWebApplicationFirewallToHclTerraform(struct?: Ngi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NginxDeploymentWebApplicationFirewallOutputReference extends cdktf.ComplexObject {
+export class NginxDeploymentWebApplicationFirewallOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1600,11 +1600,11 @@ export class NginxDeploymentWebApplicationFirewallOutputReference extends cdktf.
   }
 
   // activation_state_enabled - computed: false, optional: false, required: true
-  private _activationStateEnabled?: boolean | cdktf.IResolvable; 
+  private _activationStateEnabled?: boolean | cdktn.IResolvable; 
   public get activationStateEnabled() {
     return this.getBooleanAttribute('activation_state_enabled');
   }
-  public set activationStateEnabled(value: boolean | cdktf.IResolvable) {
+  public set activationStateEnabled(value: boolean | cdktn.IResolvable) {
     this._activationStateEnabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1622,7 +1622,7 @@ export class NginxDeploymentWebApplicationFirewallOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/nginx_deployment azurerm_nginx_deployment}
 */
-export class NginxDeployment extends cdktf.TerraformResource {
+export class NginxDeployment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1633,14 +1633,14 @@ export class NginxDeployment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NginxDeployment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NginxDeployment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NginxDeployment to import
   * @param importFromId The id of the existing NginxDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/nginx_deployment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NginxDeployment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_nginx_deployment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_nginx_deployment", importId: importFromId, provider });
       }
 
   // ===========
@@ -1733,11 +1733,11 @@ export class NginxDeployment extends cdktf.TerraformResource {
   }
 
   // diagnose_support_enabled - computed: false, optional: true, required: false
-  private _diagnoseSupportEnabled?: boolean | cdktf.IResolvable; 
+  private _diagnoseSupportEnabled?: boolean | cdktn.IResolvable; 
   public get diagnoseSupportEnabled() {
     return this.getBooleanAttribute('diagnose_support_enabled');
   }
-  public set diagnoseSupportEnabled(value: boolean | cdktf.IResolvable) {
+  public set diagnoseSupportEnabled(value: boolean | cdktn.IResolvable) {
     this._diagnoseSupportEnabled = value;
   }
   public resetDiagnoseSupportEnabled() {
@@ -1879,7 +1879,7 @@ export class NginxDeployment extends cdktf.TerraformResource {
   public get autoScaleProfile() {
     return this._autoScaleProfile;
   }
-  public putAutoScaleProfile(value: NginxDeploymentAutoScaleProfile[] | cdktf.IResolvable) {
+  public putAutoScaleProfile(value: NginxDeploymentAutoScaleProfile[] | cdktn.IResolvable) {
     this._autoScaleProfile.internalValue = value;
   }
   public resetAutoScaleProfile() {
@@ -1895,7 +1895,7 @@ export class NginxDeployment extends cdktf.TerraformResource {
   public get frontendPrivate() {
     return this._frontendPrivate;
   }
-  public putFrontendPrivate(value: NginxDeploymentFrontendPrivate[] | cdktf.IResolvable) {
+  public putFrontendPrivate(value: NginxDeploymentFrontendPrivate[] | cdktn.IResolvable) {
     this._frontendPrivate.internalValue = value;
   }
   public resetFrontendPrivate() {
@@ -1943,7 +1943,7 @@ export class NginxDeployment extends cdktf.TerraformResource {
   public get loggingStorageAccount() {
     return this._loggingStorageAccount;
   }
-  public putLoggingStorageAccount(value: NginxDeploymentLoggingStorageAccount[] | cdktf.IResolvable) {
+  public putLoggingStorageAccount(value: NginxDeploymentLoggingStorageAccount[] | cdktn.IResolvable) {
     this._loggingStorageAccount.internalValue = value;
   }
   public resetLoggingStorageAccount() {
@@ -1959,7 +1959,7 @@ export class NginxDeployment extends cdktf.TerraformResource {
   public get networkInterface() {
     return this._networkInterface;
   }
-  public putNetworkInterface(value: NginxDeploymentNetworkInterface[] | cdktf.IResolvable) {
+  public putNetworkInterface(value: NginxDeploymentNetworkInterface[] | cdktn.IResolvable) {
     this._networkInterface.internalValue = value;
   }
   public resetNetworkInterface() {
@@ -2008,23 +2008,23 @@ export class NginxDeployment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      automatic_upgrade_channel: cdktf.stringToTerraform(this._automaticUpgradeChannel),
-      capacity: cdktf.numberToTerraform(this._capacity),
-      diagnose_support_enabled: cdktf.booleanToTerraform(this._diagnoseSupportEnabled),
-      email: cdktf.stringToTerraform(this._email),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      managed_resource_group: cdktf.stringToTerraform(this._managedResourceGroup),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      sku: cdktf.stringToTerraform(this._sku),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      auto_scale_profile: cdktf.listMapper(nginxDeploymentAutoScaleProfileToTerraform, true)(this._autoScaleProfile.internalValue),
-      frontend_private: cdktf.listMapper(nginxDeploymentFrontendPrivateToTerraform, true)(this._frontendPrivate.internalValue),
+      automatic_upgrade_channel: cdktn.stringToTerraform(this._automaticUpgradeChannel),
+      capacity: cdktn.numberToTerraform(this._capacity),
+      diagnose_support_enabled: cdktn.booleanToTerraform(this._diagnoseSupportEnabled),
+      email: cdktn.stringToTerraform(this._email),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      managed_resource_group: cdktn.stringToTerraform(this._managedResourceGroup),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      sku: cdktn.stringToTerraform(this._sku),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      auto_scale_profile: cdktn.listMapper(nginxDeploymentAutoScaleProfileToTerraform, true)(this._autoScaleProfile.internalValue),
+      frontend_private: cdktn.listMapper(nginxDeploymentFrontendPrivateToTerraform, true)(this._frontendPrivate.internalValue),
       frontend_public: nginxDeploymentFrontendPublicToTerraform(this._frontendPublic.internalValue),
       identity: nginxDeploymentIdentityToTerraform(this._identity.internalValue),
-      logging_storage_account: cdktf.listMapper(nginxDeploymentLoggingStorageAccountToTerraform, true)(this._loggingStorageAccount.internalValue),
-      network_interface: cdktf.listMapper(nginxDeploymentNetworkInterfaceToTerraform, true)(this._networkInterface.internalValue),
+      logging_storage_account: cdktn.listMapper(nginxDeploymentLoggingStorageAccountToTerraform, true)(this._loggingStorageAccount.internalValue),
+      network_interface: cdktn.listMapper(nginxDeploymentNetworkInterfaceToTerraform, true)(this._networkInterface.internalValue),
       timeouts: nginxDeploymentTimeoutsToTerraform(this._timeouts.internalValue),
       web_application_firewall: nginxDeploymentWebApplicationFirewallToTerraform(this._webApplicationFirewall.internalValue),
     };
@@ -2033,79 +2033,79 @@ export class NginxDeployment extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       automatic_upgrade_channel: {
-        value: cdktf.stringToHclTerraform(this._automaticUpgradeChannel),
+        value: cdktn.stringToHclTerraform(this._automaticUpgradeChannel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       capacity: {
-        value: cdktf.numberToHclTerraform(this._capacity),
+        value: cdktn.numberToHclTerraform(this._capacity),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       diagnose_support_enabled: {
-        value: cdktf.booleanToHclTerraform(this._diagnoseSupportEnabled),
+        value: cdktn.booleanToHclTerraform(this._diagnoseSupportEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       email: {
-        value: cdktf.stringToHclTerraform(this._email),
+        value: cdktn.stringToHclTerraform(this._email),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       managed_resource_group: {
-        value: cdktf.stringToHclTerraform(this._managedResourceGroup),
+        value: cdktn.stringToHclTerraform(this._managedResourceGroup),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sku: {
-        value: cdktf.stringToHclTerraform(this._sku),
+        value: cdktn.stringToHclTerraform(this._sku),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       auto_scale_profile: {
-        value: cdktf.listMapperHcl(nginxDeploymentAutoScaleProfileToHclTerraform, true)(this._autoScaleProfile.internalValue),
+        value: cdktn.listMapperHcl(nginxDeploymentAutoScaleProfileToHclTerraform, true)(this._autoScaleProfile.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "NginxDeploymentAutoScaleProfileList",
       },
       frontend_private: {
-        value: cdktf.listMapperHcl(nginxDeploymentFrontendPrivateToHclTerraform, true)(this._frontendPrivate.internalValue),
+        value: cdktn.listMapperHcl(nginxDeploymentFrontendPrivateToHclTerraform, true)(this._frontendPrivate.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "NginxDeploymentFrontendPrivateList",
@@ -2123,13 +2123,13 @@ export class NginxDeployment extends cdktf.TerraformResource {
         storageClassType: "NginxDeploymentIdentityList",
       },
       logging_storage_account: {
-        value: cdktf.listMapperHcl(nginxDeploymentLoggingStorageAccountToHclTerraform, true)(this._loggingStorageAccount.internalValue),
+        value: cdktn.listMapperHcl(nginxDeploymentLoggingStorageAccountToHclTerraform, true)(this._loggingStorageAccount.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "NginxDeploymentLoggingStorageAccountList",
       },
       network_interface: {
-        value: cdktf.listMapperHcl(nginxDeploymentNetworkInterfaceToHclTerraform, true)(this._networkInterface.internalValue),
+        value: cdktn.listMapperHcl(nginxDeploymentNetworkInterfaceToHclTerraform, true)(this._networkInterface.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "NginxDeploymentNetworkInterfaceList",

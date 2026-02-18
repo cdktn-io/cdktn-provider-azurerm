@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermLbBackendAddressPoolConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermLbBackendAddressPoolConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/lb_backend_address_pool#id DataAzurermLbBackendAddressPool#id}
   *
@@ -38,8 +38,8 @@ export interface DataAzurermLbBackendAddressPoolBackendAddressInboundNatRulePort
 }
 
 export function dataAzurermLbBackendAddressPoolBackendAddressInboundNatRulePortMappingToTerraform(struct?: DataAzurermLbBackendAddressPoolBackendAddressInboundNatRulePortMapping): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -48,8 +48,8 @@ export function dataAzurermLbBackendAddressPoolBackendAddressInboundNatRulePortM
 
 
 export function dataAzurermLbBackendAddressPoolBackendAddressInboundNatRulePortMappingToHclTerraform(struct?: DataAzurermLbBackendAddressPoolBackendAddressInboundNatRulePortMapping): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -57,7 +57,7 @@ export function dataAzurermLbBackendAddressPoolBackendAddressInboundNatRulePortM
   return attrs;
 }
 
-export class DataAzurermLbBackendAddressPoolBackendAddressInboundNatRulePortMappingOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLbBackendAddressPoolBackendAddressInboundNatRulePortMappingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -66,7 +66,7 @@ export class DataAzurermLbBackendAddressPoolBackendAddressInboundNatRulePortMapp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -101,14 +101,14 @@ export class DataAzurermLbBackendAddressPoolBackendAddressInboundNatRulePortMapp
   }
 }
 
-export class DataAzurermLbBackendAddressPoolBackendAddressInboundNatRulePortMappingList extends cdktf.ComplexList {
+export class DataAzurermLbBackendAddressPoolBackendAddressInboundNatRulePortMappingList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -123,8 +123,8 @@ export interface DataAzurermLbBackendAddressPoolBackendAddress {
 }
 
 export function dataAzurermLbBackendAddressPoolBackendAddressToTerraform(struct?: DataAzurermLbBackendAddressPoolBackendAddress): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -133,8 +133,8 @@ export function dataAzurermLbBackendAddressPoolBackendAddressToTerraform(struct?
 
 
 export function dataAzurermLbBackendAddressPoolBackendAddressToHclTerraform(struct?: DataAzurermLbBackendAddressPoolBackendAddress): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -142,7 +142,7 @@ export function dataAzurermLbBackendAddressPoolBackendAddressToHclTerraform(stru
   return attrs;
 }
 
-export class DataAzurermLbBackendAddressPoolBackendAddressOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLbBackendAddressPoolBackendAddressOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -151,7 +151,7 @@ export class DataAzurermLbBackendAddressPoolBackendAddressOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -192,14 +192,14 @@ export class DataAzurermLbBackendAddressPoolBackendAddressOutputReference extend
   }
 }
 
-export class DataAzurermLbBackendAddressPoolBackendAddressList extends cdktf.ComplexList {
+export class DataAzurermLbBackendAddressPoolBackendAddressList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -214,8 +214,8 @@ export interface DataAzurermLbBackendAddressPoolBackendIpConfigurations {
 }
 
 export function dataAzurermLbBackendAddressPoolBackendIpConfigurationsToTerraform(struct?: DataAzurermLbBackendAddressPoolBackendIpConfigurations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -224,8 +224,8 @@ export function dataAzurermLbBackendAddressPoolBackendIpConfigurationsToTerrafor
 
 
 export function dataAzurermLbBackendAddressPoolBackendIpConfigurationsToHclTerraform(struct?: DataAzurermLbBackendAddressPoolBackendIpConfigurations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -233,7 +233,7 @@ export function dataAzurermLbBackendAddressPoolBackendIpConfigurationsToHclTerra
   return attrs;
 }
 
-export class DataAzurermLbBackendAddressPoolBackendIpConfigurationsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLbBackendAddressPoolBackendIpConfigurationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -242,7 +242,7 @@ export class DataAzurermLbBackendAddressPoolBackendIpConfigurationsOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -267,14 +267,14 @@ export class DataAzurermLbBackendAddressPoolBackendIpConfigurationsOutputReferen
   }
 }
 
-export class DataAzurermLbBackendAddressPoolBackendIpConfigurationsList extends cdktf.ComplexList {
+export class DataAzurermLbBackendAddressPoolBackendIpConfigurationsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -292,25 +292,25 @@ export interface DataAzurermLbBackendAddressPoolTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermLbBackendAddressPoolTimeoutsToTerraform(struct?: DataAzurermLbBackendAddressPoolTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermLbBackendAddressPoolTimeoutsToTerraform(struct?: DataAzurermLbBackendAddressPoolTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermLbBackendAddressPoolTimeoutsToHclTerraform(struct?: DataAzurermLbBackendAddressPoolTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermLbBackendAddressPoolTimeoutsToHclTerraform(struct?: DataAzurermLbBackendAddressPoolTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -321,19 +321,19 @@ export function dataAzurermLbBackendAddressPoolTimeoutsToHclTerraform(struct?: D
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermLbBackendAddressPoolTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLbBackendAddressPoolTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermLbBackendAddressPoolTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermLbBackendAddressPoolTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -346,13 +346,13 @@ export class DataAzurermLbBackendAddressPoolTimeoutsOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermLbBackendAddressPoolTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermLbBackendAddressPoolTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -383,7 +383,7 @@ export class DataAzurermLbBackendAddressPoolTimeoutsOutputReference extends cdkt
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/lb_backend_address_pool azurerm_lb_backend_address_pool}
 */
-export class DataAzurermLbBackendAddressPool extends cdktf.TerraformDataSource {
+export class DataAzurermLbBackendAddressPool extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -394,14 +394,14 @@ export class DataAzurermLbBackendAddressPool extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermLbBackendAddressPool resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermLbBackendAddressPool resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermLbBackendAddressPool to import
   * @param importFromId The id of the existing DataAzurermLbBackendAddressPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/lb_backend_address_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermLbBackendAddressPool to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_lb_backend_address_pool", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_lb_backend_address_pool", importId: importFromId, provider });
       }
 
   // ===========
@@ -532,9 +532,9 @@ export class DataAzurermLbBackendAddressPool extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      loadbalancer_id: cdktf.stringToTerraform(this._loadbalancerId),
-      name: cdktf.stringToTerraform(this._name),
+      id: cdktn.stringToTerraform(this._id),
+      loadbalancer_id: cdktn.stringToTerraform(this._loadbalancerId),
+      name: cdktn.stringToTerraform(this._name),
       timeouts: dataAzurermLbBackendAddressPoolTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -542,19 +542,19 @@ export class DataAzurermLbBackendAddressPool extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       loadbalancer_id: {
-        value: cdktf.stringToHclTerraform(this._loadbalancerId),
+        value: cdktn.stringToHclTerraform(this._loadbalancerId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SpringCloudCertificateConfig extends cdktf.TerraformMetaArguments {
+export interface SpringCloudCertificateConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_certificate#certificate_content SpringCloudCertificate#certificate_content}
   */
@@ -19,7 +19,7 @@ export interface SpringCloudCertificateConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_certificate#exclude_private_key SpringCloudCertificate#exclude_private_key}
   */
-  readonly excludePrivateKey?: boolean | cdktf.IResolvable;
+  readonly excludePrivateKey?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_certificate#id SpringCloudCertificate#id}
   *
@@ -65,39 +65,39 @@ export interface SpringCloudCertificateTimeouts {
   readonly read?: string;
 }
 
-export function springCloudCertificateTimeoutsToTerraform(struct?: SpringCloudCertificateTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function springCloudCertificateTimeoutsToTerraform(struct?: SpringCloudCertificateTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function springCloudCertificateTimeoutsToHclTerraform(struct?: SpringCloudCertificateTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function springCloudCertificateTimeoutsToHclTerraform(struct?: SpringCloudCertificateTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -108,19 +108,19 @@ export function springCloudCertificateTimeoutsToHclTerraform(struct?: SpringClou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SpringCloudCertificateTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SpringCloudCertificateTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SpringCloudCertificateTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SpringCloudCertificateTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -141,7 +141,7 @@ export class SpringCloudCertificateTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SpringCloudCertificateTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SpringCloudCertificateTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -149,7 +149,7 @@ export class SpringCloudCertificateTimeoutsOutputReference extends cdktf.Complex
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -214,7 +214,7 @@ export class SpringCloudCertificateTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_certificate azurerm_spring_cloud_certificate}
 */
-export class SpringCloudCertificate extends cdktf.TerraformResource {
+export class SpringCloudCertificate extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -225,14 +225,14 @@ export class SpringCloudCertificate extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SpringCloudCertificate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SpringCloudCertificate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SpringCloudCertificate to import
   * @param importFromId The id of the existing SpringCloudCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_certificate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SpringCloudCertificate to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_spring_cloud_certificate", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_spring_cloud_certificate", importId: importFromId, provider });
       }
 
   // ===========
@@ -293,11 +293,11 @@ export class SpringCloudCertificate extends cdktf.TerraformResource {
   }
 
   // exclude_private_key - computed: false, optional: true, required: false
-  private _excludePrivateKey?: boolean | cdktf.IResolvable; 
+  private _excludePrivateKey?: boolean | cdktn.IResolvable; 
   public get excludePrivateKey() {
     return this.getBooleanAttribute('exclude_private_key');
   }
-  public set excludePrivateKey(value: boolean | cdktf.IResolvable) {
+  public set excludePrivateKey(value: boolean | cdktn.IResolvable) {
     this._excludePrivateKey = value;
   }
   public resetExcludePrivateKey() {
@@ -406,13 +406,13 @@ export class SpringCloudCertificate extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      certificate_content: cdktf.stringToTerraform(this._certificateContent),
-      exclude_private_key: cdktf.booleanToTerraform(this._excludePrivateKey),
-      id: cdktf.stringToTerraform(this._id),
-      key_vault_certificate_id: cdktf.stringToTerraform(this._keyVaultCertificateId),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      service_name: cdktf.stringToTerraform(this._serviceName),
+      certificate_content: cdktn.stringToTerraform(this._certificateContent),
+      exclude_private_key: cdktn.booleanToTerraform(this._excludePrivateKey),
+      id: cdktn.stringToTerraform(this._id),
+      key_vault_certificate_id: cdktn.stringToTerraform(this._keyVaultCertificateId),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      service_name: cdktn.stringToTerraform(this._serviceName),
       timeouts: springCloudCertificateTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -420,43 +420,43 @@ export class SpringCloudCertificate extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       certificate_content: {
-        value: cdktf.stringToHclTerraform(this._certificateContent),
+        value: cdktn.stringToHclTerraform(this._certificateContent),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       exclude_private_key: {
-        value: cdktf.booleanToHclTerraform(this._excludePrivateKey),
+        value: cdktn.booleanToHclTerraform(this._excludePrivateKey),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_vault_certificate_id: {
-        value: cdktf.stringToHclTerraform(this._keyVaultCertificateId),
+        value: cdktn.stringToHclTerraform(this._keyVaultCertificateId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_name: {
-        value: cdktf.stringToHclTerraform(this._serviceName),
+        value: cdktn.stringToHclTerraform(this._serviceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

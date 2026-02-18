@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MssqlServerConfig extends cdktf.TerraformMetaArguments {
+export interface MssqlServerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_server#administrator_login MssqlServer#administrator_login}
   */
@@ -35,7 +35,7 @@ export interface MssqlServerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_server#express_vulnerability_assessment_enabled MssqlServer#express_vulnerability_assessment_enabled}
   */
-  readonly expressVulnerabilityAssessmentEnabled?: boolean | cdktf.IResolvable;
+  readonly expressVulnerabilityAssessmentEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_server#id MssqlServer#id}
   *
@@ -58,7 +58,7 @@ export interface MssqlServerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_server#outbound_network_restriction_enabled MssqlServer#outbound_network_restriction_enabled}
   */
-  readonly outboundNetworkRestrictionEnabled?: boolean | cdktf.IResolvable;
+  readonly outboundNetworkRestrictionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_server#primary_user_assigned_identity_id MssqlServer#primary_user_assigned_identity_id}
   */
@@ -66,7 +66,7 @@ export interface MssqlServerConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_server#public_network_access_enabled MssqlServer#public_network_access_enabled}
   */
-  readonly publicNetworkAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly publicNetworkAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_server#resource_group_name MssqlServer#resource_group_name}
   */
@@ -106,7 +106,7 @@ export interface MssqlServerAzureadAdministrator {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_server#azuread_authentication_only MssqlServer#azuread_authentication_only}
   */
-  readonly azureadAuthenticationOnly?: boolean | cdktf.IResolvable;
+  readonly azureadAuthenticationOnly?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_server#login_username MssqlServer#login_username}
   */
@@ -122,45 +122,45 @@ export interface MssqlServerAzureadAdministrator {
 }
 
 export function mssqlServerAzureadAdministratorToTerraform(struct?: MssqlServerAzureadAdministratorOutputReference | MssqlServerAzureadAdministrator): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    azuread_authentication_only: cdktf.booleanToTerraform(struct!.azureadAuthenticationOnly),
-    login_username: cdktf.stringToTerraform(struct!.loginUsername),
-    object_id: cdktf.stringToTerraform(struct!.objectId),
-    tenant_id: cdktf.stringToTerraform(struct!.tenantId),
+    azuread_authentication_only: cdktn.booleanToTerraform(struct!.azureadAuthenticationOnly),
+    login_username: cdktn.stringToTerraform(struct!.loginUsername),
+    object_id: cdktn.stringToTerraform(struct!.objectId),
+    tenant_id: cdktn.stringToTerraform(struct!.tenantId),
   }
 }
 
 
 export function mssqlServerAzureadAdministratorToHclTerraform(struct?: MssqlServerAzureadAdministratorOutputReference | MssqlServerAzureadAdministrator): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     azuread_authentication_only: {
-      value: cdktf.booleanToHclTerraform(struct!.azureadAuthenticationOnly),
+      value: cdktn.booleanToHclTerraform(struct!.azureadAuthenticationOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     login_username: {
-      value: cdktf.stringToHclTerraform(struct!.loginUsername),
+      value: cdktn.stringToHclTerraform(struct!.loginUsername),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     object_id: {
-      value: cdktf.stringToHclTerraform(struct!.objectId),
+      value: cdktn.stringToHclTerraform(struct!.objectId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tenant_id: {
-      value: cdktf.stringToHclTerraform(struct!.tenantId),
+      value: cdktn.stringToHclTerraform(struct!.tenantId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -171,14 +171,14 @@ export function mssqlServerAzureadAdministratorToHclTerraform(struct?: MssqlServ
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MssqlServerAzureadAdministratorOutputReference extends cdktf.ComplexObject {
+export class MssqlServerAzureadAdministratorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -222,11 +222,11 @@ export class MssqlServerAzureadAdministratorOutputReference extends cdktf.Comple
   }
 
   // azuread_authentication_only - computed: true, optional: true, required: false
-  private _azureadAuthenticationOnly?: boolean | cdktf.IResolvable; 
+  private _azureadAuthenticationOnly?: boolean | cdktn.IResolvable; 
   public get azureadAuthenticationOnly() {
     return this.getBooleanAttribute('azuread_authentication_only');
   }
-  public set azureadAuthenticationOnly(value: boolean | cdktf.IResolvable) {
+  public set azureadAuthenticationOnly(value: boolean | cdktn.IResolvable) {
     this._azureadAuthenticationOnly = value;
   }
   public resetAzureadAuthenticationOnly() {
@@ -291,31 +291,31 @@ export interface MssqlServerIdentity {
 }
 
 export function mssqlServerIdentityToTerraform(struct?: MssqlServerIdentityOutputReference | MssqlServerIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function mssqlServerIdentityToHclTerraform(struct?: MssqlServerIdentityOutputReference | MssqlServerIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -326,14 +326,14 @@ export function mssqlServerIdentityToHclTerraform(struct?: MssqlServerIdentityOu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MssqlServerIdentityOutputReference extends cdktf.ComplexObject {
+export class MssqlServerIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -367,7 +367,7 @@ export class MssqlServerIdentityOutputReference extends cdktf.ComplexObject {
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -422,46 +422,46 @@ export interface MssqlServerTimeouts {
   readonly update?: string;
 }
 
-export function mssqlServerTimeoutsToTerraform(struct?: MssqlServerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mssqlServerTimeoutsToTerraform(struct?: MssqlServerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function mssqlServerTimeoutsToHclTerraform(struct?: MssqlServerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mssqlServerTimeoutsToHclTerraform(struct?: MssqlServerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -472,19 +472,19 @@ export function mssqlServerTimeoutsToHclTerraform(struct?: MssqlServerTimeouts |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MssqlServerTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MssqlServerTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MssqlServerTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MssqlServerTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -509,7 +509,7 @@ export class MssqlServerTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MssqlServerTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MssqlServerTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -518,7 +518,7 @@ export class MssqlServerTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -600,7 +600,7 @@ export class MssqlServerTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_server azurerm_mssql_server}
 */
-export class MssqlServer extends cdktf.TerraformResource {
+export class MssqlServer extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -611,14 +611,14 @@ export class MssqlServer extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MssqlServer resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MssqlServer resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MssqlServer to import
   * @param importFromId The id of the existing MssqlServer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_server#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MssqlServer to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_mssql_server", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_mssql_server", importId: importFromId, provider });
       }
 
   // ===========
@@ -755,11 +755,11 @@ export class MssqlServer extends cdktf.TerraformResource {
   }
 
   // express_vulnerability_assessment_enabled - computed: false, optional: true, required: false
-  private _expressVulnerabilityAssessmentEnabled?: boolean | cdktf.IResolvable; 
+  private _expressVulnerabilityAssessmentEnabled?: boolean | cdktn.IResolvable; 
   public get expressVulnerabilityAssessmentEnabled() {
     return this.getBooleanAttribute('express_vulnerability_assessment_enabled');
   }
-  public set expressVulnerabilityAssessmentEnabled(value: boolean | cdktf.IResolvable) {
+  public set expressVulnerabilityAssessmentEnabled(value: boolean | cdktn.IResolvable) {
     this._expressVulnerabilityAssessmentEnabled = value;
   }
   public resetExpressVulnerabilityAssessmentEnabled() {
@@ -834,11 +834,11 @@ export class MssqlServer extends cdktf.TerraformResource {
   }
 
   // outbound_network_restriction_enabled - computed: false, optional: true, required: false
-  private _outboundNetworkRestrictionEnabled?: boolean | cdktf.IResolvable; 
+  private _outboundNetworkRestrictionEnabled?: boolean | cdktn.IResolvable; 
   public get outboundNetworkRestrictionEnabled() {
     return this.getBooleanAttribute('outbound_network_restriction_enabled');
   }
-  public set outboundNetworkRestrictionEnabled(value: boolean | cdktf.IResolvable) {
+  public set outboundNetworkRestrictionEnabled(value: boolean | cdktn.IResolvable) {
     this._outboundNetworkRestrictionEnabled = value;
   }
   public resetOutboundNetworkRestrictionEnabled() {
@@ -866,11 +866,11 @@ export class MssqlServer extends cdktf.TerraformResource {
   }
 
   // public_network_access_enabled - computed: false, optional: true, required: false
-  private _publicNetworkAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _publicNetworkAccessEnabled?: boolean | cdktn.IResolvable; 
   public get publicNetworkAccessEnabled() {
     return this.getBooleanAttribute('public_network_access_enabled');
   }
-  public set publicNetworkAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set publicNetworkAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._publicNetworkAccessEnabled = value;
   }
   public resetPublicNetworkAccessEnabled() {
@@ -998,23 +998,23 @@ export class MssqlServer extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      administrator_login: cdktf.stringToTerraform(this._administratorLogin),
-      administrator_login_password: cdktf.stringToTerraform(this._administratorLoginPassword),
-      administrator_login_password_wo: cdktf.stringToTerraform(this._administratorLoginPasswordWo),
-      administrator_login_password_wo_version: cdktf.numberToTerraform(this._administratorLoginPasswordWoVersion),
-      connection_policy: cdktf.stringToTerraform(this._connectionPolicy),
-      express_vulnerability_assessment_enabled: cdktf.booleanToTerraform(this._expressVulnerabilityAssessmentEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      minimum_tls_version: cdktf.stringToTerraform(this._minimumTlsVersion),
-      name: cdktf.stringToTerraform(this._name),
-      outbound_network_restriction_enabled: cdktf.booleanToTerraform(this._outboundNetworkRestrictionEnabled),
-      primary_user_assigned_identity_id: cdktf.stringToTerraform(this._primaryUserAssignedIdentityId),
-      public_network_access_enabled: cdktf.booleanToTerraform(this._publicNetworkAccessEnabled),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      transparent_data_encryption_key_vault_key_id: cdktf.stringToTerraform(this._transparentDataEncryptionKeyVaultKeyId),
-      version: cdktf.stringToTerraform(this._version),
+      administrator_login: cdktn.stringToTerraform(this._administratorLogin),
+      administrator_login_password: cdktn.stringToTerraform(this._administratorLoginPassword),
+      administrator_login_password_wo: cdktn.stringToTerraform(this._administratorLoginPasswordWo),
+      administrator_login_password_wo_version: cdktn.numberToTerraform(this._administratorLoginPasswordWoVersion),
+      connection_policy: cdktn.stringToTerraform(this._connectionPolicy),
+      express_vulnerability_assessment_enabled: cdktn.booleanToTerraform(this._expressVulnerabilityAssessmentEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      minimum_tls_version: cdktn.stringToTerraform(this._minimumTlsVersion),
+      name: cdktn.stringToTerraform(this._name),
+      outbound_network_restriction_enabled: cdktn.booleanToTerraform(this._outboundNetworkRestrictionEnabled),
+      primary_user_assigned_identity_id: cdktn.stringToTerraform(this._primaryUserAssignedIdentityId),
+      public_network_access_enabled: cdktn.booleanToTerraform(this._publicNetworkAccessEnabled),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      transparent_data_encryption_key_vault_key_id: cdktn.stringToTerraform(this._transparentDataEncryptionKeyVaultKeyId),
+      version: cdktn.stringToTerraform(this._version),
       azuread_administrator: mssqlServerAzureadAdministratorToTerraform(this._azureadAdministrator.internalValue),
       identity: mssqlServerIdentityToTerraform(this._identity.internalValue),
       timeouts: mssqlServerTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1024,103 +1024,103 @@ export class MssqlServer extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       administrator_login: {
-        value: cdktf.stringToHclTerraform(this._administratorLogin),
+        value: cdktn.stringToHclTerraform(this._administratorLogin),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       administrator_login_password: {
-        value: cdktf.stringToHclTerraform(this._administratorLoginPassword),
+        value: cdktn.stringToHclTerraform(this._administratorLoginPassword),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       administrator_login_password_wo: {
-        value: cdktf.stringToHclTerraform(this._administratorLoginPasswordWo),
+        value: cdktn.stringToHclTerraform(this._administratorLoginPasswordWo),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       administrator_login_password_wo_version: {
-        value: cdktf.numberToHclTerraform(this._administratorLoginPasswordWoVersion),
+        value: cdktn.numberToHclTerraform(this._administratorLoginPasswordWoVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       connection_policy: {
-        value: cdktf.stringToHclTerraform(this._connectionPolicy),
+        value: cdktn.stringToHclTerraform(this._connectionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       express_vulnerability_assessment_enabled: {
-        value: cdktf.booleanToHclTerraform(this._expressVulnerabilityAssessmentEnabled),
+        value: cdktn.booleanToHclTerraform(this._expressVulnerabilityAssessmentEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       minimum_tls_version: {
-        value: cdktf.stringToHclTerraform(this._minimumTlsVersion),
+        value: cdktn.stringToHclTerraform(this._minimumTlsVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       outbound_network_restriction_enabled: {
-        value: cdktf.booleanToHclTerraform(this._outboundNetworkRestrictionEnabled),
+        value: cdktn.booleanToHclTerraform(this._outboundNetworkRestrictionEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       primary_user_assigned_identity_id: {
-        value: cdktf.stringToHclTerraform(this._primaryUserAssignedIdentityId),
+        value: cdktn.stringToHclTerraform(this._primaryUserAssignedIdentityId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_network_access_enabled: {
-        value: cdktf.booleanToHclTerraform(this._publicNetworkAccessEnabled),
+        value: cdktn.booleanToHclTerraform(this._publicNetworkAccessEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       transparent_data_encryption_key_vault_key_id: {
-        value: cdktf.stringToHclTerraform(this._transparentDataEncryptionKeyVaultKeyId),
+        value: cdktn.stringToHclTerraform(this._transparentDataEncryptionKeyVaultKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       version: {
-        value: cdktf.stringToHclTerraform(this._version),
+        value: cdktn.stringToHclTerraform(this._version),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

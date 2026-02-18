@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MonitorScheduledQueryRulesLogConfig extends cdktf.TerraformMetaArguments {
+export interface MonitorScheduledQueryRulesLogConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_scheduled_query_rules_log#authorized_resource_ids MonitorScheduledQueryRulesLog#authorized_resource_ids}
   */
@@ -27,7 +27,7 @@ export interface MonitorScheduledQueryRulesLogConfig extends cdktf.TerraformMeta
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_scheduled_query_rules_log#enabled MonitorScheduledQueryRulesLog#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_scheduled_query_rules_log#id MonitorScheduledQueryRulesLog#id}
   *
@@ -79,39 +79,39 @@ export interface MonitorScheduledQueryRulesLogCriteriaDimension {
   readonly values: string[];
 }
 
-export function monitorScheduledQueryRulesLogCriteriaDimensionToTerraform(struct?: MonitorScheduledQueryRulesLogCriteriaDimension | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorScheduledQueryRulesLogCriteriaDimensionToTerraform(struct?: MonitorScheduledQueryRulesLogCriteriaDimension | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    name: cdktn.stringToTerraform(struct!.name),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function monitorScheduledQueryRulesLogCriteriaDimensionToHclTerraform(struct?: MonitorScheduledQueryRulesLogCriteriaDimension | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorScheduledQueryRulesLogCriteriaDimensionToHclTerraform(struct?: MonitorScheduledQueryRulesLogCriteriaDimension | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -122,9 +122,9 @@ export function monitorScheduledQueryRulesLogCriteriaDimensionToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorScheduledQueryRulesLogCriteriaDimensionOutputReference extends cdktf.ComplexObject {
+export class MonitorScheduledQueryRulesLogCriteriaDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -132,11 +132,11 @@ export class MonitorScheduledQueryRulesLogCriteriaDimensionOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MonitorScheduledQueryRulesLogCriteriaDimension | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorScheduledQueryRulesLogCriteriaDimension | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -157,7 +157,7 @@ export class MonitorScheduledQueryRulesLogCriteriaDimensionOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorScheduledQueryRulesLogCriteriaDimension | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorScheduledQueryRulesLogCriteriaDimension | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -165,7 +165,7 @@ export class MonitorScheduledQueryRulesLogCriteriaDimensionOutputReference exten
       this._operator = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -221,15 +221,15 @@ export class MonitorScheduledQueryRulesLogCriteriaDimensionOutputReference exten
   }
 }
 
-export class MonitorScheduledQueryRulesLogCriteriaDimensionList extends cdktf.ComplexList {
-  public internalValue? : MonitorScheduledQueryRulesLogCriteriaDimension[] | cdktf.IResolvable
+export class MonitorScheduledQueryRulesLogCriteriaDimensionList extends cdktn.ComplexList {
+  public internalValue? : MonitorScheduledQueryRulesLogCriteriaDimension[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -250,35 +250,35 @@ export interface MonitorScheduledQueryRulesLogCriteria {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_scheduled_query_rules_log#dimension MonitorScheduledQueryRulesLog#dimension}
   */
-  readonly dimension: MonitorScheduledQueryRulesLogCriteriaDimension[] | cdktf.IResolvable;
+  readonly dimension: MonitorScheduledQueryRulesLogCriteriaDimension[] | cdktn.IResolvable;
 }
 
 export function monitorScheduledQueryRulesLogCriteriaToTerraform(struct?: MonitorScheduledQueryRulesLogCriteriaOutputReference | MonitorScheduledQueryRulesLogCriteria): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metric_name: cdktf.stringToTerraform(struct!.metricName),
-    dimension: cdktf.listMapper(monitorScheduledQueryRulesLogCriteriaDimensionToTerraform, true)(struct!.dimension),
+    metric_name: cdktn.stringToTerraform(struct!.metricName),
+    dimension: cdktn.listMapper(monitorScheduledQueryRulesLogCriteriaDimensionToTerraform, true)(struct!.dimension),
   }
 }
 
 
 export function monitorScheduledQueryRulesLogCriteriaToHclTerraform(struct?: MonitorScheduledQueryRulesLogCriteriaOutputReference | MonitorScheduledQueryRulesLogCriteria): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metric_name: {
-      value: cdktf.stringToHclTerraform(struct!.metricName),
+      value: cdktn.stringToHclTerraform(struct!.metricName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     dimension: {
-      value: cdktf.listMapperHcl(monitorScheduledQueryRulesLogCriteriaDimensionToHclTerraform, true)(struct!.dimension),
+      value: cdktn.listMapperHcl(monitorScheduledQueryRulesLogCriteriaDimensionToHclTerraform, true)(struct!.dimension),
       isBlock: true,
       type: "set",
       storageClassType: "MonitorScheduledQueryRulesLogCriteriaDimensionList",
@@ -289,14 +289,14 @@ export function monitorScheduledQueryRulesLogCriteriaToHclTerraform(struct?: Mon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorScheduledQueryRulesLogCriteriaOutputReference extends cdktf.ComplexObject {
+export class MonitorScheduledQueryRulesLogCriteriaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -345,7 +345,7 @@ export class MonitorScheduledQueryRulesLogCriteriaOutputReference extends cdktf.
   public get dimension() {
     return this._dimension;
   }
-  public putDimension(value: MonitorScheduledQueryRulesLogCriteriaDimension[] | cdktf.IResolvable) {
+  public putDimension(value: MonitorScheduledQueryRulesLogCriteriaDimension[] | cdktn.IResolvable) {
     this._dimension.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -372,46 +372,46 @@ export interface MonitorScheduledQueryRulesLogTimeouts {
   readonly update?: string;
 }
 
-export function monitorScheduledQueryRulesLogTimeoutsToTerraform(struct?: MonitorScheduledQueryRulesLogTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorScheduledQueryRulesLogTimeoutsToTerraform(struct?: MonitorScheduledQueryRulesLogTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function monitorScheduledQueryRulesLogTimeoutsToHclTerraform(struct?: MonitorScheduledQueryRulesLogTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorScheduledQueryRulesLogTimeoutsToHclTerraform(struct?: MonitorScheduledQueryRulesLogTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -422,19 +422,19 @@ export function monitorScheduledQueryRulesLogTimeoutsToHclTerraform(struct?: Mon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorScheduledQueryRulesLogTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MonitorScheduledQueryRulesLogTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MonitorScheduledQueryRulesLogTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorScheduledQueryRulesLogTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -459,7 +459,7 @@ export class MonitorScheduledQueryRulesLogTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorScheduledQueryRulesLogTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorScheduledQueryRulesLogTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -468,7 +468,7 @@ export class MonitorScheduledQueryRulesLogTimeoutsOutputReference extends cdktf.
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -550,7 +550,7 @@ export class MonitorScheduledQueryRulesLogTimeoutsOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_scheduled_query_rules_log azurerm_monitor_scheduled_query_rules_log}
 */
-export class MonitorScheduledQueryRulesLog extends cdktf.TerraformResource {
+export class MonitorScheduledQueryRulesLog extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -561,14 +561,14 @@ export class MonitorScheduledQueryRulesLog extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MonitorScheduledQueryRulesLog resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MonitorScheduledQueryRulesLog resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MonitorScheduledQueryRulesLog to import
   * @param importFromId The id of the existing MonitorScheduledQueryRulesLog that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_scheduled_query_rules_log#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MonitorScheduledQueryRulesLog to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_monitor_scheduled_query_rules_log", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_monitor_scheduled_query_rules_log", importId: importFromId, provider });
       }
 
   // ===========
@@ -618,7 +618,7 @@ export class MonitorScheduledQueryRulesLog extends cdktf.TerraformResource {
   // authorized_resource_ids - computed: false, optional: true, required: false
   private _authorizedResourceIds?: string[]; 
   public get authorizedResourceIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('authorized_resource_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('authorized_resource_ids'));
   }
   public set authorizedResourceIds(value: string[]) {
     this._authorizedResourceIds = value;
@@ -661,11 +661,11 @@ export class MonitorScheduledQueryRulesLog extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -782,15 +782,15 @@ export class MonitorScheduledQueryRulesLog extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      authorized_resource_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._authorizedResourceIds),
-      data_source_id: cdktf.stringToTerraform(this._dataSourceId),
-      description: cdktf.stringToTerraform(this._description),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      authorized_resource_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._authorizedResourceIds),
+      data_source_id: cdktn.stringToTerraform(this._dataSourceId),
+      description: cdktn.stringToTerraform(this._description),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       criteria: monitorScheduledQueryRulesLogCriteriaToTerraform(this._criteria.internalValue),
       timeouts: monitorScheduledQueryRulesLogTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -799,55 +799,55 @@ export class MonitorScheduledQueryRulesLog extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       authorized_resource_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._authorizedResourceIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._authorizedResourceIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       data_source_id: {
-        value: cdktf.stringToHclTerraform(this._dataSourceId),
+        value: cdktn.stringToHclTerraform(this._dataSourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

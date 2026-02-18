@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IothubEndpointStorageContainerConfig extends cdktf.TerraformMetaArguments {
+export interface IothubEndpointStorageContainerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iothub_endpoint_storage_container#authentication_type IothubEndpointStorageContainer#authentication_type}
   */
@@ -97,46 +97,46 @@ export interface IothubEndpointStorageContainerTimeouts {
   readonly update?: string;
 }
 
-export function iothubEndpointStorageContainerTimeoutsToTerraform(struct?: IothubEndpointStorageContainerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iothubEndpointStorageContainerTimeoutsToTerraform(struct?: IothubEndpointStorageContainerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function iothubEndpointStorageContainerTimeoutsToHclTerraform(struct?: IothubEndpointStorageContainerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iothubEndpointStorageContainerTimeoutsToHclTerraform(struct?: IothubEndpointStorageContainerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -147,19 +147,19 @@ export function iothubEndpointStorageContainerTimeoutsToHclTerraform(struct?: Io
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IothubEndpointStorageContainerTimeoutsOutputReference extends cdktf.ComplexObject {
+export class IothubEndpointStorageContainerTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): IothubEndpointStorageContainerTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): IothubEndpointStorageContainerTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -184,7 +184,7 @@ export class IothubEndpointStorageContainerTimeoutsOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IothubEndpointStorageContainerTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IothubEndpointStorageContainerTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -193,7 +193,7 @@ export class IothubEndpointStorageContainerTimeoutsOutputReference extends cdktf
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -275,7 +275,7 @@ export class IothubEndpointStorageContainerTimeoutsOutputReference extends cdktf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iothub_endpoint_storage_container azurerm_iothub_endpoint_storage_container}
 */
-export class IothubEndpointStorageContainer extends cdktf.TerraformResource {
+export class IothubEndpointStorageContainer extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -286,14 +286,14 @@ export class IothubEndpointStorageContainer extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IothubEndpointStorageContainer resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IothubEndpointStorageContainer resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IothubEndpointStorageContainer to import
   * @param importFromId The id of the existing IothubEndpointStorageContainer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iothub_endpoint_storage_container#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IothubEndpointStorageContainer to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_iothub_endpoint_storage_container", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_iothub_endpoint_storage_container", importId: importFromId, provider });
       }
 
   // ===========
@@ -578,20 +578,20 @@ export class IothubEndpointStorageContainer extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      authentication_type: cdktf.stringToTerraform(this._authenticationType),
-      batch_frequency_in_seconds: cdktf.numberToTerraform(this._batchFrequencyInSeconds),
-      connection_string: cdktf.stringToTerraform(this._connectionString),
-      container_name: cdktf.stringToTerraform(this._containerName),
-      encoding: cdktf.stringToTerraform(this._encoding),
-      endpoint_uri: cdktf.stringToTerraform(this._endpointUri),
-      file_name_format: cdktf.stringToTerraform(this._fileNameFormat),
-      id: cdktf.stringToTerraform(this._id),
-      identity_id: cdktf.stringToTerraform(this._identityId),
-      iothub_id: cdktf.stringToTerraform(this._iothubId),
-      max_chunk_size_in_bytes: cdktf.numberToTerraform(this._maxChunkSizeInBytes),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      subscription_id: cdktf.stringToTerraform(this._subscriptionId),
+      authentication_type: cdktn.stringToTerraform(this._authenticationType),
+      batch_frequency_in_seconds: cdktn.numberToTerraform(this._batchFrequencyInSeconds),
+      connection_string: cdktn.stringToTerraform(this._connectionString),
+      container_name: cdktn.stringToTerraform(this._containerName),
+      encoding: cdktn.stringToTerraform(this._encoding),
+      endpoint_uri: cdktn.stringToTerraform(this._endpointUri),
+      file_name_format: cdktn.stringToTerraform(this._fileNameFormat),
+      id: cdktn.stringToTerraform(this._id),
+      identity_id: cdktn.stringToTerraform(this._identityId),
+      iothub_id: cdktn.stringToTerraform(this._iothubId),
+      max_chunk_size_in_bytes: cdktn.numberToTerraform(this._maxChunkSizeInBytes),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      subscription_id: cdktn.stringToTerraform(this._subscriptionId),
       timeouts: iothubEndpointStorageContainerTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -599,85 +599,85 @@ export class IothubEndpointStorageContainer extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       authentication_type: {
-        value: cdktf.stringToHclTerraform(this._authenticationType),
+        value: cdktn.stringToHclTerraform(this._authenticationType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       batch_frequency_in_seconds: {
-        value: cdktf.numberToHclTerraform(this._batchFrequencyInSeconds),
+        value: cdktn.numberToHclTerraform(this._batchFrequencyInSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       connection_string: {
-        value: cdktf.stringToHclTerraform(this._connectionString),
+        value: cdktn.stringToHclTerraform(this._connectionString),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       container_name: {
-        value: cdktf.stringToHclTerraform(this._containerName),
+        value: cdktn.stringToHclTerraform(this._containerName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       encoding: {
-        value: cdktf.stringToHclTerraform(this._encoding),
+        value: cdktn.stringToHclTerraform(this._encoding),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       endpoint_uri: {
-        value: cdktf.stringToHclTerraform(this._endpointUri),
+        value: cdktn.stringToHclTerraform(this._endpointUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       file_name_format: {
-        value: cdktf.stringToHclTerraform(this._fileNameFormat),
+        value: cdktn.stringToHclTerraform(this._fileNameFormat),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identity_id: {
-        value: cdktf.stringToHclTerraform(this._identityId),
+        value: cdktn.stringToHclTerraform(this._identityId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       iothub_id: {
-        value: cdktf.stringToHclTerraform(this._iothubId),
+        value: cdktn.stringToHclTerraform(this._iothubId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_chunk_size_in_bytes: {
-        value: cdktf.numberToHclTerraform(this._maxChunkSizeInBytes),
+        value: cdktn.numberToHclTerraform(this._maxChunkSizeInBytes),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subscription_id: {
-        value: cdktf.stringToHclTerraform(this._subscriptionId),
+        value: cdktn.stringToHclTerraform(this._subscriptionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

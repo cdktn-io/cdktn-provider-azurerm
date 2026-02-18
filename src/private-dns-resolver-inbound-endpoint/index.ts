@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PrivateDnsResolverInboundEndpointConfig extends cdktf.TerraformMetaArguments {
+export interface PrivateDnsResolverInboundEndpointConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/private_dns_resolver_inbound_endpoint#id PrivateDnsResolverInboundEndpoint#id}
   *
@@ -64,38 +64,38 @@ export interface PrivateDnsResolverInboundEndpointIpConfigurations {
 }
 
 export function privateDnsResolverInboundEndpointIpConfigurationsToTerraform(struct?: PrivateDnsResolverInboundEndpointIpConfigurationsOutputReference | PrivateDnsResolverInboundEndpointIpConfigurations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    private_ip_address: cdktf.stringToTerraform(struct!.privateIpAddress),
-    private_ip_allocation_method: cdktf.stringToTerraform(struct!.privateIpAllocationMethod),
-    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
+    private_ip_address: cdktn.stringToTerraform(struct!.privateIpAddress),
+    private_ip_allocation_method: cdktn.stringToTerraform(struct!.privateIpAllocationMethod),
+    subnet_id: cdktn.stringToTerraform(struct!.subnetId),
   }
 }
 
 
 export function privateDnsResolverInboundEndpointIpConfigurationsToHclTerraform(struct?: PrivateDnsResolverInboundEndpointIpConfigurationsOutputReference | PrivateDnsResolverInboundEndpointIpConfigurations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     private_ip_address: {
-      value: cdktf.stringToHclTerraform(struct!.privateIpAddress),
+      value: cdktn.stringToHclTerraform(struct!.privateIpAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     private_ip_allocation_method: {
-      value: cdktf.stringToHclTerraform(struct!.privateIpAllocationMethod),
+      value: cdktn.stringToHclTerraform(struct!.privateIpAllocationMethod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.subnetId),
+      value: cdktn.stringToHclTerraform(struct!.subnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -106,14 +106,14 @@ export function privateDnsResolverInboundEndpointIpConfigurationsToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivateDnsResolverInboundEndpointIpConfigurationsOutputReference extends cdktf.ComplexObject {
+export class PrivateDnsResolverInboundEndpointIpConfigurationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -214,46 +214,46 @@ export interface PrivateDnsResolverInboundEndpointTimeouts {
   readonly update?: string;
 }
 
-export function privateDnsResolverInboundEndpointTimeoutsToTerraform(struct?: PrivateDnsResolverInboundEndpointTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privateDnsResolverInboundEndpointTimeoutsToTerraform(struct?: PrivateDnsResolverInboundEndpointTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function privateDnsResolverInboundEndpointTimeoutsToHclTerraform(struct?: PrivateDnsResolverInboundEndpointTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privateDnsResolverInboundEndpointTimeoutsToHclTerraform(struct?: PrivateDnsResolverInboundEndpointTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -264,19 +264,19 @@ export function privateDnsResolverInboundEndpointTimeoutsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivateDnsResolverInboundEndpointTimeoutsOutputReference extends cdktf.ComplexObject {
+export class PrivateDnsResolverInboundEndpointTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PrivateDnsResolverInboundEndpointTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): PrivateDnsResolverInboundEndpointTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -301,7 +301,7 @@ export class PrivateDnsResolverInboundEndpointTimeoutsOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PrivateDnsResolverInboundEndpointTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PrivateDnsResolverInboundEndpointTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -310,7 +310,7 @@ export class PrivateDnsResolverInboundEndpointTimeoutsOutputReference extends cd
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -392,7 +392,7 @@ export class PrivateDnsResolverInboundEndpointTimeoutsOutputReference extends cd
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/private_dns_resolver_inbound_endpoint azurerm_private_dns_resolver_inbound_endpoint}
 */
-export class PrivateDnsResolverInboundEndpoint extends cdktf.TerraformResource {
+export class PrivateDnsResolverInboundEndpoint extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -403,14 +403,14 @@ export class PrivateDnsResolverInboundEndpoint extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PrivateDnsResolverInboundEndpoint resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PrivateDnsResolverInboundEndpoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PrivateDnsResolverInboundEndpoint to import
   * @param importFromId The id of the existing PrivateDnsResolverInboundEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/private_dns_resolver_inbound_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PrivateDnsResolverInboundEndpoint to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_private_dns_resolver_inbound_endpoint", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_private_dns_resolver_inbound_endpoint", importId: importFromId, provider });
       }
 
   // ===========
@@ -559,11 +559,11 @@ export class PrivateDnsResolverInboundEndpoint extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      private_dns_resolver_id: cdktf.stringToTerraform(this._privateDnsResolverId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      private_dns_resolver_id: cdktn.stringToTerraform(this._privateDnsResolverId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       ip_configurations: privateDnsResolverInboundEndpointIpConfigurationsToTerraform(this._ipConfigurations.internalValue),
       timeouts: privateDnsResolverInboundEndpointTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -572,31 +572,31 @@ export class PrivateDnsResolverInboundEndpoint extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       private_dns_resolver_id: {
-        value: cdktf.stringToHclTerraform(this._privateDnsResolverId),
+        value: cdktn.stringToHclTerraform(this._privateDnsResolverId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

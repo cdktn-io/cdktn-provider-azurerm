@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataFactoryLinkedServiceSftpConfig extends cdktf.TerraformMetaArguments {
+export interface DataFactoryLinkedServiceSftpConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_linked_service_sftp#additional_properties DataFactoryLinkedServiceSftp#additional_properties}
   */
@@ -82,7 +82,7 @@ export interface DataFactoryLinkedServiceSftpConfig extends cdktf.TerraformMetaA
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_linked_service_sftp#skip_host_key_validation DataFactoryLinkedServiceSftp#skip_host_key_validation}
   */
-  readonly skipHostKeyValidation?: boolean | cdktf.IResolvable;
+  readonly skipHostKeyValidation?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_linked_service_sftp#username DataFactoryLinkedServiceSftp#username}
   */
@@ -92,7 +92,7 @@ export interface DataFactoryLinkedServiceSftpConfig extends cdktf.TerraformMetaA
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_linked_service_sftp#key_vault_password DataFactoryLinkedServiceSftp#key_vault_password}
   */
-  readonly keyVaultPassword?: DataFactoryLinkedServiceSftpKeyVaultPassword[] | cdktf.IResolvable;
+  readonly keyVaultPassword?: DataFactoryLinkedServiceSftpKeyVaultPassword[] | cdktn.IResolvable;
   /**
   * key_vault_private_key_content_base64 block
   *
@@ -123,32 +123,32 @@ export interface DataFactoryLinkedServiceSftpKeyVaultPassword {
   readonly secretName: string;
 }
 
-export function dataFactoryLinkedServiceSftpKeyVaultPasswordToTerraform(struct?: DataFactoryLinkedServiceSftpKeyVaultPassword | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryLinkedServiceSftpKeyVaultPasswordToTerraform(struct?: DataFactoryLinkedServiceSftpKeyVaultPassword | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    linked_service_name: cdktf.stringToTerraform(struct!.linkedServiceName),
-    secret_name: cdktf.stringToTerraform(struct!.secretName),
+    linked_service_name: cdktn.stringToTerraform(struct!.linkedServiceName),
+    secret_name: cdktn.stringToTerraform(struct!.secretName),
   }
 }
 
 
-export function dataFactoryLinkedServiceSftpKeyVaultPasswordToHclTerraform(struct?: DataFactoryLinkedServiceSftpKeyVaultPassword | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryLinkedServiceSftpKeyVaultPasswordToHclTerraform(struct?: DataFactoryLinkedServiceSftpKeyVaultPassword | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     linked_service_name: {
-      value: cdktf.stringToHclTerraform(struct!.linkedServiceName),
+      value: cdktn.stringToHclTerraform(struct!.linkedServiceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_name: {
-      value: cdktf.stringToHclTerraform(struct!.secretName),
+      value: cdktn.stringToHclTerraform(struct!.secretName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -159,9 +159,9 @@ export function dataFactoryLinkedServiceSftpKeyVaultPasswordToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryLinkedServiceSftpKeyVaultPasswordOutputReference extends cdktf.ComplexObject {
+export class DataFactoryLinkedServiceSftpKeyVaultPasswordOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -169,11 +169,11 @@ export class DataFactoryLinkedServiceSftpKeyVaultPasswordOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataFactoryLinkedServiceSftpKeyVaultPassword | cdktf.IResolvable | undefined {
+  public get internalValue(): DataFactoryLinkedServiceSftpKeyVaultPassword | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -190,14 +190,14 @@ export class DataFactoryLinkedServiceSftpKeyVaultPasswordOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataFactoryLinkedServiceSftpKeyVaultPassword | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataFactoryLinkedServiceSftpKeyVaultPassword | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._linkedServiceName = undefined;
       this._secretName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -236,15 +236,15 @@ export class DataFactoryLinkedServiceSftpKeyVaultPasswordOutputReference extends
   }
 }
 
-export class DataFactoryLinkedServiceSftpKeyVaultPasswordList extends cdktf.ComplexList {
-  public internalValue? : DataFactoryLinkedServiceSftpKeyVaultPassword[] | cdktf.IResolvable
+export class DataFactoryLinkedServiceSftpKeyVaultPasswordList extends cdktn.ComplexList {
+  public internalValue? : DataFactoryLinkedServiceSftpKeyVaultPassword[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -267,31 +267,31 @@ export interface DataFactoryLinkedServiceSftpKeyVaultPrivateKeyContentBase64 {
 }
 
 export function dataFactoryLinkedServiceSftpKeyVaultPrivateKeyContentBase64ToTerraform(struct?: DataFactoryLinkedServiceSftpKeyVaultPrivateKeyContentBase64OutputReference | DataFactoryLinkedServiceSftpKeyVaultPrivateKeyContentBase64): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    linked_service_name: cdktf.stringToTerraform(struct!.linkedServiceName),
-    secret_name: cdktf.stringToTerraform(struct!.secretName),
+    linked_service_name: cdktn.stringToTerraform(struct!.linkedServiceName),
+    secret_name: cdktn.stringToTerraform(struct!.secretName),
   }
 }
 
 
 export function dataFactoryLinkedServiceSftpKeyVaultPrivateKeyContentBase64ToHclTerraform(struct?: DataFactoryLinkedServiceSftpKeyVaultPrivateKeyContentBase64OutputReference | DataFactoryLinkedServiceSftpKeyVaultPrivateKeyContentBase64): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     linked_service_name: {
-      value: cdktf.stringToHclTerraform(struct!.linkedServiceName),
+      value: cdktn.stringToHclTerraform(struct!.linkedServiceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_name: {
-      value: cdktf.stringToHclTerraform(struct!.secretName),
+      value: cdktn.stringToHclTerraform(struct!.secretName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -302,14 +302,14 @@ export function dataFactoryLinkedServiceSftpKeyVaultPrivateKeyContentBase64ToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryLinkedServiceSftpKeyVaultPrivateKeyContentBase64OutputReference extends cdktf.ComplexObject {
+export class DataFactoryLinkedServiceSftpKeyVaultPrivateKeyContentBase64OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -378,31 +378,31 @@ export interface DataFactoryLinkedServiceSftpKeyVaultPrivateKeyPassphrase {
 }
 
 export function dataFactoryLinkedServiceSftpKeyVaultPrivateKeyPassphraseToTerraform(struct?: DataFactoryLinkedServiceSftpKeyVaultPrivateKeyPassphraseOutputReference | DataFactoryLinkedServiceSftpKeyVaultPrivateKeyPassphrase): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    linked_service_name: cdktf.stringToTerraform(struct!.linkedServiceName),
-    secret_name: cdktf.stringToTerraform(struct!.secretName),
+    linked_service_name: cdktn.stringToTerraform(struct!.linkedServiceName),
+    secret_name: cdktn.stringToTerraform(struct!.secretName),
   }
 }
 
 
 export function dataFactoryLinkedServiceSftpKeyVaultPrivateKeyPassphraseToHclTerraform(struct?: DataFactoryLinkedServiceSftpKeyVaultPrivateKeyPassphraseOutputReference | DataFactoryLinkedServiceSftpKeyVaultPrivateKeyPassphrase): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     linked_service_name: {
-      value: cdktf.stringToHclTerraform(struct!.linkedServiceName),
+      value: cdktn.stringToHclTerraform(struct!.linkedServiceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_name: {
-      value: cdktf.stringToHclTerraform(struct!.secretName),
+      value: cdktn.stringToHclTerraform(struct!.secretName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -413,14 +413,14 @@ export function dataFactoryLinkedServiceSftpKeyVaultPrivateKeyPassphraseToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryLinkedServiceSftpKeyVaultPrivateKeyPassphraseOutputReference extends cdktf.ComplexObject {
+export class DataFactoryLinkedServiceSftpKeyVaultPrivateKeyPassphraseOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -496,46 +496,46 @@ export interface DataFactoryLinkedServiceSftpTimeouts {
   readonly update?: string;
 }
 
-export function dataFactoryLinkedServiceSftpTimeoutsToTerraform(struct?: DataFactoryLinkedServiceSftpTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryLinkedServiceSftpTimeoutsToTerraform(struct?: DataFactoryLinkedServiceSftpTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dataFactoryLinkedServiceSftpTimeoutsToHclTerraform(struct?: DataFactoryLinkedServiceSftpTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryLinkedServiceSftpTimeoutsToHclTerraform(struct?: DataFactoryLinkedServiceSftpTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -546,19 +546,19 @@ export function dataFactoryLinkedServiceSftpTimeoutsToHclTerraform(struct?: Data
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryLinkedServiceSftpTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataFactoryLinkedServiceSftpTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataFactoryLinkedServiceSftpTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataFactoryLinkedServiceSftpTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -583,7 +583,7 @@ export class DataFactoryLinkedServiceSftpTimeoutsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataFactoryLinkedServiceSftpTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataFactoryLinkedServiceSftpTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -592,7 +592,7 @@ export class DataFactoryLinkedServiceSftpTimeoutsOutputReference extends cdktf.C
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -674,7 +674,7 @@ export class DataFactoryLinkedServiceSftpTimeoutsOutputReference extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_linked_service_sftp azurerm_data_factory_linked_service_sftp}
 */
-export class DataFactoryLinkedServiceSftp extends cdktf.TerraformResource {
+export class DataFactoryLinkedServiceSftp extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -685,14 +685,14 @@ export class DataFactoryLinkedServiceSftp extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataFactoryLinkedServiceSftp resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataFactoryLinkedServiceSftp resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataFactoryLinkedServiceSftp to import
   * @param importFromId The id of the existing DataFactoryLinkedServiceSftp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_linked_service_sftp#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataFactoryLinkedServiceSftp to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_factory_linked_service_sftp", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_factory_linked_service_sftp", importId: importFromId, provider });
       }
 
   // ===========
@@ -992,11 +992,11 @@ export class DataFactoryLinkedServiceSftp extends cdktf.TerraformResource {
   }
 
   // skip_host_key_validation - computed: false, optional: true, required: false
-  private _skipHostKeyValidation?: boolean | cdktf.IResolvable; 
+  private _skipHostKeyValidation?: boolean | cdktn.IResolvable; 
   public get skipHostKeyValidation() {
     return this.getBooleanAttribute('skip_host_key_validation');
   }
-  public set skipHostKeyValidation(value: boolean | cdktf.IResolvable) {
+  public set skipHostKeyValidation(value: boolean | cdktn.IResolvable) {
     this._skipHostKeyValidation = value;
   }
   public resetSkipHostKeyValidation() {
@@ -1025,7 +1025,7 @@ export class DataFactoryLinkedServiceSftp extends cdktf.TerraformResource {
   public get keyVaultPassword() {
     return this._keyVaultPassword;
   }
-  public putKeyVaultPassword(value: DataFactoryLinkedServiceSftpKeyVaultPassword[] | cdktf.IResolvable) {
+  public putKeyVaultPassword(value: DataFactoryLinkedServiceSftpKeyVaultPassword[] | cdktn.IResolvable) {
     this._keyVaultPassword.internalValue = value;
   }
   public resetKeyVaultPassword() {
@@ -1090,25 +1090,25 @@ export class DataFactoryLinkedServiceSftp extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      additional_properties: cdktf.hashMapper(cdktf.stringToTerraform)(this._additionalProperties),
-      annotations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._annotations),
-      authentication_type: cdktf.stringToTerraform(this._authenticationType),
-      data_factory_id: cdktf.stringToTerraform(this._dataFactoryId),
-      description: cdktf.stringToTerraform(this._description),
-      host: cdktf.stringToTerraform(this._host),
-      host_key_fingerprint: cdktf.stringToTerraform(this._hostKeyFingerprint),
-      id: cdktf.stringToTerraform(this._id),
-      integration_runtime_name: cdktf.stringToTerraform(this._integrationRuntimeName),
-      name: cdktf.stringToTerraform(this._name),
-      parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._parameters),
-      password: cdktf.stringToTerraform(this._password),
-      port: cdktf.numberToTerraform(this._port),
-      private_key_content_base64: cdktf.stringToTerraform(this._privateKeyContentBase64),
-      private_key_passphrase: cdktf.stringToTerraform(this._privateKeyPassphrase),
-      private_key_path: cdktf.stringToTerraform(this._privateKeyPath),
-      skip_host_key_validation: cdktf.booleanToTerraform(this._skipHostKeyValidation),
-      username: cdktf.stringToTerraform(this._username),
-      key_vault_password: cdktf.listMapper(dataFactoryLinkedServiceSftpKeyVaultPasswordToTerraform, true)(this._keyVaultPassword.internalValue),
+      additional_properties: cdktn.hashMapper(cdktn.stringToTerraform)(this._additionalProperties),
+      annotations: cdktn.listMapper(cdktn.stringToTerraform, false)(this._annotations),
+      authentication_type: cdktn.stringToTerraform(this._authenticationType),
+      data_factory_id: cdktn.stringToTerraform(this._dataFactoryId),
+      description: cdktn.stringToTerraform(this._description),
+      host: cdktn.stringToTerraform(this._host),
+      host_key_fingerprint: cdktn.stringToTerraform(this._hostKeyFingerprint),
+      id: cdktn.stringToTerraform(this._id),
+      integration_runtime_name: cdktn.stringToTerraform(this._integrationRuntimeName),
+      name: cdktn.stringToTerraform(this._name),
+      parameters: cdktn.hashMapper(cdktn.stringToTerraform)(this._parameters),
+      password: cdktn.stringToTerraform(this._password),
+      port: cdktn.numberToTerraform(this._port),
+      private_key_content_base64: cdktn.stringToTerraform(this._privateKeyContentBase64),
+      private_key_passphrase: cdktn.stringToTerraform(this._privateKeyPassphrase),
+      private_key_path: cdktn.stringToTerraform(this._privateKeyPath),
+      skip_host_key_validation: cdktn.booleanToTerraform(this._skipHostKeyValidation),
+      username: cdktn.stringToTerraform(this._username),
+      key_vault_password: cdktn.listMapper(dataFactoryLinkedServiceSftpKeyVaultPasswordToTerraform, true)(this._keyVaultPassword.internalValue),
       key_vault_private_key_content_base64: dataFactoryLinkedServiceSftpKeyVaultPrivateKeyContentBase64ToTerraform(this._keyVaultPrivateKeyContentBase64.internalValue),
       key_vault_private_key_passphrase: dataFactoryLinkedServiceSftpKeyVaultPrivateKeyPassphraseToTerraform(this._keyVaultPrivateKeyPassphrase.internalValue),
       timeouts: dataFactoryLinkedServiceSftpTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1118,115 +1118,115 @@ export class DataFactoryLinkedServiceSftp extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       additional_properties: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._additionalProperties),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._additionalProperties),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       annotations: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._annotations),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._annotations),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       authentication_type: {
-        value: cdktf.stringToHclTerraform(this._authenticationType),
+        value: cdktn.stringToHclTerraform(this._authenticationType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_factory_id: {
-        value: cdktf.stringToHclTerraform(this._dataFactoryId),
+        value: cdktn.stringToHclTerraform(this._dataFactoryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       host: {
-        value: cdktf.stringToHclTerraform(this._host),
+        value: cdktn.stringToHclTerraform(this._host),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       host_key_fingerprint: {
-        value: cdktf.stringToHclTerraform(this._hostKeyFingerprint),
+        value: cdktn.stringToHclTerraform(this._hostKeyFingerprint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       integration_runtime_name: {
-        value: cdktf.stringToHclTerraform(this._integrationRuntimeName),
+        value: cdktn.stringToHclTerraform(this._integrationRuntimeName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parameters: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._parameters),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._parameters),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       password: {
-        value: cdktf.stringToHclTerraform(this._password),
+        value: cdktn.stringToHclTerraform(this._password),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       port: {
-        value: cdktf.numberToHclTerraform(this._port),
+        value: cdktn.numberToHclTerraform(this._port),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       private_key_content_base64: {
-        value: cdktf.stringToHclTerraform(this._privateKeyContentBase64),
+        value: cdktn.stringToHclTerraform(this._privateKeyContentBase64),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       private_key_passphrase: {
-        value: cdktf.stringToHclTerraform(this._privateKeyPassphrase),
+        value: cdktn.stringToHclTerraform(this._privateKeyPassphrase),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       private_key_path: {
-        value: cdktf.stringToHclTerraform(this._privateKeyPath),
+        value: cdktn.stringToHclTerraform(this._privateKeyPath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       skip_host_key_validation: {
-        value: cdktf.booleanToHclTerraform(this._skipHostKeyValidation),
+        value: cdktn.booleanToHclTerraform(this._skipHostKeyValidation),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       username: {
-        value: cdktf.stringToHclTerraform(this._username),
+        value: cdktn.stringToHclTerraform(this._username),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_vault_password: {
-        value: cdktf.listMapperHcl(dataFactoryLinkedServiceSftpKeyVaultPasswordToHclTerraform, true)(this._keyVaultPassword.internalValue),
+        value: cdktn.listMapperHcl(dataFactoryLinkedServiceSftpKeyVaultPasswordToHclTerraform, true)(this._keyVaultPassword.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataFactoryLinkedServiceSftpKeyVaultPasswordList",

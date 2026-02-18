@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PrivateDnsMxRecordConfig extends cdktf.TerraformMetaArguments {
+export interface PrivateDnsMxRecordConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/private_dns_mx_record#id PrivateDnsMxRecord#id}
   *
@@ -44,7 +44,7 @@ export interface PrivateDnsMxRecordConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/private_dns_mx_record#record PrivateDnsMxRecord#record}
   */
-  readonly record: PrivateDnsMxRecordRecord[] | cdktf.IResolvable;
+  readonly record: PrivateDnsMxRecordRecord[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -63,32 +63,32 @@ export interface PrivateDnsMxRecordRecord {
   readonly preference: number;
 }
 
-export function privateDnsMxRecordRecordToTerraform(struct?: PrivateDnsMxRecordRecord | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privateDnsMxRecordRecordToTerraform(struct?: PrivateDnsMxRecordRecord | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    exchange: cdktf.stringToTerraform(struct!.exchange),
-    preference: cdktf.numberToTerraform(struct!.preference),
+    exchange: cdktn.stringToTerraform(struct!.exchange),
+    preference: cdktn.numberToTerraform(struct!.preference),
   }
 }
 
 
-export function privateDnsMxRecordRecordToHclTerraform(struct?: PrivateDnsMxRecordRecord | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privateDnsMxRecordRecordToHclTerraform(struct?: PrivateDnsMxRecordRecord | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     exchange: {
-      value: cdktf.stringToHclTerraform(struct!.exchange),
+      value: cdktn.stringToHclTerraform(struct!.exchange),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     preference: {
-      value: cdktf.numberToHclTerraform(struct!.preference),
+      value: cdktn.numberToHclTerraform(struct!.preference),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -99,9 +99,9 @@ export function privateDnsMxRecordRecordToHclTerraform(struct?: PrivateDnsMxReco
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivateDnsMxRecordRecordOutputReference extends cdktf.ComplexObject {
+export class PrivateDnsMxRecordRecordOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -109,11 +109,11 @@ export class PrivateDnsMxRecordRecordOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PrivateDnsMxRecordRecord | cdktf.IResolvable | undefined {
+  public get internalValue(): PrivateDnsMxRecordRecord | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -130,14 +130,14 @@ export class PrivateDnsMxRecordRecordOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PrivateDnsMxRecordRecord | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PrivateDnsMxRecordRecord | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._exchange = undefined;
       this._preference = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -176,15 +176,15 @@ export class PrivateDnsMxRecordRecordOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class PrivateDnsMxRecordRecordList extends cdktf.ComplexList {
-  public internalValue? : PrivateDnsMxRecordRecord[] | cdktf.IResolvable
+export class PrivateDnsMxRecordRecordList extends cdktn.ComplexList {
+  public internalValue? : PrivateDnsMxRecordRecord[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -214,46 +214,46 @@ export interface PrivateDnsMxRecordTimeouts {
   readonly update?: string;
 }
 
-export function privateDnsMxRecordTimeoutsToTerraform(struct?: PrivateDnsMxRecordTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privateDnsMxRecordTimeoutsToTerraform(struct?: PrivateDnsMxRecordTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function privateDnsMxRecordTimeoutsToHclTerraform(struct?: PrivateDnsMxRecordTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privateDnsMxRecordTimeoutsToHclTerraform(struct?: PrivateDnsMxRecordTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -264,19 +264,19 @@ export function privateDnsMxRecordTimeoutsToHclTerraform(struct?: PrivateDnsMxRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivateDnsMxRecordTimeoutsOutputReference extends cdktf.ComplexObject {
+export class PrivateDnsMxRecordTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PrivateDnsMxRecordTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): PrivateDnsMxRecordTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -301,7 +301,7 @@ export class PrivateDnsMxRecordTimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PrivateDnsMxRecordTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PrivateDnsMxRecordTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -310,7 +310,7 @@ export class PrivateDnsMxRecordTimeoutsOutputReference extends cdktf.ComplexObje
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -392,7 +392,7 @@ export class PrivateDnsMxRecordTimeoutsOutputReference extends cdktf.ComplexObje
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/private_dns_mx_record azurerm_private_dns_mx_record}
 */
-export class PrivateDnsMxRecord extends cdktf.TerraformResource {
+export class PrivateDnsMxRecord extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -403,14 +403,14 @@ export class PrivateDnsMxRecord extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PrivateDnsMxRecord resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PrivateDnsMxRecord resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PrivateDnsMxRecord to import
   * @param importFromId The id of the existing PrivateDnsMxRecord that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/private_dns_mx_record#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PrivateDnsMxRecord to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_private_dns_mx_record", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_private_dns_mx_record", importId: importFromId, provider });
       }
 
   // ===========
@@ -551,7 +551,7 @@ export class PrivateDnsMxRecord extends cdktf.TerraformResource {
   public get record() {
     return this._record;
   }
-  public putRecord(value: PrivateDnsMxRecordRecord[] | cdktf.IResolvable) {
+  public putRecord(value: PrivateDnsMxRecordRecord[] | cdktn.IResolvable) {
     this._record.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -581,13 +581,13 @@ export class PrivateDnsMxRecord extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      ttl: cdktf.numberToTerraform(this._ttl),
-      zone_name: cdktf.stringToTerraform(this._zoneName),
-      record: cdktf.listMapper(privateDnsMxRecordRecordToTerraform, true)(this._record.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      ttl: cdktn.numberToTerraform(this._ttl),
+      zone_name: cdktn.stringToTerraform(this._zoneName),
+      record: cdktn.listMapper(privateDnsMxRecordRecordToTerraform, true)(this._record.internalValue),
       timeouts: privateDnsMxRecordTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -595,43 +595,43 @@ export class PrivateDnsMxRecord extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       ttl: {
-        value: cdktf.numberToHclTerraform(this._ttl),
+        value: cdktn.numberToHclTerraform(this._ttl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       zone_name: {
-        value: cdktf.stringToHclTerraform(this._zoneName),
+        value: cdktn.stringToHclTerraform(this._zoneName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       record: {
-        value: cdktf.listMapperHcl(privateDnsMxRecordRecordToHclTerraform, true)(this._record.internalValue),
+        value: cdktn.listMapperHcl(privateDnsMxRecordRecordToHclTerraform, true)(this._record.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "PrivateDnsMxRecordRecordList",

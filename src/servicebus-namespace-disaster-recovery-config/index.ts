@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ServicebusNamespaceDisasterRecoveryConfigConfig extends cdktf.TerraformMetaArguments {
+export interface ServicebusNamespaceDisasterRecoveryConfigConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/servicebus_namespace_disaster_recovery_config#alias_authorization_rule_id ServicebusNamespaceDisasterRecoveryConfig#alias_authorization_rule_id}
   */
@@ -61,46 +61,46 @@ export interface ServicebusNamespaceDisasterRecoveryConfigTimeouts {
   readonly update?: string;
 }
 
-export function servicebusNamespaceDisasterRecoveryConfigTimeoutsToTerraform(struct?: ServicebusNamespaceDisasterRecoveryConfigTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function servicebusNamespaceDisasterRecoveryConfigTimeoutsToTerraform(struct?: ServicebusNamespaceDisasterRecoveryConfigTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function servicebusNamespaceDisasterRecoveryConfigTimeoutsToHclTerraform(struct?: ServicebusNamespaceDisasterRecoveryConfigTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function servicebusNamespaceDisasterRecoveryConfigTimeoutsToHclTerraform(struct?: ServicebusNamespaceDisasterRecoveryConfigTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -111,19 +111,19 @@ export function servicebusNamespaceDisasterRecoveryConfigTimeoutsToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServicebusNamespaceDisasterRecoveryConfigTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ServicebusNamespaceDisasterRecoveryConfigTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ServicebusNamespaceDisasterRecoveryConfigTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ServicebusNamespaceDisasterRecoveryConfigTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -148,7 +148,7 @@ export class ServicebusNamespaceDisasterRecoveryConfigTimeoutsOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServicebusNamespaceDisasterRecoveryConfigTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ServicebusNamespaceDisasterRecoveryConfigTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -157,7 +157,7 @@ export class ServicebusNamespaceDisasterRecoveryConfigTimeoutsOutputReference ex
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -239,7 +239,7 @@ export class ServicebusNamespaceDisasterRecoveryConfigTimeoutsOutputReference ex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/servicebus_namespace_disaster_recovery_config azurerm_servicebus_namespace_disaster_recovery_config}
 */
-export class ServicebusNamespaceDisasterRecoveryConfig extends cdktf.TerraformResource {
+export class ServicebusNamespaceDisasterRecoveryConfig extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -250,14 +250,14 @@ export class ServicebusNamespaceDisasterRecoveryConfig extends cdktf.TerraformRe
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ServicebusNamespaceDisasterRecoveryConfig resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ServicebusNamespaceDisasterRecoveryConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServicebusNamespaceDisasterRecoveryConfig to import
   * @param importFromId The id of the existing ServicebusNamespaceDisasterRecoveryConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/servicebus_namespace_disaster_recovery_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServicebusNamespaceDisasterRecoveryConfig to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_servicebus_namespace_disaster_recovery_config", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_servicebus_namespace_disaster_recovery_config", importId: importFromId, provider });
       }
 
   // ===========
@@ -412,11 +412,11 @@ export class ServicebusNamespaceDisasterRecoveryConfig extends cdktf.TerraformRe
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      alias_authorization_rule_id: cdktf.stringToTerraform(this._aliasAuthorizationRuleId),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      partner_namespace_id: cdktf.stringToTerraform(this._partnerNamespaceId),
-      primary_namespace_id: cdktf.stringToTerraform(this._primaryNamespaceId),
+      alias_authorization_rule_id: cdktn.stringToTerraform(this._aliasAuthorizationRuleId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      partner_namespace_id: cdktn.stringToTerraform(this._partnerNamespaceId),
+      primary_namespace_id: cdktn.stringToTerraform(this._primaryNamespaceId),
       timeouts: servicebusNamespaceDisasterRecoveryConfigTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -424,31 +424,31 @@ export class ServicebusNamespaceDisasterRecoveryConfig extends cdktf.TerraformRe
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       alias_authorization_rule_id: {
-        value: cdktf.stringToHclTerraform(this._aliasAuthorizationRuleId),
+        value: cdktn.stringToHclTerraform(this._aliasAuthorizationRuleId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       partner_namespace_id: {
-        value: cdktf.stringToHclTerraform(this._partnerNamespaceId),
+        value: cdktn.stringToHclTerraform(this._partnerNamespaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       primary_namespace_id: {
-        value: cdktf.stringToHclTerraform(this._primaryNamespaceId),
+        value: cdktn.stringToHclTerraform(this._primaryNamespaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

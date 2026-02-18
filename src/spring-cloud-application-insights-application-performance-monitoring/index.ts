@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SpringCloudApplicationInsightsApplicationPerformanceMonitoringConfig extends cdktf.TerraformMetaArguments {
+export interface SpringCloudApplicationInsightsApplicationPerformanceMonitoringConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_application_insights_application_performance_monitoring#connection_string SpringCloudApplicationInsightsApplicationPerformanceMonitoring#connection_string}
   */
@@ -19,7 +19,7 @@ export interface SpringCloudApplicationInsightsApplicationPerformanceMonitoringC
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_application_insights_application_performance_monitoring#globally_enabled SpringCloudApplicationInsightsApplicationPerformanceMonitoring#globally_enabled}
   */
-  readonly globallyEnabled?: boolean | cdktf.IResolvable;
+  readonly globallyEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_application_insights_application_performance_monitoring#id SpringCloudApplicationInsightsApplicationPerformanceMonitoring#id}
   *
@@ -77,46 +77,46 @@ export interface SpringCloudApplicationInsightsApplicationPerformanceMonitoringT
   readonly update?: string;
 }
 
-export function springCloudApplicationInsightsApplicationPerformanceMonitoringTimeoutsToTerraform(struct?: SpringCloudApplicationInsightsApplicationPerformanceMonitoringTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function springCloudApplicationInsightsApplicationPerformanceMonitoringTimeoutsToTerraform(struct?: SpringCloudApplicationInsightsApplicationPerformanceMonitoringTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function springCloudApplicationInsightsApplicationPerformanceMonitoringTimeoutsToHclTerraform(struct?: SpringCloudApplicationInsightsApplicationPerformanceMonitoringTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function springCloudApplicationInsightsApplicationPerformanceMonitoringTimeoutsToHclTerraform(struct?: SpringCloudApplicationInsightsApplicationPerformanceMonitoringTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -127,19 +127,19 @@ export function springCloudApplicationInsightsApplicationPerformanceMonitoringTi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SpringCloudApplicationInsightsApplicationPerformanceMonitoringTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SpringCloudApplicationInsightsApplicationPerformanceMonitoringTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SpringCloudApplicationInsightsApplicationPerformanceMonitoringTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SpringCloudApplicationInsightsApplicationPerformanceMonitoringTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -164,7 +164,7 @@ export class SpringCloudApplicationInsightsApplicationPerformanceMonitoringTimeo
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SpringCloudApplicationInsightsApplicationPerformanceMonitoringTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SpringCloudApplicationInsightsApplicationPerformanceMonitoringTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -173,7 +173,7 @@ export class SpringCloudApplicationInsightsApplicationPerformanceMonitoringTimeo
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -255,7 +255,7 @@ export class SpringCloudApplicationInsightsApplicationPerformanceMonitoringTimeo
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_application_insights_application_performance_monitoring azurerm_spring_cloud_application_insights_application_performance_monitoring}
 */
-export class SpringCloudApplicationInsightsApplicationPerformanceMonitoring extends cdktf.TerraformResource {
+export class SpringCloudApplicationInsightsApplicationPerformanceMonitoring extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -266,14 +266,14 @@ export class SpringCloudApplicationInsightsApplicationPerformanceMonitoring exte
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SpringCloudApplicationInsightsApplicationPerformanceMonitoring resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SpringCloudApplicationInsightsApplicationPerformanceMonitoring resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SpringCloudApplicationInsightsApplicationPerformanceMonitoring to import
   * @param importFromId The id of the existing SpringCloudApplicationInsightsApplicationPerformanceMonitoring that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_application_insights_application_performance_monitoring#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SpringCloudApplicationInsightsApplicationPerformanceMonitoring to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_spring_cloud_application_insights_application_performance_monitoring", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_spring_cloud_application_insights_application_performance_monitoring", importId: importFromId, provider });
       }
 
   // ===========
@@ -336,11 +336,11 @@ export class SpringCloudApplicationInsightsApplicationPerformanceMonitoring exte
   }
 
   // globally_enabled - computed: false, optional: true, required: false
-  private _globallyEnabled?: boolean | cdktf.IResolvable; 
+  private _globallyEnabled?: boolean | cdktn.IResolvable; 
   public get globallyEnabled() {
     return this.getBooleanAttribute('globally_enabled');
   }
-  public set globallyEnabled(value: boolean | cdktf.IResolvable) {
+  public set globallyEnabled(value: boolean | cdktn.IResolvable) {
     this._globallyEnabled = value;
   }
   public resetGloballyEnabled() {
@@ -479,15 +479,15 @@ export class SpringCloudApplicationInsightsApplicationPerformanceMonitoring exte
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      connection_string: cdktf.stringToTerraform(this._connectionString),
-      globally_enabled: cdktf.booleanToTerraform(this._globallyEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      role_instance: cdktf.stringToTerraform(this._roleInstance),
-      role_name: cdktf.stringToTerraform(this._roleName),
-      sampling_percentage: cdktf.numberToTerraform(this._samplingPercentage),
-      sampling_requests_per_second: cdktf.numberToTerraform(this._samplingRequestsPerSecond),
-      spring_cloud_service_id: cdktf.stringToTerraform(this._springCloudServiceId),
+      connection_string: cdktn.stringToTerraform(this._connectionString),
+      globally_enabled: cdktn.booleanToTerraform(this._globallyEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      role_instance: cdktn.stringToTerraform(this._roleInstance),
+      role_name: cdktn.stringToTerraform(this._roleName),
+      sampling_percentage: cdktn.numberToTerraform(this._samplingPercentage),
+      sampling_requests_per_second: cdktn.numberToTerraform(this._samplingRequestsPerSecond),
+      spring_cloud_service_id: cdktn.stringToTerraform(this._springCloudServiceId),
       timeouts: springCloudApplicationInsightsApplicationPerformanceMonitoringTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -495,55 +495,55 @@ export class SpringCloudApplicationInsightsApplicationPerformanceMonitoring exte
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       connection_string: {
-        value: cdktf.stringToHclTerraform(this._connectionString),
+        value: cdktn.stringToHclTerraform(this._connectionString),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       globally_enabled: {
-        value: cdktf.booleanToHclTerraform(this._globallyEnabled),
+        value: cdktn.booleanToHclTerraform(this._globallyEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_instance: {
-        value: cdktf.stringToHclTerraform(this._roleInstance),
+        value: cdktn.stringToHclTerraform(this._roleInstance),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_name: {
-        value: cdktf.stringToHclTerraform(this._roleName),
+        value: cdktn.stringToHclTerraform(this._roleName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sampling_percentage: {
-        value: cdktf.numberToHclTerraform(this._samplingPercentage),
+        value: cdktn.numberToHclTerraform(this._samplingPercentage),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       sampling_requests_per_second: {
-        value: cdktf.numberToHclTerraform(this._samplingRequestsPerSecond),
+        value: cdktn.numberToHclTerraform(this._samplingRequestsPerSecond),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       spring_cloud_service_id: {
-        value: cdktf.stringToHclTerraform(this._springCloudServiceId),
+        value: cdktn.stringToHclTerraform(this._springCloudServiceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

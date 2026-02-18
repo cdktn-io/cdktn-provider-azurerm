@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BackupPolicyFileShareConfig extends cdktf.TerraformMetaArguments {
+export interface BackupPolicyFileShareConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/backup_policy_file_share#backup_tier BackupPolicyFileShare#backup_tier}
   */
@@ -96,38 +96,38 @@ export interface BackupPolicyFileShareBackupHourly {
 }
 
 export function backupPolicyFileShareBackupHourlyToTerraform(struct?: BackupPolicyFileShareBackupHourlyOutputReference | BackupPolicyFileShareBackupHourly): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    interval: cdktf.numberToTerraform(struct!.interval),
-    start_time: cdktf.stringToTerraform(struct!.startTime),
-    window_duration: cdktf.numberToTerraform(struct!.windowDuration),
+    interval: cdktn.numberToTerraform(struct!.interval),
+    start_time: cdktn.stringToTerraform(struct!.startTime),
+    window_duration: cdktn.numberToTerraform(struct!.windowDuration),
   }
 }
 
 
 export function backupPolicyFileShareBackupHourlyToHclTerraform(struct?: BackupPolicyFileShareBackupHourlyOutputReference | BackupPolicyFileShareBackupHourly): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     interval: {
-      value: cdktf.numberToHclTerraform(struct!.interval),
+      value: cdktn.numberToHclTerraform(struct!.interval),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     start_time: {
-      value: cdktf.stringToHclTerraform(struct!.startTime),
+      value: cdktn.stringToHclTerraform(struct!.startTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     window_duration: {
-      value: cdktf.numberToHclTerraform(struct!.windowDuration),
+      value: cdktn.numberToHclTerraform(struct!.windowDuration),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -138,14 +138,14 @@ export function backupPolicyFileShareBackupHourlyToHclTerraform(struct?: BackupP
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BackupPolicyFileShareBackupHourlyOutputReference extends cdktf.ComplexObject {
+export class BackupPolicyFileShareBackupHourlyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -239,32 +239,32 @@ export interface BackupPolicyFileShareBackup {
 }
 
 export function backupPolicyFileShareBackupToTerraform(struct?: BackupPolicyFileShareBackupOutputReference | BackupPolicyFileShareBackup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    frequency: cdktf.stringToTerraform(struct!.frequency),
-    time: cdktf.stringToTerraform(struct!.time),
+    frequency: cdktn.stringToTerraform(struct!.frequency),
+    time: cdktn.stringToTerraform(struct!.time),
     hourly: backupPolicyFileShareBackupHourlyToTerraform(struct!.hourly),
   }
 }
 
 
 export function backupPolicyFileShareBackupToHclTerraform(struct?: BackupPolicyFileShareBackupOutputReference | BackupPolicyFileShareBackup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     frequency: {
-      value: cdktf.stringToHclTerraform(struct!.frequency),
+      value: cdktn.stringToHclTerraform(struct!.frequency),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     time: {
-      value: cdktf.stringToHclTerraform(struct!.time),
+      value: cdktn.stringToHclTerraform(struct!.time),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -281,14 +281,14 @@ export function backupPolicyFileShareBackupToHclTerraform(struct?: BackupPolicyF
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BackupPolicyFileShareBackupOutputReference extends cdktf.ComplexObject {
+export class BackupPolicyFileShareBackupOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -378,24 +378,24 @@ export interface BackupPolicyFileShareRetentionDaily {
 }
 
 export function backupPolicyFileShareRetentionDailyToTerraform(struct?: BackupPolicyFileShareRetentionDailyOutputReference | BackupPolicyFileShareRetentionDaily): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    count: cdktf.numberToTerraform(struct!.count),
+    count: cdktn.numberToTerraform(struct!.count),
   }
 }
 
 
 export function backupPolicyFileShareRetentionDailyToHclTerraform(struct?: BackupPolicyFileShareRetentionDailyOutputReference | BackupPolicyFileShareRetentionDaily): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     count: {
-      value: cdktf.numberToHclTerraform(struct!.count),
+      value: cdktn.numberToHclTerraform(struct!.count),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -406,14 +406,14 @@ export function backupPolicyFileShareRetentionDailyToHclTerraform(struct?: Backu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BackupPolicyFileShareRetentionDailyOutputReference extends cdktf.ComplexObject {
+export class BackupPolicyFileShareRetentionDailyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -463,7 +463,7 @@ export interface BackupPolicyFileShareRetentionMonthly {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/backup_policy_file_share#include_last_days BackupPolicyFileShare#include_last_days}
   */
-  readonly includeLastDays?: boolean | cdktf.IResolvable;
+  readonly includeLastDays?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/backup_policy_file_share#weekdays BackupPolicyFileShare#weekdays}
   */
@@ -475,52 +475,52 @@ export interface BackupPolicyFileShareRetentionMonthly {
 }
 
 export function backupPolicyFileShareRetentionMonthlyToTerraform(struct?: BackupPolicyFileShareRetentionMonthlyOutputReference | BackupPolicyFileShareRetentionMonthly): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    count: cdktf.numberToTerraform(struct!.count),
-    days: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.days),
-    include_last_days: cdktf.booleanToTerraform(struct!.includeLastDays),
-    weekdays: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.weekdays),
-    weeks: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.weeks),
+    count: cdktn.numberToTerraform(struct!.count),
+    days: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.days),
+    include_last_days: cdktn.booleanToTerraform(struct!.includeLastDays),
+    weekdays: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.weekdays),
+    weeks: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.weeks),
   }
 }
 
 
 export function backupPolicyFileShareRetentionMonthlyToHclTerraform(struct?: BackupPolicyFileShareRetentionMonthlyOutputReference | BackupPolicyFileShareRetentionMonthly): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     count: {
-      value: cdktf.numberToHclTerraform(struct!.count),
+      value: cdktn.numberToHclTerraform(struct!.count),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     days: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.days),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.days),
       isBlock: false,
       type: "set",
       storageClassType: "numberList",
     },
     include_last_days: {
-      value: cdktf.booleanToHclTerraform(struct!.includeLastDays),
+      value: cdktn.booleanToHclTerraform(struct!.includeLastDays),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     weekdays: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.weekdays),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.weekdays),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     weeks: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.weeks),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.weeks),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -531,14 +531,14 @@ export function backupPolicyFileShareRetentionMonthlyToHclTerraform(struct?: Bac
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BackupPolicyFileShareRetentionMonthlyOutputReference extends cdktf.ComplexObject {
+export class BackupPolicyFileShareRetentionMonthlyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -603,7 +603,7 @@ export class BackupPolicyFileShareRetentionMonthlyOutputReference extends cdktf.
   // days - computed: false, optional: true, required: false
   private _days?: number[]; 
   public get days() {
-    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('days')));
+    return cdktn.Token.asNumberList(cdktn.Fn.tolist(this.getNumberListAttribute('days')));
   }
   public set days(value: number[]) {
     this._days = value;
@@ -617,11 +617,11 @@ export class BackupPolicyFileShareRetentionMonthlyOutputReference extends cdktf.
   }
 
   // include_last_days - computed: false, optional: true, required: false
-  private _includeLastDays?: boolean | cdktf.IResolvable; 
+  private _includeLastDays?: boolean | cdktn.IResolvable; 
   public get includeLastDays() {
     return this.getBooleanAttribute('include_last_days');
   }
-  public set includeLastDays(value: boolean | cdktf.IResolvable) {
+  public set includeLastDays(value: boolean | cdktn.IResolvable) {
     this._includeLastDays = value;
   }
   public resetIncludeLastDays() {
@@ -635,7 +635,7 @@ export class BackupPolicyFileShareRetentionMonthlyOutputReference extends cdktf.
   // weekdays - computed: false, optional: true, required: false
   private _weekdays?: string[]; 
   public get weekdays() {
-    return cdktf.Fn.tolist(this.getListAttribute('weekdays'));
+    return cdktn.Fn.tolist(this.getListAttribute('weekdays'));
   }
   public set weekdays(value: string[]) {
     this._weekdays = value;
@@ -651,7 +651,7 @@ export class BackupPolicyFileShareRetentionMonthlyOutputReference extends cdktf.
   // weeks - computed: false, optional: true, required: false
   private _weeks?: string[]; 
   public get weeks() {
-    return cdktf.Fn.tolist(this.getListAttribute('weeks'));
+    return cdktn.Fn.tolist(this.getListAttribute('weeks'));
   }
   public set weeks(value: string[]) {
     this._weeks = value;
@@ -676,31 +676,31 @@ export interface BackupPolicyFileShareRetentionWeekly {
 }
 
 export function backupPolicyFileShareRetentionWeeklyToTerraform(struct?: BackupPolicyFileShareRetentionWeeklyOutputReference | BackupPolicyFileShareRetentionWeekly): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    count: cdktf.numberToTerraform(struct!.count),
-    weekdays: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.weekdays),
+    count: cdktn.numberToTerraform(struct!.count),
+    weekdays: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.weekdays),
   }
 }
 
 
 export function backupPolicyFileShareRetentionWeeklyToHclTerraform(struct?: BackupPolicyFileShareRetentionWeeklyOutputReference | BackupPolicyFileShareRetentionWeekly): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     count: {
-      value: cdktf.numberToHclTerraform(struct!.count),
+      value: cdktn.numberToHclTerraform(struct!.count),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     weekdays: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.weekdays),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.weekdays),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -711,14 +711,14 @@ export function backupPolicyFileShareRetentionWeeklyToHclTerraform(struct?: Back
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BackupPolicyFileShareRetentionWeeklyOutputReference extends cdktf.ComplexObject {
+export class BackupPolicyFileShareRetentionWeeklyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -765,7 +765,7 @@ export class BackupPolicyFileShareRetentionWeeklyOutputReference extends cdktf.C
   // weekdays - computed: false, optional: false, required: true
   private _weekdays?: string[]; 
   public get weekdays() {
-    return cdktf.Fn.tolist(this.getListAttribute('weekdays'));
+    return cdktn.Fn.tolist(this.getListAttribute('weekdays'));
   }
   public set weekdays(value: string[]) {
     this._weekdays = value;
@@ -787,7 +787,7 @@ export interface BackupPolicyFileShareRetentionYearly {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/backup_policy_file_share#include_last_days BackupPolicyFileShare#include_last_days}
   */
-  readonly includeLastDays?: boolean | cdktf.IResolvable;
+  readonly includeLastDays?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/backup_policy_file_share#months BackupPolicyFileShare#months}
   */
@@ -803,59 +803,59 @@ export interface BackupPolicyFileShareRetentionYearly {
 }
 
 export function backupPolicyFileShareRetentionYearlyToTerraform(struct?: BackupPolicyFileShareRetentionYearlyOutputReference | BackupPolicyFileShareRetentionYearly): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    count: cdktf.numberToTerraform(struct!.count),
-    days: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.days),
-    include_last_days: cdktf.booleanToTerraform(struct!.includeLastDays),
-    months: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.months),
-    weekdays: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.weekdays),
-    weeks: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.weeks),
+    count: cdktn.numberToTerraform(struct!.count),
+    days: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.days),
+    include_last_days: cdktn.booleanToTerraform(struct!.includeLastDays),
+    months: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.months),
+    weekdays: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.weekdays),
+    weeks: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.weeks),
   }
 }
 
 
 export function backupPolicyFileShareRetentionYearlyToHclTerraform(struct?: BackupPolicyFileShareRetentionYearlyOutputReference | BackupPolicyFileShareRetentionYearly): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     count: {
-      value: cdktf.numberToHclTerraform(struct!.count),
+      value: cdktn.numberToHclTerraform(struct!.count),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     days: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.days),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.days),
       isBlock: false,
       type: "set",
       storageClassType: "numberList",
     },
     include_last_days: {
-      value: cdktf.booleanToHclTerraform(struct!.includeLastDays),
+      value: cdktn.booleanToHclTerraform(struct!.includeLastDays),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     months: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.months),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.months),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     weekdays: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.weekdays),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.weekdays),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     weeks: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.weeks),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.weeks),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -866,14 +866,14 @@ export function backupPolicyFileShareRetentionYearlyToHclTerraform(struct?: Back
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BackupPolicyFileShareRetentionYearlyOutputReference extends cdktf.ComplexObject {
+export class BackupPolicyFileShareRetentionYearlyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -944,7 +944,7 @@ export class BackupPolicyFileShareRetentionYearlyOutputReference extends cdktf.C
   // days - computed: false, optional: true, required: false
   private _days?: number[]; 
   public get days() {
-    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('days')));
+    return cdktn.Token.asNumberList(cdktn.Fn.tolist(this.getNumberListAttribute('days')));
   }
   public set days(value: number[]) {
     this._days = value;
@@ -958,11 +958,11 @@ export class BackupPolicyFileShareRetentionYearlyOutputReference extends cdktf.C
   }
 
   // include_last_days - computed: false, optional: true, required: false
-  private _includeLastDays?: boolean | cdktf.IResolvable; 
+  private _includeLastDays?: boolean | cdktn.IResolvable; 
   public get includeLastDays() {
     return this.getBooleanAttribute('include_last_days');
   }
-  public set includeLastDays(value: boolean | cdktf.IResolvable) {
+  public set includeLastDays(value: boolean | cdktn.IResolvable) {
     this._includeLastDays = value;
   }
   public resetIncludeLastDays() {
@@ -976,7 +976,7 @@ export class BackupPolicyFileShareRetentionYearlyOutputReference extends cdktf.C
   // months - computed: false, optional: false, required: true
   private _months?: string[]; 
   public get months() {
-    return cdktf.Fn.tolist(this.getListAttribute('months'));
+    return cdktn.Fn.tolist(this.getListAttribute('months'));
   }
   public set months(value: string[]) {
     this._months = value;
@@ -989,7 +989,7 @@ export class BackupPolicyFileShareRetentionYearlyOutputReference extends cdktf.C
   // weekdays - computed: false, optional: true, required: false
   private _weekdays?: string[]; 
   public get weekdays() {
-    return cdktf.Fn.tolist(this.getListAttribute('weekdays'));
+    return cdktn.Fn.tolist(this.getListAttribute('weekdays'));
   }
   public set weekdays(value: string[]) {
     this._weekdays = value;
@@ -1005,7 +1005,7 @@ export class BackupPolicyFileShareRetentionYearlyOutputReference extends cdktf.C
   // weeks - computed: false, optional: true, required: false
   private _weeks?: string[]; 
   public get weeks() {
-    return cdktf.Fn.tolist(this.getListAttribute('weeks'));
+    return cdktn.Fn.tolist(this.getListAttribute('weeks'));
   }
   public set weeks(value: string[]) {
     this._weeks = value;
@@ -1037,46 +1037,46 @@ export interface BackupPolicyFileShareTimeouts {
   readonly update?: string;
 }
 
-export function backupPolicyFileShareTimeoutsToTerraform(struct?: BackupPolicyFileShareTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function backupPolicyFileShareTimeoutsToTerraform(struct?: BackupPolicyFileShareTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function backupPolicyFileShareTimeoutsToHclTerraform(struct?: BackupPolicyFileShareTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function backupPolicyFileShareTimeoutsToHclTerraform(struct?: BackupPolicyFileShareTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1087,19 +1087,19 @@ export function backupPolicyFileShareTimeoutsToHclTerraform(struct?: BackupPolic
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BackupPolicyFileShareTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BackupPolicyFileShareTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BackupPolicyFileShareTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BackupPolicyFileShareTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1124,7 +1124,7 @@ export class BackupPolicyFileShareTimeoutsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BackupPolicyFileShareTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BackupPolicyFileShareTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1133,7 +1133,7 @@ export class BackupPolicyFileShareTimeoutsOutputReference extends cdktf.ComplexO
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1215,7 +1215,7 @@ export class BackupPolicyFileShareTimeoutsOutputReference extends cdktf.ComplexO
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/backup_policy_file_share azurerm_backup_policy_file_share}
 */
-export class BackupPolicyFileShare extends cdktf.TerraformResource {
+export class BackupPolicyFileShare extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1226,14 +1226,14 @@ export class BackupPolicyFileShare extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BackupPolicyFileShare resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BackupPolicyFileShare resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BackupPolicyFileShare to import
   * @param importFromId The id of the existing BackupPolicyFileShare that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/backup_policy_file_share#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BackupPolicyFileShare to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_backup_policy_file_share", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_backup_policy_file_share", importId: importFromId, provider });
       }
 
   // ===========
@@ -1481,13 +1481,13 @@ export class BackupPolicyFileShare extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      backup_tier: cdktf.stringToTerraform(this._backupTier),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      recovery_vault_name: cdktf.stringToTerraform(this._recoveryVaultName),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      snapshot_retention_in_days: cdktf.numberToTerraform(this._snapshotRetentionInDays),
-      timezone: cdktf.stringToTerraform(this._timezone),
+      backup_tier: cdktn.stringToTerraform(this._backupTier),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      recovery_vault_name: cdktn.stringToTerraform(this._recoveryVaultName),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      snapshot_retention_in_days: cdktn.numberToTerraform(this._snapshotRetentionInDays),
+      timezone: cdktn.stringToTerraform(this._timezone),
       backup: backupPolicyFileShareBackupToTerraform(this._backup.internalValue),
       retention_daily: backupPolicyFileShareRetentionDailyToTerraform(this._retentionDaily.internalValue),
       retention_monthly: backupPolicyFileShareRetentionMonthlyToTerraform(this._retentionMonthly.internalValue),
@@ -1500,43 +1500,43 @@ export class BackupPolicyFileShare extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       backup_tier: {
-        value: cdktf.stringToHclTerraform(this._backupTier),
+        value: cdktn.stringToHclTerraform(this._backupTier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       recovery_vault_name: {
-        value: cdktf.stringToHclTerraform(this._recoveryVaultName),
+        value: cdktn.stringToHclTerraform(this._recoveryVaultName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       snapshot_retention_in_days: {
-        value: cdktf.numberToHclTerraform(this._snapshotRetentionInDays),
+        value: cdktn.numberToHclTerraform(this._snapshotRetentionInDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       timezone: {
-        value: cdktf.stringToHclTerraform(this._timezone),
+        value: cdktn.stringToHclTerraform(this._timezone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MssqlServerExtendedAuditingPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface MssqlServerExtendedAuditingPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_server_extended_auditing_policy#audit_actions_and_groups MssqlServerExtendedAuditingPolicy#audit_actions_and_groups}
   */
@@ -19,7 +19,7 @@ export interface MssqlServerExtendedAuditingPolicyConfig extends cdktf.Terraform
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_server_extended_auditing_policy#enabled MssqlServerExtendedAuditingPolicy#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_server_extended_auditing_policy#id MssqlServerExtendedAuditingPolicy#id}
   *
@@ -30,7 +30,7 @@ export interface MssqlServerExtendedAuditingPolicyConfig extends cdktf.Terraform
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_server_extended_auditing_policy#log_monitoring_enabled MssqlServerExtendedAuditingPolicy#log_monitoring_enabled}
   */
-  readonly logMonitoringEnabled?: boolean | cdktf.IResolvable;
+  readonly logMonitoringEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_server_extended_auditing_policy#predicate_expression MssqlServerExtendedAuditingPolicy#predicate_expression}
   */
@@ -50,7 +50,7 @@ export interface MssqlServerExtendedAuditingPolicyConfig extends cdktf.Terraform
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_server_extended_auditing_policy#storage_account_access_key_is_secondary MssqlServerExtendedAuditingPolicy#storage_account_access_key_is_secondary}
   */
-  readonly storageAccountAccessKeyIsSecondary?: boolean | cdktf.IResolvable;
+  readonly storageAccountAccessKeyIsSecondary?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_server_extended_auditing_policy#storage_account_subscription_id MssqlServerExtendedAuditingPolicy#storage_account_subscription_id}
   */
@@ -85,46 +85,46 @@ export interface MssqlServerExtendedAuditingPolicyTimeouts {
   readonly update?: string;
 }
 
-export function mssqlServerExtendedAuditingPolicyTimeoutsToTerraform(struct?: MssqlServerExtendedAuditingPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mssqlServerExtendedAuditingPolicyTimeoutsToTerraform(struct?: MssqlServerExtendedAuditingPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function mssqlServerExtendedAuditingPolicyTimeoutsToHclTerraform(struct?: MssqlServerExtendedAuditingPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mssqlServerExtendedAuditingPolicyTimeoutsToHclTerraform(struct?: MssqlServerExtendedAuditingPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -135,19 +135,19 @@ export function mssqlServerExtendedAuditingPolicyTimeoutsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MssqlServerExtendedAuditingPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MssqlServerExtendedAuditingPolicyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MssqlServerExtendedAuditingPolicyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MssqlServerExtendedAuditingPolicyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -172,7 +172,7 @@ export class MssqlServerExtendedAuditingPolicyTimeoutsOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MssqlServerExtendedAuditingPolicyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MssqlServerExtendedAuditingPolicyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -181,7 +181,7 @@ export class MssqlServerExtendedAuditingPolicyTimeoutsOutputReference extends cd
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -263,7 +263,7 @@ export class MssqlServerExtendedAuditingPolicyTimeoutsOutputReference extends cd
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_server_extended_auditing_policy azurerm_mssql_server_extended_auditing_policy}
 */
-export class MssqlServerExtendedAuditingPolicy extends cdktf.TerraformResource {
+export class MssqlServerExtendedAuditingPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -274,14 +274,14 @@ export class MssqlServerExtendedAuditingPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MssqlServerExtendedAuditingPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MssqlServerExtendedAuditingPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MssqlServerExtendedAuditingPolicy to import
   * @param importFromId The id of the existing MssqlServerExtendedAuditingPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_server_extended_auditing_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MssqlServerExtendedAuditingPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_mssql_server_extended_auditing_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_mssql_server_extended_auditing_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -346,11 +346,11 @@ export class MssqlServerExtendedAuditingPolicy extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -378,11 +378,11 @@ export class MssqlServerExtendedAuditingPolicy extends cdktf.TerraformResource {
   }
 
   // log_monitoring_enabled - computed: false, optional: true, required: false
-  private _logMonitoringEnabled?: boolean | cdktf.IResolvable; 
+  private _logMonitoringEnabled?: boolean | cdktn.IResolvable; 
   public get logMonitoringEnabled() {
     return this.getBooleanAttribute('log_monitoring_enabled');
   }
-  public set logMonitoringEnabled(value: boolean | cdktf.IResolvable) {
+  public set logMonitoringEnabled(value: boolean | cdktn.IResolvable) {
     this._logMonitoringEnabled = value;
   }
   public resetLogMonitoringEnabled() {
@@ -455,11 +455,11 @@ export class MssqlServerExtendedAuditingPolicy extends cdktf.TerraformResource {
   }
 
   // storage_account_access_key_is_secondary - computed: false, optional: true, required: false
-  private _storageAccountAccessKeyIsSecondary?: boolean | cdktf.IResolvable; 
+  private _storageAccountAccessKeyIsSecondary?: boolean | cdktn.IResolvable; 
   public get storageAccountAccessKeyIsSecondary() {
     return this.getBooleanAttribute('storage_account_access_key_is_secondary');
   }
-  public set storageAccountAccessKeyIsSecondary(value: boolean | cdktf.IResolvable) {
+  public set storageAccountAccessKeyIsSecondary(value: boolean | cdktn.IResolvable) {
     this._storageAccountAccessKeyIsSecondary = value;
   }
   public resetStorageAccountAccessKeyIsSecondary() {
@@ -524,17 +524,17 @@ export class MssqlServerExtendedAuditingPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      audit_actions_and_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._auditActionsAndGroups),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
-      log_monitoring_enabled: cdktf.booleanToTerraform(this._logMonitoringEnabled),
-      predicate_expression: cdktf.stringToTerraform(this._predicateExpression),
-      retention_in_days: cdktf.numberToTerraform(this._retentionInDays),
-      server_id: cdktf.stringToTerraform(this._serverId),
-      storage_account_access_key: cdktf.stringToTerraform(this._storageAccountAccessKey),
-      storage_account_access_key_is_secondary: cdktf.booleanToTerraform(this._storageAccountAccessKeyIsSecondary),
-      storage_account_subscription_id: cdktf.stringToTerraform(this._storageAccountSubscriptionId),
-      storage_endpoint: cdktf.stringToTerraform(this._storageEndpoint),
+      audit_actions_and_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(this._auditActionsAndGroups),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      id: cdktn.stringToTerraform(this._id),
+      log_monitoring_enabled: cdktn.booleanToTerraform(this._logMonitoringEnabled),
+      predicate_expression: cdktn.stringToTerraform(this._predicateExpression),
+      retention_in_days: cdktn.numberToTerraform(this._retentionInDays),
+      server_id: cdktn.stringToTerraform(this._serverId),
+      storage_account_access_key: cdktn.stringToTerraform(this._storageAccountAccessKey),
+      storage_account_access_key_is_secondary: cdktn.booleanToTerraform(this._storageAccountAccessKeyIsSecondary),
+      storage_account_subscription_id: cdktn.stringToTerraform(this._storageAccountSubscriptionId),
+      storage_endpoint: cdktn.stringToTerraform(this._storageEndpoint),
       timeouts: mssqlServerExtendedAuditingPolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -542,67 +542,67 @@ export class MssqlServerExtendedAuditingPolicy extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       audit_actions_and_groups: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._auditActionsAndGroups),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._auditActionsAndGroups),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       log_monitoring_enabled: {
-        value: cdktf.booleanToHclTerraform(this._logMonitoringEnabled),
+        value: cdktn.booleanToHclTerraform(this._logMonitoringEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       predicate_expression: {
-        value: cdktf.stringToHclTerraform(this._predicateExpression),
+        value: cdktn.stringToHclTerraform(this._predicateExpression),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       retention_in_days: {
-        value: cdktf.numberToHclTerraform(this._retentionInDays),
+        value: cdktn.numberToHclTerraform(this._retentionInDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       server_id: {
-        value: cdktf.stringToHclTerraform(this._serverId),
+        value: cdktn.stringToHclTerraform(this._serverId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_account_access_key: {
-        value: cdktf.stringToHclTerraform(this._storageAccountAccessKey),
+        value: cdktn.stringToHclTerraform(this._storageAccountAccessKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_account_access_key_is_secondary: {
-        value: cdktf.booleanToHclTerraform(this._storageAccountAccessKeyIsSecondary),
+        value: cdktn.booleanToHclTerraform(this._storageAccountAccessKeyIsSecondary),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       storage_account_subscription_id: {
-        value: cdktf.stringToHclTerraform(this._storageAccountSubscriptionId),
+        value: cdktn.stringToHclTerraform(this._storageAccountSubscriptionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_endpoint: {
-        value: cdktf.stringToHclTerraform(this._storageEndpoint),
+        value: cdktn.stringToHclTerraform(this._storageEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

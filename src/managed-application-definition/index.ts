@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ManagedApplicationDefinitionConfig extends cdktf.TerraformMetaArguments {
+export interface ManagedApplicationDefinitionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/managed_application_definition#create_ui_definition ManagedApplicationDefinition#create_ui_definition}
   */
@@ -50,7 +50,7 @@ export interface ManagedApplicationDefinitionConfig extends cdktf.TerraformMetaA
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/managed_application_definition#package_enabled ManagedApplicationDefinition#package_enabled}
   */
-  readonly packageEnabled?: boolean | cdktf.IResolvable;
+  readonly packageEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/managed_application_definition#package_file_uri ManagedApplicationDefinition#package_file_uri}
   */
@@ -68,7 +68,7 @@ export interface ManagedApplicationDefinitionConfig extends cdktf.TerraformMetaA
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/managed_application_definition#authorization ManagedApplicationDefinition#authorization}
   */
-  readonly authorization?: ManagedApplicationDefinitionAuthorization[] | cdktf.IResolvable;
+  readonly authorization?: ManagedApplicationDefinitionAuthorization[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -87,32 +87,32 @@ export interface ManagedApplicationDefinitionAuthorization {
   readonly servicePrincipalId: string;
 }
 
-export function managedApplicationDefinitionAuthorizationToTerraform(struct?: ManagedApplicationDefinitionAuthorization | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function managedApplicationDefinitionAuthorizationToTerraform(struct?: ManagedApplicationDefinitionAuthorization | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    role_definition_id: cdktf.stringToTerraform(struct!.roleDefinitionId),
-    service_principal_id: cdktf.stringToTerraform(struct!.servicePrincipalId),
+    role_definition_id: cdktn.stringToTerraform(struct!.roleDefinitionId),
+    service_principal_id: cdktn.stringToTerraform(struct!.servicePrincipalId),
   }
 }
 
 
-export function managedApplicationDefinitionAuthorizationToHclTerraform(struct?: ManagedApplicationDefinitionAuthorization | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function managedApplicationDefinitionAuthorizationToHclTerraform(struct?: ManagedApplicationDefinitionAuthorization | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     role_definition_id: {
-      value: cdktf.stringToHclTerraform(struct!.roleDefinitionId),
+      value: cdktn.stringToHclTerraform(struct!.roleDefinitionId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service_principal_id: {
-      value: cdktf.stringToHclTerraform(struct!.servicePrincipalId),
+      value: cdktn.stringToHclTerraform(struct!.servicePrincipalId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -123,9 +123,9 @@ export function managedApplicationDefinitionAuthorizationToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ManagedApplicationDefinitionAuthorizationOutputReference extends cdktf.ComplexObject {
+export class ManagedApplicationDefinitionAuthorizationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -133,11 +133,11 @@ export class ManagedApplicationDefinitionAuthorizationOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ManagedApplicationDefinitionAuthorization | cdktf.IResolvable | undefined {
+  public get internalValue(): ManagedApplicationDefinitionAuthorization | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -154,14 +154,14 @@ export class ManagedApplicationDefinitionAuthorizationOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ManagedApplicationDefinitionAuthorization | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ManagedApplicationDefinitionAuthorization | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._roleDefinitionId = undefined;
       this._servicePrincipalId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -200,15 +200,15 @@ export class ManagedApplicationDefinitionAuthorizationOutputReference extends cd
   }
 }
 
-export class ManagedApplicationDefinitionAuthorizationList extends cdktf.ComplexList {
-  public internalValue? : ManagedApplicationDefinitionAuthorization[] | cdktf.IResolvable
+export class ManagedApplicationDefinitionAuthorizationList extends cdktn.ComplexList {
+  public internalValue? : ManagedApplicationDefinitionAuthorization[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -238,46 +238,46 @@ export interface ManagedApplicationDefinitionTimeouts {
   readonly update?: string;
 }
 
-export function managedApplicationDefinitionTimeoutsToTerraform(struct?: ManagedApplicationDefinitionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function managedApplicationDefinitionTimeoutsToTerraform(struct?: ManagedApplicationDefinitionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function managedApplicationDefinitionTimeoutsToHclTerraform(struct?: ManagedApplicationDefinitionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function managedApplicationDefinitionTimeoutsToHclTerraform(struct?: ManagedApplicationDefinitionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -288,19 +288,19 @@ export function managedApplicationDefinitionTimeoutsToHclTerraform(struct?: Mana
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ManagedApplicationDefinitionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ManagedApplicationDefinitionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ManagedApplicationDefinitionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ManagedApplicationDefinitionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -325,7 +325,7 @@ export class ManagedApplicationDefinitionTimeoutsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ManagedApplicationDefinitionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ManagedApplicationDefinitionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -334,7 +334,7 @@ export class ManagedApplicationDefinitionTimeoutsOutputReference extends cdktf.C
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -416,7 +416,7 @@ export class ManagedApplicationDefinitionTimeoutsOutputReference extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/managed_application_definition azurerm_managed_application_definition}
 */
-export class ManagedApplicationDefinition extends cdktf.TerraformResource {
+export class ManagedApplicationDefinition extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -427,14 +427,14 @@ export class ManagedApplicationDefinition extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ManagedApplicationDefinition resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ManagedApplicationDefinition resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ManagedApplicationDefinition to import
   * @param importFromId The id of the existing ManagedApplicationDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/managed_application_definition#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ManagedApplicationDefinition to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_managed_application_definition", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_managed_application_definition", importId: importFromId, provider });
       }
 
   // ===========
@@ -601,11 +601,11 @@ export class ManagedApplicationDefinition extends cdktf.TerraformResource {
   }
 
   // package_enabled - computed: false, optional: true, required: false
-  private _packageEnabled?: boolean | cdktf.IResolvable; 
+  private _packageEnabled?: boolean | cdktn.IResolvable; 
   public get packageEnabled() {
     return this.getBooleanAttribute('package_enabled');
   }
-  public set packageEnabled(value: boolean | cdktf.IResolvable) {
+  public set packageEnabled(value: boolean | cdktn.IResolvable) {
     this._packageEnabled = value;
   }
   public resetPackageEnabled() {
@@ -666,7 +666,7 @@ export class ManagedApplicationDefinition extends cdktf.TerraformResource {
   public get authorization() {
     return this._authorization;
   }
-  public putAuthorization(value: ManagedApplicationDefinitionAuthorization[] | cdktf.IResolvable) {
+  public putAuthorization(value: ManagedApplicationDefinitionAuthorization[] | cdktn.IResolvable) {
     this._authorization.internalValue = value;
   }
   public resetAuthorization() {
@@ -699,19 +699,19 @@ export class ManagedApplicationDefinition extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      create_ui_definition: cdktf.stringToTerraform(this._createUiDefinition),
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      lock_level: cdktf.stringToTerraform(this._lockLevel),
-      main_template: cdktf.stringToTerraform(this._mainTemplate),
-      name: cdktf.stringToTerraform(this._name),
-      package_enabled: cdktf.booleanToTerraform(this._packageEnabled),
-      package_file_uri: cdktf.stringToTerraform(this._packageFileUri),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      authorization: cdktf.listMapper(managedApplicationDefinitionAuthorizationToTerraform, true)(this._authorization.internalValue),
+      create_ui_definition: cdktn.stringToTerraform(this._createUiDefinition),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      lock_level: cdktn.stringToTerraform(this._lockLevel),
+      main_template: cdktn.stringToTerraform(this._mainTemplate),
+      name: cdktn.stringToTerraform(this._name),
+      package_enabled: cdktn.booleanToTerraform(this._packageEnabled),
+      package_file_uri: cdktn.stringToTerraform(this._packageFileUri),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      authorization: cdktn.listMapper(managedApplicationDefinitionAuthorizationToTerraform, true)(this._authorization.internalValue),
       timeouts: managedApplicationDefinitionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -719,79 +719,79 @@ export class ManagedApplicationDefinition extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       create_ui_definition: {
-        value: cdktf.stringToHclTerraform(this._createUiDefinition),
+        value: cdktn.stringToHclTerraform(this._createUiDefinition),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       lock_level: {
-        value: cdktf.stringToHclTerraform(this._lockLevel),
+        value: cdktn.stringToHclTerraform(this._lockLevel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       main_template: {
-        value: cdktf.stringToHclTerraform(this._mainTemplate),
+        value: cdktn.stringToHclTerraform(this._mainTemplate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       package_enabled: {
-        value: cdktf.booleanToHclTerraform(this._packageEnabled),
+        value: cdktn.booleanToHclTerraform(this._packageEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       package_file_uri: {
-        value: cdktf.stringToHclTerraform(this._packageFileUri),
+        value: cdktn.stringToHclTerraform(this._packageFileUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       authorization: {
-        value: cdktf.listMapperHcl(managedApplicationDefinitionAuthorizationToHclTerraform, true)(this._authorization.internalValue),
+        value: cdktn.listMapperHcl(managedApplicationDefinitionAuthorizationToHclTerraform, true)(this._authorization.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ManagedApplicationDefinitionAuthorizationList",

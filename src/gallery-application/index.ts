@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GalleryApplicationConfig extends cdktf.TerraformMetaArguments {
+export interface GalleryApplicationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/gallery_application#description GalleryApplication#description}
   */
@@ -85,46 +85,46 @@ export interface GalleryApplicationTimeouts {
   readonly update?: string;
 }
 
-export function galleryApplicationTimeoutsToTerraform(struct?: GalleryApplicationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function galleryApplicationTimeoutsToTerraform(struct?: GalleryApplicationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function galleryApplicationTimeoutsToHclTerraform(struct?: GalleryApplicationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function galleryApplicationTimeoutsToHclTerraform(struct?: GalleryApplicationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -135,19 +135,19 @@ export function galleryApplicationTimeoutsToHclTerraform(struct?: GalleryApplica
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GalleryApplicationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class GalleryApplicationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): GalleryApplicationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): GalleryApplicationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -172,7 +172,7 @@ export class GalleryApplicationTimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GalleryApplicationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GalleryApplicationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -181,7 +181,7 @@ export class GalleryApplicationTimeoutsOutputReference extends cdktf.ComplexObje
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -263,7 +263,7 @@ export class GalleryApplicationTimeoutsOutputReference extends cdktf.ComplexObje
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/gallery_application azurerm_gallery_application}
 */
-export class GalleryApplication extends cdktf.TerraformResource {
+export class GalleryApplication extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -274,14 +274,14 @@ export class GalleryApplication extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GalleryApplication resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GalleryApplication resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GalleryApplication to import
   * @param importFromId The id of the existing GalleryApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/gallery_application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GalleryApplication to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_gallery_application", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_gallery_application", importId: importFromId, provider });
       }
 
   // ===========
@@ -515,17 +515,17 @@ export class GalleryApplication extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      end_of_life_date: cdktf.stringToTerraform(this._endOfLifeDate),
-      eula: cdktf.stringToTerraform(this._eula),
-      gallery_id: cdktf.stringToTerraform(this._galleryId),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      privacy_statement_uri: cdktf.stringToTerraform(this._privacyStatementUri),
-      release_note_uri: cdktf.stringToTerraform(this._releaseNoteUri),
-      supported_os_type: cdktf.stringToTerraform(this._supportedOsType),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      description: cdktn.stringToTerraform(this._description),
+      end_of_life_date: cdktn.stringToTerraform(this._endOfLifeDate),
+      eula: cdktn.stringToTerraform(this._eula),
+      gallery_id: cdktn.stringToTerraform(this._galleryId),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      privacy_statement_uri: cdktn.stringToTerraform(this._privacyStatementUri),
+      release_note_uri: cdktn.stringToTerraform(this._releaseNoteUri),
+      supported_os_type: cdktn.stringToTerraform(this._supportedOsType),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       timeouts: galleryApplicationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -533,67 +533,67 @@ export class GalleryApplication extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       end_of_life_date: {
-        value: cdktf.stringToHclTerraform(this._endOfLifeDate),
+        value: cdktn.stringToHclTerraform(this._endOfLifeDate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       eula: {
-        value: cdktf.stringToHclTerraform(this._eula),
+        value: cdktn.stringToHclTerraform(this._eula),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       gallery_id: {
-        value: cdktf.stringToHclTerraform(this._galleryId),
+        value: cdktn.stringToHclTerraform(this._galleryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       privacy_statement_uri: {
-        value: cdktf.stringToHclTerraform(this._privacyStatementUri),
+        value: cdktn.stringToHclTerraform(this._privacyStatementUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       release_note_uri: {
-        value: cdktf.stringToHclTerraform(this._releaseNoteUri),
+        value: cdktn.stringToHclTerraform(this._releaseNoteUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       supported_os_type: {
-        value: cdktf.stringToHclTerraform(this._supportedOsType),
+        value: cdktn.stringToHclTerraform(this._supportedOsType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

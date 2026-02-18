@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MssqlManagedInstanceTransparentDataEncryptionConfig extends cdktf.TerraformMetaArguments {
+export interface MssqlManagedInstanceTransparentDataEncryptionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_managed_instance_transparent_data_encryption#auto_rotation_enabled MssqlManagedInstanceTransparentDataEncryption#auto_rotation_enabled}
   */
-  readonly autoRotationEnabled?: boolean | cdktf.IResolvable;
+  readonly autoRotationEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_managed_instance_transparent_data_encryption#id MssqlManagedInstanceTransparentDataEncryption#id}
   *
@@ -61,46 +61,46 @@ export interface MssqlManagedInstanceTransparentDataEncryptionTimeouts {
   readonly update?: string;
 }
 
-export function mssqlManagedInstanceTransparentDataEncryptionTimeoutsToTerraform(struct?: MssqlManagedInstanceTransparentDataEncryptionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mssqlManagedInstanceTransparentDataEncryptionTimeoutsToTerraform(struct?: MssqlManagedInstanceTransparentDataEncryptionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function mssqlManagedInstanceTransparentDataEncryptionTimeoutsToHclTerraform(struct?: MssqlManagedInstanceTransparentDataEncryptionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mssqlManagedInstanceTransparentDataEncryptionTimeoutsToHclTerraform(struct?: MssqlManagedInstanceTransparentDataEncryptionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -111,19 +111,19 @@ export function mssqlManagedInstanceTransparentDataEncryptionTimeoutsToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MssqlManagedInstanceTransparentDataEncryptionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MssqlManagedInstanceTransparentDataEncryptionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MssqlManagedInstanceTransparentDataEncryptionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MssqlManagedInstanceTransparentDataEncryptionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -148,7 +148,7 @@ export class MssqlManagedInstanceTransparentDataEncryptionTimeoutsOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MssqlManagedInstanceTransparentDataEncryptionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MssqlManagedInstanceTransparentDataEncryptionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -157,7 +157,7 @@ export class MssqlManagedInstanceTransparentDataEncryptionTimeoutsOutputReferenc
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -239,7 +239,7 @@ export class MssqlManagedInstanceTransparentDataEncryptionTimeoutsOutputReferenc
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_managed_instance_transparent_data_encryption azurerm_mssql_managed_instance_transparent_data_encryption}
 */
-export class MssqlManagedInstanceTransparentDataEncryption extends cdktf.TerraformResource {
+export class MssqlManagedInstanceTransparentDataEncryption extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -250,14 +250,14 @@ export class MssqlManagedInstanceTransparentDataEncryption extends cdktf.Terrafo
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MssqlManagedInstanceTransparentDataEncryption resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MssqlManagedInstanceTransparentDataEncryption resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MssqlManagedInstanceTransparentDataEncryption to import
   * @param importFromId The id of the existing MssqlManagedInstanceTransparentDataEncryption that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_managed_instance_transparent_data_encryption#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MssqlManagedInstanceTransparentDataEncryption to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_mssql_managed_instance_transparent_data_encryption", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_mssql_managed_instance_transparent_data_encryption", importId: importFromId, provider });
       }
 
   // ===========
@@ -300,11 +300,11 @@ export class MssqlManagedInstanceTransparentDataEncryption extends cdktf.Terrafo
   // ==========
 
   // auto_rotation_enabled - computed: false, optional: true, required: false
-  private _autoRotationEnabled?: boolean | cdktf.IResolvable; 
+  private _autoRotationEnabled?: boolean | cdktn.IResolvable; 
   public get autoRotationEnabled() {
     return this.getBooleanAttribute('auto_rotation_enabled');
   }
-  public set autoRotationEnabled(value: boolean | cdktf.IResolvable) {
+  public set autoRotationEnabled(value: boolean | cdktn.IResolvable) {
     this._autoRotationEnabled = value;
   }
   public resetAutoRotationEnabled() {
@@ -398,11 +398,11 @@ export class MssqlManagedInstanceTransparentDataEncryption extends cdktf.Terrafo
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_rotation_enabled: cdktf.booleanToTerraform(this._autoRotationEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      key_vault_key_id: cdktf.stringToTerraform(this._keyVaultKeyId),
-      managed_hsm_key_id: cdktf.stringToTerraform(this._managedHsmKeyId),
-      managed_instance_id: cdktf.stringToTerraform(this._managedInstanceId),
+      auto_rotation_enabled: cdktn.booleanToTerraform(this._autoRotationEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      key_vault_key_id: cdktn.stringToTerraform(this._keyVaultKeyId),
+      managed_hsm_key_id: cdktn.stringToTerraform(this._managedHsmKeyId),
+      managed_instance_id: cdktn.stringToTerraform(this._managedInstanceId),
       timeouts: mssqlManagedInstanceTransparentDataEncryptionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -410,31 +410,31 @@ export class MssqlManagedInstanceTransparentDataEncryption extends cdktf.Terrafo
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       auto_rotation_enabled: {
-        value: cdktf.booleanToHclTerraform(this._autoRotationEnabled),
+        value: cdktn.booleanToHclTerraform(this._autoRotationEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_vault_key_id: {
-        value: cdktf.stringToHclTerraform(this._keyVaultKeyId),
+        value: cdktn.stringToHclTerraform(this._keyVaultKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       managed_hsm_key_id: {
-        value: cdktf.stringToHclTerraform(this._managedHsmKeyId),
+        value: cdktn.stringToHclTerraform(this._managedHsmKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       managed_instance_id: {
-        value: cdktf.stringToHclTerraform(this._managedInstanceId),
+        value: cdktn.stringToHclTerraform(this._managedInstanceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

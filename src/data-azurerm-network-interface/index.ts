@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermNetworkInterfaceConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermNetworkInterfaceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/network_interface#id DataAzurermNetworkInterface#id}
   *
@@ -38,8 +38,8 @@ export interface DataAzurermNetworkInterfaceIpConfiguration {
 }
 
 export function dataAzurermNetworkInterfaceIpConfigurationToTerraform(struct?: DataAzurermNetworkInterfaceIpConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -48,8 +48,8 @@ export function dataAzurermNetworkInterfaceIpConfigurationToTerraform(struct?: D
 
 
 export function dataAzurermNetworkInterfaceIpConfigurationToHclTerraform(struct?: DataAzurermNetworkInterfaceIpConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -57,7 +57,7 @@ export function dataAzurermNetworkInterfaceIpConfigurationToHclTerraform(struct?
   return attrs;
 }
 
-export class DataAzurermNetworkInterfaceIpConfigurationOutputReference extends cdktf.ComplexObject {
+export class DataAzurermNetworkInterfaceIpConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -66,7 +66,7 @@ export class DataAzurermNetworkInterfaceIpConfigurationOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -87,12 +87,12 @@ export class DataAzurermNetworkInterfaceIpConfigurationOutputReference extends c
 
   // application_gateway_backend_address_pools_ids - computed: true, optional: false, required: false
   public get applicationGatewayBackendAddressPoolsIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('application_gateway_backend_address_pools_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('application_gateway_backend_address_pools_ids'));
   }
 
   // application_security_group_ids - computed: true, optional: false, required: false
   public get applicationSecurityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('application_security_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('application_security_group_ids'));
   }
 
   // gateway_load_balancer_frontend_ip_configuration_id - computed: true, optional: false, required: false
@@ -102,12 +102,12 @@ export class DataAzurermNetworkInterfaceIpConfigurationOutputReference extends c
 
   // load_balancer_backend_address_pools_ids - computed: true, optional: false, required: false
   public get loadBalancerBackendAddressPoolsIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('load_balancer_backend_address_pools_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('load_balancer_backend_address_pools_ids'));
   }
 
   // load_balancer_inbound_nat_rules_ids - computed: true, optional: false, required: false
   public get loadBalancerInboundNatRulesIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('load_balancer_inbound_nat_rules_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('load_balancer_inbound_nat_rules_ids'));
   }
 
   // name - computed: true, optional: false, required: false
@@ -146,14 +146,14 @@ export class DataAzurermNetworkInterfaceIpConfigurationOutputReference extends c
   }
 }
 
-export class DataAzurermNetworkInterfaceIpConfigurationList extends cdktf.ComplexList {
+export class DataAzurermNetworkInterfaceIpConfigurationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -171,25 +171,25 @@ export interface DataAzurermNetworkInterfaceTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermNetworkInterfaceTimeoutsToTerraform(struct?: DataAzurermNetworkInterfaceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermNetworkInterfaceTimeoutsToTerraform(struct?: DataAzurermNetworkInterfaceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermNetworkInterfaceTimeoutsToHclTerraform(struct?: DataAzurermNetworkInterfaceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermNetworkInterfaceTimeoutsToHclTerraform(struct?: DataAzurermNetworkInterfaceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -200,19 +200,19 @@ export function dataAzurermNetworkInterfaceTimeoutsToHclTerraform(struct?: DataA
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermNetworkInterfaceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermNetworkInterfaceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermNetworkInterfaceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermNetworkInterfaceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -225,13 +225,13 @@ export class DataAzurermNetworkInterfaceTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermNetworkInterfaceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermNetworkInterfaceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -262,7 +262,7 @@ export class DataAzurermNetworkInterfaceTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/network_interface azurerm_network_interface}
 */
-export class DataAzurermNetworkInterface extends cdktf.TerraformDataSource {
+export class DataAzurermNetworkInterface extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -273,14 +273,14 @@ export class DataAzurermNetworkInterface extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermNetworkInterface resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermNetworkInterface resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermNetworkInterface to import
   * @param importFromId The id of the existing DataAzurermNetworkInterface that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/network_interface#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermNetworkInterface to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_network_interface", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_network_interface", importId: importFromId, provider });
       }
 
   // ===========
@@ -327,12 +327,12 @@ export class DataAzurermNetworkInterface extends cdktf.TerraformDataSource {
 
   // applied_dns_servers - computed: true, optional: false, required: false
   public get appliedDnsServers() {
-    return cdktf.Fn.tolist(this.getListAttribute('applied_dns_servers'));
+    return cdktn.Fn.tolist(this.getListAttribute('applied_dns_servers'));
   }
 
   // dns_servers - computed: true, optional: false, required: false
   public get dnsServers() {
-    return cdktf.Fn.tolist(this.getListAttribute('dns_servers'));
+    return cdktn.Fn.tolist(this.getListAttribute('dns_servers'));
   }
 
   // id - computed: true, optional: true, required: false
@@ -419,7 +419,7 @@ export class DataAzurermNetworkInterface extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: false, required: false
-  private _tags = new cdktf.StringMap(this, "tags");
+  private _tags = new cdktn.StringMap(this, "tags");
   public get tags() {
     return this._tags;
   }
@@ -451,9 +451,9 @@ export class DataAzurermNetworkInterface extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
       timeouts: dataAzurermNetworkInterfaceTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -461,19 +461,19 @@ export class DataAzurermNetworkInterface extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

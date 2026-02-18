@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AutomationPowershell72ModuleConfig extends cdktf.TerraformMetaArguments {
+export interface AutomationPowershell72ModuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_powershell72_module#automation_account_id AutomationPowershell72Module#automation_account_id}
   */
@@ -56,31 +56,31 @@ export interface AutomationPowershell72ModuleModuleLinkHash {
 }
 
 export function automationPowershell72ModuleModuleLinkHashToTerraform(struct?: AutomationPowershell72ModuleModuleLinkHashOutputReference | AutomationPowershell72ModuleModuleLinkHash): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    algorithm: cdktf.stringToTerraform(struct!.algorithm),
-    value: cdktf.stringToTerraform(struct!.value),
+    algorithm: cdktn.stringToTerraform(struct!.algorithm),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
 export function automationPowershell72ModuleModuleLinkHashToHclTerraform(struct?: AutomationPowershell72ModuleModuleLinkHashOutputReference | AutomationPowershell72ModuleModuleLinkHash): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     algorithm: {
-      value: cdktf.stringToHclTerraform(struct!.algorithm),
+      value: cdktn.stringToHclTerraform(struct!.algorithm),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -91,14 +91,14 @@ export function automationPowershell72ModuleModuleLinkHashToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AutomationPowershell72ModuleModuleLinkHashOutputReference extends cdktf.ComplexObject {
+export class AutomationPowershell72ModuleModuleLinkHashOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -169,25 +169,25 @@ export interface AutomationPowershell72ModuleModuleLink {
 }
 
 export function automationPowershell72ModuleModuleLinkToTerraform(struct?: AutomationPowershell72ModuleModuleLinkOutputReference | AutomationPowershell72ModuleModuleLink): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    uri: cdktf.stringToTerraform(struct!.uri),
+    uri: cdktn.stringToTerraform(struct!.uri),
     hash: automationPowershell72ModuleModuleLinkHashToTerraform(struct!.hash),
   }
 }
 
 
 export function automationPowershell72ModuleModuleLinkToHclTerraform(struct?: AutomationPowershell72ModuleModuleLinkOutputReference | AutomationPowershell72ModuleModuleLink): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     uri: {
-      value: cdktf.stringToHclTerraform(struct!.uri),
+      value: cdktn.stringToHclTerraform(struct!.uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -204,14 +204,14 @@ export function automationPowershell72ModuleModuleLinkToHclTerraform(struct?: Au
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AutomationPowershell72ModuleModuleLinkOutputReference extends cdktf.ComplexObject {
+export class AutomationPowershell72ModuleModuleLinkOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -290,46 +290,46 @@ export interface AutomationPowershell72ModuleTimeouts {
   readonly update?: string;
 }
 
-export function automationPowershell72ModuleTimeoutsToTerraform(struct?: AutomationPowershell72ModuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function automationPowershell72ModuleTimeoutsToTerraform(struct?: AutomationPowershell72ModuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function automationPowershell72ModuleTimeoutsToHclTerraform(struct?: AutomationPowershell72ModuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function automationPowershell72ModuleTimeoutsToHclTerraform(struct?: AutomationPowershell72ModuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -340,19 +340,19 @@ export function automationPowershell72ModuleTimeoutsToHclTerraform(struct?: Auto
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AutomationPowershell72ModuleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class AutomationPowershell72ModuleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AutomationPowershell72ModuleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AutomationPowershell72ModuleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -377,7 +377,7 @@ export class AutomationPowershell72ModuleTimeoutsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AutomationPowershell72ModuleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AutomationPowershell72ModuleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -386,7 +386,7 @@ export class AutomationPowershell72ModuleTimeoutsOutputReference extends cdktf.C
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -468,7 +468,7 @@ export class AutomationPowershell72ModuleTimeoutsOutputReference extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_powershell72_module azurerm_automation_powershell72_module}
 */
-export class AutomationPowershell72Module extends cdktf.TerraformResource {
+export class AutomationPowershell72Module extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -479,14 +479,14 @@ export class AutomationPowershell72Module extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AutomationPowershell72Module resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AutomationPowershell72Module resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AutomationPowershell72Module to import
   * @param importFromId The id of the existing AutomationPowershell72Module that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_powershell72_module#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AutomationPowershell72Module to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_automation_powershell72_module", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_automation_powershell72_module", importId: importFromId, provider });
       }
 
   // ===========
@@ -621,10 +621,10 @@ export class AutomationPowershell72Module extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      automation_account_id: cdktf.stringToTerraform(this._automationAccountId),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      automation_account_id: cdktn.stringToTerraform(this._automationAccountId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       module_link: automationPowershell72ModuleModuleLinkToTerraform(this._moduleLink.internalValue),
       timeouts: automationPowershell72ModuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -633,25 +633,25 @@ export class AutomationPowershell72Module extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       automation_account_id: {
-        value: cdktf.stringToHclTerraform(this._automationAccountId),
+        value: cdktn.stringToHclTerraform(this._automationAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

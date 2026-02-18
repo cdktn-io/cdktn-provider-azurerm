@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerConfig extends cdktf.TerraformMetaArguments {
+export interface PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/palo_alto_next_generation_firewall_virtual_network_strata_cloud_manager#id PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager#id}
   *
@@ -52,7 +52,7 @@ export interface PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerC
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/palo_alto_next_generation_firewall_virtual_network_strata_cloud_manager#destination_nat PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager#destination_nat}
   */
-  readonly destinationNat?: PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNat[] | cdktf.IResolvable;
+  readonly destinationNat?: PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNat[] | cdktn.IResolvable;
   /**
   * dns_settings block
   *
@@ -90,31 +90,31 @@ export interface PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerD
 }
 
 export function paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatBackendConfigToTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatBackendConfigOutputReference | PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatBackendConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    port: cdktf.numberToTerraform(struct!.port),
-    public_ip_address: cdktf.stringToTerraform(struct!.publicIpAddress),
+    port: cdktn.numberToTerraform(struct!.port),
+    public_ip_address: cdktn.stringToTerraform(struct!.publicIpAddress),
   }
 }
 
 
 export function paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatBackendConfigToHclTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatBackendConfigOutputReference | PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatBackendConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     public_ip_address: {
-      value: cdktf.stringToHclTerraform(struct!.publicIpAddress),
+      value: cdktn.stringToHclTerraform(struct!.publicIpAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -125,14 +125,14 @@ export function paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatBackendConfigOutputReference extends cdktf.ComplexObject {
+export class PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatBackendConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -201,31 +201,31 @@ export interface PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerD
 }
 
 export function paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatFrontendConfigToTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatFrontendConfigOutputReference | PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatFrontendConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    port: cdktf.numberToTerraform(struct!.port),
-    public_ip_address_id: cdktf.stringToTerraform(struct!.publicIpAddressId),
+    port: cdktn.numberToTerraform(struct!.port),
+    public_ip_address_id: cdktn.stringToTerraform(struct!.publicIpAddressId),
   }
 }
 
 
 export function paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatFrontendConfigToHclTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatFrontendConfigOutputReference | PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatFrontendConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     public_ip_address_id: {
-      value: cdktf.stringToHclTerraform(struct!.publicIpAddressId),
+      value: cdktn.stringToHclTerraform(struct!.publicIpAddressId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -236,14 +236,14 @@ export function paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatFrontendConfigOutputReference extends cdktf.ComplexObject {
+export class PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatFrontendConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -323,34 +323,34 @@ export interface PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerD
   readonly frontendConfig?: PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatFrontendConfig;
 }
 
-export function paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatToTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNat | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatToTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNat | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
+    name: cdktn.stringToTerraform(struct!.name),
+    protocol: cdktn.stringToTerraform(struct!.protocol),
     backend_config: paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatBackendConfigToTerraform(struct!.backendConfig),
     frontend_config: paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatFrontendConfigToTerraform(struct!.frontendConfig),
   }
 }
 
 
-export function paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatToHclTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNat | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatToHclTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNat | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     protocol: {
-      value: cdktf.stringToHclTerraform(struct!.protocol),
+      value: cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -373,9 +373,9 @@ export function paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatOutputReference extends cdktf.ComplexObject {
+export class PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -383,11 +383,11 @@ export class PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDesti
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNat | cdktf.IResolvable | undefined {
+  public get internalValue(): PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNat | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -412,7 +412,7 @@ export class PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDesti
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNat | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNat | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -421,7 +421,7 @@ export class PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDesti
       this._backendConfig.internalValue = undefined;
       this._frontendConfig.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -494,15 +494,15 @@ export class PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDesti
   }
 }
 
-export class PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatList extends cdktf.ComplexList {
-  public internalValue? : PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNat[] | cdktf.IResolvable
+export class PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatList extends cdktn.ComplexList {
+  public internalValue? : PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNat[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -521,35 +521,35 @@ export interface PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerD
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/palo_alto_next_generation_firewall_virtual_network_strata_cloud_manager#use_azure_dns PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager#use_azure_dns}
   */
-  readonly useAzureDns?: boolean | cdktf.IResolvable;
+  readonly useAzureDns?: boolean | cdktn.IResolvable;
 }
 
 export function paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDnsSettingsToTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDnsSettingsOutputReference | PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDnsSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dns_servers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.dnsServers),
-    use_azure_dns: cdktf.booleanToTerraform(struct!.useAzureDns),
+    dns_servers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.dnsServers),
+    use_azure_dns: cdktn.booleanToTerraform(struct!.useAzureDns),
   }
 }
 
 
 export function paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDnsSettingsToHclTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDnsSettingsOutputReference | PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDnsSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dns_servers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dnsServers),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.dnsServers),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     use_azure_dns: {
-      value: cdktf.booleanToHclTerraform(struct!.useAzureDns),
+      value: cdktn.booleanToHclTerraform(struct!.useAzureDns),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -560,14 +560,14 @@ export function paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDnsSettingsOutputReference extends cdktf.ComplexObject {
+export class PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDnsSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -620,11 +620,11 @@ export class PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDnsSe
   }
 
   // use_azure_dns - computed: false, optional: true, required: false
-  private _useAzureDns?: boolean | cdktf.IResolvable; 
+  private _useAzureDns?: boolean | cdktn.IResolvable; 
   public get useAzureDns() {
     return this.getBooleanAttribute('use_azure_dns');
   }
-  public set useAzureDns(value: boolean | cdktf.IResolvable) {
+  public set useAzureDns(value: boolean | cdktn.IResolvable) {
     this._useAzureDns = value;
   }
   public resetUseAzureDns() {
@@ -647,31 +647,31 @@ export interface PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerI
 }
 
 export function paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerIdentityToTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerIdentityOutputReference | PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerIdentityToHclTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerIdentityOutputReference | PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -682,14 +682,14 @@ export function paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerId
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerIdentityOutputReference extends cdktf.ComplexObject {
+export class PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -723,7 +723,7 @@ export class PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerIdent
   // identity_ids - computed: false, optional: false, required: true
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -762,38 +762,38 @@ export interface PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerN
 }
 
 export function paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerNetworkProfileVnetConfigurationToTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerNetworkProfileVnetConfigurationOutputReference | PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerNetworkProfileVnetConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    trusted_subnet_id: cdktf.stringToTerraform(struct!.trustedSubnetId),
-    untrusted_subnet_id: cdktf.stringToTerraform(struct!.untrustedSubnetId),
-    virtual_network_id: cdktf.stringToTerraform(struct!.virtualNetworkId),
+    trusted_subnet_id: cdktn.stringToTerraform(struct!.trustedSubnetId),
+    untrusted_subnet_id: cdktn.stringToTerraform(struct!.untrustedSubnetId),
+    virtual_network_id: cdktn.stringToTerraform(struct!.virtualNetworkId),
   }
 }
 
 
 export function paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerNetworkProfileVnetConfigurationToHclTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerNetworkProfileVnetConfigurationOutputReference | PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerNetworkProfileVnetConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     trusted_subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.trustedSubnetId),
+      value: cdktn.stringToHclTerraform(struct!.trustedSubnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     untrusted_subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.untrustedSubnetId),
+      value: cdktn.stringToHclTerraform(struct!.untrustedSubnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     virtual_network_id: {
-      value: cdktf.stringToHclTerraform(struct!.virtualNetworkId),
+      value: cdktn.stringToHclTerraform(struct!.virtualNetworkId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -804,14 +804,14 @@ export function paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerNe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerNetworkProfileVnetConfigurationOutputReference extends cdktf.ComplexObject {
+export class PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerNetworkProfileVnetConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -920,39 +920,39 @@ export interface PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerN
 }
 
 export function paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerNetworkProfileToTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerNetworkProfileOutputReference | PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerNetworkProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    egress_nat_ip_address_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.egressNatIpAddressIds),
-    public_ip_address_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.publicIpAddressIds),
-    trusted_address_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.trustedAddressRanges),
+    egress_nat_ip_address_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.egressNatIpAddressIds),
+    public_ip_address_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.publicIpAddressIds),
+    trusted_address_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.trustedAddressRanges),
     vnet_configuration: paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerNetworkProfileVnetConfigurationToTerraform(struct!.vnetConfiguration),
   }
 }
 
 
 export function paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerNetworkProfileToHclTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerNetworkProfileOutputReference | PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerNetworkProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     egress_nat_ip_address_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.egressNatIpAddressIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.egressNatIpAddressIds),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     public_ip_address_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.publicIpAddressIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.publicIpAddressIds),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     trusted_address_ranges: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.trustedAddressRanges),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.trustedAddressRanges),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -969,14 +969,14 @@ export function paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerNe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerNetworkProfileOutputReference extends cdktf.ComplexObject {
+export class PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerNetworkProfileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1106,46 +1106,46 @@ export interface PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerT
   readonly update?: string;
 }
 
-export function paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerTimeoutsToTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerTimeoutsToTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerTimeoutsToHclTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerTimeoutsToHclTerraform(struct?: PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1156,19 +1156,19 @@ export function paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerTi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerTimeoutsOutputReference extends cdktf.ComplexObject {
+export class PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1193,7 +1193,7 @@ export class PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerTimeo
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1202,7 +1202,7 @@ export class PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerTimeo
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1284,7 +1284,7 @@ export class PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerTimeo
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/palo_alto_next_generation_firewall_virtual_network_strata_cloud_manager azurerm_palo_alto_next_generation_firewall_virtual_network_strata_cloud_manager}
 */
-export class PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager extends cdktf.TerraformResource {
+export class PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1295,14 +1295,14 @@ export class PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager exte
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager to import
   * @param importFromId The id of the existing PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/palo_alto_next_generation_firewall_virtual_network_strata_cloud_manager#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_palo_alto_next_generation_firewall_virtual_network_strata_cloud_manager", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_palo_alto_next_generation_firewall_virtual_network_strata_cloud_manager", importId: importFromId, provider });
       }
 
   // ===========
@@ -1472,7 +1472,7 @@ export class PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager exte
   public get destinationNat() {
     return this._destinationNat;
   }
-  public putDestinationNat(value: PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNat[] | cdktf.IResolvable) {
+  public putDestinationNat(value: PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNat[] | cdktn.IResolvable) {
     this._destinationNat.internalValue = value;
   }
   public resetDestinationNat() {
@@ -1550,15 +1550,15 @@ export class PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager exte
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      marketplace_offer_id: cdktf.stringToTerraform(this._marketplaceOfferId),
-      name: cdktf.stringToTerraform(this._name),
-      plan_id: cdktf.stringToTerraform(this._planId),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      strata_cloud_manager_tenant_name: cdktf.stringToTerraform(this._strataCloudManagerTenantName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      destination_nat: cdktf.listMapper(paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatToTerraform, true)(this._destinationNat.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      marketplace_offer_id: cdktn.stringToTerraform(this._marketplaceOfferId),
+      name: cdktn.stringToTerraform(this._name),
+      plan_id: cdktn.stringToTerraform(this._planId),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      strata_cloud_manager_tenant_name: cdktn.stringToTerraform(this._strataCloudManagerTenantName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      destination_nat: cdktn.listMapper(paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatToTerraform, true)(this._destinationNat.internalValue),
       dns_settings: paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDnsSettingsToTerraform(this._dnsSettings.internalValue),
       identity: paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerIdentityToTerraform(this._identity.internalValue),
       network_profile: paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerNetworkProfileToTerraform(this._networkProfile.internalValue),
@@ -1569,55 +1569,55 @@ export class PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManager exte
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       marketplace_offer_id: {
-        value: cdktf.stringToHclTerraform(this._marketplaceOfferId),
+        value: cdktn.stringToHclTerraform(this._marketplaceOfferId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       plan_id: {
-        value: cdktf.stringToHclTerraform(this._planId),
+        value: cdktn.stringToHclTerraform(this._planId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       strata_cloud_manager_tenant_name: {
-        value: cdktf.stringToHclTerraform(this._strataCloudManagerTenantName),
+        value: cdktn.stringToHclTerraform(this._strataCloudManagerTenantName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       destination_nat: {
-        value: cdktf.listMapperHcl(paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatToHclTerraform, true)(this._destinationNat.internalValue),
+        value: cdktn.listMapperHcl(paloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatToHclTerraform, true)(this._destinationNat.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "PaloAltoNextGenerationFirewallVirtualNetworkStrataCloudManagerDestinationNatList",

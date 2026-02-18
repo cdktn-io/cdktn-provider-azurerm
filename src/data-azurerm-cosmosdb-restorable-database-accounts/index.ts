@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermCosmosdbRestorableDatabaseAccountsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermCosmosdbRestorableDatabaseAccountsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/cosmosdb_restorable_database_accounts#id DataAzurermCosmosdbRestorableDatabaseAccounts#id}
   *
@@ -38,8 +38,8 @@ export interface DataAzurermCosmosdbRestorableDatabaseAccountsAccountsRestorable
 }
 
 export function dataAzurermCosmosdbRestorableDatabaseAccountsAccountsRestorableLocationsToTerraform(struct?: DataAzurermCosmosdbRestorableDatabaseAccountsAccountsRestorableLocations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -48,8 +48,8 @@ export function dataAzurermCosmosdbRestorableDatabaseAccountsAccountsRestorableL
 
 
 export function dataAzurermCosmosdbRestorableDatabaseAccountsAccountsRestorableLocationsToHclTerraform(struct?: DataAzurermCosmosdbRestorableDatabaseAccountsAccountsRestorableLocations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -57,7 +57,7 @@ export function dataAzurermCosmosdbRestorableDatabaseAccountsAccountsRestorableL
   return attrs;
 }
 
-export class DataAzurermCosmosdbRestorableDatabaseAccountsAccountsRestorableLocationsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermCosmosdbRestorableDatabaseAccountsAccountsRestorableLocationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -66,7 +66,7 @@ export class DataAzurermCosmosdbRestorableDatabaseAccountsAccountsRestorableLoca
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -106,14 +106,14 @@ export class DataAzurermCosmosdbRestorableDatabaseAccountsAccountsRestorableLoca
   }
 }
 
-export class DataAzurermCosmosdbRestorableDatabaseAccountsAccountsRestorableLocationsList extends cdktf.ComplexList {
+export class DataAzurermCosmosdbRestorableDatabaseAccountsAccountsRestorableLocationsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -128,8 +128,8 @@ export interface DataAzurermCosmosdbRestorableDatabaseAccountsAccounts {
 }
 
 export function dataAzurermCosmosdbRestorableDatabaseAccountsAccountsToTerraform(struct?: DataAzurermCosmosdbRestorableDatabaseAccountsAccounts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -138,8 +138,8 @@ export function dataAzurermCosmosdbRestorableDatabaseAccountsAccountsToTerraform
 
 
 export function dataAzurermCosmosdbRestorableDatabaseAccountsAccountsToHclTerraform(struct?: DataAzurermCosmosdbRestorableDatabaseAccountsAccounts): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -147,7 +147,7 @@ export function dataAzurermCosmosdbRestorableDatabaseAccountsAccountsToHclTerraf
   return attrs;
 }
 
-export class DataAzurermCosmosdbRestorableDatabaseAccountsAccountsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermCosmosdbRestorableDatabaseAccountsAccountsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -156,7 +156,7 @@ export class DataAzurermCosmosdbRestorableDatabaseAccountsAccountsOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -202,14 +202,14 @@ export class DataAzurermCosmosdbRestorableDatabaseAccountsAccountsOutputReferenc
   }
 }
 
-export class DataAzurermCosmosdbRestorableDatabaseAccountsAccountsList extends cdktf.ComplexList {
+export class DataAzurermCosmosdbRestorableDatabaseAccountsAccountsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -227,25 +227,25 @@ export interface DataAzurermCosmosdbRestorableDatabaseAccountsTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermCosmosdbRestorableDatabaseAccountsTimeoutsToTerraform(struct?: DataAzurermCosmosdbRestorableDatabaseAccountsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermCosmosdbRestorableDatabaseAccountsTimeoutsToTerraform(struct?: DataAzurermCosmosdbRestorableDatabaseAccountsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermCosmosdbRestorableDatabaseAccountsTimeoutsToHclTerraform(struct?: DataAzurermCosmosdbRestorableDatabaseAccountsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermCosmosdbRestorableDatabaseAccountsTimeoutsToHclTerraform(struct?: DataAzurermCosmosdbRestorableDatabaseAccountsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -256,19 +256,19 @@ export function dataAzurermCosmosdbRestorableDatabaseAccountsTimeoutsToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermCosmosdbRestorableDatabaseAccountsTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermCosmosdbRestorableDatabaseAccountsTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermCosmosdbRestorableDatabaseAccountsTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermCosmosdbRestorableDatabaseAccountsTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -281,13 +281,13 @@ export class DataAzurermCosmosdbRestorableDatabaseAccountsTimeoutsOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermCosmosdbRestorableDatabaseAccountsTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermCosmosdbRestorableDatabaseAccountsTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -318,7 +318,7 @@ export class DataAzurermCosmosdbRestorableDatabaseAccountsTimeoutsOutputReferenc
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/cosmosdb_restorable_database_accounts azurerm_cosmosdb_restorable_database_accounts}
 */
-export class DataAzurermCosmosdbRestorableDatabaseAccounts extends cdktf.TerraformDataSource {
+export class DataAzurermCosmosdbRestorableDatabaseAccounts extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -329,14 +329,14 @@ export class DataAzurermCosmosdbRestorableDatabaseAccounts extends cdktf.Terrafo
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermCosmosdbRestorableDatabaseAccounts resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermCosmosdbRestorableDatabaseAccounts resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermCosmosdbRestorableDatabaseAccounts to import
   * @param importFromId The id of the existing DataAzurermCosmosdbRestorableDatabaseAccounts that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/cosmosdb_restorable_database_accounts#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermCosmosdbRestorableDatabaseAccounts to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_cosmosdb_restorable_database_accounts", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_cosmosdb_restorable_database_accounts", importId: importFromId, provider });
       }
 
   // ===========
@@ -446,9 +446,9 @@ export class DataAzurermCosmosdbRestorableDatabaseAccounts extends cdktf.Terrafo
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
       timeouts: dataAzurermCosmosdbRestorableDatabaseAccountsTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -456,19 +456,19 @@ export class DataAzurermCosmosdbRestorableDatabaseAccounts extends cdktf.Terrafo
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VirtualNetworkDnsServersConfig extends cdktf.TerraformMetaArguments {
+export interface VirtualNetworkDnsServersConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_network_dns_servers#dns_servers VirtualNetworkDnsServers#dns_servers}
   */
@@ -53,46 +53,46 @@ export interface VirtualNetworkDnsServersTimeouts {
   readonly update?: string;
 }
 
-export function virtualNetworkDnsServersTimeoutsToTerraform(struct?: VirtualNetworkDnsServersTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualNetworkDnsServersTimeoutsToTerraform(struct?: VirtualNetworkDnsServersTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function virtualNetworkDnsServersTimeoutsToHclTerraform(struct?: VirtualNetworkDnsServersTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualNetworkDnsServersTimeoutsToHclTerraform(struct?: VirtualNetworkDnsServersTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -103,19 +103,19 @@ export function virtualNetworkDnsServersTimeoutsToHclTerraform(struct?: VirtualN
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VirtualNetworkDnsServersTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VirtualNetworkDnsServersTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VirtualNetworkDnsServersTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VirtualNetworkDnsServersTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -140,7 +140,7 @@ export class VirtualNetworkDnsServersTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VirtualNetworkDnsServersTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VirtualNetworkDnsServersTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -149,7 +149,7 @@ export class VirtualNetworkDnsServersTimeoutsOutputReference extends cdktf.Compl
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -231,7 +231,7 @@ export class VirtualNetworkDnsServersTimeoutsOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_network_dns_servers azurerm_virtual_network_dns_servers}
 */
-export class VirtualNetworkDnsServers extends cdktf.TerraformResource {
+export class VirtualNetworkDnsServers extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -242,14 +242,14 @@ export class VirtualNetworkDnsServers extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VirtualNetworkDnsServers resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VirtualNetworkDnsServers resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VirtualNetworkDnsServers to import
   * @param importFromId The id of the existing VirtualNetworkDnsServers that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_network_dns_servers#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VirtualNetworkDnsServers to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_virtual_network_dns_servers", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_virtual_network_dns_servers", importId: importFromId, provider });
       }
 
   // ===========
@@ -356,9 +356,9 @@ export class VirtualNetworkDnsServers extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      dns_servers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._dnsServers),
-      id: cdktf.stringToTerraform(this._id),
-      virtual_network_id: cdktf.stringToTerraform(this._virtualNetworkId),
+      dns_servers: cdktn.listMapper(cdktn.stringToTerraform, false)(this._dnsServers),
+      id: cdktn.stringToTerraform(this._id),
+      virtual_network_id: cdktn.stringToTerraform(this._virtualNetworkId),
       timeouts: virtualNetworkDnsServersTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -366,19 +366,19 @@ export class VirtualNetworkDnsServers extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       dns_servers: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._dnsServers),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._dnsServers),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       virtual_network_id: {
-        value: cdktf.stringToHclTerraform(this._virtualNetworkId),
+        value: cdktn.stringToHclTerraform(this._virtualNetworkId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

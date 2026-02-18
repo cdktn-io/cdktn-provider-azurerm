@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SnapshotConfig extends cdktf.TerraformMetaArguments {
+export interface SnapshotConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/snapshot#create_option Snapshot#create_option}
   */
@@ -34,7 +34,7 @@ export interface SnapshotConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/snapshot#incremental_enabled Snapshot#incremental_enabled}
   */
-  readonly incrementalEnabled?: boolean | cdktf.IResolvable;
+  readonly incrementalEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/snapshot#location Snapshot#location}
   */
@@ -50,7 +50,7 @@ export interface SnapshotConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/snapshot#public_network_access_enabled Snapshot#public_network_access_enabled}
   */
-  readonly publicNetworkAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly publicNetworkAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/snapshot#resource_group_name Snapshot#resource_group_name}
   */
@@ -96,31 +96,31 @@ export interface SnapshotEncryptionSettingsDiskEncryptionKey {
 }
 
 export function snapshotEncryptionSettingsDiskEncryptionKeyToTerraform(struct?: SnapshotEncryptionSettingsDiskEncryptionKeyOutputReference | SnapshotEncryptionSettingsDiskEncryptionKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    secret_url: cdktf.stringToTerraform(struct!.secretUrl),
-    source_vault_id: cdktf.stringToTerraform(struct!.sourceVaultId),
+    secret_url: cdktn.stringToTerraform(struct!.secretUrl),
+    source_vault_id: cdktn.stringToTerraform(struct!.sourceVaultId),
   }
 }
 
 
 export function snapshotEncryptionSettingsDiskEncryptionKeyToHclTerraform(struct?: SnapshotEncryptionSettingsDiskEncryptionKeyOutputReference | SnapshotEncryptionSettingsDiskEncryptionKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     secret_url: {
-      value: cdktf.stringToHclTerraform(struct!.secretUrl),
+      value: cdktn.stringToHclTerraform(struct!.secretUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_vault_id: {
-      value: cdktf.stringToHclTerraform(struct!.sourceVaultId),
+      value: cdktn.stringToHclTerraform(struct!.sourceVaultId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -131,14 +131,14 @@ export function snapshotEncryptionSettingsDiskEncryptionKeyToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SnapshotEncryptionSettingsDiskEncryptionKeyOutputReference extends cdktf.ComplexObject {
+export class SnapshotEncryptionSettingsDiskEncryptionKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -207,31 +207,31 @@ export interface SnapshotEncryptionSettingsKeyEncryptionKey {
 }
 
 export function snapshotEncryptionSettingsKeyEncryptionKeyToTerraform(struct?: SnapshotEncryptionSettingsKeyEncryptionKeyOutputReference | SnapshotEncryptionSettingsKeyEncryptionKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key_url: cdktf.stringToTerraform(struct!.keyUrl),
-    source_vault_id: cdktf.stringToTerraform(struct!.sourceVaultId),
+    key_url: cdktn.stringToTerraform(struct!.keyUrl),
+    source_vault_id: cdktn.stringToTerraform(struct!.sourceVaultId),
   }
 }
 
 
 export function snapshotEncryptionSettingsKeyEncryptionKeyToHclTerraform(struct?: SnapshotEncryptionSettingsKeyEncryptionKeyOutputReference | SnapshotEncryptionSettingsKeyEncryptionKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key_url: {
-      value: cdktf.stringToHclTerraform(struct!.keyUrl),
+      value: cdktn.stringToHclTerraform(struct!.keyUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_vault_id: {
-      value: cdktf.stringToHclTerraform(struct!.sourceVaultId),
+      value: cdktn.stringToHclTerraform(struct!.sourceVaultId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -242,14 +242,14 @@ export function snapshotEncryptionSettingsKeyEncryptionKeyToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SnapshotEncryptionSettingsKeyEncryptionKeyOutputReference extends cdktf.ComplexObject {
+export class SnapshotEncryptionSettingsKeyEncryptionKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -322,8 +322,8 @@ export interface SnapshotEncryptionSettings {
 }
 
 export function snapshotEncryptionSettingsToTerraform(struct?: SnapshotEncryptionSettingsOutputReference | SnapshotEncryptionSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -334,8 +334,8 @@ export function snapshotEncryptionSettingsToTerraform(struct?: SnapshotEncryptio
 
 
 export function snapshotEncryptionSettingsToHclTerraform(struct?: SnapshotEncryptionSettingsOutputReference | SnapshotEncryptionSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -357,14 +357,14 @@ export function snapshotEncryptionSettingsToHclTerraform(struct?: SnapshotEncryp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SnapshotEncryptionSettingsOutputReference extends cdktf.ComplexObject {
+export class SnapshotEncryptionSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -443,46 +443,46 @@ export interface SnapshotTimeouts {
   readonly update?: string;
 }
 
-export function snapshotTimeoutsToTerraform(struct?: SnapshotTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function snapshotTimeoutsToTerraform(struct?: SnapshotTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function snapshotTimeoutsToHclTerraform(struct?: SnapshotTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function snapshotTimeoutsToHclTerraform(struct?: SnapshotTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -493,19 +493,19 @@ export function snapshotTimeoutsToHclTerraform(struct?: SnapshotTimeouts | cdktf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SnapshotTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SnapshotTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SnapshotTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SnapshotTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -530,7 +530,7 @@ export class SnapshotTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SnapshotTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SnapshotTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -539,7 +539,7 @@ export class SnapshotTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -621,7 +621,7 @@ export class SnapshotTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/snapshot azurerm_snapshot}
 */
-export class Snapshot extends cdktf.TerraformResource {
+export class Snapshot extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -632,14 +632,14 @@ export class Snapshot extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Snapshot resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Snapshot resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Snapshot to import
   * @param importFromId The id of the existing Snapshot that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/snapshot#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Snapshot to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_snapshot", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_snapshot", importId: importFromId, provider });
       }
 
   // ===========
@@ -753,11 +753,11 @@ export class Snapshot extends cdktf.TerraformResource {
   }
 
   // incremental_enabled - computed: false, optional: true, required: false
-  private _incrementalEnabled?: boolean | cdktf.IResolvable; 
+  private _incrementalEnabled?: boolean | cdktn.IResolvable; 
   public get incrementalEnabled() {
     return this.getBooleanAttribute('incremental_enabled');
   }
-  public set incrementalEnabled(value: boolean | cdktf.IResolvable) {
+  public set incrementalEnabled(value: boolean | cdktn.IResolvable) {
     this._incrementalEnabled = value;
   }
   public resetIncrementalEnabled() {
@@ -811,11 +811,11 @@ export class Snapshot extends cdktf.TerraformResource {
   }
 
   // public_network_access_enabled - computed: false, optional: true, required: false
-  private _publicNetworkAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _publicNetworkAccessEnabled?: boolean | cdktn.IResolvable; 
   public get publicNetworkAccessEnabled() {
     return this.getBooleanAttribute('public_network_access_enabled');
   }
-  public set publicNetworkAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set publicNetworkAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._publicNetworkAccessEnabled = value;
   }
   public resetPublicNetworkAccessEnabled() {
@@ -946,20 +946,20 @@ export class Snapshot extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      create_option: cdktf.stringToTerraform(this._createOption),
-      disk_access_id: cdktf.stringToTerraform(this._diskAccessId),
-      disk_size_gb: cdktf.numberToTerraform(this._diskSizeGb),
-      id: cdktf.stringToTerraform(this._id),
-      incremental_enabled: cdktf.booleanToTerraform(this._incrementalEnabled),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      network_access_policy: cdktf.stringToTerraform(this._networkAccessPolicy),
-      public_network_access_enabled: cdktf.booleanToTerraform(this._publicNetworkAccessEnabled),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      source_resource_id: cdktf.stringToTerraform(this._sourceResourceId),
-      source_uri: cdktf.stringToTerraform(this._sourceUri),
-      storage_account_id: cdktf.stringToTerraform(this._storageAccountId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      create_option: cdktn.stringToTerraform(this._createOption),
+      disk_access_id: cdktn.stringToTerraform(this._diskAccessId),
+      disk_size_gb: cdktn.numberToTerraform(this._diskSizeGb),
+      id: cdktn.stringToTerraform(this._id),
+      incremental_enabled: cdktn.booleanToTerraform(this._incrementalEnabled),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      network_access_policy: cdktn.stringToTerraform(this._networkAccessPolicy),
+      public_network_access_enabled: cdktn.booleanToTerraform(this._publicNetworkAccessEnabled),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      source_resource_id: cdktn.stringToTerraform(this._sourceResourceId),
+      source_uri: cdktn.stringToTerraform(this._sourceUri),
+      storage_account_id: cdktn.stringToTerraform(this._storageAccountId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       encryption_settings: snapshotEncryptionSettingsToTerraform(this._encryptionSettings.internalValue),
       timeouts: snapshotTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -968,85 +968,85 @@ export class Snapshot extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       create_option: {
-        value: cdktf.stringToHclTerraform(this._createOption),
+        value: cdktn.stringToHclTerraform(this._createOption),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disk_access_id: {
-        value: cdktf.stringToHclTerraform(this._diskAccessId),
+        value: cdktn.stringToHclTerraform(this._diskAccessId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disk_size_gb: {
-        value: cdktf.numberToHclTerraform(this._diskSizeGb),
+        value: cdktn.numberToHclTerraform(this._diskSizeGb),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       incremental_enabled: {
-        value: cdktf.booleanToHclTerraform(this._incrementalEnabled),
+        value: cdktn.booleanToHclTerraform(this._incrementalEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_access_policy: {
-        value: cdktf.stringToHclTerraform(this._networkAccessPolicy),
+        value: cdktn.stringToHclTerraform(this._networkAccessPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_network_access_enabled: {
-        value: cdktf.booleanToHclTerraform(this._publicNetworkAccessEnabled),
+        value: cdktn.booleanToHclTerraform(this._publicNetworkAccessEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_resource_id: {
-        value: cdktf.stringToHclTerraform(this._sourceResourceId),
+        value: cdktn.stringToHclTerraform(this._sourceResourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_uri: {
-        value: cdktf.stringToHclTerraform(this._sourceUri),
+        value: cdktn.stringToHclTerraform(this._sourceUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_account_id: {
-        value: cdktf.stringToHclTerraform(this._storageAccountId),
+        value: cdktn.stringToHclTerraform(this._storageAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

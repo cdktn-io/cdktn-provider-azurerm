@@ -7,7 +7,7 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
@@ -69,13 +69,13 @@ export interface AzurermProviderConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#disable_correlation_request_id AzurermProvider#disable_correlation_request_id}
   */
-  readonly disableCorrelationRequestId?: boolean | cdktf.IResolvable;
+  readonly disableCorrelationRequestId?: boolean | cdktn.IResolvable;
   /**
   * This will disable the Terraform Partner ID which is used if a custom `partner_id` isn't specified.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#disable_terraform_partner_id AzurermProvider#disable_terraform_partner_id}
   */
-  readonly disableTerraformPartnerId?: boolean | cdktf.IResolvable;
+  readonly disableTerraformPartnerId?: boolean | cdktn.IResolvable;
   /**
   * The Cloud Environment which should be used. Possible values are public, usgovernment, and china. Defaults to public. Not used and should not be specified when `metadata_host` is specified.
   *
@@ -147,13 +147,13 @@ export interface AzurermProviderConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#skip_provider_registration AzurermProvider#skip_provider_registration}
   */
-  readonly skipProviderRegistration?: boolean | cdktf.IResolvable;
+  readonly skipProviderRegistration?: boolean | cdktn.IResolvable;
   /**
   * Should the AzureRM Provider use Azure AD Authentication when accessing the Storage Data Plane APIs?
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#storage_use_azuread AzurermProvider#storage_use_azuread}
   */
-  readonly storageUseAzuread?: boolean | cdktf.IResolvable;
+  readonly storageUseAzuread?: boolean | cdktn.IResolvable;
   /**
   * The Subscription ID which should be used.
   *
@@ -171,25 +171,25 @@ export interface AzurermProviderConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#use_aks_workload_identity AzurermProvider#use_aks_workload_identity}
   */
-  readonly useAksWorkloadIdentity?: boolean | cdktf.IResolvable;
+  readonly useAksWorkloadIdentity?: boolean | cdktn.IResolvable;
   /**
   * Allow Azure CLI to be used for Authentication.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#use_cli AzurermProvider#use_cli}
   */
-  readonly useCli?: boolean | cdktf.IResolvable;
+  readonly useCli?: boolean | cdktn.IResolvable;
   /**
   * Allow Managed Service Identity to be used for Authentication.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#use_msi AzurermProvider#use_msi}
   */
-  readonly useMsi?: boolean | cdktf.IResolvable;
+  readonly useMsi?: boolean | cdktn.IResolvable;
   /**
   * Allow OpenID Connect to be used for authentication
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#use_oidc AzurermProvider#use_oidc}
   */
-  readonly useOidc?: boolean | cdktf.IResolvable;
+  readonly useOidc?: boolean | cdktn.IResolvable;
   /**
   * Alias name
   *
@@ -201,45 +201,45 @@ export interface AzurermProviderConfig {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#features AzurermProvider#features}
   */
-  readonly features?: AzurermProviderFeatures[] | cdktf.IResolvable;
+  readonly features?: AzurermProviderFeatures[] | cdktn.IResolvable;
 }
 export interface AzurermProviderFeaturesApiManagement {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#purge_soft_delete_on_destroy AzurermProvider#purge_soft_delete_on_destroy}
   */
-  readonly purgeSoftDeleteOnDestroy?: boolean | cdktf.IResolvable;
+  readonly purgeSoftDeleteOnDestroy?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#recover_soft_deleted AzurermProvider#recover_soft_deleted}
   */
-  readonly recoverSoftDeleted?: boolean | cdktf.IResolvable;
+  readonly recoverSoftDeleted?: boolean | cdktn.IResolvable;
 }
 
-export function azurermProviderFeaturesApiManagementToTerraform(struct?: AzurermProviderFeaturesApiManagement | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesApiManagementToTerraform(struct?: AzurermProviderFeaturesApiManagement | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    purge_soft_delete_on_destroy: cdktf.booleanToTerraform(struct!.purgeSoftDeleteOnDestroy),
-    recover_soft_deleted: cdktf.booleanToTerraform(struct!.recoverSoftDeleted),
+    purge_soft_delete_on_destroy: cdktn.booleanToTerraform(struct!.purgeSoftDeleteOnDestroy),
+    recover_soft_deleted: cdktn.booleanToTerraform(struct!.recoverSoftDeleted),
   }
 }
 
 
-export function azurermProviderFeaturesApiManagementToHclTerraform(struct?: AzurermProviderFeaturesApiManagement | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesApiManagementToHclTerraform(struct?: AzurermProviderFeaturesApiManagement | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     purge_soft_delete_on_destroy: {
-      value: cdktf.booleanToHclTerraform(struct!.purgeSoftDeleteOnDestroy),
+      value: cdktn.booleanToHclTerraform(struct!.purgeSoftDeleteOnDestroy),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     recover_soft_deleted: {
-      value: cdktf.booleanToHclTerraform(struct!.recoverSoftDeleted),
+      value: cdktn.booleanToHclTerraform(struct!.recoverSoftDeleted),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -254,39 +254,39 @@ export interface AzurermProviderFeaturesAppConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#purge_soft_delete_on_destroy AzurermProvider#purge_soft_delete_on_destroy}
   */
-  readonly purgeSoftDeleteOnDestroy?: boolean | cdktf.IResolvable;
+  readonly purgeSoftDeleteOnDestroy?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#recover_soft_deleted AzurermProvider#recover_soft_deleted}
   */
-  readonly recoverSoftDeleted?: boolean | cdktf.IResolvable;
+  readonly recoverSoftDeleted?: boolean | cdktn.IResolvable;
 }
 
-export function azurermProviderFeaturesAppConfigurationToTerraform(struct?: AzurermProviderFeaturesAppConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesAppConfigurationToTerraform(struct?: AzurermProviderFeaturesAppConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    purge_soft_delete_on_destroy: cdktf.booleanToTerraform(struct!.purgeSoftDeleteOnDestroy),
-    recover_soft_deleted: cdktf.booleanToTerraform(struct!.recoverSoftDeleted),
+    purge_soft_delete_on_destroy: cdktn.booleanToTerraform(struct!.purgeSoftDeleteOnDestroy),
+    recover_soft_deleted: cdktn.booleanToTerraform(struct!.recoverSoftDeleted),
   }
 }
 
 
-export function azurermProviderFeaturesAppConfigurationToHclTerraform(struct?: AzurermProviderFeaturesAppConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesAppConfigurationToHclTerraform(struct?: AzurermProviderFeaturesAppConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     purge_soft_delete_on_destroy: {
-      value: cdktf.booleanToHclTerraform(struct!.purgeSoftDeleteOnDestroy),
+      value: cdktn.booleanToHclTerraform(struct!.purgeSoftDeleteOnDestroy),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     recover_soft_deleted: {
-      value: cdktf.booleanToHclTerraform(struct!.recoverSoftDeleted),
+      value: cdktn.booleanToHclTerraform(struct!.recoverSoftDeleted),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -301,28 +301,28 @@ export interface AzurermProviderFeaturesApplicationInsights {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#disable_generated_rule AzurermProvider#disable_generated_rule}
   */
-  readonly disableGeneratedRule?: boolean | cdktf.IResolvable;
+  readonly disableGeneratedRule?: boolean | cdktn.IResolvable;
 }
 
-export function azurermProviderFeaturesApplicationInsightsToTerraform(struct?: AzurermProviderFeaturesApplicationInsights | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesApplicationInsightsToTerraform(struct?: AzurermProviderFeaturesApplicationInsights | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    disable_generated_rule: cdktf.booleanToTerraform(struct!.disableGeneratedRule),
+    disable_generated_rule: cdktn.booleanToTerraform(struct!.disableGeneratedRule),
   }
 }
 
 
-export function azurermProviderFeaturesApplicationInsightsToHclTerraform(struct?: AzurermProviderFeaturesApplicationInsights | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesApplicationInsightsToHclTerraform(struct?: AzurermProviderFeaturesApplicationInsights | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     disable_generated_rule: {
-      value: cdktf.booleanToHclTerraform(struct!.disableGeneratedRule),
+      value: cdktn.booleanToHclTerraform(struct!.disableGeneratedRule),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -337,28 +337,28 @@ export interface AzurermProviderFeaturesCognitiveAccount {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#purge_soft_delete_on_destroy AzurermProvider#purge_soft_delete_on_destroy}
   */
-  readonly purgeSoftDeleteOnDestroy?: boolean | cdktf.IResolvable;
+  readonly purgeSoftDeleteOnDestroy?: boolean | cdktn.IResolvable;
 }
 
-export function azurermProviderFeaturesCognitiveAccountToTerraform(struct?: AzurermProviderFeaturesCognitiveAccount | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesCognitiveAccountToTerraform(struct?: AzurermProviderFeaturesCognitiveAccount | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    purge_soft_delete_on_destroy: cdktf.booleanToTerraform(struct!.purgeSoftDeleteOnDestroy),
+    purge_soft_delete_on_destroy: cdktn.booleanToTerraform(struct!.purgeSoftDeleteOnDestroy),
   }
 }
 
 
-export function azurermProviderFeaturesCognitiveAccountToHclTerraform(struct?: AzurermProviderFeaturesCognitiveAccount | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesCognitiveAccountToHclTerraform(struct?: AzurermProviderFeaturesCognitiveAccount | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     purge_soft_delete_on_destroy: {
-      value: cdktf.booleanToHclTerraform(struct!.purgeSoftDeleteOnDestroy),
+      value: cdktn.booleanToHclTerraform(struct!.purgeSoftDeleteOnDestroy),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -375,28 +375,28 @@ export interface AzurermProviderFeaturesDatabricksWorkspace {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#force_delete AzurermProvider#force_delete}
   */
-  readonly forceDelete?: boolean | cdktf.IResolvable;
+  readonly forceDelete?: boolean | cdktn.IResolvable;
 }
 
-export function azurermProviderFeaturesDatabricksWorkspaceToTerraform(struct?: AzurermProviderFeaturesDatabricksWorkspace | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesDatabricksWorkspaceToTerraform(struct?: AzurermProviderFeaturesDatabricksWorkspace | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    force_delete: cdktf.booleanToTerraform(struct!.forceDelete),
+    force_delete: cdktn.booleanToTerraform(struct!.forceDelete),
   }
 }
 
 
-export function azurermProviderFeaturesDatabricksWorkspaceToHclTerraform(struct?: AzurermProviderFeaturesDatabricksWorkspace | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesDatabricksWorkspaceToHclTerraform(struct?: AzurermProviderFeaturesDatabricksWorkspace | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     force_delete: {
-      value: cdktf.booleanToHclTerraform(struct!.forceDelete),
+      value: cdktn.booleanToHclTerraform(struct!.forceDelete),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -413,158 +413,158 @@ export interface AzurermProviderFeaturesKeyVault {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#purge_soft_delete_on_destroy AzurermProvider#purge_soft_delete_on_destroy}
   */
-  readonly purgeSoftDeleteOnDestroy?: boolean | cdktf.IResolvable;
+  readonly purgeSoftDeleteOnDestroy?: boolean | cdktn.IResolvable;
   /**
   * When enabled soft-deleted `azurerm_key_vault_certificate` resources will be permanently deleted (e.g purged), when destroyed
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#purge_soft_deleted_certificates_on_destroy AzurermProvider#purge_soft_deleted_certificates_on_destroy}
   */
-  readonly purgeSoftDeletedCertificatesOnDestroy?: boolean | cdktf.IResolvable;
+  readonly purgeSoftDeletedCertificatesOnDestroy?: boolean | cdktn.IResolvable;
   /**
   * When enabled soft-deleted `azurerm_key_vault_managed_hardware_security_module_key` resources will be permanently deleted (e.g purged), when destroyed
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#purge_soft_deleted_hardware_security_module_keys_on_destroy AzurermProvider#purge_soft_deleted_hardware_security_module_keys_on_destroy}
   */
-  readonly purgeSoftDeletedHardwareSecurityModuleKeysOnDestroy?: boolean | cdktf.IResolvable;
+  readonly purgeSoftDeletedHardwareSecurityModuleKeysOnDestroy?: boolean | cdktn.IResolvable;
   /**
   * When enabled soft-deleted `azurerm_key_vault_managed_hardware_security_module` resources will be permanently deleted (e.g purged), when destroyed
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#purge_soft_deleted_hardware_security_modules_on_destroy AzurermProvider#purge_soft_deleted_hardware_security_modules_on_destroy}
   */
-  readonly purgeSoftDeletedHardwareSecurityModulesOnDestroy?: boolean | cdktf.IResolvable;
+  readonly purgeSoftDeletedHardwareSecurityModulesOnDestroy?: boolean | cdktn.IResolvable;
   /**
   * When enabled soft-deleted `azurerm_key_vault_key` resources will be permanently deleted (e.g purged), when destroyed
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#purge_soft_deleted_keys_on_destroy AzurermProvider#purge_soft_deleted_keys_on_destroy}
   */
-  readonly purgeSoftDeletedKeysOnDestroy?: boolean | cdktf.IResolvable;
+  readonly purgeSoftDeletedKeysOnDestroy?: boolean | cdktn.IResolvable;
   /**
   * When enabled soft-deleted `azurerm_key_vault_secret` resources will be permanently deleted (e.g purged), when destroyed
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#purge_soft_deleted_secrets_on_destroy AzurermProvider#purge_soft_deleted_secrets_on_destroy}
   */
-  readonly purgeSoftDeletedSecretsOnDestroy?: boolean | cdktf.IResolvable;
+  readonly purgeSoftDeletedSecretsOnDestroy?: boolean | cdktn.IResolvable;
   /**
   * When enabled soft-deleted `azurerm_key_vault_certificate` resources will be restored, instead of creating new ones
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#recover_soft_deleted_certificates AzurermProvider#recover_soft_deleted_certificates}
   */
-  readonly recoverSoftDeletedCertificates?: boolean | cdktf.IResolvable;
+  readonly recoverSoftDeletedCertificates?: boolean | cdktn.IResolvable;
   /**
   * When enabled soft-deleted `azurerm_key_vault_managed_hardware_security_module_key` resources will be restored, instead of creating new ones
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#recover_soft_deleted_hardware_security_module_keys AzurermProvider#recover_soft_deleted_hardware_security_module_keys}
   */
-  readonly recoverSoftDeletedHardwareSecurityModuleKeys?: boolean | cdktf.IResolvable;
+  readonly recoverSoftDeletedHardwareSecurityModuleKeys?: boolean | cdktn.IResolvable;
   /**
   * When enabled soft-deleted `azurerm_key_vault` resources will be restored, instead of creating new ones
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#recover_soft_deleted_key_vaults AzurermProvider#recover_soft_deleted_key_vaults}
   */
-  readonly recoverSoftDeletedKeyVaults?: boolean | cdktf.IResolvable;
+  readonly recoverSoftDeletedKeyVaults?: boolean | cdktn.IResolvable;
   /**
   * When enabled soft-deleted `azurerm_key_vault_key` resources will be restored, instead of creating new ones
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#recover_soft_deleted_keys AzurermProvider#recover_soft_deleted_keys}
   */
-  readonly recoverSoftDeletedKeys?: boolean | cdktf.IResolvable;
+  readonly recoverSoftDeletedKeys?: boolean | cdktn.IResolvable;
   /**
   * When enabled soft-deleted `azurerm_key_vault_secret` resources will be restored, instead of creating new ones
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#recover_soft_deleted_secrets AzurermProvider#recover_soft_deleted_secrets}
   */
-  readonly recoverSoftDeletedSecrets?: boolean | cdktf.IResolvable;
+  readonly recoverSoftDeletedSecrets?: boolean | cdktn.IResolvable;
 }
 
-export function azurermProviderFeaturesKeyVaultToTerraform(struct?: AzurermProviderFeaturesKeyVault | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesKeyVaultToTerraform(struct?: AzurermProviderFeaturesKeyVault | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    purge_soft_delete_on_destroy: cdktf.booleanToTerraform(struct!.purgeSoftDeleteOnDestroy),
-    purge_soft_deleted_certificates_on_destroy: cdktf.booleanToTerraform(struct!.purgeSoftDeletedCertificatesOnDestroy),
-    purge_soft_deleted_hardware_security_module_keys_on_destroy: cdktf.booleanToTerraform(struct!.purgeSoftDeletedHardwareSecurityModuleKeysOnDestroy),
-    purge_soft_deleted_hardware_security_modules_on_destroy: cdktf.booleanToTerraform(struct!.purgeSoftDeletedHardwareSecurityModulesOnDestroy),
-    purge_soft_deleted_keys_on_destroy: cdktf.booleanToTerraform(struct!.purgeSoftDeletedKeysOnDestroy),
-    purge_soft_deleted_secrets_on_destroy: cdktf.booleanToTerraform(struct!.purgeSoftDeletedSecretsOnDestroy),
-    recover_soft_deleted_certificates: cdktf.booleanToTerraform(struct!.recoverSoftDeletedCertificates),
-    recover_soft_deleted_hardware_security_module_keys: cdktf.booleanToTerraform(struct!.recoverSoftDeletedHardwareSecurityModuleKeys),
-    recover_soft_deleted_key_vaults: cdktf.booleanToTerraform(struct!.recoverSoftDeletedKeyVaults),
-    recover_soft_deleted_keys: cdktf.booleanToTerraform(struct!.recoverSoftDeletedKeys),
-    recover_soft_deleted_secrets: cdktf.booleanToTerraform(struct!.recoverSoftDeletedSecrets),
+    purge_soft_delete_on_destroy: cdktn.booleanToTerraform(struct!.purgeSoftDeleteOnDestroy),
+    purge_soft_deleted_certificates_on_destroy: cdktn.booleanToTerraform(struct!.purgeSoftDeletedCertificatesOnDestroy),
+    purge_soft_deleted_hardware_security_module_keys_on_destroy: cdktn.booleanToTerraform(struct!.purgeSoftDeletedHardwareSecurityModuleKeysOnDestroy),
+    purge_soft_deleted_hardware_security_modules_on_destroy: cdktn.booleanToTerraform(struct!.purgeSoftDeletedHardwareSecurityModulesOnDestroy),
+    purge_soft_deleted_keys_on_destroy: cdktn.booleanToTerraform(struct!.purgeSoftDeletedKeysOnDestroy),
+    purge_soft_deleted_secrets_on_destroy: cdktn.booleanToTerraform(struct!.purgeSoftDeletedSecretsOnDestroy),
+    recover_soft_deleted_certificates: cdktn.booleanToTerraform(struct!.recoverSoftDeletedCertificates),
+    recover_soft_deleted_hardware_security_module_keys: cdktn.booleanToTerraform(struct!.recoverSoftDeletedHardwareSecurityModuleKeys),
+    recover_soft_deleted_key_vaults: cdktn.booleanToTerraform(struct!.recoverSoftDeletedKeyVaults),
+    recover_soft_deleted_keys: cdktn.booleanToTerraform(struct!.recoverSoftDeletedKeys),
+    recover_soft_deleted_secrets: cdktn.booleanToTerraform(struct!.recoverSoftDeletedSecrets),
   }
 }
 
 
-export function azurermProviderFeaturesKeyVaultToHclTerraform(struct?: AzurermProviderFeaturesKeyVault | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesKeyVaultToHclTerraform(struct?: AzurermProviderFeaturesKeyVault | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     purge_soft_delete_on_destroy: {
-      value: cdktf.booleanToHclTerraform(struct!.purgeSoftDeleteOnDestroy),
+      value: cdktn.booleanToHclTerraform(struct!.purgeSoftDeleteOnDestroy),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     purge_soft_deleted_certificates_on_destroy: {
-      value: cdktf.booleanToHclTerraform(struct!.purgeSoftDeletedCertificatesOnDestroy),
+      value: cdktn.booleanToHclTerraform(struct!.purgeSoftDeletedCertificatesOnDestroy),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     purge_soft_deleted_hardware_security_module_keys_on_destroy: {
-      value: cdktf.booleanToHclTerraform(struct!.purgeSoftDeletedHardwareSecurityModuleKeysOnDestroy),
+      value: cdktn.booleanToHclTerraform(struct!.purgeSoftDeletedHardwareSecurityModuleKeysOnDestroy),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     purge_soft_deleted_hardware_security_modules_on_destroy: {
-      value: cdktf.booleanToHclTerraform(struct!.purgeSoftDeletedHardwareSecurityModulesOnDestroy),
+      value: cdktn.booleanToHclTerraform(struct!.purgeSoftDeletedHardwareSecurityModulesOnDestroy),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     purge_soft_deleted_keys_on_destroy: {
-      value: cdktf.booleanToHclTerraform(struct!.purgeSoftDeletedKeysOnDestroy),
+      value: cdktn.booleanToHclTerraform(struct!.purgeSoftDeletedKeysOnDestroy),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     purge_soft_deleted_secrets_on_destroy: {
-      value: cdktf.booleanToHclTerraform(struct!.purgeSoftDeletedSecretsOnDestroy),
+      value: cdktn.booleanToHclTerraform(struct!.purgeSoftDeletedSecretsOnDestroy),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     recover_soft_deleted_certificates: {
-      value: cdktf.booleanToHclTerraform(struct!.recoverSoftDeletedCertificates),
+      value: cdktn.booleanToHclTerraform(struct!.recoverSoftDeletedCertificates),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     recover_soft_deleted_hardware_security_module_keys: {
-      value: cdktf.booleanToHclTerraform(struct!.recoverSoftDeletedHardwareSecurityModuleKeys),
+      value: cdktn.booleanToHclTerraform(struct!.recoverSoftDeletedHardwareSecurityModuleKeys),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     recover_soft_deleted_key_vaults: {
-      value: cdktf.booleanToHclTerraform(struct!.recoverSoftDeletedKeyVaults),
+      value: cdktn.booleanToHclTerraform(struct!.recoverSoftDeletedKeyVaults),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     recover_soft_deleted_keys: {
-      value: cdktf.booleanToHclTerraform(struct!.recoverSoftDeletedKeys),
+      value: cdktn.booleanToHclTerraform(struct!.recoverSoftDeletedKeys),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     recover_soft_deleted_secrets: {
-      value: cdktf.booleanToHclTerraform(struct!.recoverSoftDeletedSecrets),
+      value: cdktn.booleanToHclTerraform(struct!.recoverSoftDeletedSecrets),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -579,28 +579,28 @@ export interface AzurermProviderFeaturesLogAnalyticsWorkspace {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#permanently_delete_on_destroy AzurermProvider#permanently_delete_on_destroy}
   */
-  readonly permanentlyDeleteOnDestroy?: boolean | cdktf.IResolvable;
+  readonly permanentlyDeleteOnDestroy?: boolean | cdktn.IResolvable;
 }
 
-export function azurermProviderFeaturesLogAnalyticsWorkspaceToTerraform(struct?: AzurermProviderFeaturesLogAnalyticsWorkspace | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesLogAnalyticsWorkspaceToTerraform(struct?: AzurermProviderFeaturesLogAnalyticsWorkspace | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    permanently_delete_on_destroy: cdktf.booleanToTerraform(struct!.permanentlyDeleteOnDestroy),
+    permanently_delete_on_destroy: cdktn.booleanToTerraform(struct!.permanentlyDeleteOnDestroy),
   }
 }
 
 
-export function azurermProviderFeaturesLogAnalyticsWorkspaceToHclTerraform(struct?: AzurermProviderFeaturesLogAnalyticsWorkspace | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesLogAnalyticsWorkspaceToHclTerraform(struct?: AzurermProviderFeaturesLogAnalyticsWorkspace | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     permanently_delete_on_destroy: {
-      value: cdktf.booleanToHclTerraform(struct!.permanentlyDeleteOnDestroy),
+      value: cdktn.booleanToHclTerraform(struct!.permanentlyDeleteOnDestroy),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -615,28 +615,28 @@ export interface AzurermProviderFeaturesMachineLearning {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#purge_soft_deleted_workspace_on_destroy AzurermProvider#purge_soft_deleted_workspace_on_destroy}
   */
-  readonly purgeSoftDeletedWorkspaceOnDestroy?: boolean | cdktf.IResolvable;
+  readonly purgeSoftDeletedWorkspaceOnDestroy?: boolean | cdktn.IResolvable;
 }
 
-export function azurermProviderFeaturesMachineLearningToTerraform(struct?: AzurermProviderFeaturesMachineLearning | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesMachineLearningToTerraform(struct?: AzurermProviderFeaturesMachineLearning | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    purge_soft_deleted_workspace_on_destroy: cdktf.booleanToTerraform(struct!.purgeSoftDeletedWorkspaceOnDestroy),
+    purge_soft_deleted_workspace_on_destroy: cdktn.booleanToTerraform(struct!.purgeSoftDeletedWorkspaceOnDestroy),
   }
 }
 
 
-export function azurermProviderFeaturesMachineLearningToHclTerraform(struct?: AzurermProviderFeaturesMachineLearning | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesMachineLearningToHclTerraform(struct?: AzurermProviderFeaturesMachineLearning | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     purge_soft_deleted_workspace_on_destroy: {
-      value: cdktf.booleanToHclTerraform(struct!.purgeSoftDeletedWorkspaceOnDestroy),
+      value: cdktn.booleanToHclTerraform(struct!.purgeSoftDeletedWorkspaceOnDestroy),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -651,28 +651,28 @@ export interface AzurermProviderFeaturesManagedDisk {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#expand_without_downtime AzurermProvider#expand_without_downtime}
   */
-  readonly expandWithoutDowntime?: boolean | cdktf.IResolvable;
+  readonly expandWithoutDowntime?: boolean | cdktn.IResolvable;
 }
 
-export function azurermProviderFeaturesManagedDiskToTerraform(struct?: AzurermProviderFeaturesManagedDisk | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesManagedDiskToTerraform(struct?: AzurermProviderFeaturesManagedDisk | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    expand_without_downtime: cdktf.booleanToTerraform(struct!.expandWithoutDowntime),
+    expand_without_downtime: cdktn.booleanToTerraform(struct!.expandWithoutDowntime),
   }
 }
 
 
-export function azurermProviderFeaturesManagedDiskToHclTerraform(struct?: AzurermProviderFeaturesManagedDisk | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesManagedDiskToHclTerraform(struct?: AzurermProviderFeaturesManagedDisk | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     expand_without_downtime: {
-      value: cdktf.booleanToHclTerraform(struct!.expandWithoutDowntime),
+      value: cdktn.booleanToHclTerraform(struct!.expandWithoutDowntime),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -689,41 +689,41 @@ export interface AzurermProviderFeaturesNetapp {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#delete_backups_on_backup_vault_destroy AzurermProvider#delete_backups_on_backup_vault_destroy}
   */
-  readonly deleteBackupsOnBackupVaultDestroy?: boolean | cdktf.IResolvable;
+  readonly deleteBackupsOnBackupVaultDestroy?: boolean | cdktn.IResolvable;
   /**
   * When enabled, the volume will not be destroyed, safeguarding from severe data loss
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#prevent_volume_destruction AzurermProvider#prevent_volume_destruction}
   */
-  readonly preventVolumeDestruction?: boolean | cdktf.IResolvable;
+  readonly preventVolumeDestruction?: boolean | cdktn.IResolvable;
 }
 
-export function azurermProviderFeaturesNetappToTerraform(struct?: AzurermProviderFeaturesNetapp | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesNetappToTerraform(struct?: AzurermProviderFeaturesNetapp | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    delete_backups_on_backup_vault_destroy: cdktf.booleanToTerraform(struct!.deleteBackupsOnBackupVaultDestroy),
-    prevent_volume_destruction: cdktf.booleanToTerraform(struct!.preventVolumeDestruction),
+    delete_backups_on_backup_vault_destroy: cdktn.booleanToTerraform(struct!.deleteBackupsOnBackupVaultDestroy),
+    prevent_volume_destruction: cdktn.booleanToTerraform(struct!.preventVolumeDestruction),
   }
 }
 
 
-export function azurermProviderFeaturesNetappToHclTerraform(struct?: AzurermProviderFeaturesNetapp | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesNetappToHclTerraform(struct?: AzurermProviderFeaturesNetapp | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     delete_backups_on_backup_vault_destroy: {
-      value: cdktf.booleanToHclTerraform(struct!.deleteBackupsOnBackupVaultDestroy),
+      value: cdktn.booleanToHclTerraform(struct!.deleteBackupsOnBackupVaultDestroy),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     prevent_volume_destruction: {
-      value: cdktf.booleanToHclTerraform(struct!.preventVolumeDestruction),
+      value: cdktn.booleanToHclTerraform(struct!.preventVolumeDestruction),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -738,28 +738,28 @@ export interface AzurermProviderFeaturesPostgresqlFlexibleServer {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#restart_server_on_configuration_value_change AzurermProvider#restart_server_on_configuration_value_change}
   */
-  readonly restartServerOnConfigurationValueChange?: boolean | cdktf.IResolvable;
+  readonly restartServerOnConfigurationValueChange?: boolean | cdktn.IResolvable;
 }
 
-export function azurermProviderFeaturesPostgresqlFlexibleServerToTerraform(struct?: AzurermProviderFeaturesPostgresqlFlexibleServer | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesPostgresqlFlexibleServerToTerraform(struct?: AzurermProviderFeaturesPostgresqlFlexibleServer | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    restart_server_on_configuration_value_change: cdktf.booleanToTerraform(struct!.restartServerOnConfigurationValueChange),
+    restart_server_on_configuration_value_change: cdktn.booleanToTerraform(struct!.restartServerOnConfigurationValueChange),
   }
 }
 
 
-export function azurermProviderFeaturesPostgresqlFlexibleServerToHclTerraform(struct?: AzurermProviderFeaturesPostgresqlFlexibleServer | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesPostgresqlFlexibleServerToHclTerraform(struct?: AzurermProviderFeaturesPostgresqlFlexibleServer | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     restart_server_on_configuration_value_change: {
-      value: cdktf.booleanToHclTerraform(struct!.restartServerOnConfigurationValueChange),
+      value: cdktn.booleanToHclTerraform(struct!.restartServerOnConfigurationValueChange),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -774,50 +774,50 @@ export interface AzurermProviderFeaturesRecoveryService {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#purge_protected_items_from_vault_on_destroy AzurermProvider#purge_protected_items_from_vault_on_destroy}
   */
-  readonly purgeProtectedItemsFromVaultOnDestroy?: boolean | cdktf.IResolvable;
+  readonly purgeProtectedItemsFromVaultOnDestroy?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#vm_backup_stop_protection_and_retain_data_on_destroy AzurermProvider#vm_backup_stop_protection_and_retain_data_on_destroy}
   */
-  readonly vmBackupStopProtectionAndRetainDataOnDestroy?: boolean | cdktf.IResolvable;
+  readonly vmBackupStopProtectionAndRetainDataOnDestroy?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#vm_backup_suspend_protection_and_retain_data_on_destroy AzurermProvider#vm_backup_suspend_protection_and_retain_data_on_destroy}
   */
-  readonly vmBackupSuspendProtectionAndRetainDataOnDestroy?: boolean | cdktf.IResolvable;
+  readonly vmBackupSuspendProtectionAndRetainDataOnDestroy?: boolean | cdktn.IResolvable;
 }
 
-export function azurermProviderFeaturesRecoveryServiceToTerraform(struct?: AzurermProviderFeaturesRecoveryService | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesRecoveryServiceToTerraform(struct?: AzurermProviderFeaturesRecoveryService | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    purge_protected_items_from_vault_on_destroy: cdktf.booleanToTerraform(struct!.purgeProtectedItemsFromVaultOnDestroy),
-    vm_backup_stop_protection_and_retain_data_on_destroy: cdktf.booleanToTerraform(struct!.vmBackupStopProtectionAndRetainDataOnDestroy),
-    vm_backup_suspend_protection_and_retain_data_on_destroy: cdktf.booleanToTerraform(struct!.vmBackupSuspendProtectionAndRetainDataOnDestroy),
+    purge_protected_items_from_vault_on_destroy: cdktn.booleanToTerraform(struct!.purgeProtectedItemsFromVaultOnDestroy),
+    vm_backup_stop_protection_and_retain_data_on_destroy: cdktn.booleanToTerraform(struct!.vmBackupStopProtectionAndRetainDataOnDestroy),
+    vm_backup_suspend_protection_and_retain_data_on_destroy: cdktn.booleanToTerraform(struct!.vmBackupSuspendProtectionAndRetainDataOnDestroy),
   }
 }
 
 
-export function azurermProviderFeaturesRecoveryServiceToHclTerraform(struct?: AzurermProviderFeaturesRecoveryService | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesRecoveryServiceToHclTerraform(struct?: AzurermProviderFeaturesRecoveryService | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     purge_protected_items_from_vault_on_destroy: {
-      value: cdktf.booleanToHclTerraform(struct!.purgeProtectedItemsFromVaultOnDestroy),
+      value: cdktn.booleanToHclTerraform(struct!.purgeProtectedItemsFromVaultOnDestroy),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     vm_backup_stop_protection_and_retain_data_on_destroy: {
-      value: cdktf.booleanToHclTerraform(struct!.vmBackupStopProtectionAndRetainDataOnDestroy),
+      value: cdktn.booleanToHclTerraform(struct!.vmBackupStopProtectionAndRetainDataOnDestroy),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     vm_backup_suspend_protection_and_retain_data_on_destroy: {
-      value: cdktf.booleanToHclTerraform(struct!.vmBackupSuspendProtectionAndRetainDataOnDestroy),
+      value: cdktn.booleanToHclTerraform(struct!.vmBackupSuspendProtectionAndRetainDataOnDestroy),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -832,28 +832,28 @@ export interface AzurermProviderFeaturesRecoveryServicesVaults {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#recover_soft_deleted_backup_protected_vm AzurermProvider#recover_soft_deleted_backup_protected_vm}
   */
-  readonly recoverSoftDeletedBackupProtectedVm?: boolean | cdktf.IResolvable;
+  readonly recoverSoftDeletedBackupProtectedVm?: boolean | cdktn.IResolvable;
 }
 
-export function azurermProviderFeaturesRecoveryServicesVaultsToTerraform(struct?: AzurermProviderFeaturesRecoveryServicesVaults | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesRecoveryServicesVaultsToTerraform(struct?: AzurermProviderFeaturesRecoveryServicesVaults | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    recover_soft_deleted_backup_protected_vm: cdktf.booleanToTerraform(struct!.recoverSoftDeletedBackupProtectedVm),
+    recover_soft_deleted_backup_protected_vm: cdktn.booleanToTerraform(struct!.recoverSoftDeletedBackupProtectedVm),
   }
 }
 
 
-export function azurermProviderFeaturesRecoveryServicesVaultsToHclTerraform(struct?: AzurermProviderFeaturesRecoveryServicesVaults | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesRecoveryServicesVaultsToHclTerraform(struct?: AzurermProviderFeaturesRecoveryServicesVaults | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     recover_soft_deleted_backup_protected_vm: {
-      value: cdktf.booleanToHclTerraform(struct!.recoverSoftDeletedBackupProtectedVm),
+      value: cdktn.booleanToHclTerraform(struct!.recoverSoftDeletedBackupProtectedVm),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -868,28 +868,28 @@ export interface AzurermProviderFeaturesResourceGroup {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#prevent_deletion_if_contains_resources AzurermProvider#prevent_deletion_if_contains_resources}
   */
-  readonly preventDeletionIfContainsResources?: boolean | cdktf.IResolvable;
+  readonly preventDeletionIfContainsResources?: boolean | cdktn.IResolvable;
 }
 
-export function azurermProviderFeaturesResourceGroupToTerraform(struct?: AzurermProviderFeaturesResourceGroup | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesResourceGroupToTerraform(struct?: AzurermProviderFeaturesResourceGroup | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    prevent_deletion_if_contains_resources: cdktf.booleanToTerraform(struct!.preventDeletionIfContainsResources),
+    prevent_deletion_if_contains_resources: cdktn.booleanToTerraform(struct!.preventDeletionIfContainsResources),
   }
 }
 
 
-export function azurermProviderFeaturesResourceGroupToHclTerraform(struct?: AzurermProviderFeaturesResourceGroup | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesResourceGroupToHclTerraform(struct?: AzurermProviderFeaturesResourceGroup | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     prevent_deletion_if_contains_resources: {
-      value: cdktf.booleanToHclTerraform(struct!.preventDeletionIfContainsResources),
+      value: cdktn.booleanToHclTerraform(struct!.preventDeletionIfContainsResources),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -904,28 +904,28 @@ export interface AzurermProviderFeaturesStorage {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#data_plane_available AzurermProvider#data_plane_available}
   */
-  readonly dataPlaneAvailable?: boolean | cdktf.IResolvable;
+  readonly dataPlaneAvailable?: boolean | cdktn.IResolvable;
 }
 
-export function azurermProviderFeaturesStorageToTerraform(struct?: AzurermProviderFeaturesStorage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesStorageToTerraform(struct?: AzurermProviderFeaturesStorage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data_plane_available: cdktf.booleanToTerraform(struct!.dataPlaneAvailable),
+    data_plane_available: cdktn.booleanToTerraform(struct!.dataPlaneAvailable),
   }
 }
 
 
-export function azurermProviderFeaturesStorageToHclTerraform(struct?: AzurermProviderFeaturesStorage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesStorageToHclTerraform(struct?: AzurermProviderFeaturesStorage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data_plane_available: {
-      value: cdktf.booleanToHclTerraform(struct!.dataPlaneAvailable),
+      value: cdktn.booleanToHclTerraform(struct!.dataPlaneAvailable),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -940,28 +940,28 @@ export interface AzurermProviderFeaturesSubscription {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#prevent_cancellation_on_destroy AzurermProvider#prevent_cancellation_on_destroy}
   */
-  readonly preventCancellationOnDestroy?: boolean | cdktf.IResolvable;
+  readonly preventCancellationOnDestroy?: boolean | cdktn.IResolvable;
 }
 
-export function azurermProviderFeaturesSubscriptionToTerraform(struct?: AzurermProviderFeaturesSubscription | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesSubscriptionToTerraform(struct?: AzurermProviderFeaturesSubscription | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    prevent_cancellation_on_destroy: cdktf.booleanToTerraform(struct!.preventCancellationOnDestroy),
+    prevent_cancellation_on_destroy: cdktn.booleanToTerraform(struct!.preventCancellationOnDestroy),
   }
 }
 
 
-export function azurermProviderFeaturesSubscriptionToHclTerraform(struct?: AzurermProviderFeaturesSubscription | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesSubscriptionToHclTerraform(struct?: AzurermProviderFeaturesSubscription | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     prevent_cancellation_on_destroy: {
-      value: cdktf.booleanToHclTerraform(struct!.preventCancellationOnDestroy),
+      value: cdktn.booleanToHclTerraform(struct!.preventCancellationOnDestroy),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -976,28 +976,28 @@ export interface AzurermProviderFeaturesTemplateDeployment {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#delete_nested_items_during_deletion AzurermProvider#delete_nested_items_during_deletion}
   */
-  readonly deleteNestedItemsDuringDeletion: boolean | cdktf.IResolvable;
+  readonly deleteNestedItemsDuringDeletion: boolean | cdktn.IResolvable;
 }
 
-export function azurermProviderFeaturesTemplateDeploymentToTerraform(struct?: AzurermProviderFeaturesTemplateDeployment | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesTemplateDeploymentToTerraform(struct?: AzurermProviderFeaturesTemplateDeployment | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    delete_nested_items_during_deletion: cdktf.booleanToTerraform(struct!.deleteNestedItemsDuringDeletion),
+    delete_nested_items_during_deletion: cdktn.booleanToTerraform(struct!.deleteNestedItemsDuringDeletion),
   }
 }
 
 
-export function azurermProviderFeaturesTemplateDeploymentToHclTerraform(struct?: AzurermProviderFeaturesTemplateDeployment | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesTemplateDeploymentToHclTerraform(struct?: AzurermProviderFeaturesTemplateDeployment | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     delete_nested_items_during_deletion: {
-      value: cdktf.booleanToHclTerraform(struct!.deleteNestedItemsDuringDeletion),
+      value: cdktn.booleanToHclTerraform(struct!.deleteNestedItemsDuringDeletion),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1012,61 +1012,61 @@ export interface AzurermProviderFeaturesVirtualMachine {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#delete_os_disk_on_deletion AzurermProvider#delete_os_disk_on_deletion}
   */
-  readonly deleteOsDiskOnDeletion?: boolean | cdktf.IResolvable;
+  readonly deleteOsDiskOnDeletion?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#detach_implicit_data_disk_on_deletion AzurermProvider#detach_implicit_data_disk_on_deletion}
   */
-  readonly detachImplicitDataDiskOnDeletion?: boolean | cdktf.IResolvable;
+  readonly detachImplicitDataDiskOnDeletion?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#graceful_shutdown AzurermProvider#graceful_shutdown}
   */
-  readonly gracefulShutdown?: boolean | cdktf.IResolvable;
+  readonly gracefulShutdown?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#skip_shutdown_and_force_delete AzurermProvider#skip_shutdown_and_force_delete}
   */
-  readonly skipShutdownAndForceDelete?: boolean | cdktf.IResolvable;
+  readonly skipShutdownAndForceDelete?: boolean | cdktn.IResolvable;
 }
 
-export function azurermProviderFeaturesVirtualMachineToTerraform(struct?: AzurermProviderFeaturesVirtualMachine | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesVirtualMachineToTerraform(struct?: AzurermProviderFeaturesVirtualMachine | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    delete_os_disk_on_deletion: cdktf.booleanToTerraform(struct!.deleteOsDiskOnDeletion),
-    detach_implicit_data_disk_on_deletion: cdktf.booleanToTerraform(struct!.detachImplicitDataDiskOnDeletion),
-    graceful_shutdown: cdktf.booleanToTerraform(struct!.gracefulShutdown),
-    skip_shutdown_and_force_delete: cdktf.booleanToTerraform(struct!.skipShutdownAndForceDelete),
+    delete_os_disk_on_deletion: cdktn.booleanToTerraform(struct!.deleteOsDiskOnDeletion),
+    detach_implicit_data_disk_on_deletion: cdktn.booleanToTerraform(struct!.detachImplicitDataDiskOnDeletion),
+    graceful_shutdown: cdktn.booleanToTerraform(struct!.gracefulShutdown),
+    skip_shutdown_and_force_delete: cdktn.booleanToTerraform(struct!.skipShutdownAndForceDelete),
   }
 }
 
 
-export function azurermProviderFeaturesVirtualMachineToHclTerraform(struct?: AzurermProviderFeaturesVirtualMachine | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesVirtualMachineToHclTerraform(struct?: AzurermProviderFeaturesVirtualMachine | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     delete_os_disk_on_deletion: {
-      value: cdktf.booleanToHclTerraform(struct!.deleteOsDiskOnDeletion),
+      value: cdktn.booleanToHclTerraform(struct!.deleteOsDiskOnDeletion),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     detach_implicit_data_disk_on_deletion: {
-      value: cdktf.booleanToHclTerraform(struct!.detachImplicitDataDiskOnDeletion),
+      value: cdktn.booleanToHclTerraform(struct!.detachImplicitDataDiskOnDeletion),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     graceful_shutdown: {
-      value: cdktf.booleanToHclTerraform(struct!.gracefulShutdown),
+      value: cdktn.booleanToHclTerraform(struct!.gracefulShutdown),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     skip_shutdown_and_force_delete: {
-      value: cdktf.booleanToHclTerraform(struct!.skipShutdownAndForceDelete),
+      value: cdktn.booleanToHclTerraform(struct!.skipShutdownAndForceDelete),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1081,61 +1081,61 @@ export interface AzurermProviderFeaturesVirtualMachineScaleSet {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#force_delete AzurermProvider#force_delete}
   */
-  readonly forceDelete?: boolean | cdktf.IResolvable;
+  readonly forceDelete?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#reimage_on_manual_upgrade AzurermProvider#reimage_on_manual_upgrade}
   */
-  readonly reimageOnManualUpgrade?: boolean | cdktf.IResolvable;
+  readonly reimageOnManualUpgrade?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#roll_instances_when_required AzurermProvider#roll_instances_when_required}
   */
-  readonly rollInstancesWhenRequired?: boolean | cdktf.IResolvable;
+  readonly rollInstancesWhenRequired?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#scale_to_zero_before_deletion AzurermProvider#scale_to_zero_before_deletion}
   */
-  readonly scaleToZeroBeforeDeletion?: boolean | cdktf.IResolvable;
+  readonly scaleToZeroBeforeDeletion?: boolean | cdktn.IResolvable;
 }
 
-export function azurermProviderFeaturesVirtualMachineScaleSetToTerraform(struct?: AzurermProviderFeaturesVirtualMachineScaleSet | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesVirtualMachineScaleSetToTerraform(struct?: AzurermProviderFeaturesVirtualMachineScaleSet | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    force_delete: cdktf.booleanToTerraform(struct!.forceDelete),
-    reimage_on_manual_upgrade: cdktf.booleanToTerraform(struct!.reimageOnManualUpgrade),
-    roll_instances_when_required: cdktf.booleanToTerraform(struct!.rollInstancesWhenRequired),
-    scale_to_zero_before_deletion: cdktf.booleanToTerraform(struct!.scaleToZeroBeforeDeletion),
+    force_delete: cdktn.booleanToTerraform(struct!.forceDelete),
+    reimage_on_manual_upgrade: cdktn.booleanToTerraform(struct!.reimageOnManualUpgrade),
+    roll_instances_when_required: cdktn.booleanToTerraform(struct!.rollInstancesWhenRequired),
+    scale_to_zero_before_deletion: cdktn.booleanToTerraform(struct!.scaleToZeroBeforeDeletion),
   }
 }
 
 
-export function azurermProviderFeaturesVirtualMachineScaleSetToHclTerraform(struct?: AzurermProviderFeaturesVirtualMachineScaleSet | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesVirtualMachineScaleSetToHclTerraform(struct?: AzurermProviderFeaturesVirtualMachineScaleSet | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     force_delete: {
-      value: cdktf.booleanToHclTerraform(struct!.forceDelete),
+      value: cdktn.booleanToHclTerraform(struct!.forceDelete),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     reimage_on_manual_upgrade: {
-      value: cdktf.booleanToHclTerraform(struct!.reimageOnManualUpgrade),
+      value: cdktn.booleanToHclTerraform(struct!.reimageOnManualUpgrade),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     roll_instances_when_required: {
-      value: cdktf.booleanToHclTerraform(struct!.rollInstancesWhenRequired),
+      value: cdktn.booleanToHclTerraform(struct!.rollInstancesWhenRequired),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     scale_to_zero_before_deletion: {
-      value: cdktf.booleanToHclTerraform(struct!.scaleToZeroBeforeDeletion),
+      value: cdktn.booleanToHclTerraform(struct!.scaleToZeroBeforeDeletion),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1152,262 +1152,262 @@ export interface AzurermProviderFeatures {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#api_management AzurermProvider#api_management}
   */
-  readonly apiManagement?: AzurermProviderFeaturesApiManagement[] | cdktf.IResolvable;
+  readonly apiManagement?: AzurermProviderFeaturesApiManagement[] | cdktn.IResolvable;
   /**
   * app_configuration block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#app_configuration AzurermProvider#app_configuration}
   */
-  readonly appConfiguration?: AzurermProviderFeaturesAppConfiguration[] | cdktf.IResolvable;
+  readonly appConfiguration?: AzurermProviderFeaturesAppConfiguration[] | cdktn.IResolvable;
   /**
   * application_insights block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#application_insights AzurermProvider#application_insights}
   */
-  readonly applicationInsights?: AzurermProviderFeaturesApplicationInsights[] | cdktf.IResolvable;
+  readonly applicationInsights?: AzurermProviderFeaturesApplicationInsights[] | cdktn.IResolvable;
   /**
   * cognitive_account block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#cognitive_account AzurermProvider#cognitive_account}
   */
-  readonly cognitiveAccount?: AzurermProviderFeaturesCognitiveAccount[] | cdktf.IResolvable;
+  readonly cognitiveAccount?: AzurermProviderFeaturesCognitiveAccount[] | cdktn.IResolvable;
   /**
   * databricks_workspace block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#databricks_workspace AzurermProvider#databricks_workspace}
   */
-  readonly databricksWorkspace?: AzurermProviderFeaturesDatabricksWorkspace[] | cdktf.IResolvable;
+  readonly databricksWorkspace?: AzurermProviderFeaturesDatabricksWorkspace[] | cdktn.IResolvable;
   /**
   * key_vault block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#key_vault AzurermProvider#key_vault}
   */
-  readonly keyVault?: AzurermProviderFeaturesKeyVault[] | cdktf.IResolvable;
+  readonly keyVault?: AzurermProviderFeaturesKeyVault[] | cdktn.IResolvable;
   /**
   * log_analytics_workspace block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#log_analytics_workspace AzurermProvider#log_analytics_workspace}
   */
-  readonly logAnalyticsWorkspace?: AzurermProviderFeaturesLogAnalyticsWorkspace[] | cdktf.IResolvable;
+  readonly logAnalyticsWorkspace?: AzurermProviderFeaturesLogAnalyticsWorkspace[] | cdktn.IResolvable;
   /**
   * machine_learning block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#machine_learning AzurermProvider#machine_learning}
   */
-  readonly machineLearning?: AzurermProviderFeaturesMachineLearning[] | cdktf.IResolvable;
+  readonly machineLearning?: AzurermProviderFeaturesMachineLearning[] | cdktn.IResolvable;
   /**
   * managed_disk block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#managed_disk AzurermProvider#managed_disk}
   */
-  readonly managedDisk?: AzurermProviderFeaturesManagedDisk[] | cdktf.IResolvable;
+  readonly managedDisk?: AzurermProviderFeaturesManagedDisk[] | cdktn.IResolvable;
   /**
   * netapp block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#netapp AzurermProvider#netapp}
   */
-  readonly netapp?: AzurermProviderFeaturesNetapp[] | cdktf.IResolvable;
+  readonly netapp?: AzurermProviderFeaturesNetapp[] | cdktn.IResolvable;
   /**
   * postgresql_flexible_server block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#postgresql_flexible_server AzurermProvider#postgresql_flexible_server}
   */
-  readonly postgresqlFlexibleServer?: AzurermProviderFeaturesPostgresqlFlexibleServer[] | cdktf.IResolvable;
+  readonly postgresqlFlexibleServer?: AzurermProviderFeaturesPostgresqlFlexibleServer[] | cdktn.IResolvable;
   /**
   * recovery_service block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#recovery_service AzurermProvider#recovery_service}
   */
-  readonly recoveryService?: AzurermProviderFeaturesRecoveryService[] | cdktf.IResolvable;
+  readonly recoveryService?: AzurermProviderFeaturesRecoveryService[] | cdktn.IResolvable;
   /**
   * recovery_services_vaults block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#recovery_services_vaults AzurermProvider#recovery_services_vaults}
   */
-  readonly recoveryServicesVaults?: AzurermProviderFeaturesRecoveryServicesVaults[] | cdktf.IResolvable;
+  readonly recoveryServicesVaults?: AzurermProviderFeaturesRecoveryServicesVaults[] | cdktn.IResolvable;
   /**
   * resource_group block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#resource_group AzurermProvider#resource_group}
   */
-  readonly resourceGroup?: AzurermProviderFeaturesResourceGroup[] | cdktf.IResolvable;
+  readonly resourceGroup?: AzurermProviderFeaturesResourceGroup[] | cdktn.IResolvable;
   /**
   * storage block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#storage AzurermProvider#storage}
   */
-  readonly storage?: AzurermProviderFeaturesStorage[] | cdktf.IResolvable;
+  readonly storage?: AzurermProviderFeaturesStorage[] | cdktn.IResolvable;
   /**
   * subscription block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#subscription AzurermProvider#subscription}
   */
-  readonly subscription?: AzurermProviderFeaturesSubscription[] | cdktf.IResolvable;
+  readonly subscription?: AzurermProviderFeaturesSubscription[] | cdktn.IResolvable;
   /**
   * template_deployment block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#template_deployment AzurermProvider#template_deployment}
   */
-  readonly templateDeployment?: AzurermProviderFeaturesTemplateDeployment[] | cdktf.IResolvable;
+  readonly templateDeployment?: AzurermProviderFeaturesTemplateDeployment[] | cdktn.IResolvable;
   /**
   * virtual_machine block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#virtual_machine AzurermProvider#virtual_machine}
   */
-  readonly virtualMachine?: AzurermProviderFeaturesVirtualMachine[] | cdktf.IResolvable;
+  readonly virtualMachine?: AzurermProviderFeaturesVirtualMachine[] | cdktn.IResolvable;
   /**
   * virtual_machine_scale_set block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#virtual_machine_scale_set AzurermProvider#virtual_machine_scale_set}
   */
-  readonly virtualMachineScaleSet?: AzurermProviderFeaturesVirtualMachineScaleSet[] | cdktf.IResolvable;
+  readonly virtualMachineScaleSet?: AzurermProviderFeaturesVirtualMachineScaleSet[] | cdktn.IResolvable;
 }
 
-export function azurermProviderFeaturesToTerraform(struct?: AzurermProviderFeatures | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesToTerraform(struct?: AzurermProviderFeatures | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    api_management: cdktf.listMapper(azurermProviderFeaturesApiManagementToTerraform, true)(struct!.apiManagement),
-    app_configuration: cdktf.listMapper(azurermProviderFeaturesAppConfigurationToTerraform, true)(struct!.appConfiguration),
-    application_insights: cdktf.listMapper(azurermProviderFeaturesApplicationInsightsToTerraform, true)(struct!.applicationInsights),
-    cognitive_account: cdktf.listMapper(azurermProviderFeaturesCognitiveAccountToTerraform, true)(struct!.cognitiveAccount),
-    databricks_workspace: cdktf.listMapper(azurermProviderFeaturesDatabricksWorkspaceToTerraform, true)(struct!.databricksWorkspace),
-    key_vault: cdktf.listMapper(azurermProviderFeaturesKeyVaultToTerraform, true)(struct!.keyVault),
-    log_analytics_workspace: cdktf.listMapper(azurermProviderFeaturesLogAnalyticsWorkspaceToTerraform, true)(struct!.logAnalyticsWorkspace),
-    machine_learning: cdktf.listMapper(azurermProviderFeaturesMachineLearningToTerraform, true)(struct!.machineLearning),
-    managed_disk: cdktf.listMapper(azurermProviderFeaturesManagedDiskToTerraform, true)(struct!.managedDisk),
-    netapp: cdktf.listMapper(azurermProviderFeaturesNetappToTerraform, true)(struct!.netapp),
-    postgresql_flexible_server: cdktf.listMapper(azurermProviderFeaturesPostgresqlFlexibleServerToTerraform, true)(struct!.postgresqlFlexibleServer),
-    recovery_service: cdktf.listMapper(azurermProviderFeaturesRecoveryServiceToTerraform, true)(struct!.recoveryService),
-    recovery_services_vaults: cdktf.listMapper(azurermProviderFeaturesRecoveryServicesVaultsToTerraform, true)(struct!.recoveryServicesVaults),
-    resource_group: cdktf.listMapper(azurermProviderFeaturesResourceGroupToTerraform, true)(struct!.resourceGroup),
-    storage: cdktf.listMapper(azurermProviderFeaturesStorageToTerraform, true)(struct!.storage),
-    subscription: cdktf.listMapper(azurermProviderFeaturesSubscriptionToTerraform, true)(struct!.subscription),
-    template_deployment: cdktf.listMapper(azurermProviderFeaturesTemplateDeploymentToTerraform, true)(struct!.templateDeployment),
-    virtual_machine: cdktf.listMapper(azurermProviderFeaturesVirtualMachineToTerraform, true)(struct!.virtualMachine),
-    virtual_machine_scale_set: cdktf.listMapper(azurermProviderFeaturesVirtualMachineScaleSetToTerraform, true)(struct!.virtualMachineScaleSet),
+    api_management: cdktn.listMapper(azurermProviderFeaturesApiManagementToTerraform, true)(struct!.apiManagement),
+    app_configuration: cdktn.listMapper(azurermProviderFeaturesAppConfigurationToTerraform, true)(struct!.appConfiguration),
+    application_insights: cdktn.listMapper(azurermProviderFeaturesApplicationInsightsToTerraform, true)(struct!.applicationInsights),
+    cognitive_account: cdktn.listMapper(azurermProviderFeaturesCognitiveAccountToTerraform, true)(struct!.cognitiveAccount),
+    databricks_workspace: cdktn.listMapper(azurermProviderFeaturesDatabricksWorkspaceToTerraform, true)(struct!.databricksWorkspace),
+    key_vault: cdktn.listMapper(azurermProviderFeaturesKeyVaultToTerraform, true)(struct!.keyVault),
+    log_analytics_workspace: cdktn.listMapper(azurermProviderFeaturesLogAnalyticsWorkspaceToTerraform, true)(struct!.logAnalyticsWorkspace),
+    machine_learning: cdktn.listMapper(azurermProviderFeaturesMachineLearningToTerraform, true)(struct!.machineLearning),
+    managed_disk: cdktn.listMapper(azurermProviderFeaturesManagedDiskToTerraform, true)(struct!.managedDisk),
+    netapp: cdktn.listMapper(azurermProviderFeaturesNetappToTerraform, true)(struct!.netapp),
+    postgresql_flexible_server: cdktn.listMapper(azurermProviderFeaturesPostgresqlFlexibleServerToTerraform, true)(struct!.postgresqlFlexibleServer),
+    recovery_service: cdktn.listMapper(azurermProviderFeaturesRecoveryServiceToTerraform, true)(struct!.recoveryService),
+    recovery_services_vaults: cdktn.listMapper(azurermProviderFeaturesRecoveryServicesVaultsToTerraform, true)(struct!.recoveryServicesVaults),
+    resource_group: cdktn.listMapper(azurermProviderFeaturesResourceGroupToTerraform, true)(struct!.resourceGroup),
+    storage: cdktn.listMapper(azurermProviderFeaturesStorageToTerraform, true)(struct!.storage),
+    subscription: cdktn.listMapper(azurermProviderFeaturesSubscriptionToTerraform, true)(struct!.subscription),
+    template_deployment: cdktn.listMapper(azurermProviderFeaturesTemplateDeploymentToTerraform, true)(struct!.templateDeployment),
+    virtual_machine: cdktn.listMapper(azurermProviderFeaturesVirtualMachineToTerraform, true)(struct!.virtualMachine),
+    virtual_machine_scale_set: cdktn.listMapper(azurermProviderFeaturesVirtualMachineScaleSetToTerraform, true)(struct!.virtualMachineScaleSet),
   }
 }
 
 
-export function azurermProviderFeaturesToHclTerraform(struct?: AzurermProviderFeatures | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azurermProviderFeaturesToHclTerraform(struct?: AzurermProviderFeatures | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     api_management: {
-      value: cdktf.listMapperHcl(azurermProviderFeaturesApiManagementToHclTerraform, true)(struct!.apiManagement),
+      value: cdktn.listMapperHcl(azurermProviderFeaturesApiManagementToHclTerraform, true)(struct!.apiManagement),
       isBlock: true,
       type: "list",
       storageClassType: "AzurermProviderFeaturesApiManagementList",
     },
     app_configuration: {
-      value: cdktf.listMapperHcl(azurermProviderFeaturesAppConfigurationToHclTerraform, true)(struct!.appConfiguration),
+      value: cdktn.listMapperHcl(azurermProviderFeaturesAppConfigurationToHclTerraform, true)(struct!.appConfiguration),
       isBlock: true,
       type: "list",
       storageClassType: "AzurermProviderFeaturesAppConfigurationList",
     },
     application_insights: {
-      value: cdktf.listMapperHcl(azurermProviderFeaturesApplicationInsightsToHclTerraform, true)(struct!.applicationInsights),
+      value: cdktn.listMapperHcl(azurermProviderFeaturesApplicationInsightsToHclTerraform, true)(struct!.applicationInsights),
       isBlock: true,
       type: "list",
       storageClassType: "AzurermProviderFeaturesApplicationInsightsList",
     },
     cognitive_account: {
-      value: cdktf.listMapperHcl(azurermProviderFeaturesCognitiveAccountToHclTerraform, true)(struct!.cognitiveAccount),
+      value: cdktn.listMapperHcl(azurermProviderFeaturesCognitiveAccountToHclTerraform, true)(struct!.cognitiveAccount),
       isBlock: true,
       type: "list",
       storageClassType: "AzurermProviderFeaturesCognitiveAccountList",
     },
     databricks_workspace: {
-      value: cdktf.listMapperHcl(azurermProviderFeaturesDatabricksWorkspaceToHclTerraform, true)(struct!.databricksWorkspace),
+      value: cdktn.listMapperHcl(azurermProviderFeaturesDatabricksWorkspaceToHclTerraform, true)(struct!.databricksWorkspace),
       isBlock: true,
       type: "list",
       storageClassType: "AzurermProviderFeaturesDatabricksWorkspaceList",
     },
     key_vault: {
-      value: cdktf.listMapperHcl(azurermProviderFeaturesKeyVaultToHclTerraform, true)(struct!.keyVault),
+      value: cdktn.listMapperHcl(azurermProviderFeaturesKeyVaultToHclTerraform, true)(struct!.keyVault),
       isBlock: true,
       type: "list",
       storageClassType: "AzurermProviderFeaturesKeyVaultList",
     },
     log_analytics_workspace: {
-      value: cdktf.listMapperHcl(azurermProviderFeaturesLogAnalyticsWorkspaceToHclTerraform, true)(struct!.logAnalyticsWorkspace),
+      value: cdktn.listMapperHcl(azurermProviderFeaturesLogAnalyticsWorkspaceToHclTerraform, true)(struct!.logAnalyticsWorkspace),
       isBlock: true,
       type: "list",
       storageClassType: "AzurermProviderFeaturesLogAnalyticsWorkspaceList",
     },
     machine_learning: {
-      value: cdktf.listMapperHcl(azurermProviderFeaturesMachineLearningToHclTerraform, true)(struct!.machineLearning),
+      value: cdktn.listMapperHcl(azurermProviderFeaturesMachineLearningToHclTerraform, true)(struct!.machineLearning),
       isBlock: true,
       type: "list",
       storageClassType: "AzurermProviderFeaturesMachineLearningList",
     },
     managed_disk: {
-      value: cdktf.listMapperHcl(azurermProviderFeaturesManagedDiskToHclTerraform, true)(struct!.managedDisk),
+      value: cdktn.listMapperHcl(azurermProviderFeaturesManagedDiskToHclTerraform, true)(struct!.managedDisk),
       isBlock: true,
       type: "list",
       storageClassType: "AzurermProviderFeaturesManagedDiskList",
     },
     netapp: {
-      value: cdktf.listMapperHcl(azurermProviderFeaturesNetappToHclTerraform, true)(struct!.netapp),
+      value: cdktn.listMapperHcl(azurermProviderFeaturesNetappToHclTerraform, true)(struct!.netapp),
       isBlock: true,
       type: "list",
       storageClassType: "AzurermProviderFeaturesNetappList",
     },
     postgresql_flexible_server: {
-      value: cdktf.listMapperHcl(azurermProviderFeaturesPostgresqlFlexibleServerToHclTerraform, true)(struct!.postgresqlFlexibleServer),
+      value: cdktn.listMapperHcl(azurermProviderFeaturesPostgresqlFlexibleServerToHclTerraform, true)(struct!.postgresqlFlexibleServer),
       isBlock: true,
       type: "list",
       storageClassType: "AzurermProviderFeaturesPostgresqlFlexibleServerList",
     },
     recovery_service: {
-      value: cdktf.listMapperHcl(azurermProviderFeaturesRecoveryServiceToHclTerraform, true)(struct!.recoveryService),
+      value: cdktn.listMapperHcl(azurermProviderFeaturesRecoveryServiceToHclTerraform, true)(struct!.recoveryService),
       isBlock: true,
       type: "list",
       storageClassType: "AzurermProviderFeaturesRecoveryServiceList",
     },
     recovery_services_vaults: {
-      value: cdktf.listMapperHcl(azurermProviderFeaturesRecoveryServicesVaultsToHclTerraform, true)(struct!.recoveryServicesVaults),
+      value: cdktn.listMapperHcl(azurermProviderFeaturesRecoveryServicesVaultsToHclTerraform, true)(struct!.recoveryServicesVaults),
       isBlock: true,
       type: "list",
       storageClassType: "AzurermProviderFeaturesRecoveryServicesVaultsList",
     },
     resource_group: {
-      value: cdktf.listMapperHcl(azurermProviderFeaturesResourceGroupToHclTerraform, true)(struct!.resourceGroup),
+      value: cdktn.listMapperHcl(azurermProviderFeaturesResourceGroupToHclTerraform, true)(struct!.resourceGroup),
       isBlock: true,
       type: "list",
       storageClassType: "AzurermProviderFeaturesResourceGroupList",
     },
     storage: {
-      value: cdktf.listMapperHcl(azurermProviderFeaturesStorageToHclTerraform, true)(struct!.storage),
+      value: cdktn.listMapperHcl(azurermProviderFeaturesStorageToHclTerraform, true)(struct!.storage),
       isBlock: true,
       type: "list",
       storageClassType: "AzurermProviderFeaturesStorageList",
     },
     subscription: {
-      value: cdktf.listMapperHcl(azurermProviderFeaturesSubscriptionToHclTerraform, true)(struct!.subscription),
+      value: cdktn.listMapperHcl(azurermProviderFeaturesSubscriptionToHclTerraform, true)(struct!.subscription),
       isBlock: true,
       type: "list",
       storageClassType: "AzurermProviderFeaturesSubscriptionList",
     },
     template_deployment: {
-      value: cdktf.listMapperHcl(azurermProviderFeaturesTemplateDeploymentToHclTerraform, true)(struct!.templateDeployment),
+      value: cdktn.listMapperHcl(azurermProviderFeaturesTemplateDeploymentToHclTerraform, true)(struct!.templateDeployment),
       isBlock: true,
       type: "list",
       storageClassType: "AzurermProviderFeaturesTemplateDeploymentList",
     },
     virtual_machine: {
-      value: cdktf.listMapperHcl(azurermProviderFeaturesVirtualMachineToHclTerraform, true)(struct!.virtualMachine),
+      value: cdktn.listMapperHcl(azurermProviderFeaturesVirtualMachineToHclTerraform, true)(struct!.virtualMachine),
       isBlock: true,
       type: "list",
       storageClassType: "AzurermProviderFeaturesVirtualMachineList",
     },
     virtual_machine_scale_set: {
-      value: cdktf.listMapperHcl(azurermProviderFeaturesVirtualMachineScaleSetToHclTerraform, true)(struct!.virtualMachineScaleSet),
+      value: cdktn.listMapperHcl(azurermProviderFeaturesVirtualMachineScaleSetToHclTerraform, true)(struct!.virtualMachineScaleSet),
       isBlock: true,
       type: "list",
       storageClassType: "AzurermProviderFeaturesVirtualMachineScaleSetList",
@@ -1422,7 +1422,7 @@ export function azurermProviderFeaturesToHclTerraform(struct?: AzurermProviderFe
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs azurerm}
 */
-export class AzurermProvider extends cdktf.TerraformProvider {
+export class AzurermProvider extends cdktn.TerraformProvider {
 
   // =================
   // STATIC PROPERTIES
@@ -1433,14 +1433,14 @@ export class AzurermProvider extends cdktf.TerraformProvider {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AzurermProvider resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AzurermProvider resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AzurermProvider to import
   * @param importFromId The id of the existing AzurermProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AzurermProvider to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm", importId: importFromId, provider });
       }
 
   // ===========
@@ -1647,11 +1647,11 @@ export class AzurermProvider extends cdktf.TerraformProvider {
   }
 
   // disable_correlation_request_id - computed: false, optional: true, required: false
-  private _disableCorrelationRequestId?: boolean | cdktf.IResolvable; 
+  private _disableCorrelationRequestId?: boolean | cdktn.IResolvable; 
   public get disableCorrelationRequestId() {
     return this._disableCorrelationRequestId;
   }
-  public set disableCorrelationRequestId(value: boolean | cdktf.IResolvable | undefined) {
+  public set disableCorrelationRequestId(value: boolean | cdktn.IResolvable | undefined) {
     this._disableCorrelationRequestId = value;
   }
   public resetDisableCorrelationRequestId() {
@@ -1663,11 +1663,11 @@ export class AzurermProvider extends cdktf.TerraformProvider {
   }
 
   // disable_terraform_partner_id - computed: false, optional: true, required: false
-  private _disableTerraformPartnerId?: boolean | cdktf.IResolvable; 
+  private _disableTerraformPartnerId?: boolean | cdktn.IResolvable; 
   public get disableTerraformPartnerId() {
     return this._disableTerraformPartnerId;
   }
-  public set disableTerraformPartnerId(value: boolean | cdktf.IResolvable | undefined) {
+  public set disableTerraformPartnerId(value: boolean | cdktn.IResolvable | undefined) {
     this._disableTerraformPartnerId = value;
   }
   public resetDisableTerraformPartnerId() {
@@ -1855,11 +1855,11 @@ export class AzurermProvider extends cdktf.TerraformProvider {
   }
 
   // skip_provider_registration - computed: false, optional: true, required: false
-  private _skipProviderRegistration?: boolean | cdktf.IResolvable; 
+  private _skipProviderRegistration?: boolean | cdktn.IResolvable; 
   public get skipProviderRegistration() {
     return this._skipProviderRegistration;
   }
-  public set skipProviderRegistration(value: boolean | cdktf.IResolvable | undefined) {
+  public set skipProviderRegistration(value: boolean | cdktn.IResolvable | undefined) {
     this._skipProviderRegistration = value;
   }
   public resetSkipProviderRegistration() {
@@ -1871,11 +1871,11 @@ export class AzurermProvider extends cdktf.TerraformProvider {
   }
 
   // storage_use_azuread - computed: false, optional: true, required: false
-  private _storageUseAzuread?: boolean | cdktf.IResolvable; 
+  private _storageUseAzuread?: boolean | cdktn.IResolvable; 
   public get storageUseAzuread() {
     return this._storageUseAzuread;
   }
-  public set storageUseAzuread(value: boolean | cdktf.IResolvable | undefined) {
+  public set storageUseAzuread(value: boolean | cdktn.IResolvable | undefined) {
     this._storageUseAzuread = value;
   }
   public resetStorageUseAzuread() {
@@ -1919,11 +1919,11 @@ export class AzurermProvider extends cdktf.TerraformProvider {
   }
 
   // use_aks_workload_identity - computed: false, optional: true, required: false
-  private _useAksWorkloadIdentity?: boolean | cdktf.IResolvable; 
+  private _useAksWorkloadIdentity?: boolean | cdktn.IResolvable; 
   public get useAksWorkloadIdentity() {
     return this._useAksWorkloadIdentity;
   }
-  public set useAksWorkloadIdentity(value: boolean | cdktf.IResolvable | undefined) {
+  public set useAksWorkloadIdentity(value: boolean | cdktn.IResolvable | undefined) {
     this._useAksWorkloadIdentity = value;
   }
   public resetUseAksWorkloadIdentity() {
@@ -1935,11 +1935,11 @@ export class AzurermProvider extends cdktf.TerraformProvider {
   }
 
   // use_cli - computed: false, optional: true, required: false
-  private _useCli?: boolean | cdktf.IResolvable; 
+  private _useCli?: boolean | cdktn.IResolvable; 
   public get useCli() {
     return this._useCli;
   }
-  public set useCli(value: boolean | cdktf.IResolvable | undefined) {
+  public set useCli(value: boolean | cdktn.IResolvable | undefined) {
     this._useCli = value;
   }
   public resetUseCli() {
@@ -1951,11 +1951,11 @@ export class AzurermProvider extends cdktf.TerraformProvider {
   }
 
   // use_msi - computed: false, optional: true, required: false
-  private _useMsi?: boolean | cdktf.IResolvable; 
+  private _useMsi?: boolean | cdktn.IResolvable; 
   public get useMsi() {
     return this._useMsi;
   }
-  public set useMsi(value: boolean | cdktf.IResolvable | undefined) {
+  public set useMsi(value: boolean | cdktn.IResolvable | undefined) {
     this._useMsi = value;
   }
   public resetUseMsi() {
@@ -1967,11 +1967,11 @@ export class AzurermProvider extends cdktf.TerraformProvider {
   }
 
   // use_oidc - computed: false, optional: true, required: false
-  private _useOidc?: boolean | cdktf.IResolvable; 
+  private _useOidc?: boolean | cdktn.IResolvable; 
   public get useOidc() {
     return this._useOidc;
   }
-  public set useOidc(value: boolean | cdktf.IResolvable | undefined) {
+  public set useOidc(value: boolean | cdktn.IResolvable | undefined) {
     this._useOidc = value;
   }
   public resetUseOidc() {
@@ -1999,11 +1999,11 @@ export class AzurermProvider extends cdktf.TerraformProvider {
   }
 
   // features - computed: false, optional: true, required: false
-  private _features?: AzurermProviderFeatures[] | cdktf.IResolvable; 
+  private _features?: AzurermProviderFeatures[] | cdktn.IResolvable; 
   public get features() {
     return this._features;
   }
-  public set features(value: AzurermProviderFeatures[] | cdktf.IResolvable | undefined) {
+  public set features(value: AzurermProviderFeatures[] | cdktn.IResolvable | undefined) {
     this._features = value;
   }
   public resetFeatures() {
@@ -2020,231 +2020,231 @@ export class AzurermProvider extends cdktf.TerraformProvider {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      ado_pipeline_service_connection_id: cdktf.stringToTerraform(this._adoPipelineServiceConnectionId),
-      auxiliary_tenant_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._auxiliaryTenantIds),
-      client_certificate: cdktf.stringToTerraform(this._clientCertificate),
-      client_certificate_password: cdktf.stringToTerraform(this._clientCertificatePassword),
-      client_certificate_path: cdktf.stringToTerraform(this._clientCertificatePath),
-      client_id: cdktf.stringToTerraform(this._clientId),
-      client_id_file_path: cdktf.stringToTerraform(this._clientIdFilePath),
-      client_secret: cdktf.stringToTerraform(this._clientSecret),
-      client_secret_file_path: cdktf.stringToTerraform(this._clientSecretFilePath),
-      disable_correlation_request_id: cdktf.booleanToTerraform(this._disableCorrelationRequestId),
-      disable_terraform_partner_id: cdktf.booleanToTerraform(this._disableTerraformPartnerId),
-      environment: cdktf.stringToTerraform(this._environment),
-      metadata_host: cdktf.stringToTerraform(this._metadataHost),
-      msi_api_version: cdktf.stringToTerraform(this._msiApiVersion),
-      msi_endpoint: cdktf.stringToTerraform(this._msiEndpoint),
-      oidc_request_token: cdktf.stringToTerraform(this._oidcRequestToken),
-      oidc_request_url: cdktf.stringToTerraform(this._oidcRequestUrl),
-      oidc_token: cdktf.stringToTerraform(this._oidcToken),
-      oidc_token_file_path: cdktf.stringToTerraform(this._oidcTokenFilePath),
-      partner_id: cdktf.stringToTerraform(this._partnerId),
-      resource_provider_registrations: cdktf.stringToTerraform(this._resourceProviderRegistrations),
-      resource_providers_to_register: cdktf.listMapper(cdktf.stringToTerraform, false)(this._resourceProvidersToRegister),
-      skip_provider_registration: cdktf.booleanToTerraform(this._skipProviderRegistration),
-      storage_use_azuread: cdktf.booleanToTerraform(this._storageUseAzuread),
-      subscription_id: cdktf.stringToTerraform(this._subscriptionId),
-      tenant_id: cdktf.stringToTerraform(this._tenantId),
-      use_aks_workload_identity: cdktf.booleanToTerraform(this._useAksWorkloadIdentity),
-      use_cli: cdktf.booleanToTerraform(this._useCli),
-      use_msi: cdktf.booleanToTerraform(this._useMsi),
-      use_oidc: cdktf.booleanToTerraform(this._useOidc),
-      alias: cdktf.stringToTerraform(this._alias),
-      features: cdktf.listMapper(azurermProviderFeaturesToTerraform, true)(this._features),
+      ado_pipeline_service_connection_id: cdktn.stringToTerraform(this._adoPipelineServiceConnectionId),
+      auxiliary_tenant_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._auxiliaryTenantIds),
+      client_certificate: cdktn.stringToTerraform(this._clientCertificate),
+      client_certificate_password: cdktn.stringToTerraform(this._clientCertificatePassword),
+      client_certificate_path: cdktn.stringToTerraform(this._clientCertificatePath),
+      client_id: cdktn.stringToTerraform(this._clientId),
+      client_id_file_path: cdktn.stringToTerraform(this._clientIdFilePath),
+      client_secret: cdktn.stringToTerraform(this._clientSecret),
+      client_secret_file_path: cdktn.stringToTerraform(this._clientSecretFilePath),
+      disable_correlation_request_id: cdktn.booleanToTerraform(this._disableCorrelationRequestId),
+      disable_terraform_partner_id: cdktn.booleanToTerraform(this._disableTerraformPartnerId),
+      environment: cdktn.stringToTerraform(this._environment),
+      metadata_host: cdktn.stringToTerraform(this._metadataHost),
+      msi_api_version: cdktn.stringToTerraform(this._msiApiVersion),
+      msi_endpoint: cdktn.stringToTerraform(this._msiEndpoint),
+      oidc_request_token: cdktn.stringToTerraform(this._oidcRequestToken),
+      oidc_request_url: cdktn.stringToTerraform(this._oidcRequestUrl),
+      oidc_token: cdktn.stringToTerraform(this._oidcToken),
+      oidc_token_file_path: cdktn.stringToTerraform(this._oidcTokenFilePath),
+      partner_id: cdktn.stringToTerraform(this._partnerId),
+      resource_provider_registrations: cdktn.stringToTerraform(this._resourceProviderRegistrations),
+      resource_providers_to_register: cdktn.listMapper(cdktn.stringToTerraform, false)(this._resourceProvidersToRegister),
+      skip_provider_registration: cdktn.booleanToTerraform(this._skipProviderRegistration),
+      storage_use_azuread: cdktn.booleanToTerraform(this._storageUseAzuread),
+      subscription_id: cdktn.stringToTerraform(this._subscriptionId),
+      tenant_id: cdktn.stringToTerraform(this._tenantId),
+      use_aks_workload_identity: cdktn.booleanToTerraform(this._useAksWorkloadIdentity),
+      use_cli: cdktn.booleanToTerraform(this._useCli),
+      use_msi: cdktn.booleanToTerraform(this._useMsi),
+      use_oidc: cdktn.booleanToTerraform(this._useOidc),
+      alias: cdktn.stringToTerraform(this._alias),
+      features: cdktn.listMapper(azurermProviderFeaturesToTerraform, true)(this._features),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       ado_pipeline_service_connection_id: {
-        value: cdktf.stringToHclTerraform(this._adoPipelineServiceConnectionId),
+        value: cdktn.stringToHclTerraform(this._adoPipelineServiceConnectionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       auxiliary_tenant_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._auxiliaryTenantIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._auxiliaryTenantIds),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       client_certificate: {
-        value: cdktf.stringToHclTerraform(this._clientCertificate),
+        value: cdktn.stringToHclTerraform(this._clientCertificate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_certificate_password: {
-        value: cdktf.stringToHclTerraform(this._clientCertificatePassword),
+        value: cdktn.stringToHclTerraform(this._clientCertificatePassword),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_certificate_path: {
-        value: cdktf.stringToHclTerraform(this._clientCertificatePath),
+        value: cdktn.stringToHclTerraform(this._clientCertificatePath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_id: {
-        value: cdktf.stringToHclTerraform(this._clientId),
+        value: cdktn.stringToHclTerraform(this._clientId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_id_file_path: {
-        value: cdktf.stringToHclTerraform(this._clientIdFilePath),
+        value: cdktn.stringToHclTerraform(this._clientIdFilePath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_secret: {
-        value: cdktf.stringToHclTerraform(this._clientSecret),
+        value: cdktn.stringToHclTerraform(this._clientSecret),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_secret_file_path: {
-        value: cdktf.stringToHclTerraform(this._clientSecretFilePath),
+        value: cdktn.stringToHclTerraform(this._clientSecretFilePath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disable_correlation_request_id: {
-        value: cdktf.booleanToHclTerraform(this._disableCorrelationRequestId),
+        value: cdktn.booleanToHclTerraform(this._disableCorrelationRequestId),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       disable_terraform_partner_id: {
-        value: cdktf.booleanToHclTerraform(this._disableTerraformPartnerId),
+        value: cdktn.booleanToHclTerraform(this._disableTerraformPartnerId),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       environment: {
-        value: cdktf.stringToHclTerraform(this._environment),
+        value: cdktn.stringToHclTerraform(this._environment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       metadata_host: {
-        value: cdktf.stringToHclTerraform(this._metadataHost),
+        value: cdktn.stringToHclTerraform(this._metadataHost),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       msi_api_version: {
-        value: cdktf.stringToHclTerraform(this._msiApiVersion),
+        value: cdktn.stringToHclTerraform(this._msiApiVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       msi_endpoint: {
-        value: cdktf.stringToHclTerraform(this._msiEndpoint),
+        value: cdktn.stringToHclTerraform(this._msiEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       oidc_request_token: {
-        value: cdktf.stringToHclTerraform(this._oidcRequestToken),
+        value: cdktn.stringToHclTerraform(this._oidcRequestToken),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       oidc_request_url: {
-        value: cdktf.stringToHclTerraform(this._oidcRequestUrl),
+        value: cdktn.stringToHclTerraform(this._oidcRequestUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       oidc_token: {
-        value: cdktf.stringToHclTerraform(this._oidcToken),
+        value: cdktn.stringToHclTerraform(this._oidcToken),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       oidc_token_file_path: {
-        value: cdktf.stringToHclTerraform(this._oidcTokenFilePath),
+        value: cdktn.stringToHclTerraform(this._oidcTokenFilePath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       partner_id: {
-        value: cdktf.stringToHclTerraform(this._partnerId),
+        value: cdktn.stringToHclTerraform(this._partnerId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_provider_registrations: {
-        value: cdktf.stringToHclTerraform(this._resourceProviderRegistrations),
+        value: cdktn.stringToHclTerraform(this._resourceProviderRegistrations),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_providers_to_register: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._resourceProvidersToRegister),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._resourceProvidersToRegister),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       skip_provider_registration: {
-        value: cdktf.booleanToHclTerraform(this._skipProviderRegistration),
+        value: cdktn.booleanToHclTerraform(this._skipProviderRegistration),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       storage_use_azuread: {
-        value: cdktf.booleanToHclTerraform(this._storageUseAzuread),
+        value: cdktn.booleanToHclTerraform(this._storageUseAzuread),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       subscription_id: {
-        value: cdktf.stringToHclTerraform(this._subscriptionId),
+        value: cdktn.stringToHclTerraform(this._subscriptionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tenant_id: {
-        value: cdktf.stringToHclTerraform(this._tenantId),
+        value: cdktn.stringToHclTerraform(this._tenantId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       use_aks_workload_identity: {
-        value: cdktf.booleanToHclTerraform(this._useAksWorkloadIdentity),
+        value: cdktn.booleanToHclTerraform(this._useAksWorkloadIdentity),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       use_cli: {
-        value: cdktf.booleanToHclTerraform(this._useCli),
+        value: cdktn.booleanToHclTerraform(this._useCli),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       use_msi: {
-        value: cdktf.booleanToHclTerraform(this._useMsi),
+        value: cdktn.booleanToHclTerraform(this._useMsi),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       use_oidc: {
-        value: cdktf.booleanToHclTerraform(this._useOidc),
+        value: cdktn.booleanToHclTerraform(this._useOidc),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       alias: {
-        value: cdktf.stringToHclTerraform(this._alias),
+        value: cdktn.stringToHclTerraform(this._alias),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       features: {
-        value: cdktf.listMapperHcl(azurermProviderFeaturesToHclTerraform, true)(this._features),
+        value: cdktn.listMapperHcl(azurermProviderFeaturesToHclTerraform, true)(this._features),
         isBlock: true,
         type: "list",
         storageClassType: "AzurermProviderFeaturesList",

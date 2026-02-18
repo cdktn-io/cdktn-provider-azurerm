@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LogAnalyticsWorkspaceTableCustomLogConfig extends cdktf.TerraformMetaArguments {
+export interface LogAnalyticsWorkspaceTableCustomLogConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/log_analytics_workspace_table_custom_log#description LogAnalyticsWorkspaceTableCustomLog#description}
   */
@@ -52,7 +52,7 @@ export interface LogAnalyticsWorkspaceTableCustomLogConfig extends cdktf.Terrafo
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/log_analytics_workspace_table_custom_log#column LogAnalyticsWorkspaceTableCustomLog#column}
   */
-  readonly column: LogAnalyticsWorkspaceTableCustomLogColumn[] | cdktf.IResolvable;
+  readonly column: LogAnalyticsWorkspaceTableCustomLogColumn[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -64,8 +64,8 @@ export interface LogAnalyticsWorkspaceTableCustomLogStandardColumn {
 }
 
 export function logAnalyticsWorkspaceTableCustomLogStandardColumnToTerraform(struct?: LogAnalyticsWorkspaceTableCustomLogStandardColumn): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -74,8 +74,8 @@ export function logAnalyticsWorkspaceTableCustomLogStandardColumnToTerraform(str
 
 
 export function logAnalyticsWorkspaceTableCustomLogStandardColumnToHclTerraform(struct?: LogAnalyticsWorkspaceTableCustomLogStandardColumn): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -83,7 +83,7 @@ export function logAnalyticsWorkspaceTableCustomLogStandardColumnToHclTerraform(
   return attrs;
 }
 
-export class LogAnalyticsWorkspaceTableCustomLogStandardColumnOutputReference extends cdktf.ComplexObject {
+export class LogAnalyticsWorkspaceTableCustomLogStandardColumnOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -92,7 +92,7 @@ export class LogAnalyticsWorkspaceTableCustomLogStandardColumnOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -132,14 +132,14 @@ export class LogAnalyticsWorkspaceTableCustomLogStandardColumnOutputReference ex
   }
 }
 
-export class LogAnalyticsWorkspaceTableCustomLogStandardColumnList extends cdktf.ComplexList {
+export class LogAnalyticsWorkspaceTableCustomLogStandardColumnList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -169,46 +169,46 @@ export interface LogAnalyticsWorkspaceTableCustomLogColumn {
   readonly type: string;
 }
 
-export function logAnalyticsWorkspaceTableCustomLogColumnToTerraform(struct?: LogAnalyticsWorkspaceTableCustomLogColumn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logAnalyticsWorkspaceTableCustomLogColumnToTerraform(struct?: LogAnalyticsWorkspaceTableCustomLogColumn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    display_name: cdktf.stringToTerraform(struct!.displayName),
-    name: cdktf.stringToTerraform(struct!.name),
-    type: cdktf.stringToTerraform(struct!.type),
+    description: cdktn.stringToTerraform(struct!.description),
+    display_name: cdktn.stringToTerraform(struct!.displayName),
+    name: cdktn.stringToTerraform(struct!.name),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function logAnalyticsWorkspaceTableCustomLogColumnToHclTerraform(struct?: LogAnalyticsWorkspaceTableCustomLogColumn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logAnalyticsWorkspaceTableCustomLogColumnToHclTerraform(struct?: LogAnalyticsWorkspaceTableCustomLogColumn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     display_name: {
-      value: cdktf.stringToHclTerraform(struct!.displayName),
+      value: cdktn.stringToHclTerraform(struct!.displayName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -219,9 +219,9 @@ export function logAnalyticsWorkspaceTableCustomLogColumnToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogAnalyticsWorkspaceTableCustomLogColumnOutputReference extends cdktf.ComplexObject {
+export class LogAnalyticsWorkspaceTableCustomLogColumnOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -229,11 +229,11 @@ export class LogAnalyticsWorkspaceTableCustomLogColumnOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LogAnalyticsWorkspaceTableCustomLogColumn | cdktf.IResolvable | undefined {
+  public get internalValue(): LogAnalyticsWorkspaceTableCustomLogColumn | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -258,7 +258,7 @@ export class LogAnalyticsWorkspaceTableCustomLogColumnOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogAnalyticsWorkspaceTableCustomLogColumn | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogAnalyticsWorkspaceTableCustomLogColumn | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -267,7 +267,7 @@ export class LogAnalyticsWorkspaceTableCustomLogColumnOutputReference extends cd
       this._name = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -340,15 +340,15 @@ export class LogAnalyticsWorkspaceTableCustomLogColumnOutputReference extends cd
   }
 }
 
-export class LogAnalyticsWorkspaceTableCustomLogColumnList extends cdktf.ComplexList {
-  public internalValue? : LogAnalyticsWorkspaceTableCustomLogColumn[] | cdktf.IResolvable
+export class LogAnalyticsWorkspaceTableCustomLogColumnList extends cdktn.ComplexList {
+  public internalValue? : LogAnalyticsWorkspaceTableCustomLogColumn[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -378,46 +378,46 @@ export interface LogAnalyticsWorkspaceTableCustomLogTimeouts {
   readonly update?: string;
 }
 
-export function logAnalyticsWorkspaceTableCustomLogTimeoutsToTerraform(struct?: LogAnalyticsWorkspaceTableCustomLogTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logAnalyticsWorkspaceTableCustomLogTimeoutsToTerraform(struct?: LogAnalyticsWorkspaceTableCustomLogTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function logAnalyticsWorkspaceTableCustomLogTimeoutsToHclTerraform(struct?: LogAnalyticsWorkspaceTableCustomLogTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logAnalyticsWorkspaceTableCustomLogTimeoutsToHclTerraform(struct?: LogAnalyticsWorkspaceTableCustomLogTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -428,19 +428,19 @@ export function logAnalyticsWorkspaceTableCustomLogTimeoutsToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogAnalyticsWorkspaceTableCustomLogTimeoutsOutputReference extends cdktf.ComplexObject {
+export class LogAnalyticsWorkspaceTableCustomLogTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LogAnalyticsWorkspaceTableCustomLogTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): LogAnalyticsWorkspaceTableCustomLogTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -465,7 +465,7 @@ export class LogAnalyticsWorkspaceTableCustomLogTimeoutsOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogAnalyticsWorkspaceTableCustomLogTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogAnalyticsWorkspaceTableCustomLogTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -474,7 +474,7 @@ export class LogAnalyticsWorkspaceTableCustomLogTimeoutsOutputReference extends 
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -556,7 +556,7 @@ export class LogAnalyticsWorkspaceTableCustomLogTimeoutsOutputReference extends 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/log_analytics_workspace_table_custom_log azurerm_log_analytics_workspace_table_custom_log}
 */
-export class LogAnalyticsWorkspaceTableCustomLog extends cdktf.TerraformResource {
+export class LogAnalyticsWorkspaceTableCustomLog extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -567,14 +567,14 @@ export class LogAnalyticsWorkspaceTableCustomLog extends cdktf.TerraformResource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LogAnalyticsWorkspaceTableCustomLog resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LogAnalyticsWorkspaceTableCustomLog resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LogAnalyticsWorkspaceTableCustomLog to import
   * @param importFromId The id of the existing LogAnalyticsWorkspaceTableCustomLog that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/log_analytics_workspace_table_custom_log#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LogAnalyticsWorkspaceTableCustomLog to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_log_analytics_workspace_table_custom_log", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_log_analytics_workspace_table_custom_log", importId: importFromId, provider });
       }
 
   // ===========
@@ -715,7 +715,7 @@ export class LogAnalyticsWorkspaceTableCustomLog extends cdktf.TerraformResource
 
   // solutions - computed: true, optional: false, required: false
   public get solutions() {
-    return cdktf.Fn.tolist(this.getListAttribute('solutions'));
+    return cdktn.Fn.tolist(this.getListAttribute('solutions'));
   }
 
   // standard_column - computed: true, optional: false, required: false
@@ -758,7 +758,7 @@ export class LogAnalyticsWorkspaceTableCustomLog extends cdktf.TerraformResource
   public get column() {
     return this._column;
   }
-  public putColumn(value: LogAnalyticsWorkspaceTableCustomLogColumn[] | cdktf.IResolvable) {
+  public putColumn(value: LogAnalyticsWorkspaceTableCustomLogColumn[] | cdktn.IResolvable) {
     this._column.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -788,15 +788,15 @@ export class LogAnalyticsWorkspaceTableCustomLog extends cdktf.TerraformResource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      plan: cdktf.stringToTerraform(this._plan),
-      retention_in_days: cdktf.numberToTerraform(this._retentionInDays),
-      total_retention_in_days: cdktf.numberToTerraform(this._totalRetentionInDays),
-      workspace_id: cdktf.stringToTerraform(this._workspaceId),
-      column: cdktf.listMapper(logAnalyticsWorkspaceTableCustomLogColumnToTerraform, true)(this._column.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      plan: cdktn.stringToTerraform(this._plan),
+      retention_in_days: cdktn.numberToTerraform(this._retentionInDays),
+      total_retention_in_days: cdktn.numberToTerraform(this._totalRetentionInDays),
+      workspace_id: cdktn.stringToTerraform(this._workspaceId),
+      column: cdktn.listMapper(logAnalyticsWorkspaceTableCustomLogColumnToTerraform, true)(this._column.internalValue),
       timeouts: logAnalyticsWorkspaceTableCustomLogTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -804,55 +804,55 @@ export class LogAnalyticsWorkspaceTableCustomLog extends cdktf.TerraformResource
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       plan: {
-        value: cdktf.stringToHclTerraform(this._plan),
+        value: cdktn.stringToHclTerraform(this._plan),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       retention_in_days: {
-        value: cdktf.numberToHclTerraform(this._retentionInDays),
+        value: cdktn.numberToHclTerraform(this._retentionInDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       total_retention_in_days: {
-        value: cdktf.numberToHclTerraform(this._totalRetentionInDays),
+        value: cdktn.numberToHclTerraform(this._totalRetentionInDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       workspace_id: {
-        value: cdktf.stringToHclTerraform(this._workspaceId),
+        value: cdktn.stringToHclTerraform(this._workspaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       column: {
-        value: cdktf.listMapperHcl(logAnalyticsWorkspaceTableCustomLogColumnToHclTerraform, true)(this._column.internalValue),
+        value: cdktn.listMapperHcl(logAnalyticsWorkspaceTableCustomLogColumnToHclTerraform, true)(this._column.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "LogAnalyticsWorkspaceTableCustomLogColumnList",

@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WebPubsubConfig extends cdktf.TerraformMetaArguments {
+export interface WebPubsubConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/web_pubsub#aad_auth_enabled WebPubsub#aad_auth_enabled}
   */
-  readonly aadAuthEnabled?: boolean | cdktf.IResolvable;
+  readonly aadAuthEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/web_pubsub#capacity WebPubsub#capacity}
   */
@@ -30,7 +30,7 @@ export interface WebPubsubConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/web_pubsub#local_auth_enabled WebPubsub#local_auth_enabled}
   */
-  readonly localAuthEnabled?: boolean | cdktf.IResolvable;
+  readonly localAuthEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/web_pubsub#location WebPubsub#location}
   */
@@ -42,7 +42,7 @@ export interface WebPubsubConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/web_pubsub#public_network_access_enabled WebPubsub#public_network_access_enabled}
   */
-  readonly publicNetworkAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly publicNetworkAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/web_pubsub#resource_group_name WebPubsub#resource_group_name}
   */
@@ -58,7 +58,7 @@ export interface WebPubsubConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/web_pubsub#tls_client_cert_enabled WebPubsub#tls_client_cert_enabled}
   */
-  readonly tlsClientCertEnabled?: boolean | cdktf.IResolvable;
+  readonly tlsClientCertEnabled?: boolean | cdktn.IResolvable;
   /**
   * identity block
   *
@@ -90,31 +90,31 @@ export interface WebPubsubIdentity {
 }
 
 export function webPubsubIdentityToTerraform(struct?: WebPubsubIdentityOutputReference | WebPubsubIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function webPubsubIdentityToHclTerraform(struct?: WebPubsubIdentityOutputReference | WebPubsubIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -125,14 +125,14 @@ export function webPubsubIdentityToHclTerraform(struct?: WebPubsubIdentityOutput
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WebPubsubIdentityOutputReference extends cdktf.ComplexObject {
+export class WebPubsubIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -166,7 +166,7 @@ export class WebPubsubIdentityOutputReference extends cdktf.ComplexObject {
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -206,61 +206,61 @@ export interface WebPubsubLiveTrace {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/web_pubsub#connectivity_logs_enabled WebPubsub#connectivity_logs_enabled}
   */
-  readonly connectivityLogsEnabled?: boolean | cdktf.IResolvable;
+  readonly connectivityLogsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/web_pubsub#enabled WebPubsub#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/web_pubsub#http_request_logs_enabled WebPubsub#http_request_logs_enabled}
   */
-  readonly httpRequestLogsEnabled?: boolean | cdktf.IResolvable;
+  readonly httpRequestLogsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/web_pubsub#messaging_logs_enabled WebPubsub#messaging_logs_enabled}
   */
-  readonly messagingLogsEnabled?: boolean | cdktf.IResolvable;
+  readonly messagingLogsEnabled?: boolean | cdktn.IResolvable;
 }
 
 export function webPubsubLiveTraceToTerraform(struct?: WebPubsubLiveTraceOutputReference | WebPubsubLiveTrace): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    connectivity_logs_enabled: cdktf.booleanToTerraform(struct!.connectivityLogsEnabled),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    http_request_logs_enabled: cdktf.booleanToTerraform(struct!.httpRequestLogsEnabled),
-    messaging_logs_enabled: cdktf.booleanToTerraform(struct!.messagingLogsEnabled),
+    connectivity_logs_enabled: cdktn.booleanToTerraform(struct!.connectivityLogsEnabled),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    http_request_logs_enabled: cdktn.booleanToTerraform(struct!.httpRequestLogsEnabled),
+    messaging_logs_enabled: cdktn.booleanToTerraform(struct!.messagingLogsEnabled),
   }
 }
 
 
 export function webPubsubLiveTraceToHclTerraform(struct?: WebPubsubLiveTraceOutputReference | WebPubsubLiveTrace): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     connectivity_logs_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.connectivityLogsEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.connectivityLogsEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     http_request_logs_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.httpRequestLogsEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.httpRequestLogsEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     messaging_logs_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.messagingLogsEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.messagingLogsEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -271,14 +271,14 @@ export function webPubsubLiveTraceToHclTerraform(struct?: WebPubsubLiveTraceOutp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WebPubsubLiveTraceOutputReference extends cdktf.ComplexObject {
+export class WebPubsubLiveTraceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -322,11 +322,11 @@ export class WebPubsubLiveTraceOutputReference extends cdktf.ComplexObject {
   }
 
   // connectivity_logs_enabled - computed: false, optional: true, required: false
-  private _connectivityLogsEnabled?: boolean | cdktf.IResolvable; 
+  private _connectivityLogsEnabled?: boolean | cdktn.IResolvable; 
   public get connectivityLogsEnabled() {
     return this.getBooleanAttribute('connectivity_logs_enabled');
   }
-  public set connectivityLogsEnabled(value: boolean | cdktf.IResolvable) {
+  public set connectivityLogsEnabled(value: boolean | cdktn.IResolvable) {
     this._connectivityLogsEnabled = value;
   }
   public resetConnectivityLogsEnabled() {
@@ -338,11 +338,11 @@ export class WebPubsubLiveTraceOutputReference extends cdktf.ComplexObject {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -354,11 +354,11 @@ export class WebPubsubLiveTraceOutputReference extends cdktf.ComplexObject {
   }
 
   // http_request_logs_enabled - computed: false, optional: true, required: false
-  private _httpRequestLogsEnabled?: boolean | cdktf.IResolvable; 
+  private _httpRequestLogsEnabled?: boolean | cdktn.IResolvable; 
   public get httpRequestLogsEnabled() {
     return this.getBooleanAttribute('http_request_logs_enabled');
   }
-  public set httpRequestLogsEnabled(value: boolean | cdktf.IResolvable) {
+  public set httpRequestLogsEnabled(value: boolean | cdktn.IResolvable) {
     this._httpRequestLogsEnabled = value;
   }
   public resetHttpRequestLogsEnabled() {
@@ -370,11 +370,11 @@ export class WebPubsubLiveTraceOutputReference extends cdktf.ComplexObject {
   }
 
   // messaging_logs_enabled - computed: false, optional: true, required: false
-  private _messagingLogsEnabled?: boolean | cdktf.IResolvable; 
+  private _messagingLogsEnabled?: boolean | cdktn.IResolvable; 
   public get messagingLogsEnabled() {
     return this.getBooleanAttribute('messaging_logs_enabled');
   }
-  public set messagingLogsEnabled(value: boolean | cdktf.IResolvable) {
+  public set messagingLogsEnabled(value: boolean | cdktn.IResolvable) {
     this._messagingLogsEnabled = value;
   }
   public resetMessagingLogsEnabled() {
@@ -404,46 +404,46 @@ export interface WebPubsubTimeouts {
   readonly update?: string;
 }
 
-export function webPubsubTimeoutsToTerraform(struct?: WebPubsubTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function webPubsubTimeoutsToTerraform(struct?: WebPubsubTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function webPubsubTimeoutsToHclTerraform(struct?: WebPubsubTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function webPubsubTimeoutsToHclTerraform(struct?: WebPubsubTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -454,19 +454,19 @@ export function webPubsubTimeoutsToHclTerraform(struct?: WebPubsubTimeouts | cdk
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WebPubsubTimeoutsOutputReference extends cdktf.ComplexObject {
+export class WebPubsubTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WebPubsubTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): WebPubsubTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -491,7 +491,7 @@ export class WebPubsubTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WebPubsubTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WebPubsubTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -500,7 +500,7 @@ export class WebPubsubTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -582,7 +582,7 @@ export class WebPubsubTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/web_pubsub azurerm_web_pubsub}
 */
-export class WebPubsub extends cdktf.TerraformResource {
+export class WebPubsub extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -593,14 +593,14 @@ export class WebPubsub extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WebPubsub resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WebPubsub resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WebPubsub to import
   * @param importFromId The id of the existing WebPubsub that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/web_pubsub#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WebPubsub to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_web_pubsub", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_web_pubsub", importId: importFromId, provider });
       }
 
   // ===========
@@ -651,11 +651,11 @@ export class WebPubsub extends cdktf.TerraformResource {
   // ==========
 
   // aad_auth_enabled - computed: false, optional: true, required: false
-  private _aadAuthEnabled?: boolean | cdktf.IResolvable; 
+  private _aadAuthEnabled?: boolean | cdktn.IResolvable; 
   public get aadAuthEnabled() {
     return this.getBooleanAttribute('aad_auth_enabled');
   }
-  public set aadAuthEnabled(value: boolean | cdktf.IResolvable) {
+  public set aadAuthEnabled(value: boolean | cdktn.IResolvable) {
     this._aadAuthEnabled = value;
   }
   public resetAadAuthEnabled() {
@@ -709,11 +709,11 @@ export class WebPubsub extends cdktf.TerraformResource {
   }
 
   // local_auth_enabled - computed: false, optional: true, required: false
-  private _localAuthEnabled?: boolean | cdktf.IResolvable; 
+  private _localAuthEnabled?: boolean | cdktn.IResolvable; 
   public get localAuthEnabled() {
     return this.getBooleanAttribute('local_auth_enabled');
   }
-  public set localAuthEnabled(value: boolean | cdktf.IResolvable) {
+  public set localAuthEnabled(value: boolean | cdktn.IResolvable) {
     this._localAuthEnabled = value;
   }
   public resetLocalAuthEnabled() {
@@ -761,11 +761,11 @@ export class WebPubsub extends cdktf.TerraformResource {
   }
 
   // public_network_access_enabled - computed: false, optional: true, required: false
-  private _publicNetworkAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _publicNetworkAccessEnabled?: boolean | cdktn.IResolvable; 
   public get publicNetworkAccessEnabled() {
     return this.getBooleanAttribute('public_network_access_enabled');
   }
-  public set publicNetworkAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set publicNetworkAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._publicNetworkAccessEnabled = value;
   }
   public resetPublicNetworkAccessEnabled() {
@@ -839,11 +839,11 @@ export class WebPubsub extends cdktf.TerraformResource {
   }
 
   // tls_client_cert_enabled - computed: false, optional: true, required: false
-  private _tlsClientCertEnabled?: boolean | cdktf.IResolvable; 
+  private _tlsClientCertEnabled?: boolean | cdktn.IResolvable; 
   public get tlsClientCertEnabled() {
     return this.getBooleanAttribute('tls_client_cert_enabled');
   }
-  public set tlsClientCertEnabled(value: boolean | cdktf.IResolvable) {
+  public set tlsClientCertEnabled(value: boolean | cdktn.IResolvable) {
     this._tlsClientCertEnabled = value;
   }
   public resetTlsClientCertEnabled() {
@@ -913,17 +913,17 @@ export class WebPubsub extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      aad_auth_enabled: cdktf.booleanToTerraform(this._aadAuthEnabled),
-      capacity: cdktf.numberToTerraform(this._capacity),
-      id: cdktf.stringToTerraform(this._id),
-      local_auth_enabled: cdktf.booleanToTerraform(this._localAuthEnabled),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      public_network_access_enabled: cdktf.booleanToTerraform(this._publicNetworkAccessEnabled),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      sku: cdktf.stringToTerraform(this._sku),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tls_client_cert_enabled: cdktf.booleanToTerraform(this._tlsClientCertEnabled),
+      aad_auth_enabled: cdktn.booleanToTerraform(this._aadAuthEnabled),
+      capacity: cdktn.numberToTerraform(this._capacity),
+      id: cdktn.stringToTerraform(this._id),
+      local_auth_enabled: cdktn.booleanToTerraform(this._localAuthEnabled),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      public_network_access_enabled: cdktn.booleanToTerraform(this._publicNetworkAccessEnabled),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      sku: cdktn.stringToTerraform(this._sku),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tls_client_cert_enabled: cdktn.booleanToTerraform(this._tlsClientCertEnabled),
       identity: webPubsubIdentityToTerraform(this._identity.internalValue),
       live_trace: webPubsubLiveTraceToTerraform(this._liveTrace.internalValue),
       timeouts: webPubsubTimeoutsToTerraform(this._timeouts.internalValue),
@@ -933,67 +933,67 @@ export class WebPubsub extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       aad_auth_enabled: {
-        value: cdktf.booleanToHclTerraform(this._aadAuthEnabled),
+        value: cdktn.booleanToHclTerraform(this._aadAuthEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       capacity: {
-        value: cdktf.numberToHclTerraform(this._capacity),
+        value: cdktn.numberToHclTerraform(this._capacity),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       local_auth_enabled: {
-        value: cdktf.booleanToHclTerraform(this._localAuthEnabled),
+        value: cdktn.booleanToHclTerraform(this._localAuthEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_network_access_enabled: {
-        value: cdktf.booleanToHclTerraform(this._publicNetworkAccessEnabled),
+        value: cdktn.booleanToHclTerraform(this._publicNetworkAccessEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sku: {
-        value: cdktf.stringToHclTerraform(this._sku),
+        value: cdktn.stringToHclTerraform(this._sku),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tls_client_cert_enabled: {
-        value: cdktf.booleanToHclTerraform(this._tlsClientCertEnabled),
+        value: cdktn.booleanToHclTerraform(this._tlsClientCertEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

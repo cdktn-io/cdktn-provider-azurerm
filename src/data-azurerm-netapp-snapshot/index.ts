@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermNetappSnapshotConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermNetappSnapshotConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/netapp_snapshot#account_name DataAzurermNetappSnapshot#account_name}
   */
@@ -53,25 +53,25 @@ export interface DataAzurermNetappSnapshotTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermNetappSnapshotTimeoutsToTerraform(struct?: DataAzurermNetappSnapshotTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermNetappSnapshotTimeoutsToTerraform(struct?: DataAzurermNetappSnapshotTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermNetappSnapshotTimeoutsToHclTerraform(struct?: DataAzurermNetappSnapshotTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermNetappSnapshotTimeoutsToHclTerraform(struct?: DataAzurermNetappSnapshotTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -82,19 +82,19 @@ export function dataAzurermNetappSnapshotTimeoutsToHclTerraform(struct?: DataAzu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermNetappSnapshotTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermNetappSnapshotTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermNetappSnapshotTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermNetappSnapshotTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -107,13 +107,13 @@ export class DataAzurermNetappSnapshotTimeoutsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermNetappSnapshotTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermNetappSnapshotTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -144,7 +144,7 @@ export class DataAzurermNetappSnapshotTimeoutsOutputReference extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/netapp_snapshot azurerm_netapp_snapshot}
 */
-export class DataAzurermNetappSnapshot extends cdktf.TerraformDataSource {
+export class DataAzurermNetappSnapshot extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -155,14 +155,14 @@ export class DataAzurermNetappSnapshot extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermNetappSnapshot resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermNetappSnapshot resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermNetappSnapshot to import
   * @param importFromId The id of the existing DataAzurermNetappSnapshot that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/netapp_snapshot#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermNetappSnapshot to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_netapp_snapshot", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_netapp_snapshot", importId: importFromId, provider });
       }
 
   // ===========
@@ -313,12 +313,12 @@ export class DataAzurermNetappSnapshot extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_name: cdktf.stringToTerraform(this._accountName),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      pool_name: cdktf.stringToTerraform(this._poolName),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      volume_name: cdktf.stringToTerraform(this._volumeName),
+      account_name: cdktn.stringToTerraform(this._accountName),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      pool_name: cdktn.stringToTerraform(this._poolName),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      volume_name: cdktn.stringToTerraform(this._volumeName),
       timeouts: dataAzurermNetappSnapshotTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -326,37 +326,37 @@ export class DataAzurermNetappSnapshot extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_name: {
-        value: cdktf.stringToHclTerraform(this._accountName),
+        value: cdktn.stringToHclTerraform(this._accountName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       pool_name: {
-        value: cdktf.stringToHclTerraform(this._poolName),
+        value: cdktn.stringToHclTerraform(this._poolName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       volume_name: {
-        value: cdktf.stringToHclTerraform(this._volumeName),
+        value: cdktn.stringToHclTerraform(this._volumeName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkManagerConnectivityConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkManagerConnectivityConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_manager_connectivity_configuration#connectivity_topology NetworkManagerConnectivityConfiguration#connectivity_topology}
   */
@@ -19,7 +19,7 @@ export interface NetworkManagerConnectivityConfigurationConfig extends cdktf.Ter
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_manager_connectivity_configuration#delete_existing_peering_enabled NetworkManagerConnectivityConfiguration#delete_existing_peering_enabled}
   */
-  readonly deleteExistingPeeringEnabled?: boolean | cdktf.IResolvable;
+  readonly deleteExistingPeeringEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_manager_connectivity_configuration#description NetworkManagerConnectivityConfiguration#description}
   */
@@ -27,7 +27,7 @@ export interface NetworkManagerConnectivityConfigurationConfig extends cdktf.Ter
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_manager_connectivity_configuration#global_mesh_enabled NetworkManagerConnectivityConfiguration#global_mesh_enabled}
   */
-  readonly globalMeshEnabled?: boolean | cdktf.IResolvable;
+  readonly globalMeshEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_manager_connectivity_configuration#id NetworkManagerConnectivityConfiguration#id}
   *
@@ -48,7 +48,7 @@ export interface NetworkManagerConnectivityConfigurationConfig extends cdktf.Ter
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_manager_connectivity_configuration#applies_to_group NetworkManagerConnectivityConfiguration#applies_to_group}
   */
-  readonly appliesToGroup: NetworkManagerConnectivityConfigurationAppliesToGroup[] | cdktf.IResolvable;
+  readonly appliesToGroup: NetworkManagerConnectivityConfigurationAppliesToGroup[] | cdktn.IResolvable;
   /**
   * hub block
   *
@@ -66,7 +66,7 @@ export interface NetworkManagerConnectivityConfigurationAppliesToGroup {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_manager_connectivity_configuration#global_mesh_enabled NetworkManagerConnectivityConfiguration#global_mesh_enabled}
   */
-  readonly globalMeshEnabled?: boolean | cdktf.IResolvable;
+  readonly globalMeshEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_manager_connectivity_configuration#group_connectivity NetworkManagerConnectivityConfiguration#group_connectivity}
   */
@@ -78,49 +78,49 @@ export interface NetworkManagerConnectivityConfigurationAppliesToGroup {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_manager_connectivity_configuration#use_hub_gateway NetworkManagerConnectivityConfiguration#use_hub_gateway}
   */
-  readonly useHubGateway?: boolean | cdktf.IResolvable;
+  readonly useHubGateway?: boolean | cdktn.IResolvable;
 }
 
-export function networkManagerConnectivityConfigurationAppliesToGroupToTerraform(struct?: NetworkManagerConnectivityConfigurationAppliesToGroup | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkManagerConnectivityConfigurationAppliesToGroupToTerraform(struct?: NetworkManagerConnectivityConfigurationAppliesToGroup | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    global_mesh_enabled: cdktf.booleanToTerraform(struct!.globalMeshEnabled),
-    group_connectivity: cdktf.stringToTerraform(struct!.groupConnectivity),
-    network_group_id: cdktf.stringToTerraform(struct!.networkGroupId),
-    use_hub_gateway: cdktf.booleanToTerraform(struct!.useHubGateway),
+    global_mesh_enabled: cdktn.booleanToTerraform(struct!.globalMeshEnabled),
+    group_connectivity: cdktn.stringToTerraform(struct!.groupConnectivity),
+    network_group_id: cdktn.stringToTerraform(struct!.networkGroupId),
+    use_hub_gateway: cdktn.booleanToTerraform(struct!.useHubGateway),
   }
 }
 
 
-export function networkManagerConnectivityConfigurationAppliesToGroupToHclTerraform(struct?: NetworkManagerConnectivityConfigurationAppliesToGroup | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkManagerConnectivityConfigurationAppliesToGroupToHclTerraform(struct?: NetworkManagerConnectivityConfigurationAppliesToGroup | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     global_mesh_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.globalMeshEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.globalMeshEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     group_connectivity: {
-      value: cdktf.stringToHclTerraform(struct!.groupConnectivity),
+      value: cdktn.stringToHclTerraform(struct!.groupConnectivity),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     network_group_id: {
-      value: cdktf.stringToHclTerraform(struct!.networkGroupId),
+      value: cdktn.stringToHclTerraform(struct!.networkGroupId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     use_hub_gateway: {
-      value: cdktf.booleanToHclTerraform(struct!.useHubGateway),
+      value: cdktn.booleanToHclTerraform(struct!.useHubGateway),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -131,9 +131,9 @@ export function networkManagerConnectivityConfigurationAppliesToGroupToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkManagerConnectivityConfigurationAppliesToGroupOutputReference extends cdktf.ComplexObject {
+export class NetworkManagerConnectivityConfigurationAppliesToGroupOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -141,11 +141,11 @@ export class NetworkManagerConnectivityConfigurationAppliesToGroupOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetworkManagerConnectivityConfigurationAppliesToGroup | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkManagerConnectivityConfigurationAppliesToGroup | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -170,7 +170,7 @@ export class NetworkManagerConnectivityConfigurationAppliesToGroupOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkManagerConnectivityConfigurationAppliesToGroup | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkManagerConnectivityConfigurationAppliesToGroup | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -179,7 +179,7 @@ export class NetworkManagerConnectivityConfigurationAppliesToGroupOutputReferenc
       this._networkGroupId = undefined;
       this._useHubGateway = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -194,11 +194,11 @@ export class NetworkManagerConnectivityConfigurationAppliesToGroupOutputReferenc
   }
 
   // global_mesh_enabled - computed: false, optional: true, required: false
-  private _globalMeshEnabled?: boolean | cdktf.IResolvable; 
+  private _globalMeshEnabled?: boolean | cdktn.IResolvable; 
   public get globalMeshEnabled() {
     return this.getBooleanAttribute('global_mesh_enabled');
   }
-  public set globalMeshEnabled(value: boolean | cdktf.IResolvable) {
+  public set globalMeshEnabled(value: boolean | cdktn.IResolvable) {
     this._globalMeshEnabled = value;
   }
   public resetGlobalMeshEnabled() {
@@ -236,11 +236,11 @@ export class NetworkManagerConnectivityConfigurationAppliesToGroupOutputReferenc
   }
 
   // use_hub_gateway - computed: false, optional: true, required: false
-  private _useHubGateway?: boolean | cdktf.IResolvable; 
+  private _useHubGateway?: boolean | cdktn.IResolvable; 
   public get useHubGateway() {
     return this.getBooleanAttribute('use_hub_gateway');
   }
-  public set useHubGateway(value: boolean | cdktf.IResolvable) {
+  public set useHubGateway(value: boolean | cdktn.IResolvable) {
     this._useHubGateway = value;
   }
   public resetUseHubGateway() {
@@ -252,15 +252,15 @@ export class NetworkManagerConnectivityConfigurationAppliesToGroupOutputReferenc
   }
 }
 
-export class NetworkManagerConnectivityConfigurationAppliesToGroupList extends cdktf.ComplexList {
-  public internalValue? : NetworkManagerConnectivityConfigurationAppliesToGroup[] | cdktf.IResolvable
+export class NetworkManagerConnectivityConfigurationAppliesToGroupList extends cdktn.ComplexList {
+  public internalValue? : NetworkManagerConnectivityConfigurationAppliesToGroup[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -283,31 +283,31 @@ export interface NetworkManagerConnectivityConfigurationHub {
 }
 
 export function networkManagerConnectivityConfigurationHubToTerraform(struct?: NetworkManagerConnectivityConfigurationHubOutputReference | NetworkManagerConnectivityConfigurationHub): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    resource_id: cdktf.stringToTerraform(struct!.resourceId),
-    resource_type: cdktf.stringToTerraform(struct!.resourceType),
+    resource_id: cdktn.stringToTerraform(struct!.resourceId),
+    resource_type: cdktn.stringToTerraform(struct!.resourceType),
   }
 }
 
 
 export function networkManagerConnectivityConfigurationHubToHclTerraform(struct?: NetworkManagerConnectivityConfigurationHubOutputReference | NetworkManagerConnectivityConfigurationHub): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     resource_id: {
-      value: cdktf.stringToHclTerraform(struct!.resourceId),
+      value: cdktn.stringToHclTerraform(struct!.resourceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_type: {
-      value: cdktf.stringToHclTerraform(struct!.resourceType),
+      value: cdktn.stringToHclTerraform(struct!.resourceType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -318,14 +318,14 @@ export function networkManagerConnectivityConfigurationHubToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkManagerConnectivityConfigurationHubOutputReference extends cdktf.ComplexObject {
+export class NetworkManagerConnectivityConfigurationHubOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -401,46 +401,46 @@ export interface NetworkManagerConnectivityConfigurationTimeouts {
   readonly update?: string;
 }
 
-export function networkManagerConnectivityConfigurationTimeoutsToTerraform(struct?: NetworkManagerConnectivityConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkManagerConnectivityConfigurationTimeoutsToTerraform(struct?: NetworkManagerConnectivityConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function networkManagerConnectivityConfigurationTimeoutsToHclTerraform(struct?: NetworkManagerConnectivityConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkManagerConnectivityConfigurationTimeoutsToHclTerraform(struct?: NetworkManagerConnectivityConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -451,19 +451,19 @@ export function networkManagerConnectivityConfigurationTimeoutsToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkManagerConnectivityConfigurationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetworkManagerConnectivityConfigurationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetworkManagerConnectivityConfigurationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkManagerConnectivityConfigurationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -488,7 +488,7 @@ export class NetworkManagerConnectivityConfigurationTimeoutsOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkManagerConnectivityConfigurationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkManagerConnectivityConfigurationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -497,7 +497,7 @@ export class NetworkManagerConnectivityConfigurationTimeoutsOutputReference exte
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -579,7 +579,7 @@ export class NetworkManagerConnectivityConfigurationTimeoutsOutputReference exte
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_manager_connectivity_configuration azurerm_network_manager_connectivity_configuration}
 */
-export class NetworkManagerConnectivityConfiguration extends cdktf.TerraformResource {
+export class NetworkManagerConnectivityConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -590,14 +590,14 @@ export class NetworkManagerConnectivityConfiguration extends cdktf.TerraformReso
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkManagerConnectivityConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkManagerConnectivityConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkManagerConnectivityConfiguration to import
   * @param importFromId The id of the existing NetworkManagerConnectivityConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_manager_connectivity_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkManagerConnectivityConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_network_manager_connectivity_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_network_manager_connectivity_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -657,11 +657,11 @@ export class NetworkManagerConnectivityConfiguration extends cdktf.TerraformReso
   }
 
   // delete_existing_peering_enabled - computed: false, optional: true, required: false
-  private _deleteExistingPeeringEnabled?: boolean | cdktf.IResolvable; 
+  private _deleteExistingPeeringEnabled?: boolean | cdktn.IResolvable; 
   public get deleteExistingPeeringEnabled() {
     return this.getBooleanAttribute('delete_existing_peering_enabled');
   }
-  public set deleteExistingPeeringEnabled(value: boolean | cdktf.IResolvable) {
+  public set deleteExistingPeeringEnabled(value: boolean | cdktn.IResolvable) {
     this._deleteExistingPeeringEnabled = value;
   }
   public resetDeleteExistingPeeringEnabled() {
@@ -689,11 +689,11 @@ export class NetworkManagerConnectivityConfiguration extends cdktf.TerraformReso
   }
 
   // global_mesh_enabled - computed: false, optional: true, required: false
-  private _globalMeshEnabled?: boolean | cdktf.IResolvable; 
+  private _globalMeshEnabled?: boolean | cdktn.IResolvable; 
   public get globalMeshEnabled() {
     return this.getBooleanAttribute('global_mesh_enabled');
   }
-  public set globalMeshEnabled(value: boolean | cdktf.IResolvable) {
+  public set globalMeshEnabled(value: boolean | cdktn.IResolvable) {
     this._globalMeshEnabled = value;
   }
   public resetGlobalMeshEnabled() {
@@ -751,7 +751,7 @@ export class NetworkManagerConnectivityConfiguration extends cdktf.TerraformReso
   public get appliesToGroup() {
     return this._appliesToGroup;
   }
-  public putAppliesToGroup(value: NetworkManagerConnectivityConfigurationAppliesToGroup[] | cdktf.IResolvable) {
+  public putAppliesToGroup(value: NetworkManagerConnectivityConfigurationAppliesToGroup[] | cdktn.IResolvable) {
     this._appliesToGroup.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -797,14 +797,14 @@ export class NetworkManagerConnectivityConfiguration extends cdktf.TerraformReso
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      connectivity_topology: cdktf.stringToTerraform(this._connectivityTopology),
-      delete_existing_peering_enabled: cdktf.booleanToTerraform(this._deleteExistingPeeringEnabled),
-      description: cdktf.stringToTerraform(this._description),
-      global_mesh_enabled: cdktf.booleanToTerraform(this._globalMeshEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      network_manager_id: cdktf.stringToTerraform(this._networkManagerId),
-      applies_to_group: cdktf.listMapper(networkManagerConnectivityConfigurationAppliesToGroupToTerraform, true)(this._appliesToGroup.internalValue),
+      connectivity_topology: cdktn.stringToTerraform(this._connectivityTopology),
+      delete_existing_peering_enabled: cdktn.booleanToTerraform(this._deleteExistingPeeringEnabled),
+      description: cdktn.stringToTerraform(this._description),
+      global_mesh_enabled: cdktn.booleanToTerraform(this._globalMeshEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      network_manager_id: cdktn.stringToTerraform(this._networkManagerId),
+      applies_to_group: cdktn.listMapper(networkManagerConnectivityConfigurationAppliesToGroupToTerraform, true)(this._appliesToGroup.internalValue),
       hub: networkManagerConnectivityConfigurationHubToTerraform(this._hub.internalValue),
       timeouts: networkManagerConnectivityConfigurationTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -813,49 +813,49 @@ export class NetworkManagerConnectivityConfiguration extends cdktf.TerraformReso
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       connectivity_topology: {
-        value: cdktf.stringToHclTerraform(this._connectivityTopology),
+        value: cdktn.stringToHclTerraform(this._connectivityTopology),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       delete_existing_peering_enabled: {
-        value: cdktf.booleanToHclTerraform(this._deleteExistingPeeringEnabled),
+        value: cdktn.booleanToHclTerraform(this._deleteExistingPeeringEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       global_mesh_enabled: {
-        value: cdktf.booleanToHclTerraform(this._globalMeshEnabled),
+        value: cdktn.booleanToHclTerraform(this._globalMeshEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_manager_id: {
-        value: cdktf.stringToHclTerraform(this._networkManagerId),
+        value: cdktn.stringToHclTerraform(this._networkManagerId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       applies_to_group: {
-        value: cdktf.listMapperHcl(networkManagerConnectivityConfigurationAppliesToGroupToHclTerraform, true)(this._appliesToGroup.internalValue),
+        value: cdktn.listMapperHcl(networkManagerConnectivityConfigurationAppliesToGroupToHclTerraform, true)(this._appliesToGroup.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "NetworkManagerConnectivityConfigurationAppliesToGroupList",

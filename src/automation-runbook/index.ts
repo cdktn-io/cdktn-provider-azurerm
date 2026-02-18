@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AutomationRunbookConfig extends cdktf.TerraformMetaArguments {
+export interface AutomationRunbookConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_runbook#automation_account_name AutomationRunbook#automation_account_name}
   */
@@ -34,7 +34,7 @@ export interface AutomationRunbookConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_runbook#job_schedule AutomationRunbook#job_schedule}
   */
-  readonly jobSchedule?: AutomationRunbookJobSchedule[] | cdktf.IResolvable;
+  readonly jobSchedule?: AutomationRunbookJobSchedule[] | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_runbook#location AutomationRunbook#location}
   */
@@ -46,11 +46,11 @@ export interface AutomationRunbookConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_runbook#log_progress AutomationRunbook#log_progress}
   */
-  readonly logProgress: boolean | cdktf.IResolvable;
+  readonly logProgress: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_runbook#log_verbose AutomationRunbook#log_verbose}
   */
-  readonly logVerbose: boolean | cdktf.IResolvable;
+  readonly logVerbose: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_runbook#name AutomationRunbook#name}
   */
@@ -109,46 +109,46 @@ export interface AutomationRunbookJobSchedule {
   readonly scheduleName?: string;
 }
 
-export function automationRunbookJobScheduleToTerraform(struct?: AutomationRunbookJobSchedule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function automationRunbookJobScheduleToTerraform(struct?: AutomationRunbookJobSchedule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    job_schedule_id: struct!.jobScheduleId === undefined ? null : cdktf.stringToTerraform(struct!.jobScheduleId),
-    parameters: struct!.parameters === undefined ? null : cdktf.hashMapper(cdktf.stringToTerraform)(struct!.parameters),
-    run_on: struct!.runOn === undefined ? null : cdktf.stringToTerraform(struct!.runOn),
-    schedule_name: struct!.scheduleName === undefined ? null : cdktf.stringToTerraform(struct!.scheduleName),
+    job_schedule_id: struct!.jobScheduleId === undefined ? null : cdktn.stringToTerraform(struct!.jobScheduleId),
+    parameters: struct!.parameters === undefined ? null : cdktn.hashMapper(cdktn.stringToTerraform)(struct!.parameters),
+    run_on: struct!.runOn === undefined ? null : cdktn.stringToTerraform(struct!.runOn),
+    schedule_name: struct!.scheduleName === undefined ? null : cdktn.stringToTerraform(struct!.scheduleName),
   }
 }
 
 
-export function automationRunbookJobScheduleToHclTerraform(struct?: AutomationRunbookJobSchedule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function automationRunbookJobScheduleToHclTerraform(struct?: AutomationRunbookJobSchedule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     job_schedule_id: {
-      value: struct!.jobScheduleId === undefined ? null : cdktf.stringToHclTerraform(struct!.jobScheduleId),
+      value: struct!.jobScheduleId === undefined ? null : cdktn.stringToHclTerraform(struct!.jobScheduleId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameters: {
-      value: struct!.parameters === undefined ? null : cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.parameters),
+      value: struct!.parameters === undefined ? null : cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.parameters),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     run_on: {
-      value: struct!.runOn === undefined ? null : cdktf.stringToHclTerraform(struct!.runOn),
+      value: struct!.runOn === undefined ? null : cdktn.stringToHclTerraform(struct!.runOn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     schedule_name: {
-      value: struct!.scheduleName === undefined ? null : cdktf.stringToHclTerraform(struct!.scheduleName),
+      value: struct!.scheduleName === undefined ? null : cdktn.stringToHclTerraform(struct!.scheduleName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -159,9 +159,9 @@ export function automationRunbookJobScheduleToHclTerraform(struct?: AutomationRu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AutomationRunbookJobScheduleOutputReference extends cdktf.ComplexObject {
+export class AutomationRunbookJobScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -169,11 +169,11 @@ export class AutomationRunbookJobScheduleOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AutomationRunbookJobSchedule | cdktf.IResolvable | undefined {
+  public get internalValue(): AutomationRunbookJobSchedule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -198,7 +198,7 @@ export class AutomationRunbookJobScheduleOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AutomationRunbookJobSchedule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AutomationRunbookJobSchedule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -207,7 +207,7 @@ export class AutomationRunbookJobScheduleOutputReference extends cdktf.ComplexOb
       this._runOn = undefined;
       this._scheduleName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -286,15 +286,15 @@ export class AutomationRunbookJobScheduleOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class AutomationRunbookJobScheduleList extends cdktf.ComplexList {
-  public internalValue? : AutomationRunbookJobSchedule[] | cdktf.IResolvable
+export class AutomationRunbookJobScheduleList extends cdktn.ComplexList {
+  public internalValue? : AutomationRunbookJobSchedule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -317,31 +317,31 @@ export interface AutomationRunbookDraftContentLinkHash {
 }
 
 export function automationRunbookDraftContentLinkHashToTerraform(struct?: AutomationRunbookDraftContentLinkHashOutputReference | AutomationRunbookDraftContentLinkHash): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    algorithm: cdktf.stringToTerraform(struct!.algorithm),
-    value: cdktf.stringToTerraform(struct!.value),
+    algorithm: cdktn.stringToTerraform(struct!.algorithm),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
 export function automationRunbookDraftContentLinkHashToHclTerraform(struct?: AutomationRunbookDraftContentLinkHashOutputReference | AutomationRunbookDraftContentLinkHash): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     algorithm: {
-      value: cdktf.stringToHclTerraform(struct!.algorithm),
+      value: cdktn.stringToHclTerraform(struct!.algorithm),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -352,14 +352,14 @@ export function automationRunbookDraftContentLinkHashToHclTerraform(struct?: Aut
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AutomationRunbookDraftContentLinkHashOutputReference extends cdktf.ComplexObject {
+export class AutomationRunbookDraftContentLinkHashOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -434,32 +434,32 @@ export interface AutomationRunbookDraftContentLink {
 }
 
 export function automationRunbookDraftContentLinkToTerraform(struct?: AutomationRunbookDraftContentLinkOutputReference | AutomationRunbookDraftContentLink): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    uri: cdktf.stringToTerraform(struct!.uri),
-    version: cdktf.stringToTerraform(struct!.version),
+    uri: cdktn.stringToTerraform(struct!.uri),
+    version: cdktn.stringToTerraform(struct!.version),
     hash: automationRunbookDraftContentLinkHashToTerraform(struct!.hash),
   }
 }
 
 
 export function automationRunbookDraftContentLinkToHclTerraform(struct?: AutomationRunbookDraftContentLinkOutputReference | AutomationRunbookDraftContentLink): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     uri: {
-      value: cdktf.stringToHclTerraform(struct!.uri),
+      value: cdktn.stringToHclTerraform(struct!.uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -476,14 +476,14 @@ export function automationRunbookDraftContentLinkToHclTerraform(struct?: Automat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AutomationRunbookDraftContentLinkOutputReference extends cdktf.ComplexObject {
+export class AutomationRunbookDraftContentLinkOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -577,7 +577,7 @@ export interface AutomationRunbookDraftParameters {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_runbook#mandatory AutomationRunbook#mandatory}
   */
-  readonly mandatory?: boolean | cdktf.IResolvable;
+  readonly mandatory?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_runbook#position AutomationRunbook#position}
   */
@@ -588,53 +588,53 @@ export interface AutomationRunbookDraftParameters {
   readonly type: string;
 }
 
-export function automationRunbookDraftParametersToTerraform(struct?: AutomationRunbookDraftParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function automationRunbookDraftParametersToTerraform(struct?: AutomationRunbookDraftParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default_value: cdktf.stringToTerraform(struct!.defaultValue),
-    key: cdktf.stringToTerraform(struct!.key),
-    mandatory: cdktf.booleanToTerraform(struct!.mandatory),
-    position: cdktf.numberToTerraform(struct!.position),
-    type: cdktf.stringToTerraform(struct!.type),
+    default_value: cdktn.stringToTerraform(struct!.defaultValue),
+    key: cdktn.stringToTerraform(struct!.key),
+    mandatory: cdktn.booleanToTerraform(struct!.mandatory),
+    position: cdktn.numberToTerraform(struct!.position),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function automationRunbookDraftParametersToHclTerraform(struct?: AutomationRunbookDraftParameters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function automationRunbookDraftParametersToHclTerraform(struct?: AutomationRunbookDraftParameters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default_value: {
-      value: cdktf.stringToHclTerraform(struct!.defaultValue),
+      value: cdktn.stringToHclTerraform(struct!.defaultValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mandatory: {
-      value: cdktf.booleanToHclTerraform(struct!.mandatory),
+      value: cdktn.booleanToHclTerraform(struct!.mandatory),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     position: {
-      value: cdktf.numberToHclTerraform(struct!.position),
+      value: cdktn.numberToHclTerraform(struct!.position),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -645,9 +645,9 @@ export function automationRunbookDraftParametersToHclTerraform(struct?: Automati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AutomationRunbookDraftParametersOutputReference extends cdktf.ComplexObject {
+export class AutomationRunbookDraftParametersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -655,11 +655,11 @@ export class AutomationRunbookDraftParametersOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AutomationRunbookDraftParameters | cdktf.IResolvable | undefined {
+  public get internalValue(): AutomationRunbookDraftParameters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -688,7 +688,7 @@ export class AutomationRunbookDraftParametersOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AutomationRunbookDraftParameters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AutomationRunbookDraftParameters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -698,7 +698,7 @@ export class AutomationRunbookDraftParametersOutputReference extends cdktf.Compl
       this._position = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -743,11 +743,11 @@ export class AutomationRunbookDraftParametersOutputReference extends cdktf.Compl
   }
 
   // mandatory - computed: false, optional: true, required: false
-  private _mandatory?: boolean | cdktf.IResolvable; 
+  private _mandatory?: boolean | cdktn.IResolvable; 
   public get mandatory() {
     return this.getBooleanAttribute('mandatory');
   }
-  public set mandatory(value: boolean | cdktf.IResolvable) {
+  public set mandatory(value: boolean | cdktn.IResolvable) {
     this._mandatory = value;
   }
   public resetMandatory() {
@@ -788,15 +788,15 @@ export class AutomationRunbookDraftParametersOutputReference extends cdktf.Compl
   }
 }
 
-export class AutomationRunbookDraftParametersList extends cdktf.ComplexList {
-  public internalValue? : AutomationRunbookDraftParameters[] | cdktf.IResolvable
+export class AutomationRunbookDraftParametersList extends cdktn.ComplexList {
+  public internalValue? : AutomationRunbookDraftParameters[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -811,7 +811,7 @@ export interface AutomationRunbookDraft {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_runbook#edit_mode_enabled AutomationRunbook#edit_mode_enabled}
   */
-  readonly editModeEnabled?: boolean | cdktf.IResolvable;
+  readonly editModeEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_runbook#output_types AutomationRunbook#output_types}
   */
@@ -827,37 +827,37 @@ export interface AutomationRunbookDraft {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_runbook#parameters AutomationRunbook#parameters}
   */
-  readonly parameters?: AutomationRunbookDraftParameters[] | cdktf.IResolvable;
+  readonly parameters?: AutomationRunbookDraftParameters[] | cdktn.IResolvable;
 }
 
 export function automationRunbookDraftToTerraform(struct?: AutomationRunbookDraftOutputReference | AutomationRunbookDraft): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    edit_mode_enabled: cdktf.booleanToTerraform(struct!.editModeEnabled),
-    output_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.outputTypes),
+    edit_mode_enabled: cdktn.booleanToTerraform(struct!.editModeEnabled),
+    output_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.outputTypes),
     content_link: automationRunbookDraftContentLinkToTerraform(struct!.contentLink),
-    parameters: cdktf.listMapper(automationRunbookDraftParametersToTerraform, true)(struct!.parameters),
+    parameters: cdktn.listMapper(automationRunbookDraftParametersToTerraform, true)(struct!.parameters),
   }
 }
 
 
 export function automationRunbookDraftToHclTerraform(struct?: AutomationRunbookDraftOutputReference | AutomationRunbookDraft): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     edit_mode_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.editModeEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.editModeEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     output_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.outputTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.outputTypes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -869,7 +869,7 @@ export function automationRunbookDraftToHclTerraform(struct?: AutomationRunbookD
       storageClassType: "AutomationRunbookDraftContentLinkList",
     },
     parameters: {
-      value: cdktf.listMapperHcl(automationRunbookDraftParametersToHclTerraform, true)(struct!.parameters),
+      value: cdktn.listMapperHcl(automationRunbookDraftParametersToHclTerraform, true)(struct!.parameters),
       isBlock: true,
       type: "list",
       storageClassType: "AutomationRunbookDraftParametersList",
@@ -880,14 +880,14 @@ export function automationRunbookDraftToHclTerraform(struct?: AutomationRunbookD
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AutomationRunbookDraftOutputReference extends cdktf.ComplexObject {
+export class AutomationRunbookDraftOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -936,11 +936,11 @@ export class AutomationRunbookDraftOutputReference extends cdktf.ComplexObject {
   }
 
   // edit_mode_enabled - computed: false, optional: true, required: false
-  private _editModeEnabled?: boolean | cdktf.IResolvable; 
+  private _editModeEnabled?: boolean | cdktn.IResolvable; 
   public get editModeEnabled() {
     return this.getBooleanAttribute('edit_mode_enabled');
   }
-  public set editModeEnabled(value: boolean | cdktf.IResolvable) {
+  public set editModeEnabled(value: boolean | cdktn.IResolvable) {
     this._editModeEnabled = value;
   }
   public resetEditModeEnabled() {
@@ -993,7 +993,7 @@ export class AutomationRunbookDraftOutputReference extends cdktf.ComplexObject {
   public get parameters() {
     return this._parameters;
   }
-  public putParameters(value: AutomationRunbookDraftParameters[] | cdktf.IResolvable) {
+  public putParameters(value: AutomationRunbookDraftParameters[] | cdktn.IResolvable) {
     this._parameters.internalValue = value;
   }
   public resetParameters() {
@@ -1016,31 +1016,31 @@ export interface AutomationRunbookPublishContentLinkHash {
 }
 
 export function automationRunbookPublishContentLinkHashToTerraform(struct?: AutomationRunbookPublishContentLinkHashOutputReference | AutomationRunbookPublishContentLinkHash): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    algorithm: cdktf.stringToTerraform(struct!.algorithm),
-    value: cdktf.stringToTerraform(struct!.value),
+    algorithm: cdktn.stringToTerraform(struct!.algorithm),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
 export function automationRunbookPublishContentLinkHashToHclTerraform(struct?: AutomationRunbookPublishContentLinkHashOutputReference | AutomationRunbookPublishContentLinkHash): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     algorithm: {
-      value: cdktf.stringToHclTerraform(struct!.algorithm),
+      value: cdktn.stringToHclTerraform(struct!.algorithm),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1051,14 +1051,14 @@ export function automationRunbookPublishContentLinkHashToHclTerraform(struct?: A
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AutomationRunbookPublishContentLinkHashOutputReference extends cdktf.ComplexObject {
+export class AutomationRunbookPublishContentLinkHashOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1133,32 +1133,32 @@ export interface AutomationRunbookPublishContentLink {
 }
 
 export function automationRunbookPublishContentLinkToTerraform(struct?: AutomationRunbookPublishContentLinkOutputReference | AutomationRunbookPublishContentLink): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    uri: cdktf.stringToTerraform(struct!.uri),
-    version: cdktf.stringToTerraform(struct!.version),
+    uri: cdktn.stringToTerraform(struct!.uri),
+    version: cdktn.stringToTerraform(struct!.version),
     hash: automationRunbookPublishContentLinkHashToTerraform(struct!.hash),
   }
 }
 
 
 export function automationRunbookPublishContentLinkToHclTerraform(struct?: AutomationRunbookPublishContentLinkOutputReference | AutomationRunbookPublishContentLink): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     uri: {
-      value: cdktf.stringToHclTerraform(struct!.uri),
+      value: cdktn.stringToHclTerraform(struct!.uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1175,14 +1175,14 @@ export function automationRunbookPublishContentLinkToHclTerraform(struct?: Autom
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AutomationRunbookPublishContentLinkOutputReference extends cdktf.ComplexObject {
+export class AutomationRunbookPublishContentLinkOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1283,46 +1283,46 @@ export interface AutomationRunbookTimeouts {
   readonly update?: string;
 }
 
-export function automationRunbookTimeoutsToTerraform(struct?: AutomationRunbookTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function automationRunbookTimeoutsToTerraform(struct?: AutomationRunbookTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function automationRunbookTimeoutsToHclTerraform(struct?: AutomationRunbookTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function automationRunbookTimeoutsToHclTerraform(struct?: AutomationRunbookTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1333,19 +1333,19 @@ export function automationRunbookTimeoutsToHclTerraform(struct?: AutomationRunbo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AutomationRunbookTimeoutsOutputReference extends cdktf.ComplexObject {
+export class AutomationRunbookTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AutomationRunbookTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AutomationRunbookTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1370,7 +1370,7 @@ export class AutomationRunbookTimeoutsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AutomationRunbookTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AutomationRunbookTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1379,7 +1379,7 @@ export class AutomationRunbookTimeoutsOutputReference extends cdktf.ComplexObjec
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1461,7 +1461,7 @@ export class AutomationRunbookTimeoutsOutputReference extends cdktf.ComplexObjec
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_runbook azurerm_automation_runbook}
 */
-export class AutomationRunbook extends cdktf.TerraformResource {
+export class AutomationRunbook extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1472,14 +1472,14 @@ export class AutomationRunbook extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AutomationRunbook resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AutomationRunbook resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AutomationRunbook to import
   * @param importFromId The id of the existing AutomationRunbook that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_runbook#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AutomationRunbook to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_automation_runbook", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_automation_runbook", importId: importFromId, provider });
       }
 
   // ===========
@@ -1598,7 +1598,7 @@ export class AutomationRunbook extends cdktf.TerraformResource {
   public get jobSchedule() {
     return this._jobSchedule;
   }
-  public putJobSchedule(value: AutomationRunbookJobSchedule[] | cdktf.IResolvable) {
+  public putJobSchedule(value: AutomationRunbookJobSchedule[] | cdktn.IResolvable) {
     this._jobSchedule.internalValue = value;
   }
   public resetJobSchedule() {
@@ -1639,11 +1639,11 @@ export class AutomationRunbook extends cdktf.TerraformResource {
   }
 
   // log_progress - computed: false, optional: false, required: true
-  private _logProgress?: boolean | cdktf.IResolvable; 
+  private _logProgress?: boolean | cdktn.IResolvable; 
   public get logProgress() {
     return this.getBooleanAttribute('log_progress');
   }
-  public set logProgress(value: boolean | cdktf.IResolvable) {
+  public set logProgress(value: boolean | cdktn.IResolvable) {
     this._logProgress = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1652,11 +1652,11 @@ export class AutomationRunbook extends cdktf.TerraformResource {
   }
 
   // log_verbose - computed: false, optional: false, required: true
-  private _logVerbose?: boolean | cdktf.IResolvable; 
+  private _logVerbose?: boolean | cdktn.IResolvable; 
   public get logVerbose() {
     return this.getBooleanAttribute('log_verbose');
   }
-  public set logVerbose(value: boolean | cdktf.IResolvable) {
+  public set logVerbose(value: boolean | cdktn.IResolvable) {
     this._logVerbose = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1789,20 +1789,20 @@ export class AutomationRunbook extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      automation_account_name: cdktf.stringToTerraform(this._automationAccountName),
-      content: cdktf.stringToTerraform(this._content),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      job_schedule: cdktf.listMapper(automationRunbookJobScheduleToTerraform, false)(this._jobSchedule.internalValue),
-      location: cdktf.stringToTerraform(this._location),
-      log_activity_trace_level: cdktf.numberToTerraform(this._logActivityTraceLevel),
-      log_progress: cdktf.booleanToTerraform(this._logProgress),
-      log_verbose: cdktf.booleanToTerraform(this._logVerbose),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      runbook_type: cdktf.stringToTerraform(this._runbookType),
-      runtime_environment_name: cdktf.stringToTerraform(this._runtimeEnvironmentName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      automation_account_name: cdktn.stringToTerraform(this._automationAccountName),
+      content: cdktn.stringToTerraform(this._content),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      job_schedule: cdktn.listMapper(automationRunbookJobScheduleToTerraform, false)(this._jobSchedule.internalValue),
+      location: cdktn.stringToTerraform(this._location),
+      log_activity_trace_level: cdktn.numberToTerraform(this._logActivityTraceLevel),
+      log_progress: cdktn.booleanToTerraform(this._logProgress),
+      log_verbose: cdktn.booleanToTerraform(this._logVerbose),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      runbook_type: cdktn.stringToTerraform(this._runbookType),
+      runtime_environment_name: cdktn.stringToTerraform(this._runtimeEnvironmentName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       draft: automationRunbookDraftToTerraform(this._draft.internalValue),
       publish_content_link: automationRunbookPublishContentLinkToTerraform(this._publishContentLink.internalValue),
       timeouts: automationRunbookTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1812,85 +1812,85 @@ export class AutomationRunbook extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       automation_account_name: {
-        value: cdktf.stringToHclTerraform(this._automationAccountName),
+        value: cdktn.stringToHclTerraform(this._automationAccountName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       content: {
-        value: cdktf.stringToHclTerraform(this._content),
+        value: cdktn.stringToHclTerraform(this._content),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       job_schedule: {
-        value: cdktf.listMapperHcl(automationRunbookJobScheduleToHclTerraform, false)(this._jobSchedule.internalValue),
+        value: cdktn.listMapperHcl(automationRunbookJobScheduleToHclTerraform, false)(this._jobSchedule.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "AutomationRunbookJobScheduleList",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       log_activity_trace_level: {
-        value: cdktf.numberToHclTerraform(this._logActivityTraceLevel),
+        value: cdktn.numberToHclTerraform(this._logActivityTraceLevel),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       log_progress: {
-        value: cdktf.booleanToHclTerraform(this._logProgress),
+        value: cdktn.booleanToHclTerraform(this._logProgress),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       log_verbose: {
-        value: cdktf.booleanToHclTerraform(this._logVerbose),
+        value: cdktn.booleanToHclTerraform(this._logVerbose),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       runbook_type: {
-        value: cdktf.stringToHclTerraform(this._runbookType),
+        value: cdktn.stringToHclTerraform(this._runbookType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       runtime_environment_name: {
-        value: cdktf.stringToHclTerraform(this._runtimeEnvironmentName),
+        value: cdktn.stringToHclTerraform(this._runtimeEnvironmentName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

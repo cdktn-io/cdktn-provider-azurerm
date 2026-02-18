@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataFactoryIntegrationRuntimeAzureConfig extends cdktf.TerraformMetaArguments {
+export interface DataFactoryIntegrationRuntimeAzureConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_integration_runtime_azure#cleanup_enabled DataFactoryIntegrationRuntimeAzure#cleanup_enabled}
   */
-  readonly cleanupEnabled?: boolean | cdktf.IResolvable;
+  readonly cleanupEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_integration_runtime_azure#compute_type DataFactoryIntegrationRuntimeAzure#compute_type}
   */
@@ -54,7 +54,7 @@ export interface DataFactoryIntegrationRuntimeAzureConfig extends cdktf.Terrafor
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_integration_runtime_azure#virtual_network_enabled DataFactoryIntegrationRuntimeAzure#virtual_network_enabled}
   */
-  readonly virtualNetworkEnabled?: boolean | cdktf.IResolvable;
+  readonly virtualNetworkEnabled?: boolean | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -81,46 +81,46 @@ export interface DataFactoryIntegrationRuntimeAzureTimeouts {
   readonly update?: string;
 }
 
-export function dataFactoryIntegrationRuntimeAzureTimeoutsToTerraform(struct?: DataFactoryIntegrationRuntimeAzureTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryIntegrationRuntimeAzureTimeoutsToTerraform(struct?: DataFactoryIntegrationRuntimeAzureTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dataFactoryIntegrationRuntimeAzureTimeoutsToHclTerraform(struct?: DataFactoryIntegrationRuntimeAzureTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryIntegrationRuntimeAzureTimeoutsToHclTerraform(struct?: DataFactoryIntegrationRuntimeAzureTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -131,19 +131,19 @@ export function dataFactoryIntegrationRuntimeAzureTimeoutsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryIntegrationRuntimeAzureTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataFactoryIntegrationRuntimeAzureTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataFactoryIntegrationRuntimeAzureTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataFactoryIntegrationRuntimeAzureTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -168,7 +168,7 @@ export class DataFactoryIntegrationRuntimeAzureTimeoutsOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataFactoryIntegrationRuntimeAzureTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataFactoryIntegrationRuntimeAzureTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -177,7 +177,7 @@ export class DataFactoryIntegrationRuntimeAzureTimeoutsOutputReference extends c
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -259,7 +259,7 @@ export class DataFactoryIntegrationRuntimeAzureTimeoutsOutputReference extends c
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_integration_runtime_azure azurerm_data_factory_integration_runtime_azure}
 */
-export class DataFactoryIntegrationRuntimeAzure extends cdktf.TerraformResource {
+export class DataFactoryIntegrationRuntimeAzure extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -270,14 +270,14 @@ export class DataFactoryIntegrationRuntimeAzure extends cdktf.TerraformResource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataFactoryIntegrationRuntimeAzure resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataFactoryIntegrationRuntimeAzure resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataFactoryIntegrationRuntimeAzure to import
   * @param importFromId The id of the existing DataFactoryIntegrationRuntimeAzure that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_integration_runtime_azure#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataFactoryIntegrationRuntimeAzure to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_factory_integration_runtime_azure", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_factory_integration_runtime_azure", importId: importFromId, provider });
       }
 
   // ===========
@@ -325,11 +325,11 @@ export class DataFactoryIntegrationRuntimeAzure extends cdktf.TerraformResource 
   // ==========
 
   // cleanup_enabled - computed: false, optional: true, required: false
-  private _cleanupEnabled?: boolean | cdktf.IResolvable; 
+  private _cleanupEnabled?: boolean | cdktn.IResolvable; 
   public get cleanupEnabled() {
     return this.getBooleanAttribute('cleanup_enabled');
   }
-  public set cleanupEnabled(value: boolean | cdktf.IResolvable) {
+  public set cleanupEnabled(value: boolean | cdktn.IResolvable) {
     this._cleanupEnabled = value;
   }
   public resetCleanupEnabled() {
@@ -460,11 +460,11 @@ export class DataFactoryIntegrationRuntimeAzure extends cdktf.TerraformResource 
   }
 
   // virtual_network_enabled - computed: false, optional: true, required: false
-  private _virtualNetworkEnabled?: boolean | cdktf.IResolvable; 
+  private _virtualNetworkEnabled?: boolean | cdktn.IResolvable; 
   public get virtualNetworkEnabled() {
     return this.getBooleanAttribute('virtual_network_enabled');
   }
-  public set virtualNetworkEnabled(value: boolean | cdktf.IResolvable) {
+  public set virtualNetworkEnabled(value: boolean | cdktn.IResolvable) {
     this._virtualNetworkEnabled = value;
   }
   public resetVirtualNetworkEnabled() {
@@ -497,16 +497,16 @@ export class DataFactoryIntegrationRuntimeAzure extends cdktf.TerraformResource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cleanup_enabled: cdktf.booleanToTerraform(this._cleanupEnabled),
-      compute_type: cdktf.stringToTerraform(this._computeType),
-      core_count: cdktf.numberToTerraform(this._coreCount),
-      data_factory_id: cdktf.stringToTerraform(this._dataFactoryId),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      time_to_live_min: cdktf.numberToTerraform(this._timeToLiveMin),
-      virtual_network_enabled: cdktf.booleanToTerraform(this._virtualNetworkEnabled),
+      cleanup_enabled: cdktn.booleanToTerraform(this._cleanupEnabled),
+      compute_type: cdktn.stringToTerraform(this._computeType),
+      core_count: cdktn.numberToTerraform(this._coreCount),
+      data_factory_id: cdktn.stringToTerraform(this._dataFactoryId),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      time_to_live_min: cdktn.numberToTerraform(this._timeToLiveMin),
+      virtual_network_enabled: cdktn.booleanToTerraform(this._virtualNetworkEnabled),
       timeouts: dataFactoryIntegrationRuntimeAzureTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -514,61 +514,61 @@ export class DataFactoryIntegrationRuntimeAzure extends cdktf.TerraformResource 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cleanup_enabled: {
-        value: cdktf.booleanToHclTerraform(this._cleanupEnabled),
+        value: cdktn.booleanToHclTerraform(this._cleanupEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       compute_type: {
-        value: cdktf.stringToHclTerraform(this._computeType),
+        value: cdktn.stringToHclTerraform(this._computeType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       core_count: {
-        value: cdktf.numberToHclTerraform(this._coreCount),
+        value: cdktn.numberToHclTerraform(this._coreCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       data_factory_id: {
-        value: cdktf.stringToHclTerraform(this._dataFactoryId),
+        value: cdktn.stringToHclTerraform(this._dataFactoryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       time_to_live_min: {
-        value: cdktf.numberToHclTerraform(this._timeToLiveMin),
+        value: cdktn.numberToHclTerraform(this._timeToLiveMin),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       virtual_network_enabled: {
-        value: cdktf.booleanToHclTerraform(this._virtualNetworkEnabled),
+        value: cdktn.booleanToHclTerraform(this._virtualNetworkEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

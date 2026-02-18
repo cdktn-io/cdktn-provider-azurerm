@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BillingAccountCostManagementExportConfig extends cdktf.TerraformMetaArguments {
+export interface BillingAccountCostManagementExportConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/billing_account_cost_management_export#active BillingAccountCostManagementExport#active}
   */
-  readonly active?: boolean | cdktf.IResolvable;
+  readonly active?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/billing_account_cost_management_export#billing_account_id BillingAccountCostManagementExport#billing_account_id}
   */
@@ -78,31 +78,31 @@ export interface BillingAccountCostManagementExportExportDataOptions {
 }
 
 export function billingAccountCostManagementExportExportDataOptionsToTerraform(struct?: BillingAccountCostManagementExportExportDataOptionsOutputReference | BillingAccountCostManagementExportExportDataOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    time_frame: cdktf.stringToTerraform(struct!.timeFrame),
-    type: cdktf.stringToTerraform(struct!.type),
+    time_frame: cdktn.stringToTerraform(struct!.timeFrame),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function billingAccountCostManagementExportExportDataOptionsToHclTerraform(struct?: BillingAccountCostManagementExportExportDataOptionsOutputReference | BillingAccountCostManagementExportExportDataOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     time_frame: {
-      value: cdktf.stringToHclTerraform(struct!.timeFrame),
+      value: cdktn.stringToHclTerraform(struct!.timeFrame),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -113,14 +113,14 @@ export function billingAccountCostManagementExportExportDataOptionsToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BillingAccountCostManagementExportExportDataOptionsOutputReference extends cdktf.ComplexObject {
+export class BillingAccountCostManagementExportExportDataOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -189,31 +189,31 @@ export interface BillingAccountCostManagementExportExportDataStorageLocation {
 }
 
 export function billingAccountCostManagementExportExportDataStorageLocationToTerraform(struct?: BillingAccountCostManagementExportExportDataStorageLocationOutputReference | BillingAccountCostManagementExportExportDataStorageLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    container_id: cdktf.stringToTerraform(struct!.containerId),
-    root_folder_path: cdktf.stringToTerraform(struct!.rootFolderPath),
+    container_id: cdktn.stringToTerraform(struct!.containerId),
+    root_folder_path: cdktn.stringToTerraform(struct!.rootFolderPath),
   }
 }
 
 
 export function billingAccountCostManagementExportExportDataStorageLocationToHclTerraform(struct?: BillingAccountCostManagementExportExportDataStorageLocationOutputReference | BillingAccountCostManagementExportExportDataStorageLocation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     container_id: {
-      value: cdktf.stringToHclTerraform(struct!.containerId),
+      value: cdktn.stringToHclTerraform(struct!.containerId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     root_folder_path: {
-      value: cdktf.stringToHclTerraform(struct!.rootFolderPath),
+      value: cdktn.stringToHclTerraform(struct!.rootFolderPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -224,14 +224,14 @@ export function billingAccountCostManagementExportExportDataStorageLocationToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BillingAccountCostManagementExportExportDataStorageLocationOutputReference extends cdktf.ComplexObject {
+export class BillingAccountCostManagementExportExportDataStorageLocationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -307,46 +307,46 @@ export interface BillingAccountCostManagementExportTimeouts {
   readonly update?: string;
 }
 
-export function billingAccountCostManagementExportTimeoutsToTerraform(struct?: BillingAccountCostManagementExportTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function billingAccountCostManagementExportTimeoutsToTerraform(struct?: BillingAccountCostManagementExportTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function billingAccountCostManagementExportTimeoutsToHclTerraform(struct?: BillingAccountCostManagementExportTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function billingAccountCostManagementExportTimeoutsToHclTerraform(struct?: BillingAccountCostManagementExportTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -357,19 +357,19 @@ export function billingAccountCostManagementExportTimeoutsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BillingAccountCostManagementExportTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BillingAccountCostManagementExportTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BillingAccountCostManagementExportTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BillingAccountCostManagementExportTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -394,7 +394,7 @@ export class BillingAccountCostManagementExportTimeoutsOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BillingAccountCostManagementExportTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BillingAccountCostManagementExportTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -403,7 +403,7 @@ export class BillingAccountCostManagementExportTimeoutsOutputReference extends c
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -485,7 +485,7 @@ export class BillingAccountCostManagementExportTimeoutsOutputReference extends c
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/billing_account_cost_management_export azurerm_billing_account_cost_management_export}
 */
-export class BillingAccountCostManagementExport extends cdktf.TerraformResource {
+export class BillingAccountCostManagementExport extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -496,14 +496,14 @@ export class BillingAccountCostManagementExport extends cdktf.TerraformResource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BillingAccountCostManagementExport resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BillingAccountCostManagementExport resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BillingAccountCostManagementExport to import
   * @param importFromId The id of the existing BillingAccountCostManagementExport that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/billing_account_cost_management_export#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BillingAccountCostManagementExport to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_billing_account_cost_management_export", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_billing_account_cost_management_export", importId: importFromId, provider });
       }
 
   // ===========
@@ -551,11 +551,11 @@ export class BillingAccountCostManagementExport extends cdktf.TerraformResource 
   // ==========
 
   // active - computed: false, optional: true, required: false
-  private _active?: boolean | cdktf.IResolvable; 
+  private _active?: boolean | cdktn.IResolvable; 
   public get active() {
     return this.getBooleanAttribute('active');
   }
-  public set active(value: boolean | cdktf.IResolvable) {
+  public set active(value: boolean | cdktn.IResolvable) {
     this._active = value;
   }
   public resetActive() {
@@ -711,14 +711,14 @@ export class BillingAccountCostManagementExport extends cdktf.TerraformResource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      active: cdktf.booleanToTerraform(this._active),
-      billing_account_id: cdktf.stringToTerraform(this._billingAccountId),
-      file_format: cdktf.stringToTerraform(this._fileFormat),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      recurrence_period_end_date: cdktf.stringToTerraform(this._recurrencePeriodEndDate),
-      recurrence_period_start_date: cdktf.stringToTerraform(this._recurrencePeriodStartDate),
-      recurrence_type: cdktf.stringToTerraform(this._recurrenceType),
+      active: cdktn.booleanToTerraform(this._active),
+      billing_account_id: cdktn.stringToTerraform(this._billingAccountId),
+      file_format: cdktn.stringToTerraform(this._fileFormat),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      recurrence_period_end_date: cdktn.stringToTerraform(this._recurrencePeriodEndDate),
+      recurrence_period_start_date: cdktn.stringToTerraform(this._recurrencePeriodStartDate),
+      recurrence_type: cdktn.stringToTerraform(this._recurrenceType),
       export_data_options: billingAccountCostManagementExportExportDataOptionsToTerraform(this._exportDataOptions.internalValue),
       export_data_storage_location: billingAccountCostManagementExportExportDataStorageLocationToTerraform(this._exportDataStorageLocation.internalValue),
       timeouts: billingAccountCostManagementExportTimeoutsToTerraform(this._timeouts.internalValue),
@@ -728,49 +728,49 @@ export class BillingAccountCostManagementExport extends cdktf.TerraformResource 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       active: {
-        value: cdktf.booleanToHclTerraform(this._active),
+        value: cdktn.booleanToHclTerraform(this._active),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       billing_account_id: {
-        value: cdktf.stringToHclTerraform(this._billingAccountId),
+        value: cdktn.stringToHclTerraform(this._billingAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       file_format: {
-        value: cdktf.stringToHclTerraform(this._fileFormat),
+        value: cdktn.stringToHclTerraform(this._fileFormat),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       recurrence_period_end_date: {
-        value: cdktf.stringToHclTerraform(this._recurrencePeriodEndDate),
+        value: cdktn.stringToHclTerraform(this._recurrencePeriodEndDate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       recurrence_period_start_date: {
-        value: cdktf.stringToHclTerraform(this._recurrencePeriodStartDate),
+        value: cdktn.stringToHclTerraform(this._recurrencePeriodStartDate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       recurrence_type: {
-        value: cdktf.stringToHclTerraform(this._recurrenceType),
+        value: cdktn.stringToHclTerraform(this._recurrenceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

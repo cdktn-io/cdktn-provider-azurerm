@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SecurityCenterStorageDefenderConfig extends cdktf.TerraformMetaArguments {
+export interface SecurityCenterStorageDefenderConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/security_center_storage_defender#id SecurityCenterStorageDefender#id}
   *
@@ -26,11 +26,11 @@ export interface SecurityCenterStorageDefenderConfig extends cdktf.TerraformMeta
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/security_center_storage_defender#malware_scanning_on_upload_enabled SecurityCenterStorageDefender#malware_scanning_on_upload_enabled}
   */
-  readonly malwareScanningOnUploadEnabled?: boolean | cdktf.IResolvable;
+  readonly malwareScanningOnUploadEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/security_center_storage_defender#override_subscription_settings_enabled SecurityCenterStorageDefender#override_subscription_settings_enabled}
   */
-  readonly overrideSubscriptionSettingsEnabled?: boolean | cdktf.IResolvable;
+  readonly overrideSubscriptionSettingsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/security_center_storage_defender#scan_results_event_grid_topic_id SecurityCenterStorageDefender#scan_results_event_grid_topic_id}
   */
@@ -38,7 +38,7 @@ export interface SecurityCenterStorageDefenderConfig extends cdktf.TerraformMeta
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/security_center_storage_defender#sensitive_data_discovery_enabled SecurityCenterStorageDefender#sensitive_data_discovery_enabled}
   */
-  readonly sensitiveDataDiscoveryEnabled?: boolean | cdktf.IResolvable;
+  readonly sensitiveDataDiscoveryEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/security_center_storage_defender#storage_account_id SecurityCenterStorageDefender#storage_account_id}
   */
@@ -69,46 +69,46 @@ export interface SecurityCenterStorageDefenderTimeouts {
   readonly update?: string;
 }
 
-export function securityCenterStorageDefenderTimeoutsToTerraform(struct?: SecurityCenterStorageDefenderTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityCenterStorageDefenderTimeoutsToTerraform(struct?: SecurityCenterStorageDefenderTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function securityCenterStorageDefenderTimeoutsToHclTerraform(struct?: SecurityCenterStorageDefenderTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityCenterStorageDefenderTimeoutsToHclTerraform(struct?: SecurityCenterStorageDefenderTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -119,19 +119,19 @@ export function securityCenterStorageDefenderTimeoutsToHclTerraform(struct?: Sec
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityCenterStorageDefenderTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SecurityCenterStorageDefenderTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SecurityCenterStorageDefenderTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityCenterStorageDefenderTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -156,7 +156,7 @@ export class SecurityCenterStorageDefenderTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityCenterStorageDefenderTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityCenterStorageDefenderTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -165,7 +165,7 @@ export class SecurityCenterStorageDefenderTimeoutsOutputReference extends cdktf.
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -247,7 +247,7 @@ export class SecurityCenterStorageDefenderTimeoutsOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/security_center_storage_defender azurerm_security_center_storage_defender}
 */
-export class SecurityCenterStorageDefender extends cdktf.TerraformResource {
+export class SecurityCenterStorageDefender extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -258,14 +258,14 @@ export class SecurityCenterStorageDefender extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SecurityCenterStorageDefender resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SecurityCenterStorageDefender resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecurityCenterStorageDefender to import
   * @param importFromId The id of the existing SecurityCenterStorageDefender that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/security_center_storage_defender#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecurityCenterStorageDefender to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_security_center_storage_defender", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_security_center_storage_defender", importId: importFromId, provider });
       }
 
   // ===========
@@ -342,11 +342,11 @@ export class SecurityCenterStorageDefender extends cdktf.TerraformResource {
   }
 
   // malware_scanning_on_upload_enabled - computed: false, optional: true, required: false
-  private _malwareScanningOnUploadEnabled?: boolean | cdktf.IResolvable; 
+  private _malwareScanningOnUploadEnabled?: boolean | cdktn.IResolvable; 
   public get malwareScanningOnUploadEnabled() {
     return this.getBooleanAttribute('malware_scanning_on_upload_enabled');
   }
-  public set malwareScanningOnUploadEnabled(value: boolean | cdktf.IResolvable) {
+  public set malwareScanningOnUploadEnabled(value: boolean | cdktn.IResolvable) {
     this._malwareScanningOnUploadEnabled = value;
   }
   public resetMalwareScanningOnUploadEnabled() {
@@ -358,11 +358,11 @@ export class SecurityCenterStorageDefender extends cdktf.TerraformResource {
   }
 
   // override_subscription_settings_enabled - computed: false, optional: true, required: false
-  private _overrideSubscriptionSettingsEnabled?: boolean | cdktf.IResolvable; 
+  private _overrideSubscriptionSettingsEnabled?: boolean | cdktn.IResolvable; 
   public get overrideSubscriptionSettingsEnabled() {
     return this.getBooleanAttribute('override_subscription_settings_enabled');
   }
-  public set overrideSubscriptionSettingsEnabled(value: boolean | cdktf.IResolvable) {
+  public set overrideSubscriptionSettingsEnabled(value: boolean | cdktn.IResolvable) {
     this._overrideSubscriptionSettingsEnabled = value;
   }
   public resetOverrideSubscriptionSettingsEnabled() {
@@ -390,11 +390,11 @@ export class SecurityCenterStorageDefender extends cdktf.TerraformResource {
   }
 
   // sensitive_data_discovery_enabled - computed: false, optional: true, required: false
-  private _sensitiveDataDiscoveryEnabled?: boolean | cdktf.IResolvable; 
+  private _sensitiveDataDiscoveryEnabled?: boolean | cdktn.IResolvable; 
   public get sensitiveDataDiscoveryEnabled() {
     return this.getBooleanAttribute('sensitive_data_discovery_enabled');
   }
-  public set sensitiveDataDiscoveryEnabled(value: boolean | cdktf.IResolvable) {
+  public set sensitiveDataDiscoveryEnabled(value: boolean | cdktn.IResolvable) {
     this._sensitiveDataDiscoveryEnabled = value;
   }
   public resetSensitiveDataDiscoveryEnabled() {
@@ -440,13 +440,13 @@ export class SecurityCenterStorageDefender extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      malware_scanning_on_upload_cap_gb_per_month: cdktf.numberToTerraform(this._malwareScanningOnUploadCapGbPerMonth),
-      malware_scanning_on_upload_enabled: cdktf.booleanToTerraform(this._malwareScanningOnUploadEnabled),
-      override_subscription_settings_enabled: cdktf.booleanToTerraform(this._overrideSubscriptionSettingsEnabled),
-      scan_results_event_grid_topic_id: cdktf.stringToTerraform(this._scanResultsEventGridTopicId),
-      sensitive_data_discovery_enabled: cdktf.booleanToTerraform(this._sensitiveDataDiscoveryEnabled),
-      storage_account_id: cdktf.stringToTerraform(this._storageAccountId),
+      id: cdktn.stringToTerraform(this._id),
+      malware_scanning_on_upload_cap_gb_per_month: cdktn.numberToTerraform(this._malwareScanningOnUploadCapGbPerMonth),
+      malware_scanning_on_upload_enabled: cdktn.booleanToTerraform(this._malwareScanningOnUploadEnabled),
+      override_subscription_settings_enabled: cdktn.booleanToTerraform(this._overrideSubscriptionSettingsEnabled),
+      scan_results_event_grid_topic_id: cdktn.stringToTerraform(this._scanResultsEventGridTopicId),
+      sensitive_data_discovery_enabled: cdktn.booleanToTerraform(this._sensitiveDataDiscoveryEnabled),
+      storage_account_id: cdktn.stringToTerraform(this._storageAccountId),
       timeouts: securityCenterStorageDefenderTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -454,43 +454,43 @@ export class SecurityCenterStorageDefender extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       malware_scanning_on_upload_cap_gb_per_month: {
-        value: cdktf.numberToHclTerraform(this._malwareScanningOnUploadCapGbPerMonth),
+        value: cdktn.numberToHclTerraform(this._malwareScanningOnUploadCapGbPerMonth),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       malware_scanning_on_upload_enabled: {
-        value: cdktf.booleanToHclTerraform(this._malwareScanningOnUploadEnabled),
+        value: cdktn.booleanToHclTerraform(this._malwareScanningOnUploadEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       override_subscription_settings_enabled: {
-        value: cdktf.booleanToHclTerraform(this._overrideSubscriptionSettingsEnabled),
+        value: cdktn.booleanToHclTerraform(this._overrideSubscriptionSettingsEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       scan_results_event_grid_topic_id: {
-        value: cdktf.stringToHclTerraform(this._scanResultsEventGridTopicId),
+        value: cdktn.stringToHclTerraform(this._scanResultsEventGridTopicId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sensitive_data_discovery_enabled: {
-        value: cdktf.booleanToHclTerraform(this._sensitiveDataDiscoveryEnabled),
+        value: cdktn.booleanToHclTerraform(this._sensitiveDataDiscoveryEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       storage_account_id: {
-        value: cdktf.stringToHclTerraform(this._storageAccountId),
+        value: cdktn.stringToHclTerraform(this._storageAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

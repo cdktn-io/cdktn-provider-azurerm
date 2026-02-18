@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NginxConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface NginxConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/nginx_configuration#id NginxConfiguration#id}
   *
@@ -36,13 +36,13 @@ export interface NginxConfigurationConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/nginx_configuration#config_file NginxConfiguration#config_file}
   */
-  readonly configFile?: NginxConfigurationConfigFile[] | cdktf.IResolvable;
+  readonly configFile?: NginxConfigurationConfigFile[] | cdktn.IResolvable;
   /**
   * protected_file block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/nginx_configuration#protected_file NginxConfiguration#protected_file}
   */
-  readonly protectedFile?: NginxConfigurationProtectedFile[] | cdktf.IResolvable;
+  readonly protectedFile?: NginxConfigurationProtectedFile[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -61,32 +61,32 @@ export interface NginxConfigurationConfigFile {
   readonly virtualPath: string;
 }
 
-export function nginxConfigurationConfigFileToTerraform(struct?: NginxConfigurationConfigFile | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function nginxConfigurationConfigFileToTerraform(struct?: NginxConfigurationConfigFile | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    content: cdktf.stringToTerraform(struct!.content),
-    virtual_path: cdktf.stringToTerraform(struct!.virtualPath),
+    content: cdktn.stringToTerraform(struct!.content),
+    virtual_path: cdktn.stringToTerraform(struct!.virtualPath),
   }
 }
 
 
-export function nginxConfigurationConfigFileToHclTerraform(struct?: NginxConfigurationConfigFile | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function nginxConfigurationConfigFileToHclTerraform(struct?: NginxConfigurationConfigFile | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     content: {
-      value: cdktf.stringToHclTerraform(struct!.content),
+      value: cdktn.stringToHclTerraform(struct!.content),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     virtual_path: {
-      value: cdktf.stringToHclTerraform(struct!.virtualPath),
+      value: cdktn.stringToHclTerraform(struct!.virtualPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -97,9 +97,9 @@ export function nginxConfigurationConfigFileToHclTerraform(struct?: NginxConfigu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NginxConfigurationConfigFileOutputReference extends cdktf.ComplexObject {
+export class NginxConfigurationConfigFileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -107,11 +107,11 @@ export class NginxConfigurationConfigFileOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NginxConfigurationConfigFile | cdktf.IResolvable | undefined {
+  public get internalValue(): NginxConfigurationConfigFile | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -128,14 +128,14 @@ export class NginxConfigurationConfigFileOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NginxConfigurationConfigFile | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NginxConfigurationConfigFile | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._content = undefined;
       this._virtualPath = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -174,15 +174,15 @@ export class NginxConfigurationConfigFileOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class NginxConfigurationConfigFileList extends cdktf.ComplexList {
-  public internalValue? : NginxConfigurationConfigFile[] | cdktf.IResolvable
+export class NginxConfigurationConfigFileList extends cdktn.ComplexList {
+  public internalValue? : NginxConfigurationConfigFile[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -204,32 +204,32 @@ export interface NginxConfigurationProtectedFile {
   readonly virtualPath: string;
 }
 
-export function nginxConfigurationProtectedFileToTerraform(struct?: NginxConfigurationProtectedFile | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function nginxConfigurationProtectedFileToTerraform(struct?: NginxConfigurationProtectedFile | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    content: cdktf.stringToTerraform(struct!.content),
-    virtual_path: cdktf.stringToTerraform(struct!.virtualPath),
+    content: cdktn.stringToTerraform(struct!.content),
+    virtual_path: cdktn.stringToTerraform(struct!.virtualPath),
   }
 }
 
 
-export function nginxConfigurationProtectedFileToHclTerraform(struct?: NginxConfigurationProtectedFile | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function nginxConfigurationProtectedFileToHclTerraform(struct?: NginxConfigurationProtectedFile | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     content: {
-      value: cdktf.stringToHclTerraform(struct!.content),
+      value: cdktn.stringToHclTerraform(struct!.content),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     virtual_path: {
-      value: cdktf.stringToHclTerraform(struct!.virtualPath),
+      value: cdktn.stringToHclTerraform(struct!.virtualPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -240,9 +240,9 @@ export function nginxConfigurationProtectedFileToHclTerraform(struct?: NginxConf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NginxConfigurationProtectedFileOutputReference extends cdktf.ComplexObject {
+export class NginxConfigurationProtectedFileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -250,11 +250,11 @@ export class NginxConfigurationProtectedFileOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NginxConfigurationProtectedFile | cdktf.IResolvable | undefined {
+  public get internalValue(): NginxConfigurationProtectedFile | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -271,14 +271,14 @@ export class NginxConfigurationProtectedFileOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NginxConfigurationProtectedFile | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NginxConfigurationProtectedFile | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._content = undefined;
       this._virtualPath = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -322,15 +322,15 @@ export class NginxConfigurationProtectedFileOutputReference extends cdktf.Comple
   }
 }
 
-export class NginxConfigurationProtectedFileList extends cdktf.ComplexList {
-  public internalValue? : NginxConfigurationProtectedFile[] | cdktf.IResolvable
+export class NginxConfigurationProtectedFileList extends cdktn.ComplexList {
+  public internalValue? : NginxConfigurationProtectedFile[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -360,46 +360,46 @@ export interface NginxConfigurationTimeouts {
   readonly update?: string;
 }
 
-export function nginxConfigurationTimeoutsToTerraform(struct?: NginxConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function nginxConfigurationTimeoutsToTerraform(struct?: NginxConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function nginxConfigurationTimeoutsToHclTerraform(struct?: NginxConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function nginxConfigurationTimeoutsToHclTerraform(struct?: NginxConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -410,19 +410,19 @@ export function nginxConfigurationTimeoutsToHclTerraform(struct?: NginxConfigura
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NginxConfigurationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NginxConfigurationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NginxConfigurationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NginxConfigurationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -447,7 +447,7 @@ export class NginxConfigurationTimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NginxConfigurationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NginxConfigurationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -456,7 +456,7 @@ export class NginxConfigurationTimeoutsOutputReference extends cdktf.ComplexObje
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -538,7 +538,7 @@ export class NginxConfigurationTimeoutsOutputReference extends cdktf.ComplexObje
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/nginx_configuration azurerm_nginx_configuration}
 */
-export class NginxConfiguration extends cdktf.TerraformResource {
+export class NginxConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -549,14 +549,14 @@ export class NginxConfiguration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NginxConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NginxConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NginxConfiguration to import
   * @param importFromId The id of the existing NginxConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/nginx_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NginxConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_nginx_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_nginx_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -662,7 +662,7 @@ export class NginxConfiguration extends cdktf.TerraformResource {
   public get configFile() {
     return this._configFile;
   }
-  public putConfigFile(value: NginxConfigurationConfigFile[] | cdktf.IResolvable) {
+  public putConfigFile(value: NginxConfigurationConfigFile[] | cdktn.IResolvable) {
     this._configFile.internalValue = value;
   }
   public resetConfigFile() {
@@ -678,7 +678,7 @@ export class NginxConfiguration extends cdktf.TerraformResource {
   public get protectedFile() {
     return this._protectedFile;
   }
-  public putProtectedFile(value: NginxConfigurationProtectedFile[] | cdktf.IResolvable) {
+  public putProtectedFile(value: NginxConfigurationProtectedFile[] | cdktn.IResolvable) {
     this._protectedFile.internalValue = value;
   }
   public resetProtectedFile() {
@@ -711,12 +711,12 @@ export class NginxConfiguration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      nginx_deployment_id: cdktf.stringToTerraform(this._nginxDeploymentId),
-      package_data: cdktf.stringToTerraform(this._packageData),
-      root_file: cdktf.stringToTerraform(this._rootFile),
-      config_file: cdktf.listMapper(nginxConfigurationConfigFileToTerraform, true)(this._configFile.internalValue),
-      protected_file: cdktf.listMapper(nginxConfigurationProtectedFileToTerraform, true)(this._protectedFile.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      nginx_deployment_id: cdktn.stringToTerraform(this._nginxDeploymentId),
+      package_data: cdktn.stringToTerraform(this._packageData),
+      root_file: cdktn.stringToTerraform(this._rootFile),
+      config_file: cdktn.listMapper(nginxConfigurationConfigFileToTerraform, true)(this._configFile.internalValue),
+      protected_file: cdktn.listMapper(nginxConfigurationProtectedFileToTerraform, true)(this._protectedFile.internalValue),
       timeouts: nginxConfigurationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -724,37 +724,37 @@ export class NginxConfiguration extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       nginx_deployment_id: {
-        value: cdktf.stringToHclTerraform(this._nginxDeploymentId),
+        value: cdktn.stringToHclTerraform(this._nginxDeploymentId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       package_data: {
-        value: cdktf.stringToHclTerraform(this._packageData),
+        value: cdktn.stringToHclTerraform(this._packageData),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       root_file: {
-        value: cdktf.stringToHclTerraform(this._rootFile),
+        value: cdktn.stringToHclTerraform(this._rootFile),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       config_file: {
-        value: cdktf.listMapperHcl(nginxConfigurationConfigFileToHclTerraform, true)(this._configFile.internalValue),
+        value: cdktn.listMapperHcl(nginxConfigurationConfigFileToHclTerraform, true)(this._configFile.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "NginxConfigurationConfigFileList",
       },
       protected_file: {
-        value: cdktf.listMapperHcl(nginxConfigurationProtectedFileToHclTerraform, true)(this._protectedFile.internalValue),
+        value: cdktn.listMapperHcl(nginxConfigurationProtectedFileToHclTerraform, true)(this._protectedFile.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "NginxConfigurationProtectedFileList",

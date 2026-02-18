@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SystemCenterVirtualMachineManagerVirtualMachineInstanceConfig extends cdktf.TerraformMetaArguments {
+export interface SystemCenterVirtualMachineManagerVirtualMachineInstanceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/system_center_virtual_machine_manager_virtual_machine_instance#custom_location_id SystemCenterVirtualMachineManagerVirtualMachineInstance#custom_location_id}
   */
@@ -48,7 +48,7 @@ export interface SystemCenterVirtualMachineManagerVirtualMachineInstanceConfig e
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/system_center_virtual_machine_manager_virtual_machine_instance#network_interface SystemCenterVirtualMachineManagerVirtualMachineInstance#network_interface}
   */
-  readonly networkInterface?: SystemCenterVirtualMachineManagerVirtualMachineInstanceNetworkInterface[] | cdktf.IResolvable;
+  readonly networkInterface?: SystemCenterVirtualMachineManagerVirtualMachineInstanceNetworkInterface[] | cdktn.IResolvable;
   /**
   * operating_system block
   *
@@ -60,7 +60,7 @@ export interface SystemCenterVirtualMachineManagerVirtualMachineInstanceConfig e
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/system_center_virtual_machine_manager_virtual_machine_instance#storage_disk SystemCenterVirtualMachineManagerVirtualMachineInstance#storage_disk}
   */
-  readonly storageDisk?: SystemCenterVirtualMachineManagerVirtualMachineInstanceStorageDisk[] | cdktf.IResolvable;
+  readonly storageDisk?: SystemCenterVirtualMachineManagerVirtualMachineInstanceStorageDisk[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -84,7 +84,7 @@ export interface SystemCenterVirtualMachineManagerVirtualMachineInstanceHardware
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/system_center_virtual_machine_manager_virtual_machine_instance#limit_cpu_for_migration_enabled SystemCenterVirtualMachineManagerVirtualMachineInstance#limit_cpu_for_migration_enabled}
   */
-  readonly limitCpuForMigrationEnabled?: boolean | cdktf.IResolvable;
+  readonly limitCpuForMigrationEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/system_center_virtual_machine_manager_virtual_machine_instance#memory_in_mb SystemCenterVirtualMachineManagerVirtualMachineInstance#memory_in_mb}
   */
@@ -92,52 +92,52 @@ export interface SystemCenterVirtualMachineManagerVirtualMachineInstanceHardware
 }
 
 export function systemCenterVirtualMachineManagerVirtualMachineInstanceHardwareToTerraform(struct?: SystemCenterVirtualMachineManagerVirtualMachineInstanceHardwareOutputReference | SystemCenterVirtualMachineManagerVirtualMachineInstanceHardware): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cpu_count: cdktf.numberToTerraform(struct!.cpuCount),
-    dynamic_memory_max_in_mb: cdktf.numberToTerraform(struct!.dynamicMemoryMaxInMb),
-    dynamic_memory_min_in_mb: cdktf.numberToTerraform(struct!.dynamicMemoryMinInMb),
-    limit_cpu_for_migration_enabled: cdktf.booleanToTerraform(struct!.limitCpuForMigrationEnabled),
-    memory_in_mb: cdktf.numberToTerraform(struct!.memoryInMb),
+    cpu_count: cdktn.numberToTerraform(struct!.cpuCount),
+    dynamic_memory_max_in_mb: cdktn.numberToTerraform(struct!.dynamicMemoryMaxInMb),
+    dynamic_memory_min_in_mb: cdktn.numberToTerraform(struct!.dynamicMemoryMinInMb),
+    limit_cpu_for_migration_enabled: cdktn.booleanToTerraform(struct!.limitCpuForMigrationEnabled),
+    memory_in_mb: cdktn.numberToTerraform(struct!.memoryInMb),
   }
 }
 
 
 export function systemCenterVirtualMachineManagerVirtualMachineInstanceHardwareToHclTerraform(struct?: SystemCenterVirtualMachineManagerVirtualMachineInstanceHardwareOutputReference | SystemCenterVirtualMachineManagerVirtualMachineInstanceHardware): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cpu_count: {
-      value: cdktf.numberToHclTerraform(struct!.cpuCount),
+      value: cdktn.numberToHclTerraform(struct!.cpuCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     dynamic_memory_max_in_mb: {
-      value: cdktf.numberToHclTerraform(struct!.dynamicMemoryMaxInMb),
+      value: cdktn.numberToHclTerraform(struct!.dynamicMemoryMaxInMb),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     dynamic_memory_min_in_mb: {
-      value: cdktf.numberToHclTerraform(struct!.dynamicMemoryMinInMb),
+      value: cdktn.numberToHclTerraform(struct!.dynamicMemoryMinInMb),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     limit_cpu_for_migration_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.limitCpuForMigrationEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.limitCpuForMigrationEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     memory_in_mb: {
-      value: cdktf.numberToHclTerraform(struct!.memoryInMb),
+      value: cdktn.numberToHclTerraform(struct!.memoryInMb),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -148,14 +148,14 @@ export function systemCenterVirtualMachineManagerVirtualMachineInstanceHardwareT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SystemCenterVirtualMachineManagerVirtualMachineInstanceHardwareOutputReference extends cdktf.ComplexObject {
+export class SystemCenterVirtualMachineManagerVirtualMachineInstanceHardwareOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -253,11 +253,11 @@ export class SystemCenterVirtualMachineManagerVirtualMachineInstanceHardwareOutp
   }
 
   // limit_cpu_for_migration_enabled - computed: false, optional: true, required: false
-  private _limitCpuForMigrationEnabled?: boolean | cdktf.IResolvable; 
+  private _limitCpuForMigrationEnabled?: boolean | cdktn.IResolvable; 
   public get limitCpuForMigrationEnabled() {
     return this.getBooleanAttribute('limit_cpu_for_migration_enabled');
   }
-  public set limitCpuForMigrationEnabled(value: boolean | cdktf.IResolvable) {
+  public set limitCpuForMigrationEnabled(value: boolean | cdktn.IResolvable) {
     this._limitCpuForMigrationEnabled = value;
   }
   public resetLimitCpuForMigrationEnabled() {
@@ -308,52 +308,52 @@ export interface SystemCenterVirtualMachineManagerVirtualMachineInstanceInfrastr
 }
 
 export function systemCenterVirtualMachineManagerVirtualMachineInstanceInfrastructureToTerraform(struct?: SystemCenterVirtualMachineManagerVirtualMachineInstanceInfrastructureOutputReference | SystemCenterVirtualMachineManagerVirtualMachineInstanceInfrastructure): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    checkpoint_type: cdktf.stringToTerraform(struct!.checkpointType),
-    system_center_virtual_machine_manager_cloud_id: cdktf.stringToTerraform(struct!.systemCenterVirtualMachineManagerCloudId),
-    system_center_virtual_machine_manager_inventory_item_id: cdktf.stringToTerraform(struct!.systemCenterVirtualMachineManagerInventoryItemId),
-    system_center_virtual_machine_manager_template_id: cdktf.stringToTerraform(struct!.systemCenterVirtualMachineManagerTemplateId),
-    system_center_virtual_machine_manager_virtual_machine_server_id: cdktf.stringToTerraform(struct!.systemCenterVirtualMachineManagerVirtualMachineServerId),
+    checkpoint_type: cdktn.stringToTerraform(struct!.checkpointType),
+    system_center_virtual_machine_manager_cloud_id: cdktn.stringToTerraform(struct!.systemCenterVirtualMachineManagerCloudId),
+    system_center_virtual_machine_manager_inventory_item_id: cdktn.stringToTerraform(struct!.systemCenterVirtualMachineManagerInventoryItemId),
+    system_center_virtual_machine_manager_template_id: cdktn.stringToTerraform(struct!.systemCenterVirtualMachineManagerTemplateId),
+    system_center_virtual_machine_manager_virtual_machine_server_id: cdktn.stringToTerraform(struct!.systemCenterVirtualMachineManagerVirtualMachineServerId),
   }
 }
 
 
 export function systemCenterVirtualMachineManagerVirtualMachineInstanceInfrastructureToHclTerraform(struct?: SystemCenterVirtualMachineManagerVirtualMachineInstanceInfrastructureOutputReference | SystemCenterVirtualMachineManagerVirtualMachineInstanceInfrastructure): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     checkpoint_type: {
-      value: cdktf.stringToHclTerraform(struct!.checkpointType),
+      value: cdktn.stringToHclTerraform(struct!.checkpointType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     system_center_virtual_machine_manager_cloud_id: {
-      value: cdktf.stringToHclTerraform(struct!.systemCenterVirtualMachineManagerCloudId),
+      value: cdktn.stringToHclTerraform(struct!.systemCenterVirtualMachineManagerCloudId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     system_center_virtual_machine_manager_inventory_item_id: {
-      value: cdktf.stringToHclTerraform(struct!.systemCenterVirtualMachineManagerInventoryItemId),
+      value: cdktn.stringToHclTerraform(struct!.systemCenterVirtualMachineManagerInventoryItemId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     system_center_virtual_machine_manager_template_id: {
-      value: cdktf.stringToHclTerraform(struct!.systemCenterVirtualMachineManagerTemplateId),
+      value: cdktn.stringToHclTerraform(struct!.systemCenterVirtualMachineManagerTemplateId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     system_center_virtual_machine_manager_virtual_machine_server_id: {
-      value: cdktf.stringToHclTerraform(struct!.systemCenterVirtualMachineManagerVirtualMachineServerId),
+      value: cdktn.stringToHclTerraform(struct!.systemCenterVirtualMachineManagerVirtualMachineServerId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -364,14 +364,14 @@ export function systemCenterVirtualMachineManagerVirtualMachineInstanceInfrastru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SystemCenterVirtualMachineManagerVirtualMachineInstanceInfrastructureOutputReference extends cdktf.ComplexObject {
+export class SystemCenterVirtualMachineManagerVirtualMachineInstanceInfrastructureOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -523,53 +523,53 @@ export interface SystemCenterVirtualMachineManagerVirtualMachineInstanceNetworkI
   readonly virtualNetworkId?: string;
 }
 
-export function systemCenterVirtualMachineManagerVirtualMachineInstanceNetworkInterfaceToTerraform(struct?: SystemCenterVirtualMachineManagerVirtualMachineInstanceNetworkInterface | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function systemCenterVirtualMachineManagerVirtualMachineInstanceNetworkInterfaceToTerraform(struct?: SystemCenterVirtualMachineManagerVirtualMachineInstanceNetworkInterface | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ipv4_address_type: cdktf.stringToTerraform(struct!.ipv4AddressType),
-    ipv6_address_type: cdktf.stringToTerraform(struct!.ipv6AddressType),
-    mac_address_type: cdktf.stringToTerraform(struct!.macAddressType),
-    name: cdktf.stringToTerraform(struct!.name),
-    virtual_network_id: cdktf.stringToTerraform(struct!.virtualNetworkId),
+    ipv4_address_type: cdktn.stringToTerraform(struct!.ipv4AddressType),
+    ipv6_address_type: cdktn.stringToTerraform(struct!.ipv6AddressType),
+    mac_address_type: cdktn.stringToTerraform(struct!.macAddressType),
+    name: cdktn.stringToTerraform(struct!.name),
+    virtual_network_id: cdktn.stringToTerraform(struct!.virtualNetworkId),
   }
 }
 
 
-export function systemCenterVirtualMachineManagerVirtualMachineInstanceNetworkInterfaceToHclTerraform(struct?: SystemCenterVirtualMachineManagerVirtualMachineInstanceNetworkInterface | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function systemCenterVirtualMachineManagerVirtualMachineInstanceNetworkInterfaceToHclTerraform(struct?: SystemCenterVirtualMachineManagerVirtualMachineInstanceNetworkInterface | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ipv4_address_type: {
-      value: cdktf.stringToHclTerraform(struct!.ipv4AddressType),
+      value: cdktn.stringToHclTerraform(struct!.ipv4AddressType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ipv6_address_type: {
-      value: cdktf.stringToHclTerraform(struct!.ipv6AddressType),
+      value: cdktn.stringToHclTerraform(struct!.ipv6AddressType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mac_address_type: {
-      value: cdktf.stringToHclTerraform(struct!.macAddressType),
+      value: cdktn.stringToHclTerraform(struct!.macAddressType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     virtual_network_id: {
-      value: cdktf.stringToHclTerraform(struct!.virtualNetworkId),
+      value: cdktn.stringToHclTerraform(struct!.virtualNetworkId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -580,9 +580,9 @@ export function systemCenterVirtualMachineManagerVirtualMachineInstanceNetworkIn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SystemCenterVirtualMachineManagerVirtualMachineInstanceNetworkInterfaceOutputReference extends cdktf.ComplexObject {
+export class SystemCenterVirtualMachineManagerVirtualMachineInstanceNetworkInterfaceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -590,11 +590,11 @@ export class SystemCenterVirtualMachineManagerVirtualMachineInstanceNetworkInter
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SystemCenterVirtualMachineManagerVirtualMachineInstanceNetworkInterface | cdktf.IResolvable | undefined {
+  public get internalValue(): SystemCenterVirtualMachineManagerVirtualMachineInstanceNetworkInterface | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -623,7 +623,7 @@ export class SystemCenterVirtualMachineManagerVirtualMachineInstanceNetworkInter
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SystemCenterVirtualMachineManagerVirtualMachineInstanceNetworkInterface | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SystemCenterVirtualMachineManagerVirtualMachineInstanceNetworkInterface | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -633,7 +633,7 @@ export class SystemCenterVirtualMachineManagerVirtualMachineInstanceNetworkInter
       this._name = undefined;
       this._virtualNetworkId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -726,15 +726,15 @@ export class SystemCenterVirtualMachineManagerVirtualMachineInstanceNetworkInter
   }
 }
 
-export class SystemCenterVirtualMachineManagerVirtualMachineInstanceNetworkInterfaceList extends cdktf.ComplexList {
-  public internalValue? : SystemCenterVirtualMachineManagerVirtualMachineInstanceNetworkInterface[] | cdktf.IResolvable
+export class SystemCenterVirtualMachineManagerVirtualMachineInstanceNetworkInterfaceList extends cdktn.ComplexList {
+  public internalValue? : SystemCenterVirtualMachineManagerVirtualMachineInstanceNetworkInterface[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -757,31 +757,31 @@ export interface SystemCenterVirtualMachineManagerVirtualMachineInstanceOperatin
 }
 
 export function systemCenterVirtualMachineManagerVirtualMachineInstanceOperatingSystemToTerraform(struct?: SystemCenterVirtualMachineManagerVirtualMachineInstanceOperatingSystemOutputReference | SystemCenterVirtualMachineManagerVirtualMachineInstanceOperatingSystem): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    admin_password: cdktf.stringToTerraform(struct!.adminPassword),
-    computer_name: cdktf.stringToTerraform(struct!.computerName),
+    admin_password: cdktn.stringToTerraform(struct!.adminPassword),
+    computer_name: cdktn.stringToTerraform(struct!.computerName),
   }
 }
 
 
 export function systemCenterVirtualMachineManagerVirtualMachineInstanceOperatingSystemToHclTerraform(struct?: SystemCenterVirtualMachineManagerVirtualMachineInstanceOperatingSystemOutputReference | SystemCenterVirtualMachineManagerVirtualMachineInstanceOperatingSystem): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     admin_password: {
-      value: cdktf.stringToHclTerraform(struct!.adminPassword),
+      value: cdktn.stringToHclTerraform(struct!.adminPassword),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     computer_name: {
-      value: cdktf.stringToHclTerraform(struct!.computerName),
+      value: cdktn.stringToHclTerraform(struct!.computerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -792,14 +792,14 @@ export function systemCenterVirtualMachineManagerVirtualMachineInstanceOperating
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SystemCenterVirtualMachineManagerVirtualMachineInstanceOperatingSystemOutputReference extends cdktf.ComplexObject {
+export class SystemCenterVirtualMachineManagerVirtualMachineInstanceOperatingSystemOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -897,74 +897,74 @@ export interface SystemCenterVirtualMachineManagerVirtualMachineInstanceStorageD
   readonly vhdType?: string;
 }
 
-export function systemCenterVirtualMachineManagerVirtualMachineInstanceStorageDiskToTerraform(struct?: SystemCenterVirtualMachineManagerVirtualMachineInstanceStorageDisk | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function systemCenterVirtualMachineManagerVirtualMachineInstanceStorageDiskToTerraform(struct?: SystemCenterVirtualMachineManagerVirtualMachineInstanceStorageDisk | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bus: cdktf.numberToTerraform(struct!.bus),
-    bus_type: cdktf.stringToTerraform(struct!.busType),
-    disk_size_gb: cdktf.numberToTerraform(struct!.diskSizeGb),
-    lun: cdktf.numberToTerraform(struct!.lun),
-    name: cdktf.stringToTerraform(struct!.name),
-    storage_qos_policy_name: cdktf.stringToTerraform(struct!.storageQosPolicyName),
-    template_disk_id: cdktf.stringToTerraform(struct!.templateDiskId),
-    vhd_type: cdktf.stringToTerraform(struct!.vhdType),
+    bus: cdktn.numberToTerraform(struct!.bus),
+    bus_type: cdktn.stringToTerraform(struct!.busType),
+    disk_size_gb: cdktn.numberToTerraform(struct!.diskSizeGb),
+    lun: cdktn.numberToTerraform(struct!.lun),
+    name: cdktn.stringToTerraform(struct!.name),
+    storage_qos_policy_name: cdktn.stringToTerraform(struct!.storageQosPolicyName),
+    template_disk_id: cdktn.stringToTerraform(struct!.templateDiskId),
+    vhd_type: cdktn.stringToTerraform(struct!.vhdType),
   }
 }
 
 
-export function systemCenterVirtualMachineManagerVirtualMachineInstanceStorageDiskToHclTerraform(struct?: SystemCenterVirtualMachineManagerVirtualMachineInstanceStorageDisk | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function systemCenterVirtualMachineManagerVirtualMachineInstanceStorageDiskToHclTerraform(struct?: SystemCenterVirtualMachineManagerVirtualMachineInstanceStorageDisk | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bus: {
-      value: cdktf.numberToHclTerraform(struct!.bus),
+      value: cdktn.numberToHclTerraform(struct!.bus),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     bus_type: {
-      value: cdktf.stringToHclTerraform(struct!.busType),
+      value: cdktn.stringToHclTerraform(struct!.busType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     disk_size_gb: {
-      value: cdktf.numberToHclTerraform(struct!.diskSizeGb),
+      value: cdktn.numberToHclTerraform(struct!.diskSizeGb),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     lun: {
-      value: cdktf.numberToHclTerraform(struct!.lun),
+      value: cdktn.numberToHclTerraform(struct!.lun),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_qos_policy_name: {
-      value: cdktf.stringToHclTerraform(struct!.storageQosPolicyName),
+      value: cdktn.stringToHclTerraform(struct!.storageQosPolicyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     template_disk_id: {
-      value: cdktf.stringToHclTerraform(struct!.templateDiskId),
+      value: cdktn.stringToHclTerraform(struct!.templateDiskId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vhd_type: {
-      value: cdktf.stringToHclTerraform(struct!.vhdType),
+      value: cdktn.stringToHclTerraform(struct!.vhdType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -975,9 +975,9 @@ export function systemCenterVirtualMachineManagerVirtualMachineInstanceStorageDi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SystemCenterVirtualMachineManagerVirtualMachineInstanceStorageDiskOutputReference extends cdktf.ComplexObject {
+export class SystemCenterVirtualMachineManagerVirtualMachineInstanceStorageDiskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -985,11 +985,11 @@ export class SystemCenterVirtualMachineManagerVirtualMachineInstanceStorageDiskO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SystemCenterVirtualMachineManagerVirtualMachineInstanceStorageDisk | cdktf.IResolvable | undefined {
+  public get internalValue(): SystemCenterVirtualMachineManagerVirtualMachineInstanceStorageDisk | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1030,7 +1030,7 @@ export class SystemCenterVirtualMachineManagerVirtualMachineInstanceStorageDiskO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SystemCenterVirtualMachineManagerVirtualMachineInstanceStorageDisk | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SystemCenterVirtualMachineManagerVirtualMachineInstanceStorageDisk | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1043,7 +1043,7 @@ export class SystemCenterVirtualMachineManagerVirtualMachineInstanceStorageDiskO
       this._templateDiskId = undefined;
       this._vhdType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1190,15 +1190,15 @@ export class SystemCenterVirtualMachineManagerVirtualMachineInstanceStorageDiskO
   }
 }
 
-export class SystemCenterVirtualMachineManagerVirtualMachineInstanceStorageDiskList extends cdktf.ComplexList {
-  public internalValue? : SystemCenterVirtualMachineManagerVirtualMachineInstanceStorageDisk[] | cdktf.IResolvable
+export class SystemCenterVirtualMachineManagerVirtualMachineInstanceStorageDiskList extends cdktn.ComplexList {
+  public internalValue? : SystemCenterVirtualMachineManagerVirtualMachineInstanceStorageDisk[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1228,46 +1228,46 @@ export interface SystemCenterVirtualMachineManagerVirtualMachineInstanceTimeouts
   readonly update?: string;
 }
 
-export function systemCenterVirtualMachineManagerVirtualMachineInstanceTimeoutsToTerraform(struct?: SystemCenterVirtualMachineManagerVirtualMachineInstanceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function systemCenterVirtualMachineManagerVirtualMachineInstanceTimeoutsToTerraform(struct?: SystemCenterVirtualMachineManagerVirtualMachineInstanceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function systemCenterVirtualMachineManagerVirtualMachineInstanceTimeoutsToHclTerraform(struct?: SystemCenterVirtualMachineManagerVirtualMachineInstanceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function systemCenterVirtualMachineManagerVirtualMachineInstanceTimeoutsToHclTerraform(struct?: SystemCenterVirtualMachineManagerVirtualMachineInstanceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1278,19 +1278,19 @@ export function systemCenterVirtualMachineManagerVirtualMachineInstanceTimeoutsT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SystemCenterVirtualMachineManagerVirtualMachineInstanceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SystemCenterVirtualMachineManagerVirtualMachineInstanceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SystemCenterVirtualMachineManagerVirtualMachineInstanceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SystemCenterVirtualMachineManagerVirtualMachineInstanceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1315,7 +1315,7 @@ export class SystemCenterVirtualMachineManagerVirtualMachineInstanceTimeoutsOutp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SystemCenterVirtualMachineManagerVirtualMachineInstanceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SystemCenterVirtualMachineManagerVirtualMachineInstanceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1324,7 +1324,7 @@ export class SystemCenterVirtualMachineManagerVirtualMachineInstanceTimeoutsOutp
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1406,7 +1406,7 @@ export class SystemCenterVirtualMachineManagerVirtualMachineInstanceTimeoutsOutp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/system_center_virtual_machine_manager_virtual_machine_instance azurerm_system_center_virtual_machine_manager_virtual_machine_instance}
 */
-export class SystemCenterVirtualMachineManagerVirtualMachineInstance extends cdktf.TerraformResource {
+export class SystemCenterVirtualMachineManagerVirtualMachineInstance extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1417,14 +1417,14 @@ export class SystemCenterVirtualMachineManagerVirtualMachineInstance extends cdk
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SystemCenterVirtualMachineManagerVirtualMachineInstance resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SystemCenterVirtualMachineManagerVirtualMachineInstance resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SystemCenterVirtualMachineManagerVirtualMachineInstance to import
   * @param importFromId The id of the existing SystemCenterVirtualMachineManagerVirtualMachineInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/system_center_virtual_machine_manager_virtual_machine_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SystemCenterVirtualMachineManagerVirtualMachineInstance to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_system_center_virtual_machine_manager_virtual_machine_instance", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_system_center_virtual_machine_manager_virtual_machine_instance", importId: importFromId, provider });
       }
 
   // ===========
@@ -1562,7 +1562,7 @@ export class SystemCenterVirtualMachineManagerVirtualMachineInstance extends cdk
   public get networkInterface() {
     return this._networkInterface;
   }
-  public putNetworkInterface(value: SystemCenterVirtualMachineManagerVirtualMachineInstanceNetworkInterface[] | cdktf.IResolvable) {
+  public putNetworkInterface(value: SystemCenterVirtualMachineManagerVirtualMachineInstanceNetworkInterface[] | cdktn.IResolvable) {
     this._networkInterface.internalValue = value;
   }
   public resetNetworkInterface() {
@@ -1594,7 +1594,7 @@ export class SystemCenterVirtualMachineManagerVirtualMachineInstance extends cdk
   public get storageDisk() {
     return this._storageDisk;
   }
-  public putStorageDisk(value: SystemCenterVirtualMachineManagerVirtualMachineInstanceStorageDisk[] | cdktf.IResolvable) {
+  public putStorageDisk(value: SystemCenterVirtualMachineManagerVirtualMachineInstanceStorageDisk[] | cdktn.IResolvable) {
     this._storageDisk.internalValue = value;
   }
   public resetStorageDisk() {
@@ -1627,15 +1627,15 @@ export class SystemCenterVirtualMachineManagerVirtualMachineInstance extends cdk
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      custom_location_id: cdktf.stringToTerraform(this._customLocationId),
-      id: cdktf.stringToTerraform(this._id),
-      scoped_resource_id: cdktf.stringToTerraform(this._scopedResourceId),
-      system_center_virtual_machine_manager_availability_set_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._systemCenterVirtualMachineManagerAvailabilitySetIds),
+      custom_location_id: cdktn.stringToTerraform(this._customLocationId),
+      id: cdktn.stringToTerraform(this._id),
+      scoped_resource_id: cdktn.stringToTerraform(this._scopedResourceId),
+      system_center_virtual_machine_manager_availability_set_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._systemCenterVirtualMachineManagerAvailabilitySetIds),
       hardware: systemCenterVirtualMachineManagerVirtualMachineInstanceHardwareToTerraform(this._hardware.internalValue),
       infrastructure: systemCenterVirtualMachineManagerVirtualMachineInstanceInfrastructureToTerraform(this._infrastructure.internalValue),
-      network_interface: cdktf.listMapper(systemCenterVirtualMachineManagerVirtualMachineInstanceNetworkInterfaceToTerraform, true)(this._networkInterface.internalValue),
+      network_interface: cdktn.listMapper(systemCenterVirtualMachineManagerVirtualMachineInstanceNetworkInterfaceToTerraform, true)(this._networkInterface.internalValue),
       operating_system: systemCenterVirtualMachineManagerVirtualMachineInstanceOperatingSystemToTerraform(this._operatingSystem.internalValue),
-      storage_disk: cdktf.listMapper(systemCenterVirtualMachineManagerVirtualMachineInstanceStorageDiskToTerraform, true)(this._storageDisk.internalValue),
+      storage_disk: cdktn.listMapper(systemCenterVirtualMachineManagerVirtualMachineInstanceStorageDiskToTerraform, true)(this._storageDisk.internalValue),
       timeouts: systemCenterVirtualMachineManagerVirtualMachineInstanceTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1643,25 +1643,25 @@ export class SystemCenterVirtualMachineManagerVirtualMachineInstance extends cdk
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       custom_location_id: {
-        value: cdktf.stringToHclTerraform(this._customLocationId),
+        value: cdktn.stringToHclTerraform(this._customLocationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scoped_resource_id: {
-        value: cdktf.stringToHclTerraform(this._scopedResourceId),
+        value: cdktn.stringToHclTerraform(this._scopedResourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       system_center_virtual_machine_manager_availability_set_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._systemCenterVirtualMachineManagerAvailabilitySetIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._systemCenterVirtualMachineManagerAvailabilitySetIds),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
@@ -1679,7 +1679,7 @@ export class SystemCenterVirtualMachineManagerVirtualMachineInstance extends cdk
         storageClassType: "SystemCenterVirtualMachineManagerVirtualMachineInstanceInfrastructureList",
       },
       network_interface: {
-        value: cdktf.listMapperHcl(systemCenterVirtualMachineManagerVirtualMachineInstanceNetworkInterfaceToHclTerraform, true)(this._networkInterface.internalValue),
+        value: cdktn.listMapperHcl(systemCenterVirtualMachineManagerVirtualMachineInstanceNetworkInterfaceToHclTerraform, true)(this._networkInterface.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SystemCenterVirtualMachineManagerVirtualMachineInstanceNetworkInterfaceList",
@@ -1691,7 +1691,7 @@ export class SystemCenterVirtualMachineManagerVirtualMachineInstance extends cdk
         storageClassType: "SystemCenterVirtualMachineManagerVirtualMachineInstanceOperatingSystemList",
       },
       storage_disk: {
-        value: cdktf.listMapperHcl(systemCenterVirtualMachineManagerVirtualMachineInstanceStorageDiskToHclTerraform, true)(this._storageDisk.internalValue),
+        value: cdktn.listMapperHcl(systemCenterVirtualMachineManagerVirtualMachineInstanceStorageDiskToHclTerraform, true)(this._storageDisk.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SystemCenterVirtualMachineManagerVirtualMachineInstanceStorageDiskList",

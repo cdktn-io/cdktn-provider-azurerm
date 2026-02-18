@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MonitorSmartDetectorAlertRuleConfig extends cdktf.TerraformMetaArguments {
+export interface MonitorSmartDetectorAlertRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_smart_detector_alert_rule#description MonitorSmartDetectorAlertRule#description}
   */
@@ -23,7 +23,7 @@ export interface MonitorSmartDetectorAlertRuleConfig extends cdktf.TerraformMeta
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_smart_detector_alert_rule#enabled MonitorSmartDetectorAlertRule#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_smart_detector_alert_rule#frequency MonitorSmartDetectorAlertRule#frequency}
   */
@@ -88,38 +88,38 @@ export interface MonitorSmartDetectorAlertRuleActionGroup {
 }
 
 export function monitorSmartDetectorAlertRuleActionGroupToTerraform(struct?: MonitorSmartDetectorAlertRuleActionGroupOutputReference | MonitorSmartDetectorAlertRuleActionGroup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    email_subject: cdktf.stringToTerraform(struct!.emailSubject),
-    ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ids),
-    webhook_payload: cdktf.stringToTerraform(struct!.webhookPayload),
+    email_subject: cdktn.stringToTerraform(struct!.emailSubject),
+    ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.ids),
+    webhook_payload: cdktn.stringToTerraform(struct!.webhookPayload),
   }
 }
 
 
 export function monitorSmartDetectorAlertRuleActionGroupToHclTerraform(struct?: MonitorSmartDetectorAlertRuleActionGroupOutputReference | MonitorSmartDetectorAlertRuleActionGroup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     email_subject: {
-      value: cdktf.stringToHclTerraform(struct!.emailSubject),
+      value: cdktn.stringToHclTerraform(struct!.emailSubject),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ids),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.ids),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     webhook_payload: {
-      value: cdktf.stringToHclTerraform(struct!.webhookPayload),
+      value: cdktn.stringToHclTerraform(struct!.webhookPayload),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -130,14 +130,14 @@ export function monitorSmartDetectorAlertRuleActionGroupToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorSmartDetectorAlertRuleActionGroupOutputReference extends cdktf.ComplexObject {
+export class MonitorSmartDetectorAlertRuleActionGroupOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -193,7 +193,7 @@ export class MonitorSmartDetectorAlertRuleActionGroupOutputReference extends cdk
   // ids - computed: false, optional: false, required: true
   private _ids?: string[]; 
   public get ids() {
-    return cdktf.Fn.tolist(this.getListAttribute('ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('ids'));
   }
   public set ids(value: string[]) {
     this._ids = value;
@@ -238,46 +238,46 @@ export interface MonitorSmartDetectorAlertRuleTimeouts {
   readonly update?: string;
 }
 
-export function monitorSmartDetectorAlertRuleTimeoutsToTerraform(struct?: MonitorSmartDetectorAlertRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorSmartDetectorAlertRuleTimeoutsToTerraform(struct?: MonitorSmartDetectorAlertRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function monitorSmartDetectorAlertRuleTimeoutsToHclTerraform(struct?: MonitorSmartDetectorAlertRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorSmartDetectorAlertRuleTimeoutsToHclTerraform(struct?: MonitorSmartDetectorAlertRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -288,19 +288,19 @@ export function monitorSmartDetectorAlertRuleTimeoutsToHclTerraform(struct?: Mon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorSmartDetectorAlertRuleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MonitorSmartDetectorAlertRuleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MonitorSmartDetectorAlertRuleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorSmartDetectorAlertRuleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -325,7 +325,7 @@ export class MonitorSmartDetectorAlertRuleTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorSmartDetectorAlertRuleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorSmartDetectorAlertRuleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -334,7 +334,7 @@ export class MonitorSmartDetectorAlertRuleTimeoutsOutputReference extends cdktf.
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -416,7 +416,7 @@ export class MonitorSmartDetectorAlertRuleTimeoutsOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_smart_detector_alert_rule azurerm_monitor_smart_detector_alert_rule}
 */
-export class MonitorSmartDetectorAlertRule extends cdktf.TerraformResource {
+export class MonitorSmartDetectorAlertRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -427,14 +427,14 @@ export class MonitorSmartDetectorAlertRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MonitorSmartDetectorAlertRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MonitorSmartDetectorAlertRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MonitorSmartDetectorAlertRule to import
   * @param importFromId The id of the existing MonitorSmartDetectorAlertRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_smart_detector_alert_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MonitorSmartDetectorAlertRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_monitor_smart_detector_alert_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_monitor_smart_detector_alert_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -513,11 +513,11 @@ export class MonitorSmartDetectorAlertRule extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -586,7 +586,7 @@ export class MonitorSmartDetectorAlertRule extends cdktf.TerraformResource {
   // scope_resource_ids - computed: false, optional: false, required: true
   private _scopeResourceIds?: string[]; 
   public get scopeResourceIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('scope_resource_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('scope_resource_ids'));
   }
   public set scopeResourceIds(value: string[]) {
     this._scopeResourceIds = value;
@@ -676,17 +676,17 @@ export class MonitorSmartDetectorAlertRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      detector_type: cdktf.stringToTerraform(this._detectorType),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      frequency: cdktf.stringToTerraform(this._frequency),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      scope_resource_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._scopeResourceIds),
-      severity: cdktf.stringToTerraform(this._severity),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      throttling_duration: cdktf.stringToTerraform(this._throttlingDuration),
+      description: cdktn.stringToTerraform(this._description),
+      detector_type: cdktn.stringToTerraform(this._detectorType),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      frequency: cdktn.stringToTerraform(this._frequency),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      scope_resource_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._scopeResourceIds),
+      severity: cdktn.stringToTerraform(this._severity),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      throttling_duration: cdktn.stringToTerraform(this._throttlingDuration),
       action_group: monitorSmartDetectorAlertRuleActionGroupToTerraform(this._actionGroup.internalValue),
       timeouts: monitorSmartDetectorAlertRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -695,67 +695,67 @@ export class MonitorSmartDetectorAlertRule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       detector_type: {
-        value: cdktf.stringToHclTerraform(this._detectorType),
+        value: cdktn.stringToHclTerraform(this._detectorType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       frequency: {
-        value: cdktf.stringToHclTerraform(this._frequency),
+        value: cdktn.stringToHclTerraform(this._frequency),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scope_resource_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._scopeResourceIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._scopeResourceIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       severity: {
-        value: cdktf.stringToHclTerraform(this._severity),
+        value: cdktn.stringToHclTerraform(this._severity),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       throttling_duration: {
-        value: cdktf.stringToHclTerraform(this._throttlingDuration),
+        value: cdktn.stringToHclTerraform(this._throttlingDuration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

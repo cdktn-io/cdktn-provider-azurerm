@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ServicebusSubscriptionRuleConfig extends cdktf.TerraformMetaArguments {
+export interface ServicebusSubscriptionRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/servicebus_subscription_rule#action ServicebusSubscriptionRule#action}
   */
@@ -92,80 +92,80 @@ export interface ServicebusSubscriptionRuleCorrelationFilter {
 }
 
 export function servicebusSubscriptionRuleCorrelationFilterToTerraform(struct?: ServicebusSubscriptionRuleCorrelationFilterOutputReference | ServicebusSubscriptionRuleCorrelationFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    content_type: cdktf.stringToTerraform(struct!.contentType),
-    correlation_id: cdktf.stringToTerraform(struct!.correlationId),
-    label: cdktf.stringToTerraform(struct!.label),
-    message_id: cdktf.stringToTerraform(struct!.messageId),
-    properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.properties),
-    reply_to: cdktf.stringToTerraform(struct!.replyTo),
-    reply_to_session_id: cdktf.stringToTerraform(struct!.replyToSessionId),
-    session_id: cdktf.stringToTerraform(struct!.sessionId),
-    to: cdktf.stringToTerraform(struct!.to),
+    content_type: cdktn.stringToTerraform(struct!.contentType),
+    correlation_id: cdktn.stringToTerraform(struct!.correlationId),
+    label: cdktn.stringToTerraform(struct!.label),
+    message_id: cdktn.stringToTerraform(struct!.messageId),
+    properties: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.properties),
+    reply_to: cdktn.stringToTerraform(struct!.replyTo),
+    reply_to_session_id: cdktn.stringToTerraform(struct!.replyToSessionId),
+    session_id: cdktn.stringToTerraform(struct!.sessionId),
+    to: cdktn.stringToTerraform(struct!.to),
   }
 }
 
 
 export function servicebusSubscriptionRuleCorrelationFilterToHclTerraform(struct?: ServicebusSubscriptionRuleCorrelationFilterOutputReference | ServicebusSubscriptionRuleCorrelationFilter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     content_type: {
-      value: cdktf.stringToHclTerraform(struct!.contentType),
+      value: cdktn.stringToHclTerraform(struct!.contentType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     correlation_id: {
-      value: cdktf.stringToHclTerraform(struct!.correlationId),
+      value: cdktn.stringToHclTerraform(struct!.correlationId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     label: {
-      value: cdktf.stringToHclTerraform(struct!.label),
+      value: cdktn.stringToHclTerraform(struct!.label),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     message_id: {
-      value: cdktf.stringToHclTerraform(struct!.messageId),
+      value: cdktn.stringToHclTerraform(struct!.messageId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     properties: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.properties),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.properties),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     reply_to: {
-      value: cdktf.stringToHclTerraform(struct!.replyTo),
+      value: cdktn.stringToHclTerraform(struct!.replyTo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     reply_to_session_id: {
-      value: cdktf.stringToHclTerraform(struct!.replyToSessionId),
+      value: cdktn.stringToHclTerraform(struct!.replyToSessionId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     session_id: {
-      value: cdktf.stringToHclTerraform(struct!.sessionId),
+      value: cdktn.stringToHclTerraform(struct!.sessionId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     to: {
-      value: cdktf.stringToHclTerraform(struct!.to),
+      value: cdktn.stringToHclTerraform(struct!.to),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -176,14 +176,14 @@ export function servicebusSubscriptionRuleCorrelationFilterToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServicebusSubscriptionRuleCorrelationFilterOutputReference extends cdktf.ComplexObject {
+export class ServicebusSubscriptionRuleCorrelationFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -419,46 +419,46 @@ export interface ServicebusSubscriptionRuleTimeouts {
   readonly update?: string;
 }
 
-export function servicebusSubscriptionRuleTimeoutsToTerraform(struct?: ServicebusSubscriptionRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function servicebusSubscriptionRuleTimeoutsToTerraform(struct?: ServicebusSubscriptionRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function servicebusSubscriptionRuleTimeoutsToHclTerraform(struct?: ServicebusSubscriptionRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function servicebusSubscriptionRuleTimeoutsToHclTerraform(struct?: ServicebusSubscriptionRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -469,19 +469,19 @@ export function servicebusSubscriptionRuleTimeoutsToHclTerraform(struct?: Servic
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServicebusSubscriptionRuleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ServicebusSubscriptionRuleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ServicebusSubscriptionRuleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ServicebusSubscriptionRuleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -506,7 +506,7 @@ export class ServicebusSubscriptionRuleTimeoutsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServicebusSubscriptionRuleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ServicebusSubscriptionRuleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -515,7 +515,7 @@ export class ServicebusSubscriptionRuleTimeoutsOutputReference extends cdktf.Com
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -597,7 +597,7 @@ export class ServicebusSubscriptionRuleTimeoutsOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/servicebus_subscription_rule azurerm_servicebus_subscription_rule}
 */
-export class ServicebusSubscriptionRule extends cdktf.TerraformResource {
+export class ServicebusSubscriptionRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -608,14 +608,14 @@ export class ServicebusSubscriptionRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ServicebusSubscriptionRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ServicebusSubscriptionRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServicebusSubscriptionRule to import
   * @param importFromId The id of the existing ServicebusSubscriptionRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/servicebus_subscription_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServicebusSubscriptionRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_servicebus_subscription_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_servicebus_subscription_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -789,12 +789,12 @@ export class ServicebusSubscriptionRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      action: cdktf.stringToTerraform(this._action),
-      filter_type: cdktf.stringToTerraform(this._filterType),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      sql_filter: cdktf.stringToTerraform(this._sqlFilter),
-      subscription_id: cdktf.stringToTerraform(this._subscriptionId),
+      action: cdktn.stringToTerraform(this._action),
+      filter_type: cdktn.stringToTerraform(this._filterType),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      sql_filter: cdktn.stringToTerraform(this._sqlFilter),
+      subscription_id: cdktn.stringToTerraform(this._subscriptionId),
       correlation_filter: servicebusSubscriptionRuleCorrelationFilterToTerraform(this._correlationFilter.internalValue),
       timeouts: servicebusSubscriptionRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -803,37 +803,37 @@ export class ServicebusSubscriptionRule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       action: {
-        value: cdktf.stringToHclTerraform(this._action),
+        value: cdktn.stringToHclTerraform(this._action),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       filter_type: {
-        value: cdktf.stringToHclTerraform(this._filterType),
+        value: cdktn.stringToHclTerraform(this._filterType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sql_filter: {
-        value: cdktf.stringToHclTerraform(this._sqlFilter),
+        value: cdktn.stringToHclTerraform(this._sqlFilter),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subscription_id: {
-        value: cdktf.stringToHclTerraform(this._subscriptionId),
+        value: cdktn.stringToHclTerraform(this._subscriptionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

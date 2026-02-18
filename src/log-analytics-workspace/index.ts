@@ -7,19 +7,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LogAnalyticsWorkspaceConfig extends cdktf.TerraformMetaArguments {
+export interface LogAnalyticsWorkspaceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/log_analytics_workspace#allow_resource_only_permissions LogAnalyticsWorkspace#allow_resource_only_permissions}
   */
-  readonly allowResourceOnlyPermissions?: boolean | cdktf.IResolvable;
+  readonly allowResourceOnlyPermissions?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/log_analytics_workspace#cmk_for_query_forced LogAnalyticsWorkspace#cmk_for_query_forced}
   */
-  readonly cmkForQueryForced?: boolean | cdktf.IResolvable;
+  readonly cmkForQueryForced?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/log_analytics_workspace#daily_quota_gb LogAnalyticsWorkspace#daily_quota_gb}
   */
@@ -38,23 +38,23 @@ export interface LogAnalyticsWorkspaceConfig extends cdktf.TerraformMetaArgument
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/log_analytics_workspace#immediate_data_purge_on_30_days_enabled LogAnalyticsWorkspace#immediate_data_purge_on_30_days_enabled}
   */
-  readonly immediateDataPurgeOn30DaysEnabled?: boolean | cdktf.IResolvable;
+  readonly immediateDataPurgeOn30DaysEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/log_analytics_workspace#internet_ingestion_enabled LogAnalyticsWorkspace#internet_ingestion_enabled}
   */
-  readonly internetIngestionEnabled?: boolean | cdktf.IResolvable;
+  readonly internetIngestionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/log_analytics_workspace#internet_query_enabled LogAnalyticsWorkspace#internet_query_enabled}
   */
-  readonly internetQueryEnabled?: boolean | cdktf.IResolvable;
+  readonly internetQueryEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/log_analytics_workspace#local_authentication_disabled LogAnalyticsWorkspace#local_authentication_disabled}
   */
-  readonly localAuthenticationDisabled?: boolean | cdktf.IResolvable;
+  readonly localAuthenticationDisabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/log_analytics_workspace#local_authentication_enabled LogAnalyticsWorkspace#local_authentication_enabled}
   */
-  readonly localAuthenticationEnabled?: boolean | cdktf.IResolvable;
+  readonly localAuthenticationEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/log_analytics_workspace#location LogAnalyticsWorkspace#location}
   */
@@ -108,31 +108,31 @@ export interface LogAnalyticsWorkspaceIdentity {
 }
 
 export function logAnalyticsWorkspaceIdentityToTerraform(struct?: LogAnalyticsWorkspaceIdentityOutputReference | LogAnalyticsWorkspaceIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function logAnalyticsWorkspaceIdentityToHclTerraform(struct?: LogAnalyticsWorkspaceIdentityOutputReference | LogAnalyticsWorkspaceIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -143,14 +143,14 @@ export function logAnalyticsWorkspaceIdentityToHclTerraform(struct?: LogAnalytic
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogAnalyticsWorkspaceIdentityOutputReference extends cdktf.ComplexObject {
+export class LogAnalyticsWorkspaceIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -184,7 +184,7 @@ export class LogAnalyticsWorkspaceIdentityOutputReference extends cdktf.ComplexO
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -239,46 +239,46 @@ export interface LogAnalyticsWorkspaceTimeouts {
   readonly update?: string;
 }
 
-export function logAnalyticsWorkspaceTimeoutsToTerraform(struct?: LogAnalyticsWorkspaceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logAnalyticsWorkspaceTimeoutsToTerraform(struct?: LogAnalyticsWorkspaceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function logAnalyticsWorkspaceTimeoutsToHclTerraform(struct?: LogAnalyticsWorkspaceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logAnalyticsWorkspaceTimeoutsToHclTerraform(struct?: LogAnalyticsWorkspaceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -289,19 +289,19 @@ export function logAnalyticsWorkspaceTimeoutsToHclTerraform(struct?: LogAnalytic
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogAnalyticsWorkspaceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class LogAnalyticsWorkspaceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LogAnalyticsWorkspaceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): LogAnalyticsWorkspaceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -326,7 +326,7 @@ export class LogAnalyticsWorkspaceTimeoutsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogAnalyticsWorkspaceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogAnalyticsWorkspaceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -335,7 +335,7 @@ export class LogAnalyticsWorkspaceTimeoutsOutputReference extends cdktf.ComplexO
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -417,7 +417,7 @@ export class LogAnalyticsWorkspaceTimeoutsOutputReference extends cdktf.ComplexO
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/log_analytics_workspace azurerm_log_analytics_workspace}
 */
-export class LogAnalyticsWorkspace extends cdktf.TerraformResource {
+export class LogAnalyticsWorkspace extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -428,14 +428,14 @@ export class LogAnalyticsWorkspace extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LogAnalyticsWorkspace resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LogAnalyticsWorkspace resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LogAnalyticsWorkspace to import
   * @param importFromId The id of the existing LogAnalyticsWorkspace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/log_analytics_workspace#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LogAnalyticsWorkspace to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_log_analytics_workspace", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_log_analytics_workspace", importId: importFromId, provider });
       }
 
   // ===========
@@ -491,11 +491,11 @@ export class LogAnalyticsWorkspace extends cdktf.TerraformResource {
   // ==========
 
   // allow_resource_only_permissions - computed: false, optional: true, required: false
-  private _allowResourceOnlyPermissions?: boolean | cdktf.IResolvable; 
+  private _allowResourceOnlyPermissions?: boolean | cdktn.IResolvable; 
   public get allowResourceOnlyPermissions() {
     return this.getBooleanAttribute('allow_resource_only_permissions');
   }
-  public set allowResourceOnlyPermissions(value: boolean | cdktf.IResolvable) {
+  public set allowResourceOnlyPermissions(value: boolean | cdktn.IResolvable) {
     this._allowResourceOnlyPermissions = value;
   }
   public resetAllowResourceOnlyPermissions() {
@@ -507,11 +507,11 @@ export class LogAnalyticsWorkspace extends cdktf.TerraformResource {
   }
 
   // cmk_for_query_forced - computed: false, optional: true, required: false
-  private _cmkForQueryForced?: boolean | cdktf.IResolvable; 
+  private _cmkForQueryForced?: boolean | cdktn.IResolvable; 
   public get cmkForQueryForced() {
     return this.getBooleanAttribute('cmk_for_query_forced');
   }
-  public set cmkForQueryForced(value: boolean | cdktf.IResolvable) {
+  public set cmkForQueryForced(value: boolean | cdktn.IResolvable) {
     this._cmkForQueryForced = value;
   }
   public resetCmkForQueryForced() {
@@ -571,11 +571,11 @@ export class LogAnalyticsWorkspace extends cdktf.TerraformResource {
   }
 
   // immediate_data_purge_on_30_days_enabled - computed: false, optional: true, required: false
-  private _immediateDataPurgeOn30DaysEnabled?: boolean | cdktf.IResolvable; 
+  private _immediateDataPurgeOn30DaysEnabled?: boolean | cdktn.IResolvable; 
   public get immediateDataPurgeOn30DaysEnabled() {
     return this.getBooleanAttribute('immediate_data_purge_on_30_days_enabled');
   }
-  public set immediateDataPurgeOn30DaysEnabled(value: boolean | cdktf.IResolvable) {
+  public set immediateDataPurgeOn30DaysEnabled(value: boolean | cdktn.IResolvable) {
     this._immediateDataPurgeOn30DaysEnabled = value;
   }
   public resetImmediateDataPurgeOn30DaysEnabled() {
@@ -587,11 +587,11 @@ export class LogAnalyticsWorkspace extends cdktf.TerraformResource {
   }
 
   // internet_ingestion_enabled - computed: false, optional: true, required: false
-  private _internetIngestionEnabled?: boolean | cdktf.IResolvable; 
+  private _internetIngestionEnabled?: boolean | cdktn.IResolvable; 
   public get internetIngestionEnabled() {
     return this.getBooleanAttribute('internet_ingestion_enabled');
   }
-  public set internetIngestionEnabled(value: boolean | cdktf.IResolvable) {
+  public set internetIngestionEnabled(value: boolean | cdktn.IResolvable) {
     this._internetIngestionEnabled = value;
   }
   public resetInternetIngestionEnabled() {
@@ -603,11 +603,11 @@ export class LogAnalyticsWorkspace extends cdktf.TerraformResource {
   }
 
   // internet_query_enabled - computed: false, optional: true, required: false
-  private _internetQueryEnabled?: boolean | cdktf.IResolvable; 
+  private _internetQueryEnabled?: boolean | cdktn.IResolvable; 
   public get internetQueryEnabled() {
     return this.getBooleanAttribute('internet_query_enabled');
   }
-  public set internetQueryEnabled(value: boolean | cdktf.IResolvable) {
+  public set internetQueryEnabled(value: boolean | cdktn.IResolvable) {
     this._internetQueryEnabled = value;
   }
   public resetInternetQueryEnabled() {
@@ -619,11 +619,11 @@ export class LogAnalyticsWorkspace extends cdktf.TerraformResource {
   }
 
   // local_authentication_disabled - computed: true, optional: true, required: false
-  private _localAuthenticationDisabled?: boolean | cdktf.IResolvable; 
+  private _localAuthenticationDisabled?: boolean | cdktn.IResolvable; 
   public get localAuthenticationDisabled() {
     return this.getBooleanAttribute('local_authentication_disabled');
   }
-  public set localAuthenticationDisabled(value: boolean | cdktf.IResolvable) {
+  public set localAuthenticationDisabled(value: boolean | cdktn.IResolvable) {
     this._localAuthenticationDisabled = value;
   }
   public resetLocalAuthenticationDisabled() {
@@ -635,11 +635,11 @@ export class LogAnalyticsWorkspace extends cdktf.TerraformResource {
   }
 
   // local_authentication_enabled - computed: true, optional: true, required: false
-  private _localAuthenticationEnabled?: boolean | cdktf.IResolvable; 
+  private _localAuthenticationEnabled?: boolean | cdktn.IResolvable; 
   public get localAuthenticationEnabled() {
     return this.getBooleanAttribute('local_authentication_enabled');
   }
-  public set localAuthenticationEnabled(value: boolean | cdktf.IResolvable) {
+  public set localAuthenticationEnabled(value: boolean | cdktn.IResolvable) {
     this._localAuthenticationEnabled = value;
   }
   public resetLocalAuthenticationEnabled() {
@@ -806,23 +806,23 @@ export class LogAnalyticsWorkspace extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allow_resource_only_permissions: cdktf.booleanToTerraform(this._allowResourceOnlyPermissions),
-      cmk_for_query_forced: cdktf.booleanToTerraform(this._cmkForQueryForced),
-      daily_quota_gb: cdktf.numberToTerraform(this._dailyQuotaGb),
-      data_collection_rule_id: cdktf.stringToTerraform(this._dataCollectionRuleId),
-      id: cdktf.stringToTerraform(this._id),
-      immediate_data_purge_on_30_days_enabled: cdktf.booleanToTerraform(this._immediateDataPurgeOn30DaysEnabled),
-      internet_ingestion_enabled: cdktf.booleanToTerraform(this._internetIngestionEnabled),
-      internet_query_enabled: cdktf.booleanToTerraform(this._internetQueryEnabled),
-      local_authentication_disabled: cdktf.booleanToTerraform(this._localAuthenticationDisabled),
-      local_authentication_enabled: cdktf.booleanToTerraform(this._localAuthenticationEnabled),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      reservation_capacity_in_gb_per_day: cdktf.numberToTerraform(this._reservationCapacityInGbPerDay),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      retention_in_days: cdktf.numberToTerraform(this._retentionInDays),
-      sku: cdktf.stringToTerraform(this._sku),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      allow_resource_only_permissions: cdktn.booleanToTerraform(this._allowResourceOnlyPermissions),
+      cmk_for_query_forced: cdktn.booleanToTerraform(this._cmkForQueryForced),
+      daily_quota_gb: cdktn.numberToTerraform(this._dailyQuotaGb),
+      data_collection_rule_id: cdktn.stringToTerraform(this._dataCollectionRuleId),
+      id: cdktn.stringToTerraform(this._id),
+      immediate_data_purge_on_30_days_enabled: cdktn.booleanToTerraform(this._immediateDataPurgeOn30DaysEnabled),
+      internet_ingestion_enabled: cdktn.booleanToTerraform(this._internetIngestionEnabled),
+      internet_query_enabled: cdktn.booleanToTerraform(this._internetQueryEnabled),
+      local_authentication_disabled: cdktn.booleanToTerraform(this._localAuthenticationDisabled),
+      local_authentication_enabled: cdktn.booleanToTerraform(this._localAuthenticationEnabled),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      reservation_capacity_in_gb_per_day: cdktn.numberToTerraform(this._reservationCapacityInGbPerDay),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      retention_in_days: cdktn.numberToTerraform(this._retentionInDays),
+      sku: cdktn.stringToTerraform(this._sku),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       identity: logAnalyticsWorkspaceIdentityToTerraform(this._identity.internalValue),
       timeouts: logAnalyticsWorkspaceTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -831,103 +831,103 @@ export class LogAnalyticsWorkspace extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allow_resource_only_permissions: {
-        value: cdktf.booleanToHclTerraform(this._allowResourceOnlyPermissions),
+        value: cdktn.booleanToHclTerraform(this._allowResourceOnlyPermissions),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       cmk_for_query_forced: {
-        value: cdktf.booleanToHclTerraform(this._cmkForQueryForced),
+        value: cdktn.booleanToHclTerraform(this._cmkForQueryForced),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       daily_quota_gb: {
-        value: cdktf.numberToHclTerraform(this._dailyQuotaGb),
+        value: cdktn.numberToHclTerraform(this._dailyQuotaGb),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       data_collection_rule_id: {
-        value: cdktf.stringToHclTerraform(this._dataCollectionRuleId),
+        value: cdktn.stringToHclTerraform(this._dataCollectionRuleId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       immediate_data_purge_on_30_days_enabled: {
-        value: cdktf.booleanToHclTerraform(this._immediateDataPurgeOn30DaysEnabled),
+        value: cdktn.booleanToHclTerraform(this._immediateDataPurgeOn30DaysEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       internet_ingestion_enabled: {
-        value: cdktf.booleanToHclTerraform(this._internetIngestionEnabled),
+        value: cdktn.booleanToHclTerraform(this._internetIngestionEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       internet_query_enabled: {
-        value: cdktf.booleanToHclTerraform(this._internetQueryEnabled),
+        value: cdktn.booleanToHclTerraform(this._internetQueryEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       local_authentication_disabled: {
-        value: cdktf.booleanToHclTerraform(this._localAuthenticationDisabled),
+        value: cdktn.booleanToHclTerraform(this._localAuthenticationDisabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       local_authentication_enabled: {
-        value: cdktf.booleanToHclTerraform(this._localAuthenticationEnabled),
+        value: cdktn.booleanToHclTerraform(this._localAuthenticationEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       reservation_capacity_in_gb_per_day: {
-        value: cdktf.numberToHclTerraform(this._reservationCapacityInGbPerDay),
+        value: cdktn.numberToHclTerraform(this._reservationCapacityInGbPerDay),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       retention_in_days: {
-        value: cdktf.numberToHclTerraform(this._retentionInDays),
+        value: cdktn.numberToHclTerraform(this._retentionInDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       sku: {
-        value: cdktf.stringToHclTerraform(this._sku),
+        value: cdktn.stringToHclTerraform(this._sku),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

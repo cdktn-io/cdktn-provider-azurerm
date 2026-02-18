@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AutomationConnectionTypeConfig extends cdktf.TerraformMetaArguments {
+export interface AutomationConnectionTypeConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_connection_type#automation_account_name AutomationConnectionType#automation_account_name}
   */
@@ -26,7 +26,7 @@ export interface AutomationConnectionTypeConfig extends cdktf.TerraformMetaArgum
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_connection_type#is_global AutomationConnectionType#is_global}
   */
-  readonly isGlobal?: boolean | cdktf.IResolvable;
+  readonly isGlobal?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_connection_type#name AutomationConnectionType#name}
   */
@@ -40,7 +40,7 @@ export interface AutomationConnectionTypeConfig extends cdktf.TerraformMetaArgum
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_connection_type#field AutomationConnectionType#field}
   */
-  readonly field: AutomationConnectionTypeField[] | cdktf.IResolvable;
+  readonly field: AutomationConnectionTypeField[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -52,11 +52,11 @@ export interface AutomationConnectionTypeField {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_connection_type#is_encrypted AutomationConnectionType#is_encrypted}
   */
-  readonly isEncrypted?: boolean | cdktf.IResolvable;
+  readonly isEncrypted?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_connection_type#is_optional AutomationConnectionType#is_optional}
   */
-  readonly isOptional?: boolean | cdktf.IResolvable;
+  readonly isOptional?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_connection_type#name AutomationConnectionType#name}
   */
@@ -67,46 +67,46 @@ export interface AutomationConnectionTypeField {
   readonly type: string;
 }
 
-export function automationConnectionTypeFieldToTerraform(struct?: AutomationConnectionTypeField | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function automationConnectionTypeFieldToTerraform(struct?: AutomationConnectionTypeField | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    is_encrypted: cdktf.booleanToTerraform(struct!.isEncrypted),
-    is_optional: cdktf.booleanToTerraform(struct!.isOptional),
-    name: cdktf.stringToTerraform(struct!.name),
-    type: cdktf.stringToTerraform(struct!.type),
+    is_encrypted: cdktn.booleanToTerraform(struct!.isEncrypted),
+    is_optional: cdktn.booleanToTerraform(struct!.isOptional),
+    name: cdktn.stringToTerraform(struct!.name),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function automationConnectionTypeFieldToHclTerraform(struct?: AutomationConnectionTypeField | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function automationConnectionTypeFieldToHclTerraform(struct?: AutomationConnectionTypeField | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     is_encrypted: {
-      value: cdktf.booleanToHclTerraform(struct!.isEncrypted),
+      value: cdktn.booleanToHclTerraform(struct!.isEncrypted),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     is_optional: {
-      value: cdktf.booleanToHclTerraform(struct!.isOptional),
+      value: cdktn.booleanToHclTerraform(struct!.isOptional),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -117,9 +117,9 @@ export function automationConnectionTypeFieldToHclTerraform(struct?: AutomationC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AutomationConnectionTypeFieldOutputReference extends cdktf.ComplexObject {
+export class AutomationConnectionTypeFieldOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -127,11 +127,11 @@ export class AutomationConnectionTypeFieldOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AutomationConnectionTypeField | cdktf.IResolvable | undefined {
+  public get internalValue(): AutomationConnectionTypeField | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -156,7 +156,7 @@ export class AutomationConnectionTypeFieldOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AutomationConnectionTypeField | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AutomationConnectionTypeField | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -165,7 +165,7 @@ export class AutomationConnectionTypeFieldOutputReference extends cdktf.ComplexO
       this._name = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -180,11 +180,11 @@ export class AutomationConnectionTypeFieldOutputReference extends cdktf.ComplexO
   }
 
   // is_encrypted - computed: false, optional: true, required: false
-  private _isEncrypted?: boolean | cdktf.IResolvable; 
+  private _isEncrypted?: boolean | cdktn.IResolvable; 
   public get isEncrypted() {
     return this.getBooleanAttribute('is_encrypted');
   }
-  public set isEncrypted(value: boolean | cdktf.IResolvable) {
+  public set isEncrypted(value: boolean | cdktn.IResolvable) {
     this._isEncrypted = value;
   }
   public resetIsEncrypted() {
@@ -196,11 +196,11 @@ export class AutomationConnectionTypeFieldOutputReference extends cdktf.ComplexO
   }
 
   // is_optional - computed: false, optional: true, required: false
-  private _isOptional?: boolean | cdktf.IResolvable; 
+  private _isOptional?: boolean | cdktn.IResolvable; 
   public get isOptional() {
     return this.getBooleanAttribute('is_optional');
   }
-  public set isOptional(value: boolean | cdktf.IResolvable) {
+  public set isOptional(value: boolean | cdktn.IResolvable) {
     this._isOptional = value;
   }
   public resetIsOptional() {
@@ -238,15 +238,15 @@ export class AutomationConnectionTypeFieldOutputReference extends cdktf.ComplexO
   }
 }
 
-export class AutomationConnectionTypeFieldList extends cdktf.ComplexList {
-  public internalValue? : AutomationConnectionTypeField[] | cdktf.IResolvable
+export class AutomationConnectionTypeFieldList extends cdktn.ComplexList {
+  public internalValue? : AutomationConnectionTypeField[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -272,39 +272,39 @@ export interface AutomationConnectionTypeTimeouts {
   readonly read?: string;
 }
 
-export function automationConnectionTypeTimeoutsToTerraform(struct?: AutomationConnectionTypeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function automationConnectionTypeTimeoutsToTerraform(struct?: AutomationConnectionTypeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function automationConnectionTypeTimeoutsToHclTerraform(struct?: AutomationConnectionTypeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function automationConnectionTypeTimeoutsToHclTerraform(struct?: AutomationConnectionTypeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -315,19 +315,19 @@ export function automationConnectionTypeTimeoutsToHclTerraform(struct?: Automati
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AutomationConnectionTypeTimeoutsOutputReference extends cdktf.ComplexObject {
+export class AutomationConnectionTypeTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AutomationConnectionTypeTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AutomationConnectionTypeTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -348,7 +348,7 @@ export class AutomationConnectionTypeTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AutomationConnectionTypeTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AutomationConnectionTypeTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -356,7 +356,7 @@ export class AutomationConnectionTypeTimeoutsOutputReference extends cdktf.Compl
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -421,7 +421,7 @@ export class AutomationConnectionTypeTimeoutsOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_connection_type azurerm_automation_connection_type}
 */
-export class AutomationConnectionType extends cdktf.TerraformResource {
+export class AutomationConnectionType extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -432,14 +432,14 @@ export class AutomationConnectionType extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AutomationConnectionType resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AutomationConnectionType resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AutomationConnectionType to import
   * @param importFromId The id of the existing AutomationConnectionType that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_connection_type#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AutomationConnectionType to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_automation_connection_type", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_automation_connection_type", importId: importFromId, provider });
       }
 
   // ===========
@@ -512,11 +512,11 @@ export class AutomationConnectionType extends cdktf.TerraformResource {
   }
 
   // is_global - computed: false, optional: true, required: false
-  private _isGlobal?: boolean | cdktf.IResolvable; 
+  private _isGlobal?: boolean | cdktn.IResolvable; 
   public get isGlobal() {
     return this.getBooleanAttribute('is_global');
   }
-  public set isGlobal(value: boolean | cdktf.IResolvable) {
+  public set isGlobal(value: boolean | cdktn.IResolvable) {
     this._isGlobal = value;
   }
   public resetIsGlobal() {
@@ -558,7 +558,7 @@ export class AutomationConnectionType extends cdktf.TerraformResource {
   public get field() {
     return this._field;
   }
-  public putField(value: AutomationConnectionTypeField[] | cdktf.IResolvable) {
+  public putField(value: AutomationConnectionTypeField[] | cdktn.IResolvable) {
     this._field.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -588,12 +588,12 @@ export class AutomationConnectionType extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      automation_account_name: cdktf.stringToTerraform(this._automationAccountName),
-      id: cdktf.stringToTerraform(this._id),
-      is_global: cdktf.booleanToTerraform(this._isGlobal),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      field: cdktf.listMapper(automationConnectionTypeFieldToTerraform, true)(this._field.internalValue),
+      automation_account_name: cdktn.stringToTerraform(this._automationAccountName),
+      id: cdktn.stringToTerraform(this._id),
+      is_global: cdktn.booleanToTerraform(this._isGlobal),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      field: cdktn.listMapper(automationConnectionTypeFieldToTerraform, true)(this._field.internalValue),
       timeouts: automationConnectionTypeTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -601,37 +601,37 @@ export class AutomationConnectionType extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       automation_account_name: {
-        value: cdktf.stringToHclTerraform(this._automationAccountName),
+        value: cdktn.stringToHclTerraform(this._automationAccountName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_global: {
-        value: cdktf.booleanToHclTerraform(this._isGlobal),
+        value: cdktn.booleanToHclTerraform(this._isGlobal),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       field: {
-        value: cdktf.listMapperHcl(automationConnectionTypeFieldToHclTerraform, true)(this._field.internalValue),
+        value: cdktn.listMapperHcl(automationConnectionTypeFieldToHclTerraform, true)(this._field.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "AutomationConnectionTypeFieldList",

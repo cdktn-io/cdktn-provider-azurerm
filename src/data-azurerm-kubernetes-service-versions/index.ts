@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermKubernetesServiceVersionsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermKubernetesServiceVersionsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/kubernetes_service_versions#id DataAzurermKubernetesServiceVersions#id}
   *
@@ -22,7 +22,7 @@ export interface DataAzurermKubernetesServiceVersionsConfig extends cdktf.Terraf
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/kubernetes_service_versions#include_preview DataAzurermKubernetesServiceVersions#include_preview}
   */
-  readonly includePreview?: boolean | cdktf.IResolvable;
+  readonly includePreview?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/kubernetes_service_versions#location DataAzurermKubernetesServiceVersions#location}
   */
@@ -45,25 +45,25 @@ export interface DataAzurermKubernetesServiceVersionsTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermKubernetesServiceVersionsTimeoutsToTerraform(struct?: DataAzurermKubernetesServiceVersionsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermKubernetesServiceVersionsTimeoutsToTerraform(struct?: DataAzurermKubernetesServiceVersionsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermKubernetesServiceVersionsTimeoutsToHclTerraform(struct?: DataAzurermKubernetesServiceVersionsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermKubernetesServiceVersionsTimeoutsToHclTerraform(struct?: DataAzurermKubernetesServiceVersionsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -74,19 +74,19 @@ export function dataAzurermKubernetesServiceVersionsTimeoutsToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermKubernetesServiceVersionsTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermKubernetesServiceVersionsTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermKubernetesServiceVersionsTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermKubernetesServiceVersionsTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -99,13 +99,13 @@ export class DataAzurermKubernetesServiceVersionsTimeoutsOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermKubernetesServiceVersionsTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermKubernetesServiceVersionsTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -136,7 +136,7 @@ export class DataAzurermKubernetesServiceVersionsTimeoutsOutputReference extends
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/kubernetes_service_versions azurerm_kubernetes_service_versions}
 */
-export class DataAzurermKubernetesServiceVersions extends cdktf.TerraformDataSource {
+export class DataAzurermKubernetesServiceVersions extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -147,14 +147,14 @@ export class DataAzurermKubernetesServiceVersions extends cdktf.TerraformDataSou
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermKubernetesServiceVersions resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermKubernetesServiceVersions resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermKubernetesServiceVersions to import
   * @param importFromId The id of the existing DataAzurermKubernetesServiceVersions that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/kubernetes_service_versions#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermKubernetesServiceVersions to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_kubernetes_service_versions", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_kubernetes_service_versions", importId: importFromId, provider });
       }
 
   // ===========
@@ -217,11 +217,11 @@ export class DataAzurermKubernetesServiceVersions extends cdktf.TerraformDataSou
   }
 
   // include_preview - computed: false, optional: true, required: false
-  private _includePreview?: boolean | cdktf.IResolvable; 
+  private _includePreview?: boolean | cdktn.IResolvable; 
   public get includePreview() {
     return this.getBooleanAttribute('include_preview');
   }
-  public set includePreview(value: boolean | cdktf.IResolvable) {
+  public set includePreview(value: boolean | cdktn.IResolvable) {
     this._includePreview = value;
   }
   public resetIncludePreview() {
@@ -293,10 +293,10 @@ export class DataAzurermKubernetesServiceVersions extends cdktf.TerraformDataSou
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      include_preview: cdktf.booleanToTerraform(this._includePreview),
-      location: cdktf.stringToTerraform(this._location),
-      version_prefix: cdktf.stringToTerraform(this._versionPrefix),
+      id: cdktn.stringToTerraform(this._id),
+      include_preview: cdktn.booleanToTerraform(this._includePreview),
+      location: cdktn.stringToTerraform(this._location),
+      version_prefix: cdktn.stringToTerraform(this._versionPrefix),
       timeouts: dataAzurermKubernetesServiceVersionsTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -304,25 +304,25 @@ export class DataAzurermKubernetesServiceVersions extends cdktf.TerraformDataSou
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       include_preview: {
-        value: cdktf.booleanToHclTerraform(this._includePreview),
+        value: cdktn.booleanToHclTerraform(this._includePreview),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       version_prefix: {
-        value: cdktf.stringToHclTerraform(this._versionPrefix),
+        value: cdktn.stringToHclTerraform(this._versionPrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

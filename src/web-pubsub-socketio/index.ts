@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WebPubsubSocketioConfig extends cdktf.TerraformMetaArguments {
+export interface WebPubsubSocketioConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/web_pubsub_socketio#aad_auth_enabled WebPubsubSocketio#aad_auth_enabled}
   */
-  readonly aadAuthEnabled?: boolean | cdktf.IResolvable;
+  readonly aadAuthEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/web_pubsub_socketio#id WebPubsubSocketio#id}
   *
@@ -26,23 +26,23 @@ export interface WebPubsubSocketioConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/web_pubsub_socketio#live_trace_connectivity_logs_enabled WebPubsubSocketio#live_trace_connectivity_logs_enabled}
   */
-  readonly liveTraceConnectivityLogsEnabled?: boolean | cdktf.IResolvable;
+  readonly liveTraceConnectivityLogsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/web_pubsub_socketio#live_trace_enabled WebPubsubSocketio#live_trace_enabled}
   */
-  readonly liveTraceEnabled?: boolean | cdktf.IResolvable;
+  readonly liveTraceEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/web_pubsub_socketio#live_trace_http_request_logs_enabled WebPubsubSocketio#live_trace_http_request_logs_enabled}
   */
-  readonly liveTraceHttpRequestLogsEnabled?: boolean | cdktf.IResolvable;
+  readonly liveTraceHttpRequestLogsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/web_pubsub_socketio#live_trace_messaging_logs_enabled WebPubsubSocketio#live_trace_messaging_logs_enabled}
   */
-  readonly liveTraceMessagingLogsEnabled?: boolean | cdktf.IResolvable;
+  readonly liveTraceMessagingLogsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/web_pubsub_socketio#local_auth_enabled WebPubsubSocketio#local_auth_enabled}
   */
-  readonly localAuthEnabled?: boolean | cdktf.IResolvable;
+  readonly localAuthEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/web_pubsub_socketio#location WebPubsubSocketio#location}
   */
@@ -70,7 +70,7 @@ export interface WebPubsubSocketioConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/web_pubsub_socketio#tls_client_cert_enabled WebPubsubSocketio#tls_client_cert_enabled}
   */
-  readonly tlsClientCertEnabled?: boolean | cdktf.IResolvable;
+  readonly tlsClientCertEnabled?: boolean | cdktn.IResolvable;
   /**
   * identity block
   *
@@ -102,31 +102,31 @@ export interface WebPubsubSocketioIdentity {
 }
 
 export function webPubsubSocketioIdentityToTerraform(struct?: WebPubsubSocketioIdentityOutputReference | WebPubsubSocketioIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function webPubsubSocketioIdentityToHclTerraform(struct?: WebPubsubSocketioIdentityOutputReference | WebPubsubSocketioIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -137,14 +137,14 @@ export function webPubsubSocketioIdentityToHclTerraform(struct?: WebPubsubSocket
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WebPubsubSocketioIdentityOutputReference extends cdktf.ComplexObject {
+export class WebPubsubSocketioIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -178,7 +178,7 @@ export class WebPubsubSocketioIdentityOutputReference extends cdktf.ComplexObjec
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -226,31 +226,31 @@ export interface WebPubsubSocketioSku {
 }
 
 export function webPubsubSocketioSkuToTerraform(struct?: WebPubsubSocketioSkuOutputReference | WebPubsubSocketioSku): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    capacity: cdktf.numberToTerraform(struct!.capacity),
-    name: cdktf.stringToTerraform(struct!.name),
+    capacity: cdktn.numberToTerraform(struct!.capacity),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function webPubsubSocketioSkuToHclTerraform(struct?: WebPubsubSocketioSkuOutputReference | WebPubsubSocketioSku): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     capacity: {
-      value: cdktf.numberToHclTerraform(struct!.capacity),
+      value: cdktn.numberToHclTerraform(struct!.capacity),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -261,14 +261,14 @@ export function webPubsubSocketioSkuToHclTerraform(struct?: WebPubsubSocketioSku
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WebPubsubSocketioSkuOutputReference extends cdktf.ComplexObject {
+export class WebPubsubSocketioSkuOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -347,46 +347,46 @@ export interface WebPubsubSocketioTimeouts {
   readonly update?: string;
 }
 
-export function webPubsubSocketioTimeoutsToTerraform(struct?: WebPubsubSocketioTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function webPubsubSocketioTimeoutsToTerraform(struct?: WebPubsubSocketioTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function webPubsubSocketioTimeoutsToHclTerraform(struct?: WebPubsubSocketioTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function webPubsubSocketioTimeoutsToHclTerraform(struct?: WebPubsubSocketioTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -397,19 +397,19 @@ export function webPubsubSocketioTimeoutsToHclTerraform(struct?: WebPubsubSocket
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WebPubsubSocketioTimeoutsOutputReference extends cdktf.ComplexObject {
+export class WebPubsubSocketioTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WebPubsubSocketioTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): WebPubsubSocketioTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -434,7 +434,7 @@ export class WebPubsubSocketioTimeoutsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WebPubsubSocketioTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WebPubsubSocketioTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -443,7 +443,7 @@ export class WebPubsubSocketioTimeoutsOutputReference extends cdktf.ComplexObjec
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -525,7 +525,7 @@ export class WebPubsubSocketioTimeoutsOutputReference extends cdktf.ComplexObjec
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/web_pubsub_socketio azurerm_web_pubsub_socketio}
 */
-export class WebPubsubSocketio extends cdktf.TerraformResource {
+export class WebPubsubSocketio extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -536,14 +536,14 @@ export class WebPubsubSocketio extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WebPubsubSocketio resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WebPubsubSocketio resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WebPubsubSocketio to import
   * @param importFromId The id of the existing WebPubsubSocketio that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/web_pubsub_socketio#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WebPubsubSocketio to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_web_pubsub_socketio", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_web_pubsub_socketio", importId: importFromId, provider });
       }
 
   // ===========
@@ -597,11 +597,11 @@ export class WebPubsubSocketio extends cdktf.TerraformResource {
   // ==========
 
   // aad_auth_enabled - computed: false, optional: true, required: false
-  private _aadAuthEnabled?: boolean | cdktf.IResolvable; 
+  private _aadAuthEnabled?: boolean | cdktn.IResolvable; 
   public get aadAuthEnabled() {
     return this.getBooleanAttribute('aad_auth_enabled');
   }
-  public set aadAuthEnabled(value: boolean | cdktf.IResolvable) {
+  public set aadAuthEnabled(value: boolean | cdktn.IResolvable) {
     this._aadAuthEnabled = value;
   }
   public resetAadAuthEnabled() {
@@ -639,11 +639,11 @@ export class WebPubsubSocketio extends cdktf.TerraformResource {
   }
 
   // live_trace_connectivity_logs_enabled - computed: false, optional: true, required: false
-  private _liveTraceConnectivityLogsEnabled?: boolean | cdktf.IResolvable; 
+  private _liveTraceConnectivityLogsEnabled?: boolean | cdktn.IResolvable; 
   public get liveTraceConnectivityLogsEnabled() {
     return this.getBooleanAttribute('live_trace_connectivity_logs_enabled');
   }
-  public set liveTraceConnectivityLogsEnabled(value: boolean | cdktf.IResolvable) {
+  public set liveTraceConnectivityLogsEnabled(value: boolean | cdktn.IResolvable) {
     this._liveTraceConnectivityLogsEnabled = value;
   }
   public resetLiveTraceConnectivityLogsEnabled() {
@@ -655,11 +655,11 @@ export class WebPubsubSocketio extends cdktf.TerraformResource {
   }
 
   // live_trace_enabled - computed: false, optional: true, required: false
-  private _liveTraceEnabled?: boolean | cdktf.IResolvable; 
+  private _liveTraceEnabled?: boolean | cdktn.IResolvable; 
   public get liveTraceEnabled() {
     return this.getBooleanAttribute('live_trace_enabled');
   }
-  public set liveTraceEnabled(value: boolean | cdktf.IResolvable) {
+  public set liveTraceEnabled(value: boolean | cdktn.IResolvable) {
     this._liveTraceEnabled = value;
   }
   public resetLiveTraceEnabled() {
@@ -671,11 +671,11 @@ export class WebPubsubSocketio extends cdktf.TerraformResource {
   }
 
   // live_trace_http_request_logs_enabled - computed: false, optional: true, required: false
-  private _liveTraceHttpRequestLogsEnabled?: boolean | cdktf.IResolvable; 
+  private _liveTraceHttpRequestLogsEnabled?: boolean | cdktn.IResolvable; 
   public get liveTraceHttpRequestLogsEnabled() {
     return this.getBooleanAttribute('live_trace_http_request_logs_enabled');
   }
-  public set liveTraceHttpRequestLogsEnabled(value: boolean | cdktf.IResolvable) {
+  public set liveTraceHttpRequestLogsEnabled(value: boolean | cdktn.IResolvable) {
     this._liveTraceHttpRequestLogsEnabled = value;
   }
   public resetLiveTraceHttpRequestLogsEnabled() {
@@ -687,11 +687,11 @@ export class WebPubsubSocketio extends cdktf.TerraformResource {
   }
 
   // live_trace_messaging_logs_enabled - computed: false, optional: true, required: false
-  private _liveTraceMessagingLogsEnabled?: boolean | cdktf.IResolvable; 
+  private _liveTraceMessagingLogsEnabled?: boolean | cdktn.IResolvable; 
   public get liveTraceMessagingLogsEnabled() {
     return this.getBooleanAttribute('live_trace_messaging_logs_enabled');
   }
-  public set liveTraceMessagingLogsEnabled(value: boolean | cdktf.IResolvable) {
+  public set liveTraceMessagingLogsEnabled(value: boolean | cdktn.IResolvable) {
     this._liveTraceMessagingLogsEnabled = value;
   }
   public resetLiveTraceMessagingLogsEnabled() {
@@ -703,11 +703,11 @@ export class WebPubsubSocketio extends cdktf.TerraformResource {
   }
 
   // local_auth_enabled - computed: false, optional: true, required: false
-  private _localAuthEnabled?: boolean | cdktf.IResolvable; 
+  private _localAuthEnabled?: boolean | cdktn.IResolvable; 
   public get localAuthEnabled() {
     return this.getBooleanAttribute('local_auth_enabled');
   }
-  public set localAuthEnabled(value: boolean | cdktf.IResolvable) {
+  public set localAuthEnabled(value: boolean | cdktn.IResolvable) {
     this._localAuthEnabled = value;
   }
   public resetLocalAuthEnabled() {
@@ -836,11 +836,11 @@ export class WebPubsubSocketio extends cdktf.TerraformResource {
   }
 
   // tls_client_cert_enabled - computed: false, optional: true, required: false
-  private _tlsClientCertEnabled?: boolean | cdktf.IResolvable; 
+  private _tlsClientCertEnabled?: boolean | cdktn.IResolvable; 
   public get tlsClientCertEnabled() {
     return this.getBooleanAttribute('tls_client_cert_enabled');
   }
-  public set tlsClientCertEnabled(value: boolean | cdktf.IResolvable) {
+  public set tlsClientCertEnabled(value: boolean | cdktn.IResolvable) {
     this._tlsClientCertEnabled = value;
   }
   public resetTlsClientCertEnabled() {
@@ -902,20 +902,20 @@ export class WebPubsubSocketio extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      aad_auth_enabled: cdktf.booleanToTerraform(this._aadAuthEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      live_trace_connectivity_logs_enabled: cdktf.booleanToTerraform(this._liveTraceConnectivityLogsEnabled),
-      live_trace_enabled: cdktf.booleanToTerraform(this._liveTraceEnabled),
-      live_trace_http_request_logs_enabled: cdktf.booleanToTerraform(this._liveTraceHttpRequestLogsEnabled),
-      live_trace_messaging_logs_enabled: cdktf.booleanToTerraform(this._liveTraceMessagingLogsEnabled),
-      local_auth_enabled: cdktf.booleanToTerraform(this._localAuthEnabled),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      public_network_access: cdktf.stringToTerraform(this._publicNetworkAccess),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      service_mode: cdktf.stringToTerraform(this._serviceMode),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      tls_client_cert_enabled: cdktf.booleanToTerraform(this._tlsClientCertEnabled),
+      aad_auth_enabled: cdktn.booleanToTerraform(this._aadAuthEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      live_trace_connectivity_logs_enabled: cdktn.booleanToTerraform(this._liveTraceConnectivityLogsEnabled),
+      live_trace_enabled: cdktn.booleanToTerraform(this._liveTraceEnabled),
+      live_trace_http_request_logs_enabled: cdktn.booleanToTerraform(this._liveTraceHttpRequestLogsEnabled),
+      live_trace_messaging_logs_enabled: cdktn.booleanToTerraform(this._liveTraceMessagingLogsEnabled),
+      local_auth_enabled: cdktn.booleanToTerraform(this._localAuthEnabled),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      public_network_access: cdktn.stringToTerraform(this._publicNetworkAccess),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      service_mode: cdktn.stringToTerraform(this._serviceMode),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      tls_client_cert_enabled: cdktn.booleanToTerraform(this._tlsClientCertEnabled),
       identity: webPubsubSocketioIdentityToTerraform(this._identity.internalValue),
       sku: webPubsubSocketioSkuToTerraform(this._sku.internalValue),
       timeouts: webPubsubSocketioTimeoutsToTerraform(this._timeouts.internalValue),
@@ -925,85 +925,85 @@ export class WebPubsubSocketio extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       aad_auth_enabled: {
-        value: cdktf.booleanToHclTerraform(this._aadAuthEnabled),
+        value: cdktn.booleanToHclTerraform(this._aadAuthEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       live_trace_connectivity_logs_enabled: {
-        value: cdktf.booleanToHclTerraform(this._liveTraceConnectivityLogsEnabled),
+        value: cdktn.booleanToHclTerraform(this._liveTraceConnectivityLogsEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       live_trace_enabled: {
-        value: cdktf.booleanToHclTerraform(this._liveTraceEnabled),
+        value: cdktn.booleanToHclTerraform(this._liveTraceEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       live_trace_http_request_logs_enabled: {
-        value: cdktf.booleanToHclTerraform(this._liveTraceHttpRequestLogsEnabled),
+        value: cdktn.booleanToHclTerraform(this._liveTraceHttpRequestLogsEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       live_trace_messaging_logs_enabled: {
-        value: cdktf.booleanToHclTerraform(this._liveTraceMessagingLogsEnabled),
+        value: cdktn.booleanToHclTerraform(this._liveTraceMessagingLogsEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       local_auth_enabled: {
-        value: cdktf.booleanToHclTerraform(this._localAuthEnabled),
+        value: cdktn.booleanToHclTerraform(this._localAuthEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_network_access: {
-        value: cdktf.stringToHclTerraform(this._publicNetworkAccess),
+        value: cdktn.stringToHclTerraform(this._publicNetworkAccess),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_mode: {
-        value: cdktf.stringToHclTerraform(this._serviceMode),
+        value: cdktn.stringToHclTerraform(this._serviceMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tls_client_cert_enabled: {
-        value: cdktf.booleanToHclTerraform(this._tlsClientCertEnabled),
+        value: cdktn.booleanToHclTerraform(this._tlsClientCertEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

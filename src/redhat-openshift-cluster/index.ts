@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RedhatOpenshiftClusterConfig extends cdktf.TerraformMetaArguments {
+export interface RedhatOpenshiftClusterConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/redhat_openshift_cluster#id RedhatOpenshiftCluster#id}
   *
@@ -92,24 +92,24 @@ export interface RedhatOpenshiftClusterApiServerProfile {
 }
 
 export function redhatOpenshiftClusterApiServerProfileToTerraform(struct?: RedhatOpenshiftClusterApiServerProfileOutputReference | RedhatOpenshiftClusterApiServerProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    visibility: cdktf.stringToTerraform(struct!.visibility),
+    visibility: cdktn.stringToTerraform(struct!.visibility),
   }
 }
 
 
 export function redhatOpenshiftClusterApiServerProfileToHclTerraform(struct?: RedhatOpenshiftClusterApiServerProfileOutputReference | RedhatOpenshiftClusterApiServerProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     visibility: {
-      value: cdktf.stringToHclTerraform(struct!.visibility),
+      value: cdktn.stringToHclTerraform(struct!.visibility),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -120,14 +120,14 @@ export function redhatOpenshiftClusterApiServerProfileToHclTerraform(struct?: Re
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedhatOpenshiftClusterApiServerProfileOutputReference extends cdktf.ComplexObject {
+export class RedhatOpenshiftClusterApiServerProfileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -183,7 +183,7 @@ export interface RedhatOpenshiftClusterClusterProfile {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/redhat_openshift_cluster#fips_enabled RedhatOpenshiftCluster#fips_enabled}
   */
-  readonly fipsEnabled?: boolean | cdktf.IResolvable;
+  readonly fipsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/redhat_openshift_cluster#managed_resource_group_name RedhatOpenshiftCluster#managed_resource_group_name}
   */
@@ -199,52 +199,52 @@ export interface RedhatOpenshiftClusterClusterProfile {
 }
 
 export function redhatOpenshiftClusterClusterProfileToTerraform(struct?: RedhatOpenshiftClusterClusterProfileOutputReference | RedhatOpenshiftClusterClusterProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    domain: cdktf.stringToTerraform(struct!.domain),
-    fips_enabled: cdktf.booleanToTerraform(struct!.fipsEnabled),
-    managed_resource_group_name: cdktf.stringToTerraform(struct!.managedResourceGroupName),
-    pull_secret: cdktf.stringToTerraform(struct!.pullSecret),
-    version: cdktf.stringToTerraform(struct!.version),
+    domain: cdktn.stringToTerraform(struct!.domain),
+    fips_enabled: cdktn.booleanToTerraform(struct!.fipsEnabled),
+    managed_resource_group_name: cdktn.stringToTerraform(struct!.managedResourceGroupName),
+    pull_secret: cdktn.stringToTerraform(struct!.pullSecret),
+    version: cdktn.stringToTerraform(struct!.version),
   }
 }
 
 
 export function redhatOpenshiftClusterClusterProfileToHclTerraform(struct?: RedhatOpenshiftClusterClusterProfileOutputReference | RedhatOpenshiftClusterClusterProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     domain: {
-      value: cdktf.stringToHclTerraform(struct!.domain),
+      value: cdktn.stringToHclTerraform(struct!.domain),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     fips_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.fipsEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.fipsEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     managed_resource_group_name: {
-      value: cdktf.stringToHclTerraform(struct!.managedResourceGroupName),
+      value: cdktn.stringToHclTerraform(struct!.managedResourceGroupName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     pull_secret: {
-      value: cdktf.stringToHclTerraform(struct!.pullSecret),
+      value: cdktn.stringToHclTerraform(struct!.pullSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -255,14 +255,14 @@ export function redhatOpenshiftClusterClusterProfileToHclTerraform(struct?: Redh
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedhatOpenshiftClusterClusterProfileOutputReference extends cdktf.ComplexObject {
+export class RedhatOpenshiftClusterClusterProfileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -325,11 +325,11 @@ export class RedhatOpenshiftClusterClusterProfileOutputReference extends cdktf.C
   }
 
   // fips_enabled - computed: false, optional: true, required: false
-  private _fipsEnabled?: boolean | cdktf.IResolvable; 
+  private _fipsEnabled?: boolean | cdktn.IResolvable; 
   public get fipsEnabled() {
     return this.getBooleanAttribute('fips_enabled');
   }
-  public set fipsEnabled(value: boolean | cdktf.IResolvable) {
+  public set fipsEnabled(value: boolean | cdktn.IResolvable) {
     this._fipsEnabled = value;
   }
   public resetFipsEnabled() {
@@ -398,24 +398,24 @@ export interface RedhatOpenshiftClusterIngressProfile {
 }
 
 export function redhatOpenshiftClusterIngressProfileToTerraform(struct?: RedhatOpenshiftClusterIngressProfileOutputReference | RedhatOpenshiftClusterIngressProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    visibility: cdktf.stringToTerraform(struct!.visibility),
+    visibility: cdktn.stringToTerraform(struct!.visibility),
   }
 }
 
 
 export function redhatOpenshiftClusterIngressProfileToHclTerraform(struct?: RedhatOpenshiftClusterIngressProfileOutputReference | RedhatOpenshiftClusterIngressProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     visibility: {
-      value: cdktf.stringToHclTerraform(struct!.visibility),
+      value: cdktn.stringToHclTerraform(struct!.visibility),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -426,14 +426,14 @@ export function redhatOpenshiftClusterIngressProfileToHclTerraform(struct?: Redh
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedhatOpenshiftClusterIngressProfileOutputReference extends cdktf.ComplexObject {
+export class RedhatOpenshiftClusterIngressProfileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -489,7 +489,7 @@ export interface RedhatOpenshiftClusterMainProfile {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/redhat_openshift_cluster#encryption_at_host_enabled RedhatOpenshiftCluster#encryption_at_host_enabled}
   */
-  readonly encryptionAtHostEnabled?: boolean | cdktf.IResolvable;
+  readonly encryptionAtHostEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/redhat_openshift_cluster#subnet_id RedhatOpenshiftCluster#subnet_id}
   */
@@ -501,45 +501,45 @@ export interface RedhatOpenshiftClusterMainProfile {
 }
 
 export function redhatOpenshiftClusterMainProfileToTerraform(struct?: RedhatOpenshiftClusterMainProfileOutputReference | RedhatOpenshiftClusterMainProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    disk_encryption_set_id: cdktf.stringToTerraform(struct!.diskEncryptionSetId),
-    encryption_at_host_enabled: cdktf.booleanToTerraform(struct!.encryptionAtHostEnabled),
-    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
-    vm_size: cdktf.stringToTerraform(struct!.vmSize),
+    disk_encryption_set_id: cdktn.stringToTerraform(struct!.diskEncryptionSetId),
+    encryption_at_host_enabled: cdktn.booleanToTerraform(struct!.encryptionAtHostEnabled),
+    subnet_id: cdktn.stringToTerraform(struct!.subnetId),
+    vm_size: cdktn.stringToTerraform(struct!.vmSize),
   }
 }
 
 
 export function redhatOpenshiftClusterMainProfileToHclTerraform(struct?: RedhatOpenshiftClusterMainProfileOutputReference | RedhatOpenshiftClusterMainProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     disk_encryption_set_id: {
-      value: cdktf.stringToHclTerraform(struct!.diskEncryptionSetId),
+      value: cdktn.stringToHclTerraform(struct!.diskEncryptionSetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     encryption_at_host_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.encryptionAtHostEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.encryptionAtHostEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.subnetId),
+      value: cdktn.stringToHclTerraform(struct!.subnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vm_size: {
-      value: cdktf.stringToHclTerraform(struct!.vmSize),
+      value: cdktn.stringToHclTerraform(struct!.vmSize),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -550,14 +550,14 @@ export function redhatOpenshiftClusterMainProfileToHclTerraform(struct?: RedhatO
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedhatOpenshiftClusterMainProfileOutputReference extends cdktf.ComplexObject {
+export class RedhatOpenshiftClusterMainProfileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -617,11 +617,11 @@ export class RedhatOpenshiftClusterMainProfileOutputReference extends cdktf.Comp
   }
 
   // encryption_at_host_enabled - computed: false, optional: true, required: false
-  private _encryptionAtHostEnabled?: boolean | cdktf.IResolvable; 
+  private _encryptionAtHostEnabled?: boolean | cdktn.IResolvable; 
   public get encryptionAtHostEnabled() {
     return this.getBooleanAttribute('encryption_at_host_enabled');
   }
-  public set encryptionAtHostEnabled(value: boolean | cdktf.IResolvable) {
+  public set encryptionAtHostEnabled(value: boolean | cdktn.IResolvable) {
     this._encryptionAtHostEnabled = value;
   }
   public resetEncryptionAtHostEnabled() {
@@ -670,7 +670,7 @@ export interface RedhatOpenshiftClusterNetworkProfile {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/redhat_openshift_cluster#preconfigured_network_security_group_enabled RedhatOpenshiftCluster#preconfigured_network_security_group_enabled}
   */
-  readonly preconfiguredNetworkSecurityGroupEnabled?: boolean | cdktf.IResolvable;
+  readonly preconfiguredNetworkSecurityGroupEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/redhat_openshift_cluster#service_cidr RedhatOpenshiftCluster#service_cidr}
   */
@@ -678,45 +678,45 @@ export interface RedhatOpenshiftClusterNetworkProfile {
 }
 
 export function redhatOpenshiftClusterNetworkProfileToTerraform(struct?: RedhatOpenshiftClusterNetworkProfileOutputReference | RedhatOpenshiftClusterNetworkProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    outbound_type: cdktf.stringToTerraform(struct!.outboundType),
-    pod_cidr: cdktf.stringToTerraform(struct!.podCidr),
-    preconfigured_network_security_group_enabled: cdktf.booleanToTerraform(struct!.preconfiguredNetworkSecurityGroupEnabled),
-    service_cidr: cdktf.stringToTerraform(struct!.serviceCidr),
+    outbound_type: cdktn.stringToTerraform(struct!.outboundType),
+    pod_cidr: cdktn.stringToTerraform(struct!.podCidr),
+    preconfigured_network_security_group_enabled: cdktn.booleanToTerraform(struct!.preconfiguredNetworkSecurityGroupEnabled),
+    service_cidr: cdktn.stringToTerraform(struct!.serviceCidr),
   }
 }
 
 
 export function redhatOpenshiftClusterNetworkProfileToHclTerraform(struct?: RedhatOpenshiftClusterNetworkProfileOutputReference | RedhatOpenshiftClusterNetworkProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     outbound_type: {
-      value: cdktf.stringToHclTerraform(struct!.outboundType),
+      value: cdktn.stringToHclTerraform(struct!.outboundType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     pod_cidr: {
-      value: cdktf.stringToHclTerraform(struct!.podCidr),
+      value: cdktn.stringToHclTerraform(struct!.podCidr),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     preconfigured_network_security_group_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.preconfiguredNetworkSecurityGroupEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.preconfiguredNetworkSecurityGroupEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     service_cidr: {
-      value: cdktf.stringToHclTerraform(struct!.serviceCidr),
+      value: cdktn.stringToHclTerraform(struct!.serviceCidr),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -727,14 +727,14 @@ export function redhatOpenshiftClusterNetworkProfileToHclTerraform(struct?: Redh
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedhatOpenshiftClusterNetworkProfileOutputReference extends cdktf.ComplexObject {
+export class RedhatOpenshiftClusterNetworkProfileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -807,11 +807,11 @@ export class RedhatOpenshiftClusterNetworkProfileOutputReference extends cdktf.C
   }
 
   // preconfigured_network_security_group_enabled - computed: false, optional: true, required: false
-  private _preconfiguredNetworkSecurityGroupEnabled?: boolean | cdktf.IResolvable; 
+  private _preconfiguredNetworkSecurityGroupEnabled?: boolean | cdktn.IResolvable; 
   public get preconfiguredNetworkSecurityGroupEnabled() {
     return this.getBooleanAttribute('preconfigured_network_security_group_enabled');
   }
-  public set preconfiguredNetworkSecurityGroupEnabled(value: boolean | cdktf.IResolvable) {
+  public set preconfiguredNetworkSecurityGroupEnabled(value: boolean | cdktn.IResolvable) {
     this._preconfiguredNetworkSecurityGroupEnabled = value;
   }
   public resetPreconfiguredNetworkSecurityGroupEnabled() {
@@ -847,31 +847,31 @@ export interface RedhatOpenshiftClusterServicePrincipal {
 }
 
 export function redhatOpenshiftClusterServicePrincipalToTerraform(struct?: RedhatOpenshiftClusterServicePrincipalOutputReference | RedhatOpenshiftClusterServicePrincipal): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_secret: cdktn.stringToTerraform(struct!.clientSecret),
   }
 }
 
 
 export function redhatOpenshiftClusterServicePrincipalToHclTerraform(struct?: RedhatOpenshiftClusterServicePrincipalOutputReference | RedhatOpenshiftClusterServicePrincipal): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      value: cdktn.stringToHclTerraform(struct!.clientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -882,14 +882,14 @@ export function redhatOpenshiftClusterServicePrincipalToHclTerraform(struct?: Re
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedhatOpenshiftClusterServicePrincipalOutputReference extends cdktf.ComplexObject {
+export class RedhatOpenshiftClusterServicePrincipalOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -965,46 +965,46 @@ export interface RedhatOpenshiftClusterTimeouts {
   readonly update?: string;
 }
 
-export function redhatOpenshiftClusterTimeoutsToTerraform(struct?: RedhatOpenshiftClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redhatOpenshiftClusterTimeoutsToTerraform(struct?: RedhatOpenshiftClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function redhatOpenshiftClusterTimeoutsToHclTerraform(struct?: RedhatOpenshiftClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function redhatOpenshiftClusterTimeoutsToHclTerraform(struct?: RedhatOpenshiftClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1015,19 +1015,19 @@ export function redhatOpenshiftClusterTimeoutsToHclTerraform(struct?: RedhatOpen
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedhatOpenshiftClusterTimeoutsOutputReference extends cdktf.ComplexObject {
+export class RedhatOpenshiftClusterTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): RedhatOpenshiftClusterTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): RedhatOpenshiftClusterTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1052,7 +1052,7 @@ export class RedhatOpenshiftClusterTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RedhatOpenshiftClusterTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RedhatOpenshiftClusterTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1061,7 +1061,7 @@ export class RedhatOpenshiftClusterTimeoutsOutputReference extends cdktf.Complex
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1151,7 +1151,7 @@ export interface RedhatOpenshiftClusterWorkerProfile {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/redhat_openshift_cluster#encryption_at_host_enabled RedhatOpenshiftCluster#encryption_at_host_enabled}
   */
-  readonly encryptionAtHostEnabled?: boolean | cdktf.IResolvable;
+  readonly encryptionAtHostEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/redhat_openshift_cluster#node_count RedhatOpenshiftCluster#node_count}
   */
@@ -1167,59 +1167,59 @@ export interface RedhatOpenshiftClusterWorkerProfile {
 }
 
 export function redhatOpenshiftClusterWorkerProfileToTerraform(struct?: RedhatOpenshiftClusterWorkerProfileOutputReference | RedhatOpenshiftClusterWorkerProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    disk_encryption_set_id: cdktf.stringToTerraform(struct!.diskEncryptionSetId),
-    disk_size_gb: cdktf.numberToTerraform(struct!.diskSizeGb),
-    encryption_at_host_enabled: cdktf.booleanToTerraform(struct!.encryptionAtHostEnabled),
-    node_count: cdktf.numberToTerraform(struct!.nodeCount),
-    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
-    vm_size: cdktf.stringToTerraform(struct!.vmSize),
+    disk_encryption_set_id: cdktn.stringToTerraform(struct!.diskEncryptionSetId),
+    disk_size_gb: cdktn.numberToTerraform(struct!.diskSizeGb),
+    encryption_at_host_enabled: cdktn.booleanToTerraform(struct!.encryptionAtHostEnabled),
+    node_count: cdktn.numberToTerraform(struct!.nodeCount),
+    subnet_id: cdktn.stringToTerraform(struct!.subnetId),
+    vm_size: cdktn.stringToTerraform(struct!.vmSize),
   }
 }
 
 
 export function redhatOpenshiftClusterWorkerProfileToHclTerraform(struct?: RedhatOpenshiftClusterWorkerProfileOutputReference | RedhatOpenshiftClusterWorkerProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     disk_encryption_set_id: {
-      value: cdktf.stringToHclTerraform(struct!.diskEncryptionSetId),
+      value: cdktn.stringToHclTerraform(struct!.diskEncryptionSetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     disk_size_gb: {
-      value: cdktf.numberToHclTerraform(struct!.diskSizeGb),
+      value: cdktn.numberToHclTerraform(struct!.diskSizeGb),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     encryption_at_host_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.encryptionAtHostEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.encryptionAtHostEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     node_count: {
-      value: cdktf.numberToHclTerraform(struct!.nodeCount),
+      value: cdktn.numberToHclTerraform(struct!.nodeCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.subnetId),
+      value: cdktn.stringToHclTerraform(struct!.subnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vm_size: {
-      value: cdktf.stringToHclTerraform(struct!.vmSize),
+      value: cdktn.stringToHclTerraform(struct!.vmSize),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1230,14 +1230,14 @@ export function redhatOpenshiftClusterWorkerProfileToHclTerraform(struct?: Redha
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RedhatOpenshiftClusterWorkerProfileOutputReference extends cdktf.ComplexObject {
+export class RedhatOpenshiftClusterWorkerProfileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1322,11 +1322,11 @@ export class RedhatOpenshiftClusterWorkerProfileOutputReference extends cdktf.Co
   }
 
   // encryption_at_host_enabled - computed: false, optional: true, required: false
-  private _encryptionAtHostEnabled?: boolean | cdktf.IResolvable; 
+  private _encryptionAtHostEnabled?: boolean | cdktn.IResolvable; 
   public get encryptionAtHostEnabled() {
     return this.getBooleanAttribute('encryption_at_host_enabled');
   }
-  public set encryptionAtHostEnabled(value: boolean | cdktf.IResolvable) {
+  public set encryptionAtHostEnabled(value: boolean | cdktn.IResolvable) {
     this._encryptionAtHostEnabled = value;
   }
   public resetEncryptionAtHostEnabled() {
@@ -1380,7 +1380,7 @@ export class RedhatOpenshiftClusterWorkerProfileOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/redhat_openshift_cluster azurerm_redhat_openshift_cluster}
 */
-export class RedhatOpenshiftCluster extends cdktf.TerraformResource {
+export class RedhatOpenshiftCluster extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1391,14 +1391,14 @@ export class RedhatOpenshiftCluster extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RedhatOpenshiftCluster resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RedhatOpenshiftCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RedhatOpenshiftCluster to import
   * @param importFromId The id of the existing RedhatOpenshiftCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/redhat_openshift_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RedhatOpenshiftCluster to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_redhat_openshift_cluster", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_redhat_openshift_cluster", importId: importFromId, provider });
       }
 
   // ===========
@@ -1636,11 +1636,11 @@ export class RedhatOpenshiftCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       api_server_profile: redhatOpenshiftClusterApiServerProfileToTerraform(this._apiServerProfile.internalValue),
       cluster_profile: redhatOpenshiftClusterClusterProfileToTerraform(this._clusterProfile.internalValue),
       ingress_profile: redhatOpenshiftClusterIngressProfileToTerraform(this._ingressProfile.internalValue),
@@ -1655,31 +1655,31 @@ export class RedhatOpenshiftCluster extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

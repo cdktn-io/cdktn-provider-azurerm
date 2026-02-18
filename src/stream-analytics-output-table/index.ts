@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface StreamAnalyticsOutputTableConfig extends cdktf.TerraformMetaArguments {
+export interface StreamAnalyticsOutputTableConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stream_analytics_output_table#batch_size StreamAnalyticsOutputTable#batch_size}
   */
@@ -85,46 +85,46 @@ export interface StreamAnalyticsOutputTableTimeouts {
   readonly update?: string;
 }
 
-export function streamAnalyticsOutputTableTimeoutsToTerraform(struct?: StreamAnalyticsOutputTableTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function streamAnalyticsOutputTableTimeoutsToTerraform(struct?: StreamAnalyticsOutputTableTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function streamAnalyticsOutputTableTimeoutsToHclTerraform(struct?: StreamAnalyticsOutputTableTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function streamAnalyticsOutputTableTimeoutsToHclTerraform(struct?: StreamAnalyticsOutputTableTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -135,19 +135,19 @@ export function streamAnalyticsOutputTableTimeoutsToHclTerraform(struct?: Stream
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StreamAnalyticsOutputTableTimeoutsOutputReference extends cdktf.ComplexObject {
+export class StreamAnalyticsOutputTableTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): StreamAnalyticsOutputTableTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): StreamAnalyticsOutputTableTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -172,7 +172,7 @@ export class StreamAnalyticsOutputTableTimeoutsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StreamAnalyticsOutputTableTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: StreamAnalyticsOutputTableTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -181,7 +181,7 @@ export class StreamAnalyticsOutputTableTimeoutsOutputReference extends cdktf.Com
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -263,7 +263,7 @@ export class StreamAnalyticsOutputTableTimeoutsOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stream_analytics_output_table azurerm_stream_analytics_output_table}
 */
-export class StreamAnalyticsOutputTable extends cdktf.TerraformResource {
+export class StreamAnalyticsOutputTable extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -274,14 +274,14 @@ export class StreamAnalyticsOutputTable extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a StreamAnalyticsOutputTable resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a StreamAnalyticsOutputTable resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StreamAnalyticsOutputTable to import
   * @param importFromId The id of the existing StreamAnalyticsOutputTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stream_analytics_output_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StreamAnalyticsOutputTable to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_stream_analytics_output_table", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_stream_analytics_output_table", importId: importFromId, provider });
       }
 
   // ===========
@@ -500,17 +500,17 @@ export class StreamAnalyticsOutputTable extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      batch_size: cdktf.numberToTerraform(this._batchSize),
-      columns_to_remove: cdktf.listMapper(cdktf.stringToTerraform, false)(this._columnsToRemove),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      partition_key: cdktf.stringToTerraform(this._partitionKey),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      row_key: cdktf.stringToTerraform(this._rowKey),
-      storage_account_key: cdktf.stringToTerraform(this._storageAccountKey),
-      storage_account_name: cdktf.stringToTerraform(this._storageAccountName),
-      stream_analytics_job_name: cdktf.stringToTerraform(this._streamAnalyticsJobName),
-      table: cdktf.stringToTerraform(this._table),
+      batch_size: cdktn.numberToTerraform(this._batchSize),
+      columns_to_remove: cdktn.listMapper(cdktn.stringToTerraform, false)(this._columnsToRemove),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      partition_key: cdktn.stringToTerraform(this._partitionKey),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      row_key: cdktn.stringToTerraform(this._rowKey),
+      storage_account_key: cdktn.stringToTerraform(this._storageAccountKey),
+      storage_account_name: cdktn.stringToTerraform(this._storageAccountName),
+      stream_analytics_job_name: cdktn.stringToTerraform(this._streamAnalyticsJobName),
+      table: cdktn.stringToTerraform(this._table),
       timeouts: streamAnalyticsOutputTableTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -518,67 +518,67 @@ export class StreamAnalyticsOutputTable extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       batch_size: {
-        value: cdktf.numberToHclTerraform(this._batchSize),
+        value: cdktn.numberToHclTerraform(this._batchSize),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       columns_to_remove: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._columnsToRemove),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._columnsToRemove),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       partition_key: {
-        value: cdktf.stringToHclTerraform(this._partitionKey),
+        value: cdktn.stringToHclTerraform(this._partitionKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       row_key: {
-        value: cdktf.stringToHclTerraform(this._rowKey),
+        value: cdktn.stringToHclTerraform(this._rowKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_account_key: {
-        value: cdktf.stringToHclTerraform(this._storageAccountKey),
+        value: cdktn.stringToHclTerraform(this._storageAccountKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_account_name: {
-        value: cdktf.stringToHclTerraform(this._storageAccountName),
+        value: cdktn.stringToHclTerraform(this._storageAccountName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       stream_analytics_job_name: {
-        value: cdktf.stringToHclTerraform(this._streamAnalyticsJobName),
+        value: cdktn.stringToHclTerraform(this._streamAnalyticsJobName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       table: {
-        value: cdktf.stringToHclTerraform(this._table),
+        value: cdktn.stringToHclTerraform(this._table),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

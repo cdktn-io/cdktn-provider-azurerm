@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VirtualDesktopApplicationConfig extends cdktf.TerraformMetaArguments {
+export interface VirtualDesktopApplicationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_desktop_application#application_group_id VirtualDesktopApplication#application_group_id}
   */
@@ -58,7 +58,7 @@ export interface VirtualDesktopApplicationConfig extends cdktf.TerraformMetaArgu
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_desktop_application#show_in_portal VirtualDesktopApplication#show_in_portal}
   */
-  readonly showInPortal?: boolean | cdktf.IResolvable;
+  readonly showInPortal?: boolean | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -85,46 +85,46 @@ export interface VirtualDesktopApplicationTimeouts {
   readonly update?: string;
 }
 
-export function virtualDesktopApplicationTimeoutsToTerraform(struct?: VirtualDesktopApplicationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualDesktopApplicationTimeoutsToTerraform(struct?: VirtualDesktopApplicationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function virtualDesktopApplicationTimeoutsToHclTerraform(struct?: VirtualDesktopApplicationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualDesktopApplicationTimeoutsToHclTerraform(struct?: VirtualDesktopApplicationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -135,19 +135,19 @@ export function virtualDesktopApplicationTimeoutsToHclTerraform(struct?: Virtual
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VirtualDesktopApplicationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VirtualDesktopApplicationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VirtualDesktopApplicationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VirtualDesktopApplicationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -172,7 +172,7 @@ export class VirtualDesktopApplicationTimeoutsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VirtualDesktopApplicationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VirtualDesktopApplicationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -181,7 +181,7 @@ export class VirtualDesktopApplicationTimeoutsOutputReference extends cdktf.Comp
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -263,7 +263,7 @@ export class VirtualDesktopApplicationTimeoutsOutputReference extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_desktop_application azurerm_virtual_desktop_application}
 */
-export class VirtualDesktopApplication extends cdktf.TerraformResource {
+export class VirtualDesktopApplication extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -274,14 +274,14 @@ export class VirtualDesktopApplication extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VirtualDesktopApplication resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VirtualDesktopApplication resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VirtualDesktopApplication to import
   * @param importFromId The id of the existing VirtualDesktopApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_desktop_application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VirtualDesktopApplication to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_virtual_desktop_application", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_virtual_desktop_application", importId: importFromId, provider });
       }
 
   // ===========
@@ -478,11 +478,11 @@ export class VirtualDesktopApplication extends cdktf.TerraformResource {
   }
 
   // show_in_portal - computed: false, optional: true, required: false
-  private _showInPortal?: boolean | cdktf.IResolvable; 
+  private _showInPortal?: boolean | cdktn.IResolvable; 
   public get showInPortal() {
     return this.getBooleanAttribute('show_in_portal');
   }
-  public set showInPortal(value: boolean | cdktf.IResolvable) {
+  public set showInPortal(value: boolean | cdktn.IResolvable) {
     this._showInPortal = value;
   }
   public resetShowInPortal() {
@@ -515,17 +515,17 @@ export class VirtualDesktopApplication extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_group_id: cdktf.stringToTerraform(this._applicationGroupId),
-      command_line_argument_policy: cdktf.stringToTerraform(this._commandLineArgumentPolicy),
-      command_line_arguments: cdktf.stringToTerraform(this._commandLineArguments),
-      description: cdktf.stringToTerraform(this._description),
-      friendly_name: cdktf.stringToTerraform(this._friendlyName),
-      icon_index: cdktf.numberToTerraform(this._iconIndex),
-      icon_path: cdktf.stringToTerraform(this._iconPath),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      path: cdktf.stringToTerraform(this._path),
-      show_in_portal: cdktf.booleanToTerraform(this._showInPortal),
+      application_group_id: cdktn.stringToTerraform(this._applicationGroupId),
+      command_line_argument_policy: cdktn.stringToTerraform(this._commandLineArgumentPolicy),
+      command_line_arguments: cdktn.stringToTerraform(this._commandLineArguments),
+      description: cdktn.stringToTerraform(this._description),
+      friendly_name: cdktn.stringToTerraform(this._friendlyName),
+      icon_index: cdktn.numberToTerraform(this._iconIndex),
+      icon_path: cdktn.stringToTerraform(this._iconPath),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      path: cdktn.stringToTerraform(this._path),
+      show_in_portal: cdktn.booleanToTerraform(this._showInPortal),
       timeouts: virtualDesktopApplicationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -533,67 +533,67 @@ export class VirtualDesktopApplication extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       application_group_id: {
-        value: cdktf.stringToHclTerraform(this._applicationGroupId),
+        value: cdktn.stringToHclTerraform(this._applicationGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       command_line_argument_policy: {
-        value: cdktf.stringToHclTerraform(this._commandLineArgumentPolicy),
+        value: cdktn.stringToHclTerraform(this._commandLineArgumentPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       command_line_arguments: {
-        value: cdktf.stringToHclTerraform(this._commandLineArguments),
+        value: cdktn.stringToHclTerraform(this._commandLineArguments),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       friendly_name: {
-        value: cdktf.stringToHclTerraform(this._friendlyName),
+        value: cdktn.stringToHclTerraform(this._friendlyName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       icon_index: {
-        value: cdktf.numberToHclTerraform(this._iconIndex),
+        value: cdktn.numberToHclTerraform(this._iconIndex),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       icon_path: {
-        value: cdktf.stringToHclTerraform(this._iconPath),
+        value: cdktn.stringToHclTerraform(this._iconPath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       path: {
-        value: cdktf.stringToHclTerraform(this._path),
+        value: cdktn.stringToHclTerraform(this._path),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       show_in_portal: {
-        value: cdktf.booleanToHclTerraform(this._showInPortal),
+        value: cdktn.booleanToHclTerraform(this._showInPortal),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

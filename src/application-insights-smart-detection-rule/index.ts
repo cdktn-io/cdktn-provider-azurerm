@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApplicationInsightsSmartDetectionRuleConfig extends cdktf.TerraformMetaArguments {
+export interface ApplicationInsightsSmartDetectionRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_insights_smart_detection_rule#additional_email_recipients ApplicationInsightsSmartDetectionRule#additional_email_recipients}
   */
@@ -23,7 +23,7 @@ export interface ApplicationInsightsSmartDetectionRuleConfig extends cdktf.Terra
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_insights_smart_detection_rule#enabled ApplicationInsightsSmartDetectionRule#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_insights_smart_detection_rule#id ApplicationInsightsSmartDetectionRule#id}
   *
@@ -38,7 +38,7 @@ export interface ApplicationInsightsSmartDetectionRuleConfig extends cdktf.Terra
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_insights_smart_detection_rule#send_emails_to_subscription_owners ApplicationInsightsSmartDetectionRule#send_emails_to_subscription_owners}
   */
-  readonly sendEmailsToSubscriptionOwners?: boolean | cdktf.IResolvable;
+  readonly sendEmailsToSubscriptionOwners?: boolean | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -65,46 +65,46 @@ export interface ApplicationInsightsSmartDetectionRuleTimeouts {
   readonly update?: string;
 }
 
-export function applicationInsightsSmartDetectionRuleTimeoutsToTerraform(struct?: ApplicationInsightsSmartDetectionRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationInsightsSmartDetectionRuleTimeoutsToTerraform(struct?: ApplicationInsightsSmartDetectionRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function applicationInsightsSmartDetectionRuleTimeoutsToHclTerraform(struct?: ApplicationInsightsSmartDetectionRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationInsightsSmartDetectionRuleTimeoutsToHclTerraform(struct?: ApplicationInsightsSmartDetectionRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -115,19 +115,19 @@ export function applicationInsightsSmartDetectionRuleTimeoutsToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationInsightsSmartDetectionRuleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApplicationInsightsSmartDetectionRuleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApplicationInsightsSmartDetectionRuleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationInsightsSmartDetectionRuleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -152,7 +152,7 @@ export class ApplicationInsightsSmartDetectionRuleTimeoutsOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationInsightsSmartDetectionRuleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationInsightsSmartDetectionRuleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -161,7 +161,7 @@ export class ApplicationInsightsSmartDetectionRuleTimeoutsOutputReference extend
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -243,7 +243,7 @@ export class ApplicationInsightsSmartDetectionRuleTimeoutsOutputReference extend
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_insights_smart_detection_rule azurerm_application_insights_smart_detection_rule}
 */
-export class ApplicationInsightsSmartDetectionRule extends cdktf.TerraformResource {
+export class ApplicationInsightsSmartDetectionRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -254,14 +254,14 @@ export class ApplicationInsightsSmartDetectionRule extends cdktf.TerraformResour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApplicationInsightsSmartDetectionRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApplicationInsightsSmartDetectionRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApplicationInsightsSmartDetectionRule to import
   * @param importFromId The id of the existing ApplicationInsightsSmartDetectionRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_insights_smart_detection_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApplicationInsightsSmartDetectionRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_application_insights_smart_detection_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_application_insights_smart_detection_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -307,7 +307,7 @@ export class ApplicationInsightsSmartDetectionRule extends cdktf.TerraformResour
   // additional_email_recipients - computed: false, optional: true, required: false
   private _additionalEmailRecipients?: string[]; 
   public get additionalEmailRecipients() {
-    return cdktf.Fn.tolist(this.getListAttribute('additional_email_recipients'));
+    return cdktn.Fn.tolist(this.getListAttribute('additional_email_recipients'));
   }
   public set additionalEmailRecipients(value: string[]) {
     this._additionalEmailRecipients = value;
@@ -334,11 +334,11 @@ export class ApplicationInsightsSmartDetectionRule extends cdktf.TerraformResour
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -379,11 +379,11 @@ export class ApplicationInsightsSmartDetectionRule extends cdktf.TerraformResour
   }
 
   // send_emails_to_subscription_owners - computed: false, optional: true, required: false
-  private _sendEmailsToSubscriptionOwners?: boolean | cdktf.IResolvable; 
+  private _sendEmailsToSubscriptionOwners?: boolean | cdktn.IResolvable; 
   public get sendEmailsToSubscriptionOwners() {
     return this.getBooleanAttribute('send_emails_to_subscription_owners');
   }
-  public set sendEmailsToSubscriptionOwners(value: boolean | cdktf.IResolvable) {
+  public set sendEmailsToSubscriptionOwners(value: boolean | cdktn.IResolvable) {
     this._sendEmailsToSubscriptionOwners = value;
   }
   public resetSendEmailsToSubscriptionOwners() {
@@ -416,12 +416,12 @@ export class ApplicationInsightsSmartDetectionRule extends cdktf.TerraformResour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      additional_email_recipients: cdktf.listMapper(cdktf.stringToTerraform, false)(this._additionalEmailRecipients),
-      application_insights_id: cdktf.stringToTerraform(this._applicationInsightsId),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      send_emails_to_subscription_owners: cdktf.booleanToTerraform(this._sendEmailsToSubscriptionOwners),
+      additional_email_recipients: cdktn.listMapper(cdktn.stringToTerraform, false)(this._additionalEmailRecipients),
+      application_insights_id: cdktn.stringToTerraform(this._applicationInsightsId),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      send_emails_to_subscription_owners: cdktn.booleanToTerraform(this._sendEmailsToSubscriptionOwners),
       timeouts: applicationInsightsSmartDetectionRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -429,37 +429,37 @@ export class ApplicationInsightsSmartDetectionRule extends cdktf.TerraformResour
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       additional_email_recipients: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._additionalEmailRecipients),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._additionalEmailRecipients),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       application_insights_id: {
-        value: cdktf.stringToHclTerraform(this._applicationInsightsId),
+        value: cdktn.stringToHclTerraform(this._applicationInsightsId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       send_emails_to_subscription_owners: {
-        value: cdktf.booleanToHclTerraform(this._sendEmailsToSubscriptionOwners),
+        value: cdktn.booleanToHclTerraform(this._sendEmailsToSubscriptionOwners),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

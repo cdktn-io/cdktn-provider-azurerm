@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface StaticWebAppConfig extends cdktf.TerraformMetaArguments {
+export interface StaticWebAppConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/static_web_app#app_settings StaticWebApp#app_settings}
   */
@@ -19,7 +19,7 @@ export interface StaticWebAppConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/static_web_app#configuration_file_changes_enabled StaticWebApp#configuration_file_changes_enabled}
   */
-  readonly configurationFileChangesEnabled?: boolean | cdktf.IResolvable;
+  readonly configurationFileChangesEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/static_web_app#id StaticWebApp#id}
   *
@@ -38,11 +38,11 @@ export interface StaticWebAppConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/static_web_app#preview_environments_enabled StaticWebApp#preview_environments_enabled}
   */
-  readonly previewEnvironmentsEnabled?: boolean | cdktf.IResolvable;
+  readonly previewEnvironmentsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/static_web_app#public_network_access_enabled StaticWebApp#public_network_access_enabled}
   */
-  readonly publicNetworkAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly publicNetworkAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/static_web_app#repository_branch StaticWebApp#repository_branch}
   */
@@ -102,31 +102,31 @@ export interface StaticWebAppBasicAuth {
 }
 
 export function staticWebAppBasicAuthToTerraform(struct?: StaticWebAppBasicAuthOutputReference | StaticWebAppBasicAuth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    environments: cdktf.stringToTerraform(struct!.environments),
-    password: cdktf.stringToTerraform(struct!.password),
+    environments: cdktn.stringToTerraform(struct!.environments),
+    password: cdktn.stringToTerraform(struct!.password),
   }
 }
 
 
 export function staticWebAppBasicAuthToHclTerraform(struct?: StaticWebAppBasicAuthOutputReference | StaticWebAppBasicAuth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     environments: {
-      value: cdktf.stringToHclTerraform(struct!.environments),
+      value: cdktn.stringToHclTerraform(struct!.environments),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -137,14 +137,14 @@ export function staticWebAppBasicAuthToHclTerraform(struct?: StaticWebAppBasicAu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StaticWebAppBasicAuthOutputReference extends cdktf.ComplexObject {
+export class StaticWebAppBasicAuthOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -213,31 +213,31 @@ export interface StaticWebAppIdentity {
 }
 
 export function staticWebAppIdentityToTerraform(struct?: StaticWebAppIdentityOutputReference | StaticWebAppIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function staticWebAppIdentityToHclTerraform(struct?: StaticWebAppIdentityOutputReference | StaticWebAppIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -248,14 +248,14 @@ export function staticWebAppIdentityToHclTerraform(struct?: StaticWebAppIdentity
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StaticWebAppIdentityOutputReference extends cdktf.ComplexObject {
+export class StaticWebAppIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -289,7 +289,7 @@ export class StaticWebAppIdentityOutputReference extends cdktf.ComplexObject {
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -344,46 +344,46 @@ export interface StaticWebAppTimeouts {
   readonly update?: string;
 }
 
-export function staticWebAppTimeoutsToTerraform(struct?: StaticWebAppTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function staticWebAppTimeoutsToTerraform(struct?: StaticWebAppTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function staticWebAppTimeoutsToHclTerraform(struct?: StaticWebAppTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function staticWebAppTimeoutsToHclTerraform(struct?: StaticWebAppTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -394,19 +394,19 @@ export function staticWebAppTimeoutsToHclTerraform(struct?: StaticWebAppTimeouts
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StaticWebAppTimeoutsOutputReference extends cdktf.ComplexObject {
+export class StaticWebAppTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): StaticWebAppTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): StaticWebAppTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -431,7 +431,7 @@ export class StaticWebAppTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StaticWebAppTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: StaticWebAppTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -440,7 +440,7 @@ export class StaticWebAppTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -522,7 +522,7 @@ export class StaticWebAppTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/static_web_app azurerm_static_web_app}
 */
-export class StaticWebApp extends cdktf.TerraformResource {
+export class StaticWebApp extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -533,14 +533,14 @@ export class StaticWebApp extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a StaticWebApp resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a StaticWebApp resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StaticWebApp to import
   * @param importFromId The id of the existing StaticWebApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/static_web_app#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StaticWebApp to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_static_web_app", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_static_web_app", importId: importFromId, provider });
       }
 
   // ===========
@@ -615,11 +615,11 @@ export class StaticWebApp extends cdktf.TerraformResource {
   }
 
   // configuration_file_changes_enabled - computed: false, optional: true, required: false
-  private _configurationFileChangesEnabled?: boolean | cdktf.IResolvable; 
+  private _configurationFileChangesEnabled?: boolean | cdktn.IResolvable; 
   public get configurationFileChangesEnabled() {
     return this.getBooleanAttribute('configuration_file_changes_enabled');
   }
-  public set configurationFileChangesEnabled(value: boolean | cdktf.IResolvable) {
+  public set configurationFileChangesEnabled(value: boolean | cdktn.IResolvable) {
     this._configurationFileChangesEnabled = value;
   }
   public resetConfigurationFileChangesEnabled() {
@@ -678,11 +678,11 @@ export class StaticWebApp extends cdktf.TerraformResource {
   }
 
   // preview_environments_enabled - computed: false, optional: true, required: false
-  private _previewEnvironmentsEnabled?: boolean | cdktf.IResolvable; 
+  private _previewEnvironmentsEnabled?: boolean | cdktn.IResolvable; 
   public get previewEnvironmentsEnabled() {
     return this.getBooleanAttribute('preview_environments_enabled');
   }
-  public set previewEnvironmentsEnabled(value: boolean | cdktf.IResolvable) {
+  public set previewEnvironmentsEnabled(value: boolean | cdktn.IResolvable) {
     this._previewEnvironmentsEnabled = value;
   }
   public resetPreviewEnvironmentsEnabled() {
@@ -694,11 +694,11 @@ export class StaticWebApp extends cdktf.TerraformResource {
   }
 
   // public_network_access_enabled - computed: false, optional: true, required: false
-  private _publicNetworkAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _publicNetworkAccessEnabled?: boolean | cdktn.IResolvable; 
   public get publicNetworkAccessEnabled() {
     return this.getBooleanAttribute('public_network_access_enabled');
   }
-  public set publicNetworkAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set publicNetworkAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._publicNetworkAccessEnabled = value;
   }
   public resetPublicNetworkAccessEnabled() {
@@ -872,20 +872,20 @@ export class StaticWebApp extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      app_settings: cdktf.hashMapper(cdktf.stringToTerraform)(this._appSettings),
-      configuration_file_changes_enabled: cdktf.booleanToTerraform(this._configurationFileChangesEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      preview_environments_enabled: cdktf.booleanToTerraform(this._previewEnvironmentsEnabled),
-      public_network_access_enabled: cdktf.booleanToTerraform(this._publicNetworkAccessEnabled),
-      repository_branch: cdktf.stringToTerraform(this._repositoryBranch),
-      repository_token: cdktf.stringToTerraform(this._repositoryToken),
-      repository_url: cdktf.stringToTerraform(this._repositoryUrl),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      sku_size: cdktf.stringToTerraform(this._skuSize),
-      sku_tier: cdktf.stringToTerraform(this._skuTier),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      app_settings: cdktn.hashMapper(cdktn.stringToTerraform)(this._appSettings),
+      configuration_file_changes_enabled: cdktn.booleanToTerraform(this._configurationFileChangesEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      preview_environments_enabled: cdktn.booleanToTerraform(this._previewEnvironmentsEnabled),
+      public_network_access_enabled: cdktn.booleanToTerraform(this._publicNetworkAccessEnabled),
+      repository_branch: cdktn.stringToTerraform(this._repositoryBranch),
+      repository_token: cdktn.stringToTerraform(this._repositoryToken),
+      repository_url: cdktn.stringToTerraform(this._repositoryUrl),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      sku_size: cdktn.stringToTerraform(this._skuSize),
+      sku_tier: cdktn.stringToTerraform(this._skuTier),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       basic_auth: staticWebAppBasicAuthToTerraform(this._basicAuth.internalValue),
       identity: staticWebAppIdentityToTerraform(this._identity.internalValue),
       timeouts: staticWebAppTimeoutsToTerraform(this._timeouts.internalValue),
@@ -895,85 +895,85 @@ export class StaticWebApp extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       app_settings: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._appSettings),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._appSettings),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       configuration_file_changes_enabled: {
-        value: cdktf.booleanToHclTerraform(this._configurationFileChangesEnabled),
+        value: cdktn.booleanToHclTerraform(this._configurationFileChangesEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       preview_environments_enabled: {
-        value: cdktf.booleanToHclTerraform(this._previewEnvironmentsEnabled),
+        value: cdktn.booleanToHclTerraform(this._previewEnvironmentsEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       public_network_access_enabled: {
-        value: cdktf.booleanToHclTerraform(this._publicNetworkAccessEnabled),
+        value: cdktn.booleanToHclTerraform(this._publicNetworkAccessEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       repository_branch: {
-        value: cdktf.stringToHclTerraform(this._repositoryBranch),
+        value: cdktn.stringToHclTerraform(this._repositoryBranch),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       repository_token: {
-        value: cdktf.stringToHclTerraform(this._repositoryToken),
+        value: cdktn.stringToHclTerraform(this._repositoryToken),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       repository_url: {
-        value: cdktf.stringToHclTerraform(this._repositoryUrl),
+        value: cdktn.stringToHclTerraform(this._repositoryUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sku_size: {
-        value: cdktf.stringToHclTerraform(this._skuSize),
+        value: cdktn.stringToHclTerraform(this._skuSize),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sku_tier: {
-        value: cdktf.stringToHclTerraform(this._skuTier),
+        value: cdktn.stringToHclTerraform(this._skuTier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

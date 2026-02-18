@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LighthouseDefinitionConfig extends cdktf.TerraformMetaArguments {
+export interface LighthouseDefinitionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/lighthouse_definition#description LighthouseDefinition#description}
   */
@@ -44,13 +44,13 @@ export interface LighthouseDefinitionConfig extends cdktf.TerraformMetaArguments
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/lighthouse_definition#authorization LighthouseDefinition#authorization}
   */
-  readonly authorization: LighthouseDefinitionAuthorization[] | cdktf.IResolvable;
+  readonly authorization: LighthouseDefinitionAuthorization[] | cdktn.IResolvable;
   /**
   * eligible_authorization block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/lighthouse_definition#eligible_authorization LighthouseDefinition#eligible_authorization}
   */
-  readonly eligibleAuthorization?: LighthouseDefinitionEligibleAuthorization[] | cdktf.IResolvable;
+  readonly eligibleAuthorization?: LighthouseDefinitionEligibleAuthorization[] | cdktn.IResolvable;
   /**
   * plan block
   *
@@ -83,46 +83,46 @@ export interface LighthouseDefinitionAuthorization {
   readonly roleDefinitionId: string;
 }
 
-export function lighthouseDefinitionAuthorizationToTerraform(struct?: LighthouseDefinitionAuthorization | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lighthouseDefinitionAuthorizationToTerraform(struct?: LighthouseDefinitionAuthorization | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    delegated_role_definition_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.delegatedRoleDefinitionIds),
-    principal_display_name: cdktf.stringToTerraform(struct!.principalDisplayName),
-    principal_id: cdktf.stringToTerraform(struct!.principalId),
-    role_definition_id: cdktf.stringToTerraform(struct!.roleDefinitionId),
+    delegated_role_definition_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.delegatedRoleDefinitionIds),
+    principal_display_name: cdktn.stringToTerraform(struct!.principalDisplayName),
+    principal_id: cdktn.stringToTerraform(struct!.principalId),
+    role_definition_id: cdktn.stringToTerraform(struct!.roleDefinitionId),
   }
 }
 
 
-export function lighthouseDefinitionAuthorizationToHclTerraform(struct?: LighthouseDefinitionAuthorization | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lighthouseDefinitionAuthorizationToHclTerraform(struct?: LighthouseDefinitionAuthorization | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     delegated_role_definition_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.delegatedRoleDefinitionIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.delegatedRoleDefinitionIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     principal_display_name: {
-      value: cdktf.stringToHclTerraform(struct!.principalDisplayName),
+      value: cdktn.stringToHclTerraform(struct!.principalDisplayName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     principal_id: {
-      value: cdktf.stringToHclTerraform(struct!.principalId),
+      value: cdktn.stringToHclTerraform(struct!.principalId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_definition_id: {
-      value: cdktf.stringToHclTerraform(struct!.roleDefinitionId),
+      value: cdktn.stringToHclTerraform(struct!.roleDefinitionId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -133,9 +133,9 @@ export function lighthouseDefinitionAuthorizationToHclTerraform(struct?: Lightho
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LighthouseDefinitionAuthorizationOutputReference extends cdktf.ComplexObject {
+export class LighthouseDefinitionAuthorizationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -143,11 +143,11 @@ export class LighthouseDefinitionAuthorizationOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LighthouseDefinitionAuthorization | cdktf.IResolvable | undefined {
+  public get internalValue(): LighthouseDefinitionAuthorization | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -172,7 +172,7 @@ export class LighthouseDefinitionAuthorizationOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LighthouseDefinitionAuthorization | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LighthouseDefinitionAuthorization | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -181,7 +181,7 @@ export class LighthouseDefinitionAuthorizationOutputReference extends cdktf.Comp
       this._principalId = undefined;
       this._roleDefinitionId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -198,7 +198,7 @@ export class LighthouseDefinitionAuthorizationOutputReference extends cdktf.Comp
   // delegated_role_definition_ids - computed: false, optional: true, required: false
   private _delegatedRoleDefinitionIds?: string[]; 
   public get delegatedRoleDefinitionIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('delegated_role_definition_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('delegated_role_definition_ids'));
   }
   public set delegatedRoleDefinitionIds(value: string[]) {
     this._delegatedRoleDefinitionIds = value;
@@ -254,15 +254,15 @@ export class LighthouseDefinitionAuthorizationOutputReference extends cdktf.Comp
   }
 }
 
-export class LighthouseDefinitionAuthorizationList extends cdktf.ComplexList {
-  public internalValue? : LighthouseDefinitionAuthorization[] | cdktf.IResolvable
+export class LighthouseDefinitionAuthorizationList extends cdktn.ComplexList {
+  public internalValue? : LighthouseDefinitionAuthorization[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -284,32 +284,32 @@ export interface LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicy
   readonly principalId: string;
 }
 
-export function lighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyApproverToTerraform(struct?: LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyApprover | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyApproverToTerraform(struct?: LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyApprover | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    principal_display_name: cdktf.stringToTerraform(struct!.principalDisplayName),
-    principal_id: cdktf.stringToTerraform(struct!.principalId),
+    principal_display_name: cdktn.stringToTerraform(struct!.principalDisplayName),
+    principal_id: cdktn.stringToTerraform(struct!.principalId),
   }
 }
 
 
-export function lighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyApproverToHclTerraform(struct?: LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyApprover | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyApproverToHclTerraform(struct?: LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyApprover | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     principal_display_name: {
-      value: cdktf.stringToHclTerraform(struct!.principalDisplayName),
+      value: cdktn.stringToHclTerraform(struct!.principalDisplayName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     principal_id: {
-      value: cdktf.stringToHclTerraform(struct!.principalId),
+      value: cdktn.stringToHclTerraform(struct!.principalId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -320,9 +320,9 @@ export function lighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyA
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyApproverOutputReference extends cdktf.ComplexObject {
+export class LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyApproverOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -330,11 +330,11 @@ export class LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyAppr
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyApprover | cdktf.IResolvable | undefined {
+  public get internalValue(): LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyApprover | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -351,14 +351,14 @@ export class LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyAppr
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyApprover | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyApprover | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._principalDisplayName = undefined;
       this._principalId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -400,15 +400,15 @@ export class LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyAppr
   }
 }
 
-export class LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyApproverList extends cdktf.ComplexList {
-  public internalValue? : LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyApprover[] | cdktf.IResolvable
+export class LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyApproverList extends cdktn.ComplexList {
+  public internalValue? : LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyApprover[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -433,42 +433,42 @@ export interface LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicy
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/lighthouse_definition#approver LighthouseDefinition#approver}
   */
-  readonly approver?: LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyApprover[] | cdktf.IResolvable;
+  readonly approver?: LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyApprover[] | cdktn.IResolvable;
 }
 
 export function lighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyToTerraform(struct?: LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyOutputReference | LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    maximum_activation_duration: cdktf.stringToTerraform(struct!.maximumActivationDuration),
-    multi_factor_auth_provider: cdktf.stringToTerraform(struct!.multiFactorAuthProvider),
-    approver: cdktf.listMapper(lighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyApproverToTerraform, true)(struct!.approver),
+    maximum_activation_duration: cdktn.stringToTerraform(struct!.maximumActivationDuration),
+    multi_factor_auth_provider: cdktn.stringToTerraform(struct!.multiFactorAuthProvider),
+    approver: cdktn.listMapper(lighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyApproverToTerraform, true)(struct!.approver),
   }
 }
 
 
 export function lighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyToHclTerraform(struct?: LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyOutputReference | LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     maximum_activation_duration: {
-      value: cdktf.stringToHclTerraform(struct!.maximumActivationDuration),
+      value: cdktn.stringToHclTerraform(struct!.maximumActivationDuration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     multi_factor_auth_provider: {
-      value: cdktf.stringToHclTerraform(struct!.multiFactorAuthProvider),
+      value: cdktn.stringToHclTerraform(struct!.multiFactorAuthProvider),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     approver: {
-      value: cdktf.listMapperHcl(lighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyApproverToHclTerraform, true)(struct!.approver),
+      value: cdktn.listMapperHcl(lighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyApproverToHclTerraform, true)(struct!.approver),
       isBlock: true,
       type: "set",
       storageClassType: "LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyApproverList",
@@ -479,14 +479,14 @@ export function lighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyOutputReference extends cdktf.ComplexObject {
+export class LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -560,7 +560,7 @@ export class LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyOutp
   public get approver() {
     return this._approver;
   }
-  public putApprover(value: LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyApprover[] | cdktf.IResolvable) {
+  public putApprover(value: LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyApprover[] | cdktn.IResolvable) {
     this._approver.internalValue = value;
   }
   public resetApprover() {
@@ -592,40 +592,40 @@ export interface LighthouseDefinitionEligibleAuthorization {
   readonly justInTimeAccessPolicy?: LighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicy;
 }
 
-export function lighthouseDefinitionEligibleAuthorizationToTerraform(struct?: LighthouseDefinitionEligibleAuthorization | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lighthouseDefinitionEligibleAuthorizationToTerraform(struct?: LighthouseDefinitionEligibleAuthorization | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    principal_display_name: cdktf.stringToTerraform(struct!.principalDisplayName),
-    principal_id: cdktf.stringToTerraform(struct!.principalId),
-    role_definition_id: cdktf.stringToTerraform(struct!.roleDefinitionId),
+    principal_display_name: cdktn.stringToTerraform(struct!.principalDisplayName),
+    principal_id: cdktn.stringToTerraform(struct!.principalId),
+    role_definition_id: cdktn.stringToTerraform(struct!.roleDefinitionId),
     just_in_time_access_policy: lighthouseDefinitionEligibleAuthorizationJustInTimeAccessPolicyToTerraform(struct!.justInTimeAccessPolicy),
   }
 }
 
 
-export function lighthouseDefinitionEligibleAuthorizationToHclTerraform(struct?: LighthouseDefinitionEligibleAuthorization | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lighthouseDefinitionEligibleAuthorizationToHclTerraform(struct?: LighthouseDefinitionEligibleAuthorization | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     principal_display_name: {
-      value: cdktf.stringToHclTerraform(struct!.principalDisplayName),
+      value: cdktn.stringToHclTerraform(struct!.principalDisplayName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     principal_id: {
-      value: cdktf.stringToHclTerraform(struct!.principalId),
+      value: cdktn.stringToHclTerraform(struct!.principalId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_definition_id: {
-      value: cdktf.stringToHclTerraform(struct!.roleDefinitionId),
+      value: cdktn.stringToHclTerraform(struct!.roleDefinitionId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -642,9 +642,9 @@ export function lighthouseDefinitionEligibleAuthorizationToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LighthouseDefinitionEligibleAuthorizationOutputReference extends cdktf.ComplexObject {
+export class LighthouseDefinitionEligibleAuthorizationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -652,11 +652,11 @@ export class LighthouseDefinitionEligibleAuthorizationOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LighthouseDefinitionEligibleAuthorization | cdktf.IResolvable | undefined {
+  public get internalValue(): LighthouseDefinitionEligibleAuthorization | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -681,7 +681,7 @@ export class LighthouseDefinitionEligibleAuthorizationOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LighthouseDefinitionEligibleAuthorization | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LighthouseDefinitionEligibleAuthorization | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -690,7 +690,7 @@ export class LighthouseDefinitionEligibleAuthorizationOutputReference extends cd
       this._roleDefinitionId = undefined;
       this._justInTimeAccessPolicy.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -763,15 +763,15 @@ export class LighthouseDefinitionEligibleAuthorizationOutputReference extends cd
   }
 }
 
-export class LighthouseDefinitionEligibleAuthorizationList extends cdktf.ComplexList {
-  public internalValue? : LighthouseDefinitionEligibleAuthorization[] | cdktf.IResolvable
+export class LighthouseDefinitionEligibleAuthorizationList extends cdktn.ComplexList {
+  public internalValue? : LighthouseDefinitionEligibleAuthorization[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -802,45 +802,45 @@ export interface LighthouseDefinitionPlan {
 }
 
 export function lighthouseDefinitionPlanToTerraform(struct?: LighthouseDefinitionPlanOutputReference | LighthouseDefinitionPlan): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    product: cdktf.stringToTerraform(struct!.product),
-    publisher: cdktf.stringToTerraform(struct!.publisher),
-    version: cdktf.stringToTerraform(struct!.version),
+    name: cdktn.stringToTerraform(struct!.name),
+    product: cdktn.stringToTerraform(struct!.product),
+    publisher: cdktn.stringToTerraform(struct!.publisher),
+    version: cdktn.stringToTerraform(struct!.version),
   }
 }
 
 
 export function lighthouseDefinitionPlanToHclTerraform(struct?: LighthouseDefinitionPlanOutputReference | LighthouseDefinitionPlan): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     product: {
-      value: cdktf.stringToHclTerraform(struct!.product),
+      value: cdktn.stringToHclTerraform(struct!.product),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     publisher: {
-      value: cdktf.stringToHclTerraform(struct!.publisher),
+      value: cdktn.stringToHclTerraform(struct!.publisher),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -851,14 +851,14 @@ export function lighthouseDefinitionPlanToHclTerraform(struct?: LighthouseDefini
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LighthouseDefinitionPlanOutputReference extends cdktf.ComplexObject {
+export class LighthouseDefinitionPlanOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -972,46 +972,46 @@ export interface LighthouseDefinitionTimeouts {
   readonly update?: string;
 }
 
-export function lighthouseDefinitionTimeoutsToTerraform(struct?: LighthouseDefinitionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lighthouseDefinitionTimeoutsToTerraform(struct?: LighthouseDefinitionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function lighthouseDefinitionTimeoutsToHclTerraform(struct?: LighthouseDefinitionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function lighthouseDefinitionTimeoutsToHclTerraform(struct?: LighthouseDefinitionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1022,19 +1022,19 @@ export function lighthouseDefinitionTimeoutsToHclTerraform(struct?: LighthouseDe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LighthouseDefinitionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class LighthouseDefinitionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LighthouseDefinitionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): LighthouseDefinitionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1059,7 +1059,7 @@ export class LighthouseDefinitionTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LighthouseDefinitionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LighthouseDefinitionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1068,7 +1068,7 @@ export class LighthouseDefinitionTimeoutsOutputReference extends cdktf.ComplexOb
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1150,7 +1150,7 @@ export class LighthouseDefinitionTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/lighthouse_definition azurerm_lighthouse_definition}
 */
-export class LighthouseDefinition extends cdktf.TerraformResource {
+export class LighthouseDefinition extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1161,14 +1161,14 @@ export class LighthouseDefinition extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LighthouseDefinition resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LighthouseDefinition resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LighthouseDefinition to import
   * @param importFromId The id of the existing LighthouseDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/lighthouse_definition#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LighthouseDefinition to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_lighthouse_definition", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_lighthouse_definition", importId: importFromId, provider });
       }
 
   // ===========
@@ -1306,7 +1306,7 @@ export class LighthouseDefinition extends cdktf.TerraformResource {
   public get authorization() {
     return this._authorization;
   }
-  public putAuthorization(value: LighthouseDefinitionAuthorization[] | cdktf.IResolvable) {
+  public putAuthorization(value: LighthouseDefinitionAuthorization[] | cdktn.IResolvable) {
     this._authorization.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1319,7 +1319,7 @@ export class LighthouseDefinition extends cdktf.TerraformResource {
   public get eligibleAuthorization() {
     return this._eligibleAuthorization;
   }
-  public putEligibleAuthorization(value: LighthouseDefinitionEligibleAuthorization[] | cdktf.IResolvable) {
+  public putEligibleAuthorization(value: LighthouseDefinitionEligibleAuthorization[] | cdktn.IResolvable) {
     this._eligibleAuthorization.internalValue = value;
   }
   public resetEligibleAuthorization() {
@@ -1368,14 +1368,14 @@ export class LighthouseDefinition extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      lighthouse_definition_id: cdktf.stringToTerraform(this._lighthouseDefinitionId),
-      managing_tenant_id: cdktf.stringToTerraform(this._managingTenantId),
-      name: cdktf.stringToTerraform(this._name),
-      scope: cdktf.stringToTerraform(this._scope),
-      authorization: cdktf.listMapper(lighthouseDefinitionAuthorizationToTerraform, true)(this._authorization.internalValue),
-      eligible_authorization: cdktf.listMapper(lighthouseDefinitionEligibleAuthorizationToTerraform, true)(this._eligibleAuthorization.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      lighthouse_definition_id: cdktn.stringToTerraform(this._lighthouseDefinitionId),
+      managing_tenant_id: cdktn.stringToTerraform(this._managingTenantId),
+      name: cdktn.stringToTerraform(this._name),
+      scope: cdktn.stringToTerraform(this._scope),
+      authorization: cdktn.listMapper(lighthouseDefinitionAuthorizationToTerraform, true)(this._authorization.internalValue),
+      eligible_authorization: cdktn.listMapper(lighthouseDefinitionEligibleAuthorizationToTerraform, true)(this._eligibleAuthorization.internalValue),
       plan: lighthouseDefinitionPlanToTerraform(this._plan.internalValue),
       timeouts: lighthouseDefinitionTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1384,49 +1384,49 @@ export class LighthouseDefinition extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       lighthouse_definition_id: {
-        value: cdktf.stringToHclTerraform(this._lighthouseDefinitionId),
+        value: cdktn.stringToHclTerraform(this._lighthouseDefinitionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       managing_tenant_id: {
-        value: cdktf.stringToHclTerraform(this._managingTenantId),
+        value: cdktn.stringToHclTerraform(this._managingTenantId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scope: {
-        value: cdktf.stringToHclTerraform(this._scope),
+        value: cdktn.stringToHclTerraform(this._scope),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       authorization: {
-        value: cdktf.listMapperHcl(lighthouseDefinitionAuthorizationToHclTerraform, true)(this._authorization.internalValue),
+        value: cdktn.listMapperHcl(lighthouseDefinitionAuthorizationToHclTerraform, true)(this._authorization.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "LighthouseDefinitionAuthorizationList",
       },
       eligible_authorization: {
-        value: cdktf.listMapperHcl(lighthouseDefinitionEligibleAuthorizationToHclTerraform, true)(this._eligibleAuthorization.internalValue),
+        value: cdktn.listMapperHcl(lighthouseDefinitionEligibleAuthorizationToHclTerraform, true)(this._eligibleAuthorization.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "LighthouseDefinitionEligibleAuthorizationList",

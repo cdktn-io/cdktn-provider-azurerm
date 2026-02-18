@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SpringCloudGatewayRouteConfigConfig extends cdktf.TerraformMetaArguments {
+export interface SpringCloudGatewayRouteConfigConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_gateway_route_config#filters SpringCloudGatewayRouteConfig#filters}
   */
@@ -46,7 +46,7 @@ export interface SpringCloudGatewayRouteConfigConfig extends cdktf.TerraformMeta
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_gateway_route_config#sso_validation_enabled SpringCloudGatewayRouteConfig#sso_validation_enabled}
   */
-  readonly ssoValidationEnabled?: boolean | cdktf.IResolvable;
+  readonly ssoValidationEnabled?: boolean | cdktn.IResolvable;
   /**
   * open_api block
   *
@@ -58,7 +58,7 @@ export interface SpringCloudGatewayRouteConfigConfig extends cdktf.TerraformMeta
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_gateway_route_config#route SpringCloudGatewayRouteConfig#route}
   */
-  readonly route?: SpringCloudGatewayRouteConfigRoute[] | cdktf.IResolvable;
+  readonly route?: SpringCloudGatewayRouteConfigRoute[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -74,24 +74,24 @@ export interface SpringCloudGatewayRouteConfigOpenApi {
 }
 
 export function springCloudGatewayRouteConfigOpenApiToTerraform(struct?: SpringCloudGatewayRouteConfigOpenApiOutputReference | SpringCloudGatewayRouteConfigOpenApi): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    uri: cdktf.stringToTerraform(struct!.uri),
+    uri: cdktn.stringToTerraform(struct!.uri),
   }
 }
 
 
 export function springCloudGatewayRouteConfigOpenApiToHclTerraform(struct?: SpringCloudGatewayRouteConfigOpenApiOutputReference | SpringCloudGatewayRouteConfigOpenApi): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     uri: {
-      value: cdktf.stringToHclTerraform(struct!.uri),
+      value: cdktn.stringToHclTerraform(struct!.uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -102,14 +102,14 @@ export function springCloudGatewayRouteConfigOpenApiToHclTerraform(struct?: Spri
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SpringCloudGatewayRouteConfigOpenApiOutputReference extends cdktf.ComplexObject {
+export class SpringCloudGatewayRouteConfigOpenApiOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -174,7 +174,7 @@ export interface SpringCloudGatewayRouteConfigRoute {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_gateway_route_config#sso_validation_enabled SpringCloudGatewayRouteConfig#sso_validation_enabled}
   */
-  readonly ssoValidationEnabled?: boolean | cdktf.IResolvable;
+  readonly ssoValidationEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_gateway_route_config#title SpringCloudGatewayRouteConfig#title}
   */
@@ -182,88 +182,88 @@ export interface SpringCloudGatewayRouteConfigRoute {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_gateway_route_config#token_relay SpringCloudGatewayRouteConfig#token_relay}
   */
-  readonly tokenRelay?: boolean | cdktf.IResolvable;
+  readonly tokenRelay?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_gateway_route_config#uri SpringCloudGatewayRouteConfig#uri}
   */
   readonly uri?: string;
 }
 
-export function springCloudGatewayRouteConfigRouteToTerraform(struct?: SpringCloudGatewayRouteConfigRoute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function springCloudGatewayRouteConfigRouteToTerraform(struct?: SpringCloudGatewayRouteConfigRoute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    classification_tags: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.classificationTags),
-    description: cdktf.stringToTerraform(struct!.description),
-    filters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.filters),
-    order: cdktf.numberToTerraform(struct!.order),
-    predicates: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.predicates),
-    sso_validation_enabled: cdktf.booleanToTerraform(struct!.ssoValidationEnabled),
-    title: cdktf.stringToTerraform(struct!.title),
-    token_relay: cdktf.booleanToTerraform(struct!.tokenRelay),
-    uri: cdktf.stringToTerraform(struct!.uri),
+    classification_tags: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.classificationTags),
+    description: cdktn.stringToTerraform(struct!.description),
+    filters: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.filters),
+    order: cdktn.numberToTerraform(struct!.order),
+    predicates: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.predicates),
+    sso_validation_enabled: cdktn.booleanToTerraform(struct!.ssoValidationEnabled),
+    title: cdktn.stringToTerraform(struct!.title),
+    token_relay: cdktn.booleanToTerraform(struct!.tokenRelay),
+    uri: cdktn.stringToTerraform(struct!.uri),
   }
 }
 
 
-export function springCloudGatewayRouteConfigRouteToHclTerraform(struct?: SpringCloudGatewayRouteConfigRoute | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function springCloudGatewayRouteConfigRouteToHclTerraform(struct?: SpringCloudGatewayRouteConfigRoute | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     classification_tags: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.classificationTags),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.classificationTags),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     filters: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.filters),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.filters),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     order: {
-      value: cdktf.numberToHclTerraform(struct!.order),
+      value: cdktn.numberToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     predicates: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.predicates),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.predicates),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     sso_validation_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.ssoValidationEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.ssoValidationEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     token_relay: {
-      value: cdktf.booleanToHclTerraform(struct!.tokenRelay),
+      value: cdktn.booleanToHclTerraform(struct!.tokenRelay),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     uri: {
-      value: cdktf.stringToHclTerraform(struct!.uri),
+      value: cdktn.stringToHclTerraform(struct!.uri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -274,9 +274,9 @@ export function springCloudGatewayRouteConfigRouteToHclTerraform(struct?: Spring
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SpringCloudGatewayRouteConfigRouteOutputReference extends cdktf.ComplexObject {
+export class SpringCloudGatewayRouteConfigRouteOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -284,11 +284,11 @@ export class SpringCloudGatewayRouteConfigRouteOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SpringCloudGatewayRouteConfigRoute | cdktf.IResolvable | undefined {
+  public get internalValue(): SpringCloudGatewayRouteConfigRoute | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -333,7 +333,7 @@ export class SpringCloudGatewayRouteConfigRouteOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SpringCloudGatewayRouteConfigRoute | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SpringCloudGatewayRouteConfigRoute | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -347,7 +347,7 @@ export class SpringCloudGatewayRouteConfigRouteOutputReference extends cdktf.Com
       this._tokenRelay = undefined;
       this._uri = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -369,7 +369,7 @@ export class SpringCloudGatewayRouteConfigRouteOutputReference extends cdktf.Com
   // classification_tags - computed: false, optional: true, required: false
   private _classificationTags?: string[]; 
   public get classificationTags() {
-    return cdktf.Fn.tolist(this.getListAttribute('classification_tags'));
+    return cdktn.Fn.tolist(this.getListAttribute('classification_tags'));
   }
   public set classificationTags(value: string[]) {
     this._classificationTags = value;
@@ -401,7 +401,7 @@ export class SpringCloudGatewayRouteConfigRouteOutputReference extends cdktf.Com
   // filters - computed: false, optional: true, required: false
   private _filters?: string[]; 
   public get filters() {
-    return cdktf.Fn.tolist(this.getListAttribute('filters'));
+    return cdktn.Fn.tolist(this.getListAttribute('filters'));
   }
   public set filters(value: string[]) {
     this._filters = value;
@@ -430,7 +430,7 @@ export class SpringCloudGatewayRouteConfigRouteOutputReference extends cdktf.Com
   // predicates - computed: false, optional: true, required: false
   private _predicates?: string[]; 
   public get predicates() {
-    return cdktf.Fn.tolist(this.getListAttribute('predicates'));
+    return cdktn.Fn.tolist(this.getListAttribute('predicates'));
   }
   public set predicates(value: string[]) {
     this._predicates = value;
@@ -444,11 +444,11 @@ export class SpringCloudGatewayRouteConfigRouteOutputReference extends cdktf.Com
   }
 
   // sso_validation_enabled - computed: false, optional: true, required: false
-  private _ssoValidationEnabled?: boolean | cdktf.IResolvable; 
+  private _ssoValidationEnabled?: boolean | cdktn.IResolvable; 
   public get ssoValidationEnabled() {
     return this.getBooleanAttribute('sso_validation_enabled');
   }
-  public set ssoValidationEnabled(value: boolean | cdktf.IResolvable) {
+  public set ssoValidationEnabled(value: boolean | cdktn.IResolvable) {
     this._ssoValidationEnabled = value;
   }
   public resetSsoValidationEnabled() {
@@ -476,11 +476,11 @@ export class SpringCloudGatewayRouteConfigRouteOutputReference extends cdktf.Com
   }
 
   // token_relay - computed: false, optional: true, required: false
-  private _tokenRelay?: boolean | cdktf.IResolvable; 
+  private _tokenRelay?: boolean | cdktn.IResolvable; 
   public get tokenRelay() {
     return this.getBooleanAttribute('token_relay');
   }
-  public set tokenRelay(value: boolean | cdktf.IResolvable) {
+  public set tokenRelay(value: boolean | cdktn.IResolvable) {
     this._tokenRelay = value;
   }
   public resetTokenRelay() {
@@ -508,15 +508,15 @@ export class SpringCloudGatewayRouteConfigRouteOutputReference extends cdktf.Com
   }
 }
 
-export class SpringCloudGatewayRouteConfigRouteList extends cdktf.ComplexList {
-  public internalValue? : SpringCloudGatewayRouteConfigRoute[] | cdktf.IResolvable
+export class SpringCloudGatewayRouteConfigRouteList extends cdktn.ComplexList {
+  public internalValue? : SpringCloudGatewayRouteConfigRoute[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -546,46 +546,46 @@ export interface SpringCloudGatewayRouteConfigTimeouts {
   readonly update?: string;
 }
 
-export function springCloudGatewayRouteConfigTimeoutsToTerraform(struct?: SpringCloudGatewayRouteConfigTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function springCloudGatewayRouteConfigTimeoutsToTerraform(struct?: SpringCloudGatewayRouteConfigTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function springCloudGatewayRouteConfigTimeoutsToHclTerraform(struct?: SpringCloudGatewayRouteConfigTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function springCloudGatewayRouteConfigTimeoutsToHclTerraform(struct?: SpringCloudGatewayRouteConfigTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -596,19 +596,19 @@ export function springCloudGatewayRouteConfigTimeoutsToHclTerraform(struct?: Spr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SpringCloudGatewayRouteConfigTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SpringCloudGatewayRouteConfigTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SpringCloudGatewayRouteConfigTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SpringCloudGatewayRouteConfigTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -633,7 +633,7 @@ export class SpringCloudGatewayRouteConfigTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SpringCloudGatewayRouteConfigTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SpringCloudGatewayRouteConfigTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -642,7 +642,7 @@ export class SpringCloudGatewayRouteConfigTimeoutsOutputReference extends cdktf.
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -724,7 +724,7 @@ export class SpringCloudGatewayRouteConfigTimeoutsOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_gateway_route_config azurerm_spring_cloud_gateway_route_config}
 */
-export class SpringCloudGatewayRouteConfig extends cdktf.TerraformResource {
+export class SpringCloudGatewayRouteConfig extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -735,14 +735,14 @@ export class SpringCloudGatewayRouteConfig extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SpringCloudGatewayRouteConfig resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SpringCloudGatewayRouteConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SpringCloudGatewayRouteConfig to import
   * @param importFromId The id of the existing SpringCloudGatewayRouteConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_gateway_route_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SpringCloudGatewayRouteConfig to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_spring_cloud_gateway_route_config", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_spring_cloud_gateway_route_config", importId: importFromId, provider });
       }
 
   // ===========
@@ -792,7 +792,7 @@ export class SpringCloudGatewayRouteConfig extends cdktf.TerraformResource {
   // filters - computed: false, optional: true, required: false
   private _filters?: string[]; 
   public get filters() {
-    return cdktf.Fn.tolist(this.getListAttribute('filters'));
+    return cdktn.Fn.tolist(this.getListAttribute('filters'));
   }
   public set filters(value: string[]) {
     this._filters = value;
@@ -837,7 +837,7 @@ export class SpringCloudGatewayRouteConfig extends cdktf.TerraformResource {
   // predicates - computed: false, optional: true, required: false
   private _predicates?: string[]; 
   public get predicates() {
-    return cdktf.Fn.tolist(this.getListAttribute('predicates'));
+    return cdktn.Fn.tolist(this.getListAttribute('predicates'));
   }
   public set predicates(value: string[]) {
     this._predicates = value;
@@ -893,11 +893,11 @@ export class SpringCloudGatewayRouteConfig extends cdktf.TerraformResource {
   }
 
   // sso_validation_enabled - computed: false, optional: true, required: false
-  private _ssoValidationEnabled?: boolean | cdktf.IResolvable; 
+  private _ssoValidationEnabled?: boolean | cdktn.IResolvable; 
   public get ssoValidationEnabled() {
     return this.getBooleanAttribute('sso_validation_enabled');
   }
-  public set ssoValidationEnabled(value: boolean | cdktf.IResolvable) {
+  public set ssoValidationEnabled(value: boolean | cdktn.IResolvable) {
     this._ssoValidationEnabled = value;
   }
   public resetSsoValidationEnabled() {
@@ -929,7 +929,7 @@ export class SpringCloudGatewayRouteConfig extends cdktf.TerraformResource {
   public get route() {
     return this._route;
   }
-  public putRoute(value: SpringCloudGatewayRouteConfigRoute[] | cdktf.IResolvable) {
+  public putRoute(value: SpringCloudGatewayRouteConfigRoute[] | cdktn.IResolvable) {
     this._route.internalValue = value;
   }
   public resetRoute() {
@@ -962,16 +962,16 @@ export class SpringCloudGatewayRouteConfig extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      filters: cdktf.listMapper(cdktf.stringToTerraform, false)(this._filters),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      predicates: cdktf.listMapper(cdktf.stringToTerraform, false)(this._predicates),
-      protocol: cdktf.stringToTerraform(this._protocol),
-      spring_cloud_app_id: cdktf.stringToTerraform(this._springCloudAppId),
-      spring_cloud_gateway_id: cdktf.stringToTerraform(this._springCloudGatewayId),
-      sso_validation_enabled: cdktf.booleanToTerraform(this._ssoValidationEnabled),
+      filters: cdktn.listMapper(cdktn.stringToTerraform, false)(this._filters),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      predicates: cdktn.listMapper(cdktn.stringToTerraform, false)(this._predicates),
+      protocol: cdktn.stringToTerraform(this._protocol),
+      spring_cloud_app_id: cdktn.stringToTerraform(this._springCloudAppId),
+      spring_cloud_gateway_id: cdktn.stringToTerraform(this._springCloudGatewayId),
+      sso_validation_enabled: cdktn.booleanToTerraform(this._ssoValidationEnabled),
       open_api: springCloudGatewayRouteConfigOpenApiToTerraform(this._openApi.internalValue),
-      route: cdktf.listMapper(springCloudGatewayRouteConfigRouteToTerraform, true)(this._route.internalValue),
+      route: cdktn.listMapper(springCloudGatewayRouteConfigRouteToTerraform, true)(this._route.internalValue),
       timeouts: springCloudGatewayRouteConfigTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -979,49 +979,49 @@ export class SpringCloudGatewayRouteConfig extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       filters: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._filters),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._filters),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       predicates: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._predicates),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._predicates),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       protocol: {
-        value: cdktf.stringToHclTerraform(this._protocol),
+        value: cdktn.stringToHclTerraform(this._protocol),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       spring_cloud_app_id: {
-        value: cdktf.stringToHclTerraform(this._springCloudAppId),
+        value: cdktn.stringToHclTerraform(this._springCloudAppId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       spring_cloud_gateway_id: {
-        value: cdktf.stringToHclTerraform(this._springCloudGatewayId),
+        value: cdktn.stringToHclTerraform(this._springCloudGatewayId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sso_validation_enabled: {
-        value: cdktf.booleanToHclTerraform(this._ssoValidationEnabled),
+        value: cdktn.booleanToHclTerraform(this._ssoValidationEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
@@ -1033,7 +1033,7 @@ export class SpringCloudGatewayRouteConfig extends cdktf.TerraformResource {
         storageClassType: "SpringCloudGatewayRouteConfigOpenApiList",
       },
       route: {
-        value: cdktf.listMapperHcl(springCloudGatewayRouteConfigRouteToHclTerraform, true)(this._route.internalValue),
+        value: cdktn.listMapperHcl(springCloudGatewayRouteConfigRouteToHclTerraform, true)(this._route.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "SpringCloudGatewayRouteConfigRouteList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AppServicePlanConfig extends cdktf.TerraformMetaArguments {
+export interface AppServicePlanConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/app_service_plan#app_service_environment_id AppServicePlan#app_service_environment_id}
   */
@@ -26,7 +26,7 @@ export interface AppServicePlanConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/app_service_plan#is_xenon AppServicePlan#is_xenon}
   */
-  readonly isXenon?: boolean | cdktf.IResolvable;
+  readonly isXenon?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/app_service_plan#kind AppServicePlan#kind}
   */
@@ -46,11 +46,11 @@ export interface AppServicePlanConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/app_service_plan#per_site_scaling AppServicePlan#per_site_scaling}
   */
-  readonly perSiteScaling?: boolean | cdktf.IResolvable;
+  readonly perSiteScaling?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/app_service_plan#reserved AppServicePlan#reserved}
   */
-  readonly reserved?: boolean | cdktf.IResolvable;
+  readonly reserved?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/app_service_plan#resource_group_name AppServicePlan#resource_group_name}
   */
@@ -62,7 +62,7 @@ export interface AppServicePlanConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/app_service_plan#zone_redundant AppServicePlan#zone_redundant}
   */
-  readonly zoneRedundant?: boolean | cdktf.IResolvable;
+  readonly zoneRedundant?: boolean | cdktn.IResolvable;
   /**
   * sku block
   *
@@ -92,38 +92,38 @@ export interface AppServicePlanSku {
 }
 
 export function appServicePlanSkuToTerraform(struct?: AppServicePlanSkuOutputReference | AppServicePlanSku): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    capacity: cdktf.numberToTerraform(struct!.capacity),
-    size: cdktf.stringToTerraform(struct!.size),
-    tier: cdktf.stringToTerraform(struct!.tier),
+    capacity: cdktn.numberToTerraform(struct!.capacity),
+    size: cdktn.stringToTerraform(struct!.size),
+    tier: cdktn.stringToTerraform(struct!.tier),
   }
 }
 
 
 export function appServicePlanSkuToHclTerraform(struct?: AppServicePlanSkuOutputReference | AppServicePlanSku): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     capacity: {
-      value: cdktf.numberToHclTerraform(struct!.capacity),
+      value: cdktn.numberToHclTerraform(struct!.capacity),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     size: {
-      value: cdktf.stringToHclTerraform(struct!.size),
+      value: cdktn.stringToHclTerraform(struct!.size),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tier: {
-      value: cdktf.stringToHclTerraform(struct!.tier),
+      value: cdktn.stringToHclTerraform(struct!.tier),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -134,14 +134,14 @@ export function appServicePlanSkuToHclTerraform(struct?: AppServicePlanSkuOutput
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppServicePlanSkuOutputReference extends cdktf.ComplexObject {
+export class AppServicePlanSkuOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -239,46 +239,46 @@ export interface AppServicePlanTimeouts {
   readonly update?: string;
 }
 
-export function appServicePlanTimeoutsToTerraform(struct?: AppServicePlanTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appServicePlanTimeoutsToTerraform(struct?: AppServicePlanTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function appServicePlanTimeoutsToHclTerraform(struct?: AppServicePlanTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appServicePlanTimeoutsToHclTerraform(struct?: AppServicePlanTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -289,19 +289,19 @@ export function appServicePlanTimeoutsToHclTerraform(struct?: AppServicePlanTime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppServicePlanTimeoutsOutputReference extends cdktf.ComplexObject {
+export class AppServicePlanTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AppServicePlanTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AppServicePlanTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -326,7 +326,7 @@ export class AppServicePlanTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppServicePlanTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppServicePlanTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -335,7 +335,7 @@ export class AppServicePlanTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -417,7 +417,7 @@ export class AppServicePlanTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/app_service_plan azurerm_app_service_plan}
 */
-export class AppServicePlan extends cdktf.TerraformResource {
+export class AppServicePlan extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -428,14 +428,14 @@ export class AppServicePlan extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AppServicePlan resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AppServicePlan resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppServicePlan to import
   * @param importFromId The id of the existing AppServicePlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/app_service_plan#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppServicePlan to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_app_service_plan", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_app_service_plan", importId: importFromId, provider });
       }
 
   // ===========
@@ -518,11 +518,11 @@ export class AppServicePlan extends cdktf.TerraformResource {
   }
 
   // is_xenon - computed: false, optional: true, required: false
-  private _isXenon?: boolean | cdktf.IResolvable; 
+  private _isXenon?: boolean | cdktn.IResolvable; 
   public get isXenon() {
     return this.getBooleanAttribute('is_xenon');
   }
-  public set isXenon(value: boolean | cdktf.IResolvable) {
+  public set isXenon(value: boolean | cdktn.IResolvable) {
     this._isXenon = value;
   }
   public resetIsXenon() {
@@ -597,11 +597,11 @@ export class AppServicePlan extends cdktf.TerraformResource {
   }
 
   // per_site_scaling - computed: false, optional: true, required: false
-  private _perSiteScaling?: boolean | cdktf.IResolvable; 
+  private _perSiteScaling?: boolean | cdktn.IResolvable; 
   public get perSiteScaling() {
     return this.getBooleanAttribute('per_site_scaling');
   }
-  public set perSiteScaling(value: boolean | cdktf.IResolvable) {
+  public set perSiteScaling(value: boolean | cdktn.IResolvable) {
     this._perSiteScaling = value;
   }
   public resetPerSiteScaling() {
@@ -613,11 +613,11 @@ export class AppServicePlan extends cdktf.TerraformResource {
   }
 
   // reserved - computed: false, optional: true, required: false
-  private _reserved?: boolean | cdktf.IResolvable; 
+  private _reserved?: boolean | cdktn.IResolvable; 
   public get reserved() {
     return this.getBooleanAttribute('reserved');
   }
-  public set reserved(value: boolean | cdktf.IResolvable) {
+  public set reserved(value: boolean | cdktn.IResolvable) {
     this._reserved = value;
   }
   public resetReserved() {
@@ -658,11 +658,11 @@ export class AppServicePlan extends cdktf.TerraformResource {
   }
 
   // zone_redundant - computed: false, optional: true, required: false
-  private _zoneRedundant?: boolean | cdktf.IResolvable; 
+  private _zoneRedundant?: boolean | cdktn.IResolvable; 
   public get zoneRedundant() {
     return this.getBooleanAttribute('zone_redundant');
   }
-  public set zoneRedundant(value: boolean | cdktf.IResolvable) {
+  public set zoneRedundant(value: boolean | cdktn.IResolvable) {
     this._zoneRedundant = value;
   }
   public resetZoneRedundant() {
@@ -708,18 +708,18 @@ export class AppServicePlan extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      app_service_environment_id: cdktf.stringToTerraform(this._appServiceEnvironmentId),
-      id: cdktf.stringToTerraform(this._id),
-      is_xenon: cdktf.booleanToTerraform(this._isXenon),
-      kind: cdktf.stringToTerraform(this._kind),
-      location: cdktf.stringToTerraform(this._location),
-      maximum_elastic_worker_count: cdktf.numberToTerraform(this._maximumElasticWorkerCount),
-      name: cdktf.stringToTerraform(this._name),
-      per_site_scaling: cdktf.booleanToTerraform(this._perSiteScaling),
-      reserved: cdktf.booleanToTerraform(this._reserved),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      zone_redundant: cdktf.booleanToTerraform(this._zoneRedundant),
+      app_service_environment_id: cdktn.stringToTerraform(this._appServiceEnvironmentId),
+      id: cdktn.stringToTerraform(this._id),
+      is_xenon: cdktn.booleanToTerraform(this._isXenon),
+      kind: cdktn.stringToTerraform(this._kind),
+      location: cdktn.stringToTerraform(this._location),
+      maximum_elastic_worker_count: cdktn.numberToTerraform(this._maximumElasticWorkerCount),
+      name: cdktn.stringToTerraform(this._name),
+      per_site_scaling: cdktn.booleanToTerraform(this._perSiteScaling),
+      reserved: cdktn.booleanToTerraform(this._reserved),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      zone_redundant: cdktn.booleanToTerraform(this._zoneRedundant),
       sku: appServicePlanSkuToTerraform(this._sku.internalValue),
       timeouts: appServicePlanTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -728,73 +728,73 @@ export class AppServicePlan extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       app_service_environment_id: {
-        value: cdktf.stringToHclTerraform(this._appServiceEnvironmentId),
+        value: cdktn.stringToHclTerraform(this._appServiceEnvironmentId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_xenon: {
-        value: cdktf.booleanToHclTerraform(this._isXenon),
+        value: cdktn.booleanToHclTerraform(this._isXenon),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       kind: {
-        value: cdktf.stringToHclTerraform(this._kind),
+        value: cdktn.stringToHclTerraform(this._kind),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       maximum_elastic_worker_count: {
-        value: cdktf.numberToHclTerraform(this._maximumElasticWorkerCount),
+        value: cdktn.numberToHclTerraform(this._maximumElasticWorkerCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       per_site_scaling: {
-        value: cdktf.booleanToHclTerraform(this._perSiteScaling),
+        value: cdktn.booleanToHclTerraform(this._perSiteScaling),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       reserved: {
-        value: cdktf.booleanToHclTerraform(this._reserved),
+        value: cdktn.booleanToHclTerraform(this._reserved),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       zone_redundant: {
-        value: cdktf.booleanToHclTerraform(this._zoneRedundant),
+        value: cdktn.booleanToHclTerraform(this._zoneRedundant),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

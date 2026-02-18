@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface StreamAnalyticsOutputFunctionConfig extends cdktf.TerraformMetaArguments {
+export interface StreamAnalyticsOutputFunctionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stream_analytics_output_function#api_key StreamAnalyticsOutputFunction#api_key}
   */
@@ -77,46 +77,46 @@ export interface StreamAnalyticsOutputFunctionTimeouts {
   readonly update?: string;
 }
 
-export function streamAnalyticsOutputFunctionTimeoutsToTerraform(struct?: StreamAnalyticsOutputFunctionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function streamAnalyticsOutputFunctionTimeoutsToTerraform(struct?: StreamAnalyticsOutputFunctionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function streamAnalyticsOutputFunctionTimeoutsToHclTerraform(struct?: StreamAnalyticsOutputFunctionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function streamAnalyticsOutputFunctionTimeoutsToHclTerraform(struct?: StreamAnalyticsOutputFunctionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -127,19 +127,19 @@ export function streamAnalyticsOutputFunctionTimeoutsToHclTerraform(struct?: Str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StreamAnalyticsOutputFunctionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class StreamAnalyticsOutputFunctionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): StreamAnalyticsOutputFunctionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): StreamAnalyticsOutputFunctionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -164,7 +164,7 @@ export class StreamAnalyticsOutputFunctionTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StreamAnalyticsOutputFunctionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: StreamAnalyticsOutputFunctionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -173,7 +173,7 @@ export class StreamAnalyticsOutputFunctionTimeoutsOutputReference extends cdktf.
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -255,7 +255,7 @@ export class StreamAnalyticsOutputFunctionTimeoutsOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stream_analytics_output_function azurerm_stream_analytics_output_function}
 */
-export class StreamAnalyticsOutputFunction extends cdktf.TerraformResource {
+export class StreamAnalyticsOutputFunction extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -266,14 +266,14 @@ export class StreamAnalyticsOutputFunction extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a StreamAnalyticsOutputFunction resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a StreamAnalyticsOutputFunction resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StreamAnalyticsOutputFunction to import
   * @param importFromId The id of the existing StreamAnalyticsOutputFunction that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/stream_analytics_output_function#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StreamAnalyticsOutputFunction to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_stream_analytics_output_function", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_stream_analytics_output_function", importId: importFromId, provider });
       }
 
   // ===========
@@ -467,15 +467,15 @@ export class StreamAnalyticsOutputFunction extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_key: cdktf.stringToTerraform(this._apiKey),
-      batch_max_count: cdktf.numberToTerraform(this._batchMaxCount),
-      batch_max_in_bytes: cdktf.numberToTerraform(this._batchMaxInBytes),
-      function_app: cdktf.stringToTerraform(this._functionApp),
-      function_name: cdktf.stringToTerraform(this._functionName),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      stream_analytics_job_name: cdktf.stringToTerraform(this._streamAnalyticsJobName),
+      api_key: cdktn.stringToTerraform(this._apiKey),
+      batch_max_count: cdktn.numberToTerraform(this._batchMaxCount),
+      batch_max_in_bytes: cdktn.numberToTerraform(this._batchMaxInBytes),
+      function_app: cdktn.stringToTerraform(this._functionApp),
+      function_name: cdktn.stringToTerraform(this._functionName),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      stream_analytics_job_name: cdktn.stringToTerraform(this._streamAnalyticsJobName),
       timeouts: streamAnalyticsOutputFunctionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -483,55 +483,55 @@ export class StreamAnalyticsOutputFunction extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_key: {
-        value: cdktf.stringToHclTerraform(this._apiKey),
+        value: cdktn.stringToHclTerraform(this._apiKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       batch_max_count: {
-        value: cdktf.numberToHclTerraform(this._batchMaxCount),
+        value: cdktn.numberToHclTerraform(this._batchMaxCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       batch_max_in_bytes: {
-        value: cdktf.numberToHclTerraform(this._batchMaxInBytes),
+        value: cdktn.numberToHclTerraform(this._batchMaxInBytes),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       function_app: {
-        value: cdktf.stringToHclTerraform(this._functionApp),
+        value: cdktn.stringToHclTerraform(this._functionApp),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       function_name: {
-        value: cdktf.stringToHclTerraform(this._functionName),
+        value: cdktn.stringToHclTerraform(this._functionName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       stream_analytics_job_name: {
-        value: cdktf.stringToHclTerraform(this._streamAnalyticsJobName),
+        value: cdktn.stringToHclTerraform(this._streamAnalyticsJobName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

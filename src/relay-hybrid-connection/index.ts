@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RelayHybridConnectionConfig extends cdktf.TerraformMetaArguments {
+export interface RelayHybridConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/relay_hybrid_connection#id RelayHybridConnection#id}
   *
@@ -30,7 +30,7 @@ export interface RelayHybridConnectionConfig extends cdktf.TerraformMetaArgument
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/relay_hybrid_connection#requires_client_authorization RelayHybridConnection#requires_client_authorization}
   */
-  readonly requiresClientAuthorization?: boolean | cdktf.IResolvable;
+  readonly requiresClientAuthorization?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/relay_hybrid_connection#resource_group_name RelayHybridConnection#resource_group_name}
   */
@@ -65,46 +65,46 @@ export interface RelayHybridConnectionTimeouts {
   readonly update?: string;
 }
 
-export function relayHybridConnectionTimeoutsToTerraform(struct?: RelayHybridConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function relayHybridConnectionTimeoutsToTerraform(struct?: RelayHybridConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function relayHybridConnectionTimeoutsToHclTerraform(struct?: RelayHybridConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function relayHybridConnectionTimeoutsToHclTerraform(struct?: RelayHybridConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -115,19 +115,19 @@ export function relayHybridConnectionTimeoutsToHclTerraform(struct?: RelayHybrid
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RelayHybridConnectionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class RelayHybridConnectionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): RelayHybridConnectionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): RelayHybridConnectionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -152,7 +152,7 @@ export class RelayHybridConnectionTimeoutsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RelayHybridConnectionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RelayHybridConnectionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -161,7 +161,7 @@ export class RelayHybridConnectionTimeoutsOutputReference extends cdktf.ComplexO
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -243,7 +243,7 @@ export class RelayHybridConnectionTimeoutsOutputReference extends cdktf.ComplexO
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/relay_hybrid_connection azurerm_relay_hybrid_connection}
 */
-export class RelayHybridConnection extends cdktf.TerraformResource {
+export class RelayHybridConnection extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -254,14 +254,14 @@ export class RelayHybridConnection extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RelayHybridConnection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RelayHybridConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RelayHybridConnection to import
   * @param importFromId The id of the existing RelayHybridConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/relay_hybrid_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RelayHybridConnection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_relay_hybrid_connection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_relay_hybrid_connection", importId: importFromId, provider });
       }
 
   // ===========
@@ -347,11 +347,11 @@ export class RelayHybridConnection extends cdktf.TerraformResource {
   }
 
   // requires_client_authorization - computed: false, optional: true, required: false
-  private _requiresClientAuthorization?: boolean | cdktf.IResolvable; 
+  private _requiresClientAuthorization?: boolean | cdktn.IResolvable; 
   public get requiresClientAuthorization() {
     return this.getBooleanAttribute('requires_client_authorization');
   }
-  public set requiresClientAuthorization(value: boolean | cdktf.IResolvable) {
+  public set requiresClientAuthorization(value: boolean | cdktn.IResolvable) {
     this._requiresClientAuthorization = value;
   }
   public resetRequiresClientAuthorization() {
@@ -413,12 +413,12 @@ export class RelayHybridConnection extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      relay_namespace_name: cdktf.stringToTerraform(this._relayNamespaceName),
-      requires_client_authorization: cdktf.booleanToTerraform(this._requiresClientAuthorization),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      user_metadata: cdktf.stringToTerraform(this._userMetadata),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      relay_namespace_name: cdktn.stringToTerraform(this._relayNamespaceName),
+      requires_client_authorization: cdktn.booleanToTerraform(this._requiresClientAuthorization),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      user_metadata: cdktn.stringToTerraform(this._userMetadata),
       timeouts: relayHybridConnectionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -426,37 +426,37 @@ export class RelayHybridConnection extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       relay_namespace_name: {
-        value: cdktf.stringToHclTerraform(this._relayNamespaceName),
+        value: cdktn.stringToHclTerraform(this._relayNamespaceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       requires_client_authorization: {
-        value: cdktf.booleanToHclTerraform(this._requiresClientAuthorization),
+        value: cdktn.booleanToHclTerraform(this._requiresClientAuthorization),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_metadata: {
-        value: cdktf.stringToHclTerraform(this._userMetadata),
+        value: cdktn.stringToHclTerraform(this._userMetadata),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

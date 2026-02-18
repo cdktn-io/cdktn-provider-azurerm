@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermElasticCloudElasticsearchConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermElasticCloudElasticsearchConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/elastic_cloud_elasticsearch#id DataAzurermElasticCloudElasticsearch#id}
   *
@@ -32,7 +32,7 @@ export interface DataAzurermElasticCloudElasticsearchConfig extends cdktf.Terraf
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/elastic_cloud_elasticsearch#logs DataAzurermElasticCloudElasticsearch#logs}
   */
-  readonly logs?: DataAzurermElasticCloudElasticsearchLogs[] | cdktf.IResolvable;
+  readonly logs?: DataAzurermElasticCloudElasticsearchLogs[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -44,8 +44,8 @@ export interface DataAzurermElasticCloudElasticsearchLogsFilteringTag {
 }
 
 export function dataAzurermElasticCloudElasticsearchLogsFilteringTagToTerraform(struct?: DataAzurermElasticCloudElasticsearchLogsFilteringTag): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -54,8 +54,8 @@ export function dataAzurermElasticCloudElasticsearchLogsFilteringTagToTerraform(
 
 
 export function dataAzurermElasticCloudElasticsearchLogsFilteringTagToHclTerraform(struct?: DataAzurermElasticCloudElasticsearchLogsFilteringTag): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -63,7 +63,7 @@ export function dataAzurermElasticCloudElasticsearchLogsFilteringTagToHclTerrafo
   return attrs;
 }
 
-export class DataAzurermElasticCloudElasticsearchLogsFilteringTagOutputReference extends cdktf.ComplexObject {
+export class DataAzurermElasticCloudElasticsearchLogsFilteringTagOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -72,7 +72,7 @@ export class DataAzurermElasticCloudElasticsearchLogsFilteringTagOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -107,14 +107,14 @@ export class DataAzurermElasticCloudElasticsearchLogsFilteringTagOutputReference
   }
 }
 
-export class DataAzurermElasticCloudElasticsearchLogsFilteringTagList extends cdktf.ComplexList {
+export class DataAzurermElasticCloudElasticsearchLogsFilteringTagList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -128,9 +128,9 @@ export class DataAzurermElasticCloudElasticsearchLogsFilteringTagList extends cd
 export interface DataAzurermElasticCloudElasticsearchLogs {
 }
 
-export function dataAzurermElasticCloudElasticsearchLogsToTerraform(struct?: DataAzurermElasticCloudElasticsearchLogs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermElasticCloudElasticsearchLogsToTerraform(struct?: DataAzurermElasticCloudElasticsearchLogs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -138,9 +138,9 @@ export function dataAzurermElasticCloudElasticsearchLogsToTerraform(struct?: Dat
 }
 
 
-export function dataAzurermElasticCloudElasticsearchLogsToHclTerraform(struct?: DataAzurermElasticCloudElasticsearchLogs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermElasticCloudElasticsearchLogsToHclTerraform(struct?: DataAzurermElasticCloudElasticsearchLogs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -148,9 +148,9 @@ export function dataAzurermElasticCloudElasticsearchLogsToHclTerraform(struct?: 
   return attrs;
 }
 
-export class DataAzurermElasticCloudElasticsearchLogsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermElasticCloudElasticsearchLogsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -158,11 +158,11 @@ export class DataAzurermElasticCloudElasticsearchLogsOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataAzurermElasticCloudElasticsearchLogs | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermElasticCloudElasticsearchLogs | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -171,12 +171,12 @@ export class DataAzurermElasticCloudElasticsearchLogsOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermElasticCloudElasticsearchLogs | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermElasticCloudElasticsearchLogs | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -208,15 +208,15 @@ export class DataAzurermElasticCloudElasticsearchLogsOutputReference extends cdk
   }
 }
 
-export class DataAzurermElasticCloudElasticsearchLogsList extends cdktf.ComplexList {
-  public internalValue? : DataAzurermElasticCloudElasticsearchLogs[] | cdktf.IResolvable
+export class DataAzurermElasticCloudElasticsearchLogsList extends cdktn.ComplexList {
+  public internalValue? : DataAzurermElasticCloudElasticsearchLogs[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -234,25 +234,25 @@ export interface DataAzurermElasticCloudElasticsearchTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermElasticCloudElasticsearchTimeoutsToTerraform(struct?: DataAzurermElasticCloudElasticsearchTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermElasticCloudElasticsearchTimeoutsToTerraform(struct?: DataAzurermElasticCloudElasticsearchTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermElasticCloudElasticsearchTimeoutsToHclTerraform(struct?: DataAzurermElasticCloudElasticsearchTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermElasticCloudElasticsearchTimeoutsToHclTerraform(struct?: DataAzurermElasticCloudElasticsearchTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -263,19 +263,19 @@ export function dataAzurermElasticCloudElasticsearchTimeoutsToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermElasticCloudElasticsearchTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermElasticCloudElasticsearchTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermElasticCloudElasticsearchTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermElasticCloudElasticsearchTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -288,13 +288,13 @@ export class DataAzurermElasticCloudElasticsearchTimeoutsOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermElasticCloudElasticsearchTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermElasticCloudElasticsearchTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -325,7 +325,7 @@ export class DataAzurermElasticCloudElasticsearchTimeoutsOutputReference extends
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/elastic_cloud_elasticsearch azurerm_elastic_cloud_elasticsearch}
 */
-export class DataAzurermElasticCloudElasticsearch extends cdktf.TerraformDataSource {
+export class DataAzurermElasticCloudElasticsearch extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -336,14 +336,14 @@ export class DataAzurermElasticCloudElasticsearch extends cdktf.TerraformDataSou
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermElasticCloudElasticsearch resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermElasticCloudElasticsearch resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermElasticCloudElasticsearch to import
   * @param importFromId The id of the existing DataAzurermElasticCloudElasticsearch that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/elastic_cloud_elasticsearch#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermElasticCloudElasticsearch to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_elastic_cloud_elasticsearch", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_elastic_cloud_elasticsearch", importId: importFromId, provider });
       }
 
   // ===========
@@ -477,7 +477,7 @@ export class DataAzurermElasticCloudElasticsearch extends cdktf.TerraformDataSou
   }
 
   // tags - computed: true, optional: false, required: false
-  private _tags = new cdktf.StringMap(this, "tags");
+  private _tags = new cdktn.StringMap(this, "tags");
   public get tags() {
     return this._tags;
   }
@@ -487,7 +487,7 @@ export class DataAzurermElasticCloudElasticsearch extends cdktf.TerraformDataSou
   public get logs() {
     return this._logs;
   }
-  public putLogs(value: DataAzurermElasticCloudElasticsearchLogs[] | cdktf.IResolvable) {
+  public putLogs(value: DataAzurermElasticCloudElasticsearchLogs[] | cdktn.IResolvable) {
     this._logs.internalValue = value;
   }
   public resetLogs() {
@@ -520,10 +520,10 @@ export class DataAzurermElasticCloudElasticsearch extends cdktf.TerraformDataSou
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      logs: cdktf.listMapper(dataAzurermElasticCloudElasticsearchLogsToTerraform, true)(this._logs.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      logs: cdktn.listMapper(dataAzurermElasticCloudElasticsearchLogsToTerraform, true)(this._logs.internalValue),
       timeouts: dataAzurermElasticCloudElasticsearchTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -531,25 +531,25 @@ export class DataAzurermElasticCloudElasticsearch extends cdktf.TerraformDataSou
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       logs: {
-        value: cdktf.listMapperHcl(dataAzurermElasticCloudElasticsearchLogsToHclTerraform, true)(this._logs.internalValue),
+        value: cdktn.listMapperHcl(dataAzurermElasticCloudElasticsearchLogsToHclTerraform, true)(this._logs.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataAzurermElasticCloudElasticsearchLogsList",

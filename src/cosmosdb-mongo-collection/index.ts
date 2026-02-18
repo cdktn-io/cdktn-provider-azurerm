@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CosmosdbMongoCollectionConfig extends cdktf.TerraformMetaArguments {
+export interface CosmosdbMongoCollectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cosmosdb_mongo_collection#account_name CosmosdbMongoCollection#account_name}
   */
@@ -62,7 +62,7 @@ export interface CosmosdbMongoCollectionConfig extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cosmosdb_mongo_collection#index CosmosdbMongoCollection#index}
   */
-  readonly index?: CosmosdbMongoCollectionIndex[] | cdktf.IResolvable;
+  readonly index?: CosmosdbMongoCollectionIndex[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -74,8 +74,8 @@ export interface CosmosdbMongoCollectionSystemIndexes {
 }
 
 export function cosmosdbMongoCollectionSystemIndexesToTerraform(struct?: CosmosdbMongoCollectionSystemIndexes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -84,8 +84,8 @@ export function cosmosdbMongoCollectionSystemIndexesToTerraform(struct?: Cosmosd
 
 
 export function cosmosdbMongoCollectionSystemIndexesToHclTerraform(struct?: CosmosdbMongoCollectionSystemIndexes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -93,7 +93,7 @@ export function cosmosdbMongoCollectionSystemIndexesToHclTerraform(struct?: Cosm
   return attrs;
 }
 
-export class CosmosdbMongoCollectionSystemIndexesOutputReference extends cdktf.ComplexObject {
+export class CosmosdbMongoCollectionSystemIndexesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -102,7 +102,7 @@ export class CosmosdbMongoCollectionSystemIndexesOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -132,14 +132,14 @@ export class CosmosdbMongoCollectionSystemIndexesOutputReference extends cdktf.C
   }
 }
 
-export class CosmosdbMongoCollectionSystemIndexesList extends cdktf.ComplexList {
+export class CosmosdbMongoCollectionSystemIndexesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -158,24 +158,24 @@ export interface CosmosdbMongoCollectionAutoscaleSettings {
 }
 
 export function cosmosdbMongoCollectionAutoscaleSettingsToTerraform(struct?: CosmosdbMongoCollectionAutoscaleSettingsOutputReference | CosmosdbMongoCollectionAutoscaleSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    max_throughput: cdktf.numberToTerraform(struct!.maxThroughput),
+    max_throughput: cdktn.numberToTerraform(struct!.maxThroughput),
   }
 }
 
 
 export function cosmosdbMongoCollectionAutoscaleSettingsToHclTerraform(struct?: CosmosdbMongoCollectionAutoscaleSettingsOutputReference | CosmosdbMongoCollectionAutoscaleSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     max_throughput: {
-      value: cdktf.numberToHclTerraform(struct!.maxThroughput),
+      value: cdktn.numberToHclTerraform(struct!.maxThroughput),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -186,14 +186,14 @@ export function cosmosdbMongoCollectionAutoscaleSettingsToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CosmosdbMongoCollectionAutoscaleSettingsOutputReference extends cdktf.ComplexObject {
+export class CosmosdbMongoCollectionAutoscaleSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -242,35 +242,35 @@ export interface CosmosdbMongoCollectionIndex {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cosmosdb_mongo_collection#unique CosmosdbMongoCollection#unique}
   */
-  readonly unique?: boolean | cdktf.IResolvable;
+  readonly unique?: boolean | cdktn.IResolvable;
 }
 
-export function cosmosdbMongoCollectionIndexToTerraform(struct?: CosmosdbMongoCollectionIndex | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cosmosdbMongoCollectionIndexToTerraform(struct?: CosmosdbMongoCollectionIndex | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.keys),
-    unique: cdktf.booleanToTerraform(struct!.unique),
+    keys: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.keys),
+    unique: cdktn.booleanToTerraform(struct!.unique),
   }
 }
 
 
-export function cosmosdbMongoCollectionIndexToHclTerraform(struct?: CosmosdbMongoCollectionIndex | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cosmosdbMongoCollectionIndexToHclTerraform(struct?: CosmosdbMongoCollectionIndex | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     keys: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.keys),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.keys),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     unique: {
-      value: cdktf.booleanToHclTerraform(struct!.unique),
+      value: cdktn.booleanToHclTerraform(struct!.unique),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -281,9 +281,9 @@ export function cosmosdbMongoCollectionIndexToHclTerraform(struct?: CosmosdbMong
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CosmosdbMongoCollectionIndexOutputReference extends cdktf.ComplexObject {
+export class CosmosdbMongoCollectionIndexOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -291,11 +291,11 @@ export class CosmosdbMongoCollectionIndexOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CosmosdbMongoCollectionIndex | cdktf.IResolvable | undefined {
+  public get internalValue(): CosmosdbMongoCollectionIndex | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -312,14 +312,14 @@ export class CosmosdbMongoCollectionIndexOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CosmosdbMongoCollectionIndex | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CosmosdbMongoCollectionIndex | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._keys = undefined;
       this._unique = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -345,11 +345,11 @@ export class CosmosdbMongoCollectionIndexOutputReference extends cdktf.ComplexOb
   }
 
   // unique - computed: false, optional: true, required: false
-  private _unique?: boolean | cdktf.IResolvable; 
+  private _unique?: boolean | cdktn.IResolvable; 
   public get unique() {
     return this.getBooleanAttribute('unique');
   }
-  public set unique(value: boolean | cdktf.IResolvable) {
+  public set unique(value: boolean | cdktn.IResolvable) {
     this._unique = value;
   }
   public resetUnique() {
@@ -361,15 +361,15 @@ export class CosmosdbMongoCollectionIndexOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class CosmosdbMongoCollectionIndexList extends cdktf.ComplexList {
-  public internalValue? : CosmosdbMongoCollectionIndex[] | cdktf.IResolvable
+export class CosmosdbMongoCollectionIndexList extends cdktn.ComplexList {
+  public internalValue? : CosmosdbMongoCollectionIndex[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -399,46 +399,46 @@ export interface CosmosdbMongoCollectionTimeouts {
   readonly update?: string;
 }
 
-export function cosmosdbMongoCollectionTimeoutsToTerraform(struct?: CosmosdbMongoCollectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cosmosdbMongoCollectionTimeoutsToTerraform(struct?: CosmosdbMongoCollectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function cosmosdbMongoCollectionTimeoutsToHclTerraform(struct?: CosmosdbMongoCollectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cosmosdbMongoCollectionTimeoutsToHclTerraform(struct?: CosmosdbMongoCollectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -449,19 +449,19 @@ export function cosmosdbMongoCollectionTimeoutsToHclTerraform(struct?: CosmosdbM
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CosmosdbMongoCollectionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class CosmosdbMongoCollectionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CosmosdbMongoCollectionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): CosmosdbMongoCollectionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -486,7 +486,7 @@ export class CosmosdbMongoCollectionTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CosmosdbMongoCollectionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CosmosdbMongoCollectionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -495,7 +495,7 @@ export class CosmosdbMongoCollectionTimeoutsOutputReference extends cdktf.Comple
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -577,7 +577,7 @@ export class CosmosdbMongoCollectionTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cosmosdb_mongo_collection azurerm_cosmosdb_mongo_collection}
 */
-export class CosmosdbMongoCollection extends cdktf.TerraformResource {
+export class CosmosdbMongoCollection extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -588,14 +588,14 @@ export class CosmosdbMongoCollection extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CosmosdbMongoCollection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CosmosdbMongoCollection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CosmosdbMongoCollection to import
   * @param importFromId The id of the existing CosmosdbMongoCollection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cosmosdb_mongo_collection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CosmosdbMongoCollection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_cosmosdb_mongo_collection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_cosmosdb_mongo_collection", importId: importFromId, provider });
       }
 
   // ===========
@@ -802,7 +802,7 @@ export class CosmosdbMongoCollection extends cdktf.TerraformResource {
   public get index() {
     return this._index;
   }
-  public putIndex(value: CosmosdbMongoCollectionIndex[] | cdktf.IResolvable) {
+  public putIndex(value: CosmosdbMongoCollectionIndex[] | cdktn.IResolvable) {
     this._index.internalValue = value;
   }
   public resetIndex() {
@@ -835,17 +835,17 @@ export class CosmosdbMongoCollection extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_name: cdktf.stringToTerraform(this._accountName),
-      analytical_storage_ttl: cdktf.numberToTerraform(this._analyticalStorageTtl),
-      database_name: cdktf.stringToTerraform(this._databaseName),
-      default_ttl_seconds: cdktf.numberToTerraform(this._defaultTtlSeconds),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      shard_key: cdktf.stringToTerraform(this._shardKey),
-      throughput: cdktf.numberToTerraform(this._throughput),
+      account_name: cdktn.stringToTerraform(this._accountName),
+      analytical_storage_ttl: cdktn.numberToTerraform(this._analyticalStorageTtl),
+      database_name: cdktn.stringToTerraform(this._databaseName),
+      default_ttl_seconds: cdktn.numberToTerraform(this._defaultTtlSeconds),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      shard_key: cdktn.stringToTerraform(this._shardKey),
+      throughput: cdktn.numberToTerraform(this._throughput),
       autoscale_settings: cosmosdbMongoCollectionAutoscaleSettingsToTerraform(this._autoscaleSettings.internalValue),
-      index: cdktf.listMapper(cosmosdbMongoCollectionIndexToTerraform, true)(this._index.internalValue),
+      index: cdktn.listMapper(cosmosdbMongoCollectionIndexToTerraform, true)(this._index.internalValue),
       timeouts: cosmosdbMongoCollectionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -853,55 +853,55 @@ export class CosmosdbMongoCollection extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_name: {
-        value: cdktf.stringToHclTerraform(this._accountName),
+        value: cdktn.stringToHclTerraform(this._accountName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       analytical_storage_ttl: {
-        value: cdktf.numberToHclTerraform(this._analyticalStorageTtl),
+        value: cdktn.numberToHclTerraform(this._analyticalStorageTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       database_name: {
-        value: cdktf.stringToHclTerraform(this._databaseName),
+        value: cdktn.stringToHclTerraform(this._databaseName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       default_ttl_seconds: {
-        value: cdktf.numberToHclTerraform(this._defaultTtlSeconds),
+        value: cdktn.numberToHclTerraform(this._defaultTtlSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       shard_key: {
-        value: cdktf.stringToHclTerraform(this._shardKey),
+        value: cdktn.stringToHclTerraform(this._shardKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       throughput: {
-        value: cdktf.numberToHclTerraform(this._throughput),
+        value: cdktn.numberToHclTerraform(this._throughput),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
@@ -913,7 +913,7 @@ export class CosmosdbMongoCollection extends cdktf.TerraformResource {
         storageClassType: "CosmosdbMongoCollectionAutoscaleSettingsList",
       },
       index: {
-        value: cdktf.listMapperHcl(cosmosdbMongoCollectionIndexToHclTerraform, true)(this._index.internalValue),
+        value: cdktn.listMapperHcl(cosmosdbMongoCollectionIndexToHclTerraform, true)(this._index.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "CosmosdbMongoCollectionIndexList",

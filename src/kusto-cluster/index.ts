@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface KustoClusterConfig extends cdktf.TerraformMetaArguments {
+export interface KustoClusterConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kusto_cluster#allowed_fqdns KustoCluster#allowed_fqdns}
   */
@@ -23,15 +23,15 @@ export interface KustoClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kusto_cluster#auto_stop_enabled KustoCluster#auto_stop_enabled}
   */
-  readonly autoStopEnabled?: boolean | cdktf.IResolvable;
+  readonly autoStopEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kusto_cluster#disk_encryption_enabled KustoCluster#disk_encryption_enabled}
   */
-  readonly diskEncryptionEnabled?: boolean | cdktf.IResolvable;
+  readonly diskEncryptionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kusto_cluster#double_encryption_enabled KustoCluster#double_encryption_enabled}
   */
-  readonly doubleEncryptionEnabled?: boolean | cdktf.IResolvable;
+  readonly doubleEncryptionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kusto_cluster#id KustoCluster#id}
   *
@@ -50,7 +50,7 @@ export interface KustoClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kusto_cluster#outbound_network_access_restricted KustoCluster#outbound_network_access_restricted}
   */
-  readonly outboundNetworkAccessRestricted?: boolean | cdktf.IResolvable;
+  readonly outboundNetworkAccessRestricted?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kusto_cluster#public_ip_type KustoCluster#public_ip_type}
   */
@@ -58,11 +58,11 @@ export interface KustoClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kusto_cluster#public_network_access_enabled KustoCluster#public_network_access_enabled}
   */
-  readonly publicNetworkAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly publicNetworkAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kusto_cluster#purge_enabled KustoCluster#purge_enabled}
   */
-  readonly purgeEnabled?: boolean | cdktf.IResolvable;
+  readonly purgeEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kusto_cluster#resource_group_name KustoCluster#resource_group_name}
   */
@@ -70,7 +70,7 @@ export interface KustoClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kusto_cluster#streaming_ingestion_enabled KustoCluster#streaming_ingestion_enabled}
   */
-  readonly streamingIngestionEnabled?: boolean | cdktf.IResolvable;
+  readonly streamingIngestionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kusto_cluster#tags KustoCluster#tags}
   */
@@ -94,13 +94,13 @@ export interface KustoClusterConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kusto_cluster#language_extension KustoCluster#language_extension}
   */
-  readonly languageExtension?: KustoClusterLanguageExtension[] | cdktf.IResolvable;
+  readonly languageExtension?: KustoClusterLanguageExtension[] | cdktn.IResolvable;
   /**
   * language_extensions block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kusto_cluster#language_extensions KustoCluster#language_extensions}
   */
-  readonly languageExtensions?: KustoClusterLanguageExtensions[] | cdktf.IResolvable;
+  readonly languageExtensions?: KustoClusterLanguageExtensions[] | cdktn.IResolvable;
   /**
   * optimized_auto_scale block
   *
@@ -138,31 +138,31 @@ export interface KustoClusterIdentity {
 }
 
 export function kustoClusterIdentityToTerraform(struct?: KustoClusterIdentityOutputReference | KustoClusterIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function kustoClusterIdentityToHclTerraform(struct?: KustoClusterIdentityOutputReference | KustoClusterIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -173,14 +173,14 @@ export function kustoClusterIdentityToHclTerraform(struct?: KustoClusterIdentity
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KustoClusterIdentityOutputReference extends cdktf.ComplexObject {
+export class KustoClusterIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -214,7 +214,7 @@ export class KustoClusterIdentityOutputReference extends cdktf.ComplexObject {
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -261,32 +261,32 @@ export interface KustoClusterLanguageExtension {
   readonly name: string;
 }
 
-export function kustoClusterLanguageExtensionToTerraform(struct?: KustoClusterLanguageExtension | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kustoClusterLanguageExtensionToTerraform(struct?: KustoClusterLanguageExtension | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    image: cdktf.stringToTerraform(struct!.image),
-    name: cdktf.stringToTerraform(struct!.name),
+    image: cdktn.stringToTerraform(struct!.image),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function kustoClusterLanguageExtensionToHclTerraform(struct?: KustoClusterLanguageExtension | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kustoClusterLanguageExtensionToHclTerraform(struct?: KustoClusterLanguageExtension | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     image: {
-      value: cdktf.stringToHclTerraform(struct!.image),
+      value: cdktn.stringToHclTerraform(struct!.image),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -297,9 +297,9 @@ export function kustoClusterLanguageExtensionToHclTerraform(struct?: KustoCluste
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KustoClusterLanguageExtensionOutputReference extends cdktf.ComplexObject {
+export class KustoClusterLanguageExtensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -307,11 +307,11 @@ export class KustoClusterLanguageExtensionOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): KustoClusterLanguageExtension | cdktf.IResolvable | undefined {
+  public get internalValue(): KustoClusterLanguageExtension | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -328,14 +328,14 @@ export class KustoClusterLanguageExtensionOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KustoClusterLanguageExtension | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KustoClusterLanguageExtension | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._image = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -374,15 +374,15 @@ export class KustoClusterLanguageExtensionOutputReference extends cdktf.ComplexO
   }
 }
 
-export class KustoClusterLanguageExtensionList extends cdktf.ComplexList {
-  public internalValue? : KustoClusterLanguageExtension[] | cdktf.IResolvable
+export class KustoClusterLanguageExtensionList extends cdktn.ComplexList {
+  public internalValue? : KustoClusterLanguageExtension[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -404,32 +404,32 @@ export interface KustoClusterLanguageExtensions {
   readonly name: string;
 }
 
-export function kustoClusterLanguageExtensionsToTerraform(struct?: KustoClusterLanguageExtensions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kustoClusterLanguageExtensionsToTerraform(struct?: KustoClusterLanguageExtensions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    image: cdktf.stringToTerraform(struct!.image),
-    name: cdktf.stringToTerraform(struct!.name),
+    image: cdktn.stringToTerraform(struct!.image),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function kustoClusterLanguageExtensionsToHclTerraform(struct?: KustoClusterLanguageExtensions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kustoClusterLanguageExtensionsToHclTerraform(struct?: KustoClusterLanguageExtensions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     image: {
-      value: cdktf.stringToHclTerraform(struct!.image),
+      value: cdktn.stringToHclTerraform(struct!.image),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -440,9 +440,9 @@ export function kustoClusterLanguageExtensionsToHclTerraform(struct?: KustoClust
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KustoClusterLanguageExtensionsOutputReference extends cdktf.ComplexObject {
+export class KustoClusterLanguageExtensionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -450,11 +450,11 @@ export class KustoClusterLanguageExtensionsOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): KustoClusterLanguageExtensions | cdktf.IResolvable | undefined {
+  public get internalValue(): KustoClusterLanguageExtensions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -471,14 +471,14 @@ export class KustoClusterLanguageExtensionsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KustoClusterLanguageExtensions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KustoClusterLanguageExtensions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._image = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -517,15 +517,15 @@ export class KustoClusterLanguageExtensionsOutputReference extends cdktf.Complex
   }
 }
 
-export class KustoClusterLanguageExtensionsList extends cdktf.ComplexList {
-  public internalValue? : KustoClusterLanguageExtensions[] | cdktf.IResolvable
+export class KustoClusterLanguageExtensionsList extends cdktn.ComplexList {
+  public internalValue? : KustoClusterLanguageExtensions[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -548,31 +548,31 @@ export interface KustoClusterOptimizedAutoScale {
 }
 
 export function kustoClusterOptimizedAutoScaleToTerraform(struct?: KustoClusterOptimizedAutoScaleOutputReference | KustoClusterOptimizedAutoScale): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    maximum_instances: cdktf.numberToTerraform(struct!.maximumInstances),
-    minimum_instances: cdktf.numberToTerraform(struct!.minimumInstances),
+    maximum_instances: cdktn.numberToTerraform(struct!.maximumInstances),
+    minimum_instances: cdktn.numberToTerraform(struct!.minimumInstances),
   }
 }
 
 
 export function kustoClusterOptimizedAutoScaleToHclTerraform(struct?: KustoClusterOptimizedAutoScaleOutputReference | KustoClusterOptimizedAutoScale): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     maximum_instances: {
-      value: cdktf.numberToHclTerraform(struct!.maximumInstances),
+      value: cdktn.numberToHclTerraform(struct!.maximumInstances),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     minimum_instances: {
-      value: cdktf.numberToHclTerraform(struct!.minimumInstances),
+      value: cdktn.numberToHclTerraform(struct!.minimumInstances),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -583,14 +583,14 @@ export function kustoClusterOptimizedAutoScaleToHclTerraform(struct?: KustoClust
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KustoClusterOptimizedAutoScaleOutputReference extends cdktf.ComplexObject {
+export class KustoClusterOptimizedAutoScaleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -659,31 +659,31 @@ export interface KustoClusterSku {
 }
 
 export function kustoClusterSkuToTerraform(struct?: KustoClusterSkuOutputReference | KustoClusterSku): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    capacity: cdktf.numberToTerraform(struct!.capacity),
-    name: cdktf.stringToTerraform(struct!.name),
+    capacity: cdktn.numberToTerraform(struct!.capacity),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function kustoClusterSkuToHclTerraform(struct?: KustoClusterSkuOutputReference | KustoClusterSku): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     capacity: {
-      value: cdktf.numberToHclTerraform(struct!.capacity),
+      value: cdktn.numberToHclTerraform(struct!.capacity),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -694,14 +694,14 @@ export function kustoClusterSkuToHclTerraform(struct?: KustoClusterSkuOutputRefe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KustoClusterSkuOutputReference extends cdktf.ComplexObject {
+export class KustoClusterSkuOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -780,46 +780,46 @@ export interface KustoClusterTimeouts {
   readonly update?: string;
 }
 
-export function kustoClusterTimeoutsToTerraform(struct?: KustoClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kustoClusterTimeoutsToTerraform(struct?: KustoClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function kustoClusterTimeoutsToHclTerraform(struct?: KustoClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kustoClusterTimeoutsToHclTerraform(struct?: KustoClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -830,19 +830,19 @@ export function kustoClusterTimeoutsToHclTerraform(struct?: KustoClusterTimeouts
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KustoClusterTimeoutsOutputReference extends cdktf.ComplexObject {
+export class KustoClusterTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): KustoClusterTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): KustoClusterTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -867,7 +867,7 @@ export class KustoClusterTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KustoClusterTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KustoClusterTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -876,7 +876,7 @@ export class KustoClusterTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -970,38 +970,38 @@ export interface KustoClusterVirtualNetworkConfiguration {
 }
 
 export function kustoClusterVirtualNetworkConfigurationToTerraform(struct?: KustoClusterVirtualNetworkConfigurationOutputReference | KustoClusterVirtualNetworkConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data_management_public_ip_id: cdktf.stringToTerraform(struct!.dataManagementPublicIpId),
-    engine_public_ip_id: cdktf.stringToTerraform(struct!.enginePublicIpId),
-    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
+    data_management_public_ip_id: cdktn.stringToTerraform(struct!.dataManagementPublicIpId),
+    engine_public_ip_id: cdktn.stringToTerraform(struct!.enginePublicIpId),
+    subnet_id: cdktn.stringToTerraform(struct!.subnetId),
   }
 }
 
 
 export function kustoClusterVirtualNetworkConfigurationToHclTerraform(struct?: KustoClusterVirtualNetworkConfigurationOutputReference | KustoClusterVirtualNetworkConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data_management_public_ip_id: {
-      value: cdktf.stringToHclTerraform(struct!.dataManagementPublicIpId),
+      value: cdktn.stringToHclTerraform(struct!.dataManagementPublicIpId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     engine_public_ip_id: {
-      value: cdktf.stringToHclTerraform(struct!.enginePublicIpId),
+      value: cdktn.stringToHclTerraform(struct!.enginePublicIpId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.subnetId),
+      value: cdktn.stringToHclTerraform(struct!.subnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1012,14 +1012,14 @@ export function kustoClusterVirtualNetworkConfigurationToHclTerraform(struct?: K
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KustoClusterVirtualNetworkConfigurationOutputReference extends cdktf.ComplexObject {
+export class KustoClusterVirtualNetworkConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1099,7 +1099,7 @@ export class KustoClusterVirtualNetworkConfigurationOutputReference extends cdkt
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kusto_cluster azurerm_kusto_cluster}
 */
-export class KustoCluster extends cdktf.TerraformResource {
+export class KustoCluster extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1110,14 +1110,14 @@ export class KustoCluster extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a KustoCluster resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a KustoCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KustoCluster to import
   * @param importFromId The id of the existing KustoCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kusto_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KustoCluster to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_kusto_cluster", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_kusto_cluster", importId: importFromId, provider });
       }
 
   // ===========
@@ -1210,11 +1210,11 @@ export class KustoCluster extends cdktf.TerraformResource {
   }
 
   // auto_stop_enabled - computed: false, optional: true, required: false
-  private _autoStopEnabled?: boolean | cdktf.IResolvable; 
+  private _autoStopEnabled?: boolean | cdktn.IResolvable; 
   public get autoStopEnabled() {
     return this.getBooleanAttribute('auto_stop_enabled');
   }
-  public set autoStopEnabled(value: boolean | cdktf.IResolvable) {
+  public set autoStopEnabled(value: boolean | cdktn.IResolvable) {
     this._autoStopEnabled = value;
   }
   public resetAutoStopEnabled() {
@@ -1231,11 +1231,11 @@ export class KustoCluster extends cdktf.TerraformResource {
   }
 
   // disk_encryption_enabled - computed: false, optional: true, required: false
-  private _diskEncryptionEnabled?: boolean | cdktf.IResolvable; 
+  private _diskEncryptionEnabled?: boolean | cdktn.IResolvable; 
   public get diskEncryptionEnabled() {
     return this.getBooleanAttribute('disk_encryption_enabled');
   }
-  public set diskEncryptionEnabled(value: boolean | cdktf.IResolvable) {
+  public set diskEncryptionEnabled(value: boolean | cdktn.IResolvable) {
     this._diskEncryptionEnabled = value;
   }
   public resetDiskEncryptionEnabled() {
@@ -1247,11 +1247,11 @@ export class KustoCluster extends cdktf.TerraformResource {
   }
 
   // double_encryption_enabled - computed: false, optional: true, required: false
-  private _doubleEncryptionEnabled?: boolean | cdktf.IResolvable; 
+  private _doubleEncryptionEnabled?: boolean | cdktn.IResolvable; 
   public get doubleEncryptionEnabled() {
     return this.getBooleanAttribute('double_encryption_enabled');
   }
-  public set doubleEncryptionEnabled(value: boolean | cdktf.IResolvable) {
+  public set doubleEncryptionEnabled(value: boolean | cdktn.IResolvable) {
     this._doubleEncryptionEnabled = value;
   }
   public resetDoubleEncryptionEnabled() {
@@ -1305,11 +1305,11 @@ export class KustoCluster extends cdktf.TerraformResource {
   }
 
   // outbound_network_access_restricted - computed: false, optional: true, required: false
-  private _outboundNetworkAccessRestricted?: boolean | cdktf.IResolvable; 
+  private _outboundNetworkAccessRestricted?: boolean | cdktn.IResolvable; 
   public get outboundNetworkAccessRestricted() {
     return this.getBooleanAttribute('outbound_network_access_restricted');
   }
-  public set outboundNetworkAccessRestricted(value: boolean | cdktf.IResolvable) {
+  public set outboundNetworkAccessRestricted(value: boolean | cdktn.IResolvable) {
     this._outboundNetworkAccessRestricted = value;
   }
   public resetOutboundNetworkAccessRestricted() {
@@ -1337,11 +1337,11 @@ export class KustoCluster extends cdktf.TerraformResource {
   }
 
   // public_network_access_enabled - computed: false, optional: true, required: false
-  private _publicNetworkAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _publicNetworkAccessEnabled?: boolean | cdktn.IResolvable; 
   public get publicNetworkAccessEnabled() {
     return this.getBooleanAttribute('public_network_access_enabled');
   }
-  public set publicNetworkAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set publicNetworkAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._publicNetworkAccessEnabled = value;
   }
   public resetPublicNetworkAccessEnabled() {
@@ -1353,11 +1353,11 @@ export class KustoCluster extends cdktf.TerraformResource {
   }
 
   // purge_enabled - computed: false, optional: true, required: false
-  private _purgeEnabled?: boolean | cdktf.IResolvable; 
+  private _purgeEnabled?: boolean | cdktn.IResolvable; 
   public get purgeEnabled() {
     return this.getBooleanAttribute('purge_enabled');
   }
-  public set purgeEnabled(value: boolean | cdktf.IResolvable) {
+  public set purgeEnabled(value: boolean | cdktn.IResolvable) {
     this._purgeEnabled = value;
   }
   public resetPurgeEnabled() {
@@ -1382,11 +1382,11 @@ export class KustoCluster extends cdktf.TerraformResource {
   }
 
   // streaming_ingestion_enabled - computed: false, optional: true, required: false
-  private _streamingIngestionEnabled?: boolean | cdktf.IResolvable; 
+  private _streamingIngestionEnabled?: boolean | cdktn.IResolvable; 
   public get streamingIngestionEnabled() {
     return this.getBooleanAttribute('streaming_ingestion_enabled');
   }
-  public set streamingIngestionEnabled(value: boolean | cdktf.IResolvable) {
+  public set streamingIngestionEnabled(value: boolean | cdktn.IResolvable) {
     this._streamingIngestionEnabled = value;
   }
   public resetStreamingIngestionEnabled() {
@@ -1437,7 +1437,7 @@ export class KustoCluster extends cdktf.TerraformResource {
   // zones - computed: false, optional: true, required: false
   private _zones?: string[]; 
   public get zones() {
-    return cdktf.Fn.tolist(this.getListAttribute('zones'));
+    return cdktn.Fn.tolist(this.getListAttribute('zones'));
   }
   public set zones(value: string[]) {
     this._zones = value;
@@ -1471,7 +1471,7 @@ export class KustoCluster extends cdktf.TerraformResource {
   public get languageExtension() {
     return this._languageExtension;
   }
-  public putLanguageExtension(value: KustoClusterLanguageExtension[] | cdktf.IResolvable) {
+  public putLanguageExtension(value: KustoClusterLanguageExtension[] | cdktn.IResolvable) {
     this._languageExtension.internalValue = value;
   }
   public resetLanguageExtension() {
@@ -1487,7 +1487,7 @@ export class KustoCluster extends cdktf.TerraformResource {
   public get languageExtensions() {
     return this._languageExtensions;
   }
-  public putLanguageExtensions(value: KustoClusterLanguageExtensions[] | cdktf.IResolvable) {
+  public putLanguageExtensions(value: KustoClusterLanguageExtensions[] | cdktn.IResolvable) {
     this._languageExtensions.internalValue = value;
   }
   public resetLanguageExtensions() {
@@ -1565,26 +1565,26 @@ export class KustoCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allowed_fqdns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedFqdns),
-      allowed_ip_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedIpRanges),
-      auto_stop_enabled: cdktf.booleanToTerraform(this._autoStopEnabled),
-      disk_encryption_enabled: cdktf.booleanToTerraform(this._diskEncryptionEnabled),
-      double_encryption_enabled: cdktf.booleanToTerraform(this._doubleEncryptionEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      outbound_network_access_restricted: cdktf.booleanToTerraform(this._outboundNetworkAccessRestricted),
-      public_ip_type: cdktf.stringToTerraform(this._publicIpType),
-      public_network_access_enabled: cdktf.booleanToTerraform(this._publicNetworkAccessEnabled),
-      purge_enabled: cdktf.booleanToTerraform(this._purgeEnabled),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      streaming_ingestion_enabled: cdktf.booleanToTerraform(this._streamingIngestionEnabled),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      trusted_external_tenants: cdktf.listMapper(cdktf.stringToTerraform, false)(this._trustedExternalTenants),
-      zones: cdktf.listMapper(cdktf.stringToTerraform, false)(this._zones),
+      allowed_fqdns: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedFqdns),
+      allowed_ip_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedIpRanges),
+      auto_stop_enabled: cdktn.booleanToTerraform(this._autoStopEnabled),
+      disk_encryption_enabled: cdktn.booleanToTerraform(this._diskEncryptionEnabled),
+      double_encryption_enabled: cdktn.booleanToTerraform(this._doubleEncryptionEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      outbound_network_access_restricted: cdktn.booleanToTerraform(this._outboundNetworkAccessRestricted),
+      public_ip_type: cdktn.stringToTerraform(this._publicIpType),
+      public_network_access_enabled: cdktn.booleanToTerraform(this._publicNetworkAccessEnabled),
+      purge_enabled: cdktn.booleanToTerraform(this._purgeEnabled),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      streaming_ingestion_enabled: cdktn.booleanToTerraform(this._streamingIngestionEnabled),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      trusted_external_tenants: cdktn.listMapper(cdktn.stringToTerraform, false)(this._trustedExternalTenants),
+      zones: cdktn.listMapper(cdktn.stringToTerraform, false)(this._zones),
       identity: kustoClusterIdentityToTerraform(this._identity.internalValue),
-      language_extension: cdktf.listMapper(kustoClusterLanguageExtensionToTerraform, true)(this._languageExtension.internalValue),
-      language_extensions: cdktf.listMapper(kustoClusterLanguageExtensionsToTerraform, true)(this._languageExtensions.internalValue),
+      language_extension: cdktn.listMapper(kustoClusterLanguageExtensionToTerraform, true)(this._languageExtension.internalValue),
+      language_extensions: cdktn.listMapper(kustoClusterLanguageExtensionsToTerraform, true)(this._languageExtensions.internalValue),
       optimized_auto_scale: kustoClusterOptimizedAutoScaleToTerraform(this._optimizedAutoScale.internalValue),
       sku: kustoClusterSkuToTerraform(this._sku.internalValue),
       timeouts: kustoClusterTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1595,103 +1595,103 @@ export class KustoCluster extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allowed_fqdns: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedFqdns),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedFqdns),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       allowed_ip_ranges: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedIpRanges),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedIpRanges),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       auto_stop_enabled: {
-        value: cdktf.booleanToHclTerraform(this._autoStopEnabled),
+        value: cdktn.booleanToHclTerraform(this._autoStopEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       disk_encryption_enabled: {
-        value: cdktf.booleanToHclTerraform(this._diskEncryptionEnabled),
+        value: cdktn.booleanToHclTerraform(this._diskEncryptionEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       double_encryption_enabled: {
-        value: cdktf.booleanToHclTerraform(this._doubleEncryptionEnabled),
+        value: cdktn.booleanToHclTerraform(this._doubleEncryptionEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       outbound_network_access_restricted: {
-        value: cdktf.booleanToHclTerraform(this._outboundNetworkAccessRestricted),
+        value: cdktn.booleanToHclTerraform(this._outboundNetworkAccessRestricted),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       public_ip_type: {
-        value: cdktf.stringToHclTerraform(this._publicIpType),
+        value: cdktn.stringToHclTerraform(this._publicIpType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_network_access_enabled: {
-        value: cdktf.booleanToHclTerraform(this._publicNetworkAccessEnabled),
+        value: cdktn.booleanToHclTerraform(this._publicNetworkAccessEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       purge_enabled: {
-        value: cdktf.booleanToHclTerraform(this._purgeEnabled),
+        value: cdktn.booleanToHclTerraform(this._purgeEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       streaming_ingestion_enabled: {
-        value: cdktf.booleanToHclTerraform(this._streamingIngestionEnabled),
+        value: cdktn.booleanToHclTerraform(this._streamingIngestionEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       trusted_external_tenants: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._trustedExternalTenants),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._trustedExternalTenants),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       zones: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._zones),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._zones),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
@@ -1703,13 +1703,13 @@ export class KustoCluster extends cdktf.TerraformResource {
         storageClassType: "KustoClusterIdentityList",
       },
       language_extension: {
-        value: cdktf.listMapperHcl(kustoClusterLanguageExtensionToHclTerraform, true)(this._languageExtension.internalValue),
+        value: cdktn.listMapperHcl(kustoClusterLanguageExtensionToHclTerraform, true)(this._languageExtension.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "KustoClusterLanguageExtensionList",
       },
       language_extensions: {
-        value: cdktf.listMapperHcl(kustoClusterLanguageExtensionsToHclTerraform, true)(this._languageExtensions.internalValue),
+        value: cdktn.listMapperHcl(kustoClusterLanguageExtensionsToHclTerraform, true)(this._languageExtensions.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "KustoClusterLanguageExtensionsList",

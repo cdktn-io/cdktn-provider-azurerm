@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LogAnalyticsSavedSearchConfig extends cdktf.TerraformMetaArguments {
+export interface LogAnalyticsSavedSearchConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/log_analytics_saved_search#category LogAnalyticsSavedSearch#category}
   */
@@ -73,39 +73,39 @@ export interface LogAnalyticsSavedSearchTimeouts {
   readonly read?: string;
 }
 
-export function logAnalyticsSavedSearchTimeoutsToTerraform(struct?: LogAnalyticsSavedSearchTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logAnalyticsSavedSearchTimeoutsToTerraform(struct?: LogAnalyticsSavedSearchTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function logAnalyticsSavedSearchTimeoutsToHclTerraform(struct?: LogAnalyticsSavedSearchTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logAnalyticsSavedSearchTimeoutsToHclTerraform(struct?: LogAnalyticsSavedSearchTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -116,19 +116,19 @@ export function logAnalyticsSavedSearchTimeoutsToHclTerraform(struct?: LogAnalyt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogAnalyticsSavedSearchTimeoutsOutputReference extends cdktf.ComplexObject {
+export class LogAnalyticsSavedSearchTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LogAnalyticsSavedSearchTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): LogAnalyticsSavedSearchTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -149,7 +149,7 @@ export class LogAnalyticsSavedSearchTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogAnalyticsSavedSearchTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogAnalyticsSavedSearchTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -157,7 +157,7 @@ export class LogAnalyticsSavedSearchTimeoutsOutputReference extends cdktf.Comple
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -222,7 +222,7 @@ export class LogAnalyticsSavedSearchTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/log_analytics_saved_search azurerm_log_analytics_saved_search}
 */
-export class LogAnalyticsSavedSearch extends cdktf.TerraformResource {
+export class LogAnalyticsSavedSearch extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -233,14 +233,14 @@ export class LogAnalyticsSavedSearch extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LogAnalyticsSavedSearch resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LogAnalyticsSavedSearch resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LogAnalyticsSavedSearch to import
   * @param importFromId The id of the existing LogAnalyticsSavedSearch that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/log_analytics_saved_search#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LogAnalyticsSavedSearch to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_log_analytics_saved_search", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_log_analytics_saved_search", importId: importFromId, provider });
       }
 
   // ===========
@@ -437,15 +437,15 @@ export class LogAnalyticsSavedSearch extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      category: cdktf.stringToTerraform(this._category),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      function_alias: cdktf.stringToTerraform(this._functionAlias),
-      function_parameters: cdktf.listMapper(cdktf.stringToTerraform, false)(this._functionParameters),
-      id: cdktf.stringToTerraform(this._id),
-      log_analytics_workspace_id: cdktf.stringToTerraform(this._logAnalyticsWorkspaceId),
-      name: cdktf.stringToTerraform(this._name),
-      query: cdktf.stringToTerraform(this._query),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      category: cdktn.stringToTerraform(this._category),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      function_alias: cdktn.stringToTerraform(this._functionAlias),
+      function_parameters: cdktn.listMapper(cdktn.stringToTerraform, false)(this._functionParameters),
+      id: cdktn.stringToTerraform(this._id),
+      log_analytics_workspace_id: cdktn.stringToTerraform(this._logAnalyticsWorkspaceId),
+      name: cdktn.stringToTerraform(this._name),
+      query: cdktn.stringToTerraform(this._query),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       timeouts: logAnalyticsSavedSearchTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -453,55 +453,55 @@ export class LogAnalyticsSavedSearch extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       category: {
-        value: cdktf.stringToHclTerraform(this._category),
+        value: cdktn.stringToHclTerraform(this._category),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       function_alias: {
-        value: cdktf.stringToHclTerraform(this._functionAlias),
+        value: cdktn.stringToHclTerraform(this._functionAlias),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       function_parameters: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._functionParameters),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._functionParameters),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       log_analytics_workspace_id: {
-        value: cdktf.stringToHclTerraform(this._logAnalyticsWorkspaceId),
+        value: cdktn.stringToHclTerraform(this._logAnalyticsWorkspaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       query: {
-        value: cdktf.stringToHclTerraform(this._query),
+        value: cdktn.stringToHclTerraform(this._query),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

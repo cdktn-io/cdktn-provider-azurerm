@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataProtectionBackupPolicyMysqlFlexibleServerConfig extends cdktf.TerraformMetaArguments {
+export interface DataProtectionBackupPolicyMysqlFlexibleServerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_protection_backup_policy_mysql_flexible_server#backup_repeating_time_intervals DataProtectionBackupPolicyMysqlFlexibleServer#backup_repeating_time_intervals}
   */
@@ -46,7 +46,7 @@ export interface DataProtectionBackupPolicyMysqlFlexibleServerConfig extends cdk
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_protection_backup_policy_mysql_flexible_server#retention_rule DataProtectionBackupPolicyMysqlFlexibleServer#retention_rule}
   */
-  readonly retentionRule?: DataProtectionBackupPolicyMysqlFlexibleServerRetentionRule[] | cdktf.IResolvable;
+  readonly retentionRule?: DataProtectionBackupPolicyMysqlFlexibleServerRetentionRule[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -65,32 +65,32 @@ export interface DataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRu
   readonly duration: string;
 }
 
-export function dataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleLifeCycleToTerraform(struct?: DataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleLifeCycle | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleLifeCycleToTerraform(struct?: DataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleLifeCycle | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data_store_type: cdktf.stringToTerraform(struct!.dataStoreType),
-    duration: cdktf.stringToTerraform(struct!.duration),
+    data_store_type: cdktn.stringToTerraform(struct!.dataStoreType),
+    duration: cdktn.stringToTerraform(struct!.duration),
   }
 }
 
 
-export function dataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleLifeCycleToHclTerraform(struct?: DataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleLifeCycle | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleLifeCycleToHclTerraform(struct?: DataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleLifeCycle | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data_store_type: {
-      value: cdktf.stringToHclTerraform(struct!.dataStoreType),
+      value: cdktn.stringToHclTerraform(struct!.dataStoreType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     duration: {
-      value: cdktf.stringToHclTerraform(struct!.duration),
+      value: cdktn.stringToHclTerraform(struct!.duration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -101,9 +101,9 @@ export function dataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRul
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleLifeCycleOutputReference extends cdktf.ComplexObject {
+export class DataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleLifeCycleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -111,11 +111,11 @@ export class DataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleLi
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleLifeCycle | cdktf.IResolvable | undefined {
+  public get internalValue(): DataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleLifeCycle | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -132,14 +132,14 @@ export class DataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleLi
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleLifeCycle | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleLifeCycle | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._dataStoreType = undefined;
       this._duration = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -178,15 +178,15 @@ export class DataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleLi
   }
 }
 
-export class DataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleLifeCycleList extends cdktf.ComplexList {
-  public internalValue? : DataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleLifeCycle[] | cdktf.IResolvable
+export class DataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleLifeCycleList extends cdktn.ComplexList {
+  public internalValue? : DataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleLifeCycle[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -203,28 +203,28 @@ export interface DataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRu
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_protection_backup_policy_mysql_flexible_server#life_cycle DataProtectionBackupPolicyMysqlFlexibleServer#life_cycle}
   */
-  readonly lifeCycle: DataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleLifeCycle[] | cdktf.IResolvable;
+  readonly lifeCycle: DataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleLifeCycle[] | cdktn.IResolvable;
 }
 
 export function dataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleToTerraform(struct?: DataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleOutputReference | DataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    life_cycle: cdktf.listMapper(dataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleLifeCycleToTerraform, true)(struct!.lifeCycle),
+    life_cycle: cdktn.listMapper(dataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleLifeCycleToTerraform, true)(struct!.lifeCycle),
   }
 }
 
 
 export function dataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleToHclTerraform(struct?: DataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleOutputReference | DataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     life_cycle: {
-      value: cdktf.listMapperHcl(dataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleLifeCycleToHclTerraform, true)(struct!.lifeCycle),
+      value: cdktn.listMapperHcl(dataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleLifeCycleToHclTerraform, true)(struct!.lifeCycle),
       isBlock: true,
       type: "list",
       storageClassType: "DataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleLifeCycleList",
@@ -235,14 +235,14 @@ export function dataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRul
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleOutputReference extends cdktf.ComplexObject {
+export class DataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -272,7 +272,7 @@ export class DataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleOu
   public get lifeCycle() {
     return this._lifeCycle;
   }
-  public putLifeCycle(value: DataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleLifeCycle[] | cdktf.IResolvable) {
+  public putLifeCycle(value: DataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleLifeCycle[] | cdktn.IResolvable) {
     this._lifeCycle.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -304,52 +304,52 @@ export interface DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleCrite
 }
 
 export function dataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleCriteriaToTerraform(struct?: DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleCriteriaOutputReference | DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleCriteria): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    absolute_criteria: cdktf.stringToTerraform(struct!.absoluteCriteria),
-    days_of_week: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.daysOfWeek),
-    months_of_year: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.monthsOfYear),
-    scheduled_backup_times: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.scheduledBackupTimes),
-    weeks_of_month: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.weeksOfMonth),
+    absolute_criteria: cdktn.stringToTerraform(struct!.absoluteCriteria),
+    days_of_week: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.daysOfWeek),
+    months_of_year: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.monthsOfYear),
+    scheduled_backup_times: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.scheduledBackupTimes),
+    weeks_of_month: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.weeksOfMonth),
   }
 }
 
 
 export function dataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleCriteriaToHclTerraform(struct?: DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleCriteriaOutputReference | DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleCriteria): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     absolute_criteria: {
-      value: cdktf.stringToHclTerraform(struct!.absoluteCriteria),
+      value: cdktn.stringToHclTerraform(struct!.absoluteCriteria),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     days_of_week: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.daysOfWeek),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.daysOfWeek),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     months_of_year: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.monthsOfYear),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.monthsOfYear),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     scheduled_backup_times: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.scheduledBackupTimes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.scheduledBackupTimes),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     weeks_of_month: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.weeksOfMonth),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.weeksOfMonth),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -360,14 +360,14 @@ export function dataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleCriter
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleCriteriaOutputReference extends cdktf.ComplexObject {
+export class DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleCriteriaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -435,7 +435,7 @@ export class DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleCriteriaO
   // days_of_week - computed: false, optional: true, required: false
   private _daysOfWeek?: string[]; 
   public get daysOfWeek() {
-    return cdktf.Fn.tolist(this.getListAttribute('days_of_week'));
+    return cdktn.Fn.tolist(this.getListAttribute('days_of_week'));
   }
   public set daysOfWeek(value: string[]) {
     this._daysOfWeek = value;
@@ -451,7 +451,7 @@ export class DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleCriteriaO
   // months_of_year - computed: false, optional: true, required: false
   private _monthsOfYear?: string[]; 
   public get monthsOfYear() {
-    return cdktf.Fn.tolist(this.getListAttribute('months_of_year'));
+    return cdktn.Fn.tolist(this.getListAttribute('months_of_year'));
   }
   public set monthsOfYear(value: string[]) {
     this._monthsOfYear = value;
@@ -467,7 +467,7 @@ export class DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleCriteriaO
   // scheduled_backup_times - computed: false, optional: true, required: false
   private _scheduledBackupTimes?: string[]; 
   public get scheduledBackupTimes() {
-    return cdktf.Fn.tolist(this.getListAttribute('scheduled_backup_times'));
+    return cdktn.Fn.tolist(this.getListAttribute('scheduled_backup_times'));
   }
   public set scheduledBackupTimes(value: string[]) {
     this._scheduledBackupTimes = value;
@@ -483,7 +483,7 @@ export class DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleCriteriaO
   // weeks_of_month - computed: false, optional: true, required: false
   private _weeksOfMonth?: string[]; 
   public get weeksOfMonth() {
-    return cdktf.Fn.tolist(this.getListAttribute('weeks_of_month'));
+    return cdktn.Fn.tolist(this.getListAttribute('weeks_of_month'));
   }
   public set weeksOfMonth(value: string[]) {
     this._weeksOfMonth = value;
@@ -507,32 +507,32 @@ export interface DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleLifeC
   readonly duration: string;
 }
 
-export function dataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleLifeCycleToTerraform(struct?: DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleLifeCycle | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleLifeCycleToTerraform(struct?: DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleLifeCycle | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data_store_type: cdktf.stringToTerraform(struct!.dataStoreType),
-    duration: cdktf.stringToTerraform(struct!.duration),
+    data_store_type: cdktn.stringToTerraform(struct!.dataStoreType),
+    duration: cdktn.stringToTerraform(struct!.duration),
   }
 }
 
 
-export function dataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleLifeCycleToHclTerraform(struct?: DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleLifeCycle | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleLifeCycleToHclTerraform(struct?: DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleLifeCycle | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data_store_type: {
-      value: cdktf.stringToHclTerraform(struct!.dataStoreType),
+      value: cdktn.stringToHclTerraform(struct!.dataStoreType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     duration: {
-      value: cdktf.stringToHclTerraform(struct!.duration),
+      value: cdktn.stringToHclTerraform(struct!.duration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -543,9 +543,9 @@ export function dataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleLifeCy
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleLifeCycleOutputReference extends cdktf.ComplexObject {
+export class DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleLifeCycleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -553,11 +553,11 @@ export class DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleLifeCycle
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleLifeCycle | cdktf.IResolvable | undefined {
+  public get internalValue(): DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleLifeCycle | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -574,14 +574,14 @@ export class DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleLifeCycle
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleLifeCycle | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleLifeCycle | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._dataStoreType = undefined;
       this._duration = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -620,15 +620,15 @@ export class DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleLifeCycle
   }
 }
 
-export class DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleLifeCycleList extends cdktf.ComplexList {
-  public internalValue? : DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleLifeCycle[] | cdktf.IResolvable
+export class DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleLifeCycleList extends cdktn.ComplexList {
+  public internalValue? : DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleLifeCycle[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -659,37 +659,37 @@ export interface DataProtectionBackupPolicyMysqlFlexibleServerRetentionRule {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_protection_backup_policy_mysql_flexible_server#life_cycle DataProtectionBackupPolicyMysqlFlexibleServer#life_cycle}
   */
-  readonly lifeCycle: DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleLifeCycle[] | cdktf.IResolvable;
+  readonly lifeCycle: DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleLifeCycle[] | cdktn.IResolvable;
 }
 
-export function dataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleToTerraform(struct?: DataProtectionBackupPolicyMysqlFlexibleServerRetentionRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleToTerraform(struct?: DataProtectionBackupPolicyMysqlFlexibleServerRetentionRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    priority: cdktf.numberToTerraform(struct!.priority),
+    name: cdktn.stringToTerraform(struct!.name),
+    priority: cdktn.numberToTerraform(struct!.priority),
     criteria: dataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleCriteriaToTerraform(struct!.criteria),
-    life_cycle: cdktf.listMapper(dataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleLifeCycleToTerraform, true)(struct!.lifeCycle),
+    life_cycle: cdktn.listMapper(dataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleLifeCycleToTerraform, true)(struct!.lifeCycle),
   }
 }
 
 
-export function dataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleToHclTerraform(struct?: DataProtectionBackupPolicyMysqlFlexibleServerRetentionRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleToHclTerraform(struct?: DataProtectionBackupPolicyMysqlFlexibleServerRetentionRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     priority: {
-      value: cdktf.numberToHclTerraform(struct!.priority),
+      value: cdktn.numberToHclTerraform(struct!.priority),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -701,7 +701,7 @@ export function dataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleToHclT
       storageClassType: "DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleCriteriaList",
     },
     life_cycle: {
-      value: cdktf.listMapperHcl(dataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleLifeCycleToHclTerraform, true)(struct!.lifeCycle),
+      value: cdktn.listMapperHcl(dataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleLifeCycleToHclTerraform, true)(struct!.lifeCycle),
       isBlock: true,
       type: "list",
       storageClassType: "DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleLifeCycleList",
@@ -712,9 +712,9 @@ export function dataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleOutputReference extends cdktf.ComplexObject {
+export class DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -722,11 +722,11 @@ export class DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataProtectionBackupPolicyMysqlFlexibleServerRetentionRule | cdktf.IResolvable | undefined {
+  public get internalValue(): DataProtectionBackupPolicyMysqlFlexibleServerRetentionRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -751,7 +751,7 @@ export class DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleOutputRef
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataProtectionBackupPolicyMysqlFlexibleServerRetentionRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataProtectionBackupPolicyMysqlFlexibleServerRetentionRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -760,7 +760,7 @@ export class DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleOutputRef
       this._criteria.internalValue = undefined;
       this._lifeCycle.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -818,7 +818,7 @@ export class DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleOutputRef
   public get lifeCycle() {
     return this._lifeCycle;
   }
-  public putLifeCycle(value: DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleLifeCycle[] | cdktf.IResolvable) {
+  public putLifeCycle(value: DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleLifeCycle[] | cdktn.IResolvable) {
     this._lifeCycle.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -827,15 +827,15 @@ export class DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleOutputRef
   }
 }
 
-export class DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleList extends cdktf.ComplexList {
-  public internalValue? : DataProtectionBackupPolicyMysqlFlexibleServerRetentionRule[] | cdktf.IResolvable
+export class DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleList extends cdktn.ComplexList {
+  public internalValue? : DataProtectionBackupPolicyMysqlFlexibleServerRetentionRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -861,39 +861,39 @@ export interface DataProtectionBackupPolicyMysqlFlexibleServerTimeouts {
   readonly read?: string;
 }
 
-export function dataProtectionBackupPolicyMysqlFlexibleServerTimeoutsToTerraform(struct?: DataProtectionBackupPolicyMysqlFlexibleServerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataProtectionBackupPolicyMysqlFlexibleServerTimeoutsToTerraform(struct?: DataProtectionBackupPolicyMysqlFlexibleServerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataProtectionBackupPolicyMysqlFlexibleServerTimeoutsToHclTerraform(struct?: DataProtectionBackupPolicyMysqlFlexibleServerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataProtectionBackupPolicyMysqlFlexibleServerTimeoutsToHclTerraform(struct?: DataProtectionBackupPolicyMysqlFlexibleServerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -904,19 +904,19 @@ export function dataProtectionBackupPolicyMysqlFlexibleServerTimeoutsToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataProtectionBackupPolicyMysqlFlexibleServerTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataProtectionBackupPolicyMysqlFlexibleServerTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataProtectionBackupPolicyMysqlFlexibleServerTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataProtectionBackupPolicyMysqlFlexibleServerTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -937,7 +937,7 @@ export class DataProtectionBackupPolicyMysqlFlexibleServerTimeoutsOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataProtectionBackupPolicyMysqlFlexibleServerTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataProtectionBackupPolicyMysqlFlexibleServerTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -945,7 +945,7 @@ export class DataProtectionBackupPolicyMysqlFlexibleServerTimeoutsOutputReferenc
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1010,7 +1010,7 @@ export class DataProtectionBackupPolicyMysqlFlexibleServerTimeoutsOutputReferenc
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_protection_backup_policy_mysql_flexible_server azurerm_data_protection_backup_policy_mysql_flexible_server}
 */
-export class DataProtectionBackupPolicyMysqlFlexibleServer extends cdktf.TerraformResource {
+export class DataProtectionBackupPolicyMysqlFlexibleServer extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1021,14 +1021,14 @@ export class DataProtectionBackupPolicyMysqlFlexibleServer extends cdktf.Terrafo
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataProtectionBackupPolicyMysqlFlexibleServer resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataProtectionBackupPolicyMysqlFlexibleServer resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataProtectionBackupPolicyMysqlFlexibleServer to import
   * @param importFromId The id of the existing DataProtectionBackupPolicyMysqlFlexibleServer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_protection_backup_policy_mysql_flexible_server#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataProtectionBackupPolicyMysqlFlexibleServer to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_protection_backup_policy_mysql_flexible_server", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_protection_backup_policy_mysql_flexible_server", importId: importFromId, provider });
       }
 
   // ===========
@@ -1161,7 +1161,7 @@ export class DataProtectionBackupPolicyMysqlFlexibleServer extends cdktf.Terrafo
   public get retentionRule() {
     return this._retentionRule;
   }
-  public putRetentionRule(value: DataProtectionBackupPolicyMysqlFlexibleServerRetentionRule[] | cdktf.IResolvable) {
+  public putRetentionRule(value: DataProtectionBackupPolicyMysqlFlexibleServerRetentionRule[] | cdktn.IResolvable) {
     this._retentionRule.internalValue = value;
   }
   public resetRetentionRule() {
@@ -1194,13 +1194,13 @@ export class DataProtectionBackupPolicyMysqlFlexibleServer extends cdktf.Terrafo
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      backup_repeating_time_intervals: cdktf.listMapper(cdktf.stringToTerraform, false)(this._backupRepeatingTimeIntervals),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      time_zone: cdktf.stringToTerraform(this._timeZone),
-      vault_id: cdktf.stringToTerraform(this._vaultId),
+      backup_repeating_time_intervals: cdktn.listMapper(cdktn.stringToTerraform, false)(this._backupRepeatingTimeIntervals),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      time_zone: cdktn.stringToTerraform(this._timeZone),
+      vault_id: cdktn.stringToTerraform(this._vaultId),
       default_retention_rule: dataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleToTerraform(this._defaultRetentionRule.internalValue),
-      retention_rule: cdktf.listMapper(dataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleToTerraform, true)(this._retentionRule.internalValue),
+      retention_rule: cdktn.listMapper(dataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleToTerraform, true)(this._retentionRule.internalValue),
       timeouts: dataProtectionBackupPolicyMysqlFlexibleServerTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1208,31 +1208,31 @@ export class DataProtectionBackupPolicyMysqlFlexibleServer extends cdktf.Terrafo
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       backup_repeating_time_intervals: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._backupRepeatingTimeIntervals),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._backupRepeatingTimeIntervals),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       time_zone: {
-        value: cdktf.stringToHclTerraform(this._timeZone),
+        value: cdktn.stringToHclTerraform(this._timeZone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vault_id: {
-        value: cdktf.stringToHclTerraform(this._vaultId),
+        value: cdktn.stringToHclTerraform(this._vaultId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1244,7 +1244,7 @@ export class DataProtectionBackupPolicyMysqlFlexibleServer extends cdktf.Terrafo
         storageClassType: "DataProtectionBackupPolicyMysqlFlexibleServerDefaultRetentionRuleList",
       },
       retention_rule: {
-        value: cdktf.listMapperHcl(dataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleToHclTerraform, true)(this._retentionRule.internalValue),
+        value: cdktn.listMapperHcl(dataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleToHclTerraform, true)(this._retentionRule.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataProtectionBackupPolicyMysqlFlexibleServerRetentionRuleList",

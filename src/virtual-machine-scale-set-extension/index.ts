@@ -7,23 +7,23 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VirtualMachineScaleSetExtensionAConfig extends cdktf.TerraformMetaArguments {
+export interface VirtualMachineScaleSetExtensionAConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_machine_scale_set_extension#auto_upgrade_minor_version VirtualMachineScaleSetExtensionA#auto_upgrade_minor_version}
   */
-  readonly autoUpgradeMinorVersion?: boolean | cdktf.IResolvable;
+  readonly autoUpgradeMinorVersion?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_machine_scale_set_extension#automatic_upgrade_enabled VirtualMachineScaleSetExtensionA#automatic_upgrade_enabled}
   */
-  readonly automaticUpgradeEnabled?: boolean | cdktf.IResolvable;
+  readonly automaticUpgradeEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_machine_scale_set_extension#failure_suppression_enabled VirtualMachineScaleSetExtensionA#failure_suppression_enabled}
   */
-  readonly failureSuppressionEnabled?: boolean | cdktf.IResolvable;
+  readonly failureSuppressionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_machine_scale_set_extension#force_update_tag VirtualMachineScaleSetExtensionA#force_update_tag}
   */
@@ -92,31 +92,31 @@ export interface VirtualMachineScaleSetExtensionProtectedSettingsFromKeyVault {
 }
 
 export function virtualMachineScaleSetExtensionProtectedSettingsFromKeyVaultToTerraform(struct?: VirtualMachineScaleSetExtensionProtectedSettingsFromKeyVaultOutputReference | VirtualMachineScaleSetExtensionProtectedSettingsFromKeyVault): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    secret_url: cdktf.stringToTerraform(struct!.secretUrl),
-    source_vault_id: cdktf.stringToTerraform(struct!.sourceVaultId),
+    secret_url: cdktn.stringToTerraform(struct!.secretUrl),
+    source_vault_id: cdktn.stringToTerraform(struct!.sourceVaultId),
   }
 }
 
 
 export function virtualMachineScaleSetExtensionProtectedSettingsFromKeyVaultToHclTerraform(struct?: VirtualMachineScaleSetExtensionProtectedSettingsFromKeyVaultOutputReference | VirtualMachineScaleSetExtensionProtectedSettingsFromKeyVault): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     secret_url: {
-      value: cdktf.stringToHclTerraform(struct!.secretUrl),
+      value: cdktn.stringToHclTerraform(struct!.secretUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     source_vault_id: {
-      value: cdktf.stringToHclTerraform(struct!.sourceVaultId),
+      value: cdktn.stringToHclTerraform(struct!.sourceVaultId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -127,14 +127,14 @@ export function virtualMachineScaleSetExtensionProtectedSettingsFromKeyVaultToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VirtualMachineScaleSetExtensionProtectedSettingsFromKeyVaultOutputReference extends cdktf.ComplexObject {
+export class VirtualMachineScaleSetExtensionProtectedSettingsFromKeyVaultOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -210,46 +210,46 @@ export interface VirtualMachineScaleSetExtensionTimeouts {
   readonly update?: string;
 }
 
-export function virtualMachineScaleSetExtensionTimeoutsToTerraform(struct?: VirtualMachineScaleSetExtensionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualMachineScaleSetExtensionTimeoutsToTerraform(struct?: VirtualMachineScaleSetExtensionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function virtualMachineScaleSetExtensionTimeoutsToHclTerraform(struct?: VirtualMachineScaleSetExtensionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualMachineScaleSetExtensionTimeoutsToHclTerraform(struct?: VirtualMachineScaleSetExtensionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -260,19 +260,19 @@ export function virtualMachineScaleSetExtensionTimeoutsToHclTerraform(struct?: V
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VirtualMachineScaleSetExtensionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VirtualMachineScaleSetExtensionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VirtualMachineScaleSetExtensionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VirtualMachineScaleSetExtensionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -297,7 +297,7 @@ export class VirtualMachineScaleSetExtensionTimeoutsOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VirtualMachineScaleSetExtensionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VirtualMachineScaleSetExtensionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -306,7 +306,7 @@ export class VirtualMachineScaleSetExtensionTimeoutsOutputReference extends cdkt
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -388,7 +388,7 @@ export class VirtualMachineScaleSetExtensionTimeoutsOutputReference extends cdkt
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_machine_scale_set_extension azurerm_virtual_machine_scale_set_extension}
 */
-export class VirtualMachineScaleSetExtensionA extends cdktf.TerraformResource {
+export class VirtualMachineScaleSetExtensionA extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -399,14 +399,14 @@ export class VirtualMachineScaleSetExtensionA extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VirtualMachineScaleSetExtensionA resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VirtualMachineScaleSetExtensionA resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VirtualMachineScaleSetExtensionA to import
   * @param importFromId The id of the existing VirtualMachineScaleSetExtensionA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_machine_scale_set_extension#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VirtualMachineScaleSetExtensionA to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_virtual_machine_scale_set_extension", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_virtual_machine_scale_set_extension", importId: importFromId, provider });
       }
 
   // ===========
@@ -458,11 +458,11 @@ export class VirtualMachineScaleSetExtensionA extends cdktf.TerraformResource {
   // ==========
 
   // auto_upgrade_minor_version - computed: false, optional: true, required: false
-  private _autoUpgradeMinorVersion?: boolean | cdktf.IResolvable; 
+  private _autoUpgradeMinorVersion?: boolean | cdktn.IResolvable; 
   public get autoUpgradeMinorVersion() {
     return this.getBooleanAttribute('auto_upgrade_minor_version');
   }
-  public set autoUpgradeMinorVersion(value: boolean | cdktf.IResolvable) {
+  public set autoUpgradeMinorVersion(value: boolean | cdktn.IResolvable) {
     this._autoUpgradeMinorVersion = value;
   }
   public resetAutoUpgradeMinorVersion() {
@@ -474,11 +474,11 @@ export class VirtualMachineScaleSetExtensionA extends cdktf.TerraformResource {
   }
 
   // automatic_upgrade_enabled - computed: false, optional: true, required: false
-  private _automaticUpgradeEnabled?: boolean | cdktf.IResolvable; 
+  private _automaticUpgradeEnabled?: boolean | cdktn.IResolvable; 
   public get automaticUpgradeEnabled() {
     return this.getBooleanAttribute('automatic_upgrade_enabled');
   }
-  public set automaticUpgradeEnabled(value: boolean | cdktf.IResolvable) {
+  public set automaticUpgradeEnabled(value: boolean | cdktn.IResolvable) {
     this._automaticUpgradeEnabled = value;
   }
   public resetAutomaticUpgradeEnabled() {
@@ -490,11 +490,11 @@ export class VirtualMachineScaleSetExtensionA extends cdktf.TerraformResource {
   }
 
   // failure_suppression_enabled - computed: false, optional: true, required: false
-  private _failureSuppressionEnabled?: boolean | cdktf.IResolvable; 
+  private _failureSuppressionEnabled?: boolean | cdktn.IResolvable; 
   public get failureSuppressionEnabled() {
     return this.getBooleanAttribute('failure_suppression_enabled');
   }
-  public set failureSuppressionEnabled(value: boolean | cdktf.IResolvable) {
+  public set failureSuppressionEnabled(value: boolean | cdktn.IResolvable) {
     this._failureSuppressionEnabled = value;
   }
   public resetFailureSuppressionEnabled() {
@@ -688,19 +688,19 @@ export class VirtualMachineScaleSetExtensionA extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_upgrade_minor_version: cdktf.booleanToTerraform(this._autoUpgradeMinorVersion),
-      automatic_upgrade_enabled: cdktf.booleanToTerraform(this._automaticUpgradeEnabled),
-      failure_suppression_enabled: cdktf.booleanToTerraform(this._failureSuppressionEnabled),
-      force_update_tag: cdktf.stringToTerraform(this._forceUpdateTag),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      protected_settings: cdktf.stringToTerraform(this._protectedSettings),
-      provision_after_extensions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._provisionAfterExtensions),
-      publisher: cdktf.stringToTerraform(this._publisher),
-      settings: cdktf.stringToTerraform(this._settings),
-      type: cdktf.stringToTerraform(this._type),
-      type_handler_version: cdktf.stringToTerraform(this._typeHandlerVersion),
-      virtual_machine_scale_set_id: cdktf.stringToTerraform(this._virtualMachineScaleSetId),
+      auto_upgrade_minor_version: cdktn.booleanToTerraform(this._autoUpgradeMinorVersion),
+      automatic_upgrade_enabled: cdktn.booleanToTerraform(this._automaticUpgradeEnabled),
+      failure_suppression_enabled: cdktn.booleanToTerraform(this._failureSuppressionEnabled),
+      force_update_tag: cdktn.stringToTerraform(this._forceUpdateTag),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      protected_settings: cdktn.stringToTerraform(this._protectedSettings),
+      provision_after_extensions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._provisionAfterExtensions),
+      publisher: cdktn.stringToTerraform(this._publisher),
+      settings: cdktn.stringToTerraform(this._settings),
+      type: cdktn.stringToTerraform(this._type),
+      type_handler_version: cdktn.stringToTerraform(this._typeHandlerVersion),
+      virtual_machine_scale_set_id: cdktn.stringToTerraform(this._virtualMachineScaleSetId),
       protected_settings_from_key_vault: virtualMachineScaleSetExtensionProtectedSettingsFromKeyVaultToTerraform(this._protectedSettingsFromKeyVault.internalValue),
       timeouts: virtualMachineScaleSetExtensionTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -709,79 +709,79 @@ export class VirtualMachineScaleSetExtensionA extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       auto_upgrade_minor_version: {
-        value: cdktf.booleanToHclTerraform(this._autoUpgradeMinorVersion),
+        value: cdktn.booleanToHclTerraform(this._autoUpgradeMinorVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       automatic_upgrade_enabled: {
-        value: cdktf.booleanToHclTerraform(this._automaticUpgradeEnabled),
+        value: cdktn.booleanToHclTerraform(this._automaticUpgradeEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       failure_suppression_enabled: {
-        value: cdktf.booleanToHclTerraform(this._failureSuppressionEnabled),
+        value: cdktn.booleanToHclTerraform(this._failureSuppressionEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       force_update_tag: {
-        value: cdktf.stringToHclTerraform(this._forceUpdateTag),
+        value: cdktn.stringToHclTerraform(this._forceUpdateTag),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       protected_settings: {
-        value: cdktf.stringToHclTerraform(this._protectedSettings),
+        value: cdktn.stringToHclTerraform(this._protectedSettings),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       provision_after_extensions: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._provisionAfterExtensions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._provisionAfterExtensions),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       publisher: {
-        value: cdktf.stringToHclTerraform(this._publisher),
+        value: cdktn.stringToHclTerraform(this._publisher),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       settings: {
-        value: cdktf.stringToHclTerraform(this._settings),
+        value: cdktn.stringToHclTerraform(this._settings),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type_handler_version: {
-        value: cdktf.stringToHclTerraform(this._typeHandlerVersion),
+        value: cdktn.stringToHclTerraform(this._typeHandlerVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       virtual_machine_scale_set_id: {
-        value: cdktf.stringToHclTerraform(this._virtualMachineScaleSetId),
+        value: cdktn.stringToHclTerraform(this._virtualMachineScaleSetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermManagedDisksConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermManagedDisksConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/managed_disks#id DataAzurermManagedDisks#id}
   *
@@ -34,8 +34,8 @@ export interface DataAzurermManagedDisksDiskEncryptionSettingsDiskEncryptionKey 
 }
 
 export function dataAzurermManagedDisksDiskEncryptionSettingsDiskEncryptionKeyToTerraform(struct?: DataAzurermManagedDisksDiskEncryptionSettingsDiskEncryptionKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -44,8 +44,8 @@ export function dataAzurermManagedDisksDiskEncryptionSettingsDiskEncryptionKeyTo
 
 
 export function dataAzurermManagedDisksDiskEncryptionSettingsDiskEncryptionKeyToHclTerraform(struct?: DataAzurermManagedDisksDiskEncryptionSettingsDiskEncryptionKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -53,7 +53,7 @@ export function dataAzurermManagedDisksDiskEncryptionSettingsDiskEncryptionKeyTo
   return attrs;
 }
 
-export class DataAzurermManagedDisksDiskEncryptionSettingsDiskEncryptionKeyOutputReference extends cdktf.ComplexObject {
+export class DataAzurermManagedDisksDiskEncryptionSettingsDiskEncryptionKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -62,7 +62,7 @@ export class DataAzurermManagedDisksDiskEncryptionSettingsDiskEncryptionKeyOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -92,14 +92,14 @@ export class DataAzurermManagedDisksDiskEncryptionSettingsDiskEncryptionKeyOutpu
   }
 }
 
-export class DataAzurermManagedDisksDiskEncryptionSettingsDiskEncryptionKeyList extends cdktf.ComplexList {
+export class DataAzurermManagedDisksDiskEncryptionSettingsDiskEncryptionKeyList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -114,8 +114,8 @@ export interface DataAzurermManagedDisksDiskEncryptionSettingsKeyEncryptionKey {
 }
 
 export function dataAzurermManagedDisksDiskEncryptionSettingsKeyEncryptionKeyToTerraform(struct?: DataAzurermManagedDisksDiskEncryptionSettingsKeyEncryptionKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -124,8 +124,8 @@ export function dataAzurermManagedDisksDiskEncryptionSettingsKeyEncryptionKeyToT
 
 
 export function dataAzurermManagedDisksDiskEncryptionSettingsKeyEncryptionKeyToHclTerraform(struct?: DataAzurermManagedDisksDiskEncryptionSettingsKeyEncryptionKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -133,7 +133,7 @@ export function dataAzurermManagedDisksDiskEncryptionSettingsKeyEncryptionKeyToH
   return attrs;
 }
 
-export class DataAzurermManagedDisksDiskEncryptionSettingsKeyEncryptionKeyOutputReference extends cdktf.ComplexObject {
+export class DataAzurermManagedDisksDiskEncryptionSettingsKeyEncryptionKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -142,7 +142,7 @@ export class DataAzurermManagedDisksDiskEncryptionSettingsKeyEncryptionKeyOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -172,14 +172,14 @@ export class DataAzurermManagedDisksDiskEncryptionSettingsKeyEncryptionKeyOutput
   }
 }
 
-export class DataAzurermManagedDisksDiskEncryptionSettingsKeyEncryptionKeyList extends cdktf.ComplexList {
+export class DataAzurermManagedDisksDiskEncryptionSettingsKeyEncryptionKeyList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -194,8 +194,8 @@ export interface DataAzurermManagedDisksDiskEncryptionSettings {
 }
 
 export function dataAzurermManagedDisksDiskEncryptionSettingsToTerraform(struct?: DataAzurermManagedDisksDiskEncryptionSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -204,8 +204,8 @@ export function dataAzurermManagedDisksDiskEncryptionSettingsToTerraform(struct?
 
 
 export function dataAzurermManagedDisksDiskEncryptionSettingsToHclTerraform(struct?: DataAzurermManagedDisksDiskEncryptionSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -213,7 +213,7 @@ export function dataAzurermManagedDisksDiskEncryptionSettingsToHclTerraform(stru
   return attrs;
 }
 
-export class DataAzurermManagedDisksDiskEncryptionSettingsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermManagedDisksDiskEncryptionSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -222,7 +222,7 @@ export class DataAzurermManagedDisksDiskEncryptionSettingsOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -259,14 +259,14 @@ export class DataAzurermManagedDisksDiskEncryptionSettingsOutputReference extend
   }
 }
 
-export class DataAzurermManagedDisksDiskEncryptionSettingsList extends cdktf.ComplexList {
+export class DataAzurermManagedDisksDiskEncryptionSettingsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -281,8 +281,8 @@ export interface DataAzurermManagedDisksDisk {
 }
 
 export function dataAzurermManagedDisksDiskToTerraform(struct?: DataAzurermManagedDisksDisk): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -291,8 +291,8 @@ export function dataAzurermManagedDisksDiskToTerraform(struct?: DataAzurermManag
 
 
 export function dataAzurermManagedDisksDiskToHclTerraform(struct?: DataAzurermManagedDisksDisk): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -300,7 +300,7 @@ export function dataAzurermManagedDisksDiskToHclTerraform(struct?: DataAzurermMa
   return attrs;
 }
 
-export class DataAzurermManagedDisksDiskOutputReference extends cdktf.ComplexObject {
+export class DataAzurermManagedDisksDiskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -309,7 +309,7 @@ export class DataAzurermManagedDisksDiskOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -415,7 +415,7 @@ export class DataAzurermManagedDisksDiskOutputReference extends cdktf.ComplexObj
   }
 
   // tags - computed: true, optional: false, required: false
-  private _tags = new cdktf.StringMap(this, "tags");
+  private _tags = new cdktn.StringMap(this, "tags");
   public get tags() {
     return this._tags;
   }
@@ -426,14 +426,14 @@ export class DataAzurermManagedDisksDiskOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class DataAzurermManagedDisksDiskList extends cdktf.ComplexList {
+export class DataAzurermManagedDisksDiskList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -451,25 +451,25 @@ export interface DataAzurermManagedDisksTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermManagedDisksTimeoutsToTerraform(struct?: DataAzurermManagedDisksTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermManagedDisksTimeoutsToTerraform(struct?: DataAzurermManagedDisksTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermManagedDisksTimeoutsToHclTerraform(struct?: DataAzurermManagedDisksTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermManagedDisksTimeoutsToHclTerraform(struct?: DataAzurermManagedDisksTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -480,19 +480,19 @@ export function dataAzurermManagedDisksTimeoutsToHclTerraform(struct?: DataAzure
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermManagedDisksTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermManagedDisksTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermManagedDisksTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermManagedDisksTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -505,13 +505,13 @@ export class DataAzurermManagedDisksTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermManagedDisksTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermManagedDisksTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -542,7 +542,7 @@ export class DataAzurermManagedDisksTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/managed_disks azurerm_managed_disks}
 */
-export class DataAzurermManagedDisks extends cdktf.TerraformDataSource {
+export class DataAzurermManagedDisks extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -553,14 +553,14 @@ export class DataAzurermManagedDisks extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermManagedDisks resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermManagedDisks resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermManagedDisks to import
   * @param importFromId The id of the existing DataAzurermManagedDisks that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/managed_disks#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermManagedDisks to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_managed_disks", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_managed_disks", importId: importFromId, provider });
       }
 
   // ===========
@@ -656,8 +656,8 @@ export class DataAzurermManagedDisks extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
+      id: cdktn.stringToTerraform(this._id),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
       timeouts: dataAzurermManagedDisksTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -665,13 +665,13 @@ export class DataAzurermManagedDisks extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

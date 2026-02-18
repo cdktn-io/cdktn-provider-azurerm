@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DevCenterProjectEnvironmentTypeConfig extends cdktf.TerraformMetaArguments {
+export interface DevCenterProjectEnvironmentTypeConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dev_center_project_environment_type#creator_role_assignment_roles DevCenterProjectEnvironmentType#creator_role_assignment_roles}
   */
@@ -60,7 +60,7 @@ export interface DevCenterProjectEnvironmentTypeConfig extends cdktf.TerraformMe
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dev_center_project_environment_type#user_role_assignment DevCenterProjectEnvironmentType#user_role_assignment}
   */
-  readonly userRoleAssignment?: DevCenterProjectEnvironmentTypeUserRoleAssignment[] | cdktf.IResolvable;
+  readonly userRoleAssignment?: DevCenterProjectEnvironmentTypeUserRoleAssignment[] | cdktn.IResolvable;
 }
 export interface DevCenterProjectEnvironmentTypeIdentity {
   /**
@@ -74,31 +74,31 @@ export interface DevCenterProjectEnvironmentTypeIdentity {
 }
 
 export function devCenterProjectEnvironmentTypeIdentityToTerraform(struct?: DevCenterProjectEnvironmentTypeIdentityOutputReference | DevCenterProjectEnvironmentTypeIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function devCenterProjectEnvironmentTypeIdentityToHclTerraform(struct?: DevCenterProjectEnvironmentTypeIdentityOutputReference | DevCenterProjectEnvironmentTypeIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -109,14 +109,14 @@ export function devCenterProjectEnvironmentTypeIdentityToHclTerraform(struct?: D
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DevCenterProjectEnvironmentTypeIdentityOutputReference extends cdktf.ComplexObject {
+export class DevCenterProjectEnvironmentTypeIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -150,7 +150,7 @@ export class DevCenterProjectEnvironmentTypeIdentityOutputReference extends cdkt
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -205,46 +205,46 @@ export interface DevCenterProjectEnvironmentTypeTimeouts {
   readonly update?: string;
 }
 
-export function devCenterProjectEnvironmentTypeTimeoutsToTerraform(struct?: DevCenterProjectEnvironmentTypeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function devCenterProjectEnvironmentTypeTimeoutsToTerraform(struct?: DevCenterProjectEnvironmentTypeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function devCenterProjectEnvironmentTypeTimeoutsToHclTerraform(struct?: DevCenterProjectEnvironmentTypeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function devCenterProjectEnvironmentTypeTimeoutsToHclTerraform(struct?: DevCenterProjectEnvironmentTypeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -255,19 +255,19 @@ export function devCenterProjectEnvironmentTypeTimeoutsToHclTerraform(struct?: D
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DevCenterProjectEnvironmentTypeTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DevCenterProjectEnvironmentTypeTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DevCenterProjectEnvironmentTypeTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DevCenterProjectEnvironmentTypeTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -292,7 +292,7 @@ export class DevCenterProjectEnvironmentTypeTimeoutsOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DevCenterProjectEnvironmentTypeTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DevCenterProjectEnvironmentTypeTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -301,7 +301,7 @@ export class DevCenterProjectEnvironmentTypeTimeoutsOutputReference extends cdkt
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -390,32 +390,32 @@ export interface DevCenterProjectEnvironmentTypeUserRoleAssignment {
   readonly userId: string;
 }
 
-export function devCenterProjectEnvironmentTypeUserRoleAssignmentToTerraform(struct?: DevCenterProjectEnvironmentTypeUserRoleAssignment | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function devCenterProjectEnvironmentTypeUserRoleAssignmentToTerraform(struct?: DevCenterProjectEnvironmentTypeUserRoleAssignment | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.roles),
-    user_id: cdktf.stringToTerraform(struct!.userId),
+    roles: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.roles),
+    user_id: cdktn.stringToTerraform(struct!.userId),
   }
 }
 
 
-export function devCenterProjectEnvironmentTypeUserRoleAssignmentToHclTerraform(struct?: DevCenterProjectEnvironmentTypeUserRoleAssignment | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function devCenterProjectEnvironmentTypeUserRoleAssignmentToHclTerraform(struct?: DevCenterProjectEnvironmentTypeUserRoleAssignment | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     roles: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.roles),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.roles),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     user_id: {
-      value: cdktf.stringToHclTerraform(struct!.userId),
+      value: cdktn.stringToHclTerraform(struct!.userId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -426,9 +426,9 @@ export function devCenterProjectEnvironmentTypeUserRoleAssignmentToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DevCenterProjectEnvironmentTypeUserRoleAssignmentOutputReference extends cdktf.ComplexObject {
+export class DevCenterProjectEnvironmentTypeUserRoleAssignmentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -436,11 +436,11 @@ export class DevCenterProjectEnvironmentTypeUserRoleAssignmentOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DevCenterProjectEnvironmentTypeUserRoleAssignment | cdktf.IResolvable | undefined {
+  public get internalValue(): DevCenterProjectEnvironmentTypeUserRoleAssignment | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -457,14 +457,14 @@ export class DevCenterProjectEnvironmentTypeUserRoleAssignmentOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DevCenterProjectEnvironmentTypeUserRoleAssignment | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DevCenterProjectEnvironmentTypeUserRoleAssignment | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._roles = undefined;
       this._userId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -479,7 +479,7 @@ export class DevCenterProjectEnvironmentTypeUserRoleAssignmentOutputReference ex
   // roles - computed: false, optional: false, required: true
   private _roles?: string[]; 
   public get roles() {
-    return cdktf.Fn.tolist(this.getListAttribute('roles'));
+    return cdktn.Fn.tolist(this.getListAttribute('roles'));
   }
   public set roles(value: string[]) {
     this._roles = value;
@@ -503,15 +503,15 @@ export class DevCenterProjectEnvironmentTypeUserRoleAssignmentOutputReference ex
   }
 }
 
-export class DevCenterProjectEnvironmentTypeUserRoleAssignmentList extends cdktf.ComplexList {
-  public internalValue? : DevCenterProjectEnvironmentTypeUserRoleAssignment[] | cdktf.IResolvable
+export class DevCenterProjectEnvironmentTypeUserRoleAssignmentList extends cdktn.ComplexList {
+  public internalValue? : DevCenterProjectEnvironmentTypeUserRoleAssignment[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -526,7 +526,7 @@ export class DevCenterProjectEnvironmentTypeUserRoleAssignmentList extends cdktf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dev_center_project_environment_type azurerm_dev_center_project_environment_type}
 */
-export class DevCenterProjectEnvironmentType extends cdktf.TerraformResource {
+export class DevCenterProjectEnvironmentType extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -537,14 +537,14 @@ export class DevCenterProjectEnvironmentType extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DevCenterProjectEnvironmentType resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DevCenterProjectEnvironmentType resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DevCenterProjectEnvironmentType to import
   * @param importFromId The id of the existing DevCenterProjectEnvironmentType that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dev_center_project_environment_type#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DevCenterProjectEnvironmentType to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_dev_center_project_environment_type", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_dev_center_project_environment_type", importId: importFromId, provider });
       }
 
   // ===========
@@ -593,7 +593,7 @@ export class DevCenterProjectEnvironmentType extends cdktf.TerraformResource {
   // creator_role_assignment_roles - computed: false, optional: true, required: false
   private _creatorRoleAssignmentRoles?: string[]; 
   public get creatorRoleAssignmentRoles() {
-    return cdktf.Fn.tolist(this.getListAttribute('creator_role_assignment_roles'));
+    return cdktn.Fn.tolist(this.getListAttribute('creator_role_assignment_roles'));
   }
   public set creatorRoleAssignmentRoles(value: string[]) {
     this._creatorRoleAssignmentRoles = value;
@@ -724,7 +724,7 @@ export class DevCenterProjectEnvironmentType extends cdktf.TerraformResource {
   public get userRoleAssignment() {
     return this._userRoleAssignment;
   }
-  public putUserRoleAssignment(value: DevCenterProjectEnvironmentTypeUserRoleAssignment[] | cdktf.IResolvable) {
+  public putUserRoleAssignment(value: DevCenterProjectEnvironmentTypeUserRoleAssignment[] | cdktn.IResolvable) {
     this._userRoleAssignment.internalValue = value;
   }
   public resetUserRoleAssignment() {
@@ -741,59 +741,59 @@ export class DevCenterProjectEnvironmentType extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      creator_role_assignment_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._creatorRoleAssignmentRoles),
-      deployment_target_id: cdktf.stringToTerraform(this._deploymentTargetId),
-      dev_center_project_id: cdktf.stringToTerraform(this._devCenterProjectId),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      creator_role_assignment_roles: cdktn.listMapper(cdktn.stringToTerraform, false)(this._creatorRoleAssignmentRoles),
+      deployment_target_id: cdktn.stringToTerraform(this._deploymentTargetId),
+      dev_center_project_id: cdktn.stringToTerraform(this._devCenterProjectId),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       identity: devCenterProjectEnvironmentTypeIdentityToTerraform(this._identity.internalValue),
       timeouts: devCenterProjectEnvironmentTypeTimeoutsToTerraform(this._timeouts.internalValue),
-      user_role_assignment: cdktf.listMapper(devCenterProjectEnvironmentTypeUserRoleAssignmentToTerraform, true)(this._userRoleAssignment.internalValue),
+      user_role_assignment: cdktn.listMapper(devCenterProjectEnvironmentTypeUserRoleAssignmentToTerraform, true)(this._userRoleAssignment.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       creator_role_assignment_roles: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._creatorRoleAssignmentRoles),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._creatorRoleAssignmentRoles),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       deployment_target_id: {
-        value: cdktf.stringToHclTerraform(this._deploymentTargetId),
+        value: cdktn.stringToHclTerraform(this._deploymentTargetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dev_center_project_id: {
-        value: cdktf.stringToHclTerraform(this._devCenterProjectId),
+        value: cdktn.stringToHclTerraform(this._devCenterProjectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
@@ -811,7 +811,7 @@ export class DevCenterProjectEnvironmentType extends cdktf.TerraformResource {
         storageClassType: "DevCenterProjectEnvironmentTypeTimeouts",
       },
       user_role_assignment: {
-        value: cdktf.listMapperHcl(devCenterProjectEnvironmentTypeUserRoleAssignmentToHclTerraform, true)(this._userRoleAssignment.internalValue),
+        value: cdktn.listMapperHcl(devCenterProjectEnvironmentTypeUserRoleAssignmentToHclTerraform, true)(this._userRoleAssignment.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DevCenterProjectEnvironmentTypeUserRoleAssignmentList",

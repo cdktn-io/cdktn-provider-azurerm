@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LogAnalyticsStorageInsightsConfig extends cdktf.TerraformMetaArguments {
+export interface LogAnalyticsStorageInsightsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/log_analytics_storage_insights#blob_container_names LogAnalyticsStorageInsights#blob_container_names}
   */
@@ -73,46 +73,46 @@ export interface LogAnalyticsStorageInsightsTimeouts {
   readonly update?: string;
 }
 
-export function logAnalyticsStorageInsightsTimeoutsToTerraform(struct?: LogAnalyticsStorageInsightsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logAnalyticsStorageInsightsTimeoutsToTerraform(struct?: LogAnalyticsStorageInsightsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function logAnalyticsStorageInsightsTimeoutsToHclTerraform(struct?: LogAnalyticsStorageInsightsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logAnalyticsStorageInsightsTimeoutsToHclTerraform(struct?: LogAnalyticsStorageInsightsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -123,19 +123,19 @@ export function logAnalyticsStorageInsightsTimeoutsToHclTerraform(struct?: LogAn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogAnalyticsStorageInsightsTimeoutsOutputReference extends cdktf.ComplexObject {
+export class LogAnalyticsStorageInsightsTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LogAnalyticsStorageInsightsTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): LogAnalyticsStorageInsightsTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -160,7 +160,7 @@ export class LogAnalyticsStorageInsightsTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogAnalyticsStorageInsightsTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogAnalyticsStorageInsightsTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -169,7 +169,7 @@ export class LogAnalyticsStorageInsightsTimeoutsOutputReference extends cdktf.Co
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -251,7 +251,7 @@ export class LogAnalyticsStorageInsightsTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/log_analytics_storage_insights azurerm_log_analytics_storage_insights}
 */
-export class LogAnalyticsStorageInsights extends cdktf.TerraformResource {
+export class LogAnalyticsStorageInsights extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -262,14 +262,14 @@ export class LogAnalyticsStorageInsights extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LogAnalyticsStorageInsights resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LogAnalyticsStorageInsights resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LogAnalyticsStorageInsights to import
   * @param importFromId The id of the existing LogAnalyticsStorageInsights that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/log_analytics_storage_insights#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LogAnalyticsStorageInsights to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_log_analytics_storage_insights", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_log_analytics_storage_insights", importId: importFromId, provider });
       }
 
   // ===========
@@ -317,7 +317,7 @@ export class LogAnalyticsStorageInsights extends cdktf.TerraformResource {
   // blob_container_names - computed: false, optional: true, required: false
   private _blobContainerNames?: string[]; 
   public get blobContainerNames() {
-    return cdktf.Fn.tolist(this.getListAttribute('blob_container_names'));
+    return cdktn.Fn.tolist(this.getListAttribute('blob_container_names'));
   }
   public set blobContainerNames(value: string[]) {
     this._blobContainerNames = value;
@@ -401,7 +401,7 @@ export class LogAnalyticsStorageInsights extends cdktf.TerraformResource {
   // table_names - computed: false, optional: true, required: false
   private _tableNames?: string[]; 
   public get tableNames() {
-    return cdktf.Fn.tolist(this.getListAttribute('table_names'));
+    return cdktn.Fn.tolist(this.getListAttribute('table_names'));
   }
   public set tableNames(value: string[]) {
     this._tableNames = value;
@@ -449,14 +449,14 @@ export class LogAnalyticsStorageInsights extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      blob_container_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._blobContainerNames),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      storage_account_id: cdktf.stringToTerraform(this._storageAccountId),
-      storage_account_key: cdktf.stringToTerraform(this._storageAccountKey),
-      table_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tableNames),
-      workspace_id: cdktf.stringToTerraform(this._workspaceId),
+      blob_container_names: cdktn.listMapper(cdktn.stringToTerraform, false)(this._blobContainerNames),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      storage_account_id: cdktn.stringToTerraform(this._storageAccountId),
+      storage_account_key: cdktn.stringToTerraform(this._storageAccountKey),
+      table_names: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tableNames),
+      workspace_id: cdktn.stringToTerraform(this._workspaceId),
       timeouts: logAnalyticsStorageInsightsTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -464,49 +464,49 @@ export class LogAnalyticsStorageInsights extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       blob_container_names: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._blobContainerNames),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._blobContainerNames),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_account_id: {
-        value: cdktf.stringToHclTerraform(this._storageAccountId),
+        value: cdktn.stringToHclTerraform(this._storageAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_account_key: {
-        value: cdktf.stringToHclTerraform(this._storageAccountKey),
+        value: cdktn.stringToHclTerraform(this._storageAccountKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       table_names: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tableNames),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tableNames),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       workspace_id: {
-        value: cdktf.stringToHclTerraform(this._workspaceId),
+        value: cdktn.stringToHclTerraform(this._workspaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

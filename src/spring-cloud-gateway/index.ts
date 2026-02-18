@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SpringCloudGatewayConfig extends cdktf.TerraformMetaArguments {
+export interface SpringCloudGatewayConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_gateway#application_performance_monitoring_ids SpringCloudGateway#application_performance_monitoring_ids}
   */
@@ -27,7 +27,7 @@ export interface SpringCloudGatewayConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_gateway#https_only SpringCloudGateway#https_only}
   */
-  readonly httpsOnly?: boolean | cdktf.IResolvable;
+  readonly httpsOnly?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_gateway#id SpringCloudGateway#id}
   *
@@ -46,7 +46,7 @@ export interface SpringCloudGatewayConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_gateway#public_network_access_enabled SpringCloudGateway#public_network_access_enabled}
   */
-  readonly publicNetworkAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly publicNetworkAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_gateway#sensitive_environment_variables SpringCloudGateway#sensitive_environment_variables}
   */
@@ -128,52 +128,52 @@ export interface SpringCloudGatewayApiMetadata {
 }
 
 export function springCloudGatewayApiMetadataToTerraform(struct?: SpringCloudGatewayApiMetadataOutputReference | SpringCloudGatewayApiMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    documentation_url: cdktf.stringToTerraform(struct!.documentationUrl),
-    server_url: cdktf.stringToTerraform(struct!.serverUrl),
-    title: cdktf.stringToTerraform(struct!.title),
-    version: cdktf.stringToTerraform(struct!.version),
+    description: cdktn.stringToTerraform(struct!.description),
+    documentation_url: cdktn.stringToTerraform(struct!.documentationUrl),
+    server_url: cdktn.stringToTerraform(struct!.serverUrl),
+    title: cdktn.stringToTerraform(struct!.title),
+    version: cdktn.stringToTerraform(struct!.version),
   }
 }
 
 
 export function springCloudGatewayApiMetadataToHclTerraform(struct?: SpringCloudGatewayApiMetadataOutputReference | SpringCloudGatewayApiMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     documentation_url: {
-      value: cdktf.stringToHclTerraform(struct!.documentationUrl),
+      value: cdktn.stringToHclTerraform(struct!.documentationUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     server_url: {
-      value: cdktf.stringToHclTerraform(struct!.serverUrl),
+      value: cdktn.stringToHclTerraform(struct!.serverUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -184,14 +184,14 @@ export function springCloudGatewayApiMetadataToHclTerraform(struct?: SpringCloud
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SpringCloudGatewayApiMetadataOutputReference extends cdktf.ComplexObject {
+export class SpringCloudGatewayApiMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -328,35 +328,35 @@ export interface SpringCloudGatewayClientAuthorization {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_gateway#verification_enabled SpringCloudGateway#verification_enabled}
   */
-  readonly verificationEnabled?: boolean | cdktf.IResolvable;
+  readonly verificationEnabled?: boolean | cdktn.IResolvable;
 }
 
 export function springCloudGatewayClientAuthorizationToTerraform(struct?: SpringCloudGatewayClientAuthorizationOutputReference | SpringCloudGatewayClientAuthorization): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    certificate_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.certificateIds),
-    verification_enabled: cdktf.booleanToTerraform(struct!.verificationEnabled),
+    certificate_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.certificateIds),
+    verification_enabled: cdktn.booleanToTerraform(struct!.verificationEnabled),
   }
 }
 
 
 export function springCloudGatewayClientAuthorizationToHclTerraform(struct?: SpringCloudGatewayClientAuthorizationOutputReference | SpringCloudGatewayClientAuthorization): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     certificate_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.certificateIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.certificateIds),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     verification_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.verificationEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.verificationEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -367,14 +367,14 @@ export function springCloudGatewayClientAuthorizationToHclTerraform(struct?: Spr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SpringCloudGatewayClientAuthorizationOutputReference extends cdktf.ComplexObject {
+export class SpringCloudGatewayClientAuthorizationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -422,11 +422,11 @@ export class SpringCloudGatewayClientAuthorizationOutputReference extends cdktf.
   }
 
   // verification_enabled - computed: false, optional: true, required: false
-  private _verificationEnabled?: boolean | cdktf.IResolvable; 
+  private _verificationEnabled?: boolean | cdktn.IResolvable; 
   public get verificationEnabled() {
     return this.getBooleanAttribute('verification_enabled');
   }
-  public set verificationEnabled(value: boolean | cdktf.IResolvable) {
+  public set verificationEnabled(value: boolean | cdktn.IResolvable) {
     this._verificationEnabled = value;
   }
   public resetVerificationEnabled() {
@@ -457,7 +457,7 @@ export interface SpringCloudGatewayCors {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_gateway#credentials_allowed SpringCloudGateway#credentials_allowed}
   */
-  readonly credentialsAllowed?: boolean | cdktf.IResolvable;
+  readonly credentialsAllowed?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_gateway#exposed_headers SpringCloudGateway#exposed_headers}
   */
@@ -469,66 +469,66 @@ export interface SpringCloudGatewayCors {
 }
 
 export function springCloudGatewayCorsToTerraform(struct?: SpringCloudGatewayCorsOutputReference | SpringCloudGatewayCors): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedHeaders),
-    allowed_methods: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedMethods),
-    allowed_origin_patterns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedOriginPatterns),
-    allowed_origins: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedOrigins),
-    credentials_allowed: cdktf.booleanToTerraform(struct!.credentialsAllowed),
-    exposed_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exposedHeaders),
-    max_age_seconds: cdktf.numberToTerraform(struct!.maxAgeSeconds),
+    allowed_headers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedHeaders),
+    allowed_methods: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedMethods),
+    allowed_origin_patterns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedOriginPatterns),
+    allowed_origins: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedOrigins),
+    credentials_allowed: cdktn.booleanToTerraform(struct!.credentialsAllowed),
+    exposed_headers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.exposedHeaders),
+    max_age_seconds: cdktn.numberToTerraform(struct!.maxAgeSeconds),
   }
 }
 
 
 export function springCloudGatewayCorsToHclTerraform(struct?: SpringCloudGatewayCorsOutputReference | SpringCloudGatewayCors): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_headers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedHeaders),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedHeaders),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     allowed_methods: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedMethods),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedMethods),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     allowed_origin_patterns: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedOriginPatterns),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedOriginPatterns),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     allowed_origins: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedOrigins),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedOrigins),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     credentials_allowed: {
-      value: cdktf.booleanToHclTerraform(struct!.credentialsAllowed),
+      value: cdktn.booleanToHclTerraform(struct!.credentialsAllowed),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     exposed_headers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.exposedHeaders),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.exposedHeaders),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     max_age_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.maxAgeSeconds),
+      value: cdktn.numberToHclTerraform(struct!.maxAgeSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -539,14 +539,14 @@ export function springCloudGatewayCorsToHclTerraform(struct?: SpringCloudGateway
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SpringCloudGatewayCorsOutputReference extends cdktf.ComplexObject {
+export class SpringCloudGatewayCorsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -610,7 +610,7 @@ export class SpringCloudGatewayCorsOutputReference extends cdktf.ComplexObject {
   // allowed_headers - computed: false, optional: true, required: false
   private _allowedHeaders?: string[]; 
   public get allowedHeaders() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_headers'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_headers'));
   }
   public set allowedHeaders(value: string[]) {
     this._allowedHeaders = value;
@@ -626,7 +626,7 @@ export class SpringCloudGatewayCorsOutputReference extends cdktf.ComplexObject {
   // allowed_methods - computed: false, optional: true, required: false
   private _allowedMethods?: string[]; 
   public get allowedMethods() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_methods'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_methods'));
   }
   public set allowedMethods(value: string[]) {
     this._allowedMethods = value;
@@ -642,7 +642,7 @@ export class SpringCloudGatewayCorsOutputReference extends cdktf.ComplexObject {
   // allowed_origin_patterns - computed: false, optional: true, required: false
   private _allowedOriginPatterns?: string[]; 
   public get allowedOriginPatterns() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_origin_patterns'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_origin_patterns'));
   }
   public set allowedOriginPatterns(value: string[]) {
     this._allowedOriginPatterns = value;
@@ -658,7 +658,7 @@ export class SpringCloudGatewayCorsOutputReference extends cdktf.ComplexObject {
   // allowed_origins - computed: false, optional: true, required: false
   private _allowedOrigins?: string[]; 
   public get allowedOrigins() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_origins'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_origins'));
   }
   public set allowedOrigins(value: string[]) {
     this._allowedOrigins = value;
@@ -672,11 +672,11 @@ export class SpringCloudGatewayCorsOutputReference extends cdktf.ComplexObject {
   }
 
   // credentials_allowed - computed: false, optional: true, required: false
-  private _credentialsAllowed?: boolean | cdktf.IResolvable; 
+  private _credentialsAllowed?: boolean | cdktn.IResolvable; 
   public get credentialsAllowed() {
     return this.getBooleanAttribute('credentials_allowed');
   }
-  public set credentialsAllowed(value: boolean | cdktf.IResolvable) {
+  public set credentialsAllowed(value: boolean | cdktn.IResolvable) {
     this._credentialsAllowed = value;
   }
   public resetCredentialsAllowed() {
@@ -690,7 +690,7 @@ export class SpringCloudGatewayCorsOutputReference extends cdktf.ComplexObject {
   // exposed_headers - computed: false, optional: true, required: false
   private _exposedHeaders?: string[]; 
   public get exposedHeaders() {
-    return cdktf.Fn.tolist(this.getListAttribute('exposed_headers'));
+    return cdktn.Fn.tolist(this.getListAttribute('exposed_headers'));
   }
   public set exposedHeaders(value: string[]) {
     this._exposedHeaders = value;
@@ -731,31 +731,31 @@ export interface SpringCloudGatewayLocalResponseCachePerInstance {
 }
 
 export function springCloudGatewayLocalResponseCachePerInstanceToTerraform(struct?: SpringCloudGatewayLocalResponseCachePerInstanceOutputReference | SpringCloudGatewayLocalResponseCachePerInstance): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    size: cdktf.stringToTerraform(struct!.size),
-    time_to_live: cdktf.stringToTerraform(struct!.timeToLive),
+    size: cdktn.stringToTerraform(struct!.size),
+    time_to_live: cdktn.stringToTerraform(struct!.timeToLive),
   }
 }
 
 
 export function springCloudGatewayLocalResponseCachePerInstanceToHclTerraform(struct?: SpringCloudGatewayLocalResponseCachePerInstanceOutputReference | SpringCloudGatewayLocalResponseCachePerInstance): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     size: {
-      value: cdktf.stringToHclTerraform(struct!.size),
+      value: cdktn.stringToHclTerraform(struct!.size),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     time_to_live: {
-      value: cdktf.stringToHclTerraform(struct!.timeToLive),
+      value: cdktn.stringToHclTerraform(struct!.timeToLive),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -766,14 +766,14 @@ export function springCloudGatewayLocalResponseCachePerInstanceToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SpringCloudGatewayLocalResponseCachePerInstanceOutputReference extends cdktf.ComplexObject {
+export class SpringCloudGatewayLocalResponseCachePerInstanceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -848,31 +848,31 @@ export interface SpringCloudGatewayLocalResponseCachePerRoute {
 }
 
 export function springCloudGatewayLocalResponseCachePerRouteToTerraform(struct?: SpringCloudGatewayLocalResponseCachePerRouteOutputReference | SpringCloudGatewayLocalResponseCachePerRoute): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    size: cdktf.stringToTerraform(struct!.size),
-    time_to_live: cdktf.stringToTerraform(struct!.timeToLive),
+    size: cdktn.stringToTerraform(struct!.size),
+    time_to_live: cdktn.stringToTerraform(struct!.timeToLive),
   }
 }
 
 
 export function springCloudGatewayLocalResponseCachePerRouteToHclTerraform(struct?: SpringCloudGatewayLocalResponseCachePerRouteOutputReference | SpringCloudGatewayLocalResponseCachePerRoute): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     size: {
-      value: cdktf.stringToHclTerraform(struct!.size),
+      value: cdktn.stringToHclTerraform(struct!.size),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     time_to_live: {
-      value: cdktf.stringToHclTerraform(struct!.timeToLive),
+      value: cdktn.stringToHclTerraform(struct!.timeToLive),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -883,14 +883,14 @@ export function springCloudGatewayLocalResponseCachePerRouteToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SpringCloudGatewayLocalResponseCachePerRouteOutputReference extends cdktf.ComplexObject {
+export class SpringCloudGatewayLocalResponseCachePerRouteOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -965,31 +965,31 @@ export interface SpringCloudGatewayQuota {
 }
 
 export function springCloudGatewayQuotaToTerraform(struct?: SpringCloudGatewayQuotaOutputReference | SpringCloudGatewayQuota): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cpu: cdktf.stringToTerraform(struct!.cpu),
-    memory: cdktf.stringToTerraform(struct!.memory),
+    cpu: cdktn.stringToTerraform(struct!.cpu),
+    memory: cdktn.stringToTerraform(struct!.memory),
   }
 }
 
 
 export function springCloudGatewayQuotaToHclTerraform(struct?: SpringCloudGatewayQuotaOutputReference | SpringCloudGatewayQuota): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cpu: {
-      value: cdktf.stringToHclTerraform(struct!.cpu),
+      value: cdktn.stringToHclTerraform(struct!.cpu),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     memory: {
-      value: cdktf.stringToHclTerraform(struct!.memory),
+      value: cdktn.stringToHclTerraform(struct!.memory),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1000,14 +1000,14 @@ export function springCloudGatewayQuotaToHclTerraform(struct?: SpringCloudGatewa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SpringCloudGatewayQuotaOutputReference extends cdktf.ComplexObject {
+export class SpringCloudGatewayQuotaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1090,45 +1090,45 @@ export interface SpringCloudGatewaySso {
 }
 
 export function springCloudGatewaySsoToTerraform(struct?: SpringCloudGatewaySsoOutputReference | SpringCloudGatewaySso): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
-    issuer_uri: cdktf.stringToTerraform(struct!.issuerUri),
-    scope: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.scope),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_secret: cdktn.stringToTerraform(struct!.clientSecret),
+    issuer_uri: cdktn.stringToTerraform(struct!.issuerUri),
+    scope: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.scope),
   }
 }
 
 
 export function springCloudGatewaySsoToHclTerraform(struct?: SpringCloudGatewaySsoOutputReference | SpringCloudGatewaySso): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      value: cdktn.stringToHclTerraform(struct!.clientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     issuer_uri: {
-      value: cdktf.stringToHclTerraform(struct!.issuerUri),
+      value: cdktn.stringToHclTerraform(struct!.issuerUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scope: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.scope),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.scope),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -1139,14 +1139,14 @@ export function springCloudGatewaySsoToHclTerraform(struct?: SpringCloudGatewayS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SpringCloudGatewaySsoOutputReference extends cdktf.ComplexObject {
+export class SpringCloudGatewaySsoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1240,7 +1240,7 @@ export class SpringCloudGatewaySsoOutputReference extends cdktf.ComplexObject {
   // scope - computed: false, optional: true, required: false
   private _scope?: string[]; 
   public get scope() {
-    return cdktf.Fn.tolist(this.getListAttribute('scope'));
+    return cdktn.Fn.tolist(this.getListAttribute('scope'));
   }
   public set scope(value: string[]) {
     this._scope = value;
@@ -1272,46 +1272,46 @@ export interface SpringCloudGatewayTimeouts {
   readonly update?: string;
 }
 
-export function springCloudGatewayTimeoutsToTerraform(struct?: SpringCloudGatewayTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function springCloudGatewayTimeoutsToTerraform(struct?: SpringCloudGatewayTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function springCloudGatewayTimeoutsToHclTerraform(struct?: SpringCloudGatewayTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function springCloudGatewayTimeoutsToHclTerraform(struct?: SpringCloudGatewayTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1322,19 +1322,19 @@ export function springCloudGatewayTimeoutsToHclTerraform(struct?: SpringCloudGat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SpringCloudGatewayTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SpringCloudGatewayTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SpringCloudGatewayTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SpringCloudGatewayTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1359,7 +1359,7 @@ export class SpringCloudGatewayTimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SpringCloudGatewayTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SpringCloudGatewayTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1368,7 +1368,7 @@ export class SpringCloudGatewayTimeoutsOutputReference extends cdktf.ComplexObje
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1450,7 +1450,7 @@ export class SpringCloudGatewayTimeoutsOutputReference extends cdktf.ComplexObje
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_gateway azurerm_spring_cloud_gateway}
 */
-export class SpringCloudGateway extends cdktf.TerraformResource {
+export class SpringCloudGateway extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1461,14 +1461,14 @@ export class SpringCloudGateway extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SpringCloudGateway resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SpringCloudGateway resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SpringCloudGateway to import
   * @param importFromId The id of the existing SpringCloudGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_gateway#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SpringCloudGateway to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_spring_cloud_gateway", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_spring_cloud_gateway", importId: importFromId, provider });
       }
 
   // ===========
@@ -1571,11 +1571,11 @@ export class SpringCloudGateway extends cdktf.TerraformResource {
   }
 
   // https_only - computed: false, optional: true, required: false
-  private _httpsOnly?: boolean | cdktf.IResolvable; 
+  private _httpsOnly?: boolean | cdktn.IResolvable; 
   public get httpsOnly() {
     return this.getBooleanAttribute('https_only');
   }
-  public set httpsOnly(value: boolean | cdktf.IResolvable) {
+  public set httpsOnly(value: boolean | cdktn.IResolvable) {
     this._httpsOnly = value;
   }
   public resetHttpsOnly() {
@@ -1632,11 +1632,11 @@ export class SpringCloudGateway extends cdktf.TerraformResource {
   }
 
   // public_network_access_enabled - computed: false, optional: true, required: false
-  private _publicNetworkAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _publicNetworkAccessEnabled?: boolean | cdktn.IResolvable; 
   public get publicNetworkAccessEnabled() {
     return this.getBooleanAttribute('public_network_access_enabled');
   }
-  public set publicNetworkAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set publicNetworkAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._publicNetworkAccessEnabled = value;
   }
   public resetPublicNetworkAccessEnabled() {
@@ -1815,16 +1815,16 @@ export class SpringCloudGateway extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_performance_monitoring_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._applicationPerformanceMonitoringIds),
-      application_performance_monitoring_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._applicationPerformanceMonitoringTypes),
-      environment_variables: cdktf.hashMapper(cdktf.stringToTerraform)(this._environmentVariables),
-      https_only: cdktf.booleanToTerraform(this._httpsOnly),
-      id: cdktf.stringToTerraform(this._id),
-      instance_count: cdktf.numberToTerraform(this._instanceCount),
-      name: cdktf.stringToTerraform(this._name),
-      public_network_access_enabled: cdktf.booleanToTerraform(this._publicNetworkAccessEnabled),
-      sensitive_environment_variables: cdktf.hashMapper(cdktf.stringToTerraform)(this._sensitiveEnvironmentVariables),
-      spring_cloud_service_id: cdktf.stringToTerraform(this._springCloudServiceId),
+      application_performance_monitoring_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._applicationPerformanceMonitoringIds),
+      application_performance_monitoring_types: cdktn.listMapper(cdktn.stringToTerraform, false)(this._applicationPerformanceMonitoringTypes),
+      environment_variables: cdktn.hashMapper(cdktn.stringToTerraform)(this._environmentVariables),
+      https_only: cdktn.booleanToTerraform(this._httpsOnly),
+      id: cdktn.stringToTerraform(this._id),
+      instance_count: cdktn.numberToTerraform(this._instanceCount),
+      name: cdktn.stringToTerraform(this._name),
+      public_network_access_enabled: cdktn.booleanToTerraform(this._publicNetworkAccessEnabled),
+      sensitive_environment_variables: cdktn.hashMapper(cdktn.stringToTerraform)(this._sensitiveEnvironmentVariables),
+      spring_cloud_service_id: cdktn.stringToTerraform(this._springCloudServiceId),
       api_metadata: springCloudGatewayApiMetadataToTerraform(this._apiMetadata.internalValue),
       client_authorization: springCloudGatewayClientAuthorizationToTerraform(this._clientAuthorization.internalValue),
       cors: springCloudGatewayCorsToTerraform(this._cors.internalValue),
@@ -1839,61 +1839,61 @@ export class SpringCloudGateway extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       application_performance_monitoring_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._applicationPerformanceMonitoringIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._applicationPerformanceMonitoringIds),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       application_performance_monitoring_types: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._applicationPerformanceMonitoringTypes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._applicationPerformanceMonitoringTypes),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       environment_variables: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._environmentVariables),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._environmentVariables),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       https_only: {
-        value: cdktf.booleanToHclTerraform(this._httpsOnly),
+        value: cdktn.booleanToHclTerraform(this._httpsOnly),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_count: {
-        value: cdktf.numberToHclTerraform(this._instanceCount),
+        value: cdktn.numberToHclTerraform(this._instanceCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_network_access_enabled: {
-        value: cdktf.booleanToHclTerraform(this._publicNetworkAccessEnabled),
+        value: cdktn.booleanToHclTerraform(this._publicNetworkAccessEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       sensitive_environment_variables: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._sensitiveEnvironmentVariables),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._sensitiveEnvironmentVariables),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       spring_cloud_service_id: {
-        value: cdktf.stringToHclTerraform(this._springCloudServiceId),
+        value: cdktn.stringToHclTerraform(this._springCloudServiceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

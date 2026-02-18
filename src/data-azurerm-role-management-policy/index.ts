@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermRoleManagementPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermRoleManagementPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/role_management_policy#id DataAzurermRoleManagementPolicy#id}
   *
@@ -42,8 +42,8 @@ export interface DataAzurermRoleManagementPolicyActivationRulesApprovalStagePrim
 }
 
 export function dataAzurermRoleManagementPolicyActivationRulesApprovalStagePrimaryApproverToTerraform(struct?: DataAzurermRoleManagementPolicyActivationRulesApprovalStagePrimaryApprover): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -52,8 +52,8 @@ export function dataAzurermRoleManagementPolicyActivationRulesApprovalStagePrima
 
 
 export function dataAzurermRoleManagementPolicyActivationRulesApprovalStagePrimaryApproverToHclTerraform(struct?: DataAzurermRoleManagementPolicyActivationRulesApprovalStagePrimaryApprover): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -61,7 +61,7 @@ export function dataAzurermRoleManagementPolicyActivationRulesApprovalStagePrima
   return attrs;
 }
 
-export class DataAzurermRoleManagementPolicyActivationRulesApprovalStagePrimaryApproverOutputReference extends cdktf.ComplexObject {
+export class DataAzurermRoleManagementPolicyActivationRulesApprovalStagePrimaryApproverOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -70,7 +70,7 @@ export class DataAzurermRoleManagementPolicyActivationRulesApprovalStagePrimaryA
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -100,14 +100,14 @@ export class DataAzurermRoleManagementPolicyActivationRulesApprovalStagePrimaryA
   }
 }
 
-export class DataAzurermRoleManagementPolicyActivationRulesApprovalStagePrimaryApproverList extends cdktf.ComplexList {
+export class DataAzurermRoleManagementPolicyActivationRulesApprovalStagePrimaryApproverList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -122,8 +122,8 @@ export interface DataAzurermRoleManagementPolicyActivationRulesApprovalStage {
 }
 
 export function dataAzurermRoleManagementPolicyActivationRulesApprovalStageToTerraform(struct?: DataAzurermRoleManagementPolicyActivationRulesApprovalStage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -132,8 +132,8 @@ export function dataAzurermRoleManagementPolicyActivationRulesApprovalStageToTer
 
 
 export function dataAzurermRoleManagementPolicyActivationRulesApprovalStageToHclTerraform(struct?: DataAzurermRoleManagementPolicyActivationRulesApprovalStage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -141,7 +141,7 @@ export function dataAzurermRoleManagementPolicyActivationRulesApprovalStageToHcl
   return attrs;
 }
 
-export class DataAzurermRoleManagementPolicyActivationRulesApprovalStageOutputReference extends cdktf.ComplexObject {
+export class DataAzurermRoleManagementPolicyActivationRulesApprovalStageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -150,7 +150,7 @@ export class DataAzurermRoleManagementPolicyActivationRulesApprovalStageOutputRe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -176,14 +176,14 @@ export class DataAzurermRoleManagementPolicyActivationRulesApprovalStageOutputRe
   }
 }
 
-export class DataAzurermRoleManagementPolicyActivationRulesApprovalStageList extends cdktf.ComplexList {
+export class DataAzurermRoleManagementPolicyActivationRulesApprovalStageList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -198,8 +198,8 @@ export interface DataAzurermRoleManagementPolicyActivationRules {
 }
 
 export function dataAzurermRoleManagementPolicyActivationRulesToTerraform(struct?: DataAzurermRoleManagementPolicyActivationRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -208,8 +208,8 @@ export function dataAzurermRoleManagementPolicyActivationRulesToTerraform(struct
 
 
 export function dataAzurermRoleManagementPolicyActivationRulesToHclTerraform(struct?: DataAzurermRoleManagementPolicyActivationRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -217,7 +217,7 @@ export function dataAzurermRoleManagementPolicyActivationRulesToHclTerraform(str
   return attrs;
 }
 
-export class DataAzurermRoleManagementPolicyActivationRulesOutputReference extends cdktf.ComplexObject {
+export class DataAzurermRoleManagementPolicyActivationRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -226,7 +226,7 @@ export class DataAzurermRoleManagementPolicyActivationRulesOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -282,14 +282,14 @@ export class DataAzurermRoleManagementPolicyActivationRulesOutputReference exten
   }
 }
 
-export class DataAzurermRoleManagementPolicyActivationRulesList extends cdktf.ComplexList {
+export class DataAzurermRoleManagementPolicyActivationRulesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -304,8 +304,8 @@ export interface DataAzurermRoleManagementPolicyActiveAssignmentRules {
 }
 
 export function dataAzurermRoleManagementPolicyActiveAssignmentRulesToTerraform(struct?: DataAzurermRoleManagementPolicyActiveAssignmentRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -314,8 +314,8 @@ export function dataAzurermRoleManagementPolicyActiveAssignmentRulesToTerraform(
 
 
 export function dataAzurermRoleManagementPolicyActiveAssignmentRulesToHclTerraform(struct?: DataAzurermRoleManagementPolicyActiveAssignmentRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -323,7 +323,7 @@ export function dataAzurermRoleManagementPolicyActiveAssignmentRulesToHclTerrafo
   return attrs;
 }
 
-export class DataAzurermRoleManagementPolicyActiveAssignmentRulesOutputReference extends cdktf.ComplexObject {
+export class DataAzurermRoleManagementPolicyActiveAssignmentRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -332,7 +332,7 @@ export class DataAzurermRoleManagementPolicyActiveAssignmentRulesOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -377,14 +377,14 @@ export class DataAzurermRoleManagementPolicyActiveAssignmentRulesOutputReference
   }
 }
 
-export class DataAzurermRoleManagementPolicyActiveAssignmentRulesList extends cdktf.ComplexList {
+export class DataAzurermRoleManagementPolicyActiveAssignmentRulesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -399,8 +399,8 @@ export interface DataAzurermRoleManagementPolicyEligibleAssignmentRules {
 }
 
 export function dataAzurermRoleManagementPolicyEligibleAssignmentRulesToTerraform(struct?: DataAzurermRoleManagementPolicyEligibleAssignmentRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -409,8 +409,8 @@ export function dataAzurermRoleManagementPolicyEligibleAssignmentRulesToTerrafor
 
 
 export function dataAzurermRoleManagementPolicyEligibleAssignmentRulesToHclTerraform(struct?: DataAzurermRoleManagementPolicyEligibleAssignmentRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -418,7 +418,7 @@ export function dataAzurermRoleManagementPolicyEligibleAssignmentRulesToHclTerra
   return attrs;
 }
 
-export class DataAzurermRoleManagementPolicyEligibleAssignmentRulesOutputReference extends cdktf.ComplexObject {
+export class DataAzurermRoleManagementPolicyEligibleAssignmentRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -427,7 +427,7 @@ export class DataAzurermRoleManagementPolicyEligibleAssignmentRulesOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -457,14 +457,14 @@ export class DataAzurermRoleManagementPolicyEligibleAssignmentRulesOutputReferen
   }
 }
 
-export class DataAzurermRoleManagementPolicyEligibleAssignmentRulesList extends cdktf.ComplexList {
+export class DataAzurermRoleManagementPolicyEligibleAssignmentRulesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -479,8 +479,8 @@ export interface DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmen
 }
 
 export function dataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotificationsToTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -489,8 +489,8 @@ export function dataAzurermRoleManagementPolicyNotificationRulesActiveAssignment
 
 
 export function dataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotificationsToHclTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -498,7 +498,7 @@ export function dataAzurermRoleManagementPolicyNotificationRulesActiveAssignment
   return attrs;
 }
 
-export class DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotificationsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotificationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -507,7 +507,7 @@ export class DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsAd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -528,7 +528,7 @@ export class DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsAd
 
   // additional_recipients - computed: true, optional: false, required: false
   public get additionalRecipients() {
-    return cdktf.Fn.tolist(this.getListAttribute('additional_recipients'));
+    return cdktn.Fn.tolist(this.getListAttribute('additional_recipients'));
   }
 
   // default_recipients - computed: true, optional: false, required: false
@@ -542,14 +542,14 @@ export class DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsAd
   }
 }
 
-export class DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotificationsList extends cdktf.ComplexList {
+export class DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsAdminNotificationsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -564,8 +564,8 @@ export interface DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmen
 }
 
 export function dataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotificationsToTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -574,8 +574,8 @@ export function dataAzurermRoleManagementPolicyNotificationRulesActiveAssignment
 
 
 export function dataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotificationsToHclTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -583,7 +583,7 @@ export function dataAzurermRoleManagementPolicyNotificationRulesActiveAssignment
   return attrs;
 }
 
-export class DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotificationsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotificationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -592,7 +592,7 @@ export class DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsAp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -613,7 +613,7 @@ export class DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsAp
 
   // additional_recipients - computed: true, optional: false, required: false
   public get additionalRecipients() {
-    return cdktf.Fn.tolist(this.getListAttribute('additional_recipients'));
+    return cdktn.Fn.tolist(this.getListAttribute('additional_recipients'));
   }
 
   // default_recipients - computed: true, optional: false, required: false
@@ -627,14 +627,14 @@ export class DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsAp
   }
 }
 
-export class DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotificationsList extends cdktf.ComplexList {
+export class DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsApproverNotificationsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -649,8 +649,8 @@ export interface DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmen
 }
 
 export function dataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotificationsToTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -659,8 +659,8 @@ export function dataAzurermRoleManagementPolicyNotificationRulesActiveAssignment
 
 
 export function dataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotificationsToHclTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -668,7 +668,7 @@ export function dataAzurermRoleManagementPolicyNotificationRulesActiveAssignment
   return attrs;
 }
 
-export class DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotificationsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotificationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -677,7 +677,7 @@ export class DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsAs
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -698,7 +698,7 @@ export class DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsAs
 
   // additional_recipients - computed: true, optional: false, required: false
   public get additionalRecipients() {
-    return cdktf.Fn.tolist(this.getListAttribute('additional_recipients'));
+    return cdktn.Fn.tolist(this.getListAttribute('additional_recipients'));
   }
 
   // default_recipients - computed: true, optional: false, required: false
@@ -712,14 +712,14 @@ export class DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsAs
   }
 }
 
-export class DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotificationsList extends cdktf.ComplexList {
+export class DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsAssigneeNotificationsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -734,8 +734,8 @@ export interface DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmen
 }
 
 export function dataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsToTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesActiveAssignments): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -744,8 +744,8 @@ export function dataAzurermRoleManagementPolicyNotificationRulesActiveAssignment
 
 
 export function dataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsToHclTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesActiveAssignments): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -753,7 +753,7 @@ export function dataAzurermRoleManagementPolicyNotificationRulesActiveAssignment
   return attrs;
 }
 
-export class DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -762,7 +762,7 @@ export class DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -800,14 +800,14 @@ export class DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsOu
   }
 }
 
-export class DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsList extends cdktf.ComplexList {
+export class DataAzurermRoleManagementPolicyNotificationRulesActiveAssignmentsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -822,8 +822,8 @@ export interface DataAzurermRoleManagementPolicyNotificationRulesEligibleActivat
 }
 
 export function dataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsAdminNotificationsToTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsAdminNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -832,8 +832,8 @@ export function dataAzurermRoleManagementPolicyNotificationRulesEligibleActivati
 
 
 export function dataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsAdminNotificationsToHclTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsAdminNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -841,7 +841,7 @@ export function dataAzurermRoleManagementPolicyNotificationRulesEligibleActivati
   return attrs;
 }
 
-export class DataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsAdminNotificationsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsAdminNotificationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -850,7 +850,7 @@ export class DataAzurermRoleManagementPolicyNotificationRulesEligibleActivations
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -871,7 +871,7 @@ export class DataAzurermRoleManagementPolicyNotificationRulesEligibleActivations
 
   // additional_recipients - computed: true, optional: false, required: false
   public get additionalRecipients() {
-    return cdktf.Fn.tolist(this.getListAttribute('additional_recipients'));
+    return cdktn.Fn.tolist(this.getListAttribute('additional_recipients'));
   }
 
   // default_recipients - computed: true, optional: false, required: false
@@ -885,14 +885,14 @@ export class DataAzurermRoleManagementPolicyNotificationRulesEligibleActivations
   }
 }
 
-export class DataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsAdminNotificationsList extends cdktf.ComplexList {
+export class DataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsAdminNotificationsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -907,8 +907,8 @@ export interface DataAzurermRoleManagementPolicyNotificationRulesEligibleActivat
 }
 
 export function dataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsApproverNotificationsToTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsApproverNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -917,8 +917,8 @@ export function dataAzurermRoleManagementPolicyNotificationRulesEligibleActivati
 
 
 export function dataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsApproverNotificationsToHclTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsApproverNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -926,7 +926,7 @@ export function dataAzurermRoleManagementPolicyNotificationRulesEligibleActivati
   return attrs;
 }
 
-export class DataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsApproverNotificationsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsApproverNotificationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -935,7 +935,7 @@ export class DataAzurermRoleManagementPolicyNotificationRulesEligibleActivations
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -956,7 +956,7 @@ export class DataAzurermRoleManagementPolicyNotificationRulesEligibleActivations
 
   // additional_recipients - computed: true, optional: false, required: false
   public get additionalRecipients() {
-    return cdktf.Fn.tolist(this.getListAttribute('additional_recipients'));
+    return cdktn.Fn.tolist(this.getListAttribute('additional_recipients'));
   }
 
   // default_recipients - computed: true, optional: false, required: false
@@ -970,14 +970,14 @@ export class DataAzurermRoleManagementPolicyNotificationRulesEligibleActivations
   }
 }
 
-export class DataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsApproverNotificationsList extends cdktf.ComplexList {
+export class DataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsApproverNotificationsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -992,8 +992,8 @@ export interface DataAzurermRoleManagementPolicyNotificationRulesEligibleActivat
 }
 
 export function dataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotificationsToTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1002,8 +1002,8 @@ export function dataAzurermRoleManagementPolicyNotificationRulesEligibleActivati
 
 
 export function dataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotificationsToHclTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1011,7 +1011,7 @@ export function dataAzurermRoleManagementPolicyNotificationRulesEligibleActivati
   return attrs;
 }
 
-export class DataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotificationsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotificationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1020,7 +1020,7 @@ export class DataAzurermRoleManagementPolicyNotificationRulesEligibleActivations
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1041,7 +1041,7 @@ export class DataAzurermRoleManagementPolicyNotificationRulesEligibleActivations
 
   // additional_recipients - computed: true, optional: false, required: false
   public get additionalRecipients() {
-    return cdktf.Fn.tolist(this.getListAttribute('additional_recipients'));
+    return cdktn.Fn.tolist(this.getListAttribute('additional_recipients'));
   }
 
   // default_recipients - computed: true, optional: false, required: false
@@ -1055,14 +1055,14 @@ export class DataAzurermRoleManagementPolicyNotificationRulesEligibleActivations
   }
 }
 
-export class DataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotificationsList extends cdktf.ComplexList {
+export class DataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsAssigneeNotificationsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1077,8 +1077,8 @@ export interface DataAzurermRoleManagementPolicyNotificationRulesEligibleActivat
 }
 
 export function dataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsToTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesEligibleActivations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1087,8 +1087,8 @@ export function dataAzurermRoleManagementPolicyNotificationRulesEligibleActivati
 
 
 export function dataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsToHclTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesEligibleActivations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1096,7 +1096,7 @@ export function dataAzurermRoleManagementPolicyNotificationRulesEligibleActivati
   return attrs;
 }
 
-export class DataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1105,7 +1105,7 @@ export class DataAzurermRoleManagementPolicyNotificationRulesEligibleActivations
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1143,14 +1143,14 @@ export class DataAzurermRoleManagementPolicyNotificationRulesEligibleActivations
   }
 }
 
-export class DataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsList extends cdktf.ComplexList {
+export class DataAzurermRoleManagementPolicyNotificationRulesEligibleActivationsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1165,8 +1165,8 @@ export interface DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignm
 }
 
 export function dataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotificationsToTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1175,8 +1175,8 @@ export function dataAzurermRoleManagementPolicyNotificationRulesEligibleAssignme
 
 
 export function dataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotificationsToHclTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1184,7 +1184,7 @@ export function dataAzurermRoleManagementPolicyNotificationRulesEligibleAssignme
   return attrs;
 }
 
-export class DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotificationsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotificationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1193,7 +1193,7 @@ export class DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignments
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1214,7 +1214,7 @@ export class DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignments
 
   // additional_recipients - computed: true, optional: false, required: false
   public get additionalRecipients() {
-    return cdktf.Fn.tolist(this.getListAttribute('additional_recipients'));
+    return cdktn.Fn.tolist(this.getListAttribute('additional_recipients'));
   }
 
   // default_recipients - computed: true, optional: false, required: false
@@ -1228,14 +1228,14 @@ export class DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignments
   }
 }
 
-export class DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotificationsList extends cdktf.ComplexList {
+export class DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsAdminNotificationsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1250,8 +1250,8 @@ export interface DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignm
 }
 
 export function dataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotificationsToTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1260,8 +1260,8 @@ export function dataAzurermRoleManagementPolicyNotificationRulesEligibleAssignme
 
 
 export function dataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotificationsToHclTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1269,7 +1269,7 @@ export function dataAzurermRoleManagementPolicyNotificationRulesEligibleAssignme
   return attrs;
 }
 
-export class DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotificationsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotificationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1278,7 +1278,7 @@ export class DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignments
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1299,7 +1299,7 @@ export class DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignments
 
   // additional_recipients - computed: true, optional: false, required: false
   public get additionalRecipients() {
-    return cdktf.Fn.tolist(this.getListAttribute('additional_recipients'));
+    return cdktn.Fn.tolist(this.getListAttribute('additional_recipients'));
   }
 
   // default_recipients - computed: true, optional: false, required: false
@@ -1313,14 +1313,14 @@ export class DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignments
   }
 }
 
-export class DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotificationsList extends cdktf.ComplexList {
+export class DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsApproverNotificationsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1335,8 +1335,8 @@ export interface DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignm
 }
 
 export function dataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotificationsToTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1345,8 +1345,8 @@ export function dataAzurermRoleManagementPolicyNotificationRulesEligibleAssignme
 
 
 export function dataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotificationsToHclTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotifications): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1354,7 +1354,7 @@ export function dataAzurermRoleManagementPolicyNotificationRulesEligibleAssignme
   return attrs;
 }
 
-export class DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotificationsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotificationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1363,7 +1363,7 @@ export class DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignments
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1384,7 +1384,7 @@ export class DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignments
 
   // additional_recipients - computed: true, optional: false, required: false
   public get additionalRecipients() {
-    return cdktf.Fn.tolist(this.getListAttribute('additional_recipients'));
+    return cdktn.Fn.tolist(this.getListAttribute('additional_recipients'));
   }
 
   // default_recipients - computed: true, optional: false, required: false
@@ -1398,14 +1398,14 @@ export class DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignments
   }
 }
 
-export class DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotificationsList extends cdktf.ComplexList {
+export class DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsAssigneeNotificationsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1420,8 +1420,8 @@ export interface DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignm
 }
 
 export function dataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsToTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignments): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1430,8 +1430,8 @@ export function dataAzurermRoleManagementPolicyNotificationRulesEligibleAssignme
 
 
 export function dataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsToHclTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignments): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1439,7 +1439,7 @@ export function dataAzurermRoleManagementPolicyNotificationRulesEligibleAssignme
   return attrs;
 }
 
-export class DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1448,7 +1448,7 @@ export class DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignments
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1486,14 +1486,14 @@ export class DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignments
   }
 }
 
-export class DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsList extends cdktf.ComplexList {
+export class DataAzurermRoleManagementPolicyNotificationRulesEligibleAssignmentsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1508,8 +1508,8 @@ export interface DataAzurermRoleManagementPolicyNotificationRules {
 }
 
 export function dataAzurermRoleManagementPolicyNotificationRulesToTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1518,8 +1518,8 @@ export function dataAzurermRoleManagementPolicyNotificationRulesToTerraform(stru
 
 
 export function dataAzurermRoleManagementPolicyNotificationRulesToHclTerraform(struct?: DataAzurermRoleManagementPolicyNotificationRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1527,7 +1527,7 @@ export function dataAzurermRoleManagementPolicyNotificationRulesToHclTerraform(s
   return attrs;
 }
 
-export class DataAzurermRoleManagementPolicyNotificationRulesOutputReference extends cdktf.ComplexObject {
+export class DataAzurermRoleManagementPolicyNotificationRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1536,7 +1536,7 @@ export class DataAzurermRoleManagementPolicyNotificationRulesOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1574,14 +1574,14 @@ export class DataAzurermRoleManagementPolicyNotificationRulesOutputReference ext
   }
 }
 
-export class DataAzurermRoleManagementPolicyNotificationRulesList extends cdktf.ComplexList {
+export class DataAzurermRoleManagementPolicyNotificationRulesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1599,25 +1599,25 @@ export interface DataAzurermRoleManagementPolicyTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermRoleManagementPolicyTimeoutsToTerraform(struct?: DataAzurermRoleManagementPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermRoleManagementPolicyTimeoutsToTerraform(struct?: DataAzurermRoleManagementPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermRoleManagementPolicyTimeoutsToHclTerraform(struct?: DataAzurermRoleManagementPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermRoleManagementPolicyTimeoutsToHclTerraform(struct?: DataAzurermRoleManagementPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1628,19 +1628,19 @@ export function dataAzurermRoleManagementPolicyTimeoutsToHclTerraform(struct?: D
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermRoleManagementPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermRoleManagementPolicyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermRoleManagementPolicyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermRoleManagementPolicyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1653,13 +1653,13 @@ export class DataAzurermRoleManagementPolicyTimeoutsOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermRoleManagementPolicyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermRoleManagementPolicyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1690,7 +1690,7 @@ export class DataAzurermRoleManagementPolicyTimeoutsOutputReference extends cdkt
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/role_management_policy azurerm_role_management_policy}
 */
-export class DataAzurermRoleManagementPolicy extends cdktf.TerraformDataSource {
+export class DataAzurermRoleManagementPolicy extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -1701,14 +1701,14 @@ export class DataAzurermRoleManagementPolicy extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermRoleManagementPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermRoleManagementPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermRoleManagementPolicy to import
   * @param importFromId The id of the existing DataAzurermRoleManagementPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/role_management_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermRoleManagementPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_role_management_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_role_management_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -1846,9 +1846,9 @@ export class DataAzurermRoleManagementPolicy extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      role_definition_id: cdktf.stringToTerraform(this._roleDefinitionId),
-      scope: cdktf.stringToTerraform(this._scope),
+      id: cdktn.stringToTerraform(this._id),
+      role_definition_id: cdktn.stringToTerraform(this._roleDefinitionId),
+      scope: cdktn.stringToTerraform(this._scope),
       timeouts: dataAzurermRoleManagementPolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1856,19 +1856,19 @@ export class DataAzurermRoleManagementPolicy extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_definition_id: {
-        value: cdktf.stringToHclTerraform(this._roleDefinitionId),
+        value: cdktn.stringToHclTerraform(this._roleDefinitionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scope: {
-        value: cdktf.stringToHclTerraform(this._scope),
+        value: cdktn.stringToHclTerraform(this._scope),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

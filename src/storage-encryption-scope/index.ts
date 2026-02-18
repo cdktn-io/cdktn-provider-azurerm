@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface StorageEncryptionScopeConfig extends cdktf.TerraformMetaArguments {
+export interface StorageEncryptionScopeConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_encryption_scope#id StorageEncryptionScope#id}
   *
@@ -22,7 +22,7 @@ export interface StorageEncryptionScopeConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_encryption_scope#infrastructure_encryption_required StorageEncryptionScope#infrastructure_encryption_required}
   */
-  readonly infrastructureEncryptionRequired?: boolean | cdktf.IResolvable;
+  readonly infrastructureEncryptionRequired?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_encryption_scope#key_vault_key_id StorageEncryptionScope#key_vault_key_id}
   */
@@ -65,46 +65,46 @@ export interface StorageEncryptionScopeTimeouts {
   readonly update?: string;
 }
 
-export function storageEncryptionScopeTimeoutsToTerraform(struct?: StorageEncryptionScopeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storageEncryptionScopeTimeoutsToTerraform(struct?: StorageEncryptionScopeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function storageEncryptionScopeTimeoutsToHclTerraform(struct?: StorageEncryptionScopeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storageEncryptionScopeTimeoutsToHclTerraform(struct?: StorageEncryptionScopeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -115,19 +115,19 @@ export function storageEncryptionScopeTimeoutsToHclTerraform(struct?: StorageEnc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StorageEncryptionScopeTimeoutsOutputReference extends cdktf.ComplexObject {
+export class StorageEncryptionScopeTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): StorageEncryptionScopeTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): StorageEncryptionScopeTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -152,7 +152,7 @@ export class StorageEncryptionScopeTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StorageEncryptionScopeTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: StorageEncryptionScopeTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -161,7 +161,7 @@ export class StorageEncryptionScopeTimeoutsOutputReference extends cdktf.Complex
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -243,7 +243,7 @@ export class StorageEncryptionScopeTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_encryption_scope azurerm_storage_encryption_scope}
 */
-export class StorageEncryptionScope extends cdktf.TerraformResource {
+export class StorageEncryptionScope extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -254,14 +254,14 @@ export class StorageEncryptionScope extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a StorageEncryptionScope resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a StorageEncryptionScope resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StorageEncryptionScope to import
   * @param importFromId The id of the existing StorageEncryptionScope that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_encryption_scope#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StorageEncryptionScope to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_storage_encryption_scope", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_storage_encryption_scope", importId: importFromId, provider });
       }
 
   // ===========
@@ -321,11 +321,11 @@ export class StorageEncryptionScope extends cdktf.TerraformResource {
   }
 
   // infrastructure_encryption_required - computed: false, optional: true, required: false
-  private _infrastructureEncryptionRequired?: boolean | cdktf.IResolvable; 
+  private _infrastructureEncryptionRequired?: boolean | cdktn.IResolvable; 
   public get infrastructureEncryptionRequired() {
     return this.getBooleanAttribute('infrastructure_encryption_required');
   }
-  public set infrastructureEncryptionRequired(value: boolean | cdktf.IResolvable) {
+  public set infrastructureEncryptionRequired(value: boolean | cdktn.IResolvable) {
     this._infrastructureEncryptionRequired = value;
   }
   public resetInfrastructureEncryptionRequired() {
@@ -413,12 +413,12 @@ export class StorageEncryptionScope extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      infrastructure_encryption_required: cdktf.booleanToTerraform(this._infrastructureEncryptionRequired),
-      key_vault_key_id: cdktf.stringToTerraform(this._keyVaultKeyId),
-      name: cdktf.stringToTerraform(this._name),
-      source: cdktf.stringToTerraform(this._source),
-      storage_account_id: cdktf.stringToTerraform(this._storageAccountId),
+      id: cdktn.stringToTerraform(this._id),
+      infrastructure_encryption_required: cdktn.booleanToTerraform(this._infrastructureEncryptionRequired),
+      key_vault_key_id: cdktn.stringToTerraform(this._keyVaultKeyId),
+      name: cdktn.stringToTerraform(this._name),
+      source: cdktn.stringToTerraform(this._source),
+      storage_account_id: cdktn.stringToTerraform(this._storageAccountId),
       timeouts: storageEncryptionScopeTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -426,37 +426,37 @@ export class StorageEncryptionScope extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       infrastructure_encryption_required: {
-        value: cdktf.booleanToHclTerraform(this._infrastructureEncryptionRequired),
+        value: cdktn.booleanToHclTerraform(this._infrastructureEncryptionRequired),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       key_vault_key_id: {
-        value: cdktf.stringToHclTerraform(this._keyVaultKeyId),
+        value: cdktn.stringToHclTerraform(this._keyVaultKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source: {
-        value: cdktf.stringToHclTerraform(this._source),
+        value: cdktn.stringToHclTerraform(this._source),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_account_id: {
-        value: cdktf.stringToHclTerraform(this._storageAccountId),
+        value: cdktn.stringToHclTerraform(this._storageAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

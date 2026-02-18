@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BackupProtectedFileShareConfig extends cdktf.TerraformMetaArguments {
+export interface BackupProtectedFileShareConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/backup_protected_file_share#backup_policy_id BackupProtectedFileShare#backup_policy_id}
   */
@@ -65,46 +65,46 @@ export interface BackupProtectedFileShareTimeouts {
   readonly update?: string;
 }
 
-export function backupProtectedFileShareTimeoutsToTerraform(struct?: BackupProtectedFileShareTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function backupProtectedFileShareTimeoutsToTerraform(struct?: BackupProtectedFileShareTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function backupProtectedFileShareTimeoutsToHclTerraform(struct?: BackupProtectedFileShareTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function backupProtectedFileShareTimeoutsToHclTerraform(struct?: BackupProtectedFileShareTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -115,19 +115,19 @@ export function backupProtectedFileShareTimeoutsToHclTerraform(struct?: BackupPr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BackupProtectedFileShareTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BackupProtectedFileShareTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BackupProtectedFileShareTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BackupProtectedFileShareTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -152,7 +152,7 @@ export class BackupProtectedFileShareTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BackupProtectedFileShareTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BackupProtectedFileShareTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -161,7 +161,7 @@ export class BackupProtectedFileShareTimeoutsOutputReference extends cdktf.Compl
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -243,7 +243,7 @@ export class BackupProtectedFileShareTimeoutsOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/backup_protected_file_share azurerm_backup_protected_file_share}
 */
-export class BackupProtectedFileShare extends cdktf.TerraformResource {
+export class BackupProtectedFileShare extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -254,14 +254,14 @@ export class BackupProtectedFileShare extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BackupProtectedFileShare resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BackupProtectedFileShare resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BackupProtectedFileShare to import
   * @param importFromId The id of the existing BackupProtectedFileShare that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/backup_protected_file_share#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BackupProtectedFileShare to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_backup_protected_file_share", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_backup_protected_file_share", importId: importFromId, provider });
       }
 
   // ===========
@@ -407,12 +407,12 @@ export class BackupProtectedFileShare extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      backup_policy_id: cdktf.stringToTerraform(this._backupPolicyId),
-      id: cdktf.stringToTerraform(this._id),
-      recovery_vault_name: cdktf.stringToTerraform(this._recoveryVaultName),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      source_file_share_name: cdktf.stringToTerraform(this._sourceFileShareName),
-      source_storage_account_id: cdktf.stringToTerraform(this._sourceStorageAccountId),
+      backup_policy_id: cdktn.stringToTerraform(this._backupPolicyId),
+      id: cdktn.stringToTerraform(this._id),
+      recovery_vault_name: cdktn.stringToTerraform(this._recoveryVaultName),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      source_file_share_name: cdktn.stringToTerraform(this._sourceFileShareName),
+      source_storage_account_id: cdktn.stringToTerraform(this._sourceStorageAccountId),
       timeouts: backupProtectedFileShareTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -420,37 +420,37 @@ export class BackupProtectedFileShare extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       backup_policy_id: {
-        value: cdktf.stringToHclTerraform(this._backupPolicyId),
+        value: cdktn.stringToHclTerraform(this._backupPolicyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       recovery_vault_name: {
-        value: cdktf.stringToHclTerraform(this._recoveryVaultName),
+        value: cdktn.stringToHclTerraform(this._recoveryVaultName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_file_share_name: {
-        value: cdktf.stringToHclTerraform(this._sourceFileShareName),
+        value: cdktn.stringToHclTerraform(this._sourceFileShareName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_storage_account_id: {
-        value: cdktf.stringToHclTerraform(this._sourceStorageAccountId),
+        value: cdktn.stringToHclTerraform(this._sourceStorageAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

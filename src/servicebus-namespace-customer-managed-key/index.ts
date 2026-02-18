@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ServicebusNamespaceCustomerManagedKeyAConfig extends cdktf.TerraformMetaArguments {
+export interface ServicebusNamespaceCustomerManagedKeyAConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/servicebus_namespace_customer_managed_key#id ServicebusNamespaceCustomerManagedKeyA#id}
   *
@@ -22,7 +22,7 @@ export interface ServicebusNamespaceCustomerManagedKeyAConfig extends cdktf.Terr
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/servicebus_namespace_customer_managed_key#infrastructure_encryption_enabled ServicebusNamespaceCustomerManagedKeyA#infrastructure_encryption_enabled}
   */
-  readonly infrastructureEncryptionEnabled?: boolean | cdktf.IResolvable;
+  readonly infrastructureEncryptionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/servicebus_namespace_customer_managed_key#key_vault_key_id ServicebusNamespaceCustomerManagedKeyA#key_vault_key_id}
   */
@@ -57,46 +57,46 @@ export interface ServicebusNamespaceCustomerManagedKeyTimeouts {
   readonly update?: string;
 }
 
-export function servicebusNamespaceCustomerManagedKeyTimeoutsToTerraform(struct?: ServicebusNamespaceCustomerManagedKeyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function servicebusNamespaceCustomerManagedKeyTimeoutsToTerraform(struct?: ServicebusNamespaceCustomerManagedKeyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function servicebusNamespaceCustomerManagedKeyTimeoutsToHclTerraform(struct?: ServicebusNamespaceCustomerManagedKeyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function servicebusNamespaceCustomerManagedKeyTimeoutsToHclTerraform(struct?: ServicebusNamespaceCustomerManagedKeyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -107,19 +107,19 @@ export function servicebusNamespaceCustomerManagedKeyTimeoutsToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ServicebusNamespaceCustomerManagedKeyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ServicebusNamespaceCustomerManagedKeyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ServicebusNamespaceCustomerManagedKeyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ServicebusNamespaceCustomerManagedKeyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -144,7 +144,7 @@ export class ServicebusNamespaceCustomerManagedKeyTimeoutsOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServicebusNamespaceCustomerManagedKeyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ServicebusNamespaceCustomerManagedKeyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -153,7 +153,7 @@ export class ServicebusNamespaceCustomerManagedKeyTimeoutsOutputReference extend
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -235,7 +235,7 @@ export class ServicebusNamespaceCustomerManagedKeyTimeoutsOutputReference extend
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/servicebus_namespace_customer_managed_key azurerm_servicebus_namespace_customer_managed_key}
 */
-export class ServicebusNamespaceCustomerManagedKeyA extends cdktf.TerraformResource {
+export class ServicebusNamespaceCustomerManagedKeyA extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -246,14 +246,14 @@ export class ServicebusNamespaceCustomerManagedKeyA extends cdktf.TerraformResou
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ServicebusNamespaceCustomerManagedKeyA resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ServicebusNamespaceCustomerManagedKeyA resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServicebusNamespaceCustomerManagedKeyA to import
   * @param importFromId The id of the existing ServicebusNamespaceCustomerManagedKeyA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/servicebus_namespace_customer_managed_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServicebusNamespaceCustomerManagedKeyA to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_servicebus_namespace_customer_managed_key", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_servicebus_namespace_customer_managed_key", importId: importFromId, provider });
       }
 
   // ===========
@@ -311,11 +311,11 @@ export class ServicebusNamespaceCustomerManagedKeyA extends cdktf.TerraformResou
   }
 
   // infrastructure_encryption_enabled - computed: false, optional: true, required: false
-  private _infrastructureEncryptionEnabled?: boolean | cdktf.IResolvable; 
+  private _infrastructureEncryptionEnabled?: boolean | cdktn.IResolvable; 
   public get infrastructureEncryptionEnabled() {
     return this.getBooleanAttribute('infrastructure_encryption_enabled');
   }
-  public set infrastructureEncryptionEnabled(value: boolean | cdktf.IResolvable) {
+  public set infrastructureEncryptionEnabled(value: boolean | cdktn.IResolvable) {
     this._infrastructureEncryptionEnabled = value;
   }
   public resetInfrastructureEncryptionEnabled() {
@@ -374,10 +374,10 @@ export class ServicebusNamespaceCustomerManagedKeyA extends cdktf.TerraformResou
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      infrastructure_encryption_enabled: cdktf.booleanToTerraform(this._infrastructureEncryptionEnabled),
-      key_vault_key_id: cdktf.stringToTerraform(this._keyVaultKeyId),
-      namespace_id: cdktf.stringToTerraform(this._namespaceId),
+      id: cdktn.stringToTerraform(this._id),
+      infrastructure_encryption_enabled: cdktn.booleanToTerraform(this._infrastructureEncryptionEnabled),
+      key_vault_key_id: cdktn.stringToTerraform(this._keyVaultKeyId),
+      namespace_id: cdktn.stringToTerraform(this._namespaceId),
       timeouts: servicebusNamespaceCustomerManagedKeyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -385,25 +385,25 @@ export class ServicebusNamespaceCustomerManagedKeyA extends cdktf.TerraformResou
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       infrastructure_encryption_enabled: {
-        value: cdktf.booleanToHclTerraform(this._infrastructureEncryptionEnabled),
+        value: cdktn.booleanToHclTerraform(this._infrastructureEncryptionEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       key_vault_key_id: {
-        value: cdktf.stringToHclTerraform(this._keyVaultKeyId),
+        value: cdktn.stringToHclTerraform(this._keyVaultKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace_id: {
-        value: cdktf.stringToHclTerraform(this._namespaceId),
+        value: cdktn.stringToHclTerraform(this._namespaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

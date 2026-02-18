@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataFactoryCredentialServicePrincipalConfig extends cdktf.TerraformMetaArguments {
+export interface DataFactoryCredentialServicePrincipalConfig extends cdktn.TerraformMetaArguments {
   /**
   * (Optional) List of string annotations.
   *
@@ -84,38 +84,38 @@ export interface DataFactoryCredentialServicePrincipalServicePrincipalKey {
 }
 
 export function dataFactoryCredentialServicePrincipalServicePrincipalKeyToTerraform(struct?: DataFactoryCredentialServicePrincipalServicePrincipalKeyOutputReference | DataFactoryCredentialServicePrincipalServicePrincipalKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    linked_service_name: cdktf.stringToTerraform(struct!.linkedServiceName),
-    secret_name: cdktf.stringToTerraform(struct!.secretName),
-    secret_version: cdktf.stringToTerraform(struct!.secretVersion),
+    linked_service_name: cdktn.stringToTerraform(struct!.linkedServiceName),
+    secret_name: cdktn.stringToTerraform(struct!.secretName),
+    secret_version: cdktn.stringToTerraform(struct!.secretVersion),
   }
 }
 
 
 export function dataFactoryCredentialServicePrincipalServicePrincipalKeyToHclTerraform(struct?: DataFactoryCredentialServicePrincipalServicePrincipalKeyOutputReference | DataFactoryCredentialServicePrincipalServicePrincipalKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     linked_service_name: {
-      value: cdktf.stringToHclTerraform(struct!.linkedServiceName),
+      value: cdktn.stringToHclTerraform(struct!.linkedServiceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_name: {
-      value: cdktf.stringToHclTerraform(struct!.secretName),
+      value: cdktn.stringToHclTerraform(struct!.secretName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_version: {
-      value: cdktf.stringToHclTerraform(struct!.secretVersion),
+      value: cdktn.stringToHclTerraform(struct!.secretVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -126,14 +126,14 @@ export function dataFactoryCredentialServicePrincipalServicePrincipalKeyToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryCredentialServicePrincipalServicePrincipalKeyOutputReference extends cdktf.ComplexObject {
+export class DataFactoryCredentialServicePrincipalServicePrincipalKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -231,46 +231,46 @@ export interface DataFactoryCredentialServicePrincipalTimeouts {
   readonly update?: string;
 }
 
-export function dataFactoryCredentialServicePrincipalTimeoutsToTerraform(struct?: DataFactoryCredentialServicePrincipalTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryCredentialServicePrincipalTimeoutsToTerraform(struct?: DataFactoryCredentialServicePrincipalTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dataFactoryCredentialServicePrincipalTimeoutsToHclTerraform(struct?: DataFactoryCredentialServicePrincipalTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryCredentialServicePrincipalTimeoutsToHclTerraform(struct?: DataFactoryCredentialServicePrincipalTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -281,19 +281,19 @@ export function dataFactoryCredentialServicePrincipalTimeoutsToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryCredentialServicePrincipalTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataFactoryCredentialServicePrincipalTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataFactoryCredentialServicePrincipalTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataFactoryCredentialServicePrincipalTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -318,7 +318,7 @@ export class DataFactoryCredentialServicePrincipalTimeoutsOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataFactoryCredentialServicePrincipalTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataFactoryCredentialServicePrincipalTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -327,7 +327,7 @@ export class DataFactoryCredentialServicePrincipalTimeoutsOutputReference extend
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -409,7 +409,7 @@ export class DataFactoryCredentialServicePrincipalTimeoutsOutputReference extend
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_credential_service_principal azurerm_data_factory_credential_service_principal}
 */
-export class DataFactoryCredentialServicePrincipal extends cdktf.TerraformResource {
+export class DataFactoryCredentialServicePrincipal extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -420,14 +420,14 @@ export class DataFactoryCredentialServicePrincipal extends cdktf.TerraformResour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataFactoryCredentialServicePrincipal resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataFactoryCredentialServicePrincipal resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataFactoryCredentialServicePrincipal to import
   * @param importFromId The id of the existing DataFactoryCredentialServicePrincipal that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_credential_service_principal#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataFactoryCredentialServicePrincipal to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_factory_credential_service_principal", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_factory_credential_service_principal", importId: importFromId, provider });
       }
 
   // ===========
@@ -610,13 +610,13 @@ export class DataFactoryCredentialServicePrincipal extends cdktf.TerraformResour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      annotations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._annotations),
-      data_factory_id: cdktf.stringToTerraform(this._dataFactoryId),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      service_principal_id: cdktf.stringToTerraform(this._servicePrincipalId),
-      tenant_id: cdktf.stringToTerraform(this._tenantId),
+      annotations: cdktn.listMapper(cdktn.stringToTerraform, false)(this._annotations),
+      data_factory_id: cdktn.stringToTerraform(this._dataFactoryId),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      service_principal_id: cdktn.stringToTerraform(this._servicePrincipalId),
+      tenant_id: cdktn.stringToTerraform(this._tenantId),
       service_principal_key: dataFactoryCredentialServicePrincipalServicePrincipalKeyToTerraform(this._servicePrincipalKey.internalValue),
       timeouts: dataFactoryCredentialServicePrincipalTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -625,43 +625,43 @@ export class DataFactoryCredentialServicePrincipal extends cdktf.TerraformResour
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       annotations: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._annotations),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._annotations),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       data_factory_id: {
-        value: cdktf.stringToHclTerraform(this._dataFactoryId),
+        value: cdktn.stringToHclTerraform(this._dataFactoryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_principal_id: {
-        value: cdktf.stringToHclTerraform(this._servicePrincipalId),
+        value: cdktn.stringToHclTerraform(this._servicePrincipalId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tenant_id: {
-        value: cdktf.stringToHclTerraform(this._tenantId),
+        value: cdktn.stringToHclTerraform(this._tenantId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

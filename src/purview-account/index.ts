@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PurviewAccountConfig extends cdktf.TerraformMetaArguments {
+export interface PurviewAccountConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/purview_account#id PurviewAccount#id}
   *
@@ -26,7 +26,7 @@ export interface PurviewAccountConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/purview_account#managed_event_hub_enabled PurviewAccount#managed_event_hub_enabled}
   */
-  readonly managedEventHubEnabled?: boolean | cdktf.IResolvable;
+  readonly managedEventHubEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/purview_account#managed_resource_group_name PurviewAccount#managed_resource_group_name}
   */
@@ -38,7 +38,7 @@ export interface PurviewAccountConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/purview_account#public_network_enabled PurviewAccount#public_network_enabled}
   */
-  readonly publicNetworkEnabled?: boolean | cdktf.IResolvable;
+  readonly publicNetworkEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/purview_account#resource_group_name PurviewAccount#resource_group_name}
   */
@@ -64,8 +64,8 @@ export interface PurviewAccountManagedResources {
 }
 
 export function purviewAccountManagedResourcesToTerraform(struct?: PurviewAccountManagedResources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -74,8 +74,8 @@ export function purviewAccountManagedResourcesToTerraform(struct?: PurviewAccoun
 
 
 export function purviewAccountManagedResourcesToHclTerraform(struct?: PurviewAccountManagedResources): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -83,7 +83,7 @@ export function purviewAccountManagedResourcesToHclTerraform(struct?: PurviewAcc
   return attrs;
 }
 
-export class PurviewAccountManagedResourcesOutputReference extends cdktf.ComplexObject {
+export class PurviewAccountManagedResourcesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -92,7 +92,7 @@ export class PurviewAccountManagedResourcesOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -127,14 +127,14 @@ export class PurviewAccountManagedResourcesOutputReference extends cdktf.Complex
   }
 }
 
-export class PurviewAccountManagedResourcesList extends cdktf.ComplexList {
+export class PurviewAccountManagedResourcesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -157,31 +157,31 @@ export interface PurviewAccountIdentity {
 }
 
 export function purviewAccountIdentityToTerraform(struct?: PurviewAccountIdentityOutputReference | PurviewAccountIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function purviewAccountIdentityToHclTerraform(struct?: PurviewAccountIdentityOutputReference | PurviewAccountIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -192,14 +192,14 @@ export function purviewAccountIdentityToHclTerraform(struct?: PurviewAccountIden
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PurviewAccountIdentityOutputReference extends cdktf.ComplexObject {
+export class PurviewAccountIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -233,7 +233,7 @@ export class PurviewAccountIdentityOutputReference extends cdktf.ComplexObject {
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -288,46 +288,46 @@ export interface PurviewAccountTimeouts {
   readonly update?: string;
 }
 
-export function purviewAccountTimeoutsToTerraform(struct?: PurviewAccountTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function purviewAccountTimeoutsToTerraform(struct?: PurviewAccountTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function purviewAccountTimeoutsToHclTerraform(struct?: PurviewAccountTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function purviewAccountTimeoutsToHclTerraform(struct?: PurviewAccountTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -338,19 +338,19 @@ export function purviewAccountTimeoutsToHclTerraform(struct?: PurviewAccountTime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PurviewAccountTimeoutsOutputReference extends cdktf.ComplexObject {
+export class PurviewAccountTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PurviewAccountTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): PurviewAccountTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -375,7 +375,7 @@ export class PurviewAccountTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PurviewAccountTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PurviewAccountTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -384,7 +384,7 @@ export class PurviewAccountTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -466,7 +466,7 @@ export class PurviewAccountTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/purview_account azurerm_purview_account}
 */
-export class PurviewAccount extends cdktf.TerraformResource {
+export class PurviewAccount extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -477,14 +477,14 @@ export class PurviewAccount extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PurviewAccount resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PurviewAccount resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PurviewAccount to import
   * @param importFromId The id of the existing PurviewAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/purview_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PurviewAccount to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_purview_account", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_purview_account", importId: importFromId, provider });
       }
 
   // ===========
@@ -585,11 +585,11 @@ export class PurviewAccount extends cdktf.TerraformResource {
   }
 
   // managed_event_hub_enabled - computed: false, optional: true, required: false
-  private _managedEventHubEnabled?: boolean | cdktf.IResolvable; 
+  private _managedEventHubEnabled?: boolean | cdktn.IResolvable; 
   public get managedEventHubEnabled() {
     return this.getBooleanAttribute('managed_event_hub_enabled');
   }
-  public set managedEventHubEnabled(value: boolean | cdktf.IResolvable) {
+  public set managedEventHubEnabled(value: boolean | cdktn.IResolvable) {
     this._managedEventHubEnabled = value;
   }
   public resetManagedEventHubEnabled() {
@@ -636,11 +636,11 @@ export class PurviewAccount extends cdktf.TerraformResource {
   }
 
   // public_network_enabled - computed: false, optional: true, required: false
-  private _publicNetworkEnabled?: boolean | cdktf.IResolvable; 
+  private _publicNetworkEnabled?: boolean | cdktn.IResolvable; 
   public get publicNetworkEnabled() {
     return this.getBooleanAttribute('public_network_enabled');
   }
-  public set publicNetworkEnabled(value: boolean | cdktf.IResolvable) {
+  public set publicNetworkEnabled(value: boolean | cdktn.IResolvable) {
     this._publicNetworkEnabled = value;
   }
   public resetPublicNetworkEnabled() {
@@ -720,14 +720,14 @@ export class PurviewAccount extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      managed_event_hub_enabled: cdktf.booleanToTerraform(this._managedEventHubEnabled),
-      managed_resource_group_name: cdktf.stringToTerraform(this._managedResourceGroupName),
-      name: cdktf.stringToTerraform(this._name),
-      public_network_enabled: cdktf.booleanToTerraform(this._publicNetworkEnabled),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      managed_event_hub_enabled: cdktn.booleanToTerraform(this._managedEventHubEnabled),
+      managed_resource_group_name: cdktn.stringToTerraform(this._managedResourceGroupName),
+      name: cdktn.stringToTerraform(this._name),
+      public_network_enabled: cdktn.booleanToTerraform(this._publicNetworkEnabled),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       identity: purviewAccountIdentityToTerraform(this._identity.internalValue),
       timeouts: purviewAccountTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -736,49 +736,49 @@ export class PurviewAccount extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       managed_event_hub_enabled: {
-        value: cdktf.booleanToHclTerraform(this._managedEventHubEnabled),
+        value: cdktn.booleanToHclTerraform(this._managedEventHubEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       managed_resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._managedResourceGroupName),
+        value: cdktn.stringToHclTerraform(this._managedResourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_network_enabled: {
-        value: cdktf.booleanToHclTerraform(this._publicNetworkEnabled),
+        value: cdktn.booleanToHclTerraform(this._publicNetworkEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

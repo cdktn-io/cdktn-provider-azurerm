@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface FrontdoorFirewallPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface FrontdoorFirewallPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/frontdoor_firewall_policy#custom_block_response_body FrontdoorFirewallPolicy#custom_block_response_body}
   */
@@ -23,7 +23,7 @@ export interface FrontdoorFirewallPolicyConfig extends cdktf.TerraformMetaArgume
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/frontdoor_firewall_policy#enabled FrontdoorFirewallPolicy#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/frontdoor_firewall_policy#id FrontdoorFirewallPolicy#id}
   *
@@ -56,13 +56,13 @@ export interface FrontdoorFirewallPolicyConfig extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/frontdoor_firewall_policy#custom_rule FrontdoorFirewallPolicy#custom_rule}
   */
-  readonly customRule?: FrontdoorFirewallPolicyCustomRule[] | cdktf.IResolvable;
+  readonly customRule?: FrontdoorFirewallPolicyCustomRule[] | cdktn.IResolvable;
   /**
   * managed_rule block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/frontdoor_firewall_policy#managed_rule FrontdoorFirewallPolicy#managed_rule}
   */
-  readonly managedRule?: FrontdoorFirewallPolicyManagedRule[] | cdktf.IResolvable;
+  readonly managedRule?: FrontdoorFirewallPolicyManagedRule[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -82,7 +82,7 @@ export interface FrontdoorFirewallPolicyCustomRuleMatchCondition {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/frontdoor_firewall_policy#negation_condition FrontdoorFirewallPolicy#negation_condition}
   */
-  readonly negationCondition?: boolean | cdktf.IResolvable;
+  readonly negationCondition?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/frontdoor_firewall_policy#operator FrontdoorFirewallPolicy#operator}
   */
@@ -97,60 +97,60 @@ export interface FrontdoorFirewallPolicyCustomRuleMatchCondition {
   readonly transforms?: string[];
 }
 
-export function frontdoorFirewallPolicyCustomRuleMatchConditionToTerraform(struct?: FrontdoorFirewallPolicyCustomRuleMatchCondition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function frontdoorFirewallPolicyCustomRuleMatchConditionToTerraform(struct?: FrontdoorFirewallPolicyCustomRuleMatchCondition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.matchValues),
-    match_variable: cdktf.stringToTerraform(struct!.matchVariable),
-    negation_condition: cdktf.booleanToTerraform(struct!.negationCondition),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    selector: cdktf.stringToTerraform(struct!.selector),
-    transforms: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.transforms),
+    match_values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchValues),
+    match_variable: cdktn.stringToTerraform(struct!.matchVariable),
+    negation_condition: cdktn.booleanToTerraform(struct!.negationCondition),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    selector: cdktn.stringToTerraform(struct!.selector),
+    transforms: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.transforms),
   }
 }
 
 
-export function frontdoorFirewallPolicyCustomRuleMatchConditionToHclTerraform(struct?: FrontdoorFirewallPolicyCustomRuleMatchCondition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function frontdoorFirewallPolicyCustomRuleMatchConditionToHclTerraform(struct?: FrontdoorFirewallPolicyCustomRuleMatchCondition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.matchValues),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.matchValues),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     match_variable: {
-      value: cdktf.stringToHclTerraform(struct!.matchVariable),
+      value: cdktn.stringToHclTerraform(struct!.matchVariable),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     negation_condition: {
-      value: cdktf.booleanToHclTerraform(struct!.negationCondition),
+      value: cdktn.booleanToHclTerraform(struct!.negationCondition),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     selector: {
-      value: cdktf.stringToHclTerraform(struct!.selector),
+      value: cdktn.stringToHclTerraform(struct!.selector),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     transforms: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.transforms),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.transforms),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -161,9 +161,9 @@ export function frontdoorFirewallPolicyCustomRuleMatchConditionToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FrontdoorFirewallPolicyCustomRuleMatchConditionOutputReference extends cdktf.ComplexObject {
+export class FrontdoorFirewallPolicyCustomRuleMatchConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -171,11 +171,11 @@ export class FrontdoorFirewallPolicyCustomRuleMatchConditionOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FrontdoorFirewallPolicyCustomRuleMatchCondition | cdktf.IResolvable | undefined {
+  public get internalValue(): FrontdoorFirewallPolicyCustomRuleMatchCondition | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -208,7 +208,7 @@ export class FrontdoorFirewallPolicyCustomRuleMatchConditionOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FrontdoorFirewallPolicyCustomRuleMatchCondition | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FrontdoorFirewallPolicyCustomRuleMatchCondition | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -219,7 +219,7 @@ export class FrontdoorFirewallPolicyCustomRuleMatchConditionOutputReference exte
       this._selector = undefined;
       this._transforms = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -262,11 +262,11 @@ export class FrontdoorFirewallPolicyCustomRuleMatchConditionOutputReference exte
   }
 
   // negation_condition - computed: false, optional: true, required: false
-  private _negationCondition?: boolean | cdktf.IResolvable; 
+  private _negationCondition?: boolean | cdktn.IResolvable; 
   public get negationCondition() {
     return this.getBooleanAttribute('negation_condition');
   }
-  public set negationCondition(value: boolean | cdktf.IResolvable) {
+  public set negationCondition(value: boolean | cdktn.IResolvable) {
     this._negationCondition = value;
   }
   public resetNegationCondition() {
@@ -323,15 +323,15 @@ export class FrontdoorFirewallPolicyCustomRuleMatchConditionOutputReference exte
   }
 }
 
-export class FrontdoorFirewallPolicyCustomRuleMatchConditionList extends cdktf.ComplexList {
-  public internalValue? : FrontdoorFirewallPolicyCustomRuleMatchCondition[] | cdktf.IResolvable
+export class FrontdoorFirewallPolicyCustomRuleMatchConditionList extends cdktn.ComplexList {
+  public internalValue? : FrontdoorFirewallPolicyCustomRuleMatchCondition[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -350,7 +350,7 @@ export interface FrontdoorFirewallPolicyCustomRule {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/frontdoor_firewall_policy#enabled FrontdoorFirewallPolicy#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/frontdoor_firewall_policy#name FrontdoorFirewallPolicy#name}
   */
@@ -376,77 +376,77 @@ export interface FrontdoorFirewallPolicyCustomRule {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/frontdoor_firewall_policy#match_condition FrontdoorFirewallPolicy#match_condition}
   */
-  readonly matchCondition?: FrontdoorFirewallPolicyCustomRuleMatchCondition[] | cdktf.IResolvable;
+  readonly matchCondition?: FrontdoorFirewallPolicyCustomRuleMatchCondition[] | cdktn.IResolvable;
 }
 
-export function frontdoorFirewallPolicyCustomRuleToTerraform(struct?: FrontdoorFirewallPolicyCustomRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function frontdoorFirewallPolicyCustomRuleToTerraform(struct?: FrontdoorFirewallPolicyCustomRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action: cdktf.stringToTerraform(struct!.action),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    name: cdktf.stringToTerraform(struct!.name),
-    priority: cdktf.numberToTerraform(struct!.priority),
-    rate_limit_duration_in_minutes: cdktf.numberToTerraform(struct!.rateLimitDurationInMinutes),
-    rate_limit_threshold: cdktf.numberToTerraform(struct!.rateLimitThreshold),
-    type: cdktf.stringToTerraform(struct!.type),
-    match_condition: cdktf.listMapper(frontdoorFirewallPolicyCustomRuleMatchConditionToTerraform, true)(struct!.matchCondition),
+    action: cdktn.stringToTerraform(struct!.action),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    name: cdktn.stringToTerraform(struct!.name),
+    priority: cdktn.numberToTerraform(struct!.priority),
+    rate_limit_duration_in_minutes: cdktn.numberToTerraform(struct!.rateLimitDurationInMinutes),
+    rate_limit_threshold: cdktn.numberToTerraform(struct!.rateLimitThreshold),
+    type: cdktn.stringToTerraform(struct!.type),
+    match_condition: cdktn.listMapper(frontdoorFirewallPolicyCustomRuleMatchConditionToTerraform, true)(struct!.matchCondition),
   }
 }
 
 
-export function frontdoorFirewallPolicyCustomRuleToHclTerraform(struct?: FrontdoorFirewallPolicyCustomRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function frontdoorFirewallPolicyCustomRuleToHclTerraform(struct?: FrontdoorFirewallPolicyCustomRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action: {
-      value: cdktf.stringToHclTerraform(struct!.action),
+      value: cdktn.stringToHclTerraform(struct!.action),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     priority: {
-      value: cdktf.numberToHclTerraform(struct!.priority),
+      value: cdktn.numberToHclTerraform(struct!.priority),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     rate_limit_duration_in_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.rateLimitDurationInMinutes),
+      value: cdktn.numberToHclTerraform(struct!.rateLimitDurationInMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     rate_limit_threshold: {
-      value: cdktf.numberToHclTerraform(struct!.rateLimitThreshold),
+      value: cdktn.numberToHclTerraform(struct!.rateLimitThreshold),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match_condition: {
-      value: cdktf.listMapperHcl(frontdoorFirewallPolicyCustomRuleMatchConditionToHclTerraform, true)(struct!.matchCondition),
+      value: cdktn.listMapperHcl(frontdoorFirewallPolicyCustomRuleMatchConditionToHclTerraform, true)(struct!.matchCondition),
       isBlock: true,
       type: "list",
       storageClassType: "FrontdoorFirewallPolicyCustomRuleMatchConditionList",
@@ -457,9 +457,9 @@ export function frontdoorFirewallPolicyCustomRuleToHclTerraform(struct?: Frontdo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FrontdoorFirewallPolicyCustomRuleOutputReference extends cdktf.ComplexObject {
+export class FrontdoorFirewallPolicyCustomRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -467,11 +467,11 @@ export class FrontdoorFirewallPolicyCustomRuleOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FrontdoorFirewallPolicyCustomRule | cdktf.IResolvable | undefined {
+  public get internalValue(): FrontdoorFirewallPolicyCustomRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -512,7 +512,7 @@ export class FrontdoorFirewallPolicyCustomRuleOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FrontdoorFirewallPolicyCustomRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FrontdoorFirewallPolicyCustomRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -525,7 +525,7 @@ export class FrontdoorFirewallPolicyCustomRuleOutputReference extends cdktf.Comp
       this._type = undefined;
       this._matchCondition.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -557,11 +557,11 @@ export class FrontdoorFirewallPolicyCustomRuleOutputReference extends cdktf.Comp
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -651,7 +651,7 @@ export class FrontdoorFirewallPolicyCustomRuleOutputReference extends cdktf.Comp
   public get matchCondition() {
     return this._matchCondition;
   }
-  public putMatchCondition(value: FrontdoorFirewallPolicyCustomRuleMatchCondition[] | cdktf.IResolvable) {
+  public putMatchCondition(value: FrontdoorFirewallPolicyCustomRuleMatchCondition[] | cdktn.IResolvable) {
     this._matchCondition.internalValue = value;
   }
   public resetMatchCondition() {
@@ -663,15 +663,15 @@ export class FrontdoorFirewallPolicyCustomRuleOutputReference extends cdktf.Comp
   }
 }
 
-export class FrontdoorFirewallPolicyCustomRuleList extends cdktf.ComplexList {
-  public internalValue? : FrontdoorFirewallPolicyCustomRule[] | cdktf.IResolvable
+export class FrontdoorFirewallPolicyCustomRuleList extends cdktn.ComplexList {
+  public internalValue? : FrontdoorFirewallPolicyCustomRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -697,39 +697,39 @@ export interface FrontdoorFirewallPolicyManagedRuleExclusion {
   readonly selector: string;
 }
 
-export function frontdoorFirewallPolicyManagedRuleExclusionToTerraform(struct?: FrontdoorFirewallPolicyManagedRuleExclusion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function frontdoorFirewallPolicyManagedRuleExclusionToTerraform(struct?: FrontdoorFirewallPolicyManagedRuleExclusion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_variable: cdktf.stringToTerraform(struct!.matchVariable),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    selector: cdktf.stringToTerraform(struct!.selector),
+    match_variable: cdktn.stringToTerraform(struct!.matchVariable),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    selector: cdktn.stringToTerraform(struct!.selector),
   }
 }
 
 
-export function frontdoorFirewallPolicyManagedRuleExclusionToHclTerraform(struct?: FrontdoorFirewallPolicyManagedRuleExclusion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function frontdoorFirewallPolicyManagedRuleExclusionToHclTerraform(struct?: FrontdoorFirewallPolicyManagedRuleExclusion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_variable: {
-      value: cdktf.stringToHclTerraform(struct!.matchVariable),
+      value: cdktn.stringToHclTerraform(struct!.matchVariable),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     selector: {
-      value: cdktf.stringToHclTerraform(struct!.selector),
+      value: cdktn.stringToHclTerraform(struct!.selector),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -740,9 +740,9 @@ export function frontdoorFirewallPolicyManagedRuleExclusionToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FrontdoorFirewallPolicyManagedRuleExclusionOutputReference extends cdktf.ComplexObject {
+export class FrontdoorFirewallPolicyManagedRuleExclusionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -750,11 +750,11 @@ export class FrontdoorFirewallPolicyManagedRuleExclusionOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FrontdoorFirewallPolicyManagedRuleExclusion | cdktf.IResolvable | undefined {
+  public get internalValue(): FrontdoorFirewallPolicyManagedRuleExclusion | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -775,7 +775,7 @@ export class FrontdoorFirewallPolicyManagedRuleExclusionOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FrontdoorFirewallPolicyManagedRuleExclusion | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FrontdoorFirewallPolicyManagedRuleExclusion | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -783,7 +783,7 @@ export class FrontdoorFirewallPolicyManagedRuleExclusionOutputReference extends 
       this._operator = undefined;
       this._selector = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -836,15 +836,15 @@ export class FrontdoorFirewallPolicyManagedRuleExclusionOutputReference extends 
   }
 }
 
-export class FrontdoorFirewallPolicyManagedRuleExclusionList extends cdktf.ComplexList {
-  public internalValue? : FrontdoorFirewallPolicyManagedRuleExclusion[] | cdktf.IResolvable
+export class FrontdoorFirewallPolicyManagedRuleExclusionList extends cdktn.ComplexList {
+  public internalValue? : FrontdoorFirewallPolicyManagedRuleExclusion[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -870,39 +870,39 @@ export interface FrontdoorFirewallPolicyManagedRuleOverrideExclusion {
   readonly selector: string;
 }
 
-export function frontdoorFirewallPolicyManagedRuleOverrideExclusionToTerraform(struct?: FrontdoorFirewallPolicyManagedRuleOverrideExclusion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function frontdoorFirewallPolicyManagedRuleOverrideExclusionToTerraform(struct?: FrontdoorFirewallPolicyManagedRuleOverrideExclusion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_variable: cdktf.stringToTerraform(struct!.matchVariable),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    selector: cdktf.stringToTerraform(struct!.selector),
+    match_variable: cdktn.stringToTerraform(struct!.matchVariable),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    selector: cdktn.stringToTerraform(struct!.selector),
   }
 }
 
 
-export function frontdoorFirewallPolicyManagedRuleOverrideExclusionToHclTerraform(struct?: FrontdoorFirewallPolicyManagedRuleOverrideExclusion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function frontdoorFirewallPolicyManagedRuleOverrideExclusionToHclTerraform(struct?: FrontdoorFirewallPolicyManagedRuleOverrideExclusion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_variable: {
-      value: cdktf.stringToHclTerraform(struct!.matchVariable),
+      value: cdktn.stringToHclTerraform(struct!.matchVariable),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     selector: {
-      value: cdktf.stringToHclTerraform(struct!.selector),
+      value: cdktn.stringToHclTerraform(struct!.selector),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -913,9 +913,9 @@ export function frontdoorFirewallPolicyManagedRuleOverrideExclusionToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FrontdoorFirewallPolicyManagedRuleOverrideExclusionOutputReference extends cdktf.ComplexObject {
+export class FrontdoorFirewallPolicyManagedRuleOverrideExclusionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -923,11 +923,11 @@ export class FrontdoorFirewallPolicyManagedRuleOverrideExclusionOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FrontdoorFirewallPolicyManagedRuleOverrideExclusion | cdktf.IResolvable | undefined {
+  public get internalValue(): FrontdoorFirewallPolicyManagedRuleOverrideExclusion | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -948,7 +948,7 @@ export class FrontdoorFirewallPolicyManagedRuleOverrideExclusionOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FrontdoorFirewallPolicyManagedRuleOverrideExclusion | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FrontdoorFirewallPolicyManagedRuleOverrideExclusion | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -956,7 +956,7 @@ export class FrontdoorFirewallPolicyManagedRuleOverrideExclusionOutputReference 
       this._operator = undefined;
       this._selector = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1009,15 +1009,15 @@ export class FrontdoorFirewallPolicyManagedRuleOverrideExclusionOutputReference 
   }
 }
 
-export class FrontdoorFirewallPolicyManagedRuleOverrideExclusionList extends cdktf.ComplexList {
-  public internalValue? : FrontdoorFirewallPolicyManagedRuleOverrideExclusion[] | cdktf.IResolvable
+export class FrontdoorFirewallPolicyManagedRuleOverrideExclusionList extends cdktn.ComplexList {
+  public internalValue? : FrontdoorFirewallPolicyManagedRuleOverrideExclusion[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1043,39 +1043,39 @@ export interface FrontdoorFirewallPolicyManagedRuleOverrideRuleExclusion {
   readonly selector: string;
 }
 
-export function frontdoorFirewallPolicyManagedRuleOverrideRuleExclusionToTerraform(struct?: FrontdoorFirewallPolicyManagedRuleOverrideRuleExclusion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function frontdoorFirewallPolicyManagedRuleOverrideRuleExclusionToTerraform(struct?: FrontdoorFirewallPolicyManagedRuleOverrideRuleExclusion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_variable: cdktf.stringToTerraform(struct!.matchVariable),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    selector: cdktf.stringToTerraform(struct!.selector),
+    match_variable: cdktn.stringToTerraform(struct!.matchVariable),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    selector: cdktn.stringToTerraform(struct!.selector),
   }
 }
 
 
-export function frontdoorFirewallPolicyManagedRuleOverrideRuleExclusionToHclTerraform(struct?: FrontdoorFirewallPolicyManagedRuleOverrideRuleExclusion | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function frontdoorFirewallPolicyManagedRuleOverrideRuleExclusionToHclTerraform(struct?: FrontdoorFirewallPolicyManagedRuleOverrideRuleExclusion | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_variable: {
-      value: cdktf.stringToHclTerraform(struct!.matchVariable),
+      value: cdktn.stringToHclTerraform(struct!.matchVariable),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     selector: {
-      value: cdktf.stringToHclTerraform(struct!.selector),
+      value: cdktn.stringToHclTerraform(struct!.selector),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1086,9 +1086,9 @@ export function frontdoorFirewallPolicyManagedRuleOverrideRuleExclusionToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FrontdoorFirewallPolicyManagedRuleOverrideRuleExclusionOutputReference extends cdktf.ComplexObject {
+export class FrontdoorFirewallPolicyManagedRuleOverrideRuleExclusionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1096,11 +1096,11 @@ export class FrontdoorFirewallPolicyManagedRuleOverrideRuleExclusionOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FrontdoorFirewallPolicyManagedRuleOverrideRuleExclusion | cdktf.IResolvable | undefined {
+  public get internalValue(): FrontdoorFirewallPolicyManagedRuleOverrideRuleExclusion | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1121,7 +1121,7 @@ export class FrontdoorFirewallPolicyManagedRuleOverrideRuleExclusionOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FrontdoorFirewallPolicyManagedRuleOverrideRuleExclusion | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FrontdoorFirewallPolicyManagedRuleOverrideRuleExclusion | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1129,7 +1129,7 @@ export class FrontdoorFirewallPolicyManagedRuleOverrideRuleExclusionOutputRefere
       this._operator = undefined;
       this._selector = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1182,15 +1182,15 @@ export class FrontdoorFirewallPolicyManagedRuleOverrideRuleExclusionOutputRefere
   }
 }
 
-export class FrontdoorFirewallPolicyManagedRuleOverrideRuleExclusionList extends cdktf.ComplexList {
-  public internalValue? : FrontdoorFirewallPolicyManagedRuleOverrideRuleExclusion[] | cdktf.IResolvable
+export class FrontdoorFirewallPolicyManagedRuleOverrideRuleExclusionList extends cdktn.ComplexList {
+  public internalValue? : FrontdoorFirewallPolicyManagedRuleOverrideRuleExclusion[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1209,7 +1209,7 @@ export interface FrontdoorFirewallPolicyManagedRuleOverrideRule {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/frontdoor_firewall_policy#enabled FrontdoorFirewallPolicy#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/frontdoor_firewall_policy#rule_id FrontdoorFirewallPolicy#rule_id}
   */
@@ -1219,49 +1219,49 @@ export interface FrontdoorFirewallPolicyManagedRuleOverrideRule {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/frontdoor_firewall_policy#exclusion FrontdoorFirewallPolicy#exclusion}
   */
-  readonly exclusion?: FrontdoorFirewallPolicyManagedRuleOverrideRuleExclusion[] | cdktf.IResolvable;
+  readonly exclusion?: FrontdoorFirewallPolicyManagedRuleOverrideRuleExclusion[] | cdktn.IResolvable;
 }
 
-export function frontdoorFirewallPolicyManagedRuleOverrideRuleToTerraform(struct?: FrontdoorFirewallPolicyManagedRuleOverrideRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function frontdoorFirewallPolicyManagedRuleOverrideRuleToTerraform(struct?: FrontdoorFirewallPolicyManagedRuleOverrideRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action: cdktf.stringToTerraform(struct!.action),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    rule_id: cdktf.stringToTerraform(struct!.ruleId),
-    exclusion: cdktf.listMapper(frontdoorFirewallPolicyManagedRuleOverrideRuleExclusionToTerraform, true)(struct!.exclusion),
+    action: cdktn.stringToTerraform(struct!.action),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    rule_id: cdktn.stringToTerraform(struct!.ruleId),
+    exclusion: cdktn.listMapper(frontdoorFirewallPolicyManagedRuleOverrideRuleExclusionToTerraform, true)(struct!.exclusion),
   }
 }
 
 
-export function frontdoorFirewallPolicyManagedRuleOverrideRuleToHclTerraform(struct?: FrontdoorFirewallPolicyManagedRuleOverrideRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function frontdoorFirewallPolicyManagedRuleOverrideRuleToHclTerraform(struct?: FrontdoorFirewallPolicyManagedRuleOverrideRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action: {
-      value: cdktf.stringToHclTerraform(struct!.action),
+      value: cdktn.stringToHclTerraform(struct!.action),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     rule_id: {
-      value: cdktf.stringToHclTerraform(struct!.ruleId),
+      value: cdktn.stringToHclTerraform(struct!.ruleId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     exclusion: {
-      value: cdktf.listMapperHcl(frontdoorFirewallPolicyManagedRuleOverrideRuleExclusionToHclTerraform, true)(struct!.exclusion),
+      value: cdktn.listMapperHcl(frontdoorFirewallPolicyManagedRuleOverrideRuleExclusionToHclTerraform, true)(struct!.exclusion),
       isBlock: true,
       type: "list",
       storageClassType: "FrontdoorFirewallPolicyManagedRuleOverrideRuleExclusionList",
@@ -1272,9 +1272,9 @@ export function frontdoorFirewallPolicyManagedRuleOverrideRuleToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FrontdoorFirewallPolicyManagedRuleOverrideRuleOutputReference extends cdktf.ComplexObject {
+export class FrontdoorFirewallPolicyManagedRuleOverrideRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1282,11 +1282,11 @@ export class FrontdoorFirewallPolicyManagedRuleOverrideRuleOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FrontdoorFirewallPolicyManagedRuleOverrideRule | cdktf.IResolvable | undefined {
+  public get internalValue(): FrontdoorFirewallPolicyManagedRuleOverrideRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1311,7 +1311,7 @@ export class FrontdoorFirewallPolicyManagedRuleOverrideRuleOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FrontdoorFirewallPolicyManagedRuleOverrideRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FrontdoorFirewallPolicyManagedRuleOverrideRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1320,7 +1320,7 @@ export class FrontdoorFirewallPolicyManagedRuleOverrideRuleOutputReference exten
       this._ruleId = undefined;
       this._exclusion.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1348,11 +1348,11 @@ export class FrontdoorFirewallPolicyManagedRuleOverrideRuleOutputReference exten
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -1381,7 +1381,7 @@ export class FrontdoorFirewallPolicyManagedRuleOverrideRuleOutputReference exten
   public get exclusion() {
     return this._exclusion;
   }
-  public putExclusion(value: FrontdoorFirewallPolicyManagedRuleOverrideRuleExclusion[] | cdktf.IResolvable) {
+  public putExclusion(value: FrontdoorFirewallPolicyManagedRuleOverrideRuleExclusion[] | cdktn.IResolvable) {
     this._exclusion.internalValue = value;
   }
   public resetExclusion() {
@@ -1393,15 +1393,15 @@ export class FrontdoorFirewallPolicyManagedRuleOverrideRuleOutputReference exten
   }
 }
 
-export class FrontdoorFirewallPolicyManagedRuleOverrideRuleList extends cdktf.ComplexList {
-  public internalValue? : FrontdoorFirewallPolicyManagedRuleOverrideRule[] | cdktf.IResolvable
+export class FrontdoorFirewallPolicyManagedRuleOverrideRuleList extends cdktn.ComplexList {
+  public internalValue? : FrontdoorFirewallPolicyManagedRuleOverrideRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1422,48 +1422,48 @@ export interface FrontdoorFirewallPolicyManagedRuleOverride {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/frontdoor_firewall_policy#exclusion FrontdoorFirewallPolicy#exclusion}
   */
-  readonly exclusion?: FrontdoorFirewallPolicyManagedRuleOverrideExclusion[] | cdktf.IResolvable;
+  readonly exclusion?: FrontdoorFirewallPolicyManagedRuleOverrideExclusion[] | cdktn.IResolvable;
   /**
   * rule block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/frontdoor_firewall_policy#rule FrontdoorFirewallPolicy#rule}
   */
-  readonly rule?: FrontdoorFirewallPolicyManagedRuleOverrideRule[] | cdktf.IResolvable;
+  readonly rule?: FrontdoorFirewallPolicyManagedRuleOverrideRule[] | cdktn.IResolvable;
 }
 
-export function frontdoorFirewallPolicyManagedRuleOverrideToTerraform(struct?: FrontdoorFirewallPolicyManagedRuleOverride | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function frontdoorFirewallPolicyManagedRuleOverrideToTerraform(struct?: FrontdoorFirewallPolicyManagedRuleOverride | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    rule_group_name: cdktf.stringToTerraform(struct!.ruleGroupName),
-    exclusion: cdktf.listMapper(frontdoorFirewallPolicyManagedRuleOverrideExclusionToTerraform, true)(struct!.exclusion),
-    rule: cdktf.listMapper(frontdoorFirewallPolicyManagedRuleOverrideRuleToTerraform, true)(struct!.rule),
+    rule_group_name: cdktn.stringToTerraform(struct!.ruleGroupName),
+    exclusion: cdktn.listMapper(frontdoorFirewallPolicyManagedRuleOverrideExclusionToTerraform, true)(struct!.exclusion),
+    rule: cdktn.listMapper(frontdoorFirewallPolicyManagedRuleOverrideRuleToTerraform, true)(struct!.rule),
   }
 }
 
 
-export function frontdoorFirewallPolicyManagedRuleOverrideToHclTerraform(struct?: FrontdoorFirewallPolicyManagedRuleOverride | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function frontdoorFirewallPolicyManagedRuleOverrideToHclTerraform(struct?: FrontdoorFirewallPolicyManagedRuleOverride | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     rule_group_name: {
-      value: cdktf.stringToHclTerraform(struct!.ruleGroupName),
+      value: cdktn.stringToHclTerraform(struct!.ruleGroupName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     exclusion: {
-      value: cdktf.listMapperHcl(frontdoorFirewallPolicyManagedRuleOverrideExclusionToHclTerraform, true)(struct!.exclusion),
+      value: cdktn.listMapperHcl(frontdoorFirewallPolicyManagedRuleOverrideExclusionToHclTerraform, true)(struct!.exclusion),
       isBlock: true,
       type: "list",
       storageClassType: "FrontdoorFirewallPolicyManagedRuleOverrideExclusionList",
     },
     rule: {
-      value: cdktf.listMapperHcl(frontdoorFirewallPolicyManagedRuleOverrideRuleToHclTerraform, true)(struct!.rule),
+      value: cdktn.listMapperHcl(frontdoorFirewallPolicyManagedRuleOverrideRuleToHclTerraform, true)(struct!.rule),
       isBlock: true,
       type: "list",
       storageClassType: "FrontdoorFirewallPolicyManagedRuleOverrideRuleList",
@@ -1474,9 +1474,9 @@ export function frontdoorFirewallPolicyManagedRuleOverrideToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FrontdoorFirewallPolicyManagedRuleOverrideOutputReference extends cdktf.ComplexObject {
+export class FrontdoorFirewallPolicyManagedRuleOverrideOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1484,11 +1484,11 @@ export class FrontdoorFirewallPolicyManagedRuleOverrideOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FrontdoorFirewallPolicyManagedRuleOverride | cdktf.IResolvable | undefined {
+  public get internalValue(): FrontdoorFirewallPolicyManagedRuleOverride | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1509,7 +1509,7 @@ export class FrontdoorFirewallPolicyManagedRuleOverrideOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FrontdoorFirewallPolicyManagedRuleOverride | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FrontdoorFirewallPolicyManagedRuleOverride | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1517,7 +1517,7 @@ export class FrontdoorFirewallPolicyManagedRuleOverrideOutputReference extends c
       this._exclusion.internalValue = undefined;
       this._rule.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1548,7 +1548,7 @@ export class FrontdoorFirewallPolicyManagedRuleOverrideOutputReference extends c
   public get exclusion() {
     return this._exclusion;
   }
-  public putExclusion(value: FrontdoorFirewallPolicyManagedRuleOverrideExclusion[] | cdktf.IResolvable) {
+  public putExclusion(value: FrontdoorFirewallPolicyManagedRuleOverrideExclusion[] | cdktn.IResolvable) {
     this._exclusion.internalValue = value;
   }
   public resetExclusion() {
@@ -1564,7 +1564,7 @@ export class FrontdoorFirewallPolicyManagedRuleOverrideOutputReference extends c
   public get rule() {
     return this._rule;
   }
-  public putRule(value: FrontdoorFirewallPolicyManagedRuleOverrideRule[] | cdktf.IResolvable) {
+  public putRule(value: FrontdoorFirewallPolicyManagedRuleOverrideRule[] | cdktn.IResolvable) {
     this._rule.internalValue = value;
   }
   public resetRule() {
@@ -1576,15 +1576,15 @@ export class FrontdoorFirewallPolicyManagedRuleOverrideOutputReference extends c
   }
 }
 
-export class FrontdoorFirewallPolicyManagedRuleOverrideList extends cdktf.ComplexList {
-  public internalValue? : FrontdoorFirewallPolicyManagedRuleOverride[] | cdktf.IResolvable
+export class FrontdoorFirewallPolicyManagedRuleOverrideList extends cdktn.ComplexList {
+  public internalValue? : FrontdoorFirewallPolicyManagedRuleOverride[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1609,55 +1609,55 @@ export interface FrontdoorFirewallPolicyManagedRule {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/frontdoor_firewall_policy#exclusion FrontdoorFirewallPolicy#exclusion}
   */
-  readonly exclusion?: FrontdoorFirewallPolicyManagedRuleExclusion[] | cdktf.IResolvable;
+  readonly exclusion?: FrontdoorFirewallPolicyManagedRuleExclusion[] | cdktn.IResolvable;
   /**
   * override block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/frontdoor_firewall_policy#override FrontdoorFirewallPolicy#override}
   */
-  readonly override?: FrontdoorFirewallPolicyManagedRuleOverride[] | cdktf.IResolvable;
+  readonly override?: FrontdoorFirewallPolicyManagedRuleOverride[] | cdktn.IResolvable;
 }
 
-export function frontdoorFirewallPolicyManagedRuleToTerraform(struct?: FrontdoorFirewallPolicyManagedRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function frontdoorFirewallPolicyManagedRuleToTerraform(struct?: FrontdoorFirewallPolicyManagedRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    version: cdktf.stringToTerraform(struct!.version),
-    exclusion: cdktf.listMapper(frontdoorFirewallPolicyManagedRuleExclusionToTerraform, true)(struct!.exclusion),
-    override: cdktf.listMapper(frontdoorFirewallPolicyManagedRuleOverrideToTerraform, true)(struct!.override),
+    type: cdktn.stringToTerraform(struct!.type),
+    version: cdktn.stringToTerraform(struct!.version),
+    exclusion: cdktn.listMapper(frontdoorFirewallPolicyManagedRuleExclusionToTerraform, true)(struct!.exclusion),
+    override: cdktn.listMapper(frontdoorFirewallPolicyManagedRuleOverrideToTerraform, true)(struct!.override),
   }
 }
 
 
-export function frontdoorFirewallPolicyManagedRuleToHclTerraform(struct?: FrontdoorFirewallPolicyManagedRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function frontdoorFirewallPolicyManagedRuleToHclTerraform(struct?: FrontdoorFirewallPolicyManagedRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     exclusion: {
-      value: cdktf.listMapperHcl(frontdoorFirewallPolicyManagedRuleExclusionToHclTerraform, true)(struct!.exclusion),
+      value: cdktn.listMapperHcl(frontdoorFirewallPolicyManagedRuleExclusionToHclTerraform, true)(struct!.exclusion),
       isBlock: true,
       type: "list",
       storageClassType: "FrontdoorFirewallPolicyManagedRuleExclusionList",
     },
     override: {
-      value: cdktf.listMapperHcl(frontdoorFirewallPolicyManagedRuleOverrideToHclTerraform, true)(struct!.override),
+      value: cdktn.listMapperHcl(frontdoorFirewallPolicyManagedRuleOverrideToHclTerraform, true)(struct!.override),
       isBlock: true,
       type: "list",
       storageClassType: "FrontdoorFirewallPolicyManagedRuleOverrideList",
@@ -1668,9 +1668,9 @@ export function frontdoorFirewallPolicyManagedRuleToHclTerraform(struct?: Frontd
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FrontdoorFirewallPolicyManagedRuleOutputReference extends cdktf.ComplexObject {
+export class FrontdoorFirewallPolicyManagedRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1678,11 +1678,11 @@ export class FrontdoorFirewallPolicyManagedRuleOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FrontdoorFirewallPolicyManagedRule | cdktf.IResolvable | undefined {
+  public get internalValue(): FrontdoorFirewallPolicyManagedRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1707,7 +1707,7 @@ export class FrontdoorFirewallPolicyManagedRuleOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FrontdoorFirewallPolicyManagedRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FrontdoorFirewallPolicyManagedRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1716,7 +1716,7 @@ export class FrontdoorFirewallPolicyManagedRuleOutputReference extends cdktf.Com
       this._exclusion.internalValue = undefined;
       this._override.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1761,7 +1761,7 @@ export class FrontdoorFirewallPolicyManagedRuleOutputReference extends cdktf.Com
   public get exclusion() {
     return this._exclusion;
   }
-  public putExclusion(value: FrontdoorFirewallPolicyManagedRuleExclusion[] | cdktf.IResolvable) {
+  public putExclusion(value: FrontdoorFirewallPolicyManagedRuleExclusion[] | cdktn.IResolvable) {
     this._exclusion.internalValue = value;
   }
   public resetExclusion() {
@@ -1777,7 +1777,7 @@ export class FrontdoorFirewallPolicyManagedRuleOutputReference extends cdktf.Com
   public get override() {
     return this._override;
   }
-  public putOverride(value: FrontdoorFirewallPolicyManagedRuleOverride[] | cdktf.IResolvable) {
+  public putOverride(value: FrontdoorFirewallPolicyManagedRuleOverride[] | cdktn.IResolvable) {
     this._override.internalValue = value;
   }
   public resetOverride() {
@@ -1789,15 +1789,15 @@ export class FrontdoorFirewallPolicyManagedRuleOutputReference extends cdktf.Com
   }
 }
 
-export class FrontdoorFirewallPolicyManagedRuleList extends cdktf.ComplexList {
-  public internalValue? : FrontdoorFirewallPolicyManagedRule[] | cdktf.IResolvable
+export class FrontdoorFirewallPolicyManagedRuleList extends cdktn.ComplexList {
+  public internalValue? : FrontdoorFirewallPolicyManagedRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1827,46 +1827,46 @@ export interface FrontdoorFirewallPolicyTimeouts {
   readonly update?: string;
 }
 
-export function frontdoorFirewallPolicyTimeoutsToTerraform(struct?: FrontdoorFirewallPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function frontdoorFirewallPolicyTimeoutsToTerraform(struct?: FrontdoorFirewallPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function frontdoorFirewallPolicyTimeoutsToHclTerraform(struct?: FrontdoorFirewallPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function frontdoorFirewallPolicyTimeoutsToHclTerraform(struct?: FrontdoorFirewallPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1877,19 +1877,19 @@ export function frontdoorFirewallPolicyTimeoutsToHclTerraform(struct?: Frontdoor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FrontdoorFirewallPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class FrontdoorFirewallPolicyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): FrontdoorFirewallPolicyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): FrontdoorFirewallPolicyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1914,7 +1914,7 @@ export class FrontdoorFirewallPolicyTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FrontdoorFirewallPolicyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FrontdoorFirewallPolicyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1923,7 +1923,7 @@ export class FrontdoorFirewallPolicyTimeoutsOutputReference extends cdktf.Comple
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2005,7 +2005,7 @@ export class FrontdoorFirewallPolicyTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/frontdoor_firewall_policy azurerm_frontdoor_firewall_policy}
 */
-export class FrontdoorFirewallPolicy extends cdktf.TerraformResource {
+export class FrontdoorFirewallPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2016,14 +2016,14 @@ export class FrontdoorFirewallPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a FrontdoorFirewallPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a FrontdoorFirewallPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FrontdoorFirewallPolicy to import
   * @param importFromId The id of the existing FrontdoorFirewallPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/frontdoor_firewall_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FrontdoorFirewallPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_frontdoor_firewall_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_frontdoor_firewall_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -2104,11 +2104,11 @@ export class FrontdoorFirewallPolicy extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -2224,7 +2224,7 @@ export class FrontdoorFirewallPolicy extends cdktf.TerraformResource {
   public get customRule() {
     return this._customRule;
   }
-  public putCustomRule(value: FrontdoorFirewallPolicyCustomRule[] | cdktf.IResolvable) {
+  public putCustomRule(value: FrontdoorFirewallPolicyCustomRule[] | cdktn.IResolvable) {
     this._customRule.internalValue = value;
   }
   public resetCustomRule() {
@@ -2240,7 +2240,7 @@ export class FrontdoorFirewallPolicy extends cdktf.TerraformResource {
   public get managedRule() {
     return this._managedRule;
   }
-  public putManagedRule(value: FrontdoorFirewallPolicyManagedRule[] | cdktf.IResolvable) {
+  public putManagedRule(value: FrontdoorFirewallPolicyManagedRule[] | cdktn.IResolvable) {
     this._managedRule.internalValue = value;
   }
   public resetManagedRule() {
@@ -2273,17 +2273,17 @@ export class FrontdoorFirewallPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      custom_block_response_body: cdktf.stringToTerraform(this._customBlockResponseBody),
-      custom_block_response_status_code: cdktf.numberToTerraform(this._customBlockResponseStatusCode),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
-      mode: cdktf.stringToTerraform(this._mode),
-      name: cdktf.stringToTerraform(this._name),
-      redirect_url: cdktf.stringToTerraform(this._redirectUrl),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      custom_rule: cdktf.listMapper(frontdoorFirewallPolicyCustomRuleToTerraform, true)(this._customRule.internalValue),
-      managed_rule: cdktf.listMapper(frontdoorFirewallPolicyManagedRuleToTerraform, true)(this._managedRule.internalValue),
+      custom_block_response_body: cdktn.stringToTerraform(this._customBlockResponseBody),
+      custom_block_response_status_code: cdktn.numberToTerraform(this._customBlockResponseStatusCode),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      id: cdktn.stringToTerraform(this._id),
+      mode: cdktn.stringToTerraform(this._mode),
+      name: cdktn.stringToTerraform(this._name),
+      redirect_url: cdktn.stringToTerraform(this._redirectUrl),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      custom_rule: cdktn.listMapper(frontdoorFirewallPolicyCustomRuleToTerraform, true)(this._customRule.internalValue),
+      managed_rule: cdktn.listMapper(frontdoorFirewallPolicyManagedRuleToTerraform, true)(this._managedRule.internalValue),
       timeouts: frontdoorFirewallPolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -2291,67 +2291,67 @@ export class FrontdoorFirewallPolicy extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       custom_block_response_body: {
-        value: cdktf.stringToHclTerraform(this._customBlockResponseBody),
+        value: cdktn.stringToHclTerraform(this._customBlockResponseBody),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       custom_block_response_status_code: {
-        value: cdktf.numberToHclTerraform(this._customBlockResponseStatusCode),
+        value: cdktn.numberToHclTerraform(this._customBlockResponseStatusCode),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mode: {
-        value: cdktf.stringToHclTerraform(this._mode),
+        value: cdktn.stringToHclTerraform(this._mode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       redirect_url: {
-        value: cdktf.stringToHclTerraform(this._redirectUrl),
+        value: cdktn.stringToHclTerraform(this._redirectUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       custom_rule: {
-        value: cdktf.listMapperHcl(frontdoorFirewallPolicyCustomRuleToHclTerraform, true)(this._customRule.internalValue),
+        value: cdktn.listMapperHcl(frontdoorFirewallPolicyCustomRuleToHclTerraform, true)(this._customRule.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "FrontdoorFirewallPolicyCustomRuleList",
       },
       managed_rule: {
-        value: cdktf.listMapperHcl(frontdoorFirewallPolicyManagedRuleToHclTerraform, true)(this._managedRule.internalValue),
+        value: cdktn.listMapperHcl(frontdoorFirewallPolicyManagedRuleToHclTerraform, true)(this._managedRule.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "FrontdoorFirewallPolicyManagedRuleList",

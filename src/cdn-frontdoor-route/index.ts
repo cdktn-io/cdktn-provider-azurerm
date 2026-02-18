@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CdnFrontdoorRouteConfig extends cdktf.TerraformMetaArguments {
+export interface CdnFrontdoorRouteConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cdn_frontdoor_route#cdn_frontdoor_custom_domain_ids CdnFrontdoorRoute#cdn_frontdoor_custom_domain_ids}
   */
@@ -39,7 +39,7 @@ export interface CdnFrontdoorRouteConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cdn_frontdoor_route#enabled CdnFrontdoorRoute#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cdn_frontdoor_route#forwarding_protocol CdnFrontdoorRoute#forwarding_protocol}
   */
@@ -47,7 +47,7 @@ export interface CdnFrontdoorRouteConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cdn_frontdoor_route#https_redirect_enabled CdnFrontdoorRoute#https_redirect_enabled}
   */
-  readonly httpsRedirectEnabled?: boolean | cdktf.IResolvable;
+  readonly httpsRedirectEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cdn_frontdoor_route#id CdnFrontdoorRoute#id}
   *
@@ -58,7 +58,7 @@ export interface CdnFrontdoorRouteConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cdn_frontdoor_route#link_to_default_domain CdnFrontdoorRoute#link_to_default_domain}
   */
-  readonly linkToDefaultDomain?: boolean | cdktf.IResolvable;
+  readonly linkToDefaultDomain?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cdn_frontdoor_route#name CdnFrontdoorRoute#name}
   */
@@ -88,7 +88,7 @@ export interface CdnFrontdoorRouteCache {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cdn_frontdoor_route#compression_enabled CdnFrontdoorRoute#compression_enabled}
   */
-  readonly compressionEnabled?: boolean | cdktf.IResolvable;
+  readonly compressionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cdn_frontdoor_route#content_types_to_compress CdnFrontdoorRoute#content_types_to_compress}
   */
@@ -104,45 +104,45 @@ export interface CdnFrontdoorRouteCache {
 }
 
 export function cdnFrontdoorRouteCacheToTerraform(struct?: CdnFrontdoorRouteCacheOutputReference | CdnFrontdoorRouteCache): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    compression_enabled: cdktf.booleanToTerraform(struct!.compressionEnabled),
-    content_types_to_compress: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.contentTypesToCompress),
-    query_string_caching_behavior: cdktf.stringToTerraform(struct!.queryStringCachingBehavior),
-    query_strings: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.queryStrings),
+    compression_enabled: cdktn.booleanToTerraform(struct!.compressionEnabled),
+    content_types_to_compress: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.contentTypesToCompress),
+    query_string_caching_behavior: cdktn.stringToTerraform(struct!.queryStringCachingBehavior),
+    query_strings: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.queryStrings),
   }
 }
 
 
 export function cdnFrontdoorRouteCacheToHclTerraform(struct?: CdnFrontdoorRouteCacheOutputReference | CdnFrontdoorRouteCache): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     compression_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.compressionEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.compressionEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     content_types_to_compress: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.contentTypesToCompress),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.contentTypesToCompress),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     query_string_caching_behavior: {
-      value: cdktf.stringToHclTerraform(struct!.queryStringCachingBehavior),
+      value: cdktn.stringToHclTerraform(struct!.queryStringCachingBehavior),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     query_strings: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.queryStrings),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.queryStrings),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -153,14 +153,14 @@ export function cdnFrontdoorRouteCacheToHclTerraform(struct?: CdnFrontdoorRouteC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CdnFrontdoorRouteCacheOutputReference extends cdktf.ComplexObject {
+export class CdnFrontdoorRouteCacheOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -204,11 +204,11 @@ export class CdnFrontdoorRouteCacheOutputReference extends cdktf.ComplexObject {
   }
 
   // compression_enabled - computed: false, optional: true, required: false
-  private _compressionEnabled?: boolean | cdktf.IResolvable; 
+  private _compressionEnabled?: boolean | cdktn.IResolvable; 
   public get compressionEnabled() {
     return this.getBooleanAttribute('compression_enabled');
   }
-  public set compressionEnabled(value: boolean | cdktf.IResolvable) {
+  public set compressionEnabled(value: boolean | cdktn.IResolvable) {
     this._compressionEnabled = value;
   }
   public resetCompressionEnabled() {
@@ -286,46 +286,46 @@ export interface CdnFrontdoorRouteTimeouts {
   readonly update?: string;
 }
 
-export function cdnFrontdoorRouteTimeoutsToTerraform(struct?: CdnFrontdoorRouteTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cdnFrontdoorRouteTimeoutsToTerraform(struct?: CdnFrontdoorRouteTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function cdnFrontdoorRouteTimeoutsToHclTerraform(struct?: CdnFrontdoorRouteTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cdnFrontdoorRouteTimeoutsToHclTerraform(struct?: CdnFrontdoorRouteTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -336,19 +336,19 @@ export function cdnFrontdoorRouteTimeoutsToHclTerraform(struct?: CdnFrontdoorRou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CdnFrontdoorRouteTimeoutsOutputReference extends cdktf.ComplexObject {
+export class CdnFrontdoorRouteTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CdnFrontdoorRouteTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): CdnFrontdoorRouteTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -373,7 +373,7 @@ export class CdnFrontdoorRouteTimeoutsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CdnFrontdoorRouteTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CdnFrontdoorRouteTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -382,7 +382,7 @@ export class CdnFrontdoorRouteTimeoutsOutputReference extends cdktf.ComplexObjec
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -464,7 +464,7 @@ export class CdnFrontdoorRouteTimeoutsOutputReference extends cdktf.ComplexObjec
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cdn_frontdoor_route azurerm_cdn_frontdoor_route}
 */
-export class CdnFrontdoorRoute extends cdktf.TerraformResource {
+export class CdnFrontdoorRoute extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -475,14 +475,14 @@ export class CdnFrontdoorRoute extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CdnFrontdoorRoute resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CdnFrontdoorRoute resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CdnFrontdoorRoute to import
   * @param importFromId The id of the existing CdnFrontdoorRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cdn_frontdoor_route#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CdnFrontdoorRoute to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_cdn_frontdoor_route", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_cdn_frontdoor_route", importId: importFromId, provider });
       }
 
   // ===========
@@ -537,7 +537,7 @@ export class CdnFrontdoorRoute extends cdktf.TerraformResource {
   // cdn_frontdoor_custom_domain_ids - computed: false, optional: true, required: false
   private _cdnFrontdoorCustomDomainIds?: string[]; 
   public get cdnFrontdoorCustomDomainIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('cdn_frontdoor_custom_domain_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('cdn_frontdoor_custom_domain_ids'));
   }
   public set cdnFrontdoorCustomDomainIds(value: string[]) {
     this._cdnFrontdoorCustomDomainIds = value;
@@ -608,7 +608,7 @@ export class CdnFrontdoorRoute extends cdktf.TerraformResource {
   // cdn_frontdoor_rule_set_ids - computed: false, optional: true, required: false
   private _cdnFrontdoorRuleSetIds?: string[]; 
   public get cdnFrontdoorRuleSetIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('cdn_frontdoor_rule_set_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('cdn_frontdoor_rule_set_ids'));
   }
   public set cdnFrontdoorRuleSetIds(value: string[]) {
     this._cdnFrontdoorRuleSetIds = value;
@@ -622,11 +622,11 @@ export class CdnFrontdoorRoute extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -654,11 +654,11 @@ export class CdnFrontdoorRoute extends cdktf.TerraformResource {
   }
 
   // https_redirect_enabled - computed: false, optional: true, required: false
-  private _httpsRedirectEnabled?: boolean | cdktf.IResolvable; 
+  private _httpsRedirectEnabled?: boolean | cdktn.IResolvable; 
   public get httpsRedirectEnabled() {
     return this.getBooleanAttribute('https_redirect_enabled');
   }
-  public set httpsRedirectEnabled(value: boolean | cdktf.IResolvable) {
+  public set httpsRedirectEnabled(value: boolean | cdktn.IResolvable) {
     this._httpsRedirectEnabled = value;
   }
   public resetHttpsRedirectEnabled() {
@@ -686,11 +686,11 @@ export class CdnFrontdoorRoute extends cdktf.TerraformResource {
   }
 
   // link_to_default_domain - computed: false, optional: true, required: false
-  private _linkToDefaultDomain?: boolean | cdktf.IResolvable; 
+  private _linkToDefaultDomain?: boolean | cdktn.IResolvable; 
   public get linkToDefaultDomain() {
     return this.getBooleanAttribute('link_to_default_domain');
   }
-  public set linkToDefaultDomain(value: boolean | cdktf.IResolvable) {
+  public set linkToDefaultDomain(value: boolean | cdktn.IResolvable) {
     this._linkToDefaultDomain = value;
   }
   public resetLinkToDefaultDomain() {
@@ -730,7 +730,7 @@ export class CdnFrontdoorRoute extends cdktf.TerraformResource {
   // supported_protocols - computed: false, optional: false, required: true
   private _supportedProtocols?: string[]; 
   public get supportedProtocols() {
-    return cdktf.Fn.tolist(this.getListAttribute('supported_protocols'));
+    return cdktn.Fn.tolist(this.getListAttribute('supported_protocols'));
   }
   public set supportedProtocols(value: string[]) {
     this._supportedProtocols = value;
@@ -778,20 +778,20 @@ export class CdnFrontdoorRoute extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cdn_frontdoor_custom_domain_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._cdnFrontdoorCustomDomainIds),
-      cdn_frontdoor_endpoint_id: cdktf.stringToTerraform(this._cdnFrontdoorEndpointId),
-      cdn_frontdoor_origin_group_id: cdktf.stringToTerraform(this._cdnFrontdoorOriginGroupId),
-      cdn_frontdoor_origin_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._cdnFrontdoorOriginIds),
-      cdn_frontdoor_origin_path: cdktf.stringToTerraform(this._cdnFrontdoorOriginPath),
-      cdn_frontdoor_rule_set_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._cdnFrontdoorRuleSetIds),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      forwarding_protocol: cdktf.stringToTerraform(this._forwardingProtocol),
-      https_redirect_enabled: cdktf.booleanToTerraform(this._httpsRedirectEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      link_to_default_domain: cdktf.booleanToTerraform(this._linkToDefaultDomain),
-      name: cdktf.stringToTerraform(this._name),
-      patterns_to_match: cdktf.listMapper(cdktf.stringToTerraform, false)(this._patternsToMatch),
-      supported_protocols: cdktf.listMapper(cdktf.stringToTerraform, false)(this._supportedProtocols),
+      cdn_frontdoor_custom_domain_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._cdnFrontdoorCustomDomainIds),
+      cdn_frontdoor_endpoint_id: cdktn.stringToTerraform(this._cdnFrontdoorEndpointId),
+      cdn_frontdoor_origin_group_id: cdktn.stringToTerraform(this._cdnFrontdoorOriginGroupId),
+      cdn_frontdoor_origin_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._cdnFrontdoorOriginIds),
+      cdn_frontdoor_origin_path: cdktn.stringToTerraform(this._cdnFrontdoorOriginPath),
+      cdn_frontdoor_rule_set_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._cdnFrontdoorRuleSetIds),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      forwarding_protocol: cdktn.stringToTerraform(this._forwardingProtocol),
+      https_redirect_enabled: cdktn.booleanToTerraform(this._httpsRedirectEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      link_to_default_domain: cdktn.booleanToTerraform(this._linkToDefaultDomain),
+      name: cdktn.stringToTerraform(this._name),
+      patterns_to_match: cdktn.listMapper(cdktn.stringToTerraform, false)(this._patternsToMatch),
+      supported_protocols: cdktn.listMapper(cdktn.stringToTerraform, false)(this._supportedProtocols),
       cache: cdnFrontdoorRouteCacheToTerraform(this._cache.internalValue),
       timeouts: cdnFrontdoorRouteTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -800,85 +800,85 @@ export class CdnFrontdoorRoute extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cdn_frontdoor_custom_domain_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._cdnFrontdoorCustomDomainIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._cdnFrontdoorCustomDomainIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       cdn_frontdoor_endpoint_id: {
-        value: cdktf.stringToHclTerraform(this._cdnFrontdoorEndpointId),
+        value: cdktn.stringToHclTerraform(this._cdnFrontdoorEndpointId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cdn_frontdoor_origin_group_id: {
-        value: cdktf.stringToHclTerraform(this._cdnFrontdoorOriginGroupId),
+        value: cdktn.stringToHclTerraform(this._cdnFrontdoorOriginGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cdn_frontdoor_origin_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._cdnFrontdoorOriginIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._cdnFrontdoorOriginIds),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       cdn_frontdoor_origin_path: {
-        value: cdktf.stringToHclTerraform(this._cdnFrontdoorOriginPath),
+        value: cdktn.stringToHclTerraform(this._cdnFrontdoorOriginPath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cdn_frontdoor_rule_set_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._cdnFrontdoorRuleSetIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._cdnFrontdoorRuleSetIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       forwarding_protocol: {
-        value: cdktf.stringToHclTerraform(this._forwardingProtocol),
+        value: cdktn.stringToHclTerraform(this._forwardingProtocol),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       https_redirect_enabled: {
-        value: cdktf.booleanToHclTerraform(this._httpsRedirectEnabled),
+        value: cdktn.booleanToHclTerraform(this._httpsRedirectEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       link_to_default_domain: {
-        value: cdktf.booleanToHclTerraform(this._linkToDefaultDomain),
+        value: cdktn.booleanToHclTerraform(this._linkToDefaultDomain),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       patterns_to_match: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._patternsToMatch),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._patternsToMatch),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       supported_protocols: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._supportedProtocols),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._supportedProtocols),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

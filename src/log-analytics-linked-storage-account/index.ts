@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LogAnalyticsLinkedStorageAccountConfig extends cdktf.TerraformMetaArguments {
+export interface LogAnalyticsLinkedStorageAccountConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/log_analytics_linked_storage_account#data_source_type LogAnalyticsLinkedStorageAccount#data_source_type}
   */
@@ -65,46 +65,46 @@ export interface LogAnalyticsLinkedStorageAccountTimeouts {
   readonly update?: string;
 }
 
-export function logAnalyticsLinkedStorageAccountTimeoutsToTerraform(struct?: LogAnalyticsLinkedStorageAccountTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logAnalyticsLinkedStorageAccountTimeoutsToTerraform(struct?: LogAnalyticsLinkedStorageAccountTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function logAnalyticsLinkedStorageAccountTimeoutsToHclTerraform(struct?: LogAnalyticsLinkedStorageAccountTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logAnalyticsLinkedStorageAccountTimeoutsToHclTerraform(struct?: LogAnalyticsLinkedStorageAccountTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -115,19 +115,19 @@ export function logAnalyticsLinkedStorageAccountTimeoutsToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogAnalyticsLinkedStorageAccountTimeoutsOutputReference extends cdktf.ComplexObject {
+export class LogAnalyticsLinkedStorageAccountTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LogAnalyticsLinkedStorageAccountTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): LogAnalyticsLinkedStorageAccountTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -152,7 +152,7 @@ export class LogAnalyticsLinkedStorageAccountTimeoutsOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogAnalyticsLinkedStorageAccountTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogAnalyticsLinkedStorageAccountTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -161,7 +161,7 @@ export class LogAnalyticsLinkedStorageAccountTimeoutsOutputReference extends cdk
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -243,7 +243,7 @@ export class LogAnalyticsLinkedStorageAccountTimeoutsOutputReference extends cdk
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/log_analytics_linked_storage_account azurerm_log_analytics_linked_storage_account}
 */
-export class LogAnalyticsLinkedStorageAccount extends cdktf.TerraformResource {
+export class LogAnalyticsLinkedStorageAccount extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -254,14 +254,14 @@ export class LogAnalyticsLinkedStorageAccount extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LogAnalyticsLinkedStorageAccount resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LogAnalyticsLinkedStorageAccount resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LogAnalyticsLinkedStorageAccount to import
   * @param importFromId The id of the existing LogAnalyticsLinkedStorageAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/log_analytics_linked_storage_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LogAnalyticsLinkedStorageAccount to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_log_analytics_linked_storage_account", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_log_analytics_linked_storage_account", importId: importFromId, provider });
       }
 
   // ===========
@@ -349,7 +349,7 @@ export class LogAnalyticsLinkedStorageAccount extends cdktf.TerraformResource {
   // storage_account_ids - computed: false, optional: false, required: true
   private _storageAccountIds?: string[]; 
   public get storageAccountIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('storage_account_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('storage_account_ids'));
   }
   public set storageAccountIds(value: string[]) {
     this._storageAccountIds = value;
@@ -413,12 +413,12 @@ export class LogAnalyticsLinkedStorageAccount extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      data_source_type: cdktf.stringToTerraform(this._dataSourceType),
-      id: cdktf.stringToTerraform(this._id),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      storage_account_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._storageAccountIds),
-      workspace_id: cdktf.stringToTerraform(this._workspaceId),
-      workspace_resource_id: cdktf.stringToTerraform(this._workspaceResourceId),
+      data_source_type: cdktn.stringToTerraform(this._dataSourceType),
+      id: cdktn.stringToTerraform(this._id),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      storage_account_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._storageAccountIds),
+      workspace_id: cdktn.stringToTerraform(this._workspaceId),
+      workspace_resource_id: cdktn.stringToTerraform(this._workspaceResourceId),
       timeouts: logAnalyticsLinkedStorageAccountTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -426,37 +426,37 @@ export class LogAnalyticsLinkedStorageAccount extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       data_source_type: {
-        value: cdktf.stringToHclTerraform(this._dataSourceType),
+        value: cdktn.stringToHclTerraform(this._dataSourceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_account_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._storageAccountIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._storageAccountIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       workspace_id: {
-        value: cdktf.stringToHclTerraform(this._workspaceId),
+        value: cdktn.stringToHclTerraform(this._workspaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       workspace_resource_id: {
-        value: cdktf.stringToHclTerraform(this._workspaceResourceId),
+        value: cdktn.stringToHclTerraform(this._workspaceResourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

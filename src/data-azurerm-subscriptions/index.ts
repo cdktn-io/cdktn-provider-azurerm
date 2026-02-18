@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermSubscriptionsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermSubscriptionsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/subscriptions#display_name_contains DataAzurermSubscriptions#display_name_contains}
   */
@@ -38,8 +38,8 @@ export interface DataAzurermSubscriptionsSubscriptions {
 }
 
 export function dataAzurermSubscriptionsSubscriptionsToTerraform(struct?: DataAzurermSubscriptionsSubscriptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -48,8 +48,8 @@ export function dataAzurermSubscriptionsSubscriptionsToTerraform(struct?: DataAz
 
 
 export function dataAzurermSubscriptionsSubscriptionsToHclTerraform(struct?: DataAzurermSubscriptionsSubscriptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -57,7 +57,7 @@ export function dataAzurermSubscriptionsSubscriptionsToHclTerraform(struct?: Dat
   return attrs;
 }
 
-export class DataAzurermSubscriptionsSubscriptionsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermSubscriptionsSubscriptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -66,7 +66,7 @@ export class DataAzurermSubscriptionsSubscriptionsOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -121,7 +121,7 @@ export class DataAzurermSubscriptionsSubscriptionsOutputReference extends cdktf.
   }
 
   // tags - computed: true, optional: false, required: false
-  private _tags = new cdktf.StringMap(this, "tags");
+  private _tags = new cdktn.StringMap(this, "tags");
   public get tags() {
     return this._tags;
   }
@@ -132,14 +132,14 @@ export class DataAzurermSubscriptionsSubscriptionsOutputReference extends cdktf.
   }
 }
 
-export class DataAzurermSubscriptionsSubscriptionsList extends cdktf.ComplexList {
+export class DataAzurermSubscriptionsSubscriptionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -157,25 +157,25 @@ export interface DataAzurermSubscriptionsTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermSubscriptionsTimeoutsToTerraform(struct?: DataAzurermSubscriptionsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermSubscriptionsTimeoutsToTerraform(struct?: DataAzurermSubscriptionsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermSubscriptionsTimeoutsToHclTerraform(struct?: DataAzurermSubscriptionsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermSubscriptionsTimeoutsToHclTerraform(struct?: DataAzurermSubscriptionsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -186,19 +186,19 @@ export function dataAzurermSubscriptionsTimeoutsToHclTerraform(struct?: DataAzur
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermSubscriptionsTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermSubscriptionsTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermSubscriptionsTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermSubscriptionsTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -211,13 +211,13 @@ export class DataAzurermSubscriptionsTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermSubscriptionsTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermSubscriptionsTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -248,7 +248,7 @@ export class DataAzurermSubscriptionsTimeoutsOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/subscriptions azurerm_subscriptions}
 */
-export class DataAzurermSubscriptions extends cdktf.TerraformDataSource {
+export class DataAzurermSubscriptions extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -259,14 +259,14 @@ export class DataAzurermSubscriptions extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermSubscriptions resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermSubscriptions resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermSubscriptions to import
   * @param importFromId The id of the existing DataAzurermSubscriptions that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/subscriptions#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermSubscriptions to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_subscriptions", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_subscriptions", importId: importFromId, provider });
       }
 
   // ===========
@@ -382,9 +382,9 @@ export class DataAzurermSubscriptions extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      display_name_contains: cdktf.stringToTerraform(this._displayNameContains),
-      display_name_prefix: cdktf.stringToTerraform(this._displayNamePrefix),
-      id: cdktf.stringToTerraform(this._id),
+      display_name_contains: cdktn.stringToTerraform(this._displayNameContains),
+      display_name_prefix: cdktn.stringToTerraform(this._displayNamePrefix),
+      id: cdktn.stringToTerraform(this._id),
       timeouts: dataAzurermSubscriptionsTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -392,19 +392,19 @@ export class DataAzurermSubscriptions extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       display_name_contains: {
-        value: cdktf.stringToHclTerraform(this._displayNameContains),
+        value: cdktn.stringToHclTerraform(this._displayNameContains),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name_prefix: {
-        value: cdktf.stringToHclTerraform(this._displayNamePrefix),
+        value: cdktn.stringToHclTerraform(this._displayNamePrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermDevCenterAttachedNetworkConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermDevCenterAttachedNetworkConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/dev_center_attached_network#dev_center_id DataAzurermDevCenterAttachedNetwork#dev_center_id}
   */
@@ -41,25 +41,25 @@ export interface DataAzurermDevCenterAttachedNetworkTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermDevCenterAttachedNetworkTimeoutsToTerraform(struct?: DataAzurermDevCenterAttachedNetworkTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermDevCenterAttachedNetworkTimeoutsToTerraform(struct?: DataAzurermDevCenterAttachedNetworkTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermDevCenterAttachedNetworkTimeoutsToHclTerraform(struct?: DataAzurermDevCenterAttachedNetworkTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermDevCenterAttachedNetworkTimeoutsToHclTerraform(struct?: DataAzurermDevCenterAttachedNetworkTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -70,19 +70,19 @@ export function dataAzurermDevCenterAttachedNetworkTimeoutsToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermDevCenterAttachedNetworkTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermDevCenterAttachedNetworkTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermDevCenterAttachedNetworkTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermDevCenterAttachedNetworkTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -95,13 +95,13 @@ export class DataAzurermDevCenterAttachedNetworkTimeoutsOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermDevCenterAttachedNetworkTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermDevCenterAttachedNetworkTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -132,7 +132,7 @@ export class DataAzurermDevCenterAttachedNetworkTimeoutsOutputReference extends 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/dev_center_attached_network azurerm_dev_center_attached_network}
 */
-export class DataAzurermDevCenterAttachedNetwork extends cdktf.TerraformDataSource {
+export class DataAzurermDevCenterAttachedNetwork extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -143,14 +143,14 @@ export class DataAzurermDevCenterAttachedNetwork extends cdktf.TerraformDataSour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermDevCenterAttachedNetwork resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermDevCenterAttachedNetwork resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermDevCenterAttachedNetwork to import
   * @param importFromId The id of the existing DataAzurermDevCenterAttachedNetwork that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/dev_center_attached_network#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermDevCenterAttachedNetwork to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_dev_center_attached_network", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_dev_center_attached_network", importId: importFromId, provider });
       }
 
   // ===========
@@ -259,9 +259,9 @@ export class DataAzurermDevCenterAttachedNetwork extends cdktf.TerraformDataSour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      dev_center_id: cdktf.stringToTerraform(this._devCenterId),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
+      dev_center_id: cdktn.stringToTerraform(this._devCenterId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
       timeouts: dataAzurermDevCenterAttachedNetworkTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -269,19 +269,19 @@ export class DataAzurermDevCenterAttachedNetwork extends cdktf.TerraformDataSour
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       dev_center_id: {
-        value: cdktf.stringToHclTerraform(this._devCenterId),
+        value: cdktn.stringToHclTerraform(this._devCenterId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

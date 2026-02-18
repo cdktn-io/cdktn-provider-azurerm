@@ -7,23 +7,23 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VirtualNetworkPeeringConfig extends cdktf.TerraformMetaArguments {
+export interface VirtualNetworkPeeringConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_network_peering#allow_forwarded_traffic VirtualNetworkPeering#allow_forwarded_traffic}
   */
-  readonly allowForwardedTraffic?: boolean | cdktf.IResolvable;
+  readonly allowForwardedTraffic?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_network_peering#allow_gateway_transit VirtualNetworkPeering#allow_gateway_transit}
   */
-  readonly allowGatewayTransit?: boolean | cdktf.IResolvable;
+  readonly allowGatewayTransit?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_network_peering#allow_virtual_network_access VirtualNetworkPeering#allow_virtual_network_access}
   */
-  readonly allowVirtualNetworkAccess?: boolean | cdktf.IResolvable;
+  readonly allowVirtualNetworkAccess?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_network_peering#id VirtualNetworkPeering#id}
   *
@@ -42,11 +42,11 @@ export interface VirtualNetworkPeeringConfig extends cdktf.TerraformMetaArgument
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_network_peering#only_ipv6_peering_enabled VirtualNetworkPeering#only_ipv6_peering_enabled}
   */
-  readonly onlyIpv6PeeringEnabled?: boolean | cdktf.IResolvable;
+  readonly onlyIpv6PeeringEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_network_peering#peer_complete_virtual_networks_enabled VirtualNetworkPeering#peer_complete_virtual_networks_enabled}
   */
-  readonly peerCompleteVirtualNetworksEnabled?: boolean | cdktf.IResolvable;
+  readonly peerCompleteVirtualNetworksEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_network_peering#remote_subnet_names VirtualNetworkPeering#remote_subnet_names}
   */
@@ -66,7 +66,7 @@ export interface VirtualNetworkPeeringConfig extends cdktf.TerraformMetaArgument
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_network_peering#use_remote_gateways VirtualNetworkPeering#use_remote_gateways}
   */
-  readonly useRemoteGateways?: boolean | cdktf.IResolvable;
+  readonly useRemoteGateways?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_network_peering#virtual_network_name VirtualNetworkPeering#virtual_network_name}
   */
@@ -97,46 +97,46 @@ export interface VirtualNetworkPeeringTimeouts {
   readonly update?: string;
 }
 
-export function virtualNetworkPeeringTimeoutsToTerraform(struct?: VirtualNetworkPeeringTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualNetworkPeeringTimeoutsToTerraform(struct?: VirtualNetworkPeeringTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function virtualNetworkPeeringTimeoutsToHclTerraform(struct?: VirtualNetworkPeeringTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualNetworkPeeringTimeoutsToHclTerraform(struct?: VirtualNetworkPeeringTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -147,19 +147,19 @@ export function virtualNetworkPeeringTimeoutsToHclTerraform(struct?: VirtualNetw
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VirtualNetworkPeeringTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VirtualNetworkPeeringTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VirtualNetworkPeeringTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VirtualNetworkPeeringTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -184,7 +184,7 @@ export class VirtualNetworkPeeringTimeoutsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VirtualNetworkPeeringTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VirtualNetworkPeeringTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -193,7 +193,7 @@ export class VirtualNetworkPeeringTimeoutsOutputReference extends cdktf.ComplexO
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -275,7 +275,7 @@ export class VirtualNetworkPeeringTimeoutsOutputReference extends cdktf.ComplexO
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_network_peering azurerm_virtual_network_peering}
 */
-export class VirtualNetworkPeering extends cdktf.TerraformResource {
+export class VirtualNetworkPeering extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -286,14 +286,14 @@ export class VirtualNetworkPeering extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VirtualNetworkPeering resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VirtualNetworkPeering resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VirtualNetworkPeering to import
   * @param importFromId The id of the existing VirtualNetworkPeering that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_network_peering#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VirtualNetworkPeering to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_virtual_network_peering", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_virtual_network_peering", importId: importFromId, provider });
       }
 
   // ===========
@@ -345,11 +345,11 @@ export class VirtualNetworkPeering extends cdktf.TerraformResource {
   // ==========
 
   // allow_forwarded_traffic - computed: false, optional: true, required: false
-  private _allowForwardedTraffic?: boolean | cdktf.IResolvable; 
+  private _allowForwardedTraffic?: boolean | cdktn.IResolvable; 
   public get allowForwardedTraffic() {
     return this.getBooleanAttribute('allow_forwarded_traffic');
   }
-  public set allowForwardedTraffic(value: boolean | cdktf.IResolvable) {
+  public set allowForwardedTraffic(value: boolean | cdktn.IResolvable) {
     this._allowForwardedTraffic = value;
   }
   public resetAllowForwardedTraffic() {
@@ -361,11 +361,11 @@ export class VirtualNetworkPeering extends cdktf.TerraformResource {
   }
 
   // allow_gateway_transit - computed: false, optional: true, required: false
-  private _allowGatewayTransit?: boolean | cdktf.IResolvable; 
+  private _allowGatewayTransit?: boolean | cdktn.IResolvable; 
   public get allowGatewayTransit() {
     return this.getBooleanAttribute('allow_gateway_transit');
   }
-  public set allowGatewayTransit(value: boolean | cdktf.IResolvable) {
+  public set allowGatewayTransit(value: boolean | cdktn.IResolvable) {
     this._allowGatewayTransit = value;
   }
   public resetAllowGatewayTransit() {
@@ -377,11 +377,11 @@ export class VirtualNetworkPeering extends cdktf.TerraformResource {
   }
 
   // allow_virtual_network_access - computed: false, optional: true, required: false
-  private _allowVirtualNetworkAccess?: boolean | cdktf.IResolvable; 
+  private _allowVirtualNetworkAccess?: boolean | cdktn.IResolvable; 
   public get allowVirtualNetworkAccess() {
     return this.getBooleanAttribute('allow_virtual_network_access');
   }
-  public set allowVirtualNetworkAccess(value: boolean | cdktf.IResolvable) {
+  public set allowVirtualNetworkAccess(value: boolean | cdktn.IResolvable) {
     this._allowVirtualNetworkAccess = value;
   }
   public resetAllowVirtualNetworkAccess() {
@@ -438,11 +438,11 @@ export class VirtualNetworkPeering extends cdktf.TerraformResource {
   }
 
   // only_ipv6_peering_enabled - computed: false, optional: true, required: false
-  private _onlyIpv6PeeringEnabled?: boolean | cdktf.IResolvable; 
+  private _onlyIpv6PeeringEnabled?: boolean | cdktn.IResolvable; 
   public get onlyIpv6PeeringEnabled() {
     return this.getBooleanAttribute('only_ipv6_peering_enabled');
   }
-  public set onlyIpv6PeeringEnabled(value: boolean | cdktf.IResolvable) {
+  public set onlyIpv6PeeringEnabled(value: boolean | cdktn.IResolvable) {
     this._onlyIpv6PeeringEnabled = value;
   }
   public resetOnlyIpv6PeeringEnabled() {
@@ -454,11 +454,11 @@ export class VirtualNetworkPeering extends cdktf.TerraformResource {
   }
 
   // peer_complete_virtual_networks_enabled - computed: false, optional: true, required: false
-  private _peerCompleteVirtualNetworksEnabled?: boolean | cdktf.IResolvable; 
+  private _peerCompleteVirtualNetworksEnabled?: boolean | cdktn.IResolvable; 
   public get peerCompleteVirtualNetworksEnabled() {
     return this.getBooleanAttribute('peer_complete_virtual_networks_enabled');
   }
-  public set peerCompleteVirtualNetworksEnabled(value: boolean | cdktf.IResolvable) {
+  public set peerCompleteVirtualNetworksEnabled(value: boolean | cdktn.IResolvable) {
     this._peerCompleteVirtualNetworksEnabled = value;
   }
   public resetPeerCompleteVirtualNetworksEnabled() {
@@ -528,11 +528,11 @@ export class VirtualNetworkPeering extends cdktf.TerraformResource {
   }
 
   // use_remote_gateways - computed: false, optional: true, required: false
-  private _useRemoteGateways?: boolean | cdktf.IResolvable; 
+  private _useRemoteGateways?: boolean | cdktn.IResolvable; 
   public get useRemoteGateways() {
     return this.getBooleanAttribute('use_remote_gateways');
   }
-  public set useRemoteGateways(value: boolean | cdktf.IResolvable) {
+  public set useRemoteGateways(value: boolean | cdktn.IResolvable) {
     this._useRemoteGateways = value;
   }
   public resetUseRemoteGateways() {
@@ -578,20 +578,20 @@ export class VirtualNetworkPeering extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allow_forwarded_traffic: cdktf.booleanToTerraform(this._allowForwardedTraffic),
-      allow_gateway_transit: cdktf.booleanToTerraform(this._allowGatewayTransit),
-      allow_virtual_network_access: cdktf.booleanToTerraform(this._allowVirtualNetworkAccess),
-      id: cdktf.stringToTerraform(this._id),
-      local_subnet_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._localSubnetNames),
-      name: cdktf.stringToTerraform(this._name),
-      only_ipv6_peering_enabled: cdktf.booleanToTerraform(this._onlyIpv6PeeringEnabled),
-      peer_complete_virtual_networks_enabled: cdktf.booleanToTerraform(this._peerCompleteVirtualNetworksEnabled),
-      remote_subnet_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._remoteSubnetNames),
-      remote_virtual_network_id: cdktf.stringToTerraform(this._remoteVirtualNetworkId),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      triggers: cdktf.hashMapper(cdktf.stringToTerraform)(this._triggers),
-      use_remote_gateways: cdktf.booleanToTerraform(this._useRemoteGateways),
-      virtual_network_name: cdktf.stringToTerraform(this._virtualNetworkName),
+      allow_forwarded_traffic: cdktn.booleanToTerraform(this._allowForwardedTraffic),
+      allow_gateway_transit: cdktn.booleanToTerraform(this._allowGatewayTransit),
+      allow_virtual_network_access: cdktn.booleanToTerraform(this._allowVirtualNetworkAccess),
+      id: cdktn.stringToTerraform(this._id),
+      local_subnet_names: cdktn.listMapper(cdktn.stringToTerraform, false)(this._localSubnetNames),
+      name: cdktn.stringToTerraform(this._name),
+      only_ipv6_peering_enabled: cdktn.booleanToTerraform(this._onlyIpv6PeeringEnabled),
+      peer_complete_virtual_networks_enabled: cdktn.booleanToTerraform(this._peerCompleteVirtualNetworksEnabled),
+      remote_subnet_names: cdktn.listMapper(cdktn.stringToTerraform, false)(this._remoteSubnetNames),
+      remote_virtual_network_id: cdktn.stringToTerraform(this._remoteVirtualNetworkId),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      triggers: cdktn.hashMapper(cdktn.stringToTerraform)(this._triggers),
+      use_remote_gateways: cdktn.booleanToTerraform(this._useRemoteGateways),
+      virtual_network_name: cdktn.stringToTerraform(this._virtualNetworkName),
       timeouts: virtualNetworkPeeringTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -599,85 +599,85 @@ export class VirtualNetworkPeering extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allow_forwarded_traffic: {
-        value: cdktf.booleanToHclTerraform(this._allowForwardedTraffic),
+        value: cdktn.booleanToHclTerraform(this._allowForwardedTraffic),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       allow_gateway_transit: {
-        value: cdktf.booleanToHclTerraform(this._allowGatewayTransit),
+        value: cdktn.booleanToHclTerraform(this._allowGatewayTransit),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       allow_virtual_network_access: {
-        value: cdktf.booleanToHclTerraform(this._allowVirtualNetworkAccess),
+        value: cdktn.booleanToHclTerraform(this._allowVirtualNetworkAccess),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       local_subnet_names: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._localSubnetNames),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._localSubnetNames),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       only_ipv6_peering_enabled: {
-        value: cdktf.booleanToHclTerraform(this._onlyIpv6PeeringEnabled),
+        value: cdktn.booleanToHclTerraform(this._onlyIpv6PeeringEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       peer_complete_virtual_networks_enabled: {
-        value: cdktf.booleanToHclTerraform(this._peerCompleteVirtualNetworksEnabled),
+        value: cdktn.booleanToHclTerraform(this._peerCompleteVirtualNetworksEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       remote_subnet_names: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._remoteSubnetNames),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._remoteSubnetNames),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       remote_virtual_network_id: {
-        value: cdktf.stringToHclTerraform(this._remoteVirtualNetworkId),
+        value: cdktn.stringToHclTerraform(this._remoteVirtualNetworkId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       triggers: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._triggers),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._triggers),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       use_remote_gateways: {
-        value: cdktf.booleanToHclTerraform(this._useRemoteGateways),
+        value: cdktn.booleanToHclTerraform(this._useRemoteGateways),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       virtual_network_name: {
-        value: cdktf.stringToHclTerraform(this._virtualNetworkName),
+        value: cdktn.stringToHclTerraform(this._virtualNetworkName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

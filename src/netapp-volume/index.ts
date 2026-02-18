@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetappVolumeConfig extends cdktf.TerraformMetaArguments {
+export interface NetappVolumeConfig extends cdktn.TerraformMetaArguments {
   /**
   * While auto splitting the short term clone volume, if the parent pool does not have enough space to accommodate the volume after split, it will be automatically resized, which will lead to increased billing. To accept capacity pool size auto grow and create a short term clone volume, set the property as accepted. Can only be used in conjunction with `create_from_snapshot_resource_id`.
   *
@@ -25,7 +25,7 @@ export interface NetappVolumeConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume#azure_vmware_data_store_enabled NetappVolume#azure_vmware_data_store_enabled}
   */
-  readonly azureVmwareDataStoreEnabled?: boolean | cdktf.IResolvable;
+  readonly azureVmwareDataStoreEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume#create_from_snapshot_resource_id NetappVolume#create_from_snapshot_resource_id}
   */
@@ -46,7 +46,7 @@ export interface NetappVolumeConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume#kerberos_enabled NetappVolume#kerberos_enabled}
   */
-  readonly kerberosEnabled?: boolean | cdktf.IResolvable;
+  readonly kerberosEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume#key_vault_private_endpoint_id NetappVolume#key_vault_private_endpoint_id}
   */
@@ -56,7 +56,7 @@ export interface NetappVolumeConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume#large_volume_enabled NetappVolume#large_volume_enabled}
   */
-  readonly largeVolumeEnabled?: boolean | cdktf.IResolvable;
+  readonly largeVolumeEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume#location NetappVolume#location}
   */
@@ -94,29 +94,29 @@ export interface NetappVolumeConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume#smb3_protocol_encryption_enabled NetappVolume#smb3_protocol_encryption_enabled}
   */
-  readonly smb3ProtocolEncryptionEnabled?: boolean | cdktf.IResolvable;
+  readonly smb3ProtocolEncryptionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Enable access based enumeration setting for SMB/Dual Protocol volume. When enabled, users who do not have permission to access a shared folder or file underneath it, do not see that shared resource displayed in their environment.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume#smb_access_based_enumeration_enabled NetappVolume#smb_access_based_enumeration_enabled}
   */
-  readonly smbAccessBasedEnumerationEnabled?: boolean | cdktf.IResolvable;
+  readonly smbAccessBasedEnumerationEnabled?: boolean | cdktn.IResolvable;
   /**
   * Continuous availability option should be used only for SQL and FSLogix workloads. Using it for any other SMB workloads is not supported.
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume#smb_continuous_availability_enabled NetappVolume#smb_continuous_availability_enabled}
   */
-  readonly smbContinuousAvailabilityEnabled?: boolean | cdktf.IResolvable;
+  readonly smbContinuousAvailabilityEnabled?: boolean | cdktn.IResolvable;
   /**
   * Enable non browsable share setting for SMB/Dual Protocol volume. When enabled, it restricts windows clients to browse the share
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume#smb_non_browsable_enabled NetappVolume#smb_non_browsable_enabled}
   */
-  readonly smbNonBrowsableEnabled?: boolean | cdktf.IResolvable;
+  readonly smbNonBrowsableEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume#snapshot_directory_visible NetappVolume#snapshot_directory_visible}
   */
-  readonly snapshotDirectoryVisible?: boolean | cdktf.IResolvable;
+  readonly snapshotDirectoryVisible?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume#storage_quota_in_gb NetappVolume#storage_quota_in_gb}
   */
@@ -170,7 +170,7 @@ export interface NetappVolumeConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume#export_policy_rule NetappVolume#export_policy_rule}
   */
-  readonly exportPolicyRule?: NetappVolumeExportPolicyRule[] | cdktf.IResolvable;
+  readonly exportPolicyRule?: NetappVolumeExportPolicyRule[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -194,38 +194,38 @@ export interface NetappVolumeCoolAccess {
 }
 
 export function netappVolumeCoolAccessToTerraform(struct?: NetappVolumeCoolAccessOutputReference | NetappVolumeCoolAccess): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    coolness_period_in_days: cdktf.numberToTerraform(struct!.coolnessPeriodInDays),
-    retrieval_policy: cdktf.stringToTerraform(struct!.retrievalPolicy),
-    tiering_policy: cdktf.stringToTerraform(struct!.tieringPolicy),
+    coolness_period_in_days: cdktn.numberToTerraform(struct!.coolnessPeriodInDays),
+    retrieval_policy: cdktn.stringToTerraform(struct!.retrievalPolicy),
+    tiering_policy: cdktn.stringToTerraform(struct!.tieringPolicy),
   }
 }
 
 
 export function netappVolumeCoolAccessToHclTerraform(struct?: NetappVolumeCoolAccessOutputReference | NetappVolumeCoolAccess): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     coolness_period_in_days: {
-      value: cdktf.numberToHclTerraform(struct!.coolnessPeriodInDays),
+      value: cdktn.numberToHclTerraform(struct!.coolnessPeriodInDays),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     retrieval_policy: {
-      value: cdktf.stringToHclTerraform(struct!.retrievalPolicy),
+      value: cdktn.stringToHclTerraform(struct!.retrievalPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tiering_policy: {
-      value: cdktf.stringToHclTerraform(struct!.tieringPolicy),
+      value: cdktn.stringToHclTerraform(struct!.tieringPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -236,14 +236,14 @@ export function netappVolumeCoolAccessToHclTerraform(struct?: NetappVolumeCoolAc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetappVolumeCoolAccessOutputReference extends cdktf.ComplexObject {
+export class NetappVolumeCoolAccessOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -337,42 +337,42 @@ export interface NetappVolumeDataProtectionBackupPolicy {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume#policy_enabled NetappVolume#policy_enabled}
   */
-  readonly policyEnabled?: boolean | cdktf.IResolvable;
+  readonly policyEnabled?: boolean | cdktn.IResolvable;
 }
 
 export function netappVolumeDataProtectionBackupPolicyToTerraform(struct?: NetappVolumeDataProtectionBackupPolicyOutputReference | NetappVolumeDataProtectionBackupPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    backup_policy_id: cdktf.stringToTerraform(struct!.backupPolicyId),
-    backup_vault_id: cdktf.stringToTerraform(struct!.backupVaultId),
-    policy_enabled: cdktf.booleanToTerraform(struct!.policyEnabled),
+    backup_policy_id: cdktn.stringToTerraform(struct!.backupPolicyId),
+    backup_vault_id: cdktn.stringToTerraform(struct!.backupVaultId),
+    policy_enabled: cdktn.booleanToTerraform(struct!.policyEnabled),
   }
 }
 
 
 export function netappVolumeDataProtectionBackupPolicyToHclTerraform(struct?: NetappVolumeDataProtectionBackupPolicyOutputReference | NetappVolumeDataProtectionBackupPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     backup_policy_id: {
-      value: cdktf.stringToHclTerraform(struct!.backupPolicyId),
+      value: cdktn.stringToHclTerraform(struct!.backupPolicyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     backup_vault_id: {
-      value: cdktf.stringToHclTerraform(struct!.backupVaultId),
+      value: cdktn.stringToHclTerraform(struct!.backupVaultId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     policy_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.policyEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.policyEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -383,14 +383,14 @@ export function netappVolumeDataProtectionBackupPolicyToHclTerraform(struct?: Ne
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetappVolumeDataProtectionBackupPolicyOutputReference extends cdktf.ComplexObject {
+export class NetappVolumeDataProtectionBackupPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -454,11 +454,11 @@ export class NetappVolumeDataProtectionBackupPolicyOutputReference extends cdktf
   }
 
   // policy_enabled - computed: false, optional: true, required: false
-  private _policyEnabled?: boolean | cdktf.IResolvable; 
+  private _policyEnabled?: boolean | cdktn.IResolvable; 
   public get policyEnabled() {
     return this.getBooleanAttribute('policy_enabled');
   }
-  public set policyEnabled(value: boolean | cdktf.IResolvable) {
+  public set policyEnabled(value: boolean | cdktn.IResolvable) {
     this._policyEnabled = value;
   }
   public resetPolicyEnabled() {
@@ -489,45 +489,45 @@ export interface NetappVolumeDataProtectionReplication {
 }
 
 export function netappVolumeDataProtectionReplicationToTerraform(struct?: NetappVolumeDataProtectionReplicationOutputReference | NetappVolumeDataProtectionReplication): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    endpoint_type: cdktf.stringToTerraform(struct!.endpointType),
-    remote_volume_location: cdktf.stringToTerraform(struct!.remoteVolumeLocation),
-    remote_volume_resource_id: cdktf.stringToTerraform(struct!.remoteVolumeResourceId),
-    replication_frequency: cdktf.stringToTerraform(struct!.replicationFrequency),
+    endpoint_type: cdktn.stringToTerraform(struct!.endpointType),
+    remote_volume_location: cdktn.stringToTerraform(struct!.remoteVolumeLocation),
+    remote_volume_resource_id: cdktn.stringToTerraform(struct!.remoteVolumeResourceId),
+    replication_frequency: cdktn.stringToTerraform(struct!.replicationFrequency),
   }
 }
 
 
 export function netappVolumeDataProtectionReplicationToHclTerraform(struct?: NetappVolumeDataProtectionReplicationOutputReference | NetappVolumeDataProtectionReplication): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     endpoint_type: {
-      value: cdktf.stringToHclTerraform(struct!.endpointType),
+      value: cdktn.stringToHclTerraform(struct!.endpointType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     remote_volume_location: {
-      value: cdktf.stringToHclTerraform(struct!.remoteVolumeLocation),
+      value: cdktn.stringToHclTerraform(struct!.remoteVolumeLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     remote_volume_resource_id: {
-      value: cdktf.stringToHclTerraform(struct!.remoteVolumeResourceId),
+      value: cdktn.stringToHclTerraform(struct!.remoteVolumeResourceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     replication_frequency: {
-      value: cdktf.stringToHclTerraform(struct!.replicationFrequency),
+      value: cdktn.stringToHclTerraform(struct!.replicationFrequency),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -538,14 +538,14 @@ export function netappVolumeDataProtectionReplicationToHclTerraform(struct?: Net
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetappVolumeDataProtectionReplicationOutputReference extends cdktf.ComplexObject {
+export class NetappVolumeDataProtectionReplicationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -651,24 +651,24 @@ export interface NetappVolumeDataProtectionSnapshotPolicy {
 }
 
 export function netappVolumeDataProtectionSnapshotPolicyToTerraform(struct?: NetappVolumeDataProtectionSnapshotPolicyOutputReference | NetappVolumeDataProtectionSnapshotPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    snapshot_policy_id: cdktf.stringToTerraform(struct!.snapshotPolicyId),
+    snapshot_policy_id: cdktn.stringToTerraform(struct!.snapshotPolicyId),
   }
 }
 
 
 export function netappVolumeDataProtectionSnapshotPolicyToHclTerraform(struct?: NetappVolumeDataProtectionSnapshotPolicyOutputReference | NetappVolumeDataProtectionSnapshotPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     snapshot_policy_id: {
-      value: cdktf.stringToHclTerraform(struct!.snapshotPolicyId),
+      value: cdktn.stringToHclTerraform(struct!.snapshotPolicyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -679,14 +679,14 @@ export function netappVolumeDataProtectionSnapshotPolicyToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetappVolumeDataProtectionSnapshotPolicyOutputReference extends cdktf.ComplexObject {
+export class NetappVolumeDataProtectionSnapshotPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -732,27 +732,27 @@ export interface NetappVolumeExportPolicyRule {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume#kerberos_5_read_only_enabled NetappVolume#kerberos_5_read_only_enabled}
   */
-  readonly kerberos5ReadOnlyEnabled?: boolean | cdktf.IResolvable;
+  readonly kerberos5ReadOnlyEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume#kerberos_5_read_write_enabled NetappVolume#kerberos_5_read_write_enabled}
   */
-  readonly kerberos5ReadWriteEnabled?: boolean | cdktf.IResolvable;
+  readonly kerberos5ReadWriteEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume#kerberos_5i_read_only_enabled NetappVolume#kerberos_5i_read_only_enabled}
   */
-  readonly kerberos5IReadOnlyEnabled?: boolean | cdktf.IResolvable;
+  readonly kerberos5IReadOnlyEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume#kerberos_5i_read_write_enabled NetappVolume#kerberos_5i_read_write_enabled}
   */
-  readonly kerberos5IReadWriteEnabled?: boolean | cdktf.IResolvable;
+  readonly kerberos5IReadWriteEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume#kerberos_5p_read_only_enabled NetappVolume#kerberos_5p_read_only_enabled}
   */
-  readonly kerberos5PReadOnlyEnabled?: boolean | cdktf.IResolvable;
+  readonly kerberos5PReadOnlyEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume#kerberos_5p_read_write_enabled NetappVolume#kerberos_5p_read_write_enabled}
   */
-  readonly kerberos5PReadWriteEnabled?: boolean | cdktf.IResolvable;
+  readonly kerberos5PReadWriteEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume#protocol NetappVolume#protocol}
   */
@@ -764,7 +764,7 @@ export interface NetappVolumeExportPolicyRule {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume#root_access_enabled NetappVolume#root_access_enabled}
   */
-  readonly rootAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly rootAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume#rule_index NetappVolume#rule_index}
   */
@@ -772,116 +772,116 @@ export interface NetappVolumeExportPolicyRule {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume#unix_read_only NetappVolume#unix_read_only}
   */
-  readonly unixReadOnly?: boolean | cdktf.IResolvable;
+  readonly unixReadOnly?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume#unix_read_write NetappVolume#unix_read_write}
   */
-  readonly unixReadWrite?: boolean | cdktf.IResolvable;
+  readonly unixReadWrite?: boolean | cdktn.IResolvable;
 }
 
-export function netappVolumeExportPolicyRuleToTerraform(struct?: NetappVolumeExportPolicyRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function netappVolumeExportPolicyRuleToTerraform(struct?: NetappVolumeExportPolicyRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_clients: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedClients),
-    kerberos_5_read_only_enabled: cdktf.booleanToTerraform(struct!.kerberos5ReadOnlyEnabled),
-    kerberos_5_read_write_enabled: cdktf.booleanToTerraform(struct!.kerberos5ReadWriteEnabled),
-    kerberos_5i_read_only_enabled: cdktf.booleanToTerraform(struct!.kerberos5IReadOnlyEnabled),
-    kerberos_5i_read_write_enabled: cdktf.booleanToTerraform(struct!.kerberos5IReadWriteEnabled),
-    kerberos_5p_read_only_enabled: cdktf.booleanToTerraform(struct!.kerberos5PReadOnlyEnabled),
-    kerberos_5p_read_write_enabled: cdktf.booleanToTerraform(struct!.kerberos5PReadWriteEnabled),
-    protocol: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.protocol),
-    protocols_enabled: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.protocolsEnabled),
-    root_access_enabled: cdktf.booleanToTerraform(struct!.rootAccessEnabled),
-    rule_index: cdktf.numberToTerraform(struct!.ruleIndex),
-    unix_read_only: cdktf.booleanToTerraform(struct!.unixReadOnly),
-    unix_read_write: cdktf.booleanToTerraform(struct!.unixReadWrite),
+    allowed_clients: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedClients),
+    kerberos_5_read_only_enabled: cdktn.booleanToTerraform(struct!.kerberos5ReadOnlyEnabled),
+    kerberos_5_read_write_enabled: cdktn.booleanToTerraform(struct!.kerberos5ReadWriteEnabled),
+    kerberos_5i_read_only_enabled: cdktn.booleanToTerraform(struct!.kerberos5IReadOnlyEnabled),
+    kerberos_5i_read_write_enabled: cdktn.booleanToTerraform(struct!.kerberos5IReadWriteEnabled),
+    kerberos_5p_read_only_enabled: cdktn.booleanToTerraform(struct!.kerberos5PReadOnlyEnabled),
+    kerberos_5p_read_write_enabled: cdktn.booleanToTerraform(struct!.kerberos5PReadWriteEnabled),
+    protocol: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.protocol),
+    protocols_enabled: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.protocolsEnabled),
+    root_access_enabled: cdktn.booleanToTerraform(struct!.rootAccessEnabled),
+    rule_index: cdktn.numberToTerraform(struct!.ruleIndex),
+    unix_read_only: cdktn.booleanToTerraform(struct!.unixReadOnly),
+    unix_read_write: cdktn.booleanToTerraform(struct!.unixReadWrite),
   }
 }
 
 
-export function netappVolumeExportPolicyRuleToHclTerraform(struct?: NetappVolumeExportPolicyRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function netappVolumeExportPolicyRuleToHclTerraform(struct?: NetappVolumeExportPolicyRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_clients: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedClients),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedClients),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     kerberos_5_read_only_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.kerberos5ReadOnlyEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.kerberos5ReadOnlyEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     kerberos_5_read_write_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.kerberos5ReadWriteEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.kerberos5ReadWriteEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     kerberos_5i_read_only_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.kerberos5IReadOnlyEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.kerberos5IReadOnlyEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     kerberos_5i_read_write_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.kerberos5IReadWriteEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.kerberos5IReadWriteEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     kerberos_5p_read_only_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.kerberos5PReadOnlyEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.kerberos5PReadOnlyEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     kerberos_5p_read_write_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.kerberos5PReadWriteEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.kerberos5PReadWriteEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     protocol: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.protocol),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.protocol),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     protocols_enabled: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.protocolsEnabled),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.protocolsEnabled),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     root_access_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.rootAccessEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.rootAccessEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     rule_index: {
-      value: cdktf.numberToHclTerraform(struct!.ruleIndex),
+      value: cdktn.numberToHclTerraform(struct!.ruleIndex),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     unix_read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.unixReadOnly),
+      value: cdktn.booleanToHclTerraform(struct!.unixReadOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     unix_read_write: {
-      value: cdktf.booleanToHclTerraform(struct!.unixReadWrite),
+      value: cdktn.booleanToHclTerraform(struct!.unixReadWrite),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -892,9 +892,9 @@ export function netappVolumeExportPolicyRuleToHclTerraform(struct?: NetappVolume
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetappVolumeExportPolicyRuleOutputReference extends cdktf.ComplexObject {
+export class NetappVolumeExportPolicyRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -902,11 +902,11 @@ export class NetappVolumeExportPolicyRuleOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NetappVolumeExportPolicyRule | cdktf.IResolvable | undefined {
+  public get internalValue(): NetappVolumeExportPolicyRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -967,7 +967,7 @@ export class NetappVolumeExportPolicyRuleOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetappVolumeExportPolicyRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetappVolumeExportPolicyRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -985,7 +985,7 @@ export class NetappVolumeExportPolicyRuleOutputReference extends cdktf.ComplexOb
       this._unixReadOnly = undefined;
       this._unixReadWrite = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1011,7 +1011,7 @@ export class NetappVolumeExportPolicyRuleOutputReference extends cdktf.ComplexOb
   // allowed_clients - computed: false, optional: false, required: true
   private _allowedClients?: string[]; 
   public get allowedClients() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_clients'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_clients'));
   }
   public set allowedClients(value: string[]) {
     this._allowedClients = value;
@@ -1022,11 +1022,11 @@ export class NetappVolumeExportPolicyRuleOutputReference extends cdktf.ComplexOb
   }
 
   // kerberos_5_read_only_enabled - computed: false, optional: true, required: false
-  private _kerberos5ReadOnlyEnabled?: boolean | cdktf.IResolvable; 
+  private _kerberos5ReadOnlyEnabled?: boolean | cdktn.IResolvable; 
   public get kerberos5ReadOnlyEnabled() {
     return this.getBooleanAttribute('kerberos_5_read_only_enabled');
   }
-  public set kerberos5ReadOnlyEnabled(value: boolean | cdktf.IResolvable) {
+  public set kerberos5ReadOnlyEnabled(value: boolean | cdktn.IResolvable) {
     this._kerberos5ReadOnlyEnabled = value;
   }
   public resetKerberos5ReadOnlyEnabled() {
@@ -1038,11 +1038,11 @@ export class NetappVolumeExportPolicyRuleOutputReference extends cdktf.ComplexOb
   }
 
   // kerberos_5_read_write_enabled - computed: false, optional: true, required: false
-  private _kerberos5ReadWriteEnabled?: boolean | cdktf.IResolvable; 
+  private _kerberos5ReadWriteEnabled?: boolean | cdktn.IResolvable; 
   public get kerberos5ReadWriteEnabled() {
     return this.getBooleanAttribute('kerberos_5_read_write_enabled');
   }
-  public set kerberos5ReadWriteEnabled(value: boolean | cdktf.IResolvable) {
+  public set kerberos5ReadWriteEnabled(value: boolean | cdktn.IResolvable) {
     this._kerberos5ReadWriteEnabled = value;
   }
   public resetKerberos5ReadWriteEnabled() {
@@ -1054,11 +1054,11 @@ export class NetappVolumeExportPolicyRuleOutputReference extends cdktf.ComplexOb
   }
 
   // kerberos_5i_read_only_enabled - computed: false, optional: true, required: false
-  private _kerberos5IReadOnlyEnabled?: boolean | cdktf.IResolvable; 
+  private _kerberos5IReadOnlyEnabled?: boolean | cdktn.IResolvable; 
   public get kerberos5IReadOnlyEnabled() {
     return this.getBooleanAttribute('kerberos_5i_read_only_enabled');
   }
-  public set kerberos5IReadOnlyEnabled(value: boolean | cdktf.IResolvable) {
+  public set kerberos5IReadOnlyEnabled(value: boolean | cdktn.IResolvable) {
     this._kerberos5IReadOnlyEnabled = value;
   }
   public resetKerberos5IReadOnlyEnabled() {
@@ -1070,11 +1070,11 @@ export class NetappVolumeExportPolicyRuleOutputReference extends cdktf.ComplexOb
   }
 
   // kerberos_5i_read_write_enabled - computed: false, optional: true, required: false
-  private _kerberos5IReadWriteEnabled?: boolean | cdktf.IResolvable; 
+  private _kerberos5IReadWriteEnabled?: boolean | cdktn.IResolvable; 
   public get kerberos5IReadWriteEnabled() {
     return this.getBooleanAttribute('kerberos_5i_read_write_enabled');
   }
-  public set kerberos5IReadWriteEnabled(value: boolean | cdktf.IResolvable) {
+  public set kerberos5IReadWriteEnabled(value: boolean | cdktn.IResolvable) {
     this._kerberos5IReadWriteEnabled = value;
   }
   public resetKerberos5IReadWriteEnabled() {
@@ -1086,11 +1086,11 @@ export class NetappVolumeExportPolicyRuleOutputReference extends cdktf.ComplexOb
   }
 
   // kerberos_5p_read_only_enabled - computed: false, optional: true, required: false
-  private _kerberos5PReadOnlyEnabled?: boolean | cdktf.IResolvable; 
+  private _kerberos5PReadOnlyEnabled?: boolean | cdktn.IResolvable; 
   public get kerberos5PReadOnlyEnabled() {
     return this.getBooleanAttribute('kerberos_5p_read_only_enabled');
   }
-  public set kerberos5PReadOnlyEnabled(value: boolean | cdktf.IResolvable) {
+  public set kerberos5PReadOnlyEnabled(value: boolean | cdktn.IResolvable) {
     this._kerberos5PReadOnlyEnabled = value;
   }
   public resetKerberos5PReadOnlyEnabled() {
@@ -1102,11 +1102,11 @@ export class NetappVolumeExportPolicyRuleOutputReference extends cdktf.ComplexOb
   }
 
   // kerberos_5p_read_write_enabled - computed: false, optional: true, required: false
-  private _kerberos5PReadWriteEnabled?: boolean | cdktf.IResolvable; 
+  private _kerberos5PReadWriteEnabled?: boolean | cdktn.IResolvable; 
   public get kerberos5PReadWriteEnabled() {
     return this.getBooleanAttribute('kerberos_5p_read_write_enabled');
   }
-  public set kerberos5PReadWriteEnabled(value: boolean | cdktf.IResolvable) {
+  public set kerberos5PReadWriteEnabled(value: boolean | cdktn.IResolvable) {
     this._kerberos5PReadWriteEnabled = value;
   }
   public resetKerberos5PReadWriteEnabled() {
@@ -1150,11 +1150,11 @@ export class NetappVolumeExportPolicyRuleOutputReference extends cdktf.ComplexOb
   }
 
   // root_access_enabled - computed: false, optional: true, required: false
-  private _rootAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _rootAccessEnabled?: boolean | cdktn.IResolvable; 
   public get rootAccessEnabled() {
     return this.getBooleanAttribute('root_access_enabled');
   }
-  public set rootAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set rootAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._rootAccessEnabled = value;
   }
   public resetRootAccessEnabled() {
@@ -1179,11 +1179,11 @@ export class NetappVolumeExportPolicyRuleOutputReference extends cdktf.ComplexOb
   }
 
   // unix_read_only - computed: false, optional: true, required: false
-  private _unixReadOnly?: boolean | cdktf.IResolvable; 
+  private _unixReadOnly?: boolean | cdktn.IResolvable; 
   public get unixReadOnly() {
     return this.getBooleanAttribute('unix_read_only');
   }
-  public set unixReadOnly(value: boolean | cdktf.IResolvable) {
+  public set unixReadOnly(value: boolean | cdktn.IResolvable) {
     this._unixReadOnly = value;
   }
   public resetUnixReadOnly() {
@@ -1195,11 +1195,11 @@ export class NetappVolumeExportPolicyRuleOutputReference extends cdktf.ComplexOb
   }
 
   // unix_read_write - computed: false, optional: true, required: false
-  private _unixReadWrite?: boolean | cdktf.IResolvable; 
+  private _unixReadWrite?: boolean | cdktn.IResolvable; 
   public get unixReadWrite() {
     return this.getBooleanAttribute('unix_read_write');
   }
-  public set unixReadWrite(value: boolean | cdktf.IResolvable) {
+  public set unixReadWrite(value: boolean | cdktn.IResolvable) {
     this._unixReadWrite = value;
   }
   public resetUnixReadWrite() {
@@ -1211,15 +1211,15 @@ export class NetappVolumeExportPolicyRuleOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class NetappVolumeExportPolicyRuleList extends cdktf.ComplexList {
-  public internalValue? : NetappVolumeExportPolicyRule[] | cdktf.IResolvable
+export class NetappVolumeExportPolicyRuleList extends cdktn.ComplexList {
+  public internalValue? : NetappVolumeExportPolicyRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1249,46 +1249,46 @@ export interface NetappVolumeTimeouts {
   readonly update?: string;
 }
 
-export function netappVolumeTimeoutsToTerraform(struct?: NetappVolumeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function netappVolumeTimeoutsToTerraform(struct?: NetappVolumeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function netappVolumeTimeoutsToHclTerraform(struct?: NetappVolumeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function netappVolumeTimeoutsToHclTerraform(struct?: NetappVolumeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1299,19 +1299,19 @@ export function netappVolumeTimeoutsToHclTerraform(struct?: NetappVolumeTimeouts
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetappVolumeTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetappVolumeTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetappVolumeTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetappVolumeTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1336,7 +1336,7 @@ export class NetappVolumeTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetappVolumeTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetappVolumeTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1345,7 +1345,7 @@ export class NetappVolumeTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1427,7 +1427,7 @@ export class NetappVolumeTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume azurerm_netapp_volume}
 */
-export class NetappVolume extends cdktf.TerraformResource {
+export class NetappVolume extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1438,14 +1438,14 @@ export class NetappVolume extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetappVolume resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetappVolume resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetappVolume to import
   * @param importFromId The id of the existing NetappVolume that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_volume#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetappVolume to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_netapp_volume", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_netapp_volume", importId: importFromId, provider });
       }
 
   // ===========
@@ -1545,11 +1545,11 @@ export class NetappVolume extends cdktf.TerraformResource {
   }
 
   // azure_vmware_data_store_enabled - computed: false, optional: true, required: false
-  private _azureVmwareDataStoreEnabled?: boolean | cdktf.IResolvable; 
+  private _azureVmwareDataStoreEnabled?: boolean | cdktn.IResolvable; 
   public get azureVmwareDataStoreEnabled() {
     return this.getBooleanAttribute('azure_vmware_data_store_enabled');
   }
-  public set azureVmwareDataStoreEnabled(value: boolean | cdktf.IResolvable) {
+  public set azureVmwareDataStoreEnabled(value: boolean | cdktn.IResolvable) {
     this._azureVmwareDataStoreEnabled = value;
   }
   public resetAzureVmwareDataStoreEnabled() {
@@ -1609,11 +1609,11 @@ export class NetappVolume extends cdktf.TerraformResource {
   }
 
   // kerberos_enabled - computed: false, optional: true, required: false
-  private _kerberosEnabled?: boolean | cdktf.IResolvable; 
+  private _kerberosEnabled?: boolean | cdktn.IResolvable; 
   public get kerberosEnabled() {
     return this.getBooleanAttribute('kerberos_enabled');
   }
-  public set kerberosEnabled(value: boolean | cdktf.IResolvable) {
+  public set kerberosEnabled(value: boolean | cdktn.IResolvable) {
     this._kerberosEnabled = value;
   }
   public resetKerberosEnabled() {
@@ -1641,11 +1641,11 @@ export class NetappVolume extends cdktf.TerraformResource {
   }
 
   // large_volume_enabled - computed: false, optional: true, required: false
-  private _largeVolumeEnabled?: boolean | cdktf.IResolvable; 
+  private _largeVolumeEnabled?: boolean | cdktn.IResolvable; 
   public get largeVolumeEnabled() {
     return this.getBooleanAttribute('large_volume_enabled');
   }
-  public set largeVolumeEnabled(value: boolean | cdktf.IResolvable) {
+  public set largeVolumeEnabled(value: boolean | cdktn.IResolvable) {
     this._largeVolumeEnabled = value;
   }
   public resetLargeVolumeEnabled() {
@@ -1719,7 +1719,7 @@ export class NetappVolume extends cdktf.TerraformResource {
   // protocols - computed: true, optional: true, required: false
   private _protocols?: string[]; 
   public get protocols() {
-    return cdktf.Fn.tolist(this.getListAttribute('protocols'));
+    return cdktn.Fn.tolist(this.getListAttribute('protocols'));
   }
   public set protocols(value: string[]) {
     this._protocols = value;
@@ -1775,11 +1775,11 @@ export class NetappVolume extends cdktf.TerraformResource {
   }
 
   // smb3_protocol_encryption_enabled - computed: false, optional: true, required: false
-  private _smb3ProtocolEncryptionEnabled?: boolean | cdktf.IResolvable; 
+  private _smb3ProtocolEncryptionEnabled?: boolean | cdktn.IResolvable; 
   public get smb3ProtocolEncryptionEnabled() {
     return this.getBooleanAttribute('smb3_protocol_encryption_enabled');
   }
-  public set smb3ProtocolEncryptionEnabled(value: boolean | cdktf.IResolvable) {
+  public set smb3ProtocolEncryptionEnabled(value: boolean | cdktn.IResolvable) {
     this._smb3ProtocolEncryptionEnabled = value;
   }
   public resetSmb3ProtocolEncryptionEnabled() {
@@ -1791,11 +1791,11 @@ export class NetappVolume extends cdktf.TerraformResource {
   }
 
   // smb_access_based_enumeration_enabled - computed: false, optional: true, required: false
-  private _smbAccessBasedEnumerationEnabled?: boolean | cdktf.IResolvable; 
+  private _smbAccessBasedEnumerationEnabled?: boolean | cdktn.IResolvable; 
   public get smbAccessBasedEnumerationEnabled() {
     return this.getBooleanAttribute('smb_access_based_enumeration_enabled');
   }
-  public set smbAccessBasedEnumerationEnabled(value: boolean | cdktf.IResolvable) {
+  public set smbAccessBasedEnumerationEnabled(value: boolean | cdktn.IResolvable) {
     this._smbAccessBasedEnumerationEnabled = value;
   }
   public resetSmbAccessBasedEnumerationEnabled() {
@@ -1807,11 +1807,11 @@ export class NetappVolume extends cdktf.TerraformResource {
   }
 
   // smb_continuous_availability_enabled - computed: false, optional: true, required: false
-  private _smbContinuousAvailabilityEnabled?: boolean | cdktf.IResolvable; 
+  private _smbContinuousAvailabilityEnabled?: boolean | cdktn.IResolvable; 
   public get smbContinuousAvailabilityEnabled() {
     return this.getBooleanAttribute('smb_continuous_availability_enabled');
   }
-  public set smbContinuousAvailabilityEnabled(value: boolean | cdktf.IResolvable) {
+  public set smbContinuousAvailabilityEnabled(value: boolean | cdktn.IResolvable) {
     this._smbContinuousAvailabilityEnabled = value;
   }
   public resetSmbContinuousAvailabilityEnabled() {
@@ -1823,11 +1823,11 @@ export class NetappVolume extends cdktf.TerraformResource {
   }
 
   // smb_non_browsable_enabled - computed: false, optional: true, required: false
-  private _smbNonBrowsableEnabled?: boolean | cdktf.IResolvable; 
+  private _smbNonBrowsableEnabled?: boolean | cdktn.IResolvable; 
   public get smbNonBrowsableEnabled() {
     return this.getBooleanAttribute('smb_non_browsable_enabled');
   }
-  public set smbNonBrowsableEnabled(value: boolean | cdktf.IResolvable) {
+  public set smbNonBrowsableEnabled(value: boolean | cdktn.IResolvable) {
     this._smbNonBrowsableEnabled = value;
   }
   public resetSmbNonBrowsableEnabled() {
@@ -1839,11 +1839,11 @@ export class NetappVolume extends cdktf.TerraformResource {
   }
 
   // snapshot_directory_visible - computed: false, optional: true, required: false
-  private _snapshotDirectoryVisible?: boolean | cdktf.IResolvable; 
+  private _snapshotDirectoryVisible?: boolean | cdktn.IResolvable; 
   public get snapshotDirectoryVisible() {
     return this.getBooleanAttribute('snapshot_directory_visible');
   }
-  public set snapshotDirectoryVisible(value: boolean | cdktf.IResolvable) {
+  public set snapshotDirectoryVisible(value: boolean | cdktn.IResolvable) {
     this._snapshotDirectoryVisible = value;
   }
   public resetSnapshotDirectoryVisible() {
@@ -2010,7 +2010,7 @@ export class NetappVolume extends cdktf.TerraformResource {
   public get exportPolicyRule() {
     return this._exportPolicyRule;
   }
-  public putExportPolicyRule(value: NetappVolumeExportPolicyRule[] | cdktf.IResolvable) {
+  public putExportPolicyRule(value: NetappVolumeExportPolicyRule[] | cdktn.IResolvable) {
     this._exportPolicyRule.internalValue = value;
   }
   public resetExportPolicyRule() {
@@ -2043,39 +2043,39 @@ export class NetappVolume extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      accept_grow_capacity_pool_for_short_term_clone_split: cdktf.stringToTerraform(this._acceptGrowCapacityPoolForShortTermCloneSplit),
-      account_name: cdktf.stringToTerraform(this._accountName),
-      azure_vmware_data_store_enabled: cdktf.booleanToTerraform(this._azureVmwareDataStoreEnabled),
-      create_from_snapshot_resource_id: cdktf.stringToTerraform(this._createFromSnapshotResourceId),
-      encryption_key_source: cdktf.stringToTerraform(this._encryptionKeySource),
-      id: cdktf.stringToTerraform(this._id),
-      kerberos_enabled: cdktf.booleanToTerraform(this._kerberosEnabled),
-      key_vault_private_endpoint_id: cdktf.stringToTerraform(this._keyVaultPrivateEndpointId),
-      large_volume_enabled: cdktf.booleanToTerraform(this._largeVolumeEnabled),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      network_features: cdktf.stringToTerraform(this._networkFeatures),
-      pool_name: cdktf.stringToTerraform(this._poolName),
-      protocols: cdktf.listMapper(cdktf.stringToTerraform, false)(this._protocols),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      security_style: cdktf.stringToTerraform(this._securityStyle),
-      service_level: cdktf.stringToTerraform(this._serviceLevel),
-      smb3_protocol_encryption_enabled: cdktf.booleanToTerraform(this._smb3ProtocolEncryptionEnabled),
-      smb_access_based_enumeration_enabled: cdktf.booleanToTerraform(this._smbAccessBasedEnumerationEnabled),
-      smb_continuous_availability_enabled: cdktf.booleanToTerraform(this._smbContinuousAvailabilityEnabled),
-      smb_non_browsable_enabled: cdktf.booleanToTerraform(this._smbNonBrowsableEnabled),
-      snapshot_directory_visible: cdktf.booleanToTerraform(this._snapshotDirectoryVisible),
-      storage_quota_in_gb: cdktf.numberToTerraform(this._storageQuotaInGb),
-      subnet_id: cdktf.stringToTerraform(this._subnetId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      throughput_in_mibps: cdktf.numberToTerraform(this._throughputInMibps),
-      volume_path: cdktf.stringToTerraform(this._volumePath),
-      zone: cdktf.stringToTerraform(this._zone),
+      accept_grow_capacity_pool_for_short_term_clone_split: cdktn.stringToTerraform(this._acceptGrowCapacityPoolForShortTermCloneSplit),
+      account_name: cdktn.stringToTerraform(this._accountName),
+      azure_vmware_data_store_enabled: cdktn.booleanToTerraform(this._azureVmwareDataStoreEnabled),
+      create_from_snapshot_resource_id: cdktn.stringToTerraform(this._createFromSnapshotResourceId),
+      encryption_key_source: cdktn.stringToTerraform(this._encryptionKeySource),
+      id: cdktn.stringToTerraform(this._id),
+      kerberos_enabled: cdktn.booleanToTerraform(this._kerberosEnabled),
+      key_vault_private_endpoint_id: cdktn.stringToTerraform(this._keyVaultPrivateEndpointId),
+      large_volume_enabled: cdktn.booleanToTerraform(this._largeVolumeEnabled),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      network_features: cdktn.stringToTerraform(this._networkFeatures),
+      pool_name: cdktn.stringToTerraform(this._poolName),
+      protocols: cdktn.listMapper(cdktn.stringToTerraform, false)(this._protocols),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      security_style: cdktn.stringToTerraform(this._securityStyle),
+      service_level: cdktn.stringToTerraform(this._serviceLevel),
+      smb3_protocol_encryption_enabled: cdktn.booleanToTerraform(this._smb3ProtocolEncryptionEnabled),
+      smb_access_based_enumeration_enabled: cdktn.booleanToTerraform(this._smbAccessBasedEnumerationEnabled),
+      smb_continuous_availability_enabled: cdktn.booleanToTerraform(this._smbContinuousAvailabilityEnabled),
+      smb_non_browsable_enabled: cdktn.booleanToTerraform(this._smbNonBrowsableEnabled),
+      snapshot_directory_visible: cdktn.booleanToTerraform(this._snapshotDirectoryVisible),
+      storage_quota_in_gb: cdktn.numberToTerraform(this._storageQuotaInGb),
+      subnet_id: cdktn.stringToTerraform(this._subnetId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      throughput_in_mibps: cdktn.numberToTerraform(this._throughputInMibps),
+      volume_path: cdktn.stringToTerraform(this._volumePath),
+      zone: cdktn.stringToTerraform(this._zone),
       cool_access: netappVolumeCoolAccessToTerraform(this._coolAccess.internalValue),
       data_protection_backup_policy: netappVolumeDataProtectionBackupPolicyToTerraform(this._dataProtectionBackupPolicy.internalValue),
       data_protection_replication: netappVolumeDataProtectionReplicationToTerraform(this._dataProtectionReplication.internalValue),
       data_protection_snapshot_policy: netappVolumeDataProtectionSnapshotPolicyToTerraform(this._dataProtectionSnapshotPolicy.internalValue),
-      export_policy_rule: cdktf.listMapper(netappVolumeExportPolicyRuleToTerraform, true)(this._exportPolicyRule.internalValue),
+      export_policy_rule: cdktn.listMapper(netappVolumeExportPolicyRuleToTerraform, true)(this._exportPolicyRule.internalValue),
       timeouts: netappVolumeTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -2083,169 +2083,169 @@ export class NetappVolume extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       accept_grow_capacity_pool_for_short_term_clone_split: {
-        value: cdktf.stringToHclTerraform(this._acceptGrowCapacityPoolForShortTermCloneSplit),
+        value: cdktn.stringToHclTerraform(this._acceptGrowCapacityPoolForShortTermCloneSplit),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       account_name: {
-        value: cdktf.stringToHclTerraform(this._accountName),
+        value: cdktn.stringToHclTerraform(this._accountName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       azure_vmware_data_store_enabled: {
-        value: cdktf.booleanToHclTerraform(this._azureVmwareDataStoreEnabled),
+        value: cdktn.booleanToHclTerraform(this._azureVmwareDataStoreEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       create_from_snapshot_resource_id: {
-        value: cdktf.stringToHclTerraform(this._createFromSnapshotResourceId),
+        value: cdktn.stringToHclTerraform(this._createFromSnapshotResourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       encryption_key_source: {
-        value: cdktf.stringToHclTerraform(this._encryptionKeySource),
+        value: cdktn.stringToHclTerraform(this._encryptionKeySource),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kerberos_enabled: {
-        value: cdktf.booleanToHclTerraform(this._kerberosEnabled),
+        value: cdktn.booleanToHclTerraform(this._kerberosEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       key_vault_private_endpoint_id: {
-        value: cdktf.stringToHclTerraform(this._keyVaultPrivateEndpointId),
+        value: cdktn.stringToHclTerraform(this._keyVaultPrivateEndpointId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       large_volume_enabled: {
-        value: cdktf.booleanToHclTerraform(this._largeVolumeEnabled),
+        value: cdktn.booleanToHclTerraform(this._largeVolumeEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_features: {
-        value: cdktf.stringToHclTerraform(this._networkFeatures),
+        value: cdktn.stringToHclTerraform(this._networkFeatures),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       pool_name: {
-        value: cdktf.stringToHclTerraform(this._poolName),
+        value: cdktn.stringToHclTerraform(this._poolName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       protocols: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._protocols),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._protocols),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       security_style: {
-        value: cdktf.stringToHclTerraform(this._securityStyle),
+        value: cdktn.stringToHclTerraform(this._securityStyle),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_level: {
-        value: cdktf.stringToHclTerraform(this._serviceLevel),
+        value: cdktn.stringToHclTerraform(this._serviceLevel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       smb3_protocol_encryption_enabled: {
-        value: cdktf.booleanToHclTerraform(this._smb3ProtocolEncryptionEnabled),
+        value: cdktn.booleanToHclTerraform(this._smb3ProtocolEncryptionEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       smb_access_based_enumeration_enabled: {
-        value: cdktf.booleanToHclTerraform(this._smbAccessBasedEnumerationEnabled),
+        value: cdktn.booleanToHclTerraform(this._smbAccessBasedEnumerationEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       smb_continuous_availability_enabled: {
-        value: cdktf.booleanToHclTerraform(this._smbContinuousAvailabilityEnabled),
+        value: cdktn.booleanToHclTerraform(this._smbContinuousAvailabilityEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       smb_non_browsable_enabled: {
-        value: cdktf.booleanToHclTerraform(this._smbNonBrowsableEnabled),
+        value: cdktn.booleanToHclTerraform(this._smbNonBrowsableEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       snapshot_directory_visible: {
-        value: cdktf.booleanToHclTerraform(this._snapshotDirectoryVisible),
+        value: cdktn.booleanToHclTerraform(this._snapshotDirectoryVisible),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       storage_quota_in_gb: {
-        value: cdktf.numberToHclTerraform(this._storageQuotaInGb),
+        value: cdktn.numberToHclTerraform(this._storageQuotaInGb),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       subnet_id: {
-        value: cdktf.stringToHclTerraform(this._subnetId),
+        value: cdktn.stringToHclTerraform(this._subnetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       throughput_in_mibps: {
-        value: cdktf.numberToHclTerraform(this._throughputInMibps),
+        value: cdktn.numberToHclTerraform(this._throughputInMibps),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       volume_path: {
-        value: cdktf.stringToHclTerraform(this._volumePath),
+        value: cdktn.stringToHclTerraform(this._volumePath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zone: {
-        value: cdktf.stringToHclTerraform(this._zone),
+        value: cdktn.stringToHclTerraform(this._zone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -2275,7 +2275,7 @@ export class NetappVolume extends cdktf.TerraformResource {
         storageClassType: "NetappVolumeDataProtectionSnapshotPolicyList",
       },
       export_policy_rule: {
-        value: cdktf.listMapperHcl(netappVolumeExportPolicyRuleToHclTerraform, true)(this._exportPolicyRule.internalValue),
+        value: cdktn.listMapperHcl(netappVolumeExportPolicyRuleToHclTerraform, true)(this._exportPolicyRule.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "NetappVolumeExportPolicyRuleList",

@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface StorageSyncServerEndpointConfig extends cdktf.TerraformMetaArguments {
+export interface StorageSyncServerEndpointConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_sync_server_endpoint#cloud_tiering_enabled StorageSyncServerEndpoint#cloud_tiering_enabled}
   */
-  readonly cloudTieringEnabled?: boolean | cdktf.IResolvable;
+  readonly cloudTieringEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_sync_server_endpoint#id StorageSyncServerEndpoint#id}
   *
@@ -81,46 +81,46 @@ export interface StorageSyncServerEndpointTimeouts {
   readonly update?: string;
 }
 
-export function storageSyncServerEndpointTimeoutsToTerraform(struct?: StorageSyncServerEndpointTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storageSyncServerEndpointTimeoutsToTerraform(struct?: StorageSyncServerEndpointTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function storageSyncServerEndpointTimeoutsToHclTerraform(struct?: StorageSyncServerEndpointTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storageSyncServerEndpointTimeoutsToHclTerraform(struct?: StorageSyncServerEndpointTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -131,19 +131,19 @@ export function storageSyncServerEndpointTimeoutsToHclTerraform(struct?: Storage
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StorageSyncServerEndpointTimeoutsOutputReference extends cdktf.ComplexObject {
+export class StorageSyncServerEndpointTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): StorageSyncServerEndpointTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): StorageSyncServerEndpointTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -168,7 +168,7 @@ export class StorageSyncServerEndpointTimeoutsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StorageSyncServerEndpointTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: StorageSyncServerEndpointTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -177,7 +177,7 @@ export class StorageSyncServerEndpointTimeoutsOutputReference extends cdktf.Comp
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -259,7 +259,7 @@ export class StorageSyncServerEndpointTimeoutsOutputReference extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_sync_server_endpoint azurerm_storage_sync_server_endpoint}
 */
-export class StorageSyncServerEndpoint extends cdktf.TerraformResource {
+export class StorageSyncServerEndpoint extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -270,14 +270,14 @@ export class StorageSyncServerEndpoint extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a StorageSyncServerEndpoint resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a StorageSyncServerEndpoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StorageSyncServerEndpoint to import
   * @param importFromId The id of the existing StorageSyncServerEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_sync_server_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StorageSyncServerEndpoint to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_storage_sync_server_endpoint", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_storage_sync_server_endpoint", importId: importFromId, provider });
       }
 
   // ===========
@@ -325,11 +325,11 @@ export class StorageSyncServerEndpoint extends cdktf.TerraformResource {
   // ==========
 
   // cloud_tiering_enabled - computed: false, optional: true, required: false
-  private _cloudTieringEnabled?: boolean | cdktf.IResolvable; 
+  private _cloudTieringEnabled?: boolean | cdktn.IResolvable; 
   public get cloudTieringEnabled() {
     return this.getBooleanAttribute('cloud_tiering_enabled');
   }
-  public set cloudTieringEnabled(value: boolean | cdktf.IResolvable) {
+  public set cloudTieringEnabled(value: boolean | cdktn.IResolvable) {
     this._cloudTieringEnabled = value;
   }
   public resetCloudTieringEnabled() {
@@ -494,16 +494,16 @@ export class StorageSyncServerEndpoint extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cloud_tiering_enabled: cdktf.booleanToTerraform(this._cloudTieringEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      initial_download_policy: cdktf.stringToTerraform(this._initialDownloadPolicy),
-      local_cache_mode: cdktf.stringToTerraform(this._localCacheMode),
-      name: cdktf.stringToTerraform(this._name),
-      registered_server_id: cdktf.stringToTerraform(this._registeredServerId),
-      server_local_path: cdktf.stringToTerraform(this._serverLocalPath),
-      storage_sync_group_id: cdktf.stringToTerraform(this._storageSyncGroupId),
-      tier_files_older_than_days: cdktf.numberToTerraform(this._tierFilesOlderThanDays),
-      volume_free_space_percent: cdktf.numberToTerraform(this._volumeFreeSpacePercent),
+      cloud_tiering_enabled: cdktn.booleanToTerraform(this._cloudTieringEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      initial_download_policy: cdktn.stringToTerraform(this._initialDownloadPolicy),
+      local_cache_mode: cdktn.stringToTerraform(this._localCacheMode),
+      name: cdktn.stringToTerraform(this._name),
+      registered_server_id: cdktn.stringToTerraform(this._registeredServerId),
+      server_local_path: cdktn.stringToTerraform(this._serverLocalPath),
+      storage_sync_group_id: cdktn.stringToTerraform(this._storageSyncGroupId),
+      tier_files_older_than_days: cdktn.numberToTerraform(this._tierFilesOlderThanDays),
+      volume_free_space_percent: cdktn.numberToTerraform(this._volumeFreeSpacePercent),
       timeouts: storageSyncServerEndpointTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -511,61 +511,61 @@ export class StorageSyncServerEndpoint extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cloud_tiering_enabled: {
-        value: cdktf.booleanToHclTerraform(this._cloudTieringEnabled),
+        value: cdktn.booleanToHclTerraform(this._cloudTieringEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       initial_download_policy: {
-        value: cdktf.stringToHclTerraform(this._initialDownloadPolicy),
+        value: cdktn.stringToHclTerraform(this._initialDownloadPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       local_cache_mode: {
-        value: cdktf.stringToHclTerraform(this._localCacheMode),
+        value: cdktn.stringToHclTerraform(this._localCacheMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       registered_server_id: {
-        value: cdktf.stringToHclTerraform(this._registeredServerId),
+        value: cdktn.stringToHclTerraform(this._registeredServerId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       server_local_path: {
-        value: cdktf.stringToHclTerraform(this._serverLocalPath),
+        value: cdktn.stringToHclTerraform(this._serverLocalPath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_sync_group_id: {
-        value: cdktf.stringToHclTerraform(this._storageSyncGroupId),
+        value: cdktn.stringToHclTerraform(this._storageSyncGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tier_files_older_than_days: {
-        value: cdktf.numberToHclTerraform(this._tierFilesOlderThanDays),
+        value: cdktn.numberToHclTerraform(this._tierFilesOlderThanDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       volume_free_space_percent: {
-        value: cdktf.numberToHclTerraform(this._volumeFreeSpacePercent),
+        value: cdktn.numberToHclTerraform(this._volumeFreeSpacePercent),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

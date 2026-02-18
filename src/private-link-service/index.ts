@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PrivateLinkServiceConfig extends cdktf.TerraformMetaArguments {
+export interface PrivateLinkServiceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/private_link_service#auto_approval_subscription_ids PrivateLinkService#auto_approval_subscription_ids}
   */
@@ -23,7 +23,7 @@ export interface PrivateLinkServiceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/private_link_service#enable_proxy_protocol PrivateLinkService#enable_proxy_protocol}
   */
-  readonly enableProxyProtocol?: boolean | cdktf.IResolvable;
+  readonly enableProxyProtocol?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/private_link_service#fqdns PrivateLinkService#fqdns}
   */
@@ -64,7 +64,7 @@ export interface PrivateLinkServiceConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/private_link_service#nat_ip_configuration PrivateLinkService#nat_ip_configuration}
   */
-  readonly natIpConfiguration: PrivateLinkServiceNatIpConfiguration[] | cdktf.IResolvable;
+  readonly natIpConfiguration: PrivateLinkServiceNatIpConfiguration[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -80,7 +80,7 @@ export interface PrivateLinkServiceNatIpConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/private_link_service#primary PrivateLinkService#primary}
   */
-  readonly primary: boolean | cdktf.IResolvable;
+  readonly primary: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/private_link_service#private_ip_address PrivateLinkService#private_ip_address}
   */
@@ -95,53 +95,53 @@ export interface PrivateLinkServiceNatIpConfiguration {
   readonly subnetId: string;
 }
 
-export function privateLinkServiceNatIpConfigurationToTerraform(struct?: PrivateLinkServiceNatIpConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privateLinkServiceNatIpConfigurationToTerraform(struct?: PrivateLinkServiceNatIpConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    primary: cdktf.booleanToTerraform(struct!.primary),
-    private_ip_address: cdktf.stringToTerraform(struct!.privateIpAddress),
-    private_ip_address_version: cdktf.stringToTerraform(struct!.privateIpAddressVersion),
-    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
+    name: cdktn.stringToTerraform(struct!.name),
+    primary: cdktn.booleanToTerraform(struct!.primary),
+    private_ip_address: cdktn.stringToTerraform(struct!.privateIpAddress),
+    private_ip_address_version: cdktn.stringToTerraform(struct!.privateIpAddressVersion),
+    subnet_id: cdktn.stringToTerraform(struct!.subnetId),
   }
 }
 
 
-export function privateLinkServiceNatIpConfigurationToHclTerraform(struct?: PrivateLinkServiceNatIpConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privateLinkServiceNatIpConfigurationToHclTerraform(struct?: PrivateLinkServiceNatIpConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     primary: {
-      value: cdktf.booleanToHclTerraform(struct!.primary),
+      value: cdktn.booleanToHclTerraform(struct!.primary),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     private_ip_address: {
-      value: cdktf.stringToHclTerraform(struct!.privateIpAddress),
+      value: cdktn.stringToHclTerraform(struct!.privateIpAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     private_ip_address_version: {
-      value: cdktf.stringToHclTerraform(struct!.privateIpAddressVersion),
+      value: cdktn.stringToHclTerraform(struct!.privateIpAddressVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.subnetId),
+      value: cdktn.stringToHclTerraform(struct!.subnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -152,9 +152,9 @@ export function privateLinkServiceNatIpConfigurationToHclTerraform(struct?: Priv
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivateLinkServiceNatIpConfigurationOutputReference extends cdktf.ComplexObject {
+export class PrivateLinkServiceNatIpConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -162,11 +162,11 @@ export class PrivateLinkServiceNatIpConfigurationOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PrivateLinkServiceNatIpConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): PrivateLinkServiceNatIpConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -195,7 +195,7 @@ export class PrivateLinkServiceNatIpConfigurationOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PrivateLinkServiceNatIpConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PrivateLinkServiceNatIpConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -205,7 +205,7 @@ export class PrivateLinkServiceNatIpConfigurationOutputReference extends cdktf.C
       this._privateIpAddressVersion = undefined;
       this._subnetId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -234,11 +234,11 @@ export class PrivateLinkServiceNatIpConfigurationOutputReference extends cdktf.C
   }
 
   // primary - computed: false, optional: false, required: true
-  private _primary?: boolean | cdktf.IResolvable; 
+  private _primary?: boolean | cdktn.IResolvable; 
   public get primary() {
     return this.getBooleanAttribute('primary');
   }
-  public set primary(value: boolean | cdktf.IResolvable) {
+  public set primary(value: boolean | cdktn.IResolvable) {
     this._primary = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -292,15 +292,15 @@ export class PrivateLinkServiceNatIpConfigurationOutputReference extends cdktf.C
   }
 }
 
-export class PrivateLinkServiceNatIpConfigurationList extends cdktf.ComplexList {
-  public internalValue? : PrivateLinkServiceNatIpConfiguration[] | cdktf.IResolvable
+export class PrivateLinkServiceNatIpConfigurationList extends cdktn.ComplexList {
+  public internalValue? : PrivateLinkServiceNatIpConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -330,46 +330,46 @@ export interface PrivateLinkServiceTimeouts {
   readonly update?: string;
 }
 
-export function privateLinkServiceTimeoutsToTerraform(struct?: PrivateLinkServiceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privateLinkServiceTimeoutsToTerraform(struct?: PrivateLinkServiceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function privateLinkServiceTimeoutsToHclTerraform(struct?: PrivateLinkServiceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privateLinkServiceTimeoutsToHclTerraform(struct?: PrivateLinkServiceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -380,19 +380,19 @@ export function privateLinkServiceTimeoutsToHclTerraform(struct?: PrivateLinkSer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivateLinkServiceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class PrivateLinkServiceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PrivateLinkServiceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): PrivateLinkServiceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -417,7 +417,7 @@ export class PrivateLinkServiceTimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PrivateLinkServiceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PrivateLinkServiceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -426,7 +426,7 @@ export class PrivateLinkServiceTimeoutsOutputReference extends cdktf.ComplexObje
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -508,7 +508,7 @@ export class PrivateLinkServiceTimeoutsOutputReference extends cdktf.ComplexObje
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/private_link_service azurerm_private_link_service}
 */
-export class PrivateLinkService extends cdktf.TerraformResource {
+export class PrivateLinkService extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -519,14 +519,14 @@ export class PrivateLinkService extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PrivateLinkService resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PrivateLinkService resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PrivateLinkService to import
   * @param importFromId The id of the existing PrivateLinkService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/private_link_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PrivateLinkService to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_private_link_service", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_private_link_service", importId: importFromId, provider });
       }
 
   // ===========
@@ -583,7 +583,7 @@ export class PrivateLinkService extends cdktf.TerraformResource {
   // auto_approval_subscription_ids - computed: false, optional: true, required: false
   private _autoApprovalSubscriptionIds?: string[]; 
   public get autoApprovalSubscriptionIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('auto_approval_subscription_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('auto_approval_subscription_ids'));
   }
   public set autoApprovalSubscriptionIds(value: string[]) {
     this._autoApprovalSubscriptionIds = value;
@@ -613,11 +613,11 @@ export class PrivateLinkService extends cdktf.TerraformResource {
   }
 
   // enable_proxy_protocol - computed: false, optional: true, required: false
-  private _enableProxyProtocol?: boolean | cdktf.IResolvable; 
+  private _enableProxyProtocol?: boolean | cdktn.IResolvable; 
   public get enableProxyProtocol() {
     return this.getBooleanAttribute('enable_proxy_protocol');
   }
-  public set enableProxyProtocol(value: boolean | cdktf.IResolvable) {
+  public set enableProxyProtocol(value: boolean | cdktn.IResolvable) {
     this._enableProxyProtocol = value;
   }
   public resetEnableProxyProtocol() {
@@ -663,7 +663,7 @@ export class PrivateLinkService extends cdktf.TerraformResource {
   // load_balancer_frontend_ip_configuration_ids - computed: false, optional: true, required: false
   private _loadBalancerFrontendIpConfigurationIds?: string[]; 
   public get loadBalancerFrontendIpConfigurationIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('load_balancer_frontend_ip_configuration_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('load_balancer_frontend_ip_configuration_ids'));
   }
   public set loadBalancerFrontendIpConfigurationIds(value: string[]) {
     this._loadBalancerFrontendIpConfigurationIds = value;
@@ -734,7 +734,7 @@ export class PrivateLinkService extends cdktf.TerraformResource {
   // visibility_subscription_ids - computed: false, optional: true, required: false
   private _visibilitySubscriptionIds?: string[]; 
   public get visibilitySubscriptionIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('visibility_subscription_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('visibility_subscription_ids'));
   }
   public set visibilitySubscriptionIds(value: string[]) {
     this._visibilitySubscriptionIds = value;
@@ -752,7 +752,7 @@ export class PrivateLinkService extends cdktf.TerraformResource {
   public get natIpConfiguration() {
     return this._natIpConfiguration;
   }
-  public putNatIpConfiguration(value: PrivateLinkServiceNatIpConfiguration[] | cdktf.IResolvable) {
+  public putNatIpConfiguration(value: PrivateLinkServiceNatIpConfiguration[] | cdktn.IResolvable) {
     this._natIpConfiguration.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -782,18 +782,18 @@ export class PrivateLinkService extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_approval_subscription_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._autoApprovalSubscriptionIds),
-      destination_ip_address: cdktf.stringToTerraform(this._destinationIpAddress),
-      enable_proxy_protocol: cdktf.booleanToTerraform(this._enableProxyProtocol),
-      fqdns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._fqdns),
-      id: cdktf.stringToTerraform(this._id),
-      load_balancer_frontend_ip_configuration_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._loadBalancerFrontendIpConfigurationIds),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      visibility_subscription_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._visibilitySubscriptionIds),
-      nat_ip_configuration: cdktf.listMapper(privateLinkServiceNatIpConfigurationToTerraform, true)(this._natIpConfiguration.internalValue),
+      auto_approval_subscription_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._autoApprovalSubscriptionIds),
+      destination_ip_address: cdktn.stringToTerraform(this._destinationIpAddress),
+      enable_proxy_protocol: cdktn.booleanToTerraform(this._enableProxyProtocol),
+      fqdns: cdktn.listMapper(cdktn.stringToTerraform, false)(this._fqdns),
+      id: cdktn.stringToTerraform(this._id),
+      load_balancer_frontend_ip_configuration_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._loadBalancerFrontendIpConfigurationIds),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      visibility_subscription_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._visibilitySubscriptionIds),
+      nat_ip_configuration: cdktn.listMapper(privateLinkServiceNatIpConfigurationToTerraform, true)(this._natIpConfiguration.internalValue),
       timeouts: privateLinkServiceTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -801,73 +801,73 @@ export class PrivateLinkService extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       auto_approval_subscription_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._autoApprovalSubscriptionIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._autoApprovalSubscriptionIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       destination_ip_address: {
-        value: cdktf.stringToHclTerraform(this._destinationIpAddress),
+        value: cdktn.stringToHclTerraform(this._destinationIpAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_proxy_protocol: {
-        value: cdktf.booleanToHclTerraform(this._enableProxyProtocol),
+        value: cdktn.booleanToHclTerraform(this._enableProxyProtocol),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       fqdns: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._fqdns),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._fqdns),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       load_balancer_frontend_ip_configuration_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._loadBalancerFrontendIpConfigurationIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._loadBalancerFrontendIpConfigurationIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       visibility_subscription_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._visibilitySubscriptionIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._visibilitySubscriptionIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       nat_ip_configuration: {
-        value: cdktf.listMapperHcl(privateLinkServiceNatIpConfigurationToHclTerraform, true)(this._natIpConfiguration.internalValue),
+        value: cdktn.listMapperHcl(privateLinkServiceNatIpConfigurationToHclTerraform, true)(this._natIpConfiguration.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "PrivateLinkServiceNatIpConfigurationList",

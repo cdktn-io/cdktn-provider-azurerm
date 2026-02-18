@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LinuxVirtualMachineConfig extends cdktf.TerraformMetaArguments {
+export interface LinuxVirtualMachineConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_virtual_machine#admin_password LinuxVirtualMachine#admin_password}
   */
@@ -23,7 +23,7 @@ export interface LinuxVirtualMachineConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_virtual_machine#allow_extension_operations LinuxVirtualMachine#allow_extension_operations}
   */
-  readonly allowExtensionOperations?: boolean | cdktf.IResolvable;
+  readonly allowExtensionOperations?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_virtual_machine#availability_set_id LinuxVirtualMachine#availability_set_id}
   */
@@ -31,7 +31,7 @@ export interface LinuxVirtualMachineConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_virtual_machine#bypass_platform_safety_checks_on_user_schedule_enabled LinuxVirtualMachine#bypass_platform_safety_checks_on_user_schedule_enabled}
   */
-  readonly bypassPlatformSafetyChecksOnUserScheduleEnabled?: boolean | cdktf.IResolvable;
+  readonly bypassPlatformSafetyChecksOnUserScheduleEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_virtual_machine#capacity_reservation_group_id LinuxVirtualMachine#capacity_reservation_group_id}
   */
@@ -55,7 +55,7 @@ export interface LinuxVirtualMachineConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_virtual_machine#disable_password_authentication LinuxVirtualMachine#disable_password_authentication}
   */
-  readonly disablePasswordAuthentication?: boolean | cdktf.IResolvable;
+  readonly disablePasswordAuthentication?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_virtual_machine#disk_controller_type LinuxVirtualMachine#disk_controller_type}
   */
@@ -67,7 +67,7 @@ export interface LinuxVirtualMachineConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_virtual_machine#encryption_at_host_enabled LinuxVirtualMachine#encryption_at_host_enabled}
   */
-  readonly encryptionAtHostEnabled?: boolean | cdktf.IResolvable;
+  readonly encryptionAtHostEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_virtual_machine#eviction_policy LinuxVirtualMachine#eviction_policy}
   */
@@ -126,7 +126,7 @@ export interface LinuxVirtualMachineConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_virtual_machine#provision_vm_agent LinuxVirtualMachine#provision_vm_agent}
   */
-  readonly provisionVmAgent?: boolean | cdktf.IResolvable;
+  readonly provisionVmAgent?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_virtual_machine#proximity_placement_group_id LinuxVirtualMachine#proximity_placement_group_id}
   */
@@ -142,7 +142,7 @@ export interface LinuxVirtualMachineConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_virtual_machine#secure_boot_enabled LinuxVirtualMachine#secure_boot_enabled}
   */
-  readonly secureBootEnabled?: boolean | cdktf.IResolvable;
+  readonly secureBootEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_virtual_machine#size LinuxVirtualMachine#size}
   */
@@ -166,11 +166,11 @@ export interface LinuxVirtualMachineConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_virtual_machine#vm_agent_platform_updates_enabled LinuxVirtualMachine#vm_agent_platform_updates_enabled}
   */
-  readonly vmAgentPlatformUpdatesEnabled?: boolean | cdktf.IResolvable;
+  readonly vmAgentPlatformUpdatesEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_virtual_machine#vtpm_enabled LinuxVirtualMachine#vtpm_enabled}
   */
-  readonly vtpmEnabled?: boolean | cdktf.IResolvable;
+  readonly vtpmEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_virtual_machine#zone LinuxVirtualMachine#zone}
   */
@@ -186,7 +186,7 @@ export interface LinuxVirtualMachineConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_virtual_machine#admin_ssh_key LinuxVirtualMachine#admin_ssh_key}
   */
-  readonly adminSshKey?: LinuxVirtualMachineAdminSshKey[] | cdktf.IResolvable;
+  readonly adminSshKey?: LinuxVirtualMachineAdminSshKey[] | cdktn.IResolvable;
   /**
   * boot_diagnostics block
   *
@@ -198,7 +198,7 @@ export interface LinuxVirtualMachineConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_virtual_machine#gallery_application LinuxVirtualMachine#gallery_application}
   */
-  readonly galleryApplication?: LinuxVirtualMachineGalleryApplication[] | cdktf.IResolvable;
+  readonly galleryApplication?: LinuxVirtualMachineGalleryApplication[] | cdktn.IResolvable;
   /**
   * identity block
   *
@@ -228,7 +228,7 @@ export interface LinuxVirtualMachineConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_virtual_machine#secret LinuxVirtualMachine#secret}
   */
-  readonly secret?: LinuxVirtualMachineSecret[] | cdktf.IResolvable;
+  readonly secret?: LinuxVirtualMachineSecret[] | cdktn.IResolvable;
   /**
   * source_image_reference block
   *
@@ -252,39 +252,39 @@ export interface LinuxVirtualMachineAdditionalCapabilities {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_virtual_machine#hibernation_enabled LinuxVirtualMachine#hibernation_enabled}
   */
-  readonly hibernationEnabled?: boolean | cdktf.IResolvable;
+  readonly hibernationEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_virtual_machine#ultra_ssd_enabled LinuxVirtualMachine#ultra_ssd_enabled}
   */
-  readonly ultraSsdEnabled?: boolean | cdktf.IResolvable;
+  readonly ultraSsdEnabled?: boolean | cdktn.IResolvable;
 }
 
 export function linuxVirtualMachineAdditionalCapabilitiesToTerraform(struct?: LinuxVirtualMachineAdditionalCapabilitiesOutputReference | LinuxVirtualMachineAdditionalCapabilities): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hibernation_enabled: cdktf.booleanToTerraform(struct!.hibernationEnabled),
-    ultra_ssd_enabled: cdktf.booleanToTerraform(struct!.ultraSsdEnabled),
+    hibernation_enabled: cdktn.booleanToTerraform(struct!.hibernationEnabled),
+    ultra_ssd_enabled: cdktn.booleanToTerraform(struct!.ultraSsdEnabled),
   }
 }
 
 
 export function linuxVirtualMachineAdditionalCapabilitiesToHclTerraform(struct?: LinuxVirtualMachineAdditionalCapabilitiesOutputReference | LinuxVirtualMachineAdditionalCapabilities): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hibernation_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.hibernationEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.hibernationEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     ultra_ssd_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.ultraSsdEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.ultraSsdEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -295,14 +295,14 @@ export function linuxVirtualMachineAdditionalCapabilitiesToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxVirtualMachineAdditionalCapabilitiesOutputReference extends cdktf.ComplexObject {
+export class LinuxVirtualMachineAdditionalCapabilitiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -334,11 +334,11 @@ export class LinuxVirtualMachineAdditionalCapabilitiesOutputReference extends cd
   }
 
   // hibernation_enabled - computed: false, optional: true, required: false
-  private _hibernationEnabled?: boolean | cdktf.IResolvable; 
+  private _hibernationEnabled?: boolean | cdktn.IResolvable; 
   public get hibernationEnabled() {
     return this.getBooleanAttribute('hibernation_enabled');
   }
-  public set hibernationEnabled(value: boolean | cdktf.IResolvable) {
+  public set hibernationEnabled(value: boolean | cdktn.IResolvable) {
     this._hibernationEnabled = value;
   }
   public resetHibernationEnabled() {
@@ -350,11 +350,11 @@ export class LinuxVirtualMachineAdditionalCapabilitiesOutputReference extends cd
   }
 
   // ultra_ssd_enabled - computed: false, optional: true, required: false
-  private _ultraSsdEnabled?: boolean | cdktf.IResolvable; 
+  private _ultraSsdEnabled?: boolean | cdktn.IResolvable; 
   public get ultraSsdEnabled() {
     return this.getBooleanAttribute('ultra_ssd_enabled');
   }
-  public set ultraSsdEnabled(value: boolean | cdktf.IResolvable) {
+  public set ultraSsdEnabled(value: boolean | cdktn.IResolvable) {
     this._ultraSsdEnabled = value;
   }
   public resetUltraSsdEnabled() {
@@ -376,32 +376,32 @@ export interface LinuxVirtualMachineAdminSshKey {
   readonly username: string;
 }
 
-export function linuxVirtualMachineAdminSshKeyToTerraform(struct?: LinuxVirtualMachineAdminSshKey | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function linuxVirtualMachineAdminSshKeyToTerraform(struct?: LinuxVirtualMachineAdminSshKey | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    public_key: cdktf.stringToTerraform(struct!.publicKey),
-    username: cdktf.stringToTerraform(struct!.username),
+    public_key: cdktn.stringToTerraform(struct!.publicKey),
+    username: cdktn.stringToTerraform(struct!.username),
   }
 }
 
 
-export function linuxVirtualMachineAdminSshKeyToHclTerraform(struct?: LinuxVirtualMachineAdminSshKey | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function linuxVirtualMachineAdminSshKeyToHclTerraform(struct?: LinuxVirtualMachineAdminSshKey | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     public_key: {
-      value: cdktf.stringToHclTerraform(struct!.publicKey),
+      value: cdktn.stringToHclTerraform(struct!.publicKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -412,9 +412,9 @@ export function linuxVirtualMachineAdminSshKeyToHclTerraform(struct?: LinuxVirtu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxVirtualMachineAdminSshKeyOutputReference extends cdktf.ComplexObject {
+export class LinuxVirtualMachineAdminSshKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -422,11 +422,11 @@ export class LinuxVirtualMachineAdminSshKeyOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LinuxVirtualMachineAdminSshKey | cdktf.IResolvable | undefined {
+  public get internalValue(): LinuxVirtualMachineAdminSshKey | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -443,14 +443,14 @@ export class LinuxVirtualMachineAdminSshKeyOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LinuxVirtualMachineAdminSshKey | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LinuxVirtualMachineAdminSshKey | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._publicKey = undefined;
       this._username = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -489,15 +489,15 @@ export class LinuxVirtualMachineAdminSshKeyOutputReference extends cdktf.Complex
   }
 }
 
-export class LinuxVirtualMachineAdminSshKeyList extends cdktf.ComplexList {
-  public internalValue? : LinuxVirtualMachineAdminSshKey[] | cdktf.IResolvable
+export class LinuxVirtualMachineAdminSshKeyList extends cdktn.ComplexList {
+  public internalValue? : LinuxVirtualMachineAdminSshKey[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -516,24 +516,24 @@ export interface LinuxVirtualMachineBootDiagnostics {
 }
 
 export function linuxVirtualMachineBootDiagnosticsToTerraform(struct?: LinuxVirtualMachineBootDiagnosticsOutputReference | LinuxVirtualMachineBootDiagnostics): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    storage_account_uri: cdktf.stringToTerraform(struct!.storageAccountUri),
+    storage_account_uri: cdktn.stringToTerraform(struct!.storageAccountUri),
   }
 }
 
 
 export function linuxVirtualMachineBootDiagnosticsToHclTerraform(struct?: LinuxVirtualMachineBootDiagnosticsOutputReference | LinuxVirtualMachineBootDiagnostics): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     storage_account_uri: {
-      value: cdktf.stringToHclTerraform(struct!.storageAccountUri),
+      value: cdktn.stringToHclTerraform(struct!.storageAccountUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -544,14 +544,14 @@ export function linuxVirtualMachineBootDiagnosticsToHclTerraform(struct?: LinuxV
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxVirtualMachineBootDiagnosticsOutputReference extends cdktf.ComplexObject {
+export class LinuxVirtualMachineBootDiagnosticsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -596,7 +596,7 @@ export interface LinuxVirtualMachineGalleryApplication {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_virtual_machine#automatic_upgrade_enabled LinuxVirtualMachine#automatic_upgrade_enabled}
   */
-  readonly automaticUpgradeEnabled?: boolean | cdktf.IResolvable;
+  readonly automaticUpgradeEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_virtual_machine#configuration_blob_uri LinuxVirtualMachine#configuration_blob_uri}
   */
@@ -612,67 +612,67 @@ export interface LinuxVirtualMachineGalleryApplication {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_virtual_machine#treat_failure_as_deployment_failure_enabled LinuxVirtualMachine#treat_failure_as_deployment_failure_enabled}
   */
-  readonly treatFailureAsDeploymentFailureEnabled?: boolean | cdktf.IResolvable;
+  readonly treatFailureAsDeploymentFailureEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_virtual_machine#version_id LinuxVirtualMachine#version_id}
   */
   readonly versionId: string;
 }
 
-export function linuxVirtualMachineGalleryApplicationToTerraform(struct?: LinuxVirtualMachineGalleryApplication | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function linuxVirtualMachineGalleryApplicationToTerraform(struct?: LinuxVirtualMachineGalleryApplication | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    automatic_upgrade_enabled: cdktf.booleanToTerraform(struct!.automaticUpgradeEnabled),
-    configuration_blob_uri: cdktf.stringToTerraform(struct!.configurationBlobUri),
-    order: cdktf.numberToTerraform(struct!.order),
-    tag: cdktf.stringToTerraform(struct!.tag),
-    treat_failure_as_deployment_failure_enabled: cdktf.booleanToTerraform(struct!.treatFailureAsDeploymentFailureEnabled),
-    version_id: cdktf.stringToTerraform(struct!.versionId),
+    automatic_upgrade_enabled: cdktn.booleanToTerraform(struct!.automaticUpgradeEnabled),
+    configuration_blob_uri: cdktn.stringToTerraform(struct!.configurationBlobUri),
+    order: cdktn.numberToTerraform(struct!.order),
+    tag: cdktn.stringToTerraform(struct!.tag),
+    treat_failure_as_deployment_failure_enabled: cdktn.booleanToTerraform(struct!.treatFailureAsDeploymentFailureEnabled),
+    version_id: cdktn.stringToTerraform(struct!.versionId),
   }
 }
 
 
-export function linuxVirtualMachineGalleryApplicationToHclTerraform(struct?: LinuxVirtualMachineGalleryApplication | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function linuxVirtualMachineGalleryApplicationToHclTerraform(struct?: LinuxVirtualMachineGalleryApplication | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     automatic_upgrade_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.automaticUpgradeEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.automaticUpgradeEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     configuration_blob_uri: {
-      value: cdktf.stringToHclTerraform(struct!.configurationBlobUri),
+      value: cdktn.stringToHclTerraform(struct!.configurationBlobUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.numberToHclTerraform(struct!.order),
+      value: cdktn.numberToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tag: {
-      value: cdktf.stringToHclTerraform(struct!.tag),
+      value: cdktn.stringToHclTerraform(struct!.tag),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     treat_failure_as_deployment_failure_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.treatFailureAsDeploymentFailureEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.treatFailureAsDeploymentFailureEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     version_id: {
-      value: cdktf.stringToHclTerraform(struct!.versionId),
+      value: cdktn.stringToHclTerraform(struct!.versionId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -683,9 +683,9 @@ export function linuxVirtualMachineGalleryApplicationToHclTerraform(struct?: Lin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxVirtualMachineGalleryApplicationOutputReference extends cdktf.ComplexObject {
+export class LinuxVirtualMachineGalleryApplicationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -693,11 +693,11 @@ export class LinuxVirtualMachineGalleryApplicationOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LinuxVirtualMachineGalleryApplication | cdktf.IResolvable | undefined {
+  public get internalValue(): LinuxVirtualMachineGalleryApplication | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -730,7 +730,7 @@ export class LinuxVirtualMachineGalleryApplicationOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LinuxVirtualMachineGalleryApplication | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LinuxVirtualMachineGalleryApplication | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -741,7 +741,7 @@ export class LinuxVirtualMachineGalleryApplicationOutputReference extends cdktf.
       this._treatFailureAsDeploymentFailureEnabled = undefined;
       this._versionId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -758,11 +758,11 @@ export class LinuxVirtualMachineGalleryApplicationOutputReference extends cdktf.
   }
 
   // automatic_upgrade_enabled - computed: false, optional: true, required: false
-  private _automaticUpgradeEnabled?: boolean | cdktf.IResolvable; 
+  private _automaticUpgradeEnabled?: boolean | cdktn.IResolvable; 
   public get automaticUpgradeEnabled() {
     return this.getBooleanAttribute('automatic_upgrade_enabled');
   }
-  public set automaticUpgradeEnabled(value: boolean | cdktf.IResolvable) {
+  public set automaticUpgradeEnabled(value: boolean | cdktn.IResolvable) {
     this._automaticUpgradeEnabled = value;
   }
   public resetAutomaticUpgradeEnabled() {
@@ -822,11 +822,11 @@ export class LinuxVirtualMachineGalleryApplicationOutputReference extends cdktf.
   }
 
   // treat_failure_as_deployment_failure_enabled - computed: false, optional: true, required: false
-  private _treatFailureAsDeploymentFailureEnabled?: boolean | cdktf.IResolvable; 
+  private _treatFailureAsDeploymentFailureEnabled?: boolean | cdktn.IResolvable; 
   public get treatFailureAsDeploymentFailureEnabled() {
     return this.getBooleanAttribute('treat_failure_as_deployment_failure_enabled');
   }
-  public set treatFailureAsDeploymentFailureEnabled(value: boolean | cdktf.IResolvable) {
+  public set treatFailureAsDeploymentFailureEnabled(value: boolean | cdktn.IResolvable) {
     this._treatFailureAsDeploymentFailureEnabled = value;
   }
   public resetTreatFailureAsDeploymentFailureEnabled() {
@@ -851,15 +851,15 @@ export class LinuxVirtualMachineGalleryApplicationOutputReference extends cdktf.
   }
 }
 
-export class LinuxVirtualMachineGalleryApplicationList extends cdktf.ComplexList {
-  public internalValue? : LinuxVirtualMachineGalleryApplication[] | cdktf.IResolvable
+export class LinuxVirtualMachineGalleryApplicationList extends cdktn.ComplexList {
+  public internalValue? : LinuxVirtualMachineGalleryApplication[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -882,31 +882,31 @@ export interface LinuxVirtualMachineIdentity {
 }
 
 export function linuxVirtualMachineIdentityToTerraform(struct?: LinuxVirtualMachineIdentityOutputReference | LinuxVirtualMachineIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function linuxVirtualMachineIdentityToHclTerraform(struct?: LinuxVirtualMachineIdentityOutputReference | LinuxVirtualMachineIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -917,14 +917,14 @@ export function linuxVirtualMachineIdentityToHclTerraform(struct?: LinuxVirtualM
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxVirtualMachineIdentityOutputReference extends cdktf.ComplexObject {
+export class LinuxVirtualMachineIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -958,7 +958,7 @@ export class LinuxVirtualMachineIdentityOutputReference extends cdktf.ComplexObj
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -1006,31 +1006,31 @@ export interface LinuxVirtualMachineOsDiskDiffDiskSettings {
 }
 
 export function linuxVirtualMachineOsDiskDiffDiskSettingsToTerraform(struct?: LinuxVirtualMachineOsDiskDiffDiskSettingsOutputReference | LinuxVirtualMachineOsDiskDiffDiskSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    option: cdktf.stringToTerraform(struct!.option),
-    placement: cdktf.stringToTerraform(struct!.placement),
+    option: cdktn.stringToTerraform(struct!.option),
+    placement: cdktn.stringToTerraform(struct!.placement),
   }
 }
 
 
 export function linuxVirtualMachineOsDiskDiffDiskSettingsToHclTerraform(struct?: LinuxVirtualMachineOsDiskDiffDiskSettingsOutputReference | LinuxVirtualMachineOsDiskDiffDiskSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     option: {
-      value: cdktf.stringToHclTerraform(struct!.option),
+      value: cdktn.stringToHclTerraform(struct!.option),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     placement: {
-      value: cdktf.stringToHclTerraform(struct!.placement),
+      value: cdktn.stringToHclTerraform(struct!.placement),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1041,14 +1041,14 @@ export function linuxVirtualMachineOsDiskDiffDiskSettingsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxVirtualMachineOsDiskDiffDiskSettingsOutputReference extends cdktf.ComplexObject {
+export class LinuxVirtualMachineOsDiskDiffDiskSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1140,7 +1140,7 @@ export interface LinuxVirtualMachineOsDisk {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_virtual_machine#write_accelerator_enabled LinuxVirtualMachine#write_accelerator_enabled}
   */
-  readonly writeAcceleratorEnabled?: boolean | cdktf.IResolvable;
+  readonly writeAcceleratorEnabled?: boolean | cdktn.IResolvable;
   /**
   * diff_disk_settings block
   *
@@ -1150,74 +1150,74 @@ export interface LinuxVirtualMachineOsDisk {
 }
 
 export function linuxVirtualMachineOsDiskToTerraform(struct?: LinuxVirtualMachineOsDiskOutputReference | LinuxVirtualMachineOsDisk): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    caching: cdktf.stringToTerraform(struct!.caching),
-    disk_encryption_set_id: cdktf.stringToTerraform(struct!.diskEncryptionSetId),
-    disk_size_gb: cdktf.numberToTerraform(struct!.diskSizeGb),
-    name: cdktf.stringToTerraform(struct!.name),
-    secure_vm_disk_encryption_set_id: cdktf.stringToTerraform(struct!.secureVmDiskEncryptionSetId),
-    security_encryption_type: cdktf.stringToTerraform(struct!.securityEncryptionType),
-    storage_account_type: cdktf.stringToTerraform(struct!.storageAccountType),
-    write_accelerator_enabled: cdktf.booleanToTerraform(struct!.writeAcceleratorEnabled),
+    caching: cdktn.stringToTerraform(struct!.caching),
+    disk_encryption_set_id: cdktn.stringToTerraform(struct!.diskEncryptionSetId),
+    disk_size_gb: cdktn.numberToTerraform(struct!.diskSizeGb),
+    name: cdktn.stringToTerraform(struct!.name),
+    secure_vm_disk_encryption_set_id: cdktn.stringToTerraform(struct!.secureVmDiskEncryptionSetId),
+    security_encryption_type: cdktn.stringToTerraform(struct!.securityEncryptionType),
+    storage_account_type: cdktn.stringToTerraform(struct!.storageAccountType),
+    write_accelerator_enabled: cdktn.booleanToTerraform(struct!.writeAcceleratorEnabled),
     diff_disk_settings: linuxVirtualMachineOsDiskDiffDiskSettingsToTerraform(struct!.diffDiskSettings),
   }
 }
 
 
 export function linuxVirtualMachineOsDiskToHclTerraform(struct?: LinuxVirtualMachineOsDiskOutputReference | LinuxVirtualMachineOsDisk): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     caching: {
-      value: cdktf.stringToHclTerraform(struct!.caching),
+      value: cdktn.stringToHclTerraform(struct!.caching),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     disk_encryption_set_id: {
-      value: cdktf.stringToHclTerraform(struct!.diskEncryptionSetId),
+      value: cdktn.stringToHclTerraform(struct!.diskEncryptionSetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     disk_size_gb: {
-      value: cdktf.numberToHclTerraform(struct!.diskSizeGb),
+      value: cdktn.numberToHclTerraform(struct!.diskSizeGb),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secure_vm_disk_encryption_set_id: {
-      value: cdktf.stringToHclTerraform(struct!.secureVmDiskEncryptionSetId),
+      value: cdktn.stringToHclTerraform(struct!.secureVmDiskEncryptionSetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     security_encryption_type: {
-      value: cdktf.stringToHclTerraform(struct!.securityEncryptionType),
+      value: cdktn.stringToHclTerraform(struct!.securityEncryptionType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_account_type: {
-      value: cdktf.stringToHclTerraform(struct!.storageAccountType),
+      value: cdktn.stringToHclTerraform(struct!.storageAccountType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     write_accelerator_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.writeAcceleratorEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.writeAcceleratorEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1234,14 +1234,14 @@ export function linuxVirtualMachineOsDiskToHclTerraform(struct?: LinuxVirtualMac
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxVirtualMachineOsDiskOutputReference extends cdktf.ComplexObject {
+export class LinuxVirtualMachineOsDiskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1429,11 +1429,11 @@ export class LinuxVirtualMachineOsDiskOutputReference extends cdktf.ComplexObjec
   }
 
   // write_accelerator_enabled - computed: false, optional: true, required: false
-  private _writeAcceleratorEnabled?: boolean | cdktf.IResolvable; 
+  private _writeAcceleratorEnabled?: boolean | cdktn.IResolvable; 
   public get writeAcceleratorEnabled() {
     return this.getBooleanAttribute('write_accelerator_enabled');
   }
-  public set writeAcceleratorEnabled(value: boolean | cdktf.IResolvable) {
+  public set writeAcceleratorEnabled(value: boolean | cdktn.IResolvable) {
     this._writeAcceleratorEnabled = value;
   }
   public resetWriteAcceleratorEnabled() {
@@ -1468,24 +1468,24 @@ export interface LinuxVirtualMachineOsImageNotification {
 }
 
 export function linuxVirtualMachineOsImageNotificationToTerraform(struct?: LinuxVirtualMachineOsImageNotificationOutputReference | LinuxVirtualMachineOsImageNotification): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    timeout: cdktf.stringToTerraform(struct!.timeout),
+    timeout: cdktn.stringToTerraform(struct!.timeout),
   }
 }
 
 
 export function linuxVirtualMachineOsImageNotificationToHclTerraform(struct?: LinuxVirtualMachineOsImageNotificationOutputReference | LinuxVirtualMachineOsImageNotification): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     timeout: {
-      value: cdktf.stringToHclTerraform(struct!.timeout),
+      value: cdktn.stringToHclTerraform(struct!.timeout),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1496,14 +1496,14 @@ export function linuxVirtualMachineOsImageNotificationToHclTerraform(struct?: Li
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxVirtualMachineOsImageNotificationOutputReference extends cdktf.ComplexObject {
+export class LinuxVirtualMachineOsImageNotificationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1560,38 +1560,38 @@ export interface LinuxVirtualMachinePlan {
 }
 
 export function linuxVirtualMachinePlanToTerraform(struct?: LinuxVirtualMachinePlanOutputReference | LinuxVirtualMachinePlan): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    product: cdktf.stringToTerraform(struct!.product),
-    publisher: cdktf.stringToTerraform(struct!.publisher),
+    name: cdktn.stringToTerraform(struct!.name),
+    product: cdktn.stringToTerraform(struct!.product),
+    publisher: cdktn.stringToTerraform(struct!.publisher),
   }
 }
 
 
 export function linuxVirtualMachinePlanToHclTerraform(struct?: LinuxVirtualMachinePlanOutputReference | LinuxVirtualMachinePlan): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     product: {
-      value: cdktf.stringToHclTerraform(struct!.product),
+      value: cdktn.stringToHclTerraform(struct!.product),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     publisher: {
-      value: cdktf.stringToHclTerraform(struct!.publisher),
+      value: cdktn.stringToHclTerraform(struct!.publisher),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1602,14 +1602,14 @@ export function linuxVirtualMachinePlanToHclTerraform(struct?: LinuxVirtualMachi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxVirtualMachinePlanOutputReference extends cdktf.ComplexObject {
+export class LinuxVirtualMachinePlanOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1692,25 +1692,25 @@ export interface LinuxVirtualMachineSecretCertificate {
   readonly url: string;
 }
 
-export function linuxVirtualMachineSecretCertificateToTerraform(struct?: LinuxVirtualMachineSecretCertificate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function linuxVirtualMachineSecretCertificateToTerraform(struct?: LinuxVirtualMachineSecretCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    url: cdktf.stringToTerraform(struct!.url),
+    url: cdktn.stringToTerraform(struct!.url),
   }
 }
 
 
-export function linuxVirtualMachineSecretCertificateToHclTerraform(struct?: LinuxVirtualMachineSecretCertificate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function linuxVirtualMachineSecretCertificateToHclTerraform(struct?: LinuxVirtualMachineSecretCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     url: {
-      value: cdktf.stringToHclTerraform(struct!.url),
+      value: cdktn.stringToHclTerraform(struct!.url),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1721,9 +1721,9 @@ export function linuxVirtualMachineSecretCertificateToHclTerraform(struct?: Linu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxVirtualMachineSecretCertificateOutputReference extends cdktf.ComplexObject {
+export class LinuxVirtualMachineSecretCertificateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1731,11 +1731,11 @@ export class LinuxVirtualMachineSecretCertificateOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LinuxVirtualMachineSecretCertificate | cdktf.IResolvable | undefined {
+  public get internalValue(): LinuxVirtualMachineSecretCertificate | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1748,13 +1748,13 @@ export class LinuxVirtualMachineSecretCertificateOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LinuxVirtualMachineSecretCertificate | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LinuxVirtualMachineSecretCertificate | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._url = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1779,15 +1779,15 @@ export class LinuxVirtualMachineSecretCertificateOutputReference extends cdktf.C
   }
 }
 
-export class LinuxVirtualMachineSecretCertificateList extends cdktf.ComplexList {
-  public internalValue? : LinuxVirtualMachineSecretCertificate[] | cdktf.IResolvable
+export class LinuxVirtualMachineSecretCertificateList extends cdktn.ComplexList {
+  public internalValue? : LinuxVirtualMachineSecretCertificate[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1808,35 +1808,35 @@ export interface LinuxVirtualMachineSecret {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_virtual_machine#certificate LinuxVirtualMachine#certificate}
   */
-  readonly certificate: LinuxVirtualMachineSecretCertificate[] | cdktf.IResolvable;
+  readonly certificate: LinuxVirtualMachineSecretCertificate[] | cdktn.IResolvable;
 }
 
-export function linuxVirtualMachineSecretToTerraform(struct?: LinuxVirtualMachineSecret | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function linuxVirtualMachineSecretToTerraform(struct?: LinuxVirtualMachineSecret | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key_vault_id: cdktf.stringToTerraform(struct!.keyVaultId),
-    certificate: cdktf.listMapper(linuxVirtualMachineSecretCertificateToTerraform, true)(struct!.certificate),
+    key_vault_id: cdktn.stringToTerraform(struct!.keyVaultId),
+    certificate: cdktn.listMapper(linuxVirtualMachineSecretCertificateToTerraform, true)(struct!.certificate),
   }
 }
 
 
-export function linuxVirtualMachineSecretToHclTerraform(struct?: LinuxVirtualMachineSecret | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function linuxVirtualMachineSecretToHclTerraform(struct?: LinuxVirtualMachineSecret | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key_vault_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultId),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     certificate: {
-      value: cdktf.listMapperHcl(linuxVirtualMachineSecretCertificateToHclTerraform, true)(struct!.certificate),
+      value: cdktn.listMapperHcl(linuxVirtualMachineSecretCertificateToHclTerraform, true)(struct!.certificate),
       isBlock: true,
       type: "set",
       storageClassType: "LinuxVirtualMachineSecretCertificateList",
@@ -1847,9 +1847,9 @@ export function linuxVirtualMachineSecretToHclTerraform(struct?: LinuxVirtualMac
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxVirtualMachineSecretOutputReference extends cdktf.ComplexObject {
+export class LinuxVirtualMachineSecretOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1857,11 +1857,11 @@ export class LinuxVirtualMachineSecretOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LinuxVirtualMachineSecret | cdktf.IResolvable | undefined {
+  public get internalValue(): LinuxVirtualMachineSecret | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1878,14 +1878,14 @@ export class LinuxVirtualMachineSecretOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LinuxVirtualMachineSecret | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LinuxVirtualMachineSecret | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._keyVaultId = undefined;
       this._certificate.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1915,7 +1915,7 @@ export class LinuxVirtualMachineSecretOutputReference extends cdktf.ComplexObjec
   public get certificate() {
     return this._certificate;
   }
-  public putCertificate(value: LinuxVirtualMachineSecretCertificate[] | cdktf.IResolvable) {
+  public putCertificate(value: LinuxVirtualMachineSecretCertificate[] | cdktn.IResolvable) {
     this._certificate.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1924,15 +1924,15 @@ export class LinuxVirtualMachineSecretOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class LinuxVirtualMachineSecretList extends cdktf.ComplexList {
-  public internalValue? : LinuxVirtualMachineSecret[] | cdktf.IResolvable
+export class LinuxVirtualMachineSecretList extends cdktn.ComplexList {
+  public internalValue? : LinuxVirtualMachineSecret[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1963,45 +1963,45 @@ export interface LinuxVirtualMachineSourceImageReference {
 }
 
 export function linuxVirtualMachineSourceImageReferenceToTerraform(struct?: LinuxVirtualMachineSourceImageReferenceOutputReference | LinuxVirtualMachineSourceImageReference): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    offer: cdktf.stringToTerraform(struct!.offer),
-    publisher: cdktf.stringToTerraform(struct!.publisher),
-    sku: cdktf.stringToTerraform(struct!.sku),
-    version: cdktf.stringToTerraform(struct!.version),
+    offer: cdktn.stringToTerraform(struct!.offer),
+    publisher: cdktn.stringToTerraform(struct!.publisher),
+    sku: cdktn.stringToTerraform(struct!.sku),
+    version: cdktn.stringToTerraform(struct!.version),
   }
 }
 
 
 export function linuxVirtualMachineSourceImageReferenceToHclTerraform(struct?: LinuxVirtualMachineSourceImageReferenceOutputReference | LinuxVirtualMachineSourceImageReference): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     offer: {
-      value: cdktf.stringToHclTerraform(struct!.offer),
+      value: cdktn.stringToHclTerraform(struct!.offer),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     publisher: {
-      value: cdktf.stringToHclTerraform(struct!.publisher),
+      value: cdktn.stringToHclTerraform(struct!.publisher),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sku: {
-      value: cdktf.stringToHclTerraform(struct!.sku),
+      value: cdktn.stringToHclTerraform(struct!.sku),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2012,14 +2012,14 @@ export function linuxVirtualMachineSourceImageReferenceToHclTerraform(struct?: L
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxVirtualMachineSourceImageReferenceOutputReference extends cdktf.ComplexObject {
+export class LinuxVirtualMachineSourceImageReferenceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2118,7 +2118,7 @@ export interface LinuxVirtualMachineTerminationNotification {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_virtual_machine#enabled LinuxVirtualMachine#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_virtual_machine#timeout LinuxVirtualMachine#timeout}
   */
@@ -2126,31 +2126,31 @@ export interface LinuxVirtualMachineTerminationNotification {
 }
 
 export function linuxVirtualMachineTerminationNotificationToTerraform(struct?: LinuxVirtualMachineTerminationNotificationOutputReference | LinuxVirtualMachineTerminationNotification): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    timeout: cdktf.stringToTerraform(struct!.timeout),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    timeout: cdktn.stringToTerraform(struct!.timeout),
   }
 }
 
 
 export function linuxVirtualMachineTerminationNotificationToHclTerraform(struct?: LinuxVirtualMachineTerminationNotificationOutputReference | LinuxVirtualMachineTerminationNotification): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     timeout: {
-      value: cdktf.stringToHclTerraform(struct!.timeout),
+      value: cdktn.stringToHclTerraform(struct!.timeout),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2161,14 +2161,14 @@ export function linuxVirtualMachineTerminationNotificationToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxVirtualMachineTerminationNotificationOutputReference extends cdktf.ComplexObject {
+export class LinuxVirtualMachineTerminationNotificationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2200,11 +2200,11 @@ export class LinuxVirtualMachineTerminationNotificationOutputReference extends c
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -2247,46 +2247,46 @@ export interface LinuxVirtualMachineTimeouts {
   readonly update?: string;
 }
 
-export function linuxVirtualMachineTimeoutsToTerraform(struct?: LinuxVirtualMachineTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function linuxVirtualMachineTimeoutsToTerraform(struct?: LinuxVirtualMachineTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function linuxVirtualMachineTimeoutsToHclTerraform(struct?: LinuxVirtualMachineTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function linuxVirtualMachineTimeoutsToHclTerraform(struct?: LinuxVirtualMachineTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2297,19 +2297,19 @@ export function linuxVirtualMachineTimeoutsToHclTerraform(struct?: LinuxVirtualM
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LinuxVirtualMachineTimeoutsOutputReference extends cdktf.ComplexObject {
+export class LinuxVirtualMachineTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LinuxVirtualMachineTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): LinuxVirtualMachineTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2334,7 +2334,7 @@ export class LinuxVirtualMachineTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LinuxVirtualMachineTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LinuxVirtualMachineTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2343,7 +2343,7 @@ export class LinuxVirtualMachineTimeoutsOutputReference extends cdktf.ComplexObj
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2425,7 +2425,7 @@ export class LinuxVirtualMachineTimeoutsOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_virtual_machine azurerm_linux_virtual_machine}
 */
-export class LinuxVirtualMachine extends cdktf.TerraformResource {
+export class LinuxVirtualMachine extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2436,14 +2436,14 @@ export class LinuxVirtualMachine extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LinuxVirtualMachine resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LinuxVirtualMachine resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LinuxVirtualMachine to import
   * @param importFromId The id of the existing LinuxVirtualMachine that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/linux_virtual_machine#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LinuxVirtualMachine to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_linux_virtual_machine", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_linux_virtual_machine", importId: importFromId, provider });
       }
 
   // ===========
@@ -2564,11 +2564,11 @@ export class LinuxVirtualMachine extends cdktf.TerraformResource {
   }
 
   // allow_extension_operations - computed: true, optional: true, required: false
-  private _allowExtensionOperations?: boolean | cdktf.IResolvable; 
+  private _allowExtensionOperations?: boolean | cdktn.IResolvable; 
   public get allowExtensionOperations() {
     return this.getBooleanAttribute('allow_extension_operations');
   }
-  public set allowExtensionOperations(value: boolean | cdktf.IResolvable) {
+  public set allowExtensionOperations(value: boolean | cdktn.IResolvable) {
     this._allowExtensionOperations = value;
   }
   public resetAllowExtensionOperations() {
@@ -2596,11 +2596,11 @@ export class LinuxVirtualMachine extends cdktf.TerraformResource {
   }
 
   // bypass_platform_safety_checks_on_user_schedule_enabled - computed: false, optional: true, required: false
-  private _bypassPlatformSafetyChecksOnUserScheduleEnabled?: boolean | cdktf.IResolvable; 
+  private _bypassPlatformSafetyChecksOnUserScheduleEnabled?: boolean | cdktn.IResolvable; 
   public get bypassPlatformSafetyChecksOnUserScheduleEnabled() {
     return this.getBooleanAttribute('bypass_platform_safety_checks_on_user_schedule_enabled');
   }
-  public set bypassPlatformSafetyChecksOnUserScheduleEnabled(value: boolean | cdktf.IResolvable) {
+  public set bypassPlatformSafetyChecksOnUserScheduleEnabled(value: boolean | cdktn.IResolvable) {
     this._bypassPlatformSafetyChecksOnUserScheduleEnabled = value;
   }
   public resetBypassPlatformSafetyChecksOnUserScheduleEnabled() {
@@ -2692,11 +2692,11 @@ export class LinuxVirtualMachine extends cdktf.TerraformResource {
   }
 
   // disable_password_authentication - computed: true, optional: true, required: false
-  private _disablePasswordAuthentication?: boolean | cdktf.IResolvable; 
+  private _disablePasswordAuthentication?: boolean | cdktn.IResolvable; 
   public get disablePasswordAuthentication() {
     return this.getBooleanAttribute('disable_password_authentication');
   }
-  public set disablePasswordAuthentication(value: boolean | cdktf.IResolvable) {
+  public set disablePasswordAuthentication(value: boolean | cdktn.IResolvable) {
     this._disablePasswordAuthentication = value;
   }
   public resetDisablePasswordAuthentication() {
@@ -2740,11 +2740,11 @@ export class LinuxVirtualMachine extends cdktf.TerraformResource {
   }
 
   // encryption_at_host_enabled - computed: false, optional: true, required: false
-  private _encryptionAtHostEnabled?: boolean | cdktf.IResolvable; 
+  private _encryptionAtHostEnabled?: boolean | cdktn.IResolvable; 
   public get encryptionAtHostEnabled() {
     return this.getBooleanAttribute('encryption_at_host_enabled');
   }
-  public set encryptionAtHostEnabled(value: boolean | cdktf.IResolvable) {
+  public set encryptionAtHostEnabled(value: boolean | cdktn.IResolvable) {
     this._encryptionAtHostEnabled = value;
   }
   public resetEncryptionAtHostEnabled() {
@@ -2965,11 +2965,11 @@ export class LinuxVirtualMachine extends cdktf.TerraformResource {
   }
 
   // provision_vm_agent - computed: true, optional: true, required: false
-  private _provisionVmAgent?: boolean | cdktf.IResolvable; 
+  private _provisionVmAgent?: boolean | cdktn.IResolvable; 
   public get provisionVmAgent() {
     return this.getBooleanAttribute('provision_vm_agent');
   }
-  public set provisionVmAgent(value: boolean | cdktf.IResolvable) {
+  public set provisionVmAgent(value: boolean | cdktn.IResolvable) {
     this._provisionVmAgent = value;
   }
   public resetProvisionVmAgent() {
@@ -3036,11 +3036,11 @@ export class LinuxVirtualMachine extends cdktf.TerraformResource {
   }
 
   // secure_boot_enabled - computed: false, optional: true, required: false
-  private _secureBootEnabled?: boolean | cdktf.IResolvable; 
+  private _secureBootEnabled?: boolean | cdktn.IResolvable; 
   public get secureBootEnabled() {
     return this.getBooleanAttribute('secure_boot_enabled');
   }
-  public set secureBootEnabled(value: boolean | cdktf.IResolvable) {
+  public set secureBootEnabled(value: boolean | cdktn.IResolvable) {
     this._secureBootEnabled = value;
   }
   public resetSecureBootEnabled() {
@@ -3134,11 +3134,11 @@ export class LinuxVirtualMachine extends cdktf.TerraformResource {
   }
 
   // vm_agent_platform_updates_enabled - computed: true, optional: true, required: false
-  private _vmAgentPlatformUpdatesEnabled?: boolean | cdktf.IResolvable; 
+  private _vmAgentPlatformUpdatesEnabled?: boolean | cdktn.IResolvable; 
   public get vmAgentPlatformUpdatesEnabled() {
     return this.getBooleanAttribute('vm_agent_platform_updates_enabled');
   }
-  public set vmAgentPlatformUpdatesEnabled(value: boolean | cdktf.IResolvable) {
+  public set vmAgentPlatformUpdatesEnabled(value: boolean | cdktn.IResolvable) {
     this._vmAgentPlatformUpdatesEnabled = value;
   }
   public resetVmAgentPlatformUpdatesEnabled() {
@@ -3150,11 +3150,11 @@ export class LinuxVirtualMachine extends cdktf.TerraformResource {
   }
 
   // vtpm_enabled - computed: false, optional: true, required: false
-  private _vtpmEnabled?: boolean | cdktf.IResolvable; 
+  private _vtpmEnabled?: boolean | cdktn.IResolvable; 
   public get vtpmEnabled() {
     return this.getBooleanAttribute('vtpm_enabled');
   }
-  public set vtpmEnabled(value: boolean | cdktf.IResolvable) {
+  public set vtpmEnabled(value: boolean | cdktn.IResolvable) {
     this._vtpmEnabled = value;
   }
   public resetVtpmEnabled() {
@@ -3202,7 +3202,7 @@ export class LinuxVirtualMachine extends cdktf.TerraformResource {
   public get adminSshKey() {
     return this._adminSshKey;
   }
-  public putAdminSshKey(value: LinuxVirtualMachineAdminSshKey[] | cdktf.IResolvable) {
+  public putAdminSshKey(value: LinuxVirtualMachineAdminSshKey[] | cdktn.IResolvable) {
     this._adminSshKey.internalValue = value;
   }
   public resetAdminSshKey() {
@@ -3234,7 +3234,7 @@ export class LinuxVirtualMachine extends cdktf.TerraformResource {
   public get galleryApplication() {
     return this._galleryApplication;
   }
-  public putGalleryApplication(value: LinuxVirtualMachineGalleryApplication[] | cdktf.IResolvable) {
+  public putGalleryApplication(value: LinuxVirtualMachineGalleryApplication[] | cdktn.IResolvable) {
     this._galleryApplication.internalValue = value;
   }
   public resetGalleryApplication() {
@@ -3311,7 +3311,7 @@ export class LinuxVirtualMachine extends cdktf.TerraformResource {
   public get secret() {
     return this._secret;
   }
-  public putSecret(value: LinuxVirtualMachineSecret[] | cdktf.IResolvable) {
+  public putSecret(value: LinuxVirtualMachineSecret[] | cdktn.IResolvable) {
     this._secret.internalValue = value;
   }
   public resetSecret() {
@@ -3376,55 +3376,55 @@ export class LinuxVirtualMachine extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      admin_password: cdktf.stringToTerraform(this._adminPassword),
-      admin_username: cdktf.stringToTerraform(this._adminUsername),
-      allow_extension_operations: cdktf.booleanToTerraform(this._allowExtensionOperations),
-      availability_set_id: cdktf.stringToTerraform(this._availabilitySetId),
-      bypass_platform_safety_checks_on_user_schedule_enabled: cdktf.booleanToTerraform(this._bypassPlatformSafetyChecksOnUserScheduleEnabled),
-      capacity_reservation_group_id: cdktf.stringToTerraform(this._capacityReservationGroupId),
-      computer_name: cdktf.stringToTerraform(this._computerName),
-      custom_data: cdktf.stringToTerraform(this._customData),
-      dedicated_host_group_id: cdktf.stringToTerraform(this._dedicatedHostGroupId),
-      dedicated_host_id: cdktf.stringToTerraform(this._dedicatedHostId),
-      disable_password_authentication: cdktf.booleanToTerraform(this._disablePasswordAuthentication),
-      disk_controller_type: cdktf.stringToTerraform(this._diskControllerType),
-      edge_zone: cdktf.stringToTerraform(this._edgeZone),
-      encryption_at_host_enabled: cdktf.booleanToTerraform(this._encryptionAtHostEnabled),
-      eviction_policy: cdktf.stringToTerraform(this._evictionPolicy),
-      extensions_time_budget: cdktf.stringToTerraform(this._extensionsTimeBudget),
-      id: cdktf.stringToTerraform(this._id),
-      license_type: cdktf.stringToTerraform(this._licenseType),
-      location: cdktf.stringToTerraform(this._location),
-      max_bid_price: cdktf.numberToTerraform(this._maxBidPrice),
-      name: cdktf.stringToTerraform(this._name),
-      network_interface_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._networkInterfaceIds),
-      os_managed_disk_id: cdktf.stringToTerraform(this._osManagedDiskId),
-      patch_assessment_mode: cdktf.stringToTerraform(this._patchAssessmentMode),
-      patch_mode: cdktf.stringToTerraform(this._patchMode),
-      platform_fault_domain: cdktf.numberToTerraform(this._platformFaultDomain),
-      priority: cdktf.stringToTerraform(this._priority),
-      provision_vm_agent: cdktf.booleanToTerraform(this._provisionVmAgent),
-      proximity_placement_group_id: cdktf.stringToTerraform(this._proximityPlacementGroupId),
-      reboot_setting: cdktf.stringToTerraform(this._rebootSetting),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      secure_boot_enabled: cdktf.booleanToTerraform(this._secureBootEnabled),
-      size: cdktf.stringToTerraform(this._size),
-      source_image_id: cdktf.stringToTerraform(this._sourceImageId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      user_data: cdktf.stringToTerraform(this._userData),
-      virtual_machine_scale_set_id: cdktf.stringToTerraform(this._virtualMachineScaleSetId),
-      vm_agent_platform_updates_enabled: cdktf.booleanToTerraform(this._vmAgentPlatformUpdatesEnabled),
-      vtpm_enabled: cdktf.booleanToTerraform(this._vtpmEnabled),
-      zone: cdktf.stringToTerraform(this._zone),
+      admin_password: cdktn.stringToTerraform(this._adminPassword),
+      admin_username: cdktn.stringToTerraform(this._adminUsername),
+      allow_extension_operations: cdktn.booleanToTerraform(this._allowExtensionOperations),
+      availability_set_id: cdktn.stringToTerraform(this._availabilitySetId),
+      bypass_platform_safety_checks_on_user_schedule_enabled: cdktn.booleanToTerraform(this._bypassPlatformSafetyChecksOnUserScheduleEnabled),
+      capacity_reservation_group_id: cdktn.stringToTerraform(this._capacityReservationGroupId),
+      computer_name: cdktn.stringToTerraform(this._computerName),
+      custom_data: cdktn.stringToTerraform(this._customData),
+      dedicated_host_group_id: cdktn.stringToTerraform(this._dedicatedHostGroupId),
+      dedicated_host_id: cdktn.stringToTerraform(this._dedicatedHostId),
+      disable_password_authentication: cdktn.booleanToTerraform(this._disablePasswordAuthentication),
+      disk_controller_type: cdktn.stringToTerraform(this._diskControllerType),
+      edge_zone: cdktn.stringToTerraform(this._edgeZone),
+      encryption_at_host_enabled: cdktn.booleanToTerraform(this._encryptionAtHostEnabled),
+      eviction_policy: cdktn.stringToTerraform(this._evictionPolicy),
+      extensions_time_budget: cdktn.stringToTerraform(this._extensionsTimeBudget),
+      id: cdktn.stringToTerraform(this._id),
+      license_type: cdktn.stringToTerraform(this._licenseType),
+      location: cdktn.stringToTerraform(this._location),
+      max_bid_price: cdktn.numberToTerraform(this._maxBidPrice),
+      name: cdktn.stringToTerraform(this._name),
+      network_interface_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._networkInterfaceIds),
+      os_managed_disk_id: cdktn.stringToTerraform(this._osManagedDiskId),
+      patch_assessment_mode: cdktn.stringToTerraform(this._patchAssessmentMode),
+      patch_mode: cdktn.stringToTerraform(this._patchMode),
+      platform_fault_domain: cdktn.numberToTerraform(this._platformFaultDomain),
+      priority: cdktn.stringToTerraform(this._priority),
+      provision_vm_agent: cdktn.booleanToTerraform(this._provisionVmAgent),
+      proximity_placement_group_id: cdktn.stringToTerraform(this._proximityPlacementGroupId),
+      reboot_setting: cdktn.stringToTerraform(this._rebootSetting),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      secure_boot_enabled: cdktn.booleanToTerraform(this._secureBootEnabled),
+      size: cdktn.stringToTerraform(this._size),
+      source_image_id: cdktn.stringToTerraform(this._sourceImageId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      user_data: cdktn.stringToTerraform(this._userData),
+      virtual_machine_scale_set_id: cdktn.stringToTerraform(this._virtualMachineScaleSetId),
+      vm_agent_platform_updates_enabled: cdktn.booleanToTerraform(this._vmAgentPlatformUpdatesEnabled),
+      vtpm_enabled: cdktn.booleanToTerraform(this._vtpmEnabled),
+      zone: cdktn.stringToTerraform(this._zone),
       additional_capabilities: linuxVirtualMachineAdditionalCapabilitiesToTerraform(this._additionalCapabilities.internalValue),
-      admin_ssh_key: cdktf.listMapper(linuxVirtualMachineAdminSshKeyToTerraform, true)(this._adminSshKey.internalValue),
+      admin_ssh_key: cdktn.listMapper(linuxVirtualMachineAdminSshKeyToTerraform, true)(this._adminSshKey.internalValue),
       boot_diagnostics: linuxVirtualMachineBootDiagnosticsToTerraform(this._bootDiagnostics.internalValue),
-      gallery_application: cdktf.listMapper(linuxVirtualMachineGalleryApplicationToTerraform, true)(this._galleryApplication.internalValue),
+      gallery_application: cdktn.listMapper(linuxVirtualMachineGalleryApplicationToTerraform, true)(this._galleryApplication.internalValue),
       identity: linuxVirtualMachineIdentityToTerraform(this._identity.internalValue),
       os_disk: linuxVirtualMachineOsDiskToTerraform(this._osDisk.internalValue),
       os_image_notification: linuxVirtualMachineOsImageNotificationToTerraform(this._osImageNotification.internalValue),
       plan: linuxVirtualMachinePlanToTerraform(this._plan.internalValue),
-      secret: cdktf.listMapper(linuxVirtualMachineSecretToTerraform, true)(this._secret.internalValue),
+      secret: cdktn.listMapper(linuxVirtualMachineSecretToTerraform, true)(this._secret.internalValue),
       source_image_reference: linuxVirtualMachineSourceImageReferenceToTerraform(this._sourceImageReference.internalValue),
       termination_notification: linuxVirtualMachineTerminationNotificationToTerraform(this._terminationNotification.internalValue),
       timeouts: linuxVirtualMachineTimeoutsToTerraform(this._timeouts.internalValue),
@@ -3434,241 +3434,241 @@ export class LinuxVirtualMachine extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       admin_password: {
-        value: cdktf.stringToHclTerraform(this._adminPassword),
+        value: cdktn.stringToHclTerraform(this._adminPassword),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       admin_username: {
-        value: cdktf.stringToHclTerraform(this._adminUsername),
+        value: cdktn.stringToHclTerraform(this._adminUsername),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       allow_extension_operations: {
-        value: cdktf.booleanToHclTerraform(this._allowExtensionOperations),
+        value: cdktn.booleanToHclTerraform(this._allowExtensionOperations),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       availability_set_id: {
-        value: cdktf.stringToHclTerraform(this._availabilitySetId),
+        value: cdktn.stringToHclTerraform(this._availabilitySetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bypass_platform_safety_checks_on_user_schedule_enabled: {
-        value: cdktf.booleanToHclTerraform(this._bypassPlatformSafetyChecksOnUserScheduleEnabled),
+        value: cdktn.booleanToHclTerraform(this._bypassPlatformSafetyChecksOnUserScheduleEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       capacity_reservation_group_id: {
-        value: cdktf.stringToHclTerraform(this._capacityReservationGroupId),
+        value: cdktn.stringToHclTerraform(this._capacityReservationGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       computer_name: {
-        value: cdktf.stringToHclTerraform(this._computerName),
+        value: cdktn.stringToHclTerraform(this._computerName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       custom_data: {
-        value: cdktf.stringToHclTerraform(this._customData),
+        value: cdktn.stringToHclTerraform(this._customData),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dedicated_host_group_id: {
-        value: cdktf.stringToHclTerraform(this._dedicatedHostGroupId),
+        value: cdktn.stringToHclTerraform(this._dedicatedHostGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dedicated_host_id: {
-        value: cdktf.stringToHclTerraform(this._dedicatedHostId),
+        value: cdktn.stringToHclTerraform(this._dedicatedHostId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disable_password_authentication: {
-        value: cdktf.booleanToHclTerraform(this._disablePasswordAuthentication),
+        value: cdktn.booleanToHclTerraform(this._disablePasswordAuthentication),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       disk_controller_type: {
-        value: cdktf.stringToHclTerraform(this._diskControllerType),
+        value: cdktn.stringToHclTerraform(this._diskControllerType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       edge_zone: {
-        value: cdktf.stringToHclTerraform(this._edgeZone),
+        value: cdktn.stringToHclTerraform(this._edgeZone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       encryption_at_host_enabled: {
-        value: cdktf.booleanToHclTerraform(this._encryptionAtHostEnabled),
+        value: cdktn.booleanToHclTerraform(this._encryptionAtHostEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       eviction_policy: {
-        value: cdktf.stringToHclTerraform(this._evictionPolicy),
+        value: cdktn.stringToHclTerraform(this._evictionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       extensions_time_budget: {
-        value: cdktf.stringToHclTerraform(this._extensionsTimeBudget),
+        value: cdktn.stringToHclTerraform(this._extensionsTimeBudget),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       license_type: {
-        value: cdktf.stringToHclTerraform(this._licenseType),
+        value: cdktn.stringToHclTerraform(this._licenseType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_bid_price: {
-        value: cdktf.numberToHclTerraform(this._maxBidPrice),
+        value: cdktn.numberToHclTerraform(this._maxBidPrice),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_interface_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._networkInterfaceIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._networkInterfaceIds),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       os_managed_disk_id: {
-        value: cdktf.stringToHclTerraform(this._osManagedDiskId),
+        value: cdktn.stringToHclTerraform(this._osManagedDiskId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       patch_assessment_mode: {
-        value: cdktf.stringToHclTerraform(this._patchAssessmentMode),
+        value: cdktn.stringToHclTerraform(this._patchAssessmentMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       patch_mode: {
-        value: cdktf.stringToHclTerraform(this._patchMode),
+        value: cdktn.stringToHclTerraform(this._patchMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       platform_fault_domain: {
-        value: cdktf.numberToHclTerraform(this._platformFaultDomain),
+        value: cdktn.numberToHclTerraform(this._platformFaultDomain),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       priority: {
-        value: cdktf.stringToHclTerraform(this._priority),
+        value: cdktn.stringToHclTerraform(this._priority),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       provision_vm_agent: {
-        value: cdktf.booleanToHclTerraform(this._provisionVmAgent),
+        value: cdktn.booleanToHclTerraform(this._provisionVmAgent),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       proximity_placement_group_id: {
-        value: cdktf.stringToHclTerraform(this._proximityPlacementGroupId),
+        value: cdktn.stringToHclTerraform(this._proximityPlacementGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       reboot_setting: {
-        value: cdktf.stringToHclTerraform(this._rebootSetting),
+        value: cdktn.stringToHclTerraform(this._rebootSetting),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secure_boot_enabled: {
-        value: cdktf.booleanToHclTerraform(this._secureBootEnabled),
+        value: cdktn.booleanToHclTerraform(this._secureBootEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       size: {
-        value: cdktf.stringToHclTerraform(this._size),
+        value: cdktn.stringToHclTerraform(this._size),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_image_id: {
-        value: cdktf.stringToHclTerraform(this._sourceImageId),
+        value: cdktn.stringToHclTerraform(this._sourceImageId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       user_data: {
-        value: cdktf.stringToHclTerraform(this._userData),
+        value: cdktn.stringToHclTerraform(this._userData),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       virtual_machine_scale_set_id: {
-        value: cdktf.stringToHclTerraform(this._virtualMachineScaleSetId),
+        value: cdktn.stringToHclTerraform(this._virtualMachineScaleSetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vm_agent_platform_updates_enabled: {
-        value: cdktf.booleanToHclTerraform(this._vmAgentPlatformUpdatesEnabled),
+        value: cdktn.booleanToHclTerraform(this._vmAgentPlatformUpdatesEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       vtpm_enabled: {
-        value: cdktf.booleanToHclTerraform(this._vtpmEnabled),
+        value: cdktn.booleanToHclTerraform(this._vtpmEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       zone: {
-        value: cdktf.stringToHclTerraform(this._zone),
+        value: cdktn.stringToHclTerraform(this._zone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -3680,7 +3680,7 @@ export class LinuxVirtualMachine extends cdktf.TerraformResource {
         storageClassType: "LinuxVirtualMachineAdditionalCapabilitiesList",
       },
       admin_ssh_key: {
-        value: cdktf.listMapperHcl(linuxVirtualMachineAdminSshKeyToHclTerraform, true)(this._adminSshKey.internalValue),
+        value: cdktn.listMapperHcl(linuxVirtualMachineAdminSshKeyToHclTerraform, true)(this._adminSshKey.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "LinuxVirtualMachineAdminSshKeyList",
@@ -3692,7 +3692,7 @@ export class LinuxVirtualMachine extends cdktf.TerraformResource {
         storageClassType: "LinuxVirtualMachineBootDiagnosticsList",
       },
       gallery_application: {
-        value: cdktf.listMapperHcl(linuxVirtualMachineGalleryApplicationToHclTerraform, true)(this._galleryApplication.internalValue),
+        value: cdktn.listMapperHcl(linuxVirtualMachineGalleryApplicationToHclTerraform, true)(this._galleryApplication.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "LinuxVirtualMachineGalleryApplicationList",
@@ -3722,7 +3722,7 @@ export class LinuxVirtualMachine extends cdktf.TerraformResource {
         storageClassType: "LinuxVirtualMachinePlanList",
       },
       secret: {
-        value: cdktf.listMapperHcl(linuxVirtualMachineSecretToHclTerraform, true)(this._secret.internalValue),
+        value: cdktn.listMapperHcl(linuxVirtualMachineSecretToHclTerraform, true)(this._secret.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "LinuxVirtualMachineSecretList",

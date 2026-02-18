@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface QumuloFileSystemConfig extends cdktf.TerraformMetaArguments {
+export interface QumuloFileSystemConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/qumulo_file_system#admin_password QumuloFileSystem#admin_password}
   */
@@ -93,46 +93,46 @@ export interface QumuloFileSystemTimeouts {
   readonly update?: string;
 }
 
-export function qumuloFileSystemTimeoutsToTerraform(struct?: QumuloFileSystemTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function qumuloFileSystemTimeoutsToTerraform(struct?: QumuloFileSystemTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function qumuloFileSystemTimeoutsToHclTerraform(struct?: QumuloFileSystemTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function qumuloFileSystemTimeoutsToHclTerraform(struct?: QumuloFileSystemTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -143,19 +143,19 @@ export function qumuloFileSystemTimeoutsToHclTerraform(struct?: QumuloFileSystem
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QumuloFileSystemTimeoutsOutputReference extends cdktf.ComplexObject {
+export class QumuloFileSystemTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): QumuloFileSystemTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): QumuloFileSystemTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -180,7 +180,7 @@ export class QumuloFileSystemTimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: QumuloFileSystemTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: QumuloFileSystemTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -189,7 +189,7 @@ export class QumuloFileSystemTimeoutsOutputReference extends cdktf.ComplexObject
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -271,7 +271,7 @@ export class QumuloFileSystemTimeoutsOutputReference extends cdktf.ComplexObject
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/qumulo_file_system azurerm_qumulo_file_system}
 */
-export class QumuloFileSystem extends cdktf.TerraformResource {
+export class QumuloFileSystem extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -282,14 +282,14 @@ export class QumuloFileSystem extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a QumuloFileSystem resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a QumuloFileSystem resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the QumuloFileSystem to import
   * @param importFromId The id of the existing QumuloFileSystem that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/qumulo_file_system#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the QumuloFileSystem to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_qumulo_file_system", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_qumulo_file_system", importId: importFromId, provider });
       }
 
   // ===========
@@ -545,19 +545,19 @@ export class QumuloFileSystem extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      admin_password: cdktf.stringToTerraform(this._adminPassword),
-      email: cdktf.stringToTerraform(this._email),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      offer_id: cdktf.stringToTerraform(this._offerId),
-      plan_id: cdktf.stringToTerraform(this._planId),
-      publisher_id: cdktf.stringToTerraform(this._publisherId),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      storage_sku: cdktf.stringToTerraform(this._storageSku),
-      subnet_id: cdktf.stringToTerraform(this._subnetId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      zone: cdktf.stringToTerraform(this._zone),
+      admin_password: cdktn.stringToTerraform(this._adminPassword),
+      email: cdktn.stringToTerraform(this._email),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      offer_id: cdktn.stringToTerraform(this._offerId),
+      plan_id: cdktn.stringToTerraform(this._planId),
+      publisher_id: cdktn.stringToTerraform(this._publisherId),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      storage_sku: cdktn.stringToTerraform(this._storageSku),
+      subnet_id: cdktn.stringToTerraform(this._subnetId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      zone: cdktn.stringToTerraform(this._zone),
       timeouts: qumuloFileSystemTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -565,79 +565,79 @@ export class QumuloFileSystem extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       admin_password: {
-        value: cdktf.stringToHclTerraform(this._adminPassword),
+        value: cdktn.stringToHclTerraform(this._adminPassword),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       email: {
-        value: cdktf.stringToHclTerraform(this._email),
+        value: cdktn.stringToHclTerraform(this._email),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       offer_id: {
-        value: cdktf.stringToHclTerraform(this._offerId),
+        value: cdktn.stringToHclTerraform(this._offerId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       plan_id: {
-        value: cdktf.stringToHclTerraform(this._planId),
+        value: cdktn.stringToHclTerraform(this._planId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       publisher_id: {
-        value: cdktf.stringToHclTerraform(this._publisherId),
+        value: cdktn.stringToHclTerraform(this._publisherId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_sku: {
-        value: cdktf.stringToHclTerraform(this._storageSku),
+        value: cdktn.stringToHclTerraform(this._storageSku),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subnet_id: {
-        value: cdktf.stringToHclTerraform(this._subnetId),
+        value: cdktn.stringToHclTerraform(this._subnetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       zone: {
-        value: cdktf.stringToHclTerraform(this._zone),
+        value: cdktn.stringToHclTerraform(this._zone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

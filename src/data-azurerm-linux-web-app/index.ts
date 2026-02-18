@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermLinuxWebAppConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermLinuxWebAppConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/linux_web_app#id DataAzurermLinuxWebApp#id}
   *
@@ -38,8 +38,8 @@ export interface DataAzurermLinuxWebAppAuthSettingsActiveDirectory {
 }
 
 export function dataAzurermLinuxWebAppAuthSettingsActiveDirectoryToTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsActiveDirectory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -48,8 +48,8 @@ export function dataAzurermLinuxWebAppAuthSettingsActiveDirectoryToTerraform(str
 
 
 export function dataAzurermLinuxWebAppAuthSettingsActiveDirectoryToHclTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsActiveDirectory): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -57,7 +57,7 @@ export function dataAzurermLinuxWebAppAuthSettingsActiveDirectoryToHclTerraform(
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppAuthSettingsActiveDirectoryOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppAuthSettingsActiveDirectoryOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -66,7 +66,7 @@ export class DataAzurermLinuxWebAppAuthSettingsActiveDirectoryOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -106,14 +106,14 @@ export class DataAzurermLinuxWebAppAuthSettingsActiveDirectoryOutputReference ex
   }
 }
 
-export class DataAzurermLinuxWebAppAuthSettingsActiveDirectoryList extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppAuthSettingsActiveDirectoryList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -128,8 +128,8 @@ export interface DataAzurermLinuxWebAppAuthSettingsFacebook {
 }
 
 export function dataAzurermLinuxWebAppAuthSettingsFacebookToTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsFacebook): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -138,8 +138,8 @@ export function dataAzurermLinuxWebAppAuthSettingsFacebookToTerraform(struct?: D
 
 
 export function dataAzurermLinuxWebAppAuthSettingsFacebookToHclTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsFacebook): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -147,7 +147,7 @@ export function dataAzurermLinuxWebAppAuthSettingsFacebookToHclTerraform(struct?
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppAuthSettingsFacebookOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppAuthSettingsFacebookOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -156,7 +156,7 @@ export class DataAzurermLinuxWebAppAuthSettingsFacebookOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -196,14 +196,14 @@ export class DataAzurermLinuxWebAppAuthSettingsFacebookOutputReference extends c
   }
 }
 
-export class DataAzurermLinuxWebAppAuthSettingsFacebookList extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppAuthSettingsFacebookList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -218,8 +218,8 @@ export interface DataAzurermLinuxWebAppAuthSettingsGithub {
 }
 
 export function dataAzurermLinuxWebAppAuthSettingsGithubToTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsGithub): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -228,8 +228,8 @@ export function dataAzurermLinuxWebAppAuthSettingsGithubToTerraform(struct?: Dat
 
 
 export function dataAzurermLinuxWebAppAuthSettingsGithubToHclTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsGithub): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -237,7 +237,7 @@ export function dataAzurermLinuxWebAppAuthSettingsGithubToHclTerraform(struct?: 
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppAuthSettingsGithubOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppAuthSettingsGithubOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -246,7 +246,7 @@ export class DataAzurermLinuxWebAppAuthSettingsGithubOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -286,14 +286,14 @@ export class DataAzurermLinuxWebAppAuthSettingsGithubOutputReference extends cdk
   }
 }
 
-export class DataAzurermLinuxWebAppAuthSettingsGithubList extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppAuthSettingsGithubList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -308,8 +308,8 @@ export interface DataAzurermLinuxWebAppAuthSettingsGoogle {
 }
 
 export function dataAzurermLinuxWebAppAuthSettingsGoogleToTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsGoogle): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -318,8 +318,8 @@ export function dataAzurermLinuxWebAppAuthSettingsGoogleToTerraform(struct?: Dat
 
 
 export function dataAzurermLinuxWebAppAuthSettingsGoogleToHclTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsGoogle): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -327,7 +327,7 @@ export function dataAzurermLinuxWebAppAuthSettingsGoogleToHclTerraform(struct?: 
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppAuthSettingsGoogleOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppAuthSettingsGoogleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -336,7 +336,7 @@ export class DataAzurermLinuxWebAppAuthSettingsGoogleOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -376,14 +376,14 @@ export class DataAzurermLinuxWebAppAuthSettingsGoogleOutputReference extends cdk
   }
 }
 
-export class DataAzurermLinuxWebAppAuthSettingsGoogleList extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppAuthSettingsGoogleList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -398,8 +398,8 @@ export interface DataAzurermLinuxWebAppAuthSettingsMicrosoft {
 }
 
 export function dataAzurermLinuxWebAppAuthSettingsMicrosoftToTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsMicrosoft): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -408,8 +408,8 @@ export function dataAzurermLinuxWebAppAuthSettingsMicrosoftToTerraform(struct?: 
 
 
 export function dataAzurermLinuxWebAppAuthSettingsMicrosoftToHclTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsMicrosoft): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -417,7 +417,7 @@ export function dataAzurermLinuxWebAppAuthSettingsMicrosoftToHclTerraform(struct
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppAuthSettingsMicrosoftOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppAuthSettingsMicrosoftOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -426,7 +426,7 @@ export class DataAzurermLinuxWebAppAuthSettingsMicrosoftOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -466,14 +466,14 @@ export class DataAzurermLinuxWebAppAuthSettingsMicrosoftOutputReference extends 
   }
 }
 
-export class DataAzurermLinuxWebAppAuthSettingsMicrosoftList extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppAuthSettingsMicrosoftList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -488,8 +488,8 @@ export interface DataAzurermLinuxWebAppAuthSettingsTwitter {
 }
 
 export function dataAzurermLinuxWebAppAuthSettingsTwitterToTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsTwitter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -498,8 +498,8 @@ export function dataAzurermLinuxWebAppAuthSettingsTwitterToTerraform(struct?: Da
 
 
 export function dataAzurermLinuxWebAppAuthSettingsTwitterToHclTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsTwitter): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -507,7 +507,7 @@ export function dataAzurermLinuxWebAppAuthSettingsTwitterToHclTerraform(struct?:
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppAuthSettingsTwitterOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppAuthSettingsTwitterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -516,7 +516,7 @@ export class DataAzurermLinuxWebAppAuthSettingsTwitterOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -551,14 +551,14 @@ export class DataAzurermLinuxWebAppAuthSettingsTwitterOutputReference extends cd
   }
 }
 
-export class DataAzurermLinuxWebAppAuthSettingsTwitterList extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppAuthSettingsTwitterList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -573,8 +573,8 @@ export interface DataAzurermLinuxWebAppAuthSettings {
 }
 
 export function dataAzurermLinuxWebAppAuthSettingsToTerraform(struct?: DataAzurermLinuxWebAppAuthSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -583,8 +583,8 @@ export function dataAzurermLinuxWebAppAuthSettingsToTerraform(struct?: DataAzure
 
 
 export function dataAzurermLinuxWebAppAuthSettingsToHclTerraform(struct?: DataAzurermLinuxWebAppAuthSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -592,7 +592,7 @@ export function dataAzurermLinuxWebAppAuthSettingsToHclTerraform(struct?: DataAz
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppAuthSettingsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppAuthSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -601,7 +601,7 @@ export class DataAzurermLinuxWebAppAuthSettingsOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -627,7 +627,7 @@ export class DataAzurermLinuxWebAppAuthSettingsOutputReference extends cdktf.Com
   }
 
   // additional_login_parameters - computed: true, optional: false, required: false
-  private _additionalLoginParameters = new cdktf.StringMap(this, "additional_login_parameters");
+  private _additionalLoginParameters = new cdktn.StringMap(this, "additional_login_parameters");
   public get additionalLoginParameters() {
     return this._additionalLoginParameters;
   }
@@ -703,14 +703,14 @@ export class DataAzurermLinuxWebAppAuthSettingsOutputReference extends cdktf.Com
   }
 }
 
-export class DataAzurermLinuxWebAppAuthSettingsList extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppAuthSettingsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -725,8 +725,8 @@ export interface DataAzurermLinuxWebAppAuthSettingsV2ActiveDirectoryV2 {
 }
 
 export function dataAzurermLinuxWebAppAuthSettingsV2ActiveDirectoryV2ToTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2ActiveDirectoryV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -735,8 +735,8 @@ export function dataAzurermLinuxWebAppAuthSettingsV2ActiveDirectoryV2ToTerraform
 
 
 export function dataAzurermLinuxWebAppAuthSettingsV2ActiveDirectoryV2ToHclTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2ActiveDirectoryV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -744,7 +744,7 @@ export function dataAzurermLinuxWebAppAuthSettingsV2ActiveDirectoryV2ToHclTerraf
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppAuthSettingsV2ActiveDirectoryV2OutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppAuthSettingsV2ActiveDirectoryV2OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -753,7 +753,7 @@ export class DataAzurermLinuxWebAppAuthSettingsV2ActiveDirectoryV2OutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -818,7 +818,7 @@ export class DataAzurermLinuxWebAppAuthSettingsV2ActiveDirectoryV2OutputReferenc
   }
 
   // login_parameters - computed: true, optional: false, required: false
-  private _loginParameters = new cdktf.StringMap(this, "login_parameters");
+  private _loginParameters = new cdktn.StringMap(this, "login_parameters");
   public get loginParameters() {
     return this._loginParameters;
   }
@@ -834,14 +834,14 @@ export class DataAzurermLinuxWebAppAuthSettingsV2ActiveDirectoryV2OutputReferenc
   }
 }
 
-export class DataAzurermLinuxWebAppAuthSettingsV2ActiveDirectoryV2List extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppAuthSettingsV2ActiveDirectoryV2List extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -856,8 +856,8 @@ export interface DataAzurermLinuxWebAppAuthSettingsV2AppleV2 {
 }
 
 export function dataAzurermLinuxWebAppAuthSettingsV2AppleV2ToTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2AppleV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -866,8 +866,8 @@ export function dataAzurermLinuxWebAppAuthSettingsV2AppleV2ToTerraform(struct?: 
 
 
 export function dataAzurermLinuxWebAppAuthSettingsV2AppleV2ToHclTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2AppleV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -875,7 +875,7 @@ export function dataAzurermLinuxWebAppAuthSettingsV2AppleV2ToHclTerraform(struct
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppAuthSettingsV2AppleV2OutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppAuthSettingsV2AppleV2OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -884,7 +884,7 @@ export class DataAzurermLinuxWebAppAuthSettingsV2AppleV2OutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -919,14 +919,14 @@ export class DataAzurermLinuxWebAppAuthSettingsV2AppleV2OutputReference extends 
   }
 }
 
-export class DataAzurermLinuxWebAppAuthSettingsV2AppleV2List extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppAuthSettingsV2AppleV2List extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -941,8 +941,8 @@ export interface DataAzurermLinuxWebAppAuthSettingsV2AzureStaticWebAppV2 {
 }
 
 export function dataAzurermLinuxWebAppAuthSettingsV2AzureStaticWebAppV2ToTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2AzureStaticWebAppV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -951,8 +951,8 @@ export function dataAzurermLinuxWebAppAuthSettingsV2AzureStaticWebAppV2ToTerrafo
 
 
 export function dataAzurermLinuxWebAppAuthSettingsV2AzureStaticWebAppV2ToHclTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2AzureStaticWebAppV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -960,7 +960,7 @@ export function dataAzurermLinuxWebAppAuthSettingsV2AzureStaticWebAppV2ToHclTerr
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppAuthSettingsV2AzureStaticWebAppV2OutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppAuthSettingsV2AzureStaticWebAppV2OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -969,7 +969,7 @@ export class DataAzurermLinuxWebAppAuthSettingsV2AzureStaticWebAppV2OutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -994,14 +994,14 @@ export class DataAzurermLinuxWebAppAuthSettingsV2AzureStaticWebAppV2OutputRefere
   }
 }
 
-export class DataAzurermLinuxWebAppAuthSettingsV2AzureStaticWebAppV2List extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppAuthSettingsV2AzureStaticWebAppV2List extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1016,8 +1016,8 @@ export interface DataAzurermLinuxWebAppAuthSettingsV2CustomOidcV2 {
 }
 
 export function dataAzurermLinuxWebAppAuthSettingsV2CustomOidcV2ToTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2CustomOidcV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1026,8 +1026,8 @@ export function dataAzurermLinuxWebAppAuthSettingsV2CustomOidcV2ToTerraform(stru
 
 
 export function dataAzurermLinuxWebAppAuthSettingsV2CustomOidcV2ToHclTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2CustomOidcV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1035,7 +1035,7 @@ export function dataAzurermLinuxWebAppAuthSettingsV2CustomOidcV2ToHclTerraform(s
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppAuthSettingsV2CustomOidcV2OutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppAuthSettingsV2CustomOidcV2OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1044,7 +1044,7 @@ export class DataAzurermLinuxWebAppAuthSettingsV2CustomOidcV2OutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1119,14 +1119,14 @@ export class DataAzurermLinuxWebAppAuthSettingsV2CustomOidcV2OutputReference ext
   }
 }
 
-export class DataAzurermLinuxWebAppAuthSettingsV2CustomOidcV2List extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppAuthSettingsV2CustomOidcV2List extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1141,8 +1141,8 @@ export interface DataAzurermLinuxWebAppAuthSettingsV2FacebookV2 {
 }
 
 export function dataAzurermLinuxWebAppAuthSettingsV2FacebookV2ToTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2FacebookV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1151,8 +1151,8 @@ export function dataAzurermLinuxWebAppAuthSettingsV2FacebookV2ToTerraform(struct
 
 
 export function dataAzurermLinuxWebAppAuthSettingsV2FacebookV2ToHclTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2FacebookV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1160,7 +1160,7 @@ export function dataAzurermLinuxWebAppAuthSettingsV2FacebookV2ToHclTerraform(str
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppAuthSettingsV2FacebookV2OutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppAuthSettingsV2FacebookV2OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1169,7 +1169,7 @@ export class DataAzurermLinuxWebAppAuthSettingsV2FacebookV2OutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1209,14 +1209,14 @@ export class DataAzurermLinuxWebAppAuthSettingsV2FacebookV2OutputReference exten
   }
 }
 
-export class DataAzurermLinuxWebAppAuthSettingsV2FacebookV2List extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppAuthSettingsV2FacebookV2List extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1231,8 +1231,8 @@ export interface DataAzurermLinuxWebAppAuthSettingsV2GithubV2 {
 }
 
 export function dataAzurermLinuxWebAppAuthSettingsV2GithubV2ToTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2GithubV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1241,8 +1241,8 @@ export function dataAzurermLinuxWebAppAuthSettingsV2GithubV2ToTerraform(struct?:
 
 
 export function dataAzurermLinuxWebAppAuthSettingsV2GithubV2ToHclTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2GithubV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1250,7 +1250,7 @@ export function dataAzurermLinuxWebAppAuthSettingsV2GithubV2ToHclTerraform(struc
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppAuthSettingsV2GithubV2OutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppAuthSettingsV2GithubV2OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1259,7 +1259,7 @@ export class DataAzurermLinuxWebAppAuthSettingsV2GithubV2OutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1294,14 +1294,14 @@ export class DataAzurermLinuxWebAppAuthSettingsV2GithubV2OutputReference extends
   }
 }
 
-export class DataAzurermLinuxWebAppAuthSettingsV2GithubV2List extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppAuthSettingsV2GithubV2List extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1316,8 +1316,8 @@ export interface DataAzurermLinuxWebAppAuthSettingsV2GoogleV2 {
 }
 
 export function dataAzurermLinuxWebAppAuthSettingsV2GoogleV2ToTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2GoogleV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1326,8 +1326,8 @@ export function dataAzurermLinuxWebAppAuthSettingsV2GoogleV2ToTerraform(struct?:
 
 
 export function dataAzurermLinuxWebAppAuthSettingsV2GoogleV2ToHclTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2GoogleV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1335,7 +1335,7 @@ export function dataAzurermLinuxWebAppAuthSettingsV2GoogleV2ToHclTerraform(struc
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppAuthSettingsV2GoogleV2OutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppAuthSettingsV2GoogleV2OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1344,7 +1344,7 @@ export class DataAzurermLinuxWebAppAuthSettingsV2GoogleV2OutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1384,14 +1384,14 @@ export class DataAzurermLinuxWebAppAuthSettingsV2GoogleV2OutputReference extends
   }
 }
 
-export class DataAzurermLinuxWebAppAuthSettingsV2GoogleV2List extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppAuthSettingsV2GoogleV2List extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1406,8 +1406,8 @@ export interface DataAzurermLinuxWebAppAuthSettingsV2Login {
 }
 
 export function dataAzurermLinuxWebAppAuthSettingsV2LoginToTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2Login): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1416,8 +1416,8 @@ export function dataAzurermLinuxWebAppAuthSettingsV2LoginToTerraform(struct?: Da
 
 
 export function dataAzurermLinuxWebAppAuthSettingsV2LoginToHclTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2Login): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1425,7 +1425,7 @@ export function dataAzurermLinuxWebAppAuthSettingsV2LoginToHclTerraform(struct?:
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppAuthSettingsV2LoginOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppAuthSettingsV2LoginOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1434,7 +1434,7 @@ export class DataAzurermLinuxWebAppAuthSettingsV2LoginOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1509,14 +1509,14 @@ export class DataAzurermLinuxWebAppAuthSettingsV2LoginOutputReference extends cd
   }
 }
 
-export class DataAzurermLinuxWebAppAuthSettingsV2LoginList extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppAuthSettingsV2LoginList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1531,8 +1531,8 @@ export interface DataAzurermLinuxWebAppAuthSettingsV2MicrosoftV2 {
 }
 
 export function dataAzurermLinuxWebAppAuthSettingsV2MicrosoftV2ToTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2MicrosoftV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1541,8 +1541,8 @@ export function dataAzurermLinuxWebAppAuthSettingsV2MicrosoftV2ToTerraform(struc
 
 
 export function dataAzurermLinuxWebAppAuthSettingsV2MicrosoftV2ToHclTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2MicrosoftV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1550,7 +1550,7 @@ export function dataAzurermLinuxWebAppAuthSettingsV2MicrosoftV2ToHclTerraform(st
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppAuthSettingsV2MicrosoftV2OutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppAuthSettingsV2MicrosoftV2OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1559,7 +1559,7 @@ export class DataAzurermLinuxWebAppAuthSettingsV2MicrosoftV2OutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1599,14 +1599,14 @@ export class DataAzurermLinuxWebAppAuthSettingsV2MicrosoftV2OutputReference exte
   }
 }
 
-export class DataAzurermLinuxWebAppAuthSettingsV2MicrosoftV2List extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppAuthSettingsV2MicrosoftV2List extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1621,8 +1621,8 @@ export interface DataAzurermLinuxWebAppAuthSettingsV2TwitterV2 {
 }
 
 export function dataAzurermLinuxWebAppAuthSettingsV2TwitterV2ToTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2TwitterV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1631,8 +1631,8 @@ export function dataAzurermLinuxWebAppAuthSettingsV2TwitterV2ToTerraform(struct?
 
 
 export function dataAzurermLinuxWebAppAuthSettingsV2TwitterV2ToHclTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2TwitterV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1640,7 +1640,7 @@ export function dataAzurermLinuxWebAppAuthSettingsV2TwitterV2ToHclTerraform(stru
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppAuthSettingsV2TwitterV2OutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppAuthSettingsV2TwitterV2OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1649,7 +1649,7 @@ export class DataAzurermLinuxWebAppAuthSettingsV2TwitterV2OutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1679,14 +1679,14 @@ export class DataAzurermLinuxWebAppAuthSettingsV2TwitterV2OutputReference extend
   }
 }
 
-export class DataAzurermLinuxWebAppAuthSettingsV2TwitterV2List extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppAuthSettingsV2TwitterV2List extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1701,8 +1701,8 @@ export interface DataAzurermLinuxWebAppAuthSettingsV2 {
 }
 
 export function dataAzurermLinuxWebAppAuthSettingsV2ToTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1711,8 +1711,8 @@ export function dataAzurermLinuxWebAppAuthSettingsV2ToTerraform(struct?: DataAzu
 
 
 export function dataAzurermLinuxWebAppAuthSettingsV2ToHclTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1720,7 +1720,7 @@ export function dataAzurermLinuxWebAppAuthSettingsV2ToHclTerraform(struct?: Data
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppAuthSettingsV2OutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppAuthSettingsV2OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1729,7 +1729,7 @@ export class DataAzurermLinuxWebAppAuthSettingsV2OutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1869,14 +1869,14 @@ export class DataAzurermLinuxWebAppAuthSettingsV2OutputReference extends cdktf.C
   }
 }
 
-export class DataAzurermLinuxWebAppAuthSettingsV2List extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppAuthSettingsV2List extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1891,8 +1891,8 @@ export interface DataAzurermLinuxWebAppBackupSchedule {
 }
 
 export function dataAzurermLinuxWebAppBackupScheduleToTerraform(struct?: DataAzurermLinuxWebAppBackupSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1901,8 +1901,8 @@ export function dataAzurermLinuxWebAppBackupScheduleToTerraform(struct?: DataAzu
 
 
 export function dataAzurermLinuxWebAppBackupScheduleToHclTerraform(struct?: DataAzurermLinuxWebAppBackupSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1910,7 +1910,7 @@ export function dataAzurermLinuxWebAppBackupScheduleToHclTerraform(struct?: Data
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppBackupScheduleOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppBackupScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1919,7 +1919,7 @@ export class DataAzurermLinuxWebAppBackupScheduleOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -1969,14 +1969,14 @@ export class DataAzurermLinuxWebAppBackupScheduleOutputReference extends cdktf.C
   }
 }
 
-export class DataAzurermLinuxWebAppBackupScheduleList extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppBackupScheduleList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1991,8 +1991,8 @@ export interface DataAzurermLinuxWebAppBackup {
 }
 
 export function dataAzurermLinuxWebAppBackupToTerraform(struct?: DataAzurermLinuxWebAppBackup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2001,8 +2001,8 @@ export function dataAzurermLinuxWebAppBackupToTerraform(struct?: DataAzurermLinu
 
 
 export function dataAzurermLinuxWebAppBackupToHclTerraform(struct?: DataAzurermLinuxWebAppBackup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2010,7 +2010,7 @@ export function dataAzurermLinuxWebAppBackupToHclTerraform(struct?: DataAzurermL
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppBackupOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppBackupOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2019,7 +2019,7 @@ export class DataAzurermLinuxWebAppBackupOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2060,14 +2060,14 @@ export class DataAzurermLinuxWebAppBackupOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class DataAzurermLinuxWebAppBackupList extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppBackupList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2082,8 +2082,8 @@ export interface DataAzurermLinuxWebAppConnectionString {
 }
 
 export function dataAzurermLinuxWebAppConnectionStringToTerraform(struct?: DataAzurermLinuxWebAppConnectionString): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2092,8 +2092,8 @@ export function dataAzurermLinuxWebAppConnectionStringToTerraform(struct?: DataA
 
 
 export function dataAzurermLinuxWebAppConnectionStringToHclTerraform(struct?: DataAzurermLinuxWebAppConnectionString): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2101,7 +2101,7 @@ export function dataAzurermLinuxWebAppConnectionStringToHclTerraform(struct?: Da
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppConnectionStringOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppConnectionStringOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2110,7 +2110,7 @@ export class DataAzurermLinuxWebAppConnectionStringOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2145,14 +2145,14 @@ export class DataAzurermLinuxWebAppConnectionStringOutputReference extends cdktf
   }
 }
 
-export class DataAzurermLinuxWebAppConnectionStringList extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppConnectionStringList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2167,8 +2167,8 @@ export interface DataAzurermLinuxWebAppIdentity {
 }
 
 export function dataAzurermLinuxWebAppIdentityToTerraform(struct?: DataAzurermLinuxWebAppIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2177,8 +2177,8 @@ export function dataAzurermLinuxWebAppIdentityToTerraform(struct?: DataAzurermLi
 
 
 export function dataAzurermLinuxWebAppIdentityToHclTerraform(struct?: DataAzurermLinuxWebAppIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2186,7 +2186,7 @@ export function dataAzurermLinuxWebAppIdentityToHclTerraform(struct?: DataAzurer
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppIdentityOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2195,7 +2195,7 @@ export class DataAzurermLinuxWebAppIdentityOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2235,14 +2235,14 @@ export class DataAzurermLinuxWebAppIdentityOutputReference extends cdktf.Complex
   }
 }
 
-export class DataAzurermLinuxWebAppIdentityList extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppIdentityList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2257,8 +2257,8 @@ export interface DataAzurermLinuxWebAppLogsApplicationLogsAzureBlobStorage {
 }
 
 export function dataAzurermLinuxWebAppLogsApplicationLogsAzureBlobStorageToTerraform(struct?: DataAzurermLinuxWebAppLogsApplicationLogsAzureBlobStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2267,8 +2267,8 @@ export function dataAzurermLinuxWebAppLogsApplicationLogsAzureBlobStorageToTerra
 
 
 export function dataAzurermLinuxWebAppLogsApplicationLogsAzureBlobStorageToHclTerraform(struct?: DataAzurermLinuxWebAppLogsApplicationLogsAzureBlobStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2276,7 +2276,7 @@ export function dataAzurermLinuxWebAppLogsApplicationLogsAzureBlobStorageToHclTe
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppLogsApplicationLogsAzureBlobStorageOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppLogsApplicationLogsAzureBlobStorageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2285,7 +2285,7 @@ export class DataAzurermLinuxWebAppLogsApplicationLogsAzureBlobStorageOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2320,14 +2320,14 @@ export class DataAzurermLinuxWebAppLogsApplicationLogsAzureBlobStorageOutputRefe
   }
 }
 
-export class DataAzurermLinuxWebAppLogsApplicationLogsAzureBlobStorageList extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppLogsApplicationLogsAzureBlobStorageList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2342,8 +2342,8 @@ export interface DataAzurermLinuxWebAppLogsApplicationLogs {
 }
 
 export function dataAzurermLinuxWebAppLogsApplicationLogsToTerraform(struct?: DataAzurermLinuxWebAppLogsApplicationLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2352,8 +2352,8 @@ export function dataAzurermLinuxWebAppLogsApplicationLogsToTerraform(struct?: Da
 
 
 export function dataAzurermLinuxWebAppLogsApplicationLogsToHclTerraform(struct?: DataAzurermLinuxWebAppLogsApplicationLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2361,7 +2361,7 @@ export function dataAzurermLinuxWebAppLogsApplicationLogsToHclTerraform(struct?:
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppLogsApplicationLogsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppLogsApplicationLogsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2370,7 +2370,7 @@ export class DataAzurermLinuxWebAppLogsApplicationLogsOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2401,14 +2401,14 @@ export class DataAzurermLinuxWebAppLogsApplicationLogsOutputReference extends cd
   }
 }
 
-export class DataAzurermLinuxWebAppLogsApplicationLogsList extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppLogsApplicationLogsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2423,8 +2423,8 @@ export interface DataAzurermLinuxWebAppLogsHttpLogsAzureBlobStorage {
 }
 
 export function dataAzurermLinuxWebAppLogsHttpLogsAzureBlobStorageToTerraform(struct?: DataAzurermLinuxWebAppLogsHttpLogsAzureBlobStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2433,8 +2433,8 @@ export function dataAzurermLinuxWebAppLogsHttpLogsAzureBlobStorageToTerraform(st
 
 
 export function dataAzurermLinuxWebAppLogsHttpLogsAzureBlobStorageToHclTerraform(struct?: DataAzurermLinuxWebAppLogsHttpLogsAzureBlobStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2442,7 +2442,7 @@ export function dataAzurermLinuxWebAppLogsHttpLogsAzureBlobStorageToHclTerraform
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppLogsHttpLogsAzureBlobStorageOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppLogsHttpLogsAzureBlobStorageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2451,7 +2451,7 @@ export class DataAzurermLinuxWebAppLogsHttpLogsAzureBlobStorageOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2481,14 +2481,14 @@ export class DataAzurermLinuxWebAppLogsHttpLogsAzureBlobStorageOutputReference e
   }
 }
 
-export class DataAzurermLinuxWebAppLogsHttpLogsAzureBlobStorageList extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppLogsHttpLogsAzureBlobStorageList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2503,8 +2503,8 @@ export interface DataAzurermLinuxWebAppLogsHttpLogsFileSystem {
 }
 
 export function dataAzurermLinuxWebAppLogsHttpLogsFileSystemToTerraform(struct?: DataAzurermLinuxWebAppLogsHttpLogsFileSystem): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2513,8 +2513,8 @@ export function dataAzurermLinuxWebAppLogsHttpLogsFileSystemToTerraform(struct?:
 
 
 export function dataAzurermLinuxWebAppLogsHttpLogsFileSystemToHclTerraform(struct?: DataAzurermLinuxWebAppLogsHttpLogsFileSystem): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2522,7 +2522,7 @@ export function dataAzurermLinuxWebAppLogsHttpLogsFileSystemToHclTerraform(struc
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppLogsHttpLogsFileSystemOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppLogsHttpLogsFileSystemOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2531,7 +2531,7 @@ export class DataAzurermLinuxWebAppLogsHttpLogsFileSystemOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2561,14 +2561,14 @@ export class DataAzurermLinuxWebAppLogsHttpLogsFileSystemOutputReference extends
   }
 }
 
-export class DataAzurermLinuxWebAppLogsHttpLogsFileSystemList extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppLogsHttpLogsFileSystemList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2583,8 +2583,8 @@ export interface DataAzurermLinuxWebAppLogsHttpLogs {
 }
 
 export function dataAzurermLinuxWebAppLogsHttpLogsToTerraform(struct?: DataAzurermLinuxWebAppLogsHttpLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2593,8 +2593,8 @@ export function dataAzurermLinuxWebAppLogsHttpLogsToTerraform(struct?: DataAzure
 
 
 export function dataAzurermLinuxWebAppLogsHttpLogsToHclTerraform(struct?: DataAzurermLinuxWebAppLogsHttpLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2602,7 +2602,7 @@ export function dataAzurermLinuxWebAppLogsHttpLogsToHclTerraform(struct?: DataAz
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppLogsHttpLogsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppLogsHttpLogsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2611,7 +2611,7 @@ export class DataAzurermLinuxWebAppLogsHttpLogsOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2643,14 +2643,14 @@ export class DataAzurermLinuxWebAppLogsHttpLogsOutputReference extends cdktf.Com
   }
 }
 
-export class DataAzurermLinuxWebAppLogsHttpLogsList extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppLogsHttpLogsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2665,8 +2665,8 @@ export interface DataAzurermLinuxWebAppLogs {
 }
 
 export function dataAzurermLinuxWebAppLogsToTerraform(struct?: DataAzurermLinuxWebAppLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2675,8 +2675,8 @@ export function dataAzurermLinuxWebAppLogsToTerraform(struct?: DataAzurermLinuxW
 
 
 export function dataAzurermLinuxWebAppLogsToHclTerraform(struct?: DataAzurermLinuxWebAppLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2684,7 +2684,7 @@ export function dataAzurermLinuxWebAppLogsToHclTerraform(struct?: DataAzurermLin
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppLogsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppLogsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2693,7 +2693,7 @@ export class DataAzurermLinuxWebAppLogsOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2735,14 +2735,14 @@ export class DataAzurermLinuxWebAppLogsOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class DataAzurermLinuxWebAppLogsList extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppLogsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2757,8 +2757,8 @@ export interface DataAzurermLinuxWebAppSiteConfigApplicationStack {
 }
 
 export function dataAzurermLinuxWebAppSiteConfigApplicationStackToTerraform(struct?: DataAzurermLinuxWebAppSiteConfigApplicationStack): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2767,8 +2767,8 @@ export function dataAzurermLinuxWebAppSiteConfigApplicationStackToTerraform(stru
 
 
 export function dataAzurermLinuxWebAppSiteConfigApplicationStackToHclTerraform(struct?: DataAzurermLinuxWebAppSiteConfigApplicationStack): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2776,7 +2776,7 @@ export function dataAzurermLinuxWebAppSiteConfigApplicationStackToHclTerraform(s
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppSiteConfigApplicationStackOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppSiteConfigApplicationStackOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2785,7 +2785,7 @@ export class DataAzurermLinuxWebAppSiteConfigApplicationStackOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2870,14 +2870,14 @@ export class DataAzurermLinuxWebAppSiteConfigApplicationStackOutputReference ext
   }
 }
 
-export class DataAzurermLinuxWebAppSiteConfigApplicationStackList extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppSiteConfigApplicationStackList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2892,8 +2892,8 @@ export interface DataAzurermLinuxWebAppSiteConfigAutoHealSettingAction {
 }
 
 export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingActionToTerraform(struct?: DataAzurermLinuxWebAppSiteConfigAutoHealSettingAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2902,8 +2902,8 @@ export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingActionToTerraform
 
 
 export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingActionToHclTerraform(struct?: DataAzurermLinuxWebAppSiteConfigAutoHealSettingAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2911,7 +2911,7 @@ export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingActionToHclTerraf
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingActionOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2920,7 +2920,7 @@ export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingActionOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -2950,14 +2950,14 @@ export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingActionOutputReferenc
   }
 }
 
-export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingActionList extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingActionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2972,8 +2972,8 @@ export interface DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerRequests 
 }
 
 export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerRequestsToTerraform(struct?: DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerRequests): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2982,8 +2982,8 @@ export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerRequestsTo
 
 
 export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerRequestsToHclTerraform(struct?: DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerRequests): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2991,7 +2991,7 @@ export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerRequestsTo
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerRequestsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerRequestsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3000,7 +3000,7 @@ export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerRequestsOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3030,14 +3030,14 @@ export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerRequestsOutpu
   }
 }
 
-export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerRequestsList extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerRequestsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3052,8 +3052,8 @@ export interface DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowReque
 }
 
 export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestToTerraform(struct?: DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3062,8 +3062,8 @@ export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowReques
 
 
 export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestToHclTerraform(struct?: DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3071,7 +3071,7 @@ export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowReques
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3080,7 +3080,7 @@ export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3115,14 +3115,14 @@ export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestOu
   }
 }
 
-export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestList extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3137,8 +3137,8 @@ export interface DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowReque
 }
 
 export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPathToTerraform(struct?: DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPath): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3147,8 +3147,8 @@ export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowReques
 
 
 export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPathToHclTerraform(struct?: DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPath): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3156,7 +3156,7 @@ export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowReques
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPathOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPathOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3165,7 +3165,7 @@ export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestWi
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3205,14 +3205,14 @@ export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestWi
   }
 }
 
-export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPathList extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPathList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3227,8 +3227,8 @@ export interface DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerStatusCod
 }
 
 export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerStatusCodeToTerraform(struct?: DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerStatusCode): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3237,8 +3237,8 @@ export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerStatusCode
 
 
 export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerStatusCodeToHclTerraform(struct?: DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerStatusCode): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3246,7 +3246,7 @@ export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerStatusCode
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerStatusCodeOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerStatusCodeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3255,7 +3255,7 @@ export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerStatusCodeOut
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3305,14 +3305,14 @@ export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerStatusCodeOut
   }
 }
 
-export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerStatusCodeList extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerStatusCodeList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3327,8 +3327,8 @@ export interface DataAzurermLinuxWebAppSiteConfigAutoHealSettingTrigger {
 }
 
 export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerToTerraform(struct?: DataAzurermLinuxWebAppSiteConfigAutoHealSettingTrigger): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3337,8 +3337,8 @@ export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerToTerrafor
 
 
 export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerToHclTerraform(struct?: DataAzurermLinuxWebAppSiteConfigAutoHealSettingTrigger): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3346,7 +3346,7 @@ export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerToHclTerra
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3355,7 +3355,7 @@ export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3399,14 +3399,14 @@ export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerOutputReferen
   }
 }
 
-export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerList extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3421,8 +3421,8 @@ export interface DataAzurermLinuxWebAppSiteConfigAutoHealSetting {
 }
 
 export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingToTerraform(struct?: DataAzurermLinuxWebAppSiteConfigAutoHealSetting): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3431,8 +3431,8 @@ export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingToTerraform(struc
 
 
 export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingToHclTerraform(struct?: DataAzurermLinuxWebAppSiteConfigAutoHealSetting): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3440,7 +3440,7 @@ export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingToHclTerraform(st
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3449,7 +3449,7 @@ export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3481,14 +3481,14 @@ export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingOutputReference exte
   }
 }
 
-export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingList extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppSiteConfigAutoHealSettingList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3503,8 +3503,8 @@ export interface DataAzurermLinuxWebAppSiteConfigCors {
 }
 
 export function dataAzurermLinuxWebAppSiteConfigCorsToTerraform(struct?: DataAzurermLinuxWebAppSiteConfigCors): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3513,8 +3513,8 @@ export function dataAzurermLinuxWebAppSiteConfigCorsToTerraform(struct?: DataAzu
 
 
 export function dataAzurermLinuxWebAppSiteConfigCorsToHclTerraform(struct?: DataAzurermLinuxWebAppSiteConfigCors): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3522,7 +3522,7 @@ export function dataAzurermLinuxWebAppSiteConfigCorsToHclTerraform(struct?: Data
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppSiteConfigCorsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppSiteConfigCorsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3531,7 +3531,7 @@ export class DataAzurermLinuxWebAppSiteConfigCorsOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3561,14 +3561,14 @@ export class DataAzurermLinuxWebAppSiteConfigCorsOutputReference extends cdktf.C
   }
 }
 
-export class DataAzurermLinuxWebAppSiteConfigCorsList extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppSiteConfigCorsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3583,8 +3583,8 @@ export interface DataAzurermLinuxWebAppSiteConfigIpRestrictionHeaders {
 }
 
 export function dataAzurermLinuxWebAppSiteConfigIpRestrictionHeadersToTerraform(struct?: DataAzurermLinuxWebAppSiteConfigIpRestrictionHeaders): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3593,8 +3593,8 @@ export function dataAzurermLinuxWebAppSiteConfigIpRestrictionHeadersToTerraform(
 
 
 export function dataAzurermLinuxWebAppSiteConfigIpRestrictionHeadersToHclTerraform(struct?: DataAzurermLinuxWebAppSiteConfigIpRestrictionHeaders): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3602,7 +3602,7 @@ export function dataAzurermLinuxWebAppSiteConfigIpRestrictionHeadersToHclTerrafo
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppSiteConfigIpRestrictionHeadersOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppSiteConfigIpRestrictionHeadersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3611,7 +3611,7 @@ export class DataAzurermLinuxWebAppSiteConfigIpRestrictionHeadersOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3651,14 +3651,14 @@ export class DataAzurermLinuxWebAppSiteConfigIpRestrictionHeadersOutputReference
   }
 }
 
-export class DataAzurermLinuxWebAppSiteConfigIpRestrictionHeadersList extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppSiteConfigIpRestrictionHeadersList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3673,8 +3673,8 @@ export interface DataAzurermLinuxWebAppSiteConfigIpRestriction {
 }
 
 export function dataAzurermLinuxWebAppSiteConfigIpRestrictionToTerraform(struct?: DataAzurermLinuxWebAppSiteConfigIpRestriction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3683,8 +3683,8 @@ export function dataAzurermLinuxWebAppSiteConfigIpRestrictionToTerraform(struct?
 
 
 export function dataAzurermLinuxWebAppSiteConfigIpRestrictionToHclTerraform(struct?: DataAzurermLinuxWebAppSiteConfigIpRestriction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3692,7 +3692,7 @@ export function dataAzurermLinuxWebAppSiteConfigIpRestrictionToHclTerraform(stru
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppSiteConfigIpRestrictionOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppSiteConfigIpRestrictionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3701,7 +3701,7 @@ export class DataAzurermLinuxWebAppSiteConfigIpRestrictionOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3762,14 +3762,14 @@ export class DataAzurermLinuxWebAppSiteConfigIpRestrictionOutputReference extend
   }
 }
 
-export class DataAzurermLinuxWebAppSiteConfigIpRestrictionList extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppSiteConfigIpRestrictionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3784,8 +3784,8 @@ export interface DataAzurermLinuxWebAppSiteConfigScmIpRestrictionHeaders {
 }
 
 export function dataAzurermLinuxWebAppSiteConfigScmIpRestrictionHeadersToTerraform(struct?: DataAzurermLinuxWebAppSiteConfigScmIpRestrictionHeaders): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3794,8 +3794,8 @@ export function dataAzurermLinuxWebAppSiteConfigScmIpRestrictionHeadersToTerrafo
 
 
 export function dataAzurermLinuxWebAppSiteConfigScmIpRestrictionHeadersToHclTerraform(struct?: DataAzurermLinuxWebAppSiteConfigScmIpRestrictionHeaders): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3803,7 +3803,7 @@ export function dataAzurermLinuxWebAppSiteConfigScmIpRestrictionHeadersToHclTerr
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppSiteConfigScmIpRestrictionHeadersOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppSiteConfigScmIpRestrictionHeadersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3812,7 +3812,7 @@ export class DataAzurermLinuxWebAppSiteConfigScmIpRestrictionHeadersOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3852,14 +3852,14 @@ export class DataAzurermLinuxWebAppSiteConfigScmIpRestrictionHeadersOutputRefere
   }
 }
 
-export class DataAzurermLinuxWebAppSiteConfigScmIpRestrictionHeadersList extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppSiteConfigScmIpRestrictionHeadersList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3874,8 +3874,8 @@ export interface DataAzurermLinuxWebAppSiteConfigScmIpRestriction {
 }
 
 export function dataAzurermLinuxWebAppSiteConfigScmIpRestrictionToTerraform(struct?: DataAzurermLinuxWebAppSiteConfigScmIpRestriction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3884,8 +3884,8 @@ export function dataAzurermLinuxWebAppSiteConfigScmIpRestrictionToTerraform(stru
 
 
 export function dataAzurermLinuxWebAppSiteConfigScmIpRestrictionToHclTerraform(struct?: DataAzurermLinuxWebAppSiteConfigScmIpRestriction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3893,7 +3893,7 @@ export function dataAzurermLinuxWebAppSiteConfigScmIpRestrictionToHclTerraform(s
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppSiteConfigScmIpRestrictionOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppSiteConfigScmIpRestrictionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3902,7 +3902,7 @@ export class DataAzurermLinuxWebAppSiteConfigScmIpRestrictionOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3963,14 +3963,14 @@ export class DataAzurermLinuxWebAppSiteConfigScmIpRestrictionOutputReference ext
   }
 }
 
-export class DataAzurermLinuxWebAppSiteConfigScmIpRestrictionList extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppSiteConfigScmIpRestrictionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3985,8 +3985,8 @@ export interface DataAzurermLinuxWebAppSiteConfig {
 }
 
 export function dataAzurermLinuxWebAppSiteConfigToTerraform(struct?: DataAzurermLinuxWebAppSiteConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3995,8 +3995,8 @@ export function dataAzurermLinuxWebAppSiteConfigToTerraform(struct?: DataAzurerm
 
 
 export function dataAzurermLinuxWebAppSiteConfigToHclTerraform(struct?: DataAzurermLinuxWebAppSiteConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4004,7 +4004,7 @@ export function dataAzurermLinuxWebAppSiteConfigToHclTerraform(struct?: DataAzur
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppSiteConfigOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppSiteConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4013,7 +4013,7 @@ export class DataAzurermLinuxWebAppSiteConfigOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4203,14 +4203,14 @@ export class DataAzurermLinuxWebAppSiteConfigOutputReference extends cdktf.Compl
   }
 }
 
-export class DataAzurermLinuxWebAppSiteConfigList extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppSiteConfigList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4225,8 +4225,8 @@ export interface DataAzurermLinuxWebAppSiteCredential {
 }
 
 export function dataAzurermLinuxWebAppSiteCredentialToTerraform(struct?: DataAzurermLinuxWebAppSiteCredential): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4235,8 +4235,8 @@ export function dataAzurermLinuxWebAppSiteCredentialToTerraform(struct?: DataAzu
 
 
 export function dataAzurermLinuxWebAppSiteCredentialToHclTerraform(struct?: DataAzurermLinuxWebAppSiteCredential): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4244,7 +4244,7 @@ export function dataAzurermLinuxWebAppSiteCredentialToHclTerraform(struct?: Data
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppSiteCredentialOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppSiteCredentialOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4253,7 +4253,7 @@ export class DataAzurermLinuxWebAppSiteCredentialOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4283,14 +4283,14 @@ export class DataAzurermLinuxWebAppSiteCredentialOutputReference extends cdktf.C
   }
 }
 
-export class DataAzurermLinuxWebAppSiteCredentialList extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppSiteCredentialList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4305,8 +4305,8 @@ export interface DataAzurermLinuxWebAppStickySettings {
 }
 
 export function dataAzurermLinuxWebAppStickySettingsToTerraform(struct?: DataAzurermLinuxWebAppStickySettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4315,8 +4315,8 @@ export function dataAzurermLinuxWebAppStickySettingsToTerraform(struct?: DataAzu
 
 
 export function dataAzurermLinuxWebAppStickySettingsToHclTerraform(struct?: DataAzurermLinuxWebAppStickySettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4324,7 +4324,7 @@ export function dataAzurermLinuxWebAppStickySettingsToHclTerraform(struct?: Data
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppStickySettingsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppStickySettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4333,7 +4333,7 @@ export class DataAzurermLinuxWebAppStickySettingsOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4363,14 +4363,14 @@ export class DataAzurermLinuxWebAppStickySettingsOutputReference extends cdktf.C
   }
 }
 
-export class DataAzurermLinuxWebAppStickySettingsList extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppStickySettingsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4385,8 +4385,8 @@ export interface DataAzurermLinuxWebAppStorageAccount {
 }
 
 export function dataAzurermLinuxWebAppStorageAccountToTerraform(struct?: DataAzurermLinuxWebAppStorageAccount): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4395,8 +4395,8 @@ export function dataAzurermLinuxWebAppStorageAccountToTerraform(struct?: DataAzu
 
 
 export function dataAzurermLinuxWebAppStorageAccountToHclTerraform(struct?: DataAzurermLinuxWebAppStorageAccount): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4404,7 +4404,7 @@ export function dataAzurermLinuxWebAppStorageAccountToHclTerraform(struct?: Data
   return attrs;
 }
 
-export class DataAzurermLinuxWebAppStorageAccountOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppStorageAccountOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4413,7 +4413,7 @@ export class DataAzurermLinuxWebAppStorageAccountOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4463,14 +4463,14 @@ export class DataAzurermLinuxWebAppStorageAccountOutputReference extends cdktf.C
   }
 }
 
-export class DataAzurermLinuxWebAppStorageAccountList extends cdktf.ComplexList {
+export class DataAzurermLinuxWebAppStorageAccountList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4488,25 +4488,25 @@ export interface DataAzurermLinuxWebAppTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermLinuxWebAppTimeoutsToTerraform(struct?: DataAzurermLinuxWebAppTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermLinuxWebAppTimeoutsToTerraform(struct?: DataAzurermLinuxWebAppTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermLinuxWebAppTimeoutsToHclTerraform(struct?: DataAzurermLinuxWebAppTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermLinuxWebAppTimeoutsToHclTerraform(struct?: DataAzurermLinuxWebAppTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4517,19 +4517,19 @@ export function dataAzurermLinuxWebAppTimeoutsToHclTerraform(struct?: DataAzurer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermLinuxWebAppTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermLinuxWebAppTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermLinuxWebAppTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermLinuxWebAppTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4542,13 +4542,13 @@ export class DataAzurermLinuxWebAppTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermLinuxWebAppTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermLinuxWebAppTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4579,7 +4579,7 @@ export class DataAzurermLinuxWebAppTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/linux_web_app azurerm_linux_web_app}
 */
-export class DataAzurermLinuxWebApp extends cdktf.TerraformDataSource {
+export class DataAzurermLinuxWebApp extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -4590,14 +4590,14 @@ export class DataAzurermLinuxWebApp extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermLinuxWebApp resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermLinuxWebApp resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermLinuxWebApp to import
   * @param importFromId The id of the existing DataAzurermLinuxWebApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/linux_web_app#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermLinuxWebApp to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_linux_web_app", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_linux_web_app", importId: importFromId, provider });
       }
 
   // ===========
@@ -4638,13 +4638,13 @@ export class DataAzurermLinuxWebApp extends cdktf.TerraformDataSource {
   // ==========
 
   // app_metadata - computed: true, optional: false, required: false
-  private _appMetadata = new cdktf.StringMap(this, "app_metadata");
+  private _appMetadata = new cdktn.StringMap(this, "app_metadata");
   public get appMetadata() {
     return this._appMetadata;
   }
 
   // app_settings - computed: true, optional: false, required: false
-  private _appSettings = new cdktf.StringMap(this, "app_settings");
+  private _appSettings = new cdktn.StringMap(this, "app_settings");
   public get appSettings() {
     return this._appSettings;
   }
@@ -4852,7 +4852,7 @@ export class DataAzurermLinuxWebApp extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: false, required: false
-  private _tags = new cdktf.StringMap(this, "tags");
+  private _tags = new cdktn.StringMap(this, "tags");
   public get tags() {
     return this._tags;
   }
@@ -4899,9 +4899,9 @@ export class DataAzurermLinuxWebApp extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
       timeouts: dataAzurermLinuxWebAppTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -4909,19 +4909,19 @@ export class DataAzurermLinuxWebApp extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

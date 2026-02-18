@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface OrbitalContactProfileConfig extends cdktf.TerraformMetaArguments {
+export interface OrbitalContactProfileConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orbital_contact_profile#auto_tracking OrbitalContactProfile#auto_tracking}
   */
@@ -60,7 +60,7 @@ export interface OrbitalContactProfileConfig extends cdktf.TerraformMetaArgument
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orbital_contact_profile#links OrbitalContactProfile#links}
   */
-  readonly links: OrbitalContactProfileLinks[] | cdktf.IResolvable;
+  readonly links: OrbitalContactProfileLinks[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -87,46 +87,46 @@ export interface OrbitalContactProfileLinksChannelsEndPoint {
   readonly protocol: string;
 }
 
-export function orbitalContactProfileLinksChannelsEndPointToTerraform(struct?: OrbitalContactProfileLinksChannelsEndPoint | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orbitalContactProfileLinksChannelsEndPointToTerraform(struct?: OrbitalContactProfileLinksChannelsEndPoint | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    end_point_name: cdktf.stringToTerraform(struct!.endPointName),
-    ip_address: cdktf.stringToTerraform(struct!.ipAddress),
-    port: cdktf.stringToTerraform(struct!.port),
-    protocol: cdktf.stringToTerraform(struct!.protocol),
+    end_point_name: cdktn.stringToTerraform(struct!.endPointName),
+    ip_address: cdktn.stringToTerraform(struct!.ipAddress),
+    port: cdktn.stringToTerraform(struct!.port),
+    protocol: cdktn.stringToTerraform(struct!.protocol),
   }
 }
 
 
-export function orbitalContactProfileLinksChannelsEndPointToHclTerraform(struct?: OrbitalContactProfileLinksChannelsEndPoint | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orbitalContactProfileLinksChannelsEndPointToHclTerraform(struct?: OrbitalContactProfileLinksChannelsEndPoint | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     end_point_name: {
-      value: cdktf.stringToHclTerraform(struct!.endPointName),
+      value: cdktn.stringToHclTerraform(struct!.endPointName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ip_address: {
-      value: cdktf.stringToHclTerraform(struct!.ipAddress),
+      value: cdktn.stringToHclTerraform(struct!.ipAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.stringToHclTerraform(struct!.port),
+      value: cdktn.stringToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     protocol: {
-      value: cdktf.stringToHclTerraform(struct!.protocol),
+      value: cdktn.stringToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -137,9 +137,9 @@ export function orbitalContactProfileLinksChannelsEndPointToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrbitalContactProfileLinksChannelsEndPointOutputReference extends cdktf.ComplexObject {
+export class OrbitalContactProfileLinksChannelsEndPointOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -147,11 +147,11 @@ export class OrbitalContactProfileLinksChannelsEndPointOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OrbitalContactProfileLinksChannelsEndPoint | cdktf.IResolvable | undefined {
+  public get internalValue(): OrbitalContactProfileLinksChannelsEndPoint | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -176,7 +176,7 @@ export class OrbitalContactProfileLinksChannelsEndPointOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OrbitalContactProfileLinksChannelsEndPoint | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OrbitalContactProfileLinksChannelsEndPoint | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -185,7 +185,7 @@ export class OrbitalContactProfileLinksChannelsEndPointOutputReference extends c
       this._port = undefined;
       this._protocol = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -255,15 +255,15 @@ export class OrbitalContactProfileLinksChannelsEndPointOutputReference extends c
   }
 }
 
-export class OrbitalContactProfileLinksChannelsEndPointList extends cdktf.ComplexList {
-  public internalValue? : OrbitalContactProfileLinksChannelsEndPoint[] | cdktf.IResolvable
+export class OrbitalContactProfileLinksChannelsEndPointList extends cdktn.ComplexList {
+  public internalValue? : OrbitalContactProfileLinksChannelsEndPoint[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -300,63 +300,63 @@ export interface OrbitalContactProfileLinksChannels {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orbital_contact_profile#end_point OrbitalContactProfile#end_point}
   */
-  readonly endPoint: OrbitalContactProfileLinksChannelsEndPoint[] | cdktf.IResolvable;
+  readonly endPoint: OrbitalContactProfileLinksChannelsEndPoint[] | cdktn.IResolvable;
 }
 
-export function orbitalContactProfileLinksChannelsToTerraform(struct?: OrbitalContactProfileLinksChannels | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orbitalContactProfileLinksChannelsToTerraform(struct?: OrbitalContactProfileLinksChannels | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bandwidth_mhz: cdktf.numberToTerraform(struct!.bandwidthMhz),
-    center_frequency_mhz: cdktf.numberToTerraform(struct!.centerFrequencyMhz),
-    demodulation_configuration: cdktf.stringToTerraform(struct!.demodulationConfiguration),
-    modulation_configuration: cdktf.stringToTerraform(struct!.modulationConfiguration),
-    name: cdktf.stringToTerraform(struct!.name),
-    end_point: cdktf.listMapper(orbitalContactProfileLinksChannelsEndPointToTerraform, true)(struct!.endPoint),
+    bandwidth_mhz: cdktn.numberToTerraform(struct!.bandwidthMhz),
+    center_frequency_mhz: cdktn.numberToTerraform(struct!.centerFrequencyMhz),
+    demodulation_configuration: cdktn.stringToTerraform(struct!.demodulationConfiguration),
+    modulation_configuration: cdktn.stringToTerraform(struct!.modulationConfiguration),
+    name: cdktn.stringToTerraform(struct!.name),
+    end_point: cdktn.listMapper(orbitalContactProfileLinksChannelsEndPointToTerraform, true)(struct!.endPoint),
   }
 }
 
 
-export function orbitalContactProfileLinksChannelsToHclTerraform(struct?: OrbitalContactProfileLinksChannels | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orbitalContactProfileLinksChannelsToHclTerraform(struct?: OrbitalContactProfileLinksChannels | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bandwidth_mhz: {
-      value: cdktf.numberToHclTerraform(struct!.bandwidthMhz),
+      value: cdktn.numberToHclTerraform(struct!.bandwidthMhz),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     center_frequency_mhz: {
-      value: cdktf.numberToHclTerraform(struct!.centerFrequencyMhz),
+      value: cdktn.numberToHclTerraform(struct!.centerFrequencyMhz),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     demodulation_configuration: {
-      value: cdktf.stringToHclTerraform(struct!.demodulationConfiguration),
+      value: cdktn.stringToHclTerraform(struct!.demodulationConfiguration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     modulation_configuration: {
-      value: cdktf.stringToHclTerraform(struct!.modulationConfiguration),
+      value: cdktn.stringToHclTerraform(struct!.modulationConfiguration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     end_point: {
-      value: cdktf.listMapperHcl(orbitalContactProfileLinksChannelsEndPointToHclTerraform, true)(struct!.endPoint),
+      value: cdktn.listMapperHcl(orbitalContactProfileLinksChannelsEndPointToHclTerraform, true)(struct!.endPoint),
       isBlock: true,
       type: "set",
       storageClassType: "OrbitalContactProfileLinksChannelsEndPointList",
@@ -367,9 +367,9 @@ export function orbitalContactProfileLinksChannelsToHclTerraform(struct?: Orbita
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrbitalContactProfileLinksChannelsOutputReference extends cdktf.ComplexObject {
+export class OrbitalContactProfileLinksChannelsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -377,11 +377,11 @@ export class OrbitalContactProfileLinksChannelsOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OrbitalContactProfileLinksChannels | cdktf.IResolvable | undefined {
+  public get internalValue(): OrbitalContactProfileLinksChannels | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -414,7 +414,7 @@ export class OrbitalContactProfileLinksChannelsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OrbitalContactProfileLinksChannels | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OrbitalContactProfileLinksChannels | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -425,7 +425,7 @@ export class OrbitalContactProfileLinksChannelsOutputReference extends cdktf.Com
       this._name = undefined;
       this._endPoint.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -517,7 +517,7 @@ export class OrbitalContactProfileLinksChannelsOutputReference extends cdktf.Com
   public get endPoint() {
     return this._endPoint;
   }
-  public putEndPoint(value: OrbitalContactProfileLinksChannelsEndPoint[] | cdktf.IResolvable) {
+  public putEndPoint(value: OrbitalContactProfileLinksChannelsEndPoint[] | cdktn.IResolvable) {
     this._endPoint.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -526,15 +526,15 @@ export class OrbitalContactProfileLinksChannelsOutputReference extends cdktf.Com
   }
 }
 
-export class OrbitalContactProfileLinksChannelsList extends cdktf.ComplexList {
-  public internalValue? : OrbitalContactProfileLinksChannels[] | cdktf.IResolvable
+export class OrbitalContactProfileLinksChannelsList extends cdktn.ComplexList {
+  public internalValue? : OrbitalContactProfileLinksChannels[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -563,49 +563,49 @@ export interface OrbitalContactProfileLinks {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orbital_contact_profile#channels OrbitalContactProfile#channels}
   */
-  readonly channels: OrbitalContactProfileLinksChannels[] | cdktf.IResolvable;
+  readonly channels: OrbitalContactProfileLinksChannels[] | cdktn.IResolvable;
 }
 
-export function orbitalContactProfileLinksToTerraform(struct?: OrbitalContactProfileLinks | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orbitalContactProfileLinksToTerraform(struct?: OrbitalContactProfileLinks | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    direction: cdktf.stringToTerraform(struct!.direction),
-    name: cdktf.stringToTerraform(struct!.name),
-    polarization: cdktf.stringToTerraform(struct!.polarization),
-    channels: cdktf.listMapper(orbitalContactProfileLinksChannelsToTerraform, true)(struct!.channels),
+    direction: cdktn.stringToTerraform(struct!.direction),
+    name: cdktn.stringToTerraform(struct!.name),
+    polarization: cdktn.stringToTerraform(struct!.polarization),
+    channels: cdktn.listMapper(orbitalContactProfileLinksChannelsToTerraform, true)(struct!.channels),
   }
 }
 
 
-export function orbitalContactProfileLinksToHclTerraform(struct?: OrbitalContactProfileLinks | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orbitalContactProfileLinksToHclTerraform(struct?: OrbitalContactProfileLinks | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     direction: {
-      value: cdktf.stringToHclTerraform(struct!.direction),
+      value: cdktn.stringToHclTerraform(struct!.direction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     polarization: {
-      value: cdktf.stringToHclTerraform(struct!.polarization),
+      value: cdktn.stringToHclTerraform(struct!.polarization),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     channels: {
-      value: cdktf.listMapperHcl(orbitalContactProfileLinksChannelsToHclTerraform, true)(struct!.channels),
+      value: cdktn.listMapperHcl(orbitalContactProfileLinksChannelsToHclTerraform, true)(struct!.channels),
       isBlock: true,
       type: "list",
       storageClassType: "OrbitalContactProfileLinksChannelsList",
@@ -616,9 +616,9 @@ export function orbitalContactProfileLinksToHclTerraform(struct?: OrbitalContact
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrbitalContactProfileLinksOutputReference extends cdktf.ComplexObject {
+export class OrbitalContactProfileLinksOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -626,11 +626,11 @@ export class OrbitalContactProfileLinksOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OrbitalContactProfileLinks | cdktf.IResolvable | undefined {
+  public get internalValue(): OrbitalContactProfileLinks | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -655,7 +655,7 @@ export class OrbitalContactProfileLinksOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OrbitalContactProfileLinks | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OrbitalContactProfileLinks | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -664,7 +664,7 @@ export class OrbitalContactProfileLinksOutputReference extends cdktf.ComplexObje
       this._polarization = undefined;
       this._channels.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -722,7 +722,7 @@ export class OrbitalContactProfileLinksOutputReference extends cdktf.ComplexObje
   public get channels() {
     return this._channels;
   }
-  public putChannels(value: OrbitalContactProfileLinksChannels[] | cdktf.IResolvable) {
+  public putChannels(value: OrbitalContactProfileLinksChannels[] | cdktn.IResolvable) {
     this._channels.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -731,15 +731,15 @@ export class OrbitalContactProfileLinksOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class OrbitalContactProfileLinksList extends cdktf.ComplexList {
-  public internalValue? : OrbitalContactProfileLinks[] | cdktf.IResolvable
+export class OrbitalContactProfileLinksList extends cdktn.ComplexList {
+  public internalValue? : OrbitalContactProfileLinks[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -769,46 +769,46 @@ export interface OrbitalContactProfileTimeouts {
   readonly update?: string;
 }
 
-export function orbitalContactProfileTimeoutsToTerraform(struct?: OrbitalContactProfileTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orbitalContactProfileTimeoutsToTerraform(struct?: OrbitalContactProfileTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function orbitalContactProfileTimeoutsToHclTerraform(struct?: OrbitalContactProfileTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orbitalContactProfileTimeoutsToHclTerraform(struct?: OrbitalContactProfileTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -819,19 +819,19 @@ export function orbitalContactProfileTimeoutsToHclTerraform(struct?: OrbitalCont
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrbitalContactProfileTimeoutsOutputReference extends cdktf.ComplexObject {
+export class OrbitalContactProfileTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): OrbitalContactProfileTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): OrbitalContactProfileTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -856,7 +856,7 @@ export class OrbitalContactProfileTimeoutsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OrbitalContactProfileTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OrbitalContactProfileTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -865,7 +865,7 @@ export class OrbitalContactProfileTimeoutsOutputReference extends cdktf.ComplexO
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -947,7 +947,7 @@ export class OrbitalContactProfileTimeoutsOutputReference extends cdktf.ComplexO
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orbital_contact_profile azurerm_orbital_contact_profile}
 */
-export class OrbitalContactProfile extends cdktf.TerraformResource {
+export class OrbitalContactProfile extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -958,14 +958,14 @@ export class OrbitalContactProfile extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a OrbitalContactProfile resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a OrbitalContactProfile resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OrbitalContactProfile to import
   * @param importFromId The id of the existing OrbitalContactProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orbital_contact_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OrbitalContactProfile to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_orbital_contact_profile", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_orbital_contact_profile", importId: importFromId, provider });
       }
 
   // ===========
@@ -1160,7 +1160,7 @@ export class OrbitalContactProfile extends cdktf.TerraformResource {
   public get links() {
     return this._links;
   }
-  public putLinks(value: OrbitalContactProfileLinks[] | cdktf.IResolvable) {
+  public putLinks(value: OrbitalContactProfileLinks[] | cdktn.IResolvable) {
     this._links.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1190,17 +1190,17 @@ export class OrbitalContactProfile extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_tracking: cdktf.stringToTerraform(this._autoTracking),
-      event_hub_uri: cdktf.stringToTerraform(this._eventHubUri),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      minimum_elevation_degrees: cdktf.numberToTerraform(this._minimumElevationDegrees),
-      minimum_variable_contact_duration: cdktf.stringToTerraform(this._minimumVariableContactDuration),
-      name: cdktf.stringToTerraform(this._name),
-      network_configuration_subnet_id: cdktf.stringToTerraform(this._networkConfigurationSubnetId),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      links: cdktf.listMapper(orbitalContactProfileLinksToTerraform, true)(this._links.internalValue),
+      auto_tracking: cdktn.stringToTerraform(this._autoTracking),
+      event_hub_uri: cdktn.stringToTerraform(this._eventHubUri),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      minimum_elevation_degrees: cdktn.numberToTerraform(this._minimumElevationDegrees),
+      minimum_variable_contact_duration: cdktn.stringToTerraform(this._minimumVariableContactDuration),
+      name: cdktn.stringToTerraform(this._name),
+      network_configuration_subnet_id: cdktn.stringToTerraform(this._networkConfigurationSubnetId),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      links: cdktn.listMapper(orbitalContactProfileLinksToTerraform, true)(this._links.internalValue),
       timeouts: orbitalContactProfileTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1208,67 +1208,67 @@ export class OrbitalContactProfile extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       auto_tracking: {
-        value: cdktf.stringToHclTerraform(this._autoTracking),
+        value: cdktn.stringToHclTerraform(this._autoTracking),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       event_hub_uri: {
-        value: cdktf.stringToHclTerraform(this._eventHubUri),
+        value: cdktn.stringToHclTerraform(this._eventHubUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       minimum_elevation_degrees: {
-        value: cdktf.numberToHclTerraform(this._minimumElevationDegrees),
+        value: cdktn.numberToHclTerraform(this._minimumElevationDegrees),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       minimum_variable_contact_duration: {
-        value: cdktf.stringToHclTerraform(this._minimumVariableContactDuration),
+        value: cdktn.stringToHclTerraform(this._minimumVariableContactDuration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_configuration_subnet_id: {
-        value: cdktf.stringToHclTerraform(this._networkConfigurationSubnetId),
+        value: cdktn.stringToHclTerraform(this._networkConfigurationSubnetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       links: {
-        value: cdktf.listMapperHcl(orbitalContactProfileLinksToHclTerraform, true)(this._links.internalValue),
+        value: cdktn.listMapperHcl(orbitalContactProfileLinksToHclTerraform, true)(this._links.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "OrbitalContactProfileLinksList",

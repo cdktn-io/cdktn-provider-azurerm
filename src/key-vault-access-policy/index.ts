@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface KeyVaultAccessPolicyAConfig extends cdktf.TerraformMetaArguments {
+export interface KeyVaultAccessPolicyAConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/key_vault_access_policy#application_id KeyVaultAccessPolicyA#application_id}
   */
@@ -77,46 +77,46 @@ export interface KeyVaultAccessPolicyTimeouts {
   readonly update?: string;
 }
 
-export function keyVaultAccessPolicyTimeoutsToTerraform(struct?: KeyVaultAccessPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function keyVaultAccessPolicyTimeoutsToTerraform(struct?: KeyVaultAccessPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function keyVaultAccessPolicyTimeoutsToHclTerraform(struct?: KeyVaultAccessPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function keyVaultAccessPolicyTimeoutsToHclTerraform(struct?: KeyVaultAccessPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -127,19 +127,19 @@ export function keyVaultAccessPolicyTimeoutsToHclTerraform(struct?: KeyVaultAcce
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KeyVaultAccessPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class KeyVaultAccessPolicyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): KeyVaultAccessPolicyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): KeyVaultAccessPolicyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -164,7 +164,7 @@ export class KeyVaultAccessPolicyTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KeyVaultAccessPolicyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KeyVaultAccessPolicyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -173,7 +173,7 @@ export class KeyVaultAccessPolicyTimeoutsOutputReference extends cdktf.ComplexOb
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -255,7 +255,7 @@ export class KeyVaultAccessPolicyTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/key_vault_access_policy azurerm_key_vault_access_policy}
 */
-export class KeyVaultAccessPolicyA extends cdktf.TerraformResource {
+export class KeyVaultAccessPolicyA extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -266,14 +266,14 @@ export class KeyVaultAccessPolicyA extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a KeyVaultAccessPolicyA resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a KeyVaultAccessPolicyA resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KeyVaultAccessPolicyA to import
   * @param importFromId The id of the existing KeyVaultAccessPolicyA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/key_vault_access_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KeyVaultAccessPolicyA to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_key_vault_access_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_key_vault_access_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -476,15 +476,15 @@ export class KeyVaultAccessPolicyA extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_id: cdktf.stringToTerraform(this._applicationId),
-      certificate_permissions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._certificatePermissions),
-      id: cdktf.stringToTerraform(this._id),
-      key_permissions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._keyPermissions),
-      key_vault_id: cdktf.stringToTerraform(this._keyVaultId),
-      object_id: cdktf.stringToTerraform(this._objectId),
-      secret_permissions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._secretPermissions),
-      storage_permissions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._storagePermissions),
-      tenant_id: cdktf.stringToTerraform(this._tenantId),
+      application_id: cdktn.stringToTerraform(this._applicationId),
+      certificate_permissions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._certificatePermissions),
+      id: cdktn.stringToTerraform(this._id),
+      key_permissions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._keyPermissions),
+      key_vault_id: cdktn.stringToTerraform(this._keyVaultId),
+      object_id: cdktn.stringToTerraform(this._objectId),
+      secret_permissions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._secretPermissions),
+      storage_permissions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._storagePermissions),
+      tenant_id: cdktn.stringToTerraform(this._tenantId),
       timeouts: keyVaultAccessPolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -492,55 +492,55 @@ export class KeyVaultAccessPolicyA extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       application_id: {
-        value: cdktf.stringToHclTerraform(this._applicationId),
+        value: cdktn.stringToHclTerraform(this._applicationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       certificate_permissions: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._certificatePermissions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._certificatePermissions),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_permissions: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._keyPermissions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._keyPermissions),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       key_vault_id: {
-        value: cdktf.stringToHclTerraform(this._keyVaultId),
+        value: cdktn.stringToHclTerraform(this._keyVaultId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       object_id: {
-        value: cdktf.stringToHclTerraform(this._objectId),
+        value: cdktn.stringToHclTerraform(this._objectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secret_permissions: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._secretPermissions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._secretPermissions),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       storage_permissions: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._storagePermissions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._storagePermissions),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       tenant_id: {
-        value: cdktf.stringToHclTerraform(this._tenantId),
+        value: cdktn.stringToHclTerraform(this._tenantId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MysqlFlexibleDatabaseConfig extends cdktf.TerraformMetaArguments {
+export interface MysqlFlexibleDatabaseConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mysql_flexible_database#charset MysqlFlexibleDatabase#charset}
   */
@@ -61,39 +61,39 @@ export interface MysqlFlexibleDatabaseTimeouts {
   readonly read?: string;
 }
 
-export function mysqlFlexibleDatabaseTimeoutsToTerraform(struct?: MysqlFlexibleDatabaseTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mysqlFlexibleDatabaseTimeoutsToTerraform(struct?: MysqlFlexibleDatabaseTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function mysqlFlexibleDatabaseTimeoutsToHclTerraform(struct?: MysqlFlexibleDatabaseTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mysqlFlexibleDatabaseTimeoutsToHclTerraform(struct?: MysqlFlexibleDatabaseTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -104,19 +104,19 @@ export function mysqlFlexibleDatabaseTimeoutsToHclTerraform(struct?: MysqlFlexib
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MysqlFlexibleDatabaseTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MysqlFlexibleDatabaseTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MysqlFlexibleDatabaseTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MysqlFlexibleDatabaseTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -137,7 +137,7 @@ export class MysqlFlexibleDatabaseTimeoutsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MysqlFlexibleDatabaseTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MysqlFlexibleDatabaseTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -145,7 +145,7 @@ export class MysqlFlexibleDatabaseTimeoutsOutputReference extends cdktf.ComplexO
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -210,7 +210,7 @@ export class MysqlFlexibleDatabaseTimeoutsOutputReference extends cdktf.ComplexO
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mysql_flexible_database azurerm_mysql_flexible_database}
 */
-export class MysqlFlexibleDatabase extends cdktf.TerraformResource {
+export class MysqlFlexibleDatabase extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -221,14 +221,14 @@ export class MysqlFlexibleDatabase extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MysqlFlexibleDatabase resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MysqlFlexibleDatabase resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MysqlFlexibleDatabase to import
   * @param importFromId The id of the existing MysqlFlexibleDatabase that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mysql_flexible_database#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MysqlFlexibleDatabase to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_mysql_flexible_database", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_mysql_flexible_database", importId: importFromId, provider });
       }
 
   // ===========
@@ -374,12 +374,12 @@ export class MysqlFlexibleDatabase extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      charset: cdktf.stringToTerraform(this._charset),
-      collation: cdktf.stringToTerraform(this._collation),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      server_name: cdktf.stringToTerraform(this._serverName),
+      charset: cdktn.stringToTerraform(this._charset),
+      collation: cdktn.stringToTerraform(this._collation),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      server_name: cdktn.stringToTerraform(this._serverName),
       timeouts: mysqlFlexibleDatabaseTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -387,37 +387,37 @@ export class MysqlFlexibleDatabase extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       charset: {
-        value: cdktf.stringToHclTerraform(this._charset),
+        value: cdktn.stringToHclTerraform(this._charset),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       collation: {
-        value: cdktf.stringToHclTerraform(this._collation),
+        value: cdktn.stringToHclTerraform(this._collation),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       server_name: {
-        value: cdktf.stringToHclTerraform(this._serverName),
+        value: cdktn.stringToHclTerraform(this._serverName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

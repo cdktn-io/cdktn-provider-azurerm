@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LogAnalyticsQueryPackQueryConfig extends cdktf.TerraformMetaArguments {
+export interface LogAnalyticsQueryPackQueryConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/log_analytics_query_pack_query#additional_settings_json LogAnalyticsQueryPackQuery#additional_settings_json}
   */
@@ -85,46 +85,46 @@ export interface LogAnalyticsQueryPackQueryTimeouts {
   readonly update?: string;
 }
 
-export function logAnalyticsQueryPackQueryTimeoutsToTerraform(struct?: LogAnalyticsQueryPackQueryTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logAnalyticsQueryPackQueryTimeoutsToTerraform(struct?: LogAnalyticsQueryPackQueryTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function logAnalyticsQueryPackQueryTimeoutsToHclTerraform(struct?: LogAnalyticsQueryPackQueryTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logAnalyticsQueryPackQueryTimeoutsToHclTerraform(struct?: LogAnalyticsQueryPackQueryTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -135,19 +135,19 @@ export function logAnalyticsQueryPackQueryTimeoutsToHclTerraform(struct?: LogAna
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogAnalyticsQueryPackQueryTimeoutsOutputReference extends cdktf.ComplexObject {
+export class LogAnalyticsQueryPackQueryTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LogAnalyticsQueryPackQueryTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): LogAnalyticsQueryPackQueryTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -172,7 +172,7 @@ export class LogAnalyticsQueryPackQueryTimeoutsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogAnalyticsQueryPackQueryTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogAnalyticsQueryPackQueryTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -181,7 +181,7 @@ export class LogAnalyticsQueryPackQueryTimeoutsOutputReference extends cdktf.Com
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -263,7 +263,7 @@ export class LogAnalyticsQueryPackQueryTimeoutsOutputReference extends cdktf.Com
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/log_analytics_query_pack_query azurerm_log_analytics_query_pack_query}
 */
-export class LogAnalyticsQueryPackQuery extends cdktf.TerraformResource {
+export class LogAnalyticsQueryPackQuery extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -274,14 +274,14 @@ export class LogAnalyticsQueryPackQuery extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LogAnalyticsQueryPackQuery resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LogAnalyticsQueryPackQuery resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LogAnalyticsQueryPackQuery to import
   * @param importFromId The id of the existing LogAnalyticsQueryPackQuery that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/log_analytics_query_pack_query#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LogAnalyticsQueryPackQuery to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_log_analytics_query_pack_query", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_log_analytics_query_pack_query", importId: importFromId, provider });
       }
 
   // ===========
@@ -518,17 +518,17 @@ export class LogAnalyticsQueryPackQuery extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      additional_settings_json: cdktf.stringToTerraform(this._additionalSettingsJson),
-      body: cdktf.stringToTerraform(this._body),
-      categories: cdktf.listMapper(cdktf.stringToTerraform, false)(this._categories),
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      query_pack_id: cdktf.stringToTerraform(this._queryPackId),
-      resource_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._resourceTypes),
-      solutions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._solutions),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      additional_settings_json: cdktn.stringToTerraform(this._additionalSettingsJson),
+      body: cdktn.stringToTerraform(this._body),
+      categories: cdktn.listMapper(cdktn.stringToTerraform, false)(this._categories),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      query_pack_id: cdktn.stringToTerraform(this._queryPackId),
+      resource_types: cdktn.listMapper(cdktn.stringToTerraform, false)(this._resourceTypes),
+      solutions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._solutions),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       timeouts: logAnalyticsQueryPackQueryTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -536,67 +536,67 @@ export class LogAnalyticsQueryPackQuery extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       additional_settings_json: {
-        value: cdktf.stringToHclTerraform(this._additionalSettingsJson),
+        value: cdktn.stringToHclTerraform(this._additionalSettingsJson),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       body: {
-        value: cdktf.stringToHclTerraform(this._body),
+        value: cdktn.stringToHclTerraform(this._body),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       categories: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._categories),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._categories),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       query_pack_id: {
-        value: cdktf.stringToHclTerraform(this._queryPackId),
+        value: cdktn.stringToHclTerraform(this._queryPackId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_types: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._resourceTypes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._resourceTypes),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       solutions: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._solutions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._solutions),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

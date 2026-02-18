@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MssqlManagedInstanceConfig extends cdktf.TerraformMetaArguments {
+export interface MssqlManagedInstanceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_managed_instance#administrator_login MssqlManagedInstance#administrator_login}
   */
@@ -70,7 +70,7 @@ export interface MssqlManagedInstanceConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_managed_instance#public_data_endpoint_enabled MssqlManagedInstance#public_data_endpoint_enabled}
   */
-  readonly publicDataEndpointEnabled?: boolean | cdktf.IResolvable;
+  readonly publicDataEndpointEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_managed_instance#resource_group_name MssqlManagedInstance#resource_group_name}
   */
@@ -110,7 +110,7 @@ export interface MssqlManagedInstanceConfig extends cdktf.TerraformMetaArguments
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_managed_instance#zone_redundant_enabled MssqlManagedInstance#zone_redundant_enabled}
   */
-  readonly zoneRedundantEnabled?: boolean | cdktf.IResolvable;
+  readonly zoneRedundantEnabled?: boolean | cdktn.IResolvable;
   /**
   * azure_active_directory_administrator block
   *
@@ -134,7 +134,7 @@ export interface MssqlManagedInstanceAzureActiveDirectoryAdministrator {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_managed_instance#azuread_authentication_only_enabled MssqlManagedInstance#azuread_authentication_only_enabled}
   */
-  readonly azureadAuthenticationOnlyEnabled?: boolean | cdktf.IResolvable;
+  readonly azureadAuthenticationOnlyEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_managed_instance#login_username MssqlManagedInstance#login_username}
   */
@@ -154,52 +154,52 @@ export interface MssqlManagedInstanceAzureActiveDirectoryAdministrator {
 }
 
 export function mssqlManagedInstanceAzureActiveDirectoryAdministratorToTerraform(struct?: MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference | MssqlManagedInstanceAzureActiveDirectoryAdministrator): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    azuread_authentication_only_enabled: cdktf.booleanToTerraform(struct!.azureadAuthenticationOnlyEnabled),
-    login_username: cdktf.stringToTerraform(struct!.loginUsername),
-    object_id: cdktf.stringToTerraform(struct!.objectId),
-    principal_type: cdktf.stringToTerraform(struct!.principalType),
-    tenant_id: cdktf.stringToTerraform(struct!.tenantId),
+    azuread_authentication_only_enabled: cdktn.booleanToTerraform(struct!.azureadAuthenticationOnlyEnabled),
+    login_username: cdktn.stringToTerraform(struct!.loginUsername),
+    object_id: cdktn.stringToTerraform(struct!.objectId),
+    principal_type: cdktn.stringToTerraform(struct!.principalType),
+    tenant_id: cdktn.stringToTerraform(struct!.tenantId),
   }
 }
 
 
 export function mssqlManagedInstanceAzureActiveDirectoryAdministratorToHclTerraform(struct?: MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference | MssqlManagedInstanceAzureActiveDirectoryAdministrator): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     azuread_authentication_only_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.azureadAuthenticationOnlyEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.azureadAuthenticationOnlyEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     login_username: {
-      value: cdktf.stringToHclTerraform(struct!.loginUsername),
+      value: cdktn.stringToHclTerraform(struct!.loginUsername),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     object_id: {
-      value: cdktf.stringToHclTerraform(struct!.objectId),
+      value: cdktn.stringToHclTerraform(struct!.objectId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     principal_type: {
-      value: cdktf.stringToHclTerraform(struct!.principalType),
+      value: cdktn.stringToHclTerraform(struct!.principalType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tenant_id: {
-      value: cdktf.stringToHclTerraform(struct!.tenantId),
+      value: cdktn.stringToHclTerraform(struct!.tenantId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -210,14 +210,14 @@ export function mssqlManagedInstanceAzureActiveDirectoryAdministratorToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference extends cdktf.ComplexObject {
+export class MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -267,11 +267,11 @@ export class MssqlManagedInstanceAzureActiveDirectoryAdministratorOutputReferenc
   }
 
   // azuread_authentication_only_enabled - computed: false, optional: true, required: false
-  private _azureadAuthenticationOnlyEnabled?: boolean | cdktf.IResolvable; 
+  private _azureadAuthenticationOnlyEnabled?: boolean | cdktn.IResolvable; 
   public get azureadAuthenticationOnlyEnabled() {
     return this.getBooleanAttribute('azuread_authentication_only_enabled');
   }
-  public set azureadAuthenticationOnlyEnabled(value: boolean | cdktf.IResolvable) {
+  public set azureadAuthenticationOnlyEnabled(value: boolean | cdktn.IResolvable) {
     this._azureadAuthenticationOnlyEnabled = value;
   }
   public resetAzureadAuthenticationOnlyEnabled() {
@@ -349,31 +349,31 @@ export interface MssqlManagedInstanceIdentity {
 }
 
 export function mssqlManagedInstanceIdentityToTerraform(struct?: MssqlManagedInstanceIdentityOutputReference | MssqlManagedInstanceIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function mssqlManagedInstanceIdentityToHclTerraform(struct?: MssqlManagedInstanceIdentityOutputReference | MssqlManagedInstanceIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -384,14 +384,14 @@ export function mssqlManagedInstanceIdentityToHclTerraform(struct?: MssqlManaged
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MssqlManagedInstanceIdentityOutputReference extends cdktf.ComplexObject {
+export class MssqlManagedInstanceIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -425,7 +425,7 @@ export class MssqlManagedInstanceIdentityOutputReference extends cdktf.ComplexOb
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -480,46 +480,46 @@ export interface MssqlManagedInstanceTimeouts {
   readonly update?: string;
 }
 
-export function mssqlManagedInstanceTimeoutsToTerraform(struct?: MssqlManagedInstanceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mssqlManagedInstanceTimeoutsToTerraform(struct?: MssqlManagedInstanceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function mssqlManagedInstanceTimeoutsToHclTerraform(struct?: MssqlManagedInstanceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mssqlManagedInstanceTimeoutsToHclTerraform(struct?: MssqlManagedInstanceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -530,19 +530,19 @@ export function mssqlManagedInstanceTimeoutsToHclTerraform(struct?: MssqlManaged
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MssqlManagedInstanceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MssqlManagedInstanceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MssqlManagedInstanceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MssqlManagedInstanceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -567,7 +567,7 @@ export class MssqlManagedInstanceTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MssqlManagedInstanceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MssqlManagedInstanceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -576,7 +576,7 @@ export class MssqlManagedInstanceTimeoutsOutputReference extends cdktf.ComplexOb
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -658,7 +658,7 @@ export class MssqlManagedInstanceTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_managed_instance azurerm_mssql_managed_instance}
 */
-export class MssqlManagedInstance extends cdktf.TerraformResource {
+export class MssqlManagedInstance extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -669,14 +669,14 @@ export class MssqlManagedInstance extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MssqlManagedInstance resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MssqlManagedInstance resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MssqlManagedInstance to import
   * @param importFromId The id of the existing MssqlManagedInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_managed_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MssqlManagedInstance to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_mssql_managed_instance", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_mssql_managed_instance", importId: importFromId, provider });
       }
 
   // ===========
@@ -949,11 +949,11 @@ export class MssqlManagedInstance extends cdktf.TerraformResource {
   }
 
   // public_data_endpoint_enabled - computed: false, optional: true, required: false
-  private _publicDataEndpointEnabled?: boolean | cdktf.IResolvable; 
+  private _publicDataEndpointEnabled?: boolean | cdktn.IResolvable; 
   public get publicDataEndpointEnabled() {
     return this.getBooleanAttribute('public_data_endpoint_enabled');
   }
-  public set publicDataEndpointEnabled(value: boolean | cdktf.IResolvable) {
+  public set publicDataEndpointEnabled(value: boolean | cdktn.IResolvable) {
     this._publicDataEndpointEnabled = value;
   }
   public resetPublicDataEndpointEnabled() {
@@ -1094,11 +1094,11 @@ export class MssqlManagedInstance extends cdktf.TerraformResource {
   }
 
   // zone_redundant_enabled - computed: false, optional: true, required: false
-  private _zoneRedundantEnabled?: boolean | cdktf.IResolvable; 
+  private _zoneRedundantEnabled?: boolean | cdktn.IResolvable; 
   public get zoneRedundantEnabled() {
     return this.getBooleanAttribute('zone_redundant_enabled');
   }
-  public set zoneRedundantEnabled(value: boolean | cdktf.IResolvable) {
+  public set zoneRedundantEnabled(value: boolean | cdktn.IResolvable) {
     this._zoneRedundantEnabled = value;
   }
   public resetZoneRedundantEnabled() {
@@ -1163,30 +1163,30 @@ export class MssqlManagedInstance extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      administrator_login: cdktf.stringToTerraform(this._administratorLogin),
-      administrator_login_password: cdktf.stringToTerraform(this._administratorLoginPassword),
-      collation: cdktf.stringToTerraform(this._collation),
-      database_format: cdktf.stringToTerraform(this._databaseFormat),
-      dns_zone_partner_id: cdktf.stringToTerraform(this._dnsZonePartnerId),
-      hybrid_secondary_usage: cdktf.stringToTerraform(this._hybridSecondaryUsage),
-      id: cdktf.stringToTerraform(this._id),
-      license_type: cdktf.stringToTerraform(this._licenseType),
-      location: cdktf.stringToTerraform(this._location),
-      maintenance_configuration_name: cdktf.stringToTerraform(this._maintenanceConfigurationName),
-      minimum_tls_version: cdktf.stringToTerraform(this._minimumTlsVersion),
-      name: cdktf.stringToTerraform(this._name),
-      proxy_override: cdktf.stringToTerraform(this._proxyOverride),
-      public_data_endpoint_enabled: cdktf.booleanToTerraform(this._publicDataEndpointEnabled),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      service_principal_type: cdktf.stringToTerraform(this._servicePrincipalType),
-      sku_name: cdktf.stringToTerraform(this._skuName),
-      storage_account_type: cdktf.stringToTerraform(this._storageAccountType),
-      storage_size_in_gb: cdktf.numberToTerraform(this._storageSizeInGb),
-      subnet_id: cdktf.stringToTerraform(this._subnetId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      timezone_id: cdktf.stringToTerraform(this._timezoneId),
-      vcores: cdktf.numberToTerraform(this._vcores),
-      zone_redundant_enabled: cdktf.booleanToTerraform(this._zoneRedundantEnabled),
+      administrator_login: cdktn.stringToTerraform(this._administratorLogin),
+      administrator_login_password: cdktn.stringToTerraform(this._administratorLoginPassword),
+      collation: cdktn.stringToTerraform(this._collation),
+      database_format: cdktn.stringToTerraform(this._databaseFormat),
+      dns_zone_partner_id: cdktn.stringToTerraform(this._dnsZonePartnerId),
+      hybrid_secondary_usage: cdktn.stringToTerraform(this._hybridSecondaryUsage),
+      id: cdktn.stringToTerraform(this._id),
+      license_type: cdktn.stringToTerraform(this._licenseType),
+      location: cdktn.stringToTerraform(this._location),
+      maintenance_configuration_name: cdktn.stringToTerraform(this._maintenanceConfigurationName),
+      minimum_tls_version: cdktn.stringToTerraform(this._minimumTlsVersion),
+      name: cdktn.stringToTerraform(this._name),
+      proxy_override: cdktn.stringToTerraform(this._proxyOverride),
+      public_data_endpoint_enabled: cdktn.booleanToTerraform(this._publicDataEndpointEnabled),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      service_principal_type: cdktn.stringToTerraform(this._servicePrincipalType),
+      sku_name: cdktn.stringToTerraform(this._skuName),
+      storage_account_type: cdktn.stringToTerraform(this._storageAccountType),
+      storage_size_in_gb: cdktn.numberToTerraform(this._storageSizeInGb),
+      subnet_id: cdktn.stringToTerraform(this._subnetId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      timezone_id: cdktn.stringToTerraform(this._timezoneId),
+      vcores: cdktn.numberToTerraform(this._vcores),
+      zone_redundant_enabled: cdktn.booleanToTerraform(this._zoneRedundantEnabled),
       azure_active_directory_administrator: mssqlManagedInstanceAzureActiveDirectoryAdministratorToTerraform(this._azureActiveDirectoryAdministrator.internalValue),
       identity: mssqlManagedInstanceIdentityToTerraform(this._identity.internalValue),
       timeouts: mssqlManagedInstanceTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1196,145 +1196,145 @@ export class MssqlManagedInstance extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       administrator_login: {
-        value: cdktf.stringToHclTerraform(this._administratorLogin),
+        value: cdktn.stringToHclTerraform(this._administratorLogin),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       administrator_login_password: {
-        value: cdktf.stringToHclTerraform(this._administratorLoginPassword),
+        value: cdktn.stringToHclTerraform(this._administratorLoginPassword),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       collation: {
-        value: cdktf.stringToHclTerraform(this._collation),
+        value: cdktn.stringToHclTerraform(this._collation),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       database_format: {
-        value: cdktf.stringToHclTerraform(this._databaseFormat),
+        value: cdktn.stringToHclTerraform(this._databaseFormat),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dns_zone_partner_id: {
-        value: cdktf.stringToHclTerraform(this._dnsZonePartnerId),
+        value: cdktn.stringToHclTerraform(this._dnsZonePartnerId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       hybrid_secondary_usage: {
-        value: cdktf.stringToHclTerraform(this._hybridSecondaryUsage),
+        value: cdktn.stringToHclTerraform(this._hybridSecondaryUsage),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       license_type: {
-        value: cdktf.stringToHclTerraform(this._licenseType),
+        value: cdktn.stringToHclTerraform(this._licenseType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       maintenance_configuration_name: {
-        value: cdktf.stringToHclTerraform(this._maintenanceConfigurationName),
+        value: cdktn.stringToHclTerraform(this._maintenanceConfigurationName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       minimum_tls_version: {
-        value: cdktf.stringToHclTerraform(this._minimumTlsVersion),
+        value: cdktn.stringToHclTerraform(this._minimumTlsVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       proxy_override: {
-        value: cdktf.stringToHclTerraform(this._proxyOverride),
+        value: cdktn.stringToHclTerraform(this._proxyOverride),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_data_endpoint_enabled: {
-        value: cdktf.booleanToHclTerraform(this._publicDataEndpointEnabled),
+        value: cdktn.booleanToHclTerraform(this._publicDataEndpointEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_principal_type: {
-        value: cdktf.stringToHclTerraform(this._servicePrincipalType),
+        value: cdktn.stringToHclTerraform(this._servicePrincipalType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sku_name: {
-        value: cdktf.stringToHclTerraform(this._skuName),
+        value: cdktn.stringToHclTerraform(this._skuName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_account_type: {
-        value: cdktf.stringToHclTerraform(this._storageAccountType),
+        value: cdktn.stringToHclTerraform(this._storageAccountType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_size_in_gb: {
-        value: cdktf.numberToHclTerraform(this._storageSizeInGb),
+        value: cdktn.numberToHclTerraform(this._storageSizeInGb),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       subnet_id: {
-        value: cdktf.stringToHclTerraform(this._subnetId),
+        value: cdktn.stringToHclTerraform(this._subnetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       timezone_id: {
-        value: cdktf.stringToHclTerraform(this._timezoneId),
+        value: cdktn.stringToHclTerraform(this._timezoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vcores: {
-        value: cdktf.numberToHclTerraform(this._vcores),
+        value: cdktn.numberToHclTerraform(this._vcores),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       zone_redundant_enabled: {
-        value: cdktf.booleanToHclTerraform(this._zoneRedundantEnabled),
+        value: cdktn.booleanToHclTerraform(this._zoneRedundantEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

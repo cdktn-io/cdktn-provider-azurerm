@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MaintenanceConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface MaintenanceConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/maintenance_configuration#id MaintenanceConfiguration#id}
   *
@@ -85,39 +85,39 @@ export interface MaintenanceConfigurationInstallPatchesLinux {
   readonly packageNamesMaskToInclude?: string[];
 }
 
-export function maintenanceConfigurationInstallPatchesLinuxToTerraform(struct?: MaintenanceConfigurationInstallPatchesLinux | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function maintenanceConfigurationInstallPatchesLinuxToTerraform(struct?: MaintenanceConfigurationInstallPatchesLinux | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    classifications_to_include: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.classificationsToInclude),
-    package_names_mask_to_exclude: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.packageNamesMaskToExclude),
-    package_names_mask_to_include: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.packageNamesMaskToInclude),
+    classifications_to_include: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.classificationsToInclude),
+    package_names_mask_to_exclude: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.packageNamesMaskToExclude),
+    package_names_mask_to_include: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.packageNamesMaskToInclude),
   }
 }
 
 
-export function maintenanceConfigurationInstallPatchesLinuxToHclTerraform(struct?: MaintenanceConfigurationInstallPatchesLinux | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function maintenanceConfigurationInstallPatchesLinuxToHclTerraform(struct?: MaintenanceConfigurationInstallPatchesLinux | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     classifications_to_include: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.classificationsToInclude),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.classificationsToInclude),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     package_names_mask_to_exclude: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.packageNamesMaskToExclude),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.packageNamesMaskToExclude),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     package_names_mask_to_include: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.packageNamesMaskToInclude),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.packageNamesMaskToInclude),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -128,9 +128,9 @@ export function maintenanceConfigurationInstallPatchesLinuxToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MaintenanceConfigurationInstallPatchesLinuxOutputReference extends cdktf.ComplexObject {
+export class MaintenanceConfigurationInstallPatchesLinuxOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -138,11 +138,11 @@ export class MaintenanceConfigurationInstallPatchesLinuxOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MaintenanceConfigurationInstallPatchesLinux | cdktf.IResolvable | undefined {
+  public get internalValue(): MaintenanceConfigurationInstallPatchesLinux | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -163,7 +163,7 @@ export class MaintenanceConfigurationInstallPatchesLinuxOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MaintenanceConfigurationInstallPatchesLinux | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MaintenanceConfigurationInstallPatchesLinux | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -171,7 +171,7 @@ export class MaintenanceConfigurationInstallPatchesLinuxOutputReference extends 
       this._packageNamesMaskToExclude = undefined;
       this._packageNamesMaskToInclude = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -233,15 +233,15 @@ export class MaintenanceConfigurationInstallPatchesLinuxOutputReference extends 
   }
 }
 
-export class MaintenanceConfigurationInstallPatchesLinuxList extends cdktf.ComplexList {
-  public internalValue? : MaintenanceConfigurationInstallPatchesLinux[] | cdktf.IResolvable
+export class MaintenanceConfigurationInstallPatchesLinuxList extends cdktn.ComplexList {
+  public internalValue? : MaintenanceConfigurationInstallPatchesLinux[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -267,39 +267,39 @@ export interface MaintenanceConfigurationInstallPatchesWindows {
   readonly kbNumbersToInclude?: string[];
 }
 
-export function maintenanceConfigurationInstallPatchesWindowsToTerraform(struct?: MaintenanceConfigurationInstallPatchesWindows | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function maintenanceConfigurationInstallPatchesWindowsToTerraform(struct?: MaintenanceConfigurationInstallPatchesWindows | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    classifications_to_include: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.classificationsToInclude),
-    kb_numbers_to_exclude: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.kbNumbersToExclude),
-    kb_numbers_to_include: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.kbNumbersToInclude),
+    classifications_to_include: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.classificationsToInclude),
+    kb_numbers_to_exclude: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.kbNumbersToExclude),
+    kb_numbers_to_include: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.kbNumbersToInclude),
   }
 }
 
 
-export function maintenanceConfigurationInstallPatchesWindowsToHclTerraform(struct?: MaintenanceConfigurationInstallPatchesWindows | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function maintenanceConfigurationInstallPatchesWindowsToHclTerraform(struct?: MaintenanceConfigurationInstallPatchesWindows | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     classifications_to_include: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.classificationsToInclude),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.classificationsToInclude),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     kb_numbers_to_exclude: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.kbNumbersToExclude),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.kbNumbersToExclude),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     kb_numbers_to_include: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.kbNumbersToInclude),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.kbNumbersToInclude),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -310,9 +310,9 @@ export function maintenanceConfigurationInstallPatchesWindowsToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MaintenanceConfigurationInstallPatchesWindowsOutputReference extends cdktf.ComplexObject {
+export class MaintenanceConfigurationInstallPatchesWindowsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -320,11 +320,11 @@ export class MaintenanceConfigurationInstallPatchesWindowsOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MaintenanceConfigurationInstallPatchesWindows | cdktf.IResolvable | undefined {
+  public get internalValue(): MaintenanceConfigurationInstallPatchesWindows | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -345,7 +345,7 @@ export class MaintenanceConfigurationInstallPatchesWindowsOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MaintenanceConfigurationInstallPatchesWindows | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MaintenanceConfigurationInstallPatchesWindows | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -353,7 +353,7 @@ export class MaintenanceConfigurationInstallPatchesWindowsOutputReference extend
       this._kbNumbersToExclude = undefined;
       this._kbNumbersToInclude = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -415,15 +415,15 @@ export class MaintenanceConfigurationInstallPatchesWindowsOutputReference extend
   }
 }
 
-export class MaintenanceConfigurationInstallPatchesWindowsList extends cdktf.ComplexList {
-  public internalValue? : MaintenanceConfigurationInstallPatchesWindows[] | cdktf.IResolvable
+export class MaintenanceConfigurationInstallPatchesWindowsList extends cdktn.ComplexList {
+  public internalValue? : MaintenanceConfigurationInstallPatchesWindows[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -444,48 +444,48 @@ export interface MaintenanceConfigurationInstallPatches {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/maintenance_configuration#linux MaintenanceConfiguration#linux}
   */
-  readonly linux?: MaintenanceConfigurationInstallPatchesLinux[] | cdktf.IResolvable;
+  readonly linux?: MaintenanceConfigurationInstallPatchesLinux[] | cdktn.IResolvable;
   /**
   * windows block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/maintenance_configuration#windows MaintenanceConfiguration#windows}
   */
-  readonly windows?: MaintenanceConfigurationInstallPatchesWindows[] | cdktf.IResolvable;
+  readonly windows?: MaintenanceConfigurationInstallPatchesWindows[] | cdktn.IResolvable;
 }
 
 export function maintenanceConfigurationInstallPatchesToTerraform(struct?: MaintenanceConfigurationInstallPatchesOutputReference | MaintenanceConfigurationInstallPatches): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    reboot: cdktf.stringToTerraform(struct!.reboot),
-    linux: cdktf.listMapper(maintenanceConfigurationInstallPatchesLinuxToTerraform, true)(struct!.linux),
-    windows: cdktf.listMapper(maintenanceConfigurationInstallPatchesWindowsToTerraform, true)(struct!.windows),
+    reboot: cdktn.stringToTerraform(struct!.reboot),
+    linux: cdktn.listMapper(maintenanceConfigurationInstallPatchesLinuxToTerraform, true)(struct!.linux),
+    windows: cdktn.listMapper(maintenanceConfigurationInstallPatchesWindowsToTerraform, true)(struct!.windows),
   }
 }
 
 
 export function maintenanceConfigurationInstallPatchesToHclTerraform(struct?: MaintenanceConfigurationInstallPatchesOutputReference | MaintenanceConfigurationInstallPatches): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     reboot: {
-      value: cdktf.stringToHclTerraform(struct!.reboot),
+      value: cdktn.stringToHclTerraform(struct!.reboot),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     linux: {
-      value: cdktf.listMapperHcl(maintenanceConfigurationInstallPatchesLinuxToHclTerraform, true)(struct!.linux),
+      value: cdktn.listMapperHcl(maintenanceConfigurationInstallPatchesLinuxToHclTerraform, true)(struct!.linux),
       isBlock: true,
       type: "list",
       storageClassType: "MaintenanceConfigurationInstallPatchesLinuxList",
     },
     windows: {
-      value: cdktf.listMapperHcl(maintenanceConfigurationInstallPatchesWindowsToHclTerraform, true)(struct!.windows),
+      value: cdktn.listMapperHcl(maintenanceConfigurationInstallPatchesWindowsToHclTerraform, true)(struct!.windows),
       isBlock: true,
       type: "list",
       storageClassType: "MaintenanceConfigurationInstallPatchesWindowsList",
@@ -496,14 +496,14 @@ export function maintenanceConfigurationInstallPatchesToHclTerraform(struct?: Ma
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MaintenanceConfigurationInstallPatchesOutputReference extends cdktf.ComplexObject {
+export class MaintenanceConfigurationInstallPatchesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -561,7 +561,7 @@ export class MaintenanceConfigurationInstallPatchesOutputReference extends cdktf
   public get linux() {
     return this._linux;
   }
-  public putLinux(value: MaintenanceConfigurationInstallPatchesLinux[] | cdktf.IResolvable) {
+  public putLinux(value: MaintenanceConfigurationInstallPatchesLinux[] | cdktn.IResolvable) {
     this._linux.internalValue = value;
   }
   public resetLinux() {
@@ -577,7 +577,7 @@ export class MaintenanceConfigurationInstallPatchesOutputReference extends cdktf
   public get windows() {
     return this._windows;
   }
-  public putWindows(value: MaintenanceConfigurationInstallPatchesWindows[] | cdktf.IResolvable) {
+  public putWindows(value: MaintenanceConfigurationInstallPatchesWindows[] | cdktn.IResolvable) {
     this._windows.internalValue = value;
   }
   public resetWindows() {
@@ -607,46 +607,46 @@ export interface MaintenanceConfigurationTimeouts {
   readonly update?: string;
 }
 
-export function maintenanceConfigurationTimeoutsToTerraform(struct?: MaintenanceConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function maintenanceConfigurationTimeoutsToTerraform(struct?: MaintenanceConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function maintenanceConfigurationTimeoutsToHclTerraform(struct?: MaintenanceConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function maintenanceConfigurationTimeoutsToHclTerraform(struct?: MaintenanceConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -657,19 +657,19 @@ export function maintenanceConfigurationTimeoutsToHclTerraform(struct?: Maintena
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MaintenanceConfigurationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MaintenanceConfigurationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MaintenanceConfigurationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MaintenanceConfigurationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -694,7 +694,7 @@ export class MaintenanceConfigurationTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MaintenanceConfigurationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MaintenanceConfigurationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -703,7 +703,7 @@ export class MaintenanceConfigurationTimeoutsOutputReference extends cdktf.Compl
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -805,52 +805,52 @@ export interface MaintenanceConfigurationWindow {
 }
 
 export function maintenanceConfigurationWindowToTerraform(struct?: MaintenanceConfigurationWindowOutputReference | MaintenanceConfigurationWindow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    duration: cdktf.stringToTerraform(struct!.duration),
-    expiration_date_time: cdktf.stringToTerraform(struct!.expirationDateTime),
-    recur_every: cdktf.stringToTerraform(struct!.recurEvery),
-    start_date_time: cdktf.stringToTerraform(struct!.startDateTime),
-    time_zone: cdktf.stringToTerraform(struct!.timeZone),
+    duration: cdktn.stringToTerraform(struct!.duration),
+    expiration_date_time: cdktn.stringToTerraform(struct!.expirationDateTime),
+    recur_every: cdktn.stringToTerraform(struct!.recurEvery),
+    start_date_time: cdktn.stringToTerraform(struct!.startDateTime),
+    time_zone: cdktn.stringToTerraform(struct!.timeZone),
   }
 }
 
 
 export function maintenanceConfigurationWindowToHclTerraform(struct?: MaintenanceConfigurationWindowOutputReference | MaintenanceConfigurationWindow): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     duration: {
-      value: cdktf.stringToHclTerraform(struct!.duration),
+      value: cdktn.stringToHclTerraform(struct!.duration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     expiration_date_time: {
-      value: cdktf.stringToHclTerraform(struct!.expirationDateTime),
+      value: cdktn.stringToHclTerraform(struct!.expirationDateTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     recur_every: {
-      value: cdktf.stringToHclTerraform(struct!.recurEvery),
+      value: cdktn.stringToHclTerraform(struct!.recurEvery),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start_date_time: {
-      value: cdktf.stringToHclTerraform(struct!.startDateTime),
+      value: cdktn.stringToHclTerraform(struct!.startDateTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     time_zone: {
-      value: cdktf.stringToHclTerraform(struct!.timeZone),
+      value: cdktn.stringToHclTerraform(struct!.timeZone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -861,14 +861,14 @@ export function maintenanceConfigurationWindowToHclTerraform(struct?: Maintenanc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MaintenanceConfigurationWindowOutputReference extends cdktf.ComplexObject {
+export class MaintenanceConfigurationWindowOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -995,7 +995,7 @@ export class MaintenanceConfigurationWindowOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/maintenance_configuration azurerm_maintenance_configuration}
 */
-export class MaintenanceConfiguration extends cdktf.TerraformResource {
+export class MaintenanceConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1006,14 +1006,14 @@ export class MaintenanceConfiguration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MaintenanceConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MaintenanceConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MaintenanceConfiguration to import
   * @param importFromId The id of the existing MaintenanceConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/maintenance_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MaintenanceConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_maintenance_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_maintenance_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -1247,15 +1247,15 @@ export class MaintenanceConfiguration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      in_guest_user_patch_mode: cdktf.stringToTerraform(this._inGuestUserPatchMode),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      properties: cdktf.hashMapper(cdktf.stringToTerraform)(this._properties),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      scope: cdktf.stringToTerraform(this._scope),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      visibility: cdktf.stringToTerraform(this._visibility),
+      id: cdktn.stringToTerraform(this._id),
+      in_guest_user_patch_mode: cdktn.stringToTerraform(this._inGuestUserPatchMode),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      properties: cdktn.hashMapper(cdktn.stringToTerraform)(this._properties),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      scope: cdktn.stringToTerraform(this._scope),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      visibility: cdktn.stringToTerraform(this._visibility),
       install_patches: maintenanceConfigurationInstallPatchesToTerraform(this._installPatches.internalValue),
       timeouts: maintenanceConfigurationTimeoutsToTerraform(this._timeouts.internalValue),
       window: maintenanceConfigurationWindowToTerraform(this._window.internalValue),
@@ -1265,55 +1265,55 @@ export class MaintenanceConfiguration extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       in_guest_user_patch_mode: {
-        value: cdktf.stringToHclTerraform(this._inGuestUserPatchMode),
+        value: cdktn.stringToHclTerraform(this._inGuestUserPatchMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       properties: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._properties),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._properties),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scope: {
-        value: cdktf.stringToHclTerraform(this._scope),
+        value: cdktn.stringToHclTerraform(this._scope),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       visibility: {
-        value: cdktf.stringToHclTerraform(this._visibility),
+        value: cdktn.stringToHclTerraform(this._visibility),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

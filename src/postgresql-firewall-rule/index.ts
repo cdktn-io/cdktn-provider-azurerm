@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PostgresqlFirewallRuleConfig extends cdktf.TerraformMetaArguments {
+export interface PostgresqlFirewallRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/postgresql_firewall_rule#end_ip_address PostgresqlFirewallRule#end_ip_address}
   */
@@ -61,39 +61,39 @@ export interface PostgresqlFirewallRuleTimeouts {
   readonly read?: string;
 }
 
-export function postgresqlFirewallRuleTimeoutsToTerraform(struct?: PostgresqlFirewallRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function postgresqlFirewallRuleTimeoutsToTerraform(struct?: PostgresqlFirewallRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function postgresqlFirewallRuleTimeoutsToHclTerraform(struct?: PostgresqlFirewallRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function postgresqlFirewallRuleTimeoutsToHclTerraform(struct?: PostgresqlFirewallRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -104,19 +104,19 @@ export function postgresqlFirewallRuleTimeoutsToHclTerraform(struct?: Postgresql
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PostgresqlFirewallRuleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class PostgresqlFirewallRuleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PostgresqlFirewallRuleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): PostgresqlFirewallRuleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -137,7 +137,7 @@ export class PostgresqlFirewallRuleTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PostgresqlFirewallRuleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PostgresqlFirewallRuleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -145,7 +145,7 @@ export class PostgresqlFirewallRuleTimeoutsOutputReference extends cdktf.Complex
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -210,7 +210,7 @@ export class PostgresqlFirewallRuleTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/postgresql_firewall_rule azurerm_postgresql_firewall_rule}
 */
-export class PostgresqlFirewallRule extends cdktf.TerraformResource {
+export class PostgresqlFirewallRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -221,14 +221,14 @@ export class PostgresqlFirewallRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PostgresqlFirewallRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PostgresqlFirewallRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PostgresqlFirewallRule to import
   * @param importFromId The id of the existing PostgresqlFirewallRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/postgresql_firewall_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PostgresqlFirewallRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_postgresql_firewall_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_postgresql_firewall_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -374,12 +374,12 @@ export class PostgresqlFirewallRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      end_ip_address: cdktf.stringToTerraform(this._endIpAddress),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      server_name: cdktf.stringToTerraform(this._serverName),
-      start_ip_address: cdktf.stringToTerraform(this._startIpAddress),
+      end_ip_address: cdktn.stringToTerraform(this._endIpAddress),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      server_name: cdktn.stringToTerraform(this._serverName),
+      start_ip_address: cdktn.stringToTerraform(this._startIpAddress),
       timeouts: postgresqlFirewallRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -387,37 +387,37 @@ export class PostgresqlFirewallRule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       end_ip_address: {
-        value: cdktf.stringToHclTerraform(this._endIpAddress),
+        value: cdktn.stringToHclTerraform(this._endIpAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       server_name: {
-        value: cdktf.stringToHclTerraform(this._serverName),
+        value: cdktn.stringToHclTerraform(this._serverName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       start_ip_address: {
-        value: cdktf.stringToHclTerraform(this._startIpAddress),
+        value: cdktn.stringToHclTerraform(this._startIpAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

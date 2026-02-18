@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MonitorScheduledQueryRulesAlertV2Config extends cdktf.TerraformMetaArguments {
+export interface MonitorScheduledQueryRulesAlertV2Config extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_scheduled_query_rules_alert_v2#auto_mitigation_enabled MonitorScheduledQueryRulesAlertV2#auto_mitigation_enabled}
   */
-  readonly autoMitigationEnabled?: boolean | cdktf.IResolvable;
+  readonly autoMitigationEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_scheduled_query_rules_alert_v2#description MonitorScheduledQueryRulesAlertV2#description}
   */
@@ -27,7 +27,7 @@ export interface MonitorScheduledQueryRulesAlertV2Config extends cdktf.Terraform
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_scheduled_query_rules_alert_v2#enabled MonitorScheduledQueryRulesAlertV2#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_scheduled_query_rules_alert_v2#evaluation_frequency MonitorScheduledQueryRulesAlertV2#evaluation_frequency}
   */
@@ -70,7 +70,7 @@ export interface MonitorScheduledQueryRulesAlertV2Config extends cdktf.Terraform
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_scheduled_query_rules_alert_v2#skip_query_validation MonitorScheduledQueryRulesAlertV2#skip_query_validation}
   */
-  readonly skipQueryValidation?: boolean | cdktf.IResolvable;
+  readonly skipQueryValidation?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_scheduled_query_rules_alert_v2#tags MonitorScheduledQueryRulesAlertV2#tags}
   */
@@ -86,7 +86,7 @@ export interface MonitorScheduledQueryRulesAlertV2Config extends cdktf.Terraform
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_scheduled_query_rules_alert_v2#workspace_alerts_storage_enabled MonitorScheduledQueryRulesAlertV2#workspace_alerts_storage_enabled}
   */
-  readonly workspaceAlertsStorageEnabled?: boolean | cdktf.IResolvable;
+  readonly workspaceAlertsStorageEnabled?: boolean | cdktn.IResolvable;
   /**
   * action block
   *
@@ -98,7 +98,7 @@ export interface MonitorScheduledQueryRulesAlertV2Config extends cdktf.Terraform
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_scheduled_query_rules_alert_v2#criteria MonitorScheduledQueryRulesAlertV2#criteria}
   */
-  readonly criteria: MonitorScheduledQueryRulesAlertV2Criteria[] | cdktf.IResolvable;
+  readonly criteria: MonitorScheduledQueryRulesAlertV2Criteria[] | cdktn.IResolvable;
   /**
   * identity block
   *
@@ -124,31 +124,31 @@ export interface MonitorScheduledQueryRulesAlertV2Action {
 }
 
 export function monitorScheduledQueryRulesAlertV2ActionToTerraform(struct?: MonitorScheduledQueryRulesAlertV2ActionOutputReference | MonitorScheduledQueryRulesAlertV2Action): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.actionGroups),
-    custom_properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.customProperties),
+    action_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.actionGroups),
+    custom_properties: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.customProperties),
   }
 }
 
 
 export function monitorScheduledQueryRulesAlertV2ActionToHclTerraform(struct?: MonitorScheduledQueryRulesAlertV2ActionOutputReference | MonitorScheduledQueryRulesAlertV2Action): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action_groups: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.actionGroups),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.actionGroups),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     custom_properties: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.customProperties),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.customProperties),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -159,14 +159,14 @@ export function monitorScheduledQueryRulesAlertV2ActionToHclTerraform(struct?: M
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorScheduledQueryRulesAlertV2ActionOutputReference extends cdktf.ComplexObject {
+export class MonitorScheduledQueryRulesAlertV2ActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -244,39 +244,39 @@ export interface MonitorScheduledQueryRulesAlertV2CriteriaDimension {
   readonly values: string[];
 }
 
-export function monitorScheduledQueryRulesAlertV2CriteriaDimensionToTerraform(struct?: MonitorScheduledQueryRulesAlertV2CriteriaDimension | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorScheduledQueryRulesAlertV2CriteriaDimensionToTerraform(struct?: MonitorScheduledQueryRulesAlertV2CriteriaDimension | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    name: cdktn.stringToTerraform(struct!.name),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function monitorScheduledQueryRulesAlertV2CriteriaDimensionToHclTerraform(struct?: MonitorScheduledQueryRulesAlertV2CriteriaDimension | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorScheduledQueryRulesAlertV2CriteriaDimensionToHclTerraform(struct?: MonitorScheduledQueryRulesAlertV2CriteriaDimension | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -287,9 +287,9 @@ export function monitorScheduledQueryRulesAlertV2CriteriaDimensionToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorScheduledQueryRulesAlertV2CriteriaDimensionOutputReference extends cdktf.ComplexObject {
+export class MonitorScheduledQueryRulesAlertV2CriteriaDimensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -297,11 +297,11 @@ export class MonitorScheduledQueryRulesAlertV2CriteriaDimensionOutputReference e
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MonitorScheduledQueryRulesAlertV2CriteriaDimension | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorScheduledQueryRulesAlertV2CriteriaDimension | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -322,7 +322,7 @@ export class MonitorScheduledQueryRulesAlertV2CriteriaDimensionOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorScheduledQueryRulesAlertV2CriteriaDimension | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorScheduledQueryRulesAlertV2CriteriaDimension | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -330,7 +330,7 @@ export class MonitorScheduledQueryRulesAlertV2CriteriaDimensionOutputReference e
       this._operator = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -383,15 +383,15 @@ export class MonitorScheduledQueryRulesAlertV2CriteriaDimensionOutputReference e
   }
 }
 
-export class MonitorScheduledQueryRulesAlertV2CriteriaDimensionList extends cdktf.ComplexList {
-  public internalValue? : MonitorScheduledQueryRulesAlertV2CriteriaDimension[] | cdktf.IResolvable
+export class MonitorScheduledQueryRulesAlertV2CriteriaDimensionList extends cdktn.ComplexList {
+  public internalValue? : MonitorScheduledQueryRulesAlertV2CriteriaDimension[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -414,31 +414,31 @@ export interface MonitorScheduledQueryRulesAlertV2CriteriaFailingPeriods {
 }
 
 export function monitorScheduledQueryRulesAlertV2CriteriaFailingPeriodsToTerraform(struct?: MonitorScheduledQueryRulesAlertV2CriteriaFailingPeriodsOutputReference | MonitorScheduledQueryRulesAlertV2CriteriaFailingPeriods): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    minimum_failing_periods_to_trigger_alert: cdktf.numberToTerraform(struct!.minimumFailingPeriodsToTriggerAlert),
-    number_of_evaluation_periods: cdktf.numberToTerraform(struct!.numberOfEvaluationPeriods),
+    minimum_failing_periods_to_trigger_alert: cdktn.numberToTerraform(struct!.minimumFailingPeriodsToTriggerAlert),
+    number_of_evaluation_periods: cdktn.numberToTerraform(struct!.numberOfEvaluationPeriods),
   }
 }
 
 
 export function monitorScheduledQueryRulesAlertV2CriteriaFailingPeriodsToHclTerraform(struct?: MonitorScheduledQueryRulesAlertV2CriteriaFailingPeriodsOutputReference | MonitorScheduledQueryRulesAlertV2CriteriaFailingPeriods): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     minimum_failing_periods_to_trigger_alert: {
-      value: cdktf.numberToHclTerraform(struct!.minimumFailingPeriodsToTriggerAlert),
+      value: cdktn.numberToHclTerraform(struct!.minimumFailingPeriodsToTriggerAlert),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     number_of_evaluation_periods: {
-      value: cdktf.numberToHclTerraform(struct!.numberOfEvaluationPeriods),
+      value: cdktn.numberToHclTerraform(struct!.numberOfEvaluationPeriods),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -449,14 +449,14 @@ export function monitorScheduledQueryRulesAlertV2CriteriaFailingPeriodsToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorScheduledQueryRulesAlertV2CriteriaFailingPeriodsOutputReference extends cdktf.ComplexObject {
+export class MonitorScheduledQueryRulesAlertV2CriteriaFailingPeriodsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -543,7 +543,7 @@ export interface MonitorScheduledQueryRulesAlertV2Criteria {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_scheduled_query_rules_alert_v2#dimension MonitorScheduledQueryRulesAlertV2#dimension}
   */
-  readonly dimension?: MonitorScheduledQueryRulesAlertV2CriteriaDimension[] | cdktf.IResolvable;
+  readonly dimension?: MonitorScheduledQueryRulesAlertV2CriteriaDimension[] | cdktn.IResolvable;
   /**
   * failing_periods block
   *
@@ -552,68 +552,68 @@ export interface MonitorScheduledQueryRulesAlertV2Criteria {
   readonly failingPeriods?: MonitorScheduledQueryRulesAlertV2CriteriaFailingPeriods;
 }
 
-export function monitorScheduledQueryRulesAlertV2CriteriaToTerraform(struct?: MonitorScheduledQueryRulesAlertV2Criteria | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorScheduledQueryRulesAlertV2CriteriaToTerraform(struct?: MonitorScheduledQueryRulesAlertV2Criteria | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    metric_measure_column: cdktf.stringToTerraform(struct!.metricMeasureColumn),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    query: cdktf.stringToTerraform(struct!.query),
-    resource_id_column: cdktf.stringToTerraform(struct!.resourceIdColumn),
-    threshold: cdktf.numberToTerraform(struct!.threshold),
-    time_aggregation_method: cdktf.stringToTerraform(struct!.timeAggregationMethod),
-    dimension: cdktf.listMapper(monitorScheduledQueryRulesAlertV2CriteriaDimensionToTerraform, true)(struct!.dimension),
+    metric_measure_column: cdktn.stringToTerraform(struct!.metricMeasureColumn),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    query: cdktn.stringToTerraform(struct!.query),
+    resource_id_column: cdktn.stringToTerraform(struct!.resourceIdColumn),
+    threshold: cdktn.numberToTerraform(struct!.threshold),
+    time_aggregation_method: cdktn.stringToTerraform(struct!.timeAggregationMethod),
+    dimension: cdktn.listMapper(monitorScheduledQueryRulesAlertV2CriteriaDimensionToTerraform, true)(struct!.dimension),
     failing_periods: monitorScheduledQueryRulesAlertV2CriteriaFailingPeriodsToTerraform(struct!.failingPeriods),
   }
 }
 
 
-export function monitorScheduledQueryRulesAlertV2CriteriaToHclTerraform(struct?: MonitorScheduledQueryRulesAlertV2Criteria | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorScheduledQueryRulesAlertV2CriteriaToHclTerraform(struct?: MonitorScheduledQueryRulesAlertV2Criteria | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     metric_measure_column: {
-      value: cdktf.stringToHclTerraform(struct!.metricMeasureColumn),
+      value: cdktn.stringToHclTerraform(struct!.metricMeasureColumn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     query: {
-      value: cdktf.stringToHclTerraform(struct!.query),
+      value: cdktn.stringToHclTerraform(struct!.query),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_id_column: {
-      value: cdktf.stringToHclTerraform(struct!.resourceIdColumn),
+      value: cdktn.stringToHclTerraform(struct!.resourceIdColumn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     threshold: {
-      value: cdktf.numberToHclTerraform(struct!.threshold),
+      value: cdktn.numberToHclTerraform(struct!.threshold),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     time_aggregation_method: {
-      value: cdktf.stringToHclTerraform(struct!.timeAggregationMethod),
+      value: cdktn.stringToHclTerraform(struct!.timeAggregationMethod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     dimension: {
-      value: cdktf.listMapperHcl(monitorScheduledQueryRulesAlertV2CriteriaDimensionToHclTerraform, true)(struct!.dimension),
+      value: cdktn.listMapperHcl(monitorScheduledQueryRulesAlertV2CriteriaDimensionToHclTerraform, true)(struct!.dimension),
       isBlock: true,
       type: "list",
       storageClassType: "MonitorScheduledQueryRulesAlertV2CriteriaDimensionList",
@@ -630,9 +630,9 @@ export function monitorScheduledQueryRulesAlertV2CriteriaToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorScheduledQueryRulesAlertV2CriteriaOutputReference extends cdktf.ComplexObject {
+export class MonitorScheduledQueryRulesAlertV2CriteriaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -640,11 +640,11 @@ export class MonitorScheduledQueryRulesAlertV2CriteriaOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MonitorScheduledQueryRulesAlertV2Criteria | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorScheduledQueryRulesAlertV2Criteria | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -685,7 +685,7 @@ export class MonitorScheduledQueryRulesAlertV2CriteriaOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorScheduledQueryRulesAlertV2Criteria | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorScheduledQueryRulesAlertV2Criteria | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -698,7 +698,7 @@ export class MonitorScheduledQueryRulesAlertV2CriteriaOutputReference extends cd
       this._dimension.internalValue = undefined;
       this._failingPeriods.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -805,7 +805,7 @@ export class MonitorScheduledQueryRulesAlertV2CriteriaOutputReference extends cd
   public get dimension() {
     return this._dimension;
   }
-  public putDimension(value: MonitorScheduledQueryRulesAlertV2CriteriaDimension[] | cdktf.IResolvable) {
+  public putDimension(value: MonitorScheduledQueryRulesAlertV2CriteriaDimension[] | cdktn.IResolvable) {
     this._dimension.internalValue = value;
   }
   public resetDimension() {
@@ -833,15 +833,15 @@ export class MonitorScheduledQueryRulesAlertV2CriteriaOutputReference extends cd
   }
 }
 
-export class MonitorScheduledQueryRulesAlertV2CriteriaList extends cdktf.ComplexList {
-  public internalValue? : MonitorScheduledQueryRulesAlertV2Criteria[] | cdktf.IResolvable
+export class MonitorScheduledQueryRulesAlertV2CriteriaList extends cdktn.ComplexList {
+  public internalValue? : MonitorScheduledQueryRulesAlertV2Criteria[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -864,31 +864,31 @@ export interface MonitorScheduledQueryRulesAlertV2Identity {
 }
 
 export function monitorScheduledQueryRulesAlertV2IdentityToTerraform(struct?: MonitorScheduledQueryRulesAlertV2IdentityOutputReference | MonitorScheduledQueryRulesAlertV2Identity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function monitorScheduledQueryRulesAlertV2IdentityToHclTerraform(struct?: MonitorScheduledQueryRulesAlertV2IdentityOutputReference | MonitorScheduledQueryRulesAlertV2Identity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -899,14 +899,14 @@ export function monitorScheduledQueryRulesAlertV2IdentityToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorScheduledQueryRulesAlertV2IdentityOutputReference extends cdktf.ComplexObject {
+export class MonitorScheduledQueryRulesAlertV2IdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -940,7 +940,7 @@ export class MonitorScheduledQueryRulesAlertV2IdentityOutputReference extends cd
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -995,46 +995,46 @@ export interface MonitorScheduledQueryRulesAlertV2Timeouts {
   readonly update?: string;
 }
 
-export function monitorScheduledQueryRulesAlertV2TimeoutsToTerraform(struct?: MonitorScheduledQueryRulesAlertV2Timeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorScheduledQueryRulesAlertV2TimeoutsToTerraform(struct?: MonitorScheduledQueryRulesAlertV2Timeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function monitorScheduledQueryRulesAlertV2TimeoutsToHclTerraform(struct?: MonitorScheduledQueryRulesAlertV2Timeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorScheduledQueryRulesAlertV2TimeoutsToHclTerraform(struct?: MonitorScheduledQueryRulesAlertV2Timeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1045,19 +1045,19 @@ export function monitorScheduledQueryRulesAlertV2TimeoutsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorScheduledQueryRulesAlertV2TimeoutsOutputReference extends cdktf.ComplexObject {
+export class MonitorScheduledQueryRulesAlertV2TimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MonitorScheduledQueryRulesAlertV2Timeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorScheduledQueryRulesAlertV2Timeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1082,7 +1082,7 @@ export class MonitorScheduledQueryRulesAlertV2TimeoutsOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorScheduledQueryRulesAlertV2Timeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorScheduledQueryRulesAlertV2Timeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1091,7 +1091,7 @@ export class MonitorScheduledQueryRulesAlertV2TimeoutsOutputReference extends cd
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1173,7 +1173,7 @@ export class MonitorScheduledQueryRulesAlertV2TimeoutsOutputReference extends cd
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_scheduled_query_rules_alert_v2 azurerm_monitor_scheduled_query_rules_alert_v2}
 */
-export class MonitorScheduledQueryRulesAlertV2 extends cdktf.TerraformResource {
+export class MonitorScheduledQueryRulesAlertV2 extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1184,14 +1184,14 @@ export class MonitorScheduledQueryRulesAlertV2 extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MonitorScheduledQueryRulesAlertV2 resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MonitorScheduledQueryRulesAlertV2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MonitorScheduledQueryRulesAlertV2 to import
   * @param importFromId The id of the existing MonitorScheduledQueryRulesAlertV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_scheduled_query_rules_alert_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MonitorScheduledQueryRulesAlertV2 to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_monitor_scheduled_query_rules_alert_v2", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_monitor_scheduled_query_rules_alert_v2", importId: importFromId, provider });
       }
 
   // ===========
@@ -1250,11 +1250,11 @@ export class MonitorScheduledQueryRulesAlertV2 extends cdktf.TerraformResource {
   // ==========
 
   // auto_mitigation_enabled - computed: false, optional: true, required: false
-  private _autoMitigationEnabled?: boolean | cdktf.IResolvable; 
+  private _autoMitigationEnabled?: boolean | cdktn.IResolvable; 
   public get autoMitigationEnabled() {
     return this.getBooleanAttribute('auto_mitigation_enabled');
   }
-  public set autoMitigationEnabled(value: boolean | cdktf.IResolvable) {
+  public set autoMitigationEnabled(value: boolean | cdktn.IResolvable) {
     this._autoMitigationEnabled = value;
   }
   public resetAutoMitigationEnabled() {
@@ -1303,11 +1303,11 @@ export class MonitorScheduledQueryRulesAlertV2 extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -1455,11 +1455,11 @@ export class MonitorScheduledQueryRulesAlertV2 extends cdktf.TerraformResource {
   }
 
   // skip_query_validation - computed: false, optional: true, required: false
-  private _skipQueryValidation?: boolean | cdktf.IResolvable; 
+  private _skipQueryValidation?: boolean | cdktn.IResolvable; 
   public get skipQueryValidation() {
     return this.getBooleanAttribute('skip_query_validation');
   }
-  public set skipQueryValidation(value: boolean | cdktf.IResolvable) {
+  public set skipQueryValidation(value: boolean | cdktn.IResolvable) {
     this._skipQueryValidation = value;
   }
   public resetSkipQueryValidation() {
@@ -1516,11 +1516,11 @@ export class MonitorScheduledQueryRulesAlertV2 extends cdktf.TerraformResource {
   }
 
   // workspace_alerts_storage_enabled - computed: false, optional: true, required: false
-  private _workspaceAlertsStorageEnabled?: boolean | cdktf.IResolvable; 
+  private _workspaceAlertsStorageEnabled?: boolean | cdktn.IResolvable; 
   public get workspaceAlertsStorageEnabled() {
     return this.getBooleanAttribute('workspace_alerts_storage_enabled');
   }
-  public set workspaceAlertsStorageEnabled(value: boolean | cdktf.IResolvable) {
+  public set workspaceAlertsStorageEnabled(value: boolean | cdktn.IResolvable) {
     this._workspaceAlertsStorageEnabled = value;
   }
   public resetWorkspaceAlertsStorageEnabled() {
@@ -1552,7 +1552,7 @@ export class MonitorScheduledQueryRulesAlertV2 extends cdktf.TerraformResource {
   public get criteria() {
     return this._criteria;
   }
-  public putCriteria(value: MonitorScheduledQueryRulesAlertV2Criteria[] | cdktf.IResolvable) {
+  public putCriteria(value: MonitorScheduledQueryRulesAlertV2Criteria[] | cdktn.IResolvable) {
     this._criteria.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1598,26 +1598,26 @@ export class MonitorScheduledQueryRulesAlertV2 extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_mitigation_enabled: cdktf.booleanToTerraform(this._autoMitigationEnabled),
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      evaluation_frequency: cdktf.stringToTerraform(this._evaluationFrequency),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      mute_actions_after_alert_duration: cdktf.stringToTerraform(this._muteActionsAfterAlertDuration),
-      name: cdktf.stringToTerraform(this._name),
-      query_time_range_override: cdktf.stringToTerraform(this._queryTimeRangeOverride),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._scopes),
-      severity: cdktf.numberToTerraform(this._severity),
-      skip_query_validation: cdktf.booleanToTerraform(this._skipQueryValidation),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      target_resource_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._targetResourceTypes),
-      window_duration: cdktf.stringToTerraform(this._windowDuration),
-      workspace_alerts_storage_enabled: cdktf.booleanToTerraform(this._workspaceAlertsStorageEnabled),
+      auto_mitigation_enabled: cdktn.booleanToTerraform(this._autoMitigationEnabled),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      evaluation_frequency: cdktn.stringToTerraform(this._evaluationFrequency),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      mute_actions_after_alert_duration: cdktn.stringToTerraform(this._muteActionsAfterAlertDuration),
+      name: cdktn.stringToTerraform(this._name),
+      query_time_range_override: cdktn.stringToTerraform(this._queryTimeRangeOverride),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._scopes),
+      severity: cdktn.numberToTerraform(this._severity),
+      skip_query_validation: cdktn.booleanToTerraform(this._skipQueryValidation),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      target_resource_types: cdktn.listMapper(cdktn.stringToTerraform, false)(this._targetResourceTypes),
+      window_duration: cdktn.stringToTerraform(this._windowDuration),
+      workspace_alerts_storage_enabled: cdktn.booleanToTerraform(this._workspaceAlertsStorageEnabled),
       action: monitorScheduledQueryRulesAlertV2ActionToTerraform(this._action.internalValue),
-      criteria: cdktf.listMapper(monitorScheduledQueryRulesAlertV2CriteriaToTerraform, true)(this._criteria.internalValue),
+      criteria: cdktn.listMapper(monitorScheduledQueryRulesAlertV2CriteriaToTerraform, true)(this._criteria.internalValue),
       identity: monitorScheduledQueryRulesAlertV2IdentityToTerraform(this._identity.internalValue),
       timeouts: monitorScheduledQueryRulesAlertV2TimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1626,109 +1626,109 @@ export class MonitorScheduledQueryRulesAlertV2 extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       auto_mitigation_enabled: {
-        value: cdktf.booleanToHclTerraform(this._autoMitigationEnabled),
+        value: cdktn.booleanToHclTerraform(this._autoMitigationEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       evaluation_frequency: {
-        value: cdktf.stringToHclTerraform(this._evaluationFrequency),
+        value: cdktn.stringToHclTerraform(this._evaluationFrequency),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mute_actions_after_alert_duration: {
-        value: cdktf.stringToHclTerraform(this._muteActionsAfterAlertDuration),
+        value: cdktn.stringToHclTerraform(this._muteActionsAfterAlertDuration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       query_time_range_override: {
-        value: cdktf.stringToHclTerraform(this._queryTimeRangeOverride),
+        value: cdktn.stringToHclTerraform(this._queryTimeRangeOverride),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scopes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._scopes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._scopes),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       severity: {
-        value: cdktf.numberToHclTerraform(this._severity),
+        value: cdktn.numberToHclTerraform(this._severity),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       skip_query_validation: {
-        value: cdktf.booleanToHclTerraform(this._skipQueryValidation),
+        value: cdktn.booleanToHclTerraform(this._skipQueryValidation),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       target_resource_types: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._targetResourceTypes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._targetResourceTypes),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       window_duration: {
-        value: cdktf.stringToHclTerraform(this._windowDuration),
+        value: cdktn.stringToHclTerraform(this._windowDuration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       workspace_alerts_storage_enabled: {
-        value: cdktf.booleanToHclTerraform(this._workspaceAlertsStorageEnabled),
+        value: cdktn.booleanToHclTerraform(this._workspaceAlertsStorageEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
@@ -1740,7 +1740,7 @@ export class MonitorScheduledQueryRulesAlertV2 extends cdktf.TerraformResource {
         storageClassType: "MonitorScheduledQueryRulesAlertV2ActionList",
       },
       criteria: {
-        value: cdktf.listMapperHcl(monitorScheduledQueryRulesAlertV2CriteriaToHclTerraform, true)(this._criteria.internalValue),
+        value: cdktn.listMapperHcl(monitorScheduledQueryRulesAlertV2CriteriaToHclTerraform, true)(this._criteria.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "MonitorScheduledQueryRulesAlertV2CriteriaList",

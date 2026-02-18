@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermNetappAccountEncryptionConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermNetappAccountEncryptionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/netapp_account_encryption#id DataAzurermNetappAccountEncryption#id}
   *
@@ -39,25 +39,25 @@ export interface DataAzurermNetappAccountEncryptionTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermNetappAccountEncryptionTimeoutsToTerraform(struct?: DataAzurermNetappAccountEncryptionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermNetappAccountEncryptionTimeoutsToTerraform(struct?: DataAzurermNetappAccountEncryptionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermNetappAccountEncryptionTimeoutsToHclTerraform(struct?: DataAzurermNetappAccountEncryptionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermNetappAccountEncryptionTimeoutsToHclTerraform(struct?: DataAzurermNetappAccountEncryptionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -68,19 +68,19 @@ export function dataAzurermNetappAccountEncryptionTimeoutsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermNetappAccountEncryptionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermNetappAccountEncryptionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermNetappAccountEncryptionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermNetappAccountEncryptionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -93,13 +93,13 @@ export class DataAzurermNetappAccountEncryptionTimeoutsOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermNetappAccountEncryptionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermNetappAccountEncryptionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -130,7 +130,7 @@ export class DataAzurermNetappAccountEncryptionTimeoutsOutputReference extends c
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/netapp_account_encryption azurerm_netapp_account_encryption}
 */
-export class DataAzurermNetappAccountEncryption extends cdktf.TerraformDataSource {
+export class DataAzurermNetappAccountEncryption extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -141,14 +141,14 @@ export class DataAzurermNetappAccountEncryption extends cdktf.TerraformDataSourc
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermNetappAccountEncryption resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermNetappAccountEncryption resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermNetappAccountEncryption to import
   * @param importFromId The id of the existing DataAzurermNetappAccountEncryption that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/netapp_account_encryption#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermNetappAccountEncryption to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_netapp_account_encryption", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_netapp_account_encryption", importId: importFromId, provider });
       }
 
   // ===========
@@ -263,8 +263,8 @@ export class DataAzurermNetappAccountEncryption extends cdktf.TerraformDataSourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      netapp_account_id: cdktf.stringToTerraform(this._netappAccountId),
+      id: cdktn.stringToTerraform(this._id),
+      netapp_account_id: cdktn.stringToTerraform(this._netappAccountId),
       timeouts: dataAzurermNetappAccountEncryptionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -272,13 +272,13 @@ export class DataAzurermNetappAccountEncryption extends cdktf.TerraformDataSourc
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       netapp_account_id: {
-        value: cdktf.stringToHclTerraform(this._netappAccountId),
+        value: cdktn.stringToHclTerraform(this._netappAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

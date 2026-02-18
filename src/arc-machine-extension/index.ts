@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ArcMachineExtensionConfig extends cdktf.TerraformMetaArguments {
+export interface ArcMachineExtensionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/arc_machine_extension#arc_machine_id ArcMachineExtension#arc_machine_id}
   */
@@ -19,7 +19,7 @@ export interface ArcMachineExtensionConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/arc_machine_extension#automatic_upgrade_enabled ArcMachineExtension#automatic_upgrade_enabled}
   */
-  readonly automaticUpgradeEnabled?: boolean | cdktf.IResolvable;
+  readonly automaticUpgradeEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/arc_machine_extension#force_update_tag ArcMachineExtension#force_update_tag}
   */
@@ -89,46 +89,46 @@ export interface ArcMachineExtensionTimeouts {
   readonly update?: string;
 }
 
-export function arcMachineExtensionTimeoutsToTerraform(struct?: ArcMachineExtensionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcMachineExtensionTimeoutsToTerraform(struct?: ArcMachineExtensionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function arcMachineExtensionTimeoutsToHclTerraform(struct?: ArcMachineExtensionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function arcMachineExtensionTimeoutsToHclTerraform(struct?: ArcMachineExtensionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -139,19 +139,19 @@ export function arcMachineExtensionTimeoutsToHclTerraform(struct?: ArcMachineExt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ArcMachineExtensionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ArcMachineExtensionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ArcMachineExtensionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ArcMachineExtensionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -176,7 +176,7 @@ export class ArcMachineExtensionTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ArcMachineExtensionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ArcMachineExtensionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -185,7 +185,7 @@ export class ArcMachineExtensionTimeoutsOutputReference extends cdktf.ComplexObj
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -267,7 +267,7 @@ export class ArcMachineExtensionTimeoutsOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/arc_machine_extension azurerm_arc_machine_extension}
 */
-export class ArcMachineExtension extends cdktf.TerraformResource {
+export class ArcMachineExtension extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -278,14 +278,14 @@ export class ArcMachineExtension extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ArcMachineExtension resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ArcMachineExtension resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ArcMachineExtension to import
   * @param importFromId The id of the existing ArcMachineExtension that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/arc_machine_extension#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ArcMachineExtension to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_arc_machine_extension", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_arc_machine_extension", importId: importFromId, provider });
       }
 
   // ===========
@@ -348,11 +348,11 @@ export class ArcMachineExtension extends cdktf.TerraformResource {
   }
 
   // automatic_upgrade_enabled - computed: false, optional: true, required: false
-  private _automaticUpgradeEnabled?: boolean | cdktf.IResolvable; 
+  private _automaticUpgradeEnabled?: boolean | cdktn.IResolvable; 
   public get automaticUpgradeEnabled() {
     return this.getBooleanAttribute('automatic_upgrade_enabled');
   }
-  public set automaticUpgradeEnabled(value: boolean | cdktf.IResolvable) {
+  public set automaticUpgradeEnabled(value: boolean | cdktn.IResolvable) {
     this._automaticUpgradeEnabled = value;
   }
   public resetAutomaticUpgradeEnabled() {
@@ -533,18 +533,18 @@ export class ArcMachineExtension extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      arc_machine_id: cdktf.stringToTerraform(this._arcMachineId),
-      automatic_upgrade_enabled: cdktf.booleanToTerraform(this._automaticUpgradeEnabled),
-      force_update_tag: cdktf.stringToTerraform(this._forceUpdateTag),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      protected_settings: cdktf.stringToTerraform(this._protectedSettings),
-      publisher: cdktf.stringToTerraform(this._publisher),
-      settings: cdktf.stringToTerraform(this._settings),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      type: cdktf.stringToTerraform(this._type),
-      type_handler_version: cdktf.stringToTerraform(this._typeHandlerVersion),
+      arc_machine_id: cdktn.stringToTerraform(this._arcMachineId),
+      automatic_upgrade_enabled: cdktn.booleanToTerraform(this._automaticUpgradeEnabled),
+      force_update_tag: cdktn.stringToTerraform(this._forceUpdateTag),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      protected_settings: cdktn.stringToTerraform(this._protectedSettings),
+      publisher: cdktn.stringToTerraform(this._publisher),
+      settings: cdktn.stringToTerraform(this._settings),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      type: cdktn.stringToTerraform(this._type),
+      type_handler_version: cdktn.stringToTerraform(this._typeHandlerVersion),
       timeouts: arcMachineExtensionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -552,73 +552,73 @@ export class ArcMachineExtension extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       arc_machine_id: {
-        value: cdktf.stringToHclTerraform(this._arcMachineId),
+        value: cdktn.stringToHclTerraform(this._arcMachineId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       automatic_upgrade_enabled: {
-        value: cdktf.booleanToHclTerraform(this._automaticUpgradeEnabled),
+        value: cdktn.booleanToHclTerraform(this._automaticUpgradeEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       force_update_tag: {
-        value: cdktf.stringToHclTerraform(this._forceUpdateTag),
+        value: cdktn.stringToHclTerraform(this._forceUpdateTag),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       protected_settings: {
-        value: cdktf.stringToHclTerraform(this._protectedSettings),
+        value: cdktn.stringToHclTerraform(this._protectedSettings),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       publisher: {
-        value: cdktf.stringToHclTerraform(this._publisher),
+        value: cdktn.stringToHclTerraform(this._publisher),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       settings: {
-        value: cdktf.stringToHclTerraform(this._settings),
+        value: cdktn.stringToHclTerraform(this._settings),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type_handler_version: {
-        value: cdktf.stringToHclTerraform(this._typeHandlerVersion),
+        value: cdktn.stringToHclTerraform(this._typeHandlerVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

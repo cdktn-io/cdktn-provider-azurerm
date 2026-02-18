@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WorkloadsSapThreeTierVirtualInstanceConfig extends cdktf.TerraformMetaArguments {
+export interface WorkloadsSapThreeTierVirtualInstanceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/workloads_sap_three_tier_virtual_instance#app_location WorkloadsSapThreeTierVirtualInstance#app_location}
   */
@@ -90,31 +90,31 @@ export interface WorkloadsSapThreeTierVirtualInstanceIdentity {
 }
 
 export function workloadsSapThreeTierVirtualInstanceIdentityToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceIdentityOutputReference | WorkloadsSapThreeTierVirtualInstanceIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function workloadsSapThreeTierVirtualInstanceIdentityToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceIdentityOutputReference | WorkloadsSapThreeTierVirtualInstanceIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -125,14 +125,14 @@ export function workloadsSapThreeTierVirtualInstanceIdentityToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadsSapThreeTierVirtualInstanceIdentityOutputReference extends cdktf.ComplexObject {
+export class WorkloadsSapThreeTierVirtualInstanceIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -166,7 +166,7 @@ export class WorkloadsSapThreeTierVirtualInstanceIdentityOutputReference extends
   // identity_ids - computed: false, optional: false, required: true
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -209,45 +209,45 @@ export interface WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationAppli
 }
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationImageToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationImageOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationImage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    offer: cdktf.stringToTerraform(struct!.offer),
-    publisher: cdktf.stringToTerraform(struct!.publisher),
-    sku: cdktf.stringToTerraform(struct!.sku),
-    version: cdktf.stringToTerraform(struct!.version),
+    offer: cdktn.stringToTerraform(struct!.offer),
+    publisher: cdktn.stringToTerraform(struct!.publisher),
+    sku: cdktn.stringToTerraform(struct!.sku),
+    version: cdktn.stringToTerraform(struct!.version),
   }
 }
 
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationImageToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationImageOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationImage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     offer: {
-      value: cdktf.stringToHclTerraform(struct!.offer),
+      value: cdktn.stringToHclTerraform(struct!.offer),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     publisher: {
-      value: cdktf.stringToHclTerraform(struct!.publisher),
+      value: cdktn.stringToHclTerraform(struct!.publisher),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sku: {
-      value: cdktf.stringToHclTerraform(struct!.sku),
+      value: cdktn.stringToHclTerraform(struct!.sku),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -258,14 +258,14 @@ export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplic
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationImageOutputReference extends cdktf.ComplexObject {
+export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationImageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -376,38 +376,38 @@ export interface WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationAppli
 }
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOsProfileToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOsProfileOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOsProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    admin_username: cdktf.stringToTerraform(struct!.adminUsername),
-    ssh_private_key: cdktf.stringToTerraform(struct!.sshPrivateKey),
-    ssh_public_key: cdktf.stringToTerraform(struct!.sshPublicKey),
+    admin_username: cdktn.stringToTerraform(struct!.adminUsername),
+    ssh_private_key: cdktn.stringToTerraform(struct!.sshPrivateKey),
+    ssh_public_key: cdktn.stringToTerraform(struct!.sshPublicKey),
   }
 }
 
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOsProfileToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOsProfileOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOsProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     admin_username: {
-      value: cdktf.stringToHclTerraform(struct!.adminUsername),
+      value: cdktn.stringToHclTerraform(struct!.adminUsername),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ssh_private_key: {
-      value: cdktf.stringToHclTerraform(struct!.sshPrivateKey),
+      value: cdktn.stringToHclTerraform(struct!.sshPrivateKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ssh_public_key: {
-      value: cdktf.stringToHclTerraform(struct!.sshPublicKey),
+      value: cdktn.stringToHclTerraform(struct!.sshPublicKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -418,14 +418,14 @@ export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplic
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOsProfileOutputReference extends cdktf.ComplexObject {
+export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOsProfileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -521,12 +521,12 @@ export interface WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationAppli
 }
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    virtual_machine_size: cdktf.stringToTerraform(struct!.virtualMachineSize),
+    virtual_machine_size: cdktn.stringToTerraform(struct!.virtualMachineSize),
     image: workloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationImageToTerraform(struct!.image),
     os_profile: workloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOsProfileToTerraform(struct!.osProfile),
   }
@@ -534,13 +534,13 @@ export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplic
 
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     virtual_machine_size: {
-      value: cdktf.stringToHclTerraform(struct!.virtualMachineSize),
+      value: cdktn.stringToHclTerraform(struct!.virtualMachineSize),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -563,14 +563,14 @@ export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplic
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOutputReference extends cdktf.ComplexObject {
+export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -664,32 +664,32 @@ export interface WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationAppli
 }
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    instance_count: cdktf.numberToTerraform(struct!.instanceCount),
-    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
+    instance_count: cdktn.numberToTerraform(struct!.instanceCount),
+    subnet_id: cdktn.stringToTerraform(struct!.subnetId),
     virtual_machine_configuration: workloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationVirtualMachineConfigurationToTerraform(struct!.virtualMachineConfiguration),
   }
 }
 
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     instance_count: {
-      value: cdktf.numberToHclTerraform(struct!.instanceCount),
+      value: cdktn.numberToHclTerraform(struct!.instanceCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.subnetId),
+      value: cdktn.stringToHclTerraform(struct!.subnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -706,14 +706,14 @@ export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplic
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationOutputReference extends cdktf.ComplexObject {
+export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -809,45 +809,45 @@ export interface WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentr
 }
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationImageToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationImageOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationImage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    offer: cdktf.stringToTerraform(struct!.offer),
-    publisher: cdktf.stringToTerraform(struct!.publisher),
-    sku: cdktf.stringToTerraform(struct!.sku),
-    version: cdktf.stringToTerraform(struct!.version),
+    offer: cdktn.stringToTerraform(struct!.offer),
+    publisher: cdktn.stringToTerraform(struct!.publisher),
+    sku: cdktn.stringToTerraform(struct!.sku),
+    version: cdktn.stringToTerraform(struct!.version),
   }
 }
 
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationImageToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationImageOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationImage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     offer: {
-      value: cdktf.stringToHclTerraform(struct!.offer),
+      value: cdktn.stringToHclTerraform(struct!.offer),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     publisher: {
-      value: cdktf.stringToHclTerraform(struct!.publisher),
+      value: cdktn.stringToHclTerraform(struct!.publisher),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sku: {
-      value: cdktf.stringToHclTerraform(struct!.sku),
+      value: cdktn.stringToHclTerraform(struct!.sku),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -858,14 +858,14 @@ export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationImageOutputReference extends cdktf.ComplexObject {
+export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationImageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -976,38 +976,38 @@ export interface WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentr
 }
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationOsProfileToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationOsProfileOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationOsProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    admin_username: cdktf.stringToTerraform(struct!.adminUsername),
-    ssh_private_key: cdktf.stringToTerraform(struct!.sshPrivateKey),
-    ssh_public_key: cdktf.stringToTerraform(struct!.sshPublicKey),
+    admin_username: cdktn.stringToTerraform(struct!.adminUsername),
+    ssh_private_key: cdktn.stringToTerraform(struct!.sshPrivateKey),
+    ssh_public_key: cdktn.stringToTerraform(struct!.sshPublicKey),
   }
 }
 
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationOsProfileToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationOsProfileOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationOsProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     admin_username: {
-      value: cdktf.stringToHclTerraform(struct!.adminUsername),
+      value: cdktn.stringToHclTerraform(struct!.adminUsername),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ssh_private_key: {
-      value: cdktf.stringToHclTerraform(struct!.sshPrivateKey),
+      value: cdktn.stringToHclTerraform(struct!.sshPrivateKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ssh_public_key: {
-      value: cdktf.stringToHclTerraform(struct!.sshPublicKey),
+      value: cdktn.stringToHclTerraform(struct!.sshPublicKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1018,14 +1018,14 @@ export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationOsProfileOutputReference extends cdktf.ComplexObject {
+export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationOsProfileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1121,12 +1121,12 @@ export interface WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentr
 }
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    virtual_machine_size: cdktf.stringToTerraform(struct!.virtualMachineSize),
+    virtual_machine_size: cdktn.stringToTerraform(struct!.virtualMachineSize),
     image: workloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationImageToTerraform(struct!.image),
     os_profile: workloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationOsProfileToTerraform(struct!.osProfile),
   }
@@ -1134,13 +1134,13 @@ export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentra
 
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     virtual_machine_size: {
-      value: cdktf.stringToHclTerraform(struct!.virtualMachineSize),
+      value: cdktn.stringToHclTerraform(struct!.virtualMachineSize),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1163,14 +1163,14 @@ export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationOutputReference extends cdktf.ComplexObject {
+export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1264,32 +1264,32 @@ export interface WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentr
 }
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    instance_count: cdktf.numberToTerraform(struct!.instanceCount),
-    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
+    instance_count: cdktn.numberToTerraform(struct!.instanceCount),
+    subnet_id: cdktn.stringToTerraform(struct!.subnetId),
     virtual_machine_configuration: workloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationVirtualMachineConfigurationToTerraform(struct!.virtualMachineConfiguration),
   }
 }
 
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     instance_count: {
-      value: cdktf.numberToHclTerraform(struct!.instanceCount),
+      value: cdktn.numberToHclTerraform(struct!.instanceCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.subnetId),
+      value: cdktn.stringToHclTerraform(struct!.subnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1306,14 +1306,14 @@ export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationOutputReference extends cdktf.ComplexObject {
+export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1408,46 +1408,46 @@ export interface WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatab
   readonly volumeName: string;
 }
 
-export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationDiskVolumeConfigurationToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationDiskVolumeConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationDiskVolumeConfigurationToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationDiskVolumeConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    number_of_disks: cdktf.numberToTerraform(struct!.numberOfDisks),
-    size_in_gb: cdktf.numberToTerraform(struct!.sizeInGb),
-    sku_name: cdktf.stringToTerraform(struct!.skuName),
-    volume_name: cdktf.stringToTerraform(struct!.volumeName),
+    number_of_disks: cdktn.numberToTerraform(struct!.numberOfDisks),
+    size_in_gb: cdktn.numberToTerraform(struct!.sizeInGb),
+    sku_name: cdktn.stringToTerraform(struct!.skuName),
+    volume_name: cdktn.stringToTerraform(struct!.volumeName),
   }
 }
 
 
-export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationDiskVolumeConfigurationToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationDiskVolumeConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationDiskVolumeConfigurationToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationDiskVolumeConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     number_of_disks: {
-      value: cdktf.numberToHclTerraform(struct!.numberOfDisks),
+      value: cdktn.numberToHclTerraform(struct!.numberOfDisks),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     size_in_gb: {
-      value: cdktf.numberToHclTerraform(struct!.sizeInGb),
+      value: cdktn.numberToHclTerraform(struct!.sizeInGb),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     sku_name: {
-      value: cdktf.stringToHclTerraform(struct!.skuName),
+      value: cdktn.stringToHclTerraform(struct!.skuName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     volume_name: {
-      value: cdktf.stringToHclTerraform(struct!.volumeName),
+      value: cdktn.stringToHclTerraform(struct!.volumeName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1458,9 +1458,9 @@ export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationDataba
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationDiskVolumeConfigurationOutputReference extends cdktf.ComplexObject {
+export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationDiskVolumeConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1468,11 +1468,11 @@ export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseS
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationDiskVolumeConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationDiskVolumeConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1497,7 +1497,7 @@ export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseS
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationDiskVolumeConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationDiskVolumeConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1506,7 +1506,7 @@ export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseS
       this._skuName = undefined;
       this._volumeName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1573,15 +1573,15 @@ export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseS
   }
 }
 
-export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationDiskVolumeConfigurationList extends cdktf.ComplexList {
-  public internalValue? : WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationDiskVolumeConfiguration[] | cdktf.IResolvable
+export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationDiskVolumeConfigurationList extends cdktn.ComplexList {
+  public internalValue? : WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationDiskVolumeConfiguration[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1612,45 +1612,45 @@ export interface WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatab
 }
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationImageToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationImageOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationImage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    offer: cdktf.stringToTerraform(struct!.offer),
-    publisher: cdktf.stringToTerraform(struct!.publisher),
-    sku: cdktf.stringToTerraform(struct!.sku),
-    version: cdktf.stringToTerraform(struct!.version),
+    offer: cdktn.stringToTerraform(struct!.offer),
+    publisher: cdktn.stringToTerraform(struct!.publisher),
+    sku: cdktn.stringToTerraform(struct!.sku),
+    version: cdktn.stringToTerraform(struct!.version),
   }
 }
 
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationImageToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationImageOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationImage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     offer: {
-      value: cdktf.stringToHclTerraform(struct!.offer),
+      value: cdktn.stringToHclTerraform(struct!.offer),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     publisher: {
-      value: cdktf.stringToHclTerraform(struct!.publisher),
+      value: cdktn.stringToHclTerraform(struct!.publisher),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sku: {
-      value: cdktf.stringToHclTerraform(struct!.sku),
+      value: cdktn.stringToHclTerraform(struct!.sku),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1661,14 +1661,14 @@ export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationDataba
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationImageOutputReference extends cdktf.ComplexObject {
+export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationImageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1779,38 +1779,38 @@ export interface WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatab
 }
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationOsProfileToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationOsProfileOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationOsProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    admin_username: cdktf.stringToTerraform(struct!.adminUsername),
-    ssh_private_key: cdktf.stringToTerraform(struct!.sshPrivateKey),
-    ssh_public_key: cdktf.stringToTerraform(struct!.sshPublicKey),
+    admin_username: cdktn.stringToTerraform(struct!.adminUsername),
+    ssh_private_key: cdktn.stringToTerraform(struct!.sshPrivateKey),
+    ssh_public_key: cdktn.stringToTerraform(struct!.sshPublicKey),
   }
 }
 
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationOsProfileToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationOsProfileOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationOsProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     admin_username: {
-      value: cdktf.stringToHclTerraform(struct!.adminUsername),
+      value: cdktn.stringToHclTerraform(struct!.adminUsername),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ssh_private_key: {
-      value: cdktf.stringToHclTerraform(struct!.sshPrivateKey),
+      value: cdktn.stringToHclTerraform(struct!.sshPrivateKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ssh_public_key: {
-      value: cdktf.stringToHclTerraform(struct!.sshPublicKey),
+      value: cdktn.stringToHclTerraform(struct!.sshPublicKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1821,14 +1821,14 @@ export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationDataba
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationOsProfileOutputReference extends cdktf.ComplexObject {
+export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationOsProfileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1924,12 +1924,12 @@ export interface WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatab
 }
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    virtual_machine_size: cdktf.stringToTerraform(struct!.virtualMachineSize),
+    virtual_machine_size: cdktn.stringToTerraform(struct!.virtualMachineSize),
     image: workloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationImageToTerraform(struct!.image),
     os_profile: workloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationOsProfileToTerraform(struct!.osProfile),
   }
@@ -1937,13 +1937,13 @@ export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationDataba
 
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     virtual_machine_size: {
-      value: cdktf.stringToHclTerraform(struct!.virtualMachineSize),
+      value: cdktn.stringToHclTerraform(struct!.virtualMachineSize),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1966,14 +1966,14 @@ export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationDataba
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationOutputReference extends cdktf.ComplexObject {
+export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2067,7 +2067,7 @@ export interface WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatab
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/workloads_sap_three_tier_virtual_instance#disk_volume_configuration WorkloadsSapThreeTierVirtualInstance#disk_volume_configuration}
   */
-  readonly diskVolumeConfiguration?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationDiskVolumeConfiguration[] | cdktf.IResolvable;
+  readonly diskVolumeConfiguration?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationDiskVolumeConfiguration[] | cdktn.IResolvable;
   /**
   * virtual_machine_configuration block
   *
@@ -2077,46 +2077,46 @@ export interface WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatab
 }
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    database_type: cdktf.stringToTerraform(struct!.databaseType),
-    instance_count: cdktf.numberToTerraform(struct!.instanceCount),
-    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
-    disk_volume_configuration: cdktf.listMapper(workloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationDiskVolumeConfigurationToTerraform, true)(struct!.diskVolumeConfiguration),
+    database_type: cdktn.stringToTerraform(struct!.databaseType),
+    instance_count: cdktn.numberToTerraform(struct!.instanceCount),
+    subnet_id: cdktn.stringToTerraform(struct!.subnetId),
+    disk_volume_configuration: cdktn.listMapper(workloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationDiskVolumeConfigurationToTerraform, true)(struct!.diskVolumeConfiguration),
     virtual_machine_configuration: workloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationVirtualMachineConfigurationToTerraform(struct!.virtualMachineConfiguration),
   }
 }
 
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     database_type: {
-      value: cdktf.stringToHclTerraform(struct!.databaseType),
+      value: cdktn.stringToHclTerraform(struct!.databaseType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     instance_count: {
-      value: cdktf.numberToHclTerraform(struct!.instanceCount),
+      value: cdktn.numberToHclTerraform(struct!.instanceCount),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.subnetId),
+      value: cdktn.stringToHclTerraform(struct!.subnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     disk_volume_configuration: {
-      value: cdktf.listMapperHcl(workloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationDiskVolumeConfigurationToHclTerraform, true)(struct!.diskVolumeConfiguration),
+      value: cdktn.listMapperHcl(workloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationDiskVolumeConfigurationToHclTerraform, true)(struct!.diskVolumeConfiguration),
       isBlock: true,
       type: "set",
       storageClassType: "WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationDiskVolumeConfigurationList",
@@ -2133,14 +2133,14 @@ export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationDataba
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationOutputReference extends cdktf.ComplexObject {
+export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2236,7 +2236,7 @@ export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseS
   public get diskVolumeConfiguration() {
     return this._diskVolumeConfiguration;
   }
-  public putDiskVolumeConfiguration(value: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationDiskVolumeConfiguration[] | cdktf.IResolvable) {
+  public putDiskVolumeConfiguration(value: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationDiskVolumeConfiguration[] | cdktn.IResolvable) {
     this._diskVolumeConfiguration.internalValue = value;
   }
   public resetDiskVolumeConfiguration() {
@@ -2271,32 +2271,32 @@ export interface WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResou
   readonly volumeName: string;
 }
 
-export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineDataDiskToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineDataDisk | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineDataDiskToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineDataDisk | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.names),
-    volume_name: cdktf.stringToTerraform(struct!.volumeName),
+    names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.names),
+    volume_name: cdktn.stringToTerraform(struct!.volumeName),
   }
 }
 
 
-export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineDataDiskToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineDataDisk | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineDataDiskToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineDataDisk | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.names),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.names),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     volume_name: {
-      value: cdktf.stringToHclTerraform(struct!.volumeName),
+      value: cdktn.stringToHclTerraform(struct!.volumeName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2307,9 +2307,9 @@ export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResour
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineDataDiskOutputReference extends cdktf.ComplexObject {
+export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineDataDiskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2317,11 +2317,11 @@ export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceN
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineDataDisk | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineDataDisk | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2338,14 +2338,14 @@ export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceN
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineDataDisk | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineDataDisk | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._names = undefined;
       this._volumeName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2384,15 +2384,15 @@ export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceN
   }
 }
 
-export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineDataDiskList extends cdktf.ComplexList {
-  public internalValue? : WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineDataDisk[] | cdktf.IResolvable
+export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineDataDiskList extends cdktn.ComplexList {
+  public internalValue? : WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineDataDisk[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2425,56 +2425,56 @@ export interface WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResou
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/workloads_sap_three_tier_virtual_instance#data_disk WorkloadsSapThreeTierVirtualInstance#data_disk}
   */
-  readonly dataDisk?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineDataDisk[] | cdktf.IResolvable;
+  readonly dataDisk?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineDataDisk[] | cdktn.IResolvable;
 }
 
-export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachine | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachine | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host_name: cdktf.stringToTerraform(struct!.hostName),
-    network_interface_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.networkInterfaceNames),
-    os_disk_name: cdktf.stringToTerraform(struct!.osDiskName),
-    virtual_machine_name: cdktf.stringToTerraform(struct!.virtualMachineName),
-    data_disk: cdktf.listMapper(workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineDataDiskToTerraform, true)(struct!.dataDisk),
+    host_name: cdktn.stringToTerraform(struct!.hostName),
+    network_interface_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.networkInterfaceNames),
+    os_disk_name: cdktn.stringToTerraform(struct!.osDiskName),
+    virtual_machine_name: cdktn.stringToTerraform(struct!.virtualMachineName),
+    data_disk: cdktn.listMapper(workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineDataDiskToTerraform, true)(struct!.dataDisk),
   }
 }
 
 
-export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachine | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachine | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host_name: {
-      value: cdktf.stringToHclTerraform(struct!.hostName),
+      value: cdktn.stringToHclTerraform(struct!.hostName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     network_interface_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.networkInterfaceNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.networkInterfaceNames),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     os_disk_name: {
-      value: cdktf.stringToHclTerraform(struct!.osDiskName),
+      value: cdktn.stringToHclTerraform(struct!.osDiskName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     virtual_machine_name: {
-      value: cdktf.stringToHclTerraform(struct!.virtualMachineName),
+      value: cdktn.stringToHclTerraform(struct!.virtualMachineName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data_disk: {
-      value: cdktf.listMapperHcl(workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineDataDiskToHclTerraform, true)(struct!.dataDisk),
+      value: cdktn.listMapperHcl(workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineDataDiskToHclTerraform, true)(struct!.dataDisk),
       isBlock: true,
       type: "set",
       storageClassType: "WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineDataDiskList",
@@ -2485,9 +2485,9 @@ export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResour
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineOutputReference extends cdktf.ComplexObject {
+export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2495,11 +2495,11 @@ export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceN
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachine | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachine | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2528,7 +2528,7 @@ export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceN
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachine | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachine | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2538,7 +2538,7 @@ export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceN
       this._virtualMachineName = undefined;
       this._dataDisk.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2622,7 +2622,7 @@ export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceN
   public get dataDisk() {
     return this._dataDisk;
   }
-  public putDataDisk(value: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineDataDisk[] | cdktf.IResolvable) {
+  public putDataDisk(value: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineDataDisk[] | cdktn.IResolvable) {
     this._dataDisk.internalValue = value;
   }
   public resetDataDisk() {
@@ -2634,15 +2634,15 @@ export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceN
   }
 }
 
-export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineList extends cdktf.ComplexList {
-  public internalValue? : WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachine[] | cdktf.IResolvable
+export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineList extends cdktn.ComplexList {
+  public internalValue? : WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachine[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2663,35 +2663,35 @@ export interface WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResou
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/workloads_sap_three_tier_virtual_instance#virtual_machine WorkloadsSapThreeTierVirtualInstance#virtual_machine}
   */
-  readonly virtualMachine?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachine[] | cdktf.IResolvable;
+  readonly virtualMachine?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachine[] | cdktn.IResolvable;
 }
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    availability_set_name: cdktf.stringToTerraform(struct!.availabilitySetName),
-    virtual_machine: cdktf.listMapper(workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineToTerraform, true)(struct!.virtualMachine),
+    availability_set_name: cdktn.stringToTerraform(struct!.availabilitySetName),
+    virtual_machine: cdktn.listMapper(workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineToTerraform, true)(struct!.virtualMachine),
   }
 }
 
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     availability_set_name: {
-      value: cdktf.stringToHclTerraform(struct!.availabilitySetName),
+      value: cdktn.stringToHclTerraform(struct!.availabilitySetName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     virtual_machine: {
-      value: cdktf.listMapperHcl(workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineToHclTerraform, true)(struct!.virtualMachine),
+      value: cdktn.listMapperHcl(workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineToHclTerraform, true)(struct!.virtualMachine),
       isBlock: true,
       type: "list",
       storageClassType: "WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachineList",
@@ -2702,14 +2702,14 @@ export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResour
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerOutputReference extends cdktf.ComplexObject {
+export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2761,7 +2761,7 @@ export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceN
   public get virtualMachine() {
     return this._virtualMachine;
   }
-  public putVirtualMachine(value: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachine[] | cdktf.IResolvable) {
+  public putVirtualMachine(value: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesApplicationServerVirtualMachine[] | cdktn.IResolvable) {
     this._virtualMachine.internalValue = value;
   }
   public resetVirtualMachine() {
@@ -2792,45 +2792,45 @@ export interface WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResou
 }
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerLoadBalancerToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerLoadBalancerOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerLoadBalancer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    backend_pool_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.backendPoolNames),
-    frontend_ip_configuration_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.frontendIpConfigurationNames),
-    health_probe_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.healthProbeNames),
-    name: cdktf.stringToTerraform(struct!.name),
+    backend_pool_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.backendPoolNames),
+    frontend_ip_configuration_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.frontendIpConfigurationNames),
+    health_probe_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.healthProbeNames),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerLoadBalancerToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerLoadBalancerOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerLoadBalancer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     backend_pool_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.backendPoolNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.backendPoolNames),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     frontend_ip_configuration_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.frontendIpConfigurationNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.frontendIpConfigurationNames),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     health_probe_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.healthProbeNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.healthProbeNames),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2841,14 +2841,14 @@ export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResour
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerLoadBalancerOutputReference extends cdktf.ComplexObject {
+export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerLoadBalancerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2966,32 +2966,32 @@ export interface WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResou
   readonly volumeName: string;
 }
 
-export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDisk | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDisk | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.names),
-    volume_name: cdktf.stringToTerraform(struct!.volumeName),
+    names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.names),
+    volume_name: cdktn.stringToTerraform(struct!.volumeName),
   }
 }
 
 
-export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDisk | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDisk | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.names),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.names),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     volume_name: {
-      value: cdktf.stringToHclTerraform(struct!.volumeName),
+      value: cdktn.stringToHclTerraform(struct!.volumeName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3002,9 +3002,9 @@ export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResour
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskOutputReference extends cdktf.ComplexObject {
+export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3012,11 +3012,11 @@ export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceN
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDisk | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDisk | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3033,14 +3033,14 @@ export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceN
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDisk | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDisk | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._names = undefined;
       this._volumeName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3079,15 +3079,15 @@ export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceN
   }
 }
 
-export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskList extends cdktf.ComplexList {
-  public internalValue? : WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDisk[] | cdktf.IResolvable
+export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskList extends cdktn.ComplexList {
+  public internalValue? : WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDisk[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3120,56 +3120,56 @@ export interface WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResou
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/workloads_sap_three_tier_virtual_instance#data_disk WorkloadsSapThreeTierVirtualInstance#data_disk}
   */
-  readonly dataDisk?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDisk[] | cdktf.IResolvable;
+  readonly dataDisk?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDisk[] | cdktn.IResolvable;
 }
 
-export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachine | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachine | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host_name: cdktf.stringToTerraform(struct!.hostName),
-    network_interface_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.networkInterfaceNames),
-    os_disk_name: cdktf.stringToTerraform(struct!.osDiskName),
-    virtual_machine_name: cdktf.stringToTerraform(struct!.virtualMachineName),
-    data_disk: cdktf.listMapper(workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskToTerraform, true)(struct!.dataDisk),
+    host_name: cdktn.stringToTerraform(struct!.hostName),
+    network_interface_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.networkInterfaceNames),
+    os_disk_name: cdktn.stringToTerraform(struct!.osDiskName),
+    virtual_machine_name: cdktn.stringToTerraform(struct!.virtualMachineName),
+    data_disk: cdktn.listMapper(workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskToTerraform, true)(struct!.dataDisk),
   }
 }
 
 
-export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachine | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachine | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host_name: {
-      value: cdktf.stringToHclTerraform(struct!.hostName),
+      value: cdktn.stringToHclTerraform(struct!.hostName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     network_interface_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.networkInterfaceNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.networkInterfaceNames),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     os_disk_name: {
-      value: cdktf.stringToHclTerraform(struct!.osDiskName),
+      value: cdktn.stringToHclTerraform(struct!.osDiskName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     virtual_machine_name: {
-      value: cdktf.stringToHclTerraform(struct!.virtualMachineName),
+      value: cdktn.stringToHclTerraform(struct!.virtualMachineName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data_disk: {
-      value: cdktf.listMapperHcl(workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskToHclTerraform, true)(struct!.dataDisk),
+      value: cdktn.listMapperHcl(workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskToHclTerraform, true)(struct!.dataDisk),
       isBlock: true,
       type: "set",
       storageClassType: "WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDiskList",
@@ -3180,9 +3180,9 @@ export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResour
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineOutputReference extends cdktf.ComplexObject {
+export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3190,11 +3190,11 @@ export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceN
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachine | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachine | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3223,7 +3223,7 @@ export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceN
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachine | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachine | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3233,7 +3233,7 @@ export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceN
       this._virtualMachineName = undefined;
       this._dataDisk.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3317,7 +3317,7 @@ export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceN
   public get dataDisk() {
     return this._dataDisk;
   }
-  public putDataDisk(value: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDisk[] | cdktf.IResolvable) {
+  public putDataDisk(value: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineDataDisk[] | cdktn.IResolvable) {
     this._dataDisk.internalValue = value;
   }
   public resetDataDisk() {
@@ -3329,15 +3329,15 @@ export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceN
   }
 }
 
-export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineList extends cdktf.ComplexList {
-  public internalValue? : WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachine[] | cdktf.IResolvable
+export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineList extends cdktn.ComplexList {
+  public internalValue? : WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachine[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3364,30 +3364,30 @@ export interface WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResou
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/workloads_sap_three_tier_virtual_instance#virtual_machine WorkloadsSapThreeTierVirtualInstance#virtual_machine}
   */
-  readonly virtualMachine?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachine[] | cdktf.IResolvable;
+  readonly virtualMachine?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachine[] | cdktn.IResolvable;
 }
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    availability_set_name: cdktf.stringToTerraform(struct!.availabilitySetName),
+    availability_set_name: cdktn.stringToTerraform(struct!.availabilitySetName),
     load_balancer: workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerLoadBalancerToTerraform(struct!.loadBalancer),
-    virtual_machine: cdktf.listMapper(workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineToTerraform, true)(struct!.virtualMachine),
+    virtual_machine: cdktn.listMapper(workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineToTerraform, true)(struct!.virtualMachine),
   }
 }
 
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     availability_set_name: {
-      value: cdktf.stringToHclTerraform(struct!.availabilitySetName),
+      value: cdktn.stringToHclTerraform(struct!.availabilitySetName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3399,7 +3399,7 @@ export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResour
       storageClassType: "WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerLoadBalancerList",
     },
     virtual_machine: {
-      value: cdktf.listMapperHcl(workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineToHclTerraform, true)(struct!.virtualMachine),
+      value: cdktn.listMapperHcl(workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineToHclTerraform, true)(struct!.virtualMachine),
       isBlock: true,
       type: "list",
       storageClassType: "WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachineList",
@@ -3410,14 +3410,14 @@ export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResour
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerOutputReference extends cdktf.ComplexObject {
+export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3491,7 +3491,7 @@ export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceN
   public get virtualMachine() {
     return this._virtualMachine;
   }
-  public putVirtualMachine(value: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachine[] | cdktf.IResolvable) {
+  public putVirtualMachine(value: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesCentralServerVirtualMachine[] | cdktn.IResolvable) {
     this._virtualMachine.internalValue = value;
   }
   public resetVirtualMachine() {
@@ -3522,45 +3522,45 @@ export interface WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResou
 }
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerLoadBalancerToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerLoadBalancerOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerLoadBalancer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    backend_pool_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.backendPoolNames),
-    frontend_ip_configuration_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.frontendIpConfigurationNames),
-    health_probe_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.healthProbeNames),
-    name: cdktf.stringToTerraform(struct!.name),
+    backend_pool_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.backendPoolNames),
+    frontend_ip_configuration_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.frontendIpConfigurationNames),
+    health_probe_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.healthProbeNames),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerLoadBalancerToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerLoadBalancerOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerLoadBalancer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     backend_pool_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.backendPoolNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.backendPoolNames),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     frontend_ip_configuration_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.frontendIpConfigurationNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.frontendIpConfigurationNames),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     health_probe_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.healthProbeNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.healthProbeNames),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3571,14 +3571,14 @@ export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResour
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerLoadBalancerOutputReference extends cdktf.ComplexObject {
+export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerLoadBalancerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3696,32 +3696,32 @@ export interface WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResou
   readonly volumeName: string;
 }
 
-export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineDataDiskToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineDataDisk | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineDataDiskToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineDataDisk | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.names),
-    volume_name: cdktf.stringToTerraform(struct!.volumeName),
+    names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.names),
+    volume_name: cdktn.stringToTerraform(struct!.volumeName),
   }
 }
 
 
-export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineDataDiskToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineDataDisk | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineDataDiskToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineDataDisk | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.names),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.names),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     volume_name: {
-      value: cdktf.stringToHclTerraform(struct!.volumeName),
+      value: cdktn.stringToHclTerraform(struct!.volumeName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3732,9 +3732,9 @@ export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResour
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineDataDiskOutputReference extends cdktf.ComplexObject {
+export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineDataDiskOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3742,11 +3742,11 @@ export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceN
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineDataDisk | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineDataDisk | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3763,14 +3763,14 @@ export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceN
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineDataDisk | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineDataDisk | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._names = undefined;
       this._volumeName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3809,15 +3809,15 @@ export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceN
   }
 }
 
-export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineDataDiskList extends cdktf.ComplexList {
-  public internalValue? : WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineDataDisk[] | cdktf.IResolvable
+export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineDataDiskList extends cdktn.ComplexList {
+  public internalValue? : WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineDataDisk[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3850,56 +3850,56 @@ export interface WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResou
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/workloads_sap_three_tier_virtual_instance#data_disk WorkloadsSapThreeTierVirtualInstance#data_disk}
   */
-  readonly dataDisk?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineDataDisk[] | cdktf.IResolvable;
+  readonly dataDisk?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineDataDisk[] | cdktn.IResolvable;
 }
 
-export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachine | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachine | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host_name: cdktf.stringToTerraform(struct!.hostName),
-    network_interface_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.networkInterfaceNames),
-    os_disk_name: cdktf.stringToTerraform(struct!.osDiskName),
-    virtual_machine_name: cdktf.stringToTerraform(struct!.virtualMachineName),
-    data_disk: cdktf.listMapper(workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineDataDiskToTerraform, true)(struct!.dataDisk),
+    host_name: cdktn.stringToTerraform(struct!.hostName),
+    network_interface_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.networkInterfaceNames),
+    os_disk_name: cdktn.stringToTerraform(struct!.osDiskName),
+    virtual_machine_name: cdktn.stringToTerraform(struct!.virtualMachineName),
+    data_disk: cdktn.listMapper(workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineDataDiskToTerraform, true)(struct!.dataDisk),
   }
 }
 
 
-export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachine | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachine | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host_name: {
-      value: cdktf.stringToHclTerraform(struct!.hostName),
+      value: cdktn.stringToHclTerraform(struct!.hostName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     network_interface_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.networkInterfaceNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.networkInterfaceNames),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     os_disk_name: {
-      value: cdktf.stringToHclTerraform(struct!.osDiskName),
+      value: cdktn.stringToHclTerraform(struct!.osDiskName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     virtual_machine_name: {
-      value: cdktf.stringToHclTerraform(struct!.virtualMachineName),
+      value: cdktn.stringToHclTerraform(struct!.virtualMachineName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data_disk: {
-      value: cdktf.listMapperHcl(workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineDataDiskToHclTerraform, true)(struct!.dataDisk),
+      value: cdktn.listMapperHcl(workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineDataDiskToHclTerraform, true)(struct!.dataDisk),
       isBlock: true,
       type: "set",
       storageClassType: "WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineDataDiskList",
@@ -3910,9 +3910,9 @@ export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResour
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineOutputReference extends cdktf.ComplexObject {
+export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3920,11 +3920,11 @@ export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceN
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachine | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachine | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3953,7 +3953,7 @@ export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceN
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachine | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachine | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3963,7 +3963,7 @@ export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceN
       this._virtualMachineName = undefined;
       this._dataDisk.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4047,7 +4047,7 @@ export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceN
   public get dataDisk() {
     return this._dataDisk;
   }
-  public putDataDisk(value: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineDataDisk[] | cdktf.IResolvable) {
+  public putDataDisk(value: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineDataDisk[] | cdktn.IResolvable) {
     this._dataDisk.internalValue = value;
   }
   public resetDataDisk() {
@@ -4059,15 +4059,15 @@ export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceN
   }
 }
 
-export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineList extends cdktf.ComplexList {
-  public internalValue? : WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachine[] | cdktf.IResolvable
+export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineList extends cdktn.ComplexList {
+  public internalValue? : WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachine[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4094,30 +4094,30 @@ export interface WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResou
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/workloads_sap_three_tier_virtual_instance#virtual_machine WorkloadsSapThreeTierVirtualInstance#virtual_machine}
   */
-  readonly virtualMachine?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachine[] | cdktf.IResolvable;
+  readonly virtualMachine?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachine[] | cdktn.IResolvable;
 }
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    availability_set_name: cdktf.stringToTerraform(struct!.availabilitySetName),
+    availability_set_name: cdktn.stringToTerraform(struct!.availabilitySetName),
     load_balancer: workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerLoadBalancerToTerraform(struct!.loadBalancer),
-    virtual_machine: cdktf.listMapper(workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineToTerraform, true)(struct!.virtualMachine),
+    virtual_machine: cdktn.listMapper(workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineToTerraform, true)(struct!.virtualMachine),
   }
 }
 
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     availability_set_name: {
-      value: cdktf.stringToHclTerraform(struct!.availabilitySetName),
+      value: cdktn.stringToHclTerraform(struct!.availabilitySetName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4129,7 +4129,7 @@ export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResour
       storageClassType: "WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerLoadBalancerList",
     },
     virtual_machine: {
-      value: cdktf.listMapperHcl(workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineToHclTerraform, true)(struct!.virtualMachine),
+      value: cdktn.listMapperHcl(workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineToHclTerraform, true)(struct!.virtualMachine),
       isBlock: true,
       type: "list",
       storageClassType: "WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachineList",
@@ -4140,14 +4140,14 @@ export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResour
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerOutputReference extends cdktf.ComplexObject {
+export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4221,7 +4221,7 @@ export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceN
   public get virtualMachine() {
     return this._virtualMachine;
   }
-  public putVirtualMachine(value: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachine[] | cdktf.IResolvable) {
+  public putVirtualMachine(value: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesDatabaseServerVirtualMachine[] | cdktn.IResolvable) {
     this._virtualMachine.internalValue = value;
   }
   public resetVirtualMachine() {
@@ -4244,31 +4244,31 @@ export interface WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResou
 }
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesSharedStorageToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesSharedStorageOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesSharedStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    account_name: cdktf.stringToTerraform(struct!.accountName),
-    private_endpoint_name: cdktf.stringToTerraform(struct!.privateEndpointName),
+    account_name: cdktn.stringToTerraform(struct!.accountName),
+    private_endpoint_name: cdktn.stringToTerraform(struct!.privateEndpointName),
   }
 }
 
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesSharedStorageToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesSharedStorageOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesSharedStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     account_name: {
-      value: cdktf.stringToHclTerraform(struct!.accountName),
+      value: cdktn.stringToHclTerraform(struct!.accountName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     private_endpoint_name: {
-      value: cdktf.stringToHclTerraform(struct!.privateEndpointName),
+      value: cdktn.stringToHclTerraform(struct!.privateEndpointName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4279,14 +4279,14 @@ export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResour
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesSharedStorageOutputReference extends cdktf.ComplexObject {
+export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesSharedStorageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4377,8 +4377,8 @@ export interface WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResou
 }
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNames): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4391,8 +4391,8 @@ export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResour
 
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNames): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4426,14 +4426,14 @@ export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationResour
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesOutputReference extends cdktf.ComplexObject {
+export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationResourceNamesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4552,31 +4552,31 @@ export interface WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationTrans
 }
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationTransportCreateAndMountToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationTransportCreateAndMountOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationTransportCreateAndMount): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    resource_group_id: cdktf.stringToTerraform(struct!.resourceGroupId),
-    storage_account_name: cdktf.stringToTerraform(struct!.storageAccountName),
+    resource_group_id: cdktn.stringToTerraform(struct!.resourceGroupId),
+    storage_account_name: cdktn.stringToTerraform(struct!.storageAccountName),
   }
 }
 
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationTransportCreateAndMountToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationTransportCreateAndMountOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationTransportCreateAndMount): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     resource_group_id: {
-      value: cdktf.stringToHclTerraform(struct!.resourceGroupId),
+      value: cdktn.stringToHclTerraform(struct!.resourceGroupId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_account_name: {
-      value: cdktf.stringToHclTerraform(struct!.storageAccountName),
+      value: cdktn.stringToHclTerraform(struct!.storageAccountName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4587,14 +4587,14 @@ export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationTransp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationTransportCreateAndMountOutputReference extends cdktf.ComplexObject {
+export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationTransportCreateAndMountOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4669,7 +4669,7 @@ export interface WorkloadsSapThreeTierVirtualInstanceThreeTierConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/workloads_sap_three_tier_virtual_instance#secondary_ip_enabled WorkloadsSapThreeTierVirtualInstance#secondary_ip_enabled}
   */
-  readonly secondaryIpEnabled?: boolean | cdktf.IResolvable;
+  readonly secondaryIpEnabled?: boolean | cdktn.IResolvable;
   /**
   * application_server_configuration block
   *
@@ -4703,14 +4703,14 @@ export interface WorkloadsSapThreeTierVirtualInstanceThreeTierConfiguration {
 }
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    app_resource_group_name: cdktf.stringToTerraform(struct!.appResourceGroupName),
-    high_availability_type: cdktf.stringToTerraform(struct!.highAvailabilityType),
-    secondary_ip_enabled: cdktf.booleanToTerraform(struct!.secondaryIpEnabled),
+    app_resource_group_name: cdktn.stringToTerraform(struct!.appResourceGroupName),
+    high_availability_type: cdktn.stringToTerraform(struct!.highAvailabilityType),
+    secondary_ip_enabled: cdktn.booleanToTerraform(struct!.secondaryIpEnabled),
     application_server_configuration: workloadsSapThreeTierVirtualInstanceThreeTierConfigurationApplicationServerConfigurationToTerraform(struct!.applicationServerConfiguration),
     central_server_configuration: workloadsSapThreeTierVirtualInstanceThreeTierConfigurationCentralServerConfigurationToTerraform(struct!.centralServerConfiguration),
     database_server_configuration: workloadsSapThreeTierVirtualInstanceThreeTierConfigurationDatabaseServerConfigurationToTerraform(struct!.databaseServerConfiguration),
@@ -4721,25 +4721,25 @@ export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationToTerr
 
 
 export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationOutputReference | WorkloadsSapThreeTierVirtualInstanceThreeTierConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     app_resource_group_name: {
-      value: cdktf.stringToHclTerraform(struct!.appResourceGroupName),
+      value: cdktn.stringToHclTerraform(struct!.appResourceGroupName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     high_availability_type: {
-      value: cdktf.stringToHclTerraform(struct!.highAvailabilityType),
+      value: cdktn.stringToHclTerraform(struct!.highAvailabilityType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secondary_ip_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.secondaryIpEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.secondaryIpEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -4780,14 +4780,14 @@ export function workloadsSapThreeTierVirtualInstanceThreeTierConfigurationToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationOutputReference extends cdktf.ComplexObject {
+export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4884,11 +4884,11 @@ export class WorkloadsSapThreeTierVirtualInstanceThreeTierConfigurationOutputRef
   }
 
   // secondary_ip_enabled - computed: false, optional: true, required: false
-  private _secondaryIpEnabled?: boolean | cdktf.IResolvable; 
+  private _secondaryIpEnabled?: boolean | cdktn.IResolvable; 
   public get secondaryIpEnabled() {
     return this.getBooleanAttribute('secondary_ip_enabled');
   }
-  public set secondaryIpEnabled(value: boolean | cdktf.IResolvable) {
+  public set secondaryIpEnabled(value: boolean | cdktn.IResolvable) {
     this._secondaryIpEnabled = value;
   }
   public resetSecondaryIpEnabled() {
@@ -4989,46 +4989,46 @@ export interface WorkloadsSapThreeTierVirtualInstanceTimeouts {
   readonly update?: string;
 }
 
-export function workloadsSapThreeTierVirtualInstanceTimeoutsToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workloadsSapThreeTierVirtualInstanceTimeoutsToTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function workloadsSapThreeTierVirtualInstanceTimeoutsToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workloadsSapThreeTierVirtualInstanceTimeoutsToHclTerraform(struct?: WorkloadsSapThreeTierVirtualInstanceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5039,19 +5039,19 @@ export function workloadsSapThreeTierVirtualInstanceTimeoutsToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkloadsSapThreeTierVirtualInstanceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class WorkloadsSapThreeTierVirtualInstanceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WorkloadsSapThreeTierVirtualInstanceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkloadsSapThreeTierVirtualInstanceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5076,7 +5076,7 @@ export class WorkloadsSapThreeTierVirtualInstanceTimeoutsOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkloadsSapThreeTierVirtualInstanceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkloadsSapThreeTierVirtualInstanceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5085,7 +5085,7 @@ export class WorkloadsSapThreeTierVirtualInstanceTimeoutsOutputReference extends
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5167,7 +5167,7 @@ export class WorkloadsSapThreeTierVirtualInstanceTimeoutsOutputReference extends
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/workloads_sap_three_tier_virtual_instance azurerm_workloads_sap_three_tier_virtual_instance}
 */
-export class WorkloadsSapThreeTierVirtualInstance extends cdktf.TerraformResource {
+export class WorkloadsSapThreeTierVirtualInstance extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -5178,14 +5178,14 @@ export class WorkloadsSapThreeTierVirtualInstance extends cdktf.TerraformResourc
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WorkloadsSapThreeTierVirtualInstance resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WorkloadsSapThreeTierVirtualInstance resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkloadsSapThreeTierVirtualInstance to import
   * @param importFromId The id of the existing WorkloadsSapThreeTierVirtualInstance that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/workloads_sap_three_tier_virtual_instance#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkloadsSapThreeTierVirtualInstance to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_workloads_sap_three_tier_virtual_instance", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_workloads_sap_three_tier_virtual_instance", importId: importFromId, provider });
       }
 
   // ===========
@@ -5441,17 +5441,17 @@ export class WorkloadsSapThreeTierVirtualInstance extends cdktf.TerraformResourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      app_location: cdktf.stringToTerraform(this._appLocation),
-      environment: cdktf.stringToTerraform(this._environment),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      managed_resource_group_name: cdktf.stringToTerraform(this._managedResourceGroupName),
-      managed_resources_network_access_type: cdktf.stringToTerraform(this._managedResourcesNetworkAccessType),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      sap_fqdn: cdktf.stringToTerraform(this._sapFqdn),
-      sap_product: cdktf.stringToTerraform(this._sapProduct),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      app_location: cdktn.stringToTerraform(this._appLocation),
+      environment: cdktn.stringToTerraform(this._environment),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      managed_resource_group_name: cdktn.stringToTerraform(this._managedResourceGroupName),
+      managed_resources_network_access_type: cdktn.stringToTerraform(this._managedResourcesNetworkAccessType),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      sap_fqdn: cdktn.stringToTerraform(this._sapFqdn),
+      sap_product: cdktn.stringToTerraform(this._sapProduct),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       identity: workloadsSapThreeTierVirtualInstanceIdentityToTerraform(this._identity.internalValue),
       three_tier_configuration: workloadsSapThreeTierVirtualInstanceThreeTierConfigurationToTerraform(this._threeTierConfiguration.internalValue),
       timeouts: workloadsSapThreeTierVirtualInstanceTimeoutsToTerraform(this._timeouts.internalValue),
@@ -5461,67 +5461,67 @@ export class WorkloadsSapThreeTierVirtualInstance extends cdktf.TerraformResourc
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       app_location: {
-        value: cdktf.stringToHclTerraform(this._appLocation),
+        value: cdktn.stringToHclTerraform(this._appLocation),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       environment: {
-        value: cdktf.stringToHclTerraform(this._environment),
+        value: cdktn.stringToHclTerraform(this._environment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       managed_resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._managedResourceGroupName),
+        value: cdktn.stringToHclTerraform(this._managedResourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       managed_resources_network_access_type: {
-        value: cdktf.stringToHclTerraform(this._managedResourcesNetworkAccessType),
+        value: cdktn.stringToHclTerraform(this._managedResourcesNetworkAccessType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sap_fqdn: {
-        value: cdktf.stringToHclTerraform(this._sapFqdn),
+        value: cdktn.stringToHclTerraform(this._sapFqdn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sap_product: {
-        value: cdktf.stringToHclTerraform(this._sapProduct),
+        value: cdktn.stringToHclTerraform(this._sapProduct),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

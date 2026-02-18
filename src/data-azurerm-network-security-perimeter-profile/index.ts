@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermNetworkSecurityPerimeterProfileConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermNetworkSecurityPerimeterProfileConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/network_security_perimeter_profile#id DataAzurermNetworkSecurityPerimeterProfile#id}
   *
@@ -41,25 +41,25 @@ export interface DataAzurermNetworkSecurityPerimeterProfileTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermNetworkSecurityPerimeterProfileTimeoutsToTerraform(struct?: DataAzurermNetworkSecurityPerimeterProfileTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermNetworkSecurityPerimeterProfileTimeoutsToTerraform(struct?: DataAzurermNetworkSecurityPerimeterProfileTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermNetworkSecurityPerimeterProfileTimeoutsToHclTerraform(struct?: DataAzurermNetworkSecurityPerimeterProfileTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermNetworkSecurityPerimeterProfileTimeoutsToHclTerraform(struct?: DataAzurermNetworkSecurityPerimeterProfileTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -70,19 +70,19 @@ export function dataAzurermNetworkSecurityPerimeterProfileTimeoutsToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermNetworkSecurityPerimeterProfileTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermNetworkSecurityPerimeterProfileTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermNetworkSecurityPerimeterProfileTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermNetworkSecurityPerimeterProfileTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -95,13 +95,13 @@ export class DataAzurermNetworkSecurityPerimeterProfileTimeoutsOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermNetworkSecurityPerimeterProfileTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermNetworkSecurityPerimeterProfileTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -132,7 +132,7 @@ export class DataAzurermNetworkSecurityPerimeterProfileTimeoutsOutputReference e
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/network_security_perimeter_profile azurerm_network_security_perimeter_profile}
 */
-export class DataAzurermNetworkSecurityPerimeterProfile extends cdktf.TerraformDataSource {
+export class DataAzurermNetworkSecurityPerimeterProfile extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -143,14 +143,14 @@ export class DataAzurermNetworkSecurityPerimeterProfile extends cdktf.TerraformD
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermNetworkSecurityPerimeterProfile resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermNetworkSecurityPerimeterProfile resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermNetworkSecurityPerimeterProfile to import
   * @param importFromId The id of the existing DataAzurermNetworkSecurityPerimeterProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/network_security_perimeter_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermNetworkSecurityPerimeterProfile to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_network_security_perimeter_profile", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_network_security_perimeter_profile", importId: importFromId, provider });
       }
 
   // ===========
@@ -254,9 +254,9 @@ export class DataAzurermNetworkSecurityPerimeterProfile extends cdktf.TerraformD
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      network_security_perimeter_id: cdktf.stringToTerraform(this._networkSecurityPerimeterId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      network_security_perimeter_id: cdktn.stringToTerraform(this._networkSecurityPerimeterId),
       timeouts: dataAzurermNetworkSecurityPerimeterProfileTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -264,19 +264,19 @@ export class DataAzurermNetworkSecurityPerimeterProfile extends cdktf.TerraformD
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_security_perimeter_id: {
-        value: cdktf.stringToHclTerraform(this._networkSecurityPerimeterId),
+        value: cdktn.stringToHclTerraform(this._networkSecurityPerimeterId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

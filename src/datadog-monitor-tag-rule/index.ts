@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DatadogMonitorTagRuleConfig extends cdktf.TerraformMetaArguments {
+export interface DatadogMonitorTagRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/datadog_monitor_tag_rule#datadog_monitor_id DatadogMonitorTagRule#datadog_monitor_id}
   */
@@ -32,13 +32,13 @@ export interface DatadogMonitorTagRuleConfig extends cdktf.TerraformMetaArgument
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/datadog_monitor_tag_rule#log DatadogMonitorTagRule#log}
   */
-  readonly log?: DatadogMonitorTagRuleLog[] | cdktf.IResolvable;
+  readonly log?: DatadogMonitorTagRuleLog[] | cdktn.IResolvable;
   /**
   * metric block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/datadog_monitor_tag_rule#metric DatadogMonitorTagRule#metric}
   */
-  readonly metric?: DatadogMonitorTagRuleMetric[] | cdktf.IResolvable;
+  readonly metric?: DatadogMonitorTagRuleMetric[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -61,39 +61,39 @@ export interface DatadogMonitorTagRuleLogFilter {
   readonly value: string;
 }
 
-export function datadogMonitorTagRuleLogFilterToTerraform(struct?: DatadogMonitorTagRuleLogFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function datadogMonitorTagRuleLogFilterToTerraform(struct?: DatadogMonitorTagRuleLogFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action: cdktf.stringToTerraform(struct!.action),
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    action: cdktn.stringToTerraform(struct!.action),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function datadogMonitorTagRuleLogFilterToHclTerraform(struct?: DatadogMonitorTagRuleLogFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function datadogMonitorTagRuleLogFilterToHclTerraform(struct?: DatadogMonitorTagRuleLogFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action: {
-      value: cdktf.stringToHclTerraform(struct!.action),
+      value: cdktn.stringToHclTerraform(struct!.action),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -104,9 +104,9 @@ export function datadogMonitorTagRuleLogFilterToHclTerraform(struct?: DatadogMon
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatadogMonitorTagRuleLogFilterOutputReference extends cdktf.ComplexObject {
+export class DatadogMonitorTagRuleLogFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -114,11 +114,11 @@ export class DatadogMonitorTagRuleLogFilterOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DatadogMonitorTagRuleLogFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): DatadogMonitorTagRuleLogFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -139,7 +139,7 @@ export class DatadogMonitorTagRuleLogFilterOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatadogMonitorTagRuleLogFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatadogMonitorTagRuleLogFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -147,7 +147,7 @@ export class DatadogMonitorTagRuleLogFilterOutputReference extends cdktf.Complex
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -200,15 +200,15 @@ export class DatadogMonitorTagRuleLogFilterOutputReference extends cdktf.Complex
   }
 }
 
-export class DatadogMonitorTagRuleLogFilterList extends cdktf.ComplexList {
-  public internalValue? : DatadogMonitorTagRuleLogFilter[] | cdktf.IResolvable
+export class DatadogMonitorTagRuleLogFilterList extends cdktn.ComplexList {
+  public internalValue? : DatadogMonitorTagRuleLogFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -223,63 +223,63 @@ export interface DatadogMonitorTagRuleLog {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/datadog_monitor_tag_rule#aad_log_enabled DatadogMonitorTagRule#aad_log_enabled}
   */
-  readonly aadLogEnabled?: boolean | cdktf.IResolvable;
+  readonly aadLogEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/datadog_monitor_tag_rule#resource_log_enabled DatadogMonitorTagRule#resource_log_enabled}
   */
-  readonly resourceLogEnabled?: boolean | cdktf.IResolvable;
+  readonly resourceLogEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/datadog_monitor_tag_rule#subscription_log_enabled DatadogMonitorTagRule#subscription_log_enabled}
   */
-  readonly subscriptionLogEnabled?: boolean | cdktf.IResolvable;
+  readonly subscriptionLogEnabled?: boolean | cdktn.IResolvable;
   /**
   * filter block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/datadog_monitor_tag_rule#filter DatadogMonitorTagRule#filter}
   */
-  readonly filter?: DatadogMonitorTagRuleLogFilter[] | cdktf.IResolvable;
+  readonly filter?: DatadogMonitorTagRuleLogFilter[] | cdktn.IResolvable;
 }
 
-export function datadogMonitorTagRuleLogToTerraform(struct?: DatadogMonitorTagRuleLog | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function datadogMonitorTagRuleLogToTerraform(struct?: DatadogMonitorTagRuleLog | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aad_log_enabled: cdktf.booleanToTerraform(struct!.aadLogEnabled),
-    resource_log_enabled: cdktf.booleanToTerraform(struct!.resourceLogEnabled),
-    subscription_log_enabled: cdktf.booleanToTerraform(struct!.subscriptionLogEnabled),
-    filter: cdktf.listMapper(datadogMonitorTagRuleLogFilterToTerraform, true)(struct!.filter),
+    aad_log_enabled: cdktn.booleanToTerraform(struct!.aadLogEnabled),
+    resource_log_enabled: cdktn.booleanToTerraform(struct!.resourceLogEnabled),
+    subscription_log_enabled: cdktn.booleanToTerraform(struct!.subscriptionLogEnabled),
+    filter: cdktn.listMapper(datadogMonitorTagRuleLogFilterToTerraform, true)(struct!.filter),
   }
 }
 
 
-export function datadogMonitorTagRuleLogToHclTerraform(struct?: DatadogMonitorTagRuleLog | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function datadogMonitorTagRuleLogToHclTerraform(struct?: DatadogMonitorTagRuleLog | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aad_log_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.aadLogEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.aadLogEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     resource_log_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.resourceLogEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.resourceLogEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     subscription_log_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.subscriptionLogEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.subscriptionLogEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     filter: {
-      value: cdktf.listMapperHcl(datadogMonitorTagRuleLogFilterToHclTerraform, true)(struct!.filter),
+      value: cdktn.listMapperHcl(datadogMonitorTagRuleLogFilterToHclTerraform, true)(struct!.filter),
       isBlock: true,
       type: "list",
       storageClassType: "DatadogMonitorTagRuleLogFilterList",
@@ -290,9 +290,9 @@ export function datadogMonitorTagRuleLogToHclTerraform(struct?: DatadogMonitorTa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatadogMonitorTagRuleLogOutputReference extends cdktf.ComplexObject {
+export class DatadogMonitorTagRuleLogOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -300,11 +300,11 @@ export class DatadogMonitorTagRuleLogOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DatadogMonitorTagRuleLog | cdktf.IResolvable | undefined {
+  public get internalValue(): DatadogMonitorTagRuleLog | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -329,7 +329,7 @@ export class DatadogMonitorTagRuleLogOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatadogMonitorTagRuleLog | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatadogMonitorTagRuleLog | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -338,7 +338,7 @@ export class DatadogMonitorTagRuleLogOutputReference extends cdktf.ComplexObject
       this._subscriptionLogEnabled = undefined;
       this._filter.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -353,11 +353,11 @@ export class DatadogMonitorTagRuleLogOutputReference extends cdktf.ComplexObject
   }
 
   // aad_log_enabled - computed: false, optional: true, required: false
-  private _aadLogEnabled?: boolean | cdktf.IResolvable; 
+  private _aadLogEnabled?: boolean | cdktn.IResolvable; 
   public get aadLogEnabled() {
     return this.getBooleanAttribute('aad_log_enabled');
   }
-  public set aadLogEnabled(value: boolean | cdktf.IResolvable) {
+  public set aadLogEnabled(value: boolean | cdktn.IResolvable) {
     this._aadLogEnabled = value;
   }
   public resetAadLogEnabled() {
@@ -369,11 +369,11 @@ export class DatadogMonitorTagRuleLogOutputReference extends cdktf.ComplexObject
   }
 
   // resource_log_enabled - computed: false, optional: true, required: false
-  private _resourceLogEnabled?: boolean | cdktf.IResolvable; 
+  private _resourceLogEnabled?: boolean | cdktn.IResolvable; 
   public get resourceLogEnabled() {
     return this.getBooleanAttribute('resource_log_enabled');
   }
-  public set resourceLogEnabled(value: boolean | cdktf.IResolvable) {
+  public set resourceLogEnabled(value: boolean | cdktn.IResolvable) {
     this._resourceLogEnabled = value;
   }
   public resetResourceLogEnabled() {
@@ -385,11 +385,11 @@ export class DatadogMonitorTagRuleLogOutputReference extends cdktf.ComplexObject
   }
 
   // subscription_log_enabled - computed: false, optional: true, required: false
-  private _subscriptionLogEnabled?: boolean | cdktf.IResolvable; 
+  private _subscriptionLogEnabled?: boolean | cdktn.IResolvable; 
   public get subscriptionLogEnabled() {
     return this.getBooleanAttribute('subscription_log_enabled');
   }
-  public set subscriptionLogEnabled(value: boolean | cdktf.IResolvable) {
+  public set subscriptionLogEnabled(value: boolean | cdktn.IResolvable) {
     this._subscriptionLogEnabled = value;
   }
   public resetSubscriptionLogEnabled() {
@@ -405,7 +405,7 @@ export class DatadogMonitorTagRuleLogOutputReference extends cdktf.ComplexObject
   public get filter() {
     return this._filter;
   }
-  public putFilter(value: DatadogMonitorTagRuleLogFilter[] | cdktf.IResolvable) {
+  public putFilter(value: DatadogMonitorTagRuleLogFilter[] | cdktn.IResolvable) {
     this._filter.internalValue = value;
   }
   public resetFilter() {
@@ -417,15 +417,15 @@ export class DatadogMonitorTagRuleLogOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class DatadogMonitorTagRuleLogList extends cdktf.ComplexList {
-  public internalValue? : DatadogMonitorTagRuleLog[] | cdktf.IResolvable
+export class DatadogMonitorTagRuleLogList extends cdktn.ComplexList {
+  public internalValue? : DatadogMonitorTagRuleLog[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -451,39 +451,39 @@ export interface DatadogMonitorTagRuleMetricFilter {
   readonly value: string;
 }
 
-export function datadogMonitorTagRuleMetricFilterToTerraform(struct?: DatadogMonitorTagRuleMetricFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function datadogMonitorTagRuleMetricFilterToTerraform(struct?: DatadogMonitorTagRuleMetricFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action: cdktf.stringToTerraform(struct!.action),
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    action: cdktn.stringToTerraform(struct!.action),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function datadogMonitorTagRuleMetricFilterToHclTerraform(struct?: DatadogMonitorTagRuleMetricFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function datadogMonitorTagRuleMetricFilterToHclTerraform(struct?: DatadogMonitorTagRuleMetricFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action: {
-      value: cdktf.stringToHclTerraform(struct!.action),
+      value: cdktn.stringToHclTerraform(struct!.action),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -494,9 +494,9 @@ export function datadogMonitorTagRuleMetricFilterToHclTerraform(struct?: Datadog
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatadogMonitorTagRuleMetricFilterOutputReference extends cdktf.ComplexObject {
+export class DatadogMonitorTagRuleMetricFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -504,11 +504,11 @@ export class DatadogMonitorTagRuleMetricFilterOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DatadogMonitorTagRuleMetricFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): DatadogMonitorTagRuleMetricFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -529,7 +529,7 @@ export class DatadogMonitorTagRuleMetricFilterOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatadogMonitorTagRuleMetricFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatadogMonitorTagRuleMetricFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -537,7 +537,7 @@ export class DatadogMonitorTagRuleMetricFilterOutputReference extends cdktf.Comp
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -590,15 +590,15 @@ export class DatadogMonitorTagRuleMetricFilterOutputReference extends cdktf.Comp
   }
 }
 
-export class DatadogMonitorTagRuleMetricFilterList extends cdktf.ComplexList {
-  public internalValue? : DatadogMonitorTagRuleMetricFilter[] | cdktf.IResolvable
+export class DatadogMonitorTagRuleMetricFilterList extends cdktn.ComplexList {
+  public internalValue? : DatadogMonitorTagRuleMetricFilter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -615,28 +615,28 @@ export interface DatadogMonitorTagRuleMetric {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/datadog_monitor_tag_rule#filter DatadogMonitorTagRule#filter}
   */
-  readonly filter?: DatadogMonitorTagRuleMetricFilter[] | cdktf.IResolvable;
+  readonly filter?: DatadogMonitorTagRuleMetricFilter[] | cdktn.IResolvable;
 }
 
-export function datadogMonitorTagRuleMetricToTerraform(struct?: DatadogMonitorTagRuleMetric | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function datadogMonitorTagRuleMetricToTerraform(struct?: DatadogMonitorTagRuleMetric | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    filter: cdktf.listMapper(datadogMonitorTagRuleMetricFilterToTerraform, true)(struct!.filter),
+    filter: cdktn.listMapper(datadogMonitorTagRuleMetricFilterToTerraform, true)(struct!.filter),
   }
 }
 
 
-export function datadogMonitorTagRuleMetricToHclTerraform(struct?: DatadogMonitorTagRuleMetric | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function datadogMonitorTagRuleMetricToHclTerraform(struct?: DatadogMonitorTagRuleMetric | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     filter: {
-      value: cdktf.listMapperHcl(datadogMonitorTagRuleMetricFilterToHclTerraform, true)(struct!.filter),
+      value: cdktn.listMapperHcl(datadogMonitorTagRuleMetricFilterToHclTerraform, true)(struct!.filter),
       isBlock: true,
       type: "list",
       storageClassType: "DatadogMonitorTagRuleMetricFilterList",
@@ -647,9 +647,9 @@ export function datadogMonitorTagRuleMetricToHclTerraform(struct?: DatadogMonito
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatadogMonitorTagRuleMetricOutputReference extends cdktf.ComplexObject {
+export class DatadogMonitorTagRuleMetricOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -657,11 +657,11 @@ export class DatadogMonitorTagRuleMetricOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DatadogMonitorTagRuleMetric | cdktf.IResolvable | undefined {
+  public get internalValue(): DatadogMonitorTagRuleMetric | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -674,13 +674,13 @@ export class DatadogMonitorTagRuleMetricOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatadogMonitorTagRuleMetric | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatadogMonitorTagRuleMetric | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._filter.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -696,7 +696,7 @@ export class DatadogMonitorTagRuleMetricOutputReference extends cdktf.ComplexObj
   public get filter() {
     return this._filter;
   }
-  public putFilter(value: DatadogMonitorTagRuleMetricFilter[] | cdktf.IResolvable) {
+  public putFilter(value: DatadogMonitorTagRuleMetricFilter[] | cdktn.IResolvable) {
     this._filter.internalValue = value;
   }
   public resetFilter() {
@@ -708,15 +708,15 @@ export class DatadogMonitorTagRuleMetricOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class DatadogMonitorTagRuleMetricList extends cdktf.ComplexList {
-  public internalValue? : DatadogMonitorTagRuleMetric[] | cdktf.IResolvable
+export class DatadogMonitorTagRuleMetricList extends cdktn.ComplexList {
+  public internalValue? : DatadogMonitorTagRuleMetric[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -746,46 +746,46 @@ export interface DatadogMonitorTagRuleTimeouts {
   readonly update?: string;
 }
 
-export function datadogMonitorTagRuleTimeoutsToTerraform(struct?: DatadogMonitorTagRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function datadogMonitorTagRuleTimeoutsToTerraform(struct?: DatadogMonitorTagRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function datadogMonitorTagRuleTimeoutsToHclTerraform(struct?: DatadogMonitorTagRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function datadogMonitorTagRuleTimeoutsToHclTerraform(struct?: DatadogMonitorTagRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -796,19 +796,19 @@ export function datadogMonitorTagRuleTimeoutsToHclTerraform(struct?: DatadogMoni
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatadogMonitorTagRuleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DatadogMonitorTagRuleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DatadogMonitorTagRuleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DatadogMonitorTagRuleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -833,7 +833,7 @@ export class DatadogMonitorTagRuleTimeoutsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatadogMonitorTagRuleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatadogMonitorTagRuleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -842,7 +842,7 @@ export class DatadogMonitorTagRuleTimeoutsOutputReference extends cdktf.ComplexO
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -924,7 +924,7 @@ export class DatadogMonitorTagRuleTimeoutsOutputReference extends cdktf.ComplexO
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/datadog_monitor_tag_rule azurerm_datadog_monitor_tag_rule}
 */
-export class DatadogMonitorTagRule extends cdktf.TerraformResource {
+export class DatadogMonitorTagRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -935,14 +935,14 @@ export class DatadogMonitorTagRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DatadogMonitorTagRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DatadogMonitorTagRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatadogMonitorTagRule to import
   * @param importFromId The id of the existing DatadogMonitorTagRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/datadog_monitor_tag_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatadogMonitorTagRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_datadog_monitor_tag_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_datadog_monitor_tag_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -1034,7 +1034,7 @@ export class DatadogMonitorTagRule extends cdktf.TerraformResource {
   public get log() {
     return this._log;
   }
-  public putLog(value: DatadogMonitorTagRuleLog[] | cdktf.IResolvable) {
+  public putLog(value: DatadogMonitorTagRuleLog[] | cdktn.IResolvable) {
     this._log.internalValue = value;
   }
   public resetLog() {
@@ -1050,7 +1050,7 @@ export class DatadogMonitorTagRule extends cdktf.TerraformResource {
   public get metric() {
     return this._metric;
   }
-  public putMetric(value: DatadogMonitorTagRuleMetric[] | cdktf.IResolvable) {
+  public putMetric(value: DatadogMonitorTagRuleMetric[] | cdktn.IResolvable) {
     this._metric.internalValue = value;
   }
   public resetMetric() {
@@ -1083,11 +1083,11 @@ export class DatadogMonitorTagRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      datadog_monitor_id: cdktf.stringToTerraform(this._datadogMonitorId),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      log: cdktf.listMapper(datadogMonitorTagRuleLogToTerraform, true)(this._log.internalValue),
-      metric: cdktf.listMapper(datadogMonitorTagRuleMetricToTerraform, true)(this._metric.internalValue),
+      datadog_monitor_id: cdktn.stringToTerraform(this._datadogMonitorId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      log: cdktn.listMapper(datadogMonitorTagRuleLogToTerraform, true)(this._log.internalValue),
+      metric: cdktn.listMapper(datadogMonitorTagRuleMetricToTerraform, true)(this._metric.internalValue),
       timeouts: datadogMonitorTagRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1095,31 +1095,31 @@ export class DatadogMonitorTagRule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       datadog_monitor_id: {
-        value: cdktf.stringToHclTerraform(this._datadogMonitorId),
+        value: cdktn.stringToHclTerraform(this._datadogMonitorId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       log: {
-        value: cdktf.listMapperHcl(datadogMonitorTagRuleLogToHclTerraform, true)(this._log.internalValue),
+        value: cdktn.listMapperHcl(datadogMonitorTagRuleLogToHclTerraform, true)(this._log.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DatadogMonitorTagRuleLogList",
       },
       metric: {
-        value: cdktf.listMapperHcl(datadogMonitorTagRuleMetricToHclTerraform, true)(this._metric.internalValue),
+        value: cdktn.listMapperHcl(datadogMonitorTagRuleMetricToHclTerraform, true)(this._metric.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DatadogMonitorTagRuleMetricList",

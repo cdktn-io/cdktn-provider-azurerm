@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AutomationHybridRunbookWorkerConfig extends cdktf.TerraformMetaArguments {
+export interface AutomationHybridRunbookWorkerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_hybrid_runbook_worker#automation_account_name AutomationHybridRunbookWorker#automation_account_name}
   */
@@ -61,39 +61,39 @@ export interface AutomationHybridRunbookWorkerTimeouts {
   readonly read?: string;
 }
 
-export function automationHybridRunbookWorkerTimeoutsToTerraform(struct?: AutomationHybridRunbookWorkerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function automationHybridRunbookWorkerTimeoutsToTerraform(struct?: AutomationHybridRunbookWorkerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function automationHybridRunbookWorkerTimeoutsToHclTerraform(struct?: AutomationHybridRunbookWorkerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function automationHybridRunbookWorkerTimeoutsToHclTerraform(struct?: AutomationHybridRunbookWorkerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -104,19 +104,19 @@ export function automationHybridRunbookWorkerTimeoutsToHclTerraform(struct?: Aut
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AutomationHybridRunbookWorkerTimeoutsOutputReference extends cdktf.ComplexObject {
+export class AutomationHybridRunbookWorkerTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AutomationHybridRunbookWorkerTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AutomationHybridRunbookWorkerTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -137,7 +137,7 @@ export class AutomationHybridRunbookWorkerTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AutomationHybridRunbookWorkerTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AutomationHybridRunbookWorkerTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -145,7 +145,7 @@ export class AutomationHybridRunbookWorkerTimeoutsOutputReference extends cdktf.
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -210,7 +210,7 @@ export class AutomationHybridRunbookWorkerTimeoutsOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_hybrid_runbook_worker azurerm_automation_hybrid_runbook_worker}
 */
-export class AutomationHybridRunbookWorker extends cdktf.TerraformResource {
+export class AutomationHybridRunbookWorker extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -221,14 +221,14 @@ export class AutomationHybridRunbookWorker extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AutomationHybridRunbookWorker resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AutomationHybridRunbookWorker resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AutomationHybridRunbookWorker to import
   * @param importFromId The id of the existing AutomationHybridRunbookWorker that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/automation_hybrid_runbook_worker#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AutomationHybridRunbookWorker to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_automation_hybrid_runbook_worker", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_automation_hybrid_runbook_worker", importId: importFromId, provider });
       }
 
   // ===========
@@ -399,12 +399,12 @@ export class AutomationHybridRunbookWorker extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      automation_account_name: cdktf.stringToTerraform(this._automationAccountName),
-      id: cdktf.stringToTerraform(this._id),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      vm_resource_id: cdktf.stringToTerraform(this._vmResourceId),
-      worker_group_name: cdktf.stringToTerraform(this._workerGroupName),
-      worker_id: cdktf.stringToTerraform(this._workerId),
+      automation_account_name: cdktn.stringToTerraform(this._automationAccountName),
+      id: cdktn.stringToTerraform(this._id),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      vm_resource_id: cdktn.stringToTerraform(this._vmResourceId),
+      worker_group_name: cdktn.stringToTerraform(this._workerGroupName),
+      worker_id: cdktn.stringToTerraform(this._workerId),
       timeouts: automationHybridRunbookWorkerTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -412,37 +412,37 @@ export class AutomationHybridRunbookWorker extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       automation_account_name: {
-        value: cdktf.stringToHclTerraform(this._automationAccountName),
+        value: cdktn.stringToHclTerraform(this._automationAccountName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vm_resource_id: {
-        value: cdktf.stringToHclTerraform(this._vmResourceId),
+        value: cdktn.stringToHclTerraform(this._vmResourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       worker_group_name: {
-        value: cdktf.stringToHclTerraform(this._workerGroupName),
+        value: cdktn.stringToHclTerraform(this._workerGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       worker_id: {
-        value: cdktf.stringToHclTerraform(this._workerId),
+        value: cdktn.stringToHclTerraform(this._workerId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

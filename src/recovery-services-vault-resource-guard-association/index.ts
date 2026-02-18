@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RecoveryServicesVaultResourceGuardAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface RecoveryServicesVaultResourceGuardAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/recovery_services_vault_resource_guard_association#id RecoveryServicesVaultResourceGuardAssociation#id}
   *
@@ -49,39 +49,39 @@ export interface RecoveryServicesVaultResourceGuardAssociationTimeouts {
   readonly read?: string;
 }
 
-export function recoveryServicesVaultResourceGuardAssociationTimeoutsToTerraform(struct?: RecoveryServicesVaultResourceGuardAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function recoveryServicesVaultResourceGuardAssociationTimeoutsToTerraform(struct?: RecoveryServicesVaultResourceGuardAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function recoveryServicesVaultResourceGuardAssociationTimeoutsToHclTerraform(struct?: RecoveryServicesVaultResourceGuardAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function recoveryServicesVaultResourceGuardAssociationTimeoutsToHclTerraform(struct?: RecoveryServicesVaultResourceGuardAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -92,19 +92,19 @@ export function recoveryServicesVaultResourceGuardAssociationTimeoutsToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RecoveryServicesVaultResourceGuardAssociationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class RecoveryServicesVaultResourceGuardAssociationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): RecoveryServicesVaultResourceGuardAssociationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): RecoveryServicesVaultResourceGuardAssociationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -125,7 +125,7 @@ export class RecoveryServicesVaultResourceGuardAssociationTimeoutsOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RecoveryServicesVaultResourceGuardAssociationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RecoveryServicesVaultResourceGuardAssociationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -133,7 +133,7 @@ export class RecoveryServicesVaultResourceGuardAssociationTimeoutsOutputReferenc
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -198,7 +198,7 @@ export class RecoveryServicesVaultResourceGuardAssociationTimeoutsOutputReferenc
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/recovery_services_vault_resource_guard_association azurerm_recovery_services_vault_resource_guard_association}
 */
-export class RecoveryServicesVaultResourceGuardAssociation extends cdktf.TerraformResource {
+export class RecoveryServicesVaultResourceGuardAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -209,14 +209,14 @@ export class RecoveryServicesVaultResourceGuardAssociation extends cdktf.Terrafo
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RecoveryServicesVaultResourceGuardAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RecoveryServicesVaultResourceGuardAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RecoveryServicesVaultResourceGuardAssociation to import
   * @param importFromId The id of the existing RecoveryServicesVaultResourceGuardAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/recovery_services_vault_resource_guard_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RecoveryServicesVaultResourceGuardAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_recovery_services_vault_resource_guard_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_recovery_services_vault_resource_guard_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -320,9 +320,9 @@ export class RecoveryServicesVaultResourceGuardAssociation extends cdktf.Terrafo
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      resource_guard_id: cdktf.stringToTerraform(this._resourceGuardId),
-      vault_id: cdktf.stringToTerraform(this._vaultId),
+      id: cdktn.stringToTerraform(this._id),
+      resource_guard_id: cdktn.stringToTerraform(this._resourceGuardId),
+      vault_id: cdktn.stringToTerraform(this._vaultId),
       timeouts: recoveryServicesVaultResourceGuardAssociationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -330,19 +330,19 @@ export class RecoveryServicesVaultResourceGuardAssociation extends cdktf.Terrafo
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_guard_id: {
-        value: cdktf.stringToHclTerraform(this._resourceGuardId),
+        value: cdktn.stringToHclTerraform(this._resourceGuardId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vault_id: {
-        value: cdktf.stringToHclTerraform(this._vaultId),
+        value: cdktn.stringToHclTerraform(this._vaultId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApplicationInsightsWorkbookConfig extends cdktf.TerraformMetaArguments {
+export interface ApplicationInsightsWorkbookConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_insights_workbook#category ApplicationInsightsWorkbook#category}
   */
@@ -84,31 +84,31 @@ export interface ApplicationInsightsWorkbookIdentity {
 }
 
 export function applicationInsightsWorkbookIdentityToTerraform(struct?: ApplicationInsightsWorkbookIdentityOutputReference | ApplicationInsightsWorkbookIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function applicationInsightsWorkbookIdentityToHclTerraform(struct?: ApplicationInsightsWorkbookIdentityOutputReference | ApplicationInsightsWorkbookIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -119,14 +119,14 @@ export function applicationInsightsWorkbookIdentityToHclTerraform(struct?: Appli
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationInsightsWorkbookIdentityOutputReference extends cdktf.ComplexObject {
+export class ApplicationInsightsWorkbookIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -160,7 +160,7 @@ export class ApplicationInsightsWorkbookIdentityOutputReference extends cdktf.Co
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -215,46 +215,46 @@ export interface ApplicationInsightsWorkbookTimeouts {
   readonly update?: string;
 }
 
-export function applicationInsightsWorkbookTimeoutsToTerraform(struct?: ApplicationInsightsWorkbookTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationInsightsWorkbookTimeoutsToTerraform(struct?: ApplicationInsightsWorkbookTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function applicationInsightsWorkbookTimeoutsToHclTerraform(struct?: ApplicationInsightsWorkbookTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function applicationInsightsWorkbookTimeoutsToHclTerraform(struct?: ApplicationInsightsWorkbookTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -265,19 +265,19 @@ export function applicationInsightsWorkbookTimeoutsToHclTerraform(struct?: Appli
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApplicationInsightsWorkbookTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApplicationInsightsWorkbookTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApplicationInsightsWorkbookTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApplicationInsightsWorkbookTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -302,7 +302,7 @@ export class ApplicationInsightsWorkbookTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApplicationInsightsWorkbookTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApplicationInsightsWorkbookTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -311,7 +311,7 @@ export class ApplicationInsightsWorkbookTimeoutsOutputReference extends cdktf.Co
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -393,7 +393,7 @@ export class ApplicationInsightsWorkbookTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_insights_workbook azurerm_application_insights_workbook}
 */
-export class ApplicationInsightsWorkbook extends cdktf.TerraformResource {
+export class ApplicationInsightsWorkbook extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -404,14 +404,14 @@ export class ApplicationInsightsWorkbook extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApplicationInsightsWorkbook resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApplicationInsightsWorkbook resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApplicationInsightsWorkbook to import
   * @param importFromId The id of the existing ApplicationInsightsWorkbook that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/application_insights_workbook#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApplicationInsightsWorkbook to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_application_insights_workbook", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_application_insights_workbook", importId: importFromId, provider });
       }
 
   // ===========
@@ -659,17 +659,17 @@ export class ApplicationInsightsWorkbook extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      category: cdktf.stringToTerraform(this._category),
-      data_json: cdktf.stringToTerraform(this._dataJson),
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      source_id: cdktf.stringToTerraform(this._sourceId),
-      storage_container_id: cdktf.stringToTerraform(this._storageContainerId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      category: cdktn.stringToTerraform(this._category),
+      data_json: cdktn.stringToTerraform(this._dataJson),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      source_id: cdktn.stringToTerraform(this._sourceId),
+      storage_container_id: cdktn.stringToTerraform(this._storageContainerId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       identity: applicationInsightsWorkbookIdentityToTerraform(this._identity.internalValue),
       timeouts: applicationInsightsWorkbookTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -678,67 +678,67 @@ export class ApplicationInsightsWorkbook extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       category: {
-        value: cdktf.stringToHclTerraform(this._category),
+        value: cdktn.stringToHclTerraform(this._category),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_json: {
-        value: cdktf.stringToHclTerraform(this._dataJson),
+        value: cdktn.stringToHclTerraform(this._dataJson),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_id: {
-        value: cdktf.stringToHclTerraform(this._sourceId),
+        value: cdktn.stringToHclTerraform(this._sourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_container_id: {
-        value: cdktf.stringToHclTerraform(this._storageContainerId),
+        value: cdktn.stringToHclTerraform(this._storageContainerId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

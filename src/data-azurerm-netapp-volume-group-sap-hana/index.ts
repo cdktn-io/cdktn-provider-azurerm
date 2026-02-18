@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermNetappVolumeGroupSapHanaConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermNetappVolumeGroupSapHanaConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/netapp_volume_group_sap_hana#account_name DataAzurermNetappVolumeGroupSapHana#account_name}
   */
@@ -42,8 +42,8 @@ export interface DataAzurermNetappVolumeGroupSapHanaVolumeDataProtectionReplicat
 }
 
 export function dataAzurermNetappVolumeGroupSapHanaVolumeDataProtectionReplicationToTerraform(struct?: DataAzurermNetappVolumeGroupSapHanaVolumeDataProtectionReplication): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -52,8 +52,8 @@ export function dataAzurermNetappVolumeGroupSapHanaVolumeDataProtectionReplicati
 
 
 export function dataAzurermNetappVolumeGroupSapHanaVolumeDataProtectionReplicationToHclTerraform(struct?: DataAzurermNetappVolumeGroupSapHanaVolumeDataProtectionReplication): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -61,7 +61,7 @@ export function dataAzurermNetappVolumeGroupSapHanaVolumeDataProtectionReplicati
   return attrs;
 }
 
-export class DataAzurermNetappVolumeGroupSapHanaVolumeDataProtectionReplicationOutputReference extends cdktf.ComplexObject {
+export class DataAzurermNetappVolumeGroupSapHanaVolumeDataProtectionReplicationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -70,7 +70,7 @@ export class DataAzurermNetappVolumeGroupSapHanaVolumeDataProtectionReplicationO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -110,14 +110,14 @@ export class DataAzurermNetappVolumeGroupSapHanaVolumeDataProtectionReplicationO
   }
 }
 
-export class DataAzurermNetappVolumeGroupSapHanaVolumeDataProtectionReplicationList extends cdktf.ComplexList {
+export class DataAzurermNetappVolumeGroupSapHanaVolumeDataProtectionReplicationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -132,8 +132,8 @@ export interface DataAzurermNetappVolumeGroupSapHanaVolumeDataProtectionSnapshot
 }
 
 export function dataAzurermNetappVolumeGroupSapHanaVolumeDataProtectionSnapshotPolicyToTerraform(struct?: DataAzurermNetappVolumeGroupSapHanaVolumeDataProtectionSnapshotPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -142,8 +142,8 @@ export function dataAzurermNetappVolumeGroupSapHanaVolumeDataProtectionSnapshotP
 
 
 export function dataAzurermNetappVolumeGroupSapHanaVolumeDataProtectionSnapshotPolicyToHclTerraform(struct?: DataAzurermNetappVolumeGroupSapHanaVolumeDataProtectionSnapshotPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -151,7 +151,7 @@ export function dataAzurermNetappVolumeGroupSapHanaVolumeDataProtectionSnapshotP
   return attrs;
 }
 
-export class DataAzurermNetappVolumeGroupSapHanaVolumeDataProtectionSnapshotPolicyOutputReference extends cdktf.ComplexObject {
+export class DataAzurermNetappVolumeGroupSapHanaVolumeDataProtectionSnapshotPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -160,7 +160,7 @@ export class DataAzurermNetappVolumeGroupSapHanaVolumeDataProtectionSnapshotPoli
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -185,14 +185,14 @@ export class DataAzurermNetappVolumeGroupSapHanaVolumeDataProtectionSnapshotPoli
   }
 }
 
-export class DataAzurermNetappVolumeGroupSapHanaVolumeDataProtectionSnapshotPolicyList extends cdktf.ComplexList {
+export class DataAzurermNetappVolumeGroupSapHanaVolumeDataProtectionSnapshotPolicyList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -207,8 +207,8 @@ export interface DataAzurermNetappVolumeGroupSapHanaVolumeExportPolicyRule {
 }
 
 export function dataAzurermNetappVolumeGroupSapHanaVolumeExportPolicyRuleToTerraform(struct?: DataAzurermNetappVolumeGroupSapHanaVolumeExportPolicyRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -217,8 +217,8 @@ export function dataAzurermNetappVolumeGroupSapHanaVolumeExportPolicyRuleToTerra
 
 
 export function dataAzurermNetappVolumeGroupSapHanaVolumeExportPolicyRuleToHclTerraform(struct?: DataAzurermNetappVolumeGroupSapHanaVolumeExportPolicyRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -226,7 +226,7 @@ export function dataAzurermNetappVolumeGroupSapHanaVolumeExportPolicyRuleToHclTe
   return attrs;
 }
 
-export class DataAzurermNetappVolumeGroupSapHanaVolumeExportPolicyRuleOutputReference extends cdktf.ComplexObject {
+export class DataAzurermNetappVolumeGroupSapHanaVolumeExportPolicyRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -235,7 +235,7 @@ export class DataAzurermNetappVolumeGroupSapHanaVolumeExportPolicyRuleOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -290,14 +290,14 @@ export class DataAzurermNetappVolumeGroupSapHanaVolumeExportPolicyRuleOutputRefe
   }
 }
 
-export class DataAzurermNetappVolumeGroupSapHanaVolumeExportPolicyRuleList extends cdktf.ComplexList {
+export class DataAzurermNetappVolumeGroupSapHanaVolumeExportPolicyRuleList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -312,8 +312,8 @@ export interface DataAzurermNetappVolumeGroupSapHanaVolume {
 }
 
 export function dataAzurermNetappVolumeGroupSapHanaVolumeToTerraform(struct?: DataAzurermNetappVolumeGroupSapHanaVolume): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -322,8 +322,8 @@ export function dataAzurermNetappVolumeGroupSapHanaVolumeToTerraform(struct?: Da
 
 
 export function dataAzurermNetappVolumeGroupSapHanaVolumeToHclTerraform(struct?: DataAzurermNetappVolumeGroupSapHanaVolume): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -331,7 +331,7 @@ export function dataAzurermNetappVolumeGroupSapHanaVolumeToHclTerraform(struct?:
   return attrs;
 }
 
-export class DataAzurermNetappVolumeGroupSapHanaVolumeOutputReference extends cdktf.ComplexObject {
+export class DataAzurermNetappVolumeGroupSapHanaVolumeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -340,7 +340,7 @@ export class DataAzurermNetappVolumeGroupSapHanaVolumeOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -448,7 +448,7 @@ export class DataAzurermNetappVolumeGroupSapHanaVolumeOutputReference extends cd
   }
 
   // tags - computed: true, optional: false, required: false
-  private _tags = new cdktf.StringMap(this, "tags");
+  private _tags = new cdktn.StringMap(this, "tags");
   public get tags() {
     return this._tags;
   }
@@ -474,14 +474,14 @@ export class DataAzurermNetappVolumeGroupSapHanaVolumeOutputReference extends cd
   }
 }
 
-export class DataAzurermNetappVolumeGroupSapHanaVolumeList extends cdktf.ComplexList {
+export class DataAzurermNetappVolumeGroupSapHanaVolumeList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -499,25 +499,25 @@ export interface DataAzurermNetappVolumeGroupSapHanaTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermNetappVolumeGroupSapHanaTimeoutsToTerraform(struct?: DataAzurermNetappVolumeGroupSapHanaTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermNetappVolumeGroupSapHanaTimeoutsToTerraform(struct?: DataAzurermNetappVolumeGroupSapHanaTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermNetappVolumeGroupSapHanaTimeoutsToHclTerraform(struct?: DataAzurermNetappVolumeGroupSapHanaTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermNetappVolumeGroupSapHanaTimeoutsToHclTerraform(struct?: DataAzurermNetappVolumeGroupSapHanaTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -528,19 +528,19 @@ export function dataAzurermNetappVolumeGroupSapHanaTimeoutsToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermNetappVolumeGroupSapHanaTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermNetappVolumeGroupSapHanaTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermNetappVolumeGroupSapHanaTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermNetappVolumeGroupSapHanaTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -553,13 +553,13 @@ export class DataAzurermNetappVolumeGroupSapHanaTimeoutsOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermNetappVolumeGroupSapHanaTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermNetappVolumeGroupSapHanaTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -590,7 +590,7 @@ export class DataAzurermNetappVolumeGroupSapHanaTimeoutsOutputReference extends 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/netapp_volume_group_sap_hana azurerm_netapp_volume_group_sap_hana}
 */
-export class DataAzurermNetappVolumeGroupSapHana extends cdktf.TerraformDataSource {
+export class DataAzurermNetappVolumeGroupSapHana extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -601,14 +601,14 @@ export class DataAzurermNetappVolumeGroupSapHana extends cdktf.TerraformDataSour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermNetappVolumeGroupSapHana resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermNetappVolumeGroupSapHana resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermNetappVolumeGroupSapHana to import
   * @param importFromId The id of the existing DataAzurermNetappVolumeGroupSapHana that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/netapp_volume_group_sap_hana#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermNetappVolumeGroupSapHana to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_netapp_volume_group_sap_hana", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_netapp_volume_group_sap_hana", importId: importFromId, provider });
       }
 
   // ===========
@@ -747,10 +747,10 @@ export class DataAzurermNetappVolumeGroupSapHana extends cdktf.TerraformDataSour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_name: cdktf.stringToTerraform(this._accountName),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
+      account_name: cdktn.stringToTerraform(this._accountName),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
       timeouts: dataAzurermNetappVolumeGroupSapHanaTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -758,25 +758,25 @@ export class DataAzurermNetappVolumeGroupSapHana extends cdktf.TerraformDataSour
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_name: {
-        value: cdktf.stringToHclTerraform(this._accountName),
+        value: cdktn.stringToHclTerraform(this._accountName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

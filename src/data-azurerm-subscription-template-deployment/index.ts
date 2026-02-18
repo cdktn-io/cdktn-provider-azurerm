@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermSubscriptionTemplateDeploymentConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermSubscriptionTemplateDeploymentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/subscription_template_deployment#id DataAzurermSubscriptionTemplateDeployment#id}
   *
@@ -37,25 +37,25 @@ export interface DataAzurermSubscriptionTemplateDeploymentTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermSubscriptionTemplateDeploymentTimeoutsToTerraform(struct?: DataAzurermSubscriptionTemplateDeploymentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermSubscriptionTemplateDeploymentTimeoutsToTerraform(struct?: DataAzurermSubscriptionTemplateDeploymentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermSubscriptionTemplateDeploymentTimeoutsToHclTerraform(struct?: DataAzurermSubscriptionTemplateDeploymentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermSubscriptionTemplateDeploymentTimeoutsToHclTerraform(struct?: DataAzurermSubscriptionTemplateDeploymentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -66,19 +66,19 @@ export function dataAzurermSubscriptionTemplateDeploymentTimeoutsToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermSubscriptionTemplateDeploymentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermSubscriptionTemplateDeploymentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermSubscriptionTemplateDeploymentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermSubscriptionTemplateDeploymentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -91,13 +91,13 @@ export class DataAzurermSubscriptionTemplateDeploymentTimeoutsOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermSubscriptionTemplateDeploymentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermSubscriptionTemplateDeploymentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -128,7 +128,7 @@ export class DataAzurermSubscriptionTemplateDeploymentTimeoutsOutputReference ex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/subscription_template_deployment azurerm_subscription_template_deployment}
 */
-export class DataAzurermSubscriptionTemplateDeployment extends cdktf.TerraformDataSource {
+export class DataAzurermSubscriptionTemplateDeployment extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -139,14 +139,14 @@ export class DataAzurermSubscriptionTemplateDeployment extends cdktf.TerraformDa
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermSubscriptionTemplateDeployment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermSubscriptionTemplateDeployment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermSubscriptionTemplateDeployment to import
   * @param importFromId The id of the existing DataAzurermSubscriptionTemplateDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/subscription_template_deployment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermSubscriptionTemplateDeployment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_subscription_template_deployment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_subscription_template_deployment", importId: importFromId, provider });
       }
 
   // ===========
@@ -241,8 +241,8 @@ export class DataAzurermSubscriptionTemplateDeployment extends cdktf.TerraformDa
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
       timeouts: dataAzurermSubscriptionTemplateDeploymentTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -250,13 +250,13 @@ export class DataAzurermSubscriptionTemplateDeployment extends cdktf.TerraformDa
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

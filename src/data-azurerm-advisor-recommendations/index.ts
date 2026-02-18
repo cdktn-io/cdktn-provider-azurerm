@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermAdvisorRecommendationsConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermAdvisorRecommendationsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/advisor_recommendations#filter_by_category DataAzurermAdvisorRecommendations#filter_by_category}
   */
@@ -38,8 +38,8 @@ export interface DataAzurermAdvisorRecommendationsRecommendations {
 }
 
 export function dataAzurermAdvisorRecommendationsRecommendationsToTerraform(struct?: DataAzurermAdvisorRecommendationsRecommendations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -48,8 +48,8 @@ export function dataAzurermAdvisorRecommendationsRecommendationsToTerraform(stru
 
 
 export function dataAzurermAdvisorRecommendationsRecommendationsToHclTerraform(struct?: DataAzurermAdvisorRecommendationsRecommendations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -57,7 +57,7 @@ export function dataAzurermAdvisorRecommendationsRecommendationsToHclTerraform(s
   return attrs;
 }
 
-export class DataAzurermAdvisorRecommendationsRecommendationsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermAdvisorRecommendationsRecommendationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -66,7 +66,7 @@ export class DataAzurermAdvisorRecommendationsRecommendationsOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -122,7 +122,7 @@ export class DataAzurermAdvisorRecommendationsRecommendationsOutputReference ext
 
   // suppression_names - computed: true, optional: false, required: false
   public get suppressionNames() {
-    return cdktf.Fn.tolist(this.getListAttribute('suppression_names'));
+    return cdktn.Fn.tolist(this.getListAttribute('suppression_names'));
   }
 
   // updated_time - computed: true, optional: false, required: false
@@ -131,14 +131,14 @@ export class DataAzurermAdvisorRecommendationsRecommendationsOutputReference ext
   }
 }
 
-export class DataAzurermAdvisorRecommendationsRecommendationsList extends cdktf.ComplexList {
+export class DataAzurermAdvisorRecommendationsRecommendationsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -156,25 +156,25 @@ export interface DataAzurermAdvisorRecommendationsTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermAdvisorRecommendationsTimeoutsToTerraform(struct?: DataAzurermAdvisorRecommendationsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermAdvisorRecommendationsTimeoutsToTerraform(struct?: DataAzurermAdvisorRecommendationsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermAdvisorRecommendationsTimeoutsToHclTerraform(struct?: DataAzurermAdvisorRecommendationsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermAdvisorRecommendationsTimeoutsToHclTerraform(struct?: DataAzurermAdvisorRecommendationsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -185,19 +185,19 @@ export function dataAzurermAdvisorRecommendationsTimeoutsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermAdvisorRecommendationsTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermAdvisorRecommendationsTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermAdvisorRecommendationsTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermAdvisorRecommendationsTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -210,13 +210,13 @@ export class DataAzurermAdvisorRecommendationsTimeoutsOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermAdvisorRecommendationsTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermAdvisorRecommendationsTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -247,7 +247,7 @@ export class DataAzurermAdvisorRecommendationsTimeoutsOutputReference extends cd
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/advisor_recommendations azurerm_advisor_recommendations}
 */
-export class DataAzurermAdvisorRecommendations extends cdktf.TerraformDataSource {
+export class DataAzurermAdvisorRecommendations extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -258,14 +258,14 @@ export class DataAzurermAdvisorRecommendations extends cdktf.TerraformDataSource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermAdvisorRecommendations resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermAdvisorRecommendations resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermAdvisorRecommendations to import
   * @param importFromId The id of the existing DataAzurermAdvisorRecommendations that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/advisor_recommendations#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermAdvisorRecommendations to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_advisor_recommendations", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_advisor_recommendations", importId: importFromId, provider });
       }
 
   // ===========
@@ -308,7 +308,7 @@ export class DataAzurermAdvisorRecommendations extends cdktf.TerraformDataSource
   // filter_by_category - computed: false, optional: true, required: false
   private _filterByCategory?: string[]; 
   public get filterByCategory() {
-    return cdktf.Fn.tolist(this.getListAttribute('filter_by_category'));
+    return cdktn.Fn.tolist(this.getListAttribute('filter_by_category'));
   }
   public set filterByCategory(value: string[]) {
     this._filterByCategory = value;
@@ -324,7 +324,7 @@ export class DataAzurermAdvisorRecommendations extends cdktf.TerraformDataSource
   // filter_by_resource_groups - computed: false, optional: true, required: false
   private _filterByResourceGroups?: string[]; 
   public get filterByResourceGroups() {
-    return cdktf.Fn.tolist(this.getListAttribute('filter_by_resource_groups'));
+    return cdktn.Fn.tolist(this.getListAttribute('filter_by_resource_groups'));
   }
   public set filterByResourceGroups(value: string[]) {
     this._filterByResourceGroups = value;
@@ -381,9 +381,9 @@ export class DataAzurermAdvisorRecommendations extends cdktf.TerraformDataSource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      filter_by_category: cdktf.listMapper(cdktf.stringToTerraform, false)(this._filterByCategory),
-      filter_by_resource_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._filterByResourceGroups),
-      id: cdktf.stringToTerraform(this._id),
+      filter_by_category: cdktn.listMapper(cdktn.stringToTerraform, false)(this._filterByCategory),
+      filter_by_resource_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(this._filterByResourceGroups),
+      id: cdktn.stringToTerraform(this._id),
       timeouts: dataAzurermAdvisorRecommendationsTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -391,19 +391,19 @@ export class DataAzurermAdvisorRecommendations extends cdktf.TerraformDataSource
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       filter_by_category: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._filterByCategory),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._filterByCategory),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       filter_by_resource_groups: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._filterByResourceGroups),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._filterByResourceGroups),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

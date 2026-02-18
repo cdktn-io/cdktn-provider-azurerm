@@ -7,19 +7,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface TrafficManagerAzureEndpointConfig extends cdktf.TerraformMetaArguments {
+export interface TrafficManagerAzureEndpointConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/traffic_manager_azure_endpoint#always_serve_enabled TrafficManagerAzureEndpoint#always_serve_enabled}
   */
-  readonly alwaysServeEnabled?: boolean | cdktf.IResolvable;
+  readonly alwaysServeEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/traffic_manager_azure_endpoint#enabled TrafficManagerAzureEndpoint#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/traffic_manager_azure_endpoint#geo_mappings TrafficManagerAzureEndpoint#geo_mappings}
   */
@@ -56,13 +56,13 @@ export interface TrafficManagerAzureEndpointConfig extends cdktf.TerraformMetaAr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/traffic_manager_azure_endpoint#custom_header TrafficManagerAzureEndpoint#custom_header}
   */
-  readonly customHeader?: TrafficManagerAzureEndpointCustomHeader[] | cdktf.IResolvable;
+  readonly customHeader?: TrafficManagerAzureEndpointCustomHeader[] | cdktn.IResolvable;
   /**
   * subnet block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/traffic_manager_azure_endpoint#subnet TrafficManagerAzureEndpoint#subnet}
   */
-  readonly subnet?: TrafficManagerAzureEndpointSubnet[] | cdktf.IResolvable;
+  readonly subnet?: TrafficManagerAzureEndpointSubnet[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -81,32 +81,32 @@ export interface TrafficManagerAzureEndpointCustomHeader {
   readonly value: string;
 }
 
-export function trafficManagerAzureEndpointCustomHeaderToTerraform(struct?: TrafficManagerAzureEndpointCustomHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function trafficManagerAzureEndpointCustomHeaderToTerraform(struct?: TrafficManagerAzureEndpointCustomHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function trafficManagerAzureEndpointCustomHeaderToHclTerraform(struct?: TrafficManagerAzureEndpointCustomHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function trafficManagerAzureEndpointCustomHeaderToHclTerraform(struct?: TrafficManagerAzureEndpointCustomHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -117,9 +117,9 @@ export function trafficManagerAzureEndpointCustomHeaderToHclTerraform(struct?: T
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TrafficManagerAzureEndpointCustomHeaderOutputReference extends cdktf.ComplexObject {
+export class TrafficManagerAzureEndpointCustomHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -127,11 +127,11 @@ export class TrafficManagerAzureEndpointCustomHeaderOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TrafficManagerAzureEndpointCustomHeader | cdktf.IResolvable | undefined {
+  public get internalValue(): TrafficManagerAzureEndpointCustomHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -148,14 +148,14 @@ export class TrafficManagerAzureEndpointCustomHeaderOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TrafficManagerAzureEndpointCustomHeader | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TrafficManagerAzureEndpointCustomHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -194,15 +194,15 @@ export class TrafficManagerAzureEndpointCustomHeaderOutputReference extends cdkt
   }
 }
 
-export class TrafficManagerAzureEndpointCustomHeaderList extends cdktf.ComplexList {
-  public internalValue? : TrafficManagerAzureEndpointCustomHeader[] | cdktf.IResolvable
+export class TrafficManagerAzureEndpointCustomHeaderList extends cdktn.ComplexList {
+  public internalValue? : TrafficManagerAzureEndpointCustomHeader[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -228,39 +228,39 @@ export interface TrafficManagerAzureEndpointSubnet {
   readonly scope?: number;
 }
 
-export function trafficManagerAzureEndpointSubnetToTerraform(struct?: TrafficManagerAzureEndpointSubnet | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function trafficManagerAzureEndpointSubnetToTerraform(struct?: TrafficManagerAzureEndpointSubnet | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    first: cdktf.stringToTerraform(struct!.first),
-    last: cdktf.stringToTerraform(struct!.last),
-    scope: cdktf.numberToTerraform(struct!.scope),
+    first: cdktn.stringToTerraform(struct!.first),
+    last: cdktn.stringToTerraform(struct!.last),
+    scope: cdktn.numberToTerraform(struct!.scope),
   }
 }
 
 
-export function trafficManagerAzureEndpointSubnetToHclTerraform(struct?: TrafficManagerAzureEndpointSubnet | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function trafficManagerAzureEndpointSubnetToHclTerraform(struct?: TrafficManagerAzureEndpointSubnet | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     first: {
-      value: cdktf.stringToHclTerraform(struct!.first),
+      value: cdktn.stringToHclTerraform(struct!.first),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     last: {
-      value: cdktf.stringToHclTerraform(struct!.last),
+      value: cdktn.stringToHclTerraform(struct!.last),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scope: {
-      value: cdktf.numberToHclTerraform(struct!.scope),
+      value: cdktn.numberToHclTerraform(struct!.scope),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -271,9 +271,9 @@ export function trafficManagerAzureEndpointSubnetToHclTerraform(struct?: Traffic
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TrafficManagerAzureEndpointSubnetOutputReference extends cdktf.ComplexObject {
+export class TrafficManagerAzureEndpointSubnetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -281,11 +281,11 @@ export class TrafficManagerAzureEndpointSubnetOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TrafficManagerAzureEndpointSubnet | cdktf.IResolvable | undefined {
+  public get internalValue(): TrafficManagerAzureEndpointSubnet | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -306,7 +306,7 @@ export class TrafficManagerAzureEndpointSubnetOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TrafficManagerAzureEndpointSubnet | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TrafficManagerAzureEndpointSubnet | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -314,7 +314,7 @@ export class TrafficManagerAzureEndpointSubnetOutputReference extends cdktf.Comp
       this._last = undefined;
       this._scope = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -373,15 +373,15 @@ export class TrafficManagerAzureEndpointSubnetOutputReference extends cdktf.Comp
   }
 }
 
-export class TrafficManagerAzureEndpointSubnetList extends cdktf.ComplexList {
-  public internalValue? : TrafficManagerAzureEndpointSubnet[] | cdktf.IResolvable
+export class TrafficManagerAzureEndpointSubnetList extends cdktn.ComplexList {
+  public internalValue? : TrafficManagerAzureEndpointSubnet[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -411,46 +411,46 @@ export interface TrafficManagerAzureEndpointTimeouts {
   readonly update?: string;
 }
 
-export function trafficManagerAzureEndpointTimeoutsToTerraform(struct?: TrafficManagerAzureEndpointTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function trafficManagerAzureEndpointTimeoutsToTerraform(struct?: TrafficManagerAzureEndpointTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function trafficManagerAzureEndpointTimeoutsToHclTerraform(struct?: TrafficManagerAzureEndpointTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function trafficManagerAzureEndpointTimeoutsToHclTerraform(struct?: TrafficManagerAzureEndpointTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -461,19 +461,19 @@ export function trafficManagerAzureEndpointTimeoutsToHclTerraform(struct?: Traff
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TrafficManagerAzureEndpointTimeoutsOutputReference extends cdktf.ComplexObject {
+export class TrafficManagerAzureEndpointTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): TrafficManagerAzureEndpointTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): TrafficManagerAzureEndpointTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -498,7 +498,7 @@ export class TrafficManagerAzureEndpointTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TrafficManagerAzureEndpointTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TrafficManagerAzureEndpointTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -507,7 +507,7 @@ export class TrafficManagerAzureEndpointTimeoutsOutputReference extends cdktf.Co
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -589,7 +589,7 @@ export class TrafficManagerAzureEndpointTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/traffic_manager_azure_endpoint azurerm_traffic_manager_azure_endpoint}
 */
-export class TrafficManagerAzureEndpoint extends cdktf.TerraformResource {
+export class TrafficManagerAzureEndpoint extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -600,14 +600,14 @@ export class TrafficManagerAzureEndpoint extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a TrafficManagerAzureEndpoint resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a TrafficManagerAzureEndpoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TrafficManagerAzureEndpoint to import
   * @param importFromId The id of the existing TrafficManagerAzureEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/traffic_manager_azure_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TrafficManagerAzureEndpoint to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_traffic_manager_azure_endpoint", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_traffic_manager_azure_endpoint", importId: importFromId, provider });
       }
 
   // ===========
@@ -656,11 +656,11 @@ export class TrafficManagerAzureEndpoint extends cdktf.TerraformResource {
   // ==========
 
   // always_serve_enabled - computed: false, optional: true, required: false
-  private _alwaysServeEnabled?: boolean | cdktf.IResolvable; 
+  private _alwaysServeEnabled?: boolean | cdktn.IResolvable; 
   public get alwaysServeEnabled() {
     return this.getBooleanAttribute('always_serve_enabled');
   }
-  public set alwaysServeEnabled(value: boolean | cdktf.IResolvable) {
+  public set alwaysServeEnabled(value: boolean | cdktn.IResolvable) {
     this._alwaysServeEnabled = value;
   }
   public resetAlwaysServeEnabled() {
@@ -672,11 +672,11 @@ export class TrafficManagerAzureEndpoint extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -795,7 +795,7 @@ export class TrafficManagerAzureEndpoint extends cdktf.TerraformResource {
   public get customHeader() {
     return this._customHeader;
   }
-  public putCustomHeader(value: TrafficManagerAzureEndpointCustomHeader[] | cdktf.IResolvable) {
+  public putCustomHeader(value: TrafficManagerAzureEndpointCustomHeader[] | cdktn.IResolvable) {
     this._customHeader.internalValue = value;
   }
   public resetCustomHeader() {
@@ -811,7 +811,7 @@ export class TrafficManagerAzureEndpoint extends cdktf.TerraformResource {
   public get subnet() {
     return this._subnet;
   }
-  public putSubnet(value: TrafficManagerAzureEndpointSubnet[] | cdktf.IResolvable) {
+  public putSubnet(value: TrafficManagerAzureEndpointSubnet[] | cdktn.IResolvable) {
     this._subnet.internalValue = value;
   }
   public resetSubnet() {
@@ -844,17 +844,17 @@ export class TrafficManagerAzureEndpoint extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      always_serve_enabled: cdktf.booleanToTerraform(this._alwaysServeEnabled),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      geo_mappings: cdktf.listMapper(cdktf.stringToTerraform, false)(this._geoMappings),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      priority: cdktf.numberToTerraform(this._priority),
-      profile_id: cdktf.stringToTerraform(this._profileId),
-      target_resource_id: cdktf.stringToTerraform(this._targetResourceId),
-      weight: cdktf.numberToTerraform(this._weight),
-      custom_header: cdktf.listMapper(trafficManagerAzureEndpointCustomHeaderToTerraform, true)(this._customHeader.internalValue),
-      subnet: cdktf.listMapper(trafficManagerAzureEndpointSubnetToTerraform, true)(this._subnet.internalValue),
+      always_serve_enabled: cdktn.booleanToTerraform(this._alwaysServeEnabled),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      geo_mappings: cdktn.listMapper(cdktn.stringToTerraform, false)(this._geoMappings),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      priority: cdktn.numberToTerraform(this._priority),
+      profile_id: cdktn.stringToTerraform(this._profileId),
+      target_resource_id: cdktn.stringToTerraform(this._targetResourceId),
+      weight: cdktn.numberToTerraform(this._weight),
+      custom_header: cdktn.listMapper(trafficManagerAzureEndpointCustomHeaderToTerraform, true)(this._customHeader.internalValue),
+      subnet: cdktn.listMapper(trafficManagerAzureEndpointSubnetToTerraform, true)(this._subnet.internalValue),
       timeouts: trafficManagerAzureEndpointTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -862,67 +862,67 @@ export class TrafficManagerAzureEndpoint extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       always_serve_enabled: {
-        value: cdktf.booleanToHclTerraform(this._alwaysServeEnabled),
+        value: cdktn.booleanToHclTerraform(this._alwaysServeEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       geo_mappings: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._geoMappings),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._geoMappings),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       priority: {
-        value: cdktf.numberToHclTerraform(this._priority),
+        value: cdktn.numberToHclTerraform(this._priority),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       profile_id: {
-        value: cdktf.stringToHclTerraform(this._profileId),
+        value: cdktn.stringToHclTerraform(this._profileId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_resource_id: {
-        value: cdktf.stringToHclTerraform(this._targetResourceId),
+        value: cdktn.stringToHclTerraform(this._targetResourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       weight: {
-        value: cdktf.numberToHclTerraform(this._weight),
+        value: cdktn.numberToHclTerraform(this._weight),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       custom_header: {
-        value: cdktf.listMapperHcl(trafficManagerAzureEndpointCustomHeaderToHclTerraform, true)(this._customHeader.internalValue),
+        value: cdktn.listMapperHcl(trafficManagerAzureEndpointCustomHeaderToHclTerraform, true)(this._customHeader.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "TrafficManagerAzureEndpointCustomHeaderList",
       },
       subnet: {
-        value: cdktf.listMapperHcl(trafficManagerAzureEndpointSubnetToHclTerraform, true)(this._subnet.internalValue),
+        value: cdktn.listMapperHcl(trafficManagerAzureEndpointSubnetToHclTerraform, true)(this._subnet.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "TrafficManagerAzureEndpointSubnetList",

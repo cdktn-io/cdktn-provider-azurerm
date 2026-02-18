@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermVirtualHubRouteTableConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermVirtualHubRouteTableConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/virtual_hub_route_table#id DataAzurermVirtualHubRouteTable#id}
   *
@@ -42,8 +42,8 @@ export interface DataAzurermVirtualHubRouteTableRoute {
 }
 
 export function dataAzurermVirtualHubRouteTableRouteToTerraform(struct?: DataAzurermVirtualHubRouteTableRoute): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -52,8 +52,8 @@ export function dataAzurermVirtualHubRouteTableRouteToTerraform(struct?: DataAzu
 
 
 export function dataAzurermVirtualHubRouteTableRouteToHclTerraform(struct?: DataAzurermVirtualHubRouteTableRoute): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -61,7 +61,7 @@ export function dataAzurermVirtualHubRouteTableRouteToHclTerraform(struct?: Data
   return attrs;
 }
 
-export class DataAzurermVirtualHubRouteTableRouteOutputReference extends cdktf.ComplexObject {
+export class DataAzurermVirtualHubRouteTableRouteOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -70,7 +70,7 @@ export class DataAzurermVirtualHubRouteTableRouteOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -115,14 +115,14 @@ export class DataAzurermVirtualHubRouteTableRouteOutputReference extends cdktf.C
   }
 }
 
-export class DataAzurermVirtualHubRouteTableRouteList extends cdktf.ComplexList {
+export class DataAzurermVirtualHubRouteTableRouteList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -140,25 +140,25 @@ export interface DataAzurermVirtualHubRouteTableTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermVirtualHubRouteTableTimeoutsToTerraform(struct?: DataAzurermVirtualHubRouteTableTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermVirtualHubRouteTableTimeoutsToTerraform(struct?: DataAzurermVirtualHubRouteTableTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermVirtualHubRouteTableTimeoutsToHclTerraform(struct?: DataAzurermVirtualHubRouteTableTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermVirtualHubRouteTableTimeoutsToHclTerraform(struct?: DataAzurermVirtualHubRouteTableTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -169,19 +169,19 @@ export function dataAzurermVirtualHubRouteTableTimeoutsToHclTerraform(struct?: D
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermVirtualHubRouteTableTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermVirtualHubRouteTableTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermVirtualHubRouteTableTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermVirtualHubRouteTableTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -194,13 +194,13 @@ export class DataAzurermVirtualHubRouteTableTimeoutsOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermVirtualHubRouteTableTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermVirtualHubRouteTableTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -231,7 +231,7 @@ export class DataAzurermVirtualHubRouteTableTimeoutsOutputReference extends cdkt
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/virtual_hub_route_table azurerm_virtual_hub_route_table}
 */
-export class DataAzurermVirtualHubRouteTable extends cdktf.TerraformDataSource {
+export class DataAzurermVirtualHubRouteTable extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -242,14 +242,14 @@ export class DataAzurermVirtualHubRouteTable extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermVirtualHubRouteTable resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermVirtualHubRouteTable resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermVirtualHubRouteTable to import
   * @param importFromId The id of the existing DataAzurermVirtualHubRouteTable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/virtual_hub_route_table#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermVirtualHubRouteTable to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_virtual_hub_route_table", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_virtual_hub_route_table", importId: importFromId, provider });
       }
 
   // ===========
@@ -308,7 +308,7 @@ export class DataAzurermVirtualHubRouteTable extends cdktf.TerraformDataSource {
 
   // labels - computed: true, optional: false, required: false
   public get labels() {
-    return cdktf.Fn.tolist(this.getListAttribute('labels'));
+    return cdktn.Fn.tolist(this.getListAttribute('labels'));
   }
 
   // name - computed: false, optional: false, required: true
@@ -383,10 +383,10 @@ export class DataAzurermVirtualHubRouteTable extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      virtual_hub_name: cdktf.stringToTerraform(this._virtualHubName),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      virtual_hub_name: cdktn.stringToTerraform(this._virtualHubName),
       timeouts: dataAzurermVirtualHubRouteTableTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -394,25 +394,25 @@ export class DataAzurermVirtualHubRouteTable extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       virtual_hub_name: {
-        value: cdktf.stringToHclTerraform(this._virtualHubName),
+        value: cdktn.stringToHclTerraform(this._virtualHubName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

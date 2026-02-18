@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IotSecurityDeviceGroupConfig extends cdktf.TerraformMetaArguments {
+export interface IotSecurityDeviceGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iot_security_device_group#id IotSecurityDeviceGroup#id}
   *
@@ -38,7 +38,7 @@ export interface IotSecurityDeviceGroupConfig extends cdktf.TerraformMetaArgumen
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iot_security_device_group#range_rule IotSecurityDeviceGroup#range_rule}
   */
-  readonly rangeRule?: IotSecurityDeviceGroupRangeRule[] | cdktf.IResolvable;
+  readonly rangeRule?: IotSecurityDeviceGroupRangeRule[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -66,45 +66,45 @@ export interface IotSecurityDeviceGroupAllowRule {
 }
 
 export function iotSecurityDeviceGroupAllowRuleToTerraform(struct?: IotSecurityDeviceGroupAllowRuleOutputReference | IotSecurityDeviceGroupAllowRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    connection_from_ips_not_allowed: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.connectionFromIpsNotAllowed),
-    connection_to_ips_not_allowed: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.connectionToIpsNotAllowed),
-    local_users_not_allowed: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.localUsersNotAllowed),
-    processes_not_allowed: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.processesNotAllowed),
+    connection_from_ips_not_allowed: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.connectionFromIpsNotAllowed),
+    connection_to_ips_not_allowed: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.connectionToIpsNotAllowed),
+    local_users_not_allowed: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.localUsersNotAllowed),
+    processes_not_allowed: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.processesNotAllowed),
   }
 }
 
 
 export function iotSecurityDeviceGroupAllowRuleToHclTerraform(struct?: IotSecurityDeviceGroupAllowRuleOutputReference | IotSecurityDeviceGroupAllowRule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     connection_from_ips_not_allowed: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.connectionFromIpsNotAllowed),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.connectionFromIpsNotAllowed),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     connection_to_ips_not_allowed: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.connectionToIpsNotAllowed),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.connectionToIpsNotAllowed),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     local_users_not_allowed: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.localUsersNotAllowed),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.localUsersNotAllowed),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     processes_not_allowed: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.processesNotAllowed),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.processesNotAllowed),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -115,14 +115,14 @@ export function iotSecurityDeviceGroupAllowRuleToHclTerraform(struct?: IotSecuri
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotSecurityDeviceGroupAllowRuleOutputReference extends cdktf.ComplexObject {
+export class IotSecurityDeviceGroupAllowRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -168,7 +168,7 @@ export class IotSecurityDeviceGroupAllowRuleOutputReference extends cdktf.Comple
   // connection_from_ips_not_allowed - computed: false, optional: true, required: false
   private _connectionFromIpsNotAllowed?: string[]; 
   public get connectionFromIpsNotAllowed() {
-    return cdktf.Fn.tolist(this.getListAttribute('connection_from_ips_not_allowed'));
+    return cdktn.Fn.tolist(this.getListAttribute('connection_from_ips_not_allowed'));
   }
   public set connectionFromIpsNotAllowed(value: string[]) {
     this._connectionFromIpsNotAllowed = value;
@@ -184,7 +184,7 @@ export class IotSecurityDeviceGroupAllowRuleOutputReference extends cdktf.Comple
   // connection_to_ips_not_allowed - computed: false, optional: true, required: false
   private _connectionToIpsNotAllowed?: string[]; 
   public get connectionToIpsNotAllowed() {
-    return cdktf.Fn.tolist(this.getListAttribute('connection_to_ips_not_allowed'));
+    return cdktn.Fn.tolist(this.getListAttribute('connection_to_ips_not_allowed'));
   }
   public set connectionToIpsNotAllowed(value: string[]) {
     this._connectionToIpsNotAllowed = value;
@@ -200,7 +200,7 @@ export class IotSecurityDeviceGroupAllowRuleOutputReference extends cdktf.Comple
   // local_users_not_allowed - computed: false, optional: true, required: false
   private _localUsersNotAllowed?: string[]; 
   public get localUsersNotAllowed() {
-    return cdktf.Fn.tolist(this.getListAttribute('local_users_not_allowed'));
+    return cdktn.Fn.tolist(this.getListAttribute('local_users_not_allowed'));
   }
   public set localUsersNotAllowed(value: string[]) {
     this._localUsersNotAllowed = value;
@@ -216,7 +216,7 @@ export class IotSecurityDeviceGroupAllowRuleOutputReference extends cdktf.Comple
   // processes_not_allowed - computed: false, optional: true, required: false
   private _processesNotAllowed?: string[]; 
   public get processesNotAllowed() {
-    return cdktf.Fn.tolist(this.getListAttribute('processes_not_allowed'));
+    return cdktn.Fn.tolist(this.getListAttribute('processes_not_allowed'));
   }
   public set processesNotAllowed(value: string[]) {
     this._processesNotAllowed = value;
@@ -248,46 +248,46 @@ export interface IotSecurityDeviceGroupRangeRule {
   readonly type: string;
 }
 
-export function iotSecurityDeviceGroupRangeRuleToTerraform(struct?: IotSecurityDeviceGroupRangeRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotSecurityDeviceGroupRangeRuleToTerraform(struct?: IotSecurityDeviceGroupRangeRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    duration: cdktf.stringToTerraform(struct!.duration),
-    max: cdktf.numberToTerraform(struct!.max),
-    min: cdktf.numberToTerraform(struct!.min),
-    type: cdktf.stringToTerraform(struct!.type),
+    duration: cdktn.stringToTerraform(struct!.duration),
+    max: cdktn.numberToTerraform(struct!.max),
+    min: cdktn.numberToTerraform(struct!.min),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function iotSecurityDeviceGroupRangeRuleToHclTerraform(struct?: IotSecurityDeviceGroupRangeRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotSecurityDeviceGroupRangeRuleToHclTerraform(struct?: IotSecurityDeviceGroupRangeRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     duration: {
-      value: cdktf.stringToHclTerraform(struct!.duration),
+      value: cdktn.stringToHclTerraform(struct!.duration),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max: {
-      value: cdktf.numberToHclTerraform(struct!.max),
+      value: cdktn.numberToHclTerraform(struct!.max),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     min: {
-      value: cdktf.numberToHclTerraform(struct!.min),
+      value: cdktn.numberToHclTerraform(struct!.min),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -298,9 +298,9 @@ export function iotSecurityDeviceGroupRangeRuleToHclTerraform(struct?: IotSecuri
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotSecurityDeviceGroupRangeRuleOutputReference extends cdktf.ComplexObject {
+export class IotSecurityDeviceGroupRangeRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -308,11 +308,11 @@ export class IotSecurityDeviceGroupRangeRuleOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IotSecurityDeviceGroupRangeRule | cdktf.IResolvable | undefined {
+  public get internalValue(): IotSecurityDeviceGroupRangeRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -337,7 +337,7 @@ export class IotSecurityDeviceGroupRangeRuleOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IotSecurityDeviceGroupRangeRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IotSecurityDeviceGroupRangeRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -346,7 +346,7 @@ export class IotSecurityDeviceGroupRangeRuleOutputReference extends cdktf.Comple
       this._min = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -413,15 +413,15 @@ export class IotSecurityDeviceGroupRangeRuleOutputReference extends cdktf.Comple
   }
 }
 
-export class IotSecurityDeviceGroupRangeRuleList extends cdktf.ComplexList {
-  public internalValue? : IotSecurityDeviceGroupRangeRule[] | cdktf.IResolvable
+export class IotSecurityDeviceGroupRangeRuleList extends cdktn.ComplexList {
+  public internalValue? : IotSecurityDeviceGroupRangeRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -451,46 +451,46 @@ export interface IotSecurityDeviceGroupTimeouts {
   readonly update?: string;
 }
 
-export function iotSecurityDeviceGroupTimeoutsToTerraform(struct?: IotSecurityDeviceGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotSecurityDeviceGroupTimeoutsToTerraform(struct?: IotSecurityDeviceGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function iotSecurityDeviceGroupTimeoutsToHclTerraform(struct?: IotSecurityDeviceGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotSecurityDeviceGroupTimeoutsToHclTerraform(struct?: IotSecurityDeviceGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -501,19 +501,19 @@ export function iotSecurityDeviceGroupTimeoutsToHclTerraform(struct?: IotSecurit
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotSecurityDeviceGroupTimeoutsOutputReference extends cdktf.ComplexObject {
+export class IotSecurityDeviceGroupTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): IotSecurityDeviceGroupTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): IotSecurityDeviceGroupTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -538,7 +538,7 @@ export class IotSecurityDeviceGroupTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IotSecurityDeviceGroupTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IotSecurityDeviceGroupTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -547,7 +547,7 @@ export class IotSecurityDeviceGroupTimeoutsOutputReference extends cdktf.Complex
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -629,7 +629,7 @@ export class IotSecurityDeviceGroupTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iot_security_device_group azurerm_iot_security_device_group}
 */
-export class IotSecurityDeviceGroup extends cdktf.TerraformResource {
+export class IotSecurityDeviceGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -640,14 +640,14 @@ export class IotSecurityDeviceGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IotSecurityDeviceGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IotSecurityDeviceGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IotSecurityDeviceGroup to import
   * @param importFromId The id of the existing IotSecurityDeviceGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iot_security_device_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IotSecurityDeviceGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_iot_security_device_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_iot_security_device_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -752,7 +752,7 @@ export class IotSecurityDeviceGroup extends cdktf.TerraformResource {
   public get rangeRule() {
     return this._rangeRule;
   }
-  public putRangeRule(value: IotSecurityDeviceGroupRangeRule[] | cdktf.IResolvable) {
+  public putRangeRule(value: IotSecurityDeviceGroupRangeRule[] | cdktn.IResolvable) {
     this._rangeRule.internalValue = value;
   }
   public resetRangeRule() {
@@ -785,11 +785,11 @@ export class IotSecurityDeviceGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      iothub_id: cdktf.stringToTerraform(this._iothubId),
-      name: cdktf.stringToTerraform(this._name),
+      id: cdktn.stringToTerraform(this._id),
+      iothub_id: cdktn.stringToTerraform(this._iothubId),
+      name: cdktn.stringToTerraform(this._name),
       allow_rule: iotSecurityDeviceGroupAllowRuleToTerraform(this._allowRule.internalValue),
-      range_rule: cdktf.listMapper(iotSecurityDeviceGroupRangeRuleToTerraform, true)(this._rangeRule.internalValue),
+      range_rule: cdktn.listMapper(iotSecurityDeviceGroupRangeRuleToTerraform, true)(this._rangeRule.internalValue),
       timeouts: iotSecurityDeviceGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -797,19 +797,19 @@ export class IotSecurityDeviceGroup extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       iothub_id: {
-        value: cdktf.stringToHclTerraform(this._iothubId),
+        value: cdktn.stringToHclTerraform(this._iothubId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -821,7 +821,7 @@ export class IotSecurityDeviceGroup extends cdktf.TerraformResource {
         storageClassType: "IotSecurityDeviceGroupAllowRuleList",
       },
       range_rule: {
-        value: cdktf.listMapperHcl(iotSecurityDeviceGroupRangeRuleToHclTerraform, true)(this._rangeRule.internalValue),
+        value: cdktn.listMapperHcl(iotSecurityDeviceGroupRangeRuleToHclTerraform, true)(this._rangeRule.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "IotSecurityDeviceGroupRangeRuleList",

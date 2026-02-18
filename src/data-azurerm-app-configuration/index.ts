@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermAppConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermAppConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/app_configuration#id DataAzurermAppConfiguration#id}
   *
@@ -38,8 +38,8 @@ export interface DataAzurermAppConfigurationEncryption {
 }
 
 export function dataAzurermAppConfigurationEncryptionToTerraform(struct?: DataAzurermAppConfigurationEncryption): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -48,8 +48,8 @@ export function dataAzurermAppConfigurationEncryptionToTerraform(struct?: DataAz
 
 
 export function dataAzurermAppConfigurationEncryptionToHclTerraform(struct?: DataAzurermAppConfigurationEncryption): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -57,7 +57,7 @@ export function dataAzurermAppConfigurationEncryptionToHclTerraform(struct?: Dat
   return attrs;
 }
 
-export class DataAzurermAppConfigurationEncryptionOutputReference extends cdktf.ComplexObject {
+export class DataAzurermAppConfigurationEncryptionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -66,7 +66,7 @@ export class DataAzurermAppConfigurationEncryptionOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -96,14 +96,14 @@ export class DataAzurermAppConfigurationEncryptionOutputReference extends cdktf.
   }
 }
 
-export class DataAzurermAppConfigurationEncryptionList extends cdktf.ComplexList {
+export class DataAzurermAppConfigurationEncryptionList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -118,8 +118,8 @@ export interface DataAzurermAppConfigurationIdentity {
 }
 
 export function dataAzurermAppConfigurationIdentityToTerraform(struct?: DataAzurermAppConfigurationIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -128,8 +128,8 @@ export function dataAzurermAppConfigurationIdentityToTerraform(struct?: DataAzur
 
 
 export function dataAzurermAppConfigurationIdentityToHclTerraform(struct?: DataAzurermAppConfigurationIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -137,7 +137,7 @@ export function dataAzurermAppConfigurationIdentityToHclTerraform(struct?: DataA
   return attrs;
 }
 
-export class DataAzurermAppConfigurationIdentityOutputReference extends cdktf.ComplexObject {
+export class DataAzurermAppConfigurationIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -146,7 +146,7 @@ export class DataAzurermAppConfigurationIdentityOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -186,14 +186,14 @@ export class DataAzurermAppConfigurationIdentityOutputReference extends cdktf.Co
   }
 }
 
-export class DataAzurermAppConfigurationIdentityList extends cdktf.ComplexList {
+export class DataAzurermAppConfigurationIdentityList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -208,8 +208,8 @@ export interface DataAzurermAppConfigurationPrimaryReadKey {
 }
 
 export function dataAzurermAppConfigurationPrimaryReadKeyToTerraform(struct?: DataAzurermAppConfigurationPrimaryReadKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -218,8 +218,8 @@ export function dataAzurermAppConfigurationPrimaryReadKeyToTerraform(struct?: Da
 
 
 export function dataAzurermAppConfigurationPrimaryReadKeyToHclTerraform(struct?: DataAzurermAppConfigurationPrimaryReadKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -227,7 +227,7 @@ export function dataAzurermAppConfigurationPrimaryReadKeyToHclTerraform(struct?:
   return attrs;
 }
 
-export class DataAzurermAppConfigurationPrimaryReadKeyOutputReference extends cdktf.ComplexObject {
+export class DataAzurermAppConfigurationPrimaryReadKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -236,7 +236,7 @@ export class DataAzurermAppConfigurationPrimaryReadKeyOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -271,14 +271,14 @@ export class DataAzurermAppConfigurationPrimaryReadKeyOutputReference extends cd
   }
 }
 
-export class DataAzurermAppConfigurationPrimaryReadKeyList extends cdktf.ComplexList {
+export class DataAzurermAppConfigurationPrimaryReadKeyList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -293,8 +293,8 @@ export interface DataAzurermAppConfigurationPrimaryWriteKey {
 }
 
 export function dataAzurermAppConfigurationPrimaryWriteKeyToTerraform(struct?: DataAzurermAppConfigurationPrimaryWriteKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -303,8 +303,8 @@ export function dataAzurermAppConfigurationPrimaryWriteKeyToTerraform(struct?: D
 
 
 export function dataAzurermAppConfigurationPrimaryWriteKeyToHclTerraform(struct?: DataAzurermAppConfigurationPrimaryWriteKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -312,7 +312,7 @@ export function dataAzurermAppConfigurationPrimaryWriteKeyToHclTerraform(struct?
   return attrs;
 }
 
-export class DataAzurermAppConfigurationPrimaryWriteKeyOutputReference extends cdktf.ComplexObject {
+export class DataAzurermAppConfigurationPrimaryWriteKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -321,7 +321,7 @@ export class DataAzurermAppConfigurationPrimaryWriteKeyOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -356,14 +356,14 @@ export class DataAzurermAppConfigurationPrimaryWriteKeyOutputReference extends c
   }
 }
 
-export class DataAzurermAppConfigurationPrimaryWriteKeyList extends cdktf.ComplexList {
+export class DataAzurermAppConfigurationPrimaryWriteKeyList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -378,8 +378,8 @@ export interface DataAzurermAppConfigurationReplica {
 }
 
 export function dataAzurermAppConfigurationReplicaToTerraform(struct?: DataAzurermAppConfigurationReplica): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -388,8 +388,8 @@ export function dataAzurermAppConfigurationReplicaToTerraform(struct?: DataAzure
 
 
 export function dataAzurermAppConfigurationReplicaToHclTerraform(struct?: DataAzurermAppConfigurationReplica): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -397,7 +397,7 @@ export function dataAzurermAppConfigurationReplicaToHclTerraform(struct?: DataAz
   return attrs;
 }
 
-export class DataAzurermAppConfigurationReplicaOutputReference extends cdktf.ComplexObject {
+export class DataAzurermAppConfigurationReplicaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -406,7 +406,7 @@ export class DataAzurermAppConfigurationReplicaOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -446,14 +446,14 @@ export class DataAzurermAppConfigurationReplicaOutputReference extends cdktf.Com
   }
 }
 
-export class DataAzurermAppConfigurationReplicaList extends cdktf.ComplexList {
+export class DataAzurermAppConfigurationReplicaList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -468,8 +468,8 @@ export interface DataAzurermAppConfigurationSecondaryReadKey {
 }
 
 export function dataAzurermAppConfigurationSecondaryReadKeyToTerraform(struct?: DataAzurermAppConfigurationSecondaryReadKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -478,8 +478,8 @@ export function dataAzurermAppConfigurationSecondaryReadKeyToTerraform(struct?: 
 
 
 export function dataAzurermAppConfigurationSecondaryReadKeyToHclTerraform(struct?: DataAzurermAppConfigurationSecondaryReadKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -487,7 +487,7 @@ export function dataAzurermAppConfigurationSecondaryReadKeyToHclTerraform(struct
   return attrs;
 }
 
-export class DataAzurermAppConfigurationSecondaryReadKeyOutputReference extends cdktf.ComplexObject {
+export class DataAzurermAppConfigurationSecondaryReadKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -496,7 +496,7 @@ export class DataAzurermAppConfigurationSecondaryReadKeyOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -531,14 +531,14 @@ export class DataAzurermAppConfigurationSecondaryReadKeyOutputReference extends 
   }
 }
 
-export class DataAzurermAppConfigurationSecondaryReadKeyList extends cdktf.ComplexList {
+export class DataAzurermAppConfigurationSecondaryReadKeyList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -553,8 +553,8 @@ export interface DataAzurermAppConfigurationSecondaryWriteKey {
 }
 
 export function dataAzurermAppConfigurationSecondaryWriteKeyToTerraform(struct?: DataAzurermAppConfigurationSecondaryWriteKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -563,8 +563,8 @@ export function dataAzurermAppConfigurationSecondaryWriteKeyToTerraform(struct?:
 
 
 export function dataAzurermAppConfigurationSecondaryWriteKeyToHclTerraform(struct?: DataAzurermAppConfigurationSecondaryWriteKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -572,7 +572,7 @@ export function dataAzurermAppConfigurationSecondaryWriteKeyToHclTerraform(struc
   return attrs;
 }
 
-export class DataAzurermAppConfigurationSecondaryWriteKeyOutputReference extends cdktf.ComplexObject {
+export class DataAzurermAppConfigurationSecondaryWriteKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -581,7 +581,7 @@ export class DataAzurermAppConfigurationSecondaryWriteKeyOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -616,14 +616,14 @@ export class DataAzurermAppConfigurationSecondaryWriteKeyOutputReference extends
   }
 }
 
-export class DataAzurermAppConfigurationSecondaryWriteKeyList extends cdktf.ComplexList {
+export class DataAzurermAppConfigurationSecondaryWriteKeyList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -641,25 +641,25 @@ export interface DataAzurermAppConfigurationTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermAppConfigurationTimeoutsToTerraform(struct?: DataAzurermAppConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermAppConfigurationTimeoutsToTerraform(struct?: DataAzurermAppConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermAppConfigurationTimeoutsToHclTerraform(struct?: DataAzurermAppConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermAppConfigurationTimeoutsToHclTerraform(struct?: DataAzurermAppConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -670,19 +670,19 @@ export function dataAzurermAppConfigurationTimeoutsToHclTerraform(struct?: DataA
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermAppConfigurationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermAppConfigurationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermAppConfigurationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermAppConfigurationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -695,13 +695,13 @@ export class DataAzurermAppConfigurationTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermAppConfigurationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermAppConfigurationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -732,7 +732,7 @@ export class DataAzurermAppConfigurationTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/app_configuration azurerm_app_configuration}
 */
-export class DataAzurermAppConfiguration extends cdktf.TerraformDataSource {
+export class DataAzurermAppConfiguration extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -743,14 +743,14 @@ export class DataAzurermAppConfiguration extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermAppConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermAppConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermAppConfiguration to import
   * @param importFromId The id of the existing DataAzurermAppConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/app_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermAppConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_app_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_app_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -925,7 +925,7 @@ export class DataAzurermAppConfiguration extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: false, required: false
-  private _tags = new cdktf.StringMap(this, "tags");
+  private _tags = new cdktn.StringMap(this, "tags");
   public get tags() {
     return this._tags;
   }
@@ -952,9 +952,9 @@ export class DataAzurermAppConfiguration extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
       timeouts: dataAzurermAppConfigurationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -962,19 +962,19 @@ export class DataAzurermAppConfiguration extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

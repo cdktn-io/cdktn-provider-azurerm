@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BotServiceAzureBotConfig extends cdktf.TerraformMetaArguments {
+export interface BotServiceAzureBotConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_service_azure_bot#cmk_key_vault_key_url BotServiceAzureBot#cmk_key_vault_key_url}
   */
@@ -50,7 +50,7 @@ export interface BotServiceAzureBotConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_service_azure_bot#local_authentication_enabled BotServiceAzureBot#local_authentication_enabled}
   */
-  readonly localAuthenticationEnabled?: boolean | cdktf.IResolvable;
+  readonly localAuthenticationEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_service_azure_bot#location BotServiceAzureBot#location}
   */
@@ -86,7 +86,7 @@ export interface BotServiceAzureBotConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_service_azure_bot#public_network_access_enabled BotServiceAzureBot#public_network_access_enabled}
   */
-  readonly publicNetworkAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly publicNetworkAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_service_azure_bot#resource_group_name BotServiceAzureBot#resource_group_name}
   */
@@ -98,7 +98,7 @@ export interface BotServiceAzureBotConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_service_azure_bot#streaming_endpoint_enabled BotServiceAzureBot#streaming_endpoint_enabled}
   */
-  readonly streamingEndpointEnabled?: boolean | cdktf.IResolvable;
+  readonly streamingEndpointEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_service_azure_bot#tags BotServiceAzureBot#tags}
   */
@@ -129,46 +129,46 @@ export interface BotServiceAzureBotTimeouts {
   readonly update?: string;
 }
 
-export function botServiceAzureBotTimeoutsToTerraform(struct?: BotServiceAzureBotTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function botServiceAzureBotTimeoutsToTerraform(struct?: BotServiceAzureBotTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function botServiceAzureBotTimeoutsToHclTerraform(struct?: BotServiceAzureBotTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function botServiceAzureBotTimeoutsToHclTerraform(struct?: BotServiceAzureBotTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -179,19 +179,19 @@ export function botServiceAzureBotTimeoutsToHclTerraform(struct?: BotServiceAzur
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BotServiceAzureBotTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BotServiceAzureBotTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BotServiceAzureBotTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BotServiceAzureBotTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -216,7 +216,7 @@ export class BotServiceAzureBotTimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BotServiceAzureBotTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BotServiceAzureBotTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -225,7 +225,7 @@ export class BotServiceAzureBotTimeoutsOutputReference extends cdktf.ComplexObje
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -307,7 +307,7 @@ export class BotServiceAzureBotTimeoutsOutputReference extends cdktf.ComplexObje
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_service_azure_bot azurerm_bot_service_azure_bot}
 */
-export class BotServiceAzureBot extends cdktf.TerraformResource {
+export class BotServiceAzureBot extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -318,14 +318,14 @@ export class BotServiceAzureBot extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BotServiceAzureBot resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BotServiceAzureBot resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BotServiceAzureBot to import
   * @param importFromId The id of the existing BotServiceAzureBot that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/bot_service_azure_bot#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BotServiceAzureBot to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_bot_service_azure_bot", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_bot_service_azure_bot", importId: importFromId, provider });
       }
 
   // ===========
@@ -513,11 +513,11 @@ export class BotServiceAzureBot extends cdktf.TerraformResource {
   }
 
   // local_authentication_enabled - computed: false, optional: true, required: false
-  private _localAuthenticationEnabled?: boolean | cdktf.IResolvable; 
+  private _localAuthenticationEnabled?: boolean | cdktn.IResolvable; 
   public get localAuthenticationEnabled() {
     return this.getBooleanAttribute('local_authentication_enabled');
   }
-  public set localAuthenticationEnabled(value: boolean | cdktf.IResolvable) {
+  public set localAuthenticationEnabled(value: boolean | cdktn.IResolvable) {
     this._localAuthenticationEnabled = value;
   }
   public resetLocalAuthenticationEnabled() {
@@ -648,11 +648,11 @@ export class BotServiceAzureBot extends cdktf.TerraformResource {
   }
 
   // public_network_access_enabled - computed: false, optional: true, required: false
-  private _publicNetworkAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _publicNetworkAccessEnabled?: boolean | cdktn.IResolvable; 
   public get publicNetworkAccessEnabled() {
     return this.getBooleanAttribute('public_network_access_enabled');
   }
-  public set publicNetworkAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set publicNetworkAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._publicNetworkAccessEnabled = value;
   }
   public resetPublicNetworkAccessEnabled() {
@@ -690,11 +690,11 @@ export class BotServiceAzureBot extends cdktf.TerraformResource {
   }
 
   // streaming_endpoint_enabled - computed: false, optional: true, required: false
-  private _streamingEndpointEnabled?: boolean | cdktf.IResolvable; 
+  private _streamingEndpointEnabled?: boolean | cdktn.IResolvable; 
   public get streamingEndpointEnabled() {
     return this.getBooleanAttribute('streaming_endpoint_enabled');
   }
-  public set streamingEndpointEnabled(value: boolean | cdktf.IResolvable) {
+  public set streamingEndpointEnabled(value: boolean | cdktn.IResolvable) {
     this._streamingEndpointEnabled = value;
   }
   public resetStreamingEndpointEnabled() {
@@ -743,28 +743,28 @@ export class BotServiceAzureBot extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cmk_key_vault_key_url: cdktf.stringToTerraform(this._cmkKeyVaultKeyUrl),
-      developer_app_insights_api_key: cdktf.stringToTerraform(this._developerAppInsightsApiKey),
-      developer_app_insights_application_id: cdktf.stringToTerraform(this._developerAppInsightsApplicationId),
-      developer_app_insights_key: cdktf.stringToTerraform(this._developerAppInsightsKey),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      endpoint: cdktf.stringToTerraform(this._endpoint),
-      icon_url: cdktf.stringToTerraform(this._iconUrl),
-      id: cdktf.stringToTerraform(this._id),
-      local_authentication_enabled: cdktf.booleanToTerraform(this._localAuthenticationEnabled),
-      location: cdktf.stringToTerraform(this._location),
-      luis_app_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._luisAppIds),
-      luis_key: cdktf.stringToTerraform(this._luisKey),
-      microsoft_app_id: cdktf.stringToTerraform(this._microsoftAppId),
-      microsoft_app_msi_id: cdktf.stringToTerraform(this._microsoftAppMsiId),
-      microsoft_app_tenant_id: cdktf.stringToTerraform(this._microsoftAppTenantId),
-      microsoft_app_type: cdktf.stringToTerraform(this._microsoftAppType),
-      name: cdktf.stringToTerraform(this._name),
-      public_network_access_enabled: cdktf.booleanToTerraform(this._publicNetworkAccessEnabled),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      sku: cdktf.stringToTerraform(this._sku),
-      streaming_endpoint_enabled: cdktf.booleanToTerraform(this._streamingEndpointEnabled),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      cmk_key_vault_key_url: cdktn.stringToTerraform(this._cmkKeyVaultKeyUrl),
+      developer_app_insights_api_key: cdktn.stringToTerraform(this._developerAppInsightsApiKey),
+      developer_app_insights_application_id: cdktn.stringToTerraform(this._developerAppInsightsApplicationId),
+      developer_app_insights_key: cdktn.stringToTerraform(this._developerAppInsightsKey),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      endpoint: cdktn.stringToTerraform(this._endpoint),
+      icon_url: cdktn.stringToTerraform(this._iconUrl),
+      id: cdktn.stringToTerraform(this._id),
+      local_authentication_enabled: cdktn.booleanToTerraform(this._localAuthenticationEnabled),
+      location: cdktn.stringToTerraform(this._location),
+      luis_app_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._luisAppIds),
+      luis_key: cdktn.stringToTerraform(this._luisKey),
+      microsoft_app_id: cdktn.stringToTerraform(this._microsoftAppId),
+      microsoft_app_msi_id: cdktn.stringToTerraform(this._microsoftAppMsiId),
+      microsoft_app_tenant_id: cdktn.stringToTerraform(this._microsoftAppTenantId),
+      microsoft_app_type: cdktn.stringToTerraform(this._microsoftAppType),
+      name: cdktn.stringToTerraform(this._name),
+      public_network_access_enabled: cdktn.booleanToTerraform(this._publicNetworkAccessEnabled),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      sku: cdktn.stringToTerraform(this._sku),
+      streaming_endpoint_enabled: cdktn.booleanToTerraform(this._streamingEndpointEnabled),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       timeouts: botServiceAzureBotTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -772,133 +772,133 @@ export class BotServiceAzureBot extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cmk_key_vault_key_url: {
-        value: cdktf.stringToHclTerraform(this._cmkKeyVaultKeyUrl),
+        value: cdktn.stringToHclTerraform(this._cmkKeyVaultKeyUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       developer_app_insights_api_key: {
-        value: cdktf.stringToHclTerraform(this._developerAppInsightsApiKey),
+        value: cdktn.stringToHclTerraform(this._developerAppInsightsApiKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       developer_app_insights_application_id: {
-        value: cdktf.stringToHclTerraform(this._developerAppInsightsApplicationId),
+        value: cdktn.stringToHclTerraform(this._developerAppInsightsApplicationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       developer_app_insights_key: {
-        value: cdktf.stringToHclTerraform(this._developerAppInsightsKey),
+        value: cdktn.stringToHclTerraform(this._developerAppInsightsKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       endpoint: {
-        value: cdktf.stringToHclTerraform(this._endpoint),
+        value: cdktn.stringToHclTerraform(this._endpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       icon_url: {
-        value: cdktf.stringToHclTerraform(this._iconUrl),
+        value: cdktn.stringToHclTerraform(this._iconUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       local_authentication_enabled: {
-        value: cdktf.booleanToHclTerraform(this._localAuthenticationEnabled),
+        value: cdktn.booleanToHclTerraform(this._localAuthenticationEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       luis_app_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._luisAppIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._luisAppIds),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       luis_key: {
-        value: cdktf.stringToHclTerraform(this._luisKey),
+        value: cdktn.stringToHclTerraform(this._luisKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       microsoft_app_id: {
-        value: cdktf.stringToHclTerraform(this._microsoftAppId),
+        value: cdktn.stringToHclTerraform(this._microsoftAppId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       microsoft_app_msi_id: {
-        value: cdktf.stringToHclTerraform(this._microsoftAppMsiId),
+        value: cdktn.stringToHclTerraform(this._microsoftAppMsiId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       microsoft_app_tenant_id: {
-        value: cdktf.stringToHclTerraform(this._microsoftAppTenantId),
+        value: cdktn.stringToHclTerraform(this._microsoftAppTenantId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       microsoft_app_type: {
-        value: cdktf.stringToHclTerraform(this._microsoftAppType),
+        value: cdktn.stringToHclTerraform(this._microsoftAppType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_network_access_enabled: {
-        value: cdktf.booleanToHclTerraform(this._publicNetworkAccessEnabled),
+        value: cdktn.booleanToHclTerraform(this._publicNetworkAccessEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sku: {
-        value: cdktf.stringToHclTerraform(this._sku),
+        value: cdktn.stringToHclTerraform(this._sku),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       streaming_endpoint_enabled: {
-        value: cdktf.booleanToHclTerraform(this._streamingEndpointEnabled),
+        value: cdktn.booleanToHclTerraform(this._streamingEndpointEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

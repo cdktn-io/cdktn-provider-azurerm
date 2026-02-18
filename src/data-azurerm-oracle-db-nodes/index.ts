@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermOracleDbNodesConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermOracleDbNodesConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/oracle_db_nodes#cloud_vm_cluster_id DataAzurermOracleDbNodes#cloud_vm_cluster_id}
   */
@@ -34,8 +34,8 @@ export interface DataAzurermOracleDbNodesDbNodes {
 }
 
 export function dataAzurermOracleDbNodesDbNodesToTerraform(struct?: DataAzurermOracleDbNodesDbNodes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -44,8 +44,8 @@ export function dataAzurermOracleDbNodesDbNodesToTerraform(struct?: DataAzurermO
 
 
 export function dataAzurermOracleDbNodesDbNodesToHclTerraform(struct?: DataAzurermOracleDbNodesDbNodes): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -53,7 +53,7 @@ export function dataAzurermOracleDbNodesDbNodesToHclTerraform(struct?: DataAzure
   return attrs;
 }
 
-export class DataAzurermOracleDbNodesDbNodesOutputReference extends cdktf.ComplexObject {
+export class DataAzurermOracleDbNodesDbNodesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -62,7 +62,7 @@ export class DataAzurermOracleDbNodesDbNodesOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -192,14 +192,14 @@ export class DataAzurermOracleDbNodesDbNodesOutputReference extends cdktf.Comple
   }
 }
 
-export class DataAzurermOracleDbNodesDbNodesList extends cdktf.ComplexList {
+export class DataAzurermOracleDbNodesDbNodesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -217,25 +217,25 @@ export interface DataAzurermOracleDbNodesTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermOracleDbNodesTimeoutsToTerraform(struct?: DataAzurermOracleDbNodesTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermOracleDbNodesTimeoutsToTerraform(struct?: DataAzurermOracleDbNodesTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermOracleDbNodesTimeoutsToHclTerraform(struct?: DataAzurermOracleDbNodesTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermOracleDbNodesTimeoutsToHclTerraform(struct?: DataAzurermOracleDbNodesTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -246,19 +246,19 @@ export function dataAzurermOracleDbNodesTimeoutsToHclTerraform(struct?: DataAzur
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermOracleDbNodesTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermOracleDbNodesTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermOracleDbNodesTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermOracleDbNodesTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -271,13 +271,13 @@ export class DataAzurermOracleDbNodesTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermOracleDbNodesTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermOracleDbNodesTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -308,7 +308,7 @@ export class DataAzurermOracleDbNodesTimeoutsOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/oracle_db_nodes azurerm_oracle_db_nodes}
 */
-export class DataAzurermOracleDbNodes extends cdktf.TerraformDataSource {
+export class DataAzurermOracleDbNodes extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -319,14 +319,14 @@ export class DataAzurermOracleDbNodes extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermOracleDbNodes resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermOracleDbNodes resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermOracleDbNodes to import
   * @param importFromId The id of the existing DataAzurermOracleDbNodes that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/oracle_db_nodes#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermOracleDbNodes to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_oracle_db_nodes", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_oracle_db_nodes", importId: importFromId, provider });
       }
 
   // ===========
@@ -422,8 +422,8 @@ export class DataAzurermOracleDbNodes extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cloud_vm_cluster_id: cdktf.stringToTerraform(this._cloudVmClusterId),
-      id: cdktf.stringToTerraform(this._id),
+      cloud_vm_cluster_id: cdktn.stringToTerraform(this._cloudVmClusterId),
+      id: cdktn.stringToTerraform(this._id),
       timeouts: dataAzurermOracleDbNodesTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -431,13 +431,13 @@ export class DataAzurermOracleDbNodes extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cloud_vm_cluster_id: {
-        value: cdktf.stringToHclTerraform(this._cloudVmClusterId),
+        value: cdktn.stringToHclTerraform(this._cloudVmClusterId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

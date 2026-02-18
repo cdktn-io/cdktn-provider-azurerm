@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SecurityCenterSubscriptionPricingConfig extends cdktf.TerraformMetaArguments {
+export interface SecurityCenterSubscriptionPricingConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/security_center_subscription_pricing#id SecurityCenterSubscriptionPricing#id}
   *
@@ -36,7 +36,7 @@ export interface SecurityCenterSubscriptionPricingConfig extends cdktf.Terraform
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/security_center_subscription_pricing#extension SecurityCenterSubscriptionPricing#extension}
   */
-  readonly extension?: SecurityCenterSubscriptionPricingExtension[] | cdktf.IResolvable;
+  readonly extension?: SecurityCenterSubscriptionPricingExtension[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -55,32 +55,32 @@ export interface SecurityCenterSubscriptionPricingExtension {
   readonly name: string;
 }
 
-export function securityCenterSubscriptionPricingExtensionToTerraform(struct?: SecurityCenterSubscriptionPricingExtension | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityCenterSubscriptionPricingExtensionToTerraform(struct?: SecurityCenterSubscriptionPricingExtension | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    additional_extension_properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.additionalExtensionProperties),
-    name: cdktf.stringToTerraform(struct!.name),
+    additional_extension_properties: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.additionalExtensionProperties),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function securityCenterSubscriptionPricingExtensionToHclTerraform(struct?: SecurityCenterSubscriptionPricingExtension | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityCenterSubscriptionPricingExtensionToHclTerraform(struct?: SecurityCenterSubscriptionPricingExtension | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     additional_extension_properties: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.additionalExtensionProperties),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.additionalExtensionProperties),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -91,9 +91,9 @@ export function securityCenterSubscriptionPricingExtensionToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityCenterSubscriptionPricingExtensionOutputReference extends cdktf.ComplexObject {
+export class SecurityCenterSubscriptionPricingExtensionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -101,11 +101,11 @@ export class SecurityCenterSubscriptionPricingExtensionOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SecurityCenterSubscriptionPricingExtension | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityCenterSubscriptionPricingExtension | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -122,14 +122,14 @@ export class SecurityCenterSubscriptionPricingExtensionOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityCenterSubscriptionPricingExtension | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityCenterSubscriptionPricingExtension | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._additionalExtensionProperties = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -171,15 +171,15 @@ export class SecurityCenterSubscriptionPricingExtensionOutputReference extends c
   }
 }
 
-export class SecurityCenterSubscriptionPricingExtensionList extends cdktf.ComplexList {
-  public internalValue? : SecurityCenterSubscriptionPricingExtension[] | cdktf.IResolvable
+export class SecurityCenterSubscriptionPricingExtensionList extends cdktn.ComplexList {
+  public internalValue? : SecurityCenterSubscriptionPricingExtension[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -209,46 +209,46 @@ export interface SecurityCenterSubscriptionPricingTimeouts {
   readonly update?: string;
 }
 
-export function securityCenterSubscriptionPricingTimeoutsToTerraform(struct?: SecurityCenterSubscriptionPricingTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityCenterSubscriptionPricingTimeoutsToTerraform(struct?: SecurityCenterSubscriptionPricingTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function securityCenterSubscriptionPricingTimeoutsToHclTerraform(struct?: SecurityCenterSubscriptionPricingTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function securityCenterSubscriptionPricingTimeoutsToHclTerraform(struct?: SecurityCenterSubscriptionPricingTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -259,19 +259,19 @@ export function securityCenterSubscriptionPricingTimeoutsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SecurityCenterSubscriptionPricingTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SecurityCenterSubscriptionPricingTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SecurityCenterSubscriptionPricingTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SecurityCenterSubscriptionPricingTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -296,7 +296,7 @@ export class SecurityCenterSubscriptionPricingTimeoutsOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SecurityCenterSubscriptionPricingTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SecurityCenterSubscriptionPricingTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -305,7 +305,7 @@ export class SecurityCenterSubscriptionPricingTimeoutsOutputReference extends cd
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -387,7 +387,7 @@ export class SecurityCenterSubscriptionPricingTimeoutsOutputReference extends cd
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/security_center_subscription_pricing azurerm_security_center_subscription_pricing}
 */
-export class SecurityCenterSubscriptionPricing extends cdktf.TerraformResource {
+export class SecurityCenterSubscriptionPricing extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -398,14 +398,14 @@ export class SecurityCenterSubscriptionPricing extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SecurityCenterSubscriptionPricing resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SecurityCenterSubscriptionPricing resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecurityCenterSubscriptionPricing to import
   * @param importFromId The id of the existing SecurityCenterSubscriptionPricing that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/security_center_subscription_pricing#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecurityCenterSubscriptionPricing to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_security_center_subscription_pricing", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_security_center_subscription_pricing", importId: importFromId, provider });
       }
 
   // ===========
@@ -513,7 +513,7 @@ export class SecurityCenterSubscriptionPricing extends cdktf.TerraformResource {
   public get extension() {
     return this._extension;
   }
-  public putExtension(value: SecurityCenterSubscriptionPricingExtension[] | cdktf.IResolvable) {
+  public putExtension(value: SecurityCenterSubscriptionPricingExtension[] | cdktn.IResolvable) {
     this._extension.internalValue = value;
   }
   public resetExtension() {
@@ -546,11 +546,11 @@ export class SecurityCenterSubscriptionPricing extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      resource_type: cdktf.stringToTerraform(this._resourceType),
-      subplan: cdktf.stringToTerraform(this._subplan),
-      tier: cdktf.stringToTerraform(this._tier),
-      extension: cdktf.listMapper(securityCenterSubscriptionPricingExtensionToTerraform, true)(this._extension.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      resource_type: cdktn.stringToTerraform(this._resourceType),
+      subplan: cdktn.stringToTerraform(this._subplan),
+      tier: cdktn.stringToTerraform(this._tier),
+      extension: cdktn.listMapper(securityCenterSubscriptionPricingExtensionToTerraform, true)(this._extension.internalValue),
       timeouts: securityCenterSubscriptionPricingTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -558,31 +558,31 @@ export class SecurityCenterSubscriptionPricing extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_type: {
-        value: cdktf.stringToHclTerraform(this._resourceType),
+        value: cdktn.stringToHclTerraform(this._resourceType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subplan: {
-        value: cdktf.stringToHclTerraform(this._subplan),
+        value: cdktn.stringToHclTerraform(this._subplan),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tier: {
-        value: cdktf.stringToHclTerraform(this._tier),
+        value: cdktn.stringToHclTerraform(this._tier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       extension: {
-        value: cdktf.listMapperHcl(securityCenterSubscriptionPricingExtensionToHclTerraform, true)(this._extension.internalValue),
+        value: cdktn.listMapperHcl(securityCenterSubscriptionPricingExtensionToHclTerraform, true)(this._extension.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "SecurityCenterSubscriptionPricingExtensionList",

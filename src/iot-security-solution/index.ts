@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IotSecuritySolutionConfig extends cdktf.TerraformMetaArguments {
+export interface IotSecuritySolutionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iot_security_solution#disabled_data_sources IotSecuritySolution#disabled_data_sources}
   */
@@ -23,7 +23,7 @@ export interface IotSecuritySolutionConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iot_security_solution#enabled IotSecuritySolution#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iot_security_solution#events_to_export IotSecuritySolution#events_to_export}
   */
@@ -50,7 +50,7 @@ export interface IotSecuritySolutionConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iot_security_solution#log_unmasked_ips_enabled IotSecuritySolution#log_unmasked_ips_enabled}
   */
-  readonly logUnmaskedIpsEnabled?: boolean | cdktf.IResolvable;
+  readonly logUnmaskedIpsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iot_security_solution#name IotSecuritySolution#name}
   */
@@ -76,7 +76,7 @@ export interface IotSecuritySolutionConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iot_security_solution#additional_workspace IotSecuritySolution#additional_workspace}
   */
-  readonly additionalWorkspace?: IotSecuritySolutionAdditionalWorkspace[] | cdktf.IResolvable;
+  readonly additionalWorkspace?: IotSecuritySolutionAdditionalWorkspace[] | cdktn.IResolvable;
   /**
   * recommendations_enabled block
   *
@@ -101,32 +101,32 @@ export interface IotSecuritySolutionAdditionalWorkspace {
   readonly workspaceId: string;
 }
 
-export function iotSecuritySolutionAdditionalWorkspaceToTerraform(struct?: IotSecuritySolutionAdditionalWorkspace | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotSecuritySolutionAdditionalWorkspaceToTerraform(struct?: IotSecuritySolutionAdditionalWorkspace | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    data_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.dataTypes),
-    workspace_id: cdktf.stringToTerraform(struct!.workspaceId),
+    data_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.dataTypes),
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
   }
 }
 
 
-export function iotSecuritySolutionAdditionalWorkspaceToHclTerraform(struct?: IotSecuritySolutionAdditionalWorkspace | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotSecuritySolutionAdditionalWorkspaceToHclTerraform(struct?: IotSecuritySolutionAdditionalWorkspace | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     data_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dataTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.dataTypes),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     workspace_id: {
-      value: cdktf.stringToHclTerraform(struct!.workspaceId),
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -137,9 +137,9 @@ export function iotSecuritySolutionAdditionalWorkspaceToHclTerraform(struct?: Io
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotSecuritySolutionAdditionalWorkspaceOutputReference extends cdktf.ComplexObject {
+export class IotSecuritySolutionAdditionalWorkspaceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -147,11 +147,11 @@ export class IotSecuritySolutionAdditionalWorkspaceOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IotSecuritySolutionAdditionalWorkspace | cdktf.IResolvable | undefined {
+  public get internalValue(): IotSecuritySolutionAdditionalWorkspace | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -168,14 +168,14 @@ export class IotSecuritySolutionAdditionalWorkspaceOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IotSecuritySolutionAdditionalWorkspace | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IotSecuritySolutionAdditionalWorkspace | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._dataTypes = undefined;
       this._workspaceId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -190,7 +190,7 @@ export class IotSecuritySolutionAdditionalWorkspaceOutputReference extends cdktf
   // data_types - computed: false, optional: false, required: true
   private _dataTypes?: string[]; 
   public get dataTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('data_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('data_types'));
   }
   public set dataTypes(value: string[]) {
     this._dataTypes = value;
@@ -214,15 +214,15 @@ export class IotSecuritySolutionAdditionalWorkspaceOutputReference extends cdktf
   }
 }
 
-export class IotSecuritySolutionAdditionalWorkspaceList extends cdktf.ComplexList {
-  public internalValue? : IotSecuritySolutionAdditionalWorkspace[] | cdktf.IResolvable
+export class IotSecuritySolutionAdditionalWorkspaceList extends cdktn.ComplexList {
+  public internalValue? : IotSecuritySolutionAdditionalWorkspace[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -237,193 +237,193 @@ export interface IotSecuritySolutionRecommendationsEnabled {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iot_security_solution#acr_authentication IotSecuritySolution#acr_authentication}
   */
-  readonly acrAuthentication?: boolean | cdktf.IResolvable;
+  readonly acrAuthentication?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iot_security_solution#agent_send_unutilized_msg IotSecuritySolution#agent_send_unutilized_msg}
   */
-  readonly agentSendUnutilizedMsg?: boolean | cdktf.IResolvable;
+  readonly agentSendUnutilizedMsg?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iot_security_solution#baseline IotSecuritySolution#baseline}
   */
-  readonly baseline?: boolean | cdktf.IResolvable;
+  readonly baseline?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iot_security_solution#edge_hub_mem_optimize IotSecuritySolution#edge_hub_mem_optimize}
   */
-  readonly edgeHubMemOptimize?: boolean | cdktf.IResolvable;
+  readonly edgeHubMemOptimize?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iot_security_solution#edge_logging_option IotSecuritySolution#edge_logging_option}
   */
-  readonly edgeLoggingOption?: boolean | cdktf.IResolvable;
+  readonly edgeLoggingOption?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iot_security_solution#inconsistent_module_settings IotSecuritySolution#inconsistent_module_settings}
   */
-  readonly inconsistentModuleSettings?: boolean | cdktf.IResolvable;
+  readonly inconsistentModuleSettings?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iot_security_solution#install_agent IotSecuritySolution#install_agent}
   */
-  readonly installAgent?: boolean | cdktf.IResolvable;
+  readonly installAgent?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iot_security_solution#ip_filter_deny_all IotSecuritySolution#ip_filter_deny_all}
   */
-  readonly ipFilterDenyAll?: boolean | cdktf.IResolvable;
+  readonly ipFilterDenyAll?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iot_security_solution#ip_filter_permissive_rule IotSecuritySolution#ip_filter_permissive_rule}
   */
-  readonly ipFilterPermissiveRule?: boolean | cdktf.IResolvable;
+  readonly ipFilterPermissiveRule?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iot_security_solution#open_ports IotSecuritySolution#open_ports}
   */
-  readonly openPorts?: boolean | cdktf.IResolvable;
+  readonly openPorts?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iot_security_solution#permissive_firewall_policy IotSecuritySolution#permissive_firewall_policy}
   */
-  readonly permissiveFirewallPolicy?: boolean | cdktf.IResolvable;
+  readonly permissiveFirewallPolicy?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iot_security_solution#permissive_input_firewall_rules IotSecuritySolution#permissive_input_firewall_rules}
   */
-  readonly permissiveInputFirewallRules?: boolean | cdktf.IResolvable;
+  readonly permissiveInputFirewallRules?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iot_security_solution#permissive_output_firewall_rules IotSecuritySolution#permissive_output_firewall_rules}
   */
-  readonly permissiveOutputFirewallRules?: boolean | cdktf.IResolvable;
+  readonly permissiveOutputFirewallRules?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iot_security_solution#privileged_docker_options IotSecuritySolution#privileged_docker_options}
   */
-  readonly privilegedDockerOptions?: boolean | cdktf.IResolvable;
+  readonly privilegedDockerOptions?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iot_security_solution#shared_credentials IotSecuritySolution#shared_credentials}
   */
-  readonly sharedCredentials?: boolean | cdktf.IResolvable;
+  readonly sharedCredentials?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iot_security_solution#vulnerable_tls_cipher_suite IotSecuritySolution#vulnerable_tls_cipher_suite}
   */
-  readonly vulnerableTlsCipherSuite?: boolean | cdktf.IResolvable;
+  readonly vulnerableTlsCipherSuite?: boolean | cdktn.IResolvable;
 }
 
 export function iotSecuritySolutionRecommendationsEnabledToTerraform(struct?: IotSecuritySolutionRecommendationsEnabledOutputReference | IotSecuritySolutionRecommendationsEnabled): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    acr_authentication: cdktf.booleanToTerraform(struct!.acrAuthentication),
-    agent_send_unutilized_msg: cdktf.booleanToTerraform(struct!.agentSendUnutilizedMsg),
-    baseline: cdktf.booleanToTerraform(struct!.baseline),
-    edge_hub_mem_optimize: cdktf.booleanToTerraform(struct!.edgeHubMemOptimize),
-    edge_logging_option: cdktf.booleanToTerraform(struct!.edgeLoggingOption),
-    inconsistent_module_settings: cdktf.booleanToTerraform(struct!.inconsistentModuleSettings),
-    install_agent: cdktf.booleanToTerraform(struct!.installAgent),
-    ip_filter_deny_all: cdktf.booleanToTerraform(struct!.ipFilterDenyAll),
-    ip_filter_permissive_rule: cdktf.booleanToTerraform(struct!.ipFilterPermissiveRule),
-    open_ports: cdktf.booleanToTerraform(struct!.openPorts),
-    permissive_firewall_policy: cdktf.booleanToTerraform(struct!.permissiveFirewallPolicy),
-    permissive_input_firewall_rules: cdktf.booleanToTerraform(struct!.permissiveInputFirewallRules),
-    permissive_output_firewall_rules: cdktf.booleanToTerraform(struct!.permissiveOutputFirewallRules),
-    privileged_docker_options: cdktf.booleanToTerraform(struct!.privilegedDockerOptions),
-    shared_credentials: cdktf.booleanToTerraform(struct!.sharedCredentials),
-    vulnerable_tls_cipher_suite: cdktf.booleanToTerraform(struct!.vulnerableTlsCipherSuite),
+    acr_authentication: cdktn.booleanToTerraform(struct!.acrAuthentication),
+    agent_send_unutilized_msg: cdktn.booleanToTerraform(struct!.agentSendUnutilizedMsg),
+    baseline: cdktn.booleanToTerraform(struct!.baseline),
+    edge_hub_mem_optimize: cdktn.booleanToTerraform(struct!.edgeHubMemOptimize),
+    edge_logging_option: cdktn.booleanToTerraform(struct!.edgeLoggingOption),
+    inconsistent_module_settings: cdktn.booleanToTerraform(struct!.inconsistentModuleSettings),
+    install_agent: cdktn.booleanToTerraform(struct!.installAgent),
+    ip_filter_deny_all: cdktn.booleanToTerraform(struct!.ipFilterDenyAll),
+    ip_filter_permissive_rule: cdktn.booleanToTerraform(struct!.ipFilterPermissiveRule),
+    open_ports: cdktn.booleanToTerraform(struct!.openPorts),
+    permissive_firewall_policy: cdktn.booleanToTerraform(struct!.permissiveFirewallPolicy),
+    permissive_input_firewall_rules: cdktn.booleanToTerraform(struct!.permissiveInputFirewallRules),
+    permissive_output_firewall_rules: cdktn.booleanToTerraform(struct!.permissiveOutputFirewallRules),
+    privileged_docker_options: cdktn.booleanToTerraform(struct!.privilegedDockerOptions),
+    shared_credentials: cdktn.booleanToTerraform(struct!.sharedCredentials),
+    vulnerable_tls_cipher_suite: cdktn.booleanToTerraform(struct!.vulnerableTlsCipherSuite),
   }
 }
 
 
 export function iotSecuritySolutionRecommendationsEnabledToHclTerraform(struct?: IotSecuritySolutionRecommendationsEnabledOutputReference | IotSecuritySolutionRecommendationsEnabled): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     acr_authentication: {
-      value: cdktf.booleanToHclTerraform(struct!.acrAuthentication),
+      value: cdktn.booleanToHclTerraform(struct!.acrAuthentication),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     agent_send_unutilized_msg: {
-      value: cdktf.booleanToHclTerraform(struct!.agentSendUnutilizedMsg),
+      value: cdktn.booleanToHclTerraform(struct!.agentSendUnutilizedMsg),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     baseline: {
-      value: cdktf.booleanToHclTerraform(struct!.baseline),
+      value: cdktn.booleanToHclTerraform(struct!.baseline),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     edge_hub_mem_optimize: {
-      value: cdktf.booleanToHclTerraform(struct!.edgeHubMemOptimize),
+      value: cdktn.booleanToHclTerraform(struct!.edgeHubMemOptimize),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     edge_logging_option: {
-      value: cdktf.booleanToHclTerraform(struct!.edgeLoggingOption),
+      value: cdktn.booleanToHclTerraform(struct!.edgeLoggingOption),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     inconsistent_module_settings: {
-      value: cdktf.booleanToHclTerraform(struct!.inconsistentModuleSettings),
+      value: cdktn.booleanToHclTerraform(struct!.inconsistentModuleSettings),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     install_agent: {
-      value: cdktf.booleanToHclTerraform(struct!.installAgent),
+      value: cdktn.booleanToHclTerraform(struct!.installAgent),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     ip_filter_deny_all: {
-      value: cdktf.booleanToHclTerraform(struct!.ipFilterDenyAll),
+      value: cdktn.booleanToHclTerraform(struct!.ipFilterDenyAll),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     ip_filter_permissive_rule: {
-      value: cdktf.booleanToHclTerraform(struct!.ipFilterPermissiveRule),
+      value: cdktn.booleanToHclTerraform(struct!.ipFilterPermissiveRule),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     open_ports: {
-      value: cdktf.booleanToHclTerraform(struct!.openPorts),
+      value: cdktn.booleanToHclTerraform(struct!.openPorts),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     permissive_firewall_policy: {
-      value: cdktf.booleanToHclTerraform(struct!.permissiveFirewallPolicy),
+      value: cdktn.booleanToHclTerraform(struct!.permissiveFirewallPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     permissive_input_firewall_rules: {
-      value: cdktf.booleanToHclTerraform(struct!.permissiveInputFirewallRules),
+      value: cdktn.booleanToHclTerraform(struct!.permissiveInputFirewallRules),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     permissive_output_firewall_rules: {
-      value: cdktf.booleanToHclTerraform(struct!.permissiveOutputFirewallRules),
+      value: cdktn.booleanToHclTerraform(struct!.permissiveOutputFirewallRules),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     privileged_docker_options: {
-      value: cdktf.booleanToHclTerraform(struct!.privilegedDockerOptions),
+      value: cdktn.booleanToHclTerraform(struct!.privilegedDockerOptions),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     shared_credentials: {
-      value: cdktf.booleanToHclTerraform(struct!.sharedCredentials),
+      value: cdktn.booleanToHclTerraform(struct!.sharedCredentials),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     vulnerable_tls_cipher_suite: {
-      value: cdktf.booleanToHclTerraform(struct!.vulnerableTlsCipherSuite),
+      value: cdktn.booleanToHclTerraform(struct!.vulnerableTlsCipherSuite),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -434,14 +434,14 @@ export function iotSecuritySolutionRecommendationsEnabledToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotSecuritySolutionRecommendationsEnabledOutputReference extends cdktf.ComplexObject {
+export class IotSecuritySolutionRecommendationsEnabledOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -557,11 +557,11 @@ export class IotSecuritySolutionRecommendationsEnabledOutputReference extends cd
   }
 
   // acr_authentication - computed: false, optional: true, required: false
-  private _acrAuthentication?: boolean | cdktf.IResolvable; 
+  private _acrAuthentication?: boolean | cdktn.IResolvable; 
   public get acrAuthentication() {
     return this.getBooleanAttribute('acr_authentication');
   }
-  public set acrAuthentication(value: boolean | cdktf.IResolvable) {
+  public set acrAuthentication(value: boolean | cdktn.IResolvable) {
     this._acrAuthentication = value;
   }
   public resetAcrAuthentication() {
@@ -573,11 +573,11 @@ export class IotSecuritySolutionRecommendationsEnabledOutputReference extends cd
   }
 
   // agent_send_unutilized_msg - computed: false, optional: true, required: false
-  private _agentSendUnutilizedMsg?: boolean | cdktf.IResolvable; 
+  private _agentSendUnutilizedMsg?: boolean | cdktn.IResolvable; 
   public get agentSendUnutilizedMsg() {
     return this.getBooleanAttribute('agent_send_unutilized_msg');
   }
-  public set agentSendUnutilizedMsg(value: boolean | cdktf.IResolvable) {
+  public set agentSendUnutilizedMsg(value: boolean | cdktn.IResolvable) {
     this._agentSendUnutilizedMsg = value;
   }
   public resetAgentSendUnutilizedMsg() {
@@ -589,11 +589,11 @@ export class IotSecuritySolutionRecommendationsEnabledOutputReference extends cd
   }
 
   // baseline - computed: false, optional: true, required: false
-  private _baseline?: boolean | cdktf.IResolvable; 
+  private _baseline?: boolean | cdktn.IResolvable; 
   public get baseline() {
     return this.getBooleanAttribute('baseline');
   }
-  public set baseline(value: boolean | cdktf.IResolvable) {
+  public set baseline(value: boolean | cdktn.IResolvable) {
     this._baseline = value;
   }
   public resetBaseline() {
@@ -605,11 +605,11 @@ export class IotSecuritySolutionRecommendationsEnabledOutputReference extends cd
   }
 
   // edge_hub_mem_optimize - computed: false, optional: true, required: false
-  private _edgeHubMemOptimize?: boolean | cdktf.IResolvable; 
+  private _edgeHubMemOptimize?: boolean | cdktn.IResolvable; 
   public get edgeHubMemOptimize() {
     return this.getBooleanAttribute('edge_hub_mem_optimize');
   }
-  public set edgeHubMemOptimize(value: boolean | cdktf.IResolvable) {
+  public set edgeHubMemOptimize(value: boolean | cdktn.IResolvable) {
     this._edgeHubMemOptimize = value;
   }
   public resetEdgeHubMemOptimize() {
@@ -621,11 +621,11 @@ export class IotSecuritySolutionRecommendationsEnabledOutputReference extends cd
   }
 
   // edge_logging_option - computed: false, optional: true, required: false
-  private _edgeLoggingOption?: boolean | cdktf.IResolvable; 
+  private _edgeLoggingOption?: boolean | cdktn.IResolvable; 
   public get edgeLoggingOption() {
     return this.getBooleanAttribute('edge_logging_option');
   }
-  public set edgeLoggingOption(value: boolean | cdktf.IResolvable) {
+  public set edgeLoggingOption(value: boolean | cdktn.IResolvable) {
     this._edgeLoggingOption = value;
   }
   public resetEdgeLoggingOption() {
@@ -637,11 +637,11 @@ export class IotSecuritySolutionRecommendationsEnabledOutputReference extends cd
   }
 
   // inconsistent_module_settings - computed: false, optional: true, required: false
-  private _inconsistentModuleSettings?: boolean | cdktf.IResolvable; 
+  private _inconsistentModuleSettings?: boolean | cdktn.IResolvable; 
   public get inconsistentModuleSettings() {
     return this.getBooleanAttribute('inconsistent_module_settings');
   }
-  public set inconsistentModuleSettings(value: boolean | cdktf.IResolvable) {
+  public set inconsistentModuleSettings(value: boolean | cdktn.IResolvable) {
     this._inconsistentModuleSettings = value;
   }
   public resetInconsistentModuleSettings() {
@@ -653,11 +653,11 @@ export class IotSecuritySolutionRecommendationsEnabledOutputReference extends cd
   }
 
   // install_agent - computed: false, optional: true, required: false
-  private _installAgent?: boolean | cdktf.IResolvable; 
+  private _installAgent?: boolean | cdktn.IResolvable; 
   public get installAgent() {
     return this.getBooleanAttribute('install_agent');
   }
-  public set installAgent(value: boolean | cdktf.IResolvable) {
+  public set installAgent(value: boolean | cdktn.IResolvable) {
     this._installAgent = value;
   }
   public resetInstallAgent() {
@@ -669,11 +669,11 @@ export class IotSecuritySolutionRecommendationsEnabledOutputReference extends cd
   }
 
   // ip_filter_deny_all - computed: false, optional: true, required: false
-  private _ipFilterDenyAll?: boolean | cdktf.IResolvable; 
+  private _ipFilterDenyAll?: boolean | cdktn.IResolvable; 
   public get ipFilterDenyAll() {
     return this.getBooleanAttribute('ip_filter_deny_all');
   }
-  public set ipFilterDenyAll(value: boolean | cdktf.IResolvable) {
+  public set ipFilterDenyAll(value: boolean | cdktn.IResolvable) {
     this._ipFilterDenyAll = value;
   }
   public resetIpFilterDenyAll() {
@@ -685,11 +685,11 @@ export class IotSecuritySolutionRecommendationsEnabledOutputReference extends cd
   }
 
   // ip_filter_permissive_rule - computed: false, optional: true, required: false
-  private _ipFilterPermissiveRule?: boolean | cdktf.IResolvable; 
+  private _ipFilterPermissiveRule?: boolean | cdktn.IResolvable; 
   public get ipFilterPermissiveRule() {
     return this.getBooleanAttribute('ip_filter_permissive_rule');
   }
-  public set ipFilterPermissiveRule(value: boolean | cdktf.IResolvable) {
+  public set ipFilterPermissiveRule(value: boolean | cdktn.IResolvable) {
     this._ipFilterPermissiveRule = value;
   }
   public resetIpFilterPermissiveRule() {
@@ -701,11 +701,11 @@ export class IotSecuritySolutionRecommendationsEnabledOutputReference extends cd
   }
 
   // open_ports - computed: false, optional: true, required: false
-  private _openPorts?: boolean | cdktf.IResolvable; 
+  private _openPorts?: boolean | cdktn.IResolvable; 
   public get openPorts() {
     return this.getBooleanAttribute('open_ports');
   }
-  public set openPorts(value: boolean | cdktf.IResolvable) {
+  public set openPorts(value: boolean | cdktn.IResolvable) {
     this._openPorts = value;
   }
   public resetOpenPorts() {
@@ -717,11 +717,11 @@ export class IotSecuritySolutionRecommendationsEnabledOutputReference extends cd
   }
 
   // permissive_firewall_policy - computed: false, optional: true, required: false
-  private _permissiveFirewallPolicy?: boolean | cdktf.IResolvable; 
+  private _permissiveFirewallPolicy?: boolean | cdktn.IResolvable; 
   public get permissiveFirewallPolicy() {
     return this.getBooleanAttribute('permissive_firewall_policy');
   }
-  public set permissiveFirewallPolicy(value: boolean | cdktf.IResolvable) {
+  public set permissiveFirewallPolicy(value: boolean | cdktn.IResolvable) {
     this._permissiveFirewallPolicy = value;
   }
   public resetPermissiveFirewallPolicy() {
@@ -733,11 +733,11 @@ export class IotSecuritySolutionRecommendationsEnabledOutputReference extends cd
   }
 
   // permissive_input_firewall_rules - computed: false, optional: true, required: false
-  private _permissiveInputFirewallRules?: boolean | cdktf.IResolvable; 
+  private _permissiveInputFirewallRules?: boolean | cdktn.IResolvable; 
   public get permissiveInputFirewallRules() {
     return this.getBooleanAttribute('permissive_input_firewall_rules');
   }
-  public set permissiveInputFirewallRules(value: boolean | cdktf.IResolvable) {
+  public set permissiveInputFirewallRules(value: boolean | cdktn.IResolvable) {
     this._permissiveInputFirewallRules = value;
   }
   public resetPermissiveInputFirewallRules() {
@@ -749,11 +749,11 @@ export class IotSecuritySolutionRecommendationsEnabledOutputReference extends cd
   }
 
   // permissive_output_firewall_rules - computed: false, optional: true, required: false
-  private _permissiveOutputFirewallRules?: boolean | cdktf.IResolvable; 
+  private _permissiveOutputFirewallRules?: boolean | cdktn.IResolvable; 
   public get permissiveOutputFirewallRules() {
     return this.getBooleanAttribute('permissive_output_firewall_rules');
   }
-  public set permissiveOutputFirewallRules(value: boolean | cdktf.IResolvable) {
+  public set permissiveOutputFirewallRules(value: boolean | cdktn.IResolvable) {
     this._permissiveOutputFirewallRules = value;
   }
   public resetPermissiveOutputFirewallRules() {
@@ -765,11 +765,11 @@ export class IotSecuritySolutionRecommendationsEnabledOutputReference extends cd
   }
 
   // privileged_docker_options - computed: false, optional: true, required: false
-  private _privilegedDockerOptions?: boolean | cdktf.IResolvable; 
+  private _privilegedDockerOptions?: boolean | cdktn.IResolvable; 
   public get privilegedDockerOptions() {
     return this.getBooleanAttribute('privileged_docker_options');
   }
-  public set privilegedDockerOptions(value: boolean | cdktf.IResolvable) {
+  public set privilegedDockerOptions(value: boolean | cdktn.IResolvable) {
     this._privilegedDockerOptions = value;
   }
   public resetPrivilegedDockerOptions() {
@@ -781,11 +781,11 @@ export class IotSecuritySolutionRecommendationsEnabledOutputReference extends cd
   }
 
   // shared_credentials - computed: false, optional: true, required: false
-  private _sharedCredentials?: boolean | cdktf.IResolvable; 
+  private _sharedCredentials?: boolean | cdktn.IResolvable; 
   public get sharedCredentials() {
     return this.getBooleanAttribute('shared_credentials');
   }
-  public set sharedCredentials(value: boolean | cdktf.IResolvable) {
+  public set sharedCredentials(value: boolean | cdktn.IResolvable) {
     this._sharedCredentials = value;
   }
   public resetSharedCredentials() {
@@ -797,11 +797,11 @@ export class IotSecuritySolutionRecommendationsEnabledOutputReference extends cd
   }
 
   // vulnerable_tls_cipher_suite - computed: false, optional: true, required: false
-  private _vulnerableTlsCipherSuite?: boolean | cdktf.IResolvable; 
+  private _vulnerableTlsCipherSuite?: boolean | cdktn.IResolvable; 
   public get vulnerableTlsCipherSuite() {
     return this.getBooleanAttribute('vulnerable_tls_cipher_suite');
   }
-  public set vulnerableTlsCipherSuite(value: boolean | cdktf.IResolvable) {
+  public set vulnerableTlsCipherSuite(value: boolean | cdktn.IResolvable) {
     this._vulnerableTlsCipherSuite = value;
   }
   public resetVulnerableTlsCipherSuite() {
@@ -831,46 +831,46 @@ export interface IotSecuritySolutionTimeouts {
   readonly update?: string;
 }
 
-export function iotSecuritySolutionTimeoutsToTerraform(struct?: IotSecuritySolutionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotSecuritySolutionTimeoutsToTerraform(struct?: IotSecuritySolutionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function iotSecuritySolutionTimeoutsToHclTerraform(struct?: IotSecuritySolutionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iotSecuritySolutionTimeoutsToHclTerraform(struct?: IotSecuritySolutionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -881,19 +881,19 @@ export function iotSecuritySolutionTimeoutsToHclTerraform(struct?: IotSecuritySo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IotSecuritySolutionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class IotSecuritySolutionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): IotSecuritySolutionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): IotSecuritySolutionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -918,7 +918,7 @@ export class IotSecuritySolutionTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IotSecuritySolutionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IotSecuritySolutionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -927,7 +927,7 @@ export class IotSecuritySolutionTimeoutsOutputReference extends cdktf.ComplexObj
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1009,7 +1009,7 @@ export class IotSecuritySolutionTimeoutsOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iot_security_solution azurerm_iot_security_solution}
 */
-export class IotSecuritySolution extends cdktf.TerraformResource {
+export class IotSecuritySolution extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1020,14 +1020,14 @@ export class IotSecuritySolution extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IotSecuritySolution resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IotSecuritySolution resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IotSecuritySolution to import
   * @param importFromId The id of the existing IotSecuritySolution that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iot_security_solution#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IotSecuritySolution to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_iot_security_solution", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_iot_security_solution", importId: importFromId, provider });
       }
 
   // ===========
@@ -1083,7 +1083,7 @@ export class IotSecuritySolution extends cdktf.TerraformResource {
   // disabled_data_sources - computed: false, optional: true, required: false
   private _disabledDataSources?: string[]; 
   public get disabledDataSources() {
-    return cdktf.Fn.tolist(this.getListAttribute('disabled_data_sources'));
+    return cdktn.Fn.tolist(this.getListAttribute('disabled_data_sources'));
   }
   public set disabledDataSources(value: string[]) {
     this._disabledDataSources = value;
@@ -1110,11 +1110,11 @@ export class IotSecuritySolution extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -1128,7 +1128,7 @@ export class IotSecuritySolution extends cdktf.TerraformResource {
   // events_to_export - computed: false, optional: true, required: false
   private _eventsToExport?: string[]; 
   public get eventsToExport() {
-    return cdktf.Fn.tolist(this.getListAttribute('events_to_export'));
+    return cdktn.Fn.tolist(this.getListAttribute('events_to_export'));
   }
   public set eventsToExport(value: string[]) {
     this._eventsToExport = value;
@@ -1160,7 +1160,7 @@ export class IotSecuritySolution extends cdktf.TerraformResource {
   // iothub_ids - computed: false, optional: false, required: true
   private _iothubIds?: string[]; 
   public get iothubIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('iothub_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('iothub_ids'));
   }
   public set iothubIds(value: string[]) {
     this._iothubIds = value;
@@ -1200,11 +1200,11 @@ export class IotSecuritySolution extends cdktf.TerraformResource {
   }
 
   // log_unmasked_ips_enabled - computed: false, optional: true, required: false
-  private _logUnmaskedIpsEnabled?: boolean | cdktf.IResolvable; 
+  private _logUnmaskedIpsEnabled?: boolean | cdktn.IResolvable; 
   public get logUnmaskedIpsEnabled() {
     return this.getBooleanAttribute('log_unmasked_ips_enabled');
   }
-  public set logUnmaskedIpsEnabled(value: boolean | cdktf.IResolvable) {
+  public set logUnmaskedIpsEnabled(value: boolean | cdktn.IResolvable) {
     this._logUnmaskedIpsEnabled = value;
   }
   public resetLogUnmaskedIpsEnabled() {
@@ -1247,7 +1247,7 @@ export class IotSecuritySolution extends cdktf.TerraformResource {
   // query_subscription_ids - computed: true, optional: true, required: false
   private _querySubscriptionIds?: string[]; 
   public get querySubscriptionIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('query_subscription_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('query_subscription_ids'));
   }
   public set querySubscriptionIds(value: string[]) {
     this._querySubscriptionIds = value;
@@ -1294,7 +1294,7 @@ export class IotSecuritySolution extends cdktf.TerraformResource {
   public get additionalWorkspace() {
     return this._additionalWorkspace;
   }
-  public putAdditionalWorkspace(value: IotSecuritySolutionAdditionalWorkspace[] | cdktf.IResolvable) {
+  public putAdditionalWorkspace(value: IotSecuritySolutionAdditionalWorkspace[] | cdktn.IResolvable) {
     this._additionalWorkspace.internalValue = value;
   }
   public resetAdditionalWorkspace() {
@@ -1343,21 +1343,21 @@ export class IotSecuritySolution extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      disabled_data_sources: cdktf.listMapper(cdktf.stringToTerraform, false)(this._disabledDataSources),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      events_to_export: cdktf.listMapper(cdktf.stringToTerraform, false)(this._eventsToExport),
-      id: cdktf.stringToTerraform(this._id),
-      iothub_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._iothubIds),
-      location: cdktf.stringToTerraform(this._location),
-      log_analytics_workspace_id: cdktf.stringToTerraform(this._logAnalyticsWorkspaceId),
-      log_unmasked_ips_enabled: cdktf.booleanToTerraform(this._logUnmaskedIpsEnabled),
-      name: cdktf.stringToTerraform(this._name),
-      query_for_resources: cdktf.stringToTerraform(this._queryForResources),
-      query_subscription_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._querySubscriptionIds),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      additional_workspace: cdktf.listMapper(iotSecuritySolutionAdditionalWorkspaceToTerraform, true)(this._additionalWorkspace.internalValue),
+      disabled_data_sources: cdktn.listMapper(cdktn.stringToTerraform, false)(this._disabledDataSources),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      events_to_export: cdktn.listMapper(cdktn.stringToTerraform, false)(this._eventsToExport),
+      id: cdktn.stringToTerraform(this._id),
+      iothub_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._iothubIds),
+      location: cdktn.stringToTerraform(this._location),
+      log_analytics_workspace_id: cdktn.stringToTerraform(this._logAnalyticsWorkspaceId),
+      log_unmasked_ips_enabled: cdktn.booleanToTerraform(this._logUnmaskedIpsEnabled),
+      name: cdktn.stringToTerraform(this._name),
+      query_for_resources: cdktn.stringToTerraform(this._queryForResources),
+      query_subscription_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._querySubscriptionIds),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      additional_workspace: cdktn.listMapper(iotSecuritySolutionAdditionalWorkspaceToTerraform, true)(this._additionalWorkspace.internalValue),
       recommendations_enabled: iotSecuritySolutionRecommendationsEnabledToTerraform(this._recommendationsEnabled.internalValue),
       timeouts: iotSecuritySolutionTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1366,91 +1366,91 @@ export class IotSecuritySolution extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       disabled_data_sources: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._disabledDataSources),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._disabledDataSources),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       events_to_export: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._eventsToExport),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._eventsToExport),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       iothub_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._iothubIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._iothubIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       log_analytics_workspace_id: {
-        value: cdktf.stringToHclTerraform(this._logAnalyticsWorkspaceId),
+        value: cdktn.stringToHclTerraform(this._logAnalyticsWorkspaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       log_unmasked_ips_enabled: {
-        value: cdktf.booleanToHclTerraform(this._logUnmaskedIpsEnabled),
+        value: cdktn.booleanToHclTerraform(this._logUnmaskedIpsEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       query_for_resources: {
-        value: cdktf.stringToHclTerraform(this._queryForResources),
+        value: cdktn.stringToHclTerraform(this._queryForResources),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       query_subscription_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._querySubscriptionIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._querySubscriptionIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       additional_workspace: {
-        value: cdktf.listMapperHcl(iotSecuritySolutionAdditionalWorkspaceToHclTerraform, true)(this._additionalWorkspace.internalValue),
+        value: cdktn.listMapperHcl(iotSecuritySolutionAdditionalWorkspaceToHclTerraform, true)(this._additionalWorkspace.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "IotSecuritySolutionAdditionalWorkspaceList",

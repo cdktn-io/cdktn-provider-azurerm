@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SentinelAlertRuleAnomalyDuplicateConfig extends cdktf.TerraformMetaArguments {
+export interface SentinelAlertRuleAnomalyDuplicateConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_alert_rule_anomaly_duplicate#built_in_rule_id SentinelAlertRuleAnomalyDuplicate#built_in_rule_id}
   */
@@ -23,7 +23,7 @@ export interface SentinelAlertRuleAnomalyDuplicateConfig extends cdktf.Terraform
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_alert_rule_anomaly_duplicate#enabled SentinelAlertRuleAnomalyDuplicate#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_alert_rule_anomaly_duplicate#id SentinelAlertRuleAnomalyDuplicate#id}
   *
@@ -44,25 +44,25 @@ export interface SentinelAlertRuleAnomalyDuplicateConfig extends cdktf.Terraform
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_alert_rule_anomaly_duplicate#multi_select_observation SentinelAlertRuleAnomalyDuplicate#multi_select_observation}
   */
-  readonly multiSelectObservation?: SentinelAlertRuleAnomalyDuplicateMultiSelectObservation[] | cdktf.IResolvable;
+  readonly multiSelectObservation?: SentinelAlertRuleAnomalyDuplicateMultiSelectObservation[] | cdktn.IResolvable;
   /**
   * prioritized_exclude_observation block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_alert_rule_anomaly_duplicate#prioritized_exclude_observation SentinelAlertRuleAnomalyDuplicate#prioritized_exclude_observation}
   */
-  readonly prioritizedExcludeObservation?: SentinelAlertRuleAnomalyDuplicatePrioritizedExcludeObservation[] | cdktf.IResolvable;
+  readonly prioritizedExcludeObservation?: SentinelAlertRuleAnomalyDuplicatePrioritizedExcludeObservation[] | cdktn.IResolvable;
   /**
   * single_select_observation block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_alert_rule_anomaly_duplicate#single_select_observation SentinelAlertRuleAnomalyDuplicate#single_select_observation}
   */
-  readonly singleSelectObservation?: SentinelAlertRuleAnomalyDuplicateSingleSelectObservation[] | cdktf.IResolvable;
+  readonly singleSelectObservation?: SentinelAlertRuleAnomalyDuplicateSingleSelectObservation[] | cdktn.IResolvable;
   /**
   * threshold_observation block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_alert_rule_anomaly_duplicate#threshold_observation SentinelAlertRuleAnomalyDuplicate#threshold_observation}
   */
-  readonly thresholdObservation?: SentinelAlertRuleAnomalyDuplicateThresholdObservation[] | cdktf.IResolvable;
+  readonly thresholdObservation?: SentinelAlertRuleAnomalyDuplicateThresholdObservation[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -74,8 +74,8 @@ export interface SentinelAlertRuleAnomalyDuplicateRequiredDataConnector {
 }
 
 export function sentinelAlertRuleAnomalyDuplicateRequiredDataConnectorToTerraform(struct?: SentinelAlertRuleAnomalyDuplicateRequiredDataConnector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -84,8 +84,8 @@ export function sentinelAlertRuleAnomalyDuplicateRequiredDataConnectorToTerrafor
 
 
 export function sentinelAlertRuleAnomalyDuplicateRequiredDataConnectorToHclTerraform(struct?: SentinelAlertRuleAnomalyDuplicateRequiredDataConnector): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -93,7 +93,7 @@ export function sentinelAlertRuleAnomalyDuplicateRequiredDataConnectorToHclTerra
   return attrs;
 }
 
-export class SentinelAlertRuleAnomalyDuplicateRequiredDataConnectorOutputReference extends cdktf.ComplexObject {
+export class SentinelAlertRuleAnomalyDuplicateRequiredDataConnectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -102,7 +102,7 @@ export class SentinelAlertRuleAnomalyDuplicateRequiredDataConnectorOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -132,14 +132,14 @@ export class SentinelAlertRuleAnomalyDuplicateRequiredDataConnectorOutputReferen
   }
 }
 
-export class SentinelAlertRuleAnomalyDuplicateRequiredDataConnectorList extends cdktf.ComplexList {
+export class SentinelAlertRuleAnomalyDuplicateRequiredDataConnectorList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -161,32 +161,32 @@ export interface SentinelAlertRuleAnomalyDuplicateMultiSelectObservation {
   readonly values: string[];
 }
 
-export function sentinelAlertRuleAnomalyDuplicateMultiSelectObservationToTerraform(struct?: SentinelAlertRuleAnomalyDuplicateMultiSelectObservation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sentinelAlertRuleAnomalyDuplicateMultiSelectObservationToTerraform(struct?: SentinelAlertRuleAnomalyDuplicateMultiSelectObservation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    name: cdktn.stringToTerraform(struct!.name),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
-export function sentinelAlertRuleAnomalyDuplicateMultiSelectObservationToHclTerraform(struct?: SentinelAlertRuleAnomalyDuplicateMultiSelectObservation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sentinelAlertRuleAnomalyDuplicateMultiSelectObservationToHclTerraform(struct?: SentinelAlertRuleAnomalyDuplicateMultiSelectObservation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -197,9 +197,9 @@ export function sentinelAlertRuleAnomalyDuplicateMultiSelectObservationToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SentinelAlertRuleAnomalyDuplicateMultiSelectObservationOutputReference extends cdktf.ComplexObject {
+export class SentinelAlertRuleAnomalyDuplicateMultiSelectObservationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -207,11 +207,11 @@ export class SentinelAlertRuleAnomalyDuplicateMultiSelectObservationOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SentinelAlertRuleAnomalyDuplicateMultiSelectObservation | cdktf.IResolvable | undefined {
+  public get internalValue(): SentinelAlertRuleAnomalyDuplicateMultiSelectObservation | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -228,14 +228,14 @@ export class SentinelAlertRuleAnomalyDuplicateMultiSelectObservationOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SentinelAlertRuleAnomalyDuplicateMultiSelectObservation | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SentinelAlertRuleAnomalyDuplicateMultiSelectObservation | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._values = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -284,15 +284,15 @@ export class SentinelAlertRuleAnomalyDuplicateMultiSelectObservationOutputRefere
   }
 }
 
-export class SentinelAlertRuleAnomalyDuplicateMultiSelectObservationList extends cdktf.ComplexList {
-  public internalValue? : SentinelAlertRuleAnomalyDuplicateMultiSelectObservation[] | cdktf.IResolvable
+export class SentinelAlertRuleAnomalyDuplicateMultiSelectObservationList extends cdktn.ComplexList {
+  public internalValue? : SentinelAlertRuleAnomalyDuplicateMultiSelectObservation[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -318,39 +318,39 @@ export interface SentinelAlertRuleAnomalyDuplicatePrioritizedExcludeObservation 
   readonly prioritize?: string;
 }
 
-export function sentinelAlertRuleAnomalyDuplicatePrioritizedExcludeObservationToTerraform(struct?: SentinelAlertRuleAnomalyDuplicatePrioritizedExcludeObservation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sentinelAlertRuleAnomalyDuplicatePrioritizedExcludeObservationToTerraform(struct?: SentinelAlertRuleAnomalyDuplicatePrioritizedExcludeObservation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    exclude: cdktf.stringToTerraform(struct!.exclude),
-    name: cdktf.stringToTerraform(struct!.name),
-    prioritize: cdktf.stringToTerraform(struct!.prioritize),
+    exclude: cdktn.stringToTerraform(struct!.exclude),
+    name: cdktn.stringToTerraform(struct!.name),
+    prioritize: cdktn.stringToTerraform(struct!.prioritize),
   }
 }
 
 
-export function sentinelAlertRuleAnomalyDuplicatePrioritizedExcludeObservationToHclTerraform(struct?: SentinelAlertRuleAnomalyDuplicatePrioritizedExcludeObservation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sentinelAlertRuleAnomalyDuplicatePrioritizedExcludeObservationToHclTerraform(struct?: SentinelAlertRuleAnomalyDuplicatePrioritizedExcludeObservation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     exclude: {
-      value: cdktf.stringToHclTerraform(struct!.exclude),
+      value: cdktn.stringToHclTerraform(struct!.exclude),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     prioritize: {
-      value: cdktf.stringToHclTerraform(struct!.prioritize),
+      value: cdktn.stringToHclTerraform(struct!.prioritize),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -361,9 +361,9 @@ export function sentinelAlertRuleAnomalyDuplicatePrioritizedExcludeObservationTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SentinelAlertRuleAnomalyDuplicatePrioritizedExcludeObservationOutputReference extends cdktf.ComplexObject {
+export class SentinelAlertRuleAnomalyDuplicatePrioritizedExcludeObservationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -371,11 +371,11 @@ export class SentinelAlertRuleAnomalyDuplicatePrioritizedExcludeObservationOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SentinelAlertRuleAnomalyDuplicatePrioritizedExcludeObservation | cdktf.IResolvable | undefined {
+  public get internalValue(): SentinelAlertRuleAnomalyDuplicatePrioritizedExcludeObservation | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -396,7 +396,7 @@ export class SentinelAlertRuleAnomalyDuplicatePrioritizedExcludeObservationOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SentinelAlertRuleAnomalyDuplicatePrioritizedExcludeObservation | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SentinelAlertRuleAnomalyDuplicatePrioritizedExcludeObservation | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -404,7 +404,7 @@ export class SentinelAlertRuleAnomalyDuplicatePrioritizedExcludeObservationOutpu
       this._name = undefined;
       this._prioritize = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -468,15 +468,15 @@ export class SentinelAlertRuleAnomalyDuplicatePrioritizedExcludeObservationOutpu
   }
 }
 
-export class SentinelAlertRuleAnomalyDuplicatePrioritizedExcludeObservationList extends cdktf.ComplexList {
-  public internalValue? : SentinelAlertRuleAnomalyDuplicatePrioritizedExcludeObservation[] | cdktf.IResolvable
+export class SentinelAlertRuleAnomalyDuplicatePrioritizedExcludeObservationList extends cdktn.ComplexList {
+  public internalValue? : SentinelAlertRuleAnomalyDuplicatePrioritizedExcludeObservation[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -498,32 +498,32 @@ export interface SentinelAlertRuleAnomalyDuplicateSingleSelectObservation {
   readonly value: string;
 }
 
-export function sentinelAlertRuleAnomalyDuplicateSingleSelectObservationToTerraform(struct?: SentinelAlertRuleAnomalyDuplicateSingleSelectObservation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sentinelAlertRuleAnomalyDuplicateSingleSelectObservationToTerraform(struct?: SentinelAlertRuleAnomalyDuplicateSingleSelectObservation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function sentinelAlertRuleAnomalyDuplicateSingleSelectObservationToHclTerraform(struct?: SentinelAlertRuleAnomalyDuplicateSingleSelectObservation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sentinelAlertRuleAnomalyDuplicateSingleSelectObservationToHclTerraform(struct?: SentinelAlertRuleAnomalyDuplicateSingleSelectObservation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -534,9 +534,9 @@ export function sentinelAlertRuleAnomalyDuplicateSingleSelectObservationToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SentinelAlertRuleAnomalyDuplicateSingleSelectObservationOutputReference extends cdktf.ComplexObject {
+export class SentinelAlertRuleAnomalyDuplicateSingleSelectObservationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -544,11 +544,11 @@ export class SentinelAlertRuleAnomalyDuplicateSingleSelectObservationOutputRefer
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SentinelAlertRuleAnomalyDuplicateSingleSelectObservation | cdktf.IResolvable | undefined {
+  public get internalValue(): SentinelAlertRuleAnomalyDuplicateSingleSelectObservation | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -565,14 +565,14 @@ export class SentinelAlertRuleAnomalyDuplicateSingleSelectObservationOutputRefer
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SentinelAlertRuleAnomalyDuplicateSingleSelectObservation | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SentinelAlertRuleAnomalyDuplicateSingleSelectObservation | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -621,15 +621,15 @@ export class SentinelAlertRuleAnomalyDuplicateSingleSelectObservationOutputRefer
   }
 }
 
-export class SentinelAlertRuleAnomalyDuplicateSingleSelectObservationList extends cdktf.ComplexList {
-  public internalValue? : SentinelAlertRuleAnomalyDuplicateSingleSelectObservation[] | cdktf.IResolvable
+export class SentinelAlertRuleAnomalyDuplicateSingleSelectObservationList extends cdktn.ComplexList {
+  public internalValue? : SentinelAlertRuleAnomalyDuplicateSingleSelectObservation[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -651,32 +651,32 @@ export interface SentinelAlertRuleAnomalyDuplicateThresholdObservation {
   readonly value: string;
 }
 
-export function sentinelAlertRuleAnomalyDuplicateThresholdObservationToTerraform(struct?: SentinelAlertRuleAnomalyDuplicateThresholdObservation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sentinelAlertRuleAnomalyDuplicateThresholdObservationToTerraform(struct?: SentinelAlertRuleAnomalyDuplicateThresholdObservation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function sentinelAlertRuleAnomalyDuplicateThresholdObservationToHclTerraform(struct?: SentinelAlertRuleAnomalyDuplicateThresholdObservation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sentinelAlertRuleAnomalyDuplicateThresholdObservationToHclTerraform(struct?: SentinelAlertRuleAnomalyDuplicateThresholdObservation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -687,9 +687,9 @@ export function sentinelAlertRuleAnomalyDuplicateThresholdObservationToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SentinelAlertRuleAnomalyDuplicateThresholdObservationOutputReference extends cdktf.ComplexObject {
+export class SentinelAlertRuleAnomalyDuplicateThresholdObservationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -697,11 +697,11 @@ export class SentinelAlertRuleAnomalyDuplicateThresholdObservationOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SentinelAlertRuleAnomalyDuplicateThresholdObservation | cdktf.IResolvable | undefined {
+  public get internalValue(): SentinelAlertRuleAnomalyDuplicateThresholdObservation | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -718,14 +718,14 @@ export class SentinelAlertRuleAnomalyDuplicateThresholdObservationOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SentinelAlertRuleAnomalyDuplicateThresholdObservation | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SentinelAlertRuleAnomalyDuplicateThresholdObservation | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -779,15 +779,15 @@ export class SentinelAlertRuleAnomalyDuplicateThresholdObservationOutputReferenc
   }
 }
 
-export class SentinelAlertRuleAnomalyDuplicateThresholdObservationList extends cdktf.ComplexList {
-  public internalValue? : SentinelAlertRuleAnomalyDuplicateThresholdObservation[] | cdktf.IResolvable
+export class SentinelAlertRuleAnomalyDuplicateThresholdObservationList extends cdktn.ComplexList {
+  public internalValue? : SentinelAlertRuleAnomalyDuplicateThresholdObservation[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -817,46 +817,46 @@ export interface SentinelAlertRuleAnomalyDuplicateTimeouts {
   readonly update?: string;
 }
 
-export function sentinelAlertRuleAnomalyDuplicateTimeoutsToTerraform(struct?: SentinelAlertRuleAnomalyDuplicateTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sentinelAlertRuleAnomalyDuplicateTimeoutsToTerraform(struct?: SentinelAlertRuleAnomalyDuplicateTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function sentinelAlertRuleAnomalyDuplicateTimeoutsToHclTerraform(struct?: SentinelAlertRuleAnomalyDuplicateTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sentinelAlertRuleAnomalyDuplicateTimeoutsToHclTerraform(struct?: SentinelAlertRuleAnomalyDuplicateTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -867,19 +867,19 @@ export function sentinelAlertRuleAnomalyDuplicateTimeoutsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SentinelAlertRuleAnomalyDuplicateTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SentinelAlertRuleAnomalyDuplicateTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SentinelAlertRuleAnomalyDuplicateTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SentinelAlertRuleAnomalyDuplicateTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -904,7 +904,7 @@ export class SentinelAlertRuleAnomalyDuplicateTimeoutsOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SentinelAlertRuleAnomalyDuplicateTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SentinelAlertRuleAnomalyDuplicateTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -913,7 +913,7 @@ export class SentinelAlertRuleAnomalyDuplicateTimeoutsOutputReference extends cd
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -995,7 +995,7 @@ export class SentinelAlertRuleAnomalyDuplicateTimeoutsOutputReference extends cd
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_alert_rule_anomaly_duplicate azurerm_sentinel_alert_rule_anomaly_duplicate}
 */
-export class SentinelAlertRuleAnomalyDuplicate extends cdktf.TerraformResource {
+export class SentinelAlertRuleAnomalyDuplicate extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1006,14 +1006,14 @@ export class SentinelAlertRuleAnomalyDuplicate extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SentinelAlertRuleAnomalyDuplicate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SentinelAlertRuleAnomalyDuplicate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SentinelAlertRuleAnomalyDuplicate to import
   * @param importFromId The id of the existing SentinelAlertRuleAnomalyDuplicate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_alert_rule_anomaly_duplicate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SentinelAlertRuleAnomalyDuplicate to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_sentinel_alert_rule_anomaly_duplicate", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_sentinel_alert_rule_anomaly_duplicate", importId: importFromId, provider });
       }
 
   // ===========
@@ -1102,11 +1102,11 @@ export class SentinelAlertRuleAnomalyDuplicate extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1197,7 +1197,7 @@ export class SentinelAlertRuleAnomalyDuplicate extends cdktf.TerraformResource {
   public get multiSelectObservation() {
     return this._multiSelectObservation;
   }
-  public putMultiSelectObservation(value: SentinelAlertRuleAnomalyDuplicateMultiSelectObservation[] | cdktf.IResolvable) {
+  public putMultiSelectObservation(value: SentinelAlertRuleAnomalyDuplicateMultiSelectObservation[] | cdktn.IResolvable) {
     this._multiSelectObservation.internalValue = value;
   }
   public resetMultiSelectObservation() {
@@ -1213,7 +1213,7 @@ export class SentinelAlertRuleAnomalyDuplicate extends cdktf.TerraformResource {
   public get prioritizedExcludeObservation() {
     return this._prioritizedExcludeObservation;
   }
-  public putPrioritizedExcludeObservation(value: SentinelAlertRuleAnomalyDuplicatePrioritizedExcludeObservation[] | cdktf.IResolvable) {
+  public putPrioritizedExcludeObservation(value: SentinelAlertRuleAnomalyDuplicatePrioritizedExcludeObservation[] | cdktn.IResolvable) {
     this._prioritizedExcludeObservation.internalValue = value;
   }
   public resetPrioritizedExcludeObservation() {
@@ -1229,7 +1229,7 @@ export class SentinelAlertRuleAnomalyDuplicate extends cdktf.TerraformResource {
   public get singleSelectObservation() {
     return this._singleSelectObservation;
   }
-  public putSingleSelectObservation(value: SentinelAlertRuleAnomalyDuplicateSingleSelectObservation[] | cdktf.IResolvable) {
+  public putSingleSelectObservation(value: SentinelAlertRuleAnomalyDuplicateSingleSelectObservation[] | cdktn.IResolvable) {
     this._singleSelectObservation.internalValue = value;
   }
   public resetSingleSelectObservation() {
@@ -1245,7 +1245,7 @@ export class SentinelAlertRuleAnomalyDuplicate extends cdktf.TerraformResource {
   public get thresholdObservation() {
     return this._thresholdObservation;
   }
-  public putThresholdObservation(value: SentinelAlertRuleAnomalyDuplicateThresholdObservation[] | cdktf.IResolvable) {
+  public putThresholdObservation(value: SentinelAlertRuleAnomalyDuplicateThresholdObservation[] | cdktn.IResolvable) {
     this._thresholdObservation.internalValue = value;
   }
   public resetThresholdObservation() {
@@ -1278,16 +1278,16 @@ export class SentinelAlertRuleAnomalyDuplicate extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      built_in_rule_id: cdktf.stringToTerraform(this._builtInRuleId),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
-      log_analytics_workspace_id: cdktf.stringToTerraform(this._logAnalyticsWorkspaceId),
-      mode: cdktf.stringToTerraform(this._mode),
-      multi_select_observation: cdktf.listMapper(sentinelAlertRuleAnomalyDuplicateMultiSelectObservationToTerraform, true)(this._multiSelectObservation.internalValue),
-      prioritized_exclude_observation: cdktf.listMapper(sentinelAlertRuleAnomalyDuplicatePrioritizedExcludeObservationToTerraform, true)(this._prioritizedExcludeObservation.internalValue),
-      single_select_observation: cdktf.listMapper(sentinelAlertRuleAnomalyDuplicateSingleSelectObservationToTerraform, true)(this._singleSelectObservation.internalValue),
-      threshold_observation: cdktf.listMapper(sentinelAlertRuleAnomalyDuplicateThresholdObservationToTerraform, true)(this._thresholdObservation.internalValue),
+      built_in_rule_id: cdktn.stringToTerraform(this._builtInRuleId),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      id: cdktn.stringToTerraform(this._id),
+      log_analytics_workspace_id: cdktn.stringToTerraform(this._logAnalyticsWorkspaceId),
+      mode: cdktn.stringToTerraform(this._mode),
+      multi_select_observation: cdktn.listMapper(sentinelAlertRuleAnomalyDuplicateMultiSelectObservationToTerraform, true)(this._multiSelectObservation.internalValue),
+      prioritized_exclude_observation: cdktn.listMapper(sentinelAlertRuleAnomalyDuplicatePrioritizedExcludeObservationToTerraform, true)(this._prioritizedExcludeObservation.internalValue),
+      single_select_observation: cdktn.listMapper(sentinelAlertRuleAnomalyDuplicateSingleSelectObservationToTerraform, true)(this._singleSelectObservation.internalValue),
+      threshold_observation: cdktn.listMapper(sentinelAlertRuleAnomalyDuplicateThresholdObservationToTerraform, true)(this._thresholdObservation.internalValue),
       timeouts: sentinelAlertRuleAnomalyDuplicateTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1295,61 +1295,61 @@ export class SentinelAlertRuleAnomalyDuplicate extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       built_in_rule_id: {
-        value: cdktf.stringToHclTerraform(this._builtInRuleId),
+        value: cdktn.stringToHclTerraform(this._builtInRuleId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       log_analytics_workspace_id: {
-        value: cdktf.stringToHclTerraform(this._logAnalyticsWorkspaceId),
+        value: cdktn.stringToHclTerraform(this._logAnalyticsWorkspaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mode: {
-        value: cdktf.stringToHclTerraform(this._mode),
+        value: cdktn.stringToHclTerraform(this._mode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       multi_select_observation: {
-        value: cdktf.listMapperHcl(sentinelAlertRuleAnomalyDuplicateMultiSelectObservationToHclTerraform, true)(this._multiSelectObservation.internalValue),
+        value: cdktn.listMapperHcl(sentinelAlertRuleAnomalyDuplicateMultiSelectObservationToHclTerraform, true)(this._multiSelectObservation.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SentinelAlertRuleAnomalyDuplicateMultiSelectObservationList",
       },
       prioritized_exclude_observation: {
-        value: cdktf.listMapperHcl(sentinelAlertRuleAnomalyDuplicatePrioritizedExcludeObservationToHclTerraform, true)(this._prioritizedExcludeObservation.internalValue),
+        value: cdktn.listMapperHcl(sentinelAlertRuleAnomalyDuplicatePrioritizedExcludeObservationToHclTerraform, true)(this._prioritizedExcludeObservation.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SentinelAlertRuleAnomalyDuplicatePrioritizedExcludeObservationList",
       },
       single_select_observation: {
-        value: cdktf.listMapperHcl(sentinelAlertRuleAnomalyDuplicateSingleSelectObservationToHclTerraform, true)(this._singleSelectObservation.internalValue),
+        value: cdktn.listMapperHcl(sentinelAlertRuleAnomalyDuplicateSingleSelectObservationToHclTerraform, true)(this._singleSelectObservation.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SentinelAlertRuleAnomalyDuplicateSingleSelectObservationList",
       },
       threshold_observation: {
-        value: cdktf.listMapperHcl(sentinelAlertRuleAnomalyDuplicateThresholdObservationToHclTerraform, true)(this._thresholdObservation.internalValue),
+        value: cdktn.listMapperHcl(sentinelAlertRuleAnomalyDuplicateThresholdObservationToHclTerraform, true)(this._thresholdObservation.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SentinelAlertRuleAnomalyDuplicateThresholdObservationList",

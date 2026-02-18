@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SharedImageConfig extends cdktf.TerraformMetaArguments {
+export interface SharedImageConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#accelerated_network_support_enabled SharedImage#accelerated_network_support_enabled}
   */
-  readonly acceleratedNetworkSupportEnabled?: boolean | cdktf.IResolvable;
+  readonly acceleratedNetworkSupportEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#architecture SharedImage#architecture}
   */
@@ -23,11 +23,11 @@ export interface SharedImageConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#confidential_vm_enabled SharedImage#confidential_vm_enabled}
   */
-  readonly confidentialVmEnabled?: boolean | cdktf.IResolvable;
+  readonly confidentialVmEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#confidential_vm_supported SharedImage#confidential_vm_supported}
   */
-  readonly confidentialVmSupported?: boolean | cdktf.IResolvable;
+  readonly confidentialVmSupported?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#description SharedImage#description}
   */
@@ -35,7 +35,7 @@ export interface SharedImageConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#disk_controller_type_nvme_enabled SharedImage#disk_controller_type_nvme_enabled}
   */
-  readonly diskControllerTypeNvmeEnabled?: boolean | cdktf.IResolvable;
+  readonly diskControllerTypeNvmeEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#disk_types_not_allowed SharedImage#disk_types_not_allowed}
   */
@@ -55,7 +55,7 @@ export interface SharedImageConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#hibernation_enabled SharedImage#hibernation_enabled}
   */
-  readonly hibernationEnabled?: boolean | cdktf.IResolvable;
+  readonly hibernationEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#hyper_v_generation SharedImage#hyper_v_generation}
   */
@@ -110,7 +110,7 @@ export interface SharedImageConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#specialized SharedImage#specialized}
   */
-  readonly specialized?: boolean | cdktf.IResolvable;
+  readonly specialized?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#tags SharedImage#tags}
   */
@@ -118,11 +118,11 @@ export interface SharedImageConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#trusted_launch_enabled SharedImage#trusted_launch_enabled}
   */
-  readonly trustedLaunchEnabled?: boolean | cdktf.IResolvable;
+  readonly trustedLaunchEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#trusted_launch_supported SharedImage#trusted_launch_supported}
   */
-  readonly trustedLaunchSupported?: boolean | cdktf.IResolvable;
+  readonly trustedLaunchSupported?: boolean | cdktn.IResolvable;
   /**
   * identifier block
   *
@@ -158,38 +158,38 @@ export interface SharedImageIdentifier {
 }
 
 export function sharedImageIdentifierToTerraform(struct?: SharedImageIdentifierOutputReference | SharedImageIdentifier): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    offer: cdktf.stringToTerraform(struct!.offer),
-    publisher: cdktf.stringToTerraform(struct!.publisher),
-    sku: cdktf.stringToTerraform(struct!.sku),
+    offer: cdktn.stringToTerraform(struct!.offer),
+    publisher: cdktn.stringToTerraform(struct!.publisher),
+    sku: cdktn.stringToTerraform(struct!.sku),
   }
 }
 
 
 export function sharedImageIdentifierToHclTerraform(struct?: SharedImageIdentifierOutputReference | SharedImageIdentifier): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     offer: {
-      value: cdktf.stringToHclTerraform(struct!.offer),
+      value: cdktn.stringToHclTerraform(struct!.offer),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     publisher: {
-      value: cdktf.stringToHclTerraform(struct!.publisher),
+      value: cdktn.stringToHclTerraform(struct!.publisher),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sku: {
-      value: cdktf.stringToHclTerraform(struct!.sku),
+      value: cdktn.stringToHclTerraform(struct!.sku),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -200,14 +200,14 @@ export function sharedImageIdentifierToHclTerraform(struct?: SharedImageIdentifi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SharedImageIdentifierOutputReference extends cdktf.ComplexObject {
+export class SharedImageIdentifierOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -299,38 +299,38 @@ export interface SharedImagePurchasePlan {
 }
 
 export function sharedImagePurchasePlanToTerraform(struct?: SharedImagePurchasePlanOutputReference | SharedImagePurchasePlan): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    product: cdktf.stringToTerraform(struct!.product),
-    publisher: cdktf.stringToTerraform(struct!.publisher),
+    name: cdktn.stringToTerraform(struct!.name),
+    product: cdktn.stringToTerraform(struct!.product),
+    publisher: cdktn.stringToTerraform(struct!.publisher),
   }
 }
 
 
 export function sharedImagePurchasePlanToHclTerraform(struct?: SharedImagePurchasePlanOutputReference | SharedImagePurchasePlan): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     product: {
-      value: cdktf.stringToHclTerraform(struct!.product),
+      value: cdktn.stringToHclTerraform(struct!.product),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     publisher: {
-      value: cdktf.stringToHclTerraform(struct!.publisher),
+      value: cdktn.stringToHclTerraform(struct!.publisher),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -341,14 +341,14 @@ export function sharedImagePurchasePlanToHclTerraform(struct?: SharedImagePurcha
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SharedImagePurchasePlanOutputReference extends cdktf.ComplexObject {
+export class SharedImagePurchasePlanOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -449,46 +449,46 @@ export interface SharedImageTimeouts {
   readonly update?: string;
 }
 
-export function sharedImageTimeoutsToTerraform(struct?: SharedImageTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sharedImageTimeoutsToTerraform(struct?: SharedImageTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function sharedImageTimeoutsToHclTerraform(struct?: SharedImageTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sharedImageTimeoutsToHclTerraform(struct?: SharedImageTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -499,19 +499,19 @@ export function sharedImageTimeoutsToHclTerraform(struct?: SharedImageTimeouts |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SharedImageTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SharedImageTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SharedImageTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SharedImageTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -536,7 +536,7 @@ export class SharedImageTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SharedImageTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SharedImageTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -545,7 +545,7 @@ export class SharedImageTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -627,7 +627,7 @@ export class SharedImageTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image azurerm_shared_image}
 */
-export class SharedImage extends cdktf.TerraformResource {
+export class SharedImage extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -638,14 +638,14 @@ export class SharedImage extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SharedImage resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SharedImage resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SharedImage to import
   * @param importFromId The id of the existing SharedImage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/shared_image#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SharedImage to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_shared_image", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_shared_image", importId: importFromId, provider });
       }
 
   // ===========
@@ -712,11 +712,11 @@ export class SharedImage extends cdktf.TerraformResource {
   // ==========
 
   // accelerated_network_support_enabled - computed: false, optional: true, required: false
-  private _acceleratedNetworkSupportEnabled?: boolean | cdktf.IResolvable; 
+  private _acceleratedNetworkSupportEnabled?: boolean | cdktn.IResolvable; 
   public get acceleratedNetworkSupportEnabled() {
     return this.getBooleanAttribute('accelerated_network_support_enabled');
   }
-  public set acceleratedNetworkSupportEnabled(value: boolean | cdktf.IResolvable) {
+  public set acceleratedNetworkSupportEnabled(value: boolean | cdktn.IResolvable) {
     this._acceleratedNetworkSupportEnabled = value;
   }
   public resetAcceleratedNetworkSupportEnabled() {
@@ -744,11 +744,11 @@ export class SharedImage extends cdktf.TerraformResource {
   }
 
   // confidential_vm_enabled - computed: false, optional: true, required: false
-  private _confidentialVmEnabled?: boolean | cdktf.IResolvable; 
+  private _confidentialVmEnabled?: boolean | cdktn.IResolvable; 
   public get confidentialVmEnabled() {
     return this.getBooleanAttribute('confidential_vm_enabled');
   }
-  public set confidentialVmEnabled(value: boolean | cdktf.IResolvable) {
+  public set confidentialVmEnabled(value: boolean | cdktn.IResolvable) {
     this._confidentialVmEnabled = value;
   }
   public resetConfidentialVmEnabled() {
@@ -760,11 +760,11 @@ export class SharedImage extends cdktf.TerraformResource {
   }
 
   // confidential_vm_supported - computed: false, optional: true, required: false
-  private _confidentialVmSupported?: boolean | cdktf.IResolvable; 
+  private _confidentialVmSupported?: boolean | cdktn.IResolvable; 
   public get confidentialVmSupported() {
     return this.getBooleanAttribute('confidential_vm_supported');
   }
-  public set confidentialVmSupported(value: boolean | cdktf.IResolvable) {
+  public set confidentialVmSupported(value: boolean | cdktn.IResolvable) {
     this._confidentialVmSupported = value;
   }
   public resetConfidentialVmSupported() {
@@ -792,11 +792,11 @@ export class SharedImage extends cdktf.TerraformResource {
   }
 
   // disk_controller_type_nvme_enabled - computed: false, optional: true, required: false
-  private _diskControllerTypeNvmeEnabled?: boolean | cdktf.IResolvable; 
+  private _diskControllerTypeNvmeEnabled?: boolean | cdktn.IResolvable; 
   public get diskControllerTypeNvmeEnabled() {
     return this.getBooleanAttribute('disk_controller_type_nvme_enabled');
   }
-  public set diskControllerTypeNvmeEnabled(value: boolean | cdktf.IResolvable) {
+  public set diskControllerTypeNvmeEnabled(value: boolean | cdktn.IResolvable) {
     this._diskControllerTypeNvmeEnabled = value;
   }
   public resetDiskControllerTypeNvmeEnabled() {
@@ -810,7 +810,7 @@ export class SharedImage extends cdktf.TerraformResource {
   // disk_types_not_allowed - computed: false, optional: true, required: false
   private _diskTypesNotAllowed?: string[]; 
   public get diskTypesNotAllowed() {
-    return cdktf.Fn.tolist(this.getListAttribute('disk_types_not_allowed'));
+    return cdktn.Fn.tolist(this.getListAttribute('disk_types_not_allowed'));
   }
   public set diskTypesNotAllowed(value: string[]) {
     this._diskTypesNotAllowed = value;
@@ -869,11 +869,11 @@ export class SharedImage extends cdktf.TerraformResource {
   }
 
   // hibernation_enabled - computed: false, optional: true, required: false
-  private _hibernationEnabled?: boolean | cdktf.IResolvable; 
+  private _hibernationEnabled?: boolean | cdktn.IResolvable; 
   public get hibernationEnabled() {
     return this.getBooleanAttribute('hibernation_enabled');
   }
-  public set hibernationEnabled(value: boolean | cdktf.IResolvable) {
+  public set hibernationEnabled(value: boolean | cdktn.IResolvable) {
     this._hibernationEnabled = value;
   }
   public resetHibernationEnabled() {
@@ -1065,11 +1065,11 @@ export class SharedImage extends cdktf.TerraformResource {
   }
 
   // specialized - computed: false, optional: true, required: false
-  private _specialized?: boolean | cdktf.IResolvable; 
+  private _specialized?: boolean | cdktn.IResolvable; 
   public get specialized() {
     return this.getBooleanAttribute('specialized');
   }
-  public set specialized(value: boolean | cdktf.IResolvable) {
+  public set specialized(value: boolean | cdktn.IResolvable) {
     this._specialized = value;
   }
   public resetSpecialized() {
@@ -1097,11 +1097,11 @@ export class SharedImage extends cdktf.TerraformResource {
   }
 
   // trusted_launch_enabled - computed: false, optional: true, required: false
-  private _trustedLaunchEnabled?: boolean | cdktf.IResolvable; 
+  private _trustedLaunchEnabled?: boolean | cdktn.IResolvable; 
   public get trustedLaunchEnabled() {
     return this.getBooleanAttribute('trusted_launch_enabled');
   }
-  public set trustedLaunchEnabled(value: boolean | cdktf.IResolvable) {
+  public set trustedLaunchEnabled(value: boolean | cdktn.IResolvable) {
     this._trustedLaunchEnabled = value;
   }
   public resetTrustedLaunchEnabled() {
@@ -1113,11 +1113,11 @@ export class SharedImage extends cdktf.TerraformResource {
   }
 
   // trusted_launch_supported - computed: false, optional: true, required: false
-  private _trustedLaunchSupported?: boolean | cdktf.IResolvable; 
+  private _trustedLaunchSupported?: boolean | cdktn.IResolvable; 
   public get trustedLaunchSupported() {
     return this.getBooleanAttribute('trusted_launch_supported');
   }
-  public set trustedLaunchSupported(value: boolean | cdktf.IResolvable) {
+  public set trustedLaunchSupported(value: boolean | cdktn.IResolvable) {
     this._trustedLaunchSupported = value;
   }
   public resetTrustedLaunchSupported() {
@@ -1179,33 +1179,33 @@ export class SharedImage extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      accelerated_network_support_enabled: cdktf.booleanToTerraform(this._acceleratedNetworkSupportEnabled),
-      architecture: cdktf.stringToTerraform(this._architecture),
-      confidential_vm_enabled: cdktf.booleanToTerraform(this._confidentialVmEnabled),
-      confidential_vm_supported: cdktf.booleanToTerraform(this._confidentialVmSupported),
-      description: cdktf.stringToTerraform(this._description),
-      disk_controller_type_nvme_enabled: cdktf.booleanToTerraform(this._diskControllerTypeNvmeEnabled),
-      disk_types_not_allowed: cdktf.listMapper(cdktf.stringToTerraform, false)(this._diskTypesNotAllowed),
-      end_of_life_date: cdktf.stringToTerraform(this._endOfLifeDate),
-      eula: cdktf.stringToTerraform(this._eula),
-      gallery_name: cdktf.stringToTerraform(this._galleryName),
-      hibernation_enabled: cdktf.booleanToTerraform(this._hibernationEnabled),
-      hyper_v_generation: cdktf.stringToTerraform(this._hyperVGeneration),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      max_recommended_memory_in_gb: cdktf.numberToTerraform(this._maxRecommendedMemoryInGb),
-      max_recommended_vcpu_count: cdktf.numberToTerraform(this._maxRecommendedVcpuCount),
-      min_recommended_memory_in_gb: cdktf.numberToTerraform(this._minRecommendedMemoryInGb),
-      min_recommended_vcpu_count: cdktf.numberToTerraform(this._minRecommendedVcpuCount),
-      name: cdktf.stringToTerraform(this._name),
-      os_type: cdktf.stringToTerraform(this._osType),
-      privacy_statement_uri: cdktf.stringToTerraform(this._privacyStatementUri),
-      release_note_uri: cdktf.stringToTerraform(this._releaseNoteUri),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      specialized: cdktf.booleanToTerraform(this._specialized),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      trusted_launch_enabled: cdktf.booleanToTerraform(this._trustedLaunchEnabled),
-      trusted_launch_supported: cdktf.booleanToTerraform(this._trustedLaunchSupported),
+      accelerated_network_support_enabled: cdktn.booleanToTerraform(this._acceleratedNetworkSupportEnabled),
+      architecture: cdktn.stringToTerraform(this._architecture),
+      confidential_vm_enabled: cdktn.booleanToTerraform(this._confidentialVmEnabled),
+      confidential_vm_supported: cdktn.booleanToTerraform(this._confidentialVmSupported),
+      description: cdktn.stringToTerraform(this._description),
+      disk_controller_type_nvme_enabled: cdktn.booleanToTerraform(this._diskControllerTypeNvmeEnabled),
+      disk_types_not_allowed: cdktn.listMapper(cdktn.stringToTerraform, false)(this._diskTypesNotAllowed),
+      end_of_life_date: cdktn.stringToTerraform(this._endOfLifeDate),
+      eula: cdktn.stringToTerraform(this._eula),
+      gallery_name: cdktn.stringToTerraform(this._galleryName),
+      hibernation_enabled: cdktn.booleanToTerraform(this._hibernationEnabled),
+      hyper_v_generation: cdktn.stringToTerraform(this._hyperVGeneration),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      max_recommended_memory_in_gb: cdktn.numberToTerraform(this._maxRecommendedMemoryInGb),
+      max_recommended_vcpu_count: cdktn.numberToTerraform(this._maxRecommendedVcpuCount),
+      min_recommended_memory_in_gb: cdktn.numberToTerraform(this._minRecommendedMemoryInGb),
+      min_recommended_vcpu_count: cdktn.numberToTerraform(this._minRecommendedVcpuCount),
+      name: cdktn.stringToTerraform(this._name),
+      os_type: cdktn.stringToTerraform(this._osType),
+      privacy_statement_uri: cdktn.stringToTerraform(this._privacyStatementUri),
+      release_note_uri: cdktn.stringToTerraform(this._releaseNoteUri),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      specialized: cdktn.booleanToTerraform(this._specialized),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      trusted_launch_enabled: cdktn.booleanToTerraform(this._trustedLaunchEnabled),
+      trusted_launch_supported: cdktn.booleanToTerraform(this._trustedLaunchSupported),
       identifier: sharedImageIdentifierToTerraform(this._identifier.internalValue),
       purchase_plan: sharedImagePurchasePlanToTerraform(this._purchasePlan.internalValue),
       timeouts: sharedImageTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1215,163 +1215,163 @@ export class SharedImage extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       accelerated_network_support_enabled: {
-        value: cdktf.booleanToHclTerraform(this._acceleratedNetworkSupportEnabled),
+        value: cdktn.booleanToHclTerraform(this._acceleratedNetworkSupportEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       architecture: {
-        value: cdktf.stringToHclTerraform(this._architecture),
+        value: cdktn.stringToHclTerraform(this._architecture),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       confidential_vm_enabled: {
-        value: cdktf.booleanToHclTerraform(this._confidentialVmEnabled),
+        value: cdktn.booleanToHclTerraform(this._confidentialVmEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       confidential_vm_supported: {
-        value: cdktf.booleanToHclTerraform(this._confidentialVmSupported),
+        value: cdktn.booleanToHclTerraform(this._confidentialVmSupported),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disk_controller_type_nvme_enabled: {
-        value: cdktf.booleanToHclTerraform(this._diskControllerTypeNvmeEnabled),
+        value: cdktn.booleanToHclTerraform(this._diskControllerTypeNvmeEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       disk_types_not_allowed: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._diskTypesNotAllowed),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._diskTypesNotAllowed),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       end_of_life_date: {
-        value: cdktf.stringToHclTerraform(this._endOfLifeDate),
+        value: cdktn.stringToHclTerraform(this._endOfLifeDate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       eula: {
-        value: cdktf.stringToHclTerraform(this._eula),
+        value: cdktn.stringToHclTerraform(this._eula),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       gallery_name: {
-        value: cdktf.stringToHclTerraform(this._galleryName),
+        value: cdktn.stringToHclTerraform(this._galleryName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       hibernation_enabled: {
-        value: cdktf.booleanToHclTerraform(this._hibernationEnabled),
+        value: cdktn.booleanToHclTerraform(this._hibernationEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       hyper_v_generation: {
-        value: cdktf.stringToHclTerraform(this._hyperVGeneration),
+        value: cdktn.stringToHclTerraform(this._hyperVGeneration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_recommended_memory_in_gb: {
-        value: cdktf.numberToHclTerraform(this._maxRecommendedMemoryInGb),
+        value: cdktn.numberToHclTerraform(this._maxRecommendedMemoryInGb),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       max_recommended_vcpu_count: {
-        value: cdktf.numberToHclTerraform(this._maxRecommendedVcpuCount),
+        value: cdktn.numberToHclTerraform(this._maxRecommendedVcpuCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       min_recommended_memory_in_gb: {
-        value: cdktf.numberToHclTerraform(this._minRecommendedMemoryInGb),
+        value: cdktn.numberToHclTerraform(this._minRecommendedMemoryInGb),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       min_recommended_vcpu_count: {
-        value: cdktf.numberToHclTerraform(this._minRecommendedVcpuCount),
+        value: cdktn.numberToHclTerraform(this._minRecommendedVcpuCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       os_type: {
-        value: cdktf.stringToHclTerraform(this._osType),
+        value: cdktn.stringToHclTerraform(this._osType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       privacy_statement_uri: {
-        value: cdktf.stringToHclTerraform(this._privacyStatementUri),
+        value: cdktn.stringToHclTerraform(this._privacyStatementUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       release_note_uri: {
-        value: cdktf.stringToHclTerraform(this._releaseNoteUri),
+        value: cdktn.stringToHclTerraform(this._releaseNoteUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       specialized: {
-        value: cdktf.booleanToHclTerraform(this._specialized),
+        value: cdktn.booleanToHclTerraform(this._specialized),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       trusted_launch_enabled: {
-        value: cdktf.booleanToHclTerraform(this._trustedLaunchEnabled),
+        value: cdktn.booleanToHclTerraform(this._trustedLaunchEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       trusted_launch_supported: {
-        value: cdktf.booleanToHclTerraform(this._trustedLaunchSupported),
+        value: cdktn.booleanToHclTerraform(this._trustedLaunchSupported),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

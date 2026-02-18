@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SpringCloudActiveDeploymentConfig extends cdktf.TerraformMetaArguments {
+export interface SpringCloudActiveDeploymentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_active_deployment#deployment_name SpringCloudActiveDeployment#deployment_name}
   */
@@ -53,46 +53,46 @@ export interface SpringCloudActiveDeploymentTimeouts {
   readonly update?: string;
 }
 
-export function springCloudActiveDeploymentTimeoutsToTerraform(struct?: SpringCloudActiveDeploymentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function springCloudActiveDeploymentTimeoutsToTerraform(struct?: SpringCloudActiveDeploymentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function springCloudActiveDeploymentTimeoutsToHclTerraform(struct?: SpringCloudActiveDeploymentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function springCloudActiveDeploymentTimeoutsToHclTerraform(struct?: SpringCloudActiveDeploymentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -103,19 +103,19 @@ export function springCloudActiveDeploymentTimeoutsToHclTerraform(struct?: Sprin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SpringCloudActiveDeploymentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SpringCloudActiveDeploymentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SpringCloudActiveDeploymentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SpringCloudActiveDeploymentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -140,7 +140,7 @@ export class SpringCloudActiveDeploymentTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SpringCloudActiveDeploymentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SpringCloudActiveDeploymentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -149,7 +149,7 @@ export class SpringCloudActiveDeploymentTimeoutsOutputReference extends cdktf.Co
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -231,7 +231,7 @@ export class SpringCloudActiveDeploymentTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_active_deployment azurerm_spring_cloud_active_deployment}
 */
-export class SpringCloudActiveDeployment extends cdktf.TerraformResource {
+export class SpringCloudActiveDeployment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -242,14 +242,14 @@ export class SpringCloudActiveDeployment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SpringCloudActiveDeployment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SpringCloudActiveDeployment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SpringCloudActiveDeployment to import
   * @param importFromId The id of the existing SpringCloudActiveDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_active_deployment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SpringCloudActiveDeployment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_spring_cloud_active_deployment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_spring_cloud_active_deployment", importId: importFromId, provider });
       }
 
   // ===========
@@ -353,9 +353,9 @@ export class SpringCloudActiveDeployment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      deployment_name: cdktf.stringToTerraform(this._deploymentName),
-      id: cdktf.stringToTerraform(this._id),
-      spring_cloud_app_id: cdktf.stringToTerraform(this._springCloudAppId),
+      deployment_name: cdktn.stringToTerraform(this._deploymentName),
+      id: cdktn.stringToTerraform(this._id),
+      spring_cloud_app_id: cdktn.stringToTerraform(this._springCloudAppId),
       timeouts: springCloudActiveDeploymentTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -363,19 +363,19 @@ export class SpringCloudActiveDeployment extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       deployment_name: {
-        value: cdktf.stringToHclTerraform(this._deploymentName),
+        value: cdktn.stringToHclTerraform(this._deploymentName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       spring_cloud_app_id: {
-        value: cdktf.stringToHclTerraform(this._springCloudAppId),
+        value: cdktn.stringToHclTerraform(this._springCloudAppId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

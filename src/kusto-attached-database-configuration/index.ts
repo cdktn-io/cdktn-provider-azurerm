@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface KustoAttachedDatabaseConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface KustoAttachedDatabaseConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kusto_attached_database_configuration#cluster_id KustoAttachedDatabaseConfiguration#cluster_id}
   */
@@ -92,59 +92,59 @@ export interface KustoAttachedDatabaseConfigurationSharing {
 }
 
 export function kustoAttachedDatabaseConfigurationSharingToTerraform(struct?: KustoAttachedDatabaseConfigurationSharingOutputReference | KustoAttachedDatabaseConfigurationSharing): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    external_tables_to_exclude: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.externalTablesToExclude),
-    external_tables_to_include: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.externalTablesToInclude),
-    materialized_views_to_exclude: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.materializedViewsToExclude),
-    materialized_views_to_include: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.materializedViewsToInclude),
-    tables_to_exclude: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tablesToExclude),
-    tables_to_include: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tablesToInclude),
+    external_tables_to_exclude: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.externalTablesToExclude),
+    external_tables_to_include: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.externalTablesToInclude),
+    materialized_views_to_exclude: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.materializedViewsToExclude),
+    materialized_views_to_include: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.materializedViewsToInclude),
+    tables_to_exclude: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.tablesToExclude),
+    tables_to_include: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.tablesToInclude),
   }
 }
 
 
 export function kustoAttachedDatabaseConfigurationSharingToHclTerraform(struct?: KustoAttachedDatabaseConfigurationSharingOutputReference | KustoAttachedDatabaseConfigurationSharing): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     external_tables_to_exclude: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.externalTablesToExclude),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.externalTablesToExclude),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     external_tables_to_include: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.externalTablesToInclude),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.externalTablesToInclude),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     materialized_views_to_exclude: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.materializedViewsToExclude),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.materializedViewsToExclude),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     materialized_views_to_include: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.materializedViewsToInclude),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.materializedViewsToInclude),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     tables_to_exclude: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.tablesToExclude),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.tablesToExclude),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     tables_to_include: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.tablesToInclude),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.tablesToInclude),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -155,14 +155,14 @@ export function kustoAttachedDatabaseConfigurationSharingToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KustoAttachedDatabaseConfigurationSharingOutputReference extends cdktf.ComplexObject {
+export class KustoAttachedDatabaseConfigurationSharingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -220,7 +220,7 @@ export class KustoAttachedDatabaseConfigurationSharingOutputReference extends cd
   // external_tables_to_exclude - computed: false, optional: true, required: false
   private _externalTablesToExclude?: string[]; 
   public get externalTablesToExclude() {
-    return cdktf.Fn.tolist(this.getListAttribute('external_tables_to_exclude'));
+    return cdktn.Fn.tolist(this.getListAttribute('external_tables_to_exclude'));
   }
   public set externalTablesToExclude(value: string[]) {
     this._externalTablesToExclude = value;
@@ -236,7 +236,7 @@ export class KustoAttachedDatabaseConfigurationSharingOutputReference extends cd
   // external_tables_to_include - computed: false, optional: true, required: false
   private _externalTablesToInclude?: string[]; 
   public get externalTablesToInclude() {
-    return cdktf.Fn.tolist(this.getListAttribute('external_tables_to_include'));
+    return cdktn.Fn.tolist(this.getListAttribute('external_tables_to_include'));
   }
   public set externalTablesToInclude(value: string[]) {
     this._externalTablesToInclude = value;
@@ -252,7 +252,7 @@ export class KustoAttachedDatabaseConfigurationSharingOutputReference extends cd
   // materialized_views_to_exclude - computed: false, optional: true, required: false
   private _materializedViewsToExclude?: string[]; 
   public get materializedViewsToExclude() {
-    return cdktf.Fn.tolist(this.getListAttribute('materialized_views_to_exclude'));
+    return cdktn.Fn.tolist(this.getListAttribute('materialized_views_to_exclude'));
   }
   public set materializedViewsToExclude(value: string[]) {
     this._materializedViewsToExclude = value;
@@ -268,7 +268,7 @@ export class KustoAttachedDatabaseConfigurationSharingOutputReference extends cd
   // materialized_views_to_include - computed: false, optional: true, required: false
   private _materializedViewsToInclude?: string[]; 
   public get materializedViewsToInclude() {
-    return cdktf.Fn.tolist(this.getListAttribute('materialized_views_to_include'));
+    return cdktn.Fn.tolist(this.getListAttribute('materialized_views_to_include'));
   }
   public set materializedViewsToInclude(value: string[]) {
     this._materializedViewsToInclude = value;
@@ -284,7 +284,7 @@ export class KustoAttachedDatabaseConfigurationSharingOutputReference extends cd
   // tables_to_exclude - computed: false, optional: true, required: false
   private _tablesToExclude?: string[]; 
   public get tablesToExclude() {
-    return cdktf.Fn.tolist(this.getListAttribute('tables_to_exclude'));
+    return cdktn.Fn.tolist(this.getListAttribute('tables_to_exclude'));
   }
   public set tablesToExclude(value: string[]) {
     this._tablesToExclude = value;
@@ -300,7 +300,7 @@ export class KustoAttachedDatabaseConfigurationSharingOutputReference extends cd
   // tables_to_include - computed: false, optional: true, required: false
   private _tablesToInclude?: string[]; 
   public get tablesToInclude() {
-    return cdktf.Fn.tolist(this.getListAttribute('tables_to_include'));
+    return cdktn.Fn.tolist(this.getListAttribute('tables_to_include'));
   }
   public set tablesToInclude(value: string[]) {
     this._tablesToInclude = value;
@@ -332,46 +332,46 @@ export interface KustoAttachedDatabaseConfigurationTimeouts {
   readonly update?: string;
 }
 
-export function kustoAttachedDatabaseConfigurationTimeoutsToTerraform(struct?: KustoAttachedDatabaseConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kustoAttachedDatabaseConfigurationTimeoutsToTerraform(struct?: KustoAttachedDatabaseConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function kustoAttachedDatabaseConfigurationTimeoutsToHclTerraform(struct?: KustoAttachedDatabaseConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kustoAttachedDatabaseConfigurationTimeoutsToHclTerraform(struct?: KustoAttachedDatabaseConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -382,19 +382,19 @@ export function kustoAttachedDatabaseConfigurationTimeoutsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KustoAttachedDatabaseConfigurationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class KustoAttachedDatabaseConfigurationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): KustoAttachedDatabaseConfigurationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): KustoAttachedDatabaseConfigurationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -419,7 +419,7 @@ export class KustoAttachedDatabaseConfigurationTimeoutsOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KustoAttachedDatabaseConfigurationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KustoAttachedDatabaseConfigurationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -428,7 +428,7 @@ export class KustoAttachedDatabaseConfigurationTimeoutsOutputReference extends c
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -510,7 +510,7 @@ export class KustoAttachedDatabaseConfigurationTimeoutsOutputReference extends c
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kusto_attached_database_configuration azurerm_kusto_attached_database_configuration}
 */
-export class KustoAttachedDatabaseConfiguration extends cdktf.TerraformResource {
+export class KustoAttachedDatabaseConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -521,14 +521,14 @@ export class KustoAttachedDatabaseConfiguration extends cdktf.TerraformResource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a KustoAttachedDatabaseConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a KustoAttachedDatabaseConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KustoAttachedDatabaseConfiguration to import
   * @param importFromId The id of the existing KustoAttachedDatabaseConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kusto_attached_database_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KustoAttachedDatabaseConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_kusto_attached_database_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_kusto_attached_database_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -747,15 +747,15 @@ export class KustoAttachedDatabaseConfiguration extends cdktf.TerraformResource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_id: cdktf.stringToTerraform(this._clusterId),
-      cluster_name: cdktf.stringToTerraform(this._clusterName),
-      cluster_resource_id: cdktf.stringToTerraform(this._clusterResourceId),
-      database_name: cdktf.stringToTerraform(this._databaseName),
-      default_principal_modification_kind: cdktf.stringToTerraform(this._defaultPrincipalModificationKind),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
+      cluster_id: cdktn.stringToTerraform(this._clusterId),
+      cluster_name: cdktn.stringToTerraform(this._clusterName),
+      cluster_resource_id: cdktn.stringToTerraform(this._clusterResourceId),
+      database_name: cdktn.stringToTerraform(this._databaseName),
+      default_principal_modification_kind: cdktn.stringToTerraform(this._defaultPrincipalModificationKind),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
       sharing: kustoAttachedDatabaseConfigurationSharingToTerraform(this._sharing.internalValue),
       timeouts: kustoAttachedDatabaseConfigurationTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -764,55 +764,55 @@ export class KustoAttachedDatabaseConfiguration extends cdktf.TerraformResource 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cluster_id: {
-        value: cdktf.stringToHclTerraform(this._clusterId),
+        value: cdktn.stringToHclTerraform(this._clusterId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cluster_name: {
-        value: cdktf.stringToHclTerraform(this._clusterName),
+        value: cdktn.stringToHclTerraform(this._clusterName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cluster_resource_id: {
-        value: cdktf.stringToHclTerraform(this._clusterResourceId),
+        value: cdktn.stringToHclTerraform(this._clusterResourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       database_name: {
-        value: cdktf.stringToHclTerraform(this._databaseName),
+        value: cdktn.stringToHclTerraform(this._databaseName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       default_principal_modification_kind: {
-        value: cdktf.stringToHclTerraform(this._defaultPrincipalModificationKind),
+        value: cdktn.stringToHclTerraform(this._defaultPrincipalModificationKind),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

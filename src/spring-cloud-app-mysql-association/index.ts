@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SpringCloudAppMysqlAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface SpringCloudAppMysqlAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_app_mysql_association#database_name SpringCloudAppMysqlAssociation#database_name}
   */
@@ -69,46 +69,46 @@ export interface SpringCloudAppMysqlAssociationTimeouts {
   readonly update?: string;
 }
 
-export function springCloudAppMysqlAssociationTimeoutsToTerraform(struct?: SpringCloudAppMysqlAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function springCloudAppMysqlAssociationTimeoutsToTerraform(struct?: SpringCloudAppMysqlAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function springCloudAppMysqlAssociationTimeoutsToHclTerraform(struct?: SpringCloudAppMysqlAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function springCloudAppMysqlAssociationTimeoutsToHclTerraform(struct?: SpringCloudAppMysqlAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -119,19 +119,19 @@ export function springCloudAppMysqlAssociationTimeoutsToHclTerraform(struct?: Sp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SpringCloudAppMysqlAssociationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SpringCloudAppMysqlAssociationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SpringCloudAppMysqlAssociationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SpringCloudAppMysqlAssociationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -156,7 +156,7 @@ export class SpringCloudAppMysqlAssociationTimeoutsOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SpringCloudAppMysqlAssociationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SpringCloudAppMysqlAssociationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -165,7 +165,7 @@ export class SpringCloudAppMysqlAssociationTimeoutsOutputReference extends cdktf
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -247,7 +247,7 @@ export class SpringCloudAppMysqlAssociationTimeoutsOutputReference extends cdktf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_app_mysql_association azurerm_spring_cloud_app_mysql_association}
 */
-export class SpringCloudAppMysqlAssociation extends cdktf.TerraformResource {
+export class SpringCloudAppMysqlAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -258,14 +258,14 @@ export class SpringCloudAppMysqlAssociation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SpringCloudAppMysqlAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SpringCloudAppMysqlAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SpringCloudAppMysqlAssociation to import
   * @param importFromId The id of the existing SpringCloudAppMysqlAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/spring_cloud_app_mysql_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SpringCloudAppMysqlAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_spring_cloud_app_mysql_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_spring_cloud_app_mysql_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -425,13 +425,13 @@ export class SpringCloudAppMysqlAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      database_name: cdktf.stringToTerraform(this._databaseName),
-      id: cdktf.stringToTerraform(this._id),
-      mysql_server_id: cdktf.stringToTerraform(this._mysqlServerId),
-      name: cdktf.stringToTerraform(this._name),
-      password: cdktf.stringToTerraform(this._password),
-      spring_cloud_app_id: cdktf.stringToTerraform(this._springCloudAppId),
-      username: cdktf.stringToTerraform(this._username),
+      database_name: cdktn.stringToTerraform(this._databaseName),
+      id: cdktn.stringToTerraform(this._id),
+      mysql_server_id: cdktn.stringToTerraform(this._mysqlServerId),
+      name: cdktn.stringToTerraform(this._name),
+      password: cdktn.stringToTerraform(this._password),
+      spring_cloud_app_id: cdktn.stringToTerraform(this._springCloudAppId),
+      username: cdktn.stringToTerraform(this._username),
       timeouts: springCloudAppMysqlAssociationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -439,43 +439,43 @@ export class SpringCloudAppMysqlAssociation extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       database_name: {
-        value: cdktf.stringToHclTerraform(this._databaseName),
+        value: cdktn.stringToHclTerraform(this._databaseName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mysql_server_id: {
-        value: cdktf.stringToHclTerraform(this._mysqlServerId),
+        value: cdktn.stringToHclTerraform(this._mysqlServerId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       password: {
-        value: cdktf.stringToHclTerraform(this._password),
+        value: cdktn.stringToHclTerraform(this._password),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       spring_cloud_app_id: {
-        value: cdktf.stringToHclTerraform(this._springCloudAppId),
+        value: cdktn.stringToHclTerraform(this._springCloudAppId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       username: {
-        value: cdktf.stringToHclTerraform(this._username),
+        value: cdktn.stringToHclTerraform(this._username),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

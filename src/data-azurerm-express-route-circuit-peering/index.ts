@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermExpressRouteCircuitPeeringConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermExpressRouteCircuitPeeringConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/express_route_circuit_peering#express_route_circuit_name DataAzurermExpressRouteCircuitPeering#express_route_circuit_name}
   */
@@ -45,25 +45,25 @@ export interface DataAzurermExpressRouteCircuitPeeringTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermExpressRouteCircuitPeeringTimeoutsToTerraform(struct?: DataAzurermExpressRouteCircuitPeeringTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermExpressRouteCircuitPeeringTimeoutsToTerraform(struct?: DataAzurermExpressRouteCircuitPeeringTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermExpressRouteCircuitPeeringTimeoutsToHclTerraform(struct?: DataAzurermExpressRouteCircuitPeeringTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermExpressRouteCircuitPeeringTimeoutsToHclTerraform(struct?: DataAzurermExpressRouteCircuitPeeringTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -74,19 +74,19 @@ export function dataAzurermExpressRouteCircuitPeeringTimeoutsToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermExpressRouteCircuitPeeringTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermExpressRouteCircuitPeeringTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermExpressRouteCircuitPeeringTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermExpressRouteCircuitPeeringTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -99,13 +99,13 @@ export class DataAzurermExpressRouteCircuitPeeringTimeoutsOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermExpressRouteCircuitPeeringTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermExpressRouteCircuitPeeringTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -136,7 +136,7 @@ export class DataAzurermExpressRouteCircuitPeeringTimeoutsOutputReference extend
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/express_route_circuit_peering azurerm_express_route_circuit_peering}
 */
-export class DataAzurermExpressRouteCircuitPeering extends cdktf.TerraformDataSource {
+export class DataAzurermExpressRouteCircuitPeering extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -147,14 +147,14 @@ export class DataAzurermExpressRouteCircuitPeering extends cdktf.TerraformDataSo
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermExpressRouteCircuitPeering resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermExpressRouteCircuitPeering resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermExpressRouteCircuitPeering to import
   * @param importFromId The id of the existing DataAzurermExpressRouteCircuitPeering that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/express_route_circuit_peering#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermExpressRouteCircuitPeering to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_express_route_circuit_peering", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_express_route_circuit_peering", importId: importFromId, provider });
       }
 
   // ===========
@@ -327,10 +327,10 @@ export class DataAzurermExpressRouteCircuitPeering extends cdktf.TerraformDataSo
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      express_route_circuit_name: cdktf.stringToTerraform(this._expressRouteCircuitName),
-      id: cdktf.stringToTerraform(this._id),
-      peering_type: cdktf.stringToTerraform(this._peeringType),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
+      express_route_circuit_name: cdktn.stringToTerraform(this._expressRouteCircuitName),
+      id: cdktn.stringToTerraform(this._id),
+      peering_type: cdktn.stringToTerraform(this._peeringType),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
       timeouts: dataAzurermExpressRouteCircuitPeeringTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -338,25 +338,25 @@ export class DataAzurermExpressRouteCircuitPeering extends cdktf.TerraformDataSo
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       express_route_circuit_name: {
-        value: cdktf.stringToHclTerraform(this._expressRouteCircuitName),
+        value: cdktn.stringToHclTerraform(this._expressRouteCircuitName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       peering_type: {
-        value: cdktf.stringToHclTerraform(this._peeringType),
+        value: cdktn.stringToHclTerraform(this._peeringType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

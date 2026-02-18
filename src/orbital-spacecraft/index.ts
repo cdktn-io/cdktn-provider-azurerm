@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface OrbitalSpacecraftConfig extends cdktf.TerraformMetaArguments {
+export interface OrbitalSpacecraftConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orbital_spacecraft#id OrbitalSpacecraft#id}
   *
@@ -52,7 +52,7 @@ export interface OrbitalSpacecraftConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orbital_spacecraft#links OrbitalSpacecraft#links}
   */
-  readonly links: OrbitalSpacecraftLinks[] | cdktf.IResolvable;
+  readonly links: OrbitalSpacecraftLinks[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -83,53 +83,53 @@ export interface OrbitalSpacecraftLinks {
   readonly polarization: string;
 }
 
-export function orbitalSpacecraftLinksToTerraform(struct?: OrbitalSpacecraftLinks | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orbitalSpacecraftLinksToTerraform(struct?: OrbitalSpacecraftLinks | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    bandwidth_mhz: cdktf.numberToTerraform(struct!.bandwidthMhz),
-    center_frequency_mhz: cdktf.numberToTerraform(struct!.centerFrequencyMhz),
-    direction: cdktf.stringToTerraform(struct!.direction),
-    name: cdktf.stringToTerraform(struct!.name),
-    polarization: cdktf.stringToTerraform(struct!.polarization),
+    bandwidth_mhz: cdktn.numberToTerraform(struct!.bandwidthMhz),
+    center_frequency_mhz: cdktn.numberToTerraform(struct!.centerFrequencyMhz),
+    direction: cdktn.stringToTerraform(struct!.direction),
+    name: cdktn.stringToTerraform(struct!.name),
+    polarization: cdktn.stringToTerraform(struct!.polarization),
   }
 }
 
 
-export function orbitalSpacecraftLinksToHclTerraform(struct?: OrbitalSpacecraftLinks | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orbitalSpacecraftLinksToHclTerraform(struct?: OrbitalSpacecraftLinks | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     bandwidth_mhz: {
-      value: cdktf.numberToHclTerraform(struct!.bandwidthMhz),
+      value: cdktn.numberToHclTerraform(struct!.bandwidthMhz),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     center_frequency_mhz: {
-      value: cdktf.numberToHclTerraform(struct!.centerFrequencyMhz),
+      value: cdktn.numberToHclTerraform(struct!.centerFrequencyMhz),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     direction: {
-      value: cdktf.stringToHclTerraform(struct!.direction),
+      value: cdktn.stringToHclTerraform(struct!.direction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     polarization: {
-      value: cdktf.stringToHclTerraform(struct!.polarization),
+      value: cdktn.stringToHclTerraform(struct!.polarization),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -140,9 +140,9 @@ export function orbitalSpacecraftLinksToHclTerraform(struct?: OrbitalSpacecraftL
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrbitalSpacecraftLinksOutputReference extends cdktf.ComplexObject {
+export class OrbitalSpacecraftLinksOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -150,11 +150,11 @@ export class OrbitalSpacecraftLinksOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OrbitalSpacecraftLinks | cdktf.IResolvable | undefined {
+  public get internalValue(): OrbitalSpacecraftLinks | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -183,7 +183,7 @@ export class OrbitalSpacecraftLinksOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OrbitalSpacecraftLinks | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OrbitalSpacecraftLinks | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -193,7 +193,7 @@ export class OrbitalSpacecraftLinksOutputReference extends cdktf.ComplexObject {
       this._name = undefined;
       this._polarization = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -274,15 +274,15 @@ export class OrbitalSpacecraftLinksOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class OrbitalSpacecraftLinksList extends cdktf.ComplexList {
-  public internalValue? : OrbitalSpacecraftLinks[] | cdktf.IResolvable
+export class OrbitalSpacecraftLinksList extends cdktn.ComplexList {
+  public internalValue? : OrbitalSpacecraftLinks[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -312,46 +312,46 @@ export interface OrbitalSpacecraftTimeouts {
   readonly update?: string;
 }
 
-export function orbitalSpacecraftTimeoutsToTerraform(struct?: OrbitalSpacecraftTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orbitalSpacecraftTimeoutsToTerraform(struct?: OrbitalSpacecraftTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function orbitalSpacecraftTimeoutsToHclTerraform(struct?: OrbitalSpacecraftTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orbitalSpacecraftTimeoutsToHclTerraform(struct?: OrbitalSpacecraftTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -362,19 +362,19 @@ export function orbitalSpacecraftTimeoutsToHclTerraform(struct?: OrbitalSpacecra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrbitalSpacecraftTimeoutsOutputReference extends cdktf.ComplexObject {
+export class OrbitalSpacecraftTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): OrbitalSpacecraftTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): OrbitalSpacecraftTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -399,7 +399,7 @@ export class OrbitalSpacecraftTimeoutsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OrbitalSpacecraftTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OrbitalSpacecraftTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -408,7 +408,7 @@ export class OrbitalSpacecraftTimeoutsOutputReference extends cdktf.ComplexObjec
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -490,7 +490,7 @@ export class OrbitalSpacecraftTimeoutsOutputReference extends cdktf.ComplexObjec
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orbital_spacecraft azurerm_orbital_spacecraft}
 */
-export class OrbitalSpacecraft extends cdktf.TerraformResource {
+export class OrbitalSpacecraft extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -501,14 +501,14 @@ export class OrbitalSpacecraft extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a OrbitalSpacecraft resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a OrbitalSpacecraft resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OrbitalSpacecraft to import
   * @param importFromId The id of the existing OrbitalSpacecraft that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orbital_spacecraft#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OrbitalSpacecraft to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_orbital_spacecraft", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_orbital_spacecraft", importId: importFromId, provider });
       }
 
   // ===========
@@ -669,7 +669,7 @@ export class OrbitalSpacecraft extends cdktf.TerraformResource {
   public get links() {
     return this._links;
   }
-  public putLinks(value: OrbitalSpacecraftLinks[] | cdktf.IResolvable) {
+  public putLinks(value: OrbitalSpacecraftLinks[] | cdktn.IResolvable) {
     this._links.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -699,15 +699,15 @@ export class OrbitalSpacecraft extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      norad_id: cdktf.stringToTerraform(this._noradId),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      title_line: cdktf.stringToTerraform(this._titleLine),
-      two_line_elements: cdktf.listMapper(cdktf.stringToTerraform, false)(this._twoLineElements),
-      links: cdktf.listMapper(orbitalSpacecraftLinksToTerraform, true)(this._links.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      norad_id: cdktn.stringToTerraform(this._noradId),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      title_line: cdktn.stringToTerraform(this._titleLine),
+      two_line_elements: cdktn.listMapper(cdktn.stringToTerraform, false)(this._twoLineElements),
+      links: cdktn.listMapper(orbitalSpacecraftLinksToTerraform, true)(this._links.internalValue),
       timeouts: orbitalSpacecraftTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -715,55 +715,55 @@ export class OrbitalSpacecraft extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       norad_id: {
-        value: cdktf.stringToHclTerraform(this._noradId),
+        value: cdktn.stringToHclTerraform(this._noradId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       title_line: {
-        value: cdktf.stringToHclTerraform(this._titleLine),
+        value: cdktn.stringToHclTerraform(this._titleLine),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       two_line_elements: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._twoLineElements),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._twoLineElements),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       links: {
-        value: cdktf.listMapperHcl(orbitalSpacecraftLinksToHclTerraform, true)(this._links.internalValue),
+        value: cdktn.listMapperHcl(orbitalSpacecraftLinksToHclTerraform, true)(this._links.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "OrbitalSpacecraftLinksList",

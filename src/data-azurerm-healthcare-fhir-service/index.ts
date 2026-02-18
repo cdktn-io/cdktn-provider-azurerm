@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermHealthcareFhirServiceConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermHealthcareFhirServiceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/healthcare_fhir_service#id DataAzurermHealthcareFhirService#id}
   *
@@ -42,8 +42,8 @@ export interface DataAzurermHealthcareFhirServiceAuthentication {
 }
 
 export function dataAzurermHealthcareFhirServiceAuthenticationToTerraform(struct?: DataAzurermHealthcareFhirServiceAuthentication): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -52,8 +52,8 @@ export function dataAzurermHealthcareFhirServiceAuthenticationToTerraform(struct
 
 
 export function dataAzurermHealthcareFhirServiceAuthenticationToHclTerraform(struct?: DataAzurermHealthcareFhirServiceAuthentication): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -61,7 +61,7 @@ export function dataAzurermHealthcareFhirServiceAuthenticationToHclTerraform(str
   return attrs;
 }
 
-export class DataAzurermHealthcareFhirServiceAuthenticationOutputReference extends cdktf.ComplexObject {
+export class DataAzurermHealthcareFhirServiceAuthenticationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -70,7 +70,7 @@ export class DataAzurermHealthcareFhirServiceAuthenticationOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -105,14 +105,14 @@ export class DataAzurermHealthcareFhirServiceAuthenticationOutputReference exten
   }
 }
 
-export class DataAzurermHealthcareFhirServiceAuthenticationList extends cdktf.ComplexList {
+export class DataAzurermHealthcareFhirServiceAuthenticationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -127,8 +127,8 @@ export interface DataAzurermHealthcareFhirServiceCors {
 }
 
 export function dataAzurermHealthcareFhirServiceCorsToTerraform(struct?: DataAzurermHealthcareFhirServiceCors): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -137,8 +137,8 @@ export function dataAzurermHealthcareFhirServiceCorsToTerraform(struct?: DataAzu
 
 
 export function dataAzurermHealthcareFhirServiceCorsToHclTerraform(struct?: DataAzurermHealthcareFhirServiceCors): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -146,7 +146,7 @@ export function dataAzurermHealthcareFhirServiceCorsToHclTerraform(struct?: Data
   return attrs;
 }
 
-export class DataAzurermHealthcareFhirServiceCorsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermHealthcareFhirServiceCorsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -155,7 +155,7 @@ export class DataAzurermHealthcareFhirServiceCorsOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -200,14 +200,14 @@ export class DataAzurermHealthcareFhirServiceCorsOutputReference extends cdktf.C
   }
 }
 
-export class DataAzurermHealthcareFhirServiceCorsList extends cdktf.ComplexList {
+export class DataAzurermHealthcareFhirServiceCorsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -222,8 +222,8 @@ export interface DataAzurermHealthcareFhirServiceIdentity {
 }
 
 export function dataAzurermHealthcareFhirServiceIdentityToTerraform(struct?: DataAzurermHealthcareFhirServiceIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -232,8 +232,8 @@ export function dataAzurermHealthcareFhirServiceIdentityToTerraform(struct?: Dat
 
 
 export function dataAzurermHealthcareFhirServiceIdentityToHclTerraform(struct?: DataAzurermHealthcareFhirServiceIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -241,7 +241,7 @@ export function dataAzurermHealthcareFhirServiceIdentityToHclTerraform(struct?: 
   return attrs;
 }
 
-export class DataAzurermHealthcareFhirServiceIdentityOutputReference extends cdktf.ComplexObject {
+export class DataAzurermHealthcareFhirServiceIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -250,7 +250,7 @@ export class DataAzurermHealthcareFhirServiceIdentityOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -290,14 +290,14 @@ export class DataAzurermHealthcareFhirServiceIdentityOutputReference extends cdk
   }
 }
 
-export class DataAzurermHealthcareFhirServiceIdentityList extends cdktf.ComplexList {
+export class DataAzurermHealthcareFhirServiceIdentityList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -315,25 +315,25 @@ export interface DataAzurermHealthcareFhirServiceTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermHealthcareFhirServiceTimeoutsToTerraform(struct?: DataAzurermHealthcareFhirServiceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermHealthcareFhirServiceTimeoutsToTerraform(struct?: DataAzurermHealthcareFhirServiceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermHealthcareFhirServiceTimeoutsToHclTerraform(struct?: DataAzurermHealthcareFhirServiceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermHealthcareFhirServiceTimeoutsToHclTerraform(struct?: DataAzurermHealthcareFhirServiceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -344,19 +344,19 @@ export function dataAzurermHealthcareFhirServiceTimeoutsToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermHealthcareFhirServiceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermHealthcareFhirServiceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermHealthcareFhirServiceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermHealthcareFhirServiceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -369,13 +369,13 @@ export class DataAzurermHealthcareFhirServiceTimeoutsOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermHealthcareFhirServiceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermHealthcareFhirServiceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -406,7 +406,7 @@ export class DataAzurermHealthcareFhirServiceTimeoutsOutputReference extends cdk
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/healthcare_fhir_service azurerm_healthcare_fhir_service}
 */
-export class DataAzurermHealthcareFhirService extends cdktf.TerraformDataSource {
+export class DataAzurermHealthcareFhirService extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -417,14 +417,14 @@ export class DataAzurermHealthcareFhirService extends cdktf.TerraformDataSource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermHealthcareFhirService resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermHealthcareFhirService resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermHealthcareFhirService to import
   * @param importFromId The id of the existing DataAzurermHealthcareFhirService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/healthcare_fhir_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermHealthcareFhirService to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_healthcare_fhir_service", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_healthcare_fhir_service", importId: importFromId, provider });
       }
 
   // ===========
@@ -588,10 +588,10 @@ export class DataAzurermHealthcareFhirService extends cdktf.TerraformDataSource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      workspace_id: cdktf.stringToTerraform(this._workspaceId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      workspace_id: cdktn.stringToTerraform(this._workspaceId),
       timeouts: dataAzurermHealthcareFhirServiceTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -599,25 +599,25 @@ export class DataAzurermHealthcareFhirService extends cdktf.TerraformDataSource 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       workspace_id: {
-        value: cdktf.stringToHclTerraform(this._workspaceId),
+        value: cdktn.stringToHclTerraform(this._workspaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

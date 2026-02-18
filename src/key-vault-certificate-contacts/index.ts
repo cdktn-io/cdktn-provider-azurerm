@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface KeyVaultCertificateContactsConfig extends cdktf.TerraformMetaArguments {
+export interface KeyVaultCertificateContactsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/key_vault_certificate_contacts#id KeyVaultCertificateContacts#id}
   *
@@ -28,7 +28,7 @@ export interface KeyVaultCertificateContactsConfig extends cdktf.TerraformMetaAr
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/key_vault_certificate_contacts#contact KeyVaultCertificateContacts#contact}
   */
-  readonly contact?: KeyVaultCertificateContactsContact[] | cdktf.IResolvable;
+  readonly contact?: KeyVaultCertificateContactsContact[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -51,39 +51,39 @@ export interface KeyVaultCertificateContactsContact {
   readonly phone?: string;
 }
 
-export function keyVaultCertificateContactsContactToTerraform(struct?: KeyVaultCertificateContactsContact | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function keyVaultCertificateContactsContactToTerraform(struct?: KeyVaultCertificateContactsContact | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    email: cdktf.stringToTerraform(struct!.email),
-    name: cdktf.stringToTerraform(struct!.name),
-    phone: cdktf.stringToTerraform(struct!.phone),
+    email: cdktn.stringToTerraform(struct!.email),
+    name: cdktn.stringToTerraform(struct!.name),
+    phone: cdktn.stringToTerraform(struct!.phone),
   }
 }
 
 
-export function keyVaultCertificateContactsContactToHclTerraform(struct?: KeyVaultCertificateContactsContact | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function keyVaultCertificateContactsContactToHclTerraform(struct?: KeyVaultCertificateContactsContact | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     email: {
-      value: cdktf.stringToHclTerraform(struct!.email),
+      value: cdktn.stringToHclTerraform(struct!.email),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     phone: {
-      value: cdktf.stringToHclTerraform(struct!.phone),
+      value: cdktn.stringToHclTerraform(struct!.phone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -94,9 +94,9 @@ export function keyVaultCertificateContactsContactToHclTerraform(struct?: KeyVau
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KeyVaultCertificateContactsContactOutputReference extends cdktf.ComplexObject {
+export class KeyVaultCertificateContactsContactOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -104,11 +104,11 @@ export class KeyVaultCertificateContactsContactOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): KeyVaultCertificateContactsContact | cdktf.IResolvable | undefined {
+  public get internalValue(): KeyVaultCertificateContactsContact | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -129,7 +129,7 @@ export class KeyVaultCertificateContactsContactOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KeyVaultCertificateContactsContact | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KeyVaultCertificateContactsContact | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -137,7 +137,7 @@ export class KeyVaultCertificateContactsContactOutputReference extends cdktf.Com
       this._name = undefined;
       this._phone = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -196,15 +196,15 @@ export class KeyVaultCertificateContactsContactOutputReference extends cdktf.Com
   }
 }
 
-export class KeyVaultCertificateContactsContactList extends cdktf.ComplexList {
-  public internalValue? : KeyVaultCertificateContactsContact[] | cdktf.IResolvable
+export class KeyVaultCertificateContactsContactList extends cdktn.ComplexList {
+  public internalValue? : KeyVaultCertificateContactsContact[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -234,46 +234,46 @@ export interface KeyVaultCertificateContactsTimeouts {
   readonly update?: string;
 }
 
-export function keyVaultCertificateContactsTimeoutsToTerraform(struct?: KeyVaultCertificateContactsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function keyVaultCertificateContactsTimeoutsToTerraform(struct?: KeyVaultCertificateContactsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function keyVaultCertificateContactsTimeoutsToHclTerraform(struct?: KeyVaultCertificateContactsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function keyVaultCertificateContactsTimeoutsToHclTerraform(struct?: KeyVaultCertificateContactsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -284,19 +284,19 @@ export function keyVaultCertificateContactsTimeoutsToHclTerraform(struct?: KeyVa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KeyVaultCertificateContactsTimeoutsOutputReference extends cdktf.ComplexObject {
+export class KeyVaultCertificateContactsTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): KeyVaultCertificateContactsTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): KeyVaultCertificateContactsTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -321,7 +321,7 @@ export class KeyVaultCertificateContactsTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KeyVaultCertificateContactsTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KeyVaultCertificateContactsTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -330,7 +330,7 @@ export class KeyVaultCertificateContactsTimeoutsOutputReference extends cdktf.Co
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -412,7 +412,7 @@ export class KeyVaultCertificateContactsTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/key_vault_certificate_contacts azurerm_key_vault_certificate_contacts}
 */
-export class KeyVaultCertificateContacts extends cdktf.TerraformResource {
+export class KeyVaultCertificateContacts extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -423,14 +423,14 @@ export class KeyVaultCertificateContacts extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a KeyVaultCertificateContacts resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a KeyVaultCertificateContacts resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KeyVaultCertificateContacts to import
   * @param importFromId The id of the existing KeyVaultCertificateContacts that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/key_vault_certificate_contacts#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KeyVaultCertificateContacts to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_key_vault_certificate_contacts", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_key_vault_certificate_contacts", importId: importFromId, provider });
       }
 
   // ===========
@@ -504,7 +504,7 @@ export class KeyVaultCertificateContacts extends cdktf.TerraformResource {
   public get contact() {
     return this._contact;
   }
-  public putContact(value: KeyVaultCertificateContactsContact[] | cdktf.IResolvable) {
+  public putContact(value: KeyVaultCertificateContactsContact[] | cdktn.IResolvable) {
     this._contact.internalValue = value;
   }
   public resetContact() {
@@ -537,9 +537,9 @@ export class KeyVaultCertificateContacts extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      key_vault_id: cdktf.stringToTerraform(this._keyVaultId),
-      contact: cdktf.listMapper(keyVaultCertificateContactsContactToTerraform, true)(this._contact.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      key_vault_id: cdktn.stringToTerraform(this._keyVaultId),
+      contact: cdktn.listMapper(keyVaultCertificateContactsContactToTerraform, true)(this._contact.internalValue),
       timeouts: keyVaultCertificateContactsTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -547,19 +547,19 @@ export class KeyVaultCertificateContacts extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_vault_id: {
-        value: cdktf.stringToHclTerraform(this._keyVaultId),
+        value: cdktn.stringToHclTerraform(this._keyVaultId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       contact: {
-        value: cdktf.listMapperHcl(keyVaultCertificateContactsContactToHclTerraform, true)(this._contact.internalValue),
+        value: cdktn.listMapperHcl(keyVaultCertificateContactsContactToHclTerraform, true)(this._contact.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "KeyVaultCertificateContactsContactList",

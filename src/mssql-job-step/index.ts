@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MssqlJobStepConfig extends cdktf.TerraformMetaArguments {
+export interface MssqlJobStepConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_job_step#id MssqlJobStep#id}
   *
@@ -96,45 +96,45 @@ export interface MssqlJobStepOutputTarget {
 }
 
 export function mssqlJobStepOutputTargetToTerraform(struct?: MssqlJobStepOutputTargetOutputReference | MssqlJobStepOutputTarget): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    job_credential_id: cdktf.stringToTerraform(struct!.jobCredentialId),
-    mssql_database_id: cdktf.stringToTerraform(struct!.mssqlDatabaseId),
-    schema_name: cdktf.stringToTerraform(struct!.schemaName),
-    table_name: cdktf.stringToTerraform(struct!.tableName),
+    job_credential_id: cdktn.stringToTerraform(struct!.jobCredentialId),
+    mssql_database_id: cdktn.stringToTerraform(struct!.mssqlDatabaseId),
+    schema_name: cdktn.stringToTerraform(struct!.schemaName),
+    table_name: cdktn.stringToTerraform(struct!.tableName),
   }
 }
 
 
 export function mssqlJobStepOutputTargetToHclTerraform(struct?: MssqlJobStepOutputTargetOutputReference | MssqlJobStepOutputTarget): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     job_credential_id: {
-      value: cdktf.stringToHclTerraform(struct!.jobCredentialId),
+      value: cdktn.stringToHclTerraform(struct!.jobCredentialId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mssql_database_id: {
-      value: cdktf.stringToHclTerraform(struct!.mssqlDatabaseId),
+      value: cdktn.stringToHclTerraform(struct!.mssqlDatabaseId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     schema_name: {
-      value: cdktf.stringToHclTerraform(struct!.schemaName),
+      value: cdktn.stringToHclTerraform(struct!.schemaName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     table_name: {
-      value: cdktf.stringToHclTerraform(struct!.tableName),
+      value: cdktn.stringToHclTerraform(struct!.tableName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -145,14 +145,14 @@ export function mssqlJobStepOutputTargetToHclTerraform(struct?: MssqlJobStepOutp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MssqlJobStepOutputTargetOutputReference extends cdktf.ComplexObject {
+export class MssqlJobStepOutputTargetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -272,46 +272,46 @@ export interface MssqlJobStepTimeouts {
   readonly update?: string;
 }
 
-export function mssqlJobStepTimeoutsToTerraform(struct?: MssqlJobStepTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mssqlJobStepTimeoutsToTerraform(struct?: MssqlJobStepTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function mssqlJobStepTimeoutsToHclTerraform(struct?: MssqlJobStepTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mssqlJobStepTimeoutsToHclTerraform(struct?: MssqlJobStepTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -322,19 +322,19 @@ export function mssqlJobStepTimeoutsToHclTerraform(struct?: MssqlJobStepTimeouts
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MssqlJobStepTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MssqlJobStepTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MssqlJobStepTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MssqlJobStepTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -359,7 +359,7 @@ export class MssqlJobStepTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MssqlJobStepTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MssqlJobStepTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -368,7 +368,7 @@ export class MssqlJobStepTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -450,7 +450,7 @@ export class MssqlJobStepTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_job_step azurerm_mssql_job_step}
 */
-export class MssqlJobStep extends cdktf.TerraformResource {
+export class MssqlJobStep extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -461,14 +461,14 @@ export class MssqlJobStep extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MssqlJobStep resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MssqlJobStep resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MssqlJobStep to import
   * @param importFromId The id of the existing MssqlJobStep that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_job_step#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MssqlJobStep to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_mssql_job_step", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_mssql_job_step", importId: importFromId, provider });
       }
 
   // ===========
@@ -733,18 +733,18 @@ export class MssqlJobStep extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      initial_retry_interval_seconds: cdktf.numberToTerraform(this._initialRetryIntervalSeconds),
-      job_credential_id: cdktf.stringToTerraform(this._jobCredentialId),
-      job_id: cdktf.stringToTerraform(this._jobId),
-      job_step_index: cdktf.numberToTerraform(this._jobStepIndex),
-      job_target_group_id: cdktf.stringToTerraform(this._jobTargetGroupId),
-      maximum_retry_interval_seconds: cdktf.numberToTerraform(this._maximumRetryIntervalSeconds),
-      name: cdktf.stringToTerraform(this._name),
-      retry_attempts: cdktf.numberToTerraform(this._retryAttempts),
-      retry_interval_backoff_multiplier: cdktf.numberToTerraform(this._retryIntervalBackoffMultiplier),
-      sql_script: cdktf.stringToTerraform(this._sqlScript),
-      timeout_seconds: cdktf.numberToTerraform(this._timeoutSeconds),
+      id: cdktn.stringToTerraform(this._id),
+      initial_retry_interval_seconds: cdktn.numberToTerraform(this._initialRetryIntervalSeconds),
+      job_credential_id: cdktn.stringToTerraform(this._jobCredentialId),
+      job_id: cdktn.stringToTerraform(this._jobId),
+      job_step_index: cdktn.numberToTerraform(this._jobStepIndex),
+      job_target_group_id: cdktn.stringToTerraform(this._jobTargetGroupId),
+      maximum_retry_interval_seconds: cdktn.numberToTerraform(this._maximumRetryIntervalSeconds),
+      name: cdktn.stringToTerraform(this._name),
+      retry_attempts: cdktn.numberToTerraform(this._retryAttempts),
+      retry_interval_backoff_multiplier: cdktn.numberToTerraform(this._retryIntervalBackoffMultiplier),
+      sql_script: cdktn.stringToTerraform(this._sqlScript),
+      timeout_seconds: cdktn.numberToTerraform(this._timeoutSeconds),
       output_target: mssqlJobStepOutputTargetToTerraform(this._outputTarget.internalValue),
       timeouts: mssqlJobStepTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -753,73 +753,73 @@ export class MssqlJobStep extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       initial_retry_interval_seconds: {
-        value: cdktf.numberToHclTerraform(this._initialRetryIntervalSeconds),
+        value: cdktn.numberToHclTerraform(this._initialRetryIntervalSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       job_credential_id: {
-        value: cdktf.stringToHclTerraform(this._jobCredentialId),
+        value: cdktn.stringToHclTerraform(this._jobCredentialId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       job_id: {
-        value: cdktf.stringToHclTerraform(this._jobId),
+        value: cdktn.stringToHclTerraform(this._jobId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       job_step_index: {
-        value: cdktf.numberToHclTerraform(this._jobStepIndex),
+        value: cdktn.numberToHclTerraform(this._jobStepIndex),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       job_target_group_id: {
-        value: cdktf.stringToHclTerraform(this._jobTargetGroupId),
+        value: cdktn.stringToHclTerraform(this._jobTargetGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       maximum_retry_interval_seconds: {
-        value: cdktf.numberToHclTerraform(this._maximumRetryIntervalSeconds),
+        value: cdktn.numberToHclTerraform(this._maximumRetryIntervalSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       retry_attempts: {
-        value: cdktf.numberToHclTerraform(this._retryAttempts),
+        value: cdktn.numberToHclTerraform(this._retryAttempts),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       retry_interval_backoff_multiplier: {
-        value: cdktf.numberToHclTerraform(this._retryIntervalBackoffMultiplier),
+        value: cdktn.numberToHclTerraform(this._retryIntervalBackoffMultiplier),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       sql_script: {
-        value: cdktf.stringToHclTerraform(this._sqlScript),
+        value: cdktn.stringToHclTerraform(this._sqlScript),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       timeout_seconds: {
-        value: cdktf.numberToHclTerraform(this._timeoutSeconds),
+        value: cdktn.numberToHclTerraform(this._timeoutSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SynapseWorkspaceConfig extends cdktf.TerraformMetaArguments {
+export interface SynapseWorkspaceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/synapse_workspace#azuread_authentication_only SynapseWorkspace#azuread_authentication_only}
   */
-  readonly azureadAuthenticationOnly?: boolean | cdktf.IResolvable;
+  readonly azureadAuthenticationOnly?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/synapse_workspace#compute_subnet_id SynapseWorkspace#compute_subnet_id}
   */
@@ -23,7 +23,7 @@ export interface SynapseWorkspaceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/synapse_workspace#data_exfiltration_protection_enabled SynapseWorkspace#data_exfiltration_protection_enabled}
   */
-  readonly dataExfiltrationProtectionEnabled?: boolean | cdktf.IResolvable;
+  readonly dataExfiltrationProtectionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/synapse_workspace#id SynapseWorkspace#id}
   *
@@ -46,7 +46,7 @@ export interface SynapseWorkspaceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/synapse_workspace#managed_virtual_network_enabled SynapseWorkspace#managed_virtual_network_enabled}
   */
-  readonly managedVirtualNetworkEnabled?: boolean | cdktf.IResolvable;
+  readonly managedVirtualNetworkEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/synapse_workspace#name SynapseWorkspace#name}
   */
@@ -54,7 +54,7 @@ export interface SynapseWorkspaceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/synapse_workspace#public_network_access_enabled SynapseWorkspace#public_network_access_enabled}
   */
-  readonly publicNetworkAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly publicNetworkAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/synapse_workspace#purview_id SynapseWorkspace#purview_id}
   */
@@ -74,7 +74,7 @@ export interface SynapseWorkspaceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/synapse_workspace#sql_identity_control_enabled SynapseWorkspace#sql_identity_control_enabled}
   */
-  readonly sqlIdentityControlEnabled?: boolean | cdktf.IResolvable;
+  readonly sqlIdentityControlEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/synapse_workspace#storage_data_lake_gen2_filesystem_id SynapseWorkspace#storage_data_lake_gen2_filesystem_id}
   */
@@ -146,66 +146,66 @@ export interface SynapseWorkspaceAzureDevopsRepo {
 }
 
 export function synapseWorkspaceAzureDevopsRepoToTerraform(struct?: SynapseWorkspaceAzureDevopsRepoOutputReference | SynapseWorkspaceAzureDevopsRepo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    account_name: cdktf.stringToTerraform(struct!.accountName),
-    branch_name: cdktf.stringToTerraform(struct!.branchName),
-    last_commit_id: cdktf.stringToTerraform(struct!.lastCommitId),
-    project_name: cdktf.stringToTerraform(struct!.projectName),
-    repository_name: cdktf.stringToTerraform(struct!.repositoryName),
-    root_folder: cdktf.stringToTerraform(struct!.rootFolder),
-    tenant_id: cdktf.stringToTerraform(struct!.tenantId),
+    account_name: cdktn.stringToTerraform(struct!.accountName),
+    branch_name: cdktn.stringToTerraform(struct!.branchName),
+    last_commit_id: cdktn.stringToTerraform(struct!.lastCommitId),
+    project_name: cdktn.stringToTerraform(struct!.projectName),
+    repository_name: cdktn.stringToTerraform(struct!.repositoryName),
+    root_folder: cdktn.stringToTerraform(struct!.rootFolder),
+    tenant_id: cdktn.stringToTerraform(struct!.tenantId),
   }
 }
 
 
 export function synapseWorkspaceAzureDevopsRepoToHclTerraform(struct?: SynapseWorkspaceAzureDevopsRepoOutputReference | SynapseWorkspaceAzureDevopsRepo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     account_name: {
-      value: cdktf.stringToHclTerraform(struct!.accountName),
+      value: cdktn.stringToHclTerraform(struct!.accountName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     branch_name: {
-      value: cdktf.stringToHclTerraform(struct!.branchName),
+      value: cdktn.stringToHclTerraform(struct!.branchName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     last_commit_id: {
-      value: cdktf.stringToHclTerraform(struct!.lastCommitId),
+      value: cdktn.stringToHclTerraform(struct!.lastCommitId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     project_name: {
-      value: cdktf.stringToHclTerraform(struct!.projectName),
+      value: cdktn.stringToHclTerraform(struct!.projectName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     repository_name: {
-      value: cdktf.stringToHclTerraform(struct!.repositoryName),
+      value: cdktn.stringToHclTerraform(struct!.repositoryName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     root_folder: {
-      value: cdktf.stringToHclTerraform(struct!.rootFolder),
+      value: cdktn.stringToHclTerraform(struct!.rootFolder),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tenant_id: {
-      value: cdktf.stringToHclTerraform(struct!.tenantId),
+      value: cdktn.stringToHclTerraform(struct!.tenantId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -216,14 +216,14 @@ export function synapseWorkspaceAzureDevopsRepoToHclTerraform(struct?: SynapseWo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SynapseWorkspaceAzureDevopsRepoOutputReference extends cdktf.ComplexObject {
+export class SynapseWorkspaceAzureDevopsRepoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -397,38 +397,38 @@ export interface SynapseWorkspaceCustomerManagedKey {
 }
 
 export function synapseWorkspaceCustomerManagedKeyToTerraform(struct?: SynapseWorkspaceCustomerManagedKeyOutputReference | SynapseWorkspaceCustomerManagedKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key_name: cdktf.stringToTerraform(struct!.keyName),
-    key_versionless_id: cdktf.stringToTerraform(struct!.keyVersionlessId),
-    user_assigned_identity_id: cdktf.stringToTerraform(struct!.userAssignedIdentityId),
+    key_name: cdktn.stringToTerraform(struct!.keyName),
+    key_versionless_id: cdktn.stringToTerraform(struct!.keyVersionlessId),
+    user_assigned_identity_id: cdktn.stringToTerraform(struct!.userAssignedIdentityId),
   }
 }
 
 
 export function synapseWorkspaceCustomerManagedKeyToHclTerraform(struct?: SynapseWorkspaceCustomerManagedKeyOutputReference | SynapseWorkspaceCustomerManagedKey): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key_name: {
-      value: cdktf.stringToHclTerraform(struct!.keyName),
+      value: cdktn.stringToHclTerraform(struct!.keyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_versionless_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVersionlessId),
+      value: cdktn.stringToHclTerraform(struct!.keyVersionlessId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_assigned_identity_id: {
-      value: cdktf.stringToHclTerraform(struct!.userAssignedIdentityId),
+      value: cdktn.stringToHclTerraform(struct!.userAssignedIdentityId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -439,14 +439,14 @@ export function synapseWorkspaceCustomerManagedKeyToHclTerraform(struct?: Synaps
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SynapseWorkspaceCustomerManagedKeyOutputReference extends cdktf.ComplexObject {
+export class SynapseWorkspaceCustomerManagedKeyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -556,59 +556,59 @@ export interface SynapseWorkspaceGithubRepo {
 }
 
 export function synapseWorkspaceGithubRepoToTerraform(struct?: SynapseWorkspaceGithubRepoOutputReference | SynapseWorkspaceGithubRepo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    account_name: cdktf.stringToTerraform(struct!.accountName),
-    branch_name: cdktf.stringToTerraform(struct!.branchName),
-    git_url: cdktf.stringToTerraform(struct!.gitUrl),
-    last_commit_id: cdktf.stringToTerraform(struct!.lastCommitId),
-    repository_name: cdktf.stringToTerraform(struct!.repositoryName),
-    root_folder: cdktf.stringToTerraform(struct!.rootFolder),
+    account_name: cdktn.stringToTerraform(struct!.accountName),
+    branch_name: cdktn.stringToTerraform(struct!.branchName),
+    git_url: cdktn.stringToTerraform(struct!.gitUrl),
+    last_commit_id: cdktn.stringToTerraform(struct!.lastCommitId),
+    repository_name: cdktn.stringToTerraform(struct!.repositoryName),
+    root_folder: cdktn.stringToTerraform(struct!.rootFolder),
   }
 }
 
 
 export function synapseWorkspaceGithubRepoToHclTerraform(struct?: SynapseWorkspaceGithubRepoOutputReference | SynapseWorkspaceGithubRepo): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     account_name: {
-      value: cdktf.stringToHclTerraform(struct!.accountName),
+      value: cdktn.stringToHclTerraform(struct!.accountName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     branch_name: {
-      value: cdktf.stringToHclTerraform(struct!.branchName),
+      value: cdktn.stringToHclTerraform(struct!.branchName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     git_url: {
-      value: cdktf.stringToHclTerraform(struct!.gitUrl),
+      value: cdktn.stringToHclTerraform(struct!.gitUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     last_commit_id: {
-      value: cdktf.stringToHclTerraform(struct!.lastCommitId),
+      value: cdktn.stringToHclTerraform(struct!.lastCommitId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     repository_name: {
-      value: cdktf.stringToHclTerraform(struct!.repositoryName),
+      value: cdktn.stringToHclTerraform(struct!.repositoryName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     root_folder: {
-      value: cdktf.stringToHclTerraform(struct!.rootFolder),
+      value: cdktn.stringToHclTerraform(struct!.rootFolder),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -619,14 +619,14 @@ export function synapseWorkspaceGithubRepoToHclTerraform(struct?: SynapseWorkspa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SynapseWorkspaceGithubRepoOutputReference extends cdktf.ComplexObject {
+export class SynapseWorkspaceGithubRepoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -777,31 +777,31 @@ export interface SynapseWorkspaceIdentity {
 }
 
 export function synapseWorkspaceIdentityToTerraform(struct?: SynapseWorkspaceIdentityOutputReference | SynapseWorkspaceIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function synapseWorkspaceIdentityToHclTerraform(struct?: SynapseWorkspaceIdentityOutputReference | SynapseWorkspaceIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -812,14 +812,14 @@ export function synapseWorkspaceIdentityToHclTerraform(struct?: SynapseWorkspace
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SynapseWorkspaceIdentityOutputReference extends cdktf.ComplexObject {
+export class SynapseWorkspaceIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -853,7 +853,7 @@ export class SynapseWorkspaceIdentityOutputReference extends cdktf.ComplexObject
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -908,46 +908,46 @@ export interface SynapseWorkspaceTimeouts {
   readonly update?: string;
 }
 
-export function synapseWorkspaceTimeoutsToTerraform(struct?: SynapseWorkspaceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function synapseWorkspaceTimeoutsToTerraform(struct?: SynapseWorkspaceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function synapseWorkspaceTimeoutsToHclTerraform(struct?: SynapseWorkspaceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function synapseWorkspaceTimeoutsToHclTerraform(struct?: SynapseWorkspaceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -958,19 +958,19 @@ export function synapseWorkspaceTimeoutsToHclTerraform(struct?: SynapseWorkspace
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SynapseWorkspaceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SynapseWorkspaceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SynapseWorkspaceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SynapseWorkspaceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -995,7 +995,7 @@ export class SynapseWorkspaceTimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SynapseWorkspaceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SynapseWorkspaceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1004,7 +1004,7 @@ export class SynapseWorkspaceTimeoutsOutputReference extends cdktf.ComplexObject
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1086,7 +1086,7 @@ export class SynapseWorkspaceTimeoutsOutputReference extends cdktf.ComplexObject
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/synapse_workspace azurerm_synapse_workspace}
 */
-export class SynapseWorkspace extends cdktf.TerraformResource {
+export class SynapseWorkspace extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1097,14 +1097,14 @@ export class SynapseWorkspace extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SynapseWorkspace resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SynapseWorkspace resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SynapseWorkspace to import
   * @param importFromId The id of the existing SynapseWorkspace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/synapse_workspace#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SynapseWorkspace to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_synapse_workspace", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_synapse_workspace", importId: importFromId, provider });
       }
 
   // ===========
@@ -1163,11 +1163,11 @@ export class SynapseWorkspace extends cdktf.TerraformResource {
   // ==========
 
   // azuread_authentication_only - computed: false, optional: true, required: false
-  private _azureadAuthenticationOnly?: boolean | cdktf.IResolvable; 
+  private _azureadAuthenticationOnly?: boolean | cdktn.IResolvable; 
   public get azureadAuthenticationOnly() {
     return this.getBooleanAttribute('azuread_authentication_only');
   }
-  public set azureadAuthenticationOnly(value: boolean | cdktf.IResolvable) {
+  public set azureadAuthenticationOnly(value: boolean | cdktn.IResolvable) {
     this._azureadAuthenticationOnly = value;
   }
   public resetAzureadAuthenticationOnly() {
@@ -1195,17 +1195,17 @@ export class SynapseWorkspace extends cdktf.TerraformResource {
   }
 
   // connectivity_endpoints - computed: true, optional: false, required: false
-  private _connectivityEndpoints = new cdktf.StringMap(this, "connectivity_endpoints");
+  private _connectivityEndpoints = new cdktn.StringMap(this, "connectivity_endpoints");
   public get connectivityEndpoints() {
     return this._connectivityEndpoints;
   }
 
   // data_exfiltration_protection_enabled - computed: false, optional: true, required: false
-  private _dataExfiltrationProtectionEnabled?: boolean | cdktf.IResolvable; 
+  private _dataExfiltrationProtectionEnabled?: boolean | cdktn.IResolvable; 
   public get dataExfiltrationProtectionEnabled() {
     return this.getBooleanAttribute('data_exfiltration_protection_enabled');
   }
-  public set dataExfiltrationProtectionEnabled(value: boolean | cdktf.IResolvable) {
+  public set dataExfiltrationProtectionEnabled(value: boolean | cdktn.IResolvable) {
     this._dataExfiltrationProtectionEnabled = value;
   }
   public resetDataExfiltrationProtectionEnabled() {
@@ -1278,11 +1278,11 @@ export class SynapseWorkspace extends cdktf.TerraformResource {
   }
 
   // managed_virtual_network_enabled - computed: false, optional: true, required: false
-  private _managedVirtualNetworkEnabled?: boolean | cdktf.IResolvable; 
+  private _managedVirtualNetworkEnabled?: boolean | cdktn.IResolvable; 
   public get managedVirtualNetworkEnabled() {
     return this.getBooleanAttribute('managed_virtual_network_enabled');
   }
-  public set managedVirtualNetworkEnabled(value: boolean | cdktf.IResolvable) {
+  public set managedVirtualNetworkEnabled(value: boolean | cdktn.IResolvable) {
     this._managedVirtualNetworkEnabled = value;
   }
   public resetManagedVirtualNetworkEnabled() {
@@ -1307,11 +1307,11 @@ export class SynapseWorkspace extends cdktf.TerraformResource {
   }
 
   // public_network_access_enabled - computed: false, optional: true, required: false
-  private _publicNetworkAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _publicNetworkAccessEnabled?: boolean | cdktn.IResolvable; 
   public get publicNetworkAccessEnabled() {
     return this.getBooleanAttribute('public_network_access_enabled');
   }
-  public set publicNetworkAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set publicNetworkAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._publicNetworkAccessEnabled = value;
   }
   public resetPublicNetworkAccessEnabled() {
@@ -1384,11 +1384,11 @@ export class SynapseWorkspace extends cdktf.TerraformResource {
   }
 
   // sql_identity_control_enabled - computed: false, optional: true, required: false
-  private _sqlIdentityControlEnabled?: boolean | cdktf.IResolvable; 
+  private _sqlIdentityControlEnabled?: boolean | cdktn.IResolvable; 
   public get sqlIdentityControlEnabled() {
     return this.getBooleanAttribute('sql_identity_control_enabled');
   }
-  public set sqlIdentityControlEnabled(value: boolean | cdktf.IResolvable) {
+  public set sqlIdentityControlEnabled(value: boolean | cdktn.IResolvable) {
     this._sqlIdentityControlEnabled = value;
   }
   public resetSqlIdentityControlEnabled() {
@@ -1514,23 +1514,23 @@ export class SynapseWorkspace extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      azuread_authentication_only: cdktf.booleanToTerraform(this._azureadAuthenticationOnly),
-      compute_subnet_id: cdktf.stringToTerraform(this._computeSubnetId),
-      data_exfiltration_protection_enabled: cdktf.booleanToTerraform(this._dataExfiltrationProtectionEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      linking_allowed_for_aad_tenant_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._linkingAllowedForAadTenantIds),
-      location: cdktf.stringToTerraform(this._location),
-      managed_resource_group_name: cdktf.stringToTerraform(this._managedResourceGroupName),
-      managed_virtual_network_enabled: cdktf.booleanToTerraform(this._managedVirtualNetworkEnabled),
-      name: cdktf.stringToTerraform(this._name),
-      public_network_access_enabled: cdktf.booleanToTerraform(this._publicNetworkAccessEnabled),
-      purview_id: cdktf.stringToTerraform(this._purviewId),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      sql_administrator_login: cdktf.stringToTerraform(this._sqlAdministratorLogin),
-      sql_administrator_login_password: cdktf.stringToTerraform(this._sqlAdministratorLoginPassword),
-      sql_identity_control_enabled: cdktf.booleanToTerraform(this._sqlIdentityControlEnabled),
-      storage_data_lake_gen2_filesystem_id: cdktf.stringToTerraform(this._storageDataLakeGen2FilesystemId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      azuread_authentication_only: cdktn.booleanToTerraform(this._azureadAuthenticationOnly),
+      compute_subnet_id: cdktn.stringToTerraform(this._computeSubnetId),
+      data_exfiltration_protection_enabled: cdktn.booleanToTerraform(this._dataExfiltrationProtectionEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      linking_allowed_for_aad_tenant_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._linkingAllowedForAadTenantIds),
+      location: cdktn.stringToTerraform(this._location),
+      managed_resource_group_name: cdktn.stringToTerraform(this._managedResourceGroupName),
+      managed_virtual_network_enabled: cdktn.booleanToTerraform(this._managedVirtualNetworkEnabled),
+      name: cdktn.stringToTerraform(this._name),
+      public_network_access_enabled: cdktn.booleanToTerraform(this._publicNetworkAccessEnabled),
+      purview_id: cdktn.stringToTerraform(this._purviewId),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      sql_administrator_login: cdktn.stringToTerraform(this._sqlAdministratorLogin),
+      sql_administrator_login_password: cdktn.stringToTerraform(this._sqlAdministratorLoginPassword),
+      sql_identity_control_enabled: cdktn.booleanToTerraform(this._sqlIdentityControlEnabled),
+      storage_data_lake_gen2_filesystem_id: cdktn.stringToTerraform(this._storageDataLakeGen2FilesystemId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       azure_devops_repo: synapseWorkspaceAzureDevopsRepoToTerraform(this._azureDevopsRepo.internalValue),
       customer_managed_key: synapseWorkspaceCustomerManagedKeyToTerraform(this._customerManagedKey.internalValue),
       github_repo: synapseWorkspaceGithubRepoToTerraform(this._githubRepo.internalValue),
@@ -1542,103 +1542,103 @@ export class SynapseWorkspace extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       azuread_authentication_only: {
-        value: cdktf.booleanToHclTerraform(this._azureadAuthenticationOnly),
+        value: cdktn.booleanToHclTerraform(this._azureadAuthenticationOnly),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       compute_subnet_id: {
-        value: cdktf.stringToHclTerraform(this._computeSubnetId),
+        value: cdktn.stringToHclTerraform(this._computeSubnetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_exfiltration_protection_enabled: {
-        value: cdktf.booleanToHclTerraform(this._dataExfiltrationProtectionEnabled),
+        value: cdktn.booleanToHclTerraform(this._dataExfiltrationProtectionEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       linking_allowed_for_aad_tenant_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._linkingAllowedForAadTenantIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._linkingAllowedForAadTenantIds),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       managed_resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._managedResourceGroupName),
+        value: cdktn.stringToHclTerraform(this._managedResourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       managed_virtual_network_enabled: {
-        value: cdktf.booleanToHclTerraform(this._managedVirtualNetworkEnabled),
+        value: cdktn.booleanToHclTerraform(this._managedVirtualNetworkEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_network_access_enabled: {
-        value: cdktf.booleanToHclTerraform(this._publicNetworkAccessEnabled),
+        value: cdktn.booleanToHclTerraform(this._publicNetworkAccessEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       purview_id: {
-        value: cdktf.stringToHclTerraform(this._purviewId),
+        value: cdktn.stringToHclTerraform(this._purviewId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sql_administrator_login: {
-        value: cdktf.stringToHclTerraform(this._sqlAdministratorLogin),
+        value: cdktn.stringToHclTerraform(this._sqlAdministratorLogin),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sql_administrator_login_password: {
-        value: cdktf.stringToHclTerraform(this._sqlAdministratorLoginPassword),
+        value: cdktn.stringToHclTerraform(this._sqlAdministratorLoginPassword),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sql_identity_control_enabled: {
-        value: cdktf.booleanToHclTerraform(this._sqlIdentityControlEnabled),
+        value: cdktn.booleanToHclTerraform(this._sqlIdentityControlEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       storage_data_lake_gen2_filesystem_id: {
-        value: cdktf.stringToHclTerraform(this._storageDataLakeGen2FilesystemId),
+        value: cdktn.stringToHclTerraform(this._storageDataLakeGen2FilesystemId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

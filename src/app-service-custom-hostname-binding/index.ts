@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AppServiceCustomHostnameBindingConfig extends cdktf.TerraformMetaArguments {
+export interface AppServiceCustomHostnameBindingConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/app_service_custom_hostname_binding#app_service_name AppServiceCustomHostnameBinding#app_service_name}
   */
@@ -61,39 +61,39 @@ export interface AppServiceCustomHostnameBindingTimeouts {
   readonly read?: string;
 }
 
-export function appServiceCustomHostnameBindingTimeoutsToTerraform(struct?: AppServiceCustomHostnameBindingTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appServiceCustomHostnameBindingTimeoutsToTerraform(struct?: AppServiceCustomHostnameBindingTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function appServiceCustomHostnameBindingTimeoutsToHclTerraform(struct?: AppServiceCustomHostnameBindingTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function appServiceCustomHostnameBindingTimeoutsToHclTerraform(struct?: AppServiceCustomHostnameBindingTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -104,19 +104,19 @@ export function appServiceCustomHostnameBindingTimeoutsToHclTerraform(struct?: A
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AppServiceCustomHostnameBindingTimeoutsOutputReference extends cdktf.ComplexObject {
+export class AppServiceCustomHostnameBindingTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AppServiceCustomHostnameBindingTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AppServiceCustomHostnameBindingTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -137,7 +137,7 @@ export class AppServiceCustomHostnameBindingTimeoutsOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AppServiceCustomHostnameBindingTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AppServiceCustomHostnameBindingTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -145,7 +145,7 @@ export class AppServiceCustomHostnameBindingTimeoutsOutputReference extends cdkt
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -210,7 +210,7 @@ export class AppServiceCustomHostnameBindingTimeoutsOutputReference extends cdkt
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/app_service_custom_hostname_binding azurerm_app_service_custom_hostname_binding}
 */
-export class AppServiceCustomHostnameBinding extends cdktf.TerraformResource {
+export class AppServiceCustomHostnameBinding extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -221,14 +221,14 @@ export class AppServiceCustomHostnameBinding extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AppServiceCustomHostnameBinding resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AppServiceCustomHostnameBinding resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AppServiceCustomHostnameBinding to import
   * @param importFromId The id of the existing AppServiceCustomHostnameBinding that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/app_service_custom_hostname_binding#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AppServiceCustomHostnameBinding to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_app_service_custom_hostname_binding", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_app_service_custom_hostname_binding", importId: importFromId, provider });
       }
 
   // ===========
@@ -385,12 +385,12 @@ export class AppServiceCustomHostnameBinding extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      app_service_name: cdktf.stringToTerraform(this._appServiceName),
-      hostname: cdktf.stringToTerraform(this._hostname),
-      id: cdktf.stringToTerraform(this._id),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      ssl_state: cdktf.stringToTerraform(this._sslState),
-      thumbprint: cdktf.stringToTerraform(this._thumbprint),
+      app_service_name: cdktn.stringToTerraform(this._appServiceName),
+      hostname: cdktn.stringToTerraform(this._hostname),
+      id: cdktn.stringToTerraform(this._id),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      ssl_state: cdktn.stringToTerraform(this._sslState),
+      thumbprint: cdktn.stringToTerraform(this._thumbprint),
       timeouts: appServiceCustomHostnameBindingTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -398,37 +398,37 @@ export class AppServiceCustomHostnameBinding extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       app_service_name: {
-        value: cdktf.stringToHclTerraform(this._appServiceName),
+        value: cdktn.stringToHclTerraform(this._appServiceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       hostname: {
-        value: cdktf.stringToHclTerraform(this._hostname),
+        value: cdktn.stringToHclTerraform(this._hostname),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ssl_state: {
-        value: cdktf.stringToHclTerraform(this._sslState),
+        value: cdktn.stringToHclTerraform(this._sslState),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       thumbprint: {
-        value: cdktf.stringToHclTerraform(this._thumbprint),
+        value: cdktn.stringToHclTerraform(this._thumbprint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

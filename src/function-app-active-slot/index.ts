@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface FunctionAppActiveSlotConfig extends cdktf.TerraformMetaArguments {
+export interface FunctionAppActiveSlotConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/function_app_active_slot#id FunctionAppActiveSlot#id}
   *
@@ -24,7 +24,7 @@ export interface FunctionAppActiveSlotConfig extends cdktf.TerraformMetaArgument
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/function_app_active_slot#overwrite_network_config FunctionAppActiveSlot#overwrite_network_config}
   */
-  readonly overwriteNetworkConfig?: boolean | cdktf.IResolvable;
+  readonly overwriteNetworkConfig?: boolean | cdktn.IResolvable;
   /**
   * The ID of the Slot to swap with `Production`.
   *
@@ -57,46 +57,46 @@ export interface FunctionAppActiveSlotTimeouts {
   readonly update?: string;
 }
 
-export function functionAppActiveSlotTimeoutsToTerraform(struct?: FunctionAppActiveSlotTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function functionAppActiveSlotTimeoutsToTerraform(struct?: FunctionAppActiveSlotTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function functionAppActiveSlotTimeoutsToHclTerraform(struct?: FunctionAppActiveSlotTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function functionAppActiveSlotTimeoutsToHclTerraform(struct?: FunctionAppActiveSlotTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -107,19 +107,19 @@ export function functionAppActiveSlotTimeoutsToHclTerraform(struct?: FunctionApp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FunctionAppActiveSlotTimeoutsOutputReference extends cdktf.ComplexObject {
+export class FunctionAppActiveSlotTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): FunctionAppActiveSlotTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): FunctionAppActiveSlotTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -144,7 +144,7 @@ export class FunctionAppActiveSlotTimeoutsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FunctionAppActiveSlotTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FunctionAppActiveSlotTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -153,7 +153,7 @@ export class FunctionAppActiveSlotTimeoutsOutputReference extends cdktf.ComplexO
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -235,7 +235,7 @@ export class FunctionAppActiveSlotTimeoutsOutputReference extends cdktf.ComplexO
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/function_app_active_slot azurerm_function_app_active_slot}
 */
-export class FunctionAppActiveSlot extends cdktf.TerraformResource {
+export class FunctionAppActiveSlot extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -246,14 +246,14 @@ export class FunctionAppActiveSlot extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a FunctionAppActiveSlot resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a FunctionAppActiveSlot resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FunctionAppActiveSlot to import
   * @param importFromId The id of the existing FunctionAppActiveSlot that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/function_app_active_slot#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FunctionAppActiveSlot to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_function_app_active_slot", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_function_app_active_slot", importId: importFromId, provider });
       }
 
   // ===========
@@ -315,11 +315,11 @@ export class FunctionAppActiveSlot extends cdktf.TerraformResource {
   }
 
   // overwrite_network_config - computed: false, optional: true, required: false
-  private _overwriteNetworkConfig?: boolean | cdktf.IResolvable; 
+  private _overwriteNetworkConfig?: boolean | cdktn.IResolvable; 
   public get overwriteNetworkConfig() {
     return this.getBooleanAttribute('overwrite_network_config');
   }
-  public set overwriteNetworkConfig(value: boolean | cdktf.IResolvable) {
+  public set overwriteNetworkConfig(value: boolean | cdktn.IResolvable) {
     this._overwriteNetworkConfig = value;
   }
   public resetOverwriteNetworkConfig() {
@@ -365,9 +365,9 @@ export class FunctionAppActiveSlot extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      overwrite_network_config: cdktf.booleanToTerraform(this._overwriteNetworkConfig),
-      slot_id: cdktf.stringToTerraform(this._slotId),
+      id: cdktn.stringToTerraform(this._id),
+      overwrite_network_config: cdktn.booleanToTerraform(this._overwriteNetworkConfig),
+      slot_id: cdktn.stringToTerraform(this._slotId),
       timeouts: functionAppActiveSlotTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -375,19 +375,19 @@ export class FunctionAppActiveSlot extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       overwrite_network_config: {
-        value: cdktf.booleanToHclTerraform(this._overwriteNetworkConfig),
+        value: cdktn.booleanToHclTerraform(this._overwriteNetworkConfig),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       slot_id: {
-        value: cdktf.stringToHclTerraform(this._slotId),
+        value: cdktn.stringToHclTerraform(this._slotId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

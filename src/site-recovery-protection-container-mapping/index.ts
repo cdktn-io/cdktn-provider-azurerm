@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SiteRecoveryProtectionContainerMappingConfig extends cdktf.TerraformMetaArguments {
+export interface SiteRecoveryProtectionContainerMappingConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/site_recovery_protection_container_mapping#id SiteRecoveryProtectionContainerMapping#id}
   *
@@ -72,42 +72,42 @@ export interface SiteRecoveryProtectionContainerMappingAutomaticUpdate {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/site_recovery_protection_container_mapping#enabled SiteRecoveryProtectionContainerMapping#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
 }
 
 export function siteRecoveryProtectionContainerMappingAutomaticUpdateToTerraform(struct?: SiteRecoveryProtectionContainerMappingAutomaticUpdateOutputReference | SiteRecoveryProtectionContainerMappingAutomaticUpdate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    authentication_type: cdktf.stringToTerraform(struct!.authenticationType),
-    automation_account_id: cdktf.stringToTerraform(struct!.automationAccountId),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    authentication_type: cdktn.stringToTerraform(struct!.authenticationType),
+    automation_account_id: cdktn.stringToTerraform(struct!.automationAccountId),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
   }
 }
 
 
 export function siteRecoveryProtectionContainerMappingAutomaticUpdateToHclTerraform(struct?: SiteRecoveryProtectionContainerMappingAutomaticUpdateOutputReference | SiteRecoveryProtectionContainerMappingAutomaticUpdate): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     authentication_type: {
-      value: cdktf.stringToHclTerraform(struct!.authenticationType),
+      value: cdktn.stringToHclTerraform(struct!.authenticationType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     automation_account_id: {
-      value: cdktf.stringToHclTerraform(struct!.automationAccountId),
+      value: cdktn.stringToHclTerraform(struct!.automationAccountId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -118,14 +118,14 @@ export function siteRecoveryProtectionContainerMappingAutomaticUpdateToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SiteRecoveryProtectionContainerMappingAutomaticUpdateOutputReference extends cdktf.ComplexObject {
+export class SiteRecoveryProtectionContainerMappingAutomaticUpdateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -195,11 +195,11 @@ export class SiteRecoveryProtectionContainerMappingAutomaticUpdateOutputReferenc
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -229,46 +229,46 @@ export interface SiteRecoveryProtectionContainerMappingTimeouts {
   readonly update?: string;
 }
 
-export function siteRecoveryProtectionContainerMappingTimeoutsToTerraform(struct?: SiteRecoveryProtectionContainerMappingTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function siteRecoveryProtectionContainerMappingTimeoutsToTerraform(struct?: SiteRecoveryProtectionContainerMappingTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function siteRecoveryProtectionContainerMappingTimeoutsToHclTerraform(struct?: SiteRecoveryProtectionContainerMappingTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function siteRecoveryProtectionContainerMappingTimeoutsToHclTerraform(struct?: SiteRecoveryProtectionContainerMappingTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -279,19 +279,19 @@ export function siteRecoveryProtectionContainerMappingTimeoutsToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SiteRecoveryProtectionContainerMappingTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SiteRecoveryProtectionContainerMappingTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SiteRecoveryProtectionContainerMappingTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SiteRecoveryProtectionContainerMappingTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -316,7 +316,7 @@ export class SiteRecoveryProtectionContainerMappingTimeoutsOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SiteRecoveryProtectionContainerMappingTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SiteRecoveryProtectionContainerMappingTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -325,7 +325,7 @@ export class SiteRecoveryProtectionContainerMappingTimeoutsOutputReference exten
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -407,7 +407,7 @@ export class SiteRecoveryProtectionContainerMappingTimeoutsOutputReference exten
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/site_recovery_protection_container_mapping azurerm_site_recovery_protection_container_mapping}
 */
-export class SiteRecoveryProtectionContainerMapping extends cdktf.TerraformResource {
+export class SiteRecoveryProtectionContainerMapping extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -418,14 +418,14 @@ export class SiteRecoveryProtectionContainerMapping extends cdktf.TerraformResou
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SiteRecoveryProtectionContainerMapping resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SiteRecoveryProtectionContainerMapping resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SiteRecoveryProtectionContainerMapping to import
   * @param importFromId The id of the existing SiteRecoveryProtectionContainerMapping that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/site_recovery_protection_container_mapping#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SiteRecoveryProtectionContainerMapping to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_site_recovery_protection_container_mapping", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_site_recovery_protection_container_mapping", importId: importFromId, provider });
       }
 
   // ===========
@@ -616,14 +616,14 @@ export class SiteRecoveryProtectionContainerMapping extends cdktf.TerraformResou
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      recovery_fabric_name: cdktf.stringToTerraform(this._recoveryFabricName),
-      recovery_replication_policy_id: cdktf.stringToTerraform(this._recoveryReplicationPolicyId),
-      recovery_source_protection_container_name: cdktf.stringToTerraform(this._recoverySourceProtectionContainerName),
-      recovery_target_protection_container_id: cdktf.stringToTerraform(this._recoveryTargetProtectionContainerId),
-      recovery_vault_name: cdktf.stringToTerraform(this._recoveryVaultName),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      recovery_fabric_name: cdktn.stringToTerraform(this._recoveryFabricName),
+      recovery_replication_policy_id: cdktn.stringToTerraform(this._recoveryReplicationPolicyId),
+      recovery_source_protection_container_name: cdktn.stringToTerraform(this._recoverySourceProtectionContainerName),
+      recovery_target_protection_container_id: cdktn.stringToTerraform(this._recoveryTargetProtectionContainerId),
+      recovery_vault_name: cdktn.stringToTerraform(this._recoveryVaultName),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
       automatic_update: siteRecoveryProtectionContainerMappingAutomaticUpdateToTerraform(this._automaticUpdate.internalValue),
       timeouts: siteRecoveryProtectionContainerMappingTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -632,49 +632,49 @@ export class SiteRecoveryProtectionContainerMapping extends cdktf.TerraformResou
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       recovery_fabric_name: {
-        value: cdktf.stringToHclTerraform(this._recoveryFabricName),
+        value: cdktn.stringToHclTerraform(this._recoveryFabricName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       recovery_replication_policy_id: {
-        value: cdktf.stringToHclTerraform(this._recoveryReplicationPolicyId),
+        value: cdktn.stringToHclTerraform(this._recoveryReplicationPolicyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       recovery_source_protection_container_name: {
-        value: cdktf.stringToHclTerraform(this._recoverySourceProtectionContainerName),
+        value: cdktn.stringToHclTerraform(this._recoverySourceProtectionContainerName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       recovery_target_protection_container_id: {
-        value: cdktf.stringToHclTerraform(this._recoveryTargetProtectionContainerId),
+        value: cdktn.stringToHclTerraform(this._recoveryTargetProtectionContainerId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       recovery_vault_name: {
-        value: cdktf.stringToHclTerraform(this._recoveryVaultName),
+        value: cdktn.stringToHclTerraform(this._recoveryVaultName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

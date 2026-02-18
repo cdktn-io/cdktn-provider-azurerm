@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MonitorAlertProcessingRuleActionGroupConfig extends cdktf.TerraformMetaArguments {
+export interface MonitorAlertProcessingRuleActionGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_alert_processing_rule_action_group#add_action_group_ids MonitorAlertProcessingRuleActionGroup#add_action_group_ids}
   */
@@ -23,7 +23,7 @@ export interface MonitorAlertProcessingRuleActionGroupConfig extends cdktf.Terra
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_alert_processing_rule_action_group#enabled MonitorAlertProcessingRuleActionGroup#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_alert_processing_rule_action_group#id MonitorAlertProcessingRuleActionGroup#id}
   *
@@ -78,31 +78,31 @@ export interface MonitorAlertProcessingRuleActionGroupConditionAlertContext {
 }
 
 export function monitorAlertProcessingRuleActionGroupConditionAlertContextToTerraform(struct?: MonitorAlertProcessingRuleActionGroupConditionAlertContextOutputReference | MonitorAlertProcessingRuleActionGroupConditionAlertContext): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function monitorAlertProcessingRuleActionGroupConditionAlertContextToHclTerraform(struct?: MonitorAlertProcessingRuleActionGroupConditionAlertContextOutputReference | MonitorAlertProcessingRuleActionGroupConditionAlertContext): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -113,14 +113,14 @@ export function monitorAlertProcessingRuleActionGroupConditionAlertContextToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorAlertProcessingRuleActionGroupConditionAlertContextOutputReference extends cdktf.ComplexObject {
+export class MonitorAlertProcessingRuleActionGroupConditionAlertContextOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -189,31 +189,31 @@ export interface MonitorAlertProcessingRuleActionGroupConditionAlertRuleId {
 }
 
 export function monitorAlertProcessingRuleActionGroupConditionAlertRuleIdToTerraform(struct?: MonitorAlertProcessingRuleActionGroupConditionAlertRuleIdOutputReference | MonitorAlertProcessingRuleActionGroupConditionAlertRuleId): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function monitorAlertProcessingRuleActionGroupConditionAlertRuleIdToHclTerraform(struct?: MonitorAlertProcessingRuleActionGroupConditionAlertRuleIdOutputReference | MonitorAlertProcessingRuleActionGroupConditionAlertRuleId): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -224,14 +224,14 @@ export function monitorAlertProcessingRuleActionGroupConditionAlertRuleIdToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorAlertProcessingRuleActionGroupConditionAlertRuleIdOutputReference extends cdktf.ComplexObject {
+export class MonitorAlertProcessingRuleActionGroupConditionAlertRuleIdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -300,31 +300,31 @@ export interface MonitorAlertProcessingRuleActionGroupConditionAlertRuleName {
 }
 
 export function monitorAlertProcessingRuleActionGroupConditionAlertRuleNameToTerraform(struct?: MonitorAlertProcessingRuleActionGroupConditionAlertRuleNameOutputReference | MonitorAlertProcessingRuleActionGroupConditionAlertRuleName): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function monitorAlertProcessingRuleActionGroupConditionAlertRuleNameToHclTerraform(struct?: MonitorAlertProcessingRuleActionGroupConditionAlertRuleNameOutputReference | MonitorAlertProcessingRuleActionGroupConditionAlertRuleName): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -335,14 +335,14 @@ export function monitorAlertProcessingRuleActionGroupConditionAlertRuleNameToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorAlertProcessingRuleActionGroupConditionAlertRuleNameOutputReference extends cdktf.ComplexObject {
+export class MonitorAlertProcessingRuleActionGroupConditionAlertRuleNameOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -411,31 +411,31 @@ export interface MonitorAlertProcessingRuleActionGroupConditionDescription {
 }
 
 export function monitorAlertProcessingRuleActionGroupConditionDescriptionToTerraform(struct?: MonitorAlertProcessingRuleActionGroupConditionDescriptionOutputReference | MonitorAlertProcessingRuleActionGroupConditionDescription): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function monitorAlertProcessingRuleActionGroupConditionDescriptionToHclTerraform(struct?: MonitorAlertProcessingRuleActionGroupConditionDescriptionOutputReference | MonitorAlertProcessingRuleActionGroupConditionDescription): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -446,14 +446,14 @@ export function monitorAlertProcessingRuleActionGroupConditionDescriptionToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorAlertProcessingRuleActionGroupConditionDescriptionOutputReference extends cdktf.ComplexObject {
+export class MonitorAlertProcessingRuleActionGroupConditionDescriptionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -522,31 +522,31 @@ export interface MonitorAlertProcessingRuleActionGroupConditionMonitorCondition 
 }
 
 export function monitorAlertProcessingRuleActionGroupConditionMonitorConditionToTerraform(struct?: MonitorAlertProcessingRuleActionGroupConditionMonitorConditionOutputReference | MonitorAlertProcessingRuleActionGroupConditionMonitorCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function monitorAlertProcessingRuleActionGroupConditionMonitorConditionToHclTerraform(struct?: MonitorAlertProcessingRuleActionGroupConditionMonitorConditionOutputReference | MonitorAlertProcessingRuleActionGroupConditionMonitorCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -557,14 +557,14 @@ export function monitorAlertProcessingRuleActionGroupConditionMonitorConditionTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorAlertProcessingRuleActionGroupConditionMonitorConditionOutputReference extends cdktf.ComplexObject {
+export class MonitorAlertProcessingRuleActionGroupConditionMonitorConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -633,31 +633,31 @@ export interface MonitorAlertProcessingRuleActionGroupConditionMonitorService {
 }
 
 export function monitorAlertProcessingRuleActionGroupConditionMonitorServiceToTerraform(struct?: MonitorAlertProcessingRuleActionGroupConditionMonitorServiceOutputReference | MonitorAlertProcessingRuleActionGroupConditionMonitorService): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function monitorAlertProcessingRuleActionGroupConditionMonitorServiceToHclTerraform(struct?: MonitorAlertProcessingRuleActionGroupConditionMonitorServiceOutputReference | MonitorAlertProcessingRuleActionGroupConditionMonitorService): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -668,14 +668,14 @@ export function monitorAlertProcessingRuleActionGroupConditionMonitorServiceToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorAlertProcessingRuleActionGroupConditionMonitorServiceOutputReference extends cdktf.ComplexObject {
+export class MonitorAlertProcessingRuleActionGroupConditionMonitorServiceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -744,31 +744,31 @@ export interface MonitorAlertProcessingRuleActionGroupConditionSeverity {
 }
 
 export function monitorAlertProcessingRuleActionGroupConditionSeverityToTerraform(struct?: MonitorAlertProcessingRuleActionGroupConditionSeverityOutputReference | MonitorAlertProcessingRuleActionGroupConditionSeverity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function monitorAlertProcessingRuleActionGroupConditionSeverityToHclTerraform(struct?: MonitorAlertProcessingRuleActionGroupConditionSeverityOutputReference | MonitorAlertProcessingRuleActionGroupConditionSeverity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -779,14 +779,14 @@ export function monitorAlertProcessingRuleActionGroupConditionSeverityToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorAlertProcessingRuleActionGroupConditionSeverityOutputReference extends cdktf.ComplexObject {
+export class MonitorAlertProcessingRuleActionGroupConditionSeverityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -855,31 +855,31 @@ export interface MonitorAlertProcessingRuleActionGroupConditionSignalType {
 }
 
 export function monitorAlertProcessingRuleActionGroupConditionSignalTypeToTerraform(struct?: MonitorAlertProcessingRuleActionGroupConditionSignalTypeOutputReference | MonitorAlertProcessingRuleActionGroupConditionSignalType): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function monitorAlertProcessingRuleActionGroupConditionSignalTypeToHclTerraform(struct?: MonitorAlertProcessingRuleActionGroupConditionSignalTypeOutputReference | MonitorAlertProcessingRuleActionGroupConditionSignalType): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -890,14 +890,14 @@ export function monitorAlertProcessingRuleActionGroupConditionSignalTypeToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorAlertProcessingRuleActionGroupConditionSignalTypeOutputReference extends cdktf.ComplexObject {
+export class MonitorAlertProcessingRuleActionGroupConditionSignalTypeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -966,31 +966,31 @@ export interface MonitorAlertProcessingRuleActionGroupConditionTargetResource {
 }
 
 export function monitorAlertProcessingRuleActionGroupConditionTargetResourceToTerraform(struct?: MonitorAlertProcessingRuleActionGroupConditionTargetResourceOutputReference | MonitorAlertProcessingRuleActionGroupConditionTargetResource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function monitorAlertProcessingRuleActionGroupConditionTargetResourceToHclTerraform(struct?: MonitorAlertProcessingRuleActionGroupConditionTargetResourceOutputReference | MonitorAlertProcessingRuleActionGroupConditionTargetResource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1001,14 +1001,14 @@ export function monitorAlertProcessingRuleActionGroupConditionTargetResourceToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorAlertProcessingRuleActionGroupConditionTargetResourceOutputReference extends cdktf.ComplexObject {
+export class MonitorAlertProcessingRuleActionGroupConditionTargetResourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1077,31 +1077,31 @@ export interface MonitorAlertProcessingRuleActionGroupConditionTargetResourceGro
 }
 
 export function monitorAlertProcessingRuleActionGroupConditionTargetResourceGroupToTerraform(struct?: MonitorAlertProcessingRuleActionGroupConditionTargetResourceGroupOutputReference | MonitorAlertProcessingRuleActionGroupConditionTargetResourceGroup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function monitorAlertProcessingRuleActionGroupConditionTargetResourceGroupToHclTerraform(struct?: MonitorAlertProcessingRuleActionGroupConditionTargetResourceGroupOutputReference | MonitorAlertProcessingRuleActionGroupConditionTargetResourceGroup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1112,14 +1112,14 @@ export function monitorAlertProcessingRuleActionGroupConditionTargetResourceGrou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorAlertProcessingRuleActionGroupConditionTargetResourceGroupOutputReference extends cdktf.ComplexObject {
+export class MonitorAlertProcessingRuleActionGroupConditionTargetResourceGroupOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1188,31 +1188,31 @@ export interface MonitorAlertProcessingRuleActionGroupConditionTargetResourceTyp
 }
 
 export function monitorAlertProcessingRuleActionGroupConditionTargetResourceTypeToTerraform(struct?: MonitorAlertProcessingRuleActionGroupConditionTargetResourceTypeOutputReference | MonitorAlertProcessingRuleActionGroupConditionTargetResourceType): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.values),
   }
 }
 
 
 export function monitorAlertProcessingRuleActionGroupConditionTargetResourceTypeToHclTerraform(struct?: MonitorAlertProcessingRuleActionGroupConditionTargetResourceTypeOutputReference | MonitorAlertProcessingRuleActionGroupConditionTargetResourceType): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     values: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.values),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.values),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -1223,14 +1223,14 @@ export function monitorAlertProcessingRuleActionGroupConditionTargetResourceType
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorAlertProcessingRuleActionGroupConditionTargetResourceTypeOutputReference extends cdktf.ComplexObject {
+export class MonitorAlertProcessingRuleActionGroupConditionTargetResourceTypeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1357,8 +1357,8 @@ export interface MonitorAlertProcessingRuleActionGroupCondition {
 }
 
 export function monitorAlertProcessingRuleActionGroupConditionToTerraform(struct?: MonitorAlertProcessingRuleActionGroupConditionOutputReference | MonitorAlertProcessingRuleActionGroupCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1378,8 +1378,8 @@ export function monitorAlertProcessingRuleActionGroupConditionToTerraform(struct
 
 
 export function monitorAlertProcessingRuleActionGroupConditionToHclTerraform(struct?: MonitorAlertProcessingRuleActionGroupConditionOutputReference | MonitorAlertProcessingRuleActionGroupCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1455,14 +1455,14 @@ export function monitorAlertProcessingRuleActionGroupConditionToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorAlertProcessingRuleActionGroupConditionOutputReference extends cdktf.ComplexObject {
+export class MonitorAlertProcessingRuleActionGroupConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1734,32 +1734,32 @@ export interface MonitorAlertProcessingRuleActionGroupScheduleRecurrenceDaily {
   readonly startTime: string;
 }
 
-export function monitorAlertProcessingRuleActionGroupScheduleRecurrenceDailyToTerraform(struct?: MonitorAlertProcessingRuleActionGroupScheduleRecurrenceDaily | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorAlertProcessingRuleActionGroupScheduleRecurrenceDailyToTerraform(struct?: MonitorAlertProcessingRuleActionGroupScheduleRecurrenceDaily | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    end_time: cdktf.stringToTerraform(struct!.endTime),
-    start_time: cdktf.stringToTerraform(struct!.startTime),
+    end_time: cdktn.stringToTerraform(struct!.endTime),
+    start_time: cdktn.stringToTerraform(struct!.startTime),
   }
 }
 
 
-export function monitorAlertProcessingRuleActionGroupScheduleRecurrenceDailyToHclTerraform(struct?: MonitorAlertProcessingRuleActionGroupScheduleRecurrenceDaily | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorAlertProcessingRuleActionGroupScheduleRecurrenceDailyToHclTerraform(struct?: MonitorAlertProcessingRuleActionGroupScheduleRecurrenceDaily | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     end_time: {
-      value: cdktf.stringToHclTerraform(struct!.endTime),
+      value: cdktn.stringToHclTerraform(struct!.endTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start_time: {
-      value: cdktf.stringToHclTerraform(struct!.startTime),
+      value: cdktn.stringToHclTerraform(struct!.startTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1770,9 +1770,9 @@ export function monitorAlertProcessingRuleActionGroupScheduleRecurrenceDailyToHc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorAlertProcessingRuleActionGroupScheduleRecurrenceDailyOutputReference extends cdktf.ComplexObject {
+export class MonitorAlertProcessingRuleActionGroupScheduleRecurrenceDailyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1780,11 +1780,11 @@ export class MonitorAlertProcessingRuleActionGroupScheduleRecurrenceDailyOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MonitorAlertProcessingRuleActionGroupScheduleRecurrenceDaily | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorAlertProcessingRuleActionGroupScheduleRecurrenceDaily | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1801,14 +1801,14 @@ export class MonitorAlertProcessingRuleActionGroupScheduleRecurrenceDailyOutputR
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorAlertProcessingRuleActionGroupScheduleRecurrenceDaily | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorAlertProcessingRuleActionGroupScheduleRecurrenceDaily | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._endTime = undefined;
       this._startTime = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1847,15 +1847,15 @@ export class MonitorAlertProcessingRuleActionGroupScheduleRecurrenceDailyOutputR
   }
 }
 
-export class MonitorAlertProcessingRuleActionGroupScheduleRecurrenceDailyList extends cdktf.ComplexList {
-  public internalValue? : MonitorAlertProcessingRuleActionGroupScheduleRecurrenceDaily[] | cdktf.IResolvable
+export class MonitorAlertProcessingRuleActionGroupScheduleRecurrenceDailyList extends cdktn.ComplexList {
+  public internalValue? : MonitorAlertProcessingRuleActionGroupScheduleRecurrenceDaily[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1881,39 +1881,39 @@ export interface MonitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthly 
   readonly startTime?: string;
 }
 
-export function monitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthlyToTerraform(struct?: MonitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthly | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthlyToTerraform(struct?: MonitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthly | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    days_of_month: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.daysOfMonth),
-    end_time: cdktf.stringToTerraform(struct!.endTime),
-    start_time: cdktf.stringToTerraform(struct!.startTime),
+    days_of_month: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.daysOfMonth),
+    end_time: cdktn.stringToTerraform(struct!.endTime),
+    start_time: cdktn.stringToTerraform(struct!.startTime),
   }
 }
 
 
-export function monitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthlyToHclTerraform(struct?: MonitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthly | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthlyToHclTerraform(struct?: MonitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthly | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     days_of_month: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.daysOfMonth),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.daysOfMonth),
       isBlock: false,
       type: "list",
       storageClassType: "numberList",
     },
     end_time: {
-      value: cdktf.stringToHclTerraform(struct!.endTime),
+      value: cdktn.stringToHclTerraform(struct!.endTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start_time: {
-      value: cdktf.stringToHclTerraform(struct!.startTime),
+      value: cdktn.stringToHclTerraform(struct!.startTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1924,9 +1924,9 @@ export function monitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthlyTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthlyOutputReference extends cdktf.ComplexObject {
+export class MonitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthlyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1934,11 +1934,11 @@ export class MonitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthlyOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MonitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthly | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthly | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1959,7 +1959,7 @@ export class MonitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthlyOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthly | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthly | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1967,7 +1967,7 @@ export class MonitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthlyOutpu
       this._endTime = undefined;
       this._startTime = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2026,15 +2026,15 @@ export class MonitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthlyOutpu
   }
 }
 
-export class MonitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthlyList extends cdktf.ComplexList {
-  public internalValue? : MonitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthly[] | cdktf.IResolvable
+export class MonitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthlyList extends cdktn.ComplexList {
+  public internalValue? : MonitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthly[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2060,39 +2060,39 @@ export interface MonitorAlertProcessingRuleActionGroupScheduleRecurrenceWeekly {
   readonly startTime?: string;
 }
 
-export function monitorAlertProcessingRuleActionGroupScheduleRecurrenceWeeklyToTerraform(struct?: MonitorAlertProcessingRuleActionGroupScheduleRecurrenceWeekly | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorAlertProcessingRuleActionGroupScheduleRecurrenceWeeklyToTerraform(struct?: MonitorAlertProcessingRuleActionGroupScheduleRecurrenceWeekly | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    days_of_week: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.daysOfWeek),
-    end_time: cdktf.stringToTerraform(struct!.endTime),
-    start_time: cdktf.stringToTerraform(struct!.startTime),
+    days_of_week: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.daysOfWeek),
+    end_time: cdktn.stringToTerraform(struct!.endTime),
+    start_time: cdktn.stringToTerraform(struct!.startTime),
   }
 }
 
 
-export function monitorAlertProcessingRuleActionGroupScheduleRecurrenceWeeklyToHclTerraform(struct?: MonitorAlertProcessingRuleActionGroupScheduleRecurrenceWeekly | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorAlertProcessingRuleActionGroupScheduleRecurrenceWeeklyToHclTerraform(struct?: MonitorAlertProcessingRuleActionGroupScheduleRecurrenceWeekly | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     days_of_week: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.daysOfWeek),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.daysOfWeek),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     end_time: {
-      value: cdktf.stringToHclTerraform(struct!.endTime),
+      value: cdktn.stringToHclTerraform(struct!.endTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start_time: {
-      value: cdktf.stringToHclTerraform(struct!.startTime),
+      value: cdktn.stringToHclTerraform(struct!.startTime),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2103,9 +2103,9 @@ export function monitorAlertProcessingRuleActionGroupScheduleRecurrenceWeeklyToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorAlertProcessingRuleActionGroupScheduleRecurrenceWeeklyOutputReference extends cdktf.ComplexObject {
+export class MonitorAlertProcessingRuleActionGroupScheduleRecurrenceWeeklyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2113,11 +2113,11 @@ export class MonitorAlertProcessingRuleActionGroupScheduleRecurrenceWeeklyOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MonitorAlertProcessingRuleActionGroupScheduleRecurrenceWeekly | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorAlertProcessingRuleActionGroupScheduleRecurrenceWeekly | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2138,7 +2138,7 @@ export class MonitorAlertProcessingRuleActionGroupScheduleRecurrenceWeeklyOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorAlertProcessingRuleActionGroupScheduleRecurrenceWeekly | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorAlertProcessingRuleActionGroupScheduleRecurrenceWeekly | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2146,7 +2146,7 @@ export class MonitorAlertProcessingRuleActionGroupScheduleRecurrenceWeeklyOutput
       this._endTime = undefined;
       this._startTime = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2205,15 +2205,15 @@ export class MonitorAlertProcessingRuleActionGroupScheduleRecurrenceWeeklyOutput
   }
 }
 
-export class MonitorAlertProcessingRuleActionGroupScheduleRecurrenceWeeklyList extends cdktf.ComplexList {
-  public internalValue? : MonitorAlertProcessingRuleActionGroupScheduleRecurrenceWeekly[] | cdktf.IResolvable
+export class MonitorAlertProcessingRuleActionGroupScheduleRecurrenceWeeklyList extends cdktn.ComplexList {
+  public internalValue? : MonitorAlertProcessingRuleActionGroupScheduleRecurrenceWeekly[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2230,54 +2230,54 @@ export interface MonitorAlertProcessingRuleActionGroupScheduleRecurrence {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_alert_processing_rule_action_group#daily MonitorAlertProcessingRuleActionGroup#daily}
   */
-  readonly daily?: MonitorAlertProcessingRuleActionGroupScheduleRecurrenceDaily[] | cdktf.IResolvable;
+  readonly daily?: MonitorAlertProcessingRuleActionGroupScheduleRecurrenceDaily[] | cdktn.IResolvable;
   /**
   * monthly block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_alert_processing_rule_action_group#monthly MonitorAlertProcessingRuleActionGroup#monthly}
   */
-  readonly monthly?: MonitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthly[] | cdktf.IResolvable;
+  readonly monthly?: MonitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthly[] | cdktn.IResolvable;
   /**
   * weekly block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_alert_processing_rule_action_group#weekly MonitorAlertProcessingRuleActionGroup#weekly}
   */
-  readonly weekly?: MonitorAlertProcessingRuleActionGroupScheduleRecurrenceWeekly[] | cdktf.IResolvable;
+  readonly weekly?: MonitorAlertProcessingRuleActionGroupScheduleRecurrenceWeekly[] | cdktn.IResolvable;
 }
 
 export function monitorAlertProcessingRuleActionGroupScheduleRecurrenceToTerraform(struct?: MonitorAlertProcessingRuleActionGroupScheduleRecurrenceOutputReference | MonitorAlertProcessingRuleActionGroupScheduleRecurrence): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    daily: cdktf.listMapper(monitorAlertProcessingRuleActionGroupScheduleRecurrenceDailyToTerraform, true)(struct!.daily),
-    monthly: cdktf.listMapper(monitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthlyToTerraform, true)(struct!.monthly),
-    weekly: cdktf.listMapper(monitorAlertProcessingRuleActionGroupScheduleRecurrenceWeeklyToTerraform, true)(struct!.weekly),
+    daily: cdktn.listMapper(monitorAlertProcessingRuleActionGroupScheduleRecurrenceDailyToTerraform, true)(struct!.daily),
+    monthly: cdktn.listMapper(monitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthlyToTerraform, true)(struct!.monthly),
+    weekly: cdktn.listMapper(monitorAlertProcessingRuleActionGroupScheduleRecurrenceWeeklyToTerraform, true)(struct!.weekly),
   }
 }
 
 
 export function monitorAlertProcessingRuleActionGroupScheduleRecurrenceToHclTerraform(struct?: MonitorAlertProcessingRuleActionGroupScheduleRecurrenceOutputReference | MonitorAlertProcessingRuleActionGroupScheduleRecurrence): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     daily: {
-      value: cdktf.listMapperHcl(monitorAlertProcessingRuleActionGroupScheduleRecurrenceDailyToHclTerraform, true)(struct!.daily),
+      value: cdktn.listMapperHcl(monitorAlertProcessingRuleActionGroupScheduleRecurrenceDailyToHclTerraform, true)(struct!.daily),
       isBlock: true,
       type: "list",
       storageClassType: "MonitorAlertProcessingRuleActionGroupScheduleRecurrenceDailyList",
     },
     monthly: {
-      value: cdktf.listMapperHcl(monitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthlyToHclTerraform, true)(struct!.monthly),
+      value: cdktn.listMapperHcl(monitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthlyToHclTerraform, true)(struct!.monthly),
       isBlock: true,
       type: "list",
       storageClassType: "MonitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthlyList",
     },
     weekly: {
-      value: cdktf.listMapperHcl(monitorAlertProcessingRuleActionGroupScheduleRecurrenceWeeklyToHclTerraform, true)(struct!.weekly),
+      value: cdktn.listMapperHcl(monitorAlertProcessingRuleActionGroupScheduleRecurrenceWeeklyToHclTerraform, true)(struct!.weekly),
       isBlock: true,
       type: "list",
       storageClassType: "MonitorAlertProcessingRuleActionGroupScheduleRecurrenceWeeklyList",
@@ -2288,14 +2288,14 @@ export function monitorAlertProcessingRuleActionGroupScheduleRecurrenceToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorAlertProcessingRuleActionGroupScheduleRecurrenceOutputReference extends cdktf.ComplexObject {
+export class MonitorAlertProcessingRuleActionGroupScheduleRecurrenceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2337,7 +2337,7 @@ export class MonitorAlertProcessingRuleActionGroupScheduleRecurrenceOutputRefere
   public get daily() {
     return this._daily;
   }
-  public putDaily(value: MonitorAlertProcessingRuleActionGroupScheduleRecurrenceDaily[] | cdktf.IResolvable) {
+  public putDaily(value: MonitorAlertProcessingRuleActionGroupScheduleRecurrenceDaily[] | cdktn.IResolvable) {
     this._daily.internalValue = value;
   }
   public resetDaily() {
@@ -2353,7 +2353,7 @@ export class MonitorAlertProcessingRuleActionGroupScheduleRecurrenceOutputRefere
   public get monthly() {
     return this._monthly;
   }
-  public putMonthly(value: MonitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthly[] | cdktf.IResolvable) {
+  public putMonthly(value: MonitorAlertProcessingRuleActionGroupScheduleRecurrenceMonthly[] | cdktn.IResolvable) {
     this._monthly.internalValue = value;
   }
   public resetMonthly() {
@@ -2369,7 +2369,7 @@ export class MonitorAlertProcessingRuleActionGroupScheduleRecurrenceOutputRefere
   public get weekly() {
     return this._weekly;
   }
-  public putWeekly(value: MonitorAlertProcessingRuleActionGroupScheduleRecurrenceWeekly[] | cdktf.IResolvable) {
+  public putWeekly(value: MonitorAlertProcessingRuleActionGroupScheduleRecurrenceWeekly[] | cdktn.IResolvable) {
     this._weekly.internalValue = value;
   }
   public resetWeekly() {
@@ -2402,39 +2402,39 @@ export interface MonitorAlertProcessingRuleActionGroupSchedule {
 }
 
 export function monitorAlertProcessingRuleActionGroupScheduleToTerraform(struct?: MonitorAlertProcessingRuleActionGroupScheduleOutputReference | MonitorAlertProcessingRuleActionGroupSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    effective_from: cdktf.stringToTerraform(struct!.effectiveFrom),
-    effective_until: cdktf.stringToTerraform(struct!.effectiveUntil),
-    time_zone: cdktf.stringToTerraform(struct!.timeZone),
+    effective_from: cdktn.stringToTerraform(struct!.effectiveFrom),
+    effective_until: cdktn.stringToTerraform(struct!.effectiveUntil),
+    time_zone: cdktn.stringToTerraform(struct!.timeZone),
     recurrence: monitorAlertProcessingRuleActionGroupScheduleRecurrenceToTerraform(struct!.recurrence),
   }
 }
 
 
 export function monitorAlertProcessingRuleActionGroupScheduleToHclTerraform(struct?: MonitorAlertProcessingRuleActionGroupScheduleOutputReference | MonitorAlertProcessingRuleActionGroupSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     effective_from: {
-      value: cdktf.stringToHclTerraform(struct!.effectiveFrom),
+      value: cdktn.stringToHclTerraform(struct!.effectiveFrom),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     effective_until: {
-      value: cdktf.stringToHclTerraform(struct!.effectiveUntil),
+      value: cdktn.stringToHclTerraform(struct!.effectiveUntil),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     time_zone: {
-      value: cdktf.stringToHclTerraform(struct!.timeZone),
+      value: cdktn.stringToHclTerraform(struct!.timeZone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2451,14 +2451,14 @@ export function monitorAlertProcessingRuleActionGroupScheduleToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorAlertProcessingRuleActionGroupScheduleOutputReference extends cdktf.ComplexObject {
+export class MonitorAlertProcessingRuleActionGroupScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2584,46 +2584,46 @@ export interface MonitorAlertProcessingRuleActionGroupTimeouts {
   readonly update?: string;
 }
 
-export function monitorAlertProcessingRuleActionGroupTimeoutsToTerraform(struct?: MonitorAlertProcessingRuleActionGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorAlertProcessingRuleActionGroupTimeoutsToTerraform(struct?: MonitorAlertProcessingRuleActionGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function monitorAlertProcessingRuleActionGroupTimeoutsToHclTerraform(struct?: MonitorAlertProcessingRuleActionGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorAlertProcessingRuleActionGroupTimeoutsToHclTerraform(struct?: MonitorAlertProcessingRuleActionGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2634,19 +2634,19 @@ export function monitorAlertProcessingRuleActionGroupTimeoutsToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorAlertProcessingRuleActionGroupTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MonitorAlertProcessingRuleActionGroupTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MonitorAlertProcessingRuleActionGroupTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorAlertProcessingRuleActionGroupTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2671,7 +2671,7 @@ export class MonitorAlertProcessingRuleActionGroupTimeoutsOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorAlertProcessingRuleActionGroupTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorAlertProcessingRuleActionGroupTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2680,7 +2680,7 @@ export class MonitorAlertProcessingRuleActionGroupTimeoutsOutputReference extend
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2762,7 +2762,7 @@ export class MonitorAlertProcessingRuleActionGroupTimeoutsOutputReference extend
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_alert_processing_rule_action_group azurerm_monitor_alert_processing_rule_action_group}
 */
-export class MonitorAlertProcessingRuleActionGroup extends cdktf.TerraformResource {
+export class MonitorAlertProcessingRuleActionGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2773,14 +2773,14 @@ export class MonitorAlertProcessingRuleActionGroup extends cdktf.TerraformResour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MonitorAlertProcessingRuleActionGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MonitorAlertProcessingRuleActionGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MonitorAlertProcessingRuleActionGroup to import
   * @param importFromId The id of the existing MonitorAlertProcessingRuleActionGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_alert_processing_rule_action_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MonitorAlertProcessingRuleActionGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_monitor_alert_processing_rule_action_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_monitor_alert_processing_rule_action_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -2857,11 +2857,11 @@ export class MonitorAlertProcessingRuleActionGroup extends cdktf.TerraformResour
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -2997,14 +2997,14 @@ export class MonitorAlertProcessingRuleActionGroup extends cdktf.TerraformResour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      add_action_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._addActionGroupIds),
-      description: cdktf.stringToTerraform(this._description),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._scopes),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      add_action_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._addActionGroupIds),
+      description: cdktn.stringToTerraform(this._description),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._scopes),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       condition: monitorAlertProcessingRuleActionGroupConditionToTerraform(this._condition.internalValue),
       schedule: monitorAlertProcessingRuleActionGroupScheduleToTerraform(this._schedule.internalValue),
       timeouts: monitorAlertProcessingRuleActionGroupTimeoutsToTerraform(this._timeouts.internalValue),
@@ -3014,49 +3014,49 @@ export class MonitorAlertProcessingRuleActionGroup extends cdktf.TerraformResour
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       add_action_group_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._addActionGroupIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._addActionGroupIds),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scopes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._scopes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._scopes),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

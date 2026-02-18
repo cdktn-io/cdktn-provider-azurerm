@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ExpressRouteCircuitConnectionConfig extends cdktf.TerraformMetaArguments {
+export interface ExpressRouteCircuitConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/express_route_circuit_connection#address_prefix_ipv4 ExpressRouteCircuitConnection#address_prefix_ipv4}
   */
@@ -69,46 +69,46 @@ export interface ExpressRouteCircuitConnectionTimeouts {
   readonly update?: string;
 }
 
-export function expressRouteCircuitConnectionTimeoutsToTerraform(struct?: ExpressRouteCircuitConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function expressRouteCircuitConnectionTimeoutsToTerraform(struct?: ExpressRouteCircuitConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function expressRouteCircuitConnectionTimeoutsToHclTerraform(struct?: ExpressRouteCircuitConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function expressRouteCircuitConnectionTimeoutsToHclTerraform(struct?: ExpressRouteCircuitConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -119,19 +119,19 @@ export function expressRouteCircuitConnectionTimeoutsToHclTerraform(struct?: Exp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ExpressRouteCircuitConnectionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ExpressRouteCircuitConnectionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ExpressRouteCircuitConnectionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ExpressRouteCircuitConnectionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -156,7 +156,7 @@ export class ExpressRouteCircuitConnectionTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ExpressRouteCircuitConnectionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ExpressRouteCircuitConnectionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -165,7 +165,7 @@ export class ExpressRouteCircuitConnectionTimeoutsOutputReference extends cdktf.
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -247,7 +247,7 @@ export class ExpressRouteCircuitConnectionTimeoutsOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/express_route_circuit_connection azurerm_express_route_circuit_connection}
 */
-export class ExpressRouteCircuitConnection extends cdktf.TerraformResource {
+export class ExpressRouteCircuitConnection extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -258,14 +258,14 @@ export class ExpressRouteCircuitConnection extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ExpressRouteCircuitConnection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ExpressRouteCircuitConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ExpressRouteCircuitConnection to import
   * @param importFromId The id of the existing ExpressRouteCircuitConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/express_route_circuit_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ExpressRouteCircuitConnection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_express_route_circuit_connection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_express_route_circuit_connection", importId: importFromId, provider });
       }
 
   // ===========
@@ -431,13 +431,13 @@ export class ExpressRouteCircuitConnection extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      address_prefix_ipv4: cdktf.stringToTerraform(this._addressPrefixIpv4),
-      address_prefix_ipv6: cdktf.stringToTerraform(this._addressPrefixIpv6),
-      authorization_key: cdktf.stringToTerraform(this._authorizationKey),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      peer_peering_id: cdktf.stringToTerraform(this._peerPeeringId),
-      peering_id: cdktf.stringToTerraform(this._peeringId),
+      address_prefix_ipv4: cdktn.stringToTerraform(this._addressPrefixIpv4),
+      address_prefix_ipv6: cdktn.stringToTerraform(this._addressPrefixIpv6),
+      authorization_key: cdktn.stringToTerraform(this._authorizationKey),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      peer_peering_id: cdktn.stringToTerraform(this._peerPeeringId),
+      peering_id: cdktn.stringToTerraform(this._peeringId),
       timeouts: expressRouteCircuitConnectionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -445,43 +445,43 @@ export class ExpressRouteCircuitConnection extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       address_prefix_ipv4: {
-        value: cdktf.stringToHclTerraform(this._addressPrefixIpv4),
+        value: cdktn.stringToHclTerraform(this._addressPrefixIpv4),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       address_prefix_ipv6: {
-        value: cdktf.stringToHclTerraform(this._addressPrefixIpv6),
+        value: cdktn.stringToHclTerraform(this._addressPrefixIpv6),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       authorization_key: {
-        value: cdktf.stringToHclTerraform(this._authorizationKey),
+        value: cdktn.stringToHclTerraform(this._authorizationKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       peer_peering_id: {
-        value: cdktf.stringToHclTerraform(this._peerPeeringId),
+        value: cdktn.stringToHclTerraform(this._peerPeeringId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       peering_id: {
-        value: cdktf.stringToHclTerraform(this._peeringId),
+        value: cdktn.stringToHclTerraform(this._peeringId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

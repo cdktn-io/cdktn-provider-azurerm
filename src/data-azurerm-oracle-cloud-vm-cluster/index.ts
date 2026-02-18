@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermOracleCloudVmClusterConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermOracleCloudVmClusterConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/oracle_cloud_vm_cluster#id DataAzurermOracleCloudVmCluster#id}
   *
@@ -38,8 +38,8 @@ export interface DataAzurermOracleCloudVmClusterDataCollectionOptions {
 }
 
 export function dataAzurermOracleCloudVmClusterDataCollectionOptionsToTerraform(struct?: DataAzurermOracleCloudVmClusterDataCollectionOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -48,8 +48,8 @@ export function dataAzurermOracleCloudVmClusterDataCollectionOptionsToTerraform(
 
 
 export function dataAzurermOracleCloudVmClusterDataCollectionOptionsToHclTerraform(struct?: DataAzurermOracleCloudVmClusterDataCollectionOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -57,7 +57,7 @@ export function dataAzurermOracleCloudVmClusterDataCollectionOptionsToHclTerrafo
   return attrs;
 }
 
-export class DataAzurermOracleCloudVmClusterDataCollectionOptionsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermOracleCloudVmClusterDataCollectionOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -66,7 +66,7 @@ export class DataAzurermOracleCloudVmClusterDataCollectionOptionsOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -101,14 +101,14 @@ export class DataAzurermOracleCloudVmClusterDataCollectionOptionsOutputReference
   }
 }
 
-export class DataAzurermOracleCloudVmClusterDataCollectionOptionsList extends cdktf.ComplexList {
+export class DataAzurermOracleCloudVmClusterDataCollectionOptionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -123,8 +123,8 @@ export interface DataAzurermOracleCloudVmClusterFileSystemConfiguration {
 }
 
 export function dataAzurermOracleCloudVmClusterFileSystemConfigurationToTerraform(struct?: DataAzurermOracleCloudVmClusterFileSystemConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -133,8 +133,8 @@ export function dataAzurermOracleCloudVmClusterFileSystemConfigurationToTerrafor
 
 
 export function dataAzurermOracleCloudVmClusterFileSystemConfigurationToHclTerraform(struct?: DataAzurermOracleCloudVmClusterFileSystemConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -142,7 +142,7 @@ export function dataAzurermOracleCloudVmClusterFileSystemConfigurationToHclTerra
   return attrs;
 }
 
-export class DataAzurermOracleCloudVmClusterFileSystemConfigurationOutputReference extends cdktf.ComplexObject {
+export class DataAzurermOracleCloudVmClusterFileSystemConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -151,7 +151,7 @@ export class DataAzurermOracleCloudVmClusterFileSystemConfigurationOutputReferen
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -181,14 +181,14 @@ export class DataAzurermOracleCloudVmClusterFileSystemConfigurationOutputReferen
   }
 }
 
-export class DataAzurermOracleCloudVmClusterFileSystemConfigurationList extends cdktf.ComplexList {
+export class DataAzurermOracleCloudVmClusterFileSystemConfigurationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -203,8 +203,8 @@ export interface DataAzurermOracleCloudVmClusterIormConfigCacheDbPlans {
 }
 
 export function dataAzurermOracleCloudVmClusterIormConfigCacheDbPlansToTerraform(struct?: DataAzurermOracleCloudVmClusterIormConfigCacheDbPlans): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -213,8 +213,8 @@ export function dataAzurermOracleCloudVmClusterIormConfigCacheDbPlansToTerraform
 
 
 export function dataAzurermOracleCloudVmClusterIormConfigCacheDbPlansToHclTerraform(struct?: DataAzurermOracleCloudVmClusterIormConfigCacheDbPlans): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -222,7 +222,7 @@ export function dataAzurermOracleCloudVmClusterIormConfigCacheDbPlansToHclTerraf
   return attrs;
 }
 
-export class DataAzurermOracleCloudVmClusterIormConfigCacheDbPlansOutputReference extends cdktf.ComplexObject {
+export class DataAzurermOracleCloudVmClusterIormConfigCacheDbPlansOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -231,7 +231,7 @@ export class DataAzurermOracleCloudVmClusterIormConfigCacheDbPlansOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -266,14 +266,14 @@ export class DataAzurermOracleCloudVmClusterIormConfigCacheDbPlansOutputReferenc
   }
 }
 
-export class DataAzurermOracleCloudVmClusterIormConfigCacheDbPlansList extends cdktf.ComplexList {
+export class DataAzurermOracleCloudVmClusterIormConfigCacheDbPlansList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -288,8 +288,8 @@ export interface DataAzurermOracleCloudVmClusterIormConfigCache {
 }
 
 export function dataAzurermOracleCloudVmClusterIormConfigCacheToTerraform(struct?: DataAzurermOracleCloudVmClusterIormConfigCache): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -298,8 +298,8 @@ export function dataAzurermOracleCloudVmClusterIormConfigCacheToTerraform(struct
 
 
 export function dataAzurermOracleCloudVmClusterIormConfigCacheToHclTerraform(struct?: DataAzurermOracleCloudVmClusterIormConfigCache): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -307,7 +307,7 @@ export function dataAzurermOracleCloudVmClusterIormConfigCacheToHclTerraform(str
   return attrs;
 }
 
-export class DataAzurermOracleCloudVmClusterIormConfigCacheOutputReference extends cdktf.ComplexObject {
+export class DataAzurermOracleCloudVmClusterIormConfigCacheOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -316,7 +316,7 @@ export class DataAzurermOracleCloudVmClusterIormConfigCacheOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -357,14 +357,14 @@ export class DataAzurermOracleCloudVmClusterIormConfigCacheOutputReference exten
   }
 }
 
-export class DataAzurermOracleCloudVmClusterIormConfigCacheList extends cdktf.ComplexList {
+export class DataAzurermOracleCloudVmClusterIormConfigCacheList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -382,25 +382,25 @@ export interface DataAzurermOracleCloudVmClusterTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermOracleCloudVmClusterTimeoutsToTerraform(struct?: DataAzurermOracleCloudVmClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermOracleCloudVmClusterTimeoutsToTerraform(struct?: DataAzurermOracleCloudVmClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermOracleCloudVmClusterTimeoutsToHclTerraform(struct?: DataAzurermOracleCloudVmClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermOracleCloudVmClusterTimeoutsToHclTerraform(struct?: DataAzurermOracleCloudVmClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -411,19 +411,19 @@ export function dataAzurermOracleCloudVmClusterTimeoutsToHclTerraform(struct?: D
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermOracleCloudVmClusterTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermOracleCloudVmClusterTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermOracleCloudVmClusterTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermOracleCloudVmClusterTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -436,13 +436,13 @@ export class DataAzurermOracleCloudVmClusterTimeoutsOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermOracleCloudVmClusterTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermOracleCloudVmClusterTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -473,7 +473,7 @@ export class DataAzurermOracleCloudVmClusterTimeoutsOutputReference extends cdkt
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/oracle_cloud_vm_cluster azurerm_oracle_cloud_vm_cluster}
 */
-export class DataAzurermOracleCloudVmCluster extends cdktf.TerraformDataSource {
+export class DataAzurermOracleCloudVmCluster extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -484,14 +484,14 @@ export class DataAzurermOracleCloudVmCluster extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermOracleCloudVmCluster resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermOracleCloudVmCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermOracleCloudVmCluster to import
   * @param importFromId The id of the existing DataAzurermOracleCloudVmCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/oracle_cloud_vm_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermOracleCloudVmCluster to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_oracle_cloud_vm_cluster", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_oracle_cloud_vm_cluster", importId: importFromId, provider });
       }
 
   // ===========
@@ -802,7 +802,7 @@ export class DataAzurermOracleCloudVmCluster extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: false, required: false
-  private _tags = new cdktf.StringMap(this, "tags");
+  private _tags = new cdktn.StringMap(this, "tags");
   public get tags() {
     return this._tags;
   }
@@ -854,9 +854,9 @@ export class DataAzurermOracleCloudVmCluster extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
       timeouts: dataAzurermOracleCloudVmClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -864,19 +864,19 @@ export class DataAzurermOracleCloudVmCluster extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

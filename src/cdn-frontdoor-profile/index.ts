@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CdnFrontdoorProfileConfig extends cdktf.TerraformMetaArguments {
+export interface CdnFrontdoorProfileConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cdn_frontdoor_profile#id CdnFrontdoorProfile#id}
   *
@@ -50,7 +50,7 @@ export interface CdnFrontdoorProfileConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cdn_frontdoor_profile#log_scrubbing_rule CdnFrontdoorProfile#log_scrubbing_rule}
   */
-  readonly logScrubbingRule?: CdnFrontdoorProfileLogScrubbingRule[] | cdktf.IResolvable;
+  readonly logScrubbingRule?: CdnFrontdoorProfileLogScrubbingRule[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -70,31 +70,31 @@ export interface CdnFrontdoorProfileIdentity {
 }
 
 export function cdnFrontdoorProfileIdentityToTerraform(struct?: CdnFrontdoorProfileIdentityOutputReference | CdnFrontdoorProfileIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function cdnFrontdoorProfileIdentityToHclTerraform(struct?: CdnFrontdoorProfileIdentityOutputReference | CdnFrontdoorProfileIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -105,14 +105,14 @@ export function cdnFrontdoorProfileIdentityToHclTerraform(struct?: CdnFrontdoorP
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CdnFrontdoorProfileIdentityOutputReference extends cdktf.ComplexObject {
+export class CdnFrontdoorProfileIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -146,7 +146,7 @@ export class CdnFrontdoorProfileIdentityOutputReference extends cdktf.ComplexObj
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -189,25 +189,25 @@ export interface CdnFrontdoorProfileLogScrubbingRule {
   readonly matchVariable: string;
 }
 
-export function cdnFrontdoorProfileLogScrubbingRuleToTerraform(struct?: CdnFrontdoorProfileLogScrubbingRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cdnFrontdoorProfileLogScrubbingRuleToTerraform(struct?: CdnFrontdoorProfileLogScrubbingRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match_variable: cdktf.stringToTerraform(struct!.matchVariable),
+    match_variable: cdktn.stringToTerraform(struct!.matchVariable),
   }
 }
 
 
-export function cdnFrontdoorProfileLogScrubbingRuleToHclTerraform(struct?: CdnFrontdoorProfileLogScrubbingRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cdnFrontdoorProfileLogScrubbingRuleToHclTerraform(struct?: CdnFrontdoorProfileLogScrubbingRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match_variable: {
-      value: cdktf.stringToHclTerraform(struct!.matchVariable),
+      value: cdktn.stringToHclTerraform(struct!.matchVariable),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -218,9 +218,9 @@ export function cdnFrontdoorProfileLogScrubbingRuleToHclTerraform(struct?: CdnFr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CdnFrontdoorProfileLogScrubbingRuleOutputReference extends cdktf.ComplexObject {
+export class CdnFrontdoorProfileLogScrubbingRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -228,11 +228,11 @@ export class CdnFrontdoorProfileLogScrubbingRuleOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): CdnFrontdoorProfileLogScrubbingRule | cdktf.IResolvable | undefined {
+  public get internalValue(): CdnFrontdoorProfileLogScrubbingRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -245,13 +245,13 @@ export class CdnFrontdoorProfileLogScrubbingRuleOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CdnFrontdoorProfileLogScrubbingRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CdnFrontdoorProfileLogScrubbingRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._matchVariable = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -276,15 +276,15 @@ export class CdnFrontdoorProfileLogScrubbingRuleOutputReference extends cdktf.Co
   }
 }
 
-export class CdnFrontdoorProfileLogScrubbingRuleList extends cdktf.ComplexList {
-  public internalValue? : CdnFrontdoorProfileLogScrubbingRule[] | cdktf.IResolvable
+export class CdnFrontdoorProfileLogScrubbingRuleList extends cdktn.ComplexList {
+  public internalValue? : CdnFrontdoorProfileLogScrubbingRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -314,46 +314,46 @@ export interface CdnFrontdoorProfileTimeouts {
   readonly update?: string;
 }
 
-export function cdnFrontdoorProfileTimeoutsToTerraform(struct?: CdnFrontdoorProfileTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cdnFrontdoorProfileTimeoutsToTerraform(struct?: CdnFrontdoorProfileTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function cdnFrontdoorProfileTimeoutsToHclTerraform(struct?: CdnFrontdoorProfileTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function cdnFrontdoorProfileTimeoutsToHclTerraform(struct?: CdnFrontdoorProfileTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -364,19 +364,19 @@ export function cdnFrontdoorProfileTimeoutsToHclTerraform(struct?: CdnFrontdoorP
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CdnFrontdoorProfileTimeoutsOutputReference extends cdktf.ComplexObject {
+export class CdnFrontdoorProfileTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CdnFrontdoorProfileTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): CdnFrontdoorProfileTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -401,7 +401,7 @@ export class CdnFrontdoorProfileTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CdnFrontdoorProfileTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CdnFrontdoorProfileTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -410,7 +410,7 @@ export class CdnFrontdoorProfileTimeoutsOutputReference extends cdktf.ComplexObj
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -492,7 +492,7 @@ export class CdnFrontdoorProfileTimeoutsOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cdn_frontdoor_profile azurerm_cdn_frontdoor_profile}
 */
-export class CdnFrontdoorProfile extends cdktf.TerraformResource {
+export class CdnFrontdoorProfile extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -503,14 +503,14 @@ export class CdnFrontdoorProfile extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CdnFrontdoorProfile resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CdnFrontdoorProfile resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CdnFrontdoorProfile to import
   * @param importFromId The id of the existing CdnFrontdoorProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/cdn_frontdoor_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CdnFrontdoorProfile to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_cdn_frontdoor_profile", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_cdn_frontdoor_profile", importId: importFromId, provider });
       }
 
   // ===========
@@ -668,7 +668,7 @@ export class CdnFrontdoorProfile extends cdktf.TerraformResource {
   public get logScrubbingRule() {
     return this._logScrubbingRule;
   }
-  public putLogScrubbingRule(value: CdnFrontdoorProfileLogScrubbingRule[] | cdktf.IResolvable) {
+  public putLogScrubbingRule(value: CdnFrontdoorProfileLogScrubbingRule[] | cdktn.IResolvable) {
     this._logScrubbingRule.internalValue = value;
   }
   public resetLogScrubbingRule() {
@@ -701,14 +701,14 @@ export class CdnFrontdoorProfile extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      response_timeout_seconds: cdktf.numberToTerraform(this._responseTimeoutSeconds),
-      sku_name: cdktf.stringToTerraform(this._skuName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      response_timeout_seconds: cdktn.numberToTerraform(this._responseTimeoutSeconds),
+      sku_name: cdktn.stringToTerraform(this._skuName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       identity: cdnFrontdoorProfileIdentityToTerraform(this._identity.internalValue),
-      log_scrubbing_rule: cdktf.listMapper(cdnFrontdoorProfileLogScrubbingRuleToTerraform, true)(this._logScrubbingRule.internalValue),
+      log_scrubbing_rule: cdktn.listMapper(cdnFrontdoorProfileLogScrubbingRuleToTerraform, true)(this._logScrubbingRule.internalValue),
       timeouts: cdnFrontdoorProfileTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -716,37 +716,37 @@ export class CdnFrontdoorProfile extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       response_timeout_seconds: {
-        value: cdktf.numberToHclTerraform(this._responseTimeoutSeconds),
+        value: cdktn.numberToHclTerraform(this._responseTimeoutSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       sku_name: {
-        value: cdktf.stringToHclTerraform(this._skuName),
+        value: cdktn.stringToHclTerraform(this._skuName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
@@ -758,7 +758,7 @@ export class CdnFrontdoorProfile extends cdktf.TerraformResource {
         storageClassType: "CdnFrontdoorProfileIdentityList",
       },
       log_scrubbing_rule: {
-        value: cdktf.listMapperHcl(cdnFrontdoorProfileLogScrubbingRuleToHclTerraform, true)(this._logScrubbingRule.internalValue),
+        value: cdktn.listMapperHcl(cdnFrontdoorProfileLogScrubbingRuleToHclTerraform, true)(this._logScrubbingRule.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "CdnFrontdoorProfileLogScrubbingRuleList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface HpcCacheAccessPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface HpcCacheAccessPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/hpc_cache_access_policy#hpc_cache_id HpcCacheAccessPolicy#hpc_cache_id}
   */
@@ -32,7 +32,7 @@ export interface HpcCacheAccessPolicyConfig extends cdktf.TerraformMetaArguments
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/hpc_cache_access_policy#access_rule HpcCacheAccessPolicy#access_rule}
   */
-  readonly accessRule: HpcCacheAccessPolicyAccessRule[] | cdktf.IResolvable;
+  readonly accessRule: HpcCacheAccessPolicyAccessRule[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -60,7 +60,7 @@ export interface HpcCacheAccessPolicyAccessRule {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/hpc_cache_access_policy#root_squash_enabled HpcCacheAccessPolicy#root_squash_enabled}
   */
-  readonly rootSquashEnabled?: boolean | cdktf.IResolvable;
+  readonly rootSquashEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/hpc_cache_access_policy#scope HpcCacheAccessPolicy#scope}
   */
@@ -68,81 +68,81 @@ export interface HpcCacheAccessPolicyAccessRule {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/hpc_cache_access_policy#submount_access_enabled HpcCacheAccessPolicy#submount_access_enabled}
   */
-  readonly submountAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly submountAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/hpc_cache_access_policy#suid_enabled HpcCacheAccessPolicy#suid_enabled}
   */
-  readonly suidEnabled?: boolean | cdktf.IResolvable;
+  readonly suidEnabled?: boolean | cdktn.IResolvable;
 }
 
-export function hpcCacheAccessPolicyAccessRuleToTerraform(struct?: HpcCacheAccessPolicyAccessRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function hpcCacheAccessPolicyAccessRuleToTerraform(struct?: HpcCacheAccessPolicyAccessRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access: cdktf.stringToTerraform(struct!.access),
-    anonymous_gid: cdktf.numberToTerraform(struct!.anonymousGid),
-    anonymous_uid: cdktf.numberToTerraform(struct!.anonymousUid),
-    filter: cdktf.stringToTerraform(struct!.filter),
-    root_squash_enabled: cdktf.booleanToTerraform(struct!.rootSquashEnabled),
-    scope: cdktf.stringToTerraform(struct!.scope),
-    submount_access_enabled: cdktf.booleanToTerraform(struct!.submountAccessEnabled),
-    suid_enabled: cdktf.booleanToTerraform(struct!.suidEnabled),
+    access: cdktn.stringToTerraform(struct!.access),
+    anonymous_gid: cdktn.numberToTerraform(struct!.anonymousGid),
+    anonymous_uid: cdktn.numberToTerraform(struct!.anonymousUid),
+    filter: cdktn.stringToTerraform(struct!.filter),
+    root_squash_enabled: cdktn.booleanToTerraform(struct!.rootSquashEnabled),
+    scope: cdktn.stringToTerraform(struct!.scope),
+    submount_access_enabled: cdktn.booleanToTerraform(struct!.submountAccessEnabled),
+    suid_enabled: cdktn.booleanToTerraform(struct!.suidEnabled),
   }
 }
 
 
-export function hpcCacheAccessPolicyAccessRuleToHclTerraform(struct?: HpcCacheAccessPolicyAccessRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function hpcCacheAccessPolicyAccessRuleToHclTerraform(struct?: HpcCacheAccessPolicyAccessRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access: {
-      value: cdktf.stringToHclTerraform(struct!.access),
+      value: cdktn.stringToHclTerraform(struct!.access),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     anonymous_gid: {
-      value: cdktf.numberToHclTerraform(struct!.anonymousGid),
+      value: cdktn.numberToHclTerraform(struct!.anonymousGid),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     anonymous_uid: {
-      value: cdktf.numberToHclTerraform(struct!.anonymousUid),
+      value: cdktn.numberToHclTerraform(struct!.anonymousUid),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     filter: {
-      value: cdktf.stringToHclTerraform(struct!.filter),
+      value: cdktn.stringToHclTerraform(struct!.filter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     root_squash_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.rootSquashEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.rootSquashEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     scope: {
-      value: cdktf.stringToHclTerraform(struct!.scope),
+      value: cdktn.stringToHclTerraform(struct!.scope),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     submount_access_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.submountAccessEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.submountAccessEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     suid_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.suidEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.suidEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -153,9 +153,9 @@ export function hpcCacheAccessPolicyAccessRuleToHclTerraform(struct?: HpcCacheAc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class HpcCacheAccessPolicyAccessRuleOutputReference extends cdktf.ComplexObject {
+export class HpcCacheAccessPolicyAccessRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -163,11 +163,11 @@ export class HpcCacheAccessPolicyAccessRuleOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): HpcCacheAccessPolicyAccessRule | cdktf.IResolvable | undefined {
+  public get internalValue(): HpcCacheAccessPolicyAccessRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -208,7 +208,7 @@ export class HpcCacheAccessPolicyAccessRuleOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: HpcCacheAccessPolicyAccessRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: HpcCacheAccessPolicyAccessRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -221,7 +221,7 @@ export class HpcCacheAccessPolicyAccessRuleOutputReference extends cdktf.Complex
       this._submountAccessEnabled = undefined;
       this._suidEnabled = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -301,11 +301,11 @@ export class HpcCacheAccessPolicyAccessRuleOutputReference extends cdktf.Complex
   }
 
   // root_squash_enabled - computed: false, optional: true, required: false
-  private _rootSquashEnabled?: boolean | cdktf.IResolvable; 
+  private _rootSquashEnabled?: boolean | cdktn.IResolvable; 
   public get rootSquashEnabled() {
     return this.getBooleanAttribute('root_squash_enabled');
   }
-  public set rootSquashEnabled(value: boolean | cdktf.IResolvable) {
+  public set rootSquashEnabled(value: boolean | cdktn.IResolvable) {
     this._rootSquashEnabled = value;
   }
   public resetRootSquashEnabled() {
@@ -330,11 +330,11 @@ export class HpcCacheAccessPolicyAccessRuleOutputReference extends cdktf.Complex
   }
 
   // submount_access_enabled - computed: false, optional: true, required: false
-  private _submountAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _submountAccessEnabled?: boolean | cdktn.IResolvable; 
   public get submountAccessEnabled() {
     return this.getBooleanAttribute('submount_access_enabled');
   }
-  public set submountAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set submountAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._submountAccessEnabled = value;
   }
   public resetSubmountAccessEnabled() {
@@ -346,11 +346,11 @@ export class HpcCacheAccessPolicyAccessRuleOutputReference extends cdktf.Complex
   }
 
   // suid_enabled - computed: false, optional: true, required: false
-  private _suidEnabled?: boolean | cdktf.IResolvable; 
+  private _suidEnabled?: boolean | cdktn.IResolvable; 
   public get suidEnabled() {
     return this.getBooleanAttribute('suid_enabled');
   }
-  public set suidEnabled(value: boolean | cdktf.IResolvable) {
+  public set suidEnabled(value: boolean | cdktn.IResolvable) {
     this._suidEnabled = value;
   }
   public resetSuidEnabled() {
@@ -362,15 +362,15 @@ export class HpcCacheAccessPolicyAccessRuleOutputReference extends cdktf.Complex
   }
 }
 
-export class HpcCacheAccessPolicyAccessRuleList extends cdktf.ComplexList {
-  public internalValue? : HpcCacheAccessPolicyAccessRule[] | cdktf.IResolvable
+export class HpcCacheAccessPolicyAccessRuleList extends cdktn.ComplexList {
+  public internalValue? : HpcCacheAccessPolicyAccessRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -400,46 +400,46 @@ export interface HpcCacheAccessPolicyTimeouts {
   readonly update?: string;
 }
 
-export function hpcCacheAccessPolicyTimeoutsToTerraform(struct?: HpcCacheAccessPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function hpcCacheAccessPolicyTimeoutsToTerraform(struct?: HpcCacheAccessPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function hpcCacheAccessPolicyTimeoutsToHclTerraform(struct?: HpcCacheAccessPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function hpcCacheAccessPolicyTimeoutsToHclTerraform(struct?: HpcCacheAccessPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -450,19 +450,19 @@ export function hpcCacheAccessPolicyTimeoutsToHclTerraform(struct?: HpcCacheAcce
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class HpcCacheAccessPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class HpcCacheAccessPolicyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): HpcCacheAccessPolicyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): HpcCacheAccessPolicyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -487,7 +487,7 @@ export class HpcCacheAccessPolicyTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: HpcCacheAccessPolicyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: HpcCacheAccessPolicyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -496,7 +496,7 @@ export class HpcCacheAccessPolicyTimeoutsOutputReference extends cdktf.ComplexOb
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -578,7 +578,7 @@ export class HpcCacheAccessPolicyTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/hpc_cache_access_policy azurerm_hpc_cache_access_policy}
 */
-export class HpcCacheAccessPolicy extends cdktf.TerraformResource {
+export class HpcCacheAccessPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -589,14 +589,14 @@ export class HpcCacheAccessPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a HpcCacheAccessPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a HpcCacheAccessPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the HpcCacheAccessPolicy to import
   * @param importFromId The id of the existing HpcCacheAccessPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/hpc_cache_access_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the HpcCacheAccessPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_hpc_cache_access_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_hpc_cache_access_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -684,7 +684,7 @@ export class HpcCacheAccessPolicy extends cdktf.TerraformResource {
   public get accessRule() {
     return this._accessRule;
   }
-  public putAccessRule(value: HpcCacheAccessPolicyAccessRule[] | cdktf.IResolvable) {
+  public putAccessRule(value: HpcCacheAccessPolicyAccessRule[] | cdktn.IResolvable) {
     this._accessRule.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -714,10 +714,10 @@ export class HpcCacheAccessPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      hpc_cache_id: cdktf.stringToTerraform(this._hpcCacheId),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      access_rule: cdktf.listMapper(hpcCacheAccessPolicyAccessRuleToTerraform, true)(this._accessRule.internalValue),
+      hpc_cache_id: cdktn.stringToTerraform(this._hpcCacheId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      access_rule: cdktn.listMapper(hpcCacheAccessPolicyAccessRuleToTerraform, true)(this._accessRule.internalValue),
       timeouts: hpcCacheAccessPolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -725,25 +725,25 @@ export class HpcCacheAccessPolicy extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       hpc_cache_id: {
-        value: cdktf.stringToHclTerraform(this._hpcCacheId),
+        value: cdktn.stringToHclTerraform(this._hpcCacheId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       access_rule: {
-        value: cdktf.listMapperHcl(hpcCacheAccessPolicyAccessRuleToHclTerraform, true)(this._accessRule.internalValue),
+        value: cdktn.listMapperHcl(hpcCacheAccessPolicyAccessRuleToHclTerraform, true)(this._accessRule.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "HpcCacheAccessPolicyAccessRuleList",

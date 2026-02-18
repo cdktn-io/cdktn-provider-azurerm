@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface KeyVaultManagedHardwareSecurityModuleKeyConfig extends cdktf.TerraformMetaArguments {
+export interface KeyVaultManagedHardwareSecurityModuleKeyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/key_vault_managed_hardware_security_module_key#curve KeyVaultManagedHardwareSecurityModuleKey#curve}
   */
@@ -81,46 +81,46 @@ export interface KeyVaultManagedHardwareSecurityModuleKeyTimeouts {
   readonly update?: string;
 }
 
-export function keyVaultManagedHardwareSecurityModuleKeyTimeoutsToTerraform(struct?: KeyVaultManagedHardwareSecurityModuleKeyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function keyVaultManagedHardwareSecurityModuleKeyTimeoutsToTerraform(struct?: KeyVaultManagedHardwareSecurityModuleKeyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function keyVaultManagedHardwareSecurityModuleKeyTimeoutsToHclTerraform(struct?: KeyVaultManagedHardwareSecurityModuleKeyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function keyVaultManagedHardwareSecurityModuleKeyTimeoutsToHclTerraform(struct?: KeyVaultManagedHardwareSecurityModuleKeyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -131,19 +131,19 @@ export function keyVaultManagedHardwareSecurityModuleKeyTimeoutsToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KeyVaultManagedHardwareSecurityModuleKeyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class KeyVaultManagedHardwareSecurityModuleKeyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): KeyVaultManagedHardwareSecurityModuleKeyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): KeyVaultManagedHardwareSecurityModuleKeyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -168,7 +168,7 @@ export class KeyVaultManagedHardwareSecurityModuleKeyTimeoutsOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KeyVaultManagedHardwareSecurityModuleKeyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KeyVaultManagedHardwareSecurityModuleKeyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -177,7 +177,7 @@ export class KeyVaultManagedHardwareSecurityModuleKeyTimeoutsOutputReference ext
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -259,7 +259,7 @@ export class KeyVaultManagedHardwareSecurityModuleKeyTimeoutsOutputReference ext
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/key_vault_managed_hardware_security_module_key azurerm_key_vault_managed_hardware_security_module_key}
 */
-export class KeyVaultManagedHardwareSecurityModuleKey extends cdktf.TerraformResource {
+export class KeyVaultManagedHardwareSecurityModuleKey extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -270,14 +270,14 @@ export class KeyVaultManagedHardwareSecurityModuleKey extends cdktf.TerraformRes
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a KeyVaultManagedHardwareSecurityModuleKey resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a KeyVaultManagedHardwareSecurityModuleKey resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KeyVaultManagedHardwareSecurityModuleKey to import
   * @param importFromId The id of the existing KeyVaultManagedHardwareSecurityModuleKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/key_vault_managed_hardware_security_module_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KeyVaultManagedHardwareSecurityModuleKey to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_key_vault_managed_hardware_security_module_key", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_key_vault_managed_hardware_security_module_key", importId: importFromId, provider });
       }
 
   // ===========
@@ -375,7 +375,7 @@ export class KeyVaultManagedHardwareSecurityModuleKey extends cdktf.TerraformRes
   // key_opts - computed: false, optional: false, required: true
   private _keyOpts?: string[]; 
   public get keyOpts() {
-    return cdktf.Fn.tolist(this.getListAttribute('key_opts'));
+    return cdktn.Fn.tolist(this.getListAttribute('key_opts'));
   }
   public set keyOpts(value: string[]) {
     this._keyOpts = value;
@@ -499,16 +499,16 @@ export class KeyVaultManagedHardwareSecurityModuleKey extends cdktf.TerraformRes
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      curve: cdktf.stringToTerraform(this._curve),
-      expiration_date: cdktf.stringToTerraform(this._expirationDate),
-      id: cdktf.stringToTerraform(this._id),
-      key_opts: cdktf.listMapper(cdktf.stringToTerraform, false)(this._keyOpts),
-      key_size: cdktf.numberToTerraform(this._keySize),
-      key_type: cdktf.stringToTerraform(this._keyType),
-      managed_hsm_id: cdktf.stringToTerraform(this._managedHsmId),
-      name: cdktf.stringToTerraform(this._name),
-      not_before_date: cdktf.stringToTerraform(this._notBeforeDate),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      curve: cdktn.stringToTerraform(this._curve),
+      expiration_date: cdktn.stringToTerraform(this._expirationDate),
+      id: cdktn.stringToTerraform(this._id),
+      key_opts: cdktn.listMapper(cdktn.stringToTerraform, false)(this._keyOpts),
+      key_size: cdktn.numberToTerraform(this._keySize),
+      key_type: cdktn.stringToTerraform(this._keyType),
+      managed_hsm_id: cdktn.stringToTerraform(this._managedHsmId),
+      name: cdktn.stringToTerraform(this._name),
+      not_before_date: cdktn.stringToTerraform(this._notBeforeDate),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       timeouts: keyVaultManagedHardwareSecurityModuleKeyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -516,61 +516,61 @@ export class KeyVaultManagedHardwareSecurityModuleKey extends cdktf.TerraformRes
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       curve: {
-        value: cdktf.stringToHclTerraform(this._curve),
+        value: cdktn.stringToHclTerraform(this._curve),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       expiration_date: {
-        value: cdktf.stringToHclTerraform(this._expirationDate),
+        value: cdktn.stringToHclTerraform(this._expirationDate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_opts: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._keyOpts),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._keyOpts),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       key_size: {
-        value: cdktf.numberToHclTerraform(this._keySize),
+        value: cdktn.numberToHclTerraform(this._keySize),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       key_type: {
-        value: cdktf.stringToHclTerraform(this._keyType),
+        value: cdktn.stringToHclTerraform(this._keyType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       managed_hsm_id: {
-        value: cdktf.stringToHclTerraform(this._managedHsmId),
+        value: cdktn.stringToHclTerraform(this._managedHsmId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       not_before_date: {
-        value: cdktf.stringToHclTerraform(this._notBeforeDate),
+        value: cdktn.stringToHclTerraform(this._notBeforeDate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApiManagementNotificationRecipientEmailConfig extends cdktf.TerraformMetaArguments {
+export interface ApiManagementNotificationRecipientEmailConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_notification_recipient_email#api_management_id ApiManagementNotificationRecipientEmail#api_management_id}
   */
@@ -53,39 +53,39 @@ export interface ApiManagementNotificationRecipientEmailTimeouts {
   readonly read?: string;
 }
 
-export function apiManagementNotificationRecipientEmailTimeoutsToTerraform(struct?: ApiManagementNotificationRecipientEmailTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementNotificationRecipientEmailTimeoutsToTerraform(struct?: ApiManagementNotificationRecipientEmailTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function apiManagementNotificationRecipientEmailTimeoutsToHclTerraform(struct?: ApiManagementNotificationRecipientEmailTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementNotificationRecipientEmailTimeoutsToHclTerraform(struct?: ApiManagementNotificationRecipientEmailTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -96,19 +96,19 @@ export function apiManagementNotificationRecipientEmailTimeoutsToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementNotificationRecipientEmailTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApiManagementNotificationRecipientEmailTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApiManagementNotificationRecipientEmailTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApiManagementNotificationRecipientEmailTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -129,7 +129,7 @@ export class ApiManagementNotificationRecipientEmailTimeoutsOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApiManagementNotificationRecipientEmailTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApiManagementNotificationRecipientEmailTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -137,7 +137,7 @@ export class ApiManagementNotificationRecipientEmailTimeoutsOutputReference exte
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -202,7 +202,7 @@ export class ApiManagementNotificationRecipientEmailTimeoutsOutputReference exte
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_notification_recipient_email azurerm_api_management_notification_recipient_email}
 */
-export class ApiManagementNotificationRecipientEmail extends cdktf.TerraformResource {
+export class ApiManagementNotificationRecipientEmail extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -213,14 +213,14 @@ export class ApiManagementNotificationRecipientEmail extends cdktf.TerraformReso
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApiManagementNotificationRecipientEmail resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApiManagementNotificationRecipientEmail resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiManagementNotificationRecipientEmail to import
   * @param importFromId The id of the existing ApiManagementNotificationRecipientEmail that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_notification_recipient_email#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiManagementNotificationRecipientEmail to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_api_management_notification_recipient_email", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_api_management_notification_recipient_email", importId: importFromId, provider });
       }
 
   // ===========
@@ -338,10 +338,10 @@ export class ApiManagementNotificationRecipientEmail extends cdktf.TerraformReso
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_management_id: cdktf.stringToTerraform(this._apiManagementId),
-      email: cdktf.stringToTerraform(this._email),
-      id: cdktf.stringToTerraform(this._id),
-      notification_type: cdktf.stringToTerraform(this._notificationType),
+      api_management_id: cdktn.stringToTerraform(this._apiManagementId),
+      email: cdktn.stringToTerraform(this._email),
+      id: cdktn.stringToTerraform(this._id),
+      notification_type: cdktn.stringToTerraform(this._notificationType),
       timeouts: apiManagementNotificationRecipientEmailTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -349,25 +349,25 @@ export class ApiManagementNotificationRecipientEmail extends cdktf.TerraformReso
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_management_id: {
-        value: cdktf.stringToHclTerraform(this._apiManagementId),
+        value: cdktn.stringToHclTerraform(this._apiManagementId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       email: {
-        value: cdktf.stringToHclTerraform(this._email),
+        value: cdktn.stringToHclTerraform(this._email),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       notification_type: {
-        value: cdktf.stringToHclTerraform(this._notificationType),
+        value: cdktn.stringToHclTerraform(this._notificationType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

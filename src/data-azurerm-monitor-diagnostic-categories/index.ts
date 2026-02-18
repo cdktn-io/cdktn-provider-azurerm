@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermMonitorDiagnosticCategoriesConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermMonitorDiagnosticCategoriesConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/monitor_diagnostic_categories#id DataAzurermMonitorDiagnosticCategories#id}
   *
@@ -37,25 +37,25 @@ export interface DataAzurermMonitorDiagnosticCategoriesTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermMonitorDiagnosticCategoriesTimeoutsToTerraform(struct?: DataAzurermMonitorDiagnosticCategoriesTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermMonitorDiagnosticCategoriesTimeoutsToTerraform(struct?: DataAzurermMonitorDiagnosticCategoriesTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermMonitorDiagnosticCategoriesTimeoutsToHclTerraform(struct?: DataAzurermMonitorDiagnosticCategoriesTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermMonitorDiagnosticCategoriesTimeoutsToHclTerraform(struct?: DataAzurermMonitorDiagnosticCategoriesTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -66,19 +66,19 @@ export function dataAzurermMonitorDiagnosticCategoriesTimeoutsToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermMonitorDiagnosticCategoriesTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermMonitorDiagnosticCategoriesTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermMonitorDiagnosticCategoriesTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermMonitorDiagnosticCategoriesTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -91,13 +91,13 @@ export class DataAzurermMonitorDiagnosticCategoriesTimeoutsOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermMonitorDiagnosticCategoriesTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermMonitorDiagnosticCategoriesTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -128,7 +128,7 @@ export class DataAzurermMonitorDiagnosticCategoriesTimeoutsOutputReference exten
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/monitor_diagnostic_categories azurerm_monitor_diagnostic_categories}
 */
-export class DataAzurermMonitorDiagnosticCategories extends cdktf.TerraformDataSource {
+export class DataAzurermMonitorDiagnosticCategories extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -139,14 +139,14 @@ export class DataAzurermMonitorDiagnosticCategories extends cdktf.TerraformDataS
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermMonitorDiagnosticCategories resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermMonitorDiagnosticCategories resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermMonitorDiagnosticCategories to import
   * @param importFromId The id of the existing DataAzurermMonitorDiagnosticCategories that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/monitor_diagnostic_categories#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermMonitorDiagnosticCategories to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_monitor_diagnostic_categories", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_monitor_diagnostic_categories", importId: importFromId, provider });
       }
 
   // ===========
@@ -203,17 +203,17 @@ export class DataAzurermMonitorDiagnosticCategories extends cdktf.TerraformDataS
 
   // log_category_groups - computed: true, optional: false, required: false
   public get logCategoryGroups() {
-    return cdktf.Fn.tolist(this.getListAttribute('log_category_groups'));
+    return cdktn.Fn.tolist(this.getListAttribute('log_category_groups'));
   }
 
   // log_category_types - computed: true, optional: false, required: false
   public get logCategoryTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('log_category_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('log_category_types'));
   }
 
   // metrics - computed: true, optional: false, required: false
   public get metrics() {
-    return cdktf.Fn.tolist(this.getListAttribute('metrics'));
+    return cdktn.Fn.tolist(this.getListAttribute('metrics'));
   }
 
   // resource_id - computed: false, optional: false, required: true
@@ -251,8 +251,8 @@ export class DataAzurermMonitorDiagnosticCategories extends cdktf.TerraformDataS
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      resource_id: cdktf.stringToTerraform(this._resourceId),
+      id: cdktn.stringToTerraform(this._id),
+      resource_id: cdktn.stringToTerraform(this._resourceId),
       timeouts: dataAzurermMonitorDiagnosticCategoriesTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -260,13 +260,13 @@ export class DataAzurermMonitorDiagnosticCategories extends cdktf.TerraformDataS
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_id: {
-        value: cdktf.stringToHclTerraform(this._resourceId),
+        value: cdktn.stringToHclTerraform(this._resourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AiFoundryConfig extends cdktf.TerraformMetaArguments {
+export interface AiFoundryConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/ai_foundry#application_insights_id AiFoundry#application_insights_id}
   */
@@ -31,7 +31,7 @@ export interface AiFoundryConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/ai_foundry#high_business_impact_enabled AiFoundry#high_business_impact_enabled}
   */
-  readonly highBusinessImpactEnabled?: boolean | cdktf.IResolvable;
+  readonly highBusinessImpactEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/ai_foundry#id AiFoundry#id}
   *
@@ -112,38 +112,38 @@ export interface AiFoundryEncryption {
 }
 
 export function aiFoundryEncryptionToTerraform(struct?: AiFoundryEncryptionOutputReference | AiFoundryEncryption): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key_id: cdktf.stringToTerraform(struct!.keyId),
-    key_vault_id: cdktf.stringToTerraform(struct!.keyVaultId),
-    user_assigned_identity_id: cdktf.stringToTerraform(struct!.userAssignedIdentityId),
+    key_id: cdktn.stringToTerraform(struct!.keyId),
+    key_vault_id: cdktn.stringToTerraform(struct!.keyVaultId),
+    user_assigned_identity_id: cdktn.stringToTerraform(struct!.userAssignedIdentityId),
   }
 }
 
 
 export function aiFoundryEncryptionToHclTerraform(struct?: AiFoundryEncryptionOutputReference | AiFoundryEncryption): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyId),
+      value: cdktn.stringToHclTerraform(struct!.keyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_vault_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultId),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_assigned_identity_id: {
-      value: cdktf.stringToHclTerraform(struct!.userAssignedIdentityId),
+      value: cdktn.stringToHclTerraform(struct!.userAssignedIdentityId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -154,14 +154,14 @@ export function aiFoundryEncryptionToHclTerraform(struct?: AiFoundryEncryptionOu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AiFoundryEncryptionOutputReference extends cdktf.ComplexObject {
+export class AiFoundryEncryptionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -252,31 +252,31 @@ export interface AiFoundryIdentity {
 }
 
 export function aiFoundryIdentityToTerraform(struct?: AiFoundryIdentityOutputReference | AiFoundryIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function aiFoundryIdentityToHclTerraform(struct?: AiFoundryIdentityOutputReference | AiFoundryIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -287,14 +287,14 @@ export function aiFoundryIdentityToHclTerraform(struct?: AiFoundryIdentityOutput
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AiFoundryIdentityOutputReference extends cdktf.ComplexObject {
+export class AiFoundryIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -328,7 +328,7 @@ export class AiFoundryIdentityOutputReference extends cdktf.ComplexObject {
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -372,24 +372,24 @@ export interface AiFoundryManagedNetwork {
 }
 
 export function aiFoundryManagedNetworkToTerraform(struct?: AiFoundryManagedNetworkOutputReference | AiFoundryManagedNetwork): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    isolation_mode: cdktf.stringToTerraform(struct!.isolationMode),
+    isolation_mode: cdktn.stringToTerraform(struct!.isolationMode),
   }
 }
 
 
 export function aiFoundryManagedNetworkToHclTerraform(struct?: AiFoundryManagedNetworkOutputReference | AiFoundryManagedNetwork): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     isolation_mode: {
-      value: cdktf.stringToHclTerraform(struct!.isolationMode),
+      value: cdktn.stringToHclTerraform(struct!.isolationMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -400,14 +400,14 @@ export function aiFoundryManagedNetworkToHclTerraform(struct?: AiFoundryManagedN
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AiFoundryManagedNetworkOutputReference extends cdktf.ComplexObject {
+export class AiFoundryManagedNetworkOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -467,46 +467,46 @@ export interface AiFoundryTimeouts {
   readonly update?: string;
 }
 
-export function aiFoundryTimeoutsToTerraform(struct?: AiFoundryTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function aiFoundryTimeoutsToTerraform(struct?: AiFoundryTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function aiFoundryTimeoutsToHclTerraform(struct?: AiFoundryTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function aiFoundryTimeoutsToHclTerraform(struct?: AiFoundryTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -517,19 +517,19 @@ export function aiFoundryTimeoutsToHclTerraform(struct?: AiFoundryTimeouts | cdk
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AiFoundryTimeoutsOutputReference extends cdktf.ComplexObject {
+export class AiFoundryTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AiFoundryTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AiFoundryTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -554,7 +554,7 @@ export class AiFoundryTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AiFoundryTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AiFoundryTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -563,7 +563,7 @@ export class AiFoundryTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -645,7 +645,7 @@ export class AiFoundryTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/ai_foundry azurerm_ai_foundry}
 */
-export class AiFoundry extends cdktf.TerraformResource {
+export class AiFoundry extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -656,14 +656,14 @@ export class AiFoundry extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AiFoundry resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AiFoundry resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AiFoundry to import
   * @param importFromId The id of the existing AiFoundry that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/ai_foundry#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AiFoundry to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_ai_foundry", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_ai_foundry", importId: importFromId, provider });
       }
 
   // ===========
@@ -787,11 +787,11 @@ export class AiFoundry extends cdktf.TerraformResource {
   }
 
   // high_business_impact_enabled - computed: true, optional: true, required: false
-  private _highBusinessImpactEnabled?: boolean | cdktf.IResolvable; 
+  private _highBusinessImpactEnabled?: boolean | cdktn.IResolvable; 
   public get highBusinessImpactEnabled() {
     return this.getBooleanAttribute('high_business_impact_enabled');
   }
-  public set highBusinessImpactEnabled(value: boolean | cdktf.IResolvable) {
+  public set highBusinessImpactEnabled(value: boolean | cdktn.IResolvable) {
     this._highBusinessImpactEnabled = value;
   }
   public resetHighBusinessImpactEnabled() {
@@ -1003,20 +1003,20 @@ export class AiFoundry extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_insights_id: cdktf.stringToTerraform(this._applicationInsightsId),
-      container_registry_id: cdktf.stringToTerraform(this._containerRegistryId),
-      description: cdktf.stringToTerraform(this._description),
-      friendly_name: cdktf.stringToTerraform(this._friendlyName),
-      high_business_impact_enabled: cdktf.booleanToTerraform(this._highBusinessImpactEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      key_vault_id: cdktf.stringToTerraform(this._keyVaultId),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      primary_user_assigned_identity: cdktf.stringToTerraform(this._primaryUserAssignedIdentity),
-      public_network_access: cdktf.stringToTerraform(this._publicNetworkAccess),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      storage_account_id: cdktf.stringToTerraform(this._storageAccountId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      application_insights_id: cdktn.stringToTerraform(this._applicationInsightsId),
+      container_registry_id: cdktn.stringToTerraform(this._containerRegistryId),
+      description: cdktn.stringToTerraform(this._description),
+      friendly_name: cdktn.stringToTerraform(this._friendlyName),
+      high_business_impact_enabled: cdktn.booleanToTerraform(this._highBusinessImpactEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      key_vault_id: cdktn.stringToTerraform(this._keyVaultId),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      primary_user_assigned_identity: cdktn.stringToTerraform(this._primaryUserAssignedIdentity),
+      public_network_access: cdktn.stringToTerraform(this._publicNetworkAccess),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      storage_account_id: cdktn.stringToTerraform(this._storageAccountId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       encryption: aiFoundryEncryptionToTerraform(this._encryption.internalValue),
       identity: aiFoundryIdentityToTerraform(this._identity.internalValue),
       managed_network: aiFoundryManagedNetworkToTerraform(this._managedNetwork.internalValue),
@@ -1027,85 +1027,85 @@ export class AiFoundry extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       application_insights_id: {
-        value: cdktf.stringToHclTerraform(this._applicationInsightsId),
+        value: cdktn.stringToHclTerraform(this._applicationInsightsId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       container_registry_id: {
-        value: cdktf.stringToHclTerraform(this._containerRegistryId),
+        value: cdktn.stringToHclTerraform(this._containerRegistryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       friendly_name: {
-        value: cdktf.stringToHclTerraform(this._friendlyName),
+        value: cdktn.stringToHclTerraform(this._friendlyName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       high_business_impact_enabled: {
-        value: cdktf.booleanToHclTerraform(this._highBusinessImpactEnabled),
+        value: cdktn.booleanToHclTerraform(this._highBusinessImpactEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_vault_id: {
-        value: cdktf.stringToHclTerraform(this._keyVaultId),
+        value: cdktn.stringToHclTerraform(this._keyVaultId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       primary_user_assigned_identity: {
-        value: cdktf.stringToHclTerraform(this._primaryUserAssignedIdentity),
+        value: cdktn.stringToHclTerraform(this._primaryUserAssignedIdentity),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_network_access: {
-        value: cdktf.stringToHclTerraform(this._publicNetworkAccess),
+        value: cdktn.stringToHclTerraform(this._publicNetworkAccess),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_account_id: {
-        value: cdktf.stringToHclTerraform(this._storageAccountId),
+        value: cdktn.stringToHclTerraform(this._storageAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

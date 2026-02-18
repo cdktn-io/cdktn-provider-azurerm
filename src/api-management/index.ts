@@ -7,19 +7,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApiManagementConfig extends cdktf.TerraformMetaArguments {
+export interface ApiManagementConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#client_certificate_enabled ApiManagement#client_certificate_enabled}
   */
-  readonly clientCertificateEnabled?: boolean | cdktf.IResolvable;
+  readonly clientCertificateEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#gateway_disabled ApiManagement#gateway_disabled}
   */
-  readonly gatewayDisabled?: boolean | cdktf.IResolvable;
+  readonly gatewayDisabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#id ApiManagement#id}
   *
@@ -50,7 +50,7 @@ export interface ApiManagementConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#public_network_access_enabled ApiManagement#public_network_access_enabled}
   */
-  readonly publicNetworkAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly publicNetworkAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#publisher_email ApiManagement#publisher_email}
   */
@@ -84,13 +84,13 @@ export interface ApiManagementConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#additional_location ApiManagement#additional_location}
   */
-  readonly additionalLocation?: ApiManagementAdditionalLocation[] | cdktf.IResolvable;
+  readonly additionalLocation?: ApiManagementAdditionalLocation[] | cdktn.IResolvable;
   /**
   * certificate block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#certificate ApiManagement#certificate}
   */
-  readonly certificate?: ApiManagementCertificate[] | cdktf.IResolvable;
+  readonly certificate?: ApiManagementCertificate[] | cdktn.IResolvable;
   /**
   * delegation block
   *
@@ -160,24 +160,24 @@ export interface ApiManagementAdditionalLocationVirtualNetworkConfiguration {
 }
 
 export function apiManagementAdditionalLocationVirtualNetworkConfigurationToTerraform(struct?: ApiManagementAdditionalLocationVirtualNetworkConfigurationOutputReference | ApiManagementAdditionalLocationVirtualNetworkConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
+    subnet_id: cdktn.stringToTerraform(struct!.subnetId),
   }
 }
 
 
 export function apiManagementAdditionalLocationVirtualNetworkConfigurationToHclTerraform(struct?: ApiManagementAdditionalLocationVirtualNetworkConfigurationOutputReference | ApiManagementAdditionalLocationVirtualNetworkConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.subnetId),
+      value: cdktn.stringToHclTerraform(struct!.subnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -188,14 +188,14 @@ export function apiManagementAdditionalLocationVirtualNetworkConfigurationToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementAdditionalLocationVirtualNetworkConfigurationOutputReference extends cdktf.ComplexObject {
+export class ApiManagementAdditionalLocationVirtualNetworkConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -241,7 +241,7 @@ export interface ApiManagementAdditionalLocation {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#gateway_disabled ApiManagement#gateway_disabled}
   */
-  readonly gatewayDisabled?: boolean | cdktf.IResolvable;
+  readonly gatewayDisabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#location ApiManagement#location}
   */
@@ -262,54 +262,54 @@ export interface ApiManagementAdditionalLocation {
   readonly virtualNetworkConfiguration?: ApiManagementAdditionalLocationVirtualNetworkConfiguration;
 }
 
-export function apiManagementAdditionalLocationToTerraform(struct?: ApiManagementAdditionalLocation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementAdditionalLocationToTerraform(struct?: ApiManagementAdditionalLocation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    capacity: cdktf.numberToTerraform(struct!.capacity),
-    gateway_disabled: cdktf.booleanToTerraform(struct!.gatewayDisabled),
-    location: cdktf.stringToTerraform(struct!.location),
-    public_ip_address_id: cdktf.stringToTerraform(struct!.publicIpAddressId),
-    zones: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.zones),
+    capacity: cdktn.numberToTerraform(struct!.capacity),
+    gateway_disabled: cdktn.booleanToTerraform(struct!.gatewayDisabled),
+    location: cdktn.stringToTerraform(struct!.location),
+    public_ip_address_id: cdktn.stringToTerraform(struct!.publicIpAddressId),
+    zones: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.zones),
     virtual_network_configuration: apiManagementAdditionalLocationVirtualNetworkConfigurationToTerraform(struct!.virtualNetworkConfiguration),
   }
 }
 
 
-export function apiManagementAdditionalLocationToHclTerraform(struct?: ApiManagementAdditionalLocation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementAdditionalLocationToHclTerraform(struct?: ApiManagementAdditionalLocation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     capacity: {
-      value: cdktf.numberToHclTerraform(struct!.capacity),
+      value: cdktn.numberToHclTerraform(struct!.capacity),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     gateway_disabled: {
-      value: cdktf.booleanToHclTerraform(struct!.gatewayDisabled),
+      value: cdktn.booleanToHclTerraform(struct!.gatewayDisabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     location: {
-      value: cdktf.stringToHclTerraform(struct!.location),
+      value: cdktn.stringToHclTerraform(struct!.location),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     public_ip_address_id: {
-      value: cdktf.stringToHclTerraform(struct!.publicIpAddressId),
+      value: cdktn.stringToHclTerraform(struct!.publicIpAddressId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     zones: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.zones),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.zones),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -326,9 +326,9 @@ export function apiManagementAdditionalLocationToHclTerraform(struct?: ApiManage
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementAdditionalLocationOutputReference extends cdktf.ComplexObject {
+export class ApiManagementAdditionalLocationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -336,11 +336,11 @@ export class ApiManagementAdditionalLocationOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApiManagementAdditionalLocation | cdktf.IResolvable | undefined {
+  public get internalValue(): ApiManagementAdditionalLocation | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -373,7 +373,7 @@ export class ApiManagementAdditionalLocationOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApiManagementAdditionalLocation | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApiManagementAdditionalLocation | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -384,7 +384,7 @@ export class ApiManagementAdditionalLocationOutputReference extends cdktf.Comple
       this._zones = undefined;
       this._virtualNetworkConfiguration.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -417,11 +417,11 @@ export class ApiManagementAdditionalLocationOutputReference extends cdktf.Comple
   }
 
   // gateway_disabled - computed: false, optional: true, required: false
-  private _gatewayDisabled?: boolean | cdktf.IResolvable; 
+  private _gatewayDisabled?: boolean | cdktn.IResolvable; 
   public get gatewayDisabled() {
     return this.getBooleanAttribute('gateway_disabled');
   }
-  public set gatewayDisabled(value: boolean | cdktf.IResolvable) {
+  public set gatewayDisabled(value: boolean | cdktn.IResolvable) {
     this._gatewayDisabled = value;
   }
   public resetGatewayDisabled() {
@@ -479,7 +479,7 @@ export class ApiManagementAdditionalLocationOutputReference extends cdktf.Comple
   // zones - computed: false, optional: true, required: false
   private _zones?: string[]; 
   public get zones() {
-    return cdktf.Fn.tolist(this.getListAttribute('zones'));
+    return cdktn.Fn.tolist(this.getListAttribute('zones'));
   }
   public set zones(value: string[]) {
     this._zones = value;
@@ -509,15 +509,15 @@ export class ApiManagementAdditionalLocationOutputReference extends cdktf.Comple
   }
 }
 
-export class ApiManagementAdditionalLocationList extends cdktf.ComplexList {
-  public internalValue? : ApiManagementAdditionalLocation[] | cdktf.IResolvable
+export class ApiManagementAdditionalLocationList extends cdktn.ComplexList {
+  public internalValue? : ApiManagementAdditionalLocation[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -543,39 +543,39 @@ export interface ApiManagementCertificate {
   readonly storeName: string;
 }
 
-export function apiManagementCertificateToTerraform(struct?: ApiManagementCertificate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementCertificateToTerraform(struct?: ApiManagementCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    certificate_password: cdktf.stringToTerraform(struct!.certificatePassword),
-    encoded_certificate: cdktf.stringToTerraform(struct!.encodedCertificate),
-    store_name: cdktf.stringToTerraform(struct!.storeName),
+    certificate_password: cdktn.stringToTerraform(struct!.certificatePassword),
+    encoded_certificate: cdktn.stringToTerraform(struct!.encodedCertificate),
+    store_name: cdktn.stringToTerraform(struct!.storeName),
   }
 }
 
 
-export function apiManagementCertificateToHclTerraform(struct?: ApiManagementCertificate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementCertificateToHclTerraform(struct?: ApiManagementCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     certificate_password: {
-      value: cdktf.stringToHclTerraform(struct!.certificatePassword),
+      value: cdktn.stringToHclTerraform(struct!.certificatePassword),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     encoded_certificate: {
-      value: cdktf.stringToHclTerraform(struct!.encodedCertificate),
+      value: cdktn.stringToHclTerraform(struct!.encodedCertificate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     store_name: {
-      value: cdktf.stringToHclTerraform(struct!.storeName),
+      value: cdktn.stringToHclTerraform(struct!.storeName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -586,9 +586,9 @@ export function apiManagementCertificateToHclTerraform(struct?: ApiManagementCer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementCertificateOutputReference extends cdktf.ComplexObject {
+export class ApiManagementCertificateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -596,11 +596,11 @@ export class ApiManagementCertificateOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApiManagementCertificate | cdktf.IResolvable | undefined {
+  public get internalValue(): ApiManagementCertificate | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -621,7 +621,7 @@ export class ApiManagementCertificateOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApiManagementCertificate | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApiManagementCertificate | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -629,7 +629,7 @@ export class ApiManagementCertificateOutputReference extends cdktf.ComplexObject
       this._encodedCertificate = undefined;
       this._storeName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -700,15 +700,15 @@ export class ApiManagementCertificateOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class ApiManagementCertificateList extends cdktf.ComplexList {
-  public internalValue? : ApiManagementCertificate[] | cdktf.IResolvable
+export class ApiManagementCertificateList extends cdktn.ComplexList {
+  public internalValue? : ApiManagementCertificate[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -723,7 +723,7 @@ export interface ApiManagementDelegation {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#subscriptions_enabled ApiManagement#subscriptions_enabled}
   */
-  readonly subscriptionsEnabled?: boolean | cdktf.IResolvable;
+  readonly subscriptionsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#url ApiManagement#url}
   */
@@ -731,7 +731,7 @@ export interface ApiManagementDelegation {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#user_registration_enabled ApiManagement#user_registration_enabled}
   */
-  readonly userRegistrationEnabled?: boolean | cdktf.IResolvable;
+  readonly userRegistrationEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#validation_key ApiManagement#validation_key}
   */
@@ -739,45 +739,45 @@ export interface ApiManagementDelegation {
 }
 
 export function apiManagementDelegationToTerraform(struct?: ApiManagementDelegationOutputReference | ApiManagementDelegation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    subscriptions_enabled: cdktf.booleanToTerraform(struct!.subscriptionsEnabled),
-    url: cdktf.stringToTerraform(struct!.url),
-    user_registration_enabled: cdktf.booleanToTerraform(struct!.userRegistrationEnabled),
-    validation_key: cdktf.stringToTerraform(struct!.validationKey),
+    subscriptions_enabled: cdktn.booleanToTerraform(struct!.subscriptionsEnabled),
+    url: cdktn.stringToTerraform(struct!.url),
+    user_registration_enabled: cdktn.booleanToTerraform(struct!.userRegistrationEnabled),
+    validation_key: cdktn.stringToTerraform(struct!.validationKey),
   }
 }
 
 
 export function apiManagementDelegationToHclTerraform(struct?: ApiManagementDelegationOutputReference | ApiManagementDelegation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     subscriptions_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.subscriptionsEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.subscriptionsEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     url: {
-      value: cdktf.stringToHclTerraform(struct!.url),
+      value: cdktn.stringToHclTerraform(struct!.url),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user_registration_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.userRegistrationEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.userRegistrationEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     validation_key: {
-      value: cdktf.stringToHclTerraform(struct!.validationKey),
+      value: cdktn.stringToHclTerraform(struct!.validationKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -788,14 +788,14 @@ export function apiManagementDelegationToHclTerraform(struct?: ApiManagementDele
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementDelegationOutputReference extends cdktf.ComplexObject {
+export class ApiManagementDelegationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -839,11 +839,11 @@ export class ApiManagementDelegationOutputReference extends cdktf.ComplexObject 
   }
 
   // subscriptions_enabled - computed: false, optional: true, required: false
-  private _subscriptionsEnabled?: boolean | cdktf.IResolvable; 
+  private _subscriptionsEnabled?: boolean | cdktn.IResolvable; 
   public get subscriptionsEnabled() {
     return this.getBooleanAttribute('subscriptions_enabled');
   }
-  public set subscriptionsEnabled(value: boolean | cdktf.IResolvable) {
+  public set subscriptionsEnabled(value: boolean | cdktn.IResolvable) {
     this._subscriptionsEnabled = value;
   }
   public resetSubscriptionsEnabled() {
@@ -871,11 +871,11 @@ export class ApiManagementDelegationOutputReference extends cdktf.ComplexObject 
   }
 
   // user_registration_enabled - computed: false, optional: true, required: false
-  private _userRegistrationEnabled?: boolean | cdktf.IResolvable; 
+  private _userRegistrationEnabled?: boolean | cdktn.IResolvable; 
   public get userRegistrationEnabled() {
     return this.getBooleanAttribute('user_registration_enabled');
   }
-  public set userRegistrationEnabled(value: boolean | cdktf.IResolvable) {
+  public set userRegistrationEnabled(value: boolean | cdktn.IResolvable) {
     this._userRegistrationEnabled = value;
   }
   public resetUserRegistrationEnabled() {
@@ -926,74 +926,74 @@ export interface ApiManagementHostnameConfigurationDeveloperPortal {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#negotiate_client_certificate ApiManagement#negotiate_client_certificate}
   */
-  readonly negotiateClientCertificate?: boolean | cdktf.IResolvable;
+  readonly negotiateClientCertificate?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#ssl_keyvault_identity_client_id ApiManagement#ssl_keyvault_identity_client_id}
   */
   readonly sslKeyvaultIdentityClientId?: string;
 }
 
-export function apiManagementHostnameConfigurationDeveloperPortalToTerraform(struct?: ApiManagementHostnameConfigurationDeveloperPortal | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementHostnameConfigurationDeveloperPortalToTerraform(struct?: ApiManagementHostnameConfigurationDeveloperPortal | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    certificate: cdktf.stringToTerraform(struct!.certificate),
-    certificate_password: cdktf.stringToTerraform(struct!.certificatePassword),
-    host_name: cdktf.stringToTerraform(struct!.hostName),
-    key_vault_certificate_id: cdktf.stringToTerraform(struct!.keyVaultCertificateId),
-    key_vault_id: cdktf.stringToTerraform(struct!.keyVaultId),
-    negotiate_client_certificate: cdktf.booleanToTerraform(struct!.negotiateClientCertificate),
-    ssl_keyvault_identity_client_id: cdktf.stringToTerraform(struct!.sslKeyvaultIdentityClientId),
+    certificate: cdktn.stringToTerraform(struct!.certificate),
+    certificate_password: cdktn.stringToTerraform(struct!.certificatePassword),
+    host_name: cdktn.stringToTerraform(struct!.hostName),
+    key_vault_certificate_id: cdktn.stringToTerraform(struct!.keyVaultCertificateId),
+    key_vault_id: cdktn.stringToTerraform(struct!.keyVaultId),
+    negotiate_client_certificate: cdktn.booleanToTerraform(struct!.negotiateClientCertificate),
+    ssl_keyvault_identity_client_id: cdktn.stringToTerraform(struct!.sslKeyvaultIdentityClientId),
   }
 }
 
 
-export function apiManagementHostnameConfigurationDeveloperPortalToHclTerraform(struct?: ApiManagementHostnameConfigurationDeveloperPortal | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementHostnameConfigurationDeveloperPortalToHclTerraform(struct?: ApiManagementHostnameConfigurationDeveloperPortal | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     certificate: {
-      value: cdktf.stringToHclTerraform(struct!.certificate),
+      value: cdktn.stringToHclTerraform(struct!.certificate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     certificate_password: {
-      value: cdktf.stringToHclTerraform(struct!.certificatePassword),
+      value: cdktn.stringToHclTerraform(struct!.certificatePassword),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host_name: {
-      value: cdktf.stringToHclTerraform(struct!.hostName),
+      value: cdktn.stringToHclTerraform(struct!.hostName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_vault_certificate_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultCertificateId),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultCertificateId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_vault_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultId),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     negotiate_client_certificate: {
-      value: cdktf.booleanToHclTerraform(struct!.negotiateClientCertificate),
+      value: cdktn.booleanToHclTerraform(struct!.negotiateClientCertificate),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     ssl_keyvault_identity_client_id: {
-      value: cdktf.stringToHclTerraform(struct!.sslKeyvaultIdentityClientId),
+      value: cdktn.stringToHclTerraform(struct!.sslKeyvaultIdentityClientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1004,9 +1004,9 @@ export function apiManagementHostnameConfigurationDeveloperPortalToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementHostnameConfigurationDeveloperPortalOutputReference extends cdktf.ComplexObject {
+export class ApiManagementHostnameConfigurationDeveloperPortalOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1014,11 +1014,11 @@ export class ApiManagementHostnameConfigurationDeveloperPortalOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApiManagementHostnameConfigurationDeveloperPortal | cdktf.IResolvable | undefined {
+  public get internalValue(): ApiManagementHostnameConfigurationDeveloperPortal | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1055,7 +1055,7 @@ export class ApiManagementHostnameConfigurationDeveloperPortalOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApiManagementHostnameConfigurationDeveloperPortal | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApiManagementHostnameConfigurationDeveloperPortal | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1067,7 +1067,7 @@ export class ApiManagementHostnameConfigurationDeveloperPortalOutputReference ex
       this._negotiateClientCertificate = undefined;
       this._sslKeyvaultIdentityClientId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1177,11 +1177,11 @@ export class ApiManagementHostnameConfigurationDeveloperPortalOutputReference ex
   }
 
   // negotiate_client_certificate - computed: false, optional: true, required: false
-  private _negotiateClientCertificate?: boolean | cdktf.IResolvable; 
+  private _negotiateClientCertificate?: boolean | cdktn.IResolvable; 
   public get negotiateClientCertificate() {
     return this.getBooleanAttribute('negotiate_client_certificate');
   }
-  public set negotiateClientCertificate(value: boolean | cdktf.IResolvable) {
+  public set negotiateClientCertificate(value: boolean | cdktn.IResolvable) {
     this._negotiateClientCertificate = value;
   }
   public resetNegotiateClientCertificate() {
@@ -1219,15 +1219,15 @@ export class ApiManagementHostnameConfigurationDeveloperPortalOutputReference ex
   }
 }
 
-export class ApiManagementHostnameConfigurationDeveloperPortalList extends cdktf.ComplexList {
-  public internalValue? : ApiManagementHostnameConfigurationDeveloperPortal[] | cdktf.IResolvable
+export class ApiManagementHostnameConfigurationDeveloperPortalList extends cdktn.ComplexList {
+  public internalValue? : ApiManagementHostnameConfigurationDeveloperPortal[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1262,74 +1262,74 @@ export interface ApiManagementHostnameConfigurationManagement {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#negotiate_client_certificate ApiManagement#negotiate_client_certificate}
   */
-  readonly negotiateClientCertificate?: boolean | cdktf.IResolvable;
+  readonly negotiateClientCertificate?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#ssl_keyvault_identity_client_id ApiManagement#ssl_keyvault_identity_client_id}
   */
   readonly sslKeyvaultIdentityClientId?: string;
 }
 
-export function apiManagementHostnameConfigurationManagementToTerraform(struct?: ApiManagementHostnameConfigurationManagement | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementHostnameConfigurationManagementToTerraform(struct?: ApiManagementHostnameConfigurationManagement | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    certificate: cdktf.stringToTerraform(struct!.certificate),
-    certificate_password: cdktf.stringToTerraform(struct!.certificatePassword),
-    host_name: cdktf.stringToTerraform(struct!.hostName),
-    key_vault_certificate_id: cdktf.stringToTerraform(struct!.keyVaultCertificateId),
-    key_vault_id: cdktf.stringToTerraform(struct!.keyVaultId),
-    negotiate_client_certificate: cdktf.booleanToTerraform(struct!.negotiateClientCertificate),
-    ssl_keyvault_identity_client_id: cdktf.stringToTerraform(struct!.sslKeyvaultIdentityClientId),
+    certificate: cdktn.stringToTerraform(struct!.certificate),
+    certificate_password: cdktn.stringToTerraform(struct!.certificatePassword),
+    host_name: cdktn.stringToTerraform(struct!.hostName),
+    key_vault_certificate_id: cdktn.stringToTerraform(struct!.keyVaultCertificateId),
+    key_vault_id: cdktn.stringToTerraform(struct!.keyVaultId),
+    negotiate_client_certificate: cdktn.booleanToTerraform(struct!.negotiateClientCertificate),
+    ssl_keyvault_identity_client_id: cdktn.stringToTerraform(struct!.sslKeyvaultIdentityClientId),
   }
 }
 
 
-export function apiManagementHostnameConfigurationManagementToHclTerraform(struct?: ApiManagementHostnameConfigurationManagement | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementHostnameConfigurationManagementToHclTerraform(struct?: ApiManagementHostnameConfigurationManagement | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     certificate: {
-      value: cdktf.stringToHclTerraform(struct!.certificate),
+      value: cdktn.stringToHclTerraform(struct!.certificate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     certificate_password: {
-      value: cdktf.stringToHclTerraform(struct!.certificatePassword),
+      value: cdktn.stringToHclTerraform(struct!.certificatePassword),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host_name: {
-      value: cdktf.stringToHclTerraform(struct!.hostName),
+      value: cdktn.stringToHclTerraform(struct!.hostName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_vault_certificate_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultCertificateId),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultCertificateId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_vault_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultId),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     negotiate_client_certificate: {
-      value: cdktf.booleanToHclTerraform(struct!.negotiateClientCertificate),
+      value: cdktn.booleanToHclTerraform(struct!.negotiateClientCertificate),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     ssl_keyvault_identity_client_id: {
-      value: cdktf.stringToHclTerraform(struct!.sslKeyvaultIdentityClientId),
+      value: cdktn.stringToHclTerraform(struct!.sslKeyvaultIdentityClientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1340,9 +1340,9 @@ export function apiManagementHostnameConfigurationManagementToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementHostnameConfigurationManagementOutputReference extends cdktf.ComplexObject {
+export class ApiManagementHostnameConfigurationManagementOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1350,11 +1350,11 @@ export class ApiManagementHostnameConfigurationManagementOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApiManagementHostnameConfigurationManagement | cdktf.IResolvable | undefined {
+  public get internalValue(): ApiManagementHostnameConfigurationManagement | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1391,7 +1391,7 @@ export class ApiManagementHostnameConfigurationManagementOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApiManagementHostnameConfigurationManagement | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApiManagementHostnameConfigurationManagement | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1403,7 +1403,7 @@ export class ApiManagementHostnameConfigurationManagementOutputReference extends
       this._negotiateClientCertificate = undefined;
       this._sslKeyvaultIdentityClientId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1513,11 +1513,11 @@ export class ApiManagementHostnameConfigurationManagementOutputReference extends
   }
 
   // negotiate_client_certificate - computed: false, optional: true, required: false
-  private _negotiateClientCertificate?: boolean | cdktf.IResolvable; 
+  private _negotiateClientCertificate?: boolean | cdktn.IResolvable; 
   public get negotiateClientCertificate() {
     return this.getBooleanAttribute('negotiate_client_certificate');
   }
-  public set negotiateClientCertificate(value: boolean | cdktf.IResolvable) {
+  public set negotiateClientCertificate(value: boolean | cdktn.IResolvable) {
     this._negotiateClientCertificate = value;
   }
   public resetNegotiateClientCertificate() {
@@ -1555,15 +1555,15 @@ export class ApiManagementHostnameConfigurationManagementOutputReference extends
   }
 }
 
-export class ApiManagementHostnameConfigurationManagementList extends cdktf.ComplexList {
-  public internalValue? : ApiManagementHostnameConfigurationManagement[] | cdktf.IResolvable
+export class ApiManagementHostnameConfigurationManagementList extends cdktn.ComplexList {
+  public internalValue? : ApiManagementHostnameConfigurationManagement[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1598,74 +1598,74 @@ export interface ApiManagementHostnameConfigurationPortal {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#negotiate_client_certificate ApiManagement#negotiate_client_certificate}
   */
-  readonly negotiateClientCertificate?: boolean | cdktf.IResolvable;
+  readonly negotiateClientCertificate?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#ssl_keyvault_identity_client_id ApiManagement#ssl_keyvault_identity_client_id}
   */
   readonly sslKeyvaultIdentityClientId?: string;
 }
 
-export function apiManagementHostnameConfigurationPortalToTerraform(struct?: ApiManagementHostnameConfigurationPortal | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementHostnameConfigurationPortalToTerraform(struct?: ApiManagementHostnameConfigurationPortal | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    certificate: cdktf.stringToTerraform(struct!.certificate),
-    certificate_password: cdktf.stringToTerraform(struct!.certificatePassword),
-    host_name: cdktf.stringToTerraform(struct!.hostName),
-    key_vault_certificate_id: cdktf.stringToTerraform(struct!.keyVaultCertificateId),
-    key_vault_id: cdktf.stringToTerraform(struct!.keyVaultId),
-    negotiate_client_certificate: cdktf.booleanToTerraform(struct!.negotiateClientCertificate),
-    ssl_keyvault_identity_client_id: cdktf.stringToTerraform(struct!.sslKeyvaultIdentityClientId),
+    certificate: cdktn.stringToTerraform(struct!.certificate),
+    certificate_password: cdktn.stringToTerraform(struct!.certificatePassword),
+    host_name: cdktn.stringToTerraform(struct!.hostName),
+    key_vault_certificate_id: cdktn.stringToTerraform(struct!.keyVaultCertificateId),
+    key_vault_id: cdktn.stringToTerraform(struct!.keyVaultId),
+    negotiate_client_certificate: cdktn.booleanToTerraform(struct!.negotiateClientCertificate),
+    ssl_keyvault_identity_client_id: cdktn.stringToTerraform(struct!.sslKeyvaultIdentityClientId),
   }
 }
 
 
-export function apiManagementHostnameConfigurationPortalToHclTerraform(struct?: ApiManagementHostnameConfigurationPortal | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementHostnameConfigurationPortalToHclTerraform(struct?: ApiManagementHostnameConfigurationPortal | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     certificate: {
-      value: cdktf.stringToHclTerraform(struct!.certificate),
+      value: cdktn.stringToHclTerraform(struct!.certificate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     certificate_password: {
-      value: cdktf.stringToHclTerraform(struct!.certificatePassword),
+      value: cdktn.stringToHclTerraform(struct!.certificatePassword),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host_name: {
-      value: cdktf.stringToHclTerraform(struct!.hostName),
+      value: cdktn.stringToHclTerraform(struct!.hostName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_vault_certificate_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultCertificateId),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultCertificateId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_vault_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultId),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     negotiate_client_certificate: {
-      value: cdktf.booleanToHclTerraform(struct!.negotiateClientCertificate),
+      value: cdktn.booleanToHclTerraform(struct!.negotiateClientCertificate),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     ssl_keyvault_identity_client_id: {
-      value: cdktf.stringToHclTerraform(struct!.sslKeyvaultIdentityClientId),
+      value: cdktn.stringToHclTerraform(struct!.sslKeyvaultIdentityClientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1676,9 +1676,9 @@ export function apiManagementHostnameConfigurationPortalToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementHostnameConfigurationPortalOutputReference extends cdktf.ComplexObject {
+export class ApiManagementHostnameConfigurationPortalOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1686,11 +1686,11 @@ export class ApiManagementHostnameConfigurationPortalOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApiManagementHostnameConfigurationPortal | cdktf.IResolvable | undefined {
+  public get internalValue(): ApiManagementHostnameConfigurationPortal | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1727,7 +1727,7 @@ export class ApiManagementHostnameConfigurationPortalOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApiManagementHostnameConfigurationPortal | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApiManagementHostnameConfigurationPortal | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1739,7 +1739,7 @@ export class ApiManagementHostnameConfigurationPortalOutputReference extends cdk
       this._negotiateClientCertificate = undefined;
       this._sslKeyvaultIdentityClientId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1849,11 +1849,11 @@ export class ApiManagementHostnameConfigurationPortalOutputReference extends cdk
   }
 
   // negotiate_client_certificate - computed: false, optional: true, required: false
-  private _negotiateClientCertificate?: boolean | cdktf.IResolvable; 
+  private _negotiateClientCertificate?: boolean | cdktn.IResolvable; 
   public get negotiateClientCertificate() {
     return this.getBooleanAttribute('negotiate_client_certificate');
   }
-  public set negotiateClientCertificate(value: boolean | cdktf.IResolvable) {
+  public set negotiateClientCertificate(value: boolean | cdktn.IResolvable) {
     this._negotiateClientCertificate = value;
   }
   public resetNegotiateClientCertificate() {
@@ -1891,15 +1891,15 @@ export class ApiManagementHostnameConfigurationPortalOutputReference extends cdk
   }
 }
 
-export class ApiManagementHostnameConfigurationPortalList extends cdktf.ComplexList {
-  public internalValue? : ApiManagementHostnameConfigurationPortal[] | cdktf.IResolvable
+export class ApiManagementHostnameConfigurationPortalList extends cdktn.ComplexList {
+  public internalValue? : ApiManagementHostnameConfigurationPortal[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1922,7 +1922,7 @@ export interface ApiManagementHostnameConfigurationProxy {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#default_ssl_binding ApiManagement#default_ssl_binding}
   */
-  readonly defaultSslBinding?: boolean | cdktf.IResolvable;
+  readonly defaultSslBinding?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#host_name ApiManagement#host_name}
   */
@@ -1938,81 +1938,81 @@ export interface ApiManagementHostnameConfigurationProxy {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#negotiate_client_certificate ApiManagement#negotiate_client_certificate}
   */
-  readonly negotiateClientCertificate?: boolean | cdktf.IResolvable;
+  readonly negotiateClientCertificate?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#ssl_keyvault_identity_client_id ApiManagement#ssl_keyvault_identity_client_id}
   */
   readonly sslKeyvaultIdentityClientId?: string;
 }
 
-export function apiManagementHostnameConfigurationProxyToTerraform(struct?: ApiManagementHostnameConfigurationProxy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementHostnameConfigurationProxyToTerraform(struct?: ApiManagementHostnameConfigurationProxy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    certificate: cdktf.stringToTerraform(struct!.certificate),
-    certificate_password: cdktf.stringToTerraform(struct!.certificatePassword),
-    default_ssl_binding: cdktf.booleanToTerraform(struct!.defaultSslBinding),
-    host_name: cdktf.stringToTerraform(struct!.hostName),
-    key_vault_certificate_id: cdktf.stringToTerraform(struct!.keyVaultCertificateId),
-    key_vault_id: cdktf.stringToTerraform(struct!.keyVaultId),
-    negotiate_client_certificate: cdktf.booleanToTerraform(struct!.negotiateClientCertificate),
-    ssl_keyvault_identity_client_id: cdktf.stringToTerraform(struct!.sslKeyvaultIdentityClientId),
+    certificate: cdktn.stringToTerraform(struct!.certificate),
+    certificate_password: cdktn.stringToTerraform(struct!.certificatePassword),
+    default_ssl_binding: cdktn.booleanToTerraform(struct!.defaultSslBinding),
+    host_name: cdktn.stringToTerraform(struct!.hostName),
+    key_vault_certificate_id: cdktn.stringToTerraform(struct!.keyVaultCertificateId),
+    key_vault_id: cdktn.stringToTerraform(struct!.keyVaultId),
+    negotiate_client_certificate: cdktn.booleanToTerraform(struct!.negotiateClientCertificate),
+    ssl_keyvault_identity_client_id: cdktn.stringToTerraform(struct!.sslKeyvaultIdentityClientId),
   }
 }
 
 
-export function apiManagementHostnameConfigurationProxyToHclTerraform(struct?: ApiManagementHostnameConfigurationProxy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementHostnameConfigurationProxyToHclTerraform(struct?: ApiManagementHostnameConfigurationProxy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     certificate: {
-      value: cdktf.stringToHclTerraform(struct!.certificate),
+      value: cdktn.stringToHclTerraform(struct!.certificate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     certificate_password: {
-      value: cdktf.stringToHclTerraform(struct!.certificatePassword),
+      value: cdktn.stringToHclTerraform(struct!.certificatePassword),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     default_ssl_binding: {
-      value: cdktf.booleanToHclTerraform(struct!.defaultSslBinding),
+      value: cdktn.booleanToHclTerraform(struct!.defaultSslBinding),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     host_name: {
-      value: cdktf.stringToHclTerraform(struct!.hostName),
+      value: cdktn.stringToHclTerraform(struct!.hostName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_vault_certificate_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultCertificateId),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultCertificateId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_vault_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultId),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     negotiate_client_certificate: {
-      value: cdktf.booleanToHclTerraform(struct!.negotiateClientCertificate),
+      value: cdktn.booleanToHclTerraform(struct!.negotiateClientCertificate),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     ssl_keyvault_identity_client_id: {
-      value: cdktf.stringToHclTerraform(struct!.sslKeyvaultIdentityClientId),
+      value: cdktn.stringToHclTerraform(struct!.sslKeyvaultIdentityClientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2023,9 +2023,9 @@ export function apiManagementHostnameConfigurationProxyToHclTerraform(struct?: A
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementHostnameConfigurationProxyOutputReference extends cdktf.ComplexObject {
+export class ApiManagementHostnameConfigurationProxyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2033,11 +2033,11 @@ export class ApiManagementHostnameConfigurationProxyOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApiManagementHostnameConfigurationProxy | cdktf.IResolvable | undefined {
+  public get internalValue(): ApiManagementHostnameConfigurationProxy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2078,7 +2078,7 @@ export class ApiManagementHostnameConfigurationProxyOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApiManagementHostnameConfigurationProxy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApiManagementHostnameConfigurationProxy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2091,7 +2091,7 @@ export class ApiManagementHostnameConfigurationProxyOutputReference extends cdkt
       this._negotiateClientCertificate = undefined;
       this._sslKeyvaultIdentityClientId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2152,11 +2152,11 @@ export class ApiManagementHostnameConfigurationProxyOutputReference extends cdkt
   }
 
   // default_ssl_binding - computed: true, optional: true, required: false
-  private _defaultSslBinding?: boolean | cdktf.IResolvable; 
+  private _defaultSslBinding?: boolean | cdktn.IResolvable; 
   public get defaultSslBinding() {
     return this.getBooleanAttribute('default_ssl_binding');
   }
-  public set defaultSslBinding(value: boolean | cdktf.IResolvable) {
+  public set defaultSslBinding(value: boolean | cdktn.IResolvable) {
     this._defaultSslBinding = value;
   }
   public resetDefaultSslBinding() {
@@ -2218,11 +2218,11 @@ export class ApiManagementHostnameConfigurationProxyOutputReference extends cdkt
   }
 
   // negotiate_client_certificate - computed: false, optional: true, required: false
-  private _negotiateClientCertificate?: boolean | cdktf.IResolvable; 
+  private _negotiateClientCertificate?: boolean | cdktn.IResolvable; 
   public get negotiateClientCertificate() {
     return this.getBooleanAttribute('negotiate_client_certificate');
   }
-  public set negotiateClientCertificate(value: boolean | cdktf.IResolvable) {
+  public set negotiateClientCertificate(value: boolean | cdktn.IResolvable) {
     this._negotiateClientCertificate = value;
   }
   public resetNegotiateClientCertificate() {
@@ -2260,15 +2260,15 @@ export class ApiManagementHostnameConfigurationProxyOutputReference extends cdkt
   }
 }
 
-export class ApiManagementHostnameConfigurationProxyList extends cdktf.ComplexList {
-  public internalValue? : ApiManagementHostnameConfigurationProxy[] | cdktf.IResolvable
+export class ApiManagementHostnameConfigurationProxyList extends cdktn.ComplexList {
+  public internalValue? : ApiManagementHostnameConfigurationProxy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2303,74 +2303,74 @@ export interface ApiManagementHostnameConfigurationScm {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#negotiate_client_certificate ApiManagement#negotiate_client_certificate}
   */
-  readonly negotiateClientCertificate?: boolean | cdktf.IResolvable;
+  readonly negotiateClientCertificate?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#ssl_keyvault_identity_client_id ApiManagement#ssl_keyvault_identity_client_id}
   */
   readonly sslKeyvaultIdentityClientId?: string;
 }
 
-export function apiManagementHostnameConfigurationScmToTerraform(struct?: ApiManagementHostnameConfigurationScm | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementHostnameConfigurationScmToTerraform(struct?: ApiManagementHostnameConfigurationScm | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    certificate: cdktf.stringToTerraform(struct!.certificate),
-    certificate_password: cdktf.stringToTerraform(struct!.certificatePassword),
-    host_name: cdktf.stringToTerraform(struct!.hostName),
-    key_vault_certificate_id: cdktf.stringToTerraform(struct!.keyVaultCertificateId),
-    key_vault_id: cdktf.stringToTerraform(struct!.keyVaultId),
-    negotiate_client_certificate: cdktf.booleanToTerraform(struct!.negotiateClientCertificate),
-    ssl_keyvault_identity_client_id: cdktf.stringToTerraform(struct!.sslKeyvaultIdentityClientId),
+    certificate: cdktn.stringToTerraform(struct!.certificate),
+    certificate_password: cdktn.stringToTerraform(struct!.certificatePassword),
+    host_name: cdktn.stringToTerraform(struct!.hostName),
+    key_vault_certificate_id: cdktn.stringToTerraform(struct!.keyVaultCertificateId),
+    key_vault_id: cdktn.stringToTerraform(struct!.keyVaultId),
+    negotiate_client_certificate: cdktn.booleanToTerraform(struct!.negotiateClientCertificate),
+    ssl_keyvault_identity_client_id: cdktn.stringToTerraform(struct!.sslKeyvaultIdentityClientId),
   }
 }
 
 
-export function apiManagementHostnameConfigurationScmToHclTerraform(struct?: ApiManagementHostnameConfigurationScm | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementHostnameConfigurationScmToHclTerraform(struct?: ApiManagementHostnameConfigurationScm | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     certificate: {
-      value: cdktf.stringToHclTerraform(struct!.certificate),
+      value: cdktn.stringToHclTerraform(struct!.certificate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     certificate_password: {
-      value: cdktf.stringToHclTerraform(struct!.certificatePassword),
+      value: cdktn.stringToHclTerraform(struct!.certificatePassword),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host_name: {
-      value: cdktf.stringToHclTerraform(struct!.hostName),
+      value: cdktn.stringToHclTerraform(struct!.hostName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_vault_certificate_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultCertificateId),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultCertificateId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_vault_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyVaultId),
+      value: cdktn.stringToHclTerraform(struct!.keyVaultId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     negotiate_client_certificate: {
-      value: cdktf.booleanToHclTerraform(struct!.negotiateClientCertificate),
+      value: cdktn.booleanToHclTerraform(struct!.negotiateClientCertificate),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     ssl_keyvault_identity_client_id: {
-      value: cdktf.stringToHclTerraform(struct!.sslKeyvaultIdentityClientId),
+      value: cdktn.stringToHclTerraform(struct!.sslKeyvaultIdentityClientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2381,9 +2381,9 @@ export function apiManagementHostnameConfigurationScmToHclTerraform(struct?: Api
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementHostnameConfigurationScmOutputReference extends cdktf.ComplexObject {
+export class ApiManagementHostnameConfigurationScmOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2391,11 +2391,11 @@ export class ApiManagementHostnameConfigurationScmOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApiManagementHostnameConfigurationScm | cdktf.IResolvable | undefined {
+  public get internalValue(): ApiManagementHostnameConfigurationScm | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2432,7 +2432,7 @@ export class ApiManagementHostnameConfigurationScmOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApiManagementHostnameConfigurationScm | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApiManagementHostnameConfigurationScm | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2444,7 +2444,7 @@ export class ApiManagementHostnameConfigurationScmOutputReference extends cdktf.
       this._negotiateClientCertificate = undefined;
       this._sslKeyvaultIdentityClientId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2554,11 +2554,11 @@ export class ApiManagementHostnameConfigurationScmOutputReference extends cdktf.
   }
 
   // negotiate_client_certificate - computed: false, optional: true, required: false
-  private _negotiateClientCertificate?: boolean | cdktf.IResolvable; 
+  private _negotiateClientCertificate?: boolean | cdktn.IResolvable; 
   public get negotiateClientCertificate() {
     return this.getBooleanAttribute('negotiate_client_certificate');
   }
-  public set negotiateClientCertificate(value: boolean | cdktf.IResolvable) {
+  public set negotiateClientCertificate(value: boolean | cdktn.IResolvable) {
     this._negotiateClientCertificate = value;
   }
   public resetNegotiateClientCertificate() {
@@ -2596,15 +2596,15 @@ export class ApiManagementHostnameConfigurationScmOutputReference extends cdktf.
   }
 }
 
-export class ApiManagementHostnameConfigurationScmList extends cdktf.ComplexList {
-  public internalValue? : ApiManagementHostnameConfigurationScm[] | cdktf.IResolvable
+export class ApiManagementHostnameConfigurationScmList extends cdktn.ComplexList {
+  public internalValue? : ApiManagementHostnameConfigurationScm[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2621,80 +2621,80 @@ export interface ApiManagementHostnameConfiguration {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#developer_portal ApiManagement#developer_portal}
   */
-  readonly developerPortal?: ApiManagementHostnameConfigurationDeveloperPortal[] | cdktf.IResolvable;
+  readonly developerPortal?: ApiManagementHostnameConfigurationDeveloperPortal[] | cdktn.IResolvable;
   /**
   * management block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#management ApiManagement#management}
   */
-  readonly management?: ApiManagementHostnameConfigurationManagement[] | cdktf.IResolvable;
+  readonly management?: ApiManagementHostnameConfigurationManagement[] | cdktn.IResolvable;
   /**
   * portal block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#portal ApiManagement#portal}
   */
-  readonly portal?: ApiManagementHostnameConfigurationPortal[] | cdktf.IResolvable;
+  readonly portal?: ApiManagementHostnameConfigurationPortal[] | cdktn.IResolvable;
   /**
   * proxy block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#proxy ApiManagement#proxy}
   */
-  readonly proxy?: ApiManagementHostnameConfigurationProxy[] | cdktf.IResolvable;
+  readonly proxy?: ApiManagementHostnameConfigurationProxy[] | cdktn.IResolvable;
   /**
   * scm block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#scm ApiManagement#scm}
   */
-  readonly scm?: ApiManagementHostnameConfigurationScm[] | cdktf.IResolvable;
+  readonly scm?: ApiManagementHostnameConfigurationScm[] | cdktn.IResolvable;
 }
 
 export function apiManagementHostnameConfigurationToTerraform(struct?: ApiManagementHostnameConfigurationOutputReference | ApiManagementHostnameConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    developer_portal: cdktf.listMapper(apiManagementHostnameConfigurationDeveloperPortalToTerraform, true)(struct!.developerPortal),
-    management: cdktf.listMapper(apiManagementHostnameConfigurationManagementToTerraform, true)(struct!.management),
-    portal: cdktf.listMapper(apiManagementHostnameConfigurationPortalToTerraform, true)(struct!.portal),
-    proxy: cdktf.listMapper(apiManagementHostnameConfigurationProxyToTerraform, true)(struct!.proxy),
-    scm: cdktf.listMapper(apiManagementHostnameConfigurationScmToTerraform, true)(struct!.scm),
+    developer_portal: cdktn.listMapper(apiManagementHostnameConfigurationDeveloperPortalToTerraform, true)(struct!.developerPortal),
+    management: cdktn.listMapper(apiManagementHostnameConfigurationManagementToTerraform, true)(struct!.management),
+    portal: cdktn.listMapper(apiManagementHostnameConfigurationPortalToTerraform, true)(struct!.portal),
+    proxy: cdktn.listMapper(apiManagementHostnameConfigurationProxyToTerraform, true)(struct!.proxy),
+    scm: cdktn.listMapper(apiManagementHostnameConfigurationScmToTerraform, true)(struct!.scm),
   }
 }
 
 
 export function apiManagementHostnameConfigurationToHclTerraform(struct?: ApiManagementHostnameConfigurationOutputReference | ApiManagementHostnameConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     developer_portal: {
-      value: cdktf.listMapperHcl(apiManagementHostnameConfigurationDeveloperPortalToHclTerraform, true)(struct!.developerPortal),
+      value: cdktn.listMapperHcl(apiManagementHostnameConfigurationDeveloperPortalToHclTerraform, true)(struct!.developerPortal),
       isBlock: true,
       type: "list",
       storageClassType: "ApiManagementHostnameConfigurationDeveloperPortalList",
     },
     management: {
-      value: cdktf.listMapperHcl(apiManagementHostnameConfigurationManagementToHclTerraform, true)(struct!.management),
+      value: cdktn.listMapperHcl(apiManagementHostnameConfigurationManagementToHclTerraform, true)(struct!.management),
       isBlock: true,
       type: "list",
       storageClassType: "ApiManagementHostnameConfigurationManagementList",
     },
     portal: {
-      value: cdktf.listMapperHcl(apiManagementHostnameConfigurationPortalToHclTerraform, true)(struct!.portal),
+      value: cdktn.listMapperHcl(apiManagementHostnameConfigurationPortalToHclTerraform, true)(struct!.portal),
       isBlock: true,
       type: "list",
       storageClassType: "ApiManagementHostnameConfigurationPortalList",
     },
     proxy: {
-      value: cdktf.listMapperHcl(apiManagementHostnameConfigurationProxyToHclTerraform, true)(struct!.proxy),
+      value: cdktn.listMapperHcl(apiManagementHostnameConfigurationProxyToHclTerraform, true)(struct!.proxy),
       isBlock: true,
       type: "list",
       storageClassType: "ApiManagementHostnameConfigurationProxyList",
     },
     scm: {
-      value: cdktf.listMapperHcl(apiManagementHostnameConfigurationScmToHclTerraform, true)(struct!.scm),
+      value: cdktn.listMapperHcl(apiManagementHostnameConfigurationScmToHclTerraform, true)(struct!.scm),
       isBlock: true,
       type: "list",
       storageClassType: "ApiManagementHostnameConfigurationScmList",
@@ -2705,14 +2705,14 @@ export function apiManagementHostnameConfigurationToHclTerraform(struct?: ApiMan
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementHostnameConfigurationOutputReference extends cdktf.ComplexObject {
+export class ApiManagementHostnameConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2766,7 +2766,7 @@ export class ApiManagementHostnameConfigurationOutputReference extends cdktf.Com
   public get developerPortal() {
     return this._developerPortal;
   }
-  public putDeveloperPortal(value: ApiManagementHostnameConfigurationDeveloperPortal[] | cdktf.IResolvable) {
+  public putDeveloperPortal(value: ApiManagementHostnameConfigurationDeveloperPortal[] | cdktn.IResolvable) {
     this._developerPortal.internalValue = value;
   }
   public resetDeveloperPortal() {
@@ -2782,7 +2782,7 @@ export class ApiManagementHostnameConfigurationOutputReference extends cdktf.Com
   public get management() {
     return this._management;
   }
-  public putManagement(value: ApiManagementHostnameConfigurationManagement[] | cdktf.IResolvable) {
+  public putManagement(value: ApiManagementHostnameConfigurationManagement[] | cdktn.IResolvable) {
     this._management.internalValue = value;
   }
   public resetManagement() {
@@ -2798,7 +2798,7 @@ export class ApiManagementHostnameConfigurationOutputReference extends cdktf.Com
   public get portal() {
     return this._portal;
   }
-  public putPortal(value: ApiManagementHostnameConfigurationPortal[] | cdktf.IResolvable) {
+  public putPortal(value: ApiManagementHostnameConfigurationPortal[] | cdktn.IResolvable) {
     this._portal.internalValue = value;
   }
   public resetPortal() {
@@ -2814,7 +2814,7 @@ export class ApiManagementHostnameConfigurationOutputReference extends cdktf.Com
   public get proxy() {
     return this._proxy;
   }
-  public putProxy(value: ApiManagementHostnameConfigurationProxy[] | cdktf.IResolvable) {
+  public putProxy(value: ApiManagementHostnameConfigurationProxy[] | cdktn.IResolvable) {
     this._proxy.internalValue = value;
   }
   public resetProxy() {
@@ -2830,7 +2830,7 @@ export class ApiManagementHostnameConfigurationOutputReference extends cdktf.Com
   public get scm() {
     return this._scm;
   }
-  public putScm(value: ApiManagementHostnameConfigurationScm[] | cdktf.IResolvable) {
+  public putScm(value: ApiManagementHostnameConfigurationScm[] | cdktn.IResolvable) {
     this._scm.internalValue = value;
   }
   public resetScm() {
@@ -2853,31 +2853,31 @@ export interface ApiManagementIdentity {
 }
 
 export function apiManagementIdentityToTerraform(struct?: ApiManagementIdentityOutputReference | ApiManagementIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function apiManagementIdentityToHclTerraform(struct?: ApiManagementIdentityOutputReference | ApiManagementIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2888,14 +2888,14 @@ export function apiManagementIdentityToHclTerraform(struct?: ApiManagementIdenti
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementIdentityOutputReference extends cdktf.ComplexObject {
+export class ApiManagementIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2929,7 +2929,7 @@ export class ApiManagementIdentityOutputReference extends cdktf.ComplexObject {
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -2969,39 +2969,39 @@ export interface ApiManagementProtocols {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#enable_http2 ApiManagement#enable_http2}
   */
-  readonly enableHttp2?: boolean | cdktf.IResolvable;
+  readonly enableHttp2?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#http2_enabled ApiManagement#http2_enabled}
   */
-  readonly http2Enabled?: boolean | cdktf.IResolvable;
+  readonly http2Enabled?: boolean | cdktn.IResolvable;
 }
 
 export function apiManagementProtocolsToTerraform(struct?: ApiManagementProtocolsOutputReference | ApiManagementProtocols): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enable_http2: cdktf.booleanToTerraform(struct!.enableHttp2),
-    http2_enabled: cdktf.booleanToTerraform(struct!.http2Enabled),
+    enable_http2: cdktn.booleanToTerraform(struct!.enableHttp2),
+    http2_enabled: cdktn.booleanToTerraform(struct!.http2Enabled),
   }
 }
 
 
 export function apiManagementProtocolsToHclTerraform(struct?: ApiManagementProtocolsOutputReference | ApiManagementProtocols): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enable_http2: {
-      value: cdktf.booleanToHclTerraform(struct!.enableHttp2),
+      value: cdktn.booleanToHclTerraform(struct!.enableHttp2),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     http2_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.http2Enabled),
+      value: cdktn.booleanToHclTerraform(struct!.http2Enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -3012,14 +3012,14 @@ export function apiManagementProtocolsToHclTerraform(struct?: ApiManagementProto
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementProtocolsOutputReference extends cdktf.ComplexObject {
+export class ApiManagementProtocolsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3051,11 +3051,11 @@ export class ApiManagementProtocolsOutputReference extends cdktf.ComplexObject {
   }
 
   // enable_http2 - computed: true, optional: true, required: false
-  private _enableHttp2?: boolean | cdktf.IResolvable; 
+  private _enableHttp2?: boolean | cdktn.IResolvable; 
   public get enableHttp2() {
     return this.getBooleanAttribute('enable_http2');
   }
-  public set enableHttp2(value: boolean | cdktf.IResolvable) {
+  public set enableHttp2(value: boolean | cdktn.IResolvable) {
     this._enableHttp2 = value;
   }
   public resetEnableHttp2() {
@@ -3067,11 +3067,11 @@ export class ApiManagementProtocolsOutputReference extends cdktf.ComplexObject {
   }
 
   // http2_enabled - computed: true, optional: true, required: false
-  private _http2Enabled?: boolean | cdktf.IResolvable; 
+  private _http2Enabled?: boolean | cdktn.IResolvable; 
   public get http2Enabled() {
     return this.getBooleanAttribute('http2_enabled');
   }
-  public set http2Enabled(value: boolean | cdktf.IResolvable) {
+  public set http2Enabled(value: boolean | cdktn.IResolvable) {
     this._http2Enabled = value;
   }
   public resetHttp2Enabled() {
@@ -3086,270 +3086,270 @@ export interface ApiManagementSecurity {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#backend_ssl30_enabled ApiManagement#backend_ssl30_enabled}
   */
-  readonly backendSsl30Enabled?: boolean | cdktf.IResolvable;
+  readonly backendSsl30Enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#backend_tls10_enabled ApiManagement#backend_tls10_enabled}
   */
-  readonly backendTls10Enabled?: boolean | cdktf.IResolvable;
+  readonly backendTls10Enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#backend_tls11_enabled ApiManagement#backend_tls11_enabled}
   */
-  readonly backendTls11Enabled?: boolean | cdktf.IResolvable;
+  readonly backendTls11Enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#enable_backend_ssl30 ApiManagement#enable_backend_ssl30}
   */
-  readonly enableBackendSsl30?: boolean | cdktf.IResolvable;
+  readonly enableBackendSsl30?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#enable_backend_tls10 ApiManagement#enable_backend_tls10}
   */
-  readonly enableBackendTls10?: boolean | cdktf.IResolvable;
+  readonly enableBackendTls10?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#enable_backend_tls11 ApiManagement#enable_backend_tls11}
   */
-  readonly enableBackendTls11?: boolean | cdktf.IResolvable;
+  readonly enableBackendTls11?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#enable_frontend_ssl30 ApiManagement#enable_frontend_ssl30}
   */
-  readonly enableFrontendSsl30?: boolean | cdktf.IResolvable;
+  readonly enableFrontendSsl30?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#enable_frontend_tls10 ApiManagement#enable_frontend_tls10}
   */
-  readonly enableFrontendTls10?: boolean | cdktf.IResolvable;
+  readonly enableFrontendTls10?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#enable_frontend_tls11 ApiManagement#enable_frontend_tls11}
   */
-  readonly enableFrontendTls11?: boolean | cdktf.IResolvable;
+  readonly enableFrontendTls11?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#frontend_ssl30_enabled ApiManagement#frontend_ssl30_enabled}
   */
-  readonly frontendSsl30Enabled?: boolean | cdktf.IResolvable;
+  readonly frontendSsl30Enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#frontend_tls10_enabled ApiManagement#frontend_tls10_enabled}
   */
-  readonly frontendTls10Enabled?: boolean | cdktf.IResolvable;
+  readonly frontendTls10Enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#frontend_tls11_enabled ApiManagement#frontend_tls11_enabled}
   */
-  readonly frontendTls11Enabled?: boolean | cdktf.IResolvable;
+  readonly frontendTls11Enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#tls_ecdhe_ecdsa_with_aes128_cbc_sha_ciphers_enabled ApiManagement#tls_ecdhe_ecdsa_with_aes128_cbc_sha_ciphers_enabled}
   */
-  readonly tlsEcdheEcdsaWithAes128CbcShaCiphersEnabled?: boolean | cdktf.IResolvable;
+  readonly tlsEcdheEcdsaWithAes128CbcShaCiphersEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#tls_ecdhe_ecdsa_with_aes256_cbc_sha_ciphers_enabled ApiManagement#tls_ecdhe_ecdsa_with_aes256_cbc_sha_ciphers_enabled}
   */
-  readonly tlsEcdheEcdsaWithAes256CbcShaCiphersEnabled?: boolean | cdktf.IResolvable;
+  readonly tlsEcdheEcdsaWithAes256CbcShaCiphersEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#tls_ecdhe_rsa_with_aes128_cbc_sha_ciphers_enabled ApiManagement#tls_ecdhe_rsa_with_aes128_cbc_sha_ciphers_enabled}
   */
-  readonly tlsEcdheRsaWithAes128CbcShaCiphersEnabled?: boolean | cdktf.IResolvable;
+  readonly tlsEcdheRsaWithAes128CbcShaCiphersEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#tls_ecdhe_rsa_with_aes256_cbc_sha_ciphers_enabled ApiManagement#tls_ecdhe_rsa_with_aes256_cbc_sha_ciphers_enabled}
   */
-  readonly tlsEcdheRsaWithAes256CbcShaCiphersEnabled?: boolean | cdktf.IResolvable;
+  readonly tlsEcdheRsaWithAes256CbcShaCiphersEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#tls_rsa_with_aes128_cbc_sha256_ciphers_enabled ApiManagement#tls_rsa_with_aes128_cbc_sha256_ciphers_enabled}
   */
-  readonly tlsRsaWithAes128CbcSha256CiphersEnabled?: boolean | cdktf.IResolvable;
+  readonly tlsRsaWithAes128CbcSha256CiphersEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#tls_rsa_with_aes128_cbc_sha_ciphers_enabled ApiManagement#tls_rsa_with_aes128_cbc_sha_ciphers_enabled}
   */
-  readonly tlsRsaWithAes128CbcShaCiphersEnabled?: boolean | cdktf.IResolvable;
+  readonly tlsRsaWithAes128CbcShaCiphersEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#tls_rsa_with_aes128_gcm_sha256_ciphers_enabled ApiManagement#tls_rsa_with_aes128_gcm_sha256_ciphers_enabled}
   */
-  readonly tlsRsaWithAes128GcmSha256CiphersEnabled?: boolean | cdktf.IResolvable;
+  readonly tlsRsaWithAes128GcmSha256CiphersEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#tls_rsa_with_aes256_cbc_sha256_ciphers_enabled ApiManagement#tls_rsa_with_aes256_cbc_sha256_ciphers_enabled}
   */
-  readonly tlsRsaWithAes256CbcSha256CiphersEnabled?: boolean | cdktf.IResolvable;
+  readonly tlsRsaWithAes256CbcSha256CiphersEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#tls_rsa_with_aes256_cbc_sha_ciphers_enabled ApiManagement#tls_rsa_with_aes256_cbc_sha_ciphers_enabled}
   */
-  readonly tlsRsaWithAes256CbcShaCiphersEnabled?: boolean | cdktf.IResolvable;
+  readonly tlsRsaWithAes256CbcShaCiphersEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#tls_rsa_with_aes256_gcm_sha384_ciphers_enabled ApiManagement#tls_rsa_with_aes256_gcm_sha384_ciphers_enabled}
   */
-  readonly tlsRsaWithAes256GcmSha384CiphersEnabled?: boolean | cdktf.IResolvable;
+  readonly tlsRsaWithAes256GcmSha384CiphersEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#triple_des_ciphers_enabled ApiManagement#triple_des_ciphers_enabled}
   */
-  readonly tripleDesCiphersEnabled?: boolean | cdktf.IResolvable;
+  readonly tripleDesCiphersEnabled?: boolean | cdktn.IResolvable;
 }
 
 export function apiManagementSecurityToTerraform(struct?: ApiManagementSecurityOutputReference | ApiManagementSecurity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    backend_ssl30_enabled: cdktf.booleanToTerraform(struct!.backendSsl30Enabled),
-    backend_tls10_enabled: cdktf.booleanToTerraform(struct!.backendTls10Enabled),
-    backend_tls11_enabled: cdktf.booleanToTerraform(struct!.backendTls11Enabled),
-    enable_backend_ssl30: cdktf.booleanToTerraform(struct!.enableBackendSsl30),
-    enable_backend_tls10: cdktf.booleanToTerraform(struct!.enableBackendTls10),
-    enable_backend_tls11: cdktf.booleanToTerraform(struct!.enableBackendTls11),
-    enable_frontend_ssl30: cdktf.booleanToTerraform(struct!.enableFrontendSsl30),
-    enable_frontend_tls10: cdktf.booleanToTerraform(struct!.enableFrontendTls10),
-    enable_frontend_tls11: cdktf.booleanToTerraform(struct!.enableFrontendTls11),
-    frontend_ssl30_enabled: cdktf.booleanToTerraform(struct!.frontendSsl30Enabled),
-    frontend_tls10_enabled: cdktf.booleanToTerraform(struct!.frontendTls10Enabled),
-    frontend_tls11_enabled: cdktf.booleanToTerraform(struct!.frontendTls11Enabled),
-    tls_ecdhe_ecdsa_with_aes128_cbc_sha_ciphers_enabled: cdktf.booleanToTerraform(struct!.tlsEcdheEcdsaWithAes128CbcShaCiphersEnabled),
-    tls_ecdhe_ecdsa_with_aes256_cbc_sha_ciphers_enabled: cdktf.booleanToTerraform(struct!.tlsEcdheEcdsaWithAes256CbcShaCiphersEnabled),
-    tls_ecdhe_rsa_with_aes128_cbc_sha_ciphers_enabled: cdktf.booleanToTerraform(struct!.tlsEcdheRsaWithAes128CbcShaCiphersEnabled),
-    tls_ecdhe_rsa_with_aes256_cbc_sha_ciphers_enabled: cdktf.booleanToTerraform(struct!.tlsEcdheRsaWithAes256CbcShaCiphersEnabled),
-    tls_rsa_with_aes128_cbc_sha256_ciphers_enabled: cdktf.booleanToTerraform(struct!.tlsRsaWithAes128CbcSha256CiphersEnabled),
-    tls_rsa_with_aes128_cbc_sha_ciphers_enabled: cdktf.booleanToTerraform(struct!.tlsRsaWithAes128CbcShaCiphersEnabled),
-    tls_rsa_with_aes128_gcm_sha256_ciphers_enabled: cdktf.booleanToTerraform(struct!.tlsRsaWithAes128GcmSha256CiphersEnabled),
-    tls_rsa_with_aes256_cbc_sha256_ciphers_enabled: cdktf.booleanToTerraform(struct!.tlsRsaWithAes256CbcSha256CiphersEnabled),
-    tls_rsa_with_aes256_cbc_sha_ciphers_enabled: cdktf.booleanToTerraform(struct!.tlsRsaWithAes256CbcShaCiphersEnabled),
-    tls_rsa_with_aes256_gcm_sha384_ciphers_enabled: cdktf.booleanToTerraform(struct!.tlsRsaWithAes256GcmSha384CiphersEnabled),
-    triple_des_ciphers_enabled: cdktf.booleanToTerraform(struct!.tripleDesCiphersEnabled),
+    backend_ssl30_enabled: cdktn.booleanToTerraform(struct!.backendSsl30Enabled),
+    backend_tls10_enabled: cdktn.booleanToTerraform(struct!.backendTls10Enabled),
+    backend_tls11_enabled: cdktn.booleanToTerraform(struct!.backendTls11Enabled),
+    enable_backend_ssl30: cdktn.booleanToTerraform(struct!.enableBackendSsl30),
+    enable_backend_tls10: cdktn.booleanToTerraform(struct!.enableBackendTls10),
+    enable_backend_tls11: cdktn.booleanToTerraform(struct!.enableBackendTls11),
+    enable_frontend_ssl30: cdktn.booleanToTerraform(struct!.enableFrontendSsl30),
+    enable_frontend_tls10: cdktn.booleanToTerraform(struct!.enableFrontendTls10),
+    enable_frontend_tls11: cdktn.booleanToTerraform(struct!.enableFrontendTls11),
+    frontend_ssl30_enabled: cdktn.booleanToTerraform(struct!.frontendSsl30Enabled),
+    frontend_tls10_enabled: cdktn.booleanToTerraform(struct!.frontendTls10Enabled),
+    frontend_tls11_enabled: cdktn.booleanToTerraform(struct!.frontendTls11Enabled),
+    tls_ecdhe_ecdsa_with_aes128_cbc_sha_ciphers_enabled: cdktn.booleanToTerraform(struct!.tlsEcdheEcdsaWithAes128CbcShaCiphersEnabled),
+    tls_ecdhe_ecdsa_with_aes256_cbc_sha_ciphers_enabled: cdktn.booleanToTerraform(struct!.tlsEcdheEcdsaWithAes256CbcShaCiphersEnabled),
+    tls_ecdhe_rsa_with_aes128_cbc_sha_ciphers_enabled: cdktn.booleanToTerraform(struct!.tlsEcdheRsaWithAes128CbcShaCiphersEnabled),
+    tls_ecdhe_rsa_with_aes256_cbc_sha_ciphers_enabled: cdktn.booleanToTerraform(struct!.tlsEcdheRsaWithAes256CbcShaCiphersEnabled),
+    tls_rsa_with_aes128_cbc_sha256_ciphers_enabled: cdktn.booleanToTerraform(struct!.tlsRsaWithAes128CbcSha256CiphersEnabled),
+    tls_rsa_with_aes128_cbc_sha_ciphers_enabled: cdktn.booleanToTerraform(struct!.tlsRsaWithAes128CbcShaCiphersEnabled),
+    tls_rsa_with_aes128_gcm_sha256_ciphers_enabled: cdktn.booleanToTerraform(struct!.tlsRsaWithAes128GcmSha256CiphersEnabled),
+    tls_rsa_with_aes256_cbc_sha256_ciphers_enabled: cdktn.booleanToTerraform(struct!.tlsRsaWithAes256CbcSha256CiphersEnabled),
+    tls_rsa_with_aes256_cbc_sha_ciphers_enabled: cdktn.booleanToTerraform(struct!.tlsRsaWithAes256CbcShaCiphersEnabled),
+    tls_rsa_with_aes256_gcm_sha384_ciphers_enabled: cdktn.booleanToTerraform(struct!.tlsRsaWithAes256GcmSha384CiphersEnabled),
+    triple_des_ciphers_enabled: cdktn.booleanToTerraform(struct!.tripleDesCiphersEnabled),
   }
 }
 
 
 export function apiManagementSecurityToHclTerraform(struct?: ApiManagementSecurityOutputReference | ApiManagementSecurity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     backend_ssl30_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.backendSsl30Enabled),
+      value: cdktn.booleanToHclTerraform(struct!.backendSsl30Enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     backend_tls10_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.backendTls10Enabled),
+      value: cdktn.booleanToHclTerraform(struct!.backendTls10Enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     backend_tls11_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.backendTls11Enabled),
+      value: cdktn.booleanToHclTerraform(struct!.backendTls11Enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enable_backend_ssl30: {
-      value: cdktf.booleanToHclTerraform(struct!.enableBackendSsl30),
+      value: cdktn.booleanToHclTerraform(struct!.enableBackendSsl30),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enable_backend_tls10: {
-      value: cdktf.booleanToHclTerraform(struct!.enableBackendTls10),
+      value: cdktn.booleanToHclTerraform(struct!.enableBackendTls10),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enable_backend_tls11: {
-      value: cdktf.booleanToHclTerraform(struct!.enableBackendTls11),
+      value: cdktn.booleanToHclTerraform(struct!.enableBackendTls11),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enable_frontend_ssl30: {
-      value: cdktf.booleanToHclTerraform(struct!.enableFrontendSsl30),
+      value: cdktn.booleanToHclTerraform(struct!.enableFrontendSsl30),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enable_frontend_tls10: {
-      value: cdktf.booleanToHclTerraform(struct!.enableFrontendTls10),
+      value: cdktn.booleanToHclTerraform(struct!.enableFrontendTls10),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enable_frontend_tls11: {
-      value: cdktf.booleanToHclTerraform(struct!.enableFrontendTls11),
+      value: cdktn.booleanToHclTerraform(struct!.enableFrontendTls11),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     frontend_ssl30_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.frontendSsl30Enabled),
+      value: cdktn.booleanToHclTerraform(struct!.frontendSsl30Enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     frontend_tls10_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.frontendTls10Enabled),
+      value: cdktn.booleanToHclTerraform(struct!.frontendTls10Enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     frontend_tls11_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.frontendTls11Enabled),
+      value: cdktn.booleanToHclTerraform(struct!.frontendTls11Enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     tls_ecdhe_ecdsa_with_aes128_cbc_sha_ciphers_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.tlsEcdheEcdsaWithAes128CbcShaCiphersEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.tlsEcdheEcdsaWithAes128CbcShaCiphersEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     tls_ecdhe_ecdsa_with_aes256_cbc_sha_ciphers_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.tlsEcdheEcdsaWithAes256CbcShaCiphersEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.tlsEcdheEcdsaWithAes256CbcShaCiphersEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     tls_ecdhe_rsa_with_aes128_cbc_sha_ciphers_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.tlsEcdheRsaWithAes128CbcShaCiphersEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.tlsEcdheRsaWithAes128CbcShaCiphersEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     tls_ecdhe_rsa_with_aes256_cbc_sha_ciphers_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.tlsEcdheRsaWithAes256CbcShaCiphersEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.tlsEcdheRsaWithAes256CbcShaCiphersEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     tls_rsa_with_aes128_cbc_sha256_ciphers_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.tlsRsaWithAes128CbcSha256CiphersEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.tlsRsaWithAes128CbcSha256CiphersEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     tls_rsa_with_aes128_cbc_sha_ciphers_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.tlsRsaWithAes128CbcShaCiphersEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.tlsRsaWithAes128CbcShaCiphersEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     tls_rsa_with_aes128_gcm_sha256_ciphers_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.tlsRsaWithAes128GcmSha256CiphersEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.tlsRsaWithAes128GcmSha256CiphersEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     tls_rsa_with_aes256_cbc_sha256_ciphers_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.tlsRsaWithAes256CbcSha256CiphersEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.tlsRsaWithAes256CbcSha256CiphersEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     tls_rsa_with_aes256_cbc_sha_ciphers_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.tlsRsaWithAes256CbcShaCiphersEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.tlsRsaWithAes256CbcShaCiphersEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     tls_rsa_with_aes256_gcm_sha384_ciphers_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.tlsRsaWithAes256GcmSha384CiphersEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.tlsRsaWithAes256GcmSha384CiphersEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     triple_des_ciphers_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.tripleDesCiphersEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.tripleDesCiphersEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -3360,14 +3360,14 @@ export function apiManagementSecurityToHclTerraform(struct?: ApiManagementSecuri
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementSecurityOutputReference extends cdktf.ComplexObject {
+export class ApiManagementSecurityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3525,11 +3525,11 @@ export class ApiManagementSecurityOutputReference extends cdktf.ComplexObject {
   }
 
   // backend_ssl30_enabled - computed: true, optional: true, required: false
-  private _backendSsl30Enabled?: boolean | cdktf.IResolvable; 
+  private _backendSsl30Enabled?: boolean | cdktn.IResolvable; 
   public get backendSsl30Enabled() {
     return this.getBooleanAttribute('backend_ssl30_enabled');
   }
-  public set backendSsl30Enabled(value: boolean | cdktf.IResolvable) {
+  public set backendSsl30Enabled(value: boolean | cdktn.IResolvable) {
     this._backendSsl30Enabled = value;
   }
   public resetBackendSsl30Enabled() {
@@ -3541,11 +3541,11 @@ export class ApiManagementSecurityOutputReference extends cdktf.ComplexObject {
   }
 
   // backend_tls10_enabled - computed: true, optional: true, required: false
-  private _backendTls10Enabled?: boolean | cdktf.IResolvable; 
+  private _backendTls10Enabled?: boolean | cdktn.IResolvable; 
   public get backendTls10Enabled() {
     return this.getBooleanAttribute('backend_tls10_enabled');
   }
-  public set backendTls10Enabled(value: boolean | cdktf.IResolvable) {
+  public set backendTls10Enabled(value: boolean | cdktn.IResolvable) {
     this._backendTls10Enabled = value;
   }
   public resetBackendTls10Enabled() {
@@ -3557,11 +3557,11 @@ export class ApiManagementSecurityOutputReference extends cdktf.ComplexObject {
   }
 
   // backend_tls11_enabled - computed: true, optional: true, required: false
-  private _backendTls11Enabled?: boolean | cdktf.IResolvable; 
+  private _backendTls11Enabled?: boolean | cdktn.IResolvable; 
   public get backendTls11Enabled() {
     return this.getBooleanAttribute('backend_tls11_enabled');
   }
-  public set backendTls11Enabled(value: boolean | cdktf.IResolvable) {
+  public set backendTls11Enabled(value: boolean | cdktn.IResolvable) {
     this._backendTls11Enabled = value;
   }
   public resetBackendTls11Enabled() {
@@ -3573,11 +3573,11 @@ export class ApiManagementSecurityOutputReference extends cdktf.ComplexObject {
   }
 
   // enable_backend_ssl30 - computed: true, optional: true, required: false
-  private _enableBackendSsl30?: boolean | cdktf.IResolvable; 
+  private _enableBackendSsl30?: boolean | cdktn.IResolvable; 
   public get enableBackendSsl30() {
     return this.getBooleanAttribute('enable_backend_ssl30');
   }
-  public set enableBackendSsl30(value: boolean | cdktf.IResolvable) {
+  public set enableBackendSsl30(value: boolean | cdktn.IResolvable) {
     this._enableBackendSsl30 = value;
   }
   public resetEnableBackendSsl30() {
@@ -3589,11 +3589,11 @@ export class ApiManagementSecurityOutputReference extends cdktf.ComplexObject {
   }
 
   // enable_backend_tls10 - computed: true, optional: true, required: false
-  private _enableBackendTls10?: boolean | cdktf.IResolvable; 
+  private _enableBackendTls10?: boolean | cdktn.IResolvable; 
   public get enableBackendTls10() {
     return this.getBooleanAttribute('enable_backend_tls10');
   }
-  public set enableBackendTls10(value: boolean | cdktf.IResolvable) {
+  public set enableBackendTls10(value: boolean | cdktn.IResolvable) {
     this._enableBackendTls10 = value;
   }
   public resetEnableBackendTls10() {
@@ -3605,11 +3605,11 @@ export class ApiManagementSecurityOutputReference extends cdktf.ComplexObject {
   }
 
   // enable_backend_tls11 - computed: true, optional: true, required: false
-  private _enableBackendTls11?: boolean | cdktf.IResolvable; 
+  private _enableBackendTls11?: boolean | cdktn.IResolvable; 
   public get enableBackendTls11() {
     return this.getBooleanAttribute('enable_backend_tls11');
   }
-  public set enableBackendTls11(value: boolean | cdktf.IResolvable) {
+  public set enableBackendTls11(value: boolean | cdktn.IResolvable) {
     this._enableBackendTls11 = value;
   }
   public resetEnableBackendTls11() {
@@ -3621,11 +3621,11 @@ export class ApiManagementSecurityOutputReference extends cdktf.ComplexObject {
   }
 
   // enable_frontend_ssl30 - computed: true, optional: true, required: false
-  private _enableFrontendSsl30?: boolean | cdktf.IResolvable; 
+  private _enableFrontendSsl30?: boolean | cdktn.IResolvable; 
   public get enableFrontendSsl30() {
     return this.getBooleanAttribute('enable_frontend_ssl30');
   }
-  public set enableFrontendSsl30(value: boolean | cdktf.IResolvable) {
+  public set enableFrontendSsl30(value: boolean | cdktn.IResolvable) {
     this._enableFrontendSsl30 = value;
   }
   public resetEnableFrontendSsl30() {
@@ -3637,11 +3637,11 @@ export class ApiManagementSecurityOutputReference extends cdktf.ComplexObject {
   }
 
   // enable_frontend_tls10 - computed: true, optional: true, required: false
-  private _enableFrontendTls10?: boolean | cdktf.IResolvable; 
+  private _enableFrontendTls10?: boolean | cdktn.IResolvable; 
   public get enableFrontendTls10() {
     return this.getBooleanAttribute('enable_frontend_tls10');
   }
-  public set enableFrontendTls10(value: boolean | cdktf.IResolvable) {
+  public set enableFrontendTls10(value: boolean | cdktn.IResolvable) {
     this._enableFrontendTls10 = value;
   }
   public resetEnableFrontendTls10() {
@@ -3653,11 +3653,11 @@ export class ApiManagementSecurityOutputReference extends cdktf.ComplexObject {
   }
 
   // enable_frontend_tls11 - computed: true, optional: true, required: false
-  private _enableFrontendTls11?: boolean | cdktf.IResolvable; 
+  private _enableFrontendTls11?: boolean | cdktn.IResolvable; 
   public get enableFrontendTls11() {
     return this.getBooleanAttribute('enable_frontend_tls11');
   }
-  public set enableFrontendTls11(value: boolean | cdktf.IResolvable) {
+  public set enableFrontendTls11(value: boolean | cdktn.IResolvable) {
     this._enableFrontendTls11 = value;
   }
   public resetEnableFrontendTls11() {
@@ -3669,11 +3669,11 @@ export class ApiManagementSecurityOutputReference extends cdktf.ComplexObject {
   }
 
   // frontend_ssl30_enabled - computed: true, optional: true, required: false
-  private _frontendSsl30Enabled?: boolean | cdktf.IResolvable; 
+  private _frontendSsl30Enabled?: boolean | cdktn.IResolvable; 
   public get frontendSsl30Enabled() {
     return this.getBooleanAttribute('frontend_ssl30_enabled');
   }
-  public set frontendSsl30Enabled(value: boolean | cdktf.IResolvable) {
+  public set frontendSsl30Enabled(value: boolean | cdktn.IResolvable) {
     this._frontendSsl30Enabled = value;
   }
   public resetFrontendSsl30Enabled() {
@@ -3685,11 +3685,11 @@ export class ApiManagementSecurityOutputReference extends cdktf.ComplexObject {
   }
 
   // frontend_tls10_enabled - computed: true, optional: true, required: false
-  private _frontendTls10Enabled?: boolean | cdktf.IResolvable; 
+  private _frontendTls10Enabled?: boolean | cdktn.IResolvable; 
   public get frontendTls10Enabled() {
     return this.getBooleanAttribute('frontend_tls10_enabled');
   }
-  public set frontendTls10Enabled(value: boolean | cdktf.IResolvable) {
+  public set frontendTls10Enabled(value: boolean | cdktn.IResolvable) {
     this._frontendTls10Enabled = value;
   }
   public resetFrontendTls10Enabled() {
@@ -3701,11 +3701,11 @@ export class ApiManagementSecurityOutputReference extends cdktf.ComplexObject {
   }
 
   // frontend_tls11_enabled - computed: true, optional: true, required: false
-  private _frontendTls11Enabled?: boolean | cdktf.IResolvable; 
+  private _frontendTls11Enabled?: boolean | cdktn.IResolvable; 
   public get frontendTls11Enabled() {
     return this.getBooleanAttribute('frontend_tls11_enabled');
   }
-  public set frontendTls11Enabled(value: boolean | cdktf.IResolvable) {
+  public set frontendTls11Enabled(value: boolean | cdktn.IResolvable) {
     this._frontendTls11Enabled = value;
   }
   public resetFrontendTls11Enabled() {
@@ -3717,11 +3717,11 @@ export class ApiManagementSecurityOutputReference extends cdktf.ComplexObject {
   }
 
   // tls_ecdhe_ecdsa_with_aes128_cbc_sha_ciphers_enabled - computed: false, optional: true, required: false
-  private _tlsEcdheEcdsaWithAes128CbcShaCiphersEnabled?: boolean | cdktf.IResolvable; 
+  private _tlsEcdheEcdsaWithAes128CbcShaCiphersEnabled?: boolean | cdktn.IResolvable; 
   public get tlsEcdheEcdsaWithAes128CbcShaCiphersEnabled() {
     return this.getBooleanAttribute('tls_ecdhe_ecdsa_with_aes128_cbc_sha_ciphers_enabled');
   }
-  public set tlsEcdheEcdsaWithAes128CbcShaCiphersEnabled(value: boolean | cdktf.IResolvable) {
+  public set tlsEcdheEcdsaWithAes128CbcShaCiphersEnabled(value: boolean | cdktn.IResolvable) {
     this._tlsEcdheEcdsaWithAes128CbcShaCiphersEnabled = value;
   }
   public resetTlsEcdheEcdsaWithAes128CbcShaCiphersEnabled() {
@@ -3733,11 +3733,11 @@ export class ApiManagementSecurityOutputReference extends cdktf.ComplexObject {
   }
 
   // tls_ecdhe_ecdsa_with_aes256_cbc_sha_ciphers_enabled - computed: false, optional: true, required: false
-  private _tlsEcdheEcdsaWithAes256CbcShaCiphersEnabled?: boolean | cdktf.IResolvable; 
+  private _tlsEcdheEcdsaWithAes256CbcShaCiphersEnabled?: boolean | cdktn.IResolvable; 
   public get tlsEcdheEcdsaWithAes256CbcShaCiphersEnabled() {
     return this.getBooleanAttribute('tls_ecdhe_ecdsa_with_aes256_cbc_sha_ciphers_enabled');
   }
-  public set tlsEcdheEcdsaWithAes256CbcShaCiphersEnabled(value: boolean | cdktf.IResolvable) {
+  public set tlsEcdheEcdsaWithAes256CbcShaCiphersEnabled(value: boolean | cdktn.IResolvable) {
     this._tlsEcdheEcdsaWithAes256CbcShaCiphersEnabled = value;
   }
   public resetTlsEcdheEcdsaWithAes256CbcShaCiphersEnabled() {
@@ -3749,11 +3749,11 @@ export class ApiManagementSecurityOutputReference extends cdktf.ComplexObject {
   }
 
   // tls_ecdhe_rsa_with_aes128_cbc_sha_ciphers_enabled - computed: false, optional: true, required: false
-  private _tlsEcdheRsaWithAes128CbcShaCiphersEnabled?: boolean | cdktf.IResolvable; 
+  private _tlsEcdheRsaWithAes128CbcShaCiphersEnabled?: boolean | cdktn.IResolvable; 
   public get tlsEcdheRsaWithAes128CbcShaCiphersEnabled() {
     return this.getBooleanAttribute('tls_ecdhe_rsa_with_aes128_cbc_sha_ciphers_enabled');
   }
-  public set tlsEcdheRsaWithAes128CbcShaCiphersEnabled(value: boolean | cdktf.IResolvable) {
+  public set tlsEcdheRsaWithAes128CbcShaCiphersEnabled(value: boolean | cdktn.IResolvable) {
     this._tlsEcdheRsaWithAes128CbcShaCiphersEnabled = value;
   }
   public resetTlsEcdheRsaWithAes128CbcShaCiphersEnabled() {
@@ -3765,11 +3765,11 @@ export class ApiManagementSecurityOutputReference extends cdktf.ComplexObject {
   }
 
   // tls_ecdhe_rsa_with_aes256_cbc_sha_ciphers_enabled - computed: false, optional: true, required: false
-  private _tlsEcdheRsaWithAes256CbcShaCiphersEnabled?: boolean | cdktf.IResolvable; 
+  private _tlsEcdheRsaWithAes256CbcShaCiphersEnabled?: boolean | cdktn.IResolvable; 
   public get tlsEcdheRsaWithAes256CbcShaCiphersEnabled() {
     return this.getBooleanAttribute('tls_ecdhe_rsa_with_aes256_cbc_sha_ciphers_enabled');
   }
-  public set tlsEcdheRsaWithAes256CbcShaCiphersEnabled(value: boolean | cdktf.IResolvable) {
+  public set tlsEcdheRsaWithAes256CbcShaCiphersEnabled(value: boolean | cdktn.IResolvable) {
     this._tlsEcdheRsaWithAes256CbcShaCiphersEnabled = value;
   }
   public resetTlsEcdheRsaWithAes256CbcShaCiphersEnabled() {
@@ -3781,11 +3781,11 @@ export class ApiManagementSecurityOutputReference extends cdktf.ComplexObject {
   }
 
   // tls_rsa_with_aes128_cbc_sha256_ciphers_enabled - computed: false, optional: true, required: false
-  private _tlsRsaWithAes128CbcSha256CiphersEnabled?: boolean | cdktf.IResolvable; 
+  private _tlsRsaWithAes128CbcSha256CiphersEnabled?: boolean | cdktn.IResolvable; 
   public get tlsRsaWithAes128CbcSha256CiphersEnabled() {
     return this.getBooleanAttribute('tls_rsa_with_aes128_cbc_sha256_ciphers_enabled');
   }
-  public set tlsRsaWithAes128CbcSha256CiphersEnabled(value: boolean | cdktf.IResolvable) {
+  public set tlsRsaWithAes128CbcSha256CiphersEnabled(value: boolean | cdktn.IResolvable) {
     this._tlsRsaWithAes128CbcSha256CiphersEnabled = value;
   }
   public resetTlsRsaWithAes128CbcSha256CiphersEnabled() {
@@ -3797,11 +3797,11 @@ export class ApiManagementSecurityOutputReference extends cdktf.ComplexObject {
   }
 
   // tls_rsa_with_aes128_cbc_sha_ciphers_enabled - computed: false, optional: true, required: false
-  private _tlsRsaWithAes128CbcShaCiphersEnabled?: boolean | cdktf.IResolvable; 
+  private _tlsRsaWithAes128CbcShaCiphersEnabled?: boolean | cdktn.IResolvable; 
   public get tlsRsaWithAes128CbcShaCiphersEnabled() {
     return this.getBooleanAttribute('tls_rsa_with_aes128_cbc_sha_ciphers_enabled');
   }
-  public set tlsRsaWithAes128CbcShaCiphersEnabled(value: boolean | cdktf.IResolvable) {
+  public set tlsRsaWithAes128CbcShaCiphersEnabled(value: boolean | cdktn.IResolvable) {
     this._tlsRsaWithAes128CbcShaCiphersEnabled = value;
   }
   public resetTlsRsaWithAes128CbcShaCiphersEnabled() {
@@ -3813,11 +3813,11 @@ export class ApiManagementSecurityOutputReference extends cdktf.ComplexObject {
   }
 
   // tls_rsa_with_aes128_gcm_sha256_ciphers_enabled - computed: false, optional: true, required: false
-  private _tlsRsaWithAes128GcmSha256CiphersEnabled?: boolean | cdktf.IResolvable; 
+  private _tlsRsaWithAes128GcmSha256CiphersEnabled?: boolean | cdktn.IResolvable; 
   public get tlsRsaWithAes128GcmSha256CiphersEnabled() {
     return this.getBooleanAttribute('tls_rsa_with_aes128_gcm_sha256_ciphers_enabled');
   }
-  public set tlsRsaWithAes128GcmSha256CiphersEnabled(value: boolean | cdktf.IResolvable) {
+  public set tlsRsaWithAes128GcmSha256CiphersEnabled(value: boolean | cdktn.IResolvable) {
     this._tlsRsaWithAes128GcmSha256CiphersEnabled = value;
   }
   public resetTlsRsaWithAes128GcmSha256CiphersEnabled() {
@@ -3829,11 +3829,11 @@ export class ApiManagementSecurityOutputReference extends cdktf.ComplexObject {
   }
 
   // tls_rsa_with_aes256_cbc_sha256_ciphers_enabled - computed: false, optional: true, required: false
-  private _tlsRsaWithAes256CbcSha256CiphersEnabled?: boolean | cdktf.IResolvable; 
+  private _tlsRsaWithAes256CbcSha256CiphersEnabled?: boolean | cdktn.IResolvable; 
   public get tlsRsaWithAes256CbcSha256CiphersEnabled() {
     return this.getBooleanAttribute('tls_rsa_with_aes256_cbc_sha256_ciphers_enabled');
   }
-  public set tlsRsaWithAes256CbcSha256CiphersEnabled(value: boolean | cdktf.IResolvable) {
+  public set tlsRsaWithAes256CbcSha256CiphersEnabled(value: boolean | cdktn.IResolvable) {
     this._tlsRsaWithAes256CbcSha256CiphersEnabled = value;
   }
   public resetTlsRsaWithAes256CbcSha256CiphersEnabled() {
@@ -3845,11 +3845,11 @@ export class ApiManagementSecurityOutputReference extends cdktf.ComplexObject {
   }
 
   // tls_rsa_with_aes256_cbc_sha_ciphers_enabled - computed: false, optional: true, required: false
-  private _tlsRsaWithAes256CbcShaCiphersEnabled?: boolean | cdktf.IResolvable; 
+  private _tlsRsaWithAes256CbcShaCiphersEnabled?: boolean | cdktn.IResolvable; 
   public get tlsRsaWithAes256CbcShaCiphersEnabled() {
     return this.getBooleanAttribute('tls_rsa_with_aes256_cbc_sha_ciphers_enabled');
   }
-  public set tlsRsaWithAes256CbcShaCiphersEnabled(value: boolean | cdktf.IResolvable) {
+  public set tlsRsaWithAes256CbcShaCiphersEnabled(value: boolean | cdktn.IResolvable) {
     this._tlsRsaWithAes256CbcShaCiphersEnabled = value;
   }
   public resetTlsRsaWithAes256CbcShaCiphersEnabled() {
@@ -3861,11 +3861,11 @@ export class ApiManagementSecurityOutputReference extends cdktf.ComplexObject {
   }
 
   // tls_rsa_with_aes256_gcm_sha384_ciphers_enabled - computed: false, optional: true, required: false
-  private _tlsRsaWithAes256GcmSha384CiphersEnabled?: boolean | cdktf.IResolvable; 
+  private _tlsRsaWithAes256GcmSha384CiphersEnabled?: boolean | cdktn.IResolvable; 
   public get tlsRsaWithAes256GcmSha384CiphersEnabled() {
     return this.getBooleanAttribute('tls_rsa_with_aes256_gcm_sha384_ciphers_enabled');
   }
-  public set tlsRsaWithAes256GcmSha384CiphersEnabled(value: boolean | cdktf.IResolvable) {
+  public set tlsRsaWithAes256GcmSha384CiphersEnabled(value: boolean | cdktn.IResolvable) {
     this._tlsRsaWithAes256GcmSha384CiphersEnabled = value;
   }
   public resetTlsRsaWithAes256GcmSha384CiphersEnabled() {
@@ -3877,11 +3877,11 @@ export class ApiManagementSecurityOutputReference extends cdktf.ComplexObject {
   }
 
   // triple_des_ciphers_enabled - computed: false, optional: true, required: false
-  private _tripleDesCiphersEnabled?: boolean | cdktf.IResolvable; 
+  private _tripleDesCiphersEnabled?: boolean | cdktn.IResolvable; 
   public get tripleDesCiphersEnabled() {
     return this.getBooleanAttribute('triple_des_ciphers_enabled');
   }
-  public set tripleDesCiphersEnabled(value: boolean | cdktf.IResolvable) {
+  public set tripleDesCiphersEnabled(value: boolean | cdktn.IResolvable) {
     this._tripleDesCiphersEnabled = value;
   }
   public resetTripleDesCiphersEnabled() {
@@ -3896,28 +3896,28 @@ export interface ApiManagementSignIn {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#enabled ApiManagement#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
 }
 
 export function apiManagementSignInToTerraform(struct?: ApiManagementSignInOutputReference | ApiManagementSignIn): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
   }
 }
 
 
 export function apiManagementSignInToHclTerraform(struct?: ApiManagementSignInOutputReference | ApiManagementSignIn): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -3928,14 +3928,14 @@ export function apiManagementSignInToHclTerraform(struct?: ApiManagementSignInOu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementSignInOutputReference extends cdktf.ComplexObject {
+export class ApiManagementSignInOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -3961,11 +3961,11 @@ export class ApiManagementSignInOutputReference extends cdktf.ComplexObject {
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -3977,11 +3977,11 @@ export interface ApiManagementSignUpTermsOfService {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#consent_required ApiManagement#consent_required}
   */
-  readonly consentRequired: boolean | cdktf.IResolvable;
+  readonly consentRequired: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#enabled ApiManagement#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#text ApiManagement#text}
   */
@@ -3989,38 +3989,38 @@ export interface ApiManagementSignUpTermsOfService {
 }
 
 export function apiManagementSignUpTermsOfServiceToTerraform(struct?: ApiManagementSignUpTermsOfServiceOutputReference | ApiManagementSignUpTermsOfService): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    consent_required: cdktf.booleanToTerraform(struct!.consentRequired),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    text: cdktf.stringToTerraform(struct!.text),
+    consent_required: cdktn.booleanToTerraform(struct!.consentRequired),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    text: cdktn.stringToTerraform(struct!.text),
   }
 }
 
 
 export function apiManagementSignUpTermsOfServiceToHclTerraform(struct?: ApiManagementSignUpTermsOfServiceOutputReference | ApiManagementSignUpTermsOfService): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     consent_required: {
-      value: cdktf.booleanToHclTerraform(struct!.consentRequired),
+      value: cdktn.booleanToHclTerraform(struct!.consentRequired),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     text: {
-      value: cdktf.stringToHclTerraform(struct!.text),
+      value: cdktn.stringToHclTerraform(struct!.text),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4031,14 +4031,14 @@ export function apiManagementSignUpTermsOfServiceToHclTerraform(struct?: ApiMana
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementSignUpTermsOfServiceOutputReference extends cdktf.ComplexObject {
+export class ApiManagementSignUpTermsOfServiceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4076,11 +4076,11 @@ export class ApiManagementSignUpTermsOfServiceOutputReference extends cdktf.Comp
   }
 
   // consent_required - computed: false, optional: false, required: true
-  private _consentRequired?: boolean | cdktf.IResolvable; 
+  private _consentRequired?: boolean | cdktn.IResolvable; 
   public get consentRequired() {
     return this.getBooleanAttribute('consent_required');
   }
-  public set consentRequired(value: boolean | cdktf.IResolvable) {
+  public set consentRequired(value: boolean | cdktn.IResolvable) {
     this._consentRequired = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -4089,11 +4089,11 @@ export class ApiManagementSignUpTermsOfServiceOutputReference extends cdktf.Comp
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -4121,7 +4121,7 @@ export interface ApiManagementSignUp {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#enabled ApiManagement#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * terms_of_service block
   *
@@ -4131,25 +4131,25 @@ export interface ApiManagementSignUp {
 }
 
 export function apiManagementSignUpToTerraform(struct?: ApiManagementSignUpOutputReference | ApiManagementSignUp): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
     terms_of_service: apiManagementSignUpTermsOfServiceToTerraform(struct!.termsOfService),
   }
 }
 
 
 export function apiManagementSignUpToHclTerraform(struct?: ApiManagementSignUpOutputReference | ApiManagementSignUp): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -4166,14 +4166,14 @@ export function apiManagementSignUpToHclTerraform(struct?: ApiManagementSignUpOu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementSignUpOutputReference extends cdktf.ComplexObject {
+export class ApiManagementSignUpOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4205,11 +4205,11 @@ export class ApiManagementSignUpOutputReference extends cdktf.ComplexObject {
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -4234,28 +4234,28 @@ export interface ApiManagementTenantAccess {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#enabled ApiManagement#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
 }
 
 export function apiManagementTenantAccessToTerraform(struct?: ApiManagementTenantAccessOutputReference | ApiManagementTenantAccess): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
   }
 }
 
 
 export function apiManagementTenantAccessToHclTerraform(struct?: ApiManagementTenantAccessOutputReference | ApiManagementTenantAccess): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -4266,14 +4266,14 @@ export function apiManagementTenantAccessToHclTerraform(struct?: ApiManagementTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementTenantAccessOutputReference extends cdktf.ComplexObject {
+export class ApiManagementTenantAccessOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4299,11 +4299,11 @@ export class ApiManagementTenantAccessOutputReference extends cdktf.ComplexObjec
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -4345,46 +4345,46 @@ export interface ApiManagementTimeouts {
   readonly update?: string;
 }
 
-export function apiManagementTimeoutsToTerraform(struct?: ApiManagementTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementTimeoutsToTerraform(struct?: ApiManagementTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function apiManagementTimeoutsToHclTerraform(struct?: ApiManagementTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementTimeoutsToHclTerraform(struct?: ApiManagementTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4395,19 +4395,19 @@ export function apiManagementTimeoutsToHclTerraform(struct?: ApiManagementTimeou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApiManagementTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApiManagementTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApiManagementTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4432,7 +4432,7 @@ export class ApiManagementTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApiManagementTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApiManagementTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4441,7 +4441,7 @@ export class ApiManagementTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4527,24 +4527,24 @@ export interface ApiManagementVirtualNetworkConfiguration {
 }
 
 export function apiManagementVirtualNetworkConfigurationToTerraform(struct?: ApiManagementVirtualNetworkConfigurationOutputReference | ApiManagementVirtualNetworkConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    subnet_id: cdktf.stringToTerraform(struct!.subnetId),
+    subnet_id: cdktn.stringToTerraform(struct!.subnetId),
   }
 }
 
 
 export function apiManagementVirtualNetworkConfigurationToHclTerraform(struct?: ApiManagementVirtualNetworkConfigurationOutputReference | ApiManagementVirtualNetworkConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     subnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.subnetId),
+      value: cdktn.stringToHclTerraform(struct!.subnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4555,14 +4555,14 @@ export function apiManagementVirtualNetworkConfigurationToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementVirtualNetworkConfigurationOutputReference extends cdktf.ComplexObject {
+export class ApiManagementVirtualNetworkConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -4604,7 +4604,7 @@ export class ApiManagementVirtualNetworkConfigurationOutputReference extends cdk
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management azurerm_api_management}
 */
-export class ApiManagement extends cdktf.TerraformResource {
+export class ApiManagement extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -4615,14 +4615,14 @@ export class ApiManagement extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApiManagement resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApiManagement resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiManagement to import
   * @param importFromId The id of the existing ApiManagement that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiManagement to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_api_management", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_api_management", importId: importFromId, provider });
       }
 
   // ===========
@@ -4687,11 +4687,11 @@ export class ApiManagement extends cdktf.TerraformResource {
   // ==========
 
   // client_certificate_enabled - computed: false, optional: true, required: false
-  private _clientCertificateEnabled?: boolean | cdktf.IResolvable; 
+  private _clientCertificateEnabled?: boolean | cdktn.IResolvable; 
   public get clientCertificateEnabled() {
     return this.getBooleanAttribute('client_certificate_enabled');
   }
-  public set clientCertificateEnabled(value: boolean | cdktf.IResolvable) {
+  public set clientCertificateEnabled(value: boolean | cdktn.IResolvable) {
     this._clientCertificateEnabled = value;
   }
   public resetClientCertificateEnabled() {
@@ -4708,11 +4708,11 @@ export class ApiManagement extends cdktf.TerraformResource {
   }
 
   // gateway_disabled - computed: false, optional: true, required: false
-  private _gatewayDisabled?: boolean | cdktf.IResolvable; 
+  private _gatewayDisabled?: boolean | cdktn.IResolvable; 
   public get gatewayDisabled() {
     return this.getBooleanAttribute('gateway_disabled');
   }
-  public set gatewayDisabled(value: boolean | cdktf.IResolvable) {
+  public set gatewayDisabled(value: boolean | cdktn.IResolvable) {
     this._gatewayDisabled = value;
   }
   public resetGatewayDisabled() {
@@ -4844,11 +4844,11 @@ export class ApiManagement extends cdktf.TerraformResource {
   }
 
   // public_network_access_enabled - computed: false, optional: true, required: false
-  private _publicNetworkAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _publicNetworkAccessEnabled?: boolean | cdktn.IResolvable; 
   public get publicNetworkAccessEnabled() {
     return this.getBooleanAttribute('public_network_access_enabled');
   }
-  public set publicNetworkAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set publicNetworkAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._publicNetworkAccessEnabled = value;
   }
   public resetPublicNetworkAccessEnabled() {
@@ -4951,7 +4951,7 @@ export class ApiManagement extends cdktf.TerraformResource {
   // zones - computed: false, optional: true, required: false
   private _zones?: string[]; 
   public get zones() {
-    return cdktf.Fn.tolist(this.getListAttribute('zones'));
+    return cdktn.Fn.tolist(this.getListAttribute('zones'));
   }
   public set zones(value: string[]) {
     this._zones = value;
@@ -4969,7 +4969,7 @@ export class ApiManagement extends cdktf.TerraformResource {
   public get additionalLocation() {
     return this._additionalLocation;
   }
-  public putAdditionalLocation(value: ApiManagementAdditionalLocation[] | cdktf.IResolvable) {
+  public putAdditionalLocation(value: ApiManagementAdditionalLocation[] | cdktn.IResolvable) {
     this._additionalLocation.internalValue = value;
   }
   public resetAdditionalLocation() {
@@ -4985,7 +4985,7 @@ export class ApiManagement extends cdktf.TerraformResource {
   public get certificate() {
     return this._certificate;
   }
-  public putCertificate(value: ApiManagementCertificate[] | cdktf.IResolvable) {
+  public putCertificate(value: ApiManagementCertificate[] | cdktn.IResolvable) {
     this._certificate.internalValue = value;
   }
   public resetCertificate() {
@@ -5162,24 +5162,24 @@ export class ApiManagement extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      client_certificate_enabled: cdktf.booleanToTerraform(this._clientCertificateEnabled),
-      gateway_disabled: cdktf.booleanToTerraform(this._gatewayDisabled),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      min_api_version: cdktf.stringToTerraform(this._minApiVersion),
-      name: cdktf.stringToTerraform(this._name),
-      notification_sender_email: cdktf.stringToTerraform(this._notificationSenderEmail),
-      public_ip_address_id: cdktf.stringToTerraform(this._publicIpAddressId),
-      public_network_access_enabled: cdktf.booleanToTerraform(this._publicNetworkAccessEnabled),
-      publisher_email: cdktf.stringToTerraform(this._publisherEmail),
-      publisher_name: cdktf.stringToTerraform(this._publisherName),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      sku_name: cdktf.stringToTerraform(this._skuName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      virtual_network_type: cdktf.stringToTerraform(this._virtualNetworkType),
-      zones: cdktf.listMapper(cdktf.stringToTerraform, false)(this._zones),
-      additional_location: cdktf.listMapper(apiManagementAdditionalLocationToTerraform, true)(this._additionalLocation.internalValue),
-      certificate: cdktf.listMapper(apiManagementCertificateToTerraform, true)(this._certificate.internalValue),
+      client_certificate_enabled: cdktn.booleanToTerraform(this._clientCertificateEnabled),
+      gateway_disabled: cdktn.booleanToTerraform(this._gatewayDisabled),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      min_api_version: cdktn.stringToTerraform(this._minApiVersion),
+      name: cdktn.stringToTerraform(this._name),
+      notification_sender_email: cdktn.stringToTerraform(this._notificationSenderEmail),
+      public_ip_address_id: cdktn.stringToTerraform(this._publicIpAddressId),
+      public_network_access_enabled: cdktn.booleanToTerraform(this._publicNetworkAccessEnabled),
+      publisher_email: cdktn.stringToTerraform(this._publisherEmail),
+      publisher_name: cdktn.stringToTerraform(this._publisherName),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      sku_name: cdktn.stringToTerraform(this._skuName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      virtual_network_type: cdktn.stringToTerraform(this._virtualNetworkType),
+      zones: cdktn.listMapper(cdktn.stringToTerraform, false)(this._zones),
+      additional_location: cdktn.listMapper(apiManagementAdditionalLocationToTerraform, true)(this._additionalLocation.internalValue),
+      certificate: cdktn.listMapper(apiManagementCertificateToTerraform, true)(this._certificate.internalValue),
       delegation: apiManagementDelegationToTerraform(this._delegation.internalValue),
       hostname_configuration: apiManagementHostnameConfigurationToTerraform(this._hostnameConfiguration.internalValue),
       identity: apiManagementIdentityToTerraform(this._identity.internalValue),
@@ -5196,109 +5196,109 @@ export class ApiManagement extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       client_certificate_enabled: {
-        value: cdktf.booleanToHclTerraform(this._clientCertificateEnabled),
+        value: cdktn.booleanToHclTerraform(this._clientCertificateEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       gateway_disabled: {
-        value: cdktf.booleanToHclTerraform(this._gatewayDisabled),
+        value: cdktn.booleanToHclTerraform(this._gatewayDisabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       min_api_version: {
-        value: cdktf.stringToHclTerraform(this._minApiVersion),
+        value: cdktn.stringToHclTerraform(this._minApiVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       notification_sender_email: {
-        value: cdktf.stringToHclTerraform(this._notificationSenderEmail),
+        value: cdktn.stringToHclTerraform(this._notificationSenderEmail),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_ip_address_id: {
-        value: cdktf.stringToHclTerraform(this._publicIpAddressId),
+        value: cdktn.stringToHclTerraform(this._publicIpAddressId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_network_access_enabled: {
-        value: cdktf.booleanToHclTerraform(this._publicNetworkAccessEnabled),
+        value: cdktn.booleanToHclTerraform(this._publicNetworkAccessEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       publisher_email: {
-        value: cdktf.stringToHclTerraform(this._publisherEmail),
+        value: cdktn.stringToHclTerraform(this._publisherEmail),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       publisher_name: {
-        value: cdktf.stringToHclTerraform(this._publisherName),
+        value: cdktn.stringToHclTerraform(this._publisherName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sku_name: {
-        value: cdktf.stringToHclTerraform(this._skuName),
+        value: cdktn.stringToHclTerraform(this._skuName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       virtual_network_type: {
-        value: cdktf.stringToHclTerraform(this._virtualNetworkType),
+        value: cdktn.stringToHclTerraform(this._virtualNetworkType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zones: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._zones),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._zones),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       additional_location: {
-        value: cdktf.listMapperHcl(apiManagementAdditionalLocationToHclTerraform, true)(this._additionalLocation.internalValue),
+        value: cdktn.listMapperHcl(apiManagementAdditionalLocationToHclTerraform, true)(this._additionalLocation.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ApiManagementAdditionalLocationList",
       },
       certificate: {
-        value: cdktf.listMapperHcl(apiManagementCertificateToHclTerraform, true)(this._certificate.internalValue),
+        value: cdktn.listMapperHcl(apiManagementCertificateToHclTerraform, true)(this._certificate.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ApiManagementCertificateList",

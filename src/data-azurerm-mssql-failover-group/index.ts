@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermMssqlFailoverGroupConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermMssqlFailoverGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/mssql_failover_group#id DataAzurermMssqlFailoverGroup#id}
   *
@@ -38,8 +38,8 @@ export interface DataAzurermMssqlFailoverGroupPartnerServer {
 }
 
 export function dataAzurermMssqlFailoverGroupPartnerServerToTerraform(struct?: DataAzurermMssqlFailoverGroupPartnerServer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -48,8 +48,8 @@ export function dataAzurermMssqlFailoverGroupPartnerServerToTerraform(struct?: D
 
 
 export function dataAzurermMssqlFailoverGroupPartnerServerToHclTerraform(struct?: DataAzurermMssqlFailoverGroupPartnerServer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -57,7 +57,7 @@ export function dataAzurermMssqlFailoverGroupPartnerServerToHclTerraform(struct?
   return attrs;
 }
 
-export class DataAzurermMssqlFailoverGroupPartnerServerOutputReference extends cdktf.ComplexObject {
+export class DataAzurermMssqlFailoverGroupPartnerServerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -66,7 +66,7 @@ export class DataAzurermMssqlFailoverGroupPartnerServerOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -101,14 +101,14 @@ export class DataAzurermMssqlFailoverGroupPartnerServerOutputReference extends c
   }
 }
 
-export class DataAzurermMssqlFailoverGroupPartnerServerList extends cdktf.ComplexList {
+export class DataAzurermMssqlFailoverGroupPartnerServerList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -123,8 +123,8 @@ export interface DataAzurermMssqlFailoverGroupReadWriteEndpointFailoverPolicy {
 }
 
 export function dataAzurermMssqlFailoverGroupReadWriteEndpointFailoverPolicyToTerraform(struct?: DataAzurermMssqlFailoverGroupReadWriteEndpointFailoverPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -133,8 +133,8 @@ export function dataAzurermMssqlFailoverGroupReadWriteEndpointFailoverPolicyToTe
 
 
 export function dataAzurermMssqlFailoverGroupReadWriteEndpointFailoverPolicyToHclTerraform(struct?: DataAzurermMssqlFailoverGroupReadWriteEndpointFailoverPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -142,7 +142,7 @@ export function dataAzurermMssqlFailoverGroupReadWriteEndpointFailoverPolicyToHc
   return attrs;
 }
 
-export class DataAzurermMssqlFailoverGroupReadWriteEndpointFailoverPolicyOutputReference extends cdktf.ComplexObject {
+export class DataAzurermMssqlFailoverGroupReadWriteEndpointFailoverPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -151,7 +151,7 @@ export class DataAzurermMssqlFailoverGroupReadWriteEndpointFailoverPolicyOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -181,14 +181,14 @@ export class DataAzurermMssqlFailoverGroupReadWriteEndpointFailoverPolicyOutputR
   }
 }
 
-export class DataAzurermMssqlFailoverGroupReadWriteEndpointFailoverPolicyList extends cdktf.ComplexList {
+export class DataAzurermMssqlFailoverGroupReadWriteEndpointFailoverPolicyList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -206,25 +206,25 @@ export interface DataAzurermMssqlFailoverGroupTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermMssqlFailoverGroupTimeoutsToTerraform(struct?: DataAzurermMssqlFailoverGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermMssqlFailoverGroupTimeoutsToTerraform(struct?: DataAzurermMssqlFailoverGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermMssqlFailoverGroupTimeoutsToHclTerraform(struct?: DataAzurermMssqlFailoverGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermMssqlFailoverGroupTimeoutsToHclTerraform(struct?: DataAzurermMssqlFailoverGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -235,19 +235,19 @@ export function dataAzurermMssqlFailoverGroupTimeoutsToHclTerraform(struct?: Dat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermMssqlFailoverGroupTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermMssqlFailoverGroupTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermMssqlFailoverGroupTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermMssqlFailoverGroupTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -260,13 +260,13 @@ export class DataAzurermMssqlFailoverGroupTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermMssqlFailoverGroupTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermMssqlFailoverGroupTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -297,7 +297,7 @@ export class DataAzurermMssqlFailoverGroupTimeoutsOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/mssql_failover_group azurerm_mssql_failover_group}
 */
-export class DataAzurermMssqlFailoverGroup extends cdktf.TerraformDataSource {
+export class DataAzurermMssqlFailoverGroup extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -308,14 +308,14 @@ export class DataAzurermMssqlFailoverGroup extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermMssqlFailoverGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermMssqlFailoverGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermMssqlFailoverGroup to import
   * @param importFromId The id of the existing DataAzurermMssqlFailoverGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/mssql_failover_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermMssqlFailoverGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_mssql_failover_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_mssql_failover_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -357,7 +357,7 @@ export class DataAzurermMssqlFailoverGroup extends cdktf.TerraformDataSource {
 
   // databases - computed: true, optional: false, required: false
   public get databases() {
-    return cdktf.Fn.tolist(this.getListAttribute('databases'));
+    return cdktn.Fn.tolist(this.getListAttribute('databases'));
   }
 
   // id - computed: true, optional: true, required: false
@@ -420,7 +420,7 @@ export class DataAzurermMssqlFailoverGroup extends cdktf.TerraformDataSource {
   }
 
   // tags - computed: true, optional: false, required: false
-  private _tags = new cdktf.StringMap(this, "tags");
+  private _tags = new cdktn.StringMap(this, "tags");
   public get tags() {
     return this._tags;
   }
@@ -447,9 +447,9 @@ export class DataAzurermMssqlFailoverGroup extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      server_id: cdktf.stringToTerraform(this._serverId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      server_id: cdktn.stringToTerraform(this._serverId),
       timeouts: dataAzurermMssqlFailoverGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -457,19 +457,19 @@ export class DataAzurermMssqlFailoverGroup extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       server_id: {
-        value: cdktf.stringToHclTerraform(this._serverId),
+        value: cdktn.stringToHclTerraform(this._serverId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

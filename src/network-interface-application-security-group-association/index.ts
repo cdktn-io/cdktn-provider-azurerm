@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkInterfaceApplicationSecurityGroupAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkInterfaceApplicationSecurityGroupAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_interface_application_security_group_association#application_security_group_id NetworkInterfaceApplicationSecurityGroupAssociation#application_security_group_id}
   */
@@ -49,39 +49,39 @@ export interface NetworkInterfaceApplicationSecurityGroupAssociationTimeouts {
   readonly read?: string;
 }
 
-export function networkInterfaceApplicationSecurityGroupAssociationTimeoutsToTerraform(struct?: NetworkInterfaceApplicationSecurityGroupAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkInterfaceApplicationSecurityGroupAssociationTimeoutsToTerraform(struct?: NetworkInterfaceApplicationSecurityGroupAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function networkInterfaceApplicationSecurityGroupAssociationTimeoutsToHclTerraform(struct?: NetworkInterfaceApplicationSecurityGroupAssociationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkInterfaceApplicationSecurityGroupAssociationTimeoutsToHclTerraform(struct?: NetworkInterfaceApplicationSecurityGroupAssociationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -92,19 +92,19 @@ export function networkInterfaceApplicationSecurityGroupAssociationTimeoutsToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkInterfaceApplicationSecurityGroupAssociationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetworkInterfaceApplicationSecurityGroupAssociationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetworkInterfaceApplicationSecurityGroupAssociationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkInterfaceApplicationSecurityGroupAssociationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -125,7 +125,7 @@ export class NetworkInterfaceApplicationSecurityGroupAssociationTimeoutsOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkInterfaceApplicationSecurityGroupAssociationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkInterfaceApplicationSecurityGroupAssociationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -133,7 +133,7 @@ export class NetworkInterfaceApplicationSecurityGroupAssociationTimeoutsOutputRe
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -198,7 +198,7 @@ export class NetworkInterfaceApplicationSecurityGroupAssociationTimeoutsOutputRe
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_interface_application_security_group_association azurerm_network_interface_application_security_group_association}
 */
-export class NetworkInterfaceApplicationSecurityGroupAssociation extends cdktf.TerraformResource {
+export class NetworkInterfaceApplicationSecurityGroupAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -209,14 +209,14 @@ export class NetworkInterfaceApplicationSecurityGroupAssociation extends cdktf.T
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkInterfaceApplicationSecurityGroupAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkInterfaceApplicationSecurityGroupAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkInterfaceApplicationSecurityGroupAssociation to import
   * @param importFromId The id of the existing NetworkInterfaceApplicationSecurityGroupAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_interface_application_security_group_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkInterfaceApplicationSecurityGroupAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_network_interface_application_security_group_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_network_interface_application_security_group_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -320,9 +320,9 @@ export class NetworkInterfaceApplicationSecurityGroupAssociation extends cdktf.T
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_security_group_id: cdktf.stringToTerraform(this._applicationSecurityGroupId),
-      id: cdktf.stringToTerraform(this._id),
-      network_interface_id: cdktf.stringToTerraform(this._networkInterfaceId),
+      application_security_group_id: cdktn.stringToTerraform(this._applicationSecurityGroupId),
+      id: cdktn.stringToTerraform(this._id),
+      network_interface_id: cdktn.stringToTerraform(this._networkInterfaceId),
       timeouts: networkInterfaceApplicationSecurityGroupAssociationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -330,19 +330,19 @@ export class NetworkInterfaceApplicationSecurityGroupAssociation extends cdktf.T
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       application_security_group_id: {
-        value: cdktf.stringToHclTerraform(this._applicationSecurityGroupId),
+        value: cdktn.stringToHclTerraform(this._applicationSecurityGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_interface_id: {
-        value: cdktf.stringToHclTerraform(this._networkInterfaceId),
+        value: cdktn.stringToHclTerraform(this._networkInterfaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

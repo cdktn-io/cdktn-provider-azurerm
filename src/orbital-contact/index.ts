@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface OrbitalContactConfig extends cdktf.TerraformMetaArguments {
+export interface OrbitalContactConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orbital_contact#contact_profile_id OrbitalContact#contact_profile_id}
   */
@@ -65,39 +65,39 @@ export interface OrbitalContactTimeouts {
   readonly read?: string;
 }
 
-export function orbitalContactTimeoutsToTerraform(struct?: OrbitalContactTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orbitalContactTimeoutsToTerraform(struct?: OrbitalContactTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function orbitalContactTimeoutsToHclTerraform(struct?: OrbitalContactTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function orbitalContactTimeoutsToHclTerraform(struct?: OrbitalContactTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -108,19 +108,19 @@ export function orbitalContactTimeoutsToHclTerraform(struct?: OrbitalContactTime
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrbitalContactTimeoutsOutputReference extends cdktf.ComplexObject {
+export class OrbitalContactTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): OrbitalContactTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): OrbitalContactTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -141,7 +141,7 @@ export class OrbitalContactTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OrbitalContactTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OrbitalContactTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -149,7 +149,7 @@ export class OrbitalContactTimeoutsOutputReference extends cdktf.ComplexObject {
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -214,7 +214,7 @@ export class OrbitalContactTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orbital_contact azurerm_orbital_contact}
 */
-export class OrbitalContact extends cdktf.TerraformResource {
+export class OrbitalContact extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -225,14 +225,14 @@ export class OrbitalContact extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a OrbitalContact resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a OrbitalContact resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OrbitalContact to import
   * @param importFromId The id of the existing OrbitalContact that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/orbital_contact#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OrbitalContact to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_orbital_contact", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_orbital_contact", importId: importFromId, provider });
       }
 
   // ===========
@@ -392,13 +392,13 @@ export class OrbitalContact extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      contact_profile_id: cdktf.stringToTerraform(this._contactProfileId),
-      ground_station_name: cdktf.stringToTerraform(this._groundStationName),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      reservation_end_time: cdktf.stringToTerraform(this._reservationEndTime),
-      reservation_start_time: cdktf.stringToTerraform(this._reservationStartTime),
-      spacecraft_id: cdktf.stringToTerraform(this._spacecraftId),
+      contact_profile_id: cdktn.stringToTerraform(this._contactProfileId),
+      ground_station_name: cdktn.stringToTerraform(this._groundStationName),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      reservation_end_time: cdktn.stringToTerraform(this._reservationEndTime),
+      reservation_start_time: cdktn.stringToTerraform(this._reservationStartTime),
+      spacecraft_id: cdktn.stringToTerraform(this._spacecraftId),
       timeouts: orbitalContactTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -406,43 +406,43 @@ export class OrbitalContact extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       contact_profile_id: {
-        value: cdktf.stringToHclTerraform(this._contactProfileId),
+        value: cdktn.stringToHclTerraform(this._contactProfileId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ground_station_name: {
-        value: cdktf.stringToHclTerraform(this._groundStationName),
+        value: cdktn.stringToHclTerraform(this._groundStationName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       reservation_end_time: {
-        value: cdktf.stringToHclTerraform(this._reservationEndTime),
+        value: cdktn.stringToHclTerraform(this._reservationEndTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       reservation_start_time: {
-        value: cdktf.stringToHclTerraform(this._reservationStartTime),
+        value: cdktn.stringToHclTerraform(this._reservationStartTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       spacecraft_id: {
-        value: cdktf.stringToHclTerraform(this._spacecraftId),
+        value: cdktn.stringToHclTerraform(this._spacecraftId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

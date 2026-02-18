@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LogAnalyticsLinkedServiceConfig extends cdktf.TerraformMetaArguments {
+export interface LogAnalyticsLinkedServiceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/log_analytics_linked_service#id LogAnalyticsLinkedService#id}
   *
@@ -61,46 +61,46 @@ export interface LogAnalyticsLinkedServiceTimeouts {
   readonly update?: string;
 }
 
-export function logAnalyticsLinkedServiceTimeoutsToTerraform(struct?: LogAnalyticsLinkedServiceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logAnalyticsLinkedServiceTimeoutsToTerraform(struct?: LogAnalyticsLinkedServiceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function logAnalyticsLinkedServiceTimeoutsToHclTerraform(struct?: LogAnalyticsLinkedServiceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function logAnalyticsLinkedServiceTimeoutsToHclTerraform(struct?: LogAnalyticsLinkedServiceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -111,19 +111,19 @@ export function logAnalyticsLinkedServiceTimeoutsToHclTerraform(struct?: LogAnal
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LogAnalyticsLinkedServiceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class LogAnalyticsLinkedServiceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LogAnalyticsLinkedServiceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): LogAnalyticsLinkedServiceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -148,7 +148,7 @@ export class LogAnalyticsLinkedServiceTimeoutsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LogAnalyticsLinkedServiceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LogAnalyticsLinkedServiceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -157,7 +157,7 @@ export class LogAnalyticsLinkedServiceTimeoutsOutputReference extends cdktf.Comp
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -239,7 +239,7 @@ export class LogAnalyticsLinkedServiceTimeoutsOutputReference extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/log_analytics_linked_service azurerm_log_analytics_linked_service}
 */
-export class LogAnalyticsLinkedService extends cdktf.TerraformResource {
+export class LogAnalyticsLinkedService extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -250,14 +250,14 @@ export class LogAnalyticsLinkedService extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LogAnalyticsLinkedService resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LogAnalyticsLinkedService resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LogAnalyticsLinkedService to import
   * @param importFromId The id of the existing LogAnalyticsLinkedService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/log_analytics_linked_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LogAnalyticsLinkedService to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_log_analytics_linked_service", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_log_analytics_linked_service", importId: importFromId, provider });
       }
 
   // ===========
@@ -400,11 +400,11 @@ export class LogAnalyticsLinkedService extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      read_access_id: cdktf.stringToTerraform(this._readAccessId),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      workspace_id: cdktf.stringToTerraform(this._workspaceId),
-      write_access_id: cdktf.stringToTerraform(this._writeAccessId),
+      id: cdktn.stringToTerraform(this._id),
+      read_access_id: cdktn.stringToTerraform(this._readAccessId),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      workspace_id: cdktn.stringToTerraform(this._workspaceId),
+      write_access_id: cdktn.stringToTerraform(this._writeAccessId),
       timeouts: logAnalyticsLinkedServiceTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -412,31 +412,31 @@ export class LogAnalyticsLinkedService extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       read_access_id: {
-        value: cdktf.stringToHclTerraform(this._readAccessId),
+        value: cdktn.stringToHclTerraform(this._readAccessId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       workspace_id: {
-        value: cdktf.stringToHclTerraform(this._workspaceId),
+        value: cdktn.stringToHclTerraform(this._workspaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       write_access_id: {
-        value: cdktf.stringToHclTerraform(this._writeAccessId),
+        value: cdktn.stringToHclTerraform(this._writeAccessId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface OracleAutonomousDatabaseConfig extends cdktf.TerraformMetaArguments {
+export interface OracleAutonomousDatabaseConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/oracle_autonomous_database#admin_password OracleAutonomousDatabase#admin_password}
   */
@@ -23,11 +23,11 @@ export interface OracleAutonomousDatabaseConfig extends cdktf.TerraformMetaArgum
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/oracle_autonomous_database#auto_scaling_enabled OracleAutonomousDatabase#auto_scaling_enabled}
   */
-  readonly autoScalingEnabled: boolean | cdktf.IResolvable;
+  readonly autoScalingEnabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/oracle_autonomous_database#auto_scaling_for_storage_enabled OracleAutonomousDatabase#auto_scaling_for_storage_enabled}
   */
-  readonly autoScalingForStorageEnabled: boolean | cdktf.IResolvable;
+  readonly autoScalingForStorageEnabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/oracle_autonomous_database#backup_retention_period_in_days OracleAutonomousDatabase#backup_retention_period_in_days}
   */
@@ -82,7 +82,7 @@ export interface OracleAutonomousDatabaseConfig extends cdktf.TerraformMetaArgum
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/oracle_autonomous_database#mtls_connection_required OracleAutonomousDatabase#mtls_connection_required}
   */
-  readonly mtlsConnectionRequired: boolean | cdktf.IResolvable;
+  readonly mtlsConnectionRequired: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/oracle_autonomous_database#name OracleAutonomousDatabase#name}
   */
@@ -124,7 +124,7 @@ export interface OracleAutonomousDatabaseLongTermBackupSchedule {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/oracle_autonomous_database#enabled OracleAutonomousDatabase#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/oracle_autonomous_database#repeat_cadence OracleAutonomousDatabase#repeat_cadence}
   */
@@ -140,45 +140,45 @@ export interface OracleAutonomousDatabaseLongTermBackupSchedule {
 }
 
 export function oracleAutonomousDatabaseLongTermBackupScheduleToTerraform(struct?: OracleAutonomousDatabaseLongTermBackupScheduleOutputReference | OracleAutonomousDatabaseLongTermBackupSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    repeat_cadence: cdktf.stringToTerraform(struct!.repeatCadence),
-    retention_period_in_days: cdktf.numberToTerraform(struct!.retentionPeriodInDays),
-    time_of_backup: cdktf.stringToTerraform(struct!.timeOfBackup),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    repeat_cadence: cdktn.stringToTerraform(struct!.repeatCadence),
+    retention_period_in_days: cdktn.numberToTerraform(struct!.retentionPeriodInDays),
+    time_of_backup: cdktn.stringToTerraform(struct!.timeOfBackup),
   }
 }
 
 
 export function oracleAutonomousDatabaseLongTermBackupScheduleToHclTerraform(struct?: OracleAutonomousDatabaseLongTermBackupScheduleOutputReference | OracleAutonomousDatabaseLongTermBackupSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     repeat_cadence: {
-      value: cdktf.stringToHclTerraform(struct!.repeatCadence),
+      value: cdktn.stringToHclTerraform(struct!.repeatCadence),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     retention_period_in_days: {
-      value: cdktf.numberToHclTerraform(struct!.retentionPeriodInDays),
+      value: cdktn.numberToHclTerraform(struct!.retentionPeriodInDays),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     time_of_backup: {
-      value: cdktf.stringToHclTerraform(struct!.timeOfBackup),
+      value: cdktn.stringToHclTerraform(struct!.timeOfBackup),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -189,14 +189,14 @@ export function oracleAutonomousDatabaseLongTermBackupScheduleToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OracleAutonomousDatabaseLongTermBackupScheduleOutputReference extends cdktf.ComplexObject {
+export class OracleAutonomousDatabaseLongTermBackupScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -240,11 +240,11 @@ export class OracleAutonomousDatabaseLongTermBackupScheduleOutputReference exten
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -310,46 +310,46 @@ export interface OracleAutonomousDatabaseTimeouts {
   readonly update?: string;
 }
 
-export function oracleAutonomousDatabaseTimeoutsToTerraform(struct?: OracleAutonomousDatabaseTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oracleAutonomousDatabaseTimeoutsToTerraform(struct?: OracleAutonomousDatabaseTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function oracleAutonomousDatabaseTimeoutsToHclTerraform(struct?: OracleAutonomousDatabaseTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oracleAutonomousDatabaseTimeoutsToHclTerraform(struct?: OracleAutonomousDatabaseTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -360,19 +360,19 @@ export function oracleAutonomousDatabaseTimeoutsToHclTerraform(struct?: OracleAu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OracleAutonomousDatabaseTimeoutsOutputReference extends cdktf.ComplexObject {
+export class OracleAutonomousDatabaseTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): OracleAutonomousDatabaseTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): OracleAutonomousDatabaseTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -397,7 +397,7 @@ export class OracleAutonomousDatabaseTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OracleAutonomousDatabaseTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OracleAutonomousDatabaseTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -406,7 +406,7 @@ export class OracleAutonomousDatabaseTimeoutsOutputReference extends cdktf.Compl
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -488,7 +488,7 @@ export class OracleAutonomousDatabaseTimeoutsOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/oracle_autonomous_database azurerm_oracle_autonomous_database}
 */
-export class OracleAutonomousDatabase extends cdktf.TerraformResource {
+export class OracleAutonomousDatabase extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -499,14 +499,14 @@ export class OracleAutonomousDatabase extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a OracleAutonomousDatabase resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a OracleAutonomousDatabase resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OracleAutonomousDatabase to import
   * @param importFromId The id of the existing OracleAutonomousDatabase that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/oracle_autonomous_database#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OracleAutonomousDatabase to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_oracle_autonomous_database", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_oracle_autonomous_database", importId: importFromId, provider });
       }
 
   // ===========
@@ -583,7 +583,7 @@ export class OracleAutonomousDatabase extends cdktf.TerraformResource {
   // allowed_ips - computed: false, optional: true, required: false
   private _allowedIps?: string[]; 
   public get allowedIps() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_ips'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_ips'));
   }
   public set allowedIps(value: string[]) {
     this._allowedIps = value;
@@ -597,11 +597,11 @@ export class OracleAutonomousDatabase extends cdktf.TerraformResource {
   }
 
   // auto_scaling_enabled - computed: false, optional: false, required: true
-  private _autoScalingEnabled?: boolean | cdktf.IResolvable; 
+  private _autoScalingEnabled?: boolean | cdktn.IResolvable; 
   public get autoScalingEnabled() {
     return this.getBooleanAttribute('auto_scaling_enabled');
   }
-  public set autoScalingEnabled(value: boolean | cdktf.IResolvable) {
+  public set autoScalingEnabled(value: boolean | cdktn.IResolvable) {
     this._autoScalingEnabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -610,11 +610,11 @@ export class OracleAutonomousDatabase extends cdktf.TerraformResource {
   }
 
   // auto_scaling_for_storage_enabled - computed: false, optional: false, required: true
-  private _autoScalingForStorageEnabled?: boolean | cdktf.IResolvable; 
+  private _autoScalingForStorageEnabled?: boolean | cdktn.IResolvable; 
   public get autoScalingForStorageEnabled() {
     return this.getBooleanAttribute('auto_scaling_for_storage_enabled');
   }
-  public set autoScalingForStorageEnabled(value: boolean | cdktf.IResolvable) {
+  public set autoScalingForStorageEnabled(value: boolean | cdktn.IResolvable) {
     this._autoScalingForStorageEnabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -785,11 +785,11 @@ export class OracleAutonomousDatabase extends cdktf.TerraformResource {
   }
 
   // mtls_connection_required - computed: false, optional: false, required: true
-  private _mtlsConnectionRequired?: boolean | cdktf.IResolvable; 
+  private _mtlsConnectionRequired?: boolean | cdktn.IResolvable; 
   public get mtlsConnectionRequired() {
     return this.getBooleanAttribute('mtls_connection_required');
   }
-  public set mtlsConnectionRequired(value: boolean | cdktf.IResolvable) {
+  public set mtlsConnectionRequired(value: boolean | cdktn.IResolvable) {
     this._mtlsConnectionRequired = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -922,29 +922,29 @@ export class OracleAutonomousDatabase extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      admin_password: cdktf.stringToTerraform(this._adminPassword),
-      allowed_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedIps),
-      auto_scaling_enabled: cdktf.booleanToTerraform(this._autoScalingEnabled),
-      auto_scaling_for_storage_enabled: cdktf.booleanToTerraform(this._autoScalingForStorageEnabled),
-      backup_retention_period_in_days: cdktf.numberToTerraform(this._backupRetentionPeriodInDays),
-      character_set: cdktf.stringToTerraform(this._characterSet),
-      compute_count: cdktf.numberToTerraform(this._computeCount),
-      compute_model: cdktf.stringToTerraform(this._computeModel),
-      customer_contacts: cdktf.listMapper(cdktf.stringToTerraform, false)(this._customerContacts),
-      data_storage_size_in_tbs: cdktf.numberToTerraform(this._dataStorageSizeInTbs),
-      db_version: cdktf.stringToTerraform(this._dbVersion),
-      db_workload: cdktf.stringToTerraform(this._dbWorkload),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      license_model: cdktf.stringToTerraform(this._licenseModel),
-      location: cdktf.stringToTerraform(this._location),
-      mtls_connection_required: cdktf.booleanToTerraform(this._mtlsConnectionRequired),
-      name: cdktf.stringToTerraform(this._name),
-      national_character_set: cdktf.stringToTerraform(this._nationalCharacterSet),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      subnet_id: cdktf.stringToTerraform(this._subnetId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      virtual_network_id: cdktf.stringToTerraform(this._virtualNetworkId),
+      admin_password: cdktn.stringToTerraform(this._adminPassword),
+      allowed_ips: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedIps),
+      auto_scaling_enabled: cdktn.booleanToTerraform(this._autoScalingEnabled),
+      auto_scaling_for_storage_enabled: cdktn.booleanToTerraform(this._autoScalingForStorageEnabled),
+      backup_retention_period_in_days: cdktn.numberToTerraform(this._backupRetentionPeriodInDays),
+      character_set: cdktn.stringToTerraform(this._characterSet),
+      compute_count: cdktn.numberToTerraform(this._computeCount),
+      compute_model: cdktn.stringToTerraform(this._computeModel),
+      customer_contacts: cdktn.listMapper(cdktn.stringToTerraform, false)(this._customerContacts),
+      data_storage_size_in_tbs: cdktn.numberToTerraform(this._dataStorageSizeInTbs),
+      db_version: cdktn.stringToTerraform(this._dbVersion),
+      db_workload: cdktn.stringToTerraform(this._dbWorkload),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      license_model: cdktn.stringToTerraform(this._licenseModel),
+      location: cdktn.stringToTerraform(this._location),
+      mtls_connection_required: cdktn.booleanToTerraform(this._mtlsConnectionRequired),
+      name: cdktn.stringToTerraform(this._name),
+      national_character_set: cdktn.stringToTerraform(this._nationalCharacterSet),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      subnet_id: cdktn.stringToTerraform(this._subnetId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      virtual_network_id: cdktn.stringToTerraform(this._virtualNetworkId),
       long_term_backup_schedule: oracleAutonomousDatabaseLongTermBackupScheduleToTerraform(this._longTermBackupSchedule.internalValue),
       timeouts: oracleAutonomousDatabaseTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -953,139 +953,139 @@ export class OracleAutonomousDatabase extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       admin_password: {
-        value: cdktf.stringToHclTerraform(this._adminPassword),
+        value: cdktn.stringToHclTerraform(this._adminPassword),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       allowed_ips: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedIps),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedIps),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       auto_scaling_enabled: {
-        value: cdktf.booleanToHclTerraform(this._autoScalingEnabled),
+        value: cdktn.booleanToHclTerraform(this._autoScalingEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       auto_scaling_for_storage_enabled: {
-        value: cdktf.booleanToHclTerraform(this._autoScalingForStorageEnabled),
+        value: cdktn.booleanToHclTerraform(this._autoScalingForStorageEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       backup_retention_period_in_days: {
-        value: cdktf.numberToHclTerraform(this._backupRetentionPeriodInDays),
+        value: cdktn.numberToHclTerraform(this._backupRetentionPeriodInDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       character_set: {
-        value: cdktf.stringToHclTerraform(this._characterSet),
+        value: cdktn.stringToHclTerraform(this._characterSet),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       compute_count: {
-        value: cdktf.numberToHclTerraform(this._computeCount),
+        value: cdktn.numberToHclTerraform(this._computeCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       compute_model: {
-        value: cdktf.stringToHclTerraform(this._computeModel),
+        value: cdktn.stringToHclTerraform(this._computeModel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       customer_contacts: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._customerContacts),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._customerContacts),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       data_storage_size_in_tbs: {
-        value: cdktf.numberToHclTerraform(this._dataStorageSizeInTbs),
+        value: cdktn.numberToHclTerraform(this._dataStorageSizeInTbs),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       db_version: {
-        value: cdktf.stringToHclTerraform(this._dbVersion),
+        value: cdktn.stringToHclTerraform(this._dbVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       db_workload: {
-        value: cdktf.stringToHclTerraform(this._dbWorkload),
+        value: cdktn.stringToHclTerraform(this._dbWorkload),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       license_model: {
-        value: cdktf.stringToHclTerraform(this._licenseModel),
+        value: cdktn.stringToHclTerraform(this._licenseModel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mtls_connection_required: {
-        value: cdktf.booleanToHclTerraform(this._mtlsConnectionRequired),
+        value: cdktn.booleanToHclTerraform(this._mtlsConnectionRequired),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       national_character_set: {
-        value: cdktf.stringToHclTerraform(this._nationalCharacterSet),
+        value: cdktn.stringToHclTerraform(this._nationalCharacterSet),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subnet_id: {
-        value: cdktf.stringToHclTerraform(this._subnetId),
+        value: cdktn.stringToHclTerraform(this._subnetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       virtual_network_id: {
-        value: cdktf.stringToHclTerraform(this._virtualNetworkId),
+        value: cdktn.stringToHclTerraform(this._virtualNetworkId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

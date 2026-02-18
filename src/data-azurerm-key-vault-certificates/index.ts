@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermKeyVaultCertificatesConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermKeyVaultCertificatesConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/key_vault_certificates#id DataAzurermKeyVaultCertificates#id}
   *
@@ -22,7 +22,7 @@ export interface DataAzurermKeyVaultCertificatesConfig extends cdktf.TerraformMe
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/key_vault_certificates#include_pending DataAzurermKeyVaultCertificates#include_pending}
   */
-  readonly includePending?: boolean | cdktf.IResolvable;
+  readonly includePending?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/key_vault_certificates#key_vault_id DataAzurermKeyVaultCertificates#key_vault_id}
   */
@@ -38,8 +38,8 @@ export interface DataAzurermKeyVaultCertificatesCertificates {
 }
 
 export function dataAzurermKeyVaultCertificatesCertificatesToTerraform(struct?: DataAzurermKeyVaultCertificatesCertificates): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -48,8 +48,8 @@ export function dataAzurermKeyVaultCertificatesCertificatesToTerraform(struct?: 
 
 
 export function dataAzurermKeyVaultCertificatesCertificatesToHclTerraform(struct?: DataAzurermKeyVaultCertificatesCertificates): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -57,7 +57,7 @@ export function dataAzurermKeyVaultCertificatesCertificatesToHclTerraform(struct
   return attrs;
 }
 
-export class DataAzurermKeyVaultCertificatesCertificatesOutputReference extends cdktf.ComplexObject {
+export class DataAzurermKeyVaultCertificatesCertificatesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -66,7 +66,7 @@ export class DataAzurermKeyVaultCertificatesCertificatesOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -101,20 +101,20 @@ export class DataAzurermKeyVaultCertificatesCertificatesOutputReference extends 
   }
 
   // tags - computed: true, optional: false, required: false
-  private _tags = new cdktf.StringMap(this, "tags");
+  private _tags = new cdktn.StringMap(this, "tags");
   public get tags() {
     return this._tags;
   }
 }
 
-export class DataAzurermKeyVaultCertificatesCertificatesList extends cdktf.ComplexList {
+export class DataAzurermKeyVaultCertificatesCertificatesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -132,25 +132,25 @@ export interface DataAzurermKeyVaultCertificatesTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermKeyVaultCertificatesTimeoutsToTerraform(struct?: DataAzurermKeyVaultCertificatesTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermKeyVaultCertificatesTimeoutsToTerraform(struct?: DataAzurermKeyVaultCertificatesTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermKeyVaultCertificatesTimeoutsToHclTerraform(struct?: DataAzurermKeyVaultCertificatesTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermKeyVaultCertificatesTimeoutsToHclTerraform(struct?: DataAzurermKeyVaultCertificatesTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -161,19 +161,19 @@ export function dataAzurermKeyVaultCertificatesTimeoutsToHclTerraform(struct?: D
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermKeyVaultCertificatesTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermKeyVaultCertificatesTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermKeyVaultCertificatesTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermKeyVaultCertificatesTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -186,13 +186,13 @@ export class DataAzurermKeyVaultCertificatesTimeoutsOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermKeyVaultCertificatesTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermKeyVaultCertificatesTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -223,7 +223,7 @@ export class DataAzurermKeyVaultCertificatesTimeoutsOutputReference extends cdkt
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/key_vault_certificates azurerm_key_vault_certificates}
 */
-export class DataAzurermKeyVaultCertificates extends cdktf.TerraformDataSource {
+export class DataAzurermKeyVaultCertificates extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -234,14 +234,14 @@ export class DataAzurermKeyVaultCertificates extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermKeyVaultCertificates resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermKeyVaultCertificates resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermKeyVaultCertificates to import
   * @param importFromId The id of the existing DataAzurermKeyVaultCertificates that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/key_vault_certificates#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermKeyVaultCertificates to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_key_vault_certificates", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_key_vault_certificates", importId: importFromId, provider });
       }
 
   // ===========
@@ -304,11 +304,11 @@ export class DataAzurermKeyVaultCertificates extends cdktf.TerraformDataSource {
   }
 
   // include_pending - computed: false, optional: true, required: false
-  private _includePending?: boolean | cdktf.IResolvable; 
+  private _includePending?: boolean | cdktn.IResolvable; 
   public get includePending() {
     return this.getBooleanAttribute('include_pending');
   }
-  public set includePending(value: boolean | cdktf.IResolvable) {
+  public set includePending(value: boolean | cdktn.IResolvable) {
     this._includePending = value;
   }
   public resetIncludePending() {
@@ -359,9 +359,9 @@ export class DataAzurermKeyVaultCertificates extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      include_pending: cdktf.booleanToTerraform(this._includePending),
-      key_vault_id: cdktf.stringToTerraform(this._keyVaultId),
+      id: cdktn.stringToTerraform(this._id),
+      include_pending: cdktn.booleanToTerraform(this._includePending),
+      key_vault_id: cdktn.stringToTerraform(this._keyVaultId),
       timeouts: dataAzurermKeyVaultCertificatesTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -369,19 +369,19 @@ export class DataAzurermKeyVaultCertificates extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       include_pending: {
-        value: cdktf.booleanToHclTerraform(this._includePending),
+        value: cdktn.booleanToHclTerraform(this._includePending),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       key_vault_id: {
-        value: cdktf.stringToHclTerraform(this._keyVaultId),
+        value: cdktn.stringToHclTerraform(this._keyVaultId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

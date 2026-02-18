@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MssqlDatabaseConfig extends cdktf.TerraformMetaArguments {
+export interface MssqlDatabaseConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_database#auto_pause_delay_in_minutes MssqlDatabase#auto_pause_delay_in_minutes}
   */
@@ -39,7 +39,7 @@ export interface MssqlDatabaseConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_database#geo_backup_enabled MssqlDatabase#geo_backup_enabled}
   */
-  readonly geoBackupEnabled?: boolean | cdktf.IResolvable;
+  readonly geoBackupEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_database#id MssqlDatabase#id}
   *
@@ -50,7 +50,7 @@ export interface MssqlDatabaseConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_database#ledger_enabled MssqlDatabase#ledger_enabled}
   */
-  readonly ledgerEnabled?: boolean | cdktf.IResolvable;
+  readonly ledgerEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_database#license_type MssqlDatabase#license_type}
   */
@@ -78,7 +78,7 @@ export interface MssqlDatabaseConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_database#read_scale MssqlDatabase#read_scale}
   */
-  readonly readScale?: boolean | cdktf.IResolvable;
+  readonly readScale?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_database#recover_database_id MssqlDatabase#recover_database_id}
   */
@@ -126,11 +126,11 @@ export interface MssqlDatabaseConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_database#transparent_data_encryption_enabled MssqlDatabase#transparent_data_encryption_enabled}
   */
-  readonly transparentDataEncryptionEnabled?: boolean | cdktf.IResolvable;
+  readonly transparentDataEncryptionEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_database#transparent_data_encryption_key_automatic_rotation_enabled MssqlDatabase#transparent_data_encryption_key_automatic_rotation_enabled}
   */
-  readonly transparentDataEncryptionKeyAutomaticRotationEnabled?: boolean | cdktf.IResolvable;
+  readonly transparentDataEncryptionKeyAutomaticRotationEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_database#transparent_data_encryption_key_vault_key_id MssqlDatabase#transparent_data_encryption_key_vault_key_id}
   */
@@ -138,7 +138,7 @@ export interface MssqlDatabaseConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_database#zone_redundant MssqlDatabase#zone_redundant}
   */
-  readonly zoneRedundant?: boolean | cdktf.IResolvable;
+  readonly zoneRedundant?: boolean | cdktn.IResolvable;
   /**
   * identity block
   *
@@ -188,31 +188,31 @@ export interface MssqlDatabaseIdentity {
 }
 
 export function mssqlDatabaseIdentityToTerraform(struct?: MssqlDatabaseIdentityOutputReference | MssqlDatabaseIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function mssqlDatabaseIdentityToHclTerraform(struct?: MssqlDatabaseIdentityOutputReference | MssqlDatabaseIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -223,14 +223,14 @@ export function mssqlDatabaseIdentityToHclTerraform(struct?: MssqlDatabaseIdenti
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MssqlDatabaseIdentityOutputReference extends cdktf.ComplexObject {
+export class MssqlDatabaseIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -264,7 +264,7 @@ export class MssqlDatabaseIdentityOutputReference extends cdktf.ComplexObject {
   // identity_ids - computed: false, optional: false, required: true
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -319,66 +319,66 @@ export interface MssqlDatabaseImport {
 }
 
 export function mssqlDatabaseImportToTerraform(struct?: MssqlDatabaseImportOutputReference | MssqlDatabaseImport): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    administrator_login: cdktf.stringToTerraform(struct!.administratorLogin),
-    administrator_login_password: cdktf.stringToTerraform(struct!.administratorLoginPassword),
-    authentication_type: cdktf.stringToTerraform(struct!.authenticationType),
-    storage_account_id: cdktf.stringToTerraform(struct!.storageAccountId),
-    storage_key: cdktf.stringToTerraform(struct!.storageKey),
-    storage_key_type: cdktf.stringToTerraform(struct!.storageKeyType),
-    storage_uri: cdktf.stringToTerraform(struct!.storageUri),
+    administrator_login: cdktn.stringToTerraform(struct!.administratorLogin),
+    administrator_login_password: cdktn.stringToTerraform(struct!.administratorLoginPassword),
+    authentication_type: cdktn.stringToTerraform(struct!.authenticationType),
+    storage_account_id: cdktn.stringToTerraform(struct!.storageAccountId),
+    storage_key: cdktn.stringToTerraform(struct!.storageKey),
+    storage_key_type: cdktn.stringToTerraform(struct!.storageKeyType),
+    storage_uri: cdktn.stringToTerraform(struct!.storageUri),
   }
 }
 
 
 export function mssqlDatabaseImportToHclTerraform(struct?: MssqlDatabaseImportOutputReference | MssqlDatabaseImport): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     administrator_login: {
-      value: cdktf.stringToHclTerraform(struct!.administratorLogin),
+      value: cdktn.stringToHclTerraform(struct!.administratorLogin),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     administrator_login_password: {
-      value: cdktf.stringToHclTerraform(struct!.administratorLoginPassword),
+      value: cdktn.stringToHclTerraform(struct!.administratorLoginPassword),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     authentication_type: {
-      value: cdktf.stringToHclTerraform(struct!.authenticationType),
+      value: cdktn.stringToHclTerraform(struct!.authenticationType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_account_id: {
-      value: cdktf.stringToHclTerraform(struct!.storageAccountId),
+      value: cdktn.stringToHclTerraform(struct!.storageAccountId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_key: {
-      value: cdktf.stringToHclTerraform(struct!.storageKey),
+      value: cdktn.stringToHclTerraform(struct!.storageKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_key_type: {
-      value: cdktf.stringToHclTerraform(struct!.storageKeyType),
+      value: cdktn.stringToHclTerraform(struct!.storageKeyType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_uri: {
-      value: cdktf.stringToHclTerraform(struct!.storageUri),
+      value: cdktn.stringToHclTerraform(struct!.storageUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -389,14 +389,14 @@ export function mssqlDatabaseImportToHclTerraform(struct?: MssqlDatabaseImportOu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MssqlDatabaseImportOutputReference extends cdktf.ComplexObject {
+export class MssqlDatabaseImportOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -555,7 +555,7 @@ export interface MssqlDatabaseLongTermRetentionPolicy {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_database#immutable_backups_enabled MssqlDatabase#immutable_backups_enabled}
   */
-  readonly immutableBackupsEnabled?: boolean | cdktf.IResolvable;
+  readonly immutableBackupsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_database#monthly_retention MssqlDatabase#monthly_retention}
   */
@@ -575,52 +575,52 @@ export interface MssqlDatabaseLongTermRetentionPolicy {
 }
 
 export function mssqlDatabaseLongTermRetentionPolicyToTerraform(struct?: MssqlDatabaseLongTermRetentionPolicyOutputReference | MssqlDatabaseLongTermRetentionPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    immutable_backups_enabled: cdktf.booleanToTerraform(struct!.immutableBackupsEnabled),
-    monthly_retention: cdktf.stringToTerraform(struct!.monthlyRetention),
-    week_of_year: cdktf.numberToTerraform(struct!.weekOfYear),
-    weekly_retention: cdktf.stringToTerraform(struct!.weeklyRetention),
-    yearly_retention: cdktf.stringToTerraform(struct!.yearlyRetention),
+    immutable_backups_enabled: cdktn.booleanToTerraform(struct!.immutableBackupsEnabled),
+    monthly_retention: cdktn.stringToTerraform(struct!.monthlyRetention),
+    week_of_year: cdktn.numberToTerraform(struct!.weekOfYear),
+    weekly_retention: cdktn.stringToTerraform(struct!.weeklyRetention),
+    yearly_retention: cdktn.stringToTerraform(struct!.yearlyRetention),
   }
 }
 
 
 export function mssqlDatabaseLongTermRetentionPolicyToHclTerraform(struct?: MssqlDatabaseLongTermRetentionPolicyOutputReference | MssqlDatabaseLongTermRetentionPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     immutable_backups_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.immutableBackupsEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.immutableBackupsEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     monthly_retention: {
-      value: cdktf.stringToHclTerraform(struct!.monthlyRetention),
+      value: cdktn.stringToHclTerraform(struct!.monthlyRetention),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     week_of_year: {
-      value: cdktf.numberToHclTerraform(struct!.weekOfYear),
+      value: cdktn.numberToHclTerraform(struct!.weekOfYear),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     weekly_retention: {
-      value: cdktf.stringToHclTerraform(struct!.weeklyRetention),
+      value: cdktn.stringToHclTerraform(struct!.weeklyRetention),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     yearly_retention: {
-      value: cdktf.stringToHclTerraform(struct!.yearlyRetention),
+      value: cdktn.stringToHclTerraform(struct!.yearlyRetention),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -631,14 +631,14 @@ export function mssqlDatabaseLongTermRetentionPolicyToHclTerraform(struct?: Mssq
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MssqlDatabaseLongTermRetentionPolicyOutputReference extends cdktf.ComplexObject {
+export class MssqlDatabaseLongTermRetentionPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -688,11 +688,11 @@ export class MssqlDatabaseLongTermRetentionPolicyOutputReference extends cdktf.C
   }
 
   // immutable_backups_enabled - computed: false, optional: true, required: false
-  private _immutableBackupsEnabled?: boolean | cdktf.IResolvable; 
+  private _immutableBackupsEnabled?: boolean | cdktn.IResolvable; 
   public get immutableBackupsEnabled() {
     return this.getBooleanAttribute('immutable_backups_enabled');
   }
-  public set immutableBackupsEnabled(value: boolean | cdktf.IResolvable) {
+  public set immutableBackupsEnabled(value: boolean | cdktn.IResolvable) {
     this._immutableBackupsEnabled = value;
   }
   public resetImmutableBackupsEnabled() {
@@ -779,31 +779,31 @@ export interface MssqlDatabaseShortTermRetentionPolicy {
 }
 
 export function mssqlDatabaseShortTermRetentionPolicyToTerraform(struct?: MssqlDatabaseShortTermRetentionPolicyOutputReference | MssqlDatabaseShortTermRetentionPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    backup_interval_in_hours: cdktf.numberToTerraform(struct!.backupIntervalInHours),
-    retention_days: cdktf.numberToTerraform(struct!.retentionDays),
+    backup_interval_in_hours: cdktn.numberToTerraform(struct!.backupIntervalInHours),
+    retention_days: cdktn.numberToTerraform(struct!.retentionDays),
   }
 }
 
 
 export function mssqlDatabaseShortTermRetentionPolicyToHclTerraform(struct?: MssqlDatabaseShortTermRetentionPolicyOutputReference | MssqlDatabaseShortTermRetentionPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     backup_interval_in_hours: {
-      value: cdktf.numberToHclTerraform(struct!.backupIntervalInHours),
+      value: cdktn.numberToHclTerraform(struct!.backupIntervalInHours),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     retention_days: {
-      value: cdktf.numberToHclTerraform(struct!.retentionDays),
+      value: cdktn.numberToHclTerraform(struct!.retentionDays),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -814,14 +814,14 @@ export function mssqlDatabaseShortTermRetentionPolicyToHclTerraform(struct?: Mss
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MssqlDatabaseShortTermRetentionPolicyOutputReference extends cdktf.ComplexObject {
+export class MssqlDatabaseShortTermRetentionPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -913,66 +913,66 @@ export interface MssqlDatabaseThreatDetectionPolicy {
 }
 
 export function mssqlDatabaseThreatDetectionPolicyToTerraform(struct?: MssqlDatabaseThreatDetectionPolicyOutputReference | MssqlDatabaseThreatDetectionPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    disabled_alerts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.disabledAlerts),
-    email_account_admins: cdktf.stringToTerraform(struct!.emailAccountAdmins),
-    email_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.emailAddresses),
-    retention_days: cdktf.numberToTerraform(struct!.retentionDays),
-    state: cdktf.stringToTerraform(struct!.state),
-    storage_account_access_key: cdktf.stringToTerraform(struct!.storageAccountAccessKey),
-    storage_endpoint: cdktf.stringToTerraform(struct!.storageEndpoint),
+    disabled_alerts: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.disabledAlerts),
+    email_account_admins: cdktn.stringToTerraform(struct!.emailAccountAdmins),
+    email_addresses: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.emailAddresses),
+    retention_days: cdktn.numberToTerraform(struct!.retentionDays),
+    state: cdktn.stringToTerraform(struct!.state),
+    storage_account_access_key: cdktn.stringToTerraform(struct!.storageAccountAccessKey),
+    storage_endpoint: cdktn.stringToTerraform(struct!.storageEndpoint),
   }
 }
 
 
 export function mssqlDatabaseThreatDetectionPolicyToHclTerraform(struct?: MssqlDatabaseThreatDetectionPolicyOutputReference | MssqlDatabaseThreatDetectionPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     disabled_alerts: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.disabledAlerts),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.disabledAlerts),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     email_account_admins: {
-      value: cdktf.stringToHclTerraform(struct!.emailAccountAdmins),
+      value: cdktn.stringToHclTerraform(struct!.emailAccountAdmins),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     email_addresses: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.emailAddresses),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.emailAddresses),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     retention_days: {
-      value: cdktf.numberToHclTerraform(struct!.retentionDays),
+      value: cdktn.numberToHclTerraform(struct!.retentionDays),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     state: {
-      value: cdktf.stringToHclTerraform(struct!.state),
+      value: cdktn.stringToHclTerraform(struct!.state),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_account_access_key: {
-      value: cdktf.stringToHclTerraform(struct!.storageAccountAccessKey),
+      value: cdktn.stringToHclTerraform(struct!.storageAccountAccessKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.storageEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.storageEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -983,14 +983,14 @@ export function mssqlDatabaseThreatDetectionPolicyToHclTerraform(struct?: MssqlD
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MssqlDatabaseThreatDetectionPolicyOutputReference extends cdktf.ComplexObject {
+export class MssqlDatabaseThreatDetectionPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1054,7 +1054,7 @@ export class MssqlDatabaseThreatDetectionPolicyOutputReference extends cdktf.Com
   // disabled_alerts - computed: false, optional: true, required: false
   private _disabledAlerts?: string[]; 
   public get disabledAlerts() {
-    return cdktf.Fn.tolist(this.getListAttribute('disabled_alerts'));
+    return cdktn.Fn.tolist(this.getListAttribute('disabled_alerts'));
   }
   public set disabledAlerts(value: string[]) {
     this._disabledAlerts = value;
@@ -1086,7 +1086,7 @@ export class MssqlDatabaseThreatDetectionPolicyOutputReference extends cdktf.Com
   // email_addresses - computed: false, optional: true, required: false
   private _emailAddresses?: string[]; 
   public get emailAddresses() {
-    return cdktf.Fn.tolist(this.getListAttribute('email_addresses'));
+    return cdktn.Fn.tolist(this.getListAttribute('email_addresses'));
   }
   public set emailAddresses(value: string[]) {
     this._emailAddresses = value;
@@ -1182,46 +1182,46 @@ export interface MssqlDatabaseTimeouts {
   readonly update?: string;
 }
 
-export function mssqlDatabaseTimeoutsToTerraform(struct?: MssqlDatabaseTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mssqlDatabaseTimeoutsToTerraform(struct?: MssqlDatabaseTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function mssqlDatabaseTimeoutsToHclTerraform(struct?: MssqlDatabaseTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mssqlDatabaseTimeoutsToHclTerraform(struct?: MssqlDatabaseTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1232,19 +1232,19 @@ export function mssqlDatabaseTimeoutsToHclTerraform(struct?: MssqlDatabaseTimeou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MssqlDatabaseTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MssqlDatabaseTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MssqlDatabaseTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MssqlDatabaseTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1269,7 +1269,7 @@ export class MssqlDatabaseTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MssqlDatabaseTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MssqlDatabaseTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1278,7 +1278,7 @@ export class MssqlDatabaseTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1360,7 +1360,7 @@ export class MssqlDatabaseTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_database azurerm_mssql_database}
 */
-export class MssqlDatabase extends cdktf.TerraformResource {
+export class MssqlDatabase extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1371,14 +1371,14 @@ export class MssqlDatabase extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MssqlDatabase resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MssqlDatabase resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MssqlDatabase to import
   * @param importFromId The id of the existing MssqlDatabase that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_database#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MssqlDatabase to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_mssql_database", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_mssql_database", importId: importFromId, provider });
       }
 
   // ===========
@@ -1548,11 +1548,11 @@ export class MssqlDatabase extends cdktf.TerraformResource {
   }
 
   // geo_backup_enabled - computed: false, optional: true, required: false
-  private _geoBackupEnabled?: boolean | cdktf.IResolvable; 
+  private _geoBackupEnabled?: boolean | cdktn.IResolvable; 
   public get geoBackupEnabled() {
     return this.getBooleanAttribute('geo_backup_enabled');
   }
-  public set geoBackupEnabled(value: boolean | cdktf.IResolvable) {
+  public set geoBackupEnabled(value: boolean | cdktn.IResolvable) {
     this._geoBackupEnabled = value;
   }
   public resetGeoBackupEnabled() {
@@ -1580,11 +1580,11 @@ export class MssqlDatabase extends cdktf.TerraformResource {
   }
 
   // ledger_enabled - computed: true, optional: true, required: false
-  private _ledgerEnabled?: boolean | cdktf.IResolvable; 
+  private _ledgerEnabled?: boolean | cdktn.IResolvable; 
   public get ledgerEnabled() {
     return this.getBooleanAttribute('ledger_enabled');
   }
-  public set ledgerEnabled(value: boolean | cdktf.IResolvable) {
+  public set ledgerEnabled(value: boolean | cdktn.IResolvable) {
     this._ledgerEnabled = value;
   }
   public resetLedgerEnabled() {
@@ -1689,11 +1689,11 @@ export class MssqlDatabase extends cdktf.TerraformResource {
   }
 
   // read_scale - computed: true, optional: true, required: false
-  private _readScale?: boolean | cdktf.IResolvable; 
+  private _readScale?: boolean | cdktn.IResolvable; 
   public get readScale() {
     return this.getBooleanAttribute('read_scale');
   }
-  public set readScale(value: boolean | cdktf.IResolvable) {
+  public set readScale(value: boolean | cdktn.IResolvable) {
     this._readScale = value;
   }
   public resetReadScale() {
@@ -1878,11 +1878,11 @@ export class MssqlDatabase extends cdktf.TerraformResource {
   }
 
   // transparent_data_encryption_enabled - computed: false, optional: true, required: false
-  private _transparentDataEncryptionEnabled?: boolean | cdktf.IResolvable; 
+  private _transparentDataEncryptionEnabled?: boolean | cdktn.IResolvable; 
   public get transparentDataEncryptionEnabled() {
     return this.getBooleanAttribute('transparent_data_encryption_enabled');
   }
-  public set transparentDataEncryptionEnabled(value: boolean | cdktf.IResolvable) {
+  public set transparentDataEncryptionEnabled(value: boolean | cdktn.IResolvable) {
     this._transparentDataEncryptionEnabled = value;
   }
   public resetTransparentDataEncryptionEnabled() {
@@ -1894,11 +1894,11 @@ export class MssqlDatabase extends cdktf.TerraformResource {
   }
 
   // transparent_data_encryption_key_automatic_rotation_enabled - computed: false, optional: true, required: false
-  private _transparentDataEncryptionKeyAutomaticRotationEnabled?: boolean | cdktf.IResolvable; 
+  private _transparentDataEncryptionKeyAutomaticRotationEnabled?: boolean | cdktn.IResolvable; 
   public get transparentDataEncryptionKeyAutomaticRotationEnabled() {
     return this.getBooleanAttribute('transparent_data_encryption_key_automatic_rotation_enabled');
   }
-  public set transparentDataEncryptionKeyAutomaticRotationEnabled(value: boolean | cdktf.IResolvable) {
+  public set transparentDataEncryptionKeyAutomaticRotationEnabled(value: boolean | cdktn.IResolvable) {
     this._transparentDataEncryptionKeyAutomaticRotationEnabled = value;
   }
   public resetTransparentDataEncryptionKeyAutomaticRotationEnabled() {
@@ -1926,11 +1926,11 @@ export class MssqlDatabase extends cdktf.TerraformResource {
   }
 
   // zone_redundant - computed: true, optional: true, required: false
-  private _zoneRedundant?: boolean | cdktf.IResolvable; 
+  private _zoneRedundant?: boolean | cdktn.IResolvable; 
   public get zoneRedundant() {
     return this.getBooleanAttribute('zone_redundant');
   }
-  public set zoneRedundant(value: boolean | cdktf.IResolvable) {
+  public set zoneRedundant(value: boolean | cdktn.IResolvable) {
     this._zoneRedundant = value;
   }
   public resetZoneRedundant() {
@@ -2043,37 +2043,37 @@ export class MssqlDatabase extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_pause_delay_in_minutes: cdktf.numberToTerraform(this._autoPauseDelayInMinutes),
-      collation: cdktf.stringToTerraform(this._collation),
-      create_mode: cdktf.stringToTerraform(this._createMode),
-      creation_source_database_id: cdktf.stringToTerraform(this._creationSourceDatabaseId),
-      elastic_pool_id: cdktf.stringToTerraform(this._elasticPoolId),
-      enclave_type: cdktf.stringToTerraform(this._enclaveType),
-      geo_backup_enabled: cdktf.booleanToTerraform(this._geoBackupEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      ledger_enabled: cdktf.booleanToTerraform(this._ledgerEnabled),
-      license_type: cdktf.stringToTerraform(this._licenseType),
-      maintenance_configuration_name: cdktf.stringToTerraform(this._maintenanceConfigurationName),
-      max_size_gb: cdktf.numberToTerraform(this._maxSizeGb),
-      min_capacity: cdktf.numberToTerraform(this._minCapacity),
-      name: cdktf.stringToTerraform(this._name),
-      read_replica_count: cdktf.numberToTerraform(this._readReplicaCount),
-      read_scale: cdktf.booleanToTerraform(this._readScale),
-      recover_database_id: cdktf.stringToTerraform(this._recoverDatabaseId),
-      recovery_point_id: cdktf.stringToTerraform(this._recoveryPointId),
-      restore_dropped_database_id: cdktf.stringToTerraform(this._restoreDroppedDatabaseId),
-      restore_long_term_retention_backup_id: cdktf.stringToTerraform(this._restoreLongTermRetentionBackupId),
-      restore_point_in_time: cdktf.stringToTerraform(this._restorePointInTime),
-      sample_name: cdktf.stringToTerraform(this._sampleName),
-      secondary_type: cdktf.stringToTerraform(this._secondaryType),
-      server_id: cdktf.stringToTerraform(this._serverId),
-      sku_name: cdktf.stringToTerraform(this._skuName),
-      storage_account_type: cdktf.stringToTerraform(this._storageAccountType),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      transparent_data_encryption_enabled: cdktf.booleanToTerraform(this._transparentDataEncryptionEnabled),
-      transparent_data_encryption_key_automatic_rotation_enabled: cdktf.booleanToTerraform(this._transparentDataEncryptionKeyAutomaticRotationEnabled),
-      transparent_data_encryption_key_vault_key_id: cdktf.stringToTerraform(this._transparentDataEncryptionKeyVaultKeyId),
-      zone_redundant: cdktf.booleanToTerraform(this._zoneRedundant),
+      auto_pause_delay_in_minutes: cdktn.numberToTerraform(this._autoPauseDelayInMinutes),
+      collation: cdktn.stringToTerraform(this._collation),
+      create_mode: cdktn.stringToTerraform(this._createMode),
+      creation_source_database_id: cdktn.stringToTerraform(this._creationSourceDatabaseId),
+      elastic_pool_id: cdktn.stringToTerraform(this._elasticPoolId),
+      enclave_type: cdktn.stringToTerraform(this._enclaveType),
+      geo_backup_enabled: cdktn.booleanToTerraform(this._geoBackupEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      ledger_enabled: cdktn.booleanToTerraform(this._ledgerEnabled),
+      license_type: cdktn.stringToTerraform(this._licenseType),
+      maintenance_configuration_name: cdktn.stringToTerraform(this._maintenanceConfigurationName),
+      max_size_gb: cdktn.numberToTerraform(this._maxSizeGb),
+      min_capacity: cdktn.numberToTerraform(this._minCapacity),
+      name: cdktn.stringToTerraform(this._name),
+      read_replica_count: cdktn.numberToTerraform(this._readReplicaCount),
+      read_scale: cdktn.booleanToTerraform(this._readScale),
+      recover_database_id: cdktn.stringToTerraform(this._recoverDatabaseId),
+      recovery_point_id: cdktn.stringToTerraform(this._recoveryPointId),
+      restore_dropped_database_id: cdktn.stringToTerraform(this._restoreDroppedDatabaseId),
+      restore_long_term_retention_backup_id: cdktn.stringToTerraform(this._restoreLongTermRetentionBackupId),
+      restore_point_in_time: cdktn.stringToTerraform(this._restorePointInTime),
+      sample_name: cdktn.stringToTerraform(this._sampleName),
+      secondary_type: cdktn.stringToTerraform(this._secondaryType),
+      server_id: cdktn.stringToTerraform(this._serverId),
+      sku_name: cdktn.stringToTerraform(this._skuName),
+      storage_account_type: cdktn.stringToTerraform(this._storageAccountType),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      transparent_data_encryption_enabled: cdktn.booleanToTerraform(this._transparentDataEncryptionEnabled),
+      transparent_data_encryption_key_automatic_rotation_enabled: cdktn.booleanToTerraform(this._transparentDataEncryptionKeyAutomaticRotationEnabled),
+      transparent_data_encryption_key_vault_key_id: cdktn.stringToTerraform(this._transparentDataEncryptionKeyVaultKeyId),
+      zone_redundant: cdktn.booleanToTerraform(this._zoneRedundant),
       identity: mssqlDatabaseIdentityToTerraform(this._identity.internalValue),
       import: mssqlDatabaseImportToTerraform(this._import.internalValue),
       long_term_retention_policy: mssqlDatabaseLongTermRetentionPolicyToTerraform(this._longTermRetentionPolicy.internalValue),
@@ -2086,187 +2086,187 @@ export class MssqlDatabase extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       auto_pause_delay_in_minutes: {
-        value: cdktf.numberToHclTerraform(this._autoPauseDelayInMinutes),
+        value: cdktn.numberToHclTerraform(this._autoPauseDelayInMinutes),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       collation: {
-        value: cdktf.stringToHclTerraform(this._collation),
+        value: cdktn.stringToHclTerraform(this._collation),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       create_mode: {
-        value: cdktf.stringToHclTerraform(this._createMode),
+        value: cdktn.stringToHclTerraform(this._createMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       creation_source_database_id: {
-        value: cdktf.stringToHclTerraform(this._creationSourceDatabaseId),
+        value: cdktn.stringToHclTerraform(this._creationSourceDatabaseId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       elastic_pool_id: {
-        value: cdktf.stringToHclTerraform(this._elasticPoolId),
+        value: cdktn.stringToHclTerraform(this._elasticPoolId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enclave_type: {
-        value: cdktf.stringToHclTerraform(this._enclaveType),
+        value: cdktn.stringToHclTerraform(this._enclaveType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       geo_backup_enabled: {
-        value: cdktf.booleanToHclTerraform(this._geoBackupEnabled),
+        value: cdktn.booleanToHclTerraform(this._geoBackupEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ledger_enabled: {
-        value: cdktf.booleanToHclTerraform(this._ledgerEnabled),
+        value: cdktn.booleanToHclTerraform(this._ledgerEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       license_type: {
-        value: cdktf.stringToHclTerraform(this._licenseType),
+        value: cdktn.stringToHclTerraform(this._licenseType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       maintenance_configuration_name: {
-        value: cdktf.stringToHclTerraform(this._maintenanceConfigurationName),
+        value: cdktn.stringToHclTerraform(this._maintenanceConfigurationName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_size_gb: {
-        value: cdktf.numberToHclTerraform(this._maxSizeGb),
+        value: cdktn.numberToHclTerraform(this._maxSizeGb),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       min_capacity: {
-        value: cdktf.numberToHclTerraform(this._minCapacity),
+        value: cdktn.numberToHclTerraform(this._minCapacity),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       read_replica_count: {
-        value: cdktf.numberToHclTerraform(this._readReplicaCount),
+        value: cdktn.numberToHclTerraform(this._readReplicaCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       read_scale: {
-        value: cdktf.booleanToHclTerraform(this._readScale),
+        value: cdktn.booleanToHclTerraform(this._readScale),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       recover_database_id: {
-        value: cdktf.stringToHclTerraform(this._recoverDatabaseId),
+        value: cdktn.stringToHclTerraform(this._recoverDatabaseId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       recovery_point_id: {
-        value: cdktf.stringToHclTerraform(this._recoveryPointId),
+        value: cdktn.stringToHclTerraform(this._recoveryPointId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       restore_dropped_database_id: {
-        value: cdktf.stringToHclTerraform(this._restoreDroppedDatabaseId),
+        value: cdktn.stringToHclTerraform(this._restoreDroppedDatabaseId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       restore_long_term_retention_backup_id: {
-        value: cdktf.stringToHclTerraform(this._restoreLongTermRetentionBackupId),
+        value: cdktn.stringToHclTerraform(this._restoreLongTermRetentionBackupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       restore_point_in_time: {
-        value: cdktf.stringToHclTerraform(this._restorePointInTime),
+        value: cdktn.stringToHclTerraform(this._restorePointInTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sample_name: {
-        value: cdktf.stringToHclTerraform(this._sampleName),
+        value: cdktn.stringToHclTerraform(this._sampleName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secondary_type: {
-        value: cdktf.stringToHclTerraform(this._secondaryType),
+        value: cdktn.stringToHclTerraform(this._secondaryType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       server_id: {
-        value: cdktf.stringToHclTerraform(this._serverId),
+        value: cdktn.stringToHclTerraform(this._serverId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sku_name: {
-        value: cdktf.stringToHclTerraform(this._skuName),
+        value: cdktn.stringToHclTerraform(this._skuName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_account_type: {
-        value: cdktf.stringToHclTerraform(this._storageAccountType),
+        value: cdktn.stringToHclTerraform(this._storageAccountType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       transparent_data_encryption_enabled: {
-        value: cdktf.booleanToHclTerraform(this._transparentDataEncryptionEnabled),
+        value: cdktn.booleanToHclTerraform(this._transparentDataEncryptionEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       transparent_data_encryption_key_automatic_rotation_enabled: {
-        value: cdktf.booleanToHclTerraform(this._transparentDataEncryptionKeyAutomaticRotationEnabled),
+        value: cdktn.booleanToHclTerraform(this._transparentDataEncryptionKeyAutomaticRotationEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       transparent_data_encryption_key_vault_key_id: {
-        value: cdktf.stringToHclTerraform(this._transparentDataEncryptionKeyVaultKeyId),
+        value: cdktn.stringToHclTerraform(this._transparentDataEncryptionKeyVaultKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zone_redundant: {
-        value: cdktf.booleanToHclTerraform(this._zoneRedundant),
+        value: cdktn.booleanToHclTerraform(this._zoneRedundant),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

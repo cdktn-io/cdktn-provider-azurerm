@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DashboardGrafanaConfig extends cdktf.TerraformMetaArguments {
+export interface DashboardGrafanaConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dashboard_grafana#api_key_enabled DashboardGrafana#api_key_enabled}
   */
-  readonly apiKeyEnabled?: boolean | cdktf.IResolvable;
+  readonly apiKeyEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dashboard_grafana#auto_generated_domain_name_label_scope DashboardGrafana#auto_generated_domain_name_label_scope}
   */
@@ -23,7 +23,7 @@ export interface DashboardGrafanaConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dashboard_grafana#deterministic_outbound_ip_enabled DashboardGrafana#deterministic_outbound_ip_enabled}
   */
-  readonly deterministicOutboundIpEnabled?: boolean | cdktf.IResolvable;
+  readonly deterministicOutboundIpEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dashboard_grafana#grafana_major_version DashboardGrafana#grafana_major_version}
   */
@@ -46,7 +46,7 @@ export interface DashboardGrafanaConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dashboard_grafana#public_network_access_enabled DashboardGrafana#public_network_access_enabled}
   */
-  readonly publicNetworkAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly publicNetworkAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dashboard_grafana#resource_group_name DashboardGrafana#resource_group_name}
   */
@@ -62,13 +62,13 @@ export interface DashboardGrafanaConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dashboard_grafana#zone_redundancy_enabled DashboardGrafana#zone_redundancy_enabled}
   */
-  readonly zoneRedundancyEnabled?: boolean | cdktf.IResolvable;
+  readonly zoneRedundancyEnabled?: boolean | cdktn.IResolvable;
   /**
   * azure_monitor_workspace_integrations block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dashboard_grafana#azure_monitor_workspace_integrations DashboardGrafana#azure_monitor_workspace_integrations}
   */
-  readonly azureMonitorWorkspaceIntegrations?: DashboardGrafanaAzureMonitorWorkspaceIntegrations[] | cdktf.IResolvable;
+  readonly azureMonitorWorkspaceIntegrations?: DashboardGrafanaAzureMonitorWorkspaceIntegrations[] | cdktn.IResolvable;
   /**
   * identity block
   *
@@ -95,25 +95,25 @@ export interface DashboardGrafanaAzureMonitorWorkspaceIntegrations {
   readonly resourceId: string;
 }
 
-export function dashboardGrafanaAzureMonitorWorkspaceIntegrationsToTerraform(struct?: DashboardGrafanaAzureMonitorWorkspaceIntegrations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardGrafanaAzureMonitorWorkspaceIntegrationsToTerraform(struct?: DashboardGrafanaAzureMonitorWorkspaceIntegrations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    resource_id: cdktf.stringToTerraform(struct!.resourceId),
+    resource_id: cdktn.stringToTerraform(struct!.resourceId),
   }
 }
 
 
-export function dashboardGrafanaAzureMonitorWorkspaceIntegrationsToHclTerraform(struct?: DashboardGrafanaAzureMonitorWorkspaceIntegrations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardGrafanaAzureMonitorWorkspaceIntegrationsToHclTerraform(struct?: DashboardGrafanaAzureMonitorWorkspaceIntegrations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     resource_id: {
-      value: cdktf.stringToHclTerraform(struct!.resourceId),
+      value: cdktn.stringToHclTerraform(struct!.resourceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -124,9 +124,9 @@ export function dashboardGrafanaAzureMonitorWorkspaceIntegrationsToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardGrafanaAzureMonitorWorkspaceIntegrationsOutputReference extends cdktf.ComplexObject {
+export class DashboardGrafanaAzureMonitorWorkspaceIntegrationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -134,11 +134,11 @@ export class DashboardGrafanaAzureMonitorWorkspaceIntegrationsOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DashboardGrafanaAzureMonitorWorkspaceIntegrations | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardGrafanaAzureMonitorWorkspaceIntegrations | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -151,13 +151,13 @@ export class DashboardGrafanaAzureMonitorWorkspaceIntegrationsOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardGrafanaAzureMonitorWorkspaceIntegrations | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardGrafanaAzureMonitorWorkspaceIntegrations | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._resourceId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -182,15 +182,15 @@ export class DashboardGrafanaAzureMonitorWorkspaceIntegrationsOutputReference ex
   }
 }
 
-export class DashboardGrafanaAzureMonitorWorkspaceIntegrationsList extends cdktf.ComplexList {
-  public internalValue? : DashboardGrafanaAzureMonitorWorkspaceIntegrations[] | cdktf.IResolvable
+export class DashboardGrafanaAzureMonitorWorkspaceIntegrationsList extends cdktn.ComplexList {
+  public internalValue? : DashboardGrafanaAzureMonitorWorkspaceIntegrations[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -213,31 +213,31 @@ export interface DashboardGrafanaIdentity {
 }
 
 export function dashboardGrafanaIdentityToTerraform(struct?: DashboardGrafanaIdentityOutputReference | DashboardGrafanaIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function dashboardGrafanaIdentityToHclTerraform(struct?: DashboardGrafanaIdentityOutputReference | DashboardGrafanaIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -248,14 +248,14 @@ export function dashboardGrafanaIdentityToHclTerraform(struct?: DashboardGrafana
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardGrafanaIdentityOutputReference extends cdktf.ComplexObject {
+export class DashboardGrafanaIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -289,7 +289,7 @@ export class DashboardGrafanaIdentityOutputReference extends cdktf.ComplexObject
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -329,7 +329,7 @@ export interface DashboardGrafanaSmtp {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dashboard_grafana#enabled DashboardGrafana#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dashboard_grafana#from_address DashboardGrafana#from_address}
   */
@@ -357,77 +357,77 @@ export interface DashboardGrafanaSmtp {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dashboard_grafana#verification_skip_enabled DashboardGrafana#verification_skip_enabled}
   */
-  readonly verificationSkipEnabled?: boolean | cdktf.IResolvable;
+  readonly verificationSkipEnabled?: boolean | cdktn.IResolvable;
 }
 
 export function dashboardGrafanaSmtpToTerraform(struct?: DashboardGrafanaSmtpOutputReference | DashboardGrafanaSmtp): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    from_address: cdktf.stringToTerraform(struct!.fromAddress),
-    from_name: cdktf.stringToTerraform(struct!.fromName),
-    host: cdktf.stringToTerraform(struct!.host),
-    password: cdktf.stringToTerraform(struct!.password),
-    start_tls_policy: cdktf.stringToTerraform(struct!.startTlsPolicy),
-    user: cdktf.stringToTerraform(struct!.user),
-    verification_skip_enabled: cdktf.booleanToTerraform(struct!.verificationSkipEnabled),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    from_address: cdktn.stringToTerraform(struct!.fromAddress),
+    from_name: cdktn.stringToTerraform(struct!.fromName),
+    host: cdktn.stringToTerraform(struct!.host),
+    password: cdktn.stringToTerraform(struct!.password),
+    start_tls_policy: cdktn.stringToTerraform(struct!.startTlsPolicy),
+    user: cdktn.stringToTerraform(struct!.user),
+    verification_skip_enabled: cdktn.booleanToTerraform(struct!.verificationSkipEnabled),
   }
 }
 
 
 export function dashboardGrafanaSmtpToHclTerraform(struct?: DashboardGrafanaSmtpOutputReference | DashboardGrafanaSmtp): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     from_address: {
-      value: cdktf.stringToHclTerraform(struct!.fromAddress),
+      value: cdktn.stringToHclTerraform(struct!.fromAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     from_name: {
-      value: cdktf.stringToHclTerraform(struct!.fromName),
+      value: cdktn.stringToHclTerraform(struct!.fromName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     start_tls_policy: {
-      value: cdktf.stringToHclTerraform(struct!.startTlsPolicy),
+      value: cdktn.stringToHclTerraform(struct!.startTlsPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user: {
-      value: cdktf.stringToHclTerraform(struct!.user),
+      value: cdktn.stringToHclTerraform(struct!.user),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     verification_skip_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.verificationSkipEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.verificationSkipEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -438,14 +438,14 @@ export function dashboardGrafanaSmtpToHclTerraform(struct?: DashboardGrafanaSmtp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardGrafanaSmtpOutputReference extends cdktf.ComplexObject {
+export class DashboardGrafanaSmtpOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -513,11 +513,11 @@ export class DashboardGrafanaSmtpOutputReference extends cdktf.ComplexObject {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -610,11 +610,11 @@ export class DashboardGrafanaSmtpOutputReference extends cdktf.ComplexObject {
   }
 
   // verification_skip_enabled - computed: false, optional: true, required: false
-  private _verificationSkipEnabled?: boolean | cdktf.IResolvable; 
+  private _verificationSkipEnabled?: boolean | cdktn.IResolvable; 
   public get verificationSkipEnabled() {
     return this.getBooleanAttribute('verification_skip_enabled');
   }
-  public set verificationSkipEnabled(value: boolean | cdktf.IResolvable) {
+  public set verificationSkipEnabled(value: boolean | cdktn.IResolvable) {
     this._verificationSkipEnabled = value;
   }
   public resetVerificationSkipEnabled() {
@@ -644,46 +644,46 @@ export interface DashboardGrafanaTimeouts {
   readonly update?: string;
 }
 
-export function dashboardGrafanaTimeoutsToTerraform(struct?: DashboardGrafanaTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardGrafanaTimeoutsToTerraform(struct?: DashboardGrafanaTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dashboardGrafanaTimeoutsToHclTerraform(struct?: DashboardGrafanaTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dashboardGrafanaTimeoutsToHclTerraform(struct?: DashboardGrafanaTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -694,19 +694,19 @@ export function dashboardGrafanaTimeoutsToHclTerraform(struct?: DashboardGrafana
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DashboardGrafanaTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DashboardGrafanaTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DashboardGrafanaTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DashboardGrafanaTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -731,7 +731,7 @@ export class DashboardGrafanaTimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DashboardGrafanaTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DashboardGrafanaTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -740,7 +740,7 @@ export class DashboardGrafanaTimeoutsOutputReference extends cdktf.ComplexObject
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -822,7 +822,7 @@ export class DashboardGrafanaTimeoutsOutputReference extends cdktf.ComplexObject
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dashboard_grafana azurerm_dashboard_grafana}
 */
-export class DashboardGrafana extends cdktf.TerraformResource {
+export class DashboardGrafana extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -833,14 +833,14 @@ export class DashboardGrafana extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DashboardGrafana resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DashboardGrafana resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DashboardGrafana to import
   * @param importFromId The id of the existing DashboardGrafana that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dashboard_grafana#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DashboardGrafana to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_dashboard_grafana", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_dashboard_grafana", importId: importFromId, provider });
       }
 
   // ===========
@@ -893,11 +893,11 @@ export class DashboardGrafana extends cdktf.TerraformResource {
   // ==========
 
   // api_key_enabled - computed: false, optional: true, required: false
-  private _apiKeyEnabled?: boolean | cdktf.IResolvable; 
+  private _apiKeyEnabled?: boolean | cdktn.IResolvable; 
   public get apiKeyEnabled() {
     return this.getBooleanAttribute('api_key_enabled');
   }
-  public set apiKeyEnabled(value: boolean | cdktf.IResolvable) {
+  public set apiKeyEnabled(value: boolean | cdktn.IResolvable) {
     this._apiKeyEnabled = value;
   }
   public resetApiKeyEnabled() {
@@ -925,11 +925,11 @@ export class DashboardGrafana extends cdktf.TerraformResource {
   }
 
   // deterministic_outbound_ip_enabled - computed: false, optional: true, required: false
-  private _deterministicOutboundIpEnabled?: boolean | cdktf.IResolvable; 
+  private _deterministicOutboundIpEnabled?: boolean | cdktn.IResolvable; 
   public get deterministicOutboundIpEnabled() {
     return this.getBooleanAttribute('deterministic_outbound_ip_enabled');
   }
-  public set deterministicOutboundIpEnabled(value: boolean | cdktf.IResolvable) {
+  public set deterministicOutboundIpEnabled(value: boolean | cdktn.IResolvable) {
     this._deterministicOutboundIpEnabled = value;
   }
   public resetDeterministicOutboundIpEnabled() {
@@ -1011,11 +1011,11 @@ export class DashboardGrafana extends cdktf.TerraformResource {
   }
 
   // public_network_access_enabled - computed: false, optional: true, required: false
-  private _publicNetworkAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _publicNetworkAccessEnabled?: boolean | cdktn.IResolvable; 
   public get publicNetworkAccessEnabled() {
     return this.getBooleanAttribute('public_network_access_enabled');
   }
-  public set publicNetworkAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set publicNetworkAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._publicNetworkAccessEnabled = value;
   }
   public resetPublicNetworkAccessEnabled() {
@@ -1072,11 +1072,11 @@ export class DashboardGrafana extends cdktf.TerraformResource {
   }
 
   // zone_redundancy_enabled - computed: false, optional: true, required: false
-  private _zoneRedundancyEnabled?: boolean | cdktf.IResolvable; 
+  private _zoneRedundancyEnabled?: boolean | cdktn.IResolvable; 
   public get zoneRedundancyEnabled() {
     return this.getBooleanAttribute('zone_redundancy_enabled');
   }
-  public set zoneRedundancyEnabled(value: boolean | cdktf.IResolvable) {
+  public set zoneRedundancyEnabled(value: boolean | cdktn.IResolvable) {
     this._zoneRedundancyEnabled = value;
   }
   public resetZoneRedundancyEnabled() {
@@ -1092,7 +1092,7 @@ export class DashboardGrafana extends cdktf.TerraformResource {
   public get azureMonitorWorkspaceIntegrations() {
     return this._azureMonitorWorkspaceIntegrations;
   }
-  public putAzureMonitorWorkspaceIntegrations(value: DashboardGrafanaAzureMonitorWorkspaceIntegrations[] | cdktf.IResolvable) {
+  public putAzureMonitorWorkspaceIntegrations(value: DashboardGrafanaAzureMonitorWorkspaceIntegrations[] | cdktn.IResolvable) {
     this._azureMonitorWorkspaceIntegrations.internalValue = value;
   }
   public resetAzureMonitorWorkspaceIntegrations() {
@@ -1157,19 +1157,19 @@ export class DashboardGrafana extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_key_enabled: cdktf.booleanToTerraform(this._apiKeyEnabled),
-      auto_generated_domain_name_label_scope: cdktf.stringToTerraform(this._autoGeneratedDomainNameLabelScope),
-      deterministic_outbound_ip_enabled: cdktf.booleanToTerraform(this._deterministicOutboundIpEnabled),
-      grafana_major_version: cdktf.stringToTerraform(this._grafanaMajorVersion),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      public_network_access_enabled: cdktf.booleanToTerraform(this._publicNetworkAccessEnabled),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      sku: cdktf.stringToTerraform(this._sku),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      zone_redundancy_enabled: cdktf.booleanToTerraform(this._zoneRedundancyEnabled),
-      azure_monitor_workspace_integrations: cdktf.listMapper(dashboardGrafanaAzureMonitorWorkspaceIntegrationsToTerraform, true)(this._azureMonitorWorkspaceIntegrations.internalValue),
+      api_key_enabled: cdktn.booleanToTerraform(this._apiKeyEnabled),
+      auto_generated_domain_name_label_scope: cdktn.stringToTerraform(this._autoGeneratedDomainNameLabelScope),
+      deterministic_outbound_ip_enabled: cdktn.booleanToTerraform(this._deterministicOutboundIpEnabled),
+      grafana_major_version: cdktn.stringToTerraform(this._grafanaMajorVersion),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      public_network_access_enabled: cdktn.booleanToTerraform(this._publicNetworkAccessEnabled),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      sku: cdktn.stringToTerraform(this._sku),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      zone_redundancy_enabled: cdktn.booleanToTerraform(this._zoneRedundancyEnabled),
+      azure_monitor_workspace_integrations: cdktn.listMapper(dashboardGrafanaAzureMonitorWorkspaceIntegrationsToTerraform, true)(this._azureMonitorWorkspaceIntegrations.internalValue),
       identity: dashboardGrafanaIdentityToTerraform(this._identity.internalValue),
       smtp: dashboardGrafanaSmtpToTerraform(this._smtp.internalValue),
       timeouts: dashboardGrafanaTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1179,79 +1179,79 @@ export class DashboardGrafana extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_key_enabled: {
-        value: cdktf.booleanToHclTerraform(this._apiKeyEnabled),
+        value: cdktn.booleanToHclTerraform(this._apiKeyEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       auto_generated_domain_name_label_scope: {
-        value: cdktf.stringToHclTerraform(this._autoGeneratedDomainNameLabelScope),
+        value: cdktn.stringToHclTerraform(this._autoGeneratedDomainNameLabelScope),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       deterministic_outbound_ip_enabled: {
-        value: cdktf.booleanToHclTerraform(this._deterministicOutboundIpEnabled),
+        value: cdktn.booleanToHclTerraform(this._deterministicOutboundIpEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       grafana_major_version: {
-        value: cdktf.stringToHclTerraform(this._grafanaMajorVersion),
+        value: cdktn.stringToHclTerraform(this._grafanaMajorVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_network_access_enabled: {
-        value: cdktf.booleanToHclTerraform(this._publicNetworkAccessEnabled),
+        value: cdktn.booleanToHclTerraform(this._publicNetworkAccessEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sku: {
-        value: cdktf.stringToHclTerraform(this._sku),
+        value: cdktn.stringToHclTerraform(this._sku),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       zone_redundancy_enabled: {
-        value: cdktf.booleanToHclTerraform(this._zoneRedundancyEnabled),
+        value: cdktn.booleanToHclTerraform(this._zoneRedundancyEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       azure_monitor_workspace_integrations: {
-        value: cdktf.listMapperHcl(dashboardGrafanaAzureMonitorWorkspaceIntegrationsToHclTerraform, true)(this._azureMonitorWorkspaceIntegrations.internalValue),
+        value: cdktn.listMapperHcl(dashboardGrafanaAzureMonitorWorkspaceIntegrationsToHclTerraform, true)(this._azureMonitorWorkspaceIntegrations.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DashboardGrafanaAzureMonitorWorkspaceIntegrationsList",

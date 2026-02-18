@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SiteRecoveryReplicationRecoveryPlanConfig extends cdktf.TerraformMetaArguments {
+export interface SiteRecoveryReplicationRecoveryPlanConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/site_recovery_replication_recovery_plan#id SiteRecoveryReplicationRecoveryPlan#id}
   *
@@ -46,7 +46,7 @@ export interface SiteRecoveryReplicationRecoveryPlanConfig extends cdktf.Terrafo
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/site_recovery_replication_recovery_plan#boot_recovery_group SiteRecoveryReplicationRecoveryPlan#boot_recovery_group}
   */
-  readonly bootRecoveryGroup: SiteRecoveryReplicationRecoveryPlanBootRecoveryGroup[] | cdktf.IResolvable;
+  readonly bootRecoveryGroup: SiteRecoveryReplicationRecoveryPlanBootRecoveryGroup[] | cdktn.IResolvable;
   /**
   * failover_recovery_group block
   *
@@ -86,45 +86,45 @@ export interface SiteRecoveryReplicationRecoveryPlanAzureToAzureSettings {
 }
 
 export function siteRecoveryReplicationRecoveryPlanAzureToAzureSettingsToTerraform(struct?: SiteRecoveryReplicationRecoveryPlanAzureToAzureSettingsOutputReference | SiteRecoveryReplicationRecoveryPlanAzureToAzureSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    primary_edge_zone: cdktf.stringToTerraform(struct!.primaryEdgeZone),
-    primary_zone: cdktf.stringToTerraform(struct!.primaryZone),
-    recovery_edge_zone: cdktf.stringToTerraform(struct!.recoveryEdgeZone),
-    recovery_zone: cdktf.stringToTerraform(struct!.recoveryZone),
+    primary_edge_zone: cdktn.stringToTerraform(struct!.primaryEdgeZone),
+    primary_zone: cdktn.stringToTerraform(struct!.primaryZone),
+    recovery_edge_zone: cdktn.stringToTerraform(struct!.recoveryEdgeZone),
+    recovery_zone: cdktn.stringToTerraform(struct!.recoveryZone),
   }
 }
 
 
 export function siteRecoveryReplicationRecoveryPlanAzureToAzureSettingsToHclTerraform(struct?: SiteRecoveryReplicationRecoveryPlanAzureToAzureSettingsOutputReference | SiteRecoveryReplicationRecoveryPlanAzureToAzureSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     primary_edge_zone: {
-      value: cdktf.stringToHclTerraform(struct!.primaryEdgeZone),
+      value: cdktn.stringToHclTerraform(struct!.primaryEdgeZone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     primary_zone: {
-      value: cdktf.stringToHclTerraform(struct!.primaryZone),
+      value: cdktn.stringToHclTerraform(struct!.primaryZone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     recovery_edge_zone: {
-      value: cdktf.stringToHclTerraform(struct!.recoveryEdgeZone),
+      value: cdktn.stringToHclTerraform(struct!.recoveryEdgeZone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     recovery_zone: {
-      value: cdktf.stringToHclTerraform(struct!.recoveryZone),
+      value: cdktn.stringToHclTerraform(struct!.recoveryZone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -135,14 +135,14 @@ export function siteRecoveryReplicationRecoveryPlanAzureToAzureSettingsToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SiteRecoveryReplicationRecoveryPlanAzureToAzureSettingsOutputReference extends cdktf.ComplexObject {
+export class SiteRecoveryReplicationRecoveryPlanAzureToAzureSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -284,74 +284,74 @@ export interface SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPostAction 
   readonly type: string;
 }
 
-export function siteRecoveryReplicationRecoveryPlanBootRecoveryGroupPostActionToTerraform(struct?: SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPostAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function siteRecoveryReplicationRecoveryPlanBootRecoveryGroupPostActionToTerraform(struct?: SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPostAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fabric_location: cdktf.stringToTerraform(struct!.fabricLocation),
-    fail_over_directions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.failOverDirections),
-    fail_over_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.failOverTypes),
-    manual_action_instruction: cdktf.stringToTerraform(struct!.manualActionInstruction),
-    name: cdktf.stringToTerraform(struct!.name),
-    runbook_id: cdktf.stringToTerraform(struct!.runbookId),
-    script_path: cdktf.stringToTerraform(struct!.scriptPath),
-    type: cdktf.stringToTerraform(struct!.type),
+    fabric_location: cdktn.stringToTerraform(struct!.fabricLocation),
+    fail_over_directions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.failOverDirections),
+    fail_over_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.failOverTypes),
+    manual_action_instruction: cdktn.stringToTerraform(struct!.manualActionInstruction),
+    name: cdktn.stringToTerraform(struct!.name),
+    runbook_id: cdktn.stringToTerraform(struct!.runbookId),
+    script_path: cdktn.stringToTerraform(struct!.scriptPath),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function siteRecoveryReplicationRecoveryPlanBootRecoveryGroupPostActionToHclTerraform(struct?: SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPostAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function siteRecoveryReplicationRecoveryPlanBootRecoveryGroupPostActionToHclTerraform(struct?: SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPostAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fabric_location: {
-      value: cdktf.stringToHclTerraform(struct!.fabricLocation),
+      value: cdktn.stringToHclTerraform(struct!.fabricLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     fail_over_directions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.failOverDirections),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.failOverDirections),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     fail_over_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.failOverTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.failOverTypes),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     manual_action_instruction: {
-      value: cdktf.stringToHclTerraform(struct!.manualActionInstruction),
+      value: cdktn.stringToHclTerraform(struct!.manualActionInstruction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     runbook_id: {
-      value: cdktf.stringToHclTerraform(struct!.runbookId),
+      value: cdktn.stringToHclTerraform(struct!.runbookId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     script_path: {
-      value: cdktf.stringToHclTerraform(struct!.scriptPath),
+      value: cdktn.stringToHclTerraform(struct!.scriptPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -362,9 +362,9 @@ export function siteRecoveryReplicationRecoveryPlanBootRecoveryGroupPostActionTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPostActionOutputReference extends cdktf.ComplexObject {
+export class SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPostActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -372,11 +372,11 @@ export class SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPostActionOutpu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPostAction | cdktf.IResolvable | undefined {
+  public get internalValue(): SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPostAction | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -417,7 +417,7 @@ export class SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPostActionOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPostAction | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPostAction | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -430,7 +430,7 @@ export class SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPostActionOutpu
       this._scriptPath = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -467,7 +467,7 @@ export class SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPostActionOutpu
   // fail_over_directions - computed: false, optional: false, required: true
   private _failOverDirections?: string[]; 
   public get failOverDirections() {
-    return cdktf.Fn.tolist(this.getListAttribute('fail_over_directions'));
+    return cdktn.Fn.tolist(this.getListAttribute('fail_over_directions'));
   }
   public set failOverDirections(value: string[]) {
     this._failOverDirections = value;
@@ -480,7 +480,7 @@ export class SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPostActionOutpu
   // fail_over_types - computed: false, optional: false, required: true
   private _failOverTypes?: string[]; 
   public get failOverTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('fail_over_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('fail_over_types'));
   }
   public set failOverTypes(value: string[]) {
     this._failOverTypes = value;
@@ -565,15 +565,15 @@ export class SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPostActionOutpu
   }
 }
 
-export class SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPostActionList extends cdktf.ComplexList {
-  public internalValue? : SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPostAction[] | cdktf.IResolvable
+export class SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPostActionList extends cdktn.ComplexList {
+  public internalValue? : SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPostAction[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -619,74 +619,74 @@ export interface SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPreAction {
   readonly type: string;
 }
 
-export function siteRecoveryReplicationRecoveryPlanBootRecoveryGroupPreActionToTerraform(struct?: SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPreAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function siteRecoveryReplicationRecoveryPlanBootRecoveryGroupPreActionToTerraform(struct?: SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPreAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fabric_location: cdktf.stringToTerraform(struct!.fabricLocation),
-    fail_over_directions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.failOverDirections),
-    fail_over_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.failOverTypes),
-    manual_action_instruction: cdktf.stringToTerraform(struct!.manualActionInstruction),
-    name: cdktf.stringToTerraform(struct!.name),
-    runbook_id: cdktf.stringToTerraform(struct!.runbookId),
-    script_path: cdktf.stringToTerraform(struct!.scriptPath),
-    type: cdktf.stringToTerraform(struct!.type),
+    fabric_location: cdktn.stringToTerraform(struct!.fabricLocation),
+    fail_over_directions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.failOverDirections),
+    fail_over_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.failOverTypes),
+    manual_action_instruction: cdktn.stringToTerraform(struct!.manualActionInstruction),
+    name: cdktn.stringToTerraform(struct!.name),
+    runbook_id: cdktn.stringToTerraform(struct!.runbookId),
+    script_path: cdktn.stringToTerraform(struct!.scriptPath),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function siteRecoveryReplicationRecoveryPlanBootRecoveryGroupPreActionToHclTerraform(struct?: SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPreAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function siteRecoveryReplicationRecoveryPlanBootRecoveryGroupPreActionToHclTerraform(struct?: SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPreAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fabric_location: {
-      value: cdktf.stringToHclTerraform(struct!.fabricLocation),
+      value: cdktn.stringToHclTerraform(struct!.fabricLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     fail_over_directions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.failOverDirections),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.failOverDirections),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     fail_over_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.failOverTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.failOverTypes),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     manual_action_instruction: {
-      value: cdktf.stringToHclTerraform(struct!.manualActionInstruction),
+      value: cdktn.stringToHclTerraform(struct!.manualActionInstruction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     runbook_id: {
-      value: cdktf.stringToHclTerraform(struct!.runbookId),
+      value: cdktn.stringToHclTerraform(struct!.runbookId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     script_path: {
-      value: cdktf.stringToHclTerraform(struct!.scriptPath),
+      value: cdktn.stringToHclTerraform(struct!.scriptPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -697,9 +697,9 @@ export function siteRecoveryReplicationRecoveryPlanBootRecoveryGroupPreActionToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPreActionOutputReference extends cdktf.ComplexObject {
+export class SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPreActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -707,11 +707,11 @@ export class SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPreActionOutput
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPreAction | cdktf.IResolvable | undefined {
+  public get internalValue(): SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPreAction | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -752,7 +752,7 @@ export class SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPreActionOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPreAction | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPreAction | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -765,7 +765,7 @@ export class SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPreActionOutput
       this._scriptPath = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -802,7 +802,7 @@ export class SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPreActionOutput
   // fail_over_directions - computed: false, optional: false, required: true
   private _failOverDirections?: string[]; 
   public get failOverDirections() {
-    return cdktf.Fn.tolist(this.getListAttribute('fail_over_directions'));
+    return cdktn.Fn.tolist(this.getListAttribute('fail_over_directions'));
   }
   public set failOverDirections(value: string[]) {
     this._failOverDirections = value;
@@ -815,7 +815,7 @@ export class SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPreActionOutput
   // fail_over_types - computed: false, optional: false, required: true
   private _failOverTypes?: string[]; 
   public get failOverTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('fail_over_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('fail_over_types'));
   }
   public set failOverTypes(value: string[]) {
     this._failOverTypes = value;
@@ -900,15 +900,15 @@ export class SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPreActionOutput
   }
 }
 
-export class SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPreActionList extends cdktf.ComplexList {
-  public internalValue? : SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPreAction[] | cdktf.IResolvable
+export class SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPreActionList extends cdktn.ComplexList {
+  public internalValue? : SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPreAction[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -929,48 +929,48 @@ export interface SiteRecoveryReplicationRecoveryPlanBootRecoveryGroup {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/site_recovery_replication_recovery_plan#post_action SiteRecoveryReplicationRecoveryPlan#post_action}
   */
-  readonly postAction?: SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPostAction[] | cdktf.IResolvable;
+  readonly postAction?: SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPostAction[] | cdktn.IResolvable;
   /**
   * pre_action block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/site_recovery_replication_recovery_plan#pre_action SiteRecoveryReplicationRecoveryPlan#pre_action}
   */
-  readonly preAction?: SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPreAction[] | cdktf.IResolvable;
+  readonly preAction?: SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPreAction[] | cdktn.IResolvable;
 }
 
-export function siteRecoveryReplicationRecoveryPlanBootRecoveryGroupToTerraform(struct?: SiteRecoveryReplicationRecoveryPlanBootRecoveryGroup | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function siteRecoveryReplicationRecoveryPlanBootRecoveryGroupToTerraform(struct?: SiteRecoveryReplicationRecoveryPlanBootRecoveryGroup | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    replicated_protected_items: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.replicatedProtectedItems),
-    post_action: cdktf.listMapper(siteRecoveryReplicationRecoveryPlanBootRecoveryGroupPostActionToTerraform, true)(struct!.postAction),
-    pre_action: cdktf.listMapper(siteRecoveryReplicationRecoveryPlanBootRecoveryGroupPreActionToTerraform, true)(struct!.preAction),
+    replicated_protected_items: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.replicatedProtectedItems),
+    post_action: cdktn.listMapper(siteRecoveryReplicationRecoveryPlanBootRecoveryGroupPostActionToTerraform, true)(struct!.postAction),
+    pre_action: cdktn.listMapper(siteRecoveryReplicationRecoveryPlanBootRecoveryGroupPreActionToTerraform, true)(struct!.preAction),
   }
 }
 
 
-export function siteRecoveryReplicationRecoveryPlanBootRecoveryGroupToHclTerraform(struct?: SiteRecoveryReplicationRecoveryPlanBootRecoveryGroup | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function siteRecoveryReplicationRecoveryPlanBootRecoveryGroupToHclTerraform(struct?: SiteRecoveryReplicationRecoveryPlanBootRecoveryGroup | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     replicated_protected_items: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.replicatedProtectedItems),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.replicatedProtectedItems),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     post_action: {
-      value: cdktf.listMapperHcl(siteRecoveryReplicationRecoveryPlanBootRecoveryGroupPostActionToHclTerraform, true)(struct!.postAction),
+      value: cdktn.listMapperHcl(siteRecoveryReplicationRecoveryPlanBootRecoveryGroupPostActionToHclTerraform, true)(struct!.postAction),
       isBlock: true,
       type: "list",
       storageClassType: "SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPostActionList",
     },
     pre_action: {
-      value: cdktf.listMapperHcl(siteRecoveryReplicationRecoveryPlanBootRecoveryGroupPreActionToHclTerraform, true)(struct!.preAction),
+      value: cdktn.listMapperHcl(siteRecoveryReplicationRecoveryPlanBootRecoveryGroupPreActionToHclTerraform, true)(struct!.preAction),
       isBlock: true,
       type: "list",
       storageClassType: "SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPreActionList",
@@ -981,9 +981,9 @@ export function siteRecoveryReplicationRecoveryPlanBootRecoveryGroupToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupOutputReference extends cdktf.ComplexObject {
+export class SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -991,11 +991,11 @@ export class SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SiteRecoveryReplicationRecoveryPlanBootRecoveryGroup | cdktf.IResolvable | undefined {
+  public get internalValue(): SiteRecoveryReplicationRecoveryPlanBootRecoveryGroup | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1016,7 +1016,7 @@ export class SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SiteRecoveryReplicationRecoveryPlanBootRecoveryGroup | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SiteRecoveryReplicationRecoveryPlanBootRecoveryGroup | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1024,7 +1024,7 @@ export class SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupOutputReference
       this._postAction.internalValue = undefined;
       this._preAction.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1058,7 +1058,7 @@ export class SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupOutputReference
   public get postAction() {
     return this._postAction;
   }
-  public putPostAction(value: SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPostAction[] | cdktf.IResolvable) {
+  public putPostAction(value: SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPostAction[] | cdktn.IResolvable) {
     this._postAction.internalValue = value;
   }
   public resetPostAction() {
@@ -1074,7 +1074,7 @@ export class SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupOutputReference
   public get preAction() {
     return this._preAction;
   }
-  public putPreAction(value: SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPreAction[] | cdktf.IResolvable) {
+  public putPreAction(value: SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupPreAction[] | cdktn.IResolvable) {
     this._preAction.internalValue = value;
   }
   public resetPreAction() {
@@ -1086,15 +1086,15 @@ export class SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupOutputReference
   }
 }
 
-export class SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupList extends cdktf.ComplexList {
-  public internalValue? : SiteRecoveryReplicationRecoveryPlanBootRecoveryGroup[] | cdktf.IResolvable
+export class SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupList extends cdktn.ComplexList {
+  public internalValue? : SiteRecoveryReplicationRecoveryPlanBootRecoveryGroup[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1140,74 +1140,74 @@ export interface SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostAct
   readonly type: string;
 }
 
-export function siteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostActionToTerraform(struct?: SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function siteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostActionToTerraform(struct?: SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fabric_location: cdktf.stringToTerraform(struct!.fabricLocation),
-    fail_over_directions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.failOverDirections),
-    fail_over_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.failOverTypes),
-    manual_action_instruction: cdktf.stringToTerraform(struct!.manualActionInstruction),
-    name: cdktf.stringToTerraform(struct!.name),
-    runbook_id: cdktf.stringToTerraform(struct!.runbookId),
-    script_path: cdktf.stringToTerraform(struct!.scriptPath),
-    type: cdktf.stringToTerraform(struct!.type),
+    fabric_location: cdktn.stringToTerraform(struct!.fabricLocation),
+    fail_over_directions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.failOverDirections),
+    fail_over_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.failOverTypes),
+    manual_action_instruction: cdktn.stringToTerraform(struct!.manualActionInstruction),
+    name: cdktn.stringToTerraform(struct!.name),
+    runbook_id: cdktn.stringToTerraform(struct!.runbookId),
+    script_path: cdktn.stringToTerraform(struct!.scriptPath),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function siteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostActionToHclTerraform(struct?: SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function siteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostActionToHclTerraform(struct?: SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fabric_location: {
-      value: cdktf.stringToHclTerraform(struct!.fabricLocation),
+      value: cdktn.stringToHclTerraform(struct!.fabricLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     fail_over_directions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.failOverDirections),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.failOverDirections),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     fail_over_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.failOverTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.failOverTypes),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     manual_action_instruction: {
-      value: cdktf.stringToHclTerraform(struct!.manualActionInstruction),
+      value: cdktn.stringToHclTerraform(struct!.manualActionInstruction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     runbook_id: {
-      value: cdktf.stringToHclTerraform(struct!.runbookId),
+      value: cdktn.stringToHclTerraform(struct!.runbookId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     script_path: {
-      value: cdktf.stringToHclTerraform(struct!.scriptPath),
+      value: cdktn.stringToHclTerraform(struct!.scriptPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1218,9 +1218,9 @@ export function siteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostActi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostActionOutputReference extends cdktf.ComplexObject {
+export class SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1228,11 +1228,11 @@ export class SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostActionO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostAction | cdktf.IResolvable | undefined {
+  public get internalValue(): SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostAction | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1273,7 +1273,7 @@ export class SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostActionO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostAction | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostAction | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1286,7 +1286,7 @@ export class SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostActionO
       this._scriptPath = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1323,7 +1323,7 @@ export class SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostActionO
   // fail_over_directions - computed: false, optional: false, required: true
   private _failOverDirections?: string[]; 
   public get failOverDirections() {
-    return cdktf.Fn.tolist(this.getListAttribute('fail_over_directions'));
+    return cdktn.Fn.tolist(this.getListAttribute('fail_over_directions'));
   }
   public set failOverDirections(value: string[]) {
     this._failOverDirections = value;
@@ -1336,7 +1336,7 @@ export class SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostActionO
   // fail_over_types - computed: false, optional: false, required: true
   private _failOverTypes?: string[]; 
   public get failOverTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('fail_over_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('fail_over_types'));
   }
   public set failOverTypes(value: string[]) {
     this._failOverTypes = value;
@@ -1421,15 +1421,15 @@ export class SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostActionO
   }
 }
 
-export class SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostActionList extends cdktf.ComplexList {
-  public internalValue? : SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostAction[] | cdktf.IResolvable
+export class SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostActionList extends cdktn.ComplexList {
+  public internalValue? : SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostAction[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1475,74 +1475,74 @@ export interface SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPreActi
   readonly type: string;
 }
 
-export function siteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPreActionToTerraform(struct?: SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPreAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function siteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPreActionToTerraform(struct?: SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPreAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fabric_location: cdktf.stringToTerraform(struct!.fabricLocation),
-    fail_over_directions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.failOverDirections),
-    fail_over_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.failOverTypes),
-    manual_action_instruction: cdktf.stringToTerraform(struct!.manualActionInstruction),
-    name: cdktf.stringToTerraform(struct!.name),
-    runbook_id: cdktf.stringToTerraform(struct!.runbookId),
-    script_path: cdktf.stringToTerraform(struct!.scriptPath),
-    type: cdktf.stringToTerraform(struct!.type),
+    fabric_location: cdktn.stringToTerraform(struct!.fabricLocation),
+    fail_over_directions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.failOverDirections),
+    fail_over_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.failOverTypes),
+    manual_action_instruction: cdktn.stringToTerraform(struct!.manualActionInstruction),
+    name: cdktn.stringToTerraform(struct!.name),
+    runbook_id: cdktn.stringToTerraform(struct!.runbookId),
+    script_path: cdktn.stringToTerraform(struct!.scriptPath),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function siteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPreActionToHclTerraform(struct?: SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPreAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function siteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPreActionToHclTerraform(struct?: SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPreAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fabric_location: {
-      value: cdktf.stringToHclTerraform(struct!.fabricLocation),
+      value: cdktn.stringToHclTerraform(struct!.fabricLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     fail_over_directions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.failOverDirections),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.failOverDirections),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     fail_over_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.failOverTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.failOverTypes),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     manual_action_instruction: {
-      value: cdktf.stringToHclTerraform(struct!.manualActionInstruction),
+      value: cdktn.stringToHclTerraform(struct!.manualActionInstruction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     runbook_id: {
-      value: cdktf.stringToHclTerraform(struct!.runbookId),
+      value: cdktn.stringToHclTerraform(struct!.runbookId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     script_path: {
-      value: cdktf.stringToHclTerraform(struct!.scriptPath),
+      value: cdktn.stringToHclTerraform(struct!.scriptPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1553,9 +1553,9 @@ export function siteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPreActio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPreActionOutputReference extends cdktf.ComplexObject {
+export class SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPreActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1563,11 +1563,11 @@ export class SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPreActionOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPreAction | cdktf.IResolvable | undefined {
+  public get internalValue(): SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPreAction | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1608,7 +1608,7 @@ export class SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPreActionOu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPreAction | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPreAction | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1621,7 +1621,7 @@ export class SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPreActionOu
       this._scriptPath = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1658,7 +1658,7 @@ export class SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPreActionOu
   // fail_over_directions - computed: false, optional: false, required: true
   private _failOverDirections?: string[]; 
   public get failOverDirections() {
-    return cdktf.Fn.tolist(this.getListAttribute('fail_over_directions'));
+    return cdktn.Fn.tolist(this.getListAttribute('fail_over_directions'));
   }
   public set failOverDirections(value: string[]) {
     this._failOverDirections = value;
@@ -1671,7 +1671,7 @@ export class SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPreActionOu
   // fail_over_types - computed: false, optional: false, required: true
   private _failOverTypes?: string[]; 
   public get failOverTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('fail_over_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('fail_over_types'));
   }
   public set failOverTypes(value: string[]) {
     this._failOverTypes = value;
@@ -1756,15 +1756,15 @@ export class SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPreActionOu
   }
 }
 
-export class SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPreActionList extends cdktf.ComplexList {
-  public internalValue? : SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPreAction[] | cdktf.IResolvable
+export class SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPreActionList extends cdktn.ComplexList {
+  public internalValue? : SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPreAction[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1781,41 +1781,41 @@ export interface SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroup {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/site_recovery_replication_recovery_plan#post_action SiteRecoveryReplicationRecoveryPlan#post_action}
   */
-  readonly postAction?: SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostAction[] | cdktf.IResolvable;
+  readonly postAction?: SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostAction[] | cdktn.IResolvable;
   /**
   * pre_action block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/site_recovery_replication_recovery_plan#pre_action SiteRecoveryReplicationRecoveryPlan#pre_action}
   */
-  readonly preAction?: SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPreAction[] | cdktf.IResolvable;
+  readonly preAction?: SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPreAction[] | cdktn.IResolvable;
 }
 
 export function siteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupToTerraform(struct?: SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupOutputReference | SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    post_action: cdktf.listMapper(siteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostActionToTerraform, true)(struct!.postAction),
-    pre_action: cdktf.listMapper(siteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPreActionToTerraform, true)(struct!.preAction),
+    post_action: cdktn.listMapper(siteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostActionToTerraform, true)(struct!.postAction),
+    pre_action: cdktn.listMapper(siteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPreActionToTerraform, true)(struct!.preAction),
   }
 }
 
 
 export function siteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupToHclTerraform(struct?: SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupOutputReference | SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     post_action: {
-      value: cdktf.listMapperHcl(siteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostActionToHclTerraform, true)(struct!.postAction),
+      value: cdktn.listMapperHcl(siteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostActionToHclTerraform, true)(struct!.postAction),
       isBlock: true,
       type: "list",
       storageClassType: "SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostActionList",
     },
     pre_action: {
-      value: cdktf.listMapperHcl(siteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPreActionToHclTerraform, true)(struct!.preAction),
+      value: cdktn.listMapperHcl(siteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPreActionToHclTerraform, true)(struct!.preAction),
       isBlock: true,
       type: "list",
       storageClassType: "SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPreActionList",
@@ -1826,14 +1826,14 @@ export function siteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupOutputReference extends cdktf.ComplexObject {
+export class SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1869,7 +1869,7 @@ export class SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupOutputRefer
   public get postAction() {
     return this._postAction;
   }
-  public putPostAction(value: SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostAction[] | cdktf.IResolvable) {
+  public putPostAction(value: SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPostAction[] | cdktn.IResolvable) {
     this._postAction.internalValue = value;
   }
   public resetPostAction() {
@@ -1885,7 +1885,7 @@ export class SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupOutputRefer
   public get preAction() {
     return this._preAction;
   }
-  public putPreAction(value: SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPreAction[] | cdktf.IResolvable) {
+  public putPreAction(value: SiteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupPreAction[] | cdktn.IResolvable) {
     this._preAction.internalValue = value;
   }
   public resetPreAction() {
@@ -1931,74 +1931,74 @@ export interface SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPostAct
   readonly type: string;
 }
 
-export function siteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPostActionToTerraform(struct?: SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPostAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function siteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPostActionToTerraform(struct?: SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPostAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fabric_location: cdktf.stringToTerraform(struct!.fabricLocation),
-    fail_over_directions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.failOverDirections),
-    fail_over_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.failOverTypes),
-    manual_action_instruction: cdktf.stringToTerraform(struct!.manualActionInstruction),
-    name: cdktf.stringToTerraform(struct!.name),
-    runbook_id: cdktf.stringToTerraform(struct!.runbookId),
-    script_path: cdktf.stringToTerraform(struct!.scriptPath),
-    type: cdktf.stringToTerraform(struct!.type),
+    fabric_location: cdktn.stringToTerraform(struct!.fabricLocation),
+    fail_over_directions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.failOverDirections),
+    fail_over_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.failOverTypes),
+    manual_action_instruction: cdktn.stringToTerraform(struct!.manualActionInstruction),
+    name: cdktn.stringToTerraform(struct!.name),
+    runbook_id: cdktn.stringToTerraform(struct!.runbookId),
+    script_path: cdktn.stringToTerraform(struct!.scriptPath),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function siteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPostActionToHclTerraform(struct?: SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPostAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function siteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPostActionToHclTerraform(struct?: SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPostAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fabric_location: {
-      value: cdktf.stringToHclTerraform(struct!.fabricLocation),
+      value: cdktn.stringToHclTerraform(struct!.fabricLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     fail_over_directions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.failOverDirections),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.failOverDirections),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     fail_over_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.failOverTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.failOverTypes),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     manual_action_instruction: {
-      value: cdktf.stringToHclTerraform(struct!.manualActionInstruction),
+      value: cdktn.stringToHclTerraform(struct!.manualActionInstruction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     runbook_id: {
-      value: cdktf.stringToHclTerraform(struct!.runbookId),
+      value: cdktn.stringToHclTerraform(struct!.runbookId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     script_path: {
-      value: cdktf.stringToHclTerraform(struct!.scriptPath),
+      value: cdktn.stringToHclTerraform(struct!.scriptPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2009,9 +2009,9 @@ export function siteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPostActi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPostActionOutputReference extends cdktf.ComplexObject {
+export class SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPostActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2019,11 +2019,11 @@ export class SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPostActionO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPostAction | cdktf.IResolvable | undefined {
+  public get internalValue(): SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPostAction | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2064,7 +2064,7 @@ export class SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPostActionO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPostAction | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPostAction | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2077,7 +2077,7 @@ export class SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPostActionO
       this._scriptPath = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2114,7 +2114,7 @@ export class SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPostActionO
   // fail_over_directions - computed: false, optional: false, required: true
   private _failOverDirections?: string[]; 
   public get failOverDirections() {
-    return cdktf.Fn.tolist(this.getListAttribute('fail_over_directions'));
+    return cdktn.Fn.tolist(this.getListAttribute('fail_over_directions'));
   }
   public set failOverDirections(value: string[]) {
     this._failOverDirections = value;
@@ -2127,7 +2127,7 @@ export class SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPostActionO
   // fail_over_types - computed: false, optional: false, required: true
   private _failOverTypes?: string[]; 
   public get failOverTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('fail_over_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('fail_over_types'));
   }
   public set failOverTypes(value: string[]) {
     this._failOverTypes = value;
@@ -2212,15 +2212,15 @@ export class SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPostActionO
   }
 }
 
-export class SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPostActionList extends cdktf.ComplexList {
-  public internalValue? : SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPostAction[] | cdktf.IResolvable
+export class SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPostActionList extends cdktn.ComplexList {
+  public internalValue? : SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPostAction[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2266,74 +2266,74 @@ export interface SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPreActi
   readonly type: string;
 }
 
-export function siteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPreActionToTerraform(struct?: SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPreAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function siteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPreActionToTerraform(struct?: SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPreAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fabric_location: cdktf.stringToTerraform(struct!.fabricLocation),
-    fail_over_directions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.failOverDirections),
-    fail_over_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.failOverTypes),
-    manual_action_instruction: cdktf.stringToTerraform(struct!.manualActionInstruction),
-    name: cdktf.stringToTerraform(struct!.name),
-    runbook_id: cdktf.stringToTerraform(struct!.runbookId),
-    script_path: cdktf.stringToTerraform(struct!.scriptPath),
-    type: cdktf.stringToTerraform(struct!.type),
+    fabric_location: cdktn.stringToTerraform(struct!.fabricLocation),
+    fail_over_directions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.failOverDirections),
+    fail_over_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.failOverTypes),
+    manual_action_instruction: cdktn.stringToTerraform(struct!.manualActionInstruction),
+    name: cdktn.stringToTerraform(struct!.name),
+    runbook_id: cdktn.stringToTerraform(struct!.runbookId),
+    script_path: cdktn.stringToTerraform(struct!.scriptPath),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function siteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPreActionToHclTerraform(struct?: SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPreAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function siteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPreActionToHclTerraform(struct?: SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPreAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fabric_location: {
-      value: cdktf.stringToHclTerraform(struct!.fabricLocation),
+      value: cdktn.stringToHclTerraform(struct!.fabricLocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     fail_over_directions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.failOverDirections),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.failOverDirections),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     fail_over_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.failOverTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.failOverTypes),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     manual_action_instruction: {
-      value: cdktf.stringToHclTerraform(struct!.manualActionInstruction),
+      value: cdktn.stringToHclTerraform(struct!.manualActionInstruction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     runbook_id: {
-      value: cdktf.stringToHclTerraform(struct!.runbookId),
+      value: cdktn.stringToHclTerraform(struct!.runbookId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     script_path: {
-      value: cdktf.stringToHclTerraform(struct!.scriptPath),
+      value: cdktn.stringToHclTerraform(struct!.scriptPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2344,9 +2344,9 @@ export function siteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPreActio
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPreActionOutputReference extends cdktf.ComplexObject {
+export class SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPreActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2354,11 +2354,11 @@ export class SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPreActionOu
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPreAction | cdktf.IResolvable | undefined {
+  public get internalValue(): SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPreAction | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2399,7 +2399,7 @@ export class SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPreActionOu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPreAction | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPreAction | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2412,7 +2412,7 @@ export class SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPreActionOu
       this._scriptPath = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2449,7 +2449,7 @@ export class SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPreActionOu
   // fail_over_directions - computed: false, optional: false, required: true
   private _failOverDirections?: string[]; 
   public get failOverDirections() {
-    return cdktf.Fn.tolist(this.getListAttribute('fail_over_directions'));
+    return cdktn.Fn.tolist(this.getListAttribute('fail_over_directions'));
   }
   public set failOverDirections(value: string[]) {
     this._failOverDirections = value;
@@ -2462,7 +2462,7 @@ export class SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPreActionOu
   // fail_over_types - computed: false, optional: false, required: true
   private _failOverTypes?: string[]; 
   public get failOverTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('fail_over_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('fail_over_types'));
   }
   public set failOverTypes(value: string[]) {
     this._failOverTypes = value;
@@ -2547,15 +2547,15 @@ export class SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPreActionOu
   }
 }
 
-export class SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPreActionList extends cdktf.ComplexList {
-  public internalValue? : SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPreAction[] | cdktf.IResolvable
+export class SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPreActionList extends cdktn.ComplexList {
+  public internalValue? : SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPreAction[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2572,41 +2572,41 @@ export interface SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroup {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/site_recovery_replication_recovery_plan#post_action SiteRecoveryReplicationRecoveryPlan#post_action}
   */
-  readonly postAction?: SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPostAction[] | cdktf.IResolvable;
+  readonly postAction?: SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPostAction[] | cdktn.IResolvable;
   /**
   * pre_action block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/site_recovery_replication_recovery_plan#pre_action SiteRecoveryReplicationRecoveryPlan#pre_action}
   */
-  readonly preAction?: SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPreAction[] | cdktf.IResolvable;
+  readonly preAction?: SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPreAction[] | cdktn.IResolvable;
 }
 
 export function siteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupToTerraform(struct?: SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupOutputReference | SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    post_action: cdktf.listMapper(siteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPostActionToTerraform, true)(struct!.postAction),
-    pre_action: cdktf.listMapper(siteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPreActionToTerraform, true)(struct!.preAction),
+    post_action: cdktn.listMapper(siteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPostActionToTerraform, true)(struct!.postAction),
+    pre_action: cdktn.listMapper(siteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPreActionToTerraform, true)(struct!.preAction),
   }
 }
 
 
 export function siteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupToHclTerraform(struct?: SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupOutputReference | SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroup): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     post_action: {
-      value: cdktf.listMapperHcl(siteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPostActionToHclTerraform, true)(struct!.postAction),
+      value: cdktn.listMapperHcl(siteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPostActionToHclTerraform, true)(struct!.postAction),
       isBlock: true,
       type: "list",
       storageClassType: "SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPostActionList",
     },
     pre_action: {
-      value: cdktf.listMapperHcl(siteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPreActionToHclTerraform, true)(struct!.preAction),
+      value: cdktn.listMapperHcl(siteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPreActionToHclTerraform, true)(struct!.preAction),
       isBlock: true,
       type: "list",
       storageClassType: "SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPreActionList",
@@ -2617,14 +2617,14 @@ export function siteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupOutputReference extends cdktf.ComplexObject {
+export class SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -2660,7 +2660,7 @@ export class SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupOutputRefer
   public get postAction() {
     return this._postAction;
   }
-  public putPostAction(value: SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPostAction[] | cdktf.IResolvable) {
+  public putPostAction(value: SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPostAction[] | cdktn.IResolvable) {
     this._postAction.internalValue = value;
   }
   public resetPostAction() {
@@ -2676,7 +2676,7 @@ export class SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupOutputRefer
   public get preAction() {
     return this._preAction;
   }
-  public putPreAction(value: SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPreAction[] | cdktf.IResolvable) {
+  public putPreAction(value: SiteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupPreAction[] | cdktn.IResolvable) {
     this._preAction.internalValue = value;
   }
   public resetPreAction() {
@@ -2706,46 +2706,46 @@ export interface SiteRecoveryReplicationRecoveryPlanTimeouts {
   readonly update?: string;
 }
 
-export function siteRecoveryReplicationRecoveryPlanTimeoutsToTerraform(struct?: SiteRecoveryReplicationRecoveryPlanTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function siteRecoveryReplicationRecoveryPlanTimeoutsToTerraform(struct?: SiteRecoveryReplicationRecoveryPlanTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function siteRecoveryReplicationRecoveryPlanTimeoutsToHclTerraform(struct?: SiteRecoveryReplicationRecoveryPlanTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function siteRecoveryReplicationRecoveryPlanTimeoutsToHclTerraform(struct?: SiteRecoveryReplicationRecoveryPlanTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2756,19 +2756,19 @@ export function siteRecoveryReplicationRecoveryPlanTimeoutsToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SiteRecoveryReplicationRecoveryPlanTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SiteRecoveryReplicationRecoveryPlanTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SiteRecoveryReplicationRecoveryPlanTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SiteRecoveryReplicationRecoveryPlanTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2793,7 +2793,7 @@ export class SiteRecoveryReplicationRecoveryPlanTimeoutsOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SiteRecoveryReplicationRecoveryPlanTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SiteRecoveryReplicationRecoveryPlanTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2802,7 +2802,7 @@ export class SiteRecoveryReplicationRecoveryPlanTimeoutsOutputReference extends 
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2884,7 +2884,7 @@ export class SiteRecoveryReplicationRecoveryPlanTimeoutsOutputReference extends 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/site_recovery_replication_recovery_plan azurerm_site_recovery_replication_recovery_plan}
 */
-export class SiteRecoveryReplicationRecoveryPlan extends cdktf.TerraformResource {
+export class SiteRecoveryReplicationRecoveryPlan extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2895,14 +2895,14 @@ export class SiteRecoveryReplicationRecoveryPlan extends cdktf.TerraformResource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SiteRecoveryReplicationRecoveryPlan resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SiteRecoveryReplicationRecoveryPlan resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SiteRecoveryReplicationRecoveryPlan to import
   * @param importFromId The id of the existing SiteRecoveryReplicationRecoveryPlan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/site_recovery_replication_recovery_plan#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SiteRecoveryReplicationRecoveryPlan to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_site_recovery_replication_recovery_plan", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_site_recovery_replication_recovery_plan", importId: importFromId, provider });
       }
 
   // ===========
@@ -3037,7 +3037,7 @@ export class SiteRecoveryReplicationRecoveryPlan extends cdktf.TerraformResource
   public get bootRecoveryGroup() {
     return this._bootRecoveryGroup;
   }
-  public putBootRecoveryGroup(value: SiteRecoveryReplicationRecoveryPlanBootRecoveryGroup[] | cdktf.IResolvable) {
+  public putBootRecoveryGroup(value: SiteRecoveryReplicationRecoveryPlanBootRecoveryGroup[] | cdktn.IResolvable) {
     this._bootRecoveryGroup.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -3093,13 +3093,13 @@ export class SiteRecoveryReplicationRecoveryPlan extends cdktf.TerraformResource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      recovery_vault_id: cdktf.stringToTerraform(this._recoveryVaultId),
-      source_recovery_fabric_id: cdktf.stringToTerraform(this._sourceRecoveryFabricId),
-      target_recovery_fabric_id: cdktf.stringToTerraform(this._targetRecoveryFabricId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      recovery_vault_id: cdktn.stringToTerraform(this._recoveryVaultId),
+      source_recovery_fabric_id: cdktn.stringToTerraform(this._sourceRecoveryFabricId),
+      target_recovery_fabric_id: cdktn.stringToTerraform(this._targetRecoveryFabricId),
       azure_to_azure_settings: siteRecoveryReplicationRecoveryPlanAzureToAzureSettingsToTerraform(this._azureToAzureSettings.internalValue),
-      boot_recovery_group: cdktf.listMapper(siteRecoveryReplicationRecoveryPlanBootRecoveryGroupToTerraform, true)(this._bootRecoveryGroup.internalValue),
+      boot_recovery_group: cdktn.listMapper(siteRecoveryReplicationRecoveryPlanBootRecoveryGroupToTerraform, true)(this._bootRecoveryGroup.internalValue),
       failover_recovery_group: siteRecoveryReplicationRecoveryPlanFailoverRecoveryGroupToTerraform(this._failoverRecoveryGroup.internalValue),
       shutdown_recovery_group: siteRecoveryReplicationRecoveryPlanShutdownRecoveryGroupToTerraform(this._shutdownRecoveryGroup.internalValue),
       timeouts: siteRecoveryReplicationRecoveryPlanTimeoutsToTerraform(this._timeouts.internalValue),
@@ -3109,31 +3109,31 @@ export class SiteRecoveryReplicationRecoveryPlan extends cdktf.TerraformResource
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       recovery_vault_id: {
-        value: cdktf.stringToHclTerraform(this._recoveryVaultId),
+        value: cdktn.stringToHclTerraform(this._recoveryVaultId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_recovery_fabric_id: {
-        value: cdktf.stringToHclTerraform(this._sourceRecoveryFabricId),
+        value: cdktn.stringToHclTerraform(this._sourceRecoveryFabricId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_recovery_fabric_id: {
-        value: cdktf.stringToHclTerraform(this._targetRecoveryFabricId),
+        value: cdktn.stringToHclTerraform(this._targetRecoveryFabricId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -3145,7 +3145,7 @@ export class SiteRecoveryReplicationRecoveryPlan extends cdktf.TerraformResource
         storageClassType: "SiteRecoveryReplicationRecoveryPlanAzureToAzureSettingsList",
       },
       boot_recovery_group: {
-        value: cdktf.listMapperHcl(siteRecoveryReplicationRecoveryPlanBootRecoveryGroupToHclTerraform, true)(this._bootRecoveryGroup.internalValue),
+        value: cdktn.listMapperHcl(siteRecoveryReplicationRecoveryPlanBootRecoveryGroupToHclTerraform, true)(this._bootRecoveryGroup.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SiteRecoveryReplicationRecoveryPlanBootRecoveryGroupList",

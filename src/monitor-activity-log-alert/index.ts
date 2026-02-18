@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MonitorActivityLogAlertConfig extends cdktf.TerraformMetaArguments {
+export interface MonitorActivityLogAlertConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_activity_log_alert#description MonitorActivityLogAlert#description}
   */
@@ -19,7 +19,7 @@ export interface MonitorActivityLogAlertConfig extends cdktf.TerraformMetaArgume
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_activity_log_alert#enabled MonitorActivityLogAlert#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_activity_log_alert#id MonitorActivityLogAlert#id}
   *
@@ -52,7 +52,7 @@ export interface MonitorActivityLogAlertConfig extends cdktf.TerraformMetaArgume
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_activity_log_alert#action MonitorActivityLogAlert#action}
   */
-  readonly action?: MonitorActivityLogAlertAction[] | cdktf.IResolvable;
+  readonly action?: MonitorActivityLogAlertAction[] | cdktn.IResolvable;
   /**
   * criteria block
   *
@@ -77,32 +77,32 @@ export interface MonitorActivityLogAlertAction {
   readonly webhookProperties?: { [key: string]: string };
 }
 
-export function monitorActivityLogAlertActionToTerraform(struct?: MonitorActivityLogAlertAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorActivityLogAlertActionToTerraform(struct?: MonitorActivityLogAlertAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action_group_id: cdktf.stringToTerraform(struct!.actionGroupId),
-    webhook_properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.webhookProperties),
+    action_group_id: cdktn.stringToTerraform(struct!.actionGroupId),
+    webhook_properties: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.webhookProperties),
   }
 }
 
 
-export function monitorActivityLogAlertActionToHclTerraform(struct?: MonitorActivityLogAlertAction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorActivityLogAlertActionToHclTerraform(struct?: MonitorActivityLogAlertAction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action_group_id: {
-      value: cdktf.stringToHclTerraform(struct!.actionGroupId),
+      value: cdktn.stringToHclTerraform(struct!.actionGroupId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     webhook_properties: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.webhookProperties),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.webhookProperties),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -113,9 +113,9 @@ export function monitorActivityLogAlertActionToHclTerraform(struct?: MonitorActi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorActivityLogAlertActionOutputReference extends cdktf.ComplexObject {
+export class MonitorActivityLogAlertActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -123,11 +123,11 @@ export class MonitorActivityLogAlertActionOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MonitorActivityLogAlertAction | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorActivityLogAlertAction | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -144,14 +144,14 @@ export class MonitorActivityLogAlertActionOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorActivityLogAlertAction | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorActivityLogAlertAction | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._actionGroupId = undefined;
       this._webhookProperties = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -193,15 +193,15 @@ export class MonitorActivityLogAlertActionOutputReference extends cdktf.ComplexO
   }
 }
 
-export class MonitorActivityLogAlertActionList extends cdktf.ComplexList {
-  public internalValue? : MonitorActivityLogAlertAction[] | cdktf.IResolvable
+export class MonitorActivityLogAlertActionList extends cdktn.ComplexList {
+  public internalValue? : MonitorActivityLogAlertAction[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -228,38 +228,38 @@ export interface MonitorActivityLogAlertCriteriaResourceHealth {
 }
 
 export function monitorActivityLogAlertCriteriaResourceHealthToTerraform(struct?: MonitorActivityLogAlertCriteriaResourceHealthOutputReference | MonitorActivityLogAlertCriteriaResourceHealth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    current: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.current),
-    previous: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.previous),
-    reason: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.reason),
+    current: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.current),
+    previous: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.previous),
+    reason: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.reason),
   }
 }
 
 
 export function monitorActivityLogAlertCriteriaResourceHealthToHclTerraform(struct?: MonitorActivityLogAlertCriteriaResourceHealthOutputReference | MonitorActivityLogAlertCriteriaResourceHealth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     current: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.current),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.current),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     previous: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.previous),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.previous),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     reason: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.reason),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.reason),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -270,14 +270,14 @@ export function monitorActivityLogAlertCriteriaResourceHealthToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorActivityLogAlertCriteriaResourceHealthOutputReference extends cdktf.ComplexObject {
+export class MonitorActivityLogAlertCriteriaResourceHealthOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -317,7 +317,7 @@ export class MonitorActivityLogAlertCriteriaResourceHealthOutputReference extend
   // current - computed: false, optional: true, required: false
   private _current?: string[]; 
   public get current() {
-    return cdktf.Fn.tolist(this.getListAttribute('current'));
+    return cdktn.Fn.tolist(this.getListAttribute('current'));
   }
   public set current(value: string[]) {
     this._current = value;
@@ -333,7 +333,7 @@ export class MonitorActivityLogAlertCriteriaResourceHealthOutputReference extend
   // previous - computed: false, optional: true, required: false
   private _previous?: string[]; 
   public get previous() {
-    return cdktf.Fn.tolist(this.getListAttribute('previous'));
+    return cdktn.Fn.tolist(this.getListAttribute('previous'));
   }
   public set previous(value: string[]) {
     this._previous = value;
@@ -349,7 +349,7 @@ export class MonitorActivityLogAlertCriteriaResourceHealthOutputReference extend
   // reason - computed: false, optional: true, required: false
   private _reason?: string[]; 
   public get reason() {
-    return cdktf.Fn.tolist(this.getListAttribute('reason'));
+    return cdktn.Fn.tolist(this.getListAttribute('reason'));
   }
   public set reason(value: string[]) {
     this._reason = value;
@@ -378,38 +378,38 @@ export interface MonitorActivityLogAlertCriteriaServiceHealth {
 }
 
 export function monitorActivityLogAlertCriteriaServiceHealthToTerraform(struct?: MonitorActivityLogAlertCriteriaServiceHealthOutputReference | MonitorActivityLogAlertCriteriaServiceHealth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    events: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.events),
-    locations: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.locations),
-    services: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.services),
+    events: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.events),
+    locations: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.locations),
+    services: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.services),
   }
 }
 
 
 export function monitorActivityLogAlertCriteriaServiceHealthToHclTerraform(struct?: MonitorActivityLogAlertCriteriaServiceHealthOutputReference | MonitorActivityLogAlertCriteriaServiceHealth): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     events: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.events),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.events),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     locations: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.locations),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.locations),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     services: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.services),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.services),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -420,14 +420,14 @@ export function monitorActivityLogAlertCriteriaServiceHealthToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorActivityLogAlertCriteriaServiceHealthOutputReference extends cdktf.ComplexObject {
+export class MonitorActivityLogAlertCriteriaServiceHealthOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -467,7 +467,7 @@ export class MonitorActivityLogAlertCriteriaServiceHealthOutputReference extends
   // events - computed: false, optional: true, required: false
   private _events?: string[]; 
   public get events() {
-    return cdktf.Fn.tolist(this.getListAttribute('events'));
+    return cdktn.Fn.tolist(this.getListAttribute('events'));
   }
   public set events(value: string[]) {
     this._events = value;
@@ -483,7 +483,7 @@ export class MonitorActivityLogAlertCriteriaServiceHealthOutputReference extends
   // locations - computed: false, optional: true, required: false
   private _locations?: string[]; 
   public get locations() {
-    return cdktf.Fn.tolist(this.getListAttribute('locations'));
+    return cdktn.Fn.tolist(this.getListAttribute('locations'));
   }
   public set locations(value: string[]) {
     this._locations = value;
@@ -499,7 +499,7 @@ export class MonitorActivityLogAlertCriteriaServiceHealthOutputReference extends
   // services - computed: false, optional: true, required: false
   private _services?: string[]; 
   public get services() {
-    return cdktf.Fn.tolist(this.getListAttribute('services'));
+    return cdktn.Fn.tolist(this.getListAttribute('services'));
   }
   public set services(value: string[]) {
     this._services = value;
@@ -608,31 +608,31 @@ export interface MonitorActivityLogAlertCriteria {
 }
 
 export function monitorActivityLogAlertCriteriaToTerraform(struct?: MonitorActivityLogAlertCriteriaOutputReference | MonitorActivityLogAlertCriteria): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    caller: cdktf.stringToTerraform(struct!.caller),
-    category: cdktf.stringToTerraform(struct!.category),
-    level: cdktf.stringToTerraform(struct!.level),
-    levels: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.levels),
-    operation_name: cdktf.stringToTerraform(struct!.operationName),
-    recommendation_category: cdktf.stringToTerraform(struct!.recommendationCategory),
-    recommendation_impact: cdktf.stringToTerraform(struct!.recommendationImpact),
-    recommendation_type: cdktf.stringToTerraform(struct!.recommendationType),
-    resource_group: cdktf.stringToTerraform(struct!.resourceGroup),
-    resource_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceGroups),
-    resource_id: cdktf.stringToTerraform(struct!.resourceId),
-    resource_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceIds),
-    resource_provider: cdktf.stringToTerraform(struct!.resourceProvider),
-    resource_providers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceProviders),
-    resource_type: cdktf.stringToTerraform(struct!.resourceType),
-    resource_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceTypes),
-    status: cdktf.stringToTerraform(struct!.status),
-    statuses: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.statuses),
-    sub_status: cdktf.stringToTerraform(struct!.subStatus),
-    sub_statuses: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subStatuses),
+    caller: cdktn.stringToTerraform(struct!.caller),
+    category: cdktn.stringToTerraform(struct!.category),
+    level: cdktn.stringToTerraform(struct!.level),
+    levels: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.levels),
+    operation_name: cdktn.stringToTerraform(struct!.operationName),
+    recommendation_category: cdktn.stringToTerraform(struct!.recommendationCategory),
+    recommendation_impact: cdktn.stringToTerraform(struct!.recommendationImpact),
+    recommendation_type: cdktn.stringToTerraform(struct!.recommendationType),
+    resource_group: cdktn.stringToTerraform(struct!.resourceGroup),
+    resource_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.resourceGroups),
+    resource_id: cdktn.stringToTerraform(struct!.resourceId),
+    resource_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.resourceIds),
+    resource_provider: cdktn.stringToTerraform(struct!.resourceProvider),
+    resource_providers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.resourceProviders),
+    resource_type: cdktn.stringToTerraform(struct!.resourceType),
+    resource_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.resourceTypes),
+    status: cdktn.stringToTerraform(struct!.status),
+    statuses: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.statuses),
+    sub_status: cdktn.stringToTerraform(struct!.subStatus),
+    sub_statuses: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subStatuses),
     resource_health: monitorActivityLogAlertCriteriaResourceHealthToTerraform(struct!.resourceHealth),
     service_health: monitorActivityLogAlertCriteriaServiceHealthToTerraform(struct!.serviceHealth),
   }
@@ -640,127 +640,127 @@ export function monitorActivityLogAlertCriteriaToTerraform(struct?: MonitorActiv
 
 
 export function monitorActivityLogAlertCriteriaToHclTerraform(struct?: MonitorActivityLogAlertCriteriaOutputReference | MonitorActivityLogAlertCriteria): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     caller: {
-      value: cdktf.stringToHclTerraform(struct!.caller),
+      value: cdktn.stringToHclTerraform(struct!.caller),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     category: {
-      value: cdktf.stringToHclTerraform(struct!.category),
+      value: cdktn.stringToHclTerraform(struct!.category),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     level: {
-      value: cdktf.stringToHclTerraform(struct!.level),
+      value: cdktn.stringToHclTerraform(struct!.level),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     levels: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.levels),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.levels),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     operation_name: {
-      value: cdktf.stringToHclTerraform(struct!.operationName),
+      value: cdktn.stringToHclTerraform(struct!.operationName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     recommendation_category: {
-      value: cdktf.stringToHclTerraform(struct!.recommendationCategory),
+      value: cdktn.stringToHclTerraform(struct!.recommendationCategory),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     recommendation_impact: {
-      value: cdktf.stringToHclTerraform(struct!.recommendationImpact),
+      value: cdktn.stringToHclTerraform(struct!.recommendationImpact),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     recommendation_type: {
-      value: cdktf.stringToHclTerraform(struct!.recommendationType),
+      value: cdktn.stringToHclTerraform(struct!.recommendationType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_group: {
-      value: cdktf.stringToHclTerraform(struct!.resourceGroup),
+      value: cdktn.stringToHclTerraform(struct!.resourceGroup),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_groups: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resourceGroups),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.resourceGroups),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     resource_id: {
-      value: cdktf.stringToHclTerraform(struct!.resourceId),
+      value: cdktn.stringToHclTerraform(struct!.resourceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resourceIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.resourceIds),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     resource_provider: {
-      value: cdktf.stringToHclTerraform(struct!.resourceProvider),
+      value: cdktn.stringToHclTerraform(struct!.resourceProvider),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_providers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resourceProviders),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.resourceProviders),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     resource_type: {
-      value: cdktf.stringToHclTerraform(struct!.resourceType),
+      value: cdktn.stringToHclTerraform(struct!.resourceType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.resourceTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.resourceTypes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     status: {
-      value: cdktf.stringToHclTerraform(struct!.status),
+      value: cdktn.stringToHclTerraform(struct!.status),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     statuses: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.statuses),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.statuses),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     sub_status: {
-      value: cdktf.stringToHclTerraform(struct!.subStatus),
+      value: cdktn.stringToHclTerraform(struct!.subStatus),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sub_statuses: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subStatuses),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subStatuses),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -783,14 +783,14 @@ export function monitorActivityLogAlertCriteriaToHclTerraform(struct?: MonitorAc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorActivityLogAlertCriteriaOutputReference extends cdktf.ComplexObject {
+export class MonitorActivityLogAlertCriteriaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -1309,46 +1309,46 @@ export interface MonitorActivityLogAlertTimeouts {
   readonly update?: string;
 }
 
-export function monitorActivityLogAlertTimeoutsToTerraform(struct?: MonitorActivityLogAlertTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorActivityLogAlertTimeoutsToTerraform(struct?: MonitorActivityLogAlertTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function monitorActivityLogAlertTimeoutsToHclTerraform(struct?: MonitorActivityLogAlertTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function monitorActivityLogAlertTimeoutsToHclTerraform(struct?: MonitorActivityLogAlertTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1359,19 +1359,19 @@ export function monitorActivityLogAlertTimeoutsToHclTerraform(struct?: MonitorAc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MonitorActivityLogAlertTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MonitorActivityLogAlertTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MonitorActivityLogAlertTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MonitorActivityLogAlertTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1396,7 +1396,7 @@ export class MonitorActivityLogAlertTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MonitorActivityLogAlertTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MonitorActivityLogAlertTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1405,7 +1405,7 @@ export class MonitorActivityLogAlertTimeoutsOutputReference extends cdktf.Comple
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1487,7 +1487,7 @@ export class MonitorActivityLogAlertTimeoutsOutputReference extends cdktf.Comple
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_activity_log_alert azurerm_monitor_activity_log_alert}
 */
-export class MonitorActivityLogAlert extends cdktf.TerraformResource {
+export class MonitorActivityLogAlert extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1498,14 +1498,14 @@ export class MonitorActivityLogAlert extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MonitorActivityLogAlert resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MonitorActivityLogAlert resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MonitorActivityLogAlert to import
   * @param importFromId The id of the existing MonitorActivityLogAlert that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/monitor_activity_log_alert#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MonitorActivityLogAlert to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_monitor_activity_log_alert", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_monitor_activity_log_alert", importId: importFromId, provider });
       }
 
   // ===========
@@ -1569,11 +1569,11 @@ export class MonitorActivityLogAlert extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -1642,7 +1642,7 @@ export class MonitorActivityLogAlert extends cdktf.TerraformResource {
   // scopes - computed: false, optional: false, required: true
   private _scopes?: string[]; 
   public get scopes() {
-    return cdktf.Fn.tolist(this.getListAttribute('scopes'));
+    return cdktn.Fn.tolist(this.getListAttribute('scopes'));
   }
   public set scopes(value: string[]) {
     this._scopes = value;
@@ -1673,7 +1673,7 @@ export class MonitorActivityLogAlert extends cdktf.TerraformResource {
   public get action() {
     return this._action;
   }
-  public putAction(value: MonitorActivityLogAlertAction[] | cdktf.IResolvable) {
+  public putAction(value: MonitorActivityLogAlertAction[] | cdktn.IResolvable) {
     this._action.internalValue = value;
   }
   public resetAction() {
@@ -1719,15 +1719,15 @@ export class MonitorActivityLogAlert extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._scopes),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      action: cdktf.listMapper(monitorActivityLogAlertActionToTerraform, true)(this._action.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._scopes),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      action: cdktn.listMapper(monitorActivityLogAlertActionToTerraform, true)(this._action.internalValue),
       criteria: monitorActivityLogAlertCriteriaToTerraform(this._criteria.internalValue),
       timeouts: monitorActivityLogAlertTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1736,55 +1736,55 @@ export class MonitorActivityLogAlert extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scopes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._scopes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._scopes),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       action: {
-        value: cdktf.listMapperHcl(monitorActivityLogAlertActionToHclTerraform, true)(this._action.internalValue),
+        value: cdktn.listMapperHcl(monitorActivityLogAlertActionToHclTerraform, true)(this._action.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "MonitorActivityLogAlertActionList",

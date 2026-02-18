@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IothubFileUploadAConfig extends cdktf.TerraformMetaArguments {
+export interface IothubFileUploadAConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iothub_file_upload#authentication_type IothubFileUploadA#authentication_type}
   */
@@ -54,7 +54,7 @@ export interface IothubFileUploadAConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iothub_file_upload#notifications_enabled IothubFileUploadA#notifications_enabled}
   */
-  readonly notificationsEnabled?: boolean | cdktf.IResolvable;
+  readonly notificationsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iothub_file_upload#sas_ttl IothubFileUploadA#sas_ttl}
   */
@@ -85,46 +85,46 @@ export interface IothubFileUploadTimeouts {
   readonly update?: string;
 }
 
-export function iothubFileUploadTimeoutsToTerraform(struct?: IothubFileUploadTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iothubFileUploadTimeoutsToTerraform(struct?: IothubFileUploadTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function iothubFileUploadTimeoutsToHclTerraform(struct?: IothubFileUploadTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iothubFileUploadTimeoutsToHclTerraform(struct?: IothubFileUploadTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -135,19 +135,19 @@ export function iothubFileUploadTimeoutsToHclTerraform(struct?: IothubFileUpload
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IothubFileUploadTimeoutsOutputReference extends cdktf.ComplexObject {
+export class IothubFileUploadTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): IothubFileUploadTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): IothubFileUploadTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -172,7 +172,7 @@ export class IothubFileUploadTimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IothubFileUploadTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IothubFileUploadTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -181,7 +181,7 @@ export class IothubFileUploadTimeoutsOutputReference extends cdktf.ComplexObject
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -263,7 +263,7 @@ export class IothubFileUploadTimeoutsOutputReference extends cdktf.ComplexObject
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iothub_file_upload azurerm_iothub_file_upload}
 */
-export class IothubFileUploadA extends cdktf.TerraformResource {
+export class IothubFileUploadA extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -274,14 +274,14 @@ export class IothubFileUploadA extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IothubFileUploadA resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IothubFileUploadA resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IothubFileUploadA to import
   * @param importFromId The id of the existing IothubFileUploadA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iothub_file_upload#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IothubFileUploadA to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_iothub_file_upload", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_iothub_file_upload", importId: importFromId, provider });
       }
 
   // ===========
@@ -465,11 +465,11 @@ export class IothubFileUploadA extends cdktf.TerraformResource {
   }
 
   // notifications_enabled - computed: false, optional: true, required: false
-  private _notificationsEnabled?: boolean | cdktf.IResolvable; 
+  private _notificationsEnabled?: boolean | cdktn.IResolvable; 
   public get notificationsEnabled() {
     return this.getBooleanAttribute('notifications_enabled');
   }
-  public set notificationsEnabled(value: boolean | cdktf.IResolvable) {
+  public set notificationsEnabled(value: boolean | cdktn.IResolvable) {
     this._notificationsEnabled = value;
   }
   public resetNotificationsEnabled() {
@@ -518,17 +518,17 @@ export class IothubFileUploadA extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      authentication_type: cdktf.stringToTerraform(this._authenticationType),
-      connection_string: cdktf.stringToTerraform(this._connectionString),
-      container_name: cdktf.stringToTerraform(this._containerName),
-      default_ttl: cdktf.stringToTerraform(this._defaultTtl),
-      id: cdktf.stringToTerraform(this._id),
-      identity_id: cdktf.stringToTerraform(this._identityId),
-      iothub_id: cdktf.stringToTerraform(this._iothubId),
-      lock_duration: cdktf.stringToTerraform(this._lockDuration),
-      max_delivery_count: cdktf.numberToTerraform(this._maxDeliveryCount),
-      notifications_enabled: cdktf.booleanToTerraform(this._notificationsEnabled),
-      sas_ttl: cdktf.stringToTerraform(this._sasTtl),
+      authentication_type: cdktn.stringToTerraform(this._authenticationType),
+      connection_string: cdktn.stringToTerraform(this._connectionString),
+      container_name: cdktn.stringToTerraform(this._containerName),
+      default_ttl: cdktn.stringToTerraform(this._defaultTtl),
+      id: cdktn.stringToTerraform(this._id),
+      identity_id: cdktn.stringToTerraform(this._identityId),
+      iothub_id: cdktn.stringToTerraform(this._iothubId),
+      lock_duration: cdktn.stringToTerraform(this._lockDuration),
+      max_delivery_count: cdktn.numberToTerraform(this._maxDeliveryCount),
+      notifications_enabled: cdktn.booleanToTerraform(this._notificationsEnabled),
+      sas_ttl: cdktn.stringToTerraform(this._sasTtl),
       timeouts: iothubFileUploadTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -536,67 +536,67 @@ export class IothubFileUploadA extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       authentication_type: {
-        value: cdktf.stringToHclTerraform(this._authenticationType),
+        value: cdktn.stringToHclTerraform(this._authenticationType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       connection_string: {
-        value: cdktf.stringToHclTerraform(this._connectionString),
+        value: cdktn.stringToHclTerraform(this._connectionString),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       container_name: {
-        value: cdktf.stringToHclTerraform(this._containerName),
+        value: cdktn.stringToHclTerraform(this._containerName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       default_ttl: {
-        value: cdktf.stringToHclTerraform(this._defaultTtl),
+        value: cdktn.stringToHclTerraform(this._defaultTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identity_id: {
-        value: cdktf.stringToHclTerraform(this._identityId),
+        value: cdktn.stringToHclTerraform(this._identityId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       iothub_id: {
-        value: cdktf.stringToHclTerraform(this._iothubId),
+        value: cdktn.stringToHclTerraform(this._iothubId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       lock_duration: {
-        value: cdktf.stringToHclTerraform(this._lockDuration),
+        value: cdktn.stringToHclTerraform(this._lockDuration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_delivery_count: {
-        value: cdktf.numberToHclTerraform(this._maxDeliveryCount),
+        value: cdktn.numberToHclTerraform(this._maxDeliveryCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       notifications_enabled: {
-        value: cdktf.booleanToHclTerraform(this._notificationsEnabled),
+        value: cdktn.booleanToHclTerraform(this._notificationsEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       sas_ttl: {
-        value: cdktf.stringToHclTerraform(this._sasTtl),
+        value: cdktn.stringToHclTerraform(this._sasTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

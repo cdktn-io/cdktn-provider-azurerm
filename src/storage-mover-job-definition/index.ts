@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface StorageMoverJobDefinitionConfig extends cdktf.TerraformMetaArguments {
+export interface StorageMoverJobDefinitionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_mover_job_definition#agent_name StorageMoverJobDefinition#agent_name}
   */
@@ -81,46 +81,46 @@ export interface StorageMoverJobDefinitionTimeouts {
   readonly update?: string;
 }
 
-export function storageMoverJobDefinitionTimeoutsToTerraform(struct?: StorageMoverJobDefinitionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storageMoverJobDefinitionTimeoutsToTerraform(struct?: StorageMoverJobDefinitionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function storageMoverJobDefinitionTimeoutsToHclTerraform(struct?: StorageMoverJobDefinitionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storageMoverJobDefinitionTimeoutsToHclTerraform(struct?: StorageMoverJobDefinitionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -131,19 +131,19 @@ export function storageMoverJobDefinitionTimeoutsToHclTerraform(struct?: Storage
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StorageMoverJobDefinitionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class StorageMoverJobDefinitionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): StorageMoverJobDefinitionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): StorageMoverJobDefinitionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -168,7 +168,7 @@ export class StorageMoverJobDefinitionTimeoutsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StorageMoverJobDefinitionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: StorageMoverJobDefinitionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -177,7 +177,7 @@ export class StorageMoverJobDefinitionTimeoutsOutputReference extends cdktf.Comp
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -259,7 +259,7 @@ export class StorageMoverJobDefinitionTimeoutsOutputReference extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_mover_job_definition azurerm_storage_mover_job_definition}
 */
-export class StorageMoverJobDefinition extends cdktf.TerraformResource {
+export class StorageMoverJobDefinition extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -270,14 +270,14 @@ export class StorageMoverJobDefinition extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a StorageMoverJobDefinition resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a StorageMoverJobDefinition resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StorageMoverJobDefinition to import
   * @param importFromId The id of the existing StorageMoverJobDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_mover_job_definition#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StorageMoverJobDefinition to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_storage_mover_job_definition", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_storage_mover_job_definition", importId: importFromId, provider });
       }
 
   // ===========
@@ -491,16 +491,16 @@ export class StorageMoverJobDefinition extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      agent_name: cdktf.stringToTerraform(this._agentName),
-      copy_mode: cdktf.stringToTerraform(this._copyMode),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      source_name: cdktf.stringToTerraform(this._sourceName),
-      source_sub_path: cdktf.stringToTerraform(this._sourceSubPath),
-      storage_mover_project_id: cdktf.stringToTerraform(this._storageMoverProjectId),
-      target_name: cdktf.stringToTerraform(this._targetName),
-      target_sub_path: cdktf.stringToTerraform(this._targetSubPath),
+      agent_name: cdktn.stringToTerraform(this._agentName),
+      copy_mode: cdktn.stringToTerraform(this._copyMode),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      source_name: cdktn.stringToTerraform(this._sourceName),
+      source_sub_path: cdktn.stringToTerraform(this._sourceSubPath),
+      storage_mover_project_id: cdktn.stringToTerraform(this._storageMoverProjectId),
+      target_name: cdktn.stringToTerraform(this._targetName),
+      target_sub_path: cdktn.stringToTerraform(this._targetSubPath),
       timeouts: storageMoverJobDefinitionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -508,61 +508,61 @@ export class StorageMoverJobDefinition extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       agent_name: {
-        value: cdktf.stringToHclTerraform(this._agentName),
+        value: cdktn.stringToHclTerraform(this._agentName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       copy_mode: {
-        value: cdktf.stringToHclTerraform(this._copyMode),
+        value: cdktn.stringToHclTerraform(this._copyMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_name: {
-        value: cdktf.stringToHclTerraform(this._sourceName),
+        value: cdktn.stringToHclTerraform(this._sourceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_sub_path: {
-        value: cdktf.stringToHclTerraform(this._sourceSubPath),
+        value: cdktn.stringToHclTerraform(this._sourceSubPath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_mover_project_id: {
-        value: cdktf.stringToHclTerraform(this._storageMoverProjectId),
+        value: cdktn.stringToHclTerraform(this._storageMoverProjectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_name: {
-        value: cdktf.stringToHclTerraform(this._targetName),
+        value: cdktn.stringToHclTerraform(this._targetName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_sub_path: {
-        value: cdktf.stringToHclTerraform(this._targetSubPath),
+        value: cdktn.stringToHclTerraform(this._targetSubPath),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

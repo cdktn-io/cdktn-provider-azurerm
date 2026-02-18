@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VmwareExpressRouteAuthorizationConfig extends cdktf.TerraformMetaArguments {
+export interface VmwareExpressRouteAuthorizationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/vmware_express_route_authorization#id VmwareExpressRouteAuthorization#id}
   *
@@ -49,39 +49,39 @@ export interface VmwareExpressRouteAuthorizationTimeouts {
   readonly read?: string;
 }
 
-export function vmwareExpressRouteAuthorizationTimeoutsToTerraform(struct?: VmwareExpressRouteAuthorizationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vmwareExpressRouteAuthorizationTimeoutsToTerraform(struct?: VmwareExpressRouteAuthorizationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function vmwareExpressRouteAuthorizationTimeoutsToHclTerraform(struct?: VmwareExpressRouteAuthorizationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vmwareExpressRouteAuthorizationTimeoutsToHclTerraform(struct?: VmwareExpressRouteAuthorizationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -92,19 +92,19 @@ export function vmwareExpressRouteAuthorizationTimeoutsToHclTerraform(struct?: V
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VmwareExpressRouteAuthorizationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VmwareExpressRouteAuthorizationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VmwareExpressRouteAuthorizationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VmwareExpressRouteAuthorizationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -125,7 +125,7 @@ export class VmwareExpressRouteAuthorizationTimeoutsOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VmwareExpressRouteAuthorizationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VmwareExpressRouteAuthorizationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -133,7 +133,7 @@ export class VmwareExpressRouteAuthorizationTimeoutsOutputReference extends cdkt
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -198,7 +198,7 @@ export class VmwareExpressRouteAuthorizationTimeoutsOutputReference extends cdkt
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/vmware_express_route_authorization azurerm_vmware_express_route_authorization}
 */
-export class VmwareExpressRouteAuthorization extends cdktf.TerraformResource {
+export class VmwareExpressRouteAuthorization extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -209,14 +209,14 @@ export class VmwareExpressRouteAuthorization extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VmwareExpressRouteAuthorization resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VmwareExpressRouteAuthorization resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VmwareExpressRouteAuthorization to import
   * @param importFromId The id of the existing VmwareExpressRouteAuthorization that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/vmware_express_route_authorization#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VmwareExpressRouteAuthorization to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_vmware_express_route_authorization", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_vmware_express_route_authorization", importId: importFromId, provider });
       }
 
   // ===========
@@ -330,9 +330,9 @@ export class VmwareExpressRouteAuthorization extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      private_cloud_id: cdktf.stringToTerraform(this._privateCloudId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      private_cloud_id: cdktn.stringToTerraform(this._privateCloudId),
       timeouts: vmwareExpressRouteAuthorizationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -340,19 +340,19 @@ export class VmwareExpressRouteAuthorization extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       private_cloud_id: {
-        value: cdktf.stringToHclTerraform(this._privateCloudId),
+        value: cdktn.stringToHclTerraform(this._privateCloudId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

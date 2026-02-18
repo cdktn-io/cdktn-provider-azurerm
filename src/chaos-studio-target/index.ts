@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ChaosStudioTargetConfig extends cdktf.TerraformMetaArguments {
+export interface ChaosStudioTargetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/chaos_studio_target#id ChaosStudioTarget#id}
   *
@@ -53,39 +53,39 @@ export interface ChaosStudioTargetTimeouts {
   readonly read?: string;
 }
 
-export function chaosStudioTargetTimeoutsToTerraform(struct?: ChaosStudioTargetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chaosStudioTargetTimeoutsToTerraform(struct?: ChaosStudioTargetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function chaosStudioTargetTimeoutsToHclTerraform(struct?: ChaosStudioTargetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function chaosStudioTargetTimeoutsToHclTerraform(struct?: ChaosStudioTargetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -96,19 +96,19 @@ export function chaosStudioTargetTimeoutsToHclTerraform(struct?: ChaosStudioTarg
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ChaosStudioTargetTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ChaosStudioTargetTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ChaosStudioTargetTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ChaosStudioTargetTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -129,7 +129,7 @@ export class ChaosStudioTargetTimeoutsOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ChaosStudioTargetTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ChaosStudioTargetTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -137,7 +137,7 @@ export class ChaosStudioTargetTimeoutsOutputReference extends cdktf.ComplexObjec
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -202,7 +202,7 @@ export class ChaosStudioTargetTimeoutsOutputReference extends cdktf.ComplexObjec
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/chaos_studio_target azurerm_chaos_studio_target}
 */
-export class ChaosStudioTarget extends cdktf.TerraformResource {
+export class ChaosStudioTarget extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -213,14 +213,14 @@ export class ChaosStudioTarget extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ChaosStudioTarget resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ChaosStudioTarget resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ChaosStudioTarget to import
   * @param importFromId The id of the existing ChaosStudioTarget that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/chaos_studio_target#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ChaosStudioTarget to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_chaos_studio_target", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_chaos_studio_target", importId: importFromId, provider });
       }
 
   // ===========
@@ -338,10 +338,10 @@ export class ChaosStudioTarget extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      target_resource_id: cdktf.stringToTerraform(this._targetResourceId),
-      target_type: cdktf.stringToTerraform(this._targetType),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      target_resource_id: cdktn.stringToTerraform(this._targetResourceId),
+      target_type: cdktn.stringToTerraform(this._targetType),
       timeouts: chaosStudioTargetTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -349,25 +349,25 @@ export class ChaosStudioTarget extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_resource_id: {
-        value: cdktf.stringToHclTerraform(this._targetResourceId),
+        value: cdktn.stringToHclTerraform(this._targetResourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_type: {
-        value: cdktf.stringToHclTerraform(this._targetType),
+        value: cdktn.stringToHclTerraform(this._targetType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkWatcherFlowLogConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkWatcherFlowLogConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_watcher_flow_log#enabled NetworkWatcherFlowLog#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_watcher_flow_log#id NetworkWatcherFlowLog#id}
   *
@@ -86,35 +86,35 @@ export interface NetworkWatcherFlowLogRetentionPolicy {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_watcher_flow_log#enabled NetworkWatcherFlowLog#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
 }
 
 export function networkWatcherFlowLogRetentionPolicyToTerraform(struct?: NetworkWatcherFlowLogRetentionPolicyOutputReference | NetworkWatcherFlowLogRetentionPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    days: cdktf.numberToTerraform(struct!.days),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    days: cdktn.numberToTerraform(struct!.days),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
   }
 }
 
 
 export function networkWatcherFlowLogRetentionPolicyToHclTerraform(struct?: NetworkWatcherFlowLogRetentionPolicyOutputReference | NetworkWatcherFlowLogRetentionPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     days: {
-      value: cdktf.numberToHclTerraform(struct!.days),
+      value: cdktn.numberToHclTerraform(struct!.days),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -125,14 +125,14 @@ export function networkWatcherFlowLogRetentionPolicyToHclTerraform(struct?: Netw
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkWatcherFlowLogRetentionPolicyOutputReference extends cdktf.ComplexObject {
+export class NetworkWatcherFlowLogRetentionPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -177,11 +177,11 @@ export class NetworkWatcherFlowLogRetentionPolicyOutputReference extends cdktf.C
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -208,46 +208,46 @@ export interface NetworkWatcherFlowLogTimeouts {
   readonly update?: string;
 }
 
-export function networkWatcherFlowLogTimeoutsToTerraform(struct?: NetworkWatcherFlowLogTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkWatcherFlowLogTimeoutsToTerraform(struct?: NetworkWatcherFlowLogTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function networkWatcherFlowLogTimeoutsToHclTerraform(struct?: NetworkWatcherFlowLogTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkWatcherFlowLogTimeoutsToHclTerraform(struct?: NetworkWatcherFlowLogTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -258,19 +258,19 @@ export function networkWatcherFlowLogTimeoutsToHclTerraform(struct?: NetworkWatc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkWatcherFlowLogTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetworkWatcherFlowLogTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetworkWatcherFlowLogTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkWatcherFlowLogTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -295,7 +295,7 @@ export class NetworkWatcherFlowLogTimeoutsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkWatcherFlowLogTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkWatcherFlowLogTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -304,7 +304,7 @@ export class NetworkWatcherFlowLogTimeoutsOutputReference extends cdktf.ComplexO
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -386,7 +386,7 @@ export interface NetworkWatcherFlowLogTrafficAnalytics {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_watcher_flow_log#enabled NetworkWatcherFlowLog#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_watcher_flow_log#interval_in_minutes NetworkWatcherFlowLog#interval_in_minutes}
   */
@@ -406,52 +406,52 @@ export interface NetworkWatcherFlowLogTrafficAnalytics {
 }
 
 export function networkWatcherFlowLogTrafficAnalyticsToTerraform(struct?: NetworkWatcherFlowLogTrafficAnalyticsOutputReference | NetworkWatcherFlowLogTrafficAnalytics): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    interval_in_minutes: cdktf.numberToTerraform(struct!.intervalInMinutes),
-    workspace_id: cdktf.stringToTerraform(struct!.workspaceId),
-    workspace_region: cdktf.stringToTerraform(struct!.workspaceRegion),
-    workspace_resource_id: cdktf.stringToTerraform(struct!.workspaceResourceId),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    interval_in_minutes: cdktn.numberToTerraform(struct!.intervalInMinutes),
+    workspace_id: cdktn.stringToTerraform(struct!.workspaceId),
+    workspace_region: cdktn.stringToTerraform(struct!.workspaceRegion),
+    workspace_resource_id: cdktn.stringToTerraform(struct!.workspaceResourceId),
   }
 }
 
 
 export function networkWatcherFlowLogTrafficAnalyticsToHclTerraform(struct?: NetworkWatcherFlowLogTrafficAnalyticsOutputReference | NetworkWatcherFlowLogTrafficAnalytics): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     interval_in_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.intervalInMinutes),
+      value: cdktn.numberToHclTerraform(struct!.intervalInMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     workspace_id: {
-      value: cdktf.stringToHclTerraform(struct!.workspaceId),
+      value: cdktn.stringToHclTerraform(struct!.workspaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     workspace_region: {
-      value: cdktf.stringToHclTerraform(struct!.workspaceRegion),
+      value: cdktn.stringToHclTerraform(struct!.workspaceRegion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     workspace_resource_id: {
-      value: cdktf.stringToHclTerraform(struct!.workspaceResourceId),
+      value: cdktn.stringToHclTerraform(struct!.workspaceResourceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -462,14 +462,14 @@ export function networkWatcherFlowLogTrafficAnalyticsToHclTerraform(struct?: Net
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkWatcherFlowLogTrafficAnalyticsOutputReference extends cdktf.ComplexObject {
+export class NetworkWatcherFlowLogTrafficAnalyticsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -519,11 +519,11 @@ export class NetworkWatcherFlowLogTrafficAnalyticsOutputReference extends cdktf.
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -590,7 +590,7 @@ export class NetworkWatcherFlowLogTrafficAnalyticsOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_watcher_flow_log azurerm_network_watcher_flow_log}
 */
-export class NetworkWatcherFlowLog extends cdktf.TerraformResource {
+export class NetworkWatcherFlowLog extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -601,14 +601,14 @@ export class NetworkWatcherFlowLog extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkWatcherFlowLog resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkWatcherFlowLog resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkWatcherFlowLog to import
   * @param importFromId The id of the existing NetworkWatcherFlowLog that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_watcher_flow_log#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkWatcherFlowLog to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_network_watcher_flow_log", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_network_watcher_flow_log", importId: importFromId, provider });
       }
 
   // ===========
@@ -659,11 +659,11 @@ export class NetworkWatcherFlowLog extends cdktf.TerraformResource {
   // ==========
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -870,17 +870,17 @@ export class NetworkWatcherFlowLog extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      network_security_group_id: cdktf.stringToTerraform(this._networkSecurityGroupId),
-      network_watcher_name: cdktf.stringToTerraform(this._networkWatcherName),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      storage_account_id: cdktf.stringToTerraform(this._storageAccountId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      target_resource_id: cdktf.stringToTerraform(this._targetResourceId),
-      version: cdktf.numberToTerraform(this._version),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      network_security_group_id: cdktn.stringToTerraform(this._networkSecurityGroupId),
+      network_watcher_name: cdktn.stringToTerraform(this._networkWatcherName),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      storage_account_id: cdktn.stringToTerraform(this._storageAccountId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      target_resource_id: cdktn.stringToTerraform(this._targetResourceId),
+      version: cdktn.numberToTerraform(this._version),
       retention_policy: networkWatcherFlowLogRetentionPolicyToTerraform(this._retentionPolicy.internalValue),
       timeouts: networkWatcherFlowLogTimeoutsToTerraform(this._timeouts.internalValue),
       traffic_analytics: networkWatcherFlowLogTrafficAnalyticsToTerraform(this._trafficAnalytics.internalValue),
@@ -890,67 +890,67 @@ export class NetworkWatcherFlowLog extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_security_group_id: {
-        value: cdktf.stringToHclTerraform(this._networkSecurityGroupId),
+        value: cdktn.stringToHclTerraform(this._networkSecurityGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_watcher_name: {
-        value: cdktf.stringToHclTerraform(this._networkWatcherName),
+        value: cdktn.stringToHclTerraform(this._networkWatcherName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_account_id: {
-        value: cdktf.stringToHclTerraform(this._storageAccountId),
+        value: cdktn.stringToHclTerraform(this._storageAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       target_resource_id: {
-        value: cdktf.stringToHclTerraform(this._targetResourceId),
+        value: cdktn.stringToHclTerraform(this._targetResourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       version: {
-        value: cdktf.numberToHclTerraform(this._version),
+        value: cdktn.numberToHclTerraform(this._version),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

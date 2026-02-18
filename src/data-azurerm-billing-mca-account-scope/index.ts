@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermBillingMcaAccountScopeConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermBillingMcaAccountScopeConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/billing_mca_account_scope#billing_account_name DataAzurermBillingMcaAccountScope#billing_account_name}
   */
@@ -45,25 +45,25 @@ export interface DataAzurermBillingMcaAccountScopeTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermBillingMcaAccountScopeTimeoutsToTerraform(struct?: DataAzurermBillingMcaAccountScopeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermBillingMcaAccountScopeTimeoutsToTerraform(struct?: DataAzurermBillingMcaAccountScopeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermBillingMcaAccountScopeTimeoutsToHclTerraform(struct?: DataAzurermBillingMcaAccountScopeTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermBillingMcaAccountScopeTimeoutsToHclTerraform(struct?: DataAzurermBillingMcaAccountScopeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -74,19 +74,19 @@ export function dataAzurermBillingMcaAccountScopeTimeoutsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermBillingMcaAccountScopeTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermBillingMcaAccountScopeTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermBillingMcaAccountScopeTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermBillingMcaAccountScopeTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -99,13 +99,13 @@ export class DataAzurermBillingMcaAccountScopeTimeoutsOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermBillingMcaAccountScopeTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermBillingMcaAccountScopeTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -136,7 +136,7 @@ export class DataAzurermBillingMcaAccountScopeTimeoutsOutputReference extends cd
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/billing_mca_account_scope azurerm_billing_mca_account_scope}
 */
-export class DataAzurermBillingMcaAccountScope extends cdktf.TerraformDataSource {
+export class DataAzurermBillingMcaAccountScope extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -147,14 +147,14 @@ export class DataAzurermBillingMcaAccountScope extends cdktf.TerraformDataSource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermBillingMcaAccountScope resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermBillingMcaAccountScope resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermBillingMcaAccountScope to import
   * @param importFromId The id of the existing DataAzurermBillingMcaAccountScope that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/billing_mca_account_scope#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermBillingMcaAccountScope to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_billing_mca_account_scope", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_billing_mca_account_scope", importId: importFromId, provider });
       }
 
   // ===========
@@ -272,10 +272,10 @@ export class DataAzurermBillingMcaAccountScope extends cdktf.TerraformDataSource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      billing_account_name: cdktf.stringToTerraform(this._billingAccountName),
-      billing_profile_name: cdktf.stringToTerraform(this._billingProfileName),
-      id: cdktf.stringToTerraform(this._id),
-      invoice_section_name: cdktf.stringToTerraform(this._invoiceSectionName),
+      billing_account_name: cdktn.stringToTerraform(this._billingAccountName),
+      billing_profile_name: cdktn.stringToTerraform(this._billingProfileName),
+      id: cdktn.stringToTerraform(this._id),
+      invoice_section_name: cdktn.stringToTerraform(this._invoiceSectionName),
       timeouts: dataAzurermBillingMcaAccountScopeTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -283,25 +283,25 @@ export class DataAzurermBillingMcaAccountScope extends cdktf.TerraformDataSource
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       billing_account_name: {
-        value: cdktf.stringToHclTerraform(this._billingAccountName),
+        value: cdktn.stringToHclTerraform(this._billingAccountName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       billing_profile_name: {
-        value: cdktf.stringToHclTerraform(this._billingProfileName),
+        value: cdktn.stringToHclTerraform(this._billingProfileName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       invoice_section_name: {
-        value: cdktf.stringToHclTerraform(this._invoiceSectionName),
+        value: cdktn.stringToHclTerraform(this._invoiceSectionName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

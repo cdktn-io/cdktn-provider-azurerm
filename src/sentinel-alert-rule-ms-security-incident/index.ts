@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SentinelAlertRuleMsSecurityIncidentConfig extends cdktf.TerraformMetaArguments {
+export interface SentinelAlertRuleMsSecurityIncidentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_alert_rule_ms_security_incident#alert_rule_template_guid SentinelAlertRuleMsSecurityIncident#alert_rule_template_guid}
   */
@@ -35,7 +35,7 @@ export interface SentinelAlertRuleMsSecurityIncidentConfig extends cdktf.Terrafo
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_alert_rule_ms_security_incident#enabled SentinelAlertRuleMsSecurityIncident#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_alert_rule_ms_security_incident#id SentinelAlertRuleMsSecurityIncident#id}
   *
@@ -85,46 +85,46 @@ export interface SentinelAlertRuleMsSecurityIncidentTimeouts {
   readonly update?: string;
 }
 
-export function sentinelAlertRuleMsSecurityIncidentTimeoutsToTerraform(struct?: SentinelAlertRuleMsSecurityIncidentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sentinelAlertRuleMsSecurityIncidentTimeoutsToTerraform(struct?: SentinelAlertRuleMsSecurityIncidentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function sentinelAlertRuleMsSecurityIncidentTimeoutsToHclTerraform(struct?: SentinelAlertRuleMsSecurityIncidentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sentinelAlertRuleMsSecurityIncidentTimeoutsToHclTerraform(struct?: SentinelAlertRuleMsSecurityIncidentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -135,19 +135,19 @@ export function sentinelAlertRuleMsSecurityIncidentTimeoutsToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SentinelAlertRuleMsSecurityIncidentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SentinelAlertRuleMsSecurityIncidentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SentinelAlertRuleMsSecurityIncidentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SentinelAlertRuleMsSecurityIncidentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -172,7 +172,7 @@ export class SentinelAlertRuleMsSecurityIncidentTimeoutsOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SentinelAlertRuleMsSecurityIncidentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SentinelAlertRuleMsSecurityIncidentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -181,7 +181,7 @@ export class SentinelAlertRuleMsSecurityIncidentTimeoutsOutputReference extends 
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -263,7 +263,7 @@ export class SentinelAlertRuleMsSecurityIncidentTimeoutsOutputReference extends 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_alert_rule_ms_security_incident azurerm_sentinel_alert_rule_ms_security_incident}
 */
-export class SentinelAlertRuleMsSecurityIncident extends cdktf.TerraformResource {
+export class SentinelAlertRuleMsSecurityIncident extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -274,14 +274,14 @@ export class SentinelAlertRuleMsSecurityIncident extends cdktf.TerraformResource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SentinelAlertRuleMsSecurityIncident resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SentinelAlertRuleMsSecurityIncident resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SentinelAlertRuleMsSecurityIncident to import
   * @param importFromId The id of the existing SentinelAlertRuleMsSecurityIncident that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/sentinel_alert_rule_ms_security_incident#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SentinelAlertRuleMsSecurityIncident to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_sentinel_alert_rule_ms_security_incident", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_sentinel_alert_rule_ms_security_incident", importId: importFromId, provider });
       }
 
   // ===========
@@ -377,7 +377,7 @@ export class SentinelAlertRuleMsSecurityIncident extends cdktf.TerraformResource
   // display_name_exclude_filter - computed: false, optional: true, required: false
   private _displayNameExcludeFilter?: string[]; 
   public get displayNameExcludeFilter() {
-    return cdktf.Fn.tolist(this.getListAttribute('display_name_exclude_filter'));
+    return cdktn.Fn.tolist(this.getListAttribute('display_name_exclude_filter'));
   }
   public set displayNameExcludeFilter(value: string[]) {
     this._displayNameExcludeFilter = value;
@@ -393,7 +393,7 @@ export class SentinelAlertRuleMsSecurityIncident extends cdktf.TerraformResource
   // display_name_filter - computed: false, optional: true, required: false
   private _displayNameFilter?: string[]; 
   public get displayNameFilter() {
-    return cdktf.Fn.tolist(this.getListAttribute('display_name_filter'));
+    return cdktn.Fn.tolist(this.getListAttribute('display_name_filter'));
   }
   public set displayNameFilter(value: string[]) {
     this._displayNameFilter = value;
@@ -407,11 +407,11 @@ export class SentinelAlertRuleMsSecurityIncident extends cdktf.TerraformResource
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -480,7 +480,7 @@ export class SentinelAlertRuleMsSecurityIncident extends cdktf.TerraformResource
   // severity_filter - computed: false, optional: false, required: true
   private _severityFilter?: string[]; 
   public get severityFilter() {
-    return cdktf.Fn.tolist(this.getListAttribute('severity_filter'));
+    return cdktn.Fn.tolist(this.getListAttribute('severity_filter'));
   }
   public set severityFilter(value: string[]) {
     this._severityFilter = value;
@@ -512,17 +512,17 @@ export class SentinelAlertRuleMsSecurityIncident extends cdktf.TerraformResource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      alert_rule_template_guid: cdktf.stringToTerraform(this._alertRuleTemplateGuid),
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      display_name_exclude_filter: cdktf.listMapper(cdktf.stringToTerraform, false)(this._displayNameExcludeFilter),
-      display_name_filter: cdktf.listMapper(cdktf.stringToTerraform, false)(this._displayNameFilter),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
-      log_analytics_workspace_id: cdktf.stringToTerraform(this._logAnalyticsWorkspaceId),
-      name: cdktf.stringToTerraform(this._name),
-      product_filter: cdktf.stringToTerraform(this._productFilter),
-      severity_filter: cdktf.listMapper(cdktf.stringToTerraform, false)(this._severityFilter),
+      alert_rule_template_guid: cdktn.stringToTerraform(this._alertRuleTemplateGuid),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      display_name_exclude_filter: cdktn.listMapper(cdktn.stringToTerraform, false)(this._displayNameExcludeFilter),
+      display_name_filter: cdktn.listMapper(cdktn.stringToTerraform, false)(this._displayNameFilter),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      id: cdktn.stringToTerraform(this._id),
+      log_analytics_workspace_id: cdktn.stringToTerraform(this._logAnalyticsWorkspaceId),
+      name: cdktn.stringToTerraform(this._name),
+      product_filter: cdktn.stringToTerraform(this._productFilter),
+      severity_filter: cdktn.listMapper(cdktn.stringToTerraform, false)(this._severityFilter),
       timeouts: sentinelAlertRuleMsSecurityIncidentTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -530,67 +530,67 @@ export class SentinelAlertRuleMsSecurityIncident extends cdktf.TerraformResource
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       alert_rule_template_guid: {
-        value: cdktf.stringToHclTerraform(this._alertRuleTemplateGuid),
+        value: cdktn.stringToHclTerraform(this._alertRuleTemplateGuid),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name_exclude_filter: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._displayNameExcludeFilter),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._displayNameExcludeFilter),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       display_name_filter: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._displayNameFilter),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._displayNameFilter),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       log_analytics_workspace_id: {
-        value: cdktf.stringToHclTerraform(this._logAnalyticsWorkspaceId),
+        value: cdktn.stringToHclTerraform(this._logAnalyticsWorkspaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       product_filter: {
-        value: cdktf.stringToHclTerraform(this._productFilter),
+        value: cdktn.stringToHclTerraform(this._productFilter),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       severity_filter: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._severityFilter),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._severityFilter),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

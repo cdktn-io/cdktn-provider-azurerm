@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataFactoryLinkedServiceCosmosdbConfig extends cdktf.TerraformMetaArguments {
+export interface DataFactoryLinkedServiceCosmosdbConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_linked_service_cosmosdb#account_endpoint DataFactoryLinkedServiceCosmosdb#account_endpoint}
   */
@@ -89,46 +89,46 @@ export interface DataFactoryLinkedServiceCosmosdbTimeouts {
   readonly update?: string;
 }
 
-export function dataFactoryLinkedServiceCosmosdbTimeoutsToTerraform(struct?: DataFactoryLinkedServiceCosmosdbTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryLinkedServiceCosmosdbTimeoutsToTerraform(struct?: DataFactoryLinkedServiceCosmosdbTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dataFactoryLinkedServiceCosmosdbTimeoutsToHclTerraform(struct?: DataFactoryLinkedServiceCosmosdbTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryLinkedServiceCosmosdbTimeoutsToHclTerraform(struct?: DataFactoryLinkedServiceCosmosdbTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -139,19 +139,19 @@ export function dataFactoryLinkedServiceCosmosdbTimeoutsToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryLinkedServiceCosmosdbTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataFactoryLinkedServiceCosmosdbTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataFactoryLinkedServiceCosmosdbTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataFactoryLinkedServiceCosmosdbTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -176,7 +176,7 @@ export class DataFactoryLinkedServiceCosmosdbTimeoutsOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataFactoryLinkedServiceCosmosdbTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataFactoryLinkedServiceCosmosdbTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -185,7 +185,7 @@ export class DataFactoryLinkedServiceCosmosdbTimeoutsOutputReference extends cdk
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -267,7 +267,7 @@ export class DataFactoryLinkedServiceCosmosdbTimeoutsOutputReference extends cdk
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_linked_service_cosmosdb azurerm_data_factory_linked_service_cosmosdb}
 */
-export class DataFactoryLinkedServiceCosmosdb extends cdktf.TerraformResource {
+export class DataFactoryLinkedServiceCosmosdb extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -278,14 +278,14 @@ export class DataFactoryLinkedServiceCosmosdb extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataFactoryLinkedServiceCosmosdb resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataFactoryLinkedServiceCosmosdb resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataFactoryLinkedServiceCosmosdb to import
   * @param importFromId The id of the existing DataFactoryLinkedServiceCosmosdb that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_linked_service_cosmosdb#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataFactoryLinkedServiceCosmosdb to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_factory_linked_service_cosmosdb", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_factory_linked_service_cosmosdb", importId: importFromId, provider });
       }
 
   // ===========
@@ -542,18 +542,18 @@ export class DataFactoryLinkedServiceCosmosdb extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_endpoint: cdktf.stringToTerraform(this._accountEndpoint),
-      account_key: cdktf.stringToTerraform(this._accountKey),
-      additional_properties: cdktf.hashMapper(cdktf.stringToTerraform)(this._additionalProperties),
-      annotations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._annotations),
-      connection_string: cdktf.stringToTerraform(this._connectionString),
-      data_factory_id: cdktf.stringToTerraform(this._dataFactoryId),
-      database: cdktf.stringToTerraform(this._database),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      integration_runtime_name: cdktf.stringToTerraform(this._integrationRuntimeName),
-      name: cdktf.stringToTerraform(this._name),
-      parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._parameters),
+      account_endpoint: cdktn.stringToTerraform(this._accountEndpoint),
+      account_key: cdktn.stringToTerraform(this._accountKey),
+      additional_properties: cdktn.hashMapper(cdktn.stringToTerraform)(this._additionalProperties),
+      annotations: cdktn.listMapper(cdktn.stringToTerraform, false)(this._annotations),
+      connection_string: cdktn.stringToTerraform(this._connectionString),
+      data_factory_id: cdktn.stringToTerraform(this._dataFactoryId),
+      database: cdktn.stringToTerraform(this._database),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      integration_runtime_name: cdktn.stringToTerraform(this._integrationRuntimeName),
+      name: cdktn.stringToTerraform(this._name),
+      parameters: cdktn.hashMapper(cdktn.stringToTerraform)(this._parameters),
       timeouts: dataFactoryLinkedServiceCosmosdbTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -561,73 +561,73 @@ export class DataFactoryLinkedServiceCosmosdb extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_endpoint: {
-        value: cdktf.stringToHclTerraform(this._accountEndpoint),
+        value: cdktn.stringToHclTerraform(this._accountEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       account_key: {
-        value: cdktf.stringToHclTerraform(this._accountKey),
+        value: cdktn.stringToHclTerraform(this._accountKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       additional_properties: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._additionalProperties),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._additionalProperties),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       annotations: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._annotations),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._annotations),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       connection_string: {
-        value: cdktf.stringToHclTerraform(this._connectionString),
+        value: cdktn.stringToHclTerraform(this._connectionString),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_factory_id: {
-        value: cdktf.stringToHclTerraform(this._dataFactoryId),
+        value: cdktn.stringToHclTerraform(this._dataFactoryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       database: {
-        value: cdktf.stringToHclTerraform(this._database),
+        value: cdktn.stringToHclTerraform(this._database),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       integration_runtime_name: {
-        value: cdktf.stringToHclTerraform(this._integrationRuntimeName),
+        value: cdktn.stringToHclTerraform(this._integrationRuntimeName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parameters: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._parameters),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._parameters),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RouteServerBgpConnectionConfig extends cdktf.TerraformMetaArguments {
+export interface RouteServerBgpConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/route_server_bgp_connection#id RouteServerBgpConnection#id}
   *
@@ -57,39 +57,39 @@ export interface RouteServerBgpConnectionTimeouts {
   readonly read?: string;
 }
 
-export function routeServerBgpConnectionTimeoutsToTerraform(struct?: RouteServerBgpConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function routeServerBgpConnectionTimeoutsToTerraform(struct?: RouteServerBgpConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function routeServerBgpConnectionTimeoutsToHclTerraform(struct?: RouteServerBgpConnectionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function routeServerBgpConnectionTimeoutsToHclTerraform(struct?: RouteServerBgpConnectionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -100,19 +100,19 @@ export function routeServerBgpConnectionTimeoutsToHclTerraform(struct?: RouteSer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RouteServerBgpConnectionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class RouteServerBgpConnectionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): RouteServerBgpConnectionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): RouteServerBgpConnectionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -133,7 +133,7 @@ export class RouteServerBgpConnectionTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RouteServerBgpConnectionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RouteServerBgpConnectionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -141,7 +141,7 @@ export class RouteServerBgpConnectionTimeoutsOutputReference extends cdktf.Compl
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -206,7 +206,7 @@ export class RouteServerBgpConnectionTimeoutsOutputReference extends cdktf.Compl
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/route_server_bgp_connection azurerm_route_server_bgp_connection}
 */
-export class RouteServerBgpConnection extends cdktf.TerraformResource {
+export class RouteServerBgpConnection extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -217,14 +217,14 @@ export class RouteServerBgpConnection extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RouteServerBgpConnection resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RouteServerBgpConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RouteServerBgpConnection to import
   * @param importFromId The id of the existing RouteServerBgpConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/route_server_bgp_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RouteServerBgpConnection to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_route_server_bgp_connection", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_route_server_bgp_connection", importId: importFromId, provider });
       }
 
   // ===========
@@ -356,11 +356,11 @@ export class RouteServerBgpConnection extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      peer_asn: cdktf.numberToTerraform(this._peerAsn),
-      peer_ip: cdktf.stringToTerraform(this._peerIp),
-      route_server_id: cdktf.stringToTerraform(this._routeServerId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      peer_asn: cdktn.numberToTerraform(this._peerAsn),
+      peer_ip: cdktn.stringToTerraform(this._peerIp),
+      route_server_id: cdktn.stringToTerraform(this._routeServerId),
       timeouts: routeServerBgpConnectionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -368,31 +368,31 @@ export class RouteServerBgpConnection extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       peer_asn: {
-        value: cdktf.numberToHclTerraform(this._peerAsn),
+        value: cdktn.numberToHclTerraform(this._peerAsn),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       peer_ip: {
-        value: cdktf.stringToHclTerraform(this._peerIp),
+        value: cdktn.stringToHclTerraform(this._peerIp),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       route_server_id: {
-        value: cdktf.stringToHclTerraform(this._routeServerId),
+        value: cdktn.stringToHclTerraform(this._routeServerId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

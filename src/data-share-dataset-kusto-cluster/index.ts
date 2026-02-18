@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataShareDatasetKustoClusterConfig extends cdktf.TerraformMetaArguments {
+export interface DataShareDatasetKustoClusterConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_share_dataset_kusto_cluster#id DataShareDatasetKustoCluster#id}
   *
@@ -53,39 +53,39 @@ export interface DataShareDatasetKustoClusterTimeouts {
   readonly read?: string;
 }
 
-export function dataShareDatasetKustoClusterTimeoutsToTerraform(struct?: DataShareDatasetKustoClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataShareDatasetKustoClusterTimeoutsToTerraform(struct?: DataShareDatasetKustoClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataShareDatasetKustoClusterTimeoutsToHclTerraform(struct?: DataShareDatasetKustoClusterTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataShareDatasetKustoClusterTimeoutsToHclTerraform(struct?: DataShareDatasetKustoClusterTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -96,19 +96,19 @@ export function dataShareDatasetKustoClusterTimeoutsToHclTerraform(struct?: Data
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataShareDatasetKustoClusterTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataShareDatasetKustoClusterTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataShareDatasetKustoClusterTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataShareDatasetKustoClusterTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -129,7 +129,7 @@ export class DataShareDatasetKustoClusterTimeoutsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataShareDatasetKustoClusterTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataShareDatasetKustoClusterTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -137,7 +137,7 @@ export class DataShareDatasetKustoClusterTimeoutsOutputReference extends cdktf.C
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -202,7 +202,7 @@ export class DataShareDatasetKustoClusterTimeoutsOutputReference extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_share_dataset_kusto_cluster azurerm_data_share_dataset_kusto_cluster}
 */
-export class DataShareDatasetKustoCluster extends cdktf.TerraformResource {
+export class DataShareDatasetKustoCluster extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -213,14 +213,14 @@ export class DataShareDatasetKustoCluster extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataShareDatasetKustoCluster resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataShareDatasetKustoCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataShareDatasetKustoCluster to import
   * @param importFromId The id of the existing DataShareDatasetKustoCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_share_dataset_kusto_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataShareDatasetKustoCluster to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_share_dataset_kusto_cluster", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_share_dataset_kusto_cluster", importId: importFromId, provider });
       }
 
   // ===========
@@ -348,10 +348,10 @@ export class DataShareDatasetKustoCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      kusto_cluster_id: cdktf.stringToTerraform(this._kustoClusterId),
-      name: cdktf.stringToTerraform(this._name),
-      share_id: cdktf.stringToTerraform(this._shareId),
+      id: cdktn.stringToTerraform(this._id),
+      kusto_cluster_id: cdktn.stringToTerraform(this._kustoClusterId),
+      name: cdktn.stringToTerraform(this._name),
+      share_id: cdktn.stringToTerraform(this._shareId),
       timeouts: dataShareDatasetKustoClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -359,25 +359,25 @@ export class DataShareDatasetKustoCluster extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kusto_cluster_id: {
-        value: cdktf.stringToHclTerraform(this._kustoClusterId),
+        value: cdktn.stringToHclTerraform(this._kustoClusterId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       share_id: {
-        value: cdktf.stringToHclTerraform(this._shareId),
+        value: cdktn.stringToHclTerraform(this._shareId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

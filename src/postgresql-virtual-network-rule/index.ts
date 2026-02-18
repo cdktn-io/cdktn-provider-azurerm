@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PostgresqlVirtualNetworkRuleConfig extends cdktf.TerraformMetaArguments {
+export interface PostgresqlVirtualNetworkRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/postgresql_virtual_network_rule#id PostgresqlVirtualNetworkRule#id}
   *
@@ -22,7 +22,7 @@ export interface PostgresqlVirtualNetworkRuleConfig extends cdktf.TerraformMetaA
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/postgresql_virtual_network_rule#ignore_missing_vnet_service_endpoint PostgresqlVirtualNetworkRule#ignore_missing_vnet_service_endpoint}
   */
-  readonly ignoreMissingVnetServiceEndpoint?: boolean | cdktf.IResolvable;
+  readonly ignoreMissingVnetServiceEndpoint?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/postgresql_virtual_network_rule#name PostgresqlVirtualNetworkRule#name}
   */
@@ -65,46 +65,46 @@ export interface PostgresqlVirtualNetworkRuleTimeouts {
   readonly update?: string;
 }
 
-export function postgresqlVirtualNetworkRuleTimeoutsToTerraform(struct?: PostgresqlVirtualNetworkRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function postgresqlVirtualNetworkRuleTimeoutsToTerraform(struct?: PostgresqlVirtualNetworkRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function postgresqlVirtualNetworkRuleTimeoutsToHclTerraform(struct?: PostgresqlVirtualNetworkRuleTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function postgresqlVirtualNetworkRuleTimeoutsToHclTerraform(struct?: PostgresqlVirtualNetworkRuleTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -115,19 +115,19 @@ export function postgresqlVirtualNetworkRuleTimeoutsToHclTerraform(struct?: Post
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PostgresqlVirtualNetworkRuleTimeoutsOutputReference extends cdktf.ComplexObject {
+export class PostgresqlVirtualNetworkRuleTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PostgresqlVirtualNetworkRuleTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): PostgresqlVirtualNetworkRuleTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -152,7 +152,7 @@ export class PostgresqlVirtualNetworkRuleTimeoutsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PostgresqlVirtualNetworkRuleTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PostgresqlVirtualNetworkRuleTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -161,7 +161,7 @@ export class PostgresqlVirtualNetworkRuleTimeoutsOutputReference extends cdktf.C
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -243,7 +243,7 @@ export class PostgresqlVirtualNetworkRuleTimeoutsOutputReference extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/postgresql_virtual_network_rule azurerm_postgresql_virtual_network_rule}
 */
-export class PostgresqlVirtualNetworkRule extends cdktf.TerraformResource {
+export class PostgresqlVirtualNetworkRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -254,14 +254,14 @@ export class PostgresqlVirtualNetworkRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PostgresqlVirtualNetworkRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PostgresqlVirtualNetworkRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PostgresqlVirtualNetworkRule to import
   * @param importFromId The id of the existing PostgresqlVirtualNetworkRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/postgresql_virtual_network_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PostgresqlVirtualNetworkRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_postgresql_virtual_network_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_postgresql_virtual_network_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -321,11 +321,11 @@ export class PostgresqlVirtualNetworkRule extends cdktf.TerraformResource {
   }
 
   // ignore_missing_vnet_service_endpoint - computed: false, optional: true, required: false
-  private _ignoreMissingVnetServiceEndpoint?: boolean | cdktf.IResolvable; 
+  private _ignoreMissingVnetServiceEndpoint?: boolean | cdktn.IResolvable; 
   public get ignoreMissingVnetServiceEndpoint() {
     return this.getBooleanAttribute('ignore_missing_vnet_service_endpoint');
   }
-  public set ignoreMissingVnetServiceEndpoint(value: boolean | cdktf.IResolvable) {
+  public set ignoreMissingVnetServiceEndpoint(value: boolean | cdktn.IResolvable) {
     this._ignoreMissingVnetServiceEndpoint = value;
   }
   public resetIgnoreMissingVnetServiceEndpoint() {
@@ -410,12 +410,12 @@ export class PostgresqlVirtualNetworkRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      ignore_missing_vnet_service_endpoint: cdktf.booleanToTerraform(this._ignoreMissingVnetServiceEndpoint),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      server_name: cdktf.stringToTerraform(this._serverName),
-      subnet_id: cdktf.stringToTerraform(this._subnetId),
+      id: cdktn.stringToTerraform(this._id),
+      ignore_missing_vnet_service_endpoint: cdktn.booleanToTerraform(this._ignoreMissingVnetServiceEndpoint),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      server_name: cdktn.stringToTerraform(this._serverName),
+      subnet_id: cdktn.stringToTerraform(this._subnetId),
       timeouts: postgresqlVirtualNetworkRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -423,37 +423,37 @@ export class PostgresqlVirtualNetworkRule extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ignore_missing_vnet_service_endpoint: {
-        value: cdktf.booleanToHclTerraform(this._ignoreMissingVnetServiceEndpoint),
+        value: cdktn.booleanToHclTerraform(this._ignoreMissingVnetServiceEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       server_name: {
-        value: cdktf.stringToHclTerraform(this._serverName),
+        value: cdktn.stringToHclTerraform(this._serverName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subnet_id: {
-        value: cdktf.stringToHclTerraform(this._subnetId),
+        value: cdktn.stringToHclTerraform(this._subnetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

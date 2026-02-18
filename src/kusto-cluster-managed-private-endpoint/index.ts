@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface KustoClusterManagedPrivateEndpointConfig extends cdktf.TerraformMetaArguments {
+export interface KustoClusterManagedPrivateEndpointConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kusto_cluster_managed_private_endpoint#cluster_name KustoClusterManagedPrivateEndpoint#cluster_name}
   */
@@ -73,46 +73,46 @@ export interface KustoClusterManagedPrivateEndpointTimeouts {
   readonly update?: string;
 }
 
-export function kustoClusterManagedPrivateEndpointTimeoutsToTerraform(struct?: KustoClusterManagedPrivateEndpointTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kustoClusterManagedPrivateEndpointTimeoutsToTerraform(struct?: KustoClusterManagedPrivateEndpointTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function kustoClusterManagedPrivateEndpointTimeoutsToHclTerraform(struct?: KustoClusterManagedPrivateEndpointTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function kustoClusterManagedPrivateEndpointTimeoutsToHclTerraform(struct?: KustoClusterManagedPrivateEndpointTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -123,19 +123,19 @@ export function kustoClusterManagedPrivateEndpointTimeoutsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KustoClusterManagedPrivateEndpointTimeoutsOutputReference extends cdktf.ComplexObject {
+export class KustoClusterManagedPrivateEndpointTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): KustoClusterManagedPrivateEndpointTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): KustoClusterManagedPrivateEndpointTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -160,7 +160,7 @@ export class KustoClusterManagedPrivateEndpointTimeoutsOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KustoClusterManagedPrivateEndpointTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KustoClusterManagedPrivateEndpointTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -169,7 +169,7 @@ export class KustoClusterManagedPrivateEndpointTimeoutsOutputReference extends c
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -251,7 +251,7 @@ export class KustoClusterManagedPrivateEndpointTimeoutsOutputReference extends c
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kusto_cluster_managed_private_endpoint azurerm_kusto_cluster_managed_private_endpoint}
 */
-export class KustoClusterManagedPrivateEndpoint extends cdktf.TerraformResource {
+export class KustoClusterManagedPrivateEndpoint extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -262,14 +262,14 @@ export class KustoClusterManagedPrivateEndpoint extends cdktf.TerraformResource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a KustoClusterManagedPrivateEndpoint resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a KustoClusterManagedPrivateEndpoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KustoClusterManagedPrivateEndpoint to import
   * @param importFromId The id of the existing KustoClusterManagedPrivateEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/kusto_cluster_managed_private_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KustoClusterManagedPrivateEndpoint to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_kusto_cluster_managed_private_endpoint", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_kusto_cluster_managed_private_endpoint", importId: importFromId, provider });
       }
 
   // ===========
@@ -449,14 +449,14 @@ export class KustoClusterManagedPrivateEndpoint extends cdktf.TerraformResource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cluster_name: cdktf.stringToTerraform(this._clusterName),
-      group_id: cdktf.stringToTerraform(this._groupId),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      private_link_resource_id: cdktf.stringToTerraform(this._privateLinkResourceId),
-      private_link_resource_region: cdktf.stringToTerraform(this._privateLinkResourceRegion),
-      request_message: cdktf.stringToTerraform(this._requestMessage),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
+      cluster_name: cdktn.stringToTerraform(this._clusterName),
+      group_id: cdktn.stringToTerraform(this._groupId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      private_link_resource_id: cdktn.stringToTerraform(this._privateLinkResourceId),
+      private_link_resource_region: cdktn.stringToTerraform(this._privateLinkResourceRegion),
+      request_message: cdktn.stringToTerraform(this._requestMessage),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
       timeouts: kustoClusterManagedPrivateEndpointTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -464,49 +464,49 @@ export class KustoClusterManagedPrivateEndpoint extends cdktf.TerraformResource 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cluster_name: {
-        value: cdktf.stringToHclTerraform(this._clusterName),
+        value: cdktn.stringToHclTerraform(this._clusterName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       group_id: {
-        value: cdktf.stringToHclTerraform(this._groupId),
+        value: cdktn.stringToHclTerraform(this._groupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       private_link_resource_id: {
-        value: cdktf.stringToHclTerraform(this._privateLinkResourceId),
+        value: cdktn.stringToHclTerraform(this._privateLinkResourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       private_link_resource_region: {
-        value: cdktf.stringToHclTerraform(this._privateLinkResourceRegion),
+        value: cdktn.stringToHclTerraform(this._privateLinkResourceRegion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       request_message: {
-        value: cdktf.stringToHclTerraform(this._requestMessage),
+        value: cdktn.stringToHclTerraform(this._requestMessage),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

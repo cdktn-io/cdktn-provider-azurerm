@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkManagerVerifierWorkspaceReachabilityAnalysisIntentConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkManagerVerifierWorkspaceReachabilityAnalysisIntentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_manager_verifier_workspace_reachability_analysis_intent#description NetworkManagerVerifierWorkspaceReachabilityAnalysisIntent#description}
   */
@@ -76,52 +76,52 @@ export interface NetworkManagerVerifierWorkspaceReachabilityAnalysisIntentIpTraf
 }
 
 export function networkManagerVerifierWorkspaceReachabilityAnalysisIntentIpTrafficToTerraform(struct?: NetworkManagerVerifierWorkspaceReachabilityAnalysisIntentIpTrafficOutputReference | NetworkManagerVerifierWorkspaceReachabilityAnalysisIntentIpTraffic): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.destinationIps),
-    destination_ports: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.destinationPorts),
-    protocols: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.protocols),
-    source_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sourceIps),
-    source_ports: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sourcePorts),
+    destination_ips: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.destinationIps),
+    destination_ports: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.destinationPorts),
+    protocols: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.protocols),
+    source_ips: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sourceIps),
+    source_ports: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sourcePorts),
   }
 }
 
 
 export function networkManagerVerifierWorkspaceReachabilityAnalysisIntentIpTrafficToHclTerraform(struct?: NetworkManagerVerifierWorkspaceReachabilityAnalysisIntentIpTrafficOutputReference | NetworkManagerVerifierWorkspaceReachabilityAnalysisIntentIpTraffic): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination_ips: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.destinationIps),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.destinationIps),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     destination_ports: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.destinationPorts),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.destinationPorts),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     protocols: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.protocols),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.protocols),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     source_ips: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sourceIps),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sourceIps),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     source_ports: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sourcePorts),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sourcePorts),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -132,14 +132,14 @@ export function networkManagerVerifierWorkspaceReachabilityAnalysisIntentIpTraff
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkManagerVerifierWorkspaceReachabilityAnalysisIntentIpTrafficOutputReference extends cdktf.ComplexObject {
+export class NetworkManagerVerifierWorkspaceReachabilityAnalysisIntentIpTrafficOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -268,39 +268,39 @@ export interface NetworkManagerVerifierWorkspaceReachabilityAnalysisIntentTimeou
   readonly read?: string;
 }
 
-export function networkManagerVerifierWorkspaceReachabilityAnalysisIntentTimeoutsToTerraform(struct?: NetworkManagerVerifierWorkspaceReachabilityAnalysisIntentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkManagerVerifierWorkspaceReachabilityAnalysisIntentTimeoutsToTerraform(struct?: NetworkManagerVerifierWorkspaceReachabilityAnalysisIntentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function networkManagerVerifierWorkspaceReachabilityAnalysisIntentTimeoutsToHclTerraform(struct?: NetworkManagerVerifierWorkspaceReachabilityAnalysisIntentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkManagerVerifierWorkspaceReachabilityAnalysisIntentTimeoutsToHclTerraform(struct?: NetworkManagerVerifierWorkspaceReachabilityAnalysisIntentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -311,19 +311,19 @@ export function networkManagerVerifierWorkspaceReachabilityAnalysisIntentTimeout
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkManagerVerifierWorkspaceReachabilityAnalysisIntentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetworkManagerVerifierWorkspaceReachabilityAnalysisIntentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetworkManagerVerifierWorkspaceReachabilityAnalysisIntentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkManagerVerifierWorkspaceReachabilityAnalysisIntentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -344,7 +344,7 @@ export class NetworkManagerVerifierWorkspaceReachabilityAnalysisIntentTimeoutsOu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkManagerVerifierWorkspaceReachabilityAnalysisIntentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkManagerVerifierWorkspaceReachabilityAnalysisIntentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -352,7 +352,7 @@ export class NetworkManagerVerifierWorkspaceReachabilityAnalysisIntentTimeoutsOu
       this._delete = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -417,7 +417,7 @@ export class NetworkManagerVerifierWorkspaceReachabilityAnalysisIntentTimeoutsOu
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_manager_verifier_workspace_reachability_analysis_intent azurerm_network_manager_verifier_workspace_reachability_analysis_intent}
 */
-export class NetworkManagerVerifierWorkspaceReachabilityAnalysisIntent extends cdktf.TerraformResource {
+export class NetworkManagerVerifierWorkspaceReachabilityAnalysisIntent extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -428,14 +428,14 @@ export class NetworkManagerVerifierWorkspaceReachabilityAnalysisIntent extends c
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkManagerVerifierWorkspaceReachabilityAnalysisIntent resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkManagerVerifierWorkspaceReachabilityAnalysisIntent resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkManagerVerifierWorkspaceReachabilityAnalysisIntent to import
   * @param importFromId The id of the existing NetworkManagerVerifierWorkspaceReachabilityAnalysisIntent that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_manager_verifier_workspace_reachability_analysis_intent#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkManagerVerifierWorkspaceReachabilityAnalysisIntent to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_network_manager_verifier_workspace_reachability_analysis_intent", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_network_manager_verifier_workspace_reachability_analysis_intent", importId: importFromId, provider });
       }
 
   // ===========
@@ -598,12 +598,12 @@ export class NetworkManagerVerifierWorkspaceReachabilityAnalysisIntent extends c
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      destination_resource_id: cdktf.stringToTerraform(this._destinationResourceId),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      source_resource_id: cdktf.stringToTerraform(this._sourceResourceId),
-      verifier_workspace_id: cdktf.stringToTerraform(this._verifierWorkspaceId),
+      description: cdktn.stringToTerraform(this._description),
+      destination_resource_id: cdktn.stringToTerraform(this._destinationResourceId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      source_resource_id: cdktn.stringToTerraform(this._sourceResourceId),
+      verifier_workspace_id: cdktn.stringToTerraform(this._verifierWorkspaceId),
       ip_traffic: networkManagerVerifierWorkspaceReachabilityAnalysisIntentIpTrafficToTerraform(this._ipTraffic.internalValue),
       timeouts: networkManagerVerifierWorkspaceReachabilityAnalysisIntentTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -612,37 +612,37 @@ export class NetworkManagerVerifierWorkspaceReachabilityAnalysisIntent extends c
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       destination_resource_id: {
-        value: cdktf.stringToHclTerraform(this._destinationResourceId),
+        value: cdktn.stringToHclTerraform(this._destinationResourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source_resource_id: {
-        value: cdktf.stringToHclTerraform(this._sourceResourceId),
+        value: cdktn.stringToHclTerraform(this._sourceResourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       verifier_workspace_id: {
-        value: cdktf.stringToHclTerraform(this._verifierWorkspaceId),
+        value: cdktn.stringToHclTerraform(this._verifierWorkspaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

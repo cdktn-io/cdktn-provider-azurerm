@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkFunctionCollectorPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkFunctionCollectorPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_function_collector_policy#id NetworkFunctionCollectorPolicy#id}
   *
@@ -62,24 +62,24 @@ export interface NetworkFunctionCollectorPolicyIpfxEmission {
 }
 
 export function networkFunctionCollectorPolicyIpfxEmissionToTerraform(struct?: NetworkFunctionCollectorPolicyIpfxEmissionOutputReference | NetworkFunctionCollectorPolicyIpfxEmission): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destination_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.destinationTypes),
+    destination_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.destinationTypes),
   }
 }
 
 
 export function networkFunctionCollectorPolicyIpfxEmissionToHclTerraform(struct?: NetworkFunctionCollectorPolicyIpfxEmissionOutputReference | NetworkFunctionCollectorPolicyIpfxEmission): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destination_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.destinationTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.destinationTypes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -90,14 +90,14 @@ export function networkFunctionCollectorPolicyIpfxEmissionToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkFunctionCollectorPolicyIpfxEmissionOutputReference extends cdktf.ComplexObject {
+export class NetworkFunctionCollectorPolicyIpfxEmissionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -143,24 +143,24 @@ export interface NetworkFunctionCollectorPolicyIpfxIngestion {
 }
 
 export function networkFunctionCollectorPolicyIpfxIngestionToTerraform(struct?: NetworkFunctionCollectorPolicyIpfxIngestionOutputReference | NetworkFunctionCollectorPolicyIpfxIngestion): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    source_resource_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sourceResourceIds),
+    source_resource_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.sourceResourceIds),
   }
 }
 
 
 export function networkFunctionCollectorPolicyIpfxIngestionToHclTerraform(struct?: NetworkFunctionCollectorPolicyIpfxIngestionOutputReference | NetworkFunctionCollectorPolicyIpfxIngestion): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     source_resource_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.sourceResourceIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.sourceResourceIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -171,14 +171,14 @@ export function networkFunctionCollectorPolicyIpfxIngestionToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkFunctionCollectorPolicyIpfxIngestionOutputReference extends cdktf.ComplexObject {
+export class NetworkFunctionCollectorPolicyIpfxIngestionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -206,7 +206,7 @@ export class NetworkFunctionCollectorPolicyIpfxIngestionOutputReference extends 
   // source_resource_ids - computed: false, optional: false, required: true
   private _sourceResourceIds?: string[]; 
   public get sourceResourceIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('source_resource_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('source_resource_ids'));
   }
   public set sourceResourceIds(value: string[]) {
     this._sourceResourceIds = value;
@@ -235,46 +235,46 @@ export interface NetworkFunctionCollectorPolicyTimeouts {
   readonly update?: string;
 }
 
-export function networkFunctionCollectorPolicyTimeoutsToTerraform(struct?: NetworkFunctionCollectorPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkFunctionCollectorPolicyTimeoutsToTerraform(struct?: NetworkFunctionCollectorPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function networkFunctionCollectorPolicyTimeoutsToHclTerraform(struct?: NetworkFunctionCollectorPolicyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkFunctionCollectorPolicyTimeoutsToHclTerraform(struct?: NetworkFunctionCollectorPolicyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -285,19 +285,19 @@ export function networkFunctionCollectorPolicyTimeoutsToHclTerraform(struct?: Ne
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkFunctionCollectorPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetworkFunctionCollectorPolicyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetworkFunctionCollectorPolicyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkFunctionCollectorPolicyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -322,7 +322,7 @@ export class NetworkFunctionCollectorPolicyTimeoutsOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkFunctionCollectorPolicyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkFunctionCollectorPolicyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -331,7 +331,7 @@ export class NetworkFunctionCollectorPolicyTimeoutsOutputReference extends cdktf
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -413,7 +413,7 @@ export class NetworkFunctionCollectorPolicyTimeoutsOutputReference extends cdktf
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_function_collector_policy azurerm_network_function_collector_policy}
 */
-export class NetworkFunctionCollectorPolicy extends cdktf.TerraformResource {
+export class NetworkFunctionCollectorPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -424,14 +424,14 @@ export class NetworkFunctionCollectorPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkFunctionCollectorPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkFunctionCollectorPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkFunctionCollectorPolicy to import
   * @param importFromId The id of the existing NetworkFunctionCollectorPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_function_collector_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkFunctionCollectorPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_network_function_collector_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_network_function_collector_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -594,11 +594,11 @@ export class NetworkFunctionCollectorPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      traffic_collector_id: cdktf.stringToTerraform(this._trafficCollectorId),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      traffic_collector_id: cdktn.stringToTerraform(this._trafficCollectorId),
       ipfx_emission: networkFunctionCollectorPolicyIpfxEmissionToTerraform(this._ipfxEmission.internalValue),
       ipfx_ingestion: networkFunctionCollectorPolicyIpfxIngestionToTerraform(this._ipfxIngestion.internalValue),
       timeouts: networkFunctionCollectorPolicyTimeoutsToTerraform(this._timeouts.internalValue),
@@ -608,31 +608,31 @@ export class NetworkFunctionCollectorPolicy extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       traffic_collector_id: {
-        value: cdktf.stringToHclTerraform(this._trafficCollectorId),
+        value: cdktn.stringToHclTerraform(this._trafficCollectorId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

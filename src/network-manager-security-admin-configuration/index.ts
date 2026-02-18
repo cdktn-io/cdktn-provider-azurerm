@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetworkManagerSecurityAdminConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface NetworkManagerSecurityAdminConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_manager_security_admin_configuration#apply_on_network_intent_policy_based_services NetworkManagerSecurityAdminConfiguration#apply_on_network_intent_policy_based_services}
   */
@@ -61,46 +61,46 @@ export interface NetworkManagerSecurityAdminConfigurationTimeouts {
   readonly update?: string;
 }
 
-export function networkManagerSecurityAdminConfigurationTimeoutsToTerraform(struct?: NetworkManagerSecurityAdminConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkManagerSecurityAdminConfigurationTimeoutsToTerraform(struct?: NetworkManagerSecurityAdminConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function networkManagerSecurityAdminConfigurationTimeoutsToHclTerraform(struct?: NetworkManagerSecurityAdminConfigurationTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function networkManagerSecurityAdminConfigurationTimeoutsToHclTerraform(struct?: NetworkManagerSecurityAdminConfigurationTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -111,19 +111,19 @@ export function networkManagerSecurityAdminConfigurationTimeoutsToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetworkManagerSecurityAdminConfigurationTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetworkManagerSecurityAdminConfigurationTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetworkManagerSecurityAdminConfigurationTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetworkManagerSecurityAdminConfigurationTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -148,7 +148,7 @@ export class NetworkManagerSecurityAdminConfigurationTimeoutsOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetworkManagerSecurityAdminConfigurationTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetworkManagerSecurityAdminConfigurationTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -157,7 +157,7 @@ export class NetworkManagerSecurityAdminConfigurationTimeoutsOutputReference ext
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -239,7 +239,7 @@ export class NetworkManagerSecurityAdminConfigurationTimeoutsOutputReference ext
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_manager_security_admin_configuration azurerm_network_manager_security_admin_configuration}
 */
-export class NetworkManagerSecurityAdminConfiguration extends cdktf.TerraformResource {
+export class NetworkManagerSecurityAdminConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -250,14 +250,14 @@ export class NetworkManagerSecurityAdminConfiguration extends cdktf.TerraformRes
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetworkManagerSecurityAdminConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetworkManagerSecurityAdminConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkManagerSecurityAdminConfiguration to import
   * @param importFromId The id of the existing NetworkManagerSecurityAdminConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/network_manager_security_admin_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkManagerSecurityAdminConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_network_manager_security_admin_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_network_manager_security_admin_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -395,11 +395,11 @@ export class NetworkManagerSecurityAdminConfiguration extends cdktf.TerraformRes
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      apply_on_network_intent_policy_based_services: cdktf.listMapper(cdktf.stringToTerraform, false)(this._applyOnNetworkIntentPolicyBasedServices),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      network_manager_id: cdktf.stringToTerraform(this._networkManagerId),
+      apply_on_network_intent_policy_based_services: cdktn.listMapper(cdktn.stringToTerraform, false)(this._applyOnNetworkIntentPolicyBasedServices),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      network_manager_id: cdktn.stringToTerraform(this._networkManagerId),
       timeouts: networkManagerSecurityAdminConfigurationTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -407,31 +407,31 @@ export class NetworkManagerSecurityAdminConfiguration extends cdktf.TerraformRes
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       apply_on_network_intent_policy_based_services: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._applyOnNetworkIntentPolicyBasedServices),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._applyOnNetworkIntentPolicyBasedServices),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       network_manager_id: {
-        value: cdktf.stringToHclTerraform(this._networkManagerId),
+        value: cdktn.stringToHclTerraform(this._networkManagerId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

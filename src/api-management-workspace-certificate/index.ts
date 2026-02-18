@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApiManagementWorkspaceCertificateConfig extends cdktf.TerraformMetaArguments {
+export interface ApiManagementWorkspaceCertificateConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_workspace_certificate#api_management_workspace_id ApiManagementWorkspaceCertificate#api_management_workspace_id}
   */
@@ -69,46 +69,46 @@ export interface ApiManagementWorkspaceCertificateTimeouts {
   readonly update?: string;
 }
 
-export function apiManagementWorkspaceCertificateTimeoutsToTerraform(struct?: ApiManagementWorkspaceCertificateTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementWorkspaceCertificateTimeoutsToTerraform(struct?: ApiManagementWorkspaceCertificateTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function apiManagementWorkspaceCertificateTimeoutsToHclTerraform(struct?: ApiManagementWorkspaceCertificateTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiManagementWorkspaceCertificateTimeoutsToHclTerraform(struct?: ApiManagementWorkspaceCertificateTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -119,19 +119,19 @@ export function apiManagementWorkspaceCertificateTimeoutsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiManagementWorkspaceCertificateTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ApiManagementWorkspaceCertificateTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApiManagementWorkspaceCertificateTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ApiManagementWorkspaceCertificateTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -156,7 +156,7 @@ export class ApiManagementWorkspaceCertificateTimeoutsOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApiManagementWorkspaceCertificateTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApiManagementWorkspaceCertificateTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -165,7 +165,7 @@ export class ApiManagementWorkspaceCertificateTimeoutsOutputReference extends cd
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -247,7 +247,7 @@ export class ApiManagementWorkspaceCertificateTimeoutsOutputReference extends cd
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_workspace_certificate azurerm_api_management_workspace_certificate}
 */
-export class ApiManagementWorkspaceCertificate extends cdktf.TerraformResource {
+export class ApiManagementWorkspaceCertificate extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -258,14 +258,14 @@ export class ApiManagementWorkspaceCertificate extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApiManagementWorkspaceCertificate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApiManagementWorkspaceCertificate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiManagementWorkspaceCertificate to import
   * @param importFromId The id of the existing ApiManagementWorkspaceCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/api_management_workspace_certificate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiManagementWorkspaceCertificate to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_api_management_workspace_certificate", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_api_management_workspace_certificate", importId: importFromId, provider });
       }
 
   // ===========
@@ -452,13 +452,13 @@ export class ApiManagementWorkspaceCertificate extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_management_workspace_id: cdktf.stringToTerraform(this._apiManagementWorkspaceId),
-      certificate_data_base64: cdktf.stringToTerraform(this._certificateDataBase64),
-      id: cdktf.stringToTerraform(this._id),
-      key_vault_secret_id: cdktf.stringToTerraform(this._keyVaultSecretId),
-      name: cdktf.stringToTerraform(this._name),
-      password: cdktf.stringToTerraform(this._password),
-      user_assigned_identity_client_id: cdktf.stringToTerraform(this._userAssignedIdentityClientId),
+      api_management_workspace_id: cdktn.stringToTerraform(this._apiManagementWorkspaceId),
+      certificate_data_base64: cdktn.stringToTerraform(this._certificateDataBase64),
+      id: cdktn.stringToTerraform(this._id),
+      key_vault_secret_id: cdktn.stringToTerraform(this._keyVaultSecretId),
+      name: cdktn.stringToTerraform(this._name),
+      password: cdktn.stringToTerraform(this._password),
+      user_assigned_identity_client_id: cdktn.stringToTerraform(this._userAssignedIdentityClientId),
       timeouts: apiManagementWorkspaceCertificateTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -466,43 +466,43 @@ export class ApiManagementWorkspaceCertificate extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_management_workspace_id: {
-        value: cdktf.stringToHclTerraform(this._apiManagementWorkspaceId),
+        value: cdktn.stringToHclTerraform(this._apiManagementWorkspaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       certificate_data_base64: {
-        value: cdktf.stringToHclTerraform(this._certificateDataBase64),
+        value: cdktn.stringToHclTerraform(this._certificateDataBase64),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_vault_secret_id: {
-        value: cdktf.stringToHclTerraform(this._keyVaultSecretId),
+        value: cdktn.stringToHclTerraform(this._keyVaultSecretId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       password: {
-        value: cdktf.stringToHclTerraform(this._password),
+        value: cdktn.stringToHclTerraform(this._password),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_assigned_identity_client_id: {
-        value: cdktf.stringToHclTerraform(this._userAssignedIdentityClientId),
+        value: cdktn.stringToHclTerraform(this._userAssignedIdentityClientId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IothubDpsConfig extends cdktf.TerraformMetaArguments {
+export interface IothubDpsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iothub_dps#allocation_policy IothubDps#allocation_policy}
   */
@@ -19,7 +19,7 @@ export interface IothubDpsConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iothub_dps#data_residency_enabled IothubDps#data_residency_enabled}
   */
-  readonly dataResidencyEnabled?: boolean | cdktf.IResolvable;
+  readonly dataResidencyEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iothub_dps#id IothubDps#id}
   *
@@ -38,7 +38,7 @@ export interface IothubDpsConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iothub_dps#public_network_access_enabled IothubDps#public_network_access_enabled}
   */
-  readonly publicNetworkAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly publicNetworkAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iothub_dps#resource_group_name IothubDps#resource_group_name}
   */
@@ -52,13 +52,13 @@ export interface IothubDpsConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iothub_dps#ip_filter_rule IothubDps#ip_filter_rule}
   */
-  readonly ipFilterRule?: IothubDpsIpFilterRule[] | cdktf.IResolvable;
+  readonly ipFilterRule?: IothubDpsIpFilterRule[] | cdktn.IResolvable;
   /**
   * linked_hub block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iothub_dps#linked_hub IothubDps#linked_hub}
   */
-  readonly linkedHub?: IothubDpsLinkedHub[] | cdktf.IResolvable;
+  readonly linkedHub?: IothubDpsLinkedHub[] | cdktn.IResolvable;
   /**
   * sku block
   *
@@ -91,46 +91,46 @@ export interface IothubDpsIpFilterRule {
   readonly target?: string;
 }
 
-export function iothubDpsIpFilterRuleToTerraform(struct?: IothubDpsIpFilterRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iothubDpsIpFilterRuleToTerraform(struct?: IothubDpsIpFilterRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action: cdktf.stringToTerraform(struct!.action),
-    ip_mask: cdktf.stringToTerraform(struct!.ipMask),
-    name: cdktf.stringToTerraform(struct!.name),
-    target: cdktf.stringToTerraform(struct!.target),
+    action: cdktn.stringToTerraform(struct!.action),
+    ip_mask: cdktn.stringToTerraform(struct!.ipMask),
+    name: cdktn.stringToTerraform(struct!.name),
+    target: cdktn.stringToTerraform(struct!.target),
   }
 }
 
 
-export function iothubDpsIpFilterRuleToHclTerraform(struct?: IothubDpsIpFilterRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iothubDpsIpFilterRuleToHclTerraform(struct?: IothubDpsIpFilterRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action: {
-      value: cdktf.stringToHclTerraform(struct!.action),
+      value: cdktn.stringToHclTerraform(struct!.action),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ip_mask: {
-      value: cdktf.stringToHclTerraform(struct!.ipMask),
+      value: cdktn.stringToHclTerraform(struct!.ipMask),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -141,9 +141,9 @@ export function iothubDpsIpFilterRuleToHclTerraform(struct?: IothubDpsIpFilterRu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IothubDpsIpFilterRuleOutputReference extends cdktf.ComplexObject {
+export class IothubDpsIpFilterRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -151,11 +151,11 @@ export class IothubDpsIpFilterRuleOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IothubDpsIpFilterRule | cdktf.IResolvable | undefined {
+  public get internalValue(): IothubDpsIpFilterRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -180,7 +180,7 @@ export class IothubDpsIpFilterRuleOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IothubDpsIpFilterRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IothubDpsIpFilterRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -189,7 +189,7 @@ export class IothubDpsIpFilterRuleOutputReference extends cdktf.ComplexObject {
       this._name = undefined;
       this._target = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -259,15 +259,15 @@ export class IothubDpsIpFilterRuleOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class IothubDpsIpFilterRuleList extends cdktf.ComplexList {
-  public internalValue? : IothubDpsIpFilterRule[] | cdktf.IResolvable
+export class IothubDpsIpFilterRuleList extends cdktn.ComplexList {
+  public internalValue? : IothubDpsIpFilterRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -286,7 +286,7 @@ export interface IothubDpsLinkedHub {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iothub_dps#apply_allocation_policy IothubDps#apply_allocation_policy}
   */
-  readonly applyAllocationPolicy?: boolean | cdktf.IResolvable;
+  readonly applyAllocationPolicy?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iothub_dps#connection_string IothubDps#connection_string}
   */
@@ -297,46 +297,46 @@ export interface IothubDpsLinkedHub {
   readonly location: string;
 }
 
-export function iothubDpsLinkedHubToTerraform(struct?: IothubDpsLinkedHub | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iothubDpsLinkedHubToTerraform(struct?: IothubDpsLinkedHub | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allocation_weight: cdktf.numberToTerraform(struct!.allocationWeight),
-    apply_allocation_policy: cdktf.booleanToTerraform(struct!.applyAllocationPolicy),
-    connection_string: cdktf.stringToTerraform(struct!.connectionString),
-    location: cdktf.stringToTerraform(struct!.location),
+    allocation_weight: cdktn.numberToTerraform(struct!.allocationWeight),
+    apply_allocation_policy: cdktn.booleanToTerraform(struct!.applyAllocationPolicy),
+    connection_string: cdktn.stringToTerraform(struct!.connectionString),
+    location: cdktn.stringToTerraform(struct!.location),
   }
 }
 
 
-export function iothubDpsLinkedHubToHclTerraform(struct?: IothubDpsLinkedHub | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iothubDpsLinkedHubToHclTerraform(struct?: IothubDpsLinkedHub | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allocation_weight: {
-      value: cdktf.numberToHclTerraform(struct!.allocationWeight),
+      value: cdktn.numberToHclTerraform(struct!.allocationWeight),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     apply_allocation_policy: {
-      value: cdktf.booleanToHclTerraform(struct!.applyAllocationPolicy),
+      value: cdktn.booleanToHclTerraform(struct!.applyAllocationPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     connection_string: {
-      value: cdktf.stringToHclTerraform(struct!.connectionString),
+      value: cdktn.stringToHclTerraform(struct!.connectionString),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     location: {
-      value: cdktf.stringToHclTerraform(struct!.location),
+      value: cdktn.stringToHclTerraform(struct!.location),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -347,9 +347,9 @@ export function iothubDpsLinkedHubToHclTerraform(struct?: IothubDpsLinkedHub | c
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IothubDpsLinkedHubOutputReference extends cdktf.ComplexObject {
+export class IothubDpsLinkedHubOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -357,11 +357,11 @@ export class IothubDpsLinkedHubOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): IothubDpsLinkedHub | cdktf.IResolvable | undefined {
+  public get internalValue(): IothubDpsLinkedHub | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -386,7 +386,7 @@ export class IothubDpsLinkedHubOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IothubDpsLinkedHub | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IothubDpsLinkedHub | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -395,7 +395,7 @@ export class IothubDpsLinkedHubOutputReference extends cdktf.ComplexObject {
       this._connectionString = undefined;
       this._location = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -426,11 +426,11 @@ export class IothubDpsLinkedHubOutputReference extends cdktf.ComplexObject {
   }
 
   // apply_allocation_policy - computed: false, optional: true, required: false
-  private _applyAllocationPolicy?: boolean | cdktf.IResolvable; 
+  private _applyAllocationPolicy?: boolean | cdktn.IResolvable; 
   public get applyAllocationPolicy() {
     return this.getBooleanAttribute('apply_allocation_policy');
   }
-  public set applyAllocationPolicy(value: boolean | cdktf.IResolvable) {
+  public set applyAllocationPolicy(value: boolean | cdktn.IResolvable) {
     this._applyAllocationPolicy = value;
   }
   public resetApplyAllocationPolicy() {
@@ -473,15 +473,15 @@ export class IothubDpsLinkedHubOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class IothubDpsLinkedHubList extends cdktf.ComplexList {
-  public internalValue? : IothubDpsLinkedHub[] | cdktf.IResolvable
+export class IothubDpsLinkedHubList extends cdktn.ComplexList {
+  public internalValue? : IothubDpsLinkedHub[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -504,31 +504,31 @@ export interface IothubDpsSku {
 }
 
 export function iothubDpsSkuToTerraform(struct?: IothubDpsSkuOutputReference | IothubDpsSku): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    capacity: cdktf.numberToTerraform(struct!.capacity),
-    name: cdktf.stringToTerraform(struct!.name),
+    capacity: cdktn.numberToTerraform(struct!.capacity),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
 export function iothubDpsSkuToHclTerraform(struct?: IothubDpsSkuOutputReference | IothubDpsSku): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     capacity: {
-      value: cdktf.numberToHclTerraform(struct!.capacity),
+      value: cdktn.numberToHclTerraform(struct!.capacity),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -539,14 +539,14 @@ export function iothubDpsSkuToHclTerraform(struct?: IothubDpsSkuOutputReference 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IothubDpsSkuOutputReference extends cdktf.ComplexObject {
+export class IothubDpsSkuOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -622,46 +622,46 @@ export interface IothubDpsTimeouts {
   readonly update?: string;
 }
 
-export function iothubDpsTimeoutsToTerraform(struct?: IothubDpsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iothubDpsTimeoutsToTerraform(struct?: IothubDpsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function iothubDpsTimeoutsToHclTerraform(struct?: IothubDpsTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function iothubDpsTimeoutsToHclTerraform(struct?: IothubDpsTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -672,19 +672,19 @@ export function iothubDpsTimeoutsToHclTerraform(struct?: IothubDpsTimeouts | cdk
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class IothubDpsTimeoutsOutputReference extends cdktf.ComplexObject {
+export class IothubDpsTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): IothubDpsTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): IothubDpsTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -709,7 +709,7 @@ export class IothubDpsTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IothubDpsTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: IothubDpsTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -718,7 +718,7 @@ export class IothubDpsTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -800,7 +800,7 @@ export class IothubDpsTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iothub_dps azurerm_iothub_dps}
 */
-export class IothubDps extends cdktf.TerraformResource {
+export class IothubDps extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -811,14 +811,14 @@ export class IothubDps extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IothubDps resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IothubDps resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IothubDps to import
   * @param importFromId The id of the existing IothubDps that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/iothub_dps#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IothubDps to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_iothub_dps", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_iothub_dps", importId: importFromId, provider });
       }
 
   // ===========
@@ -883,11 +883,11 @@ export class IothubDps extends cdktf.TerraformResource {
   }
 
   // data_residency_enabled - computed: false, optional: true, required: false
-  private _dataResidencyEnabled?: boolean | cdktf.IResolvable; 
+  private _dataResidencyEnabled?: boolean | cdktn.IResolvable; 
   public get dataResidencyEnabled() {
     return this.getBooleanAttribute('data_residency_enabled');
   }
-  public set dataResidencyEnabled(value: boolean | cdktf.IResolvable) {
+  public set dataResidencyEnabled(value: boolean | cdktn.IResolvable) {
     this._dataResidencyEnabled = value;
   }
   public resetDataResidencyEnabled() {
@@ -951,11 +951,11 @@ export class IothubDps extends cdktf.TerraformResource {
   }
 
   // public_network_access_enabled - computed: false, optional: true, required: false
-  private _publicNetworkAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _publicNetworkAccessEnabled?: boolean | cdktn.IResolvable; 
   public get publicNetworkAccessEnabled() {
     return this.getBooleanAttribute('public_network_access_enabled');
   }
-  public set publicNetworkAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set publicNetworkAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._publicNetworkAccessEnabled = value;
   }
   public resetPublicNetworkAccessEnabled() {
@@ -1005,7 +1005,7 @@ export class IothubDps extends cdktf.TerraformResource {
   public get ipFilterRule() {
     return this._ipFilterRule;
   }
-  public putIpFilterRule(value: IothubDpsIpFilterRule[] | cdktf.IResolvable) {
+  public putIpFilterRule(value: IothubDpsIpFilterRule[] | cdktn.IResolvable) {
     this._ipFilterRule.internalValue = value;
   }
   public resetIpFilterRule() {
@@ -1021,7 +1021,7 @@ export class IothubDps extends cdktf.TerraformResource {
   public get linkedHub() {
     return this._linkedHub;
   }
-  public putLinkedHub(value: IothubDpsLinkedHub[] | cdktf.IResolvable) {
+  public putLinkedHub(value: IothubDpsLinkedHub[] | cdktn.IResolvable) {
     this._linkedHub.internalValue = value;
   }
   public resetLinkedHub() {
@@ -1067,16 +1067,16 @@ export class IothubDps extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allocation_policy: cdktf.stringToTerraform(this._allocationPolicy),
-      data_residency_enabled: cdktf.booleanToTerraform(this._dataResidencyEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      public_network_access_enabled: cdktf.booleanToTerraform(this._publicNetworkAccessEnabled),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      ip_filter_rule: cdktf.listMapper(iothubDpsIpFilterRuleToTerraform, true)(this._ipFilterRule.internalValue),
-      linked_hub: cdktf.listMapper(iothubDpsLinkedHubToTerraform, true)(this._linkedHub.internalValue),
+      allocation_policy: cdktn.stringToTerraform(this._allocationPolicy),
+      data_residency_enabled: cdktn.booleanToTerraform(this._dataResidencyEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      public_network_access_enabled: cdktn.booleanToTerraform(this._publicNetworkAccessEnabled),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      ip_filter_rule: cdktn.listMapper(iothubDpsIpFilterRuleToTerraform, true)(this._ipFilterRule.internalValue),
+      linked_hub: cdktn.listMapper(iothubDpsLinkedHubToTerraform, true)(this._linkedHub.internalValue),
       sku: iothubDpsSkuToTerraform(this._sku.internalValue),
       timeouts: iothubDpsTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -1085,61 +1085,61 @@ export class IothubDps extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allocation_policy: {
-        value: cdktf.stringToHclTerraform(this._allocationPolicy),
+        value: cdktn.stringToHclTerraform(this._allocationPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_residency_enabled: {
-        value: cdktf.booleanToHclTerraform(this._dataResidencyEnabled),
+        value: cdktn.booleanToHclTerraform(this._dataResidencyEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_network_access_enabled: {
-        value: cdktf.booleanToHclTerraform(this._publicNetworkAccessEnabled),
+        value: cdktn.booleanToHclTerraform(this._publicNetworkAccessEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       ip_filter_rule: {
-        value: cdktf.listMapperHcl(iothubDpsIpFilterRuleToHclTerraform, true)(this._ipFilterRule.internalValue),
+        value: cdktn.listMapperHcl(iothubDpsIpFilterRuleToHclTerraform, true)(this._ipFilterRule.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "IothubDpsIpFilterRuleList",
       },
       linked_hub: {
-        value: cdktf.listMapperHcl(iothubDpsLinkedHubToHclTerraform, true)(this._linkedHub.internalValue),
+        value: cdktn.listMapperHcl(iothubDpsLinkedHubToHclTerraform, true)(this._linkedHub.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "IothubDpsLinkedHubList",

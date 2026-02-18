@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataFactoryTriggerCustomEventConfig extends cdktf.TerraformMetaArguments {
+export interface DataFactoryTriggerCustomEventConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_trigger_custom_event#activated DataFactoryTriggerCustomEvent#activated}
   */
-  readonly activated?: boolean | cdktf.IResolvable;
+  readonly activated?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_trigger_custom_event#additional_properties DataFactoryTriggerCustomEvent#additional_properties}
   */
@@ -64,7 +64,7 @@ export interface DataFactoryTriggerCustomEventConfig extends cdktf.TerraformMeta
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_trigger_custom_event#pipeline DataFactoryTriggerCustomEvent#pipeline}
   */
-  readonly pipeline: DataFactoryTriggerCustomEventPipeline[] | cdktf.IResolvable;
+  readonly pipeline: DataFactoryTriggerCustomEventPipeline[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -83,32 +83,32 @@ export interface DataFactoryTriggerCustomEventPipeline {
   readonly parameters?: { [key: string]: string };
 }
 
-export function dataFactoryTriggerCustomEventPipelineToTerraform(struct?: DataFactoryTriggerCustomEventPipeline | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryTriggerCustomEventPipelineToTerraform(struct?: DataFactoryTriggerCustomEventPipeline | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    parameters: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.parameters),
+    name: cdktn.stringToTerraform(struct!.name),
+    parameters: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.parameters),
   }
 }
 
 
-export function dataFactoryTriggerCustomEventPipelineToHclTerraform(struct?: DataFactoryTriggerCustomEventPipeline | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryTriggerCustomEventPipelineToHclTerraform(struct?: DataFactoryTriggerCustomEventPipeline | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameters: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.parameters),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.parameters),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -119,9 +119,9 @@ export function dataFactoryTriggerCustomEventPipelineToHclTerraform(struct?: Dat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryTriggerCustomEventPipelineOutputReference extends cdktf.ComplexObject {
+export class DataFactoryTriggerCustomEventPipelineOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -129,11 +129,11 @@ export class DataFactoryTriggerCustomEventPipelineOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataFactoryTriggerCustomEventPipeline | cdktf.IResolvable | undefined {
+  public get internalValue(): DataFactoryTriggerCustomEventPipeline | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -150,14 +150,14 @@ export class DataFactoryTriggerCustomEventPipelineOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataFactoryTriggerCustomEventPipeline | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataFactoryTriggerCustomEventPipeline | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._parameters = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -199,15 +199,15 @@ export class DataFactoryTriggerCustomEventPipelineOutputReference extends cdktf.
   }
 }
 
-export class DataFactoryTriggerCustomEventPipelineList extends cdktf.ComplexList {
-  public internalValue? : DataFactoryTriggerCustomEventPipeline[] | cdktf.IResolvable
+export class DataFactoryTriggerCustomEventPipelineList extends cdktn.ComplexList {
+  public internalValue? : DataFactoryTriggerCustomEventPipeline[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -237,46 +237,46 @@ export interface DataFactoryTriggerCustomEventTimeouts {
   readonly update?: string;
 }
 
-export function dataFactoryTriggerCustomEventTimeoutsToTerraform(struct?: DataFactoryTriggerCustomEventTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryTriggerCustomEventTimeoutsToTerraform(struct?: DataFactoryTriggerCustomEventTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dataFactoryTriggerCustomEventTimeoutsToHclTerraform(struct?: DataFactoryTriggerCustomEventTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryTriggerCustomEventTimeoutsToHclTerraform(struct?: DataFactoryTriggerCustomEventTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -287,19 +287,19 @@ export function dataFactoryTriggerCustomEventTimeoutsToHclTerraform(struct?: Dat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryTriggerCustomEventTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataFactoryTriggerCustomEventTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataFactoryTriggerCustomEventTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataFactoryTriggerCustomEventTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -324,7 +324,7 @@ export class DataFactoryTriggerCustomEventTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataFactoryTriggerCustomEventTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataFactoryTriggerCustomEventTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -333,7 +333,7 @@ export class DataFactoryTriggerCustomEventTimeoutsOutputReference extends cdktf.
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -415,7 +415,7 @@ export class DataFactoryTriggerCustomEventTimeoutsOutputReference extends cdktf.
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_trigger_custom_event azurerm_data_factory_trigger_custom_event}
 */
-export class DataFactoryTriggerCustomEvent extends cdktf.TerraformResource {
+export class DataFactoryTriggerCustomEvent extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -426,14 +426,14 @@ export class DataFactoryTriggerCustomEvent extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataFactoryTriggerCustomEvent resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataFactoryTriggerCustomEvent resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataFactoryTriggerCustomEvent to import
   * @param importFromId The id of the existing DataFactoryTriggerCustomEvent that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_trigger_custom_event#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataFactoryTriggerCustomEvent to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_factory_trigger_custom_event", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_factory_trigger_custom_event", importId: importFromId, provider });
       }
 
   // ===========
@@ -483,11 +483,11 @@ export class DataFactoryTriggerCustomEvent extends cdktf.TerraformResource {
   // ==========
 
   // activated - computed: false, optional: true, required: false
-  private _activated?: boolean | cdktf.IResolvable; 
+  private _activated?: boolean | cdktn.IResolvable; 
   public get activated() {
     return this.getBooleanAttribute('activated');
   }
-  public set activated(value: boolean | cdktf.IResolvable) {
+  public set activated(value: boolean | cdktn.IResolvable) {
     this._activated = value;
   }
   public resetActivated() {
@@ -575,7 +575,7 @@ export class DataFactoryTriggerCustomEvent extends cdktf.TerraformResource {
   // events - computed: false, optional: false, required: true
   private _events?: string[]; 
   public get events() {
-    return cdktf.Fn.tolist(this.getListAttribute('events'));
+    return cdktn.Fn.tolist(this.getListAttribute('events'));
   }
   public set events(value: string[]) {
     this._events = value;
@@ -651,7 +651,7 @@ export class DataFactoryTriggerCustomEvent extends cdktf.TerraformResource {
   public get pipeline() {
     return this._pipeline;
   }
-  public putPipeline(value: DataFactoryTriggerCustomEventPipeline[] | cdktf.IResolvable) {
+  public putPipeline(value: DataFactoryTriggerCustomEventPipeline[] | cdktn.IResolvable) {
     this._pipeline.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -681,18 +681,18 @@ export class DataFactoryTriggerCustomEvent extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      activated: cdktf.booleanToTerraform(this._activated),
-      additional_properties: cdktf.hashMapper(cdktf.stringToTerraform)(this._additionalProperties),
-      annotations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._annotations),
-      data_factory_id: cdktf.stringToTerraform(this._dataFactoryId),
-      description: cdktf.stringToTerraform(this._description),
-      eventgrid_topic_id: cdktf.stringToTerraform(this._eventgridTopicId),
-      events: cdktf.listMapper(cdktf.stringToTerraform, false)(this._events),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      subject_begins_with: cdktf.stringToTerraform(this._subjectBeginsWith),
-      subject_ends_with: cdktf.stringToTerraform(this._subjectEndsWith),
-      pipeline: cdktf.listMapper(dataFactoryTriggerCustomEventPipelineToTerraform, true)(this._pipeline.internalValue),
+      activated: cdktn.booleanToTerraform(this._activated),
+      additional_properties: cdktn.hashMapper(cdktn.stringToTerraform)(this._additionalProperties),
+      annotations: cdktn.listMapper(cdktn.stringToTerraform, false)(this._annotations),
+      data_factory_id: cdktn.stringToTerraform(this._dataFactoryId),
+      description: cdktn.stringToTerraform(this._description),
+      eventgrid_topic_id: cdktn.stringToTerraform(this._eventgridTopicId),
+      events: cdktn.listMapper(cdktn.stringToTerraform, false)(this._events),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      subject_begins_with: cdktn.stringToTerraform(this._subjectBeginsWith),
+      subject_ends_with: cdktn.stringToTerraform(this._subjectEndsWith),
+      pipeline: cdktn.listMapper(dataFactoryTriggerCustomEventPipelineToTerraform, true)(this._pipeline.internalValue),
       timeouts: dataFactoryTriggerCustomEventTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -700,73 +700,73 @@ export class DataFactoryTriggerCustomEvent extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       activated: {
-        value: cdktf.booleanToHclTerraform(this._activated),
+        value: cdktn.booleanToHclTerraform(this._activated),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       additional_properties: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._additionalProperties),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._additionalProperties),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       annotations: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._annotations),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._annotations),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       data_factory_id: {
-        value: cdktf.stringToHclTerraform(this._dataFactoryId),
+        value: cdktn.stringToHclTerraform(this._dataFactoryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       eventgrid_topic_id: {
-        value: cdktf.stringToHclTerraform(this._eventgridTopicId),
+        value: cdktn.stringToHclTerraform(this._eventgridTopicId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       events: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._events),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._events),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subject_begins_with: {
-        value: cdktf.stringToHclTerraform(this._subjectBeginsWith),
+        value: cdktn.stringToHclTerraform(this._subjectBeginsWith),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       subject_ends_with: {
-        value: cdktf.stringToHclTerraform(this._subjectEndsWith),
+        value: cdktn.stringToHclTerraform(this._subjectEndsWith),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       pipeline: {
-        value: cdktf.listMapperHcl(dataFactoryTriggerCustomEventPipelineToHclTerraform, true)(this._pipeline.internalValue),
+        value: cdktn.listMapperHcl(dataFactoryTriggerCustomEventPipelineToHclTerraform, true)(this._pipeline.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "DataFactoryTriggerCustomEventPipelineList",

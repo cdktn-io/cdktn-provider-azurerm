@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SynapseWorkspaceKeyConfig extends cdktf.TerraformMetaArguments {
+export interface SynapseWorkspaceKeyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/synapse_workspace_key#active SynapseWorkspaceKey#active}
   */
-  readonly active: boolean | cdktf.IResolvable;
+  readonly active: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/synapse_workspace_key#customer_managed_key_name SynapseWorkspaceKey#customer_managed_key_name}
   */
@@ -61,46 +61,46 @@ export interface SynapseWorkspaceKeyTimeouts {
   readonly update?: string;
 }
 
-export function synapseWorkspaceKeyTimeoutsToTerraform(struct?: SynapseWorkspaceKeyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function synapseWorkspaceKeyTimeoutsToTerraform(struct?: SynapseWorkspaceKeyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function synapseWorkspaceKeyTimeoutsToHclTerraform(struct?: SynapseWorkspaceKeyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function synapseWorkspaceKeyTimeoutsToHclTerraform(struct?: SynapseWorkspaceKeyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -111,19 +111,19 @@ export function synapseWorkspaceKeyTimeoutsToHclTerraform(struct?: SynapseWorksp
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SynapseWorkspaceKeyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class SynapseWorkspaceKeyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): SynapseWorkspaceKeyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): SynapseWorkspaceKeyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -148,7 +148,7 @@ export class SynapseWorkspaceKeyTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SynapseWorkspaceKeyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SynapseWorkspaceKeyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -157,7 +157,7 @@ export class SynapseWorkspaceKeyTimeoutsOutputReference extends cdktf.ComplexObj
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -239,7 +239,7 @@ export class SynapseWorkspaceKeyTimeoutsOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/synapse_workspace_key azurerm_synapse_workspace_key}
 */
-export class SynapseWorkspaceKey extends cdktf.TerraformResource {
+export class SynapseWorkspaceKey extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -250,14 +250,14 @@ export class SynapseWorkspaceKey extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SynapseWorkspaceKey resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SynapseWorkspaceKey resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SynapseWorkspaceKey to import
   * @param importFromId The id of the existing SynapseWorkspaceKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/synapse_workspace_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SynapseWorkspaceKey to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_synapse_workspace_key", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_synapse_workspace_key", importId: importFromId, provider });
       }
 
   // ===========
@@ -300,11 +300,11 @@ export class SynapseWorkspaceKey extends cdktf.TerraformResource {
   // ==========
 
   // active - computed: false, optional: false, required: true
-  private _active?: boolean | cdktf.IResolvable; 
+  private _active?: boolean | cdktn.IResolvable; 
   public get active() {
     return this.getBooleanAttribute('active');
   }
-  public set active(value: boolean | cdktf.IResolvable) {
+  public set active(value: boolean | cdktn.IResolvable) {
     this._active = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -392,11 +392,11 @@ export class SynapseWorkspaceKey extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      active: cdktf.booleanToTerraform(this._active),
-      customer_managed_key_name: cdktf.stringToTerraform(this._customerManagedKeyName),
-      customer_managed_key_versionless_id: cdktf.stringToTerraform(this._customerManagedKeyVersionlessId),
-      id: cdktf.stringToTerraform(this._id),
-      synapse_workspace_id: cdktf.stringToTerraform(this._synapseWorkspaceId),
+      active: cdktn.booleanToTerraform(this._active),
+      customer_managed_key_name: cdktn.stringToTerraform(this._customerManagedKeyName),
+      customer_managed_key_versionless_id: cdktn.stringToTerraform(this._customerManagedKeyVersionlessId),
+      id: cdktn.stringToTerraform(this._id),
+      synapse_workspace_id: cdktn.stringToTerraform(this._synapseWorkspaceId),
       timeouts: synapseWorkspaceKeyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -404,31 +404,31 @@ export class SynapseWorkspaceKey extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       active: {
-        value: cdktf.booleanToHclTerraform(this._active),
+        value: cdktn.booleanToHclTerraform(this._active),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       customer_managed_key_name: {
-        value: cdktf.stringToHclTerraform(this._customerManagedKeyName),
+        value: cdktn.stringToHclTerraform(this._customerManagedKeyName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       customer_managed_key_versionless_id: {
-        value: cdktf.stringToHclTerraform(this._customerManagedKeyVersionlessId),
+        value: cdktn.stringToHclTerraform(this._customerManagedKeyVersionlessId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       synapse_workspace_id: {
-        value: cdktf.stringToHclTerraform(this._synapseWorkspaceId),
+        value: cdktn.stringToHclTerraform(this._synapseWorkspaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

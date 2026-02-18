@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataFactoryDatasetHttpConfig extends cdktf.TerraformMetaArguments {
+export interface DataFactoryDatasetHttpConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_dataset_http#additional_properties DataFactoryDatasetHttp#additional_properties}
   */
@@ -68,7 +68,7 @@ export interface DataFactoryDatasetHttpConfig extends cdktf.TerraformMetaArgumen
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_dataset_http#schema_column DataFactoryDatasetHttp#schema_column}
   */
-  readonly schemaColumn?: DataFactoryDatasetHttpSchemaColumn[] | cdktf.IResolvable;
+  readonly schemaColumn?: DataFactoryDatasetHttpSchemaColumn[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -91,39 +91,39 @@ export interface DataFactoryDatasetHttpSchemaColumn {
   readonly type?: string;
 }
 
-export function dataFactoryDatasetHttpSchemaColumnToTerraform(struct?: DataFactoryDatasetHttpSchemaColumn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryDatasetHttpSchemaColumnToTerraform(struct?: DataFactoryDatasetHttpSchemaColumn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    name: cdktf.stringToTerraform(struct!.name),
-    type: cdktf.stringToTerraform(struct!.type),
+    description: cdktn.stringToTerraform(struct!.description),
+    name: cdktn.stringToTerraform(struct!.name),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function dataFactoryDatasetHttpSchemaColumnToHclTerraform(struct?: DataFactoryDatasetHttpSchemaColumn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryDatasetHttpSchemaColumnToHclTerraform(struct?: DataFactoryDatasetHttpSchemaColumn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -134,9 +134,9 @@ export function dataFactoryDatasetHttpSchemaColumnToHclTerraform(struct?: DataFa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryDatasetHttpSchemaColumnOutputReference extends cdktf.ComplexObject {
+export class DataFactoryDatasetHttpSchemaColumnOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -144,11 +144,11 @@ export class DataFactoryDatasetHttpSchemaColumnOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataFactoryDatasetHttpSchemaColumn | cdktf.IResolvable | undefined {
+  public get internalValue(): DataFactoryDatasetHttpSchemaColumn | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -169,7 +169,7 @@ export class DataFactoryDatasetHttpSchemaColumnOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataFactoryDatasetHttpSchemaColumn | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataFactoryDatasetHttpSchemaColumn | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -177,7 +177,7 @@ export class DataFactoryDatasetHttpSchemaColumnOutputReference extends cdktf.Com
       this._name = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -236,15 +236,15 @@ export class DataFactoryDatasetHttpSchemaColumnOutputReference extends cdktf.Com
   }
 }
 
-export class DataFactoryDatasetHttpSchemaColumnList extends cdktf.ComplexList {
-  public internalValue? : DataFactoryDatasetHttpSchemaColumn[] | cdktf.IResolvable
+export class DataFactoryDatasetHttpSchemaColumnList extends cdktn.ComplexList {
+  public internalValue? : DataFactoryDatasetHttpSchemaColumn[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -274,46 +274,46 @@ export interface DataFactoryDatasetHttpTimeouts {
   readonly update?: string;
 }
 
-export function dataFactoryDatasetHttpTimeoutsToTerraform(struct?: DataFactoryDatasetHttpTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryDatasetHttpTimeoutsToTerraform(struct?: DataFactoryDatasetHttpTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dataFactoryDatasetHttpTimeoutsToHclTerraform(struct?: DataFactoryDatasetHttpTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryDatasetHttpTimeoutsToHclTerraform(struct?: DataFactoryDatasetHttpTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -324,19 +324,19 @@ export function dataFactoryDatasetHttpTimeoutsToHclTerraform(struct?: DataFactor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryDatasetHttpTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataFactoryDatasetHttpTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataFactoryDatasetHttpTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataFactoryDatasetHttpTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -361,7 +361,7 @@ export class DataFactoryDatasetHttpTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataFactoryDatasetHttpTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataFactoryDatasetHttpTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -370,7 +370,7 @@ export class DataFactoryDatasetHttpTimeoutsOutputReference extends cdktf.Complex
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -452,7 +452,7 @@ export class DataFactoryDatasetHttpTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_dataset_http azurerm_data_factory_dataset_http}
 */
-export class DataFactoryDatasetHttp extends cdktf.TerraformResource {
+export class DataFactoryDatasetHttp extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -463,14 +463,14 @@ export class DataFactoryDatasetHttp extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataFactoryDatasetHttp resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataFactoryDatasetHttp resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataFactoryDatasetHttp to import
   * @param importFromId The id of the existing DataFactoryDatasetHttp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_dataset_http#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataFactoryDatasetHttp to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_factory_dataset_http", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_factory_dataset_http", importId: importFromId, provider });
       }
 
   // ===========
@@ -708,7 +708,7 @@ export class DataFactoryDatasetHttp extends cdktf.TerraformResource {
   public get schemaColumn() {
     return this._schemaColumn;
   }
-  public putSchemaColumn(value: DataFactoryDatasetHttpSchemaColumn[] | cdktf.IResolvable) {
+  public putSchemaColumn(value: DataFactoryDatasetHttpSchemaColumn[] | cdktn.IResolvable) {
     this._schemaColumn.internalValue = value;
   }
   public resetSchemaColumn() {
@@ -741,19 +741,19 @@ export class DataFactoryDatasetHttp extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      additional_properties: cdktf.hashMapper(cdktf.stringToTerraform)(this._additionalProperties),
-      annotations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._annotations),
-      data_factory_id: cdktf.stringToTerraform(this._dataFactoryId),
-      description: cdktf.stringToTerraform(this._description),
-      folder: cdktf.stringToTerraform(this._folder),
-      id: cdktf.stringToTerraform(this._id),
-      linked_service_name: cdktf.stringToTerraform(this._linkedServiceName),
-      name: cdktf.stringToTerraform(this._name),
-      parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._parameters),
-      relative_url: cdktf.stringToTerraform(this._relativeUrl),
-      request_body: cdktf.stringToTerraform(this._requestBody),
-      request_method: cdktf.stringToTerraform(this._requestMethod),
-      schema_column: cdktf.listMapper(dataFactoryDatasetHttpSchemaColumnToTerraform, true)(this._schemaColumn.internalValue),
+      additional_properties: cdktn.hashMapper(cdktn.stringToTerraform)(this._additionalProperties),
+      annotations: cdktn.listMapper(cdktn.stringToTerraform, false)(this._annotations),
+      data_factory_id: cdktn.stringToTerraform(this._dataFactoryId),
+      description: cdktn.stringToTerraform(this._description),
+      folder: cdktn.stringToTerraform(this._folder),
+      id: cdktn.stringToTerraform(this._id),
+      linked_service_name: cdktn.stringToTerraform(this._linkedServiceName),
+      name: cdktn.stringToTerraform(this._name),
+      parameters: cdktn.hashMapper(cdktn.stringToTerraform)(this._parameters),
+      relative_url: cdktn.stringToTerraform(this._relativeUrl),
+      request_body: cdktn.stringToTerraform(this._requestBody),
+      request_method: cdktn.stringToTerraform(this._requestMethod),
+      schema_column: cdktn.listMapper(dataFactoryDatasetHttpSchemaColumnToTerraform, true)(this._schemaColumn.internalValue),
       timeouts: dataFactoryDatasetHttpTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -761,79 +761,79 @@ export class DataFactoryDatasetHttp extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       additional_properties: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._additionalProperties),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._additionalProperties),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       annotations: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._annotations),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._annotations),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       data_factory_id: {
-        value: cdktf.stringToHclTerraform(this._dataFactoryId),
+        value: cdktn.stringToHclTerraform(this._dataFactoryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       folder: {
-        value: cdktf.stringToHclTerraform(this._folder),
+        value: cdktn.stringToHclTerraform(this._folder),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       linked_service_name: {
-        value: cdktf.stringToHclTerraform(this._linkedServiceName),
+        value: cdktn.stringToHclTerraform(this._linkedServiceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parameters: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._parameters),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._parameters),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       relative_url: {
-        value: cdktf.stringToHclTerraform(this._relativeUrl),
+        value: cdktn.stringToHclTerraform(this._relativeUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       request_body: {
-        value: cdktf.stringToHclTerraform(this._requestBody),
+        value: cdktn.stringToHclTerraform(this._requestBody),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       request_method: {
-        value: cdktf.stringToHclTerraform(this._requestMethod),
+        value: cdktn.stringToHclTerraform(this._requestMethod),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schema_column: {
-        value: cdktf.listMapperHcl(dataFactoryDatasetHttpSchemaColumnToHclTerraform, true)(this._schemaColumn.internalValue),
+        value: cdktn.listMapperHcl(dataFactoryDatasetHttpSchemaColumnToHclTerraform, true)(this._schemaColumn.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataFactoryDatasetHttpSchemaColumnList",

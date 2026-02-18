@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AvailabilitySetConfig extends cdktf.TerraformMetaArguments {
+export interface AvailabilitySetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/availability_set#id AvailabilitySet#id}
   *
@@ -26,7 +26,7 @@ export interface AvailabilitySetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/availability_set#managed AvailabilitySet#managed}
   */
-  readonly managed?: boolean | cdktf.IResolvable;
+  readonly managed?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/availability_set#name AvailabilitySet#name}
   */
@@ -77,46 +77,46 @@ export interface AvailabilitySetTimeouts {
   readonly update?: string;
 }
 
-export function availabilitySetTimeoutsToTerraform(struct?: AvailabilitySetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function availabilitySetTimeoutsToTerraform(struct?: AvailabilitySetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function availabilitySetTimeoutsToHclTerraform(struct?: AvailabilitySetTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function availabilitySetTimeoutsToHclTerraform(struct?: AvailabilitySetTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -127,19 +127,19 @@ export function availabilitySetTimeoutsToHclTerraform(struct?: AvailabilitySetTi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AvailabilitySetTimeoutsOutputReference extends cdktf.ComplexObject {
+export class AvailabilitySetTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AvailabilitySetTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): AvailabilitySetTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -164,7 +164,7 @@ export class AvailabilitySetTimeoutsOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AvailabilitySetTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AvailabilitySetTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -173,7 +173,7 @@ export class AvailabilitySetTimeoutsOutputReference extends cdktf.ComplexObject 
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -255,7 +255,7 @@ export class AvailabilitySetTimeoutsOutputReference extends cdktf.ComplexObject 
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/availability_set azurerm_availability_set}
 */
-export class AvailabilitySet extends cdktf.TerraformResource {
+export class AvailabilitySet extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -266,14 +266,14 @@ export class AvailabilitySet extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AvailabilitySet resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AvailabilitySet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AvailabilitySet to import
   * @param importFromId The id of the existing AvailabilitySet that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/availability_set#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AvailabilitySet to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_availability_set", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_availability_set", importId: importFromId, provider });
       }
 
   // ===========
@@ -349,11 +349,11 @@ export class AvailabilitySet extends cdktf.TerraformResource {
   }
 
   // managed - computed: false, optional: true, required: false
-  private _managed?: boolean | cdktf.IResolvable; 
+  private _managed?: boolean | cdktn.IResolvable; 
   public get managed() {
     return this.getBooleanAttribute('managed');
   }
-  public set managed(value: boolean | cdktf.IResolvable) {
+  public set managed(value: boolean | cdktn.IResolvable) {
     this._managed = value;
   }
   public resetManaged() {
@@ -476,15 +476,15 @@ export class AvailabilitySet extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      managed: cdktf.booleanToTerraform(this._managed),
-      name: cdktf.stringToTerraform(this._name),
-      platform_fault_domain_count: cdktf.numberToTerraform(this._platformFaultDomainCount),
-      platform_update_domain_count: cdktf.numberToTerraform(this._platformUpdateDomainCount),
-      proximity_placement_group_id: cdktf.stringToTerraform(this._proximityPlacementGroupId),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      managed: cdktn.booleanToTerraform(this._managed),
+      name: cdktn.stringToTerraform(this._name),
+      platform_fault_domain_count: cdktn.numberToTerraform(this._platformFaultDomainCount),
+      platform_update_domain_count: cdktn.numberToTerraform(this._platformUpdateDomainCount),
+      proximity_placement_group_id: cdktn.stringToTerraform(this._proximityPlacementGroupId),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       timeouts: availabilitySetTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -492,55 +492,55 @@ export class AvailabilitySet extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       managed: {
-        value: cdktf.booleanToHclTerraform(this._managed),
+        value: cdktn.booleanToHclTerraform(this._managed),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       platform_fault_domain_count: {
-        value: cdktf.numberToHclTerraform(this._platformFaultDomainCount),
+        value: cdktn.numberToHclTerraform(this._platformFaultDomainCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       platform_update_domain_count: {
-        value: cdktf.numberToHclTerraform(this._platformUpdateDomainCount),
+        value: cdktn.numberToHclTerraform(this._platformUpdateDomainCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       proximity_placement_group_id: {
-        value: cdktf.stringToHclTerraform(this._proximityPlacementGroupId),
+        value: cdktn.stringToHclTerraform(this._proximityPlacementGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

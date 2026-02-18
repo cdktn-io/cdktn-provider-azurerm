@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DynatraceMonitorConfig extends cdktf.TerraformMetaArguments {
+export interface DynatraceMonitorConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dynatrace_monitor#id DynatraceMonitor#id}
   *
@@ -30,7 +30,7 @@ export interface DynatraceMonitorConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dynatrace_monitor#monitoring_enabled DynatraceMonitor#monitoring_enabled}
   */
-  readonly monitoringEnabled?: boolean | cdktf.IResolvable;
+  readonly monitoringEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dynatrace_monitor#name DynatraceMonitor#name}
   */
@@ -48,7 +48,7 @@ export interface DynatraceMonitorConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dynatrace_monitor#environment_properties DynatraceMonitor#environment_properties}
   */
-  readonly environmentProperties?: DynatraceMonitorEnvironmentProperties[] | cdktf.IResolvable;
+  readonly environmentProperties?: DynatraceMonitorEnvironmentProperties[] | cdktn.IResolvable;
   /**
   * identity block
   *
@@ -81,25 +81,25 @@ export interface DynatraceMonitorEnvironmentPropertiesEnvironmentInfo {
   readonly environmentId: string;
 }
 
-export function dynatraceMonitorEnvironmentPropertiesEnvironmentInfoToTerraform(struct?: DynatraceMonitorEnvironmentPropertiesEnvironmentInfo | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dynatraceMonitorEnvironmentPropertiesEnvironmentInfoToTerraform(struct?: DynatraceMonitorEnvironmentPropertiesEnvironmentInfo | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    environment_id: cdktf.stringToTerraform(struct!.environmentId),
+    environment_id: cdktn.stringToTerraform(struct!.environmentId),
   }
 }
 
 
-export function dynatraceMonitorEnvironmentPropertiesEnvironmentInfoToHclTerraform(struct?: DynatraceMonitorEnvironmentPropertiesEnvironmentInfo | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dynatraceMonitorEnvironmentPropertiesEnvironmentInfoToHclTerraform(struct?: DynatraceMonitorEnvironmentPropertiesEnvironmentInfo | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     environment_id: {
-      value: cdktf.stringToHclTerraform(struct!.environmentId),
+      value: cdktn.stringToHclTerraform(struct!.environmentId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -110,9 +110,9 @@ export function dynatraceMonitorEnvironmentPropertiesEnvironmentInfoToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DynatraceMonitorEnvironmentPropertiesEnvironmentInfoOutputReference extends cdktf.ComplexObject {
+export class DynatraceMonitorEnvironmentPropertiesEnvironmentInfoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -120,11 +120,11 @@ export class DynatraceMonitorEnvironmentPropertiesEnvironmentInfoOutputReference
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DynatraceMonitorEnvironmentPropertiesEnvironmentInfo | cdktf.IResolvable | undefined {
+  public get internalValue(): DynatraceMonitorEnvironmentPropertiesEnvironmentInfo | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -137,13 +137,13 @@ export class DynatraceMonitorEnvironmentPropertiesEnvironmentInfoOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DynatraceMonitorEnvironmentPropertiesEnvironmentInfo | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DynatraceMonitorEnvironmentPropertiesEnvironmentInfo | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._environmentId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -168,15 +168,15 @@ export class DynatraceMonitorEnvironmentPropertiesEnvironmentInfoOutputReference
   }
 }
 
-export class DynatraceMonitorEnvironmentPropertiesEnvironmentInfoList extends cdktf.ComplexList {
-  public internalValue? : DynatraceMonitorEnvironmentPropertiesEnvironmentInfo[] | cdktf.IResolvable
+export class DynatraceMonitorEnvironmentPropertiesEnvironmentInfoList extends cdktn.ComplexList {
+  public internalValue? : DynatraceMonitorEnvironmentPropertiesEnvironmentInfo[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -193,28 +193,28 @@ export interface DynatraceMonitorEnvironmentProperties {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dynatrace_monitor#environment_info DynatraceMonitor#environment_info}
   */
-  readonly environmentInfo: DynatraceMonitorEnvironmentPropertiesEnvironmentInfo[] | cdktf.IResolvable;
+  readonly environmentInfo: DynatraceMonitorEnvironmentPropertiesEnvironmentInfo[] | cdktn.IResolvable;
 }
 
-export function dynatraceMonitorEnvironmentPropertiesToTerraform(struct?: DynatraceMonitorEnvironmentProperties | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dynatraceMonitorEnvironmentPropertiesToTerraform(struct?: DynatraceMonitorEnvironmentProperties | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    environment_info: cdktf.listMapper(dynatraceMonitorEnvironmentPropertiesEnvironmentInfoToTerraform, true)(struct!.environmentInfo),
+    environment_info: cdktn.listMapper(dynatraceMonitorEnvironmentPropertiesEnvironmentInfoToTerraform, true)(struct!.environmentInfo),
   }
 }
 
 
-export function dynatraceMonitorEnvironmentPropertiesToHclTerraform(struct?: DynatraceMonitorEnvironmentProperties | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dynatraceMonitorEnvironmentPropertiesToHclTerraform(struct?: DynatraceMonitorEnvironmentProperties | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     environment_info: {
-      value: cdktf.listMapperHcl(dynatraceMonitorEnvironmentPropertiesEnvironmentInfoToHclTerraform, true)(struct!.environmentInfo),
+      value: cdktn.listMapperHcl(dynatraceMonitorEnvironmentPropertiesEnvironmentInfoToHclTerraform, true)(struct!.environmentInfo),
       isBlock: true,
       type: "list",
       storageClassType: "DynatraceMonitorEnvironmentPropertiesEnvironmentInfoList",
@@ -225,9 +225,9 @@ export function dynatraceMonitorEnvironmentPropertiesToHclTerraform(struct?: Dyn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DynatraceMonitorEnvironmentPropertiesOutputReference extends cdktf.ComplexObject {
+export class DynatraceMonitorEnvironmentPropertiesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -235,11 +235,11 @@ export class DynatraceMonitorEnvironmentPropertiesOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DynatraceMonitorEnvironmentProperties | cdktf.IResolvable | undefined {
+  public get internalValue(): DynatraceMonitorEnvironmentProperties | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -252,13 +252,13 @@ export class DynatraceMonitorEnvironmentPropertiesOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DynatraceMonitorEnvironmentProperties | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DynatraceMonitorEnvironmentProperties | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._environmentInfo.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -274,7 +274,7 @@ export class DynatraceMonitorEnvironmentPropertiesOutputReference extends cdktf.
   public get environmentInfo() {
     return this._environmentInfo;
   }
-  public putEnvironmentInfo(value: DynatraceMonitorEnvironmentPropertiesEnvironmentInfo[] | cdktf.IResolvable) {
+  public putEnvironmentInfo(value: DynatraceMonitorEnvironmentPropertiesEnvironmentInfo[] | cdktn.IResolvable) {
     this._environmentInfo.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -283,15 +283,15 @@ export class DynatraceMonitorEnvironmentPropertiesOutputReference extends cdktf.
   }
 }
 
-export class DynatraceMonitorEnvironmentPropertiesList extends cdktf.ComplexList {
-  public internalValue? : DynatraceMonitorEnvironmentProperties[] | cdktf.IResolvable
+export class DynatraceMonitorEnvironmentPropertiesList extends cdktn.ComplexList {
+  public internalValue? : DynatraceMonitorEnvironmentProperties[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -310,24 +310,24 @@ export interface DynatraceMonitorIdentity {
 }
 
 export function dynatraceMonitorIdentityToTerraform(struct?: DynatraceMonitorIdentityOutputReference | DynatraceMonitorIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function dynatraceMonitorIdentityToHclTerraform(struct?: DynatraceMonitorIdentityOutputReference | DynatraceMonitorIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -338,14 +338,14 @@ export function dynatraceMonitorIdentityToHclTerraform(struct?: DynatraceMonitor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DynatraceMonitorIdentityOutputReference extends cdktf.ComplexObject {
+export class DynatraceMonitorIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -409,38 +409,38 @@ export interface DynatraceMonitorPlan {
 }
 
 export function dynatraceMonitorPlanToTerraform(struct?: DynatraceMonitorPlanOutputReference | DynatraceMonitorPlan): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    billing_cycle: cdktf.stringToTerraform(struct!.billingCycle),
-    plan: cdktf.stringToTerraform(struct!.plan),
-    usage_type: cdktf.stringToTerraform(struct!.usageType),
+    billing_cycle: cdktn.stringToTerraform(struct!.billingCycle),
+    plan: cdktn.stringToTerraform(struct!.plan),
+    usage_type: cdktn.stringToTerraform(struct!.usageType),
   }
 }
 
 
 export function dynatraceMonitorPlanToHclTerraform(struct?: DynatraceMonitorPlanOutputReference | DynatraceMonitorPlan): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     billing_cycle: {
-      value: cdktf.stringToHclTerraform(struct!.billingCycle),
+      value: cdktn.stringToHclTerraform(struct!.billingCycle),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     plan: {
-      value: cdktf.stringToHclTerraform(struct!.plan),
+      value: cdktn.stringToHclTerraform(struct!.plan),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     usage_type: {
-      value: cdktf.stringToHclTerraform(struct!.usageType),
+      value: cdktn.stringToHclTerraform(struct!.usageType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -451,14 +451,14 @@ export function dynatraceMonitorPlanToHclTerraform(struct?: DynatraceMonitorPlan
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DynatraceMonitorPlanOutputReference extends cdktf.ComplexObject {
+export class DynatraceMonitorPlanOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -564,46 +564,46 @@ export interface DynatraceMonitorTimeouts {
   readonly update?: string;
 }
 
-export function dynatraceMonitorTimeoutsToTerraform(struct?: DynatraceMonitorTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dynatraceMonitorTimeoutsToTerraform(struct?: DynatraceMonitorTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dynatraceMonitorTimeoutsToHclTerraform(struct?: DynatraceMonitorTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dynatraceMonitorTimeoutsToHclTerraform(struct?: DynatraceMonitorTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -614,19 +614,19 @@ export function dynatraceMonitorTimeoutsToHclTerraform(struct?: DynatraceMonitor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DynatraceMonitorTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DynatraceMonitorTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DynatraceMonitorTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DynatraceMonitorTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -651,7 +651,7 @@ export class DynatraceMonitorTimeoutsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DynatraceMonitorTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DynatraceMonitorTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -660,7 +660,7 @@ export class DynatraceMonitorTimeoutsOutputReference extends cdktf.ComplexObject
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -762,52 +762,52 @@ export interface DynatraceMonitorUser {
 }
 
 export function dynatraceMonitorUserToTerraform(struct?: DynatraceMonitorUserOutputReference | DynatraceMonitorUser): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    country: cdktf.stringToTerraform(struct!.country),
-    email: cdktf.stringToTerraform(struct!.email),
-    first_name: cdktf.stringToTerraform(struct!.firstName),
-    last_name: cdktf.stringToTerraform(struct!.lastName),
-    phone_number: cdktf.stringToTerraform(struct!.phoneNumber),
+    country: cdktn.stringToTerraform(struct!.country),
+    email: cdktn.stringToTerraform(struct!.email),
+    first_name: cdktn.stringToTerraform(struct!.firstName),
+    last_name: cdktn.stringToTerraform(struct!.lastName),
+    phone_number: cdktn.stringToTerraform(struct!.phoneNumber),
   }
 }
 
 
 export function dynatraceMonitorUserToHclTerraform(struct?: DynatraceMonitorUserOutputReference | DynatraceMonitorUser): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     country: {
-      value: cdktf.stringToHclTerraform(struct!.country),
+      value: cdktn.stringToHclTerraform(struct!.country),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     email: {
-      value: cdktf.stringToHclTerraform(struct!.email),
+      value: cdktn.stringToHclTerraform(struct!.email),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     first_name: {
-      value: cdktf.stringToHclTerraform(struct!.firstName),
+      value: cdktn.stringToHclTerraform(struct!.firstName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     last_name: {
-      value: cdktf.stringToHclTerraform(struct!.lastName),
+      value: cdktn.stringToHclTerraform(struct!.lastName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     phone_number: {
-      value: cdktf.stringToHclTerraform(struct!.phoneNumber),
+      value: cdktn.stringToHclTerraform(struct!.phoneNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -818,14 +818,14 @@ export function dynatraceMonitorUserToHclTerraform(struct?: DynatraceMonitorUser
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DynatraceMonitorUserOutputReference extends cdktf.ComplexObject {
+export class DynatraceMonitorUserOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -949,7 +949,7 @@ export class DynatraceMonitorUserOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dynatrace_monitor azurerm_dynatrace_monitor}
 */
-export class DynatraceMonitor extends cdktf.TerraformResource {
+export class DynatraceMonitor extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -960,14 +960,14 @@ export class DynatraceMonitor extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DynatraceMonitor resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DynatraceMonitor resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DynatraceMonitor to import
   * @param importFromId The id of the existing DynatraceMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/dynatrace_monitor#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DynatraceMonitor to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_dynatrace_monitor", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_dynatrace_monitor", importId: importFromId, provider });
       }
 
   // ===========
@@ -1058,11 +1058,11 @@ export class DynatraceMonitor extends cdktf.TerraformResource {
   }
 
   // monitoring_enabled - computed: false, optional: true, required: false
-  private _monitoringEnabled?: boolean | cdktf.IResolvable; 
+  private _monitoringEnabled?: boolean | cdktn.IResolvable; 
   public get monitoringEnabled() {
     return this.getBooleanAttribute('monitoring_enabled');
   }
-  public set monitoringEnabled(value: boolean | cdktf.IResolvable) {
+  public set monitoringEnabled(value: boolean | cdktn.IResolvable) {
     this._monitoringEnabled = value;
   }
   public resetMonitoringEnabled() {
@@ -1120,7 +1120,7 @@ export class DynatraceMonitor extends cdktf.TerraformResource {
   public get environmentProperties() {
     return this._environmentProperties;
   }
-  public putEnvironmentProperties(value: DynatraceMonitorEnvironmentProperties[] | cdktf.IResolvable) {
+  public putEnvironmentProperties(value: DynatraceMonitorEnvironmentProperties[] | cdktn.IResolvable) {
     this._environmentProperties.internalValue = value;
   }
   public resetEnvironmentProperties() {
@@ -1192,14 +1192,14 @@ export class DynatraceMonitor extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      marketplace_subscription: cdktf.stringToTerraform(this._marketplaceSubscription),
-      monitoring_enabled: cdktf.booleanToTerraform(this._monitoringEnabled),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      environment_properties: cdktf.listMapper(dynatraceMonitorEnvironmentPropertiesToTerraform, true)(this._environmentProperties.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      marketplace_subscription: cdktn.stringToTerraform(this._marketplaceSubscription),
+      monitoring_enabled: cdktn.booleanToTerraform(this._monitoringEnabled),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      environment_properties: cdktn.listMapper(dynatraceMonitorEnvironmentPropertiesToTerraform, true)(this._environmentProperties.internalValue),
       identity: dynatraceMonitorIdentityToTerraform(this._identity.internalValue),
       plan: dynatraceMonitorPlanToTerraform(this._plan.internalValue),
       timeouts: dynatraceMonitorTimeoutsToTerraform(this._timeouts.internalValue),
@@ -1210,49 +1210,49 @@ export class DynatraceMonitor extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       marketplace_subscription: {
-        value: cdktf.stringToHclTerraform(this._marketplaceSubscription),
+        value: cdktn.stringToHclTerraform(this._marketplaceSubscription),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       monitoring_enabled: {
-        value: cdktf.booleanToHclTerraform(this._monitoringEnabled),
+        value: cdktn.booleanToHclTerraform(this._monitoringEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       environment_properties: {
-        value: cdktf.listMapperHcl(dynatraceMonitorEnvironmentPropertiesToHclTerraform, true)(this._environmentProperties.internalValue),
+        value: cdktn.listMapperHcl(dynatraceMonitorEnvironmentPropertiesToHclTerraform, true)(this._environmentProperties.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DynatraceMonitorEnvironmentPropertiesList",

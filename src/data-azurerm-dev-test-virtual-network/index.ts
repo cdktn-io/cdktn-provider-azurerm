@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermDevTestVirtualNetworkConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermDevTestVirtualNetworkConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/dev_test_virtual_network#id DataAzurermDevTestVirtualNetwork#id}
   *
@@ -42,8 +42,8 @@ export interface DataAzurermDevTestVirtualNetworkAllowedSubnets {
 }
 
 export function dataAzurermDevTestVirtualNetworkAllowedSubnetsToTerraform(struct?: DataAzurermDevTestVirtualNetworkAllowedSubnets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -52,8 +52,8 @@ export function dataAzurermDevTestVirtualNetworkAllowedSubnetsToTerraform(struct
 
 
 export function dataAzurermDevTestVirtualNetworkAllowedSubnetsToHclTerraform(struct?: DataAzurermDevTestVirtualNetworkAllowedSubnets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -61,7 +61,7 @@ export function dataAzurermDevTestVirtualNetworkAllowedSubnetsToHclTerraform(str
   return attrs;
 }
 
-export class DataAzurermDevTestVirtualNetworkAllowedSubnetsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermDevTestVirtualNetworkAllowedSubnetsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -70,7 +70,7 @@ export class DataAzurermDevTestVirtualNetworkAllowedSubnetsOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -105,14 +105,14 @@ export class DataAzurermDevTestVirtualNetworkAllowedSubnetsOutputReference exten
   }
 }
 
-export class DataAzurermDevTestVirtualNetworkAllowedSubnetsList extends cdktf.ComplexList {
+export class DataAzurermDevTestVirtualNetworkAllowedSubnetsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -127,8 +127,8 @@ export interface DataAzurermDevTestVirtualNetworkSubnetOverrides {
 }
 
 export function dataAzurermDevTestVirtualNetworkSubnetOverridesToTerraform(struct?: DataAzurermDevTestVirtualNetworkSubnetOverrides): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -137,8 +137,8 @@ export function dataAzurermDevTestVirtualNetworkSubnetOverridesToTerraform(struc
 
 
 export function dataAzurermDevTestVirtualNetworkSubnetOverridesToHclTerraform(struct?: DataAzurermDevTestVirtualNetworkSubnetOverrides): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -146,7 +146,7 @@ export function dataAzurermDevTestVirtualNetworkSubnetOverridesToHclTerraform(st
   return attrs;
 }
 
-export class DataAzurermDevTestVirtualNetworkSubnetOverridesOutputReference extends cdktf.ComplexObject {
+export class DataAzurermDevTestVirtualNetworkSubnetOverridesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -155,7 +155,7 @@ export class DataAzurermDevTestVirtualNetworkSubnetOverridesOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -200,14 +200,14 @@ export class DataAzurermDevTestVirtualNetworkSubnetOverridesOutputReference exte
   }
 }
 
-export class DataAzurermDevTestVirtualNetworkSubnetOverridesList extends cdktf.ComplexList {
+export class DataAzurermDevTestVirtualNetworkSubnetOverridesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -225,25 +225,25 @@ export interface DataAzurermDevTestVirtualNetworkTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermDevTestVirtualNetworkTimeoutsToTerraform(struct?: DataAzurermDevTestVirtualNetworkTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermDevTestVirtualNetworkTimeoutsToTerraform(struct?: DataAzurermDevTestVirtualNetworkTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermDevTestVirtualNetworkTimeoutsToHclTerraform(struct?: DataAzurermDevTestVirtualNetworkTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermDevTestVirtualNetworkTimeoutsToHclTerraform(struct?: DataAzurermDevTestVirtualNetworkTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -254,19 +254,19 @@ export function dataAzurermDevTestVirtualNetworkTimeoutsToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermDevTestVirtualNetworkTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermDevTestVirtualNetworkTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermDevTestVirtualNetworkTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermDevTestVirtualNetworkTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -279,13 +279,13 @@ export class DataAzurermDevTestVirtualNetworkTimeoutsOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermDevTestVirtualNetworkTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermDevTestVirtualNetworkTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -316,7 +316,7 @@ export class DataAzurermDevTestVirtualNetworkTimeoutsOutputReference extends cdk
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/dev_test_virtual_network azurerm_dev_test_virtual_network}
 */
-export class DataAzurermDevTestVirtualNetwork extends cdktf.TerraformDataSource {
+export class DataAzurermDevTestVirtualNetwork extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -327,14 +327,14 @@ export class DataAzurermDevTestVirtualNetwork extends cdktf.TerraformDataSource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermDevTestVirtualNetwork resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermDevTestVirtualNetwork resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermDevTestVirtualNetwork to import
   * @param importFromId The id of the existing DataAzurermDevTestVirtualNetwork that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/dev_test_virtual_network#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermDevTestVirtualNetwork to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_dev_test_virtual_network", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_dev_test_virtual_network", importId: importFromId, provider });
       }
 
   // ===========
@@ -469,10 +469,10 @@ export class DataAzurermDevTestVirtualNetwork extends cdktf.TerraformDataSource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      lab_name: cdktf.stringToTerraform(this._labName),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
+      id: cdktn.stringToTerraform(this._id),
+      lab_name: cdktn.stringToTerraform(this._labName),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
       timeouts: dataAzurermDevTestVirtualNetworkTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -480,25 +480,25 @@ export class DataAzurermDevTestVirtualNetwork extends cdktf.TerraformDataSource 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       lab_name: {
-        value: cdktf.stringToHclTerraform(this._labName),
+        value: cdktn.stringToHclTerraform(this._labName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

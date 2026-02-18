@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PrivateDnsZoneVirtualNetworkLinkConfig extends cdktf.TerraformMetaArguments {
+export interface PrivateDnsZoneVirtualNetworkLinkConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/private_dns_zone_virtual_network_link#id PrivateDnsZoneVirtualNetworkLink#id}
   *
@@ -30,7 +30,7 @@ export interface PrivateDnsZoneVirtualNetworkLinkConfig extends cdktf.TerraformM
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/private_dns_zone_virtual_network_link#registration_enabled PrivateDnsZoneVirtualNetworkLink#registration_enabled}
   */
-  readonly registrationEnabled?: boolean | cdktf.IResolvable;
+  readonly registrationEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/private_dns_zone_virtual_network_link#resolution_policy PrivateDnsZoneVirtualNetworkLink#resolution_policy}
   */
@@ -73,46 +73,46 @@ export interface PrivateDnsZoneVirtualNetworkLinkTimeouts {
   readonly update?: string;
 }
 
-export function privateDnsZoneVirtualNetworkLinkTimeoutsToTerraform(struct?: PrivateDnsZoneVirtualNetworkLinkTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privateDnsZoneVirtualNetworkLinkTimeoutsToTerraform(struct?: PrivateDnsZoneVirtualNetworkLinkTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function privateDnsZoneVirtualNetworkLinkTimeoutsToHclTerraform(struct?: PrivateDnsZoneVirtualNetworkLinkTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function privateDnsZoneVirtualNetworkLinkTimeoutsToHclTerraform(struct?: PrivateDnsZoneVirtualNetworkLinkTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -123,19 +123,19 @@ export function privateDnsZoneVirtualNetworkLinkTimeoutsToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PrivateDnsZoneVirtualNetworkLinkTimeoutsOutputReference extends cdktf.ComplexObject {
+export class PrivateDnsZoneVirtualNetworkLinkTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PrivateDnsZoneVirtualNetworkLinkTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): PrivateDnsZoneVirtualNetworkLinkTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -160,7 +160,7 @@ export class PrivateDnsZoneVirtualNetworkLinkTimeoutsOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PrivateDnsZoneVirtualNetworkLinkTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PrivateDnsZoneVirtualNetworkLinkTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -169,7 +169,7 @@ export class PrivateDnsZoneVirtualNetworkLinkTimeoutsOutputReference extends cdk
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -251,7 +251,7 @@ export class PrivateDnsZoneVirtualNetworkLinkTimeoutsOutputReference extends cdk
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/private_dns_zone_virtual_network_link azurerm_private_dns_zone_virtual_network_link}
 */
-export class PrivateDnsZoneVirtualNetworkLink extends cdktf.TerraformResource {
+export class PrivateDnsZoneVirtualNetworkLink extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -262,14 +262,14 @@ export class PrivateDnsZoneVirtualNetworkLink extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PrivateDnsZoneVirtualNetworkLink resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PrivateDnsZoneVirtualNetworkLink resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PrivateDnsZoneVirtualNetworkLink to import
   * @param importFromId The id of the existing PrivateDnsZoneVirtualNetworkLink that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/private_dns_zone_virtual_network_link#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PrivateDnsZoneVirtualNetworkLink to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_private_dns_zone_virtual_network_link", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_private_dns_zone_virtual_network_link", importId: importFromId, provider });
       }
 
   // ===========
@@ -357,11 +357,11 @@ export class PrivateDnsZoneVirtualNetworkLink extends cdktf.TerraformResource {
   }
 
   // registration_enabled - computed: false, optional: true, required: false
-  private _registrationEnabled?: boolean | cdktf.IResolvable; 
+  private _registrationEnabled?: boolean | cdktn.IResolvable; 
   public get registrationEnabled() {
     return this.getBooleanAttribute('registration_enabled');
   }
-  public set registrationEnabled(value: boolean | cdktf.IResolvable) {
+  public set registrationEnabled(value: boolean | cdktn.IResolvable) {
     this._registrationEnabled = value;
   }
   public resetRegistrationEnabled() {
@@ -452,14 +452,14 @@ export class PrivateDnsZoneVirtualNetworkLink extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      private_dns_zone_name: cdktf.stringToTerraform(this._privateDnsZoneName),
-      registration_enabled: cdktf.booleanToTerraform(this._registrationEnabled),
-      resolution_policy: cdktf.stringToTerraform(this._resolutionPolicy),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      virtual_network_id: cdktf.stringToTerraform(this._virtualNetworkId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      private_dns_zone_name: cdktn.stringToTerraform(this._privateDnsZoneName),
+      registration_enabled: cdktn.booleanToTerraform(this._registrationEnabled),
+      resolution_policy: cdktn.stringToTerraform(this._resolutionPolicy),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      virtual_network_id: cdktn.stringToTerraform(this._virtualNetworkId),
       timeouts: privateDnsZoneVirtualNetworkLinkTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -467,49 +467,49 @@ export class PrivateDnsZoneVirtualNetworkLink extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       private_dns_zone_name: {
-        value: cdktf.stringToHclTerraform(this._privateDnsZoneName),
+        value: cdktn.stringToHclTerraform(this._privateDnsZoneName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       registration_enabled: {
-        value: cdktf.booleanToHclTerraform(this._registrationEnabled),
+        value: cdktn.booleanToHclTerraform(this._registrationEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       resolution_policy: {
-        value: cdktf.stringToHclTerraform(this._resolutionPolicy),
+        value: cdktn.stringToHclTerraform(this._resolutionPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       virtual_network_id: {
-        value: cdktf.stringToHclTerraform(this._virtualNetworkId),
+        value: cdktn.stringToHclTerraform(this._virtualNetworkId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

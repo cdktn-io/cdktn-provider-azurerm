@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MssqlFailoverGroupConfig extends cdktf.TerraformMetaArguments {
+export interface MssqlFailoverGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_failover_group#databases MssqlFailoverGroup#databases}
   */
@@ -30,7 +30,7 @@ export interface MssqlFailoverGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_failover_group#readonly_endpoint_failover_policy_enabled MssqlFailoverGroup#readonly_endpoint_failover_policy_enabled}
   */
-  readonly readonlyEndpointFailoverPolicyEnabled?: boolean | cdktf.IResolvable;
+  readonly readonlyEndpointFailoverPolicyEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_failover_group#server_id MssqlFailoverGroup#server_id}
   */
@@ -44,7 +44,7 @@ export interface MssqlFailoverGroupConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_failover_group#partner_server MssqlFailoverGroup#partner_server}
   */
-  readonly partnerServer: MssqlFailoverGroupPartnerServer[] | cdktf.IResolvable;
+  readonly partnerServer: MssqlFailoverGroupPartnerServer[] | cdktn.IResolvable;
   /**
   * read_write_endpoint_failover_policy block
   *
@@ -68,25 +68,25 @@ export interface MssqlFailoverGroupPartnerServer {
   readonly id: string;
 }
 
-export function mssqlFailoverGroupPartnerServerToTerraform(struct?: MssqlFailoverGroupPartnerServer | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mssqlFailoverGroupPartnerServerToTerraform(struct?: MssqlFailoverGroupPartnerServer | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function mssqlFailoverGroupPartnerServerToHclTerraform(struct?: MssqlFailoverGroupPartnerServer | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mssqlFailoverGroupPartnerServerToHclTerraform(struct?: MssqlFailoverGroupPartnerServer | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -97,9 +97,9 @@ export function mssqlFailoverGroupPartnerServerToHclTerraform(struct?: MssqlFail
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MssqlFailoverGroupPartnerServerOutputReference extends cdktf.ComplexObject {
+export class MssqlFailoverGroupPartnerServerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -107,11 +107,11 @@ export class MssqlFailoverGroupPartnerServerOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MssqlFailoverGroupPartnerServer | cdktf.IResolvable | undefined {
+  public get internalValue(): MssqlFailoverGroupPartnerServer | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -124,13 +124,13 @@ export class MssqlFailoverGroupPartnerServerOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MssqlFailoverGroupPartnerServer | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MssqlFailoverGroupPartnerServer | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -165,15 +165,15 @@ export class MssqlFailoverGroupPartnerServerOutputReference extends cdktf.Comple
   }
 }
 
-export class MssqlFailoverGroupPartnerServerList extends cdktf.ComplexList {
-  public internalValue? : MssqlFailoverGroupPartnerServer[] | cdktf.IResolvable
+export class MssqlFailoverGroupPartnerServerList extends cdktn.ComplexList {
+  public internalValue? : MssqlFailoverGroupPartnerServer[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -196,31 +196,31 @@ export interface MssqlFailoverGroupReadWriteEndpointFailoverPolicy {
 }
 
 export function mssqlFailoverGroupReadWriteEndpointFailoverPolicyToTerraform(struct?: MssqlFailoverGroupReadWriteEndpointFailoverPolicyOutputReference | MssqlFailoverGroupReadWriteEndpointFailoverPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    grace_minutes: cdktf.numberToTerraform(struct!.graceMinutes),
-    mode: cdktf.stringToTerraform(struct!.mode),
+    grace_minutes: cdktn.numberToTerraform(struct!.graceMinutes),
+    mode: cdktn.stringToTerraform(struct!.mode),
   }
 }
 
 
 export function mssqlFailoverGroupReadWriteEndpointFailoverPolicyToHclTerraform(struct?: MssqlFailoverGroupReadWriteEndpointFailoverPolicyOutputReference | MssqlFailoverGroupReadWriteEndpointFailoverPolicy): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     grace_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.graceMinutes),
+      value: cdktn.numberToHclTerraform(struct!.graceMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -231,14 +231,14 @@ export function mssqlFailoverGroupReadWriteEndpointFailoverPolicyToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MssqlFailoverGroupReadWriteEndpointFailoverPolicyOutputReference extends cdktf.ComplexObject {
+export class MssqlFailoverGroupReadWriteEndpointFailoverPolicyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -317,46 +317,46 @@ export interface MssqlFailoverGroupTimeouts {
   readonly update?: string;
 }
 
-export function mssqlFailoverGroupTimeoutsToTerraform(struct?: MssqlFailoverGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mssqlFailoverGroupTimeoutsToTerraform(struct?: MssqlFailoverGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function mssqlFailoverGroupTimeoutsToHclTerraform(struct?: MssqlFailoverGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mssqlFailoverGroupTimeoutsToHclTerraform(struct?: MssqlFailoverGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -367,19 +367,19 @@ export function mssqlFailoverGroupTimeoutsToHclTerraform(struct?: MssqlFailoverG
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MssqlFailoverGroupTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MssqlFailoverGroupTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MssqlFailoverGroupTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MssqlFailoverGroupTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -404,7 +404,7 @@ export class MssqlFailoverGroupTimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MssqlFailoverGroupTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MssqlFailoverGroupTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -413,7 +413,7 @@ export class MssqlFailoverGroupTimeoutsOutputReference extends cdktf.ComplexObje
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -495,7 +495,7 @@ export class MssqlFailoverGroupTimeoutsOutputReference extends cdktf.ComplexObje
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_failover_group azurerm_mssql_failover_group}
 */
-export class MssqlFailoverGroup extends cdktf.TerraformResource {
+export class MssqlFailoverGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -506,14 +506,14 @@ export class MssqlFailoverGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MssqlFailoverGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MssqlFailoverGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MssqlFailoverGroup to import
   * @param importFromId The id of the existing MssqlFailoverGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_failover_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MssqlFailoverGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_mssql_failover_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_mssql_failover_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -561,7 +561,7 @@ export class MssqlFailoverGroup extends cdktf.TerraformResource {
   // databases - computed: false, optional: true, required: false
   private _databases?: string[]; 
   public get databases() {
-    return cdktf.Fn.tolist(this.getListAttribute('databases'));
+    return cdktn.Fn.tolist(this.getListAttribute('databases'));
   }
   public set databases(value: string[]) {
     this._databases = value;
@@ -604,11 +604,11 @@ export class MssqlFailoverGroup extends cdktf.TerraformResource {
   }
 
   // readonly_endpoint_failover_policy_enabled - computed: true, optional: true, required: false
-  private _readonlyEndpointFailoverPolicyEnabled?: boolean | cdktf.IResolvable; 
+  private _readonlyEndpointFailoverPolicyEnabled?: boolean | cdktn.IResolvable; 
   public get readonlyEndpointFailoverPolicyEnabled() {
     return this.getBooleanAttribute('readonly_endpoint_failover_policy_enabled');
   }
-  public set readonlyEndpointFailoverPolicyEnabled(value: boolean | cdktf.IResolvable) {
+  public set readonlyEndpointFailoverPolicyEnabled(value: boolean | cdktn.IResolvable) {
     this._readonlyEndpointFailoverPolicyEnabled = value;
   }
   public resetReadonlyEndpointFailoverPolicyEnabled() {
@@ -653,7 +653,7 @@ export class MssqlFailoverGroup extends cdktf.TerraformResource {
   public get partnerServer() {
     return this._partnerServer;
   }
-  public putPartnerServer(value: MssqlFailoverGroupPartnerServer[] | cdktf.IResolvable) {
+  public putPartnerServer(value: MssqlFailoverGroupPartnerServer[] | cdktn.IResolvable) {
     this._partnerServer.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -696,13 +696,13 @@ export class MssqlFailoverGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      databases: cdktf.listMapper(cdktf.stringToTerraform, false)(this._databases),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      readonly_endpoint_failover_policy_enabled: cdktf.booleanToTerraform(this._readonlyEndpointFailoverPolicyEnabled),
-      server_id: cdktf.stringToTerraform(this._serverId),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      partner_server: cdktf.listMapper(mssqlFailoverGroupPartnerServerToTerraform, true)(this._partnerServer.internalValue),
+      databases: cdktn.listMapper(cdktn.stringToTerraform, false)(this._databases),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      readonly_endpoint_failover_policy_enabled: cdktn.booleanToTerraform(this._readonlyEndpointFailoverPolicyEnabled),
+      server_id: cdktn.stringToTerraform(this._serverId),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      partner_server: cdktn.listMapper(mssqlFailoverGroupPartnerServerToTerraform, true)(this._partnerServer.internalValue),
       read_write_endpoint_failover_policy: mssqlFailoverGroupReadWriteEndpointFailoverPolicyToTerraform(this._readWriteEndpointFailoverPolicy.internalValue),
       timeouts: mssqlFailoverGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -711,43 +711,43 @@ export class MssqlFailoverGroup extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       databases: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._databases),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._databases),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       readonly_endpoint_failover_policy_enabled: {
-        value: cdktf.booleanToHclTerraform(this._readonlyEndpointFailoverPolicyEnabled),
+        value: cdktn.booleanToHclTerraform(this._readonlyEndpointFailoverPolicyEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       server_id: {
-        value: cdktf.stringToHclTerraform(this._serverId),
+        value: cdktn.stringToHclTerraform(this._serverId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       partner_server: {
-        value: cdktf.listMapperHcl(mssqlFailoverGroupPartnerServerToHclTerraform, true)(this._partnerServer.internalValue),
+        value: cdktn.listMapperHcl(mssqlFailoverGroupPartnerServerToHclTerraform, true)(this._partnerServer.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "MssqlFailoverGroupPartnerServerList",

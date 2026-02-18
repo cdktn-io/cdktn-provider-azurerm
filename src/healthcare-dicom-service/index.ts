@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface HealthcareDicomServiceConfig extends cdktf.TerraformMetaArguments {
+export interface HealthcareDicomServiceConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/healthcare_dicom_service#data_partitions_enabled HealthcareDicomService#data_partitions_enabled}
   */
-  readonly dataPartitionsEnabled?: boolean | cdktf.IResolvable;
+  readonly dataPartitionsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/healthcare_dicom_service#encryption_key_url HealthcareDicomService#encryption_key_url}
   */
@@ -38,7 +38,7 @@ export interface HealthcareDicomServiceConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/healthcare_dicom_service#public_network_access_enabled HealthcareDicomService#public_network_access_enabled}
   */
-  readonly publicNetworkAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly publicNetworkAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/healthcare_dicom_service#tags HealthcareDicomService#tags}
   */
@@ -76,8 +76,8 @@ export interface HealthcareDicomServiceAuthentication {
 }
 
 export function healthcareDicomServiceAuthenticationToTerraform(struct?: HealthcareDicomServiceAuthentication): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -86,8 +86,8 @@ export function healthcareDicomServiceAuthenticationToTerraform(struct?: Healthc
 
 
 export function healthcareDicomServiceAuthenticationToHclTerraform(struct?: HealthcareDicomServiceAuthentication): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -95,7 +95,7 @@ export function healthcareDicomServiceAuthenticationToHclTerraform(struct?: Heal
   return attrs;
 }
 
-export class HealthcareDicomServiceAuthenticationOutputReference extends cdktf.ComplexObject {
+export class HealthcareDicomServiceAuthenticationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -104,7 +104,7 @@ export class HealthcareDicomServiceAuthenticationOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -134,14 +134,14 @@ export class HealthcareDicomServiceAuthenticationOutputReference extends cdktf.C
   }
 }
 
-export class HealthcareDicomServiceAuthenticationList extends cdktf.ComplexList {
+export class HealthcareDicomServiceAuthenticationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -156,8 +156,8 @@ export interface HealthcareDicomServicePrivateEndpoint {
 }
 
 export function healthcareDicomServicePrivateEndpointToTerraform(struct?: HealthcareDicomServicePrivateEndpoint): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -166,8 +166,8 @@ export function healthcareDicomServicePrivateEndpointToTerraform(struct?: Health
 
 
 export function healthcareDicomServicePrivateEndpointToHclTerraform(struct?: HealthcareDicomServicePrivateEndpoint): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -175,7 +175,7 @@ export function healthcareDicomServicePrivateEndpointToHclTerraform(struct?: Hea
   return attrs;
 }
 
-export class HealthcareDicomServicePrivateEndpointOutputReference extends cdktf.ComplexObject {
+export class HealthcareDicomServicePrivateEndpointOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -184,7 +184,7 @@ export class HealthcareDicomServicePrivateEndpointOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -214,14 +214,14 @@ export class HealthcareDicomServicePrivateEndpointOutputReference extends cdktf.
   }
 }
 
-export class HealthcareDicomServicePrivateEndpointList extends cdktf.ComplexList {
+export class HealthcareDicomServicePrivateEndpointList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -236,7 +236,7 @@ export interface HealthcareDicomServiceCors {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/healthcare_dicom_service#allow_credentials HealthcareDicomService#allow_credentials}
   */
-  readonly allowCredentials?: boolean | cdktf.IResolvable;
+  readonly allowCredentials?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/healthcare_dicom_service#allowed_headers HealthcareDicomService#allowed_headers}
   */
@@ -256,52 +256,52 @@ export interface HealthcareDicomServiceCors {
 }
 
 export function healthcareDicomServiceCorsToTerraform(struct?: HealthcareDicomServiceCorsOutputReference | HealthcareDicomServiceCors): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allow_credentials: cdktf.booleanToTerraform(struct!.allowCredentials),
-    allowed_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedHeaders),
-    allowed_methods: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedMethods),
-    allowed_origins: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedOrigins),
-    max_age_in_seconds: cdktf.numberToTerraform(struct!.maxAgeInSeconds),
+    allow_credentials: cdktn.booleanToTerraform(struct!.allowCredentials),
+    allowed_headers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedHeaders),
+    allowed_methods: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedMethods),
+    allowed_origins: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedOrigins),
+    max_age_in_seconds: cdktn.numberToTerraform(struct!.maxAgeInSeconds),
   }
 }
 
 
 export function healthcareDicomServiceCorsToHclTerraform(struct?: HealthcareDicomServiceCorsOutputReference | HealthcareDicomServiceCors): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allow_credentials: {
-      value: cdktf.booleanToHclTerraform(struct!.allowCredentials),
+      value: cdktn.booleanToHclTerraform(struct!.allowCredentials),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     allowed_headers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedHeaders),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedHeaders),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     allowed_methods: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedMethods),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedMethods),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     allowed_origins: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedOrigins),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedOrigins),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     max_age_in_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.maxAgeInSeconds),
+      value: cdktn.numberToHclTerraform(struct!.maxAgeInSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -312,14 +312,14 @@ export function healthcareDicomServiceCorsToHclTerraform(struct?: HealthcareDico
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class HealthcareDicomServiceCorsOutputReference extends cdktf.ComplexObject {
+export class HealthcareDicomServiceCorsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -369,11 +369,11 @@ export class HealthcareDicomServiceCorsOutputReference extends cdktf.ComplexObje
   }
 
   // allow_credentials - computed: false, optional: true, required: false
-  private _allowCredentials?: boolean | cdktf.IResolvable; 
+  private _allowCredentials?: boolean | cdktn.IResolvable; 
   public get allowCredentials() {
     return this.getBooleanAttribute('allow_credentials');
   }
-  public set allowCredentials(value: boolean | cdktf.IResolvable) {
+  public set allowCredentials(value: boolean | cdktn.IResolvable) {
     this._allowCredentials = value;
   }
   public resetAllowCredentials() {
@@ -460,31 +460,31 @@ export interface HealthcareDicomServiceIdentity {
 }
 
 export function healthcareDicomServiceIdentityToTerraform(struct?: HealthcareDicomServiceIdentityOutputReference | HealthcareDicomServiceIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function healthcareDicomServiceIdentityToHclTerraform(struct?: HealthcareDicomServiceIdentityOutputReference | HealthcareDicomServiceIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -495,14 +495,14 @@ export function healthcareDicomServiceIdentityToHclTerraform(struct?: Healthcare
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class HealthcareDicomServiceIdentityOutputReference extends cdktf.ComplexObject {
+export class HealthcareDicomServiceIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -536,7 +536,7 @@ export class HealthcareDicomServiceIdentityOutputReference extends cdktf.Complex
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -584,31 +584,31 @@ export interface HealthcareDicomServiceStorage {
 }
 
 export function healthcareDicomServiceStorageToTerraform(struct?: HealthcareDicomServiceStorageOutputReference | HealthcareDicomServiceStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    file_system_name: cdktf.stringToTerraform(struct!.fileSystemName),
-    storage_account_id: cdktf.stringToTerraform(struct!.storageAccountId),
+    file_system_name: cdktn.stringToTerraform(struct!.fileSystemName),
+    storage_account_id: cdktn.stringToTerraform(struct!.storageAccountId),
   }
 }
 
 
 export function healthcareDicomServiceStorageToHclTerraform(struct?: HealthcareDicomServiceStorageOutputReference | HealthcareDicomServiceStorage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     file_system_name: {
-      value: cdktf.stringToHclTerraform(struct!.fileSystemName),
+      value: cdktn.stringToHclTerraform(struct!.fileSystemName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_account_id: {
-      value: cdktf.stringToHclTerraform(struct!.storageAccountId),
+      value: cdktn.stringToHclTerraform(struct!.storageAccountId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -619,14 +619,14 @@ export function healthcareDicomServiceStorageToHclTerraform(struct?: HealthcareD
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class HealthcareDicomServiceStorageOutputReference extends cdktf.ComplexObject {
+export class HealthcareDicomServiceStorageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -702,46 +702,46 @@ export interface HealthcareDicomServiceTimeouts {
   readonly update?: string;
 }
 
-export function healthcareDicomServiceTimeoutsToTerraform(struct?: HealthcareDicomServiceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function healthcareDicomServiceTimeoutsToTerraform(struct?: HealthcareDicomServiceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function healthcareDicomServiceTimeoutsToHclTerraform(struct?: HealthcareDicomServiceTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function healthcareDicomServiceTimeoutsToHclTerraform(struct?: HealthcareDicomServiceTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -752,19 +752,19 @@ export function healthcareDicomServiceTimeoutsToHclTerraform(struct?: Healthcare
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class HealthcareDicomServiceTimeoutsOutputReference extends cdktf.ComplexObject {
+export class HealthcareDicomServiceTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): HealthcareDicomServiceTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): HealthcareDicomServiceTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -789,7 +789,7 @@ export class HealthcareDicomServiceTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: HealthcareDicomServiceTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: HealthcareDicomServiceTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -798,7 +798,7 @@ export class HealthcareDicomServiceTimeoutsOutputReference extends cdktf.Complex
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -880,7 +880,7 @@ export class HealthcareDicomServiceTimeoutsOutputReference extends cdktf.Complex
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/healthcare_dicom_service azurerm_healthcare_dicom_service}
 */
-export class HealthcareDicomService extends cdktf.TerraformResource {
+export class HealthcareDicomService extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -891,14 +891,14 @@ export class HealthcareDicomService extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a HealthcareDicomService resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a HealthcareDicomService resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the HealthcareDicomService to import
   * @param importFromId The id of the existing HealthcareDicomService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/healthcare_dicom_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the HealthcareDicomService to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_healthcare_dicom_service", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_healthcare_dicom_service", importId: importFromId, provider });
       }
 
   // ===========
@@ -953,11 +953,11 @@ export class HealthcareDicomService extends cdktf.TerraformResource {
   }
 
   // data_partitions_enabled - computed: false, optional: true, required: false
-  private _dataPartitionsEnabled?: boolean | cdktf.IResolvable; 
+  private _dataPartitionsEnabled?: boolean | cdktn.IResolvable; 
   public get dataPartitionsEnabled() {
     return this.getBooleanAttribute('data_partitions_enabled');
   }
-  public set dataPartitionsEnabled(value: boolean | cdktf.IResolvable) {
+  public set dataPartitionsEnabled(value: boolean | cdktn.IResolvable) {
     this._dataPartitionsEnabled = value;
   }
   public resetDataPartitionsEnabled() {
@@ -1033,11 +1033,11 @@ export class HealthcareDicomService extends cdktf.TerraformResource {
   }
 
   // public_network_access_enabled - computed: false, optional: true, required: false
-  private _publicNetworkAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _publicNetworkAccessEnabled?: boolean | cdktn.IResolvable; 
   public get publicNetworkAccessEnabled() {
     return this.getBooleanAttribute('public_network_access_enabled');
   }
-  public set publicNetworkAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set publicNetworkAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._publicNetworkAccessEnabled = value;
   }
   public resetPublicNetworkAccessEnabled() {
@@ -1152,14 +1152,14 @@ export class HealthcareDicomService extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      data_partitions_enabled: cdktf.booleanToTerraform(this._dataPartitionsEnabled),
-      encryption_key_url: cdktf.stringToTerraform(this._encryptionKeyUrl),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      public_network_access_enabled: cdktf.booleanToTerraform(this._publicNetworkAccessEnabled),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      workspace_id: cdktf.stringToTerraform(this._workspaceId),
+      data_partitions_enabled: cdktn.booleanToTerraform(this._dataPartitionsEnabled),
+      encryption_key_url: cdktn.stringToTerraform(this._encryptionKeyUrl),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      public_network_access_enabled: cdktn.booleanToTerraform(this._publicNetworkAccessEnabled),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      workspace_id: cdktn.stringToTerraform(this._workspaceId),
       cors: healthcareDicomServiceCorsToTerraform(this._cors.internalValue),
       identity: healthcareDicomServiceIdentityToTerraform(this._identity.internalValue),
       storage: healthcareDicomServiceStorageToTerraform(this._storage.internalValue),
@@ -1170,49 +1170,49 @@ export class HealthcareDicomService extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       data_partitions_enabled: {
-        value: cdktf.booleanToHclTerraform(this._dataPartitionsEnabled),
+        value: cdktn.booleanToHclTerraform(this._dataPartitionsEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       encryption_key_url: {
-        value: cdktf.stringToHclTerraform(this._encryptionKeyUrl),
+        value: cdktn.stringToHclTerraform(this._encryptionKeyUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_network_access_enabled: {
-        value: cdktf.booleanToHclTerraform(this._publicNetworkAccessEnabled),
+        value: cdktn.booleanToHclTerraform(this._publicNetworkAccessEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       workspace_id: {
-        value: cdktf.stringToHclTerraform(this._workspaceId),
+        value: cdktn.stringToHclTerraform(this._workspaceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

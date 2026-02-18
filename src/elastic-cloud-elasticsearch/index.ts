@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ElasticCloudElasticsearchConfig extends cdktf.TerraformMetaArguments {
+export interface ElasticCloudElasticsearchConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/elastic_cloud_elasticsearch#elastic_cloud_email_address ElasticCloudElasticsearch#elastic_cloud_email_address}
   */
@@ -30,7 +30,7 @@ export interface ElasticCloudElasticsearchConfig extends cdktf.TerraformMetaArgu
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/elastic_cloud_elasticsearch#monitoring_enabled ElasticCloudElasticsearch#monitoring_enabled}
   */
-  readonly monitoringEnabled?: boolean | cdktf.IResolvable;
+  readonly monitoringEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/elastic_cloud_elasticsearch#name ElasticCloudElasticsearch#name}
   */
@@ -75,39 +75,39 @@ export interface ElasticCloudElasticsearchLogsFilteringTag {
   readonly value: string;
 }
 
-export function elasticCloudElasticsearchLogsFilteringTagToTerraform(struct?: ElasticCloudElasticsearchLogsFilteringTag | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function elasticCloudElasticsearchLogsFilteringTagToTerraform(struct?: ElasticCloudElasticsearchLogsFilteringTag | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    action: cdktf.stringToTerraform(struct!.action),
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    action: cdktn.stringToTerraform(struct!.action),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function elasticCloudElasticsearchLogsFilteringTagToHclTerraform(struct?: ElasticCloudElasticsearchLogsFilteringTag | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function elasticCloudElasticsearchLogsFilteringTagToHclTerraform(struct?: ElasticCloudElasticsearchLogsFilteringTag | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     action: {
-      value: cdktf.stringToHclTerraform(struct!.action),
+      value: cdktn.stringToHclTerraform(struct!.action),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -118,9 +118,9 @@ export function elasticCloudElasticsearchLogsFilteringTagToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ElasticCloudElasticsearchLogsFilteringTagOutputReference extends cdktf.ComplexObject {
+export class ElasticCloudElasticsearchLogsFilteringTagOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -128,11 +128,11 @@ export class ElasticCloudElasticsearchLogsFilteringTagOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ElasticCloudElasticsearchLogsFilteringTag | cdktf.IResolvable | undefined {
+  public get internalValue(): ElasticCloudElasticsearchLogsFilteringTag | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -153,7 +153,7 @@ export class ElasticCloudElasticsearchLogsFilteringTagOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ElasticCloudElasticsearchLogsFilteringTag | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ElasticCloudElasticsearchLogsFilteringTag | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -161,7 +161,7 @@ export class ElasticCloudElasticsearchLogsFilteringTagOutputReference extends cd
       this._name = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -214,15 +214,15 @@ export class ElasticCloudElasticsearchLogsFilteringTagOutputReference extends cd
   }
 }
 
-export class ElasticCloudElasticsearchLogsFilteringTagList extends cdktf.ComplexList {
-  public internalValue? : ElasticCloudElasticsearchLogsFilteringTag[] | cdktf.IResolvable
+export class ElasticCloudElasticsearchLogsFilteringTagList extends cdktn.ComplexList {
+  public internalValue? : ElasticCloudElasticsearchLogsFilteringTag[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -237,63 +237,63 @@ export interface ElasticCloudElasticsearchLogs {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/elastic_cloud_elasticsearch#send_activity_logs ElasticCloudElasticsearch#send_activity_logs}
   */
-  readonly sendActivityLogs?: boolean | cdktf.IResolvable;
+  readonly sendActivityLogs?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/elastic_cloud_elasticsearch#send_azuread_logs ElasticCloudElasticsearch#send_azuread_logs}
   */
-  readonly sendAzureadLogs?: boolean | cdktf.IResolvable;
+  readonly sendAzureadLogs?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/elastic_cloud_elasticsearch#send_subscription_logs ElasticCloudElasticsearch#send_subscription_logs}
   */
-  readonly sendSubscriptionLogs?: boolean | cdktf.IResolvable;
+  readonly sendSubscriptionLogs?: boolean | cdktn.IResolvable;
   /**
   * filtering_tag block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/elastic_cloud_elasticsearch#filtering_tag ElasticCloudElasticsearch#filtering_tag}
   */
-  readonly filteringTag?: ElasticCloudElasticsearchLogsFilteringTag[] | cdktf.IResolvable;
+  readonly filteringTag?: ElasticCloudElasticsearchLogsFilteringTag[] | cdktn.IResolvable;
 }
 
 export function elasticCloudElasticsearchLogsToTerraform(struct?: ElasticCloudElasticsearchLogsOutputReference | ElasticCloudElasticsearchLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    send_activity_logs: cdktf.booleanToTerraform(struct!.sendActivityLogs),
-    send_azuread_logs: cdktf.booleanToTerraform(struct!.sendAzureadLogs),
-    send_subscription_logs: cdktf.booleanToTerraform(struct!.sendSubscriptionLogs),
-    filtering_tag: cdktf.listMapper(elasticCloudElasticsearchLogsFilteringTagToTerraform, true)(struct!.filteringTag),
+    send_activity_logs: cdktn.booleanToTerraform(struct!.sendActivityLogs),
+    send_azuread_logs: cdktn.booleanToTerraform(struct!.sendAzureadLogs),
+    send_subscription_logs: cdktn.booleanToTerraform(struct!.sendSubscriptionLogs),
+    filtering_tag: cdktn.listMapper(elasticCloudElasticsearchLogsFilteringTagToTerraform, true)(struct!.filteringTag),
   }
 }
 
 
 export function elasticCloudElasticsearchLogsToHclTerraform(struct?: ElasticCloudElasticsearchLogsOutputReference | ElasticCloudElasticsearchLogs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     send_activity_logs: {
-      value: cdktf.booleanToHclTerraform(struct!.sendActivityLogs),
+      value: cdktn.booleanToHclTerraform(struct!.sendActivityLogs),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     send_azuread_logs: {
-      value: cdktf.booleanToHclTerraform(struct!.sendAzureadLogs),
+      value: cdktn.booleanToHclTerraform(struct!.sendAzureadLogs),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     send_subscription_logs: {
-      value: cdktf.booleanToHclTerraform(struct!.sendSubscriptionLogs),
+      value: cdktn.booleanToHclTerraform(struct!.sendSubscriptionLogs),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     filtering_tag: {
-      value: cdktf.listMapperHcl(elasticCloudElasticsearchLogsFilteringTagToHclTerraform, true)(struct!.filteringTag),
+      value: cdktn.listMapperHcl(elasticCloudElasticsearchLogsFilteringTagToHclTerraform, true)(struct!.filteringTag),
       isBlock: true,
       type: "list",
       storageClassType: "ElasticCloudElasticsearchLogsFilteringTagList",
@@ -304,14 +304,14 @@ export function elasticCloudElasticsearchLogsToHclTerraform(struct?: ElasticClou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ElasticCloudElasticsearchLogsOutputReference extends cdktf.ComplexObject {
+export class ElasticCloudElasticsearchLogsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -355,11 +355,11 @@ export class ElasticCloudElasticsearchLogsOutputReference extends cdktf.ComplexO
   }
 
   // send_activity_logs - computed: false, optional: true, required: false
-  private _sendActivityLogs?: boolean | cdktf.IResolvable; 
+  private _sendActivityLogs?: boolean | cdktn.IResolvable; 
   public get sendActivityLogs() {
     return this.getBooleanAttribute('send_activity_logs');
   }
-  public set sendActivityLogs(value: boolean | cdktf.IResolvable) {
+  public set sendActivityLogs(value: boolean | cdktn.IResolvable) {
     this._sendActivityLogs = value;
   }
   public resetSendActivityLogs() {
@@ -371,11 +371,11 @@ export class ElasticCloudElasticsearchLogsOutputReference extends cdktf.ComplexO
   }
 
   // send_azuread_logs - computed: false, optional: true, required: false
-  private _sendAzureadLogs?: boolean | cdktf.IResolvable; 
+  private _sendAzureadLogs?: boolean | cdktn.IResolvable; 
   public get sendAzureadLogs() {
     return this.getBooleanAttribute('send_azuread_logs');
   }
-  public set sendAzureadLogs(value: boolean | cdktf.IResolvable) {
+  public set sendAzureadLogs(value: boolean | cdktn.IResolvable) {
     this._sendAzureadLogs = value;
   }
   public resetSendAzureadLogs() {
@@ -387,11 +387,11 @@ export class ElasticCloudElasticsearchLogsOutputReference extends cdktf.ComplexO
   }
 
   // send_subscription_logs - computed: false, optional: true, required: false
-  private _sendSubscriptionLogs?: boolean | cdktf.IResolvable; 
+  private _sendSubscriptionLogs?: boolean | cdktn.IResolvable; 
   public get sendSubscriptionLogs() {
     return this.getBooleanAttribute('send_subscription_logs');
   }
-  public set sendSubscriptionLogs(value: boolean | cdktf.IResolvable) {
+  public set sendSubscriptionLogs(value: boolean | cdktn.IResolvable) {
     this._sendSubscriptionLogs = value;
   }
   public resetSendSubscriptionLogs() {
@@ -407,7 +407,7 @@ export class ElasticCloudElasticsearchLogsOutputReference extends cdktf.ComplexO
   public get filteringTag() {
     return this._filteringTag;
   }
-  public putFilteringTag(value: ElasticCloudElasticsearchLogsFilteringTag[] | cdktf.IResolvable) {
+  public putFilteringTag(value: ElasticCloudElasticsearchLogsFilteringTag[] | cdktn.IResolvable) {
     this._filteringTag.internalValue = value;
   }
   public resetFilteringTag() {
@@ -437,46 +437,46 @@ export interface ElasticCloudElasticsearchTimeouts {
   readonly update?: string;
 }
 
-export function elasticCloudElasticsearchTimeoutsToTerraform(struct?: ElasticCloudElasticsearchTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function elasticCloudElasticsearchTimeoutsToTerraform(struct?: ElasticCloudElasticsearchTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function elasticCloudElasticsearchTimeoutsToHclTerraform(struct?: ElasticCloudElasticsearchTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function elasticCloudElasticsearchTimeoutsToHclTerraform(struct?: ElasticCloudElasticsearchTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -487,19 +487,19 @@ export function elasticCloudElasticsearchTimeoutsToHclTerraform(struct?: Elastic
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ElasticCloudElasticsearchTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ElasticCloudElasticsearchTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ElasticCloudElasticsearchTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ElasticCloudElasticsearchTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -524,7 +524,7 @@ export class ElasticCloudElasticsearchTimeoutsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ElasticCloudElasticsearchTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ElasticCloudElasticsearchTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -533,7 +533,7 @@ export class ElasticCloudElasticsearchTimeoutsOutputReference extends cdktf.Comp
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -615,7 +615,7 @@ export class ElasticCloudElasticsearchTimeoutsOutputReference extends cdktf.Comp
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/elastic_cloud_elasticsearch azurerm_elastic_cloud_elasticsearch}
 */
-export class ElasticCloudElasticsearch extends cdktf.TerraformResource {
+export class ElasticCloudElasticsearch extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -626,14 +626,14 @@ export class ElasticCloudElasticsearch extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ElasticCloudElasticsearch resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ElasticCloudElasticsearch resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ElasticCloudElasticsearch to import
   * @param importFromId The id of the existing ElasticCloudElasticsearch that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/elastic_cloud_elasticsearch#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ElasticCloudElasticsearch to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_elastic_cloud_elasticsearch", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_elastic_cloud_elasticsearch", importId: importFromId, provider });
       }
 
   // ===========
@@ -752,11 +752,11 @@ export class ElasticCloudElasticsearch extends cdktf.TerraformResource {
   }
 
   // monitoring_enabled - computed: false, optional: true, required: false
-  private _monitoringEnabled?: boolean | cdktf.IResolvable; 
+  private _monitoringEnabled?: boolean | cdktn.IResolvable; 
   public get monitoringEnabled() {
     return this.getBooleanAttribute('monitoring_enabled');
   }
-  public set monitoringEnabled(value: boolean | cdktf.IResolvable) {
+  public set monitoringEnabled(value: boolean | cdktn.IResolvable) {
     this._monitoringEnabled = value;
   }
   public resetMonitoringEnabled() {
@@ -860,14 +860,14 @@ export class ElasticCloudElasticsearch extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      elastic_cloud_email_address: cdktf.stringToTerraform(this._elasticCloudEmailAddress),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      monitoring_enabled: cdktf.booleanToTerraform(this._monitoringEnabled),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      sku_name: cdktf.stringToTerraform(this._skuName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      elastic_cloud_email_address: cdktn.stringToTerraform(this._elasticCloudEmailAddress),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      monitoring_enabled: cdktn.booleanToTerraform(this._monitoringEnabled),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      sku_name: cdktn.stringToTerraform(this._skuName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       logs: elasticCloudElasticsearchLogsToTerraform(this._logs.internalValue),
       timeouts: elasticCloudElasticsearchTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -876,49 +876,49 @@ export class ElasticCloudElasticsearch extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       elastic_cloud_email_address: {
-        value: cdktf.stringToHclTerraform(this._elasticCloudEmailAddress),
+        value: cdktn.stringToHclTerraform(this._elasticCloudEmailAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       monitoring_enabled: {
-        value: cdktf.booleanToHclTerraform(this._monitoringEnabled),
+        value: cdktn.booleanToHclTerraform(this._monitoringEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sku_name: {
-        value: cdktf.stringToHclTerraform(this._skuName),
+        value: cdktn.stringToHclTerraform(this._skuName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

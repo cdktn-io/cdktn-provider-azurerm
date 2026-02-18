@@ -7,19 +7,19 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface VirtualWanConfig extends cdktf.TerraformMetaArguments {
+export interface VirtualWanConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_wan#allow_branch_to_branch_traffic VirtualWan#allow_branch_to_branch_traffic}
   */
-  readonly allowBranchToBranchTraffic?: boolean | cdktf.IResolvable;
+  readonly allowBranchToBranchTraffic?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_wan#disable_vpn_encryption VirtualWan#disable_vpn_encryption}
   */
-  readonly disableVpnEncryption?: boolean | cdktf.IResolvable;
+  readonly disableVpnEncryption?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_wan#id VirtualWan#id}
   *
@@ -77,46 +77,46 @@ export interface VirtualWanTimeouts {
   readonly update?: string;
 }
 
-export function virtualWanTimeoutsToTerraform(struct?: VirtualWanTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualWanTimeoutsToTerraform(struct?: VirtualWanTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function virtualWanTimeoutsToHclTerraform(struct?: VirtualWanTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function virtualWanTimeoutsToHclTerraform(struct?: VirtualWanTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -127,19 +127,19 @@ export function virtualWanTimeoutsToHclTerraform(struct?: VirtualWanTimeouts | c
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class VirtualWanTimeoutsOutputReference extends cdktf.ComplexObject {
+export class VirtualWanTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): VirtualWanTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): VirtualWanTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -164,7 +164,7 @@ export class VirtualWanTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: VirtualWanTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: VirtualWanTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -173,7 +173,7 @@ export class VirtualWanTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -255,7 +255,7 @@ export class VirtualWanTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_wan azurerm_virtual_wan}
 */
-export class VirtualWan extends cdktf.TerraformResource {
+export class VirtualWan extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -266,14 +266,14 @@ export class VirtualWan extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VirtualWan resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VirtualWan resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VirtualWan to import
   * @param importFromId The id of the existing VirtualWan that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/virtual_wan#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VirtualWan to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_virtual_wan", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_virtual_wan", importId: importFromId, provider });
       }
 
   // ===========
@@ -320,11 +320,11 @@ export class VirtualWan extends cdktf.TerraformResource {
   // ==========
 
   // allow_branch_to_branch_traffic - computed: false, optional: true, required: false
-  private _allowBranchToBranchTraffic?: boolean | cdktf.IResolvable; 
+  private _allowBranchToBranchTraffic?: boolean | cdktn.IResolvable; 
   public get allowBranchToBranchTraffic() {
     return this.getBooleanAttribute('allow_branch_to_branch_traffic');
   }
-  public set allowBranchToBranchTraffic(value: boolean | cdktf.IResolvable) {
+  public set allowBranchToBranchTraffic(value: boolean | cdktn.IResolvable) {
     this._allowBranchToBranchTraffic = value;
   }
   public resetAllowBranchToBranchTraffic() {
@@ -336,11 +336,11 @@ export class VirtualWan extends cdktf.TerraformResource {
   }
 
   // disable_vpn_encryption - computed: false, optional: true, required: false
-  private _disableVpnEncryption?: boolean | cdktf.IResolvable; 
+  private _disableVpnEncryption?: boolean | cdktn.IResolvable; 
   public get disableVpnEncryption() {
     return this.getBooleanAttribute('disable_vpn_encryption');
   }
-  public set disableVpnEncryption(value: boolean | cdktf.IResolvable) {
+  public set disableVpnEncryption(value: boolean | cdktn.IResolvable) {
     this._disableVpnEncryption = value;
   }
   public resetDisableVpnEncryption() {
@@ -476,15 +476,15 @@ export class VirtualWan extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allow_branch_to_branch_traffic: cdktf.booleanToTerraform(this._allowBranchToBranchTraffic),
-      disable_vpn_encryption: cdktf.booleanToTerraform(this._disableVpnEncryption),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      office365_local_breakout_category: cdktf.stringToTerraform(this._office365LocalBreakoutCategory),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      type: cdktf.stringToTerraform(this._type),
+      allow_branch_to_branch_traffic: cdktn.booleanToTerraform(this._allowBranchToBranchTraffic),
+      disable_vpn_encryption: cdktn.booleanToTerraform(this._disableVpnEncryption),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      office365_local_breakout_category: cdktn.stringToTerraform(this._office365LocalBreakoutCategory),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      type: cdktn.stringToTerraform(this._type),
       timeouts: virtualWanTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -492,55 +492,55 @@ export class VirtualWan extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allow_branch_to_branch_traffic: {
-        value: cdktf.booleanToHclTerraform(this._allowBranchToBranchTraffic),
+        value: cdktn.booleanToHclTerraform(this._allowBranchToBranchTraffic),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       disable_vpn_encryption: {
-        value: cdktf.booleanToHclTerraform(this._disableVpnEncryption),
+        value: cdktn.booleanToHclTerraform(this._disableVpnEncryption),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       office365_local_breakout_category: {
-        value: cdktf.stringToHclTerraform(this._office365LocalBreakoutCategory),
+        value: cdktn.stringToHclTerraform(this._office365LocalBreakoutCategory),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

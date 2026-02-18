@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NetappPoolConfig extends cdktf.TerraformMetaArguments {
+export interface NetappPoolConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_pool#account_name NetappPool#account_name}
   */
@@ -19,7 +19,7 @@ export interface NetappPoolConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_pool#cool_access_enabled NetappPool#cool_access_enabled}
   */
-  readonly coolAccessEnabled?: boolean | cdktf.IResolvable;
+  readonly coolAccessEnabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_pool#custom_throughput_mibps NetappPool#custom_throughput_mibps}
   */
@@ -89,46 +89,46 @@ export interface NetappPoolTimeouts {
   readonly update?: string;
 }
 
-export function netappPoolTimeoutsToTerraform(struct?: NetappPoolTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function netappPoolTimeoutsToTerraform(struct?: NetappPoolTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function netappPoolTimeoutsToHclTerraform(struct?: NetappPoolTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function netappPoolTimeoutsToHclTerraform(struct?: NetappPoolTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -139,19 +139,19 @@ export function netappPoolTimeoutsToHclTerraform(struct?: NetappPoolTimeouts | c
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NetappPoolTimeoutsOutputReference extends cdktf.ComplexObject {
+export class NetappPoolTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NetappPoolTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): NetappPoolTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -176,7 +176,7 @@ export class NetappPoolTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NetappPoolTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NetappPoolTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -185,7 +185,7 @@ export class NetappPoolTimeoutsOutputReference extends cdktf.ComplexObject {
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -267,7 +267,7 @@ export class NetappPoolTimeoutsOutputReference extends cdktf.ComplexObject {
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_pool azurerm_netapp_pool}
 */
-export class NetappPool extends cdktf.TerraformResource {
+export class NetappPool extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -278,14 +278,14 @@ export class NetappPool extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NetappPool resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NetappPool resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetappPool to import
   * @param importFromId The id of the existing NetappPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/netapp_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetappPool to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_netapp_pool", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_netapp_pool", importId: importFromId, provider });
       }
 
   // ===========
@@ -348,11 +348,11 @@ export class NetappPool extends cdktf.TerraformResource {
   }
 
   // cool_access_enabled - computed: false, optional: true, required: false
-  private _coolAccessEnabled?: boolean | cdktf.IResolvable; 
+  private _coolAccessEnabled?: boolean | cdktn.IResolvable; 
   public get coolAccessEnabled() {
     return this.getBooleanAttribute('cool_access_enabled');
   }
-  public set coolAccessEnabled(value: boolean | cdktf.IResolvable) {
+  public set coolAccessEnabled(value: boolean | cdktn.IResolvable) {
     this._coolAccessEnabled = value;
   }
   public resetCoolAccessEnabled() {
@@ -530,18 +530,18 @@ export class NetappPool extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_name: cdktf.stringToTerraform(this._accountName),
-      cool_access_enabled: cdktf.booleanToTerraform(this._coolAccessEnabled),
-      custom_throughput_mibps: cdktf.numberToTerraform(this._customThroughputMibps),
-      encryption_type: cdktf.stringToTerraform(this._encryptionType),
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      qos_type: cdktf.stringToTerraform(this._qosType),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      service_level: cdktf.stringToTerraform(this._serviceLevel),
-      size_in_tb: cdktf.numberToTerraform(this._sizeInTb),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      account_name: cdktn.stringToTerraform(this._accountName),
+      cool_access_enabled: cdktn.booleanToTerraform(this._coolAccessEnabled),
+      custom_throughput_mibps: cdktn.numberToTerraform(this._customThroughputMibps),
+      encryption_type: cdktn.stringToTerraform(this._encryptionType),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      qos_type: cdktn.stringToTerraform(this._qosType),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      service_level: cdktn.stringToTerraform(this._serviceLevel),
+      size_in_tb: cdktn.numberToTerraform(this._sizeInTb),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       timeouts: netappPoolTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -549,73 +549,73 @@ export class NetappPool extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_name: {
-        value: cdktf.stringToHclTerraform(this._accountName),
+        value: cdktn.stringToHclTerraform(this._accountName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cool_access_enabled: {
-        value: cdktf.booleanToHclTerraform(this._coolAccessEnabled),
+        value: cdktn.booleanToHclTerraform(this._coolAccessEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       custom_throughput_mibps: {
-        value: cdktf.numberToHclTerraform(this._customThroughputMibps),
+        value: cdktn.numberToHclTerraform(this._customThroughputMibps),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       encryption_type: {
-        value: cdktf.stringToHclTerraform(this._encryptionType),
+        value: cdktn.stringToHclTerraform(this._encryptionType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       qos_type: {
-        value: cdktf.stringToHclTerraform(this._qosType),
+        value: cdktn.stringToHclTerraform(this._qosType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_level: {
-        value: cdktf.stringToHclTerraform(this._serviceLevel),
+        value: cdktn.stringToHclTerraform(this._serviceLevel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       size_in_tb: {
-        value: cdktf.numberToHclTerraform(this._sizeInTb),
+        value: cdktn.numberToHclTerraform(this._sizeInTb),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

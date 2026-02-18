@@ -7,15 +7,15 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface FrontdoorRulesEngineConfig extends cdktf.TerraformMetaArguments {
+export interface FrontdoorRulesEngineConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/frontdoor_rules_engine#enabled FrontdoorRulesEngine#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/frontdoor_rules_engine#frontdoor_name FrontdoorRulesEngine#frontdoor_name}
   */
@@ -40,7 +40,7 @@ export interface FrontdoorRulesEngineConfig extends cdktf.TerraformMetaArguments
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/frontdoor_rules_engine#rule FrontdoorRulesEngine#rule}
   */
-  readonly rule?: FrontdoorRulesEngineRule[] | cdktf.IResolvable;
+  readonly rule?: FrontdoorRulesEngineRule[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -63,39 +63,39 @@ export interface FrontdoorRulesEngineRuleActionRequestHeader {
   readonly value?: string;
 }
 
-export function frontdoorRulesEngineRuleActionRequestHeaderToTerraform(struct?: FrontdoorRulesEngineRuleActionRequestHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function frontdoorRulesEngineRuleActionRequestHeaderToTerraform(struct?: FrontdoorRulesEngineRuleActionRequestHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    header_action_type: cdktf.stringToTerraform(struct!.headerActionType),
-    header_name: cdktf.stringToTerraform(struct!.headerName),
-    value: cdktf.stringToTerraform(struct!.value),
+    header_action_type: cdktn.stringToTerraform(struct!.headerActionType),
+    header_name: cdktn.stringToTerraform(struct!.headerName),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function frontdoorRulesEngineRuleActionRequestHeaderToHclTerraform(struct?: FrontdoorRulesEngineRuleActionRequestHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function frontdoorRulesEngineRuleActionRequestHeaderToHclTerraform(struct?: FrontdoorRulesEngineRuleActionRequestHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     header_action_type: {
-      value: cdktf.stringToHclTerraform(struct!.headerActionType),
+      value: cdktn.stringToHclTerraform(struct!.headerActionType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     header_name: {
-      value: cdktf.stringToHclTerraform(struct!.headerName),
+      value: cdktn.stringToHclTerraform(struct!.headerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -106,9 +106,9 @@ export function frontdoorRulesEngineRuleActionRequestHeaderToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FrontdoorRulesEngineRuleActionRequestHeaderOutputReference extends cdktf.ComplexObject {
+export class FrontdoorRulesEngineRuleActionRequestHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -116,11 +116,11 @@ export class FrontdoorRulesEngineRuleActionRequestHeaderOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FrontdoorRulesEngineRuleActionRequestHeader | cdktf.IResolvable | undefined {
+  public get internalValue(): FrontdoorRulesEngineRuleActionRequestHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -141,7 +141,7 @@ export class FrontdoorRulesEngineRuleActionRequestHeaderOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FrontdoorRulesEngineRuleActionRequestHeader | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FrontdoorRulesEngineRuleActionRequestHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -149,7 +149,7 @@ export class FrontdoorRulesEngineRuleActionRequestHeaderOutputReference extends 
       this._headerName = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -211,15 +211,15 @@ export class FrontdoorRulesEngineRuleActionRequestHeaderOutputReference extends 
   }
 }
 
-export class FrontdoorRulesEngineRuleActionRequestHeaderList extends cdktf.ComplexList {
-  public internalValue? : FrontdoorRulesEngineRuleActionRequestHeader[] | cdktf.IResolvable
+export class FrontdoorRulesEngineRuleActionRequestHeaderList extends cdktn.ComplexList {
+  public internalValue? : FrontdoorRulesEngineRuleActionRequestHeader[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -245,39 +245,39 @@ export interface FrontdoorRulesEngineRuleActionResponseHeader {
   readonly value?: string;
 }
 
-export function frontdoorRulesEngineRuleActionResponseHeaderToTerraform(struct?: FrontdoorRulesEngineRuleActionResponseHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function frontdoorRulesEngineRuleActionResponseHeaderToTerraform(struct?: FrontdoorRulesEngineRuleActionResponseHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    header_action_type: cdktf.stringToTerraform(struct!.headerActionType),
-    header_name: cdktf.stringToTerraform(struct!.headerName),
-    value: cdktf.stringToTerraform(struct!.value),
+    header_action_type: cdktn.stringToTerraform(struct!.headerActionType),
+    header_name: cdktn.stringToTerraform(struct!.headerName),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function frontdoorRulesEngineRuleActionResponseHeaderToHclTerraform(struct?: FrontdoorRulesEngineRuleActionResponseHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function frontdoorRulesEngineRuleActionResponseHeaderToHclTerraform(struct?: FrontdoorRulesEngineRuleActionResponseHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     header_action_type: {
-      value: cdktf.stringToHclTerraform(struct!.headerActionType),
+      value: cdktn.stringToHclTerraform(struct!.headerActionType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     header_name: {
-      value: cdktf.stringToHclTerraform(struct!.headerName),
+      value: cdktn.stringToHclTerraform(struct!.headerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -288,9 +288,9 @@ export function frontdoorRulesEngineRuleActionResponseHeaderToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FrontdoorRulesEngineRuleActionResponseHeaderOutputReference extends cdktf.ComplexObject {
+export class FrontdoorRulesEngineRuleActionResponseHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -298,11 +298,11 @@ export class FrontdoorRulesEngineRuleActionResponseHeaderOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FrontdoorRulesEngineRuleActionResponseHeader | cdktf.IResolvable | undefined {
+  public get internalValue(): FrontdoorRulesEngineRuleActionResponseHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -323,7 +323,7 @@ export class FrontdoorRulesEngineRuleActionResponseHeaderOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FrontdoorRulesEngineRuleActionResponseHeader | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FrontdoorRulesEngineRuleActionResponseHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -331,7 +331,7 @@ export class FrontdoorRulesEngineRuleActionResponseHeaderOutputReference extends
       this._headerName = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -393,15 +393,15 @@ export class FrontdoorRulesEngineRuleActionResponseHeaderOutputReference extends
   }
 }
 
-export class FrontdoorRulesEngineRuleActionResponseHeaderList extends cdktf.ComplexList {
-  public internalValue? : FrontdoorRulesEngineRuleActionResponseHeader[] | cdktf.IResolvable
+export class FrontdoorRulesEngineRuleActionResponseHeaderList extends cdktn.ComplexList {
+  public internalValue? : FrontdoorRulesEngineRuleActionResponseHeader[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -418,41 +418,41 @@ export interface FrontdoorRulesEngineRuleAction {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/frontdoor_rules_engine#request_header FrontdoorRulesEngine#request_header}
   */
-  readonly requestHeader?: FrontdoorRulesEngineRuleActionRequestHeader[] | cdktf.IResolvable;
+  readonly requestHeader?: FrontdoorRulesEngineRuleActionRequestHeader[] | cdktn.IResolvable;
   /**
   * response_header block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/frontdoor_rules_engine#response_header FrontdoorRulesEngine#response_header}
   */
-  readonly responseHeader?: FrontdoorRulesEngineRuleActionResponseHeader[] | cdktf.IResolvable;
+  readonly responseHeader?: FrontdoorRulesEngineRuleActionResponseHeader[] | cdktn.IResolvable;
 }
 
 export function frontdoorRulesEngineRuleActionToTerraform(struct?: FrontdoorRulesEngineRuleActionOutputReference | FrontdoorRulesEngineRuleAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    request_header: cdktf.listMapper(frontdoorRulesEngineRuleActionRequestHeaderToTerraform, true)(struct!.requestHeader),
-    response_header: cdktf.listMapper(frontdoorRulesEngineRuleActionResponseHeaderToTerraform, true)(struct!.responseHeader),
+    request_header: cdktn.listMapper(frontdoorRulesEngineRuleActionRequestHeaderToTerraform, true)(struct!.requestHeader),
+    response_header: cdktn.listMapper(frontdoorRulesEngineRuleActionResponseHeaderToTerraform, true)(struct!.responseHeader),
   }
 }
 
 
 export function frontdoorRulesEngineRuleActionToHclTerraform(struct?: FrontdoorRulesEngineRuleActionOutputReference | FrontdoorRulesEngineRuleAction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     request_header: {
-      value: cdktf.listMapperHcl(frontdoorRulesEngineRuleActionRequestHeaderToHclTerraform, true)(struct!.requestHeader),
+      value: cdktn.listMapperHcl(frontdoorRulesEngineRuleActionRequestHeaderToHclTerraform, true)(struct!.requestHeader),
       isBlock: true,
       type: "list",
       storageClassType: "FrontdoorRulesEngineRuleActionRequestHeaderList",
     },
     response_header: {
-      value: cdktf.listMapperHcl(frontdoorRulesEngineRuleActionResponseHeaderToHclTerraform, true)(struct!.responseHeader),
+      value: cdktn.listMapperHcl(frontdoorRulesEngineRuleActionResponseHeaderToHclTerraform, true)(struct!.responseHeader),
       isBlock: true,
       type: "list",
       storageClassType: "FrontdoorRulesEngineRuleActionResponseHeaderList",
@@ -463,14 +463,14 @@ export function frontdoorRulesEngineRuleActionToHclTerraform(struct?: FrontdoorR
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FrontdoorRulesEngineRuleActionOutputReference extends cdktf.ComplexObject {
+export class FrontdoorRulesEngineRuleActionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -506,7 +506,7 @@ export class FrontdoorRulesEngineRuleActionOutputReference extends cdktf.Complex
   public get requestHeader() {
     return this._requestHeader;
   }
-  public putRequestHeader(value: FrontdoorRulesEngineRuleActionRequestHeader[] | cdktf.IResolvable) {
+  public putRequestHeader(value: FrontdoorRulesEngineRuleActionRequestHeader[] | cdktn.IResolvable) {
     this._requestHeader.internalValue = value;
   }
   public resetRequestHeader() {
@@ -522,7 +522,7 @@ export class FrontdoorRulesEngineRuleActionOutputReference extends cdktf.Complex
   public get responseHeader() {
     return this._responseHeader;
   }
-  public putResponseHeader(value: FrontdoorRulesEngineRuleActionResponseHeader[] | cdktf.IResolvable) {
+  public putResponseHeader(value: FrontdoorRulesEngineRuleActionResponseHeader[] | cdktn.IResolvable) {
     this._responseHeader.internalValue = value;
   }
   public resetResponseHeader() {
@@ -537,7 +537,7 @@ export interface FrontdoorRulesEngineRuleMatchCondition {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/frontdoor_rules_engine#negate_condition FrontdoorRulesEngine#negate_condition}
   */
-  readonly negateCondition?: boolean | cdktf.IResolvable;
+  readonly negateCondition?: boolean | cdktn.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/frontdoor_rules_engine#operator FrontdoorRulesEngine#operator}
   */
@@ -560,60 +560,60 @@ export interface FrontdoorRulesEngineRuleMatchCondition {
   readonly variable?: string;
 }
 
-export function frontdoorRulesEngineRuleMatchConditionToTerraform(struct?: FrontdoorRulesEngineRuleMatchCondition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function frontdoorRulesEngineRuleMatchConditionToTerraform(struct?: FrontdoorRulesEngineRuleMatchCondition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    negate_condition: cdktf.booleanToTerraform(struct!.negateCondition),
-    operator: cdktf.stringToTerraform(struct!.operator),
-    selector: cdktf.stringToTerraform(struct!.selector),
-    transform: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.transform),
-    value: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.value),
-    variable: cdktf.stringToTerraform(struct!.variable),
+    negate_condition: cdktn.booleanToTerraform(struct!.negateCondition),
+    operator: cdktn.stringToTerraform(struct!.operator),
+    selector: cdktn.stringToTerraform(struct!.selector),
+    transform: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.transform),
+    value: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.value),
+    variable: cdktn.stringToTerraform(struct!.variable),
   }
 }
 
 
-export function frontdoorRulesEngineRuleMatchConditionToHclTerraform(struct?: FrontdoorRulesEngineRuleMatchCondition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function frontdoorRulesEngineRuleMatchConditionToHclTerraform(struct?: FrontdoorRulesEngineRuleMatchCondition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     negate_condition: {
-      value: cdktf.booleanToHclTerraform(struct!.negateCondition),
+      value: cdktn.booleanToHclTerraform(struct!.negateCondition),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     operator: {
-      value: cdktf.stringToHclTerraform(struct!.operator),
+      value: cdktn.stringToHclTerraform(struct!.operator),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     selector: {
-      value: cdktf.stringToHclTerraform(struct!.selector),
+      value: cdktn.stringToHclTerraform(struct!.selector),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     transform: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.transform),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.transform),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     value: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.value),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.value),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     variable: {
-      value: cdktf.stringToHclTerraform(struct!.variable),
+      value: cdktn.stringToHclTerraform(struct!.variable),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -624,9 +624,9 @@ export function frontdoorRulesEngineRuleMatchConditionToHclTerraform(struct?: Fr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FrontdoorRulesEngineRuleMatchConditionOutputReference extends cdktf.ComplexObject {
+export class FrontdoorRulesEngineRuleMatchConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -634,11 +634,11 @@ export class FrontdoorRulesEngineRuleMatchConditionOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FrontdoorRulesEngineRuleMatchCondition | cdktf.IResolvable | undefined {
+  public get internalValue(): FrontdoorRulesEngineRuleMatchCondition | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -671,7 +671,7 @@ export class FrontdoorRulesEngineRuleMatchConditionOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FrontdoorRulesEngineRuleMatchCondition | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FrontdoorRulesEngineRuleMatchCondition | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -682,7 +682,7 @@ export class FrontdoorRulesEngineRuleMatchConditionOutputReference extends cdktf
       this._value = undefined;
       this._variable = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -699,11 +699,11 @@ export class FrontdoorRulesEngineRuleMatchConditionOutputReference extends cdktf
   }
 
   // negate_condition - computed: false, optional: true, required: false
-  private _negateCondition?: boolean | cdktf.IResolvable; 
+  private _negateCondition?: boolean | cdktn.IResolvable; 
   public get negateCondition() {
     return this.getBooleanAttribute('negate_condition');
   }
-  public set negateCondition(value: boolean | cdktf.IResolvable) {
+  public set negateCondition(value: boolean | cdktn.IResolvable) {
     this._negateCondition = value;
   }
   public resetNegateCondition() {
@@ -792,15 +792,15 @@ export class FrontdoorRulesEngineRuleMatchConditionOutputReference extends cdktf
   }
 }
 
-export class FrontdoorRulesEngineRuleMatchConditionList extends cdktf.ComplexList {
-  public internalValue? : FrontdoorRulesEngineRuleMatchCondition[] | cdktf.IResolvable
+export class FrontdoorRulesEngineRuleMatchConditionList extends cdktn.ComplexList {
+  public internalValue? : FrontdoorRulesEngineRuleMatchCondition[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -831,37 +831,37 @@ export interface FrontdoorRulesEngineRule {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/frontdoor_rules_engine#match_condition FrontdoorRulesEngine#match_condition}
   */
-  readonly matchCondition?: FrontdoorRulesEngineRuleMatchCondition[] | cdktf.IResolvable;
+  readonly matchCondition?: FrontdoorRulesEngineRuleMatchCondition[] | cdktn.IResolvable;
 }
 
-export function frontdoorRulesEngineRuleToTerraform(struct?: FrontdoorRulesEngineRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function frontdoorRulesEngineRuleToTerraform(struct?: FrontdoorRulesEngineRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    priority: cdktf.numberToTerraform(struct!.priority),
+    name: cdktn.stringToTerraform(struct!.name),
+    priority: cdktn.numberToTerraform(struct!.priority),
     action: frontdoorRulesEngineRuleActionToTerraform(struct!.action),
-    match_condition: cdktf.listMapper(frontdoorRulesEngineRuleMatchConditionToTerraform, true)(struct!.matchCondition),
+    match_condition: cdktn.listMapper(frontdoorRulesEngineRuleMatchConditionToTerraform, true)(struct!.matchCondition),
   }
 }
 
 
-export function frontdoorRulesEngineRuleToHclTerraform(struct?: FrontdoorRulesEngineRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function frontdoorRulesEngineRuleToHclTerraform(struct?: FrontdoorRulesEngineRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     priority: {
-      value: cdktf.numberToHclTerraform(struct!.priority),
+      value: cdktn.numberToHclTerraform(struct!.priority),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -873,7 +873,7 @@ export function frontdoorRulesEngineRuleToHclTerraform(struct?: FrontdoorRulesEn
       storageClassType: "FrontdoorRulesEngineRuleActionList",
     },
     match_condition: {
-      value: cdktf.listMapperHcl(frontdoorRulesEngineRuleMatchConditionToHclTerraform, true)(struct!.matchCondition),
+      value: cdktn.listMapperHcl(frontdoorRulesEngineRuleMatchConditionToHclTerraform, true)(struct!.matchCondition),
       isBlock: true,
       type: "list",
       storageClassType: "FrontdoorRulesEngineRuleMatchConditionList",
@@ -884,9 +884,9 @@ export function frontdoorRulesEngineRuleToHclTerraform(struct?: FrontdoorRulesEn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FrontdoorRulesEngineRuleOutputReference extends cdktf.ComplexObject {
+export class FrontdoorRulesEngineRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -894,11 +894,11 @@ export class FrontdoorRulesEngineRuleOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): FrontdoorRulesEngineRule | cdktf.IResolvable | undefined {
+  public get internalValue(): FrontdoorRulesEngineRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -923,7 +923,7 @@ export class FrontdoorRulesEngineRuleOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FrontdoorRulesEngineRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FrontdoorRulesEngineRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -932,7 +932,7 @@ export class FrontdoorRulesEngineRuleOutputReference extends cdktf.ComplexObject
       this._action.internalValue = undefined;
       this._matchCondition.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -993,7 +993,7 @@ export class FrontdoorRulesEngineRuleOutputReference extends cdktf.ComplexObject
   public get matchCondition() {
     return this._matchCondition;
   }
-  public putMatchCondition(value: FrontdoorRulesEngineRuleMatchCondition[] | cdktf.IResolvable) {
+  public putMatchCondition(value: FrontdoorRulesEngineRuleMatchCondition[] | cdktn.IResolvable) {
     this._matchCondition.internalValue = value;
   }
   public resetMatchCondition() {
@@ -1005,15 +1005,15 @@ export class FrontdoorRulesEngineRuleOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class FrontdoorRulesEngineRuleList extends cdktf.ComplexList {
-  public internalValue? : FrontdoorRulesEngineRule[] | cdktf.IResolvable
+export class FrontdoorRulesEngineRuleList extends cdktn.ComplexList {
+  public internalValue? : FrontdoorRulesEngineRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1043,46 +1043,46 @@ export interface FrontdoorRulesEngineTimeouts {
   readonly update?: string;
 }
 
-export function frontdoorRulesEngineTimeoutsToTerraform(struct?: FrontdoorRulesEngineTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function frontdoorRulesEngineTimeoutsToTerraform(struct?: FrontdoorRulesEngineTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function frontdoorRulesEngineTimeoutsToHclTerraform(struct?: FrontdoorRulesEngineTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function frontdoorRulesEngineTimeoutsToHclTerraform(struct?: FrontdoorRulesEngineTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1093,19 +1093,19 @@ export function frontdoorRulesEngineTimeoutsToHclTerraform(struct?: FrontdoorRul
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class FrontdoorRulesEngineTimeoutsOutputReference extends cdktf.ComplexObject {
+export class FrontdoorRulesEngineTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): FrontdoorRulesEngineTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): FrontdoorRulesEngineTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1130,7 +1130,7 @@ export class FrontdoorRulesEngineTimeoutsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: FrontdoorRulesEngineTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: FrontdoorRulesEngineTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1139,7 +1139,7 @@ export class FrontdoorRulesEngineTimeoutsOutputReference extends cdktf.ComplexOb
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1221,7 +1221,7 @@ export class FrontdoorRulesEngineTimeoutsOutputReference extends cdktf.ComplexOb
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/frontdoor_rules_engine azurerm_frontdoor_rules_engine}
 */
-export class FrontdoorRulesEngine extends cdktf.TerraformResource {
+export class FrontdoorRulesEngine extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1232,14 +1232,14 @@ export class FrontdoorRulesEngine extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a FrontdoorRulesEngine resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a FrontdoorRulesEngine resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FrontdoorRulesEngine to import
   * @param importFromId The id of the existing FrontdoorRulesEngine that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/frontdoor_rules_engine#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FrontdoorRulesEngine to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_frontdoor_rules_engine", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_frontdoor_rules_engine", importId: importFromId, provider });
       }
 
   // ===========
@@ -1283,11 +1283,11 @@ export class FrontdoorRulesEngine extends cdktf.TerraformResource {
   // ==========
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -1363,7 +1363,7 @@ export class FrontdoorRulesEngine extends cdktf.TerraformResource {
   public get rule() {
     return this._rule;
   }
-  public putRule(value: FrontdoorRulesEngineRule[] | cdktf.IResolvable) {
+  public putRule(value: FrontdoorRulesEngineRule[] | cdktn.IResolvable) {
     this._rule.internalValue = value;
   }
   public resetRule() {
@@ -1396,12 +1396,12 @@ export class FrontdoorRulesEngine extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      frontdoor_name: cdktf.stringToTerraform(this._frontdoorName),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      rule: cdktf.listMapper(frontdoorRulesEngineRuleToTerraform, true)(this._rule.internalValue),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      frontdoor_name: cdktn.stringToTerraform(this._frontdoorName),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      rule: cdktn.listMapper(frontdoorRulesEngineRuleToTerraform, true)(this._rule.internalValue),
       timeouts: frontdoorRulesEngineTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1409,37 +1409,37 @@ export class FrontdoorRulesEngine extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       frontdoor_name: {
-        value: cdktf.stringToHclTerraform(this._frontdoorName),
+        value: cdktn.stringToHclTerraform(this._frontdoorName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rule: {
-        value: cdktf.listMapperHcl(frontdoorRulesEngineRuleToHclTerraform, true)(this._rule.internalValue),
+        value: cdktn.listMapperHcl(frontdoorRulesEngineRuleToHclTerraform, true)(this._rule.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "FrontdoorRulesEngineRuleList",

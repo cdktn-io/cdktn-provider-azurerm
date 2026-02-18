@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface StorageAccountCustomerManagedKeyAConfig extends cdktf.TerraformMetaArguments {
+export interface StorageAccountCustomerManagedKeyAConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_account_customer_managed_key#federated_identity_client_id StorageAccountCustomerManagedKeyA#federated_identity_client_id}
   */
@@ -81,46 +81,46 @@ export interface StorageAccountCustomerManagedKeyTimeouts {
   readonly update?: string;
 }
 
-export function storageAccountCustomerManagedKeyTimeoutsToTerraform(struct?: StorageAccountCustomerManagedKeyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storageAccountCustomerManagedKeyTimeoutsToTerraform(struct?: StorageAccountCustomerManagedKeyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function storageAccountCustomerManagedKeyTimeoutsToHclTerraform(struct?: StorageAccountCustomerManagedKeyTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function storageAccountCustomerManagedKeyTimeoutsToHclTerraform(struct?: StorageAccountCustomerManagedKeyTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -131,19 +131,19 @@ export function storageAccountCustomerManagedKeyTimeoutsToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StorageAccountCustomerManagedKeyTimeoutsOutputReference extends cdktf.ComplexObject {
+export class StorageAccountCustomerManagedKeyTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): StorageAccountCustomerManagedKeyTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): StorageAccountCustomerManagedKeyTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -168,7 +168,7 @@ export class StorageAccountCustomerManagedKeyTimeoutsOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StorageAccountCustomerManagedKeyTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: StorageAccountCustomerManagedKeyTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -177,7 +177,7 @@ export class StorageAccountCustomerManagedKeyTimeoutsOutputReference extends cdk
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -259,7 +259,7 @@ export class StorageAccountCustomerManagedKeyTimeoutsOutputReference extends cdk
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_account_customer_managed_key azurerm_storage_account_customer_managed_key}
 */
-export class StorageAccountCustomerManagedKeyA extends cdktf.TerraformResource {
+export class StorageAccountCustomerManagedKeyA extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -270,14 +270,14 @@ export class StorageAccountCustomerManagedKeyA extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a StorageAccountCustomerManagedKeyA resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a StorageAccountCustomerManagedKeyA resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StorageAccountCustomerManagedKeyA to import
   * @param importFromId The id of the existing StorageAccountCustomerManagedKeyA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/storage_account_customer_managed_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StorageAccountCustomerManagedKeyA to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_storage_account_customer_managed_key", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_storage_account_customer_managed_key", importId: importFromId, provider });
       }
 
   // ===========
@@ -503,16 +503,16 @@ export class StorageAccountCustomerManagedKeyA extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      federated_identity_client_id: cdktf.stringToTerraform(this._federatedIdentityClientId),
-      id: cdktf.stringToTerraform(this._id),
-      key_name: cdktf.stringToTerraform(this._keyName),
-      key_vault_id: cdktf.stringToTerraform(this._keyVaultId),
-      key_vault_key_id: cdktf.stringToTerraform(this._keyVaultKeyId),
-      key_vault_uri: cdktf.stringToTerraform(this._keyVaultUri),
-      key_version: cdktf.stringToTerraform(this._keyVersion),
-      managed_hsm_key_id: cdktf.stringToTerraform(this._managedHsmKeyId),
-      storage_account_id: cdktf.stringToTerraform(this._storageAccountId),
-      user_assigned_identity_id: cdktf.stringToTerraform(this._userAssignedIdentityId),
+      federated_identity_client_id: cdktn.stringToTerraform(this._federatedIdentityClientId),
+      id: cdktn.stringToTerraform(this._id),
+      key_name: cdktn.stringToTerraform(this._keyName),
+      key_vault_id: cdktn.stringToTerraform(this._keyVaultId),
+      key_vault_key_id: cdktn.stringToTerraform(this._keyVaultKeyId),
+      key_vault_uri: cdktn.stringToTerraform(this._keyVaultUri),
+      key_version: cdktn.stringToTerraform(this._keyVersion),
+      managed_hsm_key_id: cdktn.stringToTerraform(this._managedHsmKeyId),
+      storage_account_id: cdktn.stringToTerraform(this._storageAccountId),
+      user_assigned_identity_id: cdktn.stringToTerraform(this._userAssignedIdentityId),
       timeouts: storageAccountCustomerManagedKeyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -520,61 +520,61 @@ export class StorageAccountCustomerManagedKeyA extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       federated_identity_client_id: {
-        value: cdktf.stringToHclTerraform(this._federatedIdentityClientId),
+        value: cdktn.stringToHclTerraform(this._federatedIdentityClientId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_name: {
-        value: cdktf.stringToHclTerraform(this._keyName),
+        value: cdktn.stringToHclTerraform(this._keyName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_vault_id: {
-        value: cdktf.stringToHclTerraform(this._keyVaultId),
+        value: cdktn.stringToHclTerraform(this._keyVaultId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_vault_key_id: {
-        value: cdktf.stringToHclTerraform(this._keyVaultKeyId),
+        value: cdktn.stringToHclTerraform(this._keyVaultKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_vault_uri: {
-        value: cdktf.stringToHclTerraform(this._keyVaultUri),
+        value: cdktn.stringToHclTerraform(this._keyVaultUri),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_version: {
-        value: cdktf.stringToHclTerraform(this._keyVersion),
+        value: cdktn.stringToHclTerraform(this._keyVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       managed_hsm_key_id: {
-        value: cdktf.stringToHclTerraform(this._managedHsmKeyId),
+        value: cdktn.stringToHclTerraform(this._managedHsmKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_account_id: {
-        value: cdktf.stringToHclTerraform(this._storageAccountId),
+        value: cdktn.stringToHclTerraform(this._storageAccountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_assigned_identity_id: {
-        value: cdktf.stringToHclTerraform(this._userAssignedIdentityId),
+        value: cdktn.stringToHclTerraform(this._userAssignedIdentityId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

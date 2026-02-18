@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BlueprintAssignmentConfig extends cdktf.TerraformMetaArguments {
+export interface BlueprintAssignmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/blueprint_assignment#id BlueprintAssignment#id}
   *
@@ -80,31 +80,31 @@ export interface BlueprintAssignmentIdentity {
 }
 
 export function blueprintAssignmentIdentityToTerraform(struct?: BlueprintAssignmentIdentityOutputReference | BlueprintAssignmentIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.identityIds),
-    type: cdktf.stringToTerraform(struct!.type),
+    identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
 export function blueprintAssignmentIdentityToHclTerraform(struct?: BlueprintAssignmentIdentityOutputReference | BlueprintAssignmentIdentity): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.identityIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.identityIds),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -115,14 +115,14 @@ export function blueprintAssignmentIdentityToHclTerraform(struct?: BlueprintAssi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BlueprintAssignmentIdentityOutputReference extends cdktf.ComplexObject {
+export class BlueprintAssignmentIdentityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -156,7 +156,7 @@ export class BlueprintAssignmentIdentityOutputReference extends cdktf.ComplexObj
   // identity_ids - computed: false, optional: true, required: false
   private _identityIds?: string[]; 
   public get identityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_ids'));
   }
   public set identityIds(value: string[]) {
     this._identityIds = value;
@@ -211,46 +211,46 @@ export interface BlueprintAssignmentTimeouts {
   readonly update?: string;
 }
 
-export function blueprintAssignmentTimeoutsToTerraform(struct?: BlueprintAssignmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function blueprintAssignmentTimeoutsToTerraform(struct?: BlueprintAssignmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function blueprintAssignmentTimeoutsToHclTerraform(struct?: BlueprintAssignmentTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function blueprintAssignmentTimeoutsToHclTerraform(struct?: BlueprintAssignmentTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -261,19 +261,19 @@ export function blueprintAssignmentTimeoutsToHclTerraform(struct?: BlueprintAssi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class BlueprintAssignmentTimeoutsOutputReference extends cdktf.ComplexObject {
+export class BlueprintAssignmentTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): BlueprintAssignmentTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): BlueprintAssignmentTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -298,7 +298,7 @@ export class BlueprintAssignmentTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: BlueprintAssignmentTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: BlueprintAssignmentTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -307,7 +307,7 @@ export class BlueprintAssignmentTimeoutsOutputReference extends cdktf.ComplexObj
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -389,7 +389,7 @@ export class BlueprintAssignmentTimeoutsOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/blueprint_assignment azurerm_blueprint_assignment}
 */
-export class BlueprintAssignment extends cdktf.TerraformResource {
+export class BlueprintAssignment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -400,14 +400,14 @@ export class BlueprintAssignment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BlueprintAssignment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BlueprintAssignment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BlueprintAssignment to import
   * @param importFromId The id of the existing BlueprintAssignment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/blueprint_assignment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BlueprintAssignment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_blueprint_assignment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_blueprint_assignment", importId: importFromId, provider });
       }
 
   // ===========
@@ -658,16 +658,16 @@ export class BlueprintAssignment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      lock_exclude_actions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._lockExcludeActions),
-      lock_exclude_principals: cdktf.listMapper(cdktf.stringToTerraform, false)(this._lockExcludePrincipals),
-      lock_mode: cdktf.stringToTerraform(this._lockMode),
-      name: cdktf.stringToTerraform(this._name),
-      parameter_values: cdktf.stringToTerraform(this._parameterValues),
-      resource_groups: cdktf.stringToTerraform(this._resourceGroups),
-      target_subscription_id: cdktf.stringToTerraform(this._targetSubscriptionId),
-      version_id: cdktf.stringToTerraform(this._versionId),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      lock_exclude_actions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._lockExcludeActions),
+      lock_exclude_principals: cdktn.listMapper(cdktn.stringToTerraform, false)(this._lockExcludePrincipals),
+      lock_mode: cdktn.stringToTerraform(this._lockMode),
+      name: cdktn.stringToTerraform(this._name),
+      parameter_values: cdktn.stringToTerraform(this._parameterValues),
+      resource_groups: cdktn.stringToTerraform(this._resourceGroups),
+      target_subscription_id: cdktn.stringToTerraform(this._targetSubscriptionId),
+      version_id: cdktn.stringToTerraform(this._versionId),
       identity: blueprintAssignmentIdentityToTerraform(this._identity.internalValue),
       timeouts: blueprintAssignmentTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -676,61 +676,61 @@ export class BlueprintAssignment extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       lock_exclude_actions: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._lockExcludeActions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._lockExcludeActions),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       lock_exclude_principals: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._lockExcludePrincipals),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._lockExcludePrincipals),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       lock_mode: {
-        value: cdktf.stringToHclTerraform(this._lockMode),
+        value: cdktn.stringToHclTerraform(this._lockMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parameter_values: {
-        value: cdktf.stringToHclTerraform(this._parameterValues),
+        value: cdktn.stringToHclTerraform(this._parameterValues),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_groups: {
-        value: cdktf.stringToHclTerraform(this._resourceGroups),
+        value: cdktn.stringToHclTerraform(this._resourceGroups),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_subscription_id: {
-        value: cdktf.stringToHclTerraform(this._targetSubscriptionId),
+        value: cdktn.stringToHclTerraform(this._targetSubscriptionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       version_id: {
-        value: cdktf.stringToHclTerraform(this._versionId),
+        value: cdktn.stringToHclTerraform(this._versionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

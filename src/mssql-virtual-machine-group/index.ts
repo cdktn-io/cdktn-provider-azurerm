@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MssqlVirtualMachineGroupConfig extends cdktf.TerraformMetaArguments {
+export interface MssqlVirtualMachineGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_virtual_machine_group#id MssqlVirtualMachineGroup#id}
   *
@@ -75,46 +75,46 @@ export interface MssqlVirtualMachineGroupTimeouts {
   readonly update?: string;
 }
 
-export function mssqlVirtualMachineGroupTimeoutsToTerraform(struct?: MssqlVirtualMachineGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mssqlVirtualMachineGroupTimeoutsToTerraform(struct?: MssqlVirtualMachineGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function mssqlVirtualMachineGroupTimeoutsToHclTerraform(struct?: MssqlVirtualMachineGroupTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function mssqlVirtualMachineGroupTimeoutsToHclTerraform(struct?: MssqlVirtualMachineGroupTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -125,19 +125,19 @@ export function mssqlVirtualMachineGroupTimeoutsToHclTerraform(struct?: MssqlVir
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MssqlVirtualMachineGroupTimeoutsOutputReference extends cdktf.ComplexObject {
+export class MssqlVirtualMachineGroupTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MssqlVirtualMachineGroupTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): MssqlVirtualMachineGroupTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -162,7 +162,7 @@ export class MssqlVirtualMachineGroupTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MssqlVirtualMachineGroupTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MssqlVirtualMachineGroupTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -171,7 +171,7 @@ export class MssqlVirtualMachineGroupTimeoutsOutputReference extends cdktf.Compl
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -285,73 +285,73 @@ export interface MssqlVirtualMachineGroupWsfcDomainProfile {
 }
 
 export function mssqlVirtualMachineGroupWsfcDomainProfileToTerraform(struct?: MssqlVirtualMachineGroupWsfcDomainProfileOutputReference | MssqlVirtualMachineGroupWsfcDomainProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cluster_bootstrap_account_name: cdktf.stringToTerraform(struct!.clusterBootstrapAccountName),
-    cluster_operator_account_name: cdktf.stringToTerraform(struct!.clusterOperatorAccountName),
-    cluster_subnet_type: cdktf.stringToTerraform(struct!.clusterSubnetType),
-    fqdn: cdktf.stringToTerraform(struct!.fqdn),
-    organizational_unit_path: cdktf.stringToTerraform(struct!.organizationalUnitPath),
-    sql_service_account_name: cdktf.stringToTerraform(struct!.sqlServiceAccountName),
-    storage_account_primary_key: cdktf.stringToTerraform(struct!.storageAccountPrimaryKey),
-    storage_account_url: cdktf.stringToTerraform(struct!.storageAccountUrl),
+    cluster_bootstrap_account_name: cdktn.stringToTerraform(struct!.clusterBootstrapAccountName),
+    cluster_operator_account_name: cdktn.stringToTerraform(struct!.clusterOperatorAccountName),
+    cluster_subnet_type: cdktn.stringToTerraform(struct!.clusterSubnetType),
+    fqdn: cdktn.stringToTerraform(struct!.fqdn),
+    organizational_unit_path: cdktn.stringToTerraform(struct!.organizationalUnitPath),
+    sql_service_account_name: cdktn.stringToTerraform(struct!.sqlServiceAccountName),
+    storage_account_primary_key: cdktn.stringToTerraform(struct!.storageAccountPrimaryKey),
+    storage_account_url: cdktn.stringToTerraform(struct!.storageAccountUrl),
   }
 }
 
 
 export function mssqlVirtualMachineGroupWsfcDomainProfileToHclTerraform(struct?: MssqlVirtualMachineGroupWsfcDomainProfileOutputReference | MssqlVirtualMachineGroupWsfcDomainProfile): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cluster_bootstrap_account_name: {
-      value: cdktf.stringToHclTerraform(struct!.clusterBootstrapAccountName),
+      value: cdktn.stringToHclTerraform(struct!.clusterBootstrapAccountName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cluster_operator_account_name: {
-      value: cdktf.stringToHclTerraform(struct!.clusterOperatorAccountName),
+      value: cdktn.stringToHclTerraform(struct!.clusterOperatorAccountName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cluster_subnet_type: {
-      value: cdktf.stringToHclTerraform(struct!.clusterSubnetType),
+      value: cdktn.stringToHclTerraform(struct!.clusterSubnetType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     fqdn: {
-      value: cdktf.stringToHclTerraform(struct!.fqdn),
+      value: cdktn.stringToHclTerraform(struct!.fqdn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     organizational_unit_path: {
-      value: cdktf.stringToHclTerraform(struct!.organizationalUnitPath),
+      value: cdktn.stringToHclTerraform(struct!.organizationalUnitPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sql_service_account_name: {
-      value: cdktf.stringToHclTerraform(struct!.sqlServiceAccountName),
+      value: cdktn.stringToHclTerraform(struct!.sqlServiceAccountName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_account_primary_key: {
-      value: cdktf.stringToHclTerraform(struct!.storageAccountPrimaryKey),
+      value: cdktn.stringToHclTerraform(struct!.storageAccountPrimaryKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     storage_account_url: {
-      value: cdktf.stringToHclTerraform(struct!.storageAccountUrl),
+      value: cdktn.stringToHclTerraform(struct!.storageAccountUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -362,14 +362,14 @@ export function mssqlVirtualMachineGroupWsfcDomainProfileToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MssqlVirtualMachineGroupWsfcDomainProfileOutputReference extends cdktf.ComplexObject {
+export class MssqlVirtualMachineGroupWsfcDomainProfileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -562,7 +562,7 @@ export class MssqlVirtualMachineGroupWsfcDomainProfileOutputReference extends cd
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_virtual_machine_group azurerm_mssql_virtual_machine_group}
 */
-export class MssqlVirtualMachineGroup extends cdktf.TerraformResource {
+export class MssqlVirtualMachineGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -573,14 +573,14 @@ export class MssqlVirtualMachineGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MssqlVirtualMachineGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MssqlVirtualMachineGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MssqlVirtualMachineGroup to import
   * @param importFromId The id of the existing MssqlVirtualMachineGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/mssql_virtual_machine_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MssqlVirtualMachineGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_mssql_virtual_machine_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_mssql_virtual_machine_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -757,13 +757,13 @@ export class MssqlVirtualMachineGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      sql_image_offer: cdktf.stringToTerraform(this._sqlImageOffer),
-      sql_image_sku: cdktf.stringToTerraform(this._sqlImageSku),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
+      id: cdktn.stringToTerraform(this._id),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      sql_image_offer: cdktn.stringToTerraform(this._sqlImageOffer),
+      sql_image_sku: cdktn.stringToTerraform(this._sqlImageSku),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       timeouts: mssqlVirtualMachineGroupTimeoutsToTerraform(this._timeouts.internalValue),
       wsfc_domain_profile: mssqlVirtualMachineGroupWsfcDomainProfileToTerraform(this._wsfcDomainProfile.internalValue),
     };
@@ -772,43 +772,43 @@ export class MssqlVirtualMachineGroup extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sql_image_offer: {
-        value: cdktf.stringToHclTerraform(this._sqlImageOffer),
+        value: cdktn.stringToHclTerraform(this._sqlImageOffer),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sql_image_sku: {
-        value: cdktf.stringToHclTerraform(this._sqlImageSku),
+        value: cdktn.stringToHclTerraform(this._sqlImageSku),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

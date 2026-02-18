@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PolicySetDefinitionConfig extends cdktf.TerraformMetaArguments {
+export interface PolicySetDefinitionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/policy_set_definition#description PolicySetDefinition#description}
   */
@@ -52,13 +52,13 @@ export interface PolicySetDefinitionConfig extends cdktf.TerraformMetaArguments 
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/policy_set_definition#policy_definition_group PolicySetDefinition#policy_definition_group}
   */
-  readonly policyDefinitionGroup?: PolicySetDefinitionPolicyDefinitionGroup[] | cdktf.IResolvable;
+  readonly policyDefinitionGroup?: PolicySetDefinitionPolicyDefinitionGroup[] | cdktn.IResolvable;
   /**
   * policy_definition_reference block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/policy_set_definition#policy_definition_reference PolicySetDefinition#policy_definition_reference}
   */
-  readonly policyDefinitionReference: PolicySetDefinitionPolicyDefinitionReference[] | cdktf.IResolvable;
+  readonly policyDefinitionReference: PolicySetDefinitionPolicyDefinitionReference[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -89,53 +89,53 @@ export interface PolicySetDefinitionPolicyDefinitionGroup {
   readonly name: string;
 }
 
-export function policySetDefinitionPolicyDefinitionGroupToTerraform(struct?: PolicySetDefinitionPolicyDefinitionGroup | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function policySetDefinitionPolicyDefinitionGroupToTerraform(struct?: PolicySetDefinitionPolicyDefinitionGroup | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    additional_metadata_resource_id: cdktf.stringToTerraform(struct!.additionalMetadataResourceId),
-    category: cdktf.stringToTerraform(struct!.category),
-    description: cdktf.stringToTerraform(struct!.description),
-    display_name: cdktf.stringToTerraform(struct!.displayName),
-    name: cdktf.stringToTerraform(struct!.name),
+    additional_metadata_resource_id: cdktn.stringToTerraform(struct!.additionalMetadataResourceId),
+    category: cdktn.stringToTerraform(struct!.category),
+    description: cdktn.stringToTerraform(struct!.description),
+    display_name: cdktn.stringToTerraform(struct!.displayName),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function policySetDefinitionPolicyDefinitionGroupToHclTerraform(struct?: PolicySetDefinitionPolicyDefinitionGroup | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function policySetDefinitionPolicyDefinitionGroupToHclTerraform(struct?: PolicySetDefinitionPolicyDefinitionGroup | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     additional_metadata_resource_id: {
-      value: cdktf.stringToHclTerraform(struct!.additionalMetadataResourceId),
+      value: cdktn.stringToHclTerraform(struct!.additionalMetadataResourceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     category: {
-      value: cdktf.stringToHclTerraform(struct!.category),
+      value: cdktn.stringToHclTerraform(struct!.category),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     display_name: {
-      value: cdktf.stringToHclTerraform(struct!.displayName),
+      value: cdktn.stringToHclTerraform(struct!.displayName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -146,9 +146,9 @@ export function policySetDefinitionPolicyDefinitionGroupToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PolicySetDefinitionPolicyDefinitionGroupOutputReference extends cdktf.ComplexObject {
+export class PolicySetDefinitionPolicyDefinitionGroupOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -156,11 +156,11 @@ export class PolicySetDefinitionPolicyDefinitionGroupOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PolicySetDefinitionPolicyDefinitionGroup | cdktf.IResolvable | undefined {
+  public get internalValue(): PolicySetDefinitionPolicyDefinitionGroup | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -189,7 +189,7 @@ export class PolicySetDefinitionPolicyDefinitionGroupOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PolicySetDefinitionPolicyDefinitionGroup | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PolicySetDefinitionPolicyDefinitionGroup | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -199,7 +199,7 @@ export class PolicySetDefinitionPolicyDefinitionGroupOutputReference extends cdk
       this._displayName = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -292,15 +292,15 @@ export class PolicySetDefinitionPolicyDefinitionGroupOutputReference extends cdk
   }
 }
 
-export class PolicySetDefinitionPolicyDefinitionGroupList extends cdktf.ComplexList {
-  public internalValue? : PolicySetDefinitionPolicyDefinitionGroup[] | cdktf.IResolvable
+export class PolicySetDefinitionPolicyDefinitionGroupList extends cdktn.ComplexList {
+  public internalValue? : PolicySetDefinitionPolicyDefinitionGroup[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -334,53 +334,53 @@ export interface PolicySetDefinitionPolicyDefinitionReference {
   readonly version?: string;
 }
 
-export function policySetDefinitionPolicyDefinitionReferenceToTerraform(struct?: PolicySetDefinitionPolicyDefinitionReference | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function policySetDefinitionPolicyDefinitionReferenceToTerraform(struct?: PolicySetDefinitionPolicyDefinitionReference | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    parameter_values: cdktf.stringToTerraform(struct!.parameterValues),
-    policy_definition_id: cdktf.stringToTerraform(struct!.policyDefinitionId),
-    policy_group_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.policyGroupNames),
-    reference_id: cdktf.stringToTerraform(struct!.referenceId),
-    version: cdktf.stringToTerraform(struct!.version),
+    parameter_values: cdktn.stringToTerraform(struct!.parameterValues),
+    policy_definition_id: cdktn.stringToTerraform(struct!.policyDefinitionId),
+    policy_group_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.policyGroupNames),
+    reference_id: cdktn.stringToTerraform(struct!.referenceId),
+    version: cdktn.stringToTerraform(struct!.version),
   }
 }
 
 
-export function policySetDefinitionPolicyDefinitionReferenceToHclTerraform(struct?: PolicySetDefinitionPolicyDefinitionReference | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function policySetDefinitionPolicyDefinitionReferenceToHclTerraform(struct?: PolicySetDefinitionPolicyDefinitionReference | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     parameter_values: {
-      value: cdktf.stringToHclTerraform(struct!.parameterValues),
+      value: cdktn.stringToHclTerraform(struct!.parameterValues),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     policy_definition_id: {
-      value: cdktf.stringToHclTerraform(struct!.policyDefinitionId),
+      value: cdktn.stringToHclTerraform(struct!.policyDefinitionId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     policy_group_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.policyGroupNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.policyGroupNames),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     reference_id: {
-      value: cdktf.stringToHclTerraform(struct!.referenceId),
+      value: cdktn.stringToHclTerraform(struct!.referenceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version: {
-      value: cdktf.stringToHclTerraform(struct!.version),
+      value: cdktn.stringToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -391,9 +391,9 @@ export function policySetDefinitionPolicyDefinitionReferenceToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PolicySetDefinitionPolicyDefinitionReferenceOutputReference extends cdktf.ComplexObject {
+export class PolicySetDefinitionPolicyDefinitionReferenceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -401,11 +401,11 @@ export class PolicySetDefinitionPolicyDefinitionReferenceOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PolicySetDefinitionPolicyDefinitionReference | cdktf.IResolvable | undefined {
+  public get internalValue(): PolicySetDefinitionPolicyDefinitionReference | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -434,7 +434,7 @@ export class PolicySetDefinitionPolicyDefinitionReferenceOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PolicySetDefinitionPolicyDefinitionReference | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PolicySetDefinitionPolicyDefinitionReference | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -444,7 +444,7 @@ export class PolicySetDefinitionPolicyDefinitionReferenceOutputReference extends
       this._referenceId = undefined;
       this._version = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -491,7 +491,7 @@ export class PolicySetDefinitionPolicyDefinitionReferenceOutputReference extends
   // policy_group_names - computed: false, optional: true, required: false
   private _policyGroupNames?: string[]; 
   public get policyGroupNames() {
-    return cdktf.Fn.tolist(this.getListAttribute('policy_group_names'));
+    return cdktn.Fn.tolist(this.getListAttribute('policy_group_names'));
   }
   public set policyGroupNames(value: string[]) {
     this._policyGroupNames = value;
@@ -537,15 +537,15 @@ export class PolicySetDefinitionPolicyDefinitionReferenceOutputReference extends
   }
 }
 
-export class PolicySetDefinitionPolicyDefinitionReferenceList extends cdktf.ComplexList {
-  public internalValue? : PolicySetDefinitionPolicyDefinitionReference[] | cdktf.IResolvable
+export class PolicySetDefinitionPolicyDefinitionReferenceList extends cdktn.ComplexList {
+  public internalValue? : PolicySetDefinitionPolicyDefinitionReference[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -575,46 +575,46 @@ export interface PolicySetDefinitionTimeouts {
   readonly update?: string;
 }
 
-export function policySetDefinitionTimeoutsToTerraform(struct?: PolicySetDefinitionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function policySetDefinitionTimeoutsToTerraform(struct?: PolicySetDefinitionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function policySetDefinitionTimeoutsToHclTerraform(struct?: PolicySetDefinitionTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function policySetDefinitionTimeoutsToHclTerraform(struct?: PolicySetDefinitionTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -625,19 +625,19 @@ export function policySetDefinitionTimeoutsToHclTerraform(struct?: PolicySetDefi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PolicySetDefinitionTimeoutsOutputReference extends cdktf.ComplexObject {
+export class PolicySetDefinitionTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PolicySetDefinitionTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): PolicySetDefinitionTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -662,7 +662,7 @@ export class PolicySetDefinitionTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PolicySetDefinitionTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PolicySetDefinitionTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -671,7 +671,7 @@ export class PolicySetDefinitionTimeoutsOutputReference extends cdktf.ComplexObj
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -753,7 +753,7 @@ export class PolicySetDefinitionTimeoutsOutputReference extends cdktf.ComplexObj
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/policy_set_definition azurerm_policy_set_definition}
 */
-export class PolicySetDefinition extends cdktf.TerraformResource {
+export class PolicySetDefinition extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -764,14 +764,14 @@ export class PolicySetDefinition extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PolicySetDefinition resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PolicySetDefinition resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PolicySetDefinition to import
   * @param importFromId The id of the existing PolicySetDefinition that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/policy_set_definition#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PolicySetDefinition to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_policy_set_definition", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_policy_set_definition", importId: importFromId, provider });
       }
 
   // ===========
@@ -942,7 +942,7 @@ export class PolicySetDefinition extends cdktf.TerraformResource {
   public get policyDefinitionGroup() {
     return this._policyDefinitionGroup;
   }
-  public putPolicyDefinitionGroup(value: PolicySetDefinitionPolicyDefinitionGroup[] | cdktf.IResolvable) {
+  public putPolicyDefinitionGroup(value: PolicySetDefinitionPolicyDefinitionGroup[] | cdktn.IResolvable) {
     this._policyDefinitionGroup.internalValue = value;
   }
   public resetPolicyDefinitionGroup() {
@@ -958,7 +958,7 @@ export class PolicySetDefinition extends cdktf.TerraformResource {
   public get policyDefinitionReference() {
     return this._policyDefinitionReference;
   }
-  public putPolicyDefinitionReference(value: PolicySetDefinitionPolicyDefinitionReference[] | cdktf.IResolvable) {
+  public putPolicyDefinitionReference(value: PolicySetDefinitionPolicyDefinitionReference[] | cdktn.IResolvable) {
     this._policyDefinitionReference.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -988,16 +988,16 @@ export class PolicySetDefinition extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      management_group_id: cdktf.stringToTerraform(this._managementGroupId),
-      metadata: cdktf.stringToTerraform(this._metadata),
-      name: cdktf.stringToTerraform(this._name),
-      parameters: cdktf.stringToTerraform(this._parameters),
-      policy_type: cdktf.stringToTerraform(this._policyType),
-      policy_definition_group: cdktf.listMapper(policySetDefinitionPolicyDefinitionGroupToTerraform, true)(this._policyDefinitionGroup.internalValue),
-      policy_definition_reference: cdktf.listMapper(policySetDefinitionPolicyDefinitionReferenceToTerraform, true)(this._policyDefinitionReference.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      management_group_id: cdktn.stringToTerraform(this._managementGroupId),
+      metadata: cdktn.stringToTerraform(this._metadata),
+      name: cdktn.stringToTerraform(this._name),
+      parameters: cdktn.stringToTerraform(this._parameters),
+      policy_type: cdktn.stringToTerraform(this._policyType),
+      policy_definition_group: cdktn.listMapper(policySetDefinitionPolicyDefinitionGroupToTerraform, true)(this._policyDefinitionGroup.internalValue),
+      policy_definition_reference: cdktn.listMapper(policySetDefinitionPolicyDefinitionReferenceToTerraform, true)(this._policyDefinitionReference.internalValue),
       timeouts: policySetDefinitionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -1005,61 +1005,61 @@ export class PolicySetDefinition extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       management_group_id: {
-        value: cdktf.stringToHclTerraform(this._managementGroupId),
+        value: cdktn.stringToHclTerraform(this._managementGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       metadata: {
-        value: cdktf.stringToHclTerraform(this._metadata),
+        value: cdktn.stringToHclTerraform(this._metadata),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parameters: {
-        value: cdktf.stringToHclTerraform(this._parameters),
+        value: cdktn.stringToHclTerraform(this._parameters),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy_type: {
-        value: cdktf.stringToHclTerraform(this._policyType),
+        value: cdktn.stringToHclTerraform(this._policyType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policy_definition_group: {
-        value: cdktf.listMapperHcl(policySetDefinitionPolicyDefinitionGroupToHclTerraform, true)(this._policyDefinitionGroup.internalValue),
+        value: cdktn.listMapperHcl(policySetDefinitionPolicyDefinitionGroupToHclTerraform, true)(this._policyDefinitionGroup.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "PolicySetDefinitionPolicyDefinitionGroupList",
       },
       policy_definition_reference: {
-        value: cdktf.listMapperHcl(policySetDefinitionPolicyDefinitionReferenceToHclTerraform, true)(this._policyDefinitionReference.internalValue),
+        value: cdktn.listMapperHcl(policySetDefinitionPolicyDefinitionReferenceToHclTerraform, true)(this._policyDefinitionReference.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "PolicySetDefinitionPolicyDefinitionReferenceList",

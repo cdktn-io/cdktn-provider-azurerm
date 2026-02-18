@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataFactoryDatasetPostgresqlConfig extends cdktf.TerraformMetaArguments {
+export interface DataFactoryDatasetPostgresqlConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_dataset_postgresql#additional_properties DataFactoryDatasetPostgresql#additional_properties}
   */
@@ -60,7 +60,7 @@ export interface DataFactoryDatasetPostgresqlConfig extends cdktf.TerraformMetaA
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_dataset_postgresql#schema_column DataFactoryDatasetPostgresql#schema_column}
   */
-  readonly schemaColumn?: DataFactoryDatasetPostgresqlSchemaColumn[] | cdktf.IResolvable;
+  readonly schemaColumn?: DataFactoryDatasetPostgresqlSchemaColumn[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -83,39 +83,39 @@ export interface DataFactoryDatasetPostgresqlSchemaColumn {
   readonly type?: string;
 }
 
-export function dataFactoryDatasetPostgresqlSchemaColumnToTerraform(struct?: DataFactoryDatasetPostgresqlSchemaColumn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryDatasetPostgresqlSchemaColumnToTerraform(struct?: DataFactoryDatasetPostgresqlSchemaColumn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    name: cdktf.stringToTerraform(struct!.name),
-    type: cdktf.stringToTerraform(struct!.type),
+    description: cdktn.stringToTerraform(struct!.description),
+    name: cdktn.stringToTerraform(struct!.name),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function dataFactoryDatasetPostgresqlSchemaColumnToHclTerraform(struct?: DataFactoryDatasetPostgresqlSchemaColumn | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryDatasetPostgresqlSchemaColumnToHclTerraform(struct?: DataFactoryDatasetPostgresqlSchemaColumn | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -126,9 +126,9 @@ export function dataFactoryDatasetPostgresqlSchemaColumnToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryDatasetPostgresqlSchemaColumnOutputReference extends cdktf.ComplexObject {
+export class DataFactoryDatasetPostgresqlSchemaColumnOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -136,11 +136,11 @@ export class DataFactoryDatasetPostgresqlSchemaColumnOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataFactoryDatasetPostgresqlSchemaColumn | cdktf.IResolvable | undefined {
+  public get internalValue(): DataFactoryDatasetPostgresqlSchemaColumn | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -161,7 +161,7 @@ export class DataFactoryDatasetPostgresqlSchemaColumnOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataFactoryDatasetPostgresqlSchemaColumn | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataFactoryDatasetPostgresqlSchemaColumn | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -169,7 +169,7 @@ export class DataFactoryDatasetPostgresqlSchemaColumnOutputReference extends cdk
       this._name = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -228,15 +228,15 @@ export class DataFactoryDatasetPostgresqlSchemaColumnOutputReference extends cdk
   }
 }
 
-export class DataFactoryDatasetPostgresqlSchemaColumnList extends cdktf.ComplexList {
-  public internalValue? : DataFactoryDatasetPostgresqlSchemaColumn[] | cdktf.IResolvable
+export class DataFactoryDatasetPostgresqlSchemaColumnList extends cdktn.ComplexList {
+  public internalValue? : DataFactoryDatasetPostgresqlSchemaColumn[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -266,46 +266,46 @@ export interface DataFactoryDatasetPostgresqlTimeouts {
   readonly update?: string;
 }
 
-export function dataFactoryDatasetPostgresqlTimeoutsToTerraform(struct?: DataFactoryDatasetPostgresqlTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryDatasetPostgresqlTimeoutsToTerraform(struct?: DataFactoryDatasetPostgresqlTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dataFactoryDatasetPostgresqlTimeoutsToHclTerraform(struct?: DataFactoryDatasetPostgresqlTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryDatasetPostgresqlTimeoutsToHclTerraform(struct?: DataFactoryDatasetPostgresqlTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -316,19 +316,19 @@ export function dataFactoryDatasetPostgresqlTimeoutsToHclTerraform(struct?: Data
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryDatasetPostgresqlTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataFactoryDatasetPostgresqlTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataFactoryDatasetPostgresqlTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataFactoryDatasetPostgresqlTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -353,7 +353,7 @@ export class DataFactoryDatasetPostgresqlTimeoutsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataFactoryDatasetPostgresqlTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataFactoryDatasetPostgresqlTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -362,7 +362,7 @@ export class DataFactoryDatasetPostgresqlTimeoutsOutputReference extends cdktf.C
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -444,7 +444,7 @@ export class DataFactoryDatasetPostgresqlTimeoutsOutputReference extends cdktf.C
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_dataset_postgresql azurerm_data_factory_dataset_postgresql}
 */
-export class DataFactoryDatasetPostgresql extends cdktf.TerraformResource {
+export class DataFactoryDatasetPostgresql extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -455,14 +455,14 @@ export class DataFactoryDatasetPostgresql extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataFactoryDatasetPostgresql resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataFactoryDatasetPostgresql resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataFactoryDatasetPostgresql to import
   * @param importFromId The id of the existing DataFactoryDatasetPostgresql that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_dataset_postgresql#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataFactoryDatasetPostgresql to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_factory_dataset_postgresql", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_factory_dataset_postgresql", importId: importFromId, provider });
       }
 
   // ===========
@@ -666,7 +666,7 @@ export class DataFactoryDatasetPostgresql extends cdktf.TerraformResource {
   public get schemaColumn() {
     return this._schemaColumn;
   }
-  public putSchemaColumn(value: DataFactoryDatasetPostgresqlSchemaColumn[] | cdktf.IResolvable) {
+  public putSchemaColumn(value: DataFactoryDatasetPostgresqlSchemaColumn[] | cdktn.IResolvable) {
     this._schemaColumn.internalValue = value;
   }
   public resetSchemaColumn() {
@@ -699,17 +699,17 @@ export class DataFactoryDatasetPostgresql extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      additional_properties: cdktf.hashMapper(cdktf.stringToTerraform)(this._additionalProperties),
-      annotations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._annotations),
-      data_factory_id: cdktf.stringToTerraform(this._dataFactoryId),
-      description: cdktf.stringToTerraform(this._description),
-      folder: cdktf.stringToTerraform(this._folder),
-      id: cdktf.stringToTerraform(this._id),
-      linked_service_name: cdktf.stringToTerraform(this._linkedServiceName),
-      name: cdktf.stringToTerraform(this._name),
-      parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._parameters),
-      table_name: cdktf.stringToTerraform(this._tableName),
-      schema_column: cdktf.listMapper(dataFactoryDatasetPostgresqlSchemaColumnToTerraform, true)(this._schemaColumn.internalValue),
+      additional_properties: cdktn.hashMapper(cdktn.stringToTerraform)(this._additionalProperties),
+      annotations: cdktn.listMapper(cdktn.stringToTerraform, false)(this._annotations),
+      data_factory_id: cdktn.stringToTerraform(this._dataFactoryId),
+      description: cdktn.stringToTerraform(this._description),
+      folder: cdktn.stringToTerraform(this._folder),
+      id: cdktn.stringToTerraform(this._id),
+      linked_service_name: cdktn.stringToTerraform(this._linkedServiceName),
+      name: cdktn.stringToTerraform(this._name),
+      parameters: cdktn.hashMapper(cdktn.stringToTerraform)(this._parameters),
+      table_name: cdktn.stringToTerraform(this._tableName),
+      schema_column: cdktn.listMapper(dataFactoryDatasetPostgresqlSchemaColumnToTerraform, true)(this._schemaColumn.internalValue),
       timeouts: dataFactoryDatasetPostgresqlTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -717,67 +717,67 @@ export class DataFactoryDatasetPostgresql extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       additional_properties: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._additionalProperties),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._additionalProperties),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       annotations: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._annotations),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._annotations),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       data_factory_id: {
-        value: cdktf.stringToHclTerraform(this._dataFactoryId),
+        value: cdktn.stringToHclTerraform(this._dataFactoryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       folder: {
-        value: cdktf.stringToHclTerraform(this._folder),
+        value: cdktn.stringToHclTerraform(this._folder),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       linked_service_name: {
-        value: cdktf.stringToHclTerraform(this._linkedServiceName),
+        value: cdktn.stringToHclTerraform(this._linkedServiceName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parameters: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._parameters),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._parameters),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       table_name: {
-        value: cdktf.stringToHclTerraform(this._tableName),
+        value: cdktn.stringToHclTerraform(this._tableName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schema_column: {
-        value: cdktf.listMapperHcl(dataFactoryDatasetPostgresqlSchemaColumnToHclTerraform, true)(this._schemaColumn.internalValue),
+        value: cdktn.listMapperHcl(dataFactoryDatasetPostgresqlSchemaColumnToHclTerraform, true)(this._schemaColumn.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataFactoryDatasetPostgresqlSchemaColumnList",

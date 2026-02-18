@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataFactoryLinkedServiceAzureDatabricksConfig extends cdktf.TerraformMetaArguments {
+export interface DataFactoryLinkedServiceAzureDatabricksConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_linked_service_azure_databricks#access_token DataFactoryLinkedServiceAzureDatabricks#access_token}
   */
@@ -108,45 +108,45 @@ export interface DataFactoryLinkedServiceAzureDatabricksInstancePool {
 }
 
 export function dataFactoryLinkedServiceAzureDatabricksInstancePoolToTerraform(struct?: DataFactoryLinkedServiceAzureDatabricksInstancePoolOutputReference | DataFactoryLinkedServiceAzureDatabricksInstancePool): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cluster_version: cdktf.stringToTerraform(struct!.clusterVersion),
-    instance_pool_id: cdktf.stringToTerraform(struct!.instancePoolId),
-    max_number_of_workers: cdktf.numberToTerraform(struct!.maxNumberOfWorkers),
-    min_number_of_workers: cdktf.numberToTerraform(struct!.minNumberOfWorkers),
+    cluster_version: cdktn.stringToTerraform(struct!.clusterVersion),
+    instance_pool_id: cdktn.stringToTerraform(struct!.instancePoolId),
+    max_number_of_workers: cdktn.numberToTerraform(struct!.maxNumberOfWorkers),
+    min_number_of_workers: cdktn.numberToTerraform(struct!.minNumberOfWorkers),
   }
 }
 
 
 export function dataFactoryLinkedServiceAzureDatabricksInstancePoolToHclTerraform(struct?: DataFactoryLinkedServiceAzureDatabricksInstancePoolOutputReference | DataFactoryLinkedServiceAzureDatabricksInstancePool): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cluster_version: {
-      value: cdktf.stringToHclTerraform(struct!.clusterVersion),
+      value: cdktn.stringToHclTerraform(struct!.clusterVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     instance_pool_id: {
-      value: cdktf.stringToHclTerraform(struct!.instancePoolId),
+      value: cdktn.stringToHclTerraform(struct!.instancePoolId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max_number_of_workers: {
-      value: cdktf.numberToHclTerraform(struct!.maxNumberOfWorkers),
+      value: cdktn.numberToHclTerraform(struct!.maxNumberOfWorkers),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     min_number_of_workers: {
-      value: cdktf.numberToHclTerraform(struct!.minNumberOfWorkers),
+      value: cdktn.numberToHclTerraform(struct!.minNumberOfWorkers),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -157,14 +157,14 @@ export function dataFactoryLinkedServiceAzureDatabricksInstancePoolToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryLinkedServiceAzureDatabricksInstancePoolOutputReference extends cdktf.ComplexObject {
+export class DataFactoryLinkedServiceAzureDatabricksInstancePoolOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -277,31 +277,31 @@ export interface DataFactoryLinkedServiceAzureDatabricksKeyVaultPassword {
 }
 
 export function dataFactoryLinkedServiceAzureDatabricksKeyVaultPasswordToTerraform(struct?: DataFactoryLinkedServiceAzureDatabricksKeyVaultPasswordOutputReference | DataFactoryLinkedServiceAzureDatabricksKeyVaultPassword): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    linked_service_name: cdktf.stringToTerraform(struct!.linkedServiceName),
-    secret_name: cdktf.stringToTerraform(struct!.secretName),
+    linked_service_name: cdktn.stringToTerraform(struct!.linkedServiceName),
+    secret_name: cdktn.stringToTerraform(struct!.secretName),
   }
 }
 
 
 export function dataFactoryLinkedServiceAzureDatabricksKeyVaultPasswordToHclTerraform(struct?: DataFactoryLinkedServiceAzureDatabricksKeyVaultPasswordOutputReference | DataFactoryLinkedServiceAzureDatabricksKeyVaultPassword): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     linked_service_name: {
-      value: cdktf.stringToHclTerraform(struct!.linkedServiceName),
+      value: cdktn.stringToHclTerraform(struct!.linkedServiceName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_name: {
-      value: cdktf.stringToHclTerraform(struct!.secretName),
+      value: cdktn.stringToHclTerraform(struct!.secretName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -312,14 +312,14 @@ export function dataFactoryLinkedServiceAzureDatabricksKeyVaultPasswordToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryLinkedServiceAzureDatabricksKeyVaultPasswordOutputReference extends cdktf.ComplexObject {
+export class DataFactoryLinkedServiceAzureDatabricksKeyVaultPasswordOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -420,87 +420,87 @@ export interface DataFactoryLinkedServiceAzureDatabricksNewClusterConfig {
 }
 
 export function dataFactoryLinkedServiceAzureDatabricksNewClusterConfigToTerraform(struct?: DataFactoryLinkedServiceAzureDatabricksNewClusterConfigOutputReference | DataFactoryLinkedServiceAzureDatabricksNewClusterConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cluster_version: cdktf.stringToTerraform(struct!.clusterVersion),
-    custom_tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.customTags),
-    driver_node_type: cdktf.stringToTerraform(struct!.driverNodeType),
-    init_scripts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.initScripts),
-    log_destination: cdktf.stringToTerraform(struct!.logDestination),
-    max_number_of_workers: cdktf.numberToTerraform(struct!.maxNumberOfWorkers),
-    min_number_of_workers: cdktf.numberToTerraform(struct!.minNumberOfWorkers),
-    node_type: cdktf.stringToTerraform(struct!.nodeType),
-    spark_config: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.sparkConfig),
-    spark_environment_variables: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.sparkEnvironmentVariables),
+    cluster_version: cdktn.stringToTerraform(struct!.clusterVersion),
+    custom_tags: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.customTags),
+    driver_node_type: cdktn.stringToTerraform(struct!.driverNodeType),
+    init_scripts: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.initScripts),
+    log_destination: cdktn.stringToTerraform(struct!.logDestination),
+    max_number_of_workers: cdktn.numberToTerraform(struct!.maxNumberOfWorkers),
+    min_number_of_workers: cdktn.numberToTerraform(struct!.minNumberOfWorkers),
+    node_type: cdktn.stringToTerraform(struct!.nodeType),
+    spark_config: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.sparkConfig),
+    spark_environment_variables: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.sparkEnvironmentVariables),
   }
 }
 
 
 export function dataFactoryLinkedServiceAzureDatabricksNewClusterConfigToHclTerraform(struct?: DataFactoryLinkedServiceAzureDatabricksNewClusterConfigOutputReference | DataFactoryLinkedServiceAzureDatabricksNewClusterConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cluster_version: {
-      value: cdktf.stringToHclTerraform(struct!.clusterVersion),
+      value: cdktn.stringToHclTerraform(struct!.clusterVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     custom_tags: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.customTags),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.customTags),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     driver_node_type: {
-      value: cdktf.stringToHclTerraform(struct!.driverNodeType),
+      value: cdktn.stringToHclTerraform(struct!.driverNodeType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     init_scripts: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.initScripts),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.initScripts),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     log_destination: {
-      value: cdktf.stringToHclTerraform(struct!.logDestination),
+      value: cdktn.stringToHclTerraform(struct!.logDestination),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max_number_of_workers: {
-      value: cdktf.numberToHclTerraform(struct!.maxNumberOfWorkers),
+      value: cdktn.numberToHclTerraform(struct!.maxNumberOfWorkers),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     min_number_of_workers: {
-      value: cdktf.numberToHclTerraform(struct!.minNumberOfWorkers),
+      value: cdktn.numberToHclTerraform(struct!.minNumberOfWorkers),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     node_type: {
-      value: cdktf.stringToHclTerraform(struct!.nodeType),
+      value: cdktn.stringToHclTerraform(struct!.nodeType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     spark_config: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.sparkConfig),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.sparkConfig),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     spark_environment_variables: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.sparkEnvironmentVariables),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.sparkEnvironmentVariables),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -511,14 +511,14 @@ export function dataFactoryLinkedServiceAzureDatabricksNewClusterConfigToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryLinkedServiceAzureDatabricksNewClusterConfigOutputReference extends cdktf.ComplexObject {
+export class DataFactoryLinkedServiceAzureDatabricksNewClusterConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -770,46 +770,46 @@ export interface DataFactoryLinkedServiceAzureDatabricksTimeouts {
   readonly update?: string;
 }
 
-export function dataFactoryLinkedServiceAzureDatabricksTimeoutsToTerraform(struct?: DataFactoryLinkedServiceAzureDatabricksTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryLinkedServiceAzureDatabricksTimeoutsToTerraform(struct?: DataFactoryLinkedServiceAzureDatabricksTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function dataFactoryLinkedServiceAzureDatabricksTimeoutsToHclTerraform(struct?: DataFactoryLinkedServiceAzureDatabricksTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataFactoryLinkedServiceAzureDatabricksTimeoutsToHclTerraform(struct?: DataFactoryLinkedServiceAzureDatabricksTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -820,19 +820,19 @@ export function dataFactoryLinkedServiceAzureDatabricksTimeoutsToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataFactoryLinkedServiceAzureDatabricksTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataFactoryLinkedServiceAzureDatabricksTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataFactoryLinkedServiceAzureDatabricksTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataFactoryLinkedServiceAzureDatabricksTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -857,7 +857,7 @@ export class DataFactoryLinkedServiceAzureDatabricksTimeoutsOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataFactoryLinkedServiceAzureDatabricksTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataFactoryLinkedServiceAzureDatabricksTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -866,7 +866,7 @@ export class DataFactoryLinkedServiceAzureDatabricksTimeoutsOutputReference exte
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -948,7 +948,7 @@ export class DataFactoryLinkedServiceAzureDatabricksTimeoutsOutputReference exte
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_linked_service_azure_databricks azurerm_data_factory_linked_service_azure_databricks}
 */
-export class DataFactoryLinkedServiceAzureDatabricks extends cdktf.TerraformResource {
+export class DataFactoryLinkedServiceAzureDatabricks extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -959,14 +959,14 @@ export class DataFactoryLinkedServiceAzureDatabricks extends cdktf.TerraformReso
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataFactoryLinkedServiceAzureDatabricks resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataFactoryLinkedServiceAzureDatabricks resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataFactoryLinkedServiceAzureDatabricks to import
   * @param importFromId The id of the existing DataFactoryLinkedServiceAzureDatabricks that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/data_factory_linked_service_azure_databricks#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataFactoryLinkedServiceAzureDatabricks to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_factory_linked_service_azure_databricks", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_data_factory_linked_service_azure_databricks", importId: importFromId, provider });
       }
 
   // ===========
@@ -1271,18 +1271,18 @@ export class DataFactoryLinkedServiceAzureDatabricks extends cdktf.TerraformReso
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_token: cdktf.stringToTerraform(this._accessToken),
-      adb_domain: cdktf.stringToTerraform(this._adbDomain),
-      additional_properties: cdktf.hashMapper(cdktf.stringToTerraform)(this._additionalProperties),
-      annotations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._annotations),
-      data_factory_id: cdktf.stringToTerraform(this._dataFactoryId),
-      description: cdktf.stringToTerraform(this._description),
-      existing_cluster_id: cdktf.stringToTerraform(this._existingClusterId),
-      id: cdktf.stringToTerraform(this._id),
-      integration_runtime_name: cdktf.stringToTerraform(this._integrationRuntimeName),
-      msi_work_space_resource_id: cdktf.stringToTerraform(this._msiWorkSpaceResourceId),
-      name: cdktf.stringToTerraform(this._name),
-      parameters: cdktf.hashMapper(cdktf.stringToTerraform)(this._parameters),
+      access_token: cdktn.stringToTerraform(this._accessToken),
+      adb_domain: cdktn.stringToTerraform(this._adbDomain),
+      additional_properties: cdktn.hashMapper(cdktn.stringToTerraform)(this._additionalProperties),
+      annotations: cdktn.listMapper(cdktn.stringToTerraform, false)(this._annotations),
+      data_factory_id: cdktn.stringToTerraform(this._dataFactoryId),
+      description: cdktn.stringToTerraform(this._description),
+      existing_cluster_id: cdktn.stringToTerraform(this._existingClusterId),
+      id: cdktn.stringToTerraform(this._id),
+      integration_runtime_name: cdktn.stringToTerraform(this._integrationRuntimeName),
+      msi_work_space_resource_id: cdktn.stringToTerraform(this._msiWorkSpaceResourceId),
+      name: cdktn.stringToTerraform(this._name),
+      parameters: cdktn.hashMapper(cdktn.stringToTerraform)(this._parameters),
       instance_pool: dataFactoryLinkedServiceAzureDatabricksInstancePoolToTerraform(this._instancePool.internalValue),
       key_vault_password: dataFactoryLinkedServiceAzureDatabricksKeyVaultPasswordToTerraform(this._keyVaultPassword.internalValue),
       new_cluster_config: dataFactoryLinkedServiceAzureDatabricksNewClusterConfigToTerraform(this._newClusterConfig.internalValue),
@@ -1293,73 +1293,73 @@ export class DataFactoryLinkedServiceAzureDatabricks extends cdktf.TerraformReso
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       access_token: {
-        value: cdktf.stringToHclTerraform(this._accessToken),
+        value: cdktn.stringToHclTerraform(this._accessToken),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       adb_domain: {
-        value: cdktf.stringToHclTerraform(this._adbDomain),
+        value: cdktn.stringToHclTerraform(this._adbDomain),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       additional_properties: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._additionalProperties),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._additionalProperties),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       annotations: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._annotations),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._annotations),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       data_factory_id: {
-        value: cdktf.stringToHclTerraform(this._dataFactoryId),
+        value: cdktn.stringToHclTerraform(this._dataFactoryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       existing_cluster_id: {
-        value: cdktf.stringToHclTerraform(this._existingClusterId),
+        value: cdktn.stringToHclTerraform(this._existingClusterId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       integration_runtime_name: {
-        value: cdktf.stringToHclTerraform(this._integrationRuntimeName),
+        value: cdktn.stringToHclTerraform(this._integrationRuntimeName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       msi_work_space_resource_id: {
-        value: cdktf.stringToHclTerraform(this._msiWorkSpaceResourceId),
+        value: cdktn.stringToHclTerraform(this._msiWorkSpaceResourceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       parameters: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._parameters),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._parameters),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

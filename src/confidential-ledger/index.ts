@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ConfidentialLedgerConfig extends cdktf.TerraformMetaArguments {
+export interface ConfidentialLedgerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/confidential_ledger#id ConfidentialLedger#id}
   *
@@ -44,13 +44,13 @@ export interface ConfidentialLedgerConfig extends cdktf.TerraformMetaArguments {
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/confidential_ledger#azuread_based_service_principal ConfidentialLedger#azuread_based_service_principal}
   */
-  readonly azureadBasedServicePrincipal: ConfidentialLedgerAzureadBasedServicePrincipal[] | cdktf.IResolvable;
+  readonly azureadBasedServicePrincipal: ConfidentialLedgerAzureadBasedServicePrincipal[] | cdktn.IResolvable;
   /**
   * certificate_based_security_principal block
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/confidential_ledger#certificate_based_security_principal ConfidentialLedger#certificate_based_security_principal}
   */
-  readonly certificateBasedSecurityPrincipal?: ConfidentialLedgerCertificateBasedSecurityPrincipal[] | cdktf.IResolvable;
+  readonly certificateBasedSecurityPrincipal?: ConfidentialLedgerCertificateBasedSecurityPrincipal[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
@@ -73,39 +73,39 @@ export interface ConfidentialLedgerAzureadBasedServicePrincipal {
   readonly tenantId: string;
 }
 
-export function confidentialLedgerAzureadBasedServicePrincipalToTerraform(struct?: ConfidentialLedgerAzureadBasedServicePrincipal | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function confidentialLedgerAzureadBasedServicePrincipalToTerraform(struct?: ConfidentialLedgerAzureadBasedServicePrincipal | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ledger_role_name: cdktf.stringToTerraform(struct!.ledgerRoleName),
-    principal_id: cdktf.stringToTerraform(struct!.principalId),
-    tenant_id: cdktf.stringToTerraform(struct!.tenantId),
+    ledger_role_name: cdktn.stringToTerraform(struct!.ledgerRoleName),
+    principal_id: cdktn.stringToTerraform(struct!.principalId),
+    tenant_id: cdktn.stringToTerraform(struct!.tenantId),
   }
 }
 
 
-export function confidentialLedgerAzureadBasedServicePrincipalToHclTerraform(struct?: ConfidentialLedgerAzureadBasedServicePrincipal | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function confidentialLedgerAzureadBasedServicePrincipalToHclTerraform(struct?: ConfidentialLedgerAzureadBasedServicePrincipal | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ledger_role_name: {
-      value: cdktf.stringToHclTerraform(struct!.ledgerRoleName),
+      value: cdktn.stringToHclTerraform(struct!.ledgerRoleName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     principal_id: {
-      value: cdktf.stringToHclTerraform(struct!.principalId),
+      value: cdktn.stringToHclTerraform(struct!.principalId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tenant_id: {
-      value: cdktf.stringToHclTerraform(struct!.tenantId),
+      value: cdktn.stringToHclTerraform(struct!.tenantId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -116,9 +116,9 @@ export function confidentialLedgerAzureadBasedServicePrincipalToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConfidentialLedgerAzureadBasedServicePrincipalOutputReference extends cdktf.ComplexObject {
+export class ConfidentialLedgerAzureadBasedServicePrincipalOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -126,11 +126,11 @@ export class ConfidentialLedgerAzureadBasedServicePrincipalOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ConfidentialLedgerAzureadBasedServicePrincipal | cdktf.IResolvable | undefined {
+  public get internalValue(): ConfidentialLedgerAzureadBasedServicePrincipal | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -151,7 +151,7 @@ export class ConfidentialLedgerAzureadBasedServicePrincipalOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ConfidentialLedgerAzureadBasedServicePrincipal | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ConfidentialLedgerAzureadBasedServicePrincipal | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -159,7 +159,7 @@ export class ConfidentialLedgerAzureadBasedServicePrincipalOutputReference exten
       this._principalId = undefined;
       this._tenantId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -212,15 +212,15 @@ export class ConfidentialLedgerAzureadBasedServicePrincipalOutputReference exten
   }
 }
 
-export class ConfidentialLedgerAzureadBasedServicePrincipalList extends cdktf.ComplexList {
-  public internalValue? : ConfidentialLedgerAzureadBasedServicePrincipal[] | cdktf.IResolvable
+export class ConfidentialLedgerAzureadBasedServicePrincipalList extends cdktn.ComplexList {
+  public internalValue? : ConfidentialLedgerAzureadBasedServicePrincipal[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -242,32 +242,32 @@ export interface ConfidentialLedgerCertificateBasedSecurityPrincipal {
   readonly pemPublicKey: string;
 }
 
-export function confidentialLedgerCertificateBasedSecurityPrincipalToTerraform(struct?: ConfidentialLedgerCertificateBasedSecurityPrincipal | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function confidentialLedgerCertificateBasedSecurityPrincipalToTerraform(struct?: ConfidentialLedgerCertificateBasedSecurityPrincipal | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ledger_role_name: cdktf.stringToTerraform(struct!.ledgerRoleName),
-    pem_public_key: cdktf.stringToTerraform(struct!.pemPublicKey),
+    ledger_role_name: cdktn.stringToTerraform(struct!.ledgerRoleName),
+    pem_public_key: cdktn.stringToTerraform(struct!.pemPublicKey),
   }
 }
 
 
-export function confidentialLedgerCertificateBasedSecurityPrincipalToHclTerraform(struct?: ConfidentialLedgerCertificateBasedSecurityPrincipal | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function confidentialLedgerCertificateBasedSecurityPrincipalToHclTerraform(struct?: ConfidentialLedgerCertificateBasedSecurityPrincipal | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ledger_role_name: {
-      value: cdktf.stringToHclTerraform(struct!.ledgerRoleName),
+      value: cdktn.stringToHclTerraform(struct!.ledgerRoleName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     pem_public_key: {
-      value: cdktf.stringToHclTerraform(struct!.pemPublicKey),
+      value: cdktn.stringToHclTerraform(struct!.pemPublicKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -278,9 +278,9 @@ export function confidentialLedgerCertificateBasedSecurityPrincipalToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConfidentialLedgerCertificateBasedSecurityPrincipalOutputReference extends cdktf.ComplexObject {
+export class ConfidentialLedgerCertificateBasedSecurityPrincipalOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -288,11 +288,11 @@ export class ConfidentialLedgerCertificateBasedSecurityPrincipalOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ConfidentialLedgerCertificateBasedSecurityPrincipal | cdktf.IResolvable | undefined {
+  public get internalValue(): ConfidentialLedgerCertificateBasedSecurityPrincipal | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -309,14 +309,14 @@ export class ConfidentialLedgerCertificateBasedSecurityPrincipalOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ConfidentialLedgerCertificateBasedSecurityPrincipal | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ConfidentialLedgerCertificateBasedSecurityPrincipal | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._ledgerRoleName = undefined;
       this._pemPublicKey = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -355,15 +355,15 @@ export class ConfidentialLedgerCertificateBasedSecurityPrincipalOutputReference 
   }
 }
 
-export class ConfidentialLedgerCertificateBasedSecurityPrincipalList extends cdktf.ComplexList {
-  public internalValue? : ConfidentialLedgerCertificateBasedSecurityPrincipal[] | cdktf.IResolvable
+export class ConfidentialLedgerCertificateBasedSecurityPrincipalList extends cdktn.ComplexList {
+  public internalValue? : ConfidentialLedgerCertificateBasedSecurityPrincipal[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -393,46 +393,46 @@ export interface ConfidentialLedgerTimeouts {
   readonly update?: string;
 }
 
-export function confidentialLedgerTimeoutsToTerraform(struct?: ConfidentialLedgerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function confidentialLedgerTimeoutsToTerraform(struct?: ConfidentialLedgerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    create: cdktf.stringToTerraform(struct!.create),
-    delete: cdktf.stringToTerraform(struct!.delete),
-    read: cdktf.stringToTerraform(struct!.read),
-    update: cdktf.stringToTerraform(struct!.update),
+    create: cdktn.stringToTerraform(struct!.create),
+    delete: cdktn.stringToTerraform(struct!.delete),
+    read: cdktn.stringToTerraform(struct!.read),
+    update: cdktn.stringToTerraform(struct!.update),
   }
 }
 
 
-export function confidentialLedgerTimeoutsToHclTerraform(struct?: ConfidentialLedgerTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function confidentialLedgerTimeoutsToHclTerraform(struct?: ConfidentialLedgerTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     create: {
-      value: cdktf.stringToHclTerraform(struct!.create),
+      value: cdktn.stringToHclTerraform(struct!.create),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     delete: {
-      value: cdktf.stringToHclTerraform(struct!.delete),
+      value: cdktn.stringToHclTerraform(struct!.delete),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     update: {
-      value: cdktf.stringToHclTerraform(struct!.update),
+      value: cdktn.stringToHclTerraform(struct!.update),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -443,19 +443,19 @@ export function confidentialLedgerTimeoutsToHclTerraform(struct?: ConfidentialLe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConfidentialLedgerTimeoutsOutputReference extends cdktf.ComplexObject {
+export class ConfidentialLedgerTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ConfidentialLedgerTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): ConfidentialLedgerTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -480,7 +480,7 @@ export class ConfidentialLedgerTimeoutsOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ConfidentialLedgerTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ConfidentialLedgerTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -489,7 +489,7 @@ export class ConfidentialLedgerTimeoutsOutputReference extends cdktf.ComplexObje
       this._read = undefined;
       this._update = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -571,7 +571,7 @@ export class ConfidentialLedgerTimeoutsOutputReference extends cdktf.ComplexObje
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/confidential_ledger azurerm_confidential_ledger}
 */
-export class ConfidentialLedger extends cdktf.TerraformResource {
+export class ConfidentialLedger extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -582,14 +582,14 @@ export class ConfidentialLedger extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ConfidentialLedger resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ConfidentialLedger resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ConfidentialLedger to import
   * @param importFromId The id of the existing ConfidentialLedger that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/resources/confidential_ledger#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ConfidentialLedger to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_confidential_ledger", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_confidential_ledger", importId: importFromId, provider });
       }
 
   // ===========
@@ -733,7 +733,7 @@ export class ConfidentialLedger extends cdktf.TerraformResource {
   public get azureadBasedServicePrincipal() {
     return this._azureadBasedServicePrincipal;
   }
-  public putAzureadBasedServicePrincipal(value: ConfidentialLedgerAzureadBasedServicePrincipal[] | cdktf.IResolvable) {
+  public putAzureadBasedServicePrincipal(value: ConfidentialLedgerAzureadBasedServicePrincipal[] | cdktn.IResolvable) {
     this._azureadBasedServicePrincipal.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -746,7 +746,7 @@ export class ConfidentialLedger extends cdktf.TerraformResource {
   public get certificateBasedSecurityPrincipal() {
     return this._certificateBasedSecurityPrincipal;
   }
-  public putCertificateBasedSecurityPrincipal(value: ConfidentialLedgerCertificateBasedSecurityPrincipal[] | cdktf.IResolvable) {
+  public putCertificateBasedSecurityPrincipal(value: ConfidentialLedgerCertificateBasedSecurityPrincipal[] | cdktn.IResolvable) {
     this._certificateBasedSecurityPrincipal.internalValue = value;
   }
   public resetCertificateBasedSecurityPrincipal() {
@@ -779,14 +779,14 @@ export class ConfidentialLedger extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      ledger_type: cdktf.stringToTerraform(this._ledgerType),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      resource_group_name: cdktf.stringToTerraform(this._resourceGroupName),
-      tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
-      azuread_based_service_principal: cdktf.listMapper(confidentialLedgerAzureadBasedServicePrincipalToTerraform, true)(this._azureadBasedServicePrincipal.internalValue),
-      certificate_based_security_principal: cdktf.listMapper(confidentialLedgerCertificateBasedSecurityPrincipalToTerraform, true)(this._certificateBasedSecurityPrincipal.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      ledger_type: cdktn.stringToTerraform(this._ledgerType),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      resource_group_name: cdktn.stringToTerraform(this._resourceGroupName),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
+      azuread_based_service_principal: cdktn.listMapper(confidentialLedgerAzureadBasedServicePrincipalToTerraform, true)(this._azureadBasedServicePrincipal.internalValue),
+      certificate_based_security_principal: cdktn.listMapper(confidentialLedgerCertificateBasedSecurityPrincipalToTerraform, true)(this._certificateBasedSecurityPrincipal.internalValue),
       timeouts: confidentialLedgerTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -794,49 +794,49 @@ export class ConfidentialLedger extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ledger_type: {
-        value: cdktf.stringToHclTerraform(this._ledgerType),
+        value: cdktn.stringToHclTerraform(this._ledgerType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource_group_name: {
-        value: cdktf.stringToHclTerraform(this._resourceGroupName),
+        value: cdktn.stringToHclTerraform(this._resourceGroupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._tags),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       azuread_based_service_principal: {
-        value: cdktf.listMapperHcl(confidentialLedgerAzureadBasedServicePrincipalToHclTerraform, true)(this._azureadBasedServicePrincipal.internalValue),
+        value: cdktn.listMapperHcl(confidentialLedgerAzureadBasedServicePrincipalToHclTerraform, true)(this._azureadBasedServicePrincipal.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ConfidentialLedgerAzureadBasedServicePrincipalList",
       },
       certificate_based_security_principal: {
-        value: cdktf.listMapperHcl(confidentialLedgerCertificateBasedSecurityPrincipalToHclTerraform, true)(this._certificateBasedSecurityPrincipal.internalValue),
+        value: cdktn.listMapperHcl(confidentialLedgerCertificateBasedSecurityPrincipalToHclTerraform, true)(this._certificateBasedSecurityPrincipal.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ConfidentialLedgerCertificateBasedSecurityPrincipalList",

@@ -7,11 +7,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataAzurermDevCenterGalleryConfig extends cdktf.TerraformMetaArguments {
+export interface DataAzurermDevCenterGalleryConfig extends cdktn.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/dev_center_gallery#dev_center_id DataAzurermDevCenterGallery#dev_center_id}
   */
@@ -41,25 +41,25 @@ export interface DataAzurermDevCenterGalleryTimeouts {
   readonly read?: string;
 }
 
-export function dataAzurermDevCenterGalleryTimeoutsToTerraform(struct?: DataAzurermDevCenterGalleryTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermDevCenterGalleryTimeoutsToTerraform(struct?: DataAzurermDevCenterGalleryTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
+    read: cdktn.stringToTerraform(struct!.read),
   }
 }
 
 
-export function dataAzurermDevCenterGalleryTimeoutsToHclTerraform(struct?: DataAzurermDevCenterGalleryTimeouts | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataAzurermDevCenterGalleryTimeoutsToHclTerraform(struct?: DataAzurermDevCenterGalleryTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -70,19 +70,19 @@ export function dataAzurermDevCenterGalleryTimeoutsToHclTerraform(struct?: DataA
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataAzurermDevCenterGalleryTimeoutsOutputReference extends cdktf.ComplexObject {
+export class DataAzurermDevCenterGalleryTimeoutsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataAzurermDevCenterGalleryTimeouts | cdktf.IResolvable | undefined {
+  public get internalValue(): DataAzurermDevCenterGalleryTimeouts | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -95,13 +95,13 @@ export class DataAzurermDevCenterGalleryTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataAzurermDevCenterGalleryTimeouts | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataAzurermDevCenterGalleryTimeouts | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._read = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -132,7 +132,7 @@ export class DataAzurermDevCenterGalleryTimeoutsOutputReference extends cdktf.Co
 /**
 * Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/dev_center_gallery azurerm_dev_center_gallery}
 */
-export class DataAzurermDevCenterGallery extends cdktf.TerraformDataSource {
+export class DataAzurermDevCenterGallery extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -143,14 +143,14 @@ export class DataAzurermDevCenterGallery extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataAzurermDevCenterGallery resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataAzurermDevCenterGallery resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermDevCenterGallery to import
   * @param importFromId The id of the existing DataAzurermDevCenterGallery that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/dev_center_gallery#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermDevCenterGallery to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_dev_center_gallery", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "azurerm_dev_center_gallery", importId: importFromId, provider });
       }
 
   // ===========
@@ -259,9 +259,9 @@ export class DataAzurermDevCenterGallery extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      dev_center_id: cdktf.stringToTerraform(this._devCenterId),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
+      dev_center_id: cdktn.stringToTerraform(this._devCenterId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
       timeouts: dataAzurermDevCenterGalleryTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -269,19 +269,19 @@ export class DataAzurermDevCenterGallery extends cdktf.TerraformDataSource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       dev_center_id: {
-        value: cdktf.stringToHclTerraform(this._devCenterId),
+        value: cdktn.stringToHclTerraform(this._devCenterId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
