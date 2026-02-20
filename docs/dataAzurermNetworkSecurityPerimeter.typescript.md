@@ -4,7 +4,7 @@
 
 ### DataAzurermNetworkSecurityPerimeter <a name="DataAzurermNetworkSecurityPerimeter" id="@cdktn/provider-azurerm.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/network_security_perimeter azurerm_network_security_perimeter}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.61.0/docs/data-sources/network_security_perimeter azurerm_network_security_perimeter}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeter.Initializer"></a>
 
@@ -392,7 +392,7 @@ The construct id used in the generated config for the DataAzurermNetworkSecurity
 
 The id of the existing DataAzurermNetworkSecurityPerimeter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/network_security_perimeter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.61.0/docs/data-sources/network_security_perimeter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -696,9 +696,9 @@ const dataAzurermNetworkSecurityPerimeterConfig: dataAzurermNetworkSecurityPerim
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeterConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeterConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeterConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeterConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/network_security_perimeter#name DataAzurermNetworkSecurityPerimeter#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeterConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/network_security_perimeter#resource_group_name DataAzurermNetworkSecurityPerimeter#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/network_security_perimeter#id DataAzurermNetworkSecurityPerimeter#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeterConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.61.0/docs/data-sources/network_security_perimeter#name DataAzurermNetworkSecurityPerimeter#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeterConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.61.0/docs/data-sources/network_security_perimeter#resource_group_name DataAzurermNetworkSecurityPerimeter#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.61.0/docs/data-sources/network_security_perimeter#id DataAzurermNetworkSecurityPerimeter#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeterConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeterTimeouts">DataAzurermNetworkSecurityPerimeterTimeouts</a></code> | timeouts block. |
 
 ---
@@ -781,7 +781,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/network_security_perimeter#name DataAzurermNetworkSecurityPerimeter#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.61.0/docs/data-sources/network_security_perimeter#name DataAzurermNetworkSecurityPerimeter#name}.
 
 ---
 
@@ -793,7 +793,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/network_security_perimeter#resource_group_name DataAzurermNetworkSecurityPerimeter#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.61.0/docs/data-sources/network_security_perimeter#resource_group_name DataAzurermNetworkSecurityPerimeter#resource_group_name}.
 
 ---
 
@@ -805,7 +805,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/network_security_perimeter#id DataAzurermNetworkSecurityPerimeter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.61.0/docs/data-sources/network_security_perimeter#id DataAzurermNetworkSecurityPerimeter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -822,7 +822,7 @@ public readonly timeouts: DataAzurermNetworkSecurityPerimeterTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/network_security_perimeter#timeouts DataAzurermNetworkSecurityPerimeter#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.61.0/docs/data-sources/network_security_perimeter#timeouts DataAzurermNetworkSecurityPerimeter#timeouts}
 
 ---
 
@@ -840,7 +840,7 @@ const dataAzurermNetworkSecurityPerimeterTimeouts: dataAzurermNetworkSecurityPer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeterTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/network_security_perimeter#read DataAzurermNetworkSecurityPerimeter#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetworkSecurityPerimeter.DataAzurermNetworkSecurityPerimeterTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.61.0/docs/data-sources/network_security_perimeter#read DataAzurermNetworkSecurityPerimeter#read}. |
 
 ---
 
@@ -852,7 +852,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.60.0/docs/data-sources/network_security_perimeter#read DataAzurermNetworkSecurityPerimeter#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.61.0/docs/data-sources/network_security_perimeter#read DataAzurermNetworkSecurityPerimeter#read}.
 
 ---
 
