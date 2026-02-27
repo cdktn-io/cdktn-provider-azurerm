@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.61.0/docs/resources/express_route_connection
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.62.0/docs/resources/express_route_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,64 +13,68 @@ import * as cdktn from 'cdktn';
 
 export interface ExpressRouteConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.61.0/docs/resources/express_route_connection#authorization_key ExpressRouteConnection#authorization_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.62.0/docs/resources/express_route_connection#authorization_key ExpressRouteConnection#authorization_key}
   */
   readonly authorizationKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.61.0/docs/resources/express_route_connection#enable_internet_security ExpressRouteConnection#enable_internet_security}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.62.0/docs/resources/express_route_connection#enable_internet_security ExpressRouteConnection#enable_internet_security}
   */
   readonly enableInternetSecurity?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.61.0/docs/resources/express_route_connection#express_route_circuit_peering_id ExpressRouteConnection#express_route_circuit_peering_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.62.0/docs/resources/express_route_connection#express_route_circuit_peering_id ExpressRouteConnection#express_route_circuit_peering_id}
   */
   readonly expressRouteCircuitPeeringId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.61.0/docs/resources/express_route_connection#express_route_gateway_bypass_enabled ExpressRouteConnection#express_route_gateway_bypass_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.62.0/docs/resources/express_route_connection#express_route_gateway_bypass_enabled ExpressRouteConnection#express_route_gateway_bypass_enabled}
   */
   readonly expressRouteGatewayBypassEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.61.0/docs/resources/express_route_connection#express_route_gateway_id ExpressRouteConnection#express_route_gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.62.0/docs/resources/express_route_connection#express_route_gateway_id ExpressRouteConnection#express_route_gateway_id}
   */
   readonly expressRouteGatewayId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.61.0/docs/resources/express_route_connection#id ExpressRouteConnection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.62.0/docs/resources/express_route_connection#id ExpressRouteConnection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.61.0/docs/resources/express_route_connection#name ExpressRouteConnection#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.62.0/docs/resources/express_route_connection#internet_security_enabled ExpressRouteConnection#internet_security_enabled}
+  */
+  readonly internetSecurityEnabled?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.62.0/docs/resources/express_route_connection#name ExpressRouteConnection#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.61.0/docs/resources/express_route_connection#private_link_fast_path_enabled ExpressRouteConnection#private_link_fast_path_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.62.0/docs/resources/express_route_connection#private_link_fast_path_enabled ExpressRouteConnection#private_link_fast_path_enabled}
   */
   readonly privateLinkFastPathEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.61.0/docs/resources/express_route_connection#routing_weight ExpressRouteConnection#routing_weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.62.0/docs/resources/express_route_connection#routing_weight ExpressRouteConnection#routing_weight}
   */
   readonly routingWeight?: number;
   /**
   * routing block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.61.0/docs/resources/express_route_connection#routing ExpressRouteConnection#routing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.62.0/docs/resources/express_route_connection#routing ExpressRouteConnection#routing}
   */
   readonly routing?: ExpressRouteConnectionRouting;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.61.0/docs/resources/express_route_connection#timeouts ExpressRouteConnection#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.62.0/docs/resources/express_route_connection#timeouts ExpressRouteConnection#timeouts}
   */
   readonly timeouts?: ExpressRouteConnectionTimeouts;
 }
 export interface ExpressRouteConnectionRoutingPropagatedRouteTable {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.61.0/docs/resources/express_route_connection#labels ExpressRouteConnection#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.62.0/docs/resources/express_route_connection#labels ExpressRouteConnection#labels}
   */
   readonly labels?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.61.0/docs/resources/express_route_connection#route_table_ids ExpressRouteConnection#route_table_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.62.0/docs/resources/express_route_connection#route_table_ids ExpressRouteConnection#route_table_ids}
   */
   readonly routeTableIds?: string[];
 }
@@ -183,21 +187,21 @@ export class ExpressRouteConnectionRoutingPropagatedRouteTableOutputReference ex
 }
 export interface ExpressRouteConnectionRouting {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.61.0/docs/resources/express_route_connection#associated_route_table_id ExpressRouteConnection#associated_route_table_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.62.0/docs/resources/express_route_connection#associated_route_table_id ExpressRouteConnection#associated_route_table_id}
   */
   readonly associatedRouteTableId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.61.0/docs/resources/express_route_connection#inbound_route_map_id ExpressRouteConnection#inbound_route_map_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.62.0/docs/resources/express_route_connection#inbound_route_map_id ExpressRouteConnection#inbound_route_map_id}
   */
   readonly inboundRouteMapId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.61.0/docs/resources/express_route_connection#outbound_route_map_id ExpressRouteConnection#outbound_route_map_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.62.0/docs/resources/express_route_connection#outbound_route_map_id ExpressRouteConnection#outbound_route_map_id}
   */
   readonly outboundRouteMapId?: string;
   /**
   * propagated_route_table block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.61.0/docs/resources/express_route_connection#propagated_route_table ExpressRouteConnection#propagated_route_table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.62.0/docs/resources/express_route_connection#propagated_route_table ExpressRouteConnection#propagated_route_table}
   */
   readonly propagatedRouteTable?: ExpressRouteConnectionRoutingPropagatedRouteTable;
 }
@@ -368,19 +372,19 @@ export class ExpressRouteConnectionRoutingOutputReference extends cdktn.ComplexO
 }
 export interface ExpressRouteConnectionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.61.0/docs/resources/express_route_connection#create ExpressRouteConnection#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.62.0/docs/resources/express_route_connection#create ExpressRouteConnection#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.61.0/docs/resources/express_route_connection#delete ExpressRouteConnection#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.62.0/docs/resources/express_route_connection#delete ExpressRouteConnection#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.61.0/docs/resources/express_route_connection#read ExpressRouteConnection#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.62.0/docs/resources/express_route_connection#read ExpressRouteConnection#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.61.0/docs/resources/express_route_connection#update ExpressRouteConnection#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.62.0/docs/resources/express_route_connection#update ExpressRouteConnection#update}
   */
   readonly update?: string;
 }
@@ -561,7 +565,7 @@ export class ExpressRouteConnectionTimeoutsOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.61.0/docs/resources/express_route_connection azurerm_express_route_connection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.62.0/docs/resources/express_route_connection azurerm_express_route_connection}
 */
 export class ExpressRouteConnection extends cdktn.TerraformResource {
 
@@ -577,7 +581,7 @@ export class ExpressRouteConnection extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ExpressRouteConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ExpressRouteConnection to import
-  * @param importFromId The id of the existing ExpressRouteConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.61.0/docs/resources/express_route_connection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ExpressRouteConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.62.0/docs/resources/express_route_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ExpressRouteConnection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -589,7 +593,7 @@ export class ExpressRouteConnection extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.61.0/docs/resources/express_route_connection azurerm_express_route_connection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.62.0/docs/resources/express_route_connection azurerm_express_route_connection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -600,7 +604,7 @@ export class ExpressRouteConnection extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_express_route_connection',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.61.0',
+        providerVersion: '4.62.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -617,6 +621,7 @@ export class ExpressRouteConnection extends cdktn.TerraformResource {
     this._expressRouteGatewayBypassEnabled = config.expressRouteGatewayBypassEnabled;
     this._expressRouteGatewayId = config.expressRouteGatewayId;
     this._id = config.id;
+    this._internetSecurityEnabled = config.internetSecurityEnabled;
     this._name = config.name;
     this._privateLinkFastPathEnabled = config.privateLinkFastPathEnabled;
     this._routingWeight = config.routingWeight;
@@ -644,7 +649,7 @@ export class ExpressRouteConnection extends cdktn.TerraformResource {
     return this._authorizationKey;
   }
 
-  // enable_internet_security - computed: false, optional: true, required: false
+  // enable_internet_security - computed: true, optional: true, required: false
   private _enableInternetSecurity?: boolean | cdktn.IResolvable; 
   public get enableInternetSecurity() {
     return this.getBooleanAttribute('enable_internet_security');
@@ -716,6 +721,22 @@ export class ExpressRouteConnection extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // internet_security_enabled - computed: true, optional: true, required: false
+  private _internetSecurityEnabled?: boolean | cdktn.IResolvable; 
+  public get internetSecurityEnabled() {
+    return this.getBooleanAttribute('internet_security_enabled');
+  }
+  public set internetSecurityEnabled(value: boolean | cdktn.IResolvable) {
+    this._internetSecurityEnabled = value;
+  }
+  public resetInternetSecurityEnabled() {
+    this._internetSecurityEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get internetSecurityEnabledInput() {
+    return this._internetSecurityEnabled;
   }
 
   // name - computed: false, optional: false, required: true
@@ -807,6 +828,7 @@ export class ExpressRouteConnection extends cdktn.TerraformResource {
       express_route_gateway_bypass_enabled: cdktn.booleanToTerraform(this._expressRouteGatewayBypassEnabled),
       express_route_gateway_id: cdktn.stringToTerraform(this._expressRouteGatewayId),
       id: cdktn.stringToTerraform(this._id),
+      internet_security_enabled: cdktn.booleanToTerraform(this._internetSecurityEnabled),
       name: cdktn.stringToTerraform(this._name),
       private_link_fast_path_enabled: cdktn.booleanToTerraform(this._privateLinkFastPathEnabled),
       routing_weight: cdktn.numberToTerraform(this._routingWeight),
@@ -852,6 +874,12 @@ export class ExpressRouteConnection extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      internet_security_enabled: {
+        value: cdktn.booleanToHclTerraform(this._internetSecurityEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       name: {
         value: cdktn.stringToHclTerraform(this._name),
