@@ -1,3 +1,3 @@
 # `azurerm_firewall_policy_rule_collection_group`
 
-Refer to the Terraform Registry for docs: [`azurerm_firewall_policy_rule_collection_group`](https://registry.terraform.io/providers/hashicorp/azurerm/4.62.1/docs/resources/firewall_policy_rule_collection_group).
+Refer to the Terraform Registry for docs: [`azurerm_firewall_policy_rule_collection_group`](https://registry.terraform.io/providers/hashicorp/azurerm/4.63.0/docs/resources/firewall_policy_rule_collection_group).

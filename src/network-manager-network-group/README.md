@@ -1,3 +1,3 @@
 # `azurerm_network_manager_network_group`
 
-Refer to the Terraform Registry for docs: [`azurerm_network_manager_network_group`](https://registry.terraform.io/providers/hashicorp/azurerm/4.62.1/docs/resources/network_manager_network_group).
+Refer to the Terraform Registry for docs: [`azurerm_network_manager_network_group`](https://registry.terraform.io/providers/hashicorp/azurerm/4.63.0/docs/resources/network_manager_network_group).
