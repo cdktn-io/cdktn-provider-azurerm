@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.63.0/docs/data-sources/kubernetes_cluster
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/data-sources/kubernetes_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktn from 'cdktn';
 
 export interface DataAzurermKubernetesClusterConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.63.0/docs/data-sources/kubernetes_cluster#id DataAzurermKubernetesCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/data-sources/kubernetes_cluster#id DataAzurermKubernetesCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.63.0/docs/data-sources/kubernetes_cluster#name DataAzurermKubernetesCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/data-sources/kubernetes_cluster#name DataAzurermKubernetesCluster#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.63.0/docs/data-sources/kubernetes_cluster#resource_group_name DataAzurermKubernetesCluster#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/data-sources/kubernetes_cluster#resource_group_name DataAzurermKubernetesCluster#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.63.0/docs/data-sources/kubernetes_cluster#timeouts DataAzurermKubernetesCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/data-sources/kubernetes_cluster#timeouts DataAzurermKubernetesCluster#timeouts}
   */
   readonly timeouts?: DataAzurermKubernetesClusterTimeouts;
 }
@@ -455,6 +455,86 @@ export class DataAzurermKubernetesClusterAzureActiveDirectoryRoleBasedAccessCont
   */
   public get(index: number): DataAzurermKubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference {
     return new DataAzurermKubernetesClusterAzureActiveDirectoryRoleBasedAccessControlOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAzurermKubernetesClusterBootstrapProfile {
+}
+
+export function dataAzurermKubernetesClusterBootstrapProfileToTerraform(struct?: DataAzurermKubernetesClusterBootstrapProfile): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAzurermKubernetesClusterBootstrapProfileToHclTerraform(struct?: DataAzurermKubernetesClusterBootstrapProfile): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAzurermKubernetesClusterBootstrapProfileOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAzurermKubernetesClusterBootstrapProfile | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAzurermKubernetesClusterBootstrapProfile | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // artifact_source - computed: true, optional: false, required: false
+  public get artifactSource() {
+    return this.getStringAttribute('artifact_source');
+  }
+
+  // container_registry_id - computed: true, optional: false, required: false
+  public get containerRegistryId() {
+    return this.getStringAttribute('container_registry_id');
+  }
+}
+
+export class DataAzurermKubernetesClusterBootstrapProfileList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAzurermKubernetesClusterBootstrapProfileOutputReference {
+    return new DataAzurermKubernetesClusterBootstrapProfileOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataAzurermKubernetesClusterIdentity {
@@ -1576,6 +1656,11 @@ export class DataAzurermKubernetesClusterNetworkProfileOutputReference extends c
     return this.getStringAttribute('network_policy');
   }
 
+  // outbound_type - computed: true, optional: false, required: false
+  public get outboundType() {
+    return this.getStringAttribute('outbound_type');
+  }
+
   // pod_cidr - computed: true, optional: false, required: false
   public get podCidr() {
     return this.getStringAttribute('pod_cidr');
@@ -2209,7 +2294,7 @@ export class DataAzurermKubernetesClusterWindowsProfileList extends cdktn.Comple
 }
 export interface DataAzurermKubernetesClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.63.0/docs/data-sources/kubernetes_cluster#read DataAzurermKubernetesCluster#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/data-sources/kubernetes_cluster#read DataAzurermKubernetesCluster#read}
   */
   readonly read?: string;
 }
@@ -2303,7 +2388,7 @@ export class DataAzurermKubernetesClusterTimeoutsOutputReference extends cdktn.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.63.0/docs/data-sources/kubernetes_cluster azurerm_kubernetes_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/data-sources/kubernetes_cluster azurerm_kubernetes_cluster}
 */
 export class DataAzurermKubernetesCluster extends cdktn.TerraformDataSource {
 
@@ -2319,7 +2404,7 @@ export class DataAzurermKubernetesCluster extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAzurermKubernetesCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermKubernetesCluster to import
-  * @param importFromId The id of the existing DataAzurermKubernetesCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.63.0/docs/data-sources/kubernetes_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzurermKubernetesCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/data-sources/kubernetes_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermKubernetesCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2331,7 +2416,7 @@ export class DataAzurermKubernetesCluster extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.63.0/docs/data-sources/kubernetes_cluster azurerm_kubernetes_cluster} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/data-sources/kubernetes_cluster azurerm_kubernetes_cluster} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2342,7 +2427,7 @@ export class DataAzurermKubernetesCluster extends cdktn.TerraformDataSource {
       terraformResourceType: 'azurerm_kubernetes_cluster',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.63.0',
+        providerVersion: '4.64.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -2389,6 +2474,12 @@ export class DataAzurermKubernetesCluster extends cdktn.TerraformDataSource {
   // azure_policy_enabled - computed: true, optional: false, required: false
   public get azurePolicyEnabled() {
     return this.getBooleanAttribute('azure_policy_enabled');
+  }
+
+  // bootstrap_profile - computed: true, optional: false, required: false
+  private _bootstrapProfile = new DataAzurermKubernetesClusterBootstrapProfileList(this, "bootstrap_profile", false);
+  public get bootstrapProfile() {
+    return this._bootstrapProfile;
   }
 
   // current_kubernetes_version - computed: true, optional: false, required: false
