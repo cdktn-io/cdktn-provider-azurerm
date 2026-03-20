@@ -4,7 +4,7 @@
 
 ### DashboardGrafana <a name="DashboardGrafana" id="@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafana"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana azurerm_dashboard_grafana}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana azurerm_dashboard_grafana}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafana.Initializer"></a>
 
@@ -625,7 +625,7 @@ The construct id used in the generated config for the DashboardGrafana to import
 
 The id of the existing DashboardGrafana that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1219,7 +1219,7 @@ const dashboardGrafanaAzureMonitorWorkspaceIntegrations: dashboardGrafana.Dashbo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaAzureMonitorWorkspaceIntegrations.property.resourceId">resourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#resource_id DashboardGrafana#resource_id}. |
+| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaAzureMonitorWorkspaceIntegrations.property.resourceId">resourceId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#resource_id DashboardGrafana#resource_id}. |
 
 ---
 
@@ -1231,7 +1231,7 @@ public readonly resourceId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#resource_id DashboardGrafana#resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#resource_id DashboardGrafana#resource_id}.
 
 ---
 
@@ -1256,22 +1256,22 @@ const dashboardGrafanaConfig: dashboardGrafana.DashboardGrafanaConfig = { ... }
 | <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaConfig.property.grafanaMajorVersion">grafanaMajorVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#grafana_major_version DashboardGrafana#grafana_major_version}. |
-| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#location DashboardGrafana#location}. |
-| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#name DashboardGrafana#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#resource_group_name DashboardGrafana#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaConfig.property.apiKeyEnabled">apiKeyEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#api_key_enabled DashboardGrafana#api_key_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaConfig.property.autoGeneratedDomainNameLabelScope">autoGeneratedDomainNameLabelScope</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#auto_generated_domain_name_label_scope DashboardGrafana#auto_generated_domain_name_label_scope}. |
+| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaConfig.property.grafanaMajorVersion">grafanaMajorVersion</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#grafana_major_version DashboardGrafana#grafana_major_version}. |
+| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#location DashboardGrafana#location}. |
+| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#name DashboardGrafana#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#resource_group_name DashboardGrafana#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaConfig.property.apiKeyEnabled">apiKeyEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#api_key_enabled DashboardGrafana#api_key_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaConfig.property.autoGeneratedDomainNameLabelScope">autoGeneratedDomainNameLabelScope</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#auto_generated_domain_name_label_scope DashboardGrafana#auto_generated_domain_name_label_scope}. |
 | <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaConfig.property.azureMonitorWorkspaceIntegrations">azureMonitorWorkspaceIntegrations</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaAzureMonitorWorkspaceIntegrations">DashboardGrafanaAzureMonitorWorkspaceIntegrations</a>[]</code> | azure_monitor_workspace_integrations block. |
-| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaConfig.property.deterministicOutboundIpEnabled">deterministicOutboundIpEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#deterministic_outbound_ip_enabled DashboardGrafana#deterministic_outbound_ip_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#id DashboardGrafana#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaConfig.property.deterministicOutboundIpEnabled">deterministicOutboundIpEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#deterministic_outbound_ip_enabled DashboardGrafana#deterministic_outbound_ip_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#id DashboardGrafana#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaConfig.property.identity">identity</a></code> | <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaIdentity">DashboardGrafanaIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaConfig.property.publicNetworkAccessEnabled">publicNetworkAccessEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#public_network_access_enabled DashboardGrafana#public_network_access_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaConfig.property.sku">sku</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#sku DashboardGrafana#sku}. |
+| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaConfig.property.publicNetworkAccessEnabled">publicNetworkAccessEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#public_network_access_enabled DashboardGrafana#public_network_access_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaConfig.property.sku">sku</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#sku DashboardGrafana#sku}. |
 | <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaConfig.property.smtp">smtp</a></code> | <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaSmtp">DashboardGrafanaSmtp</a></code> | smtp block. |
-| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#tags DashboardGrafana#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#tags DashboardGrafana#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaTimeouts">DashboardGrafanaTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaConfig.property.zoneRedundancyEnabled">zoneRedundancyEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#zone_redundancy_enabled DashboardGrafana#zone_redundancy_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaConfig.property.zoneRedundancyEnabled">zoneRedundancyEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#zone_redundancy_enabled DashboardGrafana#zone_redundancy_enabled}. |
 
 ---
 
@@ -1353,7 +1353,7 @@ public readonly grafanaMajorVersion: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#grafana_major_version DashboardGrafana#grafana_major_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#grafana_major_version DashboardGrafana#grafana_major_version}.
 
 ---
 
@@ -1365,7 +1365,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#location DashboardGrafana#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#location DashboardGrafana#location}.
 
 ---
 
@@ -1377,7 +1377,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#name DashboardGrafana#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#name DashboardGrafana#name}.
 
 ---
 
@@ -1389,7 +1389,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#resource_group_name DashboardGrafana#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#resource_group_name DashboardGrafana#resource_group_name}.
 
 ---
 
@@ -1401,7 +1401,7 @@ public readonly apiKeyEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#api_key_enabled DashboardGrafana#api_key_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#api_key_enabled DashboardGrafana#api_key_enabled}.
 
 ---
 
@@ -1413,7 +1413,7 @@ public readonly autoGeneratedDomainNameLabelScope: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#auto_generated_domain_name_label_scope DashboardGrafana#auto_generated_domain_name_label_scope}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#auto_generated_domain_name_label_scope DashboardGrafana#auto_generated_domain_name_label_scope}.
 
 ---
 
@@ -1427,7 +1427,7 @@ public readonly azureMonitorWorkspaceIntegrations: IResolvable | DashboardGrafan
 
 azure_monitor_workspace_integrations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#azure_monitor_workspace_integrations DashboardGrafana#azure_monitor_workspace_integrations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#azure_monitor_workspace_integrations DashboardGrafana#azure_monitor_workspace_integrations}
 
 ---
 
@@ -1439,7 +1439,7 @@ public readonly deterministicOutboundIpEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#deterministic_outbound_ip_enabled DashboardGrafana#deterministic_outbound_ip_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#deterministic_outbound_ip_enabled DashboardGrafana#deterministic_outbound_ip_enabled}.
 
 ---
 
@@ -1451,7 +1451,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#id DashboardGrafana#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#id DashboardGrafana#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1468,7 +1468,7 @@ public readonly identity: DashboardGrafanaIdentity;
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#identity DashboardGrafana#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#identity DashboardGrafana#identity}
 
 ---
 
@@ -1480,7 +1480,7 @@ public readonly publicNetworkAccessEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#public_network_access_enabled DashboardGrafana#public_network_access_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#public_network_access_enabled DashboardGrafana#public_network_access_enabled}.
 
 ---
 
@@ -1492,7 +1492,7 @@ public readonly sku: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#sku DashboardGrafana#sku}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#sku DashboardGrafana#sku}.
 
 ---
 
@@ -1506,7 +1506,7 @@ public readonly smtp: DashboardGrafanaSmtp;
 
 smtp block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#smtp DashboardGrafana#smtp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#smtp DashboardGrafana#smtp}
 
 ---
 
@@ -1518,7 +1518,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#tags DashboardGrafana#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#tags DashboardGrafana#tags}.
 
 ---
 
@@ -1532,7 +1532,7 @@ public readonly timeouts: DashboardGrafanaTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#timeouts DashboardGrafana#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#timeouts DashboardGrafana#timeouts}
 
 ---
 
@@ -1544,7 +1544,7 @@ public readonly zoneRedundancyEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#zone_redundancy_enabled DashboardGrafana#zone_redundancy_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#zone_redundancy_enabled DashboardGrafana#zone_redundancy_enabled}.
 
 ---
 
@@ -1562,8 +1562,8 @@ const dashboardGrafanaIdentity: dashboardGrafana.DashboardGrafanaIdentity = { ..
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaIdentity.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#type DashboardGrafana#type}. |
-| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaIdentity.property.identityIds">identityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#identity_ids DashboardGrafana#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaIdentity.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#type DashboardGrafana#type}. |
+| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaIdentity.property.identityIds">identityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#identity_ids DashboardGrafana#identity_ids}. |
 
 ---
 
@@ -1575,7 +1575,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#type DashboardGrafana#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#type DashboardGrafana#type}.
 
 ---
 
@@ -1587,7 +1587,7 @@ public readonly identityIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#identity_ids DashboardGrafana#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#identity_ids DashboardGrafana#identity_ids}.
 
 ---
 
@@ -1605,14 +1605,14 @@ const dashboardGrafanaSmtp: dashboardGrafana.DashboardGrafanaSmtp = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaSmtp.property.fromAddress">fromAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#from_address DashboardGrafana#from_address}. |
-| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaSmtp.property.host">host</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#host DashboardGrafana#host}. |
-| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaSmtp.property.password">password</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#password DashboardGrafana#password}. |
-| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaSmtp.property.startTlsPolicy">startTlsPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#start_tls_policy DashboardGrafana#start_tls_policy}. |
-| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaSmtp.property.user">user</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#user DashboardGrafana#user}. |
-| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaSmtp.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#enabled DashboardGrafana#enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaSmtp.property.fromName">fromName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#from_name DashboardGrafana#from_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaSmtp.property.verificationSkipEnabled">verificationSkipEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#verification_skip_enabled DashboardGrafana#verification_skip_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaSmtp.property.fromAddress">fromAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#from_address DashboardGrafana#from_address}. |
+| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaSmtp.property.host">host</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#host DashboardGrafana#host}. |
+| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaSmtp.property.password">password</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#password DashboardGrafana#password}. |
+| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaSmtp.property.startTlsPolicy">startTlsPolicy</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#start_tls_policy DashboardGrafana#start_tls_policy}. |
+| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaSmtp.property.user">user</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#user DashboardGrafana#user}. |
+| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaSmtp.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#enabled DashboardGrafana#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaSmtp.property.fromName">fromName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#from_name DashboardGrafana#from_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaSmtp.property.verificationSkipEnabled">verificationSkipEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#verification_skip_enabled DashboardGrafana#verification_skip_enabled}. |
 
 ---
 
@@ -1624,7 +1624,7 @@ public readonly fromAddress: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#from_address DashboardGrafana#from_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#from_address DashboardGrafana#from_address}.
 
 ---
 
@@ -1636,7 +1636,7 @@ public readonly host: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#host DashboardGrafana#host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#host DashboardGrafana#host}.
 
 ---
 
@@ -1648,7 +1648,7 @@ public readonly password: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#password DashboardGrafana#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#password DashboardGrafana#password}.
 
 ---
 
@@ -1660,7 +1660,7 @@ public readonly startTlsPolicy: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#start_tls_policy DashboardGrafana#start_tls_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#start_tls_policy DashboardGrafana#start_tls_policy}.
 
 ---
 
@@ -1672,7 +1672,7 @@ public readonly user: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#user DashboardGrafana#user}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#user DashboardGrafana#user}.
 
 ---
 
@@ -1684,7 +1684,7 @@ public readonly enabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#enabled DashboardGrafana#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#enabled DashboardGrafana#enabled}.
 
 ---
 
@@ -1696,7 +1696,7 @@ public readonly fromName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#from_name DashboardGrafana#from_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#from_name DashboardGrafana#from_name}.
 
 ---
 
@@ -1708,7 +1708,7 @@ public readonly verificationSkipEnabled: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#verification_skip_enabled DashboardGrafana#verification_skip_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#verification_skip_enabled DashboardGrafana#verification_skip_enabled}.
 
 ---
 
@@ -1726,10 +1726,10 @@ const dashboardGrafanaTimeouts: dashboardGrafana.DashboardGrafanaTimeouts = { ..
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#create DashboardGrafana#create}. |
-| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#delete DashboardGrafana#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#read DashboardGrafana#read}. |
-| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#update DashboardGrafana#update}. |
+| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#create DashboardGrafana#create}. |
+| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#delete DashboardGrafana#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#read DashboardGrafana#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dashboardGrafana.DashboardGrafanaTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#update DashboardGrafana#update}. |
 
 ---
 
@@ -1741,7 +1741,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#create DashboardGrafana#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#create DashboardGrafana#create}.
 
 ---
 
@@ -1753,7 +1753,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#delete DashboardGrafana#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#delete DashboardGrafana#delete}.
 
 ---
 
@@ -1765,7 +1765,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#read DashboardGrafana#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#read DashboardGrafana#read}.
 
 ---
 
@@ -1777,7 +1777,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.64.0/docs/resources/dashboard_grafana#update DashboardGrafana#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/dashboard_grafana#update DashboardGrafana#update}.
 
 ---
 
