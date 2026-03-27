@@ -1195,6 +1195,7 @@ export * as dataAzurermConsumptionBudgetSubscription from './data-azurerm-consum
 export * as dataAzurermContainerApp from './data-azurerm-container-app';
 export * as dataAzurermContainerAppEnvironment from './data-azurerm-container-app-environment';
 export * as dataAzurermContainerAppEnvironmentCertificate from './data-azurerm-container-app-environment-certificate';
+export * as dataAzurermContainerAppEnvironmentStorage from './data-azurerm-container-app-environment-storage';
 export * as dataAzurermContainerGroup from './data-azurerm-container-group';
 export * as dataAzurermContainerRegistry from './data-azurerm-container-registry';
 export * as dataAzurermContainerRegistryCacheRule from './data-azurerm-container-registry-cache-rule';

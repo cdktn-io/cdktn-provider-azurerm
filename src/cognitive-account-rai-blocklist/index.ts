@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +13,50 @@ import * as cdktn from 'cdktn';
 
 export interface CognitiveAccountRaiBlocklistConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#cognitive_account_id CognitiveAccountRaiBlocklist#cognitive_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#cognitive_account_id CognitiveAccountRaiBlocklist#cognitive_account_id}
   */
   readonly cognitiveAccountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#description CognitiveAccountRaiBlocklist#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#description CognitiveAccountRaiBlocklist#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#id CognitiveAccountRaiBlocklist#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#id CognitiveAccountRaiBlocklist#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#name CognitiveAccountRaiBlocklist#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#name CognitiveAccountRaiBlocklist#name}
   */
   readonly name: string;
   /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#tags CognitiveAccountRaiBlocklist#tags}
+  */
+  readonly tags?: { [key: string]: string };
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#timeouts CognitiveAccountRaiBlocklist#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#timeouts CognitiveAccountRaiBlocklist#timeouts}
   */
   readonly timeouts?: CognitiveAccountRaiBlocklistTimeouts;
 }
 export interface CognitiveAccountRaiBlocklistTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#create CognitiveAccountRaiBlocklist#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#create CognitiveAccountRaiBlocklist#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#delete CognitiveAccountRaiBlocklist#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#delete CognitiveAccountRaiBlocklist#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#read CognitiveAccountRaiBlocklist#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#read CognitiveAccountRaiBlocklist#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#update CognitiveAccountRaiBlocklist#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#update CognitiveAccountRaiBlocklist#update}
   */
   readonly update?: string;
 }
@@ -233,7 +237,7 @@ export class CognitiveAccountRaiBlocklistTimeoutsOutputReference extends cdktn.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist azurerm_cognitive_account_rai_blocklist}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist azurerm_cognitive_account_rai_blocklist}
 */
 export class CognitiveAccountRaiBlocklist extends cdktn.TerraformResource {
 
@@ -249,7 +253,7 @@ export class CognitiveAccountRaiBlocklist extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a CognitiveAccountRaiBlocklist resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CognitiveAccountRaiBlocklist to import
-  * @param importFromId The id of the existing CognitiveAccountRaiBlocklist that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CognitiveAccountRaiBlocklist that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CognitiveAccountRaiBlocklist to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -261,7 +265,7 @@ export class CognitiveAccountRaiBlocklist extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist azurerm_cognitive_account_rai_blocklist} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist azurerm_cognitive_account_rai_blocklist} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -272,7 +276,7 @@ export class CognitiveAccountRaiBlocklist extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_cognitive_account_rai_blocklist',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.65.0',
+        providerVersion: '4.66.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -287,6 +291,7 @@ export class CognitiveAccountRaiBlocklist extends cdktn.TerraformResource {
     this._description = config.description;
     this._id = config.id;
     this._name = config.name;
+    this._tags = config.tags;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -352,6 +357,22 @@ export class CognitiveAccountRaiBlocklist extends cdktn.TerraformResource {
     return this._name;
   }
 
+  // tags - computed: false, optional: true, required: false
+  private _tags?: { [key: string]: string }; 
+  public get tags() {
+    return this.getStringMapAttribute('tags');
+  }
+  public set tags(value: { [key: string]: string }) {
+    this._tags = value;
+  }
+  public resetTags() {
+    this._tags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsInput() {
+    return this._tags;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new CognitiveAccountRaiBlocklistTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -378,6 +399,7 @@ export class CognitiveAccountRaiBlocklist extends cdktn.TerraformResource {
       description: cdktn.stringToTerraform(this._description),
       id: cdktn.stringToTerraform(this._id),
       name: cdktn.stringToTerraform(this._name),
+      tags: cdktn.hashMapper(cdktn.stringToTerraform)(this._tags),
       timeouts: cognitiveAccountRaiBlocklistTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -407,6 +429,12 @@ export class CognitiveAccountRaiBlocklist extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      tags: {
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._tags),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
       },
       timeouts: {
         value: cognitiveAccountRaiBlocklistTimeoutsToHclTerraform(this._timeouts.internalValue),

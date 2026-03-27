@@ -4,7 +4,7 @@
 
 ### CognitiveAccountRaiBlocklist <a name="CognitiveAccountRaiBlocklist" id="@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist azurerm_cognitive_account_rai_blocklist}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist azurerm_cognitive_account_rai_blocklist}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.Initializer"></a>
 
@@ -25,6 +25,7 @@ cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist(
   name: str,
   description: str = None,
   id: str = None,
+  tags: typing.Mapping[str] = None,
   timeouts: CognitiveAccountRaiBlocklistTimeouts = None
 )
 ```
@@ -40,10 +41,11 @@ cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist(
 | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.Initializer.parameter.cognitiveAccountId">cognitive_account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#cognitive_account_id CognitiveAccountRaiBlocklist#cognitive_account_id}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#name CognitiveAccountRaiBlocklist#name}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#description CognitiveAccountRaiBlocklist#description}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#id CognitiveAccountRaiBlocklist#id}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.Initializer.parameter.cognitiveAccountId">cognitive_account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#cognitive_account_id CognitiveAccountRaiBlocklist#cognitive_account_id}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#name CognitiveAccountRaiBlocklist#name}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#description CognitiveAccountRaiBlocklist#description}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#id CognitiveAccountRaiBlocklist#id}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#tags CognitiveAccountRaiBlocklist#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklistTimeouts">CognitiveAccountRaiBlocklistTimeouts</a></code> | timeouts block. |
 
 ---
@@ -112,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#cognitive_account_id CognitiveAccountRaiBlocklist#cognitive_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#cognitive_account_id CognitiveAccountRaiBlocklist#cognitive_account_id}.
 
 ---
 
@@ -120,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#name CognitiveAccountRaiBlocklist#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#name CognitiveAccountRaiBlocklist#name}.
 
 ---
 
@@ -128,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#description CognitiveAccountRaiBlocklist#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#description CognitiveAccountRaiBlocklist#description}.
 
 ---
 
@@ -136,10 +138,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#id CognitiveAccountRaiBlocklist#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#id CognitiveAccountRaiBlocklist#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.Initializer.parameter.tags"></a>
+
+- *Type:* typing.Mapping[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#tags CognitiveAccountRaiBlocklist#tags}.
 
 ---
 
@@ -149,7 +159,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#timeouts CognitiveAccountRaiBlocklist#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#timeouts CognitiveAccountRaiBlocklist#timeouts}
 
 ---
 
@@ -184,6 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.resetTags">reset_tags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
@@ -551,7 +562,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#create CognitiveAccountRaiBlocklist#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#create CognitiveAccountRaiBlocklist#create}.
 
 ---
 
@@ -559,7 +570,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#delete CognitiveAccountRaiBlocklist#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#delete CognitiveAccountRaiBlocklist#delete}.
 
 ---
 
@@ -567,7 +578,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#read CognitiveAccountRaiBlocklist#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#read CognitiveAccountRaiBlocklist#read}.
 
 ---
 
@@ -575,7 +586,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#update CognitiveAccountRaiBlocklist#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#update CognitiveAccountRaiBlocklist#update}.
 
 ---
 
@@ -589,6 +600,12 @@ def reset_description() -> None
 
 ```python
 def reset_id() -> None
+```
+
+##### `reset_tags` <a name="reset_tags" id="@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.resetTags"></a>
+
+```python
+def reset_tags() -> None
 ```
 
 ##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.resetTimeouts"></a>
@@ -711,7 +728,7 @@ The construct id used in the generated config for the CognitiveAccountRaiBlockli
 
 The id of the existing CognitiveAccountRaiBlocklist that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -746,11 +763,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklistTimeouts">CognitiveAccountRaiBlocklistTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.property.cognitiveAccountId">cognitive_account_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 
 ---
 
@@ -946,6 +965,16 @@ name_input: str
 
 ---
 
+##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.property.tagsInput"></a>
+
+```python
+tags_input: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.property.timeoutsInput"></a>
 
 ```python
@@ -996,6 +1025,16 @@ name: str
 
 ---
 
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklist.property.tags"></a>
+
+```python
+tags: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1035,6 +1074,7 @@ cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklistConfig(
   name: str,
   description: str = None,
   id: str = None,
+  tags: typing.Mapping[str] = None,
   timeouts: CognitiveAccountRaiBlocklistTimeouts = None
 )
 ```
@@ -1050,10 +1090,11 @@ cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklistConfig(
 | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklistConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklistConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklistConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklistConfig.property.cognitiveAccountId">cognitive_account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#cognitive_account_id CognitiveAccountRaiBlocklist#cognitive_account_id}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklistConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#name CognitiveAccountRaiBlocklist#name}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklistConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#description CognitiveAccountRaiBlocklist#description}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklistConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#id CognitiveAccountRaiBlocklist#id}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklistConfig.property.cognitiveAccountId">cognitive_account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#cognitive_account_id CognitiveAccountRaiBlocklist#cognitive_account_id}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklistConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#name CognitiveAccountRaiBlocklist#name}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklistConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#description CognitiveAccountRaiBlocklist#description}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklistConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#id CognitiveAccountRaiBlocklist#id}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklistConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#tags CognitiveAccountRaiBlocklist#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklistConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklistTimeouts">CognitiveAccountRaiBlocklistTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1136,7 +1177,7 @@ cognitive_account_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#cognitive_account_id CognitiveAccountRaiBlocklist#cognitive_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#cognitive_account_id CognitiveAccountRaiBlocklist#cognitive_account_id}.
 
 ---
 
@@ -1148,7 +1189,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#name CognitiveAccountRaiBlocklist#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#name CognitiveAccountRaiBlocklist#name}.
 
 ---
 
@@ -1160,7 +1201,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#description CognitiveAccountRaiBlocklist#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#description CognitiveAccountRaiBlocklist#description}.
 
 ---
 
@@ -1172,10 +1213,22 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#id CognitiveAccountRaiBlocklist#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#id CognitiveAccountRaiBlocklist#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklistConfig.property.tags"></a>
+
+```python
+tags: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#tags CognitiveAccountRaiBlocklist#tags}.
 
 ---
 
@@ -1189,7 +1242,7 @@ timeouts: CognitiveAccountRaiBlocklistTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#timeouts CognitiveAccountRaiBlocklist#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#timeouts CognitiveAccountRaiBlocklist#timeouts}
 
 ---
 
@@ -1212,10 +1265,10 @@ cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklistTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklistTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#create CognitiveAccountRaiBlocklist#create}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklistTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#delete CognitiveAccountRaiBlocklist#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklistTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#read CognitiveAccountRaiBlocklist#read}. |
-| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklistTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#update CognitiveAccountRaiBlocklist#update}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklistTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#create CognitiveAccountRaiBlocklist#create}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklistTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#delete CognitiveAccountRaiBlocklist#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklistTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#read CognitiveAccountRaiBlocklist#read}. |
+| <code><a href="#@cdktn/provider-azurerm.cognitiveAccountRaiBlocklist.CognitiveAccountRaiBlocklistTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#update CognitiveAccountRaiBlocklist#update}. |
 
 ---
 
@@ -1227,7 +1280,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#create CognitiveAccountRaiBlocklist#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#create CognitiveAccountRaiBlocklist#create}.
 
 ---
 
@@ -1239,7 +1292,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#delete CognitiveAccountRaiBlocklist#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#delete CognitiveAccountRaiBlocklist#delete}.
 
 ---
 
@@ -1251,7 +1304,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#read CognitiveAccountRaiBlocklist#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#read CognitiveAccountRaiBlocklist#read}.
 
 ---
 
@@ -1263,7 +1316,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/cognitive_account_rai_blocklist#update CognitiveAccountRaiBlocklist#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/cognitive_account_rai_blocklist#update CognitiveAccountRaiBlocklist#update}.
 
 ---
 

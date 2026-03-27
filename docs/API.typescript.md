@@ -323,6 +323,7 @@ The following submodules are available:
 - [dataAzurermContainerApp](./dataAzurermContainerApp.typescript.md)
 - [dataAzurermContainerAppEnvironment](./dataAzurermContainerAppEnvironment.typescript.md)
 - [dataAzurermContainerAppEnvironmentCertificate](./dataAzurermContainerAppEnvironmentCertificate.typescript.md)
+- [dataAzurermContainerAppEnvironmentStorage](./dataAzurermContainerAppEnvironmentStorage.typescript.md)
 - [dataAzurermContainerGroup](./dataAzurermContainerGroup.typescript.md)
 - [dataAzurermContainerRegistry](./dataAzurermContainerRegistry.typescript.md)
 - [dataAzurermContainerRegistryCacheRule](./dataAzurermContainerRegistryCacheRule.typescript.md)

@@ -1195,6 +1195,7 @@ Object.defineProperty(exports, 'dataAzurermConsumptionBudgetSubscription', { get
 Object.defineProperty(exports, 'dataAzurermContainerApp', { get: function () { return require('./data-azurerm-container-app'); } });
 Object.defineProperty(exports, 'dataAzurermContainerAppEnvironment', { get: function () { return require('./data-azurerm-container-app-environment'); } });
 Object.defineProperty(exports, 'dataAzurermContainerAppEnvironmentCertificate', { get: function () { return require('./data-azurerm-container-app-environment-certificate'); } });
+Object.defineProperty(exports, 'dataAzurermContainerAppEnvironmentStorage', { get: function () { return require('./data-azurerm-container-app-environment-storage'); } });
 Object.defineProperty(exports, 'dataAzurermContainerGroup', { get: function () { return require('./data-azurerm-container-group'); } });
 Object.defineProperty(exports, 'dataAzurermContainerRegistry', { get: function () { return require('./data-azurerm-container-registry'); } });
 Object.defineProperty(exports, 'dataAzurermContainerRegistryCacheRule', { get: function () { return require('./data-azurerm-container-registry-cache-rule'); } });

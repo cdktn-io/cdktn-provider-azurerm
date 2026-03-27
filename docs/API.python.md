@@ -323,6 +323,7 @@ The following submodules are available:
 - [dataAzurermContainerApp](./dataAzurermContainerApp.python.md)
 - [dataAzurermContainerAppEnvironment](./dataAzurermContainerAppEnvironment.python.md)
 - [dataAzurermContainerAppEnvironmentCertificate](./dataAzurermContainerAppEnvironmentCertificate.python.md)
+- [dataAzurermContainerAppEnvironmentStorage](./dataAzurermContainerAppEnvironmentStorage.python.md)
 - [dataAzurermContainerGroup](./dataAzurermContainerGroup.python.md)
 - [dataAzurermContainerRegistry](./dataAzurermContainerRegistry.python.md)
 - [dataAzurermContainerRegistryCacheRule](./dataAzurermContainerRegistryCacheRule.python.md)
