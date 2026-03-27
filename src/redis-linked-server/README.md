@@ -1,3 +1,3 @@
 # `azurerm_redis_linked_server`
 
-Refer to the Terraform Registry for docs: [`azurerm_redis_linked_server`](https://registry.terraform.io/providers/hashicorp/azurerm/4.65.0/docs/resources/redis_linked_server).
+Refer to the Terraform Registry for docs: [`azurerm_redis_linked_server`](https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/redis_linked_server).
