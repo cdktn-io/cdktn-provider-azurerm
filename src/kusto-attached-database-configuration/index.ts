@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/kusto_attached_database_configuration
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/kusto_attached_database_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,80 +13,96 @@ import * as cdktn from 'cdktn';
 
 export interface KustoAttachedDatabaseConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/kusto_attached_database_configuration#cluster_id KustoAttachedDatabaseConfiguration#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/kusto_attached_database_configuration#cluster_id KustoAttachedDatabaseConfiguration#cluster_id}
   */
   readonly clusterId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/kusto_attached_database_configuration#cluster_name KustoAttachedDatabaseConfiguration#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/kusto_attached_database_configuration#cluster_name KustoAttachedDatabaseConfiguration#cluster_name}
   */
   readonly clusterName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/kusto_attached_database_configuration#cluster_resource_id KustoAttachedDatabaseConfiguration#cluster_resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/kusto_attached_database_configuration#cluster_resource_id KustoAttachedDatabaseConfiguration#cluster_resource_id}
   */
   readonly clusterResourceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/kusto_attached_database_configuration#database_name KustoAttachedDatabaseConfiguration#database_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/kusto_attached_database_configuration#database_name KustoAttachedDatabaseConfiguration#database_name}
   */
   readonly databaseName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/kusto_attached_database_configuration#default_principal_modification_kind KustoAttachedDatabaseConfiguration#default_principal_modification_kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/kusto_attached_database_configuration#database_name_override KustoAttachedDatabaseConfiguration#database_name_override}
+  */
+  readonly databaseNameOverride?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/kusto_attached_database_configuration#database_name_prefix KustoAttachedDatabaseConfiguration#database_name_prefix}
+  */
+  readonly databaseNamePrefix?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/kusto_attached_database_configuration#default_principal_modification_kind KustoAttachedDatabaseConfiguration#default_principal_modification_kind}
   */
   readonly defaultPrincipalModificationKind?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/kusto_attached_database_configuration#id KustoAttachedDatabaseConfiguration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/kusto_attached_database_configuration#id KustoAttachedDatabaseConfiguration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/kusto_attached_database_configuration#location KustoAttachedDatabaseConfiguration#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/kusto_attached_database_configuration#location KustoAttachedDatabaseConfiguration#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/kusto_attached_database_configuration#name KustoAttachedDatabaseConfiguration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/kusto_attached_database_configuration#name KustoAttachedDatabaseConfiguration#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/kusto_attached_database_configuration#resource_group_name KustoAttachedDatabaseConfiguration#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/kusto_attached_database_configuration#resource_group_name KustoAttachedDatabaseConfiguration#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
   * sharing block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/kusto_attached_database_configuration#sharing KustoAttachedDatabaseConfiguration#sharing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/kusto_attached_database_configuration#sharing KustoAttachedDatabaseConfiguration#sharing}
   */
   readonly sharing?: KustoAttachedDatabaseConfigurationSharing;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/kusto_attached_database_configuration#timeouts KustoAttachedDatabaseConfiguration#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/kusto_attached_database_configuration#timeouts KustoAttachedDatabaseConfiguration#timeouts}
   */
   readonly timeouts?: KustoAttachedDatabaseConfigurationTimeouts;
 }
 export interface KustoAttachedDatabaseConfigurationSharing {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/kusto_attached_database_configuration#external_tables_to_exclude KustoAttachedDatabaseConfiguration#external_tables_to_exclude}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/kusto_attached_database_configuration#external_tables_to_exclude KustoAttachedDatabaseConfiguration#external_tables_to_exclude}
   */
   readonly externalTablesToExclude?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/kusto_attached_database_configuration#external_tables_to_include KustoAttachedDatabaseConfiguration#external_tables_to_include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/kusto_attached_database_configuration#external_tables_to_include KustoAttachedDatabaseConfiguration#external_tables_to_include}
   */
   readonly externalTablesToInclude?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/kusto_attached_database_configuration#materialized_views_to_exclude KustoAttachedDatabaseConfiguration#materialized_views_to_exclude}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/kusto_attached_database_configuration#functions_to_exclude KustoAttachedDatabaseConfiguration#functions_to_exclude}
+  */
+  readonly functionsToExclude?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/kusto_attached_database_configuration#functions_to_include KustoAttachedDatabaseConfiguration#functions_to_include}
+  */
+  readonly functionsToInclude?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/kusto_attached_database_configuration#materialized_views_to_exclude KustoAttachedDatabaseConfiguration#materialized_views_to_exclude}
   */
   readonly materializedViewsToExclude?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/kusto_attached_database_configuration#materialized_views_to_include KustoAttachedDatabaseConfiguration#materialized_views_to_include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/kusto_attached_database_configuration#materialized_views_to_include KustoAttachedDatabaseConfiguration#materialized_views_to_include}
   */
   readonly materializedViewsToInclude?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/kusto_attached_database_configuration#tables_to_exclude KustoAttachedDatabaseConfiguration#tables_to_exclude}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/kusto_attached_database_configuration#tables_to_exclude KustoAttachedDatabaseConfiguration#tables_to_exclude}
   */
   readonly tablesToExclude?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/kusto_attached_database_configuration#tables_to_include KustoAttachedDatabaseConfiguration#tables_to_include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/kusto_attached_database_configuration#tables_to_include KustoAttachedDatabaseConfiguration#tables_to_include}
   */
   readonly tablesToInclude?: string[];
 }
@@ -99,6 +115,8 @@ export function kustoAttachedDatabaseConfigurationSharingToTerraform(struct?: Ku
   return {
     external_tables_to_exclude: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.externalTablesToExclude),
     external_tables_to_include: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.externalTablesToInclude),
+    functions_to_exclude: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.functionsToExclude),
+    functions_to_include: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.functionsToInclude),
     materialized_views_to_exclude: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.materializedViewsToExclude),
     materialized_views_to_include: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.materializedViewsToInclude),
     tables_to_exclude: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.tablesToExclude),
@@ -121,6 +139,18 @@ export function kustoAttachedDatabaseConfigurationSharingToHclTerraform(struct?:
     },
     external_tables_to_include: {
       value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.externalTablesToInclude),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    functions_to_exclude: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.functionsToExclude),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    functions_to_include: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.functionsToInclude),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -177,6 +207,14 @@ export class KustoAttachedDatabaseConfigurationSharingOutputReference extends cd
       hasAnyValues = true;
       internalValueResult.externalTablesToInclude = this._externalTablesToInclude;
     }
+    if (this._functionsToExclude !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.functionsToExclude = this._functionsToExclude;
+    }
+    if (this._functionsToInclude !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.functionsToInclude = this._functionsToInclude;
+    }
     if (this._materializedViewsToExclude !== undefined) {
       hasAnyValues = true;
       internalValueResult.materializedViewsToExclude = this._materializedViewsToExclude;
@@ -201,6 +239,8 @@ export class KustoAttachedDatabaseConfigurationSharingOutputReference extends cd
       this.isEmptyObject = false;
       this._externalTablesToExclude = undefined;
       this._externalTablesToInclude = undefined;
+      this._functionsToExclude = undefined;
+      this._functionsToInclude = undefined;
       this._materializedViewsToExclude = undefined;
       this._materializedViewsToInclude = undefined;
       this._tablesToExclude = undefined;
@@ -210,6 +250,8 @@ export class KustoAttachedDatabaseConfigurationSharingOutputReference extends cd
       this.isEmptyObject = Object.keys(value).length === 0;
       this._externalTablesToExclude = value.externalTablesToExclude;
       this._externalTablesToInclude = value.externalTablesToInclude;
+      this._functionsToExclude = value.functionsToExclude;
+      this._functionsToInclude = value.functionsToInclude;
       this._materializedViewsToExclude = value.materializedViewsToExclude;
       this._materializedViewsToInclude = value.materializedViewsToInclude;
       this._tablesToExclude = value.tablesToExclude;
@@ -247,6 +289,38 @@ export class KustoAttachedDatabaseConfigurationSharingOutputReference extends cd
   // Temporarily expose input value. Use with caution.
   public get externalTablesToIncludeInput() {
     return this._externalTablesToInclude;
+  }
+
+  // functions_to_exclude - computed: false, optional: true, required: false
+  private _functionsToExclude?: string[]; 
+  public get functionsToExclude() {
+    return cdktn.Fn.tolist(this.getListAttribute('functions_to_exclude'));
+  }
+  public set functionsToExclude(value: string[]) {
+    this._functionsToExclude = value;
+  }
+  public resetFunctionsToExclude() {
+    this._functionsToExclude = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get functionsToExcludeInput() {
+    return this._functionsToExclude;
+  }
+
+  // functions_to_include - computed: false, optional: true, required: false
+  private _functionsToInclude?: string[]; 
+  public get functionsToInclude() {
+    return cdktn.Fn.tolist(this.getListAttribute('functions_to_include'));
+  }
+  public set functionsToInclude(value: string[]) {
+    this._functionsToInclude = value;
+  }
+  public resetFunctionsToInclude() {
+    this._functionsToInclude = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get functionsToIncludeInput() {
+    return this._functionsToInclude;
   }
 
   // materialized_views_to_exclude - computed: false, optional: true, required: false
@@ -315,19 +389,19 @@ export class KustoAttachedDatabaseConfigurationSharingOutputReference extends cd
 }
 export interface KustoAttachedDatabaseConfigurationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/kusto_attached_database_configuration#create KustoAttachedDatabaseConfiguration#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/kusto_attached_database_configuration#create KustoAttachedDatabaseConfiguration#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/kusto_attached_database_configuration#delete KustoAttachedDatabaseConfiguration#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/kusto_attached_database_configuration#delete KustoAttachedDatabaseConfiguration#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/kusto_attached_database_configuration#read KustoAttachedDatabaseConfiguration#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/kusto_attached_database_configuration#read KustoAttachedDatabaseConfiguration#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/kusto_attached_database_configuration#update KustoAttachedDatabaseConfiguration#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/kusto_attached_database_configuration#update KustoAttachedDatabaseConfiguration#update}
   */
   readonly update?: string;
 }
@@ -508,7 +582,7 @@ export class KustoAttachedDatabaseConfigurationTimeoutsOutputReference extends c
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/kusto_attached_database_configuration azurerm_kusto_attached_database_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/kusto_attached_database_configuration azurerm_kusto_attached_database_configuration}
 */
 export class KustoAttachedDatabaseConfiguration extends cdktn.TerraformResource {
 
@@ -524,7 +598,7 @@ export class KustoAttachedDatabaseConfiguration extends cdktn.TerraformResource 
   * Generates CDKTN code for importing a KustoAttachedDatabaseConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KustoAttachedDatabaseConfiguration to import
-  * @param importFromId The id of the existing KustoAttachedDatabaseConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/kusto_attached_database_configuration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KustoAttachedDatabaseConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/kusto_attached_database_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KustoAttachedDatabaseConfiguration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -536,7 +610,7 @@ export class KustoAttachedDatabaseConfiguration extends cdktn.TerraformResource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/kusto_attached_database_configuration azurerm_kusto_attached_database_configuration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/kusto_attached_database_configuration azurerm_kusto_attached_database_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -547,7 +621,7 @@ export class KustoAttachedDatabaseConfiguration extends cdktn.TerraformResource 
       terraformResourceType: 'azurerm_kusto_attached_database_configuration',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.66.0',
+        providerVersion: '4.67.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -562,6 +636,8 @@ export class KustoAttachedDatabaseConfiguration extends cdktn.TerraformResource 
     this._clusterName = config.clusterName;
     this._clusterResourceId = config.clusterResourceId;
     this._databaseName = config.databaseName;
+    this._databaseNameOverride = config.databaseNameOverride;
+    this._databaseNamePrefix = config.databaseNamePrefix;
     this._defaultPrincipalModificationKind = config.defaultPrincipalModificationKind;
     this._id = config.id;
     this._location = config.location;
@@ -636,6 +712,38 @@ export class KustoAttachedDatabaseConfiguration extends cdktn.TerraformResource 
   // Temporarily expose input value. Use with caution.
   public get databaseNameInput() {
     return this._databaseName;
+  }
+
+  // database_name_override - computed: false, optional: true, required: false
+  private _databaseNameOverride?: string; 
+  public get databaseNameOverride() {
+    return this.getStringAttribute('database_name_override');
+  }
+  public set databaseNameOverride(value: string) {
+    this._databaseNameOverride = value;
+  }
+  public resetDatabaseNameOverride() {
+    this._databaseNameOverride = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databaseNameOverrideInput() {
+    return this._databaseNameOverride;
+  }
+
+  // database_name_prefix - computed: false, optional: true, required: false
+  private _databaseNamePrefix?: string; 
+  public get databaseNamePrefix() {
+    return this.getStringAttribute('database_name_prefix');
+  }
+  public set databaseNamePrefix(value: string) {
+    this._databaseNamePrefix = value;
+  }
+  public resetDatabaseNamePrefix() {
+    this._databaseNamePrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databaseNamePrefixInput() {
+    return this._databaseNamePrefix;
   }
 
   // default_principal_modification_kind - computed: false, optional: true, required: false
@@ -751,6 +859,8 @@ export class KustoAttachedDatabaseConfiguration extends cdktn.TerraformResource 
       cluster_name: cdktn.stringToTerraform(this._clusterName),
       cluster_resource_id: cdktn.stringToTerraform(this._clusterResourceId),
       database_name: cdktn.stringToTerraform(this._databaseName),
+      database_name_override: cdktn.stringToTerraform(this._databaseNameOverride),
+      database_name_prefix: cdktn.stringToTerraform(this._databaseNamePrefix),
       default_principal_modification_kind: cdktn.stringToTerraform(this._defaultPrincipalModificationKind),
       id: cdktn.stringToTerraform(this._id),
       location: cdktn.stringToTerraform(this._location),
@@ -783,6 +893,18 @@ export class KustoAttachedDatabaseConfiguration extends cdktn.TerraformResource 
       },
       database_name: {
         value: cdktn.stringToHclTerraform(this._databaseName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      database_name_override: {
+        value: cdktn.stringToHclTerraform(this._databaseNameOverride),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      database_name_prefix: {
+        value: cdktn.stringToHclTerraform(this._databaseNamePrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

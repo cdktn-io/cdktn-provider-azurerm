@@ -314,6 +314,7 @@ Object.defineProperty(exports, 'dataProtectionBackupInstanceMysqlFlexibleServer'
 Object.defineProperty(exports, 'dataProtectionBackupInstancePostgresql', { get: function () { return require('./data-protection-backup-instance-postgresql'); } });
 Object.defineProperty(exports, 'dataProtectionBackupInstancePostgresqlFlexibleServer', { get: function () { return require('./data-protection-backup-instance-postgresql-flexible-server'); } });
 Object.defineProperty(exports, 'dataProtectionBackupPolicyBlobStorage', { get: function () { return require('./data-protection-backup-policy-blob-storage'); } });
+Object.defineProperty(exports, 'dataProtectionBackupPolicyDataLakeStorage', { get: function () { return require('./data-protection-backup-policy-data-lake-storage'); } });
 Object.defineProperty(exports, 'dataProtectionBackupPolicyDisk', { get: function () { return require('./data-protection-backup-policy-disk'); } });
 Object.defineProperty(exports, 'dataProtectionBackupPolicyKubernetesCluster', { get: function () { return require('./data-protection-backup-policy-kubernetes-cluster'); } });
 Object.defineProperty(exports, 'dataProtectionBackupPolicyMysqlFlexibleServer', { get: function () { return require('./data-protection-backup-policy-mysql-flexible-server'); } });
@@ -389,6 +390,7 @@ Object.defineProperty(exports, 'eventgridDomain', { get: function () { return re
 Object.defineProperty(exports, 'eventgridDomainTopic', { get: function () { return require('./eventgrid-domain-topic'); } });
 Object.defineProperty(exports, 'eventgridEventSubscription', { get: function () { return require('./eventgrid-event-subscription'); } });
 Object.defineProperty(exports, 'eventgridNamespace', { get: function () { return require('./eventgrid-namespace'); } });
+Object.defineProperty(exports, 'eventgridNamespaceTopic', { get: function () { return require('./eventgrid-namespace-topic'); } });
 Object.defineProperty(exports, 'eventgridPartnerConfiguration', { get: function () { return require('./eventgrid-partner-configuration'); } });
 Object.defineProperty(exports, 'eventgridPartnerNamespace', { get: function () { return require('./eventgrid-partner-namespace'); } });
 Object.defineProperty(exports, 'eventgridPartnerRegistration', { get: function () { return require('./eventgrid-partner-registration'); } });
@@ -495,6 +497,7 @@ Object.defineProperty(exports, 'keyVaultManagedStorageAccount', { get: function 
 Object.defineProperty(exports, 'keyVaultManagedStorageAccountSasTokenDefinition', { get: function () { return require('./key-vault-managed-storage-account-sas-token-definition'); } });
 Object.defineProperty(exports, 'keyVaultSecret', { get: function () { return require('./key-vault-secret'); } });
 Object.defineProperty(exports, 'kubernetesCluster', { get: function () { return require('./kubernetes-cluster'); } });
+Object.defineProperty(exports, 'kubernetesClusterDeploymentSafeguard', { get: function () { return require('./kubernetes-cluster-deployment-safeguard'); } });
 Object.defineProperty(exports, 'kubernetesClusterExtension', { get: function () { return require('./kubernetes-cluster-extension'); } });
 Object.defineProperty(exports, 'kubernetesClusterNodePool', { get: function () { return require('./kubernetes-cluster-node-pool'); } });
 Object.defineProperty(exports, 'kubernetesClusterTrustedAccessRoleBinding', { get: function () { return require('./kubernetes-cluster-trusted-access-role-binding'); } });
@@ -820,6 +823,7 @@ Object.defineProperty(exports, 'resourceManagementPrivateLinkAssociation', { get
 Object.defineProperty(exports, 'resourcePolicyAssignment', { get: function () { return require('./resource-policy-assignment'); } });
 Object.defineProperty(exports, 'resourcePolicyExemption', { get: function () { return require('./resource-policy-exemption'); } });
 Object.defineProperty(exports, 'resourcePolicyRemediation', { get: function () { return require('./resource-policy-remediation'); } });
+Object.defineProperty(exports, 'resourceProviderFeatureRegistration', { get: function () { return require('./resource-provider-feature-registration'); } });
 Object.defineProperty(exports, 'resourceProviderRegistration', { get: function () { return require('./resource-provider-registration'); } });
 Object.defineProperty(exports, 'restorePointCollection', { get: function () { return require('./restore-point-collection'); } });
 Object.defineProperty(exports, 'roleAssignment', { get: function () { return require('./role-assignment'); } });

@@ -4,7 +4,7 @@
 
 ### DataAzurermApplicationGateway <a name="DataAzurermApplicationGateway" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/data-sources/application_gateway azurerm_application_gateway}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/application_gateway azurerm_application_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAzurermApplicationGate
 
 The id of the existing DataAzurermApplicationGateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/data-sources/application_gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/application_gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -444,6 +444,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.property.authenticationCertificate">AuthenticationCertificate</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAuthenticationCertificateList">DataAzurermApplicationGatewayAuthenticationCertificateList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.property.autoscaleConfiguration">AutoscaleConfiguration</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayAutoscaleConfigurationList">DataAzurermApplicationGatewayAutoscaleConfigurationList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.property.backend">Backend</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendList">DataAzurermApplicationGatewayBackendList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.property.backendAddressPool">BackendAddressPool</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendAddressPoolList">DataAzurermApplicationGatewayBackendAddressPoolList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.property.backendHttpSettings">BackendHttpSettings</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettingsList">DataAzurermApplicationGatewayBackendHttpSettingsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.property.customErrorConfiguration">CustomErrorConfiguration</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayCustomErrorConfigurationList">DataAzurermApplicationGatewayCustomErrorConfigurationList</a></code> | *No description.* |
@@ -457,6 +458,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.property.http2Enabled">Http2Enabled</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.property.httpListener">HttpListener</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayHttpListenerList">DataAzurermApplicationGatewayHttpListenerList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.property.identity">Identity</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayIdentityList">DataAzurermApplicationGatewayIdentityList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.property.listener">Listener</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerList">DataAzurermApplicationGatewayListenerList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.property.location">Location</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.property.privateEndpointConnection">PrivateEndpointConnection</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayPrivateEndpointConnectionList">DataAzurermApplicationGatewayPrivateEndpointConnectionList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.property.privateLinkConfiguration">PrivateLinkConfiguration</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayPrivateLinkConfigurationList">DataAzurermApplicationGatewayPrivateLinkConfigurationList</a></code> | *No description.* |
@@ -464,6 +466,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.property.redirectConfiguration">RedirectConfiguration</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRedirectConfigurationList">DataAzurermApplicationGatewayRedirectConfigurationList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.property.requestRoutingRule">RequestRoutingRule</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRequestRoutingRuleList">DataAzurermApplicationGatewayRequestRoutingRuleList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.property.rewriteRuleSet">RewriteRuleSet</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRewriteRuleSetList">DataAzurermApplicationGatewayRewriteRuleSetList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.property.routingRule">RoutingRule</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleList">DataAzurermApplicationGatewayRoutingRuleList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.property.sku">Sku</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewaySkuList">DataAzurermApplicationGatewaySkuList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.property.sslCertificate">SslCertificate</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewaySslCertificateList">DataAzurermApplicationGatewaySslCertificateList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.property.sslPolicy">SslPolicy</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewaySslPolicyList">DataAzurermApplicationGatewaySslPolicyList</a></code> | *No description.* |
@@ -627,6 +630,16 @@ func AutoscaleConfiguration() DataAzurermApplicationGatewayAutoscaleConfiguratio
 
 ---
 
+##### `Backend`<sup>Required</sup> <a name="Backend" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.property.backend"></a>
+
+```go
+func Backend() DataAzurermApplicationGatewayBackendList
+```
+
+- *Type:* <a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendList">DataAzurermApplicationGatewayBackendList</a>
+
+---
+
 ##### `BackendAddressPool`<sup>Required</sup> <a name="BackendAddressPool" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.property.backendAddressPool"></a>
 
 ```go
@@ -757,6 +770,16 @@ func Identity() DataAzurermApplicationGatewayIdentityList
 
 ---
 
+##### `Listener`<sup>Required</sup> <a name="Listener" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.property.listener"></a>
+
+```go
+func Listener() DataAzurermApplicationGatewayListenerList
+```
+
+- *Type:* <a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerList">DataAzurermApplicationGatewayListenerList</a>
+
+---
+
 ##### `Location`<sup>Required</sup> <a name="Location" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.property.location"></a>
 
 ```go
@@ -824,6 +847,16 @@ func RewriteRuleSet() DataAzurermApplicationGatewayRewriteRuleSetList
 ```
 
 - *Type:* <a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRewriteRuleSetList">DataAzurermApplicationGatewayRewriteRuleSetList</a>
+
+---
+
+##### `RoutingRule`<sup>Required</sup> <a name="RoutingRule" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGateway.property.routingRule"></a>
+
+```go
+func RoutingRule() DataAzurermApplicationGatewayRoutingRuleList
+```
+
+- *Type:* <a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleList">DataAzurermApplicationGatewayRoutingRuleList</a>
 
 ---
 
@@ -1053,6 +1086,19 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/dataazurermapp
 ```
 
 
+### DataAzurermApplicationGatewayBackend <a name="DataAzurermApplicationGatewayBackend" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackend"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackend.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/dataazurermapplicationgateway"
+
+&dataazurermapplicationgateway.DataAzurermApplicationGatewayBackend {
+
+}
+```
+
+
 ### DataAzurermApplicationGatewayBackendAddressPool <a name="DataAzurermApplicationGatewayBackendAddressPool" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendAddressPool"></a>
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendAddressPool.Initializer"></a>
@@ -1138,9 +1184,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/dataazurermapp
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/data-sources/application_gateway#name DataAzurermApplicationGateway#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/data-sources/application_gateway#resource_group_name DataAzurermApplicationGateway#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/data-sources/application_gateway#id DataAzurermApplicationGateway#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/application_gateway#name DataAzurermApplicationGateway#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/application_gateway#resource_group_name DataAzurermApplicationGateway#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/application_gateway#id DataAzurermApplicationGateway#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayTimeouts">DataAzurermApplicationGatewayTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1223,7 +1269,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/data-sources/application_gateway#name DataAzurermApplicationGateway#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/application_gateway#name DataAzurermApplicationGateway#name}.
 
 ---
 
@@ -1235,7 +1281,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/data-sources/application_gateway#resource_group_name DataAzurermApplicationGateway#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/application_gateway#resource_group_name DataAzurermApplicationGateway#resource_group_name}.
 
 ---
 
@@ -1247,7 +1293,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/data-sources/application_gateway#id DataAzurermApplicationGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/application_gateway#id DataAzurermApplicationGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1264,7 +1310,7 @@ Timeouts DataAzurermApplicationGatewayTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/data-sources/application_gateway#timeouts DataAzurermApplicationGateway#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/application_gateway#timeouts DataAzurermApplicationGateway#timeouts}
 
 ---
 
@@ -1367,6 +1413,19 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/dataazurermapp
 import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/dataazurermapplicationgateway"
 
 &dataazurermapplicationgateway.DataAzurermApplicationGatewayIdentity {
+
+}
+```
+
+
+### DataAzurermApplicationGatewayListener <a name="DataAzurermApplicationGatewayListener" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListener"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListener.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/dataazurermapplicationgateway"
+
+&dataazurermapplicationgateway.DataAzurermApplicationGatewayListener {
 
 }
 ```
@@ -1541,6 +1600,19 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/dataazurermapp
 ```
 
 
+### DataAzurermApplicationGatewayRoutingRule <a name="DataAzurermApplicationGatewayRoutingRule" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRule"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRule.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/dataazurermapplicationgateway"
+
+&dataazurermapplicationgateway.DataAzurermApplicationGatewayRoutingRule {
+
+}
+```
+
+
 ### DataAzurermApplicationGatewaySku <a name="DataAzurermApplicationGatewaySku" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewaySku"></a>
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewaySku.Initializer"></a>
@@ -1622,7 +1694,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/dataazurermapp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/data-sources/application_gateway#read DataAzurermApplicationGateway#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/application_gateway#read DataAzurermApplicationGateway#read}. |
 
 ---
 
@@ -1634,7 +1706,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/data-sources/application_gateway#read DataAzurermApplicationGateway#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/application_gateway#read DataAzurermApplicationGateway#read}.
 
 ---
 
@@ -4531,6 +4603,532 @@ func InternalValue() DataAzurermApplicationGatewayBackendHttpSettings
 ```
 
 - *Type:* <a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendHttpSettings">DataAzurermApplicationGatewayBackendHttpSettings</a>
+
+---
+
+
+### DataAzurermApplicationGatewayBackendList <a name="DataAzurermApplicationGatewayBackendList" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/dataazurermapplicationgateway"
+
+dataazurermapplicationgateway.NewDataAzurermApplicationGatewayBackendList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayBackendList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendList.get"></a>
+
+```go
+func Get(index *f64) DataAzurermApplicationGatewayBackendOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### DataAzurermApplicationGatewayBackendOutputReference <a name="DataAzurermApplicationGatewayBackendOutputReference" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/dataazurermapplicationgateway"
+
+dataazurermapplicationgateway.NewDataAzurermApplicationGatewayBackendOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayBackendOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.property.clientIpPreservationEnabled">ClientIpPreservationEnabled</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.property.hostName">HostName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.property.port">Port</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.property.probeId">ProbeId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.property.probeName">ProbeName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.property.protocol">Protocol</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.property.timeoutInSeconds">TimeoutInSeconds</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.property.trustedRootCertificateNames">TrustedRootCertificateNames</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackend">DataAzurermApplicationGatewayBackend</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ClientIpPreservationEnabled`<sup>Required</sup> <a name="ClientIpPreservationEnabled" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.property.clientIpPreservationEnabled"></a>
+
+```go
+func ClientIpPreservationEnabled() IResolvable
+```
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable
+
+---
+
+##### `HostName`<sup>Required</sup> <a name="HostName" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.property.hostName"></a>
+
+```go
+func HostName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.property.name"></a>
+
+```go
+func Name() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Port`<sup>Required</sup> <a name="Port" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.property.port"></a>
+
+```go
+func Port() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `ProbeId`<sup>Required</sup> <a name="ProbeId" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.property.probeId"></a>
+
+```go
+func ProbeId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ProbeName`<sup>Required</sup> <a name="ProbeName" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.property.probeName"></a>
+
+```go
+func ProbeName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Protocol`<sup>Required</sup> <a name="Protocol" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.property.protocol"></a>
+
+```go
+func Protocol() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TimeoutInSeconds`<sup>Required</sup> <a name="TimeoutInSeconds" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.property.timeoutInSeconds"></a>
+
+```go
+func TimeoutInSeconds() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `TrustedRootCertificateNames`<sup>Required</sup> <a name="TrustedRootCertificateNames" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.property.trustedRootCertificateNames"></a>
+
+```go
+func TrustedRootCertificateNames() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackendOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataAzurermApplicationGatewayBackend
+```
+
+- *Type:* <a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayBackend">DataAzurermApplicationGatewayBackend</a>
 
 ---
 
@@ -8325,6 +8923,554 @@ func InternalValue() DataAzurermApplicationGatewayIdentity
 ---
 
 
+### DataAzurermApplicationGatewayListenerList <a name="DataAzurermApplicationGatewayListenerList" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/dataazurermapplicationgateway"
+
+dataazurermapplicationgateway.NewDataAzurermApplicationGatewayListenerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayListenerList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerList.get"></a>
+
+```go
+func Get(index *f64) DataAzurermApplicationGatewayListenerOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### DataAzurermApplicationGatewayListenerOutputReference <a name="DataAzurermApplicationGatewayListenerOutputReference" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/dataazurermapplicationgateway"
+
+dataazurermapplicationgateway.NewDataAzurermApplicationGatewayListenerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayListenerOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.property.frontendIpConfigurationId">FrontendIpConfigurationId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.property.frontendIpConfigurationName">FrontendIpConfigurationName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.property.frontendPortId">FrontendPortId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.property.frontendPortName">FrontendPortName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.property.hostNames">HostNames</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.property.protocol">Protocol</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.property.sslCertificateId">SslCertificateId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.property.sslCertificateName">SslCertificateName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.property.sslProfileId">SslProfileId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.property.sslProfileName">SslProfileName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListener">DataAzurermApplicationGatewayListener</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `FrontendIpConfigurationId`<sup>Required</sup> <a name="FrontendIpConfigurationId" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.property.frontendIpConfigurationId"></a>
+
+```go
+func FrontendIpConfigurationId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `FrontendIpConfigurationName`<sup>Required</sup> <a name="FrontendIpConfigurationName" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.property.frontendIpConfigurationName"></a>
+
+```go
+func FrontendIpConfigurationName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `FrontendPortId`<sup>Required</sup> <a name="FrontendPortId" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.property.frontendPortId"></a>
+
+```go
+func FrontendPortId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `FrontendPortName`<sup>Required</sup> <a name="FrontendPortName" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.property.frontendPortName"></a>
+
+```go
+func FrontendPortName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `HostNames`<sup>Required</sup> <a name="HostNames" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.property.hostNames"></a>
+
+```go
+func HostNames() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.property.name"></a>
+
+```go
+func Name() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Protocol`<sup>Required</sup> <a name="Protocol" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.property.protocol"></a>
+
+```go
+func Protocol() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SslCertificateId`<sup>Required</sup> <a name="SslCertificateId" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.property.sslCertificateId"></a>
+
+```go
+func SslCertificateId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SslCertificateName`<sup>Required</sup> <a name="SslCertificateName" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.property.sslCertificateName"></a>
+
+```go
+func SslCertificateName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SslProfileId`<sup>Required</sup> <a name="SslProfileId" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.property.sslProfileId"></a>
+
+```go
+func SslProfileId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SslProfileName`<sup>Required</sup> <a name="SslProfileName" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.property.sslProfileName"></a>
+
+```go
+func SslProfileName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListenerOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataAzurermApplicationGatewayListener
+```
+
+- *Type:* <a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayListener">DataAzurermApplicationGatewayListener</a>
+
+---
+
+
 ### DataAzurermApplicationGatewayPrivateEndpointConnectionList <a name="DataAzurermApplicationGatewayPrivateEndpointConnectionList" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayPrivateEndpointConnectionList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayPrivateEndpointConnectionList.Initializer"></a>
@@ -10508,6 +11654,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayProbeOutputReference.property.pickHostNameFromBackendHttpSettings">PickHostNameFromBackendHttpSettings</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayProbeOutputReference.property.port">Port</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayProbeOutputReference.property.protocol">Protocol</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayProbeOutputReference.property.proxyProtocolHeaderEnabled">ProxyProtocolHeaderEnabled</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayProbeOutputReference.property.timeout">Timeout</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayProbeOutputReference.property.unhealthyThreshold">UnhealthyThreshold</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayProbeOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayProbe">DataAzurermApplicationGatewayProbe</a></code> | *No description.* |
@@ -10635,6 +11782,16 @@ func Protocol() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `ProxyProtocolHeaderEnabled`<sup>Required</sup> <a name="ProxyProtocolHeaderEnabled" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayProbeOutputReference.property.proxyProtocolHeaderEnabled"></a>
+
+```go
+func ProxyProtocolHeaderEnabled() IResolvable
+```
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable
 
 ---
 
@@ -14488,6 +15645,521 @@ func InternalValue() DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleUrl
 ```
 
 - *Type:* <a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleUrl">DataAzurermApplicationGatewayRewriteRuleSetRewriteRuleUrl</a>
+
+---
+
+
+### DataAzurermApplicationGatewayRoutingRuleList <a name="DataAzurermApplicationGatewayRoutingRuleList" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/dataazurermapplicationgateway"
+
+dataazurermapplicationgateway.NewDataAzurermApplicationGatewayRoutingRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermApplicationGatewayRoutingRuleList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleList.get"></a>
+
+```go
+func Get(index *f64) DataAzurermApplicationGatewayRoutingRuleOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### DataAzurermApplicationGatewayRoutingRuleOutputReference <a name="DataAzurermApplicationGatewayRoutingRuleOutputReference" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/dataazurermapplicationgateway"
+
+dataazurermapplicationgateway.NewDataAzurermApplicationGatewayRoutingRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermApplicationGatewayRoutingRuleOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.property.backendAddressPoolId">BackendAddressPoolId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.property.backendAddressPoolName">BackendAddressPoolName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.property.backendId">BackendId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.property.backendName">BackendName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.property.listenerId">ListenerId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.property.listenerName">ListenerName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.property.priority">Priority</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRule">DataAzurermApplicationGatewayRoutingRule</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `BackendAddressPoolId`<sup>Required</sup> <a name="BackendAddressPoolId" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.property.backendAddressPoolId"></a>
+
+```go
+func BackendAddressPoolId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `BackendAddressPoolName`<sup>Required</sup> <a name="BackendAddressPoolName" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.property.backendAddressPoolName"></a>
+
+```go
+func BackendAddressPoolName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `BackendId`<sup>Required</sup> <a name="BackendId" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.property.backendId"></a>
+
+```go
+func BackendId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `BackendName`<sup>Required</sup> <a name="BackendName" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.property.backendName"></a>
+
+```go
+func BackendName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ListenerId`<sup>Required</sup> <a name="ListenerId" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.property.listenerId"></a>
+
+```go
+func ListenerId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ListenerName`<sup>Required</sup> <a name="ListenerName" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.property.listenerName"></a>
+
+```go
+func ListenerName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.property.name"></a>
+
+```go
+func Name() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Priority`<sup>Required</sup> <a name="Priority" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.property.priority"></a>
+
+```go
+func Priority() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRuleOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataAzurermApplicationGatewayRoutingRule
+```
+
+- *Type:* <a href="#@cdktn/provider-azurerm.dataAzurermApplicationGateway.DataAzurermApplicationGatewayRoutingRule">DataAzurermApplicationGatewayRoutingRule</a>
 
 ---
 
