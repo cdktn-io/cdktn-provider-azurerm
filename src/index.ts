@@ -314,6 +314,7 @@ export * as dataProtectionBackupInstanceMysqlFlexibleServer from './data-protect
 export * as dataProtectionBackupInstancePostgresql from './data-protection-backup-instance-postgresql';
 export * as dataProtectionBackupInstancePostgresqlFlexibleServer from './data-protection-backup-instance-postgresql-flexible-server';
 export * as dataProtectionBackupPolicyBlobStorage from './data-protection-backup-policy-blob-storage';
+export * as dataProtectionBackupPolicyDataLakeStorage from './data-protection-backup-policy-data-lake-storage';
 export * as dataProtectionBackupPolicyDisk from './data-protection-backup-policy-disk';
 export * as dataProtectionBackupPolicyKubernetesCluster from './data-protection-backup-policy-kubernetes-cluster';
 export * as dataProtectionBackupPolicyMysqlFlexibleServer from './data-protection-backup-policy-mysql-flexible-server';
@@ -389,6 +390,7 @@ export * as eventgridDomain from './eventgrid-domain';
 export * as eventgridDomainTopic from './eventgrid-domain-topic';
 export * as eventgridEventSubscription from './eventgrid-event-subscription';
 export * as eventgridNamespace from './eventgrid-namespace';
+export * as eventgridNamespaceTopic from './eventgrid-namespace-topic';
 export * as eventgridPartnerConfiguration from './eventgrid-partner-configuration';
 export * as eventgridPartnerNamespace from './eventgrid-partner-namespace';
 export * as eventgridPartnerRegistration from './eventgrid-partner-registration';
@@ -495,6 +497,7 @@ export * as keyVaultManagedStorageAccount from './key-vault-managed-storage-acco
 export * as keyVaultManagedStorageAccountSasTokenDefinition from './key-vault-managed-storage-account-sas-token-definition';
 export * as keyVaultSecret from './key-vault-secret';
 export * as kubernetesCluster from './kubernetes-cluster';
+export * as kubernetesClusterDeploymentSafeguard from './kubernetes-cluster-deployment-safeguard';
 export * as kubernetesClusterExtension from './kubernetes-cluster-extension';
 export * as kubernetesClusterNodePool from './kubernetes-cluster-node-pool';
 export * as kubernetesClusterTrustedAccessRoleBinding from './kubernetes-cluster-trusted-access-role-binding';
@@ -820,6 +823,7 @@ export * as resourceManagementPrivateLinkAssociation from './resource-management
 export * as resourcePolicyAssignment from './resource-policy-assignment';
 export * as resourcePolicyExemption from './resource-policy-exemption';
 export * as resourcePolicyRemediation from './resource-policy-remediation';
+export * as resourceProviderFeatureRegistration from './resource-provider-feature-registration';
 export * as resourceProviderRegistration from './resource-provider-registration';
 export * as restorePointCollection from './restore-point-collection';
 export * as roleAssignment from './role-assignment';
