@@ -4,7 +4,7 @@
 
 ### ApplicationGateway <a name="ApplicationGateway" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway azurerm_application_gateway}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway azurerm_application_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.putAuthenticationCertificate">PutAuthenticationCertificate</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.putAutoscaleConfiguration">PutAutoscaleConfiguration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.putBackend">PutBackend</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.putBackendAddressPool">PutBackendAddressPool</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.putBackendHttpSettings">PutBackendHttpSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.putCustomErrorConfiguration">PutCustomErrorConfiguration</a></code> | *No description.* |
@@ -85,11 +86,13 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.putGlobal">PutGlobal</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.putHttpListener">PutHttpListener</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.putIdentity">PutIdentity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.putListener">PutListener</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.putPrivateLinkConfiguration">PutPrivateLinkConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.putProbe">PutProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.putRedirectConfiguration">PutRedirectConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.putRequestRoutingRule">PutRequestRoutingRule</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.putRewriteRuleSet">PutRewriteRuleSet</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.putRoutingRule">PutRoutingRule</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.putSku">PutSku</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.putSslCertificate">PutSslCertificate</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.putSslPolicy">PutSslPolicy</a></code> | *No description.* |
@@ -101,6 +104,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.putWafConfiguration">PutWafConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.resetAuthenticationCertificate">ResetAuthenticationCertificate</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.resetAutoscaleConfiguration">ResetAutoscaleConfiguration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.resetBackend">ResetBackend</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.resetBackendHttpSettings">ResetBackendHttpSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.resetCustomErrorConfiguration">ResetCustomErrorConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.resetEnableHttp2">ResetEnableHttp2</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.resetFipsEnabled">ResetFipsEnabled</a></code> | *No description.* |
@@ -108,12 +113,16 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.resetForceFirewallPolicyAssociation">ResetForceFirewallPolicyAssociation</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.resetGlobal">ResetGlobal</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.resetHttp2Enabled">ResetHttp2Enabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.resetHttpListener">ResetHttpListener</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.resetIdentity">ResetIdentity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.resetListener">ResetListener</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.resetPrivateLinkConfiguration">ResetPrivateLinkConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.resetProbe">ResetProbe</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.resetRedirectConfiguration">ResetRedirectConfiguration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.resetRequestRoutingRule">ResetRequestRoutingRule</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.resetRewriteRuleSet">ResetRewriteRuleSet</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.resetRoutingRule">ResetRoutingRule</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.resetSslCertificate">ResetSslCertificate</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.resetSslPolicy">ResetSslPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.resetSslProfile">ResetSslProfile</a></code> | *No description.* |
@@ -460,6 +469,18 @@ func PutAutoscaleConfiguration(value ApplicationGatewayAutoscaleConfiguration)
 
 ---
 
+##### `PutBackend` <a name="PutBackend" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.putBackend"></a>
+
+```go
+func PutBackend(value interface{})
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.putBackend.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
 ##### `PutBackendAddressPool` <a name="PutBackendAddressPool" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.putBackendAddressPool"></a>
 
 ```go
@@ -568,6 +589,18 @@ func PutIdentity(value ApplicationGatewayIdentity)
 
 ---
 
+##### `PutListener` <a name="PutListener" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.putListener"></a>
+
+```go
+func PutListener(value interface{})
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.putListener.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
 ##### `PutPrivateLinkConfiguration` <a name="PutPrivateLinkConfiguration" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.putPrivateLinkConfiguration"></a>
 
 ```go
@@ -623,6 +656,18 @@ func PutRewriteRuleSet(value interface{})
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.putRewriteRuleSet.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
+##### `PutRoutingRule` <a name="PutRoutingRule" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.putRoutingRule"></a>
+
+```go
+func PutRoutingRule(value interface{})
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.putRoutingRule.parameter.value"></a>
 
 - *Type:* interface{}
 
@@ -748,6 +793,18 @@ func ResetAuthenticationCertificate()
 func ResetAutoscaleConfiguration()
 ```
 
+##### `ResetBackend` <a name="ResetBackend" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.resetBackend"></a>
+
+```go
+func ResetBackend()
+```
+
+##### `ResetBackendHttpSettings` <a name="ResetBackendHttpSettings" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.resetBackendHttpSettings"></a>
+
+```go
+func ResetBackendHttpSettings()
+```
+
 ##### `ResetCustomErrorConfiguration` <a name="ResetCustomErrorConfiguration" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.resetCustomErrorConfiguration"></a>
 
 ```go
@@ -790,6 +847,12 @@ func ResetGlobal()
 func ResetHttp2Enabled()
 ```
 
+##### `ResetHttpListener` <a name="ResetHttpListener" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.resetHttpListener"></a>
+
+```go
+func ResetHttpListener()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.resetId"></a>
 
 ```go
@@ -800,6 +863,12 @@ func ResetId()
 
 ```go
 func ResetIdentity()
+```
+
+##### `ResetListener` <a name="ResetListener" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.resetListener"></a>
+
+```go
+func ResetListener()
 ```
 
 ##### `ResetPrivateLinkConfiguration` <a name="ResetPrivateLinkConfiguration" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.resetPrivateLinkConfiguration"></a>
@@ -820,10 +889,22 @@ func ResetProbe()
 func ResetRedirectConfiguration()
 ```
 
+##### `ResetRequestRoutingRule` <a name="ResetRequestRoutingRule" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.resetRequestRoutingRule"></a>
+
+```go
+func ResetRequestRoutingRule()
+```
+
 ##### `ResetRewriteRuleSet` <a name="ResetRewriteRuleSet" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.resetRewriteRuleSet"></a>
 
 ```go
 func ResetRewriteRuleSet()
+```
+
+##### `ResetRoutingRule` <a name="ResetRoutingRule" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.resetRoutingRule"></a>
+
+```go
+func ResetRoutingRule()
 ```
 
 ##### `ResetSslCertificate` <a name="ResetSslCertificate" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.resetSslCertificate"></a>
@@ -989,7 +1070,7 @@ The construct id used in the generated config for the ApplicationGateway to impo
 
 The id of the existing ApplicationGateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1021,6 +1102,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.authenticationCertificate">AuthenticationCertificate</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayAuthenticationCertificateList">ApplicationGatewayAuthenticationCertificateList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.autoscaleConfiguration">AutoscaleConfiguration</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayAutoscaleConfigurationOutputReference">ApplicationGatewayAutoscaleConfigurationOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.backend">Backend</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendList">ApplicationGatewayBackendList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.backendAddressPool">BackendAddressPool</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendAddressPoolList">ApplicationGatewayBackendAddressPoolList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.backendHttpSettings">BackendHttpSettings</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendHttpSettingsList">ApplicationGatewayBackendHttpSettingsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.customErrorConfiguration">CustomErrorConfiguration</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayCustomErrorConfigurationList">ApplicationGatewayCustomErrorConfigurationList</a></code> | *No description.* |
@@ -1030,12 +1112,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.global">Global</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayGlobalOutputReference">ApplicationGatewayGlobalOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.httpListener">HttpListener</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayHttpListenerList">ApplicationGatewayHttpListenerList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.identity">Identity</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayIdentityOutputReference">ApplicationGatewayIdentityOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.listener">Listener</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerList">ApplicationGatewayListenerList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.privateEndpointConnection">PrivateEndpointConnection</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayPrivateEndpointConnectionList">ApplicationGatewayPrivateEndpointConnectionList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.privateLinkConfiguration">PrivateLinkConfiguration</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayPrivateLinkConfigurationList">ApplicationGatewayPrivateLinkConfigurationList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.probe">Probe</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbeList">ApplicationGatewayProbeList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.redirectConfiguration">RedirectConfiguration</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRedirectConfigurationList">ApplicationGatewayRedirectConfigurationList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.requestRoutingRule">RequestRoutingRule</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRequestRoutingRuleList">ApplicationGatewayRequestRoutingRuleList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.rewriteRuleSet">RewriteRuleSet</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRewriteRuleSetList">ApplicationGatewayRewriteRuleSetList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.routingRule">RoutingRule</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleList">ApplicationGatewayRoutingRuleList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.sku">Sku</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySkuOutputReference">ApplicationGatewaySkuOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.sslCertificate">SslCertificate</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslCertificateList">ApplicationGatewaySslCertificateList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.sslPolicy">SslPolicy</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslPolicyOutputReference">ApplicationGatewaySslPolicyOutputReference</a></code> | *No description.* |
@@ -1049,6 +1133,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.autoscaleConfigurationInput">AutoscaleConfigurationInput</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayAutoscaleConfiguration">ApplicationGatewayAutoscaleConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.backendAddressPoolInput">BackendAddressPoolInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.backendHttpSettingsInput">BackendHttpSettingsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.backendInput">BackendInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.customErrorConfigurationInput">CustomErrorConfigurationInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.enableHttp2Input">EnableHttp2Input</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.fipsEnabledInput">FipsEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -1062,6 +1147,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.httpListenerInput">HttpListenerInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.identityInput">IdentityInput</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayIdentity">ApplicationGatewayIdentity</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.listenerInput">ListenerInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.locationInput">LocationInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.privateLinkConfigurationInput">PrivateLinkConfigurationInput</a></code> | <code>interface{}</code> | *No description.* |
@@ -1070,6 +1156,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.requestRoutingRuleInput">RequestRoutingRuleInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.resourceGroupNameInput">ResourceGroupNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.rewriteRuleSetInput">RewriteRuleSetInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.routingRuleInput">RoutingRuleInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.skuInput">SkuInput</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySku">ApplicationGatewaySku</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.sslCertificateInput">SslCertificateInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.sslPolicyInput">SslPolicyInput</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslPolicy">ApplicationGatewaySslPolicy</a></code> | *No description.* |
@@ -1257,6 +1344,16 @@ func AutoscaleConfiguration() ApplicationGatewayAutoscaleConfigurationOutputRefe
 
 ---
 
+##### `Backend`<sup>Required</sup> <a name="Backend" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.backend"></a>
+
+```go
+func Backend() ApplicationGatewayBackendList
+```
+
+- *Type:* <a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendList">ApplicationGatewayBackendList</a>
+
+---
+
 ##### `BackendAddressPool`<sup>Required</sup> <a name="BackendAddressPool" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.backendAddressPool"></a>
 
 ```go
@@ -1347,6 +1444,16 @@ func Identity() ApplicationGatewayIdentityOutputReference
 
 ---
 
+##### `Listener`<sup>Required</sup> <a name="Listener" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.listener"></a>
+
+```go
+func Listener() ApplicationGatewayListenerList
+```
+
+- *Type:* <a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerList">ApplicationGatewayListenerList</a>
+
+---
+
 ##### `PrivateEndpointConnection`<sup>Required</sup> <a name="PrivateEndpointConnection" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.privateEndpointConnection"></a>
 
 ```go
@@ -1404,6 +1511,16 @@ func RewriteRuleSet() ApplicationGatewayRewriteRuleSetList
 ```
 
 - *Type:* <a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRewriteRuleSetList">ApplicationGatewayRewriteRuleSetList</a>
+
+---
+
+##### `RoutingRule`<sup>Required</sup> <a name="RoutingRule" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.routingRule"></a>
+
+```go
+func RoutingRule() ApplicationGatewayRoutingRuleList
+```
+
+- *Type:* <a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleList">ApplicationGatewayRoutingRuleList</a>
 
 ---
 
@@ -1531,6 +1648,16 @@ func BackendAddressPoolInput() interface{}
 
 ```go
 func BackendHttpSettingsInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `BackendInput`<sup>Optional</sup> <a name="BackendInput" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.backendInput"></a>
+
+```go
+func BackendInput() interface{}
 ```
 
 - *Type:* interface{}
@@ -1667,6 +1794,16 @@ func IdInput() *string
 
 ---
 
+##### `ListenerInput`<sup>Optional</sup> <a name="ListenerInput" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.listenerInput"></a>
+
+```go
+func ListenerInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `LocationInput`<sup>Optional</sup> <a name="LocationInput" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.locationInput"></a>
 
 ```go
@@ -1741,6 +1878,16 @@ func ResourceGroupNameInput() *string
 
 ```go
 func RewriteRuleSetInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `RoutingRuleInput`<sup>Optional</sup> <a name="RoutingRuleInput" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGateway.property.routingRuleInput"></a>
+
+```go
+func RoutingRuleInput() interface{}
 ```
 
 - *Type:* interface{}
@@ -2004,8 +2151,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayAuthenticationCertificate.property.data">Data</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#data ApplicationGateway#data}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayAuthenticationCertificate.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayAuthenticationCertificate.property.data">Data</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#data ApplicationGateway#data}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayAuthenticationCertificate.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
 
 ---
 
@@ -2017,7 +2164,7 @@ Data *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#data ApplicationGateway#data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#data ApplicationGateway#data}.
 
 ---
 
@@ -2029,7 +2176,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}.
 
 ---
 
@@ -2050,8 +2197,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayAutoscaleConfiguration.property.minCapacity">MinCapacity</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#min_capacity ApplicationGateway#min_capacity}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayAutoscaleConfiguration.property.maxCapacity">MaxCapacity</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#max_capacity ApplicationGateway#max_capacity}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayAutoscaleConfiguration.property.minCapacity">MinCapacity</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#min_capacity ApplicationGateway#min_capacity}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayAutoscaleConfiguration.property.maxCapacity">MaxCapacity</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#max_capacity ApplicationGateway#max_capacity}. |
 
 ---
 
@@ -2063,7 +2210,7 @@ MinCapacity *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#min_capacity ApplicationGateway#min_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#min_capacity ApplicationGateway#min_capacity}.
 
 ---
 
@@ -2075,7 +2222,137 @@ MaxCapacity *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#max_capacity ApplicationGateway#max_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#max_capacity ApplicationGateway#max_capacity}.
+
+---
+
+### ApplicationGatewayBackend <a name="ApplicationGatewayBackend" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackend"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackend.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgateway"
+
+&applicationgateway.ApplicationGatewayBackend {
+	Name: *string,
+	Port: *f64,
+	Protocol: *string,
+	ClientIpPreservationEnabled: interface{},
+	HostName: *string,
+	ProbeName: *string,
+	TimeoutInSeconds: *f64,
+	TrustedRootCertificateNames: *[]*string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackend.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackend.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#port ApplicationGateway#port}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackend.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#protocol ApplicationGateway#protocol}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackend.property.clientIpPreservationEnabled">ClientIpPreservationEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#client_ip_preservation_enabled ApplicationGateway#client_ip_preservation_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackend.property.hostName">HostName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#host_name ApplicationGateway#host_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackend.property.probeName">ProbeName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#probe_name ApplicationGateway#probe_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackend.property.timeoutInSeconds">TimeoutInSeconds</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#timeout_in_seconds ApplicationGateway#timeout_in_seconds}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackend.property.trustedRootCertificateNames">TrustedRootCertificateNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#trusted_root_certificate_names ApplicationGateway#trusted_root_certificate_names}. |
+
+---
+
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackend.property.name"></a>
+
+```go
+Name *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}.
+
+---
+
+##### `Port`<sup>Required</sup> <a name="Port" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackend.property.port"></a>
+
+```go
+Port *f64
+```
+
+- *Type:* *f64
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#port ApplicationGateway#port}.
+
+---
+
+##### `Protocol`<sup>Required</sup> <a name="Protocol" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackend.property.protocol"></a>
+
+```go
+Protocol *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#protocol ApplicationGateway#protocol}.
+
+---
+
+##### `ClientIpPreservationEnabled`<sup>Optional</sup> <a name="ClientIpPreservationEnabled" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackend.property.clientIpPreservationEnabled"></a>
+
+```go
+ClientIpPreservationEnabled interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#client_ip_preservation_enabled ApplicationGateway#client_ip_preservation_enabled}.
+
+---
+
+##### `HostName`<sup>Optional</sup> <a name="HostName" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackend.property.hostName"></a>
+
+```go
+HostName *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#host_name ApplicationGateway#host_name}.
+
+---
+
+##### `ProbeName`<sup>Optional</sup> <a name="ProbeName" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackend.property.probeName"></a>
+
+```go
+ProbeName *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#probe_name ApplicationGateway#probe_name}.
+
+---
+
+##### `TimeoutInSeconds`<sup>Optional</sup> <a name="TimeoutInSeconds" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackend.property.timeoutInSeconds"></a>
+
+```go
+TimeoutInSeconds *f64
+```
+
+- *Type:* *f64
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#timeout_in_seconds ApplicationGateway#timeout_in_seconds}.
+
+---
+
+##### `TrustedRootCertificateNames`<sup>Optional</sup> <a name="TrustedRootCertificateNames" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackend.property.trustedRootCertificateNames"></a>
+
+```go
+TrustedRootCertificateNames *[]*string
+```
+
+- *Type:* *[]*string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#trusted_root_certificate_names ApplicationGateway#trusted_root_certificate_names}.
 
 ---
 
@@ -2097,9 +2374,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendAddressPool.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendAddressPool.property.fqdns">Fqdns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#fqdns ApplicationGateway#fqdns}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendAddressPool.property.ipAddresses">IpAddresses</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#ip_addresses ApplicationGateway#ip_addresses}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendAddressPool.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendAddressPool.property.fqdns">Fqdns</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#fqdns ApplicationGateway#fqdns}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendAddressPool.property.ipAddresses">IpAddresses</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#ip_addresses ApplicationGateway#ip_addresses}. |
 
 ---
 
@@ -2111,7 +2388,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}.
 
 ---
 
@@ -2123,7 +2400,7 @@ Fqdns *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#fqdns ApplicationGateway#fqdns}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#fqdns ApplicationGateway#fqdns}.
 
 ---
 
@@ -2135,7 +2412,7 @@ IpAddresses *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#ip_addresses ApplicationGateway#ip_addresses}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#ip_addresses ApplicationGateway#ip_addresses}.
 
 ---
 
@@ -2168,20 +2445,20 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendHttpSettings.property.cookieBasedAffinity">CookieBasedAffinity</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#cookie_based_affinity ApplicationGateway#cookie_based_affinity}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendHttpSettings.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendHttpSettings.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#port ApplicationGateway#port}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendHttpSettings.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#protocol ApplicationGateway#protocol}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendHttpSettings.property.affinityCookieName">AffinityCookieName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#affinity_cookie_name ApplicationGateway#affinity_cookie_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendHttpSettings.property.cookieBasedAffinity">CookieBasedAffinity</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#cookie_based_affinity ApplicationGateway#cookie_based_affinity}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendHttpSettings.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendHttpSettings.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#port ApplicationGateway#port}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendHttpSettings.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#protocol ApplicationGateway#protocol}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendHttpSettings.property.affinityCookieName">AffinityCookieName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#affinity_cookie_name ApplicationGateway#affinity_cookie_name}. |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendHttpSettings.property.authenticationCertificate">AuthenticationCertificate</a></code> | <code>interface{}</code> | authentication_certificate block. |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendHttpSettings.property.connectionDraining">ConnectionDraining</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendHttpSettingsConnectionDraining">ApplicationGatewayBackendHttpSettingsConnectionDraining</a></code> | connection_draining block. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendHttpSettings.property.dedicatedBackendConnectionEnabled">DedicatedBackendConnectionEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#dedicated_backend_connection_enabled ApplicationGateway#dedicated_backend_connection_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendHttpSettings.property.hostName">HostName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#host_name ApplicationGateway#host_name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendHttpSettings.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#path ApplicationGateway#path}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendHttpSettings.property.pickHostNameFromBackendAddress">PickHostNameFromBackendAddress</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#pick_host_name_from_backend_address ApplicationGateway#pick_host_name_from_backend_address}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendHttpSettings.property.probeName">ProbeName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#probe_name ApplicationGateway#probe_name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendHttpSettings.property.requestTimeout">RequestTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#request_timeout ApplicationGateway#request_timeout}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendHttpSettings.property.trustedRootCertificateNames">TrustedRootCertificateNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#trusted_root_certificate_names ApplicationGateway#trusted_root_certificate_names}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendHttpSettings.property.dedicatedBackendConnectionEnabled">DedicatedBackendConnectionEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#dedicated_backend_connection_enabled ApplicationGateway#dedicated_backend_connection_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendHttpSettings.property.hostName">HostName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#host_name ApplicationGateway#host_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendHttpSettings.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#path ApplicationGateway#path}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendHttpSettings.property.pickHostNameFromBackendAddress">PickHostNameFromBackendAddress</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#pick_host_name_from_backend_address ApplicationGateway#pick_host_name_from_backend_address}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendHttpSettings.property.probeName">ProbeName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#probe_name ApplicationGateway#probe_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendHttpSettings.property.requestTimeout">RequestTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#request_timeout ApplicationGateway#request_timeout}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendHttpSettings.property.trustedRootCertificateNames">TrustedRootCertificateNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#trusted_root_certificate_names ApplicationGateway#trusted_root_certificate_names}. |
 
 ---
 
@@ -2193,7 +2470,7 @@ CookieBasedAffinity *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#cookie_based_affinity ApplicationGateway#cookie_based_affinity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#cookie_based_affinity ApplicationGateway#cookie_based_affinity}.
 
 ---
 
@@ -2205,7 +2482,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}.
 
 ---
 
@@ -2217,7 +2494,7 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#port ApplicationGateway#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#port ApplicationGateway#port}.
 
 ---
 
@@ -2229,7 +2506,7 @@ Protocol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#protocol ApplicationGateway#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#protocol ApplicationGateway#protocol}.
 
 ---
 
@@ -2241,7 +2518,7 @@ AffinityCookieName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#affinity_cookie_name ApplicationGateway#affinity_cookie_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#affinity_cookie_name ApplicationGateway#affinity_cookie_name}.
 
 ---
 
@@ -2255,7 +2532,7 @@ AuthenticationCertificate interface{}
 
 authentication_certificate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#authentication_certificate ApplicationGateway#authentication_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#authentication_certificate ApplicationGateway#authentication_certificate}
 
 ---
 
@@ -2269,7 +2546,7 @@ ConnectionDraining ApplicationGatewayBackendHttpSettingsConnectionDraining
 
 connection_draining block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#connection_draining ApplicationGateway#connection_draining}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#connection_draining ApplicationGateway#connection_draining}
 
 ---
 
@@ -2281,7 +2558,7 @@ DedicatedBackendConnectionEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#dedicated_backend_connection_enabled ApplicationGateway#dedicated_backend_connection_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#dedicated_backend_connection_enabled ApplicationGateway#dedicated_backend_connection_enabled}.
 
 ---
 
@@ -2293,7 +2570,7 @@ HostName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#host_name ApplicationGateway#host_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#host_name ApplicationGateway#host_name}.
 
 ---
 
@@ -2305,7 +2582,7 @@ Path *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#path ApplicationGateway#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#path ApplicationGateway#path}.
 
 ---
 
@@ -2317,7 +2594,7 @@ PickHostNameFromBackendAddress interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#pick_host_name_from_backend_address ApplicationGateway#pick_host_name_from_backend_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#pick_host_name_from_backend_address ApplicationGateway#pick_host_name_from_backend_address}.
 
 ---
 
@@ -2329,7 +2606,7 @@ ProbeName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#probe_name ApplicationGateway#probe_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#probe_name ApplicationGateway#probe_name}.
 
 ---
 
@@ -2341,7 +2618,7 @@ RequestTimeout *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#request_timeout ApplicationGateway#request_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#request_timeout ApplicationGateway#request_timeout}.
 
 ---
 
@@ -2353,7 +2630,7 @@ TrustedRootCertificateNames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#trusted_root_certificate_names ApplicationGateway#trusted_root_certificate_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#trusted_root_certificate_names ApplicationGateway#trusted_root_certificate_names}.
 
 ---
 
@@ -2373,7 +2650,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendHttpSettingsAuthenticationCertificate.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendHttpSettingsAuthenticationCertificate.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
 
 ---
 
@@ -2385,7 +2662,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}.
 
 ---
 
@@ -2406,8 +2683,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendHttpSettingsConnectionDraining.property.drainTimeoutSec">DrainTimeoutSec</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#drain_timeout_sec ApplicationGateway#drain_timeout_sec}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendHttpSettingsConnectionDraining.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#enabled ApplicationGateway#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendHttpSettingsConnectionDraining.property.drainTimeoutSec">DrainTimeoutSec</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#drain_timeout_sec ApplicationGateway#drain_timeout_sec}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendHttpSettingsConnectionDraining.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#enabled ApplicationGateway#enabled}. |
 
 ---
 
@@ -2419,7 +2696,7 @@ DrainTimeoutSec *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#drain_timeout_sec ApplicationGateway#drain_timeout_sec}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#drain_timeout_sec ApplicationGateway#drain_timeout_sec}.
 
 ---
 
@@ -2431,7 +2708,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#enabled ApplicationGateway#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#enabled ApplicationGateway#enabled}.
 
 ---
 
@@ -2451,18 +2728,17 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	BackendAddressPool: interface{},
-	BackendHttpSettings: interface{},
 	FrontendIpConfiguration: interface{},
 	FrontendPort: interface{},
 	GatewayIpConfiguration: interface{},
-	HttpListener: interface{},
 	Location: *string,
 	Name: *string,
-	RequestRoutingRule: interface{},
 	ResourceGroupName: *string,
 	Sku: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.applicationGateway.ApplicationGatewaySku,
 	AuthenticationCertificate: interface{},
 	AutoscaleConfiguration: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.applicationGateway.ApplicationGatewayAutoscaleConfiguration,
+	Backend: interface{},
+	BackendHttpSettings: interface{},
 	CustomErrorConfiguration: interface{},
 	EnableHttp2: interface{},
 	FipsEnabled: interface{},
@@ -2470,12 +2746,16 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 	ForceFirewallPolicyAssociation: interface{},
 	Global: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.applicationGateway.ApplicationGatewayGlobal,
 	Http2Enabled: interface{},
+	HttpListener: interface{},
 	Id: *string,
 	Identity: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.applicationGateway.ApplicationGatewayIdentity,
+	Listener: interface{},
 	PrivateLinkConfiguration: interface{},
 	Probe: interface{},
 	RedirectConfiguration: interface{},
+	RequestRoutingRule: interface{},
 	RewriteRuleSet: interface{},
+	RoutingRule: interface{},
 	SslCertificate: interface{},
 	SslPolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.applicationGateway.ApplicationGatewaySslPolicy,
 	SslProfile: interface{},
@@ -2501,41 +2781,44 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.backendAddressPool">BackendAddressPool</a></code> | <code>interface{}</code> | backend_address_pool block. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.backendHttpSettings">BackendHttpSettings</a></code> | <code>interface{}</code> | backend_http_settings block. |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.frontendIpConfiguration">FrontendIpConfiguration</a></code> | <code>interface{}</code> | frontend_ip_configuration block. |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.frontendPort">FrontendPort</a></code> | <code>interface{}</code> | frontend_port block. |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.gatewayIpConfiguration">GatewayIpConfiguration</a></code> | <code>interface{}</code> | gateway_ip_configuration block. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.httpListener">HttpListener</a></code> | <code>interface{}</code> | http_listener block. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#location ApplicationGateway#location}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.requestRoutingRule">RequestRoutingRule</a></code> | <code>interface{}</code> | request_routing_rule block. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#resource_group_name ApplicationGateway#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#location ApplicationGateway#location}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#resource_group_name ApplicationGateway#resource_group_name}. |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.sku">Sku</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySku">ApplicationGatewaySku</a></code> | sku block. |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.authenticationCertificate">AuthenticationCertificate</a></code> | <code>interface{}</code> | authentication_certificate block. |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.autoscaleConfiguration">AutoscaleConfiguration</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayAutoscaleConfiguration">ApplicationGatewayAutoscaleConfiguration</a></code> | autoscale_configuration block. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.backend">Backend</a></code> | <code>interface{}</code> | backend block. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.backendHttpSettings">BackendHttpSettings</a></code> | <code>interface{}</code> | backend_http_settings block. |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.customErrorConfiguration">CustomErrorConfiguration</a></code> | <code>interface{}</code> | custom_error_configuration block. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.enableHttp2">EnableHttp2</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#enable_http2 ApplicationGateway#enable_http2}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.fipsEnabled">FipsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#fips_enabled ApplicationGateway#fips_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.firewallPolicyId">FirewallPolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#firewall_policy_id ApplicationGateway#firewall_policy_id}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.forceFirewallPolicyAssociation">ForceFirewallPolicyAssociation</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#force_firewall_policy_association ApplicationGateway#force_firewall_policy_association}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.enableHttp2">EnableHttp2</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#enable_http2 ApplicationGateway#enable_http2}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.fipsEnabled">FipsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#fips_enabled ApplicationGateway#fips_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.firewallPolicyId">FirewallPolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#firewall_policy_id ApplicationGateway#firewall_policy_id}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.forceFirewallPolicyAssociation">ForceFirewallPolicyAssociation</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#force_firewall_policy_association ApplicationGateway#force_firewall_policy_association}. |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.global">Global</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayGlobal">ApplicationGatewayGlobal</a></code> | global block. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.http2Enabled">Http2Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#http2_enabled ApplicationGateway#http2_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#id ApplicationGateway#id}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.http2Enabled">Http2Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#http2_enabled ApplicationGateway#http2_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.httpListener">HttpListener</a></code> | <code>interface{}</code> | http_listener block. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#id ApplicationGateway#id}. |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.identity">Identity</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayIdentity">ApplicationGatewayIdentity</a></code> | identity block. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.listener">Listener</a></code> | <code>interface{}</code> | listener block. |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.privateLinkConfiguration">PrivateLinkConfiguration</a></code> | <code>interface{}</code> | private_link_configuration block. |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.probe">Probe</a></code> | <code>interface{}</code> | probe block. |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.redirectConfiguration">RedirectConfiguration</a></code> | <code>interface{}</code> | redirect_configuration block. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.requestRoutingRule">RequestRoutingRule</a></code> | <code>interface{}</code> | request_routing_rule block. |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.rewriteRuleSet">RewriteRuleSet</a></code> | <code>interface{}</code> | rewrite_rule_set block. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.routingRule">RoutingRule</a></code> | <code>interface{}</code> | routing_rule block. |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.sslCertificate">SslCertificate</a></code> | <code>interface{}</code> | ssl_certificate block. |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.sslPolicy">SslPolicy</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslPolicy">ApplicationGatewaySslPolicy</a></code> | ssl_policy block. |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.sslProfile">SslProfile</a></code> | <code>interface{}</code> | ssl_profile block. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#tags ApplicationGateway#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#tags ApplicationGateway#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayTimeouts">ApplicationGatewayTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.trustedClientCertificate">TrustedClientCertificate</a></code> | <code>interface{}</code> | trusted_client_certificate block. |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.trustedRootCertificate">TrustedRootCertificate</a></code> | <code>interface{}</code> | trusted_root_certificate block. |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.urlPathMap">UrlPathMap</a></code> | <code>interface{}</code> | url_path_map block. |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.wafConfiguration">WafConfiguration</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayWafConfiguration">ApplicationGatewayWafConfiguration</a></code> | waf_configuration block. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.zones">Zones</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#zones ApplicationGateway#zones}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.zones">Zones</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#zones ApplicationGateway#zones}. |
 
 ---
 
@@ -2619,21 +2902,7 @@ BackendAddressPool interface{}
 
 backend_address_pool block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#backend_address_pool ApplicationGateway#backend_address_pool}
-
----
-
-##### `BackendHttpSettings`<sup>Required</sup> <a name="BackendHttpSettings" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.backendHttpSettings"></a>
-
-```go
-BackendHttpSettings interface{}
-```
-
-- *Type:* interface{}
-
-backend_http_settings block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#backend_http_settings ApplicationGateway#backend_http_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#backend_address_pool ApplicationGateway#backend_address_pool}
 
 ---
 
@@ -2647,7 +2916,7 @@ FrontendIpConfiguration interface{}
 
 frontend_ip_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#frontend_ip_configuration ApplicationGateway#frontend_ip_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#frontend_ip_configuration ApplicationGateway#frontend_ip_configuration}
 
 ---
 
@@ -2661,7 +2930,7 @@ FrontendPort interface{}
 
 frontend_port block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#frontend_port ApplicationGateway#frontend_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#frontend_port ApplicationGateway#frontend_port}
 
 ---
 
@@ -2675,21 +2944,7 @@ GatewayIpConfiguration interface{}
 
 gateway_ip_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#gateway_ip_configuration ApplicationGateway#gateway_ip_configuration}
-
----
-
-##### `HttpListener`<sup>Required</sup> <a name="HttpListener" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.httpListener"></a>
-
-```go
-HttpListener interface{}
-```
-
-- *Type:* interface{}
-
-http_listener block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#http_listener ApplicationGateway#http_listener}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#gateway_ip_configuration ApplicationGateway#gateway_ip_configuration}
 
 ---
 
@@ -2701,7 +2956,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#location ApplicationGateway#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#location ApplicationGateway#location}.
 
 ---
 
@@ -2713,21 +2968,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}.
-
----
-
-##### `RequestRoutingRule`<sup>Required</sup> <a name="RequestRoutingRule" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.requestRoutingRule"></a>
-
-```go
-RequestRoutingRule interface{}
-```
-
-- *Type:* interface{}
-
-request_routing_rule block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#request_routing_rule ApplicationGateway#request_routing_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}.
 
 ---
 
@@ -2739,7 +2980,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#resource_group_name ApplicationGateway#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#resource_group_name ApplicationGateway#resource_group_name}.
 
 ---
 
@@ -2753,7 +2994,7 @@ Sku ApplicationGatewaySku
 
 sku block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#sku ApplicationGateway#sku}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#sku ApplicationGateway#sku}
 
 ---
 
@@ -2767,7 +3008,7 @@ AuthenticationCertificate interface{}
 
 authentication_certificate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#authentication_certificate ApplicationGateway#authentication_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#authentication_certificate ApplicationGateway#authentication_certificate}
 
 ---
 
@@ -2781,7 +3022,35 @@ AutoscaleConfiguration ApplicationGatewayAutoscaleConfiguration
 
 autoscale_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#autoscale_configuration ApplicationGateway#autoscale_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#autoscale_configuration ApplicationGateway#autoscale_configuration}
+
+---
+
+##### `Backend`<sup>Optional</sup> <a name="Backend" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.backend"></a>
+
+```go
+Backend interface{}
+```
+
+- *Type:* interface{}
+
+backend block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#backend ApplicationGateway#backend}
+
+---
+
+##### `BackendHttpSettings`<sup>Optional</sup> <a name="BackendHttpSettings" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.backendHttpSettings"></a>
+
+```go
+BackendHttpSettings interface{}
+```
+
+- *Type:* interface{}
+
+backend_http_settings block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#backend_http_settings ApplicationGateway#backend_http_settings}
 
 ---
 
@@ -2795,7 +3064,7 @@ CustomErrorConfiguration interface{}
 
 custom_error_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#custom_error_configuration ApplicationGateway#custom_error_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#custom_error_configuration ApplicationGateway#custom_error_configuration}
 
 ---
 
@@ -2807,7 +3076,7 @@ EnableHttp2 interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#enable_http2 ApplicationGateway#enable_http2}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#enable_http2 ApplicationGateway#enable_http2}.
 
 ---
 
@@ -2819,7 +3088,7 @@ FipsEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#fips_enabled ApplicationGateway#fips_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#fips_enabled ApplicationGateway#fips_enabled}.
 
 ---
 
@@ -2831,7 +3100,7 @@ FirewallPolicyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#firewall_policy_id ApplicationGateway#firewall_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#firewall_policy_id ApplicationGateway#firewall_policy_id}.
 
 ---
 
@@ -2843,7 +3112,7 @@ ForceFirewallPolicyAssociation interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#force_firewall_policy_association ApplicationGateway#force_firewall_policy_association}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#force_firewall_policy_association ApplicationGateway#force_firewall_policy_association}.
 
 ---
 
@@ -2857,7 +3126,7 @@ Global ApplicationGatewayGlobal
 
 global block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#global ApplicationGateway#global}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#global ApplicationGateway#global}
 
 ---
 
@@ -2869,7 +3138,21 @@ Http2Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#http2_enabled ApplicationGateway#http2_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#http2_enabled ApplicationGateway#http2_enabled}.
+
+---
+
+##### `HttpListener`<sup>Optional</sup> <a name="HttpListener" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.httpListener"></a>
+
+```go
+HttpListener interface{}
+```
+
+- *Type:* interface{}
+
+http_listener block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#http_listener ApplicationGateway#http_listener}
 
 ---
 
@@ -2881,7 +3164,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#id ApplicationGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#id ApplicationGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2898,7 +3181,21 @@ Identity ApplicationGatewayIdentity
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#identity ApplicationGateway#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#identity ApplicationGateway#identity}
+
+---
+
+##### `Listener`<sup>Optional</sup> <a name="Listener" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.listener"></a>
+
+```go
+Listener interface{}
+```
+
+- *Type:* interface{}
+
+listener block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#listener ApplicationGateway#listener}
 
 ---
 
@@ -2912,7 +3209,7 @@ PrivateLinkConfiguration interface{}
 
 private_link_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#private_link_configuration ApplicationGateway#private_link_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#private_link_configuration ApplicationGateway#private_link_configuration}
 
 ---
 
@@ -2926,7 +3223,7 @@ Probe interface{}
 
 probe block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#probe ApplicationGateway#probe}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#probe ApplicationGateway#probe}
 
 ---
 
@@ -2940,7 +3237,21 @@ RedirectConfiguration interface{}
 
 redirect_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#redirect_configuration ApplicationGateway#redirect_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#redirect_configuration ApplicationGateway#redirect_configuration}
+
+---
+
+##### `RequestRoutingRule`<sup>Optional</sup> <a name="RequestRoutingRule" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.requestRoutingRule"></a>
+
+```go
+RequestRoutingRule interface{}
+```
+
+- *Type:* interface{}
+
+request_routing_rule block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#request_routing_rule ApplicationGateway#request_routing_rule}
 
 ---
 
@@ -2954,7 +3265,21 @@ RewriteRuleSet interface{}
 
 rewrite_rule_set block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#rewrite_rule_set ApplicationGateway#rewrite_rule_set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#rewrite_rule_set ApplicationGateway#rewrite_rule_set}
+
+---
+
+##### `RoutingRule`<sup>Optional</sup> <a name="RoutingRule" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayConfig.property.routingRule"></a>
+
+```go
+RoutingRule interface{}
+```
+
+- *Type:* interface{}
+
+routing_rule block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#routing_rule ApplicationGateway#routing_rule}
 
 ---
 
@@ -2968,7 +3293,7 @@ SslCertificate interface{}
 
 ssl_certificate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#ssl_certificate ApplicationGateway#ssl_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#ssl_certificate ApplicationGateway#ssl_certificate}
 
 ---
 
@@ -2982,7 +3307,7 @@ SslPolicy ApplicationGatewaySslPolicy
 
 ssl_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#ssl_policy ApplicationGateway#ssl_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#ssl_policy ApplicationGateway#ssl_policy}
 
 ---
 
@@ -2996,7 +3321,7 @@ SslProfile interface{}
 
 ssl_profile block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#ssl_profile ApplicationGateway#ssl_profile}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#ssl_profile ApplicationGateway#ssl_profile}
 
 ---
 
@@ -3008,7 +3333,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#tags ApplicationGateway#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#tags ApplicationGateway#tags}.
 
 ---
 
@@ -3022,7 +3347,7 @@ Timeouts ApplicationGatewayTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#timeouts ApplicationGateway#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#timeouts ApplicationGateway#timeouts}
 
 ---
 
@@ -3036,7 +3361,7 @@ TrustedClientCertificate interface{}
 
 trusted_client_certificate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#trusted_client_certificate ApplicationGateway#trusted_client_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#trusted_client_certificate ApplicationGateway#trusted_client_certificate}
 
 ---
 
@@ -3050,7 +3375,7 @@ TrustedRootCertificate interface{}
 
 trusted_root_certificate block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#trusted_root_certificate ApplicationGateway#trusted_root_certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#trusted_root_certificate ApplicationGateway#trusted_root_certificate}
 
 ---
 
@@ -3064,7 +3389,7 @@ UrlPathMap interface{}
 
 url_path_map block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#url_path_map ApplicationGateway#url_path_map}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#url_path_map ApplicationGateway#url_path_map}
 
 ---
 
@@ -3078,7 +3403,7 @@ WafConfiguration ApplicationGatewayWafConfiguration
 
 waf_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#waf_configuration ApplicationGateway#waf_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#waf_configuration ApplicationGateway#waf_configuration}
 
 ---
 
@@ -3090,7 +3415,7 @@ Zones *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#zones ApplicationGateway#zones}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#zones ApplicationGateway#zones}.
 
 ---
 
@@ -3111,8 +3436,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayCustomErrorConfiguration.property.customErrorPageUrl">CustomErrorPageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#custom_error_page_url ApplicationGateway#custom_error_page_url}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayCustomErrorConfiguration.property.statusCode">StatusCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#status_code ApplicationGateway#status_code}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayCustomErrorConfiguration.property.customErrorPageUrl">CustomErrorPageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#custom_error_page_url ApplicationGateway#custom_error_page_url}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayCustomErrorConfiguration.property.statusCode">StatusCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#status_code ApplicationGateway#status_code}. |
 
 ---
 
@@ -3124,7 +3449,7 @@ CustomErrorPageUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#custom_error_page_url ApplicationGateway#custom_error_page_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#custom_error_page_url ApplicationGateway#custom_error_page_url}.
 
 ---
 
@@ -3136,7 +3461,7 @@ StatusCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#status_code ApplicationGateway#status_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#status_code ApplicationGateway#status_code}.
 
 ---
 
@@ -3161,12 +3486,12 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayFrontendIpConfiguration.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayFrontendIpConfiguration.property.privateIpAddress">PrivateIpAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#private_ip_address ApplicationGateway#private_ip_address}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayFrontendIpConfiguration.property.privateIpAddressAllocation">PrivateIpAddressAllocation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#private_ip_address_allocation ApplicationGateway#private_ip_address_allocation}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayFrontendIpConfiguration.property.privateLinkConfigurationName">PrivateLinkConfigurationName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#private_link_configuration_name ApplicationGateway#private_link_configuration_name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayFrontendIpConfiguration.property.publicIpAddressId">PublicIpAddressId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#public_ip_address_id ApplicationGateway#public_ip_address_id}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayFrontendIpConfiguration.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#subnet_id ApplicationGateway#subnet_id}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayFrontendIpConfiguration.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayFrontendIpConfiguration.property.privateIpAddress">PrivateIpAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#private_ip_address ApplicationGateway#private_ip_address}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayFrontendIpConfiguration.property.privateIpAddressAllocation">PrivateIpAddressAllocation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#private_ip_address_allocation ApplicationGateway#private_ip_address_allocation}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayFrontendIpConfiguration.property.privateLinkConfigurationName">PrivateLinkConfigurationName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#private_link_configuration_name ApplicationGateway#private_link_configuration_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayFrontendIpConfiguration.property.publicIpAddressId">PublicIpAddressId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#public_ip_address_id ApplicationGateway#public_ip_address_id}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayFrontendIpConfiguration.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#subnet_id ApplicationGateway#subnet_id}. |
 
 ---
 
@@ -3178,7 +3503,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}.
 
 ---
 
@@ -3190,7 +3515,7 @@ PrivateIpAddress *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#private_ip_address ApplicationGateway#private_ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#private_ip_address ApplicationGateway#private_ip_address}.
 
 ---
 
@@ -3202,7 +3527,7 @@ PrivateIpAddressAllocation *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#private_ip_address_allocation ApplicationGateway#private_ip_address_allocation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#private_ip_address_allocation ApplicationGateway#private_ip_address_allocation}.
 
 ---
 
@@ -3214,7 +3539,7 @@ PrivateLinkConfigurationName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#private_link_configuration_name ApplicationGateway#private_link_configuration_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#private_link_configuration_name ApplicationGateway#private_link_configuration_name}.
 
 ---
 
@@ -3226,7 +3551,7 @@ PublicIpAddressId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#public_ip_address_id ApplicationGateway#public_ip_address_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#public_ip_address_id ApplicationGateway#public_ip_address_id}.
 
 ---
 
@@ -3238,7 +3563,7 @@ SubnetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#subnet_id ApplicationGateway#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#subnet_id ApplicationGateway#subnet_id}.
 
 ---
 
@@ -3259,8 +3584,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayFrontendPort.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayFrontendPort.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#port ApplicationGateway#port}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayFrontendPort.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayFrontendPort.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#port ApplicationGateway#port}. |
 
 ---
 
@@ -3272,7 +3597,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}.
 
 ---
 
@@ -3284,7 +3609,7 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#port ApplicationGateway#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#port ApplicationGateway#port}.
 
 ---
 
@@ -3305,8 +3630,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayGatewayIpConfiguration.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayGatewayIpConfiguration.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#subnet_id ApplicationGateway#subnet_id}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayGatewayIpConfiguration.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayGatewayIpConfiguration.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#subnet_id ApplicationGateway#subnet_id}. |
 
 ---
 
@@ -3318,7 +3643,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}.
 
 ---
 
@@ -3330,7 +3655,7 @@ SubnetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#subnet_id ApplicationGateway#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#subnet_id ApplicationGateway#subnet_id}.
 
 ---
 
@@ -3351,8 +3676,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayGlobal.property.requestBufferingEnabled">RequestBufferingEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#request_buffering_enabled ApplicationGateway#request_buffering_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayGlobal.property.responseBufferingEnabled">ResponseBufferingEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#response_buffering_enabled ApplicationGateway#response_buffering_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayGlobal.property.requestBufferingEnabled">RequestBufferingEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#request_buffering_enabled ApplicationGateway#request_buffering_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayGlobal.property.responseBufferingEnabled">ResponseBufferingEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#response_buffering_enabled ApplicationGateway#response_buffering_enabled}. |
 
 ---
 
@@ -3364,7 +3689,7 @@ RequestBufferingEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#request_buffering_enabled ApplicationGateway#request_buffering_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#request_buffering_enabled ApplicationGateway#request_buffering_enabled}.
 
 ---
 
@@ -3376,7 +3701,7 @@ ResponseBufferingEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#response_buffering_enabled ApplicationGateway#response_buffering_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#response_buffering_enabled ApplicationGateway#response_buffering_enabled}.
 
 ---
 
@@ -3406,17 +3731,17 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayHttpListener.property.frontendIpConfigurationName">FrontendIpConfigurationName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#frontend_ip_configuration_name ApplicationGateway#frontend_ip_configuration_name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayHttpListener.property.frontendPortName">FrontendPortName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#frontend_port_name ApplicationGateway#frontend_port_name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayHttpListener.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayHttpListener.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#protocol ApplicationGateway#protocol}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayHttpListener.property.frontendIpConfigurationName">FrontendIpConfigurationName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#frontend_ip_configuration_name ApplicationGateway#frontend_ip_configuration_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayHttpListener.property.frontendPortName">FrontendPortName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#frontend_port_name ApplicationGateway#frontend_port_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayHttpListener.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayHttpListener.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#protocol ApplicationGateway#protocol}. |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayHttpListener.property.customErrorConfiguration">CustomErrorConfiguration</a></code> | <code>interface{}</code> | custom_error_configuration block. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayHttpListener.property.firewallPolicyId">FirewallPolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#firewall_policy_id ApplicationGateway#firewall_policy_id}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayHttpListener.property.hostName">HostName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#host_name ApplicationGateway#host_name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayHttpListener.property.hostNames">HostNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#host_names ApplicationGateway#host_names}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayHttpListener.property.requireSni">RequireSni</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#require_sni ApplicationGateway#require_sni}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayHttpListener.property.sslCertificateName">SslCertificateName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#ssl_certificate_name ApplicationGateway#ssl_certificate_name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayHttpListener.property.sslProfileName">SslProfileName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#ssl_profile_name ApplicationGateway#ssl_profile_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayHttpListener.property.firewallPolicyId">FirewallPolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#firewall_policy_id ApplicationGateway#firewall_policy_id}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayHttpListener.property.hostName">HostName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#host_name ApplicationGateway#host_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayHttpListener.property.hostNames">HostNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#host_names ApplicationGateway#host_names}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayHttpListener.property.requireSni">RequireSni</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#require_sni ApplicationGateway#require_sni}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayHttpListener.property.sslCertificateName">SslCertificateName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#ssl_certificate_name ApplicationGateway#ssl_certificate_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayHttpListener.property.sslProfileName">SslProfileName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#ssl_profile_name ApplicationGateway#ssl_profile_name}. |
 
 ---
 
@@ -3428,7 +3753,7 @@ FrontendIpConfigurationName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#frontend_ip_configuration_name ApplicationGateway#frontend_ip_configuration_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#frontend_ip_configuration_name ApplicationGateway#frontend_ip_configuration_name}.
 
 ---
 
@@ -3440,7 +3765,7 @@ FrontendPortName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#frontend_port_name ApplicationGateway#frontend_port_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#frontend_port_name ApplicationGateway#frontend_port_name}.
 
 ---
 
@@ -3452,7 +3777,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}.
 
 ---
 
@@ -3464,7 +3789,7 @@ Protocol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#protocol ApplicationGateway#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#protocol ApplicationGateway#protocol}.
 
 ---
 
@@ -3478,7 +3803,7 @@ CustomErrorConfiguration interface{}
 
 custom_error_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#custom_error_configuration ApplicationGateway#custom_error_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#custom_error_configuration ApplicationGateway#custom_error_configuration}
 
 ---
 
@@ -3490,7 +3815,7 @@ FirewallPolicyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#firewall_policy_id ApplicationGateway#firewall_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#firewall_policy_id ApplicationGateway#firewall_policy_id}.
 
 ---
 
@@ -3502,7 +3827,7 @@ HostName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#host_name ApplicationGateway#host_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#host_name ApplicationGateway#host_name}.
 
 ---
 
@@ -3514,7 +3839,7 @@ HostNames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#host_names ApplicationGateway#host_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#host_names ApplicationGateway#host_names}.
 
 ---
 
@@ -3526,7 +3851,7 @@ RequireSni interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#require_sni ApplicationGateway#require_sni}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#require_sni ApplicationGateway#require_sni}.
 
 ---
 
@@ -3538,7 +3863,7 @@ SslCertificateName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#ssl_certificate_name ApplicationGateway#ssl_certificate_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#ssl_certificate_name ApplicationGateway#ssl_certificate_name}.
 
 ---
 
@@ -3550,7 +3875,7 @@ SslProfileName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#ssl_profile_name ApplicationGateway#ssl_profile_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#ssl_profile_name ApplicationGateway#ssl_profile_name}.
 
 ---
 
@@ -3571,8 +3896,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayHttpListenerCustomErrorConfiguration.property.customErrorPageUrl">CustomErrorPageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#custom_error_page_url ApplicationGateway#custom_error_page_url}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayHttpListenerCustomErrorConfiguration.property.statusCode">StatusCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#status_code ApplicationGateway#status_code}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayHttpListenerCustomErrorConfiguration.property.customErrorPageUrl">CustomErrorPageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#custom_error_page_url ApplicationGateway#custom_error_page_url}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayHttpListenerCustomErrorConfiguration.property.statusCode">StatusCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#status_code ApplicationGateway#status_code}. |
 
 ---
 
@@ -3584,7 +3909,7 @@ CustomErrorPageUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#custom_error_page_url ApplicationGateway#custom_error_page_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#custom_error_page_url ApplicationGateway#custom_error_page_url}.
 
 ---
 
@@ -3596,7 +3921,7 @@ StatusCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#status_code ApplicationGateway#status_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#status_code ApplicationGateway#status_code}.
 
 ---
 
@@ -3617,8 +3942,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#type ApplicationGateway#type}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayIdentity.property.identityIds">IdentityIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#identity_ids ApplicationGateway#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayIdentity.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#type ApplicationGateway#type}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayIdentity.property.identityIds">IdentityIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#identity_ids ApplicationGateway#identity_ids}. |
 
 ---
 
@@ -3630,7 +3955,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#type ApplicationGateway#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#type ApplicationGateway#type}.
 
 ---
 
@@ -3642,7 +3967,123 @@ IdentityIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#identity_ids ApplicationGateway#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#identity_ids ApplicationGateway#identity_ids}.
+
+---
+
+### ApplicationGatewayListener <a name="ApplicationGatewayListener" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListener"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListener.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgateway"
+
+&applicationgateway.ApplicationGatewayListener {
+	FrontendIpConfigurationName: *string,
+	FrontendPortName: *string,
+	Name: *string,
+	Protocol: *string,
+	HostNames: *[]*string,
+	SslCertificateName: *string,
+	SslProfileName: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListener.property.frontendIpConfigurationName">FrontendIpConfigurationName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#frontend_ip_configuration_name ApplicationGateway#frontend_ip_configuration_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListener.property.frontendPortName">FrontendPortName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#frontend_port_name ApplicationGateway#frontend_port_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListener.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListener.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#protocol ApplicationGateway#protocol}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListener.property.hostNames">HostNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#host_names ApplicationGateway#host_names}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListener.property.sslCertificateName">SslCertificateName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#ssl_certificate_name ApplicationGateway#ssl_certificate_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListener.property.sslProfileName">SslProfileName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#ssl_profile_name ApplicationGateway#ssl_profile_name}. |
+
+---
+
+##### `FrontendIpConfigurationName`<sup>Required</sup> <a name="FrontendIpConfigurationName" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListener.property.frontendIpConfigurationName"></a>
+
+```go
+FrontendIpConfigurationName *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#frontend_ip_configuration_name ApplicationGateway#frontend_ip_configuration_name}.
+
+---
+
+##### `FrontendPortName`<sup>Required</sup> <a name="FrontendPortName" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListener.property.frontendPortName"></a>
+
+```go
+FrontendPortName *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#frontend_port_name ApplicationGateway#frontend_port_name}.
+
+---
+
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListener.property.name"></a>
+
+```go
+Name *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}.
+
+---
+
+##### `Protocol`<sup>Required</sup> <a name="Protocol" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListener.property.protocol"></a>
+
+```go
+Protocol *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#protocol ApplicationGateway#protocol}.
+
+---
+
+##### `HostNames`<sup>Optional</sup> <a name="HostNames" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListener.property.hostNames"></a>
+
+```go
+HostNames *[]*string
+```
+
+- *Type:* *[]*string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#host_names ApplicationGateway#host_names}.
+
+---
+
+##### `SslCertificateName`<sup>Optional</sup> <a name="SslCertificateName" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListener.property.sslCertificateName"></a>
+
+```go
+SslCertificateName *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#ssl_certificate_name ApplicationGateway#ssl_certificate_name}.
+
+---
+
+##### `SslProfileName`<sup>Optional</sup> <a name="SslProfileName" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListener.property.sslProfileName"></a>
+
+```go
+SslProfileName *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#ssl_profile_name ApplicationGateway#ssl_profile_name}.
 
 ---
 
@@ -3677,7 +4118,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayPrivateLinkConfiguration.property.ipConfiguration">IpConfiguration</a></code> | <code>interface{}</code> | ip_configuration block. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayPrivateLinkConfiguration.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayPrivateLinkConfiguration.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
 
 ---
 
@@ -3691,7 +4132,7 @@ IpConfiguration interface{}
 
 ip_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#ip_configuration ApplicationGateway#ip_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#ip_configuration ApplicationGateway#ip_configuration}
 
 ---
 
@@ -3703,7 +4144,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}.
 
 ---
 
@@ -3727,11 +4168,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayPrivateLinkConfigurationIpConfiguration.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayPrivateLinkConfigurationIpConfiguration.property.primary">Primary</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#primary ApplicationGateway#primary}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayPrivateLinkConfigurationIpConfiguration.property.privateIpAddressAllocation">PrivateIpAddressAllocation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#private_ip_address_allocation ApplicationGateway#private_ip_address_allocation}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayPrivateLinkConfigurationIpConfiguration.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#subnet_id ApplicationGateway#subnet_id}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayPrivateLinkConfigurationIpConfiguration.property.privateIpAddress">PrivateIpAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#private_ip_address ApplicationGateway#private_ip_address}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayPrivateLinkConfigurationIpConfiguration.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayPrivateLinkConfigurationIpConfiguration.property.primary">Primary</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#primary ApplicationGateway#primary}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayPrivateLinkConfigurationIpConfiguration.property.privateIpAddressAllocation">PrivateIpAddressAllocation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#private_ip_address_allocation ApplicationGateway#private_ip_address_allocation}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayPrivateLinkConfigurationIpConfiguration.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#subnet_id ApplicationGateway#subnet_id}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayPrivateLinkConfigurationIpConfiguration.property.privateIpAddress">PrivateIpAddress</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#private_ip_address ApplicationGateway#private_ip_address}. |
 
 ---
 
@@ -3743,7 +4184,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}.
 
 ---
 
@@ -3755,7 +4196,7 @@ Primary interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#primary ApplicationGateway#primary}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#primary ApplicationGateway#primary}.
 
 ---
 
@@ -3767,7 +4208,7 @@ PrivateIpAddressAllocation *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#private_ip_address_allocation ApplicationGateway#private_ip_address_allocation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#private_ip_address_allocation ApplicationGateway#private_ip_address_allocation}.
 
 ---
 
@@ -3779,7 +4220,7 @@ SubnetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#subnet_id ApplicationGateway#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#subnet_id ApplicationGateway#subnet_id}.
 
 ---
 
@@ -3791,7 +4232,7 @@ PrivateIpAddress *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#private_ip_address ApplicationGateway#private_ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#private_ip_address ApplicationGateway#private_ip_address}.
 
 ---
 
@@ -3805,15 +4246,16 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 &applicationgateway.ApplicationGatewayProbe {
 	Interval: *f64,
 	Name: *string,
-	Path: *string,
 	Protocol: *string,
 	Timeout: *f64,
 	UnhealthyThreshold: *f64,
 	Host: *string,
 	Match: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.applicationGateway.ApplicationGatewayProbeMatch,
 	MinimumServers: *f64,
+	Path: *string,
 	PickHostNameFromBackendHttpSettings: interface{},
 	Port: *f64,
+	ProxyProtocolHeaderEnabled: interface{},
 }
 ```
 
@@ -3821,17 +4263,18 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbe.property.interval">Interval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#interval ApplicationGateway#interval}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbe.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbe.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#path ApplicationGateway#path}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbe.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#protocol ApplicationGateway#protocol}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbe.property.timeout">Timeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#timeout ApplicationGateway#timeout}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbe.property.unhealthyThreshold">UnhealthyThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#unhealthy_threshold ApplicationGateway#unhealthy_threshold}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbe.property.host">Host</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#host ApplicationGateway#host}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbe.property.interval">Interval</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#interval ApplicationGateway#interval}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbe.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbe.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#protocol ApplicationGateway#protocol}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbe.property.timeout">Timeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#timeout ApplicationGateway#timeout}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbe.property.unhealthyThreshold">UnhealthyThreshold</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#unhealthy_threshold ApplicationGateway#unhealthy_threshold}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbe.property.host">Host</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#host ApplicationGateway#host}. |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbe.property.match">Match</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbeMatch">ApplicationGatewayProbeMatch</a></code> | match block. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbe.property.minimumServers">MinimumServers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#minimum_servers ApplicationGateway#minimum_servers}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbe.property.pickHostNameFromBackendHttpSettings">PickHostNameFromBackendHttpSettings</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#pick_host_name_from_backend_http_settings ApplicationGateway#pick_host_name_from_backend_http_settings}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbe.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#port ApplicationGateway#port}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbe.property.minimumServers">MinimumServers</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#minimum_servers ApplicationGateway#minimum_servers}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbe.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#path ApplicationGateway#path}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbe.property.pickHostNameFromBackendHttpSettings">PickHostNameFromBackendHttpSettings</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#pick_host_name_from_backend_http_settings ApplicationGateway#pick_host_name_from_backend_http_settings}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbe.property.port">Port</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#port ApplicationGateway#port}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbe.property.proxyProtocolHeaderEnabled">ProxyProtocolHeaderEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#proxy_protocol_header_enabled ApplicationGateway#proxy_protocol_header_enabled}. |
 
 ---
 
@@ -3843,7 +4286,7 @@ Interval *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#interval ApplicationGateway#interval}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#interval ApplicationGateway#interval}.
 
 ---
 
@@ -3855,19 +4298,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}.
-
----
-
-##### `Path`<sup>Required</sup> <a name="Path" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbe.property.path"></a>
-
-```go
-Path *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#path ApplicationGateway#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}.
 
 ---
 
@@ -3879,7 +4310,7 @@ Protocol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#protocol ApplicationGateway#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#protocol ApplicationGateway#protocol}.
 
 ---
 
@@ -3891,7 +4322,7 @@ Timeout *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#timeout ApplicationGateway#timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#timeout ApplicationGateway#timeout}.
 
 ---
 
@@ -3903,7 +4334,7 @@ UnhealthyThreshold *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#unhealthy_threshold ApplicationGateway#unhealthy_threshold}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#unhealthy_threshold ApplicationGateway#unhealthy_threshold}.
 
 ---
 
@@ -3915,7 +4346,7 @@ Host *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#host ApplicationGateway#host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#host ApplicationGateway#host}.
 
 ---
 
@@ -3929,7 +4360,7 @@ Match ApplicationGatewayProbeMatch
 
 match block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#match ApplicationGateway#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#match ApplicationGateway#match}
 
 ---
 
@@ -3941,7 +4372,19 @@ MinimumServers *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#minimum_servers ApplicationGateway#minimum_servers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#minimum_servers ApplicationGateway#minimum_servers}.
+
+---
+
+##### `Path`<sup>Optional</sup> <a name="Path" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbe.property.path"></a>
+
+```go
+Path *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#path ApplicationGateway#path}.
 
 ---
 
@@ -3953,7 +4396,7 @@ PickHostNameFromBackendHttpSettings interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#pick_host_name_from_backend_http_settings ApplicationGateway#pick_host_name_from_backend_http_settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#pick_host_name_from_backend_http_settings ApplicationGateway#pick_host_name_from_backend_http_settings}.
 
 ---
 
@@ -3965,7 +4408,19 @@ Port *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#port ApplicationGateway#port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#port ApplicationGateway#port}.
+
+---
+
+##### `ProxyProtocolHeaderEnabled`<sup>Optional</sup> <a name="ProxyProtocolHeaderEnabled" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbe.property.proxyProtocolHeaderEnabled"></a>
+
+```go
+ProxyProtocolHeaderEnabled interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#proxy_protocol_header_enabled ApplicationGateway#proxy_protocol_header_enabled}.
 
 ---
 
@@ -3986,8 +4441,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbeMatch.property.statusCode">StatusCode</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#status_code ApplicationGateway#status_code}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbeMatch.property.body">Body</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#body ApplicationGateway#body}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbeMatch.property.statusCode">StatusCode</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#status_code ApplicationGateway#status_code}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbeMatch.property.body">Body</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#body ApplicationGateway#body}. |
 
 ---
 
@@ -3999,7 +4454,7 @@ StatusCode *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#status_code ApplicationGateway#status_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#status_code ApplicationGateway#status_code}.
 
 ---
 
@@ -4011,7 +4466,7 @@ Body *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#body ApplicationGateway#body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#body ApplicationGateway#body}.
 
 ---
 
@@ -4036,12 +4491,12 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRedirectConfiguration.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRedirectConfiguration.property.redirectType">RedirectType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#redirect_type ApplicationGateway#redirect_type}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRedirectConfiguration.property.includePath">IncludePath</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#include_path ApplicationGateway#include_path}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRedirectConfiguration.property.includeQueryString">IncludeQueryString</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#include_query_string ApplicationGateway#include_query_string}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRedirectConfiguration.property.targetListenerName">TargetListenerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#target_listener_name ApplicationGateway#target_listener_name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRedirectConfiguration.property.targetUrl">TargetUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#target_url ApplicationGateway#target_url}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRedirectConfiguration.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRedirectConfiguration.property.redirectType">RedirectType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#redirect_type ApplicationGateway#redirect_type}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRedirectConfiguration.property.includePath">IncludePath</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#include_path ApplicationGateway#include_path}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRedirectConfiguration.property.includeQueryString">IncludeQueryString</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#include_query_string ApplicationGateway#include_query_string}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRedirectConfiguration.property.targetListenerName">TargetListenerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#target_listener_name ApplicationGateway#target_listener_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRedirectConfiguration.property.targetUrl">TargetUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#target_url ApplicationGateway#target_url}. |
 
 ---
 
@@ -4053,7 +4508,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}.
 
 ---
 
@@ -4065,7 +4520,7 @@ RedirectType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#redirect_type ApplicationGateway#redirect_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#redirect_type ApplicationGateway#redirect_type}.
 
 ---
 
@@ -4077,7 +4532,7 @@ IncludePath interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#include_path ApplicationGateway#include_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#include_path ApplicationGateway#include_path}.
 
 ---
 
@@ -4089,7 +4544,7 @@ IncludeQueryString interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#include_query_string ApplicationGateway#include_query_string}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#include_query_string ApplicationGateway#include_query_string}.
 
 ---
 
@@ -4101,7 +4556,7 @@ TargetListenerName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#target_listener_name ApplicationGateway#target_listener_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#target_listener_name ApplicationGateway#target_listener_name}.
 
 ---
 
@@ -4113,7 +4568,7 @@ TargetUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#target_url ApplicationGateway#target_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#target_url ApplicationGateway#target_url}.
 
 ---
 
@@ -4141,15 +4596,15 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRequestRoutingRule.property.httpListenerName">HttpListenerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#http_listener_name ApplicationGateway#http_listener_name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRequestRoutingRule.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRequestRoutingRule.property.ruleType">RuleType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#rule_type ApplicationGateway#rule_type}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRequestRoutingRule.property.backendAddressPoolName">BackendAddressPoolName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#backend_address_pool_name ApplicationGateway#backend_address_pool_name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRequestRoutingRule.property.backendHttpSettingsName">BackendHttpSettingsName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#backend_http_settings_name ApplicationGateway#backend_http_settings_name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRequestRoutingRule.property.priority">Priority</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#priority ApplicationGateway#priority}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRequestRoutingRule.property.redirectConfigurationName">RedirectConfigurationName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#redirect_configuration_name ApplicationGateway#redirect_configuration_name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRequestRoutingRule.property.rewriteRuleSetName">RewriteRuleSetName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#rewrite_rule_set_name ApplicationGateway#rewrite_rule_set_name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRequestRoutingRule.property.urlPathMapName">UrlPathMapName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#url_path_map_name ApplicationGateway#url_path_map_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRequestRoutingRule.property.httpListenerName">HttpListenerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#http_listener_name ApplicationGateway#http_listener_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRequestRoutingRule.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRequestRoutingRule.property.ruleType">RuleType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#rule_type ApplicationGateway#rule_type}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRequestRoutingRule.property.backendAddressPoolName">BackendAddressPoolName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#backend_address_pool_name ApplicationGateway#backend_address_pool_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRequestRoutingRule.property.backendHttpSettingsName">BackendHttpSettingsName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#backend_http_settings_name ApplicationGateway#backend_http_settings_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRequestRoutingRule.property.priority">Priority</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#priority ApplicationGateway#priority}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRequestRoutingRule.property.redirectConfigurationName">RedirectConfigurationName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#redirect_configuration_name ApplicationGateway#redirect_configuration_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRequestRoutingRule.property.rewriteRuleSetName">RewriteRuleSetName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#rewrite_rule_set_name ApplicationGateway#rewrite_rule_set_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRequestRoutingRule.property.urlPathMapName">UrlPathMapName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#url_path_map_name ApplicationGateway#url_path_map_name}. |
 
 ---
 
@@ -4161,7 +4616,7 @@ HttpListenerName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#http_listener_name ApplicationGateway#http_listener_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#http_listener_name ApplicationGateway#http_listener_name}.
 
 ---
 
@@ -4173,7 +4628,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}.
 
 ---
 
@@ -4185,7 +4640,7 @@ RuleType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#rule_type ApplicationGateway#rule_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#rule_type ApplicationGateway#rule_type}.
 
 ---
 
@@ -4197,7 +4652,7 @@ BackendAddressPoolName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#backend_address_pool_name ApplicationGateway#backend_address_pool_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#backend_address_pool_name ApplicationGateway#backend_address_pool_name}.
 
 ---
 
@@ -4209,7 +4664,7 @@ BackendHttpSettingsName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#backend_http_settings_name ApplicationGateway#backend_http_settings_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#backend_http_settings_name ApplicationGateway#backend_http_settings_name}.
 
 ---
 
@@ -4221,7 +4676,7 @@ Priority *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#priority ApplicationGateway#priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#priority ApplicationGateway#priority}.
 
 ---
 
@@ -4233,7 +4688,7 @@ RedirectConfigurationName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#redirect_configuration_name ApplicationGateway#redirect_configuration_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#redirect_configuration_name ApplicationGateway#redirect_configuration_name}.
 
 ---
 
@@ -4245,7 +4700,7 @@ RewriteRuleSetName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#rewrite_rule_set_name ApplicationGateway#rewrite_rule_set_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#rewrite_rule_set_name ApplicationGateway#rewrite_rule_set_name}.
 
 ---
 
@@ -4257,7 +4712,7 @@ UrlPathMapName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#url_path_map_name ApplicationGateway#url_path_map_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#url_path_map_name ApplicationGateway#url_path_map_name}.
 
 ---
 
@@ -4278,7 +4733,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRewriteRuleSet.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRewriteRuleSet.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRewriteRuleSet.property.rewriteRule">RewriteRule</a></code> | <code>interface{}</code> | rewrite_rule block. |
 
 ---
@@ -4291,7 +4746,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}.
 
 ---
 
@@ -4305,7 +4760,7 @@ RewriteRule interface{}
 
 rewrite_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#rewrite_rule ApplicationGateway#rewrite_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#rewrite_rule ApplicationGateway#rewrite_rule}
 
 ---
 
@@ -4330,8 +4785,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRewriteRuleSetRewriteRule.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRewriteRuleSetRewriteRule.property.ruleSequence">RuleSequence</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#rule_sequence ApplicationGateway#rule_sequence}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRewriteRuleSetRewriteRule.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRewriteRuleSetRewriteRule.property.ruleSequence">RuleSequence</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#rule_sequence ApplicationGateway#rule_sequence}. |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRewriteRuleSetRewriteRule.property.condition">Condition</a></code> | <code>interface{}</code> | condition block. |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRewriteRuleSetRewriteRule.property.requestHeaderConfiguration">RequestHeaderConfiguration</a></code> | <code>interface{}</code> | request_header_configuration block. |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRewriteRuleSetRewriteRule.property.responseHeaderConfiguration">ResponseHeaderConfiguration</a></code> | <code>interface{}</code> | response_header_configuration block. |
@@ -4347,7 +4802,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}.
 
 ---
 
@@ -4359,7 +4814,7 @@ RuleSequence *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#rule_sequence ApplicationGateway#rule_sequence}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#rule_sequence ApplicationGateway#rule_sequence}.
 
 ---
 
@@ -4373,7 +4828,7 @@ Condition interface{}
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#condition ApplicationGateway#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#condition ApplicationGateway#condition}
 
 ---
 
@@ -4387,7 +4842,7 @@ RequestHeaderConfiguration interface{}
 
 request_header_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#request_header_configuration ApplicationGateway#request_header_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#request_header_configuration ApplicationGateway#request_header_configuration}
 
 ---
 
@@ -4401,7 +4856,7 @@ ResponseHeaderConfiguration interface{}
 
 response_header_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#response_header_configuration ApplicationGateway#response_header_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#response_header_configuration ApplicationGateway#response_header_configuration}
 
 ---
 
@@ -4415,7 +4870,7 @@ Url ApplicationGatewayRewriteRuleSetRewriteRuleUrl
 
 url block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#url ApplicationGateway#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#url ApplicationGateway#url}
 
 ---
 
@@ -4438,10 +4893,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRewriteRuleSetRewriteRuleCondition.property.pattern">Pattern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#pattern ApplicationGateway#pattern}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRewriteRuleSetRewriteRuleCondition.property.variable">Variable</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#variable ApplicationGateway#variable}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRewriteRuleSetRewriteRuleCondition.property.ignoreCase">IgnoreCase</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#ignore_case ApplicationGateway#ignore_case}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRewriteRuleSetRewriteRuleCondition.property.negate">Negate</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#negate ApplicationGateway#negate}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRewriteRuleSetRewriteRuleCondition.property.pattern">Pattern</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#pattern ApplicationGateway#pattern}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRewriteRuleSetRewriteRuleCondition.property.variable">Variable</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#variable ApplicationGateway#variable}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRewriteRuleSetRewriteRuleCondition.property.ignoreCase">IgnoreCase</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#ignore_case ApplicationGateway#ignore_case}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRewriteRuleSetRewriteRuleCondition.property.negate">Negate</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#negate ApplicationGateway#negate}. |
 
 ---
 
@@ -4453,7 +4908,7 @@ Pattern *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#pattern ApplicationGateway#pattern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#pattern ApplicationGateway#pattern}.
 
 ---
 
@@ -4465,7 +4920,7 @@ Variable *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#variable ApplicationGateway#variable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#variable ApplicationGateway#variable}.
 
 ---
 
@@ -4477,7 +4932,7 @@ IgnoreCase interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#ignore_case ApplicationGateway#ignore_case}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#ignore_case ApplicationGateway#ignore_case}.
 
 ---
 
@@ -4489,7 +4944,7 @@ Negate interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#negate ApplicationGateway#negate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#negate ApplicationGateway#negate}.
 
 ---
 
@@ -4510,8 +4965,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfiguration.property.headerName">HeaderName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#header_name ApplicationGateway#header_name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfiguration.property.headerValue">HeaderValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#header_value ApplicationGateway#header_value}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfiguration.property.headerName">HeaderName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#header_name ApplicationGateway#header_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRewriteRuleSetRewriteRuleRequestHeaderConfiguration.property.headerValue">HeaderValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#header_value ApplicationGateway#header_value}. |
 
 ---
 
@@ -4523,7 +4978,7 @@ HeaderName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#header_name ApplicationGateway#header_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#header_name ApplicationGateway#header_name}.
 
 ---
 
@@ -4535,7 +4990,7 @@ HeaderValue *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#header_value ApplicationGateway#header_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#header_value ApplicationGateway#header_value}.
 
 ---
 
@@ -4556,8 +5011,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfiguration.property.headerName">HeaderName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#header_name ApplicationGateway#header_name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfiguration.property.headerValue">HeaderValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#header_value ApplicationGateway#header_value}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfiguration.property.headerName">HeaderName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#header_name ApplicationGateway#header_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRewriteRuleSetRewriteRuleResponseHeaderConfiguration.property.headerValue">HeaderValue</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#header_value ApplicationGateway#header_value}. |
 
 ---
 
@@ -4569,7 +5024,7 @@ HeaderName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#header_name ApplicationGateway#header_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#header_name ApplicationGateway#header_name}.
 
 ---
 
@@ -4581,7 +5036,7 @@ HeaderValue *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#header_value ApplicationGateway#header_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#header_value ApplicationGateway#header_value}.
 
 ---
 
@@ -4604,10 +5059,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRewriteRuleSetRewriteRuleUrl.property.components">Components</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#components ApplicationGateway#components}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRewriteRuleSetRewriteRuleUrl.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#path ApplicationGateway#path}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRewriteRuleSetRewriteRuleUrl.property.queryString">QueryString</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#query_string ApplicationGateway#query_string}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRewriteRuleSetRewriteRuleUrl.property.reroute">Reroute</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#reroute ApplicationGateway#reroute}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRewriteRuleSetRewriteRuleUrl.property.components">Components</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#components ApplicationGateway#components}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRewriteRuleSetRewriteRuleUrl.property.path">Path</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#path ApplicationGateway#path}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRewriteRuleSetRewriteRuleUrl.property.queryString">QueryString</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#query_string ApplicationGateway#query_string}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRewriteRuleSetRewriteRuleUrl.property.reroute">Reroute</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#reroute ApplicationGateway#reroute}. |
 
 ---
 
@@ -4619,7 +5074,7 @@ Components *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#components ApplicationGateway#components}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#components ApplicationGateway#components}.
 
 ---
 
@@ -4631,7 +5086,7 @@ Path *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#path ApplicationGateway#path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#path ApplicationGateway#path}.
 
 ---
 
@@ -4643,7 +5098,7 @@ QueryString *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#query_string ApplicationGateway#query_string}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#query_string ApplicationGateway#query_string}.
 
 ---
 
@@ -4655,7 +5110,95 @@ Reroute interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#reroute ApplicationGateway#reroute}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#reroute ApplicationGateway#reroute}.
+
+---
+
+### ApplicationGatewayRoutingRule <a name="ApplicationGatewayRoutingRule" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRule"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRule.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgateway"
+
+&applicationgateway.ApplicationGatewayRoutingRule {
+	BackendAddressPoolName: *string,
+	BackendName: *string,
+	ListenerName: *string,
+	Name: *string,
+	Priority: *f64,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRule.property.backendAddressPoolName">BackendAddressPoolName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#backend_address_pool_name ApplicationGateway#backend_address_pool_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRule.property.backendName">BackendName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#backend_name ApplicationGateway#backend_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRule.property.listenerName">ListenerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#listener_name ApplicationGateway#listener_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRule.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRule.property.priority">Priority</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#priority ApplicationGateway#priority}. |
+
+---
+
+##### `BackendAddressPoolName`<sup>Required</sup> <a name="BackendAddressPoolName" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRule.property.backendAddressPoolName"></a>
+
+```go
+BackendAddressPoolName *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#backend_address_pool_name ApplicationGateway#backend_address_pool_name}.
+
+---
+
+##### `BackendName`<sup>Required</sup> <a name="BackendName" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRule.property.backendName"></a>
+
+```go
+BackendName *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#backend_name ApplicationGateway#backend_name}.
+
+---
+
+##### `ListenerName`<sup>Required</sup> <a name="ListenerName" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRule.property.listenerName"></a>
+
+```go
+ListenerName *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#listener_name ApplicationGateway#listener_name}.
+
+---
+
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRule.property.name"></a>
+
+```go
+Name *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}.
+
+---
+
+##### `Priority`<sup>Required</sup> <a name="Priority" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRule.property.priority"></a>
+
+```go
+Priority *f64
+```
+
+- *Type:* *f64
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#priority ApplicationGateway#priority}.
 
 ---
 
@@ -4677,9 +5220,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySku.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySku.property.tier">Tier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#tier ApplicationGateway#tier}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySku.property.capacity">Capacity</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#capacity ApplicationGateway#capacity}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySku.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySku.property.tier">Tier</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#tier ApplicationGateway#tier}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySku.property.capacity">Capacity</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#capacity ApplicationGateway#capacity}. |
 
 ---
 
@@ -4691,7 +5234,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}.
 
 ---
 
@@ -4703,7 +5246,7 @@ Tier *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#tier ApplicationGateway#tier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#tier ApplicationGateway#tier}.
 
 ---
 
@@ -4715,7 +5258,7 @@ Capacity *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#capacity ApplicationGateway#capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#capacity ApplicationGateway#capacity}.
 
 ---
 
@@ -4738,10 +5281,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslCertificate.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslCertificate.property.data">Data</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#data ApplicationGateway#data}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslCertificate.property.keyVaultSecretId">KeyVaultSecretId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#key_vault_secret_id ApplicationGateway#key_vault_secret_id}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslCertificate.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#password ApplicationGateway#password}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslCertificate.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslCertificate.property.data">Data</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#data ApplicationGateway#data}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslCertificate.property.keyVaultSecretId">KeyVaultSecretId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#key_vault_secret_id ApplicationGateway#key_vault_secret_id}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslCertificate.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#password ApplicationGateway#password}. |
 
 ---
 
@@ -4753,7 +5296,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}.
 
 ---
 
@@ -4765,7 +5308,7 @@ Data *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#data ApplicationGateway#data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#data ApplicationGateway#data}.
 
 ---
 
@@ -4777,7 +5320,7 @@ KeyVaultSecretId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#key_vault_secret_id ApplicationGateway#key_vault_secret_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#key_vault_secret_id ApplicationGateway#key_vault_secret_id}.
 
 ---
 
@@ -4789,7 +5332,7 @@ Password *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#password ApplicationGateway#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#password ApplicationGateway#password}.
 
 ---
 
@@ -4813,11 +5356,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslPolicy.property.cipherSuites">CipherSuites</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#cipher_suites ApplicationGateway#cipher_suites}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslPolicy.property.disabledProtocols">DisabledProtocols</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#disabled_protocols ApplicationGateway#disabled_protocols}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslPolicy.property.minProtocolVersion">MinProtocolVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#min_protocol_version ApplicationGateway#min_protocol_version}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslPolicy.property.policyName">PolicyName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#policy_name ApplicationGateway#policy_name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslPolicy.property.policyType">PolicyType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#policy_type ApplicationGateway#policy_type}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslPolicy.property.cipherSuites">CipherSuites</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#cipher_suites ApplicationGateway#cipher_suites}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslPolicy.property.disabledProtocols">DisabledProtocols</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#disabled_protocols ApplicationGateway#disabled_protocols}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslPolicy.property.minProtocolVersion">MinProtocolVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#min_protocol_version ApplicationGateway#min_protocol_version}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslPolicy.property.policyName">PolicyName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#policy_name ApplicationGateway#policy_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslPolicy.property.policyType">PolicyType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#policy_type ApplicationGateway#policy_type}. |
 
 ---
 
@@ -4829,7 +5372,7 @@ CipherSuites *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#cipher_suites ApplicationGateway#cipher_suites}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#cipher_suites ApplicationGateway#cipher_suites}.
 
 ---
 
@@ -4841,7 +5384,7 @@ DisabledProtocols *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#disabled_protocols ApplicationGateway#disabled_protocols}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#disabled_protocols ApplicationGateway#disabled_protocols}.
 
 ---
 
@@ -4853,7 +5396,7 @@ MinProtocolVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#min_protocol_version ApplicationGateway#min_protocol_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#min_protocol_version ApplicationGateway#min_protocol_version}.
 
 ---
 
@@ -4865,7 +5408,7 @@ PolicyName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#policy_name ApplicationGateway#policy_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#policy_name ApplicationGateway#policy_name}.
 
 ---
 
@@ -4877,7 +5420,7 @@ PolicyType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#policy_type ApplicationGateway#policy_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#policy_type ApplicationGateway#policy_type}.
 
 ---
 
@@ -4902,12 +5445,12 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslProfile.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslProfile.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslProfile.property.sslPolicy">SslPolicy</a></code> | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslProfileSslPolicy">ApplicationGatewaySslProfileSslPolicy</a></code> | ssl_policy block. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslProfile.property.trustedClientCertificateNames">TrustedClientCertificateNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#trusted_client_certificate_names ApplicationGateway#trusted_client_certificate_names}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslProfile.property.verifyClientCertificateIssuerDn">VerifyClientCertificateIssuerDn</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#verify_client_certificate_issuer_dn ApplicationGateway#verify_client_certificate_issuer_dn}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslProfile.property.verifyClientCertificateRevocation">VerifyClientCertificateRevocation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#verify_client_certificate_revocation ApplicationGateway#verify_client_certificate_revocation}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslProfile.property.verifyClientCertIssuerDn">VerifyClientCertIssuerDn</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#verify_client_cert_issuer_dn ApplicationGateway#verify_client_cert_issuer_dn}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslProfile.property.trustedClientCertificateNames">TrustedClientCertificateNames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#trusted_client_certificate_names ApplicationGateway#trusted_client_certificate_names}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslProfile.property.verifyClientCertificateIssuerDn">VerifyClientCertificateIssuerDn</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#verify_client_certificate_issuer_dn ApplicationGateway#verify_client_certificate_issuer_dn}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslProfile.property.verifyClientCertificateRevocation">VerifyClientCertificateRevocation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#verify_client_certificate_revocation ApplicationGateway#verify_client_certificate_revocation}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslProfile.property.verifyClientCertIssuerDn">VerifyClientCertIssuerDn</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#verify_client_cert_issuer_dn ApplicationGateway#verify_client_cert_issuer_dn}. |
 
 ---
 
@@ -4919,7 +5462,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}.
 
 ---
 
@@ -4933,7 +5476,7 @@ SslPolicy ApplicationGatewaySslProfileSslPolicy
 
 ssl_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#ssl_policy ApplicationGateway#ssl_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#ssl_policy ApplicationGateway#ssl_policy}
 
 ---
 
@@ -4945,7 +5488,7 @@ TrustedClientCertificateNames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#trusted_client_certificate_names ApplicationGateway#trusted_client_certificate_names}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#trusted_client_certificate_names ApplicationGateway#trusted_client_certificate_names}.
 
 ---
 
@@ -4957,7 +5500,7 @@ VerifyClientCertificateIssuerDn interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#verify_client_certificate_issuer_dn ApplicationGateway#verify_client_certificate_issuer_dn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#verify_client_certificate_issuer_dn ApplicationGateway#verify_client_certificate_issuer_dn}.
 
 ---
 
@@ -4969,7 +5512,7 @@ VerifyClientCertificateRevocation *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#verify_client_certificate_revocation ApplicationGateway#verify_client_certificate_revocation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#verify_client_certificate_revocation ApplicationGateway#verify_client_certificate_revocation}.
 
 ---
 
@@ -4981,7 +5524,7 @@ VerifyClientCertIssuerDn interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#verify_client_cert_issuer_dn ApplicationGateway#verify_client_cert_issuer_dn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#verify_client_cert_issuer_dn ApplicationGateway#verify_client_cert_issuer_dn}.
 
 ---
 
@@ -5005,11 +5548,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslProfileSslPolicy.property.cipherSuites">CipherSuites</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#cipher_suites ApplicationGateway#cipher_suites}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslProfileSslPolicy.property.disabledProtocols">DisabledProtocols</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#disabled_protocols ApplicationGateway#disabled_protocols}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslProfileSslPolicy.property.minProtocolVersion">MinProtocolVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#min_protocol_version ApplicationGateway#min_protocol_version}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslProfileSslPolicy.property.policyName">PolicyName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#policy_name ApplicationGateway#policy_name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslProfileSslPolicy.property.policyType">PolicyType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#policy_type ApplicationGateway#policy_type}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslProfileSslPolicy.property.cipherSuites">CipherSuites</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#cipher_suites ApplicationGateway#cipher_suites}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslProfileSslPolicy.property.disabledProtocols">DisabledProtocols</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#disabled_protocols ApplicationGateway#disabled_protocols}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslProfileSslPolicy.property.minProtocolVersion">MinProtocolVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#min_protocol_version ApplicationGateway#min_protocol_version}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslProfileSslPolicy.property.policyName">PolicyName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#policy_name ApplicationGateway#policy_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewaySslProfileSslPolicy.property.policyType">PolicyType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#policy_type ApplicationGateway#policy_type}. |
 
 ---
 
@@ -5021,7 +5564,7 @@ CipherSuites *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#cipher_suites ApplicationGateway#cipher_suites}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#cipher_suites ApplicationGateway#cipher_suites}.
 
 ---
 
@@ -5033,7 +5576,7 @@ DisabledProtocols *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#disabled_protocols ApplicationGateway#disabled_protocols}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#disabled_protocols ApplicationGateway#disabled_protocols}.
 
 ---
 
@@ -5045,7 +5588,7 @@ MinProtocolVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#min_protocol_version ApplicationGateway#min_protocol_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#min_protocol_version ApplicationGateway#min_protocol_version}.
 
 ---
 
@@ -5057,7 +5600,7 @@ PolicyName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#policy_name ApplicationGateway#policy_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#policy_name ApplicationGateway#policy_name}.
 
 ---
 
@@ -5069,7 +5612,7 @@ PolicyType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#policy_type ApplicationGateway#policy_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#policy_type ApplicationGateway#policy_type}.
 
 ---
 
@@ -5092,10 +5635,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#create ApplicationGateway#create}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#delete ApplicationGateway#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#read ApplicationGateway#read}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#update ApplicationGateway#update}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#create ApplicationGateway#create}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#delete ApplicationGateway#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#read ApplicationGateway#read}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#update ApplicationGateway#update}. |
 
 ---
 
@@ -5107,7 +5650,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#create ApplicationGateway#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#create ApplicationGateway#create}.
 
 ---
 
@@ -5119,7 +5662,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#delete ApplicationGateway#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#delete ApplicationGateway#delete}.
 
 ---
 
@@ -5131,7 +5674,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#read ApplicationGateway#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#read ApplicationGateway#read}.
 
 ---
 
@@ -5143,7 +5686,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#update ApplicationGateway#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#update ApplicationGateway#update}.
 
 ---
 
@@ -5164,8 +5707,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayTrustedClientCertificate.property.data">Data</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#data ApplicationGateway#data}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayTrustedClientCertificate.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayTrustedClientCertificate.property.data">Data</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#data ApplicationGateway#data}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayTrustedClientCertificate.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
 
 ---
 
@@ -5177,7 +5720,7 @@ Data *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#data ApplicationGateway#data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#data ApplicationGateway#data}.
 
 ---
 
@@ -5189,7 +5732,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}.
 
 ---
 
@@ -5211,9 +5754,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayTrustedRootCertificate.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayTrustedRootCertificate.property.data">Data</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#data ApplicationGateway#data}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayTrustedRootCertificate.property.keyVaultSecretId">KeyVaultSecretId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#key_vault_secret_id ApplicationGateway#key_vault_secret_id}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayTrustedRootCertificate.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayTrustedRootCertificate.property.data">Data</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#data ApplicationGateway#data}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayTrustedRootCertificate.property.keyVaultSecretId">KeyVaultSecretId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#key_vault_secret_id ApplicationGateway#key_vault_secret_id}. |
 
 ---
 
@@ -5225,7 +5768,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}.
 
 ---
 
@@ -5237,7 +5780,7 @@ Data *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#data ApplicationGateway#data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#data ApplicationGateway#data}.
 
 ---
 
@@ -5249,7 +5792,7 @@ KeyVaultSecretId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#key_vault_secret_id ApplicationGateway#key_vault_secret_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#key_vault_secret_id ApplicationGateway#key_vault_secret_id}.
 
 ---
 
@@ -5274,12 +5817,12 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayUrlPathMap.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayUrlPathMap.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayUrlPathMap.property.pathRule">PathRule</a></code> | <code>interface{}</code> | path_rule block. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayUrlPathMap.property.defaultBackendAddressPoolName">DefaultBackendAddressPoolName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#default_backend_address_pool_name ApplicationGateway#default_backend_address_pool_name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayUrlPathMap.property.defaultBackendHttpSettingsName">DefaultBackendHttpSettingsName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#default_backend_http_settings_name ApplicationGateway#default_backend_http_settings_name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayUrlPathMap.property.defaultRedirectConfigurationName">DefaultRedirectConfigurationName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#default_redirect_configuration_name ApplicationGateway#default_redirect_configuration_name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayUrlPathMap.property.defaultRewriteRuleSetName">DefaultRewriteRuleSetName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#default_rewrite_rule_set_name ApplicationGateway#default_rewrite_rule_set_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayUrlPathMap.property.defaultBackendAddressPoolName">DefaultBackendAddressPoolName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#default_backend_address_pool_name ApplicationGateway#default_backend_address_pool_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayUrlPathMap.property.defaultBackendHttpSettingsName">DefaultBackendHttpSettingsName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#default_backend_http_settings_name ApplicationGateway#default_backend_http_settings_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayUrlPathMap.property.defaultRedirectConfigurationName">DefaultRedirectConfigurationName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#default_redirect_configuration_name ApplicationGateway#default_redirect_configuration_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayUrlPathMap.property.defaultRewriteRuleSetName">DefaultRewriteRuleSetName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#default_rewrite_rule_set_name ApplicationGateway#default_rewrite_rule_set_name}. |
 
 ---
 
@@ -5291,7 +5834,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}.
 
 ---
 
@@ -5305,7 +5848,7 @@ PathRule interface{}
 
 path_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#path_rule ApplicationGateway#path_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#path_rule ApplicationGateway#path_rule}
 
 ---
 
@@ -5317,7 +5860,7 @@ DefaultBackendAddressPoolName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#default_backend_address_pool_name ApplicationGateway#default_backend_address_pool_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#default_backend_address_pool_name ApplicationGateway#default_backend_address_pool_name}.
 
 ---
 
@@ -5329,7 +5872,7 @@ DefaultBackendHttpSettingsName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#default_backend_http_settings_name ApplicationGateway#default_backend_http_settings_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#default_backend_http_settings_name ApplicationGateway#default_backend_http_settings_name}.
 
 ---
 
@@ -5341,7 +5884,7 @@ DefaultRedirectConfigurationName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#default_redirect_configuration_name ApplicationGateway#default_redirect_configuration_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#default_redirect_configuration_name ApplicationGateway#default_redirect_configuration_name}.
 
 ---
 
@@ -5353,7 +5896,7 @@ DefaultRewriteRuleSetName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#default_rewrite_rule_set_name ApplicationGateway#default_rewrite_rule_set_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#default_rewrite_rule_set_name ApplicationGateway#default_rewrite_rule_set_name}.
 
 ---
 
@@ -5379,13 +5922,13 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayUrlPathMapPathRule.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayUrlPathMapPathRule.property.paths">Paths</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#paths ApplicationGateway#paths}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayUrlPathMapPathRule.property.backendAddressPoolName">BackendAddressPoolName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#backend_address_pool_name ApplicationGateway#backend_address_pool_name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayUrlPathMapPathRule.property.backendHttpSettingsName">BackendHttpSettingsName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#backend_http_settings_name ApplicationGateway#backend_http_settings_name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayUrlPathMapPathRule.property.firewallPolicyId">FirewallPolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#firewall_policy_id ApplicationGateway#firewall_policy_id}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayUrlPathMapPathRule.property.redirectConfigurationName">RedirectConfigurationName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#redirect_configuration_name ApplicationGateway#redirect_configuration_name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayUrlPathMapPathRule.property.rewriteRuleSetName">RewriteRuleSetName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#rewrite_rule_set_name ApplicationGateway#rewrite_rule_set_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayUrlPathMapPathRule.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayUrlPathMapPathRule.property.paths">Paths</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#paths ApplicationGateway#paths}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayUrlPathMapPathRule.property.backendAddressPoolName">BackendAddressPoolName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#backend_address_pool_name ApplicationGateway#backend_address_pool_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayUrlPathMapPathRule.property.backendHttpSettingsName">BackendHttpSettingsName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#backend_http_settings_name ApplicationGateway#backend_http_settings_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayUrlPathMapPathRule.property.firewallPolicyId">FirewallPolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#firewall_policy_id ApplicationGateway#firewall_policy_id}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayUrlPathMapPathRule.property.redirectConfigurationName">RedirectConfigurationName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#redirect_configuration_name ApplicationGateway#redirect_configuration_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayUrlPathMapPathRule.property.rewriteRuleSetName">RewriteRuleSetName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#rewrite_rule_set_name ApplicationGateway#rewrite_rule_set_name}. |
 
 ---
 
@@ -5397,7 +5940,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#name ApplicationGateway#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#name ApplicationGateway#name}.
 
 ---
 
@@ -5409,7 +5952,7 @@ Paths *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#paths ApplicationGateway#paths}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#paths ApplicationGateway#paths}.
 
 ---
 
@@ -5421,7 +5964,7 @@ BackendAddressPoolName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#backend_address_pool_name ApplicationGateway#backend_address_pool_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#backend_address_pool_name ApplicationGateway#backend_address_pool_name}.
 
 ---
 
@@ -5433,7 +5976,7 @@ BackendHttpSettingsName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#backend_http_settings_name ApplicationGateway#backend_http_settings_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#backend_http_settings_name ApplicationGateway#backend_http_settings_name}.
 
 ---
 
@@ -5445,7 +5988,7 @@ FirewallPolicyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#firewall_policy_id ApplicationGateway#firewall_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#firewall_policy_id ApplicationGateway#firewall_policy_id}.
 
 ---
 
@@ -5457,7 +6000,7 @@ RedirectConfigurationName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#redirect_configuration_name ApplicationGateway#redirect_configuration_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#redirect_configuration_name ApplicationGateway#redirect_configuration_name}.
 
 ---
 
@@ -5469,7 +6012,7 @@ RewriteRuleSetName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#rewrite_rule_set_name ApplicationGateway#rewrite_rule_set_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#rewrite_rule_set_name ApplicationGateway#rewrite_rule_set_name}.
 
 ---
 
@@ -5497,15 +6040,15 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayWafConfiguration.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#enabled ApplicationGateway#enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayWafConfiguration.property.firewallMode">FirewallMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#firewall_mode ApplicationGateway#firewall_mode}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayWafConfiguration.property.ruleSetVersion">RuleSetVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#rule_set_version ApplicationGateway#rule_set_version}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayWafConfiguration.property.enabled">Enabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#enabled ApplicationGateway#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayWafConfiguration.property.firewallMode">FirewallMode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#firewall_mode ApplicationGateway#firewall_mode}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayWafConfiguration.property.ruleSetVersion">RuleSetVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#rule_set_version ApplicationGateway#rule_set_version}. |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayWafConfiguration.property.disabledRuleGroup">DisabledRuleGroup</a></code> | <code>interface{}</code> | disabled_rule_group block. |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayWafConfiguration.property.exclusion">Exclusion</a></code> | <code>interface{}</code> | exclusion block. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayWafConfiguration.property.fileUploadLimitMb">FileUploadLimitMb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#file_upload_limit_mb ApplicationGateway#file_upload_limit_mb}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayWafConfiguration.property.maxRequestBodySizeKb">MaxRequestBodySizeKb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#max_request_body_size_kb ApplicationGateway#max_request_body_size_kb}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayWafConfiguration.property.requestBodyCheck">RequestBodyCheck</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#request_body_check ApplicationGateway#request_body_check}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayWafConfiguration.property.ruleSetType">RuleSetType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#rule_set_type ApplicationGateway#rule_set_type}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayWafConfiguration.property.fileUploadLimitMb">FileUploadLimitMb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#file_upload_limit_mb ApplicationGateway#file_upload_limit_mb}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayWafConfiguration.property.maxRequestBodySizeKb">MaxRequestBodySizeKb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#max_request_body_size_kb ApplicationGateway#max_request_body_size_kb}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayWafConfiguration.property.requestBodyCheck">RequestBodyCheck</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#request_body_check ApplicationGateway#request_body_check}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayWafConfiguration.property.ruleSetType">RuleSetType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#rule_set_type ApplicationGateway#rule_set_type}. |
 
 ---
 
@@ -5517,7 +6060,7 @@ Enabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#enabled ApplicationGateway#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#enabled ApplicationGateway#enabled}.
 
 ---
 
@@ -5529,7 +6072,7 @@ FirewallMode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#firewall_mode ApplicationGateway#firewall_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#firewall_mode ApplicationGateway#firewall_mode}.
 
 ---
 
@@ -5541,7 +6084,7 @@ RuleSetVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#rule_set_version ApplicationGateway#rule_set_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#rule_set_version ApplicationGateway#rule_set_version}.
 
 ---
 
@@ -5555,7 +6098,7 @@ DisabledRuleGroup interface{}
 
 disabled_rule_group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#disabled_rule_group ApplicationGateway#disabled_rule_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#disabled_rule_group ApplicationGateway#disabled_rule_group}
 
 ---
 
@@ -5569,7 +6112,7 @@ Exclusion interface{}
 
 exclusion block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#exclusion ApplicationGateway#exclusion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#exclusion ApplicationGateway#exclusion}
 
 ---
 
@@ -5581,7 +6124,7 @@ FileUploadLimitMb *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#file_upload_limit_mb ApplicationGateway#file_upload_limit_mb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#file_upload_limit_mb ApplicationGateway#file_upload_limit_mb}.
 
 ---
 
@@ -5593,7 +6136,7 @@ MaxRequestBodySizeKb *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#max_request_body_size_kb ApplicationGateway#max_request_body_size_kb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#max_request_body_size_kb ApplicationGateway#max_request_body_size_kb}.
 
 ---
 
@@ -5605,7 +6148,7 @@ RequestBodyCheck interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#request_body_check ApplicationGateway#request_body_check}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#request_body_check ApplicationGateway#request_body_check}.
 
 ---
 
@@ -5617,7 +6160,7 @@ RuleSetType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#rule_set_type ApplicationGateway#rule_set_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#rule_set_type ApplicationGateway#rule_set_type}.
 
 ---
 
@@ -5638,8 +6181,8 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayWafConfigurationDisabledRuleGroup.property.ruleGroupName">RuleGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#rule_group_name ApplicationGateway#rule_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayWafConfigurationDisabledRuleGroup.property.rules">Rules</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#rules ApplicationGateway#rules}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayWafConfigurationDisabledRuleGroup.property.ruleGroupName">RuleGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#rule_group_name ApplicationGateway#rule_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayWafConfigurationDisabledRuleGroup.property.rules">Rules</a></code> | <code>*[]*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#rules ApplicationGateway#rules}. |
 
 ---
 
@@ -5651,7 +6194,7 @@ RuleGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#rule_group_name ApplicationGateway#rule_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#rule_group_name ApplicationGateway#rule_group_name}.
 
 ---
 
@@ -5663,7 +6206,7 @@ Rules *[]*f64
 
 - *Type:* *[]*f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#rules ApplicationGateway#rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#rules ApplicationGateway#rules}.
 
 ---
 
@@ -5685,9 +6228,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayWafConfigurationExclusion.property.matchVariable">MatchVariable</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#match_variable ApplicationGateway#match_variable}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayWafConfigurationExclusion.property.selector">Selector</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#selector ApplicationGateway#selector}. |
-| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayWafConfigurationExclusion.property.selectorMatchOperator">SelectorMatchOperator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#selector_match_operator ApplicationGateway#selector_match_operator}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayWafConfigurationExclusion.property.matchVariable">MatchVariable</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#match_variable ApplicationGateway#match_variable}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayWafConfigurationExclusion.property.selector">Selector</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#selector ApplicationGateway#selector}. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayWafConfigurationExclusion.property.selectorMatchOperator">SelectorMatchOperator</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#selector_match_operator ApplicationGateway#selector_match_operator}. |
 
 ---
 
@@ -5699,7 +6242,7 @@ MatchVariable *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#match_variable ApplicationGateway#match_variable}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#match_variable ApplicationGateway#match_variable}.
 
 ---
 
@@ -5711,7 +6254,7 @@ Selector *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#selector ApplicationGateway#selector}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#selector ApplicationGateway#selector}.
 
 ---
 
@@ -5723,7 +6266,7 @@ SelectorMatchOperator *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/application_gateway#selector_match_operator ApplicationGateway#selector_match_operator}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/application_gateway#selector_match_operator ApplicationGateway#selector_match_operator}.
 
 ---
 
@@ -8625,6 +9168,666 @@ func TrustedRootCertificateNames() *[]*string
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendHttpSettingsOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### ApplicationGatewayBackendList <a name="ApplicationGatewayBackendList" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgateway"
+
+applicationgateway.NewApplicationGatewayBackendList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApplicationGatewayBackendList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendList.get"></a>
+
+```go
+func Get(index *f64) ApplicationGatewayBackendOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### ApplicationGatewayBackendOutputReference <a name="ApplicationGatewayBackendOutputReference" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgateway"
+
+applicationgateway.NewApplicationGatewayBackendOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApplicationGatewayBackendOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.resetClientIpPreservationEnabled">ResetClientIpPreservationEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.resetHostName">ResetHostName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.resetProbeName">ResetProbeName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.resetTimeoutInSeconds">ResetTimeoutInSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.resetTrustedRootCertificateNames">ResetTrustedRootCertificateNames</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetClientIpPreservationEnabled` <a name="ResetClientIpPreservationEnabled" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.resetClientIpPreservationEnabled"></a>
+
+```go
+func ResetClientIpPreservationEnabled()
+```
+
+##### `ResetHostName` <a name="ResetHostName" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.resetHostName"></a>
+
+```go
+func ResetHostName()
+```
+
+##### `ResetProbeName` <a name="ResetProbeName" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.resetProbeName"></a>
+
+```go
+func ResetProbeName()
+```
+
+##### `ResetTimeoutInSeconds` <a name="ResetTimeoutInSeconds" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.resetTimeoutInSeconds"></a>
+
+```go
+func ResetTimeoutInSeconds()
+```
+
+##### `ResetTrustedRootCertificateNames` <a name="ResetTrustedRootCertificateNames" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.resetTrustedRootCertificateNames"></a>
+
+```go
+func ResetTrustedRootCertificateNames()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.probeId">ProbeId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.clientIpPreservationEnabledInput">ClientIpPreservationEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.hostNameInput">HostNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.portInput">PortInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.probeNameInput">ProbeNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.protocolInput">ProtocolInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.timeoutInSecondsInput">TimeoutInSecondsInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.trustedRootCertificateNamesInput">TrustedRootCertificateNamesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.clientIpPreservationEnabled">ClientIpPreservationEnabled</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.hostName">HostName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.port">Port</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.probeName">ProbeName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.protocol">Protocol</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.timeoutInSeconds">TimeoutInSeconds</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.trustedRootCertificateNames">TrustedRootCertificateNames</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ProbeId`<sup>Required</sup> <a name="ProbeId" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.probeId"></a>
+
+```go
+func ProbeId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ClientIpPreservationEnabledInput`<sup>Optional</sup> <a name="ClientIpPreservationEnabledInput" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.clientIpPreservationEnabledInput"></a>
+
+```go
+func ClientIpPreservationEnabledInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `HostNameInput`<sup>Optional</sup> <a name="HostNameInput" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.hostNameInput"></a>
+
+```go
+func HostNameInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.nameInput"></a>
+
+```go
+func NameInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `PortInput`<sup>Optional</sup> <a name="PortInput" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.portInput"></a>
+
+```go
+func PortInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `ProbeNameInput`<sup>Optional</sup> <a name="ProbeNameInput" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.probeNameInput"></a>
+
+```go
+func ProbeNameInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ProtocolInput`<sup>Optional</sup> <a name="ProtocolInput" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.protocolInput"></a>
+
+```go
+func ProtocolInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TimeoutInSecondsInput`<sup>Optional</sup> <a name="TimeoutInSecondsInput" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.timeoutInSecondsInput"></a>
+
+```go
+func TimeoutInSecondsInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `TrustedRootCertificateNamesInput`<sup>Optional</sup> <a name="TrustedRootCertificateNamesInput" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.trustedRootCertificateNamesInput"></a>
+
+```go
+func TrustedRootCertificateNamesInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `ClientIpPreservationEnabled`<sup>Required</sup> <a name="ClientIpPreservationEnabled" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.clientIpPreservationEnabled"></a>
+
+```go
+func ClientIpPreservationEnabled() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `HostName`<sup>Required</sup> <a name="HostName" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.hostName"></a>
+
+```go
+func HostName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.name"></a>
+
+```go
+func Name() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Port`<sup>Required</sup> <a name="Port" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.port"></a>
+
+```go
+func Port() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `ProbeName`<sup>Required</sup> <a name="ProbeName" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.probeName"></a>
+
+```go
+func ProbeName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Protocol`<sup>Required</sup> <a name="Protocol" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.protocol"></a>
+
+```go
+func Protocol() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TimeoutInSeconds`<sup>Required</sup> <a name="TimeoutInSeconds" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.timeoutInSeconds"></a>
+
+```go
+func TimeoutInSeconds() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `TrustedRootCertificateNames`<sup>Required</sup> <a name="TrustedRootCertificateNames" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.trustedRootCertificateNames"></a>
+
+```go
+func TrustedRootCertificateNames() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayBackendOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}
@@ -12580,6 +13783,663 @@ func InternalValue() ApplicationGatewayIdentity
 ---
 
 
+### ApplicationGatewayListenerList <a name="ApplicationGatewayListenerList" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgateway"
+
+applicationgateway.NewApplicationGatewayListenerList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApplicationGatewayListenerList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerList.get"></a>
+
+```go
+func Get(index *f64) ApplicationGatewayListenerOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### ApplicationGatewayListenerOutputReference <a name="ApplicationGatewayListenerOutputReference" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgateway"
+
+applicationgateway.NewApplicationGatewayListenerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApplicationGatewayListenerOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.resetHostNames">ResetHostNames</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.resetSslCertificateName">ResetSslCertificateName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.resetSslProfileName">ResetSslProfileName</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetHostNames` <a name="ResetHostNames" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.resetHostNames"></a>
+
+```go
+func ResetHostNames()
+```
+
+##### `ResetSslCertificateName` <a name="ResetSslCertificateName" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.resetSslCertificateName"></a>
+
+```go
+func ResetSslCertificateName()
+```
+
+##### `ResetSslProfileName` <a name="ResetSslProfileName" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.resetSslProfileName"></a>
+
+```go
+func ResetSslProfileName()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.frontendIpConfigurationId">FrontendIpConfigurationId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.frontendPortId">FrontendPortId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.sslCertificateId">SslCertificateId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.sslProfileId">SslProfileId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.frontendIpConfigurationNameInput">FrontendIpConfigurationNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.frontendPortNameInput">FrontendPortNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.hostNamesInput">HostNamesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.protocolInput">ProtocolInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.sslCertificateNameInput">SslCertificateNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.sslProfileNameInput">SslProfileNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.frontendIpConfigurationName">FrontendIpConfigurationName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.frontendPortName">FrontendPortName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.hostNames">HostNames</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.protocol">Protocol</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.sslCertificateName">SslCertificateName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.sslProfileName">SslProfileName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `FrontendIpConfigurationId`<sup>Required</sup> <a name="FrontendIpConfigurationId" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.frontendIpConfigurationId"></a>
+
+```go
+func FrontendIpConfigurationId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `FrontendPortId`<sup>Required</sup> <a name="FrontendPortId" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.frontendPortId"></a>
+
+```go
+func FrontendPortId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SslCertificateId`<sup>Required</sup> <a name="SslCertificateId" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.sslCertificateId"></a>
+
+```go
+func SslCertificateId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SslProfileId`<sup>Required</sup> <a name="SslProfileId" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.sslProfileId"></a>
+
+```go
+func SslProfileId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `FrontendIpConfigurationNameInput`<sup>Optional</sup> <a name="FrontendIpConfigurationNameInput" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.frontendIpConfigurationNameInput"></a>
+
+```go
+func FrontendIpConfigurationNameInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `FrontendPortNameInput`<sup>Optional</sup> <a name="FrontendPortNameInput" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.frontendPortNameInput"></a>
+
+```go
+func FrontendPortNameInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `HostNamesInput`<sup>Optional</sup> <a name="HostNamesInput" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.hostNamesInput"></a>
+
+```go
+func HostNamesInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.nameInput"></a>
+
+```go
+func NameInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ProtocolInput`<sup>Optional</sup> <a name="ProtocolInput" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.protocolInput"></a>
+
+```go
+func ProtocolInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SslCertificateNameInput`<sup>Optional</sup> <a name="SslCertificateNameInput" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.sslCertificateNameInput"></a>
+
+```go
+func SslCertificateNameInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SslProfileNameInput`<sup>Optional</sup> <a name="SslProfileNameInput" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.sslProfileNameInput"></a>
+
+```go
+func SslProfileNameInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `FrontendIpConfigurationName`<sup>Required</sup> <a name="FrontendIpConfigurationName" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.frontendIpConfigurationName"></a>
+
+```go
+func FrontendIpConfigurationName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `FrontendPortName`<sup>Required</sup> <a name="FrontendPortName" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.frontendPortName"></a>
+
+```go
+func FrontendPortName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `HostNames`<sup>Required</sup> <a name="HostNames" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.hostNames"></a>
+
+```go
+func HostNames() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.name"></a>
+
+```go
+func Name() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Protocol`<sup>Required</sup> <a name="Protocol" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.protocol"></a>
+
+```go
+func Protocol() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SslCertificateName`<sup>Required</sup> <a name="SslCertificateName" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.sslCertificateName"></a>
+
+```go
+func SslCertificateName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SslProfileName`<sup>Required</sup> <a name="SslProfileName" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.sslProfileName"></a>
+
+```go
+func SslProfileName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayListenerOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
 ### ApplicationGatewayPrivateEndpointConnectionList <a name="ApplicationGatewayPrivateEndpointConnectionList" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayPrivateEndpointConnectionList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayPrivateEndpointConnectionList.Initializer"></a>
@@ -14589,8 +16449,10 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbeOutputReference.resetHost">ResetHost</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbeOutputReference.resetMatch">ResetMatch</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbeOutputReference.resetMinimumServers">ResetMinimumServers</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbeOutputReference.resetPath">ResetPath</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbeOutputReference.resetPickHostNameFromBackendHttpSettings">ResetPickHostNameFromBackendHttpSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbeOutputReference.resetPort">ResetPort</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbeOutputReference.resetProxyProtocolHeaderEnabled">ResetProxyProtocolHeaderEnabled</a></code> | *No description.* |
 
 ---
 
@@ -14774,6 +16636,12 @@ func ResetMatch()
 func ResetMinimumServers()
 ```
 
+##### `ResetPath` <a name="ResetPath" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbeOutputReference.resetPath"></a>
+
+```go
+func ResetPath()
+```
+
 ##### `ResetPickHostNameFromBackendHttpSettings` <a name="ResetPickHostNameFromBackendHttpSettings" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbeOutputReference.resetPickHostNameFromBackendHttpSettings"></a>
 
 ```go
@@ -14784,6 +16652,12 @@ func ResetPickHostNameFromBackendHttpSettings()
 
 ```go
 func ResetPort()
+```
+
+##### `ResetProxyProtocolHeaderEnabled` <a name="ResetProxyProtocolHeaderEnabled" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbeOutputReference.resetProxyProtocolHeaderEnabled"></a>
+
+```go
+func ResetProxyProtocolHeaderEnabled()
 ```
 
 
@@ -14804,6 +16678,7 @@ func ResetPort()
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbeOutputReference.property.pickHostNameFromBackendHttpSettingsInput">PickHostNameFromBackendHttpSettingsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbeOutputReference.property.portInput">PortInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbeOutputReference.property.protocolInput">ProtocolInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbeOutputReference.property.proxyProtocolHeaderEnabledInput">ProxyProtocolHeaderEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbeOutputReference.property.timeoutInput">TimeoutInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbeOutputReference.property.unhealthyThresholdInput">UnhealthyThresholdInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbeOutputReference.property.host">Host</a></code> | <code>*string</code> | *No description.* |
@@ -14814,6 +16689,7 @@ func ResetPort()
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbeOutputReference.property.pickHostNameFromBackendHttpSettings">PickHostNameFromBackendHttpSettings</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbeOutputReference.property.port">Port</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbeOutputReference.property.protocol">Protocol</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbeOutputReference.property.proxyProtocolHeaderEnabled">ProxyProtocolHeaderEnabled</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbeOutputReference.property.timeout">Timeout</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbeOutputReference.property.unhealthyThreshold">UnhealthyThreshold</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbeOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
@@ -14954,6 +16830,16 @@ func ProtocolInput() *string
 
 ---
 
+##### `ProxyProtocolHeaderEnabledInput`<sup>Optional</sup> <a name="ProxyProtocolHeaderEnabledInput" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbeOutputReference.property.proxyProtocolHeaderEnabledInput"></a>
+
+```go
+func ProxyProtocolHeaderEnabledInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `TimeoutInput`<sup>Optional</sup> <a name="TimeoutInput" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbeOutputReference.property.timeoutInput"></a>
 
 ```go
@@ -15051,6 +16937,16 @@ func Protocol() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `ProxyProtocolHeaderEnabled`<sup>Required</sup> <a name="ProxyProtocolHeaderEnabled" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayProbeOutputReference.property.proxyProtocolHeaderEnabled"></a>
+
+```go
+func ProxyProtocolHeaderEnabled() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -19411,6 +21307,587 @@ func InternalValue() ApplicationGatewayRewriteRuleSetRewriteRuleUrl
 ```
 
 - *Type:* <a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRewriteRuleSetRewriteRuleUrl">ApplicationGatewayRewriteRuleSetRewriteRuleUrl</a>
+
+---
+
+
+### ApplicationGatewayRoutingRuleList <a name="ApplicationGatewayRoutingRuleList" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgateway"
+
+applicationgateway.NewApplicationGatewayRoutingRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApplicationGatewayRoutingRuleList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleList.get"></a>
+
+```go
+func Get(index *f64) ApplicationGatewayRoutingRuleOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### ApplicationGatewayRoutingRuleOutputReference <a name="ApplicationGatewayRoutingRuleOutputReference" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationgateway"
+
+applicationgateway.NewApplicationGatewayRoutingRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApplicationGatewayRoutingRuleOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.property.backendAddressPoolId">BackendAddressPoolId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.property.backendId">BackendId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.property.listenerId">ListenerId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.property.backendAddressPoolNameInput">BackendAddressPoolNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.property.backendNameInput">BackendNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.property.listenerNameInput">ListenerNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.property.priorityInput">PriorityInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.property.backendAddressPoolName">BackendAddressPoolName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.property.backendName">BackendName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.property.listenerName">ListenerName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.property.priority">Priority</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `BackendAddressPoolId`<sup>Required</sup> <a name="BackendAddressPoolId" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.property.backendAddressPoolId"></a>
+
+```go
+func BackendAddressPoolId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `BackendId`<sup>Required</sup> <a name="BackendId" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.property.backendId"></a>
+
+```go
+func BackendId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ListenerId`<sup>Required</sup> <a name="ListenerId" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.property.listenerId"></a>
+
+```go
+func ListenerId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `BackendAddressPoolNameInput`<sup>Optional</sup> <a name="BackendAddressPoolNameInput" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.property.backendAddressPoolNameInput"></a>
+
+```go
+func BackendAddressPoolNameInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `BackendNameInput`<sup>Optional</sup> <a name="BackendNameInput" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.property.backendNameInput"></a>
+
+```go
+func BackendNameInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ListenerNameInput`<sup>Optional</sup> <a name="ListenerNameInput" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.property.listenerNameInput"></a>
+
+```go
+func ListenerNameInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.property.nameInput"></a>
+
+```go
+func NameInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `PriorityInput`<sup>Optional</sup> <a name="PriorityInput" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.property.priorityInput"></a>
+
+```go
+func PriorityInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `BackendAddressPoolName`<sup>Required</sup> <a name="BackendAddressPoolName" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.property.backendAddressPoolName"></a>
+
+```go
+func BackendAddressPoolName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `BackendName`<sup>Required</sup> <a name="BackendName" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.property.backendName"></a>
+
+```go
+func BackendName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ListenerName`<sup>Required</sup> <a name="ListenerName" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.property.listenerName"></a>
+
+```go
+func ListenerName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.property.name"></a>
+
+```go
+func Name() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Priority`<sup>Required</sup> <a name="Priority" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.property.priority"></a>
+
+```go
+func Priority() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-azurerm.applicationGateway.ApplicationGatewayRoutingRuleOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 

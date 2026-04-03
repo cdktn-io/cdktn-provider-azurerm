@@ -4,7 +4,7 @@
 
 ### MssqlElasticpool <a name="MssqlElasticpool" id="@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool azurerm_mssql_elasticpool}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool azurerm_mssql_elasticpool}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.Initializer"></a>
 
@@ -28,6 +28,7 @@ mssqlElasticpool.MssqlElasticpool(
   server_name: str,
   sku: MssqlElasticpoolSku,
   enclave_type: str = None,
+  high_availability_replica_count: typing.Union[int, float] = None,
   id: str = None,
   license_type: str = None,
   maintenance_configuration_name: str = None,
@@ -50,21 +51,22 @@ mssqlElasticpool.MssqlElasticpool(
 | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#location MssqlElasticpool#location}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#name MssqlElasticpool#name}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#location MssqlElasticpool#location}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#name MssqlElasticpool#name}. |
 | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.Initializer.parameter.perDatabaseSettings">per_database_settings</a></code> | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolPerDatabaseSettings">MssqlElasticpoolPerDatabaseSettings</a></code> | per_database_settings block. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#resource_group_name MssqlElasticpool#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.Initializer.parameter.serverName">server_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#server_name MssqlElasticpool#server_name}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.Initializer.parameter.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#resource_group_name MssqlElasticpool#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.Initializer.parameter.serverName">server_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#server_name MssqlElasticpool#server_name}. |
 | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.Initializer.parameter.sku">sku</a></code> | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolSku">MssqlElasticpoolSku</a></code> | sku block. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.Initializer.parameter.enclaveType">enclave_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#enclave_type MssqlElasticpool#enclave_type}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#id MssqlElasticpool#id}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.Initializer.parameter.licenseType">license_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#license_type MssqlElasticpool#license_type}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.Initializer.parameter.maintenanceConfigurationName">maintenance_configuration_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#maintenance_configuration_name MssqlElasticpool#maintenance_configuration_name}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.Initializer.parameter.maxSizeBytes">max_size_bytes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#max_size_bytes MssqlElasticpool#max_size_bytes}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.Initializer.parameter.maxSizeGb">max_size_gb</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#max_size_gb MssqlElasticpool#max_size_gb}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#tags MssqlElasticpool#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.Initializer.parameter.enclaveType">enclave_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#enclave_type MssqlElasticpool#enclave_type}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.Initializer.parameter.highAvailabilityReplicaCount">high_availability_replica_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#high_availability_replica_count MssqlElasticpool#high_availability_replica_count}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#id MssqlElasticpool#id}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.Initializer.parameter.licenseType">license_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#license_type MssqlElasticpool#license_type}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.Initializer.parameter.maintenanceConfigurationName">maintenance_configuration_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#maintenance_configuration_name MssqlElasticpool#maintenance_configuration_name}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.Initializer.parameter.maxSizeBytes">max_size_bytes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#max_size_bytes MssqlElasticpool#max_size_bytes}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.Initializer.parameter.maxSizeGb">max_size_gb</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#max_size_gb MssqlElasticpool#max_size_gb}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#tags MssqlElasticpool#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolTimeouts">MssqlElasticpoolTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.Initializer.parameter.zoneRedundant">zone_redundant</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#zone_redundant MssqlElasticpool#zone_redundant}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.Initializer.parameter.zoneRedundant">zone_redundant</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#zone_redundant MssqlElasticpool#zone_redundant}. |
 
 ---
 
@@ -132,7 +134,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#location MssqlElasticpool#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#location MssqlElasticpool#location}.
 
 ---
 
@@ -140,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#name MssqlElasticpool#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#name MssqlElasticpool#name}.
 
 ---
 
@@ -150,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 per_database_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#per_database_settings MssqlElasticpool#per_database_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#per_database_settings MssqlElasticpool#per_database_settings}
 
 ---
 
@@ -158,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#resource_group_name MssqlElasticpool#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#resource_group_name MssqlElasticpool#resource_group_name}.
 
 ---
 
@@ -166,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#server_name MssqlElasticpool#server_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#server_name MssqlElasticpool#server_name}.
 
 ---
 
@@ -176,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 sku block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#sku MssqlElasticpool#sku}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#sku MssqlElasticpool#sku}
 
 ---
 
@@ -184,7 +186,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#enclave_type MssqlElasticpool#enclave_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#enclave_type MssqlElasticpool#enclave_type}.
+
+---
+
+##### `high_availability_replica_count`<sup>Optional</sup> <a name="high_availability_replica_count" id="@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.Initializer.parameter.highAvailabilityReplicaCount"></a>
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#high_availability_replica_count MssqlElasticpool#high_availability_replica_count}.
 
 ---
 
@@ -192,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#id MssqlElasticpool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#id MssqlElasticpool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -203,7 +213,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#license_type MssqlElasticpool#license_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#license_type MssqlElasticpool#license_type}.
 
 ---
 
@@ -211,7 +221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#maintenance_configuration_name MssqlElasticpool#maintenance_configuration_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#maintenance_configuration_name MssqlElasticpool#maintenance_configuration_name}.
 
 ---
 
@@ -219,7 +229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#max_size_bytes MssqlElasticpool#max_size_bytes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#max_size_bytes MssqlElasticpool#max_size_bytes}.
 
 ---
 
@@ -227,7 +237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#max_size_gb MssqlElasticpool#max_size_gb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#max_size_gb MssqlElasticpool#max_size_gb}.
 
 ---
 
@@ -235,7 +245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#tags MssqlElasticpool#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#tags MssqlElasticpool#tags}.
 
 ---
 
@@ -245,7 +255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#timeouts MssqlElasticpool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#timeouts MssqlElasticpool#timeouts}
 
 ---
 
@@ -253,7 +263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#zone_redundant MssqlElasticpool#zone_redundant}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#zone_redundant MssqlElasticpool#zone_redundant}.
 
 ---
 
@@ -289,6 +299,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.putSku">put_sku</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.resetEnclaveType">reset_enclave_type</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.resetHighAvailabilityReplicaCount">reset_high_availability_replica_count</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.resetLicenseType">reset_license_type</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.resetMaintenanceConfigurationName">reset_maintenance_configuration_name</a></code> | *No description.* |
@@ -661,7 +672,7 @@ def put_per_database_settings(
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#max_capacity MssqlElasticpool#max_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#max_capacity MssqlElasticpool#max_capacity}.
 
 ---
 
@@ -669,7 +680,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#min_capacity MssqlElasticpool#min_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#min_capacity MssqlElasticpool#min_capacity}.
 
 ---
 
@@ -688,7 +699,7 @@ def put_sku(
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#capacity MssqlElasticpool#capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#capacity MssqlElasticpool#capacity}.
 
 ---
 
@@ -696,7 +707,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#name MssqlElasticpool#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#name MssqlElasticpool#name}.
 
 ---
 
@@ -704,7 +715,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#tier MssqlElasticpool#tier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#tier MssqlElasticpool#tier}.
 
 ---
 
@@ -712,7 +723,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#family MssqlElasticpool#family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#family MssqlElasticpool#family}.
 
 ---
 
@@ -731,7 +742,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#create MssqlElasticpool#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#create MssqlElasticpool#create}.
 
 ---
 
@@ -739,7 +750,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#delete MssqlElasticpool#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#delete MssqlElasticpool#delete}.
 
 ---
 
@@ -747,7 +758,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#read MssqlElasticpool#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#read MssqlElasticpool#read}.
 
 ---
 
@@ -755,7 +766,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#update MssqlElasticpool#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#update MssqlElasticpool#update}.
 
 ---
 
@@ -763,6 +774,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def reset_enclave_type() -> None
+```
+
+##### `reset_high_availability_replica_count` <a name="reset_high_availability_replica_count" id="@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.resetHighAvailabilityReplicaCount"></a>
+
+```python
+def reset_high_availability_replica_count() -> None
 ```
 
 ##### `reset_id` <a name="reset_id" id="@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.resetId"></a>
@@ -927,7 +944,7 @@ The construct id used in the generated config for the MssqlElasticpool to import
 
 The id of the existing MssqlElasticpool that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -961,6 +978,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.property.sku">sku</a></code> | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolSkuOutputReference">MssqlElasticpoolSkuOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolTimeoutsOutputReference">MssqlElasticpoolTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.property.enclaveTypeInput">enclave_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.property.highAvailabilityReplicaCountInput">high_availability_replica_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.property.licenseTypeInput">license_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
@@ -976,6 +994,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolTimeouts">MssqlElasticpoolTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.property.zoneRedundantInput">zone_redundant_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.property.enclaveType">enclave_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.property.highAvailabilityReplicaCount">high_availability_replica_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.property.licenseType">license_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.property.location">location</a></code> | <code>str</code> | *No description.* |
@@ -1172,6 +1191,16 @@ enclave_type_input: str
 
 ---
 
+##### `high_availability_replica_count_input`<sup>Optional</sup> <a name="high_availability_replica_count_input" id="@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.property.highAvailabilityReplicaCountInput"></a>
+
+```python
+high_availability_replica_count_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.property.idInput"></a>
 
 ```python
@@ -1319,6 +1348,16 @@ enclave_type: str
 ```
 
 - *Type:* str
+
+---
+
+##### `high_availability_replica_count`<sup>Required</sup> <a name="high_availability_replica_count" id="@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpool.property.highAvailabilityReplicaCount"></a>
+
+```python
+high_availability_replica_count: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
 
 ---
 
@@ -1474,6 +1513,7 @@ mssqlElasticpool.MssqlElasticpoolConfig(
   server_name: str,
   sku: MssqlElasticpoolSku,
   enclave_type: str = None,
+  high_availability_replica_count: typing.Union[int, float] = None,
   id: str = None,
   license_type: str = None,
   maintenance_configuration_name: str = None,
@@ -1496,21 +1536,22 @@ mssqlElasticpool.MssqlElasticpoolConfig(
 | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#location MssqlElasticpool#location}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#name MssqlElasticpool#name}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#location MssqlElasticpool#location}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#name MssqlElasticpool#name}. |
 | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolConfig.property.perDatabaseSettings">per_database_settings</a></code> | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolPerDatabaseSettings">MssqlElasticpoolPerDatabaseSettings</a></code> | per_database_settings block. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#resource_group_name MssqlElasticpool#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolConfig.property.serverName">server_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#server_name MssqlElasticpool#server_name}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolConfig.property.resourceGroupName">resource_group_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#resource_group_name MssqlElasticpool#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolConfig.property.serverName">server_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#server_name MssqlElasticpool#server_name}. |
 | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolConfig.property.sku">sku</a></code> | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolSku">MssqlElasticpoolSku</a></code> | sku block. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolConfig.property.enclaveType">enclave_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#enclave_type MssqlElasticpool#enclave_type}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#id MssqlElasticpool#id}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolConfig.property.licenseType">license_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#license_type MssqlElasticpool#license_type}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolConfig.property.maintenanceConfigurationName">maintenance_configuration_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#maintenance_configuration_name MssqlElasticpool#maintenance_configuration_name}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolConfig.property.maxSizeBytes">max_size_bytes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#max_size_bytes MssqlElasticpool#max_size_bytes}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolConfig.property.maxSizeGb">max_size_gb</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#max_size_gb MssqlElasticpool#max_size_gb}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#tags MssqlElasticpool#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolConfig.property.enclaveType">enclave_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#enclave_type MssqlElasticpool#enclave_type}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolConfig.property.highAvailabilityReplicaCount">high_availability_replica_count</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#high_availability_replica_count MssqlElasticpool#high_availability_replica_count}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#id MssqlElasticpool#id}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolConfig.property.licenseType">license_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#license_type MssqlElasticpool#license_type}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolConfig.property.maintenanceConfigurationName">maintenance_configuration_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#maintenance_configuration_name MssqlElasticpool#maintenance_configuration_name}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolConfig.property.maxSizeBytes">max_size_bytes</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#max_size_bytes MssqlElasticpool#max_size_bytes}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolConfig.property.maxSizeGb">max_size_gb</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#max_size_gb MssqlElasticpool#max_size_gb}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#tags MssqlElasticpool#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolTimeouts">MssqlElasticpoolTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolConfig.property.zoneRedundant">zone_redundant</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#zone_redundant MssqlElasticpool#zone_redundant}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolConfig.property.zoneRedundant">zone_redundant</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#zone_redundant MssqlElasticpool#zone_redundant}. |
 
 ---
 
@@ -1592,7 +1633,7 @@ location: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#location MssqlElasticpool#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#location MssqlElasticpool#location}.
 
 ---
 
@@ -1604,7 +1645,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#name MssqlElasticpool#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#name MssqlElasticpool#name}.
 
 ---
 
@@ -1618,7 +1659,7 @@ per_database_settings: MssqlElasticpoolPerDatabaseSettings
 
 per_database_settings block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#per_database_settings MssqlElasticpool#per_database_settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#per_database_settings MssqlElasticpool#per_database_settings}
 
 ---
 
@@ -1630,7 +1671,7 @@ resource_group_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#resource_group_name MssqlElasticpool#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#resource_group_name MssqlElasticpool#resource_group_name}.
 
 ---
 
@@ -1642,7 +1683,7 @@ server_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#server_name MssqlElasticpool#server_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#server_name MssqlElasticpool#server_name}.
 
 ---
 
@@ -1656,7 +1697,7 @@ sku: MssqlElasticpoolSku
 
 sku block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#sku MssqlElasticpool#sku}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#sku MssqlElasticpool#sku}
 
 ---
 
@@ -1668,7 +1709,19 @@ enclave_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#enclave_type MssqlElasticpool#enclave_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#enclave_type MssqlElasticpool#enclave_type}.
+
+---
+
+##### `high_availability_replica_count`<sup>Optional</sup> <a name="high_availability_replica_count" id="@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolConfig.property.highAvailabilityReplicaCount"></a>
+
+```python
+high_availability_replica_count: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#high_availability_replica_count MssqlElasticpool#high_availability_replica_count}.
 
 ---
 
@@ -1680,7 +1733,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#id MssqlElasticpool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#id MssqlElasticpool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1695,7 +1748,7 @@ license_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#license_type MssqlElasticpool#license_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#license_type MssqlElasticpool#license_type}.
 
 ---
 
@@ -1707,7 +1760,7 @@ maintenance_configuration_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#maintenance_configuration_name MssqlElasticpool#maintenance_configuration_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#maintenance_configuration_name MssqlElasticpool#maintenance_configuration_name}.
 
 ---
 
@@ -1719,7 +1772,7 @@ max_size_bytes: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#max_size_bytes MssqlElasticpool#max_size_bytes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#max_size_bytes MssqlElasticpool#max_size_bytes}.
 
 ---
 
@@ -1731,7 +1784,7 @@ max_size_gb: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#max_size_gb MssqlElasticpool#max_size_gb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#max_size_gb MssqlElasticpool#max_size_gb}.
 
 ---
 
@@ -1743,7 +1796,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#tags MssqlElasticpool#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#tags MssqlElasticpool#tags}.
 
 ---
 
@@ -1757,7 +1810,7 @@ timeouts: MssqlElasticpoolTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#timeouts MssqlElasticpool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#timeouts MssqlElasticpool#timeouts}
 
 ---
 
@@ -1769,7 +1822,7 @@ zone_redundant: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#zone_redundant MssqlElasticpool#zone_redundant}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#zone_redundant MssqlElasticpool#zone_redundant}.
 
 ---
 
@@ -1790,8 +1843,8 @@ mssqlElasticpool.MssqlElasticpoolPerDatabaseSettings(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolPerDatabaseSettings.property.maxCapacity">max_capacity</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#max_capacity MssqlElasticpool#max_capacity}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolPerDatabaseSettings.property.minCapacity">min_capacity</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#min_capacity MssqlElasticpool#min_capacity}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolPerDatabaseSettings.property.maxCapacity">max_capacity</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#max_capacity MssqlElasticpool#max_capacity}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolPerDatabaseSettings.property.minCapacity">min_capacity</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#min_capacity MssqlElasticpool#min_capacity}. |
 
 ---
 
@@ -1803,7 +1856,7 @@ max_capacity: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#max_capacity MssqlElasticpool#max_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#max_capacity MssqlElasticpool#max_capacity}.
 
 ---
 
@@ -1815,7 +1868,7 @@ min_capacity: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#min_capacity MssqlElasticpool#min_capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#min_capacity MssqlElasticpool#min_capacity}.
 
 ---
 
@@ -1838,10 +1891,10 @@ mssqlElasticpool.MssqlElasticpoolSku(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolSku.property.capacity">capacity</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#capacity MssqlElasticpool#capacity}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolSku.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#name MssqlElasticpool#name}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolSku.property.tier">tier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#tier MssqlElasticpool#tier}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolSku.property.family">family</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#family MssqlElasticpool#family}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolSku.property.capacity">capacity</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#capacity MssqlElasticpool#capacity}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolSku.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#name MssqlElasticpool#name}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolSku.property.tier">tier</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#tier MssqlElasticpool#tier}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolSku.property.family">family</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#family MssqlElasticpool#family}. |
 
 ---
 
@@ -1853,7 +1906,7 @@ capacity: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#capacity MssqlElasticpool#capacity}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#capacity MssqlElasticpool#capacity}.
 
 ---
 
@@ -1865,7 +1918,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#name MssqlElasticpool#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#name MssqlElasticpool#name}.
 
 ---
 
@@ -1877,7 +1930,7 @@ tier: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#tier MssqlElasticpool#tier}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#tier MssqlElasticpool#tier}.
 
 ---
 
@@ -1889,7 +1942,7 @@ family: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#family MssqlElasticpool#family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#family MssqlElasticpool#family}.
 
 ---
 
@@ -1912,10 +1965,10 @@ mssqlElasticpool.MssqlElasticpoolTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#create MssqlElasticpool#create}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#delete MssqlElasticpool#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#read MssqlElasticpool#read}. |
-| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#update MssqlElasticpool#update}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#create MssqlElasticpool#create}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#delete MssqlElasticpool#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#read MssqlElasticpool#read}. |
+| <code><a href="#@cdktn/provider-azurerm.mssqlElasticpool.MssqlElasticpoolTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#update MssqlElasticpool#update}. |
 
 ---
 
@@ -1927,7 +1980,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#create MssqlElasticpool#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#create MssqlElasticpool#create}.
 
 ---
 
@@ -1939,7 +1992,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#delete MssqlElasticpool#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#delete MssqlElasticpool#delete}.
 
 ---
 
@@ -1951,7 +2004,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#read MssqlElasticpool#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#read MssqlElasticpool#read}.
 
 ---
 
@@ -1963,7 +2016,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.66.0/docs/resources/mssql_elasticpool#update MssqlElasticpool#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/mssql_elasticpool#update MssqlElasticpool#update}.
 
 ---
 
