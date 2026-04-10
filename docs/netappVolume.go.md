@@ -4,7 +4,7 @@
 
 ### NetappVolume <a name="NetappVolume" id="@cdktn/provider-azurerm.netappVolume.NetappVolume"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume azurerm_netapp_volume}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume azurerm_netapp_volume}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.netappVolume.NetappVolume.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolume.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolume.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolume.putCoolAccess">PutCoolAccess</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolume.putDataProtectionAdvancedRansomware">PutDataProtectionAdvancedRansomware</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolume.putDataProtectionBackupPolicy">PutDataProtectionBackupPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolume.putDataProtectionReplication">PutDataProtectionReplication</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolume.putDataProtectionSnapshotPolicy">PutDataProtectionSnapshotPolicy</a></code> | *No description.* |
@@ -84,6 +85,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolume.resetAzureVmwareDataStoreEnabled">ResetAzureVmwareDataStoreEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolume.resetCoolAccess">ResetCoolAccess</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolume.resetCreateFromSnapshotResourceId">ResetCreateFromSnapshotResourceId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolume.resetDataProtectionAdvancedRansomware">ResetDataProtectionAdvancedRansomware</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolume.resetDataProtectionBackupPolicy">ResetDataProtectionBackupPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolume.resetDataProtectionReplication">ResetDataProtectionReplication</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolume.resetDataProtectionSnapshotPolicy">ResetDataProtectionSnapshotPolicy</a></code> | *No description.* |
@@ -429,6 +431,18 @@ func PutCoolAccess(value NetappVolumeCoolAccess)
 
 ---
 
+##### `PutDataProtectionAdvancedRansomware` <a name="PutDataProtectionAdvancedRansomware" id="@cdktn/provider-azurerm.netappVolume.NetappVolume.putDataProtectionAdvancedRansomware"></a>
+
+```go
+func PutDataProtectionAdvancedRansomware(value NetappVolumeDataProtectionAdvancedRansomware)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.netappVolume.NetappVolume.putDataProtectionAdvancedRansomware.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomware">NetappVolumeDataProtectionAdvancedRansomware</a>
+
+---
+
 ##### `PutDataProtectionBackupPolicy` <a name="PutDataProtectionBackupPolicy" id="@cdktn/provider-azurerm.netappVolume.NetappVolume.putDataProtectionBackupPolicy"></a>
 
 ```go
@@ -511,6 +525,12 @@ func ResetCoolAccess()
 
 ```go
 func ResetCreateFromSnapshotResourceId()
+```
+
+##### `ResetDataProtectionAdvancedRansomware` <a name="ResetDataProtectionAdvancedRansomware" id="@cdktn/provider-azurerm.netappVolume.NetappVolume.resetDataProtectionAdvancedRansomware"></a>
+
+```go
+func ResetDataProtectionAdvancedRansomware()
 ```
 
 ##### `ResetDataProtectionBackupPolicy` <a name="ResetDataProtectionBackupPolicy" id="@cdktn/provider-azurerm.netappVolume.NetappVolume.resetDataProtectionBackupPolicy"></a>
@@ -742,7 +762,7 @@ The construct id used in the generated config for the NetappVolume to import.
 
 The id of the existing NetappVolume that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -773,6 +793,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolume.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolume.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolume.property.coolAccess">CoolAccess</a></code> | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeCoolAccessOutputReference">NetappVolumeCoolAccessOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolume.property.dataProtectionAdvancedRansomware">DataProtectionAdvancedRansomware</a></code> | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference">NetappVolumeDataProtectionAdvancedRansomwareOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolume.property.dataProtectionBackupPolicy">DataProtectionBackupPolicy</a></code> | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionBackupPolicyOutputReference">NetappVolumeDataProtectionBackupPolicyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolume.property.dataProtectionReplication">DataProtectionReplication</a></code> | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionReplicationOutputReference">NetappVolumeDataProtectionReplicationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolume.property.dataProtectionSnapshotPolicy">DataProtectionSnapshotPolicy</a></code> | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionSnapshotPolicyOutputReference">NetappVolumeDataProtectionSnapshotPolicyOutputReference</a></code> | *No description.* |
@@ -784,6 +805,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolume.property.azureVmwareDataStoreEnabledInput">AzureVmwareDataStoreEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolume.property.coolAccessInput">CoolAccessInput</a></code> | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeCoolAccess">NetappVolumeCoolAccess</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolume.property.createFromSnapshotResourceIdInput">CreateFromSnapshotResourceIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolume.property.dataProtectionAdvancedRansomwareInput">DataProtectionAdvancedRansomwareInput</a></code> | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomware">NetappVolumeDataProtectionAdvancedRansomware</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolume.property.dataProtectionBackupPolicyInput">DataProtectionBackupPolicyInput</a></code> | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionBackupPolicy">NetappVolumeDataProtectionBackupPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolume.property.dataProtectionReplicationInput">DataProtectionReplicationInput</a></code> | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionReplication">NetappVolumeDataProtectionReplication</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolume.property.dataProtectionSnapshotPolicyInput">DataProtectionSnapshotPolicyInput</a></code> | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionSnapshotPolicy">NetappVolumeDataProtectionSnapshotPolicy</a></code> | *No description.* |
@@ -996,6 +1018,16 @@ func CoolAccess() NetappVolumeCoolAccessOutputReference
 
 ---
 
+##### `DataProtectionAdvancedRansomware`<sup>Required</sup> <a name="DataProtectionAdvancedRansomware" id="@cdktn/provider-azurerm.netappVolume.NetappVolume.property.dataProtectionAdvancedRansomware"></a>
+
+```go
+func DataProtectionAdvancedRansomware() NetappVolumeDataProtectionAdvancedRansomwareOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference">NetappVolumeDataProtectionAdvancedRansomwareOutputReference</a>
+
+---
+
 ##### `DataProtectionBackupPolicy`<sup>Required</sup> <a name="DataProtectionBackupPolicy" id="@cdktn/provider-azurerm.netappVolume.NetappVolume.property.dataProtectionBackupPolicy"></a>
 
 ```go
@@ -1103,6 +1135,16 @@ func CreateFromSnapshotResourceIdInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `DataProtectionAdvancedRansomwareInput`<sup>Optional</sup> <a name="DataProtectionAdvancedRansomwareInput" id="@cdktn/provider-azurerm.netappVolume.NetappVolume.property.dataProtectionAdvancedRansomwareInput"></a>
+
+```go
+func DataProtectionAdvancedRansomwareInput() NetappVolumeDataProtectionAdvancedRansomware
+```
+
+- *Type:* <a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomware">NetappVolumeDataProtectionAdvancedRansomware</a>
 
 ---
 
@@ -1724,6 +1766,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/netappvolume"
 	AzureVmwareDataStoreEnabled: interface{},
 	CoolAccess: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.netappVolume.NetappVolumeCoolAccess,
 	CreateFromSnapshotResourceId: *string,
+	DataProtectionAdvancedRansomware: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.netappVolume.NetappVolumeDataProtectionAdvancedRansomware,
 	DataProtectionBackupPolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.netappVolume.NetappVolumeDataProtectionBackupPolicy,
 	DataProtectionReplication: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.netappVolume.NetappVolumeDataProtectionReplication,
 	DataProtectionSnapshotPolicy: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.netappVolume.NetappVolumeDataProtectionSnapshotPolicy,
@@ -1759,40 +1802,41 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/netappvolume"
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.accountName">AccountName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#account_name NetappVolume#account_name}. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#location NetappVolume#location}. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#name NetappVolume#name}. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.poolName">PoolName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#pool_name NetappVolume#pool_name}. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#resource_group_name NetappVolume#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.serviceLevel">ServiceLevel</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#service_level NetappVolume#service_level}. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.storageQuotaInGb">StorageQuotaInGb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#storage_quota_in_gb NetappVolume#storage_quota_in_gb}. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#subnet_id NetappVolume#subnet_id}. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.volumePath">VolumePath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#volume_path NetappVolume#volume_path}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.accountName">AccountName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#account_name NetappVolume#account_name}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#location NetappVolume#location}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#name NetappVolume#name}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.poolName">PoolName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#pool_name NetappVolume#pool_name}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#resource_group_name NetappVolume#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.serviceLevel">ServiceLevel</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#service_level NetappVolume#service_level}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.storageQuotaInGb">StorageQuotaInGb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#storage_quota_in_gb NetappVolume#storage_quota_in_gb}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.subnetId">SubnetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#subnet_id NetappVolume#subnet_id}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.volumePath">VolumePath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#volume_path NetappVolume#volume_path}. |
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.acceptGrowCapacityPoolForShortTermCloneSplit">AcceptGrowCapacityPoolForShortTermCloneSplit</a></code> | <code>*string</code> | While auto splitting the short term clone volume, if the parent pool does not have enough space to accommodate the volume after split, it will be automatically resized, which will lead to increased billing. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.azureVmwareDataStoreEnabled">AzureVmwareDataStoreEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#azure_vmware_data_store_enabled NetappVolume#azure_vmware_data_store_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.azureVmwareDataStoreEnabled">AzureVmwareDataStoreEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#azure_vmware_data_store_enabled NetappVolume#azure_vmware_data_store_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.coolAccess">CoolAccess</a></code> | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeCoolAccess">NetappVolumeCoolAccess</a></code> | cool_access block. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.createFromSnapshotResourceId">CreateFromSnapshotResourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#create_from_snapshot_resource_id NetappVolume#create_from_snapshot_resource_id}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.createFromSnapshotResourceId">CreateFromSnapshotResourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#create_from_snapshot_resource_id NetappVolume#create_from_snapshot_resource_id}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.dataProtectionAdvancedRansomware">DataProtectionAdvancedRansomware</a></code> | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomware">NetappVolumeDataProtectionAdvancedRansomware</a></code> | data_protection_advanced_ransomware block. |
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.dataProtectionBackupPolicy">DataProtectionBackupPolicy</a></code> | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionBackupPolicy">NetappVolumeDataProtectionBackupPolicy</a></code> | data_protection_backup_policy block. |
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.dataProtectionReplication">DataProtectionReplication</a></code> | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionReplication">NetappVolumeDataProtectionReplication</a></code> | data_protection_replication block. |
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.dataProtectionSnapshotPolicy">DataProtectionSnapshotPolicy</a></code> | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionSnapshotPolicy">NetappVolumeDataProtectionSnapshotPolicy</a></code> | data_protection_snapshot_policy block. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.encryptionKeySource">EncryptionKeySource</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#encryption_key_source NetappVolume#encryption_key_source}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.encryptionKeySource">EncryptionKeySource</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#encryption_key_source NetappVolume#encryption_key_source}. |
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.exportPolicyRule">ExportPolicyRule</a></code> | <code>interface{}</code> | export_policy_rule block. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#id NetappVolume#id}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#id NetappVolume#id}. |
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.kerberosEnabled">KerberosEnabled</a></code> | <code>interface{}</code> | Enable to allow Kerberos secured volumes. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.keyVaultPrivateEndpointId">KeyVaultPrivateEndpointId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#key_vault_private_endpoint_id NetappVolume#key_vault_private_endpoint_id}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.keyVaultPrivateEndpointId">KeyVaultPrivateEndpointId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#key_vault_private_endpoint_id NetappVolume#key_vault_private_endpoint_id}. |
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.largeVolumeEnabled">LargeVolumeEnabled</a></code> | <code>interface{}</code> | Indicates whether the volume is a large volume. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.networkFeatures">NetworkFeatures</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#network_features NetappVolume#network_features}. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.protocols">Protocols</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#protocols NetappVolume#protocols}. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.securityStyle">SecurityStyle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#security_style NetappVolume#security_style}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.networkFeatures">NetworkFeatures</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#network_features NetappVolume#network_features}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.protocols">Protocols</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#protocols NetappVolume#protocols}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.securityStyle">SecurityStyle</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#security_style NetappVolume#security_style}. |
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.smb3ProtocolEncryptionEnabled">Smb3ProtocolEncryptionEnabled</a></code> | <code>interface{}</code> | SMB3 encryption option should be used only for SMB/DualProtocol volumes. Using it for any other workloads is not supported. |
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.smbAccessBasedEnumerationEnabled">SmbAccessBasedEnumerationEnabled</a></code> | <code>interface{}</code> | Enable access based enumeration setting for SMB/Dual Protocol volume. |
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.smbContinuousAvailabilityEnabled">SmbContinuousAvailabilityEnabled</a></code> | <code>interface{}</code> | Continuous availability option should be used only for SQL and FSLogix workloads. |
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.smbNonBrowsableEnabled">SmbNonBrowsableEnabled</a></code> | <code>interface{}</code> | Enable non browsable share setting for SMB/Dual Protocol volume. When enabled, it restricts windows clients to browse the share. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.snapshotDirectoryVisible">SnapshotDirectoryVisible</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#snapshot_directory_visible NetappVolume#snapshot_directory_visible}. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#tags NetappVolume#tags}. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.throughputInMibps">ThroughputInMibps</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#throughput_in_mibps NetappVolume#throughput_in_mibps}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.snapshotDirectoryVisible">SnapshotDirectoryVisible</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#snapshot_directory_visible NetappVolume#snapshot_directory_visible}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#tags NetappVolume#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.throughputInMibps">ThroughputInMibps</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#throughput_in_mibps NetappVolume#throughput_in_mibps}. |
 | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeTimeouts">NetappVolumeTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.zone">Zone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#zone NetappVolume#zone}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.zone">Zone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#zone NetappVolume#zone}. |
 
 ---
 
@@ -1874,7 +1918,7 @@ AccountName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#account_name NetappVolume#account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#account_name NetappVolume#account_name}.
 
 ---
 
@@ -1886,7 +1930,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#location NetappVolume#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#location NetappVolume#location}.
 
 ---
 
@@ -1898,7 +1942,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#name NetappVolume#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#name NetappVolume#name}.
 
 ---
 
@@ -1910,7 +1954,7 @@ PoolName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#pool_name NetappVolume#pool_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#pool_name NetappVolume#pool_name}.
 
 ---
 
@@ -1922,7 +1966,7 @@ ResourceGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#resource_group_name NetappVolume#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#resource_group_name NetappVolume#resource_group_name}.
 
 ---
 
@@ -1934,7 +1978,7 @@ ServiceLevel *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#service_level NetappVolume#service_level}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#service_level NetappVolume#service_level}.
 
 ---
 
@@ -1946,7 +1990,7 @@ StorageQuotaInGb *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#storage_quota_in_gb NetappVolume#storage_quota_in_gb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#storage_quota_in_gb NetappVolume#storage_quota_in_gb}.
 
 ---
 
@@ -1958,7 +2002,7 @@ SubnetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#subnet_id NetappVolume#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#subnet_id NetappVolume#subnet_id}.
 
 ---
 
@@ -1970,7 +2014,7 @@ VolumePath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#volume_path NetappVolume#volume_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#volume_path NetappVolume#volume_path}.
 
 ---
 
@@ -1986,7 +2030,7 @@ While auto splitting the short term clone volume, if the parent pool does not ha
 
 To accept capacity pool size auto grow and create a short term clone volume, set the property as accepted. Can only be used in conjunction with `create_from_snapshot_resource_id`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#accept_grow_capacity_pool_for_short_term_clone_split NetappVolume#accept_grow_capacity_pool_for_short_term_clone_split}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#accept_grow_capacity_pool_for_short_term_clone_split NetappVolume#accept_grow_capacity_pool_for_short_term_clone_split}
 
 ---
 
@@ -1998,7 +2042,7 @@ AzureVmwareDataStoreEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#azure_vmware_data_store_enabled NetappVolume#azure_vmware_data_store_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#azure_vmware_data_store_enabled NetappVolume#azure_vmware_data_store_enabled}.
 
 ---
 
@@ -2012,7 +2056,7 @@ CoolAccess NetappVolumeCoolAccess
 
 cool_access block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#cool_access NetappVolume#cool_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#cool_access NetappVolume#cool_access}
 
 ---
 
@@ -2024,7 +2068,21 @@ CreateFromSnapshotResourceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#create_from_snapshot_resource_id NetappVolume#create_from_snapshot_resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#create_from_snapshot_resource_id NetappVolume#create_from_snapshot_resource_id}.
+
+---
+
+##### `DataProtectionAdvancedRansomware`<sup>Optional</sup> <a name="DataProtectionAdvancedRansomware" id="@cdktn/provider-azurerm.netappVolume.NetappVolumeConfig.property.dataProtectionAdvancedRansomware"></a>
+
+```go
+DataProtectionAdvancedRansomware NetappVolumeDataProtectionAdvancedRansomware
+```
+
+- *Type:* <a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomware">NetappVolumeDataProtectionAdvancedRansomware</a>
+
+data_protection_advanced_ransomware block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#data_protection_advanced_ransomware NetappVolume#data_protection_advanced_ransomware}
 
 ---
 
@@ -2038,7 +2096,7 @@ DataProtectionBackupPolicy NetappVolumeDataProtectionBackupPolicy
 
 data_protection_backup_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#data_protection_backup_policy NetappVolume#data_protection_backup_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#data_protection_backup_policy NetappVolume#data_protection_backup_policy}
 
 ---
 
@@ -2052,7 +2110,7 @@ DataProtectionReplication NetappVolumeDataProtectionReplication
 
 data_protection_replication block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#data_protection_replication NetappVolume#data_protection_replication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#data_protection_replication NetappVolume#data_protection_replication}
 
 ---
 
@@ -2066,7 +2124,7 @@ DataProtectionSnapshotPolicy NetappVolumeDataProtectionSnapshotPolicy
 
 data_protection_snapshot_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#data_protection_snapshot_policy NetappVolume#data_protection_snapshot_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#data_protection_snapshot_policy NetappVolume#data_protection_snapshot_policy}
 
 ---
 
@@ -2078,7 +2136,7 @@ EncryptionKeySource *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#encryption_key_source NetappVolume#encryption_key_source}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#encryption_key_source NetappVolume#encryption_key_source}.
 
 ---
 
@@ -2092,7 +2150,7 @@ ExportPolicyRule interface{}
 
 export_policy_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#export_policy_rule NetappVolume#export_policy_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#export_policy_rule NetappVolume#export_policy_rule}
 
 ---
 
@@ -2104,7 +2162,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#id NetappVolume#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#id NetappVolume#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2123,7 +2181,7 @@ Enable to allow Kerberos secured volumes.
 
 Requires appropriate export rules as well as the parent `azurerm_netapp_account` having a defined AD connection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#kerberos_enabled NetappVolume#kerberos_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#kerberos_enabled NetappVolume#kerberos_enabled}
 
 ---
 
@@ -2135,7 +2193,7 @@ KeyVaultPrivateEndpointId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#key_vault_private_endpoint_id NetappVolume#key_vault_private_endpoint_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#key_vault_private_endpoint_id NetappVolume#key_vault_private_endpoint_id}.
 
 ---
 
@@ -2149,7 +2207,7 @@ LargeVolumeEnabled interface{}
 
 Indicates whether the volume is a large volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#large_volume_enabled NetappVolume#large_volume_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#large_volume_enabled NetappVolume#large_volume_enabled}
 
 ---
 
@@ -2161,7 +2219,7 @@ NetworkFeatures *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#network_features NetappVolume#network_features}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#network_features NetappVolume#network_features}.
 
 ---
 
@@ -2173,7 +2231,7 @@ Protocols *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#protocols NetappVolume#protocols}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#protocols NetappVolume#protocols}.
 
 ---
 
@@ -2185,7 +2243,7 @@ SecurityStyle *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#security_style NetappVolume#security_style}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#security_style NetappVolume#security_style}.
 
 ---
 
@@ -2199,7 +2257,7 @@ Smb3ProtocolEncryptionEnabled interface{}
 
 SMB3 encryption option should be used only for SMB/DualProtocol volumes. Using it for any other workloads is not supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#smb3_protocol_encryption_enabled NetappVolume#smb3_protocol_encryption_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#smb3_protocol_encryption_enabled NetappVolume#smb3_protocol_encryption_enabled}
 
 ---
 
@@ -2215,7 +2273,7 @@ Enable access based enumeration setting for SMB/Dual Protocol volume.
 
 When enabled, users who do not have permission to access a shared folder or file underneath it, do not see that shared resource displayed in their environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#smb_access_based_enumeration_enabled NetappVolume#smb_access_based_enumeration_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#smb_access_based_enumeration_enabled NetappVolume#smb_access_based_enumeration_enabled}
 
 ---
 
@@ -2231,7 +2289,7 @@ Continuous availability option should be used only for SQL and FSLogix workloads
 
 Using it for any other SMB workloads is not supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#smb_continuous_availability_enabled NetappVolume#smb_continuous_availability_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#smb_continuous_availability_enabled NetappVolume#smb_continuous_availability_enabled}
 
 ---
 
@@ -2245,7 +2303,7 @@ SmbNonBrowsableEnabled interface{}
 
 Enable non browsable share setting for SMB/Dual Protocol volume. When enabled, it restricts windows clients to browse the share.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#smb_non_browsable_enabled NetappVolume#smb_non_browsable_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#smb_non_browsable_enabled NetappVolume#smb_non_browsable_enabled}
 
 ---
 
@@ -2257,7 +2315,7 @@ SnapshotDirectoryVisible interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#snapshot_directory_visible NetappVolume#snapshot_directory_visible}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#snapshot_directory_visible NetappVolume#snapshot_directory_visible}.
 
 ---
 
@@ -2269,7 +2327,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#tags NetappVolume#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#tags NetappVolume#tags}.
 
 ---
 
@@ -2281,7 +2339,7 @@ ThroughputInMibps *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#throughput_in_mibps NetappVolume#throughput_in_mibps}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#throughput_in_mibps NetappVolume#throughput_in_mibps}.
 
 ---
 
@@ -2295,7 +2353,7 @@ Timeouts NetappVolumeTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#timeouts NetappVolume#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#timeouts NetappVolume#timeouts}
 
 ---
 
@@ -2307,7 +2365,7 @@ Zone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#zone NetappVolume#zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#zone NetappVolume#zone}.
 
 ---
 
@@ -2329,9 +2387,9 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/netappvolume"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeCoolAccess.property.coolnessPeriodInDays">CoolnessPeriodInDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#coolness_period_in_days NetappVolume#coolness_period_in_days}. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeCoolAccess.property.retrievalPolicy">RetrievalPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#retrieval_policy NetappVolume#retrieval_policy}. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeCoolAccess.property.tieringPolicy">TieringPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#tiering_policy NetappVolume#tiering_policy}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeCoolAccess.property.coolnessPeriodInDays">CoolnessPeriodInDays</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#coolness_period_in_days NetappVolume#coolness_period_in_days}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeCoolAccess.property.retrievalPolicy">RetrievalPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#retrieval_policy NetappVolume#retrieval_policy}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeCoolAccess.property.tieringPolicy">TieringPolicy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#tiering_policy NetappVolume#tiering_policy}. |
 
 ---
 
@@ -2343,7 +2401,7 @@ CoolnessPeriodInDays *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#coolness_period_in_days NetappVolume#coolness_period_in_days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#coolness_period_in_days NetappVolume#coolness_period_in_days}.
 
 ---
 
@@ -2355,7 +2413,7 @@ RetrievalPolicy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#retrieval_policy NetappVolume#retrieval_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#retrieval_policy NetappVolume#retrieval_policy}.
 
 ---
 
@@ -2367,7 +2425,41 @@ TieringPolicy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#tiering_policy NetappVolume#tiering_policy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#tiering_policy NetappVolume#tiering_policy}.
+
+---
+
+### NetappVolumeDataProtectionAdvancedRansomware <a name="NetappVolumeDataProtectionAdvancedRansomware" id="@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomware"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomware.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/netappvolume"
+
+&netappvolume.NetappVolumeDataProtectionAdvancedRansomware {
+	ProtectionEnabled: interface{},
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomware.property.protectionEnabled">ProtectionEnabled</a></code> | <code>interface{}</code> | Enable or disable the Advanced Ransomware Protection feature. |
+
+---
+
+##### `ProtectionEnabled`<sup>Required</sup> <a name="ProtectionEnabled" id="@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomware.property.protectionEnabled"></a>
+
+```go
+ProtectionEnabled interface{}
+```
+
+- *Type:* interface{}
+
+Enable or disable the Advanced Ransomware Protection feature.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#protection_enabled NetappVolume#protection_enabled}
 
 ---
 
@@ -2405,7 +2497,7 @@ BackupPolicyId *string
 
 The ID of the backup policy to associate with this volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#backup_policy_id NetappVolume#backup_policy_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#backup_policy_id NetappVolume#backup_policy_id}
 
 ---
 
@@ -2419,7 +2511,7 @@ BackupVaultId *string
 
 The ID of the backup vault to associate with this volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#backup_vault_id NetappVolume#backup_vault_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#backup_vault_id NetappVolume#backup_vault_id}
 
 ---
 
@@ -2433,7 +2525,7 @@ PolicyEnabled interface{}
 
 If set to false, the backup policy will not be enabled on this volume, thus disabling scheduled backups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#policy_enabled NetappVolume#policy_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#policy_enabled NetappVolume#policy_enabled}
 
 ---
 
@@ -2456,10 +2548,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/netappvolume"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionReplication.property.remoteVolumeLocation">RemoteVolumeLocation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#remote_volume_location NetappVolume#remote_volume_location}. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionReplication.property.remoteVolumeResourceId">RemoteVolumeResourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#remote_volume_resource_id NetappVolume#remote_volume_resource_id}. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionReplication.property.replicationFrequency">ReplicationFrequency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#replication_frequency NetappVolume#replication_frequency}. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionReplication.property.endpointType">EndpointType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#endpoint_type NetappVolume#endpoint_type}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionReplication.property.remoteVolumeLocation">RemoteVolumeLocation</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#remote_volume_location NetappVolume#remote_volume_location}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionReplication.property.remoteVolumeResourceId">RemoteVolumeResourceId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#remote_volume_resource_id NetappVolume#remote_volume_resource_id}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionReplication.property.replicationFrequency">ReplicationFrequency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#replication_frequency NetappVolume#replication_frequency}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionReplication.property.endpointType">EndpointType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#endpoint_type NetappVolume#endpoint_type}. |
 
 ---
 
@@ -2471,7 +2563,7 @@ RemoteVolumeLocation *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#remote_volume_location NetappVolume#remote_volume_location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#remote_volume_location NetappVolume#remote_volume_location}.
 
 ---
 
@@ -2483,7 +2575,7 @@ RemoteVolumeResourceId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#remote_volume_resource_id NetappVolume#remote_volume_resource_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#remote_volume_resource_id NetappVolume#remote_volume_resource_id}.
 
 ---
 
@@ -2495,7 +2587,7 @@ ReplicationFrequency *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#replication_frequency NetappVolume#replication_frequency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#replication_frequency NetappVolume#replication_frequency}.
 
 ---
 
@@ -2507,7 +2599,7 @@ EndpointType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#endpoint_type NetappVolume#endpoint_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#endpoint_type NetappVolume#endpoint_type}.
 
 ---
 
@@ -2527,7 +2619,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/netappvolume"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionSnapshotPolicy.property.snapshotPolicyId">SnapshotPolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#snapshot_policy_id NetappVolume#snapshot_policy_id}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionSnapshotPolicy.property.snapshotPolicyId">SnapshotPolicyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#snapshot_policy_id NetappVolume#snapshot_policy_id}. |
 
 ---
 
@@ -2539,7 +2631,7 @@ SnapshotPolicyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#snapshot_policy_id NetappVolume#snapshot_policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#snapshot_policy_id NetappVolume#snapshot_policy_id}.
 
 ---
 
@@ -2571,19 +2663,19 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/netappvolume"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeExportPolicyRule.property.allowedClients">AllowedClients</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#allowed_clients NetappVolume#allowed_clients}. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeExportPolicyRule.property.ruleIndex">RuleIndex</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#rule_index NetappVolume#rule_index}. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeExportPolicyRule.property.kerberos5IReadOnlyEnabled">Kerberos5IReadOnlyEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#kerberos_5i_read_only_enabled NetappVolume#kerberos_5i_read_only_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeExportPolicyRule.property.kerberos5IReadWriteEnabled">Kerberos5IReadWriteEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#kerberos_5i_read_write_enabled NetappVolume#kerberos_5i_read_write_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeExportPolicyRule.property.kerberos5PReadOnlyEnabled">Kerberos5PReadOnlyEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#kerberos_5p_read_only_enabled NetappVolume#kerberos_5p_read_only_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeExportPolicyRule.property.kerberos5PReadWriteEnabled">Kerberos5PReadWriteEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#kerberos_5p_read_write_enabled NetappVolume#kerberos_5p_read_write_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeExportPolicyRule.property.kerberos5ReadOnlyEnabled">Kerberos5ReadOnlyEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#kerberos_5_read_only_enabled NetappVolume#kerberos_5_read_only_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeExportPolicyRule.property.kerberos5ReadWriteEnabled">Kerberos5ReadWriteEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#kerberos_5_read_write_enabled NetappVolume#kerberos_5_read_write_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeExportPolicyRule.property.protocol">Protocol</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#protocol NetappVolume#protocol}. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeExportPolicyRule.property.protocolsEnabled">ProtocolsEnabled</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#protocols_enabled NetappVolume#protocols_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeExportPolicyRule.property.rootAccessEnabled">RootAccessEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#root_access_enabled NetappVolume#root_access_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeExportPolicyRule.property.unixReadOnly">UnixReadOnly</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#unix_read_only NetappVolume#unix_read_only}. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeExportPolicyRule.property.unixReadWrite">UnixReadWrite</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#unix_read_write NetappVolume#unix_read_write}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeExportPolicyRule.property.allowedClients">AllowedClients</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#allowed_clients NetappVolume#allowed_clients}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeExportPolicyRule.property.ruleIndex">RuleIndex</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#rule_index NetappVolume#rule_index}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeExportPolicyRule.property.kerberos5IReadOnlyEnabled">Kerberos5IReadOnlyEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#kerberos_5i_read_only_enabled NetappVolume#kerberos_5i_read_only_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeExportPolicyRule.property.kerberos5IReadWriteEnabled">Kerberos5IReadWriteEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#kerberos_5i_read_write_enabled NetappVolume#kerberos_5i_read_write_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeExportPolicyRule.property.kerberos5PReadOnlyEnabled">Kerberos5PReadOnlyEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#kerberos_5p_read_only_enabled NetappVolume#kerberos_5p_read_only_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeExportPolicyRule.property.kerberos5PReadWriteEnabled">Kerberos5PReadWriteEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#kerberos_5p_read_write_enabled NetappVolume#kerberos_5p_read_write_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeExportPolicyRule.property.kerberos5ReadOnlyEnabled">Kerberos5ReadOnlyEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#kerberos_5_read_only_enabled NetappVolume#kerberos_5_read_only_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeExportPolicyRule.property.kerberos5ReadWriteEnabled">Kerberos5ReadWriteEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#kerberos_5_read_write_enabled NetappVolume#kerberos_5_read_write_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeExportPolicyRule.property.protocol">Protocol</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#protocol NetappVolume#protocol}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeExportPolicyRule.property.protocolsEnabled">ProtocolsEnabled</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#protocols_enabled NetappVolume#protocols_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeExportPolicyRule.property.rootAccessEnabled">RootAccessEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#root_access_enabled NetappVolume#root_access_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeExportPolicyRule.property.unixReadOnly">UnixReadOnly</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#unix_read_only NetappVolume#unix_read_only}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeExportPolicyRule.property.unixReadWrite">UnixReadWrite</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#unix_read_write NetappVolume#unix_read_write}. |
 
 ---
 
@@ -2595,7 +2687,7 @@ AllowedClients *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#allowed_clients NetappVolume#allowed_clients}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#allowed_clients NetappVolume#allowed_clients}.
 
 ---
 
@@ -2607,7 +2699,7 @@ RuleIndex *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#rule_index NetappVolume#rule_index}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#rule_index NetappVolume#rule_index}.
 
 ---
 
@@ -2619,7 +2711,7 @@ Kerberos5IReadOnlyEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#kerberos_5i_read_only_enabled NetappVolume#kerberos_5i_read_only_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#kerberos_5i_read_only_enabled NetappVolume#kerberos_5i_read_only_enabled}.
 
 ---
 
@@ -2631,7 +2723,7 @@ Kerberos5IReadWriteEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#kerberos_5i_read_write_enabled NetappVolume#kerberos_5i_read_write_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#kerberos_5i_read_write_enabled NetappVolume#kerberos_5i_read_write_enabled}.
 
 ---
 
@@ -2643,7 +2735,7 @@ Kerberos5PReadOnlyEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#kerberos_5p_read_only_enabled NetappVolume#kerberos_5p_read_only_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#kerberos_5p_read_only_enabled NetappVolume#kerberos_5p_read_only_enabled}.
 
 ---
 
@@ -2655,7 +2747,7 @@ Kerberos5PReadWriteEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#kerberos_5p_read_write_enabled NetappVolume#kerberos_5p_read_write_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#kerberos_5p_read_write_enabled NetappVolume#kerberos_5p_read_write_enabled}.
 
 ---
 
@@ -2667,7 +2759,7 @@ Kerberos5ReadOnlyEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#kerberos_5_read_only_enabled NetappVolume#kerberos_5_read_only_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#kerberos_5_read_only_enabled NetappVolume#kerberos_5_read_only_enabled}.
 
 ---
 
@@ -2679,7 +2771,7 @@ Kerberos5ReadWriteEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#kerberos_5_read_write_enabled NetappVolume#kerberos_5_read_write_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#kerberos_5_read_write_enabled NetappVolume#kerberos_5_read_write_enabled}.
 
 ---
 
@@ -2691,7 +2783,7 @@ Protocol *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#protocol NetappVolume#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#protocol NetappVolume#protocol}.
 
 ---
 
@@ -2703,7 +2795,7 @@ ProtocolsEnabled *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#protocols_enabled NetappVolume#protocols_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#protocols_enabled NetappVolume#protocols_enabled}.
 
 ---
 
@@ -2715,7 +2807,7 @@ RootAccessEnabled interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#root_access_enabled NetappVolume#root_access_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#root_access_enabled NetappVolume#root_access_enabled}.
 
 ---
 
@@ -2727,7 +2819,7 @@ UnixReadOnly interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#unix_read_only NetappVolume#unix_read_only}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#unix_read_only NetappVolume#unix_read_only}.
 
 ---
 
@@ -2739,7 +2831,7 @@ UnixReadWrite interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#unix_read_write NetappVolume#unix_read_write}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#unix_read_write NetappVolume#unix_read_write}.
 
 ---
 
@@ -2762,10 +2854,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/netappvolume"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#create NetappVolume#create}. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#delete NetappVolume#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#read NetappVolume#read}. |
-| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#update NetappVolume#update}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#create NetappVolume#create}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#delete NetappVolume#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#read NetappVolume#read}. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#update NetappVolume#update}. |
 
 ---
 
@@ -2777,7 +2869,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#create NetappVolume#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#create NetappVolume#create}.
 
 ---
 
@@ -2789,7 +2881,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#delete NetappVolume#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#delete NetappVolume#delete}.
 
 ---
 
@@ -2801,7 +2893,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#read NetappVolume#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#read NetappVolume#read}.
 
 ---
 
@@ -2813,7 +2905,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/netapp_volume#update NetappVolume#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/netapp_volume#update NetappVolume#update}.
 
 ---
 
@@ -3130,6 +3222,277 @@ func InternalValue() NetappVolumeCoolAccess
 ```
 
 - *Type:* <a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeCoolAccess">NetappVolumeCoolAccess</a>
+
+---
+
+
+### NetappVolumeDataProtectionAdvancedRansomwareOutputReference <a name="NetappVolumeDataProtectionAdvancedRansomwareOutputReference" id="@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/netappvolume"
+
+netappvolume.NewNetappVolumeDataProtectionAdvancedRansomwareOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetappVolumeDataProtectionAdvancedRansomwareOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.property.protectionEnabledInput">ProtectionEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.property.protectionEnabled">ProtectionEnabled</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomware">NetappVolumeDataProtectionAdvancedRansomware</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ProtectionEnabledInput`<sup>Optional</sup> <a name="ProtectionEnabledInput" id="@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.property.protectionEnabledInput"></a>
+
+```go
+func ProtectionEnabledInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `ProtectionEnabled`<sup>Required</sup> <a name="ProtectionEnabled" id="@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.property.protectionEnabled"></a>
+
+```go
+func ProtectionEnabled() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomwareOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() NetappVolumeDataProtectionAdvancedRansomware
+```
+
+- *Type:* <a href="#@cdktn/provider-azurerm.netappVolume.NetappVolumeDataProtectionAdvancedRansomware">NetappVolumeDataProtectionAdvancedRansomware</a>
 
 ---
 

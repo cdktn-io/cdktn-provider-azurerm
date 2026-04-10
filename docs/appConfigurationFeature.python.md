@@ -4,7 +4,7 @@
 
 ### AppConfigurationFeature <a name="AppConfigurationFeature" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature azurerm_app_configuration_feature}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature azurerm_app_configuration_feature}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.Initializer"></a>
 
@@ -23,6 +23,7 @@ appConfigurationFeature.AppConfigurationFeature(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   configuration_store_id: str,
   name: str,
+  custom_filter: IResolvable | typing.List[AppConfigurationFeatureCustomFilter] = None,
   description: str = None,
   enabled: bool | IResolvable = None,
   etag: str = None,
@@ -49,17 +50,18 @@ appConfigurationFeature.AppConfigurationFeature(
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.Initializer.parameter.configurationStoreId">configuration_store_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#configuration_store_id AppConfigurationFeature#configuration_store_id}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#name AppConfigurationFeature#name}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#description AppConfigurationFeature#description}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.Initializer.parameter.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#enabled AppConfigurationFeature#enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.Initializer.parameter.etag">etag</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#etag AppConfigurationFeature#etag}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#id AppConfigurationFeature#id}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.Initializer.parameter.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#key AppConfigurationFeature#key}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.Initializer.parameter.label">label</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#label AppConfigurationFeature#label}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.Initializer.parameter.locked">locked</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#locked AppConfigurationFeature#locked}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.Initializer.parameter.percentageFilterValue">percentage_filter_value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#percentage_filter_value AppConfigurationFeature#percentage_filter_value}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#tags AppConfigurationFeature#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.Initializer.parameter.configurationStoreId">configuration_store_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#configuration_store_id AppConfigurationFeature#configuration_store_id}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#name AppConfigurationFeature#name}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.Initializer.parameter.customFilter">custom_filter</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilter">AppConfigurationFeatureCustomFilter</a>]</code> | custom_filter block. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#description AppConfigurationFeature#description}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.Initializer.parameter.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#enabled AppConfigurationFeature#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.Initializer.parameter.etag">etag</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#etag AppConfigurationFeature#etag}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#id AppConfigurationFeature#id}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.Initializer.parameter.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#key AppConfigurationFeature#key}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.Initializer.parameter.label">label</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#label AppConfigurationFeature#label}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.Initializer.parameter.locked">locked</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#locked AppConfigurationFeature#locked}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.Initializer.parameter.percentageFilterValue">percentage_filter_value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#percentage_filter_value AppConfigurationFeature#percentage_filter_value}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#tags AppConfigurationFeature#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.Initializer.parameter.targetingFilter">targeting_filter</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTargetingFilter">AppConfigurationFeatureTargetingFilter</a>]</code> | targeting_filter block. |
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTimeouts">AppConfigurationFeatureTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.Initializer.parameter.timewindowFilter">timewindow_filter</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTimewindowFilter">AppConfigurationFeatureTimewindowFilter</a>]</code> | timewindow_filter block. |
@@ -130,7 +132,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#configuration_store_id AppConfigurationFeature#configuration_store_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#configuration_store_id AppConfigurationFeature#configuration_store_id}.
 
 ---
 
@@ -138,7 +140,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#name AppConfigurationFeature#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#name AppConfigurationFeature#name}.
+
+---
+
+##### `custom_filter`<sup>Optional</sup> <a name="custom_filter" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.Initializer.parameter.customFilter"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilter">AppConfigurationFeatureCustomFilter</a>]
+
+custom_filter block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#custom_filter AppConfigurationFeature#custom_filter}
 
 ---
 
@@ -146,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#description AppConfigurationFeature#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#description AppConfigurationFeature#description}.
 
 ---
 
@@ -154,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#enabled AppConfigurationFeature#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#enabled AppConfigurationFeature#enabled}.
 
 ---
 
@@ -162,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#etag AppConfigurationFeature#etag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#etag AppConfigurationFeature#etag}.
 
 ---
 
@@ -170,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#id AppConfigurationFeature#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#id AppConfigurationFeature#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -181,7 +193,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#key AppConfigurationFeature#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#key AppConfigurationFeature#key}.
 
 ---
 
@@ -189,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#label AppConfigurationFeature#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#label AppConfigurationFeature#label}.
 
 ---
 
@@ -197,7 +209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#locked AppConfigurationFeature#locked}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#locked AppConfigurationFeature#locked}.
 
 ---
 
@@ -205,7 +217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#percentage_filter_value AppConfigurationFeature#percentage_filter_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#percentage_filter_value AppConfigurationFeature#percentage_filter_value}.
 
 ---
 
@@ -213,7 +225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#tags AppConfigurationFeature#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#tags AppConfigurationFeature#tags}.
 
 ---
 
@@ -223,7 +235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 targeting_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#targeting_filter AppConfigurationFeature#targeting_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#targeting_filter AppConfigurationFeature#targeting_filter}
 
 ---
 
@@ -233,7 +245,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#timeouts AppConfigurationFeature#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#timeouts AppConfigurationFeature#timeouts}
 
 ---
 
@@ -243,7 +255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timewindow_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#timewindow_filter AppConfigurationFeature#timewindow_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#timewindow_filter AppConfigurationFeature#timewindow_filter}
 
 ---
 
@@ -275,9 +287,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.putCustomFilter">put_custom_filter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.putTargetingFilter">put_targeting_filter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.putTimewindowFilter">put_timewindow_filter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.resetCustomFilter">reset_custom_filter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.resetEnabled">reset_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.resetEtag">reset_etag</a></code> | *No description.* |
@@ -641,6 +655,20 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `put_custom_filter` <a name="put_custom_filter" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.putCustomFilter"></a>
+
+```python
+def put_custom_filter(
+  value: IResolvable | typing.List[AppConfigurationFeatureCustomFilter]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.putCustomFilter.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilter">AppConfigurationFeatureCustomFilter</a>]
+
+---
+
 ##### `put_targeting_filter` <a name="put_targeting_filter" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.putTargetingFilter"></a>
 
 ```python
@@ -670,7 +698,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#create AppConfigurationFeature#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#create AppConfigurationFeature#create}.
 
 ---
 
@@ -678,7 +706,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#delete AppConfigurationFeature#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#delete AppConfigurationFeature#delete}.
 
 ---
 
@@ -686,7 +714,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#read AppConfigurationFeature#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#read AppConfigurationFeature#read}.
 
 ---
 
@@ -694,7 +722,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#update AppConfigurationFeature#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#update AppConfigurationFeature#update}.
 
 ---
 
@@ -711,6 +739,12 @@ def put_timewindow_filter(
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTimewindowFilter">AppConfigurationFeatureTimewindowFilter</a>]
 
 ---
+
+##### `reset_custom_filter` <a name="reset_custom_filter" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.resetCustomFilter"></a>
+
+```python
+def reset_custom_filter() -> None
+```
 
 ##### `reset_description` <a name="reset_description" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.resetDescription"></a>
 
@@ -898,7 +932,7 @@ The construct id used in the generated config for the AppConfigurationFeature to
 
 The id of the existing AppConfigurationFeature that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -928,10 +962,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.property.customFilter">custom_filter</a></code> | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterList">AppConfigurationFeatureCustomFilterList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.property.targetingFilter">targeting_filter</a></code> | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTargetingFilterList">AppConfigurationFeatureTargetingFilterList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTimeoutsOutputReference">AppConfigurationFeatureTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.property.timewindowFilter">timewindow_filter</a></code> | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTimewindowFilterList">AppConfigurationFeatureTimewindowFilterList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.property.configurationStoreIdInput">configuration_store_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.property.customFilterInput">custom_filter_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilter">AppConfigurationFeatureCustomFilter</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.property.etagInput">etag_input</a></code> | <code>str</code> | *No description.* |
@@ -1101,6 +1137,16 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
+##### `custom_filter`<sup>Required</sup> <a name="custom_filter" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.property.customFilter"></a>
+
+```python
+custom_filter: AppConfigurationFeatureCustomFilterList
+```
+
+- *Type:* <a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterList">AppConfigurationFeatureCustomFilterList</a>
+
+---
+
 ##### `targeting_filter`<sup>Required</sup> <a name="targeting_filter" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.property.targetingFilter"></a>
 
 ```python
@@ -1138,6 +1184,16 @@ configuration_store_id_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `custom_filter_input`<sup>Optional</sup> <a name="custom_filter_input" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeature.property.customFilterInput"></a>
+
+```python
+custom_filter_input: IResolvable | typing.List[AppConfigurationFeatureCustomFilter]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilter">AppConfigurationFeatureCustomFilter</a>]
 
 ---
 
@@ -1418,6 +1474,7 @@ appConfigurationFeature.AppConfigurationFeatureConfig(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   configuration_store_id: str,
   name: str,
+  custom_filter: IResolvable | typing.List[AppConfigurationFeatureCustomFilter] = None,
   description: str = None,
   enabled: bool | IResolvable = None,
   etag: str = None,
@@ -1444,17 +1501,18 @@ appConfigurationFeature.AppConfigurationFeatureConfig(
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureConfig.property.configurationStoreId">configuration_store_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#configuration_store_id AppConfigurationFeature#configuration_store_id}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#name AppConfigurationFeature#name}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#description AppConfigurationFeature#description}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureConfig.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#enabled AppConfigurationFeature#enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureConfig.property.etag">etag</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#etag AppConfigurationFeature#etag}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#id AppConfigurationFeature#id}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureConfig.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#key AppConfigurationFeature#key}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureConfig.property.label">label</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#label AppConfigurationFeature#label}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureConfig.property.locked">locked</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#locked AppConfigurationFeature#locked}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureConfig.property.percentageFilterValue">percentage_filter_value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#percentage_filter_value AppConfigurationFeature#percentage_filter_value}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#tags AppConfigurationFeature#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureConfig.property.configurationStoreId">configuration_store_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#configuration_store_id AppConfigurationFeature#configuration_store_id}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#name AppConfigurationFeature#name}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureConfig.property.customFilter">custom_filter</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilter">AppConfigurationFeatureCustomFilter</a>]</code> | custom_filter block. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#description AppConfigurationFeature#description}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureConfig.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#enabled AppConfigurationFeature#enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureConfig.property.etag">etag</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#etag AppConfigurationFeature#etag}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#id AppConfigurationFeature#id}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureConfig.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#key AppConfigurationFeature#key}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureConfig.property.label">label</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#label AppConfigurationFeature#label}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureConfig.property.locked">locked</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#locked AppConfigurationFeature#locked}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureConfig.property.percentageFilterValue">percentage_filter_value</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#percentage_filter_value AppConfigurationFeature#percentage_filter_value}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#tags AppConfigurationFeature#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureConfig.property.targetingFilter">targeting_filter</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTargetingFilter">AppConfigurationFeatureTargetingFilter</a>]</code> | targeting_filter block. |
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTimeouts">AppConfigurationFeatureTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureConfig.property.timewindowFilter">timewindow_filter</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTimewindowFilter">AppConfigurationFeatureTimewindowFilter</a>]</code> | timewindow_filter block. |
@@ -1539,7 +1597,7 @@ configuration_store_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#configuration_store_id AppConfigurationFeature#configuration_store_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#configuration_store_id AppConfigurationFeature#configuration_store_id}.
 
 ---
 
@@ -1551,7 +1609,21 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#name AppConfigurationFeature#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#name AppConfigurationFeature#name}.
+
+---
+
+##### `custom_filter`<sup>Optional</sup> <a name="custom_filter" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureConfig.property.customFilter"></a>
+
+```python
+custom_filter: IResolvable | typing.List[AppConfigurationFeatureCustomFilter]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilter">AppConfigurationFeatureCustomFilter</a>]
+
+custom_filter block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#custom_filter AppConfigurationFeature#custom_filter}
 
 ---
 
@@ -1563,7 +1635,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#description AppConfigurationFeature#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#description AppConfigurationFeature#description}.
 
 ---
 
@@ -1575,7 +1647,7 @@ enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#enabled AppConfigurationFeature#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#enabled AppConfigurationFeature#enabled}.
 
 ---
 
@@ -1587,7 +1659,7 @@ etag: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#etag AppConfigurationFeature#etag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#etag AppConfigurationFeature#etag}.
 
 ---
 
@@ -1599,7 +1671,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#id AppConfigurationFeature#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#id AppConfigurationFeature#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1614,7 +1686,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#key AppConfigurationFeature#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#key AppConfigurationFeature#key}.
 
 ---
 
@@ -1626,7 +1698,7 @@ label: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#label AppConfigurationFeature#label}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#label AppConfigurationFeature#label}.
 
 ---
 
@@ -1638,7 +1710,7 @@ locked: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#locked AppConfigurationFeature#locked}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#locked AppConfigurationFeature#locked}.
 
 ---
 
@@ -1650,7 +1722,7 @@ percentage_filter_value: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#percentage_filter_value AppConfigurationFeature#percentage_filter_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#percentage_filter_value AppConfigurationFeature#percentage_filter_value}.
 
 ---
 
@@ -1662,7 +1734,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#tags AppConfigurationFeature#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#tags AppConfigurationFeature#tags}.
 
 ---
 
@@ -1676,7 +1748,7 @@ targeting_filter: IResolvable | typing.List[AppConfigurationFeatureTargetingFilt
 
 targeting_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#targeting_filter AppConfigurationFeature#targeting_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#targeting_filter AppConfigurationFeature#targeting_filter}
 
 ---
 
@@ -1690,7 +1762,7 @@ timeouts: AppConfigurationFeatureTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#timeouts AppConfigurationFeature#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#timeouts AppConfigurationFeature#timeouts}
 
 ---
 
@@ -1704,7 +1776,53 @@ timewindow_filter: IResolvable | typing.List[AppConfigurationFeatureTimewindowFi
 
 timewindow_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#timewindow_filter AppConfigurationFeature#timewindow_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#timewindow_filter AppConfigurationFeature#timewindow_filter}
+
+---
+
+### AppConfigurationFeatureCustomFilter <a name="AppConfigurationFeatureCustomFilter" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilter"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilter.Initializer"></a>
+
+```python
+from cdktn_provider_azurerm import app_configuration_feature
+
+appConfigurationFeature.AppConfigurationFeatureCustomFilter(
+  name: str,
+  parameters: typing.Mapping[str] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilter.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#name AppConfigurationFeature#name}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilter.property.parameters">parameters</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#parameters AppConfigurationFeature#parameters}. |
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilter.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#name AppConfigurationFeature#name}.
+
+---
+
+##### `parameters`<sup>Optional</sup> <a name="parameters" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilter.property.parameters"></a>
+
+```python
+parameters: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#parameters AppConfigurationFeature#parameters}.
 
 ---
 
@@ -1726,9 +1844,9 @@ appConfigurationFeature.AppConfigurationFeatureTargetingFilter(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTargetingFilter.property.defaultRolloutPercentage">default_rollout_percentage</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#default_rollout_percentage AppConfigurationFeature#default_rollout_percentage}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTargetingFilter.property.defaultRolloutPercentage">default_rollout_percentage</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#default_rollout_percentage AppConfigurationFeature#default_rollout_percentage}. |
 | <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTargetingFilter.property.groups">groups</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTargetingFilterGroups">AppConfigurationFeatureTargetingFilterGroups</a>]</code> | groups block. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTargetingFilter.property.users">users</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#users AppConfigurationFeature#users}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTargetingFilter.property.users">users</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#users AppConfigurationFeature#users}. |
 
 ---
 
@@ -1740,7 +1858,7 @@ default_rollout_percentage: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#default_rollout_percentage AppConfigurationFeature#default_rollout_percentage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#default_rollout_percentage AppConfigurationFeature#default_rollout_percentage}.
 
 ---
 
@@ -1754,7 +1872,7 @@ groups: IResolvable | typing.List[AppConfigurationFeatureTargetingFilterGroups]
 
 groups block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#groups AppConfigurationFeature#groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#groups AppConfigurationFeature#groups}
 
 ---
 
@@ -1766,7 +1884,7 @@ users: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#users AppConfigurationFeature#users}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#users AppConfigurationFeature#users}.
 
 ---
 
@@ -1787,8 +1905,8 @@ appConfigurationFeature.AppConfigurationFeatureTargetingFilterGroups(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTargetingFilterGroups.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#name AppConfigurationFeature#name}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTargetingFilterGroups.property.rolloutPercentage">rollout_percentage</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#rollout_percentage AppConfigurationFeature#rollout_percentage}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTargetingFilterGroups.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#name AppConfigurationFeature#name}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTargetingFilterGroups.property.rolloutPercentage">rollout_percentage</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#rollout_percentage AppConfigurationFeature#rollout_percentage}. |
 
 ---
 
@@ -1800,7 +1918,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#name AppConfigurationFeature#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#name AppConfigurationFeature#name}.
 
 ---
 
@@ -1812,7 +1930,7 @@ rollout_percentage: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#rollout_percentage AppConfigurationFeature#rollout_percentage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#rollout_percentage AppConfigurationFeature#rollout_percentage}.
 
 ---
 
@@ -1835,10 +1953,10 @@ appConfigurationFeature.AppConfigurationFeatureTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#create AppConfigurationFeature#create}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#delete AppConfigurationFeature#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#read AppConfigurationFeature#read}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#update AppConfigurationFeature#update}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#create AppConfigurationFeature#create}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#delete AppConfigurationFeature#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#read AppConfigurationFeature#read}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#update AppConfigurationFeature#update}. |
 
 ---
 
@@ -1850,7 +1968,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#create AppConfigurationFeature#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#create AppConfigurationFeature#create}.
 
 ---
 
@@ -1862,7 +1980,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#delete AppConfigurationFeature#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#delete AppConfigurationFeature#delete}.
 
 ---
 
@@ -1874,7 +1992,7 @@ read: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#read AppConfigurationFeature#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#read AppConfigurationFeature#read}.
 
 ---
 
@@ -1886,7 +2004,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#update AppConfigurationFeature#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#update AppConfigurationFeature#update}.
 
 ---
 
@@ -1907,8 +2025,8 @@ appConfigurationFeature.AppConfigurationFeatureTimewindowFilter(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTimewindowFilter.property.end">end</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#end AppConfigurationFeature#end}. |
-| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTimewindowFilter.property.start">start</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#start AppConfigurationFeature#start}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTimewindowFilter.property.end">end</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#end AppConfigurationFeature#end}. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTimewindowFilter.property.start">start</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#start AppConfigurationFeature#start}. |
 
 ---
 
@@ -1920,7 +2038,7 @@ end: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#end AppConfigurationFeature#end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#end AppConfigurationFeature#end}.
 
 ---
 
@@ -1932,11 +2050,526 @@ start: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/app_configuration_feature#start AppConfigurationFeature#start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/app_configuration_feature#start AppConfigurationFeature#start}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### AppConfigurationFeatureCustomFilterList <a name="AppConfigurationFeatureCustomFilterList" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterList.Initializer"></a>
+
+```python
+from cdktn_provider_azurerm import app_configuration_feature
+
+appConfigurationFeature.AppConfigurationFeatureCustomFilterList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> AppConfigurationFeatureCustomFilterOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilter">AppConfigurationFeatureCustomFilter</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterList.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | typing.List[AppConfigurationFeatureCustomFilter]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilter">AppConfigurationFeatureCustomFilter</a>]
+
+---
+
+
+### AppConfigurationFeatureCustomFilterOutputReference <a name="AppConfigurationFeatureCustomFilterOutputReference" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_azurerm import app_configuration_feature
+
+appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.resetParameters">reset_parameters</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_parameters` <a name="reset_parameters" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.resetParameters"></a>
+
+```python
+def reset_parameters() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.property.parametersInput">parameters_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.property.parameters">parameters</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilter">AppConfigurationFeatureCustomFilter</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.property.nameInput"></a>
+
+```python
+name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `parameters_input`<sup>Optional</sup> <a name="parameters_input" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.property.parametersInput"></a>
+
+```python
+parameters_input: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+---
+
+##### `parameters`<sup>Required</sup> <a name="parameters" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.property.parameters"></a>
+
+```python
+parameters: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilterOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | AppConfigurationFeatureCustomFilter
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureCustomFilter">AppConfigurationFeatureCustomFilter</a>
+
+---
+
 
 ### AppConfigurationFeatureTargetingFilterGroupsList <a name="AppConfigurationFeatureTargetingFilterGroupsList" id="@cdktn/provider-azurerm.appConfigurationFeature.AppConfigurationFeatureTargetingFilterGroupsList"></a>
 

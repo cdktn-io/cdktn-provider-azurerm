@@ -4,7 +4,7 @@
 
 ### DataAzurermNetappVolume <a name="DataAzurermNetappVolume" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolume"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/netapp_volume azurerm_netapp_volume}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/netapp_volume azurerm_netapp_volume}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolume.Initializer"></a>
 
@@ -421,7 +421,7 @@ The construct id used in the generated config for the DataAzurermNetappVolume to
 
 The id of the existing DataAzurermNetappVolume that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/netapp_volume#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/netapp_volume#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -450,6 +450,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolume.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolume.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolume.property.acceptGrowCapacityPoolForShortTermCloneSplit">acceptGrowCapacityPoolForShortTermCloneSplit</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolume.property.dataProtectionAdvancedRansomware">dataProtectionAdvancedRansomware</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareList">DataAzurermNetappVolumeDataProtectionAdvancedRansomwareList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolume.property.dataProtectionBackupPolicy">dataProtectionBackupPolicy</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionBackupPolicyList">DataAzurermNetappVolumeDataProtectionBackupPolicyList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolume.property.dataProtectionReplication">dataProtectionReplication</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionReplicationList">DataAzurermNetappVolumeDataProtectionReplicationList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolume.property.encryptionKeySource">encryptionKeySource</a></code> | <code>string</code> | *No description.* |
@@ -612,6 +613,16 @@ public readonly acceptGrowCapacityPoolForShortTermCloneSplit: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `dataProtectionAdvancedRansomware`<sup>Required</sup> <a name="dataProtectionAdvancedRansomware" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolume.property.dataProtectionAdvancedRansomware"></a>
+
+```typescript
+public readonly dataProtectionAdvancedRansomware: DataAzurermNetappVolumeDataProtectionAdvancedRansomwareList;
+```
+
+- *Type:* <a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareList">DataAzurermNetappVolumeDataProtectionAdvancedRansomwareList</a>
 
 ---
 
@@ -956,12 +967,12 @@ const dataAzurermNetappVolumeConfig: dataAzurermNetappVolume.DataAzurermNetappVo
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeConfig.property.accountName">accountName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/netapp_volume#account_name DataAzurermNetappVolume#account_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/netapp_volume#name DataAzurermNetappVolume#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeConfig.property.poolName">poolName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/netapp_volume#pool_name DataAzurermNetappVolume#pool_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/netapp_volume#resource_group_name DataAzurermNetappVolume#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/netapp_volume#id DataAzurermNetappVolume#id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeConfig.property.securityStyle">securityStyle</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/netapp_volume#security_style DataAzurermNetappVolume#security_style}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeConfig.property.accountName">accountName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/netapp_volume#account_name DataAzurermNetappVolume#account_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/netapp_volume#name DataAzurermNetappVolume#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeConfig.property.poolName">poolName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/netapp_volume#pool_name DataAzurermNetappVolume#pool_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/netapp_volume#resource_group_name DataAzurermNetappVolume#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/netapp_volume#id DataAzurermNetappVolume#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeConfig.property.securityStyle">securityStyle</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/netapp_volume#security_style DataAzurermNetappVolume#security_style}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeTimeouts">DataAzurermNetappVolumeTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1044,7 +1055,7 @@ public readonly accountName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/netapp_volume#account_name DataAzurermNetappVolume#account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/netapp_volume#account_name DataAzurermNetappVolume#account_name}.
 
 ---
 
@@ -1056,7 +1067,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/netapp_volume#name DataAzurermNetappVolume#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/netapp_volume#name DataAzurermNetappVolume#name}.
 
 ---
 
@@ -1068,7 +1079,7 @@ public readonly poolName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/netapp_volume#pool_name DataAzurermNetappVolume#pool_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/netapp_volume#pool_name DataAzurermNetappVolume#pool_name}.
 
 ---
 
@@ -1080,7 +1091,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/netapp_volume#resource_group_name DataAzurermNetappVolume#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/netapp_volume#resource_group_name DataAzurermNetappVolume#resource_group_name}.
 
 ---
 
@@ -1092,7 +1103,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/netapp_volume#id DataAzurermNetappVolume#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/netapp_volume#id DataAzurermNetappVolume#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1107,7 +1118,7 @@ public readonly securityStyle: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/netapp_volume#security_style DataAzurermNetappVolume#security_style}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/netapp_volume#security_style DataAzurermNetappVolume#security_style}.
 
 ---
 
@@ -1121,9 +1132,20 @@ public readonly timeouts: DataAzurermNetappVolumeTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/netapp_volume#timeouts DataAzurermNetappVolume#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/netapp_volume#timeouts DataAzurermNetappVolume#timeouts}
 
 ---
+
+### DataAzurermNetappVolumeDataProtectionAdvancedRansomware <a name="DataAzurermNetappVolumeDataProtectionAdvancedRansomware" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomware"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomware.Initializer"></a>
+
+```typescript
+import { dataAzurermNetappVolume } from '@cdktn/provider-azurerm'
+
+const dataAzurermNetappVolumeDataProtectionAdvancedRansomware: dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomware = { ... }
+```
+
 
 ### DataAzurermNetappVolumeDataProtectionBackupPolicy <a name="DataAzurermNetappVolumeDataProtectionBackupPolicy" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionBackupPolicy"></a>
 
@@ -1161,7 +1183,7 @@ const dataAzurermNetappVolumeTimeouts: dataAzurermNetappVolume.DataAzurermNetapp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/netapp_volume#read DataAzurermNetappVolume#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/netapp_volume#read DataAzurermNetappVolume#read}. |
 
 ---
 
@@ -1173,11 +1195,438 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/netapp_volume#read DataAzurermNetappVolume#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/netapp_volume#read DataAzurermNetappVolume#read}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### DataAzurermNetappVolumeDataProtectionAdvancedRansomwareList <a name="DataAzurermNetappVolumeDataProtectionAdvancedRansomwareList" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareList.Initializer"></a>
+
+```typescript
+import { dataAzurermNetappVolume } from '@cdktn/provider-azurerm'
+
+new dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareList.get"></a>
+
+```typescript
+public get(index: number): DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference <a name="DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.Initializer"></a>
+
+```typescript
+import { dataAzurermNetappVolume } from '@cdktn/provider-azurerm'
+
+new dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.property.protectionEnabled">protectionEnabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomware">DataAzurermNetappVolumeDataProtectionAdvancedRansomware</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `protectionEnabled`<sup>Required</sup> <a name="protectionEnabled" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.property.protectionEnabled"></a>
+
+```typescript
+public readonly protectionEnabled: IResolvable;
+```
+
+- *Type:* cdktn.IResolvable
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataAzurermNetappVolumeDataProtectionAdvancedRansomware;
+```
+
+- *Type:* <a href="#@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionAdvancedRansomware">DataAzurermNetappVolumeDataProtectionAdvancedRansomware</a>
+
+---
+
 
 ### DataAzurermNetappVolumeDataProtectionBackupPolicyList <a name="DataAzurermNetappVolumeDataProtectionBackupPolicyList" id="@cdktn/provider-azurerm.dataAzurermNetappVolume.DataAzurermNetappVolumeDataProtectionBackupPolicyList"></a>
 

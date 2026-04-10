@@ -4,7 +4,7 @@
 
 ### DataAzurermBastionHost <a name="DataAzurermBastionHost" id="@cdktn/provider-azurerm.dataAzurermBastionHost.DataAzurermBastionHost"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/bastion_host azurerm_bastion_host}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/bastion_host azurerm_bastion_host}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermBastionHost.DataAzurermBastionHost.Initializer"></a>
 
@@ -414,7 +414,7 @@ The construct id used in the generated config for the DataAzurermBastionHost to 
 
 The id of the existing DataAzurermBastionHost that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/bastion_host#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/bastion_host#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -448,6 +448,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermBastionHost.DataAzurermBastionHost.property.ipConfiguration">ipConfiguration</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermBastionHost.DataAzurermBastionHostIpConfigurationList">DataAzurermBastionHostIpConfigurationList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermBastionHost.DataAzurermBastionHost.property.ipConnectEnabled">ipConnectEnabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermBastionHost.DataAzurermBastionHost.property.location">location</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermBastionHost.DataAzurermBastionHost.property.privateOnlyEnabled">privateOnlyEnabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermBastionHost.DataAzurermBastionHost.property.scaleUnits">scaleUnits</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermBastionHost.DataAzurermBastionHost.property.sessionRecordingEnabled">sessionRecordingEnabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermBastionHost.DataAzurermBastionHost.property.shareableLinkEnabled">shareableLinkEnabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
@@ -648,6 +649,16 @@ public readonly location: string;
 
 ---
 
+##### `privateOnlyEnabled`<sup>Required</sup> <a name="privateOnlyEnabled" id="@cdktn/provider-azurerm.dataAzurermBastionHost.DataAzurermBastionHost.property.privateOnlyEnabled"></a>
+
+```typescript
+public readonly privateOnlyEnabled: IResolvable;
+```
+
+- *Type:* cdktn.IResolvable
+
+---
+
 ##### `scaleUnits`<sup>Required</sup> <a name="scaleUnits" id="@cdktn/provider-azurerm.dataAzurermBastionHost.DataAzurermBastionHost.property.scaleUnits"></a>
 
 ```typescript
@@ -839,9 +850,9 @@ const dataAzurermBastionHostConfig: dataAzurermBastionHost.DataAzurermBastionHos
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermBastionHost.DataAzurermBastionHostConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermBastionHost.DataAzurermBastionHostConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermBastionHost.DataAzurermBastionHostConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermBastionHost.DataAzurermBastionHostConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/bastion_host#name DataAzurermBastionHost#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermBastionHost.DataAzurermBastionHostConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/bastion_host#resource_group_name DataAzurermBastionHost#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermBastionHost.DataAzurermBastionHostConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/bastion_host#id DataAzurermBastionHost#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermBastionHost.DataAzurermBastionHostConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/bastion_host#name DataAzurermBastionHost#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermBastionHost.DataAzurermBastionHostConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/bastion_host#resource_group_name DataAzurermBastionHost#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermBastionHost.DataAzurermBastionHostConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/bastion_host#id DataAzurermBastionHost#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataAzurermBastionHost.DataAzurermBastionHostConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataAzurermBastionHost.DataAzurermBastionHostTimeouts">DataAzurermBastionHostTimeouts</a></code> | timeouts block. |
 
 ---
@@ -924,7 +935,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/bastion_host#name DataAzurermBastionHost#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/bastion_host#name DataAzurermBastionHost#name}.
 
 ---
 
@@ -936,7 +947,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/bastion_host#resource_group_name DataAzurermBastionHost#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/bastion_host#resource_group_name DataAzurermBastionHost#resource_group_name}.
 
 ---
 
@@ -948,7 +959,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/bastion_host#id DataAzurermBastionHost#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/bastion_host#id DataAzurermBastionHost#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -965,7 +976,7 @@ public readonly timeouts: DataAzurermBastionHostTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/bastion_host#timeouts DataAzurermBastionHost#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/bastion_host#timeouts DataAzurermBastionHost#timeouts}
 
 ---
 
@@ -994,7 +1005,7 @@ const dataAzurermBastionHostTimeouts: dataAzurermBastionHost.DataAzurermBastionH
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataAzurermBastionHost.DataAzurermBastionHostTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/bastion_host#read DataAzurermBastionHost#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataAzurermBastionHost.DataAzurermBastionHostTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/bastion_host#read DataAzurermBastionHost#read}. |
 
 ---
 
@@ -1006,7 +1017,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/bastion_host#read DataAzurermBastionHost#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/bastion_host#read DataAzurermBastionHost#read}.
 
 ---
 
