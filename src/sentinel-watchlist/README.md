@@ -1,3 +1,3 @@
 # `azurerm_sentinel_watchlist`
 
-Refer to the Terraform Registry for docs: [`azurerm_sentinel_watchlist`](https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/resources/sentinel_watchlist).
+Refer to the Terraform Registry for docs: [`azurerm_sentinel_watchlist`](https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/resources/sentinel_watchlist).

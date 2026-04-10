@@ -308,6 +308,7 @@ Object.defineProperty(exports, 'dataFactoryTriggerCustomEvent', { get: function 
 Object.defineProperty(exports, 'dataFactoryTriggerSchedule', { get: function () { return require('./data-factory-trigger-schedule'); } });
 Object.defineProperty(exports, 'dataFactoryTriggerTumblingWindow', { get: function () { return require('./data-factory-trigger-tumbling-window'); } });
 Object.defineProperty(exports, 'dataProtectionBackupInstanceBlobStorage', { get: function () { return require('./data-protection-backup-instance-blob-storage'); } });
+Object.defineProperty(exports, 'dataProtectionBackupInstanceDataLakeStorage', { get: function () { return require('./data-protection-backup-instance-data-lake-storage'); } });
 Object.defineProperty(exports, 'dataProtectionBackupInstanceDisk', { get: function () { return require('./data-protection-backup-instance-disk'); } });
 Object.defineProperty(exports, 'dataProtectionBackupInstanceKubernetesCluster', { get: function () { return require('./data-protection-backup-instance-kubernetes-cluster'); } });
 Object.defineProperty(exports, 'dataProtectionBackupInstanceMysqlFlexibleServer', { get: function () { return require('./data-protection-backup-instance-mysql-flexible-server'); } });
@@ -585,6 +586,7 @@ Object.defineProperty(exports, 'maintenanceAssignmentVirtualMachineScaleSet', { 
 Object.defineProperty(exports, 'maintenanceConfiguration', { get: function () { return require('./maintenance-configuration'); } });
 Object.defineProperty(exports, 'managedApplication', { get: function () { return require('./managed-application'); } });
 Object.defineProperty(exports, 'managedApplicationDefinition', { get: function () { return require('./managed-application-definition'); } });
+Object.defineProperty(exports, 'managedDevopsPool', { get: function () { return require('./managed-devops-pool'); } });
 Object.defineProperty(exports, 'managedDisk', { get: function () { return require('./managed-disk'); } });
 Object.defineProperty(exports, 'managedDiskSasToken', { get: function () { return require('./managed-disk-sas-token'); } });
 Object.defineProperty(exports, 'managedLustreFileSystem', { get: function () { return require('./managed-lustre-file-system'); } });
@@ -1334,6 +1336,7 @@ Object.defineProperty(exports, 'dataAzurermMachineLearningWorkspace', { get: fun
 Object.defineProperty(exports, 'dataAzurermMaintenanceConfiguration', { get: function () { return require('./data-azurerm-maintenance-configuration'); } });
 Object.defineProperty(exports, 'dataAzurermManagedApi', { get: function () { return require('./data-azurerm-managed-api'); } });
 Object.defineProperty(exports, 'dataAzurermManagedApplicationDefinition', { get: function () { return require('./data-azurerm-managed-application-definition'); } });
+Object.defineProperty(exports, 'dataAzurermManagedDevopsPool', { get: function () { return require('./data-azurerm-managed-devops-pool'); } });
 Object.defineProperty(exports, 'dataAzurermManagedDisk', { get: function () { return require('./data-azurerm-managed-disk'); } });
 Object.defineProperty(exports, 'dataAzurermManagedDisks', { get: function () { return require('./data-azurerm-managed-disks'); } });
 Object.defineProperty(exports, 'dataAzurermManagedRedis', { get: function () { return require('./data-azurerm-managed-redis'); } });

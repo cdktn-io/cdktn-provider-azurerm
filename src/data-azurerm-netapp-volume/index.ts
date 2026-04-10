@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/netapp_volume
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/netapp_volume
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,38 +13,113 @@ import * as cdktn from 'cdktn';
 
 export interface DataAzurermNetappVolumeConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/netapp_volume#account_name DataAzurermNetappVolume#account_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/netapp_volume#account_name DataAzurermNetappVolume#account_name}
   */
   readonly accountName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/netapp_volume#id DataAzurermNetappVolume#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/netapp_volume#id DataAzurermNetappVolume#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/netapp_volume#name DataAzurermNetappVolume#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/netapp_volume#name DataAzurermNetappVolume#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/netapp_volume#pool_name DataAzurermNetappVolume#pool_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/netapp_volume#pool_name DataAzurermNetappVolume#pool_name}
   */
   readonly poolName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/netapp_volume#resource_group_name DataAzurermNetappVolume#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/netapp_volume#resource_group_name DataAzurermNetappVolume#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/netapp_volume#security_style DataAzurermNetappVolume#security_style}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/netapp_volume#security_style DataAzurermNetappVolume#security_style}
   */
   readonly securityStyle?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/netapp_volume#timeouts DataAzurermNetappVolume#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/netapp_volume#timeouts DataAzurermNetappVolume#timeouts}
   */
   readonly timeouts?: DataAzurermNetappVolumeTimeouts;
+}
+export interface DataAzurermNetappVolumeDataProtectionAdvancedRansomware {
+}
+
+export function dataAzurermNetappVolumeDataProtectionAdvancedRansomwareToTerraform(struct?: DataAzurermNetappVolumeDataProtectionAdvancedRansomware): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAzurermNetappVolumeDataProtectionAdvancedRansomwareToHclTerraform(struct?: DataAzurermNetappVolumeDataProtectionAdvancedRansomware): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAzurermNetappVolumeDataProtectionAdvancedRansomware | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAzurermNetappVolumeDataProtectionAdvancedRansomware | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // protection_enabled - computed: true, optional: false, required: false
+  public get protectionEnabled() {
+    return this.getBooleanAttribute('protection_enabled');
+  }
+}
+
+export class DataAzurermNetappVolumeDataProtectionAdvancedRansomwareList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference {
+    return new DataAzurermNetappVolumeDataProtectionAdvancedRansomwareOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface DataAzurermNetappVolumeDataProtectionBackupPolicy {
 }
@@ -223,7 +298,7 @@ export class DataAzurermNetappVolumeDataProtectionReplicationList extends cdktn.
 }
 export interface DataAzurermNetappVolumeTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/netapp_volume#read DataAzurermNetappVolume#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/netapp_volume#read DataAzurermNetappVolume#read}
   */
   readonly read?: string;
 }
@@ -317,7 +392,7 @@ export class DataAzurermNetappVolumeTimeoutsOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/netapp_volume azurerm_netapp_volume}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/netapp_volume azurerm_netapp_volume}
 */
 export class DataAzurermNetappVolume extends cdktn.TerraformDataSource {
 
@@ -333,7 +408,7 @@ export class DataAzurermNetappVolume extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAzurermNetappVolume resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermNetappVolume to import
-  * @param importFromId The id of the existing DataAzurermNetappVolume that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/netapp_volume#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzurermNetappVolume that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/netapp_volume#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermNetappVolume to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -345,7 +420,7 @@ export class DataAzurermNetappVolume extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.67.0/docs/data-sources/netapp_volume azurerm_netapp_volume} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/netapp_volume azurerm_netapp_volume} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -356,7 +431,7 @@ export class DataAzurermNetappVolume extends cdktn.TerraformDataSource {
       terraformResourceType: 'azurerm_netapp_volume',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.67.0',
+        providerVersion: '4.68.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -396,6 +471,12 @@ export class DataAzurermNetappVolume extends cdktn.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get accountNameInput() {
     return this._accountName;
+  }
+
+  // data_protection_advanced_ransomware - computed: true, optional: false, required: false
+  private _dataProtectionAdvancedRansomware = new DataAzurermNetappVolumeDataProtectionAdvancedRansomwareList(this, "data_protection_advanced_ransomware", false);
+  public get dataProtectionAdvancedRansomware() {
+    return this._dataProtectionAdvancedRansomware;
   }
 
   // data_protection_backup_policy - computed: true, optional: false, required: false
