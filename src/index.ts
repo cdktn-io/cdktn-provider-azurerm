@@ -308,6 +308,7 @@ export * as dataFactoryTriggerCustomEvent from './data-factory-trigger-custom-ev
 export * as dataFactoryTriggerSchedule from './data-factory-trigger-schedule';
 export * as dataFactoryTriggerTumblingWindow from './data-factory-trigger-tumbling-window';
 export * as dataProtectionBackupInstanceBlobStorage from './data-protection-backup-instance-blob-storage';
+export * as dataProtectionBackupInstanceDataLakeStorage from './data-protection-backup-instance-data-lake-storage';
 export * as dataProtectionBackupInstanceDisk from './data-protection-backup-instance-disk';
 export * as dataProtectionBackupInstanceKubernetesCluster from './data-protection-backup-instance-kubernetes-cluster';
 export * as dataProtectionBackupInstanceMysqlFlexibleServer from './data-protection-backup-instance-mysql-flexible-server';
@@ -585,6 +586,7 @@ export * as maintenanceAssignmentVirtualMachineScaleSet from './maintenance-assi
 export * as maintenanceConfiguration from './maintenance-configuration';
 export * as managedApplication from './managed-application';
 export * as managedApplicationDefinition from './managed-application-definition';
+export * as managedDevopsPool from './managed-devops-pool';
 export * as managedDisk from './managed-disk';
 export * as managedDiskSasToken from './managed-disk-sas-token';
 export * as managedLustreFileSystem from './managed-lustre-file-system';
@@ -1334,6 +1336,7 @@ export * as dataAzurermMachineLearningWorkspace from './data-azurerm-machine-lea
 export * as dataAzurermMaintenanceConfiguration from './data-azurerm-maintenance-configuration';
 export * as dataAzurermManagedApi from './data-azurerm-managed-api';
 export * as dataAzurermManagedApplicationDefinition from './data-azurerm-managed-application-definition';
+export * as dataAzurermManagedDevopsPool from './data-azurerm-managed-devops-pool';
 export * as dataAzurermManagedDisk from './data-azurerm-managed-disk';
 export * as dataAzurermManagedDisks from './data-azurerm-managed-disks';
 export * as dataAzurermManagedRedis from './data-azurerm-managed-redis';
