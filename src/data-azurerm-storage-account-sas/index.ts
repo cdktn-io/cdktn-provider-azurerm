@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/storage_account_sas
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/data-sources/storage_account_sas
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,102 +13,102 @@ import * as cdktn from 'cdktn';
 
 export interface DataAzurermStorageAccountSasConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/storage_account_sas#connection_string DataAzurermStorageAccountSas#connection_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/data-sources/storage_account_sas#connection_string DataAzurermStorageAccountSas#connection_string}
   */
   readonly connectionString: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/storage_account_sas#expiry DataAzurermStorageAccountSas#expiry}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/data-sources/storage_account_sas#expiry DataAzurermStorageAccountSas#expiry}
   */
   readonly expiry: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/storage_account_sas#https_only DataAzurermStorageAccountSas#https_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/data-sources/storage_account_sas#https_only DataAzurermStorageAccountSas#https_only}
   */
   readonly httpsOnly?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/storage_account_sas#id DataAzurermStorageAccountSas#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/data-sources/storage_account_sas#id DataAzurermStorageAccountSas#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/storage_account_sas#ip_addresses DataAzurermStorageAccountSas#ip_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/data-sources/storage_account_sas#ip_addresses DataAzurermStorageAccountSas#ip_addresses}
   */
   readonly ipAddresses?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/storage_account_sas#signed_version DataAzurermStorageAccountSas#signed_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/data-sources/storage_account_sas#signed_version DataAzurermStorageAccountSas#signed_version}
   */
   readonly signedVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/storage_account_sas#start DataAzurermStorageAccountSas#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/data-sources/storage_account_sas#start DataAzurermStorageAccountSas#start}
   */
   readonly start: string;
   /**
   * permissions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/storage_account_sas#permissions DataAzurermStorageAccountSas#permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/data-sources/storage_account_sas#permissions DataAzurermStorageAccountSas#permissions}
   */
-  readonly permissions: DataAzurermStorageAccountSasPermissions;
+  readonly permissions?: DataAzurermStorageAccountSasPermissions;
   /**
   * resource_types block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/storage_account_sas#resource_types DataAzurermStorageAccountSas#resource_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/data-sources/storage_account_sas#resource_types DataAzurermStorageAccountSas#resource_types}
   */
   readonly resourceTypes: DataAzurermStorageAccountSasResourceTypes;
   /**
   * services block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/storage_account_sas#services DataAzurermStorageAccountSas#services}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/data-sources/storage_account_sas#services DataAzurermStorageAccountSas#services}
   */
   readonly services: DataAzurermStorageAccountSasServices;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/storage_account_sas#timeouts DataAzurermStorageAccountSas#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/data-sources/storage_account_sas#timeouts DataAzurermStorageAccountSas#timeouts}
   */
   readonly timeouts?: DataAzurermStorageAccountSasTimeouts;
 }
 export interface DataAzurermStorageAccountSasPermissions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/storage_account_sas#add DataAzurermStorageAccountSas#add}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/data-sources/storage_account_sas#add DataAzurermStorageAccountSas#add}
   */
-  readonly add: boolean | cdktn.IResolvable;
+  readonly add?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/storage_account_sas#create DataAzurermStorageAccountSas#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/data-sources/storage_account_sas#create DataAzurermStorageAccountSas#create}
   */
-  readonly create: boolean | cdktn.IResolvable;
+  readonly create?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/storage_account_sas#delete DataAzurermStorageAccountSas#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/data-sources/storage_account_sas#delete DataAzurermStorageAccountSas#delete}
   */
-  readonly delete: boolean | cdktn.IResolvable;
+  readonly delete?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/storage_account_sas#filter DataAzurermStorageAccountSas#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/data-sources/storage_account_sas#filter DataAzurermStorageAccountSas#filter}
   */
-  readonly filter: boolean | cdktn.IResolvable;
+  readonly filter?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/storage_account_sas#list DataAzurermStorageAccountSas#list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/data-sources/storage_account_sas#list DataAzurermStorageAccountSas#list}
   */
-  readonly list: boolean | cdktn.IResolvable;
+  readonly list?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/storage_account_sas#process DataAzurermStorageAccountSas#process}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/data-sources/storage_account_sas#process DataAzurermStorageAccountSas#process}
   */
-  readonly process: boolean | cdktn.IResolvable;
+  readonly process?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/storage_account_sas#read DataAzurermStorageAccountSas#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/data-sources/storage_account_sas#read DataAzurermStorageAccountSas#read}
   */
-  readonly read: boolean | cdktn.IResolvable;
+  readonly read?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/storage_account_sas#tag DataAzurermStorageAccountSas#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/data-sources/storage_account_sas#tag DataAzurermStorageAccountSas#tag}
   */
-  readonly tag: boolean | cdktn.IResolvable;
+  readonly tag?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/storage_account_sas#update DataAzurermStorageAccountSas#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/data-sources/storage_account_sas#update DataAzurermStorageAccountSas#update}
   */
-  readonly update: boolean | cdktn.IResolvable;
+  readonly update?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/storage_account_sas#write DataAzurermStorageAccountSas#write}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/data-sources/storage_account_sas#write DataAzurermStorageAccountSas#write}
   */
-  readonly write: boolean | cdktn.IResolvable;
+  readonly write?: boolean | cdktn.IResolvable;
 }
 
 export function dataAzurermStorageAccountSasPermissionsToTerraform(struct?: DataAzurermStorageAccountSasPermissionsOutputReference | DataAzurermStorageAccountSasPermissions): any {
@@ -289,7 +289,7 @@ export class DataAzurermStorageAccountSasPermissionsOutputReference extends cdkt
     }
   }
 
-  // add - computed: false, optional: false, required: true
+  // add - computed: false, optional: true, required: false
   private _add?: boolean | cdktn.IResolvable; 
   public get add() {
     return this.getBooleanAttribute('add');
@@ -297,12 +297,15 @@ export class DataAzurermStorageAccountSasPermissionsOutputReference extends cdkt
   public set add(value: boolean | cdktn.IResolvable) {
     this._add = value;
   }
+  public resetAdd() {
+    this._add = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get addInput() {
     return this._add;
   }
 
-  // create - computed: false, optional: false, required: true
+  // create - computed: false, optional: true, required: false
   private _create?: boolean | cdktn.IResolvable; 
   public get create() {
     return this.getBooleanAttribute('create');
@@ -310,12 +313,15 @@ export class DataAzurermStorageAccountSasPermissionsOutputReference extends cdkt
   public set create(value: boolean | cdktn.IResolvable) {
     this._create = value;
   }
+  public resetCreate() {
+    this._create = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get createInput() {
     return this._create;
   }
 
-  // delete - computed: false, optional: false, required: true
+  // delete - computed: false, optional: true, required: false
   private _delete?: boolean | cdktn.IResolvable; 
   public get delete() {
     return this.getBooleanAttribute('delete');
@@ -323,12 +329,15 @@ export class DataAzurermStorageAccountSasPermissionsOutputReference extends cdkt
   public set delete(value: boolean | cdktn.IResolvable) {
     this._delete = value;
   }
+  public resetDelete() {
+    this._delete = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get deleteInput() {
     return this._delete;
   }
 
-  // filter - computed: false, optional: false, required: true
+  // filter - computed: false, optional: true, required: false
   private _filter?: boolean | cdktn.IResolvable; 
   public get filter() {
     return this.getBooleanAttribute('filter');
@@ -336,12 +345,15 @@ export class DataAzurermStorageAccountSasPermissionsOutputReference extends cdkt
   public set filter(value: boolean | cdktn.IResolvable) {
     this._filter = value;
   }
+  public resetFilter() {
+    this._filter = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get filterInput() {
     return this._filter;
   }
 
-  // list - computed: false, optional: false, required: true
+  // list - computed: false, optional: true, required: false
   private _list?: boolean | cdktn.IResolvable; 
   public get list() {
     return this.getBooleanAttribute('list');
@@ -349,12 +361,15 @@ export class DataAzurermStorageAccountSasPermissionsOutputReference extends cdkt
   public set list(value: boolean | cdktn.IResolvable) {
     this._list = value;
   }
+  public resetList() {
+    this._list = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get listInput() {
     return this._list;
   }
 
-  // process - computed: false, optional: false, required: true
+  // process - computed: false, optional: true, required: false
   private _process?: boolean | cdktn.IResolvable; 
   public get process() {
     return this.getBooleanAttribute('process');
@@ -362,12 +377,15 @@ export class DataAzurermStorageAccountSasPermissionsOutputReference extends cdkt
   public set process(value: boolean | cdktn.IResolvable) {
     this._process = value;
   }
+  public resetProcess() {
+    this._process = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get processInput() {
     return this._process;
   }
 
-  // read - computed: false, optional: false, required: true
+  // read - computed: false, optional: true, required: false
   private _read?: boolean | cdktn.IResolvable; 
   public get read() {
     return this.getBooleanAttribute('read');
@@ -375,12 +393,15 @@ export class DataAzurermStorageAccountSasPermissionsOutputReference extends cdkt
   public set read(value: boolean | cdktn.IResolvable) {
     this._read = value;
   }
+  public resetRead() {
+    this._read = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get readInput() {
     return this._read;
   }
 
-  // tag - computed: false, optional: false, required: true
+  // tag - computed: false, optional: true, required: false
   private _tag?: boolean | cdktn.IResolvable; 
   public get tag() {
     return this.getBooleanAttribute('tag');
@@ -388,12 +409,15 @@ export class DataAzurermStorageAccountSasPermissionsOutputReference extends cdkt
   public set tag(value: boolean | cdktn.IResolvable) {
     this._tag = value;
   }
+  public resetTag() {
+    this._tag = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get tagInput() {
     return this._tag;
   }
 
-  // update - computed: false, optional: false, required: true
+  // update - computed: false, optional: true, required: false
   private _update?: boolean | cdktn.IResolvable; 
   public get update() {
     return this.getBooleanAttribute('update');
@@ -401,18 +425,24 @@ export class DataAzurermStorageAccountSasPermissionsOutputReference extends cdkt
   public set update(value: boolean | cdktn.IResolvable) {
     this._update = value;
   }
+  public resetUpdate() {
+    this._update = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get updateInput() {
     return this._update;
   }
 
-  // write - computed: false, optional: false, required: true
+  // write - computed: false, optional: true, required: false
   private _write?: boolean | cdktn.IResolvable; 
   public get write() {
     return this.getBooleanAttribute('write');
   }
   public set write(value: boolean | cdktn.IResolvable) {
     this._write = value;
+  }
+  public resetWrite() {
+    this._write = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get writeInput() {
@@ -421,15 +451,15 @@ export class DataAzurermStorageAccountSasPermissionsOutputReference extends cdkt
 }
 export interface DataAzurermStorageAccountSasResourceTypes {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/storage_account_sas#container DataAzurermStorageAccountSas#container}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/data-sources/storage_account_sas#container DataAzurermStorageAccountSas#container}
   */
   readonly container: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/storage_account_sas#object DataAzurermStorageAccountSas#object}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/data-sources/storage_account_sas#object DataAzurermStorageAccountSas#object}
   */
   readonly object: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/storage_account_sas#service DataAzurermStorageAccountSas#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/data-sources/storage_account_sas#service DataAzurermStorageAccountSas#service}
   */
   readonly service: boolean | cdktn.IResolvable;
 }
@@ -562,19 +592,19 @@ export class DataAzurermStorageAccountSasResourceTypesOutputReference extends cd
 }
 export interface DataAzurermStorageAccountSasServices {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/storage_account_sas#blob DataAzurermStorageAccountSas#blob}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/data-sources/storage_account_sas#blob DataAzurermStorageAccountSas#blob}
   */
   readonly blob: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/storage_account_sas#file DataAzurermStorageAccountSas#file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/data-sources/storage_account_sas#file DataAzurermStorageAccountSas#file}
   */
   readonly file: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/storage_account_sas#queue DataAzurermStorageAccountSas#queue}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/data-sources/storage_account_sas#queue DataAzurermStorageAccountSas#queue}
   */
   readonly queue: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/storage_account_sas#table DataAzurermStorageAccountSas#table}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/data-sources/storage_account_sas#table DataAzurermStorageAccountSas#table}
   */
   readonly table: boolean | cdktn.IResolvable;
 }
@@ -733,7 +763,7 @@ export class DataAzurermStorageAccountSasServicesOutputReference extends cdktn.C
 }
 export interface DataAzurermStorageAccountSasTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/storage_account_sas#read DataAzurermStorageAccountSas#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/data-sources/storage_account_sas#read DataAzurermStorageAccountSas#read}
   */
   readonly read?: string;
 }
@@ -827,7 +857,7 @@ export class DataAzurermStorageAccountSasTimeoutsOutputReference extends cdktn.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/storage_account_sas azurerm_storage_account_sas}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/data-sources/storage_account_sas azurerm_storage_account_sas}
 */
 export class DataAzurermStorageAccountSas extends cdktn.TerraformDataSource {
 
@@ -843,7 +873,7 @@ export class DataAzurermStorageAccountSas extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAzurermStorageAccountSas resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermStorageAccountSas to import
-  * @param importFromId The id of the existing DataAzurermStorageAccountSas that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/storage_account_sas#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzurermStorageAccountSas that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/data-sources/storage_account_sas#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermStorageAccountSas to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -855,7 +885,7 @@ export class DataAzurermStorageAccountSas extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.68.0/docs/data-sources/storage_account_sas azurerm_storage_account_sas} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/data-sources/storage_account_sas azurerm_storage_account_sas} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -866,7 +896,7 @@ export class DataAzurermStorageAccountSas extends cdktn.TerraformDataSource {
       terraformResourceType: 'azurerm_storage_account_sas',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.68.0',
+        providerVersion: '4.69.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -1002,13 +1032,16 @@ export class DataAzurermStorageAccountSas extends cdktn.TerraformDataSource {
     return this._start;
   }
 
-  // permissions - computed: false, optional: false, required: true
+  // permissions - computed: false, optional: true, required: false
   private _permissions = new DataAzurermStorageAccountSasPermissionsOutputReference(this, "permissions");
   public get permissions() {
     return this._permissions;
   }
   public putPermissions(value: DataAzurermStorageAccountSasPermissions) {
     this._permissions.internalValue = value;
+  }
+  public resetPermissions() {
+    this._permissions.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get permissionsInput() {

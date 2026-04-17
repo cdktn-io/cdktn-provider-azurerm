@@ -134,6 +134,7 @@ export * as automationPowershell72Module from './automation-powershell72-module'
 export * as automationPython3Package from './automation-python3-package';
 export * as automationRunbook from './automation-runbook';
 export * as automationRuntimeEnvironment from './automation-runtime-environment';
+export * as automationRuntimeEnvironmentPackage from './automation-runtime-environment-package';
 export * as automationSchedule from './automation-schedule';
 export * as automationSoftwareUpdateConfiguration from './automation-software-update-configuration';
 export * as automationSourceControl from './automation-source-control';
@@ -211,6 +212,7 @@ export * as containerAppEnvironment from './container-app-environment';
 export * as containerAppEnvironmentCertificate from './container-app-environment-certificate';
 export * as containerAppEnvironmentCustomDomain from './container-app-environment-custom-domain';
 export * as containerAppEnvironmentDaprComponent from './container-app-environment-dapr-component';
+export * as containerAppEnvironmentManagedCertificate from './container-app-environment-managed-certificate';
 export * as containerAppEnvironmentStorage from './container-app-environment-storage';
 export * as containerAppJob from './container-app-job';
 export * as containerConnectedRegistry from './container-connected-registry';
