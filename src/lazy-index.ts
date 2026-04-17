@@ -134,6 +134,7 @@ Object.defineProperty(exports, 'automationPowershell72Module', { get: function (
 Object.defineProperty(exports, 'automationPython3Package', { get: function () { return require('./automation-python3-package'); } });
 Object.defineProperty(exports, 'automationRunbook', { get: function () { return require('./automation-runbook'); } });
 Object.defineProperty(exports, 'automationRuntimeEnvironment', { get: function () { return require('./automation-runtime-environment'); } });
+Object.defineProperty(exports, 'automationRuntimeEnvironmentPackage', { get: function () { return require('./automation-runtime-environment-package'); } });
 Object.defineProperty(exports, 'automationSchedule', { get: function () { return require('./automation-schedule'); } });
 Object.defineProperty(exports, 'automationSoftwareUpdateConfiguration', { get: function () { return require('./automation-software-update-configuration'); } });
 Object.defineProperty(exports, 'automationSourceControl', { get: function () { return require('./automation-source-control'); } });
@@ -211,6 +212,7 @@ Object.defineProperty(exports, 'containerAppEnvironment', { get: function () { r
 Object.defineProperty(exports, 'containerAppEnvironmentCertificate', { get: function () { return require('./container-app-environment-certificate'); } });
 Object.defineProperty(exports, 'containerAppEnvironmentCustomDomain', { get: function () { return require('./container-app-environment-custom-domain'); } });
 Object.defineProperty(exports, 'containerAppEnvironmentDaprComponent', { get: function () { return require('./container-app-environment-dapr-component'); } });
+Object.defineProperty(exports, 'containerAppEnvironmentManagedCertificate', { get: function () { return require('./container-app-environment-managed-certificate'); } });
 Object.defineProperty(exports, 'containerAppEnvironmentStorage', { get: function () { return require('./container-app-environment-storage'); } });
 Object.defineProperty(exports, 'containerAppJob', { get: function () { return require('./container-app-job'); } });
 Object.defineProperty(exports, 'containerConnectedRegistry', { get: function () { return require('./container-connected-registry'); } });
