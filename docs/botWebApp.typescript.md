@@ -4,7 +4,7 @@
 
 ### BotWebApp <a name="BotWebApp" id="@cdktn/provider-azurerm.botWebApp.BotWebApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app azurerm_bot_web_app}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app azurerm_bot_web_app}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.botWebApp.BotWebApp.Initializer"></a>
 
@@ -83,6 +83,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebApp.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebApp.resetLuisAppIds">resetLuisAppIds</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebApp.resetLuisKey">resetLuisKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebApp.resetMicrosoftAppTenantId">resetMicrosoftAppTenantId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebApp.resetMicrosoftAppType">resetMicrosoftAppType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebApp.resetMicrosoftAppUserAssignedIdentityId">resetMicrosoftAppUserAssignedIdentityId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebApp.resetTags">resetTags</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebApp.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
@@ -457,6 +460,24 @@ public resetLuisAppIds(): void
 public resetLuisKey(): void
 ```
 
+##### `resetMicrosoftAppTenantId` <a name="resetMicrosoftAppTenantId" id="@cdktn/provider-azurerm.botWebApp.BotWebApp.resetMicrosoftAppTenantId"></a>
+
+```typescript
+public resetMicrosoftAppTenantId(): void
+```
+
+##### `resetMicrosoftAppType` <a name="resetMicrosoftAppType" id="@cdktn/provider-azurerm.botWebApp.BotWebApp.resetMicrosoftAppType"></a>
+
+```typescript
+public resetMicrosoftAppType(): void
+```
+
+##### `resetMicrosoftAppUserAssignedIdentityId` <a name="resetMicrosoftAppUserAssignedIdentityId" id="@cdktn/provider-azurerm.botWebApp.BotWebApp.resetMicrosoftAppUserAssignedIdentityId"></a>
+
+```typescript
+public resetMicrosoftAppUserAssignedIdentityId(): void
+```
+
 ##### `resetTags` <a name="resetTags" id="@cdktn/provider-azurerm.botWebApp.BotWebApp.resetTags"></a>
 
 ```typescript
@@ -572,7 +593,7 @@ The construct id used in the generated config for the BotWebApp to import.
 
 The id of the existing BotWebApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -613,6 +634,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebApp.property.luisAppIdsInput">luisAppIdsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebApp.property.luisKeyInput">luisKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebApp.property.microsoftAppIdInput">microsoftAppIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebApp.property.microsoftAppTenantIdInput">microsoftAppTenantIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebApp.property.microsoftAppTypeInput">microsoftAppTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebApp.property.microsoftAppUserAssignedIdentityIdInput">microsoftAppUserAssignedIdentityIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebApp.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebApp.property.resourceGroupNameInput">resourceGroupNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebApp.property.skuInput">skuInput</a></code> | <code>string</code> | *No description.* |
@@ -628,6 +652,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebApp.property.luisAppIds">luisAppIds</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebApp.property.luisKey">luisKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebApp.property.microsoftAppId">microsoftAppId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebApp.property.microsoftAppTenantId">microsoftAppTenantId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebApp.property.microsoftAppType">microsoftAppType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebApp.property.microsoftAppUserAssignedIdentityId">microsoftAppUserAssignedIdentityId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebApp.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebApp.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebApp.property.sku">sku</a></code> | <code>string</code> | *No description.* |
@@ -887,6 +914,36 @@ public readonly microsoftAppIdInput: string;
 
 ---
 
+##### `microsoftAppTenantIdInput`<sup>Optional</sup> <a name="microsoftAppTenantIdInput" id="@cdktn/provider-azurerm.botWebApp.BotWebApp.property.microsoftAppTenantIdInput"></a>
+
+```typescript
+public readonly microsoftAppTenantIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `microsoftAppTypeInput`<sup>Optional</sup> <a name="microsoftAppTypeInput" id="@cdktn/provider-azurerm.botWebApp.BotWebApp.property.microsoftAppTypeInput"></a>
+
+```typescript
+public readonly microsoftAppTypeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `microsoftAppUserAssignedIdentityIdInput`<sup>Optional</sup> <a name="microsoftAppUserAssignedIdentityIdInput" id="@cdktn/provider-azurerm.botWebApp.BotWebApp.property.microsoftAppUserAssignedIdentityIdInput"></a>
+
+```typescript
+public readonly microsoftAppUserAssignedIdentityIdInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-azurerm.botWebApp.BotWebApp.property.nameInput"></a>
 
 ```typescript
@@ -1037,6 +1094,36 @@ public readonly microsoftAppId: string;
 
 ---
 
+##### `microsoftAppTenantId`<sup>Required</sup> <a name="microsoftAppTenantId" id="@cdktn/provider-azurerm.botWebApp.BotWebApp.property.microsoftAppTenantId"></a>
+
+```typescript
+public readonly microsoftAppTenantId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `microsoftAppType`<sup>Required</sup> <a name="microsoftAppType" id="@cdktn/provider-azurerm.botWebApp.BotWebApp.property.microsoftAppType"></a>
+
+```typescript
+public readonly microsoftAppType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `microsoftAppUserAssignedIdentityId`<sup>Required</sup> <a name="microsoftAppUserAssignedIdentityId" id="@cdktn/provider-azurerm.botWebApp.BotWebApp.property.microsoftAppUserAssignedIdentityId"></a>
+
+```typescript
+public readonly microsoftAppUserAssignedIdentityId: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-azurerm.botWebApp.BotWebApp.property.name"></a>
 
 ```typescript
@@ -1118,20 +1205,23 @@ const botWebAppConfig: botWebApp.BotWebAppConfig = { ... }
 | <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#location BotWebApp#location}. |
-| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.microsoftAppId">microsoftAppId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#microsoft_app_id BotWebApp#microsoft_app_id}. |
-| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#name BotWebApp#name}. |
-| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#resource_group_name BotWebApp#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.sku">sku</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#sku BotWebApp#sku}. |
-| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.developerAppInsightsApiKey">developerAppInsightsApiKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#developer_app_insights_api_key BotWebApp#developer_app_insights_api_key}. |
-| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.developerAppInsightsApplicationId">developerAppInsightsApplicationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#developer_app_insights_application_id BotWebApp#developer_app_insights_application_id}. |
-| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.developerAppInsightsKey">developerAppInsightsKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#developer_app_insights_key BotWebApp#developer_app_insights_key}. |
-| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.displayName">displayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#display_name BotWebApp#display_name}. |
-| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.endpoint">endpoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#endpoint BotWebApp#endpoint}. |
-| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#id BotWebApp#id}. |
-| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.luisAppIds">luisAppIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#luis_app_ids BotWebApp#luis_app_ids}. |
-| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.luisKey">luisKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#luis_key BotWebApp#luis_key}. |
-| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#tags BotWebApp#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#location BotWebApp#location}. |
+| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.microsoftAppId">microsoftAppId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#microsoft_app_id BotWebApp#microsoft_app_id}. |
+| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#name BotWebApp#name}. |
+| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#resource_group_name BotWebApp#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.sku">sku</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#sku BotWebApp#sku}. |
+| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.developerAppInsightsApiKey">developerAppInsightsApiKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#developer_app_insights_api_key BotWebApp#developer_app_insights_api_key}. |
+| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.developerAppInsightsApplicationId">developerAppInsightsApplicationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#developer_app_insights_application_id BotWebApp#developer_app_insights_application_id}. |
+| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.developerAppInsightsKey">developerAppInsightsKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#developer_app_insights_key BotWebApp#developer_app_insights_key}. |
+| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.displayName">displayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#display_name BotWebApp#display_name}. |
+| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.endpoint">endpoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#endpoint BotWebApp#endpoint}. |
+| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#id BotWebApp#id}. |
+| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.luisAppIds">luisAppIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#luis_app_ids BotWebApp#luis_app_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.luisKey">luisKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#luis_key BotWebApp#luis_key}. |
+| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.microsoftAppTenantId">microsoftAppTenantId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#microsoft_app_tenant_id BotWebApp#microsoft_app_tenant_id}. |
+| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.microsoftAppType">microsoftAppType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#microsoft_app_type BotWebApp#microsoft_app_type}. |
+| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.microsoftAppUserAssignedIdentityId">microsoftAppUserAssignedIdentityId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#microsoft_app_user_assigned_identity_id BotWebApp#microsoft_app_user_assigned_identity_id}. |
+| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.tags">tags</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#tags BotWebApp#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppTimeouts">BotWebAppTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1214,7 +1304,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#location BotWebApp#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#location BotWebApp#location}.
 
 ---
 
@@ -1226,7 +1316,7 @@ public readonly microsoftAppId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#microsoft_app_id BotWebApp#microsoft_app_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#microsoft_app_id BotWebApp#microsoft_app_id}.
 
 ---
 
@@ -1238,7 +1328,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#name BotWebApp#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#name BotWebApp#name}.
 
 ---
 
@@ -1250,7 +1340,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#resource_group_name BotWebApp#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#resource_group_name BotWebApp#resource_group_name}.
 
 ---
 
@@ -1262,7 +1352,7 @@ public readonly sku: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#sku BotWebApp#sku}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#sku BotWebApp#sku}.
 
 ---
 
@@ -1274,7 +1364,7 @@ public readonly developerAppInsightsApiKey: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#developer_app_insights_api_key BotWebApp#developer_app_insights_api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#developer_app_insights_api_key BotWebApp#developer_app_insights_api_key}.
 
 ---
 
@@ -1286,7 +1376,7 @@ public readonly developerAppInsightsApplicationId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#developer_app_insights_application_id BotWebApp#developer_app_insights_application_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#developer_app_insights_application_id BotWebApp#developer_app_insights_application_id}.
 
 ---
 
@@ -1298,7 +1388,7 @@ public readonly developerAppInsightsKey: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#developer_app_insights_key BotWebApp#developer_app_insights_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#developer_app_insights_key BotWebApp#developer_app_insights_key}.
 
 ---
 
@@ -1310,7 +1400,7 @@ public readonly displayName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#display_name BotWebApp#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#display_name BotWebApp#display_name}.
 
 ---
 
@@ -1322,7 +1412,7 @@ public readonly endpoint: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#endpoint BotWebApp#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#endpoint BotWebApp#endpoint}.
 
 ---
 
@@ -1334,7 +1424,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#id BotWebApp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#id BotWebApp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1349,7 +1439,7 @@ public readonly luisAppIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#luis_app_ids BotWebApp#luis_app_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#luis_app_ids BotWebApp#luis_app_ids}.
 
 ---
 
@@ -1361,7 +1451,43 @@ public readonly luisKey: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#luis_key BotWebApp#luis_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#luis_key BotWebApp#luis_key}.
+
+---
+
+##### `microsoftAppTenantId`<sup>Optional</sup> <a name="microsoftAppTenantId" id="@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.microsoftAppTenantId"></a>
+
+```typescript
+public readonly microsoftAppTenantId: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#microsoft_app_tenant_id BotWebApp#microsoft_app_tenant_id}.
+
+---
+
+##### `microsoftAppType`<sup>Optional</sup> <a name="microsoftAppType" id="@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.microsoftAppType"></a>
+
+```typescript
+public readonly microsoftAppType: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#microsoft_app_type BotWebApp#microsoft_app_type}.
+
+---
+
+##### `microsoftAppUserAssignedIdentityId`<sup>Optional</sup> <a name="microsoftAppUserAssignedIdentityId" id="@cdktn/provider-azurerm.botWebApp.BotWebAppConfig.property.microsoftAppUserAssignedIdentityId"></a>
+
+```typescript
+public readonly microsoftAppUserAssignedIdentityId: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#microsoft_app_user_assigned_identity_id BotWebApp#microsoft_app_user_assigned_identity_id}.
 
 ---
 
@@ -1373,7 +1499,7 @@ public readonly tags: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#tags BotWebApp#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#tags BotWebApp#tags}.
 
 ---
 
@@ -1387,7 +1513,7 @@ public readonly timeouts: BotWebAppTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#timeouts BotWebApp#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#timeouts BotWebApp#timeouts}
 
 ---
 
@@ -1405,10 +1531,10 @@ const botWebAppTimeouts: botWebApp.BotWebAppTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#create BotWebApp#create}. |
-| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#delete BotWebApp#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#read BotWebApp#read}. |
-| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#update BotWebApp#update}. |
+| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#create BotWebApp#create}. |
+| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#delete BotWebApp#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#read BotWebApp#read}. |
+| <code><a href="#@cdktn/provider-azurerm.botWebApp.BotWebAppTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#update BotWebApp#update}. |
 
 ---
 
@@ -1420,7 +1546,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#create BotWebApp#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#create BotWebApp#create}.
 
 ---
 
@@ -1432,7 +1558,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#delete BotWebApp#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#delete BotWebApp#delete}.
 
 ---
 
@@ -1444,7 +1570,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#read BotWebApp#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#read BotWebApp#read}.
 
 ---
 
@@ -1456,7 +1582,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/bot_web_app#update BotWebApp#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/bot_web_app#update BotWebApp#update}.
 
 ---
 
