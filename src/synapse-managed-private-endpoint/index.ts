@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/synapse_managed_private_endpoint
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/synapse_managed_private_endpoint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +13,50 @@ import * as cdktn from 'cdktn';
 
 export interface SynapseManagedPrivateEndpointConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/synapse_managed_private_endpoint#id SynapseManagedPrivateEndpoint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/synapse_managed_private_endpoint#fully_qualified_domain_names SynapseManagedPrivateEndpoint#fully_qualified_domain_names}
+  */
+  readonly fullyQualifiedDomainNames?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/synapse_managed_private_endpoint#id SynapseManagedPrivateEndpoint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/synapse_managed_private_endpoint#name SynapseManagedPrivateEndpoint#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/synapse_managed_private_endpoint#name SynapseManagedPrivateEndpoint#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/synapse_managed_private_endpoint#subresource_name SynapseManagedPrivateEndpoint#subresource_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/synapse_managed_private_endpoint#subresource_name SynapseManagedPrivateEndpoint#subresource_name}
   */
   readonly subresourceName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/synapse_managed_private_endpoint#synapse_workspace_id SynapseManagedPrivateEndpoint#synapse_workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/synapse_managed_private_endpoint#synapse_workspace_id SynapseManagedPrivateEndpoint#synapse_workspace_id}
   */
   readonly synapseWorkspaceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/synapse_managed_private_endpoint#target_resource_id SynapseManagedPrivateEndpoint#target_resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/synapse_managed_private_endpoint#target_resource_id SynapseManagedPrivateEndpoint#target_resource_id}
   */
   readonly targetResourceId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/synapse_managed_private_endpoint#timeouts SynapseManagedPrivateEndpoint#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/synapse_managed_private_endpoint#timeouts SynapseManagedPrivateEndpoint#timeouts}
   */
   readonly timeouts?: SynapseManagedPrivateEndpointTimeouts;
 }
 export interface SynapseManagedPrivateEndpointTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/synapse_managed_private_endpoint#create SynapseManagedPrivateEndpoint#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/synapse_managed_private_endpoint#create SynapseManagedPrivateEndpoint#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/synapse_managed_private_endpoint#delete SynapseManagedPrivateEndpoint#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/synapse_managed_private_endpoint#delete SynapseManagedPrivateEndpoint#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/synapse_managed_private_endpoint#read SynapseManagedPrivateEndpoint#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/synapse_managed_private_endpoint#read SynapseManagedPrivateEndpoint#read}
   */
   readonly read?: string;
 }
@@ -204,7 +208,7 @@ export class SynapseManagedPrivateEndpointTimeoutsOutputReference extends cdktn.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/synapse_managed_private_endpoint azurerm_synapse_managed_private_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/synapse_managed_private_endpoint azurerm_synapse_managed_private_endpoint}
 */
 export class SynapseManagedPrivateEndpoint extends cdktn.TerraformResource {
 
@@ -220,7 +224,7 @@ export class SynapseManagedPrivateEndpoint extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SynapseManagedPrivateEndpoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SynapseManagedPrivateEndpoint to import
-  * @param importFromId The id of the existing SynapseManagedPrivateEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/synapse_managed_private_endpoint#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SynapseManagedPrivateEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/synapse_managed_private_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SynapseManagedPrivateEndpoint to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -232,7 +236,7 @@ export class SynapseManagedPrivateEndpoint extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.69.0/docs/resources/synapse_managed_private_endpoint azurerm_synapse_managed_private_endpoint} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.70.0/docs/resources/synapse_managed_private_endpoint azurerm_synapse_managed_private_endpoint} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -243,7 +247,7 @@ export class SynapseManagedPrivateEndpoint extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_synapse_managed_private_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.69.0',
+        providerVersion: '4.70.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -254,6 +258,7 @@ export class SynapseManagedPrivateEndpoint extends cdktn.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._fullyQualifiedDomainNames = config.fullyQualifiedDomainNames;
     this._id = config.id;
     this._name = config.name;
     this._subresourceName = config.subresourceName;
@@ -265,6 +270,22 @@ export class SynapseManagedPrivateEndpoint extends cdktn.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // fully_qualified_domain_names - computed: false, optional: true, required: false
+  private _fullyQualifiedDomainNames?: string[]; 
+  public get fullyQualifiedDomainNames() {
+    return this.getListAttribute('fully_qualified_domain_names');
+  }
+  public set fullyQualifiedDomainNames(value: string[]) {
+    this._fullyQualifiedDomainNames = value;
+  }
+  public resetFullyQualifiedDomainNames() {
+    this._fullyQualifiedDomainNames = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fullyQualifiedDomainNamesInput() {
+    return this._fullyQualifiedDomainNames;
+  }
 
   // id - computed: true, optional: true, required: false
   private _id?: string; 
@@ -356,6 +377,7 @@ export class SynapseManagedPrivateEndpoint extends cdktn.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      fully_qualified_domain_names: cdktn.listMapper(cdktn.stringToTerraform, false)(this._fullyQualifiedDomainNames),
       id: cdktn.stringToTerraform(this._id),
       name: cdktn.stringToTerraform(this._name),
       subresource_name: cdktn.stringToTerraform(this._subresourceName),
@@ -367,6 +389,12 @@ export class SynapseManagedPrivateEndpoint extends cdktn.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      fully_qualified_domain_names: {
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._fullyQualifiedDomainNames),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
       id: {
         value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
