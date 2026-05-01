@@ -1192,6 +1192,7 @@ Object.defineProperty(exports, 'dataAzurermCdnFrontdoorOriginGroup', { get: func
 Object.defineProperty(exports, 'dataAzurermCdnFrontdoorProfile', { get: function () { return require('./data-azurerm-cdn-frontdoor-profile'); } });
 Object.defineProperty(exports, 'dataAzurermCdnFrontdoorRuleSet', { get: function () { return require('./data-azurerm-cdn-frontdoor-rule-set'); } });
 Object.defineProperty(exports, 'dataAzurermCdnFrontdoorSecret', { get: function () { return require('./data-azurerm-cdn-frontdoor-secret'); } });
+Object.defineProperty(exports, 'dataAzurermCdnFrontdoorSecurityPolicy', { get: function () { return require('./data-azurerm-cdn-frontdoor-security-policy'); } });
 Object.defineProperty(exports, 'dataAzurermCdnProfile', { get: function () { return require('./data-azurerm-cdn-profile'); } });
 Object.defineProperty(exports, 'dataAzurermClientConfig', { get: function () { return require('./data-azurerm-client-config'); } });
 Object.defineProperty(exports, 'dataAzurermCognitiveAccount', { get: function () { return require('./data-azurerm-cognitive-account'); } });
