@@ -314,6 +314,7 @@ The following submodules are available:
 - [dataAzurermCdnFrontdoorProfile](./dataAzurermCdnFrontdoorProfile.go.md)
 - [dataAzurermCdnFrontdoorRuleSet](./dataAzurermCdnFrontdoorRuleSet.go.md)
 - [dataAzurermCdnFrontdoorSecret](./dataAzurermCdnFrontdoorSecret.go.md)
+- [dataAzurermCdnFrontdoorSecurityPolicy](./dataAzurermCdnFrontdoorSecurityPolicy.go.md)
 - [dataAzurermCdnProfile](./dataAzurermCdnProfile.go.md)
 - [dataAzurermClientConfig](./dataAzurermClientConfig.go.md)
 - [dataAzurermCognitiveAccount](./dataAzurermCognitiveAccount.go.md)

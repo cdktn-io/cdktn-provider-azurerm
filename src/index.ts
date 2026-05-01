@@ -1192,6 +1192,7 @@ export * as dataAzurermCdnFrontdoorOriginGroup from './data-azurerm-cdn-frontdoo
 export * as dataAzurermCdnFrontdoorProfile from './data-azurerm-cdn-frontdoor-profile';
 export * as dataAzurermCdnFrontdoorRuleSet from './data-azurerm-cdn-frontdoor-rule-set';
 export * as dataAzurermCdnFrontdoorSecret from './data-azurerm-cdn-frontdoor-secret';
+export * as dataAzurermCdnFrontdoorSecurityPolicy from './data-azurerm-cdn-frontdoor-security-policy';
 export * as dataAzurermCdnProfile from './data-azurerm-cdn-profile';
 export * as dataAzurermClientConfig from './data-azurerm-client-config';
 export * as dataAzurermCognitiveAccount from './data-azurerm-cognitive-account';
