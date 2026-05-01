@@ -314,6 +314,7 @@ The following submodules are available:
 - [dataAzurermCdnFrontdoorProfile](./dataAzurermCdnFrontdoorProfile.typescript.md)
 - [dataAzurermCdnFrontdoorRuleSet](./dataAzurermCdnFrontdoorRuleSet.typescript.md)
 - [dataAzurermCdnFrontdoorSecret](./dataAzurermCdnFrontdoorSecret.typescript.md)
+- [dataAzurermCdnFrontdoorSecurityPolicy](./dataAzurermCdnFrontdoorSecurityPolicy.typescript.md)
 - [dataAzurermCdnProfile](./dataAzurermCdnProfile.typescript.md)
 - [dataAzurermClientConfig](./dataAzurermClientConfig.typescript.md)
 - [dataAzurermCognitiveAccount](./dataAzurermCognitiveAccount.typescript.md)
