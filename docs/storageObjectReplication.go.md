@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/storageobjectreplication"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageobjectreplication"
 
 storageobjectreplication.NewStorageObjectReplication(scope Construct, id *string, config StorageObjectReplicationConfig) StorageObjectReplication
 ```
@@ -440,7 +440,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/storageobjectreplication"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageobjectreplication"
 
 storageobjectreplication.StorageObjectReplication_IsConstruct(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/storageobjectreplication"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageobjectreplication"
 
 storageobjectreplication.StorageObjectReplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ storageobjectreplication.StorageObjectReplication_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/storageobjectreplication"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageobjectreplication"
 
 storageobjectreplication.StorageObjectReplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ storageobjectreplication.StorageObjectReplication_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/storageobjectreplication"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageobjectreplication"
 
 storageobjectreplication.StorageObjectReplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -861,7 +861,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/storageobjectreplication"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageobjectreplication"
 
 &storageobjectreplication.StorageObjectReplicationConfig {
 	Connection: interface{},
@@ -875,7 +875,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/storageobjectr
 	Rules: interface{},
 	SourceStorageAccountId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.storageObjectReplication.StorageObjectReplicationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.storageObjectReplication.StorageObjectReplicationTimeouts,
 }
 ```
 
@@ -1040,7 +1040,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplicationRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/storageobjectreplication"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageobjectreplication"
 
 &storageobjectreplication.StorageObjectReplicationRules {
 	DestinationContainerName: *string,
@@ -1114,7 +1114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplicationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/storageobjectreplication"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageobjectreplication"
 
 &storageobjectreplication.StorageObjectReplicationTimeouts {
 	Create: *string,
@@ -1190,7 +1190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplicationRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/storageobjectreplication"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageobjectreplication"
 
 storageobjectreplication.NewStorageObjectReplicationRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StorageObjectReplicationRulesList
 ```
@@ -1350,7 +1350,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplicationRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/storageobjectreplication"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageobjectreplication"
 
 storageobjectreplication.NewStorageObjectReplicationRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StorageObjectReplicationRulesOutputReference
 ```
@@ -1730,7 +1730,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplicationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/storageobjectreplication"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageobjectreplication"
 
 storageobjectreplication.NewStorageObjectReplicationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageObjectReplicationTimeoutsOutputReference
 ```

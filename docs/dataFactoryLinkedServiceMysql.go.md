@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceMysql.DataFactoryLinkedServiceMysql.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/datafactorylinkedservicemysql"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicemysql"
 
 datafactorylinkedservicemysql.NewDataFactoryLinkedServiceMysql(scope Construct, id *string, config DataFactoryLinkedServiceMysqlConfig) DataFactoryLinkedServiceMysql
 ```
@@ -462,7 +462,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceMysql.DataFactoryLinkedServiceMysql.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/datafactorylinkedservicemysql"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicemysql"
 
 datafactorylinkedservicemysql.DataFactoryLinkedServiceMysql_IsConstruct(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceMysql.DataFactoryLinkedServiceMysql.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/datafactorylinkedservicemysql"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicemysql"
 
 datafactorylinkedservicemysql.DataFactoryLinkedServiceMysql_IsTerraformElement(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ datafactorylinkedservicemysql.DataFactoryLinkedServiceMysql_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceMysql.DataFactoryLinkedServiceMysql.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/datafactorylinkedservicemysql"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicemysql"
 
 datafactorylinkedservicemysql.DataFactoryLinkedServiceMysql_IsTerraformResource(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ datafactorylinkedservicemysql.DataFactoryLinkedServiceMysql_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceMysql.DataFactoryLinkedServiceMysql.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/datafactorylinkedservicemysql"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicemysql"
 
 datafactorylinkedservicemysql.DataFactoryLinkedServiceMysql_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -971,7 +971,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceMysql.DataFactoryLinkedServiceMysqlConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/datafactorylinkedservicemysql"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicemysql"
 
 &datafactorylinkedservicemysql.DataFactoryLinkedServiceMysqlConfig {
 	Connection: interface{},
@@ -990,7 +990,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/datafactorylin
 	Id: *string,
 	IntegrationRuntimeName: *string,
 	Parameters: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.dataFactoryLinkedServiceMysql.DataFactoryLinkedServiceMysqlTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataFactoryLinkedServiceMysql.DataFactoryLinkedServiceMysqlTimeouts,
 }
 ```
 
@@ -1218,7 +1218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceMysql.DataFactoryLinkedServiceMysqlTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/datafactorylinkedservicemysql"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicemysql"
 
 &datafactorylinkedservicemysql.DataFactoryLinkedServiceMysqlTimeouts {
 	Create: *string,
@@ -1294,7 +1294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactoryLinkedServiceMysql.DataFactoryLinkedServiceMysqlTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/datafactorylinkedservicemysql"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/datafactorylinkedservicemysql"
 
 datafactorylinkedservicemysql.NewDataFactoryLinkedServiceMysqlTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataFactoryLinkedServiceMysqlTimeoutsOutputReference
 ```
