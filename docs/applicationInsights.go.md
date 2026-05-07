@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationinsights"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationinsights"
 
 applicationinsights.NewApplicationInsights(scope Construct, id *string, config ApplicationInsightsConfig) ApplicationInsights
 ```
@@ -504,7 +504,7 @@ func ResetWorkspaceId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationinsights"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationinsights"
 
 applicationinsights.ApplicationInsights_IsConstruct(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationinsights"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationinsights"
 
 applicationinsights.ApplicationInsights_IsTerraformElement(x interface{}) *bool
 ```
@@ -550,7 +550,7 @@ applicationinsights.ApplicationInsights_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationinsights"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationinsights"
 
 applicationinsights.ApplicationInsights_IsTerraformResource(x interface{}) *bool
 ```
@@ -564,7 +564,7 @@ applicationinsights.ApplicationInsights_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.applicationInsights.ApplicationInsights.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationinsights"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationinsights"
 
 applicationinsights.ApplicationInsights_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1200,7 +1200,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationinsights"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationinsights"
 
 &applicationinsights.ApplicationInsightsConfig {
 	Connection: interface{},
@@ -1225,7 +1225,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationins
 	RetentionInDays: *f64,
 	SamplingPercentage: *f64,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.applicationInsights.ApplicationInsightsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.applicationInsights.ApplicationInsightsTimeouts,
 	WorkspaceId: *string,
 }
 ```
@@ -1545,7 +1545,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationinsights"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationinsights"
 
 &applicationinsights.ApplicationInsightsTimeouts {
 	Create: *string,
@@ -1621,7 +1621,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.applicationInsights.ApplicationInsightsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/applicationinsights"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/applicationinsights"
 
 applicationinsights.NewApplicationInsightsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationInsightsTimeoutsOutputReference
 ```

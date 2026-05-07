@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermAdvisorRecommendations.DataAzurermAdvisorRecommendations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/dataazurermadvisorrecommendations"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermadvisorrecommendations"
 
 dataazurermadvisorrecommendations.NewDataAzurermAdvisorRecommendations(scope Construct, id *string, config DataAzurermAdvisorRecommendationsConfig) DataAzurermAdvisorRecommendations
 ```
@@ -339,7 +339,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-azurerm.dataAzurermAdvisorRecommendations.DataAzurermAdvisorRecommendations.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/dataazurermadvisorrecommendations"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermadvisorrecommendations"
 
 dataazurermadvisorrecommendations.DataAzurermAdvisorRecommendations_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-azurerm.dataAzurermAdvisorRecommendations.DataAzurermAdvisorRecommendations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/dataazurermadvisorrecommendations"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermadvisorrecommendations"
 
 dataazurermadvisorrecommendations.DataAzurermAdvisorRecommendations_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ dataazurermadvisorrecommendations.DataAzurermAdvisorRecommendations_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-azurerm.dataAzurermAdvisorRecommendations.DataAzurermAdvisorRecommendations.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/dataazurermadvisorrecommendations"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermadvisorrecommendations"
 
 dataazurermadvisorrecommendations.DataAzurermAdvisorRecommendations_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ dataazurermadvisorrecommendations.DataAzurermAdvisorRecommendations_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-azurerm.dataAzurermAdvisorRecommendations.DataAzurermAdvisorRecommendations.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/dataazurermadvisorrecommendations"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermadvisorrecommendations"
 
 dataazurermadvisorrecommendations.DataAzurermAdvisorRecommendations_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -705,7 +705,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermAdvisorRecommendations.DataAzurermAdvisorRecommendationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/dataazurermadvisorrecommendations"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermadvisorrecommendations"
 
 &dataazurermadvisorrecommendations.DataAzurermAdvisorRecommendationsConfig {
 	Connection: interface{},
@@ -718,7 +718,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/dataazurermadv
 	FilterByCategory: *[]*string,
 	FilterByResourceGroups: *[]*string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15.dataAzurermAdvisorRecommendations.DataAzurermAdvisorRecommendationsTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.dataAzurermAdvisorRecommendations.DataAzurermAdvisorRecommendationsTimeouts,
 }
 ```
 
@@ -868,7 +868,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermAdvisorRecommendations.DataAzurermAdvisorRecommendationsRecommendations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/dataazurermadvisorrecommendations"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermadvisorrecommendations"
 
 &dataazurermadvisorrecommendations.DataAzurermAdvisorRecommendationsRecommendations {
 
@@ -881,7 +881,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/dataazurermadv
 #### Initializer <a name="Initializer" id="@cdktn/provider-azurerm.dataAzurermAdvisorRecommendations.DataAzurermAdvisorRecommendationsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/dataazurermadvisorrecommendations"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermadvisorrecommendations"
 
 &dataazurermadvisorrecommendations.DataAzurermAdvisorRecommendationsTimeouts {
 	Read: *string,
@@ -915,7 +915,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermAdvisorRecommendations.DataAzurermAdvisorRecommendationsRecommendationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/dataazurermadvisorrecommendations"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermadvisorrecommendations"
 
 dataazurermadvisorrecommendations.NewDataAzurermAdvisorRecommendationsRecommendationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAzurermAdvisorRecommendationsRecommendationsList
 ```
@@ -1064,7 +1064,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermAdvisorRecommendations.DataAzurermAdvisorRecommendationsRecommendationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/dataazurermadvisorrecommendations"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermadvisorrecommendations"
 
 dataazurermadvisorrecommendations.NewDataAzurermAdvisorRecommendationsRecommendationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataAzurermAdvisorRecommendationsRecommendationsOutputReference
 ```
@@ -1430,7 +1430,7 @@ func InternalValue() DataAzurermAdvisorRecommendationsRecommendations
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataAzurermAdvisorRecommendations.DataAzurermAdvisorRecommendationsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v15/dataazurermadvisorrecommendations"
+import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/dataazurermadvisorrecommendations"
 
 dataazurermadvisorrecommendations.NewDataAzurermAdvisorRecommendationsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataAzurermAdvisorRecommendationsTimeoutsOutputReference
 ```
