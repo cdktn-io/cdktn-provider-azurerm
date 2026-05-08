@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.71.0/docs/data-sources/cdn_frontdoor_custom_domain
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.72.0/docs/data-sources/cdn_frontdoor_custom_domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,30 +13,191 @@ import * as cdktn from 'cdktn';
 
 export interface DataAzurermCdnFrontdoorCustomDomainConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.71.0/docs/data-sources/cdn_frontdoor_custom_domain#id DataAzurermCdnFrontdoorCustomDomain#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.72.0/docs/data-sources/cdn_frontdoor_custom_domain#id DataAzurermCdnFrontdoorCustomDomain#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.71.0/docs/data-sources/cdn_frontdoor_custom_domain#name DataAzurermCdnFrontdoorCustomDomain#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.72.0/docs/data-sources/cdn_frontdoor_custom_domain#name DataAzurermCdnFrontdoorCustomDomain#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.71.0/docs/data-sources/cdn_frontdoor_custom_domain#profile_name DataAzurermCdnFrontdoorCustomDomain#profile_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.72.0/docs/data-sources/cdn_frontdoor_custom_domain#profile_name DataAzurermCdnFrontdoorCustomDomain#profile_name}
   */
   readonly profileName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.71.0/docs/data-sources/cdn_frontdoor_custom_domain#resource_group_name DataAzurermCdnFrontdoorCustomDomain#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.72.0/docs/data-sources/cdn_frontdoor_custom_domain#resource_group_name DataAzurermCdnFrontdoorCustomDomain#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.71.0/docs/data-sources/cdn_frontdoor_custom_domain#timeouts DataAzurermCdnFrontdoorCustomDomain#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.72.0/docs/data-sources/cdn_frontdoor_custom_domain#timeouts DataAzurermCdnFrontdoorCustomDomain#timeouts}
   */
   readonly timeouts?: DataAzurermCdnFrontdoorCustomDomainTimeouts;
+}
+export interface DataAzurermCdnFrontdoorCustomDomainTlsCipherSuiteCustomCiphers {
+}
+
+export function dataAzurermCdnFrontdoorCustomDomainTlsCipherSuiteCustomCiphersToTerraform(struct?: DataAzurermCdnFrontdoorCustomDomainTlsCipherSuiteCustomCiphers): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAzurermCdnFrontdoorCustomDomainTlsCipherSuiteCustomCiphersToHclTerraform(struct?: DataAzurermCdnFrontdoorCustomDomainTlsCipherSuiteCustomCiphers): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAzurermCdnFrontdoorCustomDomainTlsCipherSuiteCustomCiphersOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAzurermCdnFrontdoorCustomDomainTlsCipherSuiteCustomCiphers | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAzurermCdnFrontdoorCustomDomainTlsCipherSuiteCustomCiphers | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // tls12 - computed: true, optional: false, required: false
+  public get tls12() {
+    return cdktn.Fn.tolist(this.getListAttribute('tls12'));
+  }
+
+  // tls13 - computed: true, optional: false, required: false
+  public get tls13() {
+    return cdktn.Fn.tolist(this.getListAttribute('tls13'));
+  }
+}
+
+export class DataAzurermCdnFrontdoorCustomDomainTlsCipherSuiteCustomCiphersList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAzurermCdnFrontdoorCustomDomainTlsCipherSuiteCustomCiphersOutputReference {
+    return new DataAzurermCdnFrontdoorCustomDomainTlsCipherSuiteCustomCiphersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataAzurermCdnFrontdoorCustomDomainTlsCipherSuite {
+}
+
+export function dataAzurermCdnFrontdoorCustomDomainTlsCipherSuiteToTerraform(struct?: DataAzurermCdnFrontdoorCustomDomainTlsCipherSuite): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataAzurermCdnFrontdoorCustomDomainTlsCipherSuiteToHclTerraform(struct?: DataAzurermCdnFrontdoorCustomDomainTlsCipherSuite): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataAzurermCdnFrontdoorCustomDomainTlsCipherSuiteOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataAzurermCdnFrontdoorCustomDomainTlsCipherSuite | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataAzurermCdnFrontdoorCustomDomainTlsCipherSuite | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // custom_ciphers - computed: true, optional: false, required: false
+  private _customCiphers = new DataAzurermCdnFrontdoorCustomDomainTlsCipherSuiteCustomCiphersList(this, "custom_ciphers", false);
+  public get customCiphers() {
+    return this._customCiphers;
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+}
+
+export class DataAzurermCdnFrontdoorCustomDomainTlsCipherSuiteList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataAzurermCdnFrontdoorCustomDomainTlsCipherSuiteOutputReference {
+    return new DataAzurermCdnFrontdoorCustomDomainTlsCipherSuiteOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface DataAzurermCdnFrontdoorCustomDomainTls {
 }
@@ -99,9 +260,20 @@ export class DataAzurermCdnFrontdoorCustomDomainTlsOutputReference extends cdktn
     return this.getStringAttribute('certificate_type');
   }
 
+  // cipher_suite - computed: true, optional: false, required: false
+  private _cipherSuite = new DataAzurermCdnFrontdoorCustomDomainTlsCipherSuiteList(this, "cipher_suite", false);
+  public get cipherSuite() {
+    return this._cipherSuite;
+  }
+
   // minimum_tls_version - computed: true, optional: false, required: false
   public get minimumTlsVersion() {
     return this.getStringAttribute('minimum_tls_version');
+  }
+
+  // minimum_version - computed: true, optional: false, required: false
+  public get minimumVersion() {
+    return this.getStringAttribute('minimum_version');
   }
 }
 
@@ -125,7 +297,7 @@ export class DataAzurermCdnFrontdoorCustomDomainTlsList extends cdktn.ComplexLis
 }
 export interface DataAzurermCdnFrontdoorCustomDomainTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.71.0/docs/data-sources/cdn_frontdoor_custom_domain#read DataAzurermCdnFrontdoorCustomDomain#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.72.0/docs/data-sources/cdn_frontdoor_custom_domain#read DataAzurermCdnFrontdoorCustomDomain#read}
   */
   readonly read?: string;
 }
@@ -219,7 +391,7 @@ export class DataAzurermCdnFrontdoorCustomDomainTimeoutsOutputReference extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.71.0/docs/data-sources/cdn_frontdoor_custom_domain azurerm_cdn_frontdoor_custom_domain}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.72.0/docs/data-sources/cdn_frontdoor_custom_domain azurerm_cdn_frontdoor_custom_domain}
 */
 export class DataAzurermCdnFrontdoorCustomDomain extends cdktn.TerraformDataSource {
 
@@ -235,7 +407,7 @@ export class DataAzurermCdnFrontdoorCustomDomain extends cdktn.TerraformDataSour
   * Generates CDKTN code for importing a DataAzurermCdnFrontdoorCustomDomain resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermCdnFrontdoorCustomDomain to import
-  * @param importFromId The id of the existing DataAzurermCdnFrontdoorCustomDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.71.0/docs/data-sources/cdn_frontdoor_custom_domain#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzurermCdnFrontdoorCustomDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.72.0/docs/data-sources/cdn_frontdoor_custom_domain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermCdnFrontdoorCustomDomain to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -247,7 +419,7 @@ export class DataAzurermCdnFrontdoorCustomDomain extends cdktn.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.71.0/docs/data-sources/cdn_frontdoor_custom_domain azurerm_cdn_frontdoor_custom_domain} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.72.0/docs/data-sources/cdn_frontdoor_custom_domain azurerm_cdn_frontdoor_custom_domain} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -258,7 +430,7 @@ export class DataAzurermCdnFrontdoorCustomDomain extends cdktn.TerraformDataSour
       terraformResourceType: 'azurerm_cdn_frontdoor_custom_domain',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.71.0',
+        providerVersion: '4.72.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
