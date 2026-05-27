@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.73.0/docs/data-sources/advisor_recommendations
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.74.0/docs/data-sources/advisor_recommendations
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +13,23 @@ import * as cdktn from 'cdktn';
 
 export interface DataAzurermAdvisorRecommendationsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.73.0/docs/data-sources/advisor_recommendations#filter_by_category DataAzurermAdvisorRecommendations#filter_by_category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.74.0/docs/data-sources/advisor_recommendations#filter_by_category DataAzurermAdvisorRecommendations#filter_by_category}
   */
   readonly filterByCategory?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.73.0/docs/data-sources/advisor_recommendations#filter_by_resource_groups DataAzurermAdvisorRecommendations#filter_by_resource_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.74.0/docs/data-sources/advisor_recommendations#filter_by_recommendation_type_guids DataAzurermAdvisorRecommendations#filter_by_recommendation_type_guids}
+  */
+  readonly filterByRecommendationTypeGuids?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.74.0/docs/data-sources/advisor_recommendations#filter_by_resource_groups DataAzurermAdvisorRecommendations#filter_by_resource_groups}
   */
   readonly filterByResourceGroups?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.73.0/docs/data-sources/advisor_recommendations#id DataAzurermAdvisorRecommendations#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.74.0/docs/data-sources/advisor_recommendations#filter_by_resource_ids DataAzurermAdvisorRecommendations#filter_by_resource_ids}
+  */
+  readonly filterByResourceIds?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.74.0/docs/data-sources/advisor_recommendations#id DataAzurermAdvisorRecommendations#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,7 +38,7 @@ export interface DataAzurermAdvisorRecommendationsConfig extends cdktn.Terraform
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.73.0/docs/data-sources/advisor_recommendations#timeouts DataAzurermAdvisorRecommendations#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.74.0/docs/data-sources/advisor_recommendations#timeouts DataAzurermAdvisorRecommendations#timeouts}
   */
   readonly timeouts?: DataAzurermAdvisorRecommendationsTimeouts;
 }
@@ -95,6 +103,11 @@ export class DataAzurermAdvisorRecommendationsRecommendationsOutputReference ext
     return this.getStringAttribute('description');
   }
 
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
   // impact - computed: true, optional: false, required: false
   public get impact() {
     return this.getStringAttribute('impact');
@@ -139,7 +152,7 @@ export class DataAzurermAdvisorRecommendationsRecommendationsList extends cdktn.
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
+    super(terraformResource, terraformAttribute, wrapsSet);
   }
 
   /**
@@ -151,7 +164,7 @@ export class DataAzurermAdvisorRecommendationsRecommendationsList extends cdktn.
 }
 export interface DataAzurermAdvisorRecommendationsTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.73.0/docs/data-sources/advisor_recommendations#read DataAzurermAdvisorRecommendations#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.74.0/docs/data-sources/advisor_recommendations#read DataAzurermAdvisorRecommendations#read}
   */
   readonly read?: string;
 }
@@ -245,7 +258,7 @@ export class DataAzurermAdvisorRecommendationsTimeoutsOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.73.0/docs/data-sources/advisor_recommendations azurerm_advisor_recommendations}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.74.0/docs/data-sources/advisor_recommendations azurerm_advisor_recommendations}
 */
 export class DataAzurermAdvisorRecommendations extends cdktn.TerraformDataSource {
 
@@ -261,7 +274,7 @@ export class DataAzurermAdvisorRecommendations extends cdktn.TerraformDataSource
   * Generates CDKTN code for importing a DataAzurermAdvisorRecommendations resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermAdvisorRecommendations to import
-  * @param importFromId The id of the existing DataAzurermAdvisorRecommendations that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.73.0/docs/data-sources/advisor_recommendations#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzurermAdvisorRecommendations that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.74.0/docs/data-sources/advisor_recommendations#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermAdvisorRecommendations to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -273,7 +286,7 @@ export class DataAzurermAdvisorRecommendations extends cdktn.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.73.0/docs/data-sources/advisor_recommendations azurerm_advisor_recommendations} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.74.0/docs/data-sources/advisor_recommendations azurerm_advisor_recommendations} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -284,7 +297,7 @@ export class DataAzurermAdvisorRecommendations extends cdktn.TerraformDataSource
       terraformResourceType: 'azurerm_advisor_recommendations',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.73.0',
+        providerVersion: '4.74.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -296,7 +309,9 @@ export class DataAzurermAdvisorRecommendations extends cdktn.TerraformDataSource
       forEach: config.forEach
     });
     this._filterByCategory = config.filterByCategory;
+    this._filterByRecommendationTypeGuids = config.filterByRecommendationTypeGuids;
     this._filterByResourceGroups = config.filterByResourceGroups;
+    this._filterByResourceIds = config.filterByResourceIds;
     this._id = config.id;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -321,6 +336,22 @@ export class DataAzurermAdvisorRecommendations extends cdktn.TerraformDataSource
     return this._filterByCategory;
   }
 
+  // filter_by_recommendation_type_guids - computed: false, optional: true, required: false
+  private _filterByRecommendationTypeGuids?: string[]; 
+  public get filterByRecommendationTypeGuids() {
+    return cdktn.Fn.tolist(this.getListAttribute('filter_by_recommendation_type_guids'));
+  }
+  public set filterByRecommendationTypeGuids(value: string[]) {
+    this._filterByRecommendationTypeGuids = value;
+  }
+  public resetFilterByRecommendationTypeGuids() {
+    this._filterByRecommendationTypeGuids = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterByRecommendationTypeGuidsInput() {
+    return this._filterByRecommendationTypeGuids;
+  }
+
   // filter_by_resource_groups - computed: false, optional: true, required: false
   private _filterByResourceGroups?: string[]; 
   public get filterByResourceGroups() {
@@ -335,6 +366,22 @@ export class DataAzurermAdvisorRecommendations extends cdktn.TerraformDataSource
   // Temporarily expose input value. Use with caution.
   public get filterByResourceGroupsInput() {
     return this._filterByResourceGroups;
+  }
+
+  // filter_by_resource_ids - computed: false, optional: true, required: false
+  private _filterByResourceIds?: string[]; 
+  public get filterByResourceIds() {
+    return cdktn.Fn.tolist(this.getListAttribute('filter_by_resource_ids'));
+  }
+  public set filterByResourceIds(value: string[]) {
+    this._filterByResourceIds = value;
+  }
+  public resetFilterByResourceIds() {
+    this._filterByResourceIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterByResourceIdsInput() {
+    return this._filterByResourceIds;
   }
 
   // id - computed: true, optional: true, required: false
@@ -382,7 +429,9 @@ export class DataAzurermAdvisorRecommendations extends cdktn.TerraformDataSource
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       filter_by_category: cdktn.listMapper(cdktn.stringToTerraform, false)(this._filterByCategory),
+      filter_by_recommendation_type_guids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._filterByRecommendationTypeGuids),
       filter_by_resource_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(this._filterByResourceGroups),
+      filter_by_resource_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._filterByResourceIds),
       id: cdktn.stringToTerraform(this._id),
       timeouts: dataAzurermAdvisorRecommendationsTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -396,8 +445,20 @@ export class DataAzurermAdvisorRecommendations extends cdktn.TerraformDataSource
         type: "set",
         storageClassType: "stringList",
       },
+      filter_by_recommendation_type_guids: {
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._filterByRecommendationTypeGuids),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
       filter_by_resource_groups: {
         value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._filterByResourceGroups),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      filter_by_resource_ids: {
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._filterByResourceIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
