@@ -1506,8 +1506,6 @@ The following submodules are available:
 - [vmwareExpressRouteAuthorization](./vmwareExpressRouteAuthorization.csharp.md)
 - [vmwareNetappVolumeAttachment](./vmwareNetappVolumeAttachment.csharp.md)
 - [vmwarePrivateCloud](./vmwarePrivateCloud.csharp.md)
-- [voiceServicesCommunicationsGateway](./voiceServicesCommunicationsGateway.csharp.md)
-- [voiceServicesCommunicationsGatewayTestLine](./voiceServicesCommunicationsGatewayTestLine.csharp.md)
 - [vpnGateway](./vpnGateway.csharp.md)
 - [vpnGatewayConnection](./vpnGatewayConnection.csharp.md)
 - [vpnGatewayNatRule](./vpnGatewayNatRule.csharp.md)

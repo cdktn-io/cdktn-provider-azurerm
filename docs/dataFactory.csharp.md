@@ -4,7 +4,7 @@
 
 ### DataFactory <a name="DataFactory" id="@cdktn/provider-azurerm.dataFactory.DataFactory"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory azurerm_data_factory}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory azurerm_data_factory}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.dataFactory.DataFactory.Initializer"></a>
 
@@ -638,7 +638,7 @@ The construct id used in the generated config for the DataFactory to import.
 
 The id of the existing DataFactory that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1207,19 +1207,19 @@ new DataFactoryConfig {
 | <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#location DataFactory#location}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#name DataFactory#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#resource_group_name DataFactory#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryConfig.property.customerManagedKeyId">CustomerManagedKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#customer_managed_key_id DataFactory#customer_managed_key_id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryConfig.property.customerManagedKeyIdentityId">CustomerManagedKeyIdentityId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#customer_managed_key_identity_id DataFactory#customer_managed_key_identity_id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#location DataFactory#location}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#name DataFactory#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryConfig.property.resourceGroupName">ResourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#resource_group_name DataFactory#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryConfig.property.customerManagedKeyId">CustomerManagedKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#customer_managed_key_id DataFactory#customer_managed_key_id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryConfig.property.customerManagedKeyIdentityId">CustomerManagedKeyIdentityId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#customer_managed_key_identity_id DataFactory#customer_managed_key_identity_id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryConfig.property.githubConfiguration">GithubConfiguration</a></code> | <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryGithubConfiguration">DataFactoryGithubConfiguration</a></code> | github_configuration block. |
 | <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryConfig.property.globalParameter">GlobalParameter</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryGlobalParameter">DataFactoryGlobalParameter</a>[]</code> | global_parameter block. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#id DataFactory#id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#id DataFactory#id}. |
 | <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryConfig.property.identity">Identity</a></code> | <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryIdentity">DataFactoryIdentity</a></code> | identity block. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryConfig.property.managedVirtualNetworkEnabled">ManagedVirtualNetworkEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#managed_virtual_network_enabled DataFactory#managed_virtual_network_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryConfig.property.publicNetworkEnabled">PublicNetworkEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#public_network_enabled DataFactory#public_network_enabled}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryConfig.property.purviewId">PurviewId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#purview_id DataFactory#purview_id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#tags DataFactory#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryConfig.property.managedVirtualNetworkEnabled">ManagedVirtualNetworkEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#managed_virtual_network_enabled DataFactory#managed_virtual_network_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryConfig.property.publicNetworkEnabled">PublicNetworkEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#public_network_enabled DataFactory#public_network_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryConfig.property.purviewId">PurviewId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#purview_id DataFactory#purview_id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#tags DataFactory#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryTimeouts">DataFactoryTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryConfig.property.vstsConfiguration">VstsConfiguration</a></code> | <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryVstsConfiguration">DataFactoryVstsConfiguration</a></code> | vsts_configuration block. |
 
@@ -1303,7 +1303,7 @@ public string Location { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#location DataFactory#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#location DataFactory#location}.
 
 ---
 
@@ -1315,7 +1315,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#name DataFactory#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#name DataFactory#name}.
 
 ---
 
@@ -1327,7 +1327,7 @@ public string ResourceGroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#resource_group_name DataFactory#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#resource_group_name DataFactory#resource_group_name}.
 
 ---
 
@@ -1339,7 +1339,7 @@ public string CustomerManagedKeyId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#customer_managed_key_id DataFactory#customer_managed_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#customer_managed_key_id DataFactory#customer_managed_key_id}.
 
 ---
 
@@ -1351,7 +1351,7 @@ public string CustomerManagedKeyIdentityId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#customer_managed_key_identity_id DataFactory#customer_managed_key_identity_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#customer_managed_key_identity_id DataFactory#customer_managed_key_identity_id}.
 
 ---
 
@@ -1365,7 +1365,7 @@ public DataFactoryGithubConfiguration GithubConfiguration { get; set; }
 
 github_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#github_configuration DataFactory#github_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#github_configuration DataFactory#github_configuration}
 
 ---
 
@@ -1379,7 +1379,7 @@ public IResolvable|DataFactoryGlobalParameter[] GlobalParameter { get; set; }
 
 global_parameter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#global_parameter DataFactory#global_parameter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#global_parameter DataFactory#global_parameter}
 
 ---
 
@@ -1391,7 +1391,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#id DataFactory#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#id DataFactory#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1408,7 +1408,7 @@ public DataFactoryIdentity Identity { get; set; }
 
 identity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#identity DataFactory#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#identity DataFactory#identity}
 
 ---
 
@@ -1420,7 +1420,7 @@ public bool|IResolvable ManagedVirtualNetworkEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#managed_virtual_network_enabled DataFactory#managed_virtual_network_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#managed_virtual_network_enabled DataFactory#managed_virtual_network_enabled}.
 
 ---
 
@@ -1432,7 +1432,7 @@ public bool|IResolvable PublicNetworkEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#public_network_enabled DataFactory#public_network_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#public_network_enabled DataFactory#public_network_enabled}.
 
 ---
 
@@ -1444,7 +1444,7 @@ public string PurviewId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#purview_id DataFactory#purview_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#purview_id DataFactory#purview_id}.
 
 ---
 
@@ -1456,7 +1456,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#tags DataFactory#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#tags DataFactory#tags}.
 
 ---
 
@@ -1470,7 +1470,7 @@ public DataFactoryTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#timeouts DataFactory#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#timeouts DataFactory#timeouts}
 
 ---
 
@@ -1484,7 +1484,7 @@ public DataFactoryVstsConfiguration VstsConfiguration { get; set; }
 
 vsts_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#vsts_configuration DataFactory#vsts_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#vsts_configuration DataFactory#vsts_configuration}
 
 ---
 
@@ -1509,12 +1509,12 @@ new DataFactoryGithubConfiguration {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryGithubConfiguration.property.accountName">AccountName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#account_name DataFactory#account_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryGithubConfiguration.property.branchName">BranchName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#branch_name DataFactory#branch_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryGithubConfiguration.property.repositoryName">RepositoryName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#repository_name DataFactory#repository_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryGithubConfiguration.property.rootFolder">RootFolder</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#root_folder DataFactory#root_folder}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryGithubConfiguration.property.gitUrl">GitUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#git_url DataFactory#git_url}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryGithubConfiguration.property.publishingEnabled">PublishingEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#publishing_enabled DataFactory#publishing_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryGithubConfiguration.property.accountName">AccountName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#account_name DataFactory#account_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryGithubConfiguration.property.branchName">BranchName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#branch_name DataFactory#branch_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryGithubConfiguration.property.repositoryName">RepositoryName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#repository_name DataFactory#repository_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryGithubConfiguration.property.rootFolder">RootFolder</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#root_folder DataFactory#root_folder}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryGithubConfiguration.property.gitUrl">GitUrl</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#git_url DataFactory#git_url}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryGithubConfiguration.property.publishingEnabled">PublishingEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#publishing_enabled DataFactory#publishing_enabled}. |
 
 ---
 
@@ -1526,7 +1526,7 @@ public string AccountName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#account_name DataFactory#account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#account_name DataFactory#account_name}.
 
 ---
 
@@ -1538,7 +1538,7 @@ public string BranchName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#branch_name DataFactory#branch_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#branch_name DataFactory#branch_name}.
 
 ---
 
@@ -1550,7 +1550,7 @@ public string RepositoryName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#repository_name DataFactory#repository_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#repository_name DataFactory#repository_name}.
 
 ---
 
@@ -1562,7 +1562,7 @@ public string RootFolder { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#root_folder DataFactory#root_folder}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#root_folder DataFactory#root_folder}.
 
 ---
 
@@ -1574,7 +1574,7 @@ public string GitUrl { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#git_url DataFactory#git_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#git_url DataFactory#git_url}.
 
 ---
 
@@ -1586,7 +1586,7 @@ public bool|IResolvable PublishingEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#publishing_enabled DataFactory#publishing_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#publishing_enabled DataFactory#publishing_enabled}.
 
 ---
 
@@ -1608,9 +1608,9 @@ new DataFactoryGlobalParameter {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryGlobalParameter.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#name DataFactory#name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryGlobalParameter.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#type DataFactory#type}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryGlobalParameter.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#value DataFactory#value}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryGlobalParameter.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#name DataFactory#name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryGlobalParameter.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#type DataFactory#type}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryGlobalParameter.property.value">Value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#value DataFactory#value}. |
 
 ---
 
@@ -1622,7 +1622,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#name DataFactory#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#name DataFactory#name}.
 
 ---
 
@@ -1634,7 +1634,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#type DataFactory#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#type DataFactory#type}.
 
 ---
 
@@ -1646,7 +1646,7 @@ public string Value { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#value DataFactory#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#value DataFactory#value}.
 
 ---
 
@@ -1667,8 +1667,8 @@ new DataFactoryIdentity {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryIdentity.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#type DataFactory#type}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryIdentity.property.identityIds">IdentityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#identity_ids DataFactory#identity_ids}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryIdentity.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#type DataFactory#type}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryIdentity.property.identityIds">IdentityIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#identity_ids DataFactory#identity_ids}. |
 
 ---
 
@@ -1680,7 +1680,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#type DataFactory#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#type DataFactory#type}.
 
 ---
 
@@ -1692,7 +1692,7 @@ public string[] IdentityIds { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#identity_ids DataFactory#identity_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#identity_ids DataFactory#identity_ids}.
 
 ---
 
@@ -1715,10 +1715,10 @@ new DataFactoryTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#create DataFactory#create}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#delete DataFactory#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#read DataFactory#read}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#update DataFactory#update}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#create DataFactory#create}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#delete DataFactory#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#read DataFactory#read}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#update DataFactory#update}. |
 
 ---
 
@@ -1730,7 +1730,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#create DataFactory#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#create DataFactory#create}.
 
 ---
 
@@ -1742,7 +1742,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#delete DataFactory#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#delete DataFactory#delete}.
 
 ---
 
@@ -1754,7 +1754,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#read DataFactory#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#read DataFactory#read}.
 
 ---
 
@@ -1766,7 +1766,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#update DataFactory#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#update DataFactory#update}.
 
 ---
 
@@ -1792,13 +1792,13 @@ new DataFactoryVstsConfiguration {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryVstsConfiguration.property.accountName">AccountName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#account_name DataFactory#account_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryVstsConfiguration.property.branchName">BranchName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#branch_name DataFactory#branch_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryVstsConfiguration.property.projectName">ProjectName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#project_name DataFactory#project_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryVstsConfiguration.property.repositoryName">RepositoryName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#repository_name DataFactory#repository_name}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryVstsConfiguration.property.rootFolder">RootFolder</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#root_folder DataFactory#root_folder}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryVstsConfiguration.property.tenantId">TenantId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#tenant_id DataFactory#tenant_id}. |
-| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryVstsConfiguration.property.publishingEnabled">PublishingEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#publishing_enabled DataFactory#publishing_enabled}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryVstsConfiguration.property.accountName">AccountName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#account_name DataFactory#account_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryVstsConfiguration.property.branchName">BranchName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#branch_name DataFactory#branch_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryVstsConfiguration.property.projectName">ProjectName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#project_name DataFactory#project_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryVstsConfiguration.property.repositoryName">RepositoryName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#repository_name DataFactory#repository_name}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryVstsConfiguration.property.rootFolder">RootFolder</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#root_folder DataFactory#root_folder}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryVstsConfiguration.property.tenantId">TenantId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#tenant_id DataFactory#tenant_id}. |
+| <code><a href="#@cdktn/provider-azurerm.dataFactory.DataFactoryVstsConfiguration.property.publishingEnabled">PublishingEnabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#publishing_enabled DataFactory#publishing_enabled}. |
 
 ---
 
@@ -1810,7 +1810,7 @@ public string AccountName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#account_name DataFactory#account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#account_name DataFactory#account_name}.
 
 ---
 
@@ -1822,7 +1822,7 @@ public string BranchName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#branch_name DataFactory#branch_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#branch_name DataFactory#branch_name}.
 
 ---
 
@@ -1834,7 +1834,7 @@ public string ProjectName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#project_name DataFactory#project_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#project_name DataFactory#project_name}.
 
 ---
 
@@ -1846,7 +1846,7 @@ public string RepositoryName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#repository_name DataFactory#repository_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#repository_name DataFactory#repository_name}.
 
 ---
 
@@ -1858,7 +1858,7 @@ public string RootFolder { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#root_folder DataFactory#root_folder}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#root_folder DataFactory#root_folder}.
 
 ---
 
@@ -1870,7 +1870,7 @@ public string TenantId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#tenant_id DataFactory#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#tenant_id DataFactory#tenant_id}.
 
 ---
 
@@ -1882,7 +1882,7 @@ public bool|IResolvable PublishingEnabled { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/data_factory#publishing_enabled DataFactory#publishing_enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/data_factory#publishing_enabled DataFactory#publishing_enabled}.
 
 ---
 

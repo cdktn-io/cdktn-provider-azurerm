@@ -4,7 +4,7 @@
 
 ### VmwareNetappVolumeAttachment <a name="VmwareNetappVolumeAttachment" id="@cdktn/provider-azurerm.vmwareNetappVolumeAttachment.VmwareNetappVolumeAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vmware_netapp_volume_attachment azurerm_vmware_netapp_volume_attachment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vmware_netapp_volume_attachment azurerm_vmware_netapp_volume_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.vmwareNetappVolumeAttachment.VmwareNetappVolumeAttachment.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the VmwareNetappVolumeAttachme
 
 The id of the existing VmwareNetappVolumeAttachment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vmware_netapp_volume_attachment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vmware_netapp_volume_attachment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -842,10 +842,10 @@ const vmwareNetappVolumeAttachmentConfig: vmwareNetappVolumeAttachment.VmwareNet
 | <code><a href="#@cdktn/provider-azurerm.vmwareNetappVolumeAttachment.VmwareNetappVolumeAttachmentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.vmwareNetappVolumeAttachment.VmwareNetappVolumeAttachmentConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.vmwareNetappVolumeAttachment.VmwareNetappVolumeAttachmentConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.vmwareNetappVolumeAttachment.VmwareNetappVolumeAttachmentConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vmware_netapp_volume_attachment#name VmwareNetappVolumeAttachment#name}. |
-| <code><a href="#@cdktn/provider-azurerm.vmwareNetappVolumeAttachment.VmwareNetappVolumeAttachmentConfig.property.netappVolumeId">netappVolumeId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vmware_netapp_volume_attachment#netapp_volume_id VmwareNetappVolumeAttachment#netapp_volume_id}. |
-| <code><a href="#@cdktn/provider-azurerm.vmwareNetappVolumeAttachment.VmwareNetappVolumeAttachmentConfig.property.vmwareClusterId">vmwareClusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vmware_netapp_volume_attachment#vmware_cluster_id VmwareNetappVolumeAttachment#vmware_cluster_id}. |
-| <code><a href="#@cdktn/provider-azurerm.vmwareNetappVolumeAttachment.VmwareNetappVolumeAttachmentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vmware_netapp_volume_attachment#id VmwareNetappVolumeAttachment#id}. |
+| <code><a href="#@cdktn/provider-azurerm.vmwareNetappVolumeAttachment.VmwareNetappVolumeAttachmentConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vmware_netapp_volume_attachment#name VmwareNetappVolumeAttachment#name}. |
+| <code><a href="#@cdktn/provider-azurerm.vmwareNetappVolumeAttachment.VmwareNetappVolumeAttachmentConfig.property.netappVolumeId">netappVolumeId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vmware_netapp_volume_attachment#netapp_volume_id VmwareNetappVolumeAttachment#netapp_volume_id}. |
+| <code><a href="#@cdktn/provider-azurerm.vmwareNetappVolumeAttachment.VmwareNetappVolumeAttachmentConfig.property.vmwareClusterId">vmwareClusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vmware_netapp_volume_attachment#vmware_cluster_id VmwareNetappVolumeAttachment#vmware_cluster_id}. |
+| <code><a href="#@cdktn/provider-azurerm.vmwareNetappVolumeAttachment.VmwareNetappVolumeAttachmentConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vmware_netapp_volume_attachment#id VmwareNetappVolumeAttachment#id}. |
 | <code><a href="#@cdktn/provider-azurerm.vmwareNetappVolumeAttachment.VmwareNetappVolumeAttachmentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.vmwareNetappVolumeAttachment.VmwareNetappVolumeAttachmentTimeouts">VmwareNetappVolumeAttachmentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -928,7 +928,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vmware_netapp_volume_attachment#name VmwareNetappVolumeAttachment#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vmware_netapp_volume_attachment#name VmwareNetappVolumeAttachment#name}.
 
 ---
 
@@ -940,7 +940,7 @@ public readonly netappVolumeId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vmware_netapp_volume_attachment#netapp_volume_id VmwareNetappVolumeAttachment#netapp_volume_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vmware_netapp_volume_attachment#netapp_volume_id VmwareNetappVolumeAttachment#netapp_volume_id}.
 
 ---
 
@@ -952,7 +952,7 @@ public readonly vmwareClusterId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vmware_netapp_volume_attachment#vmware_cluster_id VmwareNetappVolumeAttachment#vmware_cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vmware_netapp_volume_attachment#vmware_cluster_id VmwareNetappVolumeAttachment#vmware_cluster_id}.
 
 ---
 
@@ -964,7 +964,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vmware_netapp_volume_attachment#id VmwareNetappVolumeAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vmware_netapp_volume_attachment#id VmwareNetappVolumeAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -981,7 +981,7 @@ public readonly timeouts: VmwareNetappVolumeAttachmentTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vmware_netapp_volume_attachment#timeouts VmwareNetappVolumeAttachment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vmware_netapp_volume_attachment#timeouts VmwareNetappVolumeAttachment#timeouts}
 
 ---
 
@@ -999,9 +999,9 @@ const vmwareNetappVolumeAttachmentTimeouts: vmwareNetappVolumeAttachment.VmwareN
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.vmwareNetappVolumeAttachment.VmwareNetappVolumeAttachmentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vmware_netapp_volume_attachment#create VmwareNetappVolumeAttachment#create}. |
-| <code><a href="#@cdktn/provider-azurerm.vmwareNetappVolumeAttachment.VmwareNetappVolumeAttachmentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vmware_netapp_volume_attachment#delete VmwareNetappVolumeAttachment#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.vmwareNetappVolumeAttachment.VmwareNetappVolumeAttachmentTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vmware_netapp_volume_attachment#read VmwareNetappVolumeAttachment#read}. |
+| <code><a href="#@cdktn/provider-azurerm.vmwareNetappVolumeAttachment.VmwareNetappVolumeAttachmentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vmware_netapp_volume_attachment#create VmwareNetappVolumeAttachment#create}. |
+| <code><a href="#@cdktn/provider-azurerm.vmwareNetappVolumeAttachment.VmwareNetappVolumeAttachmentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vmware_netapp_volume_attachment#delete VmwareNetappVolumeAttachment#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.vmwareNetappVolumeAttachment.VmwareNetappVolumeAttachmentTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vmware_netapp_volume_attachment#read VmwareNetappVolumeAttachment#read}. |
 
 ---
 
@@ -1013,7 +1013,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vmware_netapp_volume_attachment#create VmwareNetappVolumeAttachment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vmware_netapp_volume_attachment#create VmwareNetappVolumeAttachment#create}.
 
 ---
 
@@ -1025,7 +1025,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vmware_netapp_volume_attachment#delete VmwareNetappVolumeAttachment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vmware_netapp_volume_attachment#delete VmwareNetappVolumeAttachment#delete}.
 
 ---
 
@@ -1037,7 +1037,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/vmware_netapp_volume_attachment#read VmwareNetappVolumeAttachment#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/vmware_netapp_volume_attachment#read VmwareNetappVolumeAttachment#read}.
 
 ---
 

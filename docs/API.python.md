@@ -1506,8 +1506,6 @@ The following submodules are available:
 - [vmwareExpressRouteAuthorization](./vmwareExpressRouteAuthorization.python.md)
 - [vmwareNetappVolumeAttachment](./vmwareNetappVolumeAttachment.python.md)
 - [vmwarePrivateCloud](./vmwarePrivateCloud.python.md)
-- [voiceServicesCommunicationsGateway](./voiceServicesCommunicationsGateway.python.md)
-- [voiceServicesCommunicationsGatewayTestLine](./voiceServicesCommunicationsGatewayTestLine.python.md)
 - [vpnGateway](./vpnGateway.python.md)
 - [vpnGatewayConnection](./vpnGatewayConnection.python.md)
 - [vpnGatewayNatRule](./vpnGatewayNatRule.python.md)

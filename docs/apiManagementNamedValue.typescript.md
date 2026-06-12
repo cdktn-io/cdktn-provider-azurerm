@@ -4,7 +4,7 @@
 
 ### ApiManagementNamedValue <a name="ApiManagementNamedValue" id="@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValue"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_named_value azurerm_api_management_named_value}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_named_value azurerm_api_management_named_value}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValue.Initializer"></a>
 
@@ -557,7 +557,7 @@ The construct id used in the generated config for the ApiManagementNamedValue to
 
 The id of the existing ApiManagementNamedValue that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_named_value#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_named_value#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -993,15 +993,15 @@ const apiManagementNamedValueConfig: apiManagementNamedValue.ApiManagementNamedV
 | <code><a href="#@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueConfig.property.apiManagementName">apiManagementName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_named_value#api_management_name ApiManagementNamedValue#api_management_name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueConfig.property.displayName">displayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_named_value#display_name ApiManagementNamedValue#display_name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_named_value#name ApiManagementNamedValue#name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_named_value#resource_group_name ApiManagementNamedValue#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_named_value#id ApiManagementNamedValue#id}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueConfig.property.secret">secret</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_named_value#secret ApiManagementNamedValue#secret}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueConfig.property.tags">tags</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_named_value#tags ApiManagementNamedValue#tags}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueConfig.property.apiManagementName">apiManagementName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_named_value#api_management_name ApiManagementNamedValue#api_management_name}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueConfig.property.displayName">displayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_named_value#display_name ApiManagementNamedValue#display_name}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_named_value#name ApiManagementNamedValue#name}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_named_value#resource_group_name ApiManagementNamedValue#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_named_value#id ApiManagementNamedValue#id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueConfig.property.secret">secret</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_named_value#secret ApiManagementNamedValue#secret}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueConfig.property.tags">tags</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_named_value#tags ApiManagementNamedValue#tags}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueTimeouts">ApiManagementNamedValueTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueConfig.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_named_value#value ApiManagementNamedValue#value}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueConfig.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_named_value#value ApiManagementNamedValue#value}. |
 | <code><a href="#@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueConfig.property.valueFromKeyVault">valueFromKeyVault</a></code> | <code><a href="#@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueValueFromKeyVault">ApiManagementNamedValueValueFromKeyVault</a></code> | value_from_key_vault block. |
 
 ---
@@ -1084,7 +1084,7 @@ public readonly apiManagementName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_named_value#api_management_name ApiManagementNamedValue#api_management_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_named_value#api_management_name ApiManagementNamedValue#api_management_name}.
 
 ---
 
@@ -1096,7 +1096,7 @@ public readonly displayName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_named_value#display_name ApiManagementNamedValue#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_named_value#display_name ApiManagementNamedValue#display_name}.
 
 ---
 
@@ -1108,7 +1108,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_named_value#name ApiManagementNamedValue#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_named_value#name ApiManagementNamedValue#name}.
 
 ---
 
@@ -1120,7 +1120,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_named_value#resource_group_name ApiManagementNamedValue#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_named_value#resource_group_name ApiManagementNamedValue#resource_group_name}.
 
 ---
 
@@ -1132,7 +1132,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_named_value#id ApiManagementNamedValue#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_named_value#id ApiManagementNamedValue#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1147,7 +1147,7 @@ public readonly secret: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_named_value#secret ApiManagementNamedValue#secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_named_value#secret ApiManagementNamedValue#secret}.
 
 ---
 
@@ -1159,7 +1159,7 @@ public readonly tags: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_named_value#tags ApiManagementNamedValue#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_named_value#tags ApiManagementNamedValue#tags}.
 
 ---
 
@@ -1173,7 +1173,7 @@ public readonly timeouts: ApiManagementNamedValueTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_named_value#timeouts ApiManagementNamedValue#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_named_value#timeouts ApiManagementNamedValue#timeouts}
 
 ---
 
@@ -1185,7 +1185,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_named_value#value ApiManagementNamedValue#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_named_value#value ApiManagementNamedValue#value}.
 
 ---
 
@@ -1199,7 +1199,7 @@ public readonly valueFromKeyVault: ApiManagementNamedValueValueFromKeyVault;
 
 value_from_key_vault block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_named_value#value_from_key_vault ApiManagementNamedValue#value_from_key_vault}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_named_value#value_from_key_vault ApiManagementNamedValue#value_from_key_vault}
 
 ---
 
@@ -1217,10 +1217,10 @@ const apiManagementNamedValueTimeouts: apiManagementNamedValue.ApiManagementName
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_named_value#create ApiManagementNamedValue#create}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_named_value#delete ApiManagementNamedValue#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_named_value#read ApiManagementNamedValue#read}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_named_value#update ApiManagementNamedValue#update}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_named_value#create ApiManagementNamedValue#create}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_named_value#delete ApiManagementNamedValue#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_named_value#read ApiManagementNamedValue#read}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_named_value#update ApiManagementNamedValue#update}. |
 
 ---
 
@@ -1232,7 +1232,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_named_value#create ApiManagementNamedValue#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_named_value#create ApiManagementNamedValue#create}.
 
 ---
 
@@ -1244,7 +1244,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_named_value#delete ApiManagementNamedValue#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_named_value#delete ApiManagementNamedValue#delete}.
 
 ---
 
@@ -1256,7 +1256,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_named_value#read ApiManagementNamedValue#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_named_value#read ApiManagementNamedValue#read}.
 
 ---
 
@@ -1268,7 +1268,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_named_value#update ApiManagementNamedValue#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_named_value#update ApiManagementNamedValue#update}.
 
 ---
 
@@ -1286,8 +1286,8 @@ const apiManagementNamedValueValueFromKeyVault: apiManagementNamedValue.ApiManag
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueValueFromKeyVault.property.secretId">secretId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_named_value#secret_id ApiManagementNamedValue#secret_id}. |
-| <code><a href="#@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueValueFromKeyVault.property.identityClientId">identityClientId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_named_value#identity_client_id ApiManagementNamedValue#identity_client_id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueValueFromKeyVault.property.secretId">secretId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_named_value#secret_id ApiManagementNamedValue#secret_id}. |
+| <code><a href="#@cdktn/provider-azurerm.apiManagementNamedValue.ApiManagementNamedValueValueFromKeyVault.property.identityClientId">identityClientId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_named_value#identity_client_id ApiManagementNamedValue#identity_client_id}. |
 
 ---
 
@@ -1299,7 +1299,7 @@ public readonly secretId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_named_value#secret_id ApiManagementNamedValue#secret_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_named_value#secret_id ApiManagementNamedValue#secret_id}.
 
 ---
 
@@ -1311,7 +1311,7 @@ public readonly identityClientId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_named_value#identity_client_id ApiManagementNamedValue#identity_client_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_named_value#identity_client_id ApiManagementNamedValue#identity_client_id}.
 
 ---
 

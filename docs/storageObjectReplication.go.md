@@ -4,7 +4,7 @@
 
 ### StorageObjectReplication <a name="StorageObjectReplication" id="@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication azurerm_storage_object_replication}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication azurerm_storage_object_replication}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplication.Initializer"></a>
 
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplication.putRules">PutRules</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplication.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplication.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplication.resetMetricsEnabled">ResetMetricsEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplication.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
@@ -420,6 +421,12 @@ func PutTimeouts(value StorageObjectReplicationTimeouts)
 func ResetId()
 ```
 
+##### `ResetMetricsEnabled` <a name="ResetMetricsEnabled" id="@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplication.resetMetricsEnabled"></a>
+
+```go
+func ResetMetricsEnabled()
+```
+
 ##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplication.resetTimeouts"></a>
 
 ```go
@@ -529,7 +536,7 @@ The construct id used in the generated config for the StorageObjectReplication t
 
 The id of the existing StorageObjectReplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -565,11 +572,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.
 | <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplication.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplicationTimeoutsOutputReference">StorageObjectReplicationTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplication.property.destinationStorageAccountIdInput">DestinationStorageAccountIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplication.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplication.property.metricsEnabledInput">MetricsEnabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplication.property.rulesInput">RulesInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplication.property.sourceStorageAccountIdInput">SourceStorageAccountIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplication.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplication.property.destinationStorageAccountId">DestinationStorageAccountId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplication.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplication.property.metricsEnabled">MetricsEnabled</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplication.property.sourceStorageAccountId">SourceStorageAccountId</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -776,6 +785,16 @@ func IdInput() *string
 
 ---
 
+##### `MetricsEnabledInput`<sup>Optional</sup> <a name="MetricsEnabledInput" id="@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplication.property.metricsEnabledInput"></a>
+
+```go
+func MetricsEnabledInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `RulesInput`<sup>Optional</sup> <a name="RulesInput" id="@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplication.property.rulesInput"></a>
 
 ```go
@@ -823,6 +842,16 @@ func Id() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `MetricsEnabled`<sup>Required</sup> <a name="MetricsEnabled" id="@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplication.property.metricsEnabled"></a>
+
+```go
+func MetricsEnabled() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -875,6 +904,7 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageobjectr
 	Rules: interface{},
 	SourceStorageAccountId: *string,
 	Id: *string,
+	MetricsEnabled: interface{},
 	Timeouts: github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16.storageObjectReplication.StorageObjectReplicationTimeouts,
 }
 ```
@@ -890,10 +920,11 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageobjectr
 | <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplicationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplicationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplicationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplicationConfig.property.destinationStorageAccountId">DestinationStorageAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#destination_storage_account_id StorageObjectReplication#destination_storage_account_id}. |
+| <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplicationConfig.property.destinationStorageAccountId">DestinationStorageAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#destination_storage_account_id StorageObjectReplication#destination_storage_account_id}. |
 | <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplicationConfig.property.rules">Rules</a></code> | <code>interface{}</code> | rules block. |
-| <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplicationConfig.property.sourceStorageAccountId">SourceStorageAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#source_storage_account_id StorageObjectReplication#source_storage_account_id}. |
-| <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplicationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#id StorageObjectReplication#id}. |
+| <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplicationConfig.property.sourceStorageAccountId">SourceStorageAccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#source_storage_account_id StorageObjectReplication#source_storage_account_id}. |
+| <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplicationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#id StorageObjectReplication#id}. |
+| <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplicationConfig.property.metricsEnabled">MetricsEnabled</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#metrics_enabled StorageObjectReplication#metrics_enabled}. |
 | <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplicationConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplicationTimeouts">StorageObjectReplicationTimeouts</a></code> | timeouts block. |
 
 ---
@@ -976,7 +1007,7 @@ DestinationStorageAccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#destination_storage_account_id StorageObjectReplication#destination_storage_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#destination_storage_account_id StorageObjectReplication#destination_storage_account_id}.
 
 ---
 
@@ -990,7 +1021,7 @@ Rules interface{}
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#rules StorageObjectReplication#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#rules StorageObjectReplication#rules}
 
 ---
 
@@ -1002,7 +1033,7 @@ SourceStorageAccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#source_storage_account_id StorageObjectReplication#source_storage_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#source_storage_account_id StorageObjectReplication#source_storage_account_id}.
 
 ---
 
@@ -1014,10 +1045,22 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#id StorageObjectReplication#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#id StorageObjectReplication#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `MetricsEnabled`<sup>Optional</sup> <a name="MetricsEnabled" id="@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplicationConfig.property.metricsEnabled"></a>
+
+```go
+MetricsEnabled interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#metrics_enabled StorageObjectReplication#metrics_enabled}.
 
 ---
 
@@ -1031,7 +1074,7 @@ Timeouts StorageObjectReplicationTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#timeouts StorageObjectReplication#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#timeouts StorageObjectReplication#timeouts}
 
 ---
 
@@ -1054,10 +1097,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageobjectr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplicationRules.property.destinationContainerName">DestinationContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#destination_container_name StorageObjectReplication#destination_container_name}. |
-| <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplicationRules.property.sourceContainerName">SourceContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#source_container_name StorageObjectReplication#source_container_name}. |
-| <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplicationRules.property.copyBlobsCreatedAfter">CopyBlobsCreatedAfter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#copy_blobs_created_after StorageObjectReplication#copy_blobs_created_after}. |
-| <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplicationRules.property.filterOutBlobsWithPrefix">FilterOutBlobsWithPrefix</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#filter_out_blobs_with_prefix StorageObjectReplication#filter_out_blobs_with_prefix}. |
+| <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplicationRules.property.destinationContainerName">DestinationContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#destination_container_name StorageObjectReplication#destination_container_name}. |
+| <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplicationRules.property.sourceContainerName">SourceContainerName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#source_container_name StorageObjectReplication#source_container_name}. |
+| <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplicationRules.property.copyBlobsCreatedAfter">CopyBlobsCreatedAfter</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#copy_blobs_created_after StorageObjectReplication#copy_blobs_created_after}. |
+| <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplicationRules.property.filterOutBlobsWithPrefix">FilterOutBlobsWithPrefix</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#filter_out_blobs_with_prefix StorageObjectReplication#filter_out_blobs_with_prefix}. |
 
 ---
 
@@ -1069,7 +1112,7 @@ DestinationContainerName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#destination_container_name StorageObjectReplication#destination_container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#destination_container_name StorageObjectReplication#destination_container_name}.
 
 ---
 
@@ -1081,7 +1124,7 @@ SourceContainerName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#source_container_name StorageObjectReplication#source_container_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#source_container_name StorageObjectReplication#source_container_name}.
 
 ---
 
@@ -1093,7 +1136,7 @@ CopyBlobsCreatedAfter *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#copy_blobs_created_after StorageObjectReplication#copy_blobs_created_after}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#copy_blobs_created_after StorageObjectReplication#copy_blobs_created_after}.
 
 ---
 
@@ -1105,7 +1148,7 @@ FilterOutBlobsWithPrefix *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#filter_out_blobs_with_prefix StorageObjectReplication#filter_out_blobs_with_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#filter_out_blobs_with_prefix StorageObjectReplication#filter_out_blobs_with_prefix}.
 
 ---
 
@@ -1128,10 +1171,10 @@ import "github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v16/storageobjectr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplicationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#create StorageObjectReplication#create}. |
-| <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplicationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#delete StorageObjectReplication#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplicationTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#read StorageObjectReplication#read}. |
-| <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplicationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#update StorageObjectReplication#update}. |
+| <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplicationTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#create StorageObjectReplication#create}. |
+| <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplicationTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#delete StorageObjectReplication#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplicationTimeouts.property.read">Read</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#read StorageObjectReplication#read}. |
+| <code><a href="#@cdktn/provider-azurerm.storageObjectReplication.StorageObjectReplicationTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#update StorageObjectReplication#update}. |
 
 ---
 
@@ -1143,7 +1186,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#create StorageObjectReplication#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#create StorageObjectReplication#create}.
 
 ---
 
@@ -1155,7 +1198,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#delete StorageObjectReplication#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#delete StorageObjectReplication#delete}.
 
 ---
 
@@ -1167,7 +1210,7 @@ Read *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#read StorageObjectReplication#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#read StorageObjectReplication#read}.
 
 ---
 
@@ -1179,7 +1222,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_object_replication#update StorageObjectReplication#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_object_replication#update StorageObjectReplication#update}.
 
 ---
 

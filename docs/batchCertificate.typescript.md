@@ -4,7 +4,7 @@
 
 ### BatchCertificate <a name="BatchCertificate" id="@cdktn/provider-azurerm.batchCertificate.BatchCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_certificate azurerm_batch_certificate}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_certificate azurerm_batch_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-azurerm.batchCertificate.BatchCertificate.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the BatchCertificate to import
 
 The id of the existing BatchCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -959,14 +959,14 @@ const batchCertificateConfig: batchCertificate.BatchCertificateConfig = { ... }
 | <code><a href="#@cdktn/provider-azurerm.batchCertificate.BatchCertificateConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.batchCertificate.BatchCertificateConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-azurerm.batchCertificate.BatchCertificateConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-azurerm.batchCertificate.BatchCertificateConfig.property.accountName">accountName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_certificate#account_name BatchCertificate#account_name}. |
-| <code><a href="#@cdktn/provider-azurerm.batchCertificate.BatchCertificateConfig.property.certificate">certificate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_certificate#certificate BatchCertificate#certificate}. |
-| <code><a href="#@cdktn/provider-azurerm.batchCertificate.BatchCertificateConfig.property.format">format</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_certificate#format BatchCertificate#format}. |
-| <code><a href="#@cdktn/provider-azurerm.batchCertificate.BatchCertificateConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_certificate#resource_group_name BatchCertificate#resource_group_name}. |
-| <code><a href="#@cdktn/provider-azurerm.batchCertificate.BatchCertificateConfig.property.thumbprint">thumbprint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_certificate#thumbprint BatchCertificate#thumbprint}. |
-| <code><a href="#@cdktn/provider-azurerm.batchCertificate.BatchCertificateConfig.property.thumbprintAlgorithm">thumbprintAlgorithm</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_certificate#thumbprint_algorithm BatchCertificate#thumbprint_algorithm}. |
-| <code><a href="#@cdktn/provider-azurerm.batchCertificate.BatchCertificateConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_certificate#id BatchCertificate#id}. |
-| <code><a href="#@cdktn/provider-azurerm.batchCertificate.BatchCertificateConfig.property.password">password</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_certificate#password BatchCertificate#password}. |
+| <code><a href="#@cdktn/provider-azurerm.batchCertificate.BatchCertificateConfig.property.accountName">accountName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_certificate#account_name BatchCertificate#account_name}. |
+| <code><a href="#@cdktn/provider-azurerm.batchCertificate.BatchCertificateConfig.property.certificate">certificate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_certificate#certificate BatchCertificate#certificate}. |
+| <code><a href="#@cdktn/provider-azurerm.batchCertificate.BatchCertificateConfig.property.format">format</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_certificate#format BatchCertificate#format}. |
+| <code><a href="#@cdktn/provider-azurerm.batchCertificate.BatchCertificateConfig.property.resourceGroupName">resourceGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_certificate#resource_group_name BatchCertificate#resource_group_name}. |
+| <code><a href="#@cdktn/provider-azurerm.batchCertificate.BatchCertificateConfig.property.thumbprint">thumbprint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_certificate#thumbprint BatchCertificate#thumbprint}. |
+| <code><a href="#@cdktn/provider-azurerm.batchCertificate.BatchCertificateConfig.property.thumbprintAlgorithm">thumbprintAlgorithm</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_certificate#thumbprint_algorithm BatchCertificate#thumbprint_algorithm}. |
+| <code><a href="#@cdktn/provider-azurerm.batchCertificate.BatchCertificateConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_certificate#id BatchCertificate#id}. |
+| <code><a href="#@cdktn/provider-azurerm.batchCertificate.BatchCertificateConfig.property.password">password</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_certificate#password BatchCertificate#password}. |
 | <code><a href="#@cdktn/provider-azurerm.batchCertificate.BatchCertificateConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-azurerm.batchCertificate.BatchCertificateTimeouts">BatchCertificateTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1049,7 +1049,7 @@ public readonly accountName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_certificate#account_name BatchCertificate#account_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_certificate#account_name BatchCertificate#account_name}.
 
 ---
 
@@ -1061,7 +1061,7 @@ public readonly certificate: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_certificate#certificate BatchCertificate#certificate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_certificate#certificate BatchCertificate#certificate}.
 
 ---
 
@@ -1073,7 +1073,7 @@ public readonly format: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_certificate#format BatchCertificate#format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_certificate#format BatchCertificate#format}.
 
 ---
 
@@ -1085,7 +1085,7 @@ public readonly resourceGroupName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_certificate#resource_group_name BatchCertificate#resource_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_certificate#resource_group_name BatchCertificate#resource_group_name}.
 
 ---
 
@@ -1097,7 +1097,7 @@ public readonly thumbprint: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_certificate#thumbprint BatchCertificate#thumbprint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_certificate#thumbprint BatchCertificate#thumbprint}.
 
 ---
 
@@ -1109,7 +1109,7 @@ public readonly thumbprintAlgorithm: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_certificate#thumbprint_algorithm BatchCertificate#thumbprint_algorithm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_certificate#thumbprint_algorithm BatchCertificate#thumbprint_algorithm}.
 
 ---
 
@@ -1121,7 +1121,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_certificate#id BatchCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_certificate#id BatchCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1136,7 +1136,7 @@ public readonly password: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_certificate#password BatchCertificate#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_certificate#password BatchCertificate#password}.
 
 ---
 
@@ -1150,7 +1150,7 @@ public readonly timeouts: BatchCertificateTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_certificate#timeouts BatchCertificate#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_certificate#timeouts BatchCertificate#timeouts}
 
 ---
 
@@ -1168,10 +1168,10 @@ const batchCertificateTimeouts: batchCertificate.BatchCertificateTimeouts = { ..
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-azurerm.batchCertificate.BatchCertificateTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_certificate#create BatchCertificate#create}. |
-| <code><a href="#@cdktn/provider-azurerm.batchCertificate.BatchCertificateTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_certificate#delete BatchCertificate#delete}. |
-| <code><a href="#@cdktn/provider-azurerm.batchCertificate.BatchCertificateTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_certificate#read BatchCertificate#read}. |
-| <code><a href="#@cdktn/provider-azurerm.batchCertificate.BatchCertificateTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_certificate#update BatchCertificate#update}. |
+| <code><a href="#@cdktn/provider-azurerm.batchCertificate.BatchCertificateTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_certificate#create BatchCertificate#create}. |
+| <code><a href="#@cdktn/provider-azurerm.batchCertificate.BatchCertificateTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_certificate#delete BatchCertificate#delete}. |
+| <code><a href="#@cdktn/provider-azurerm.batchCertificate.BatchCertificateTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_certificate#read BatchCertificate#read}. |
+| <code><a href="#@cdktn/provider-azurerm.batchCertificate.BatchCertificateTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_certificate#update BatchCertificate#update}. |
 
 ---
 
@@ -1183,7 +1183,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_certificate#create BatchCertificate#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_certificate#create BatchCertificate#create}.
 
 ---
 
@@ -1195,7 +1195,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_certificate#delete BatchCertificate#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_certificate#delete BatchCertificate#delete}.
 
 ---
 
@@ -1207,7 +1207,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_certificate#read BatchCertificate#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_certificate#read BatchCertificate#read}.
 
 ---
 
@@ -1219,7 +1219,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/batch_certificate#update BatchCertificate#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/batch_certificate#update BatchCertificate#update}.
 
 ---
 
