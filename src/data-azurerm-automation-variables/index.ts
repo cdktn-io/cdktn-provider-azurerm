@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/automation_variables
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/automation_variables
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktn from 'cdktn';
 
 export interface DataAzurermAutomationVariablesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/automation_variables#automation_account_id DataAzurermAutomationVariables#automation_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/automation_variables#automation_account_id DataAzurermAutomationVariables#automation_account_id}
   */
   readonly automationAccountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/automation_variables#id DataAzurermAutomationVariables#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/automation_variables#id DataAzurermAutomationVariables#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,7 +26,7 @@ export interface DataAzurermAutomationVariablesConfig extends cdktn.TerraformMet
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/automation_variables#timeouts DataAzurermAutomationVariables#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/automation_variables#timeouts DataAzurermAutomationVariables#timeouts}
   */
   readonly timeouts?: DataAzurermAutomationVariablesTimeouts;
 }
@@ -36,7 +36,7 @@ export interface DataAzurermAutomationVariablesBool {
 export function dataAzurermAutomationVariablesBoolToTerraform(struct?: DataAzurermAutomationVariablesBool): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -46,7 +46,7 @@ export function dataAzurermAutomationVariablesBoolToTerraform(struct?: DataAzure
 export function dataAzurermAutomationVariablesBoolToHclTerraform(struct?: DataAzurermAutomationVariablesBool): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -131,7 +131,7 @@ export interface DataAzurermAutomationVariablesDatetime {
 export function dataAzurermAutomationVariablesDatetimeToTerraform(struct?: DataAzurermAutomationVariablesDatetime): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -141,7 +141,7 @@ export function dataAzurermAutomationVariablesDatetimeToTerraform(struct?: DataA
 export function dataAzurermAutomationVariablesDatetimeToHclTerraform(struct?: DataAzurermAutomationVariablesDatetime): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -226,7 +226,7 @@ export interface DataAzurermAutomationVariablesEncrypted {
 export function dataAzurermAutomationVariablesEncryptedToTerraform(struct?: DataAzurermAutomationVariablesEncrypted): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -236,7 +236,7 @@ export function dataAzurermAutomationVariablesEncryptedToTerraform(struct?: Data
 export function dataAzurermAutomationVariablesEncryptedToHclTerraform(struct?: DataAzurermAutomationVariablesEncrypted): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -321,7 +321,7 @@ export interface DataAzurermAutomationVariablesInt {
 export function dataAzurermAutomationVariablesIntToTerraform(struct?: DataAzurermAutomationVariablesInt): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -331,7 +331,7 @@ export function dataAzurermAutomationVariablesIntToTerraform(struct?: DataAzurer
 export function dataAzurermAutomationVariablesIntToHclTerraform(struct?: DataAzurermAutomationVariablesInt): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -416,7 +416,7 @@ export interface DataAzurermAutomationVariablesNull {
 export function dataAzurermAutomationVariablesNullToTerraform(struct?: DataAzurermAutomationVariablesNull): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -426,7 +426,7 @@ export function dataAzurermAutomationVariablesNullToTerraform(struct?: DataAzure
 export function dataAzurermAutomationVariablesNullToHclTerraform(struct?: DataAzurermAutomationVariablesNull): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -511,7 +511,7 @@ export interface DataAzurermAutomationVariablesObject {
 export function dataAzurermAutomationVariablesObjectToTerraform(struct?: DataAzurermAutomationVariablesObject): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -521,7 +521,7 @@ export function dataAzurermAutomationVariablesObjectToTerraform(struct?: DataAzu
 export function dataAzurermAutomationVariablesObjectToHclTerraform(struct?: DataAzurermAutomationVariablesObject): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -606,7 +606,7 @@ export interface DataAzurermAutomationVariablesString {
 export function dataAzurermAutomationVariablesStringToTerraform(struct?: DataAzurermAutomationVariablesString): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -616,7 +616,7 @@ export function dataAzurermAutomationVariablesStringToTerraform(struct?: DataAzu
 export function dataAzurermAutomationVariablesStringToHclTerraform(struct?: DataAzurermAutomationVariablesString): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -697,7 +697,7 @@ export class DataAzurermAutomationVariablesStringList extends cdktn.ComplexList 
 }
 export interface DataAzurermAutomationVariablesTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/automation_variables#read DataAzurermAutomationVariables#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/automation_variables#read DataAzurermAutomationVariables#read}
   */
   readonly read?: string;
 }
@@ -705,7 +705,7 @@ export interface DataAzurermAutomationVariablesTimeouts {
 export function dataAzurermAutomationVariablesTimeoutsToTerraform(struct?: DataAzurermAutomationVariablesTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     read: cdktn.stringToTerraform(struct!.read),
@@ -716,7 +716,7 @@ export function dataAzurermAutomationVariablesTimeoutsToTerraform(struct?: DataA
 export function dataAzurermAutomationVariablesTimeoutsToHclTerraform(struct?: DataAzurermAutomationVariablesTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     read: {
@@ -791,7 +791,7 @@ export class DataAzurermAutomationVariablesTimeoutsOutputReference extends cdktn
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/automation_variables azurerm_automation_variables}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/automation_variables azurerm_automation_variables}
 */
 export class DataAzurermAutomationVariables extends cdktn.TerraformDataSource {
 
@@ -807,7 +807,7 @@ export class DataAzurermAutomationVariables extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAzurermAutomationVariables resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermAutomationVariables to import
-  * @param importFromId The id of the existing DataAzurermAutomationVariables that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/automation_variables#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzurermAutomationVariables that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/automation_variables#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermAutomationVariables to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -819,7 +819,7 @@ export class DataAzurermAutomationVariables extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/automation_variables azurerm_automation_variables} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/automation_variables azurerm_automation_variables} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -830,7 +830,7 @@ export class DataAzurermAutomationVariables extends cdktn.TerraformDataSource {
       terraformResourceType: 'azurerm_automation_variables',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_blob
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_blob
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,94 +13,98 @@ import * as cdktn from 'cdktn';
 
 export interface StorageBlobConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_blob#access_tier StorageBlob#access_tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_blob#access_tier StorageBlob#access_tier}
   */
   readonly accessTier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_blob#cache_control StorageBlob#cache_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_blob#cache_control StorageBlob#cache_control}
   */
   readonly cacheControl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_blob#content_md5 StorageBlob#content_md5}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_blob#content_md5 StorageBlob#content_md5}
   */
   readonly contentMd5?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_blob#content_type StorageBlob#content_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_blob#content_type StorageBlob#content_type}
   */
   readonly contentType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_blob#encryption_scope StorageBlob#encryption_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_blob#encryption_scope StorageBlob#encryption_scope}
   */
   readonly encryptionScope?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_blob#id StorageBlob#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_blob#id StorageBlob#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_blob#metadata StorageBlob#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_blob#metadata StorageBlob#metadata}
   */
   readonly metadata?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_blob#name StorageBlob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_blob#name StorageBlob#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_blob#parallelism StorageBlob#parallelism}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_blob#parallelism StorageBlob#parallelism}
   */
   readonly parallelism?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_blob#size StorageBlob#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_blob#size StorageBlob#size}
   */
   readonly size?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_blob#source StorageBlob#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_blob#source StorageBlob#source}
   */
   readonly source?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_blob#source_content StorageBlob#source_content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_blob#source_content StorageBlob#source_content}
   */
   readonly sourceContent?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_blob#source_uri StorageBlob#source_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_blob#source_uri StorageBlob#source_uri}
   */
   readonly sourceUri?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_blob#storage_account_name StorageBlob#storage_account_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_blob#storage_account_name StorageBlob#storage_account_name}
   */
-  readonly storageAccountName: string;
+  readonly storageAccountName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_blob#storage_container_name StorageBlob#storage_container_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_blob#storage_container_id StorageBlob#storage_container_id}
   */
-  readonly storageContainerName: string;
+  readonly storageContainerId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_blob#type StorageBlob#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_blob#storage_container_name StorageBlob#storage_container_name}
+  */
+  readonly storageContainerName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_blob#type StorageBlob#type}
   */
   readonly type: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_blob#timeouts StorageBlob#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_blob#timeouts StorageBlob#timeouts}
   */
   readonly timeouts?: StorageBlobTimeouts;
 }
 export interface StorageBlobTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_blob#create StorageBlob#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_blob#create StorageBlob#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_blob#delete StorageBlob#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_blob#delete StorageBlob#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_blob#read StorageBlob#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_blob#read StorageBlob#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_blob#update StorageBlob#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_blob#update StorageBlob#update}
   */
   readonly update?: string;
 }
@@ -108,7 +112,7 @@ export interface StorageBlobTimeouts {
 export function storageBlobTimeoutsToTerraform(struct?: StorageBlobTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -122,7 +126,7 @@ export function storageBlobTimeoutsToTerraform(struct?: StorageBlobTimeouts | cd
 export function storageBlobTimeoutsToHclTerraform(struct?: StorageBlobTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -281,7 +285,7 @@ export class StorageBlobTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_blob azurerm_storage_blob}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_blob azurerm_storage_blob}
 */
 export class StorageBlob extends cdktn.TerraformResource {
 
@@ -297,7 +301,7 @@ export class StorageBlob extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a StorageBlob resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StorageBlob to import
-  * @param importFromId The id of the existing StorageBlob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_blob#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing StorageBlob that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_blob#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StorageBlob to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -309,7 +313,7 @@ export class StorageBlob extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/storage_blob azurerm_storage_blob} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/storage_blob azurerm_storage_blob} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -320,7 +324,7 @@ export class StorageBlob extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_storage_blob',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -345,6 +349,7 @@ export class StorageBlob extends cdktn.TerraformResource {
     this._sourceContent = config.sourceContent;
     this._sourceUri = config.sourceUri;
     this._storageAccountName = config.storageAccountName;
+    this._storageContainerId = config.storageContainerId;
     this._storageContainerName = config.storageContainerName;
     this._type = config.type;
     this._timeouts.internalValue = config.timeouts;
@@ -559,7 +564,7 @@ export class StorageBlob extends cdktn.TerraformResource {
     return this._sourceUri;
   }
 
-  // storage_account_name - computed: false, optional: false, required: true
+  // storage_account_name - computed: true, optional: true, required: false
   private _storageAccountName?: string; 
   public get storageAccountName() {
     return this.getStringAttribute('storage_account_name');
@@ -567,18 +572,40 @@ export class StorageBlob extends cdktn.TerraformResource {
   public set storageAccountName(value: string) {
     this._storageAccountName = value;
   }
+  public resetStorageAccountName() {
+    this._storageAccountName = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get storageAccountNameInput() {
     return this._storageAccountName;
   }
 
-  // storage_container_name - computed: false, optional: false, required: true
+  // storage_container_id - computed: true, optional: true, required: false
+  private _storageContainerId?: string; 
+  public get storageContainerId() {
+    return this.getStringAttribute('storage_container_id');
+  }
+  public set storageContainerId(value: string) {
+    this._storageContainerId = value;
+  }
+  public resetStorageContainerId() {
+    this._storageContainerId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageContainerIdInput() {
+    return this._storageContainerId;
+  }
+
+  // storage_container_name - computed: true, optional: true, required: false
   private _storageContainerName?: string; 
   public get storageContainerName() {
     return this.getStringAttribute('storage_container_name');
   }
   public set storageContainerName(value: string) {
     this._storageContainerName = value;
+  }
+  public resetStorageContainerName() {
+    this._storageContainerName = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get storageContainerNameInput() {
@@ -639,6 +666,7 @@ export class StorageBlob extends cdktn.TerraformResource {
       source_content: cdktn.stringToTerraform(this._sourceContent),
       source_uri: cdktn.stringToTerraform(this._sourceUri),
       storage_account_name: cdktn.stringToTerraform(this._storageAccountName),
+      storage_container_id: cdktn.stringToTerraform(this._storageContainerId),
       storage_container_name: cdktn.stringToTerraform(this._storageContainerName),
       type: cdktn.stringToTerraform(this._type),
       timeouts: storageBlobTimeoutsToTerraform(this._timeouts.internalValue),
@@ -727,6 +755,12 @@ export class StorageBlob extends cdktn.TerraformResource {
       },
       storage_account_name: {
         value: cdktn.stringToHclTerraform(this._storageAccountName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      storage_container_id: {
+        value: cdktn.stringToHclTerraform(this._storageContainerId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

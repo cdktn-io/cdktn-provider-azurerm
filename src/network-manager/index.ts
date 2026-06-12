@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/network_manager
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +13,46 @@ import * as cdktn from 'cdktn';
 
 export interface NetworkManagerConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/network_manager#description NetworkManager#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager#description NetworkManager#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/network_manager#id NetworkManager#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager#id NetworkManager#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/network_manager#location NetworkManager#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager#location NetworkManager#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/network_manager#name NetworkManager#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager#name NetworkManager#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/network_manager#resource_group_name NetworkManager#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager#resource_group_name NetworkManager#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/network_manager#scope_accesses NetworkManager#scope_accesses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager#scope_accesses NetworkManager#scope_accesses}
   */
   readonly scopeAccesses?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/network_manager#tags NetworkManager#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager#tags NetworkManager#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * scope block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/network_manager#scope NetworkManager#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager#scope NetworkManager#scope}
   */
   readonly scope: NetworkManagerScope;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/network_manager#timeouts NetworkManager#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager#timeouts NetworkManager#timeouts}
   */
   readonly timeouts?: NetworkManagerTimeouts;
 }
@@ -62,7 +62,7 @@ export interface NetworkManagerCrossTenantScopes {
 export function networkManagerCrossTenantScopesToTerraform(struct?: NetworkManagerCrossTenantScopes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -72,7 +72,7 @@ export function networkManagerCrossTenantScopesToTerraform(struct?: NetworkManag
 export function networkManagerCrossTenantScopesToHclTerraform(struct?: NetworkManagerCrossTenantScopes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -143,11 +143,11 @@ export class NetworkManagerCrossTenantScopesList extends cdktn.ComplexList {
 }
 export interface NetworkManagerScope {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/network_manager#management_group_ids NetworkManager#management_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager#management_group_ids NetworkManager#management_group_ids}
   */
   readonly managementGroupIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/network_manager#subscription_ids NetworkManager#subscription_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager#subscription_ids NetworkManager#subscription_ids}
   */
   readonly subscriptionIds?: string[];
 }
@@ -155,7 +155,7 @@ export interface NetworkManagerScope {
 export function networkManagerScopeToTerraform(struct?: NetworkManagerScopeOutputReference | NetworkManagerScope): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     management_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.managementGroupIds),
@@ -167,7 +167,7 @@ export function networkManagerScopeToTerraform(struct?: NetworkManagerScopeOutpu
 export function networkManagerScopeToHclTerraform(struct?: NetworkManagerScopeOutputReference | NetworkManagerScope): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     management_group_ids: {
@@ -260,19 +260,19 @@ export class NetworkManagerScopeOutputReference extends cdktn.ComplexObject {
 }
 export interface NetworkManagerTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/network_manager#create NetworkManager#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager#create NetworkManager#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/network_manager#delete NetworkManager#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager#delete NetworkManager#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/network_manager#read NetworkManager#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager#read NetworkManager#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/network_manager#update NetworkManager#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager#update NetworkManager#update}
   */
   readonly update?: string;
 }
@@ -280,7 +280,7 @@ export interface NetworkManagerTimeouts {
 export function networkManagerTimeoutsToTerraform(struct?: NetworkManagerTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -294,7 +294,7 @@ export function networkManagerTimeoutsToTerraform(struct?: NetworkManagerTimeout
 export function networkManagerTimeoutsToHclTerraform(struct?: NetworkManagerTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -453,7 +453,7 @@ export class NetworkManagerTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/network_manager azurerm_network_manager}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager azurerm_network_manager}
 */
 export class NetworkManager extends cdktn.TerraformResource {
 
@@ -469,7 +469,7 @@ export class NetworkManager extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a NetworkManager resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkManager to import
-  * @param importFromId The id of the existing NetworkManager that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/network_manager#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkManager that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkManager to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -481,7 +481,7 @@ export class NetworkManager extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/network_manager azurerm_network_manager} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/network_manager azurerm_network_manager} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -492,7 +492,7 @@ export class NetworkManager extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_network_manager',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

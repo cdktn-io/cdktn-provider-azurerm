@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor_rules_engine
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor_rules_engine
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,52 +13,52 @@ import * as cdktn from 'cdktn';
 
 export interface FrontdoorRulesEngineConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor_rules_engine#enabled FrontdoorRulesEngine#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor_rules_engine#enabled FrontdoorRulesEngine#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor_rules_engine#frontdoor_name FrontdoorRulesEngine#frontdoor_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor_rules_engine#frontdoor_name FrontdoorRulesEngine#frontdoor_name}
   */
   readonly frontdoorName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor_rules_engine#id FrontdoorRulesEngine#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor_rules_engine#id FrontdoorRulesEngine#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor_rules_engine#name FrontdoorRulesEngine#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor_rules_engine#name FrontdoorRulesEngine#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor_rules_engine#resource_group_name FrontdoorRulesEngine#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor_rules_engine#resource_group_name FrontdoorRulesEngine#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor_rules_engine#rule FrontdoorRulesEngine#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor_rules_engine#rule FrontdoorRulesEngine#rule}
   */
   readonly rule?: FrontdoorRulesEngineRule[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor_rules_engine#timeouts FrontdoorRulesEngine#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor_rules_engine#timeouts FrontdoorRulesEngine#timeouts}
   */
   readonly timeouts?: FrontdoorRulesEngineTimeouts;
 }
 export interface FrontdoorRulesEngineRuleActionRequestHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor_rules_engine#header_action_type FrontdoorRulesEngine#header_action_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor_rules_engine#header_action_type FrontdoorRulesEngine#header_action_type}
   */
   readonly headerActionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor_rules_engine#header_name FrontdoorRulesEngine#header_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor_rules_engine#header_name FrontdoorRulesEngine#header_name}
   */
   readonly headerName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor_rules_engine#value FrontdoorRulesEngine#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor_rules_engine#value FrontdoorRulesEngine#value}
   */
   readonly value?: string;
 }
@@ -66,7 +66,7 @@ export interface FrontdoorRulesEngineRuleActionRequestHeader {
 export function frontdoorRulesEngineRuleActionRequestHeaderToTerraform(struct?: FrontdoorRulesEngineRuleActionRequestHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     header_action_type: cdktn.stringToTerraform(struct!.headerActionType),
@@ -79,7 +79,7 @@ export function frontdoorRulesEngineRuleActionRequestHeaderToTerraform(struct?: 
 export function frontdoorRulesEngineRuleActionRequestHeaderToHclTerraform(struct?: FrontdoorRulesEngineRuleActionRequestHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     header_action_type: {
@@ -232,15 +232,15 @@ export class FrontdoorRulesEngineRuleActionRequestHeaderList extends cdktn.Compl
 }
 export interface FrontdoorRulesEngineRuleActionResponseHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor_rules_engine#header_action_type FrontdoorRulesEngine#header_action_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor_rules_engine#header_action_type FrontdoorRulesEngine#header_action_type}
   */
   readonly headerActionType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor_rules_engine#header_name FrontdoorRulesEngine#header_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor_rules_engine#header_name FrontdoorRulesEngine#header_name}
   */
   readonly headerName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor_rules_engine#value FrontdoorRulesEngine#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor_rules_engine#value FrontdoorRulesEngine#value}
   */
   readonly value?: string;
 }
@@ -248,7 +248,7 @@ export interface FrontdoorRulesEngineRuleActionResponseHeader {
 export function frontdoorRulesEngineRuleActionResponseHeaderToTerraform(struct?: FrontdoorRulesEngineRuleActionResponseHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     header_action_type: cdktn.stringToTerraform(struct!.headerActionType),
@@ -261,7 +261,7 @@ export function frontdoorRulesEngineRuleActionResponseHeaderToTerraform(struct?:
 export function frontdoorRulesEngineRuleActionResponseHeaderToHclTerraform(struct?: FrontdoorRulesEngineRuleActionResponseHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     header_action_type: {
@@ -416,13 +416,13 @@ export interface FrontdoorRulesEngineRuleAction {
   /**
   * request_header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor_rules_engine#request_header FrontdoorRulesEngine#request_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor_rules_engine#request_header FrontdoorRulesEngine#request_header}
   */
   readonly requestHeader?: FrontdoorRulesEngineRuleActionRequestHeader[] | cdktn.IResolvable;
   /**
   * response_header block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor_rules_engine#response_header FrontdoorRulesEngine#response_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor_rules_engine#response_header FrontdoorRulesEngine#response_header}
   */
   readonly responseHeader?: FrontdoorRulesEngineRuleActionResponseHeader[] | cdktn.IResolvable;
 }
@@ -430,7 +430,7 @@ export interface FrontdoorRulesEngineRuleAction {
 export function frontdoorRulesEngineRuleActionToTerraform(struct?: FrontdoorRulesEngineRuleActionOutputReference | FrontdoorRulesEngineRuleAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     request_header: cdktn.listMapper(frontdoorRulesEngineRuleActionRequestHeaderToTerraform, true)(struct!.requestHeader),
@@ -442,7 +442,7 @@ export function frontdoorRulesEngineRuleActionToTerraform(struct?: FrontdoorRule
 export function frontdoorRulesEngineRuleActionToHclTerraform(struct?: FrontdoorRulesEngineRuleActionOutputReference | FrontdoorRulesEngineRuleAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     request_header: {
@@ -535,27 +535,27 @@ export class FrontdoorRulesEngineRuleActionOutputReference extends cdktn.Complex
 }
 export interface FrontdoorRulesEngineRuleMatchCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor_rules_engine#negate_condition FrontdoorRulesEngine#negate_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor_rules_engine#negate_condition FrontdoorRulesEngine#negate_condition}
   */
   readonly negateCondition?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor_rules_engine#operator FrontdoorRulesEngine#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor_rules_engine#operator FrontdoorRulesEngine#operator}
   */
   readonly operator: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor_rules_engine#selector FrontdoorRulesEngine#selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor_rules_engine#selector FrontdoorRulesEngine#selector}
   */
   readonly selector?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor_rules_engine#transform FrontdoorRulesEngine#transform}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor_rules_engine#transform FrontdoorRulesEngine#transform}
   */
   readonly transform?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor_rules_engine#value FrontdoorRulesEngine#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor_rules_engine#value FrontdoorRulesEngine#value}
   */
   readonly value?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor_rules_engine#variable FrontdoorRulesEngine#variable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor_rules_engine#variable FrontdoorRulesEngine#variable}
   */
   readonly variable?: string;
 }
@@ -563,7 +563,7 @@ export interface FrontdoorRulesEngineRuleMatchCondition {
 export function frontdoorRulesEngineRuleMatchConditionToTerraform(struct?: FrontdoorRulesEngineRuleMatchCondition | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     negate_condition: cdktn.booleanToTerraform(struct!.negateCondition),
@@ -579,7 +579,7 @@ export function frontdoorRulesEngineRuleMatchConditionToTerraform(struct?: Front
 export function frontdoorRulesEngineRuleMatchConditionToHclTerraform(struct?: FrontdoorRulesEngineRuleMatchCondition | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     negate_condition: {
@@ -813,23 +813,23 @@ export class FrontdoorRulesEngineRuleMatchConditionList extends cdktn.ComplexLis
 }
 export interface FrontdoorRulesEngineRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor_rules_engine#name FrontdoorRulesEngine#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor_rules_engine#name FrontdoorRulesEngine#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor_rules_engine#priority FrontdoorRulesEngine#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor_rules_engine#priority FrontdoorRulesEngine#priority}
   */
   readonly priority: number;
   /**
   * action block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor_rules_engine#action FrontdoorRulesEngine#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor_rules_engine#action FrontdoorRulesEngine#action}
   */
   readonly action?: FrontdoorRulesEngineRuleAction;
   /**
   * match_condition block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor_rules_engine#match_condition FrontdoorRulesEngine#match_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor_rules_engine#match_condition FrontdoorRulesEngine#match_condition}
   */
   readonly matchCondition?: FrontdoorRulesEngineRuleMatchCondition[] | cdktn.IResolvable;
 }
@@ -837,7 +837,7 @@ export interface FrontdoorRulesEngineRule {
 export function frontdoorRulesEngineRuleToTerraform(struct?: FrontdoorRulesEngineRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -851,7 +851,7 @@ export function frontdoorRulesEngineRuleToTerraform(struct?: FrontdoorRulesEngin
 export function frontdoorRulesEngineRuleToHclTerraform(struct?: FrontdoorRulesEngineRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -1026,19 +1026,19 @@ export class FrontdoorRulesEngineRuleList extends cdktn.ComplexList {
 }
 export interface FrontdoorRulesEngineTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor_rules_engine#create FrontdoorRulesEngine#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor_rules_engine#create FrontdoorRulesEngine#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor_rules_engine#delete FrontdoorRulesEngine#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor_rules_engine#delete FrontdoorRulesEngine#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor_rules_engine#read FrontdoorRulesEngine#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor_rules_engine#read FrontdoorRulesEngine#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor_rules_engine#update FrontdoorRulesEngine#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor_rules_engine#update FrontdoorRulesEngine#update}
   */
   readonly update?: string;
 }
@@ -1046,7 +1046,7 @@ export interface FrontdoorRulesEngineTimeouts {
 export function frontdoorRulesEngineTimeoutsToTerraform(struct?: FrontdoorRulesEngineTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -1060,7 +1060,7 @@ export function frontdoorRulesEngineTimeoutsToTerraform(struct?: FrontdoorRulesE
 export function frontdoorRulesEngineTimeoutsToHclTerraform(struct?: FrontdoorRulesEngineTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -1219,7 +1219,7 @@ export class FrontdoorRulesEngineTimeoutsOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor_rules_engine azurerm_frontdoor_rules_engine}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor_rules_engine azurerm_frontdoor_rules_engine}
 */
 export class FrontdoorRulesEngine extends cdktn.TerraformResource {
 
@@ -1235,7 +1235,7 @@ export class FrontdoorRulesEngine extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a FrontdoorRulesEngine resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the FrontdoorRulesEngine to import
-  * @param importFromId The id of the existing FrontdoorRulesEngine that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor_rules_engine#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing FrontdoorRulesEngine that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor_rules_engine#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the FrontdoorRulesEngine to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1247,7 +1247,7 @@ export class FrontdoorRulesEngine extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/frontdoor_rules_engine azurerm_frontdoor_rules_engine} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/frontdoor_rules_engine azurerm_frontdoor_rules_engine} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1258,7 +1258,7 @@ export class FrontdoorRulesEngine extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_frontdoor_rules_engine',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

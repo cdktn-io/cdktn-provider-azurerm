@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/cdn_frontdoor_security_policy
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/cdn_frontdoor_security_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,36 +13,36 @@ import * as cdktn from 'cdktn';
 
 export interface CdnFrontdoorSecurityPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/cdn_frontdoor_security_policy#cdn_frontdoor_profile_id CdnFrontdoorSecurityPolicy#cdn_frontdoor_profile_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/cdn_frontdoor_security_policy#cdn_frontdoor_profile_id CdnFrontdoorSecurityPolicy#cdn_frontdoor_profile_id}
   */
   readonly cdnFrontdoorProfileId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/cdn_frontdoor_security_policy#id CdnFrontdoorSecurityPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/cdn_frontdoor_security_policy#id CdnFrontdoorSecurityPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/cdn_frontdoor_security_policy#name CdnFrontdoorSecurityPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/cdn_frontdoor_security_policy#name CdnFrontdoorSecurityPolicy#name}
   */
   readonly name: string;
   /**
   * security_policies block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/cdn_frontdoor_security_policy#security_policies CdnFrontdoorSecurityPolicy#security_policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/cdn_frontdoor_security_policy#security_policies CdnFrontdoorSecurityPolicy#security_policies}
   */
   readonly securityPolicies: CdnFrontdoorSecurityPolicySecurityPolicies;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/cdn_frontdoor_security_policy#timeouts CdnFrontdoorSecurityPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/cdn_frontdoor_security_policy#timeouts CdnFrontdoorSecurityPolicy#timeouts}
   */
   readonly timeouts?: CdnFrontdoorSecurityPolicyTimeouts;
 }
 export interface CdnFrontdoorSecurityPolicySecurityPoliciesFirewallAssociationDomain {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/cdn_frontdoor_security_policy#cdn_frontdoor_domain_id CdnFrontdoorSecurityPolicy#cdn_frontdoor_domain_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/cdn_frontdoor_security_policy#cdn_frontdoor_domain_id CdnFrontdoorSecurityPolicy#cdn_frontdoor_domain_id}
   */
   readonly cdnFrontdoorDomainId: string;
 }
@@ -50,7 +50,7 @@ export interface CdnFrontdoorSecurityPolicySecurityPoliciesFirewallAssociationDo
 export function cdnFrontdoorSecurityPolicySecurityPoliciesFirewallAssociationDomainToTerraform(struct?: CdnFrontdoorSecurityPolicySecurityPoliciesFirewallAssociationDomain | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cdn_frontdoor_domain_id: cdktn.stringToTerraform(struct!.cdnFrontdoorDomainId),
@@ -61,7 +61,7 @@ export function cdnFrontdoorSecurityPolicySecurityPoliciesFirewallAssociationDom
 export function cdnFrontdoorSecurityPolicySecurityPoliciesFirewallAssociationDomainToHclTerraform(struct?: CdnFrontdoorSecurityPolicySecurityPoliciesFirewallAssociationDomain | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cdn_frontdoor_domain_id: {
@@ -160,13 +160,13 @@ export class CdnFrontdoorSecurityPolicySecurityPoliciesFirewallAssociationDomain
 }
 export interface CdnFrontdoorSecurityPolicySecurityPoliciesFirewallAssociation {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/cdn_frontdoor_security_policy#patterns_to_match CdnFrontdoorSecurityPolicy#patterns_to_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/cdn_frontdoor_security_policy#patterns_to_match CdnFrontdoorSecurityPolicy#patterns_to_match}
   */
   readonly patternsToMatch: string[];
   /**
   * domain block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/cdn_frontdoor_security_policy#domain CdnFrontdoorSecurityPolicy#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/cdn_frontdoor_security_policy#domain CdnFrontdoorSecurityPolicy#domain}
   */
   readonly domain: CdnFrontdoorSecurityPolicySecurityPoliciesFirewallAssociationDomain[] | cdktn.IResolvable;
 }
@@ -174,7 +174,7 @@ export interface CdnFrontdoorSecurityPolicySecurityPoliciesFirewallAssociation {
 export function cdnFrontdoorSecurityPolicySecurityPoliciesFirewallAssociationToTerraform(struct?: CdnFrontdoorSecurityPolicySecurityPoliciesFirewallAssociationOutputReference | CdnFrontdoorSecurityPolicySecurityPoliciesFirewallAssociation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     patterns_to_match: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.patternsToMatch),
@@ -186,7 +186,7 @@ export function cdnFrontdoorSecurityPolicySecurityPoliciesFirewallAssociationToT
 export function cdnFrontdoorSecurityPolicySecurityPoliciesFirewallAssociationToHclTerraform(struct?: CdnFrontdoorSecurityPolicySecurityPoliciesFirewallAssociationOutputReference | CdnFrontdoorSecurityPolicySecurityPoliciesFirewallAssociation): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     patterns_to_match: {
@@ -273,13 +273,13 @@ export class CdnFrontdoorSecurityPolicySecurityPoliciesFirewallAssociationOutput
 }
 export interface CdnFrontdoorSecurityPolicySecurityPoliciesFirewall {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/cdn_frontdoor_security_policy#cdn_frontdoor_firewall_policy_id CdnFrontdoorSecurityPolicy#cdn_frontdoor_firewall_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/cdn_frontdoor_security_policy#cdn_frontdoor_firewall_policy_id CdnFrontdoorSecurityPolicy#cdn_frontdoor_firewall_policy_id}
   */
   readonly cdnFrontdoorFirewallPolicyId: string;
   /**
   * association block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/cdn_frontdoor_security_policy#association CdnFrontdoorSecurityPolicy#association}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/cdn_frontdoor_security_policy#association CdnFrontdoorSecurityPolicy#association}
   */
   readonly association: CdnFrontdoorSecurityPolicySecurityPoliciesFirewallAssociation;
 }
@@ -287,7 +287,7 @@ export interface CdnFrontdoorSecurityPolicySecurityPoliciesFirewall {
 export function cdnFrontdoorSecurityPolicySecurityPoliciesFirewallToTerraform(struct?: CdnFrontdoorSecurityPolicySecurityPoliciesFirewallOutputReference | CdnFrontdoorSecurityPolicySecurityPoliciesFirewall): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cdn_frontdoor_firewall_policy_id: cdktn.stringToTerraform(struct!.cdnFrontdoorFirewallPolicyId),
@@ -299,7 +299,7 @@ export function cdnFrontdoorSecurityPolicySecurityPoliciesFirewallToTerraform(st
 export function cdnFrontdoorSecurityPolicySecurityPoliciesFirewallToHclTerraform(struct?: CdnFrontdoorSecurityPolicySecurityPoliciesFirewallOutputReference | CdnFrontdoorSecurityPolicySecurityPoliciesFirewall): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cdn_frontdoor_firewall_policy_id: {
@@ -388,7 +388,7 @@ export interface CdnFrontdoorSecurityPolicySecurityPolicies {
   /**
   * firewall block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/cdn_frontdoor_security_policy#firewall CdnFrontdoorSecurityPolicy#firewall}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/cdn_frontdoor_security_policy#firewall CdnFrontdoorSecurityPolicy#firewall}
   */
   readonly firewall: CdnFrontdoorSecurityPolicySecurityPoliciesFirewall;
 }
@@ -396,7 +396,7 @@ export interface CdnFrontdoorSecurityPolicySecurityPolicies {
 export function cdnFrontdoorSecurityPolicySecurityPoliciesToTerraform(struct?: CdnFrontdoorSecurityPolicySecurityPoliciesOutputReference | CdnFrontdoorSecurityPolicySecurityPolicies): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     firewall: cdnFrontdoorSecurityPolicySecurityPoliciesFirewallToTerraform(struct!.firewall),
@@ -407,7 +407,7 @@ export function cdnFrontdoorSecurityPolicySecurityPoliciesToTerraform(struct?: C
 export function cdnFrontdoorSecurityPolicySecurityPoliciesToHclTerraform(struct?: CdnFrontdoorSecurityPolicySecurityPoliciesOutputReference | CdnFrontdoorSecurityPolicySecurityPolicies): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     firewall: {
@@ -469,19 +469,19 @@ export class CdnFrontdoorSecurityPolicySecurityPoliciesOutputReference extends c
 }
 export interface CdnFrontdoorSecurityPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/cdn_frontdoor_security_policy#create CdnFrontdoorSecurityPolicy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/cdn_frontdoor_security_policy#create CdnFrontdoorSecurityPolicy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/cdn_frontdoor_security_policy#delete CdnFrontdoorSecurityPolicy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/cdn_frontdoor_security_policy#delete CdnFrontdoorSecurityPolicy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/cdn_frontdoor_security_policy#read CdnFrontdoorSecurityPolicy#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/cdn_frontdoor_security_policy#read CdnFrontdoorSecurityPolicy#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/cdn_frontdoor_security_policy#update CdnFrontdoorSecurityPolicy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/cdn_frontdoor_security_policy#update CdnFrontdoorSecurityPolicy#update}
   */
   readonly update?: string;
 }
@@ -489,7 +489,7 @@ export interface CdnFrontdoorSecurityPolicyTimeouts {
 export function cdnFrontdoorSecurityPolicyTimeoutsToTerraform(struct?: CdnFrontdoorSecurityPolicyTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -503,7 +503,7 @@ export function cdnFrontdoorSecurityPolicyTimeoutsToTerraform(struct?: CdnFrontd
 export function cdnFrontdoorSecurityPolicyTimeoutsToHclTerraform(struct?: CdnFrontdoorSecurityPolicyTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -662,7 +662,7 @@ export class CdnFrontdoorSecurityPolicyTimeoutsOutputReference extends cdktn.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/cdn_frontdoor_security_policy azurerm_cdn_frontdoor_security_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/cdn_frontdoor_security_policy azurerm_cdn_frontdoor_security_policy}
 */
 export class CdnFrontdoorSecurityPolicy extends cdktn.TerraformResource {
 
@@ -678,7 +678,7 @@ export class CdnFrontdoorSecurityPolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a CdnFrontdoorSecurityPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CdnFrontdoorSecurityPolicy to import
-  * @param importFromId The id of the existing CdnFrontdoorSecurityPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/cdn_frontdoor_security_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CdnFrontdoorSecurityPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/cdn_frontdoor_security_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CdnFrontdoorSecurityPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -690,7 +690,7 @@ export class CdnFrontdoorSecurityPolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/cdn_frontdoor_security_policy azurerm_cdn_frontdoor_security_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/cdn_frontdoor_security_policy azurerm_cdn_frontdoor_security_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -701,7 +701,7 @@ export class CdnFrontdoorSecurityPolicy extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_cdn_frontdoor_security_policy',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

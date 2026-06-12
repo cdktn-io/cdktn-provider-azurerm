@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dynatrace_monitor
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dynatrace_monitor
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,70 +13,70 @@ import * as cdktn from 'cdktn';
 
 export interface DynatraceMonitorConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dynatrace_monitor#id DynatraceMonitor#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dynatrace_monitor#id DynatraceMonitor#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dynatrace_monitor#location DynatraceMonitor#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dynatrace_monitor#location DynatraceMonitor#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dynatrace_monitor#marketplace_subscription DynatraceMonitor#marketplace_subscription}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dynatrace_monitor#marketplace_subscription DynatraceMonitor#marketplace_subscription}
   */
   readonly marketplaceSubscription: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dynatrace_monitor#monitoring_enabled DynatraceMonitor#monitoring_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dynatrace_monitor#monitoring_enabled DynatraceMonitor#monitoring_enabled}
   */
   readonly monitoringEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dynatrace_monitor#name DynatraceMonitor#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dynatrace_monitor#name DynatraceMonitor#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dynatrace_monitor#resource_group_name DynatraceMonitor#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dynatrace_monitor#resource_group_name DynatraceMonitor#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dynatrace_monitor#tags DynatraceMonitor#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dynatrace_monitor#tags DynatraceMonitor#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * environment_properties block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dynatrace_monitor#environment_properties DynatraceMonitor#environment_properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dynatrace_monitor#environment_properties DynatraceMonitor#environment_properties}
   */
   readonly environmentProperties?: DynatraceMonitorEnvironmentProperties[] | cdktn.IResolvable;
   /**
   * identity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dynatrace_monitor#identity DynatraceMonitor#identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dynatrace_monitor#identity DynatraceMonitor#identity}
   */
   readonly identity: DynatraceMonitorIdentity;
   /**
   * plan block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dynatrace_monitor#plan DynatraceMonitor#plan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dynatrace_monitor#plan DynatraceMonitor#plan}
   */
   readonly plan: DynatraceMonitorPlan;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dynatrace_monitor#timeouts DynatraceMonitor#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dynatrace_monitor#timeouts DynatraceMonitor#timeouts}
   */
   readonly timeouts?: DynatraceMonitorTimeouts;
   /**
   * user block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dynatrace_monitor#user DynatraceMonitor#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dynatrace_monitor#user DynatraceMonitor#user}
   */
   readonly user: DynatraceMonitorUser;
 }
 export interface DynatraceMonitorEnvironmentPropertiesEnvironmentInfo {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dynatrace_monitor#environment_id DynatraceMonitor#environment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dynatrace_monitor#environment_id DynatraceMonitor#environment_id}
   */
   readonly environmentId: string;
 }
@@ -84,7 +84,7 @@ export interface DynatraceMonitorEnvironmentPropertiesEnvironmentInfo {
 export function dynatraceMonitorEnvironmentPropertiesEnvironmentInfoToTerraform(struct?: DynatraceMonitorEnvironmentPropertiesEnvironmentInfo | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     environment_id: cdktn.stringToTerraform(struct!.environmentId),
@@ -95,7 +95,7 @@ export function dynatraceMonitorEnvironmentPropertiesEnvironmentInfoToTerraform(
 export function dynatraceMonitorEnvironmentPropertiesEnvironmentInfoToHclTerraform(struct?: DynatraceMonitorEnvironmentPropertiesEnvironmentInfo | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     environment_id: {
@@ -191,7 +191,7 @@ export interface DynatraceMonitorEnvironmentProperties {
   /**
   * environment_info block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dynatrace_monitor#environment_info DynatraceMonitor#environment_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dynatrace_monitor#environment_info DynatraceMonitor#environment_info}
   */
   readonly environmentInfo: DynatraceMonitorEnvironmentPropertiesEnvironmentInfo[] | cdktn.IResolvable;
 }
@@ -199,7 +199,7 @@ export interface DynatraceMonitorEnvironmentProperties {
 export function dynatraceMonitorEnvironmentPropertiesToTerraform(struct?: DynatraceMonitorEnvironmentProperties | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     environment_info: cdktn.listMapper(dynatraceMonitorEnvironmentPropertiesEnvironmentInfoToTerraform, true)(struct!.environmentInfo),
@@ -210,7 +210,7 @@ export function dynatraceMonitorEnvironmentPropertiesToTerraform(struct?: Dynatr
 export function dynatraceMonitorEnvironmentPropertiesToHclTerraform(struct?: DynatraceMonitorEnvironmentProperties | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     environment_info: {
@@ -304,7 +304,7 @@ export class DynatraceMonitorEnvironmentPropertiesList extends cdktn.ComplexList
 }
 export interface DynatraceMonitorIdentity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dynatrace_monitor#type DynatraceMonitor#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dynatrace_monitor#type DynatraceMonitor#type}
   */
   readonly type: string;
 }
@@ -312,7 +312,7 @@ export interface DynatraceMonitorIdentity {
 export function dynatraceMonitorIdentityToTerraform(struct?: DynatraceMonitorIdentityOutputReference | DynatraceMonitorIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     type: cdktn.stringToTerraform(struct!.type),
@@ -323,7 +323,7 @@ export function dynatraceMonitorIdentityToTerraform(struct?: DynatraceMonitorIde
 export function dynatraceMonitorIdentityToHclTerraform(struct?: DynatraceMonitorIdentityOutputReference | DynatraceMonitorIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     type: {
@@ -395,15 +395,15 @@ export class DynatraceMonitorIdentityOutputReference extends cdktn.ComplexObject
 }
 export interface DynatraceMonitorPlan {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dynatrace_monitor#billing_cycle DynatraceMonitor#billing_cycle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dynatrace_monitor#billing_cycle DynatraceMonitor#billing_cycle}
   */
   readonly billingCycle?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dynatrace_monitor#plan DynatraceMonitor#plan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dynatrace_monitor#plan DynatraceMonitor#plan}
   */
   readonly plan: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dynatrace_monitor#usage_type DynatraceMonitor#usage_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dynatrace_monitor#usage_type DynatraceMonitor#usage_type}
   */
   readonly usageType?: string;
 }
@@ -411,7 +411,7 @@ export interface DynatraceMonitorPlan {
 export function dynatraceMonitorPlanToTerraform(struct?: DynatraceMonitorPlanOutputReference | DynatraceMonitorPlan): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     billing_cycle: cdktn.stringToTerraform(struct!.billingCycle),
@@ -424,7 +424,7 @@ export function dynatraceMonitorPlanToTerraform(struct?: DynatraceMonitorPlanOut
 export function dynatraceMonitorPlanToHclTerraform(struct?: DynatraceMonitorPlanOutputReference | DynatraceMonitorPlan): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     billing_cycle: {
@@ -547,19 +547,19 @@ export class DynatraceMonitorPlanOutputReference extends cdktn.ComplexObject {
 }
 export interface DynatraceMonitorTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dynatrace_monitor#create DynatraceMonitor#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dynatrace_monitor#create DynatraceMonitor#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dynatrace_monitor#delete DynatraceMonitor#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dynatrace_monitor#delete DynatraceMonitor#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dynatrace_monitor#read DynatraceMonitor#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dynatrace_monitor#read DynatraceMonitor#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dynatrace_monitor#update DynatraceMonitor#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dynatrace_monitor#update DynatraceMonitor#update}
   */
   readonly update?: string;
 }
@@ -567,7 +567,7 @@ export interface DynatraceMonitorTimeouts {
 export function dynatraceMonitorTimeoutsToTerraform(struct?: DynatraceMonitorTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -581,7 +581,7 @@ export function dynatraceMonitorTimeoutsToTerraform(struct?: DynatraceMonitorTim
 export function dynatraceMonitorTimeoutsToHclTerraform(struct?: DynatraceMonitorTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -740,23 +740,23 @@ export class DynatraceMonitorTimeoutsOutputReference extends cdktn.ComplexObject
 }
 export interface DynatraceMonitorUser {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dynatrace_monitor#country DynatraceMonitor#country}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dynatrace_monitor#country DynatraceMonitor#country}
   */
   readonly country?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dynatrace_monitor#email DynatraceMonitor#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dynatrace_monitor#email DynatraceMonitor#email}
   */
   readonly email: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dynatrace_monitor#first_name DynatraceMonitor#first_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dynatrace_monitor#first_name DynatraceMonitor#first_name}
   */
   readonly firstName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dynatrace_monitor#last_name DynatraceMonitor#last_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dynatrace_monitor#last_name DynatraceMonitor#last_name}
   */
   readonly lastName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dynatrace_monitor#phone_number DynatraceMonitor#phone_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dynatrace_monitor#phone_number DynatraceMonitor#phone_number}
   */
   readonly phoneNumber?: string;
 }
@@ -764,7 +764,7 @@ export interface DynatraceMonitorUser {
 export function dynatraceMonitorUserToTerraform(struct?: DynatraceMonitorUserOutputReference | DynatraceMonitorUser): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     country: cdktn.stringToTerraform(struct!.country),
@@ -779,7 +779,7 @@ export function dynatraceMonitorUserToTerraform(struct?: DynatraceMonitorUserOut
 export function dynatraceMonitorUserToHclTerraform(struct?: DynatraceMonitorUserOutputReference | DynatraceMonitorUser): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     country: {
@@ -947,7 +947,7 @@ export class DynatraceMonitorUserOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dynatrace_monitor azurerm_dynatrace_monitor}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dynatrace_monitor azurerm_dynatrace_monitor}
 */
 export class DynatraceMonitor extends cdktn.TerraformResource {
 
@@ -963,7 +963,7 @@ export class DynatraceMonitor extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DynatraceMonitor resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DynatraceMonitor to import
-  * @param importFromId The id of the existing DynatraceMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dynatrace_monitor#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DynatraceMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dynatrace_monitor#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DynatraceMonitor to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -975,7 +975,7 @@ export class DynatraceMonitor extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/dynatrace_monitor azurerm_dynatrace_monitor} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/dynatrace_monitor azurerm_dynatrace_monitor} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -986,7 +986,7 @@ export class DynatraceMonitor extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_dynatrace_monitor',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

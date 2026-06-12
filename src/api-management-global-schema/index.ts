@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_global_schema
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_global_schema
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,58 +13,58 @@ import * as cdktn from 'cdktn';
 
 export interface ApiManagementGlobalSchemaConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_global_schema#api_management_name ApiManagementGlobalSchema#api_management_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_global_schema#api_management_name ApiManagementGlobalSchema#api_management_name}
   */
   readonly apiManagementName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_global_schema#description ApiManagementGlobalSchema#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_global_schema#description ApiManagementGlobalSchema#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_global_schema#id ApiManagementGlobalSchema#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_global_schema#id ApiManagementGlobalSchema#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_global_schema#resource_group_name ApiManagementGlobalSchema#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_global_schema#resource_group_name ApiManagementGlobalSchema#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_global_schema#schema_id ApiManagementGlobalSchema#schema_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_global_schema#schema_id ApiManagementGlobalSchema#schema_id}
   */
   readonly schemaId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_global_schema#type ApiManagementGlobalSchema#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_global_schema#type ApiManagementGlobalSchema#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_global_schema#value ApiManagementGlobalSchema#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_global_schema#value ApiManagementGlobalSchema#value}
   */
   readonly value: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_global_schema#timeouts ApiManagementGlobalSchema#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_global_schema#timeouts ApiManagementGlobalSchema#timeouts}
   */
   readonly timeouts?: ApiManagementGlobalSchemaTimeouts;
 }
 export interface ApiManagementGlobalSchemaTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_global_schema#create ApiManagementGlobalSchema#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_global_schema#create ApiManagementGlobalSchema#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_global_schema#delete ApiManagementGlobalSchema#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_global_schema#delete ApiManagementGlobalSchema#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_global_schema#read ApiManagementGlobalSchema#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_global_schema#read ApiManagementGlobalSchema#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_global_schema#update ApiManagementGlobalSchema#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_global_schema#update ApiManagementGlobalSchema#update}
   */
   readonly update?: string;
 }
@@ -72,7 +72,7 @@ export interface ApiManagementGlobalSchemaTimeouts {
 export function apiManagementGlobalSchemaTimeoutsToTerraform(struct?: ApiManagementGlobalSchemaTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -86,7 +86,7 @@ export function apiManagementGlobalSchemaTimeoutsToTerraform(struct?: ApiManagem
 export function apiManagementGlobalSchemaTimeoutsToHclTerraform(struct?: ApiManagementGlobalSchemaTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -245,7 +245,7 @@ export class ApiManagementGlobalSchemaTimeoutsOutputReference extends cdktn.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_global_schema azurerm_api_management_global_schema}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_global_schema azurerm_api_management_global_schema}
 */
 export class ApiManagementGlobalSchema extends cdktn.TerraformResource {
 
@@ -261,7 +261,7 @@ export class ApiManagementGlobalSchema extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ApiManagementGlobalSchema resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiManagementGlobalSchema to import
-  * @param importFromId The id of the existing ApiManagementGlobalSchema that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_global_schema#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApiManagementGlobalSchema that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_global_schema#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiManagementGlobalSchema to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -273,7 +273,7 @@ export class ApiManagementGlobalSchema extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/api_management_global_schema azurerm_api_management_global_schema} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/api_management_global_schema azurerm_api_management_global_schema} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -284,7 +284,7 @@ export class ApiManagementGlobalSchema extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_api_management_global_schema',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

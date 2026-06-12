@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/maintenance_configuration
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/maintenance_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,74 +13,74 @@ import * as cdktn from 'cdktn';
 
 export interface MaintenanceConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/maintenance_configuration#id MaintenanceConfiguration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/maintenance_configuration#id MaintenanceConfiguration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/maintenance_configuration#in_guest_user_patch_mode MaintenanceConfiguration#in_guest_user_patch_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/maintenance_configuration#in_guest_user_patch_mode MaintenanceConfiguration#in_guest_user_patch_mode}
   */
   readonly inGuestUserPatchMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/maintenance_configuration#location MaintenanceConfiguration#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/maintenance_configuration#location MaintenanceConfiguration#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/maintenance_configuration#name MaintenanceConfiguration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/maintenance_configuration#name MaintenanceConfiguration#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/maintenance_configuration#properties MaintenanceConfiguration#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/maintenance_configuration#properties MaintenanceConfiguration#properties}
   */
   readonly properties?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/maintenance_configuration#resource_group_name MaintenanceConfiguration#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/maintenance_configuration#resource_group_name MaintenanceConfiguration#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/maintenance_configuration#scope MaintenanceConfiguration#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/maintenance_configuration#scope MaintenanceConfiguration#scope}
   */
   readonly scope: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/maintenance_configuration#tags MaintenanceConfiguration#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/maintenance_configuration#tags MaintenanceConfiguration#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/maintenance_configuration#visibility MaintenanceConfiguration#visibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/maintenance_configuration#visibility MaintenanceConfiguration#visibility}
   */
   readonly visibility?: string;
   /**
   * install_patches block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/maintenance_configuration#install_patches MaintenanceConfiguration#install_patches}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/maintenance_configuration#install_patches MaintenanceConfiguration#install_patches}
   */
   readonly installPatches?: MaintenanceConfigurationInstallPatches;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/maintenance_configuration#timeouts MaintenanceConfiguration#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/maintenance_configuration#timeouts MaintenanceConfiguration#timeouts}
   */
   readonly timeouts?: MaintenanceConfigurationTimeouts;
   /**
   * window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/maintenance_configuration#window MaintenanceConfiguration#window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/maintenance_configuration#window MaintenanceConfiguration#window}
   */
   readonly window?: MaintenanceConfigurationWindow;
 }
 export interface MaintenanceConfigurationInstallPatchesLinux {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/maintenance_configuration#classifications_to_include MaintenanceConfiguration#classifications_to_include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/maintenance_configuration#classifications_to_include MaintenanceConfiguration#classifications_to_include}
   */
   readonly classificationsToInclude?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/maintenance_configuration#package_names_mask_to_exclude MaintenanceConfiguration#package_names_mask_to_exclude}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/maintenance_configuration#package_names_mask_to_exclude MaintenanceConfiguration#package_names_mask_to_exclude}
   */
   readonly packageNamesMaskToExclude?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/maintenance_configuration#package_names_mask_to_include MaintenanceConfiguration#package_names_mask_to_include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/maintenance_configuration#package_names_mask_to_include MaintenanceConfiguration#package_names_mask_to_include}
   */
   readonly packageNamesMaskToInclude?: string[];
 }
@@ -88,7 +88,7 @@ export interface MaintenanceConfigurationInstallPatchesLinux {
 export function maintenanceConfigurationInstallPatchesLinuxToTerraform(struct?: MaintenanceConfigurationInstallPatchesLinux | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     classifications_to_include: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.classificationsToInclude),
@@ -101,7 +101,7 @@ export function maintenanceConfigurationInstallPatchesLinuxToTerraform(struct?: 
 export function maintenanceConfigurationInstallPatchesLinuxToHclTerraform(struct?: MaintenanceConfigurationInstallPatchesLinux | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     classifications_to_include: {
@@ -254,15 +254,15 @@ export class MaintenanceConfigurationInstallPatchesLinuxList extends cdktn.Compl
 }
 export interface MaintenanceConfigurationInstallPatchesWindows {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/maintenance_configuration#classifications_to_include MaintenanceConfiguration#classifications_to_include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/maintenance_configuration#classifications_to_include MaintenanceConfiguration#classifications_to_include}
   */
   readonly classificationsToInclude?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/maintenance_configuration#kb_numbers_to_exclude MaintenanceConfiguration#kb_numbers_to_exclude}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/maintenance_configuration#kb_numbers_to_exclude MaintenanceConfiguration#kb_numbers_to_exclude}
   */
   readonly kbNumbersToExclude?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/maintenance_configuration#kb_numbers_to_include MaintenanceConfiguration#kb_numbers_to_include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/maintenance_configuration#kb_numbers_to_include MaintenanceConfiguration#kb_numbers_to_include}
   */
   readonly kbNumbersToInclude?: string[];
 }
@@ -270,7 +270,7 @@ export interface MaintenanceConfigurationInstallPatchesWindows {
 export function maintenanceConfigurationInstallPatchesWindowsToTerraform(struct?: MaintenanceConfigurationInstallPatchesWindows | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     classifications_to_include: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.classificationsToInclude),
@@ -283,7 +283,7 @@ export function maintenanceConfigurationInstallPatchesWindowsToTerraform(struct?
 export function maintenanceConfigurationInstallPatchesWindowsToHclTerraform(struct?: MaintenanceConfigurationInstallPatchesWindows | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     classifications_to_include: {
@@ -436,19 +436,19 @@ export class MaintenanceConfigurationInstallPatchesWindowsList extends cdktn.Com
 }
 export interface MaintenanceConfigurationInstallPatches {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/maintenance_configuration#reboot MaintenanceConfiguration#reboot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/maintenance_configuration#reboot MaintenanceConfiguration#reboot}
   */
   readonly reboot?: string;
   /**
   * linux block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/maintenance_configuration#linux MaintenanceConfiguration#linux}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/maintenance_configuration#linux MaintenanceConfiguration#linux}
   */
   readonly linux?: MaintenanceConfigurationInstallPatchesLinux[] | cdktn.IResolvable;
   /**
   * windows block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/maintenance_configuration#windows MaintenanceConfiguration#windows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/maintenance_configuration#windows MaintenanceConfiguration#windows}
   */
   readonly windows?: MaintenanceConfigurationInstallPatchesWindows[] | cdktn.IResolvable;
 }
@@ -456,7 +456,7 @@ export interface MaintenanceConfigurationInstallPatches {
 export function maintenanceConfigurationInstallPatchesToTerraform(struct?: MaintenanceConfigurationInstallPatchesOutputReference | MaintenanceConfigurationInstallPatches): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     reboot: cdktn.stringToTerraform(struct!.reboot),
@@ -469,7 +469,7 @@ export function maintenanceConfigurationInstallPatchesToTerraform(struct?: Maint
 export function maintenanceConfigurationInstallPatchesToHclTerraform(struct?: MaintenanceConfigurationInstallPatchesOutputReference | MaintenanceConfigurationInstallPatches): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     reboot: {
@@ -590,19 +590,19 @@ export class MaintenanceConfigurationInstallPatchesOutputReference extends cdktn
 }
 export interface MaintenanceConfigurationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/maintenance_configuration#create MaintenanceConfiguration#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/maintenance_configuration#create MaintenanceConfiguration#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/maintenance_configuration#delete MaintenanceConfiguration#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/maintenance_configuration#delete MaintenanceConfiguration#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/maintenance_configuration#read MaintenanceConfiguration#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/maintenance_configuration#read MaintenanceConfiguration#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/maintenance_configuration#update MaintenanceConfiguration#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/maintenance_configuration#update MaintenanceConfiguration#update}
   */
   readonly update?: string;
 }
@@ -610,7 +610,7 @@ export interface MaintenanceConfigurationTimeouts {
 export function maintenanceConfigurationTimeoutsToTerraform(struct?: MaintenanceConfigurationTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -624,7 +624,7 @@ export function maintenanceConfigurationTimeoutsToTerraform(struct?: Maintenance
 export function maintenanceConfigurationTimeoutsToHclTerraform(struct?: MaintenanceConfigurationTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -783,23 +783,23 @@ export class MaintenanceConfigurationTimeoutsOutputReference extends cdktn.Compl
 }
 export interface MaintenanceConfigurationWindow {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/maintenance_configuration#duration MaintenanceConfiguration#duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/maintenance_configuration#duration MaintenanceConfiguration#duration}
   */
   readonly duration?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/maintenance_configuration#expiration_date_time MaintenanceConfiguration#expiration_date_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/maintenance_configuration#expiration_date_time MaintenanceConfiguration#expiration_date_time}
   */
   readonly expirationDateTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/maintenance_configuration#recur_every MaintenanceConfiguration#recur_every}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/maintenance_configuration#recur_every MaintenanceConfiguration#recur_every}
   */
   readonly recurEvery?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/maintenance_configuration#start_date_time MaintenanceConfiguration#start_date_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/maintenance_configuration#start_date_time MaintenanceConfiguration#start_date_time}
   */
   readonly startDateTime: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/maintenance_configuration#time_zone MaintenanceConfiguration#time_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/maintenance_configuration#time_zone MaintenanceConfiguration#time_zone}
   */
   readonly timeZone: string;
 }
@@ -807,7 +807,7 @@ export interface MaintenanceConfigurationWindow {
 export function maintenanceConfigurationWindowToTerraform(struct?: MaintenanceConfigurationWindowOutputReference | MaintenanceConfigurationWindow): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     duration: cdktn.stringToTerraform(struct!.duration),
@@ -822,7 +822,7 @@ export function maintenanceConfigurationWindowToTerraform(struct?: MaintenanceCo
 export function maintenanceConfigurationWindowToHclTerraform(struct?: MaintenanceConfigurationWindowOutputReference | MaintenanceConfigurationWindow): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     duration: {
@@ -993,7 +993,7 @@ export class MaintenanceConfigurationWindowOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/maintenance_configuration azurerm_maintenance_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/maintenance_configuration azurerm_maintenance_configuration}
 */
 export class MaintenanceConfiguration extends cdktn.TerraformResource {
 
@@ -1009,7 +1009,7 @@ export class MaintenanceConfiguration extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a MaintenanceConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MaintenanceConfiguration to import
-  * @param importFromId The id of the existing MaintenanceConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/maintenance_configuration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MaintenanceConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/maintenance_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MaintenanceConfiguration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1021,7 +1021,7 @@ export class MaintenanceConfiguration extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/maintenance_configuration azurerm_maintenance_configuration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/maintenance_configuration azurerm_maintenance_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1032,7 +1032,7 @@ export class MaintenanceConfiguration extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_maintenance_configuration',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

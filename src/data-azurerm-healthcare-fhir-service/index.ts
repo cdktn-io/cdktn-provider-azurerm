@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/healthcare_fhir_service
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/healthcare_fhir_service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +13,28 @@ import * as cdktn from 'cdktn';
 
 export interface DataAzurermHealthcareFhirServiceConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/healthcare_fhir_service#id DataAzurermHealthcareFhirService#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/healthcare_fhir_service#id DataAzurermHealthcareFhirService#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/healthcare_fhir_service#name DataAzurermHealthcareFhirService#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/healthcare_fhir_service#name DataAzurermHealthcareFhirService#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/healthcare_fhir_service#tags DataAzurermHealthcareFhirService#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/healthcare_fhir_service#tags DataAzurermHealthcareFhirService#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/healthcare_fhir_service#workspace_id DataAzurermHealthcareFhirService#workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/healthcare_fhir_service#workspace_id DataAzurermHealthcareFhirService#workspace_id}
   */
   readonly workspaceId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/healthcare_fhir_service#timeouts DataAzurermHealthcareFhirService#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/healthcare_fhir_service#timeouts DataAzurermHealthcareFhirService#timeouts}
   */
   readonly timeouts?: DataAzurermHealthcareFhirServiceTimeouts;
 }
@@ -44,7 +44,7 @@ export interface DataAzurermHealthcareFhirServiceAuthentication {
 export function dataAzurermHealthcareFhirServiceAuthenticationToTerraform(struct?: DataAzurermHealthcareFhirServiceAuthentication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -54,7 +54,7 @@ export function dataAzurermHealthcareFhirServiceAuthenticationToTerraform(struct
 export function dataAzurermHealthcareFhirServiceAuthenticationToHclTerraform(struct?: DataAzurermHealthcareFhirServiceAuthentication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -129,7 +129,7 @@ export interface DataAzurermHealthcareFhirServiceCors {
 export function dataAzurermHealthcareFhirServiceCorsToTerraform(struct?: DataAzurermHealthcareFhirServiceCors): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -139,7 +139,7 @@ export function dataAzurermHealthcareFhirServiceCorsToTerraform(struct?: DataAzu
 export function dataAzurermHealthcareFhirServiceCorsToHclTerraform(struct?: DataAzurermHealthcareFhirServiceCors): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -224,7 +224,7 @@ export interface DataAzurermHealthcareFhirServiceIdentity {
 export function dataAzurermHealthcareFhirServiceIdentityToTerraform(struct?: DataAzurermHealthcareFhirServiceIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -234,7 +234,7 @@ export function dataAzurermHealthcareFhirServiceIdentityToTerraform(struct?: Dat
 export function dataAzurermHealthcareFhirServiceIdentityToHclTerraform(struct?: DataAzurermHealthcareFhirServiceIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -310,7 +310,7 @@ export class DataAzurermHealthcareFhirServiceIdentityList extends cdktn.ComplexL
 }
 export interface DataAzurermHealthcareFhirServiceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/healthcare_fhir_service#read DataAzurermHealthcareFhirService#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/healthcare_fhir_service#read DataAzurermHealthcareFhirService#read}
   */
   readonly read?: string;
 }
@@ -318,7 +318,7 @@ export interface DataAzurermHealthcareFhirServiceTimeouts {
 export function dataAzurermHealthcareFhirServiceTimeoutsToTerraform(struct?: DataAzurermHealthcareFhirServiceTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     read: cdktn.stringToTerraform(struct!.read),
@@ -329,7 +329,7 @@ export function dataAzurermHealthcareFhirServiceTimeoutsToTerraform(struct?: Dat
 export function dataAzurermHealthcareFhirServiceTimeoutsToHclTerraform(struct?: DataAzurermHealthcareFhirServiceTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     read: {
@@ -404,7 +404,7 @@ export class DataAzurermHealthcareFhirServiceTimeoutsOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/healthcare_fhir_service azurerm_healthcare_fhir_service}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/healthcare_fhir_service azurerm_healthcare_fhir_service}
 */
 export class DataAzurermHealthcareFhirService extends cdktn.TerraformDataSource {
 
@@ -420,7 +420,7 @@ export class DataAzurermHealthcareFhirService extends cdktn.TerraformDataSource 
   * Generates CDKTN code for importing a DataAzurermHealthcareFhirService resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermHealthcareFhirService to import
-  * @param importFromId The id of the existing DataAzurermHealthcareFhirService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/healthcare_fhir_service#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzurermHealthcareFhirService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/healthcare_fhir_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermHealthcareFhirService to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -432,7 +432,7 @@ export class DataAzurermHealthcareFhirService extends cdktn.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/healthcare_fhir_service azurerm_healthcare_fhir_service} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/healthcare_fhir_service azurerm_healthcare_fhir_service} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -443,7 +443,7 @@ export class DataAzurermHealthcareFhirService extends cdktn.TerraformDataSource 
       terraformResourceType: 'azurerm_healthcare_fhir_service',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

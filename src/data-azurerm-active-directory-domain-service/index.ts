@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/active_directory_domain_service
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/active_directory_domain_service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +13,28 @@ import * as cdktn from 'cdktn';
 
 export interface DataAzurermActiveDirectoryDomainServiceConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/active_directory_domain_service#id DataAzurermActiveDirectoryDomainService#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/active_directory_domain_service#id DataAzurermActiveDirectoryDomainService#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/active_directory_domain_service#name DataAzurermActiveDirectoryDomainService#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/active_directory_domain_service#name DataAzurermActiveDirectoryDomainService#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/active_directory_domain_service#resource_group_name DataAzurermActiveDirectoryDomainService#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/active_directory_domain_service#resource_group_name DataAzurermActiveDirectoryDomainService#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/active_directory_domain_service#tags DataAzurermActiveDirectoryDomainService#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/active_directory_domain_service#tags DataAzurermActiveDirectoryDomainService#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/active_directory_domain_service#timeouts DataAzurermActiveDirectoryDomainService#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/active_directory_domain_service#timeouts DataAzurermActiveDirectoryDomainService#timeouts}
   */
   readonly timeouts?: DataAzurermActiveDirectoryDomainServiceTimeouts;
 }
@@ -44,7 +44,7 @@ export interface DataAzurermActiveDirectoryDomainServiceNotifications {
 export function dataAzurermActiveDirectoryDomainServiceNotificationsToTerraform(struct?: DataAzurermActiveDirectoryDomainServiceNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -54,7 +54,7 @@ export function dataAzurermActiveDirectoryDomainServiceNotificationsToTerraform(
 export function dataAzurermActiveDirectoryDomainServiceNotificationsToHclTerraform(struct?: DataAzurermActiveDirectoryDomainServiceNotifications): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -129,7 +129,7 @@ export interface DataAzurermActiveDirectoryDomainServiceReplicaSets {
 export function dataAzurermActiveDirectoryDomainServiceReplicaSetsToTerraform(struct?: DataAzurermActiveDirectoryDomainServiceReplicaSets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -139,7 +139,7 @@ export function dataAzurermActiveDirectoryDomainServiceReplicaSetsToTerraform(st
 export function dataAzurermActiveDirectoryDomainServiceReplicaSetsToHclTerraform(struct?: DataAzurermActiveDirectoryDomainServiceReplicaSets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -229,7 +229,7 @@ export interface DataAzurermActiveDirectoryDomainServiceSecureLdap {
 export function dataAzurermActiveDirectoryDomainServiceSecureLdapToTerraform(struct?: DataAzurermActiveDirectoryDomainServiceSecureLdap): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -239,7 +239,7 @@ export function dataAzurermActiveDirectoryDomainServiceSecureLdapToTerraform(str
 export function dataAzurermActiveDirectoryDomainServiceSecureLdapToHclTerraform(struct?: DataAzurermActiveDirectoryDomainServiceSecureLdap): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -324,7 +324,7 @@ export interface DataAzurermActiveDirectoryDomainServiceSecurity {
 export function dataAzurermActiveDirectoryDomainServiceSecurityToTerraform(struct?: DataAzurermActiveDirectoryDomainServiceSecurity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -334,7 +334,7 @@ export function dataAzurermActiveDirectoryDomainServiceSecurityToTerraform(struc
 export function dataAzurermActiveDirectoryDomainServiceSecurityToHclTerraform(struct?: DataAzurermActiveDirectoryDomainServiceSecurity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -425,7 +425,7 @@ export class DataAzurermActiveDirectoryDomainServiceSecurityList extends cdktn.C
 }
 export interface DataAzurermActiveDirectoryDomainServiceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/active_directory_domain_service#read DataAzurermActiveDirectoryDomainService#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/active_directory_domain_service#read DataAzurermActiveDirectoryDomainService#read}
   */
   readonly read?: string;
 }
@@ -433,7 +433,7 @@ export interface DataAzurermActiveDirectoryDomainServiceTimeouts {
 export function dataAzurermActiveDirectoryDomainServiceTimeoutsToTerraform(struct?: DataAzurermActiveDirectoryDomainServiceTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     read: cdktn.stringToTerraform(struct!.read),
@@ -444,7 +444,7 @@ export function dataAzurermActiveDirectoryDomainServiceTimeoutsToTerraform(struc
 export function dataAzurermActiveDirectoryDomainServiceTimeoutsToHclTerraform(struct?: DataAzurermActiveDirectoryDomainServiceTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     read: {
@@ -519,7 +519,7 @@ export class DataAzurermActiveDirectoryDomainServiceTimeoutsOutputReference exte
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/active_directory_domain_service azurerm_active_directory_domain_service}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/active_directory_domain_service azurerm_active_directory_domain_service}
 */
 export class DataAzurermActiveDirectoryDomainService extends cdktn.TerraformDataSource {
 
@@ -535,7 +535,7 @@ export class DataAzurermActiveDirectoryDomainService extends cdktn.TerraformData
   * Generates CDKTN code for importing a DataAzurermActiveDirectoryDomainService resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermActiveDirectoryDomainService to import
-  * @param importFromId The id of the existing DataAzurermActiveDirectoryDomainService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/active_directory_domain_service#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzurermActiveDirectoryDomainService that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/active_directory_domain_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermActiveDirectoryDomainService to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -547,7 +547,7 @@ export class DataAzurermActiveDirectoryDomainService extends cdktn.TerraformData
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/active_directory_domain_service azurerm_active_directory_domain_service} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/active_directory_domain_service azurerm_active_directory_domain_service} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -558,7 +558,7 @@ export class DataAzurermActiveDirectoryDomainService extends cdktn.TerraformData
       terraformResourceType: 'azurerm_active_directory_domain_service',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

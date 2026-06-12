@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_lustre_file_system
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_lustre_file_system
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,88 +13,88 @@ import * as cdktn from 'cdktn';
 
 export interface ManagedLustreFileSystemConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_lustre_file_system#id ManagedLustreFileSystem#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_lustre_file_system#id ManagedLustreFileSystem#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_lustre_file_system#location ManagedLustreFileSystem#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_lustre_file_system#location ManagedLustreFileSystem#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_lustre_file_system#name ManagedLustreFileSystem#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_lustre_file_system#name ManagedLustreFileSystem#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_lustre_file_system#resource_group_name ManagedLustreFileSystem#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_lustre_file_system#resource_group_name ManagedLustreFileSystem#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_lustre_file_system#sku_name ManagedLustreFileSystem#sku_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_lustre_file_system#sku_name ManagedLustreFileSystem#sku_name}
   */
   readonly skuName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_lustre_file_system#storage_capacity_in_tb ManagedLustreFileSystem#storage_capacity_in_tb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_lustre_file_system#storage_capacity_in_tb ManagedLustreFileSystem#storage_capacity_in_tb}
   */
   readonly storageCapacityInTb: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_lustre_file_system#subnet_id ManagedLustreFileSystem#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_lustre_file_system#subnet_id ManagedLustreFileSystem#subnet_id}
   */
   readonly subnetId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_lustre_file_system#tags ManagedLustreFileSystem#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_lustre_file_system#tags ManagedLustreFileSystem#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_lustre_file_system#zones ManagedLustreFileSystem#zones}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_lustre_file_system#zones ManagedLustreFileSystem#zones}
   */
   readonly zones: string[];
   /**
   * encryption_key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_lustre_file_system#encryption_key ManagedLustreFileSystem#encryption_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_lustre_file_system#encryption_key ManagedLustreFileSystem#encryption_key}
   */
   readonly encryptionKey?: ManagedLustreFileSystemEncryptionKey;
   /**
   * hsm_setting block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_lustre_file_system#hsm_setting ManagedLustreFileSystem#hsm_setting}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_lustre_file_system#hsm_setting ManagedLustreFileSystem#hsm_setting}
   */
   readonly hsmSetting?: ManagedLustreFileSystemHsmSetting;
   /**
   * identity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_lustre_file_system#identity ManagedLustreFileSystem#identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_lustre_file_system#identity ManagedLustreFileSystem#identity}
   */
   readonly identity?: ManagedLustreFileSystemIdentity;
   /**
   * maintenance_window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_lustre_file_system#maintenance_window ManagedLustreFileSystem#maintenance_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_lustre_file_system#maintenance_window ManagedLustreFileSystem#maintenance_window}
   */
   readonly maintenanceWindow: ManagedLustreFileSystemMaintenanceWindow;
   /**
   * root_squash block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_lustre_file_system#root_squash ManagedLustreFileSystem#root_squash}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_lustre_file_system#root_squash ManagedLustreFileSystem#root_squash}
   */
   readonly rootSquash?: ManagedLustreFileSystemRootSquash;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_lustre_file_system#timeouts ManagedLustreFileSystem#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_lustre_file_system#timeouts ManagedLustreFileSystem#timeouts}
   */
   readonly timeouts?: ManagedLustreFileSystemTimeouts;
 }
 export interface ManagedLustreFileSystemEncryptionKey {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_lustre_file_system#key_url ManagedLustreFileSystem#key_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_lustre_file_system#key_url ManagedLustreFileSystem#key_url}
   */
   readonly keyUrl: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_lustre_file_system#source_vault_id ManagedLustreFileSystem#source_vault_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_lustre_file_system#source_vault_id ManagedLustreFileSystem#source_vault_id}
   */
   readonly sourceVaultId: string;
 }
@@ -102,7 +102,7 @@ export interface ManagedLustreFileSystemEncryptionKey {
 export function managedLustreFileSystemEncryptionKeyToTerraform(struct?: ManagedLustreFileSystemEncryptionKeyOutputReference | ManagedLustreFileSystemEncryptionKey): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key_url: cdktn.stringToTerraform(struct!.keyUrl),
@@ -114,7 +114,7 @@ export function managedLustreFileSystemEncryptionKeyToTerraform(struct?: Managed
 export function managedLustreFileSystemEncryptionKeyToHclTerraform(struct?: ManagedLustreFileSystemEncryptionKeyOutputReference | ManagedLustreFileSystemEncryptionKey): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key_url: {
@@ -201,15 +201,15 @@ export class ManagedLustreFileSystemEncryptionKeyOutputReference extends cdktn.C
 }
 export interface ManagedLustreFileSystemHsmSetting {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_lustre_file_system#container_id ManagedLustreFileSystem#container_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_lustre_file_system#container_id ManagedLustreFileSystem#container_id}
   */
   readonly containerId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_lustre_file_system#import_prefix ManagedLustreFileSystem#import_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_lustre_file_system#import_prefix ManagedLustreFileSystem#import_prefix}
   */
   readonly importPrefix?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_lustre_file_system#logging_container_id ManagedLustreFileSystem#logging_container_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_lustre_file_system#logging_container_id ManagedLustreFileSystem#logging_container_id}
   */
   readonly loggingContainerId: string;
 }
@@ -217,7 +217,7 @@ export interface ManagedLustreFileSystemHsmSetting {
 export function managedLustreFileSystemHsmSettingToTerraform(struct?: ManagedLustreFileSystemHsmSettingOutputReference | ManagedLustreFileSystemHsmSetting): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     container_id: cdktn.stringToTerraform(struct!.containerId),
@@ -230,7 +230,7 @@ export function managedLustreFileSystemHsmSettingToTerraform(struct?: ManagedLus
 export function managedLustreFileSystemHsmSettingToHclTerraform(struct?: ManagedLustreFileSystemHsmSettingOutputReference | ManagedLustreFileSystemHsmSetting): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     container_id: {
@@ -345,11 +345,11 @@ export class ManagedLustreFileSystemHsmSettingOutputReference extends cdktn.Comp
 }
 export interface ManagedLustreFileSystemIdentity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_lustre_file_system#identity_ids ManagedLustreFileSystem#identity_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_lustre_file_system#identity_ids ManagedLustreFileSystem#identity_ids}
   */
   readonly identityIds: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_lustre_file_system#type ManagedLustreFileSystem#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_lustre_file_system#type ManagedLustreFileSystem#type}
   */
   readonly type: string;
 }
@@ -357,7 +357,7 @@ export interface ManagedLustreFileSystemIdentity {
 export function managedLustreFileSystemIdentityToTerraform(struct?: ManagedLustreFileSystemIdentityOutputReference | ManagedLustreFileSystemIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
@@ -369,7 +369,7 @@ export function managedLustreFileSystemIdentityToTerraform(struct?: ManagedLustr
 export function managedLustreFileSystemIdentityToHclTerraform(struct?: ManagedLustreFileSystemIdentityOutputReference | ManagedLustreFileSystemIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     identity_ids: {
@@ -456,11 +456,11 @@ export class ManagedLustreFileSystemIdentityOutputReference extends cdktn.Comple
 }
 export interface ManagedLustreFileSystemMaintenanceWindow {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_lustre_file_system#day_of_week ManagedLustreFileSystem#day_of_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_lustre_file_system#day_of_week ManagedLustreFileSystem#day_of_week}
   */
   readonly dayOfWeek: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_lustre_file_system#time_of_day_in_utc ManagedLustreFileSystem#time_of_day_in_utc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_lustre_file_system#time_of_day_in_utc ManagedLustreFileSystem#time_of_day_in_utc}
   */
   readonly timeOfDayInUtc: string;
 }
@@ -468,7 +468,7 @@ export interface ManagedLustreFileSystemMaintenanceWindow {
 export function managedLustreFileSystemMaintenanceWindowToTerraform(struct?: ManagedLustreFileSystemMaintenanceWindowOutputReference | ManagedLustreFileSystemMaintenanceWindow): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     day_of_week: cdktn.stringToTerraform(struct!.dayOfWeek),
@@ -480,7 +480,7 @@ export function managedLustreFileSystemMaintenanceWindowToTerraform(struct?: Man
 export function managedLustreFileSystemMaintenanceWindowToHclTerraform(struct?: ManagedLustreFileSystemMaintenanceWindowOutputReference | ManagedLustreFileSystemMaintenanceWindow): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     day_of_week: {
@@ -567,19 +567,19 @@ export class ManagedLustreFileSystemMaintenanceWindowOutputReference extends cdk
 }
 export interface ManagedLustreFileSystemRootSquash {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_lustre_file_system#mode ManagedLustreFileSystem#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_lustre_file_system#mode ManagedLustreFileSystem#mode}
   */
   readonly mode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_lustre_file_system#no_squash_nids ManagedLustreFileSystem#no_squash_nids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_lustre_file_system#no_squash_nids ManagedLustreFileSystem#no_squash_nids}
   */
   readonly noSquashNids: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_lustre_file_system#squash_gid ManagedLustreFileSystem#squash_gid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_lustre_file_system#squash_gid ManagedLustreFileSystem#squash_gid}
   */
   readonly squashGid?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_lustre_file_system#squash_uid ManagedLustreFileSystem#squash_uid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_lustre_file_system#squash_uid ManagedLustreFileSystem#squash_uid}
   */
   readonly squashUid?: number;
 }
@@ -587,7 +587,7 @@ export interface ManagedLustreFileSystemRootSquash {
 export function managedLustreFileSystemRootSquashToTerraform(struct?: ManagedLustreFileSystemRootSquashOutputReference | ManagedLustreFileSystemRootSquash): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     mode: cdktn.stringToTerraform(struct!.mode),
@@ -601,7 +601,7 @@ export function managedLustreFileSystemRootSquashToTerraform(struct?: ManagedLus
 export function managedLustreFileSystemRootSquashToHclTerraform(struct?: ManagedLustreFileSystemRootSquashOutputReference | ManagedLustreFileSystemRootSquash): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     mode: {
@@ -744,19 +744,19 @@ export class ManagedLustreFileSystemRootSquashOutputReference extends cdktn.Comp
 }
 export interface ManagedLustreFileSystemTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_lustre_file_system#create ManagedLustreFileSystem#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_lustre_file_system#create ManagedLustreFileSystem#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_lustre_file_system#delete ManagedLustreFileSystem#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_lustre_file_system#delete ManagedLustreFileSystem#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_lustre_file_system#read ManagedLustreFileSystem#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_lustre_file_system#read ManagedLustreFileSystem#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_lustre_file_system#update ManagedLustreFileSystem#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_lustre_file_system#update ManagedLustreFileSystem#update}
   */
   readonly update?: string;
 }
@@ -764,7 +764,7 @@ export interface ManagedLustreFileSystemTimeouts {
 export function managedLustreFileSystemTimeoutsToTerraform(struct?: ManagedLustreFileSystemTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -778,7 +778,7 @@ export function managedLustreFileSystemTimeoutsToTerraform(struct?: ManagedLustr
 export function managedLustreFileSystemTimeoutsToHclTerraform(struct?: ManagedLustreFileSystemTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -937,7 +937,7 @@ export class ManagedLustreFileSystemTimeoutsOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_lustre_file_system azurerm_managed_lustre_file_system}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_lustre_file_system azurerm_managed_lustre_file_system}
 */
 export class ManagedLustreFileSystem extends cdktn.TerraformResource {
 
@@ -953,7 +953,7 @@ export class ManagedLustreFileSystem extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ManagedLustreFileSystem resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ManagedLustreFileSystem to import
-  * @param importFromId The id of the existing ManagedLustreFileSystem that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_lustre_file_system#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ManagedLustreFileSystem that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_lustre_file_system#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ManagedLustreFileSystem to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -965,7 +965,7 @@ export class ManagedLustreFileSystem extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_lustre_file_system azurerm_managed_lustre_file_system} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_lustre_file_system azurerm_managed_lustre_file_system} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -976,7 +976,7 @@ export class ManagedLustreFileSystem extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_managed_lustre_file_system',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

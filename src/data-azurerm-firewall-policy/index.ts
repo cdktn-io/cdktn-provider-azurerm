@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/firewall_policy
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/firewall_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktn from 'cdktn';
 
 export interface DataAzurermFirewallPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/firewall_policy#id DataAzurermFirewallPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/firewall_policy#id DataAzurermFirewallPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/firewall_policy#name DataAzurermFirewallPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/firewall_policy#name DataAzurermFirewallPolicy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/firewall_policy#resource_group_name DataAzurermFirewallPolicy#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/firewall_policy#resource_group_name DataAzurermFirewallPolicy#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/firewall_policy#timeouts DataAzurermFirewallPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/firewall_policy#timeouts DataAzurermFirewallPolicy#timeouts}
   */
   readonly timeouts?: DataAzurermFirewallPolicyTimeouts;
 }
@@ -40,7 +40,7 @@ export interface DataAzurermFirewallPolicyDns {
 export function dataAzurermFirewallPolicyDnsToTerraform(struct?: DataAzurermFirewallPolicyDns): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -50,7 +50,7 @@ export function dataAzurermFirewallPolicyDnsToTerraform(struct?: DataAzurermFire
 export function dataAzurermFirewallPolicyDnsToHclTerraform(struct?: DataAzurermFirewallPolicyDns): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -125,7 +125,7 @@ export interface DataAzurermFirewallPolicyThreatIntelligenceAllowlistStruct {
 export function dataAzurermFirewallPolicyThreatIntelligenceAllowlistStructToTerraform(struct?: DataAzurermFirewallPolicyThreatIntelligenceAllowlistStruct): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -135,7 +135,7 @@ export function dataAzurermFirewallPolicyThreatIntelligenceAllowlistStructToTerr
 export function dataAzurermFirewallPolicyThreatIntelligenceAllowlistStructToHclTerraform(struct?: DataAzurermFirewallPolicyThreatIntelligenceAllowlistStruct): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -201,7 +201,7 @@ export class DataAzurermFirewallPolicyThreatIntelligenceAllowlistStructList exte
 }
 export interface DataAzurermFirewallPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/firewall_policy#read DataAzurermFirewallPolicy#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/firewall_policy#read DataAzurermFirewallPolicy#read}
   */
   readonly read?: string;
 }
@@ -209,7 +209,7 @@ export interface DataAzurermFirewallPolicyTimeouts {
 export function dataAzurermFirewallPolicyTimeoutsToTerraform(struct?: DataAzurermFirewallPolicyTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     read: cdktn.stringToTerraform(struct!.read),
@@ -220,7 +220,7 @@ export function dataAzurermFirewallPolicyTimeoutsToTerraform(struct?: DataAzurer
 export function dataAzurermFirewallPolicyTimeoutsToHclTerraform(struct?: DataAzurermFirewallPolicyTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     read: {
@@ -295,7 +295,7 @@ export class DataAzurermFirewallPolicyTimeoutsOutputReference extends cdktn.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/firewall_policy azurerm_firewall_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/firewall_policy azurerm_firewall_policy}
 */
 export class DataAzurermFirewallPolicy extends cdktn.TerraformDataSource {
 
@@ -311,7 +311,7 @@ export class DataAzurermFirewallPolicy extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAzurermFirewallPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermFirewallPolicy to import
-  * @param importFromId The id of the existing DataAzurermFirewallPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/firewall_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzurermFirewallPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/firewall_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermFirewallPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -323,7 +323,7 @@ export class DataAzurermFirewallPolicy extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/firewall_policy azurerm_firewall_policy} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/firewall_policy azurerm_firewall_policy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -334,7 +334,7 @@ export class DataAzurermFirewallPolicy extends cdktn.TerraformDataSource {
       terraformResourceType: 'azurerm_firewall_policy',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

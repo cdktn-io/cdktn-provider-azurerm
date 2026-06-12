@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,60 +13,60 @@ import * as cdktn from 'cdktn';
 
 export interface WebApplicationFirewallPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#id WebApplicationFirewallPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#id WebApplicationFirewallPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#location WebApplicationFirewallPolicy#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#location WebApplicationFirewallPolicy#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#name WebApplicationFirewallPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#name WebApplicationFirewallPolicy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#resource_group_name WebApplicationFirewallPolicy#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#resource_group_name WebApplicationFirewallPolicy#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#tags WebApplicationFirewallPolicy#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#tags WebApplicationFirewallPolicy#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * custom_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#custom_rules WebApplicationFirewallPolicy#custom_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#custom_rules WebApplicationFirewallPolicy#custom_rules}
   */
   readonly customRules?: WebApplicationFirewallPolicyCustomRules[] | cdktn.IResolvable;
   /**
   * managed_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#managed_rules WebApplicationFirewallPolicy#managed_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#managed_rules WebApplicationFirewallPolicy#managed_rules}
   */
   readonly managedRules: WebApplicationFirewallPolicyManagedRules;
   /**
   * policy_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#policy_settings WebApplicationFirewallPolicy#policy_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#policy_settings WebApplicationFirewallPolicy#policy_settings}
   */
   readonly policySettings?: WebApplicationFirewallPolicyPolicySettings;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#timeouts WebApplicationFirewallPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#timeouts WebApplicationFirewallPolicy#timeouts}
   */
   readonly timeouts?: WebApplicationFirewallPolicyTimeouts;
 }
 export interface WebApplicationFirewallPolicyCustomRulesMatchConditionsMatchVariables {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#selector WebApplicationFirewallPolicy#selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#selector WebApplicationFirewallPolicy#selector}
   */
   readonly selector?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#variable_name WebApplicationFirewallPolicy#variable_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#variable_name WebApplicationFirewallPolicy#variable_name}
   */
   readonly variableName: string;
 }
@@ -74,7 +74,7 @@ export interface WebApplicationFirewallPolicyCustomRulesMatchConditionsMatchVari
 export function webApplicationFirewallPolicyCustomRulesMatchConditionsMatchVariablesToTerraform(struct?: WebApplicationFirewallPolicyCustomRulesMatchConditionsMatchVariables | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     selector: cdktn.stringToTerraform(struct!.selector),
@@ -86,7 +86,7 @@ export function webApplicationFirewallPolicyCustomRulesMatchConditionsMatchVaria
 export function webApplicationFirewallPolicyCustomRulesMatchConditionsMatchVariablesToHclTerraform(struct?: WebApplicationFirewallPolicyCustomRulesMatchConditionsMatchVariables | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     selector: {
@@ -208,25 +208,25 @@ export class WebApplicationFirewallPolicyCustomRulesMatchConditionsMatchVariable
 }
 export interface WebApplicationFirewallPolicyCustomRulesMatchConditions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#match_values WebApplicationFirewallPolicy#match_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#match_values WebApplicationFirewallPolicy#match_values}
   */
   readonly matchValues?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#negation_condition WebApplicationFirewallPolicy#negation_condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#negation_condition WebApplicationFirewallPolicy#negation_condition}
   */
   readonly negationCondition?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#operator WebApplicationFirewallPolicy#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#operator WebApplicationFirewallPolicy#operator}
   */
   readonly operator: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#transforms WebApplicationFirewallPolicy#transforms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#transforms WebApplicationFirewallPolicy#transforms}
   */
   readonly transforms?: string[];
   /**
   * match_variables block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#match_variables WebApplicationFirewallPolicy#match_variables}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#match_variables WebApplicationFirewallPolicy#match_variables}
   */
   readonly matchVariables: WebApplicationFirewallPolicyCustomRulesMatchConditionsMatchVariables[] | cdktn.IResolvable;
 }
@@ -234,7 +234,7 @@ export interface WebApplicationFirewallPolicyCustomRulesMatchConditions {
 export function webApplicationFirewallPolicyCustomRulesMatchConditionsToTerraform(struct?: WebApplicationFirewallPolicyCustomRulesMatchConditions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     match_values: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.matchValues),
@@ -249,7 +249,7 @@ export function webApplicationFirewallPolicyCustomRulesMatchConditionsToTerrafor
 export function webApplicationFirewallPolicyCustomRulesMatchConditionsToHclTerraform(struct?: WebApplicationFirewallPolicyCustomRulesMatchConditions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     match_values: {
@@ -452,41 +452,41 @@ export class WebApplicationFirewallPolicyCustomRulesMatchConditionsList extends 
 }
 export interface WebApplicationFirewallPolicyCustomRules {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#action WebApplicationFirewallPolicy#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#action WebApplicationFirewallPolicy#action}
   */
   readonly action: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#enabled WebApplicationFirewallPolicy#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#enabled WebApplicationFirewallPolicy#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#group_rate_limit_by WebApplicationFirewallPolicy#group_rate_limit_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#group_rate_limit_by WebApplicationFirewallPolicy#group_rate_limit_by}
   */
   readonly groupRateLimitBy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#name WebApplicationFirewallPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#name WebApplicationFirewallPolicy#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#priority WebApplicationFirewallPolicy#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#priority WebApplicationFirewallPolicy#priority}
   */
   readonly priority: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#rate_limit_duration WebApplicationFirewallPolicy#rate_limit_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#rate_limit_duration WebApplicationFirewallPolicy#rate_limit_duration}
   */
   readonly rateLimitDuration?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#rate_limit_threshold WebApplicationFirewallPolicy#rate_limit_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#rate_limit_threshold WebApplicationFirewallPolicy#rate_limit_threshold}
   */
   readonly rateLimitThreshold?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#rule_type WebApplicationFirewallPolicy#rule_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#rule_type WebApplicationFirewallPolicy#rule_type}
   */
   readonly ruleType: string;
   /**
   * match_conditions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#match_conditions WebApplicationFirewallPolicy#match_conditions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#match_conditions WebApplicationFirewallPolicy#match_conditions}
   */
   readonly matchConditions: WebApplicationFirewallPolicyCustomRulesMatchConditions[] | cdktn.IResolvable;
 }
@@ -494,7 +494,7 @@ export interface WebApplicationFirewallPolicyCustomRules {
 export function webApplicationFirewallPolicyCustomRulesToTerraform(struct?: WebApplicationFirewallPolicyCustomRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     action: cdktn.stringToTerraform(struct!.action),
@@ -513,7 +513,7 @@ export function webApplicationFirewallPolicyCustomRulesToTerraform(struct?: WebA
 export function webApplicationFirewallPolicyCustomRulesToHclTerraform(struct?: WebApplicationFirewallPolicyCustomRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     action: {
@@ -822,11 +822,11 @@ export class WebApplicationFirewallPolicyCustomRulesList extends cdktn.ComplexLi
 }
 export interface WebApplicationFirewallPolicyManagedRulesExclusionExcludedRuleSetRuleGroup {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#excluded_rules WebApplicationFirewallPolicy#excluded_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#excluded_rules WebApplicationFirewallPolicy#excluded_rules}
   */
   readonly excludedRules?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#rule_group_name WebApplicationFirewallPolicy#rule_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#rule_group_name WebApplicationFirewallPolicy#rule_group_name}
   */
   readonly ruleGroupName: string;
 }
@@ -834,7 +834,7 @@ export interface WebApplicationFirewallPolicyManagedRulesExclusionExcludedRuleSe
 export function webApplicationFirewallPolicyManagedRulesExclusionExcludedRuleSetRuleGroupToTerraform(struct?: WebApplicationFirewallPolicyManagedRulesExclusionExcludedRuleSetRuleGroup | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     excluded_rules: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.excludedRules),
@@ -846,7 +846,7 @@ export function webApplicationFirewallPolicyManagedRulesExclusionExcludedRuleSet
 export function webApplicationFirewallPolicyManagedRulesExclusionExcludedRuleSetRuleGroupToHclTerraform(struct?: WebApplicationFirewallPolicyManagedRulesExclusionExcludedRuleSetRuleGroup | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     excluded_rules: {
@@ -968,17 +968,17 @@ export class WebApplicationFirewallPolicyManagedRulesExclusionExcludedRuleSetRul
 }
 export interface WebApplicationFirewallPolicyManagedRulesExclusionExcludedRuleSet {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#type WebApplicationFirewallPolicy#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#type WebApplicationFirewallPolicy#type}
   */
   readonly type?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#version WebApplicationFirewallPolicy#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#version WebApplicationFirewallPolicy#version}
   */
   readonly version?: string;
   /**
   * rule_group block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#rule_group WebApplicationFirewallPolicy#rule_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#rule_group WebApplicationFirewallPolicy#rule_group}
   */
   readonly ruleGroup?: WebApplicationFirewallPolicyManagedRulesExclusionExcludedRuleSetRuleGroup[] | cdktn.IResolvable;
 }
@@ -986,7 +986,7 @@ export interface WebApplicationFirewallPolicyManagedRulesExclusionExcludedRuleSe
 export function webApplicationFirewallPolicyManagedRulesExclusionExcludedRuleSetToTerraform(struct?: WebApplicationFirewallPolicyManagedRulesExclusionExcludedRuleSetOutputReference | WebApplicationFirewallPolicyManagedRulesExclusionExcludedRuleSet): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     type: cdktn.stringToTerraform(struct!.type),
@@ -999,7 +999,7 @@ export function webApplicationFirewallPolicyManagedRulesExclusionExcludedRuleSet
 export function webApplicationFirewallPolicyManagedRulesExclusionExcludedRuleSetToHclTerraform(struct?: WebApplicationFirewallPolicyManagedRulesExclusionExcludedRuleSetOutputReference | WebApplicationFirewallPolicyManagedRulesExclusionExcludedRuleSet): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     type: {
@@ -1120,21 +1120,21 @@ export class WebApplicationFirewallPolicyManagedRulesExclusionExcludedRuleSetOut
 }
 export interface WebApplicationFirewallPolicyManagedRulesExclusion {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#match_variable WebApplicationFirewallPolicy#match_variable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#match_variable WebApplicationFirewallPolicy#match_variable}
   */
   readonly matchVariable: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#selector WebApplicationFirewallPolicy#selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#selector WebApplicationFirewallPolicy#selector}
   */
   readonly selector: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#selector_match_operator WebApplicationFirewallPolicy#selector_match_operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#selector_match_operator WebApplicationFirewallPolicy#selector_match_operator}
   */
   readonly selectorMatchOperator: string;
   /**
   * excluded_rule_set block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#excluded_rule_set WebApplicationFirewallPolicy#excluded_rule_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#excluded_rule_set WebApplicationFirewallPolicy#excluded_rule_set}
   */
   readonly excludedRuleSet?: WebApplicationFirewallPolicyManagedRulesExclusionExcludedRuleSet;
 }
@@ -1142,7 +1142,7 @@ export interface WebApplicationFirewallPolicyManagedRulesExclusion {
 export function webApplicationFirewallPolicyManagedRulesExclusionToTerraform(struct?: WebApplicationFirewallPolicyManagedRulesExclusion | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     match_variable: cdktn.stringToTerraform(struct!.matchVariable),
@@ -1156,7 +1156,7 @@ export function webApplicationFirewallPolicyManagedRulesExclusionToTerraform(str
 export function webApplicationFirewallPolicyManagedRulesExclusionToHclTerraform(struct?: WebApplicationFirewallPolicyManagedRulesExclusion | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     match_variable: {
@@ -1328,15 +1328,15 @@ export class WebApplicationFirewallPolicyManagedRulesExclusionList extends cdktn
 }
 export interface WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroupOverrideRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#action WebApplicationFirewallPolicy#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#action WebApplicationFirewallPolicy#action}
   */
   readonly action?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#enabled WebApplicationFirewallPolicy#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#enabled WebApplicationFirewallPolicy#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#id WebApplicationFirewallPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#id WebApplicationFirewallPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1347,7 +1347,7 @@ export interface WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroup
 export function webApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroupOverrideRuleToTerraform(struct?: WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroupOverrideRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     action: cdktn.stringToTerraform(struct!.action),
@@ -1360,7 +1360,7 @@ export function webApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroupO
 export function webApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroupOverrideRuleToHclTerraform(struct?: WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroupOverrideRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     action: {
@@ -1510,13 +1510,13 @@ export class WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroupOver
 }
 export interface WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroupOverride {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#rule_group_name WebApplicationFirewallPolicy#rule_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#rule_group_name WebApplicationFirewallPolicy#rule_group_name}
   */
   readonly ruleGroupName: string;
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#rule WebApplicationFirewallPolicy#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#rule WebApplicationFirewallPolicy#rule}
   */
   readonly rule?: WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroupOverrideRule[] | cdktn.IResolvable;
 }
@@ -1524,7 +1524,7 @@ export interface WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroup
 export function webApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroupOverrideToTerraform(struct?: WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroupOverride | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     rule_group_name: cdktn.stringToTerraform(struct!.ruleGroupName),
@@ -1536,7 +1536,7 @@ export function webApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroupO
 export function webApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroupOverrideToHclTerraform(struct?: WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroupOverride | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     rule_group_name: {
@@ -1658,17 +1658,17 @@ export class WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroupOver
 }
 export interface WebApplicationFirewallPolicyManagedRulesManagedRuleSet {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#type WebApplicationFirewallPolicy#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#type WebApplicationFirewallPolicy#type}
   */
   readonly type?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#version WebApplicationFirewallPolicy#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#version WebApplicationFirewallPolicy#version}
   */
   readonly version: string;
   /**
   * rule_group_override block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#rule_group_override WebApplicationFirewallPolicy#rule_group_override}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#rule_group_override WebApplicationFirewallPolicy#rule_group_override}
   */
   readonly ruleGroupOverride?: WebApplicationFirewallPolicyManagedRulesManagedRuleSetRuleGroupOverride[] | cdktn.IResolvable;
 }
@@ -1676,7 +1676,7 @@ export interface WebApplicationFirewallPolicyManagedRulesManagedRuleSet {
 export function webApplicationFirewallPolicyManagedRulesManagedRuleSetToTerraform(struct?: WebApplicationFirewallPolicyManagedRulesManagedRuleSet | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     type: cdktn.stringToTerraform(struct!.type),
@@ -1689,7 +1689,7 @@ export function webApplicationFirewallPolicyManagedRulesManagedRuleSetToTerrafor
 export function webApplicationFirewallPolicyManagedRulesManagedRuleSetToHclTerraform(struct?: WebApplicationFirewallPolicyManagedRulesManagedRuleSet | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     type: {
@@ -1841,13 +1841,13 @@ export interface WebApplicationFirewallPolicyManagedRules {
   /**
   * exclusion block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#exclusion WebApplicationFirewallPolicy#exclusion}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#exclusion WebApplicationFirewallPolicy#exclusion}
   */
   readonly exclusion?: WebApplicationFirewallPolicyManagedRulesExclusion[] | cdktn.IResolvable;
   /**
   * managed_rule_set block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#managed_rule_set WebApplicationFirewallPolicy#managed_rule_set}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#managed_rule_set WebApplicationFirewallPolicy#managed_rule_set}
   */
   readonly managedRuleSet: WebApplicationFirewallPolicyManagedRulesManagedRuleSet[] | cdktn.IResolvable;
 }
@@ -1855,7 +1855,7 @@ export interface WebApplicationFirewallPolicyManagedRules {
 export function webApplicationFirewallPolicyManagedRulesToTerraform(struct?: WebApplicationFirewallPolicyManagedRulesOutputReference | WebApplicationFirewallPolicyManagedRules): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     exclusion: cdktn.listMapper(webApplicationFirewallPolicyManagedRulesExclusionToTerraform, true)(struct!.exclusion),
@@ -1867,7 +1867,7 @@ export function webApplicationFirewallPolicyManagedRulesToTerraform(struct?: Web
 export function webApplicationFirewallPolicyManagedRulesToHclTerraform(struct?: WebApplicationFirewallPolicyManagedRulesOutputReference | WebApplicationFirewallPolicyManagedRules): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     exclusion: {
@@ -1957,21 +1957,21 @@ export class WebApplicationFirewallPolicyManagedRulesOutputReference extends cdk
 }
 export interface WebApplicationFirewallPolicyPolicySettingsLogScrubbingRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#enabled WebApplicationFirewallPolicy#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#enabled WebApplicationFirewallPolicy#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#match_variable WebApplicationFirewallPolicy#match_variable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#match_variable WebApplicationFirewallPolicy#match_variable}
   */
   readonly matchVariable: string;
   /**
   * When matchVariable is a collection, operator used to specify which elements in the collection this rule applies to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#selector WebApplicationFirewallPolicy#selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#selector WebApplicationFirewallPolicy#selector}
   */
   readonly selector?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#selector_match_operator WebApplicationFirewallPolicy#selector_match_operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#selector_match_operator WebApplicationFirewallPolicy#selector_match_operator}
   */
   readonly selectorMatchOperator?: string;
 }
@@ -1979,7 +1979,7 @@ export interface WebApplicationFirewallPolicyPolicySettingsLogScrubbingRule {
 export function webApplicationFirewallPolicyPolicySettingsLogScrubbingRuleToTerraform(struct?: WebApplicationFirewallPolicyPolicySettingsLogScrubbingRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -1993,7 +1993,7 @@ export function webApplicationFirewallPolicyPolicySettingsLogScrubbingRuleToTerr
 export function webApplicationFirewallPolicyPolicySettingsLogScrubbingRuleToHclTerraform(struct?: WebApplicationFirewallPolicyPolicySettingsLogScrubbingRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -2171,13 +2171,13 @@ export class WebApplicationFirewallPolicyPolicySettingsLogScrubbingRuleList exte
 }
 export interface WebApplicationFirewallPolicyPolicySettingsLogScrubbing {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#enabled WebApplicationFirewallPolicy#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#enabled WebApplicationFirewallPolicy#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#rule WebApplicationFirewallPolicy#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#rule WebApplicationFirewallPolicy#rule}
   */
   readonly rule?: WebApplicationFirewallPolicyPolicySettingsLogScrubbingRule[] | cdktn.IResolvable;
 }
@@ -2185,7 +2185,7 @@ export interface WebApplicationFirewallPolicyPolicySettingsLogScrubbing {
 export function webApplicationFirewallPolicyPolicySettingsLogScrubbingToTerraform(struct?: WebApplicationFirewallPolicyPolicySettingsLogScrubbingOutputReference | WebApplicationFirewallPolicyPolicySettingsLogScrubbing): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -2197,7 +2197,7 @@ export function webApplicationFirewallPolicyPolicySettingsLogScrubbingToTerrafor
 export function webApplicationFirewallPolicyPolicySettingsLogScrubbingToHclTerraform(struct?: WebApplicationFirewallPolicyPolicySettingsLogScrubbingOutputReference | WebApplicationFirewallPolicyPolicySettingsLogScrubbing): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -2290,45 +2290,45 @@ export class WebApplicationFirewallPolicyPolicySettingsLogScrubbingOutputReferen
 }
 export interface WebApplicationFirewallPolicyPolicySettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#enabled WebApplicationFirewallPolicy#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#enabled WebApplicationFirewallPolicy#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#file_upload_enforcement WebApplicationFirewallPolicy#file_upload_enforcement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#file_upload_enforcement WebApplicationFirewallPolicy#file_upload_enforcement}
   */
   readonly fileUploadEnforcement?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#file_upload_limit_in_mb WebApplicationFirewallPolicy#file_upload_limit_in_mb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#file_upload_limit_in_mb WebApplicationFirewallPolicy#file_upload_limit_in_mb}
   */
   readonly fileUploadLimitInMb?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#js_challenge_cookie_expiration_in_minutes WebApplicationFirewallPolicy#js_challenge_cookie_expiration_in_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#js_challenge_cookie_expiration_in_minutes WebApplicationFirewallPolicy#js_challenge_cookie_expiration_in_minutes}
   */
   readonly jsChallengeCookieExpirationInMinutes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#max_request_body_size_in_kb WebApplicationFirewallPolicy#max_request_body_size_in_kb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#max_request_body_size_in_kb WebApplicationFirewallPolicy#max_request_body_size_in_kb}
   */
   readonly maxRequestBodySizeInKb?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#mode WebApplicationFirewallPolicy#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#mode WebApplicationFirewallPolicy#mode}
   */
   readonly mode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#request_body_check WebApplicationFirewallPolicy#request_body_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#request_body_check WebApplicationFirewallPolicy#request_body_check}
   */
   readonly requestBodyCheck?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#request_body_enforcement WebApplicationFirewallPolicy#request_body_enforcement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#request_body_enforcement WebApplicationFirewallPolicy#request_body_enforcement}
   */
   readonly requestBodyEnforcement?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#request_body_inspect_limit_in_kb WebApplicationFirewallPolicy#request_body_inspect_limit_in_kb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#request_body_inspect_limit_in_kb WebApplicationFirewallPolicy#request_body_inspect_limit_in_kb}
   */
   readonly requestBodyInspectLimitInKb?: number;
   /**
   * log_scrubbing block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#log_scrubbing WebApplicationFirewallPolicy#log_scrubbing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#log_scrubbing WebApplicationFirewallPolicy#log_scrubbing}
   */
   readonly logScrubbing?: WebApplicationFirewallPolicyPolicySettingsLogScrubbing;
 }
@@ -2336,7 +2336,7 @@ export interface WebApplicationFirewallPolicyPolicySettings {
 export function webApplicationFirewallPolicyPolicySettingsToTerraform(struct?: WebApplicationFirewallPolicyPolicySettingsOutputReference | WebApplicationFirewallPolicyPolicySettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -2356,7 +2356,7 @@ export function webApplicationFirewallPolicyPolicySettingsToTerraform(struct?: W
 export function webApplicationFirewallPolicyPolicySettingsToHclTerraform(struct?: WebApplicationFirewallPolicyPolicySettingsOutputReference | WebApplicationFirewallPolicyPolicySettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -2673,19 +2673,19 @@ export class WebApplicationFirewallPolicyPolicySettingsOutputReference extends c
 }
 export interface WebApplicationFirewallPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#create WebApplicationFirewallPolicy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#create WebApplicationFirewallPolicy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#delete WebApplicationFirewallPolicy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#delete WebApplicationFirewallPolicy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#read WebApplicationFirewallPolicy#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#read WebApplicationFirewallPolicy#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#update WebApplicationFirewallPolicy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#update WebApplicationFirewallPolicy#update}
   */
   readonly update?: string;
 }
@@ -2693,7 +2693,7 @@ export interface WebApplicationFirewallPolicyTimeouts {
 export function webApplicationFirewallPolicyTimeoutsToTerraform(struct?: WebApplicationFirewallPolicyTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -2707,7 +2707,7 @@ export function webApplicationFirewallPolicyTimeoutsToTerraform(struct?: WebAppl
 export function webApplicationFirewallPolicyTimeoutsToHclTerraform(struct?: WebApplicationFirewallPolicyTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -2866,7 +2866,7 @@ export class WebApplicationFirewallPolicyTimeoutsOutputReference extends cdktn.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy azurerm_web_application_firewall_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy azurerm_web_application_firewall_policy}
 */
 export class WebApplicationFirewallPolicy extends cdktn.TerraformResource {
 
@@ -2882,7 +2882,7 @@ export class WebApplicationFirewallPolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a WebApplicationFirewallPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WebApplicationFirewallPolicy to import
-  * @param importFromId The id of the existing WebApplicationFirewallPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WebApplicationFirewallPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WebApplicationFirewallPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2894,7 +2894,7 @@ export class WebApplicationFirewallPolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/web_application_firewall_policy azurerm_web_application_firewall_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/web_application_firewall_policy azurerm_web_application_firewall_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2905,7 +2905,7 @@ export class WebApplicationFirewallPolicy extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_web_application_firewall_policy',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

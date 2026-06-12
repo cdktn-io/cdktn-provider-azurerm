@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/policy_assignment
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/policy_assignment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktn from 'cdktn';
 
 export interface DataAzurermPolicyAssignmentConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/policy_assignment#id DataAzurermPolicyAssignment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/policy_assignment#id DataAzurermPolicyAssignment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/policy_assignment#name DataAzurermPolicyAssignment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/policy_assignment#name DataAzurermPolicyAssignment#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/policy_assignment#scope_id DataAzurermPolicyAssignment#scope_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/policy_assignment#scope_id DataAzurermPolicyAssignment#scope_id}
   */
   readonly scopeId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/policy_assignment#timeouts DataAzurermPolicyAssignment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/policy_assignment#timeouts DataAzurermPolicyAssignment#timeouts}
   */
   readonly timeouts?: DataAzurermPolicyAssignmentTimeouts;
 }
@@ -40,7 +40,7 @@ export interface DataAzurermPolicyAssignmentIdentity {
 export function dataAzurermPolicyAssignmentIdentityToTerraform(struct?: DataAzurermPolicyAssignmentIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -50,7 +50,7 @@ export function dataAzurermPolicyAssignmentIdentityToTerraform(struct?: DataAzur
 export function dataAzurermPolicyAssignmentIdentityToHclTerraform(struct?: DataAzurermPolicyAssignmentIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -130,7 +130,7 @@ export interface DataAzurermPolicyAssignmentNonComplianceMessage {
 export function dataAzurermPolicyAssignmentNonComplianceMessageToTerraform(struct?: DataAzurermPolicyAssignmentNonComplianceMessage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -140,7 +140,7 @@ export function dataAzurermPolicyAssignmentNonComplianceMessageToTerraform(struc
 export function dataAzurermPolicyAssignmentNonComplianceMessageToHclTerraform(struct?: DataAzurermPolicyAssignmentNonComplianceMessage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -206,7 +206,7 @@ export class DataAzurermPolicyAssignmentNonComplianceMessageList extends cdktn.C
 }
 export interface DataAzurermPolicyAssignmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/policy_assignment#read DataAzurermPolicyAssignment#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/policy_assignment#read DataAzurermPolicyAssignment#read}
   */
   readonly read?: string;
 }
@@ -214,7 +214,7 @@ export interface DataAzurermPolicyAssignmentTimeouts {
 export function dataAzurermPolicyAssignmentTimeoutsToTerraform(struct?: DataAzurermPolicyAssignmentTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     read: cdktn.stringToTerraform(struct!.read),
@@ -225,7 +225,7 @@ export function dataAzurermPolicyAssignmentTimeoutsToTerraform(struct?: DataAzur
 export function dataAzurermPolicyAssignmentTimeoutsToHclTerraform(struct?: DataAzurermPolicyAssignmentTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     read: {
@@ -300,7 +300,7 @@ export class DataAzurermPolicyAssignmentTimeoutsOutputReference extends cdktn.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/policy_assignment azurerm_policy_assignment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/policy_assignment azurerm_policy_assignment}
 */
 export class DataAzurermPolicyAssignment extends cdktn.TerraformDataSource {
 
@@ -316,7 +316,7 @@ export class DataAzurermPolicyAssignment extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAzurermPolicyAssignment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermPolicyAssignment to import
-  * @param importFromId The id of the existing DataAzurermPolicyAssignment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/policy_assignment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzurermPolicyAssignment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/policy_assignment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermPolicyAssignment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -328,7 +328,7 @@ export class DataAzurermPolicyAssignment extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/policy_assignment azurerm_policy_assignment} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/policy_assignment azurerm_policy_assignment} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -339,7 +339,7 @@ export class DataAzurermPolicyAssignment extends cdktn.TerraformDataSource {
       terraformResourceType: 'azurerm_policy_assignment',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

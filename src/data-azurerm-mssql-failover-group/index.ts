@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/mssql_failover_group
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/mssql_failover_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktn from 'cdktn';
 
 export interface DataAzurermMssqlFailoverGroupConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/mssql_failover_group#id DataAzurermMssqlFailoverGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/mssql_failover_group#id DataAzurermMssqlFailoverGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/mssql_failover_group#name DataAzurermMssqlFailoverGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/mssql_failover_group#name DataAzurermMssqlFailoverGroup#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/mssql_failover_group#server_id DataAzurermMssqlFailoverGroup#server_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/mssql_failover_group#server_id DataAzurermMssqlFailoverGroup#server_id}
   */
   readonly serverId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/mssql_failover_group#timeouts DataAzurermMssqlFailoverGroup#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/mssql_failover_group#timeouts DataAzurermMssqlFailoverGroup#timeouts}
   */
   readonly timeouts?: DataAzurermMssqlFailoverGroupTimeouts;
 }
@@ -40,7 +40,7 @@ export interface DataAzurermMssqlFailoverGroupPartnerServer {
 export function dataAzurermMssqlFailoverGroupPartnerServerToTerraform(struct?: DataAzurermMssqlFailoverGroupPartnerServer): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -50,7 +50,7 @@ export function dataAzurermMssqlFailoverGroupPartnerServerToTerraform(struct?: D
 export function dataAzurermMssqlFailoverGroupPartnerServerToHclTerraform(struct?: DataAzurermMssqlFailoverGroupPartnerServer): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -125,7 +125,7 @@ export interface DataAzurermMssqlFailoverGroupReadWriteEndpointFailoverPolicy {
 export function dataAzurermMssqlFailoverGroupReadWriteEndpointFailoverPolicyToTerraform(struct?: DataAzurermMssqlFailoverGroupReadWriteEndpointFailoverPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -135,7 +135,7 @@ export function dataAzurermMssqlFailoverGroupReadWriteEndpointFailoverPolicyToTe
 export function dataAzurermMssqlFailoverGroupReadWriteEndpointFailoverPolicyToHclTerraform(struct?: DataAzurermMssqlFailoverGroupReadWriteEndpointFailoverPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -201,7 +201,7 @@ export class DataAzurermMssqlFailoverGroupReadWriteEndpointFailoverPolicyList ex
 }
 export interface DataAzurermMssqlFailoverGroupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/mssql_failover_group#read DataAzurermMssqlFailoverGroup#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/mssql_failover_group#read DataAzurermMssqlFailoverGroup#read}
   */
   readonly read?: string;
 }
@@ -209,7 +209,7 @@ export interface DataAzurermMssqlFailoverGroupTimeouts {
 export function dataAzurermMssqlFailoverGroupTimeoutsToTerraform(struct?: DataAzurermMssqlFailoverGroupTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     read: cdktn.stringToTerraform(struct!.read),
@@ -220,7 +220,7 @@ export function dataAzurermMssqlFailoverGroupTimeoutsToTerraform(struct?: DataAz
 export function dataAzurermMssqlFailoverGroupTimeoutsToHclTerraform(struct?: DataAzurermMssqlFailoverGroupTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     read: {
@@ -295,7 +295,7 @@ export class DataAzurermMssqlFailoverGroupTimeoutsOutputReference extends cdktn.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/mssql_failover_group azurerm_mssql_failover_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/mssql_failover_group azurerm_mssql_failover_group}
 */
 export class DataAzurermMssqlFailoverGroup extends cdktn.TerraformDataSource {
 
@@ -311,7 +311,7 @@ export class DataAzurermMssqlFailoverGroup extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAzurermMssqlFailoverGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermMssqlFailoverGroup to import
-  * @param importFromId The id of the existing DataAzurermMssqlFailoverGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/mssql_failover_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzurermMssqlFailoverGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/mssql_failover_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermMssqlFailoverGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -323,7 +323,7 @@ export class DataAzurermMssqlFailoverGroup extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/mssql_failover_group azurerm_mssql_failover_group} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/mssql_failover_group azurerm_mssql_failover_group} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -334,7 +334,7 @@ export class DataAzurermMssqlFailoverGroup extends cdktn.TerraformDataSource {
       terraformResourceType: 'azurerm_mssql_failover_group',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

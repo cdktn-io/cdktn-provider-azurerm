@@ -1109,8 +1109,6 @@ Object.defineProperty(exports, 'vmwareCluster', { get: function () { return requ
 Object.defineProperty(exports, 'vmwareExpressRouteAuthorization', { get: function () { return require('./vmware-express-route-authorization'); } });
 Object.defineProperty(exports, 'vmwareNetappVolumeAttachment', { get: function () { return require('./vmware-netapp-volume-attachment'); } });
 Object.defineProperty(exports, 'vmwarePrivateCloud', { get: function () { return require('./vmware-private-cloud'); } });
-Object.defineProperty(exports, 'voiceServicesCommunicationsGateway', { get: function () { return require('./voice-services-communications-gateway'); } });
-Object.defineProperty(exports, 'voiceServicesCommunicationsGatewayTestLine', { get: function () { return require('./voice-services-communications-gateway-test-line'); } });
 Object.defineProperty(exports, 'vpnGateway', { get: function () { return require('./vpn-gateway'); } });
 Object.defineProperty(exports, 'vpnGatewayConnection', { get: function () { return require('./vpn-gateway-connection'); } });
 Object.defineProperty(exports, 'vpnGatewayNatRule', { get: function () { return require('./vpn-gateway-nat-rule'); } });

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/machine_learning_inference_cluster
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/machine_learning_inference_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,66 +13,66 @@ import * as cdktn from 'cdktn';
 
 export interface MachineLearningInferenceClusterConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/machine_learning_inference_cluster#cluster_purpose MachineLearningInferenceCluster#cluster_purpose}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/machine_learning_inference_cluster#cluster_purpose MachineLearningInferenceCluster#cluster_purpose}
   */
   readonly clusterPurpose?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/machine_learning_inference_cluster#description MachineLearningInferenceCluster#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/machine_learning_inference_cluster#description MachineLearningInferenceCluster#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/machine_learning_inference_cluster#id MachineLearningInferenceCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/machine_learning_inference_cluster#id MachineLearningInferenceCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/machine_learning_inference_cluster#kubernetes_cluster_id MachineLearningInferenceCluster#kubernetes_cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/machine_learning_inference_cluster#kubernetes_cluster_id MachineLearningInferenceCluster#kubernetes_cluster_id}
   */
   readonly kubernetesClusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/machine_learning_inference_cluster#location MachineLearningInferenceCluster#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/machine_learning_inference_cluster#location MachineLearningInferenceCluster#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/machine_learning_inference_cluster#machine_learning_workspace_id MachineLearningInferenceCluster#machine_learning_workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/machine_learning_inference_cluster#machine_learning_workspace_id MachineLearningInferenceCluster#machine_learning_workspace_id}
   */
   readonly machineLearningWorkspaceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/machine_learning_inference_cluster#name MachineLearningInferenceCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/machine_learning_inference_cluster#name MachineLearningInferenceCluster#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/machine_learning_inference_cluster#tags MachineLearningInferenceCluster#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/machine_learning_inference_cluster#tags MachineLearningInferenceCluster#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * identity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/machine_learning_inference_cluster#identity MachineLearningInferenceCluster#identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/machine_learning_inference_cluster#identity MachineLearningInferenceCluster#identity}
   */
   readonly identity?: MachineLearningInferenceClusterIdentity;
   /**
   * ssl block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/machine_learning_inference_cluster#ssl MachineLearningInferenceCluster#ssl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/machine_learning_inference_cluster#ssl MachineLearningInferenceCluster#ssl}
   */
   readonly ssl?: MachineLearningInferenceClusterSsl;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/machine_learning_inference_cluster#timeouts MachineLearningInferenceCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/machine_learning_inference_cluster#timeouts MachineLearningInferenceCluster#timeouts}
   */
   readonly timeouts?: MachineLearningInferenceClusterTimeouts;
 }
 export interface MachineLearningInferenceClusterIdentity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/machine_learning_inference_cluster#identity_ids MachineLearningInferenceCluster#identity_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/machine_learning_inference_cluster#identity_ids MachineLearningInferenceCluster#identity_ids}
   */
   readonly identityIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/machine_learning_inference_cluster#type MachineLearningInferenceCluster#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/machine_learning_inference_cluster#type MachineLearningInferenceCluster#type}
   */
   readonly type: string;
 }
@@ -80,7 +80,7 @@ export interface MachineLearningInferenceClusterIdentity {
 export function machineLearningInferenceClusterIdentityToTerraform(struct?: MachineLearningInferenceClusterIdentityOutputReference | MachineLearningInferenceClusterIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
@@ -92,7 +92,7 @@ export function machineLearningInferenceClusterIdentityToTerraform(struct?: Mach
 export function machineLearningInferenceClusterIdentityToHclTerraform(struct?: MachineLearningInferenceClusterIdentityOutputReference | MachineLearningInferenceClusterIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     identity_ids: {
@@ -192,23 +192,23 @@ export class MachineLearningInferenceClusterIdentityOutputReference extends cdkt
 }
 export interface MachineLearningInferenceClusterSsl {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/machine_learning_inference_cluster#cert MachineLearningInferenceCluster#cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/machine_learning_inference_cluster#cert MachineLearningInferenceCluster#cert}
   */
   readonly cert?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/machine_learning_inference_cluster#cname MachineLearningInferenceCluster#cname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/machine_learning_inference_cluster#cname MachineLearningInferenceCluster#cname}
   */
   readonly cname?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/machine_learning_inference_cluster#key MachineLearningInferenceCluster#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/machine_learning_inference_cluster#key MachineLearningInferenceCluster#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/machine_learning_inference_cluster#leaf_domain_label MachineLearningInferenceCluster#leaf_domain_label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/machine_learning_inference_cluster#leaf_domain_label MachineLearningInferenceCluster#leaf_domain_label}
   */
   readonly leafDomainLabel?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/machine_learning_inference_cluster#overwrite_existing_domain MachineLearningInferenceCluster#overwrite_existing_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/machine_learning_inference_cluster#overwrite_existing_domain MachineLearningInferenceCluster#overwrite_existing_domain}
   */
   readonly overwriteExistingDomain?: boolean | cdktn.IResolvable;
 }
@@ -216,7 +216,7 @@ export interface MachineLearningInferenceClusterSsl {
 export function machineLearningInferenceClusterSslToTerraform(struct?: MachineLearningInferenceClusterSslOutputReference | MachineLearningInferenceClusterSsl): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cert: cdktn.stringToTerraform(struct!.cert),
@@ -231,7 +231,7 @@ export function machineLearningInferenceClusterSslToTerraform(struct?: MachineLe
 export function machineLearningInferenceClusterSslToHclTerraform(struct?: MachineLearningInferenceClusterSslOutputReference | MachineLearningInferenceClusterSsl): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cert: {
@@ -408,15 +408,15 @@ export class MachineLearningInferenceClusterSslOutputReference extends cdktn.Com
 }
 export interface MachineLearningInferenceClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/machine_learning_inference_cluster#create MachineLearningInferenceCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/machine_learning_inference_cluster#create MachineLearningInferenceCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/machine_learning_inference_cluster#delete MachineLearningInferenceCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/machine_learning_inference_cluster#delete MachineLearningInferenceCluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/machine_learning_inference_cluster#read MachineLearningInferenceCluster#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/machine_learning_inference_cluster#read MachineLearningInferenceCluster#read}
   */
   readonly read?: string;
 }
@@ -424,7 +424,7 @@ export interface MachineLearningInferenceClusterTimeouts {
 export function machineLearningInferenceClusterTimeoutsToTerraform(struct?: MachineLearningInferenceClusterTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -437,7 +437,7 @@ export function machineLearningInferenceClusterTimeoutsToTerraform(struct?: Mach
 export function machineLearningInferenceClusterTimeoutsToHclTerraform(struct?: MachineLearningInferenceClusterTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -568,7 +568,7 @@ export class MachineLearningInferenceClusterTimeoutsOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/machine_learning_inference_cluster azurerm_machine_learning_inference_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/machine_learning_inference_cluster azurerm_machine_learning_inference_cluster}
 */
 export class MachineLearningInferenceCluster extends cdktn.TerraformResource {
 
@@ -584,7 +584,7 @@ export class MachineLearningInferenceCluster extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a MachineLearningInferenceCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MachineLearningInferenceCluster to import
-  * @param importFromId The id of the existing MachineLearningInferenceCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/machine_learning_inference_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MachineLearningInferenceCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/machine_learning_inference_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MachineLearningInferenceCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -596,7 +596,7 @@ export class MachineLearningInferenceCluster extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/machine_learning_inference_cluster azurerm_machine_learning_inference_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/machine_learning_inference_cluster azurerm_machine_learning_inference_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -607,7 +607,7 @@ export class MachineLearningInferenceCluster extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_machine_learning_inference_cluster',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

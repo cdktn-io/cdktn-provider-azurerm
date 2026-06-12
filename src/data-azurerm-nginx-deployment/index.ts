@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/nginx_deployment
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/nginx_deployment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktn from 'cdktn';
 
 export interface DataAzurermNginxDeploymentConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/nginx_deployment#id DataAzurermNginxDeployment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/nginx_deployment#id DataAzurermNginxDeployment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/nginx_deployment#name DataAzurermNginxDeployment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/nginx_deployment#name DataAzurermNginxDeployment#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/nginx_deployment#resource_group_name DataAzurermNginxDeployment#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/nginx_deployment#resource_group_name DataAzurermNginxDeployment#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/nginx_deployment#timeouts DataAzurermNginxDeployment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/nginx_deployment#timeouts DataAzurermNginxDeployment#timeouts}
   */
   readonly timeouts?: DataAzurermNginxDeploymentTimeouts;
 }
@@ -40,7 +40,7 @@ export interface DataAzurermNginxDeploymentAutoScaleProfile {
 export function dataAzurermNginxDeploymentAutoScaleProfileToTerraform(struct?: DataAzurermNginxDeploymentAutoScaleProfile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -50,7 +50,7 @@ export function dataAzurermNginxDeploymentAutoScaleProfileToTerraform(struct?: D
 export function dataAzurermNginxDeploymentAutoScaleProfileToHclTerraform(struct?: DataAzurermNginxDeploymentAutoScaleProfile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -125,7 +125,7 @@ export interface DataAzurermNginxDeploymentFrontendPrivate {
 export function dataAzurermNginxDeploymentFrontendPrivateToTerraform(struct?: DataAzurermNginxDeploymentFrontendPrivate): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -135,7 +135,7 @@ export function dataAzurermNginxDeploymentFrontendPrivateToTerraform(struct?: Da
 export function dataAzurermNginxDeploymentFrontendPrivateToHclTerraform(struct?: DataAzurermNginxDeploymentFrontendPrivate): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -210,7 +210,7 @@ export interface DataAzurermNginxDeploymentFrontendPublic {
 export function dataAzurermNginxDeploymentFrontendPublicToTerraform(struct?: DataAzurermNginxDeploymentFrontendPublic): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -220,7 +220,7 @@ export function dataAzurermNginxDeploymentFrontendPublicToTerraform(struct?: Dat
 export function dataAzurermNginxDeploymentFrontendPublicToHclTerraform(struct?: DataAzurermNginxDeploymentFrontendPublic): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -285,7 +285,7 @@ export interface DataAzurermNginxDeploymentIdentity {
 export function dataAzurermNginxDeploymentIdentityToTerraform(struct?: DataAzurermNginxDeploymentIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -295,7 +295,7 @@ export function dataAzurermNginxDeploymentIdentityToTerraform(struct?: DataAzure
 export function dataAzurermNginxDeploymentIdentityToHclTerraform(struct?: DataAzurermNginxDeploymentIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -375,7 +375,7 @@ export interface DataAzurermNginxDeploymentLoggingStorageAccount {
 export function dataAzurermNginxDeploymentLoggingStorageAccountToTerraform(struct?: DataAzurermNginxDeploymentLoggingStorageAccount): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -385,7 +385,7 @@ export function dataAzurermNginxDeploymentLoggingStorageAccountToTerraform(struc
 export function dataAzurermNginxDeploymentLoggingStorageAccountToHclTerraform(struct?: DataAzurermNginxDeploymentLoggingStorageAccount): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -455,7 +455,7 @@ export interface DataAzurermNginxDeploymentNetworkInterface {
 export function dataAzurermNginxDeploymentNetworkInterfaceToTerraform(struct?: DataAzurermNginxDeploymentNetworkInterface): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -465,7 +465,7 @@ export function dataAzurermNginxDeploymentNetworkInterfaceToTerraform(struct?: D
 export function dataAzurermNginxDeploymentNetworkInterfaceToHclTerraform(struct?: DataAzurermNginxDeploymentNetworkInterface): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -530,7 +530,7 @@ export interface DataAzurermNginxDeploymentWebApplicationFirewallStatusAttackSig
 export function dataAzurermNginxDeploymentWebApplicationFirewallStatusAttackSignaturesPackageToTerraform(struct?: DataAzurermNginxDeploymentWebApplicationFirewallStatusAttackSignaturesPackage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -540,7 +540,7 @@ export function dataAzurermNginxDeploymentWebApplicationFirewallStatusAttackSign
 export function dataAzurermNginxDeploymentWebApplicationFirewallStatusAttackSignaturesPackageToHclTerraform(struct?: DataAzurermNginxDeploymentWebApplicationFirewallStatusAttackSignaturesPackage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -610,7 +610,7 @@ export interface DataAzurermNginxDeploymentWebApplicationFirewallStatusBotSignat
 export function dataAzurermNginxDeploymentWebApplicationFirewallStatusBotSignaturesPackageToTerraform(struct?: DataAzurermNginxDeploymentWebApplicationFirewallStatusBotSignaturesPackage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -620,7 +620,7 @@ export function dataAzurermNginxDeploymentWebApplicationFirewallStatusBotSignatu
 export function dataAzurermNginxDeploymentWebApplicationFirewallStatusBotSignaturesPackageToHclTerraform(struct?: DataAzurermNginxDeploymentWebApplicationFirewallStatusBotSignaturesPackage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -690,7 +690,7 @@ export interface DataAzurermNginxDeploymentWebApplicationFirewallStatusComponent
 export function dataAzurermNginxDeploymentWebApplicationFirewallStatusComponentVersionsToTerraform(struct?: DataAzurermNginxDeploymentWebApplicationFirewallStatusComponentVersions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -700,7 +700,7 @@ export function dataAzurermNginxDeploymentWebApplicationFirewallStatusComponentV
 export function dataAzurermNginxDeploymentWebApplicationFirewallStatusComponentVersionsToHclTerraform(struct?: DataAzurermNginxDeploymentWebApplicationFirewallStatusComponentVersions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -770,7 +770,7 @@ export interface DataAzurermNginxDeploymentWebApplicationFirewallStatusThreatCam
 export function dataAzurermNginxDeploymentWebApplicationFirewallStatusThreatCampaignsPackageToTerraform(struct?: DataAzurermNginxDeploymentWebApplicationFirewallStatusThreatCampaignsPackage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -780,7 +780,7 @@ export function dataAzurermNginxDeploymentWebApplicationFirewallStatusThreatCamp
 export function dataAzurermNginxDeploymentWebApplicationFirewallStatusThreatCampaignsPackageToHclTerraform(struct?: DataAzurermNginxDeploymentWebApplicationFirewallStatusThreatCampaignsPackage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -850,7 +850,7 @@ export interface DataAzurermNginxDeploymentWebApplicationFirewallStatus {
 export function dataAzurermNginxDeploymentWebApplicationFirewallStatusToTerraform(struct?: DataAzurermNginxDeploymentWebApplicationFirewallStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -860,7 +860,7 @@ export function dataAzurermNginxDeploymentWebApplicationFirewallStatusToTerrafor
 export function dataAzurermNginxDeploymentWebApplicationFirewallStatusToHclTerraform(struct?: DataAzurermNginxDeploymentWebApplicationFirewallStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -944,7 +944,7 @@ export interface DataAzurermNginxDeploymentWebApplicationFirewall {
 export function dataAzurermNginxDeploymentWebApplicationFirewallToTerraform(struct?: DataAzurermNginxDeploymentWebApplicationFirewall): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -954,7 +954,7 @@ export function dataAzurermNginxDeploymentWebApplicationFirewallToTerraform(stru
 export function dataAzurermNginxDeploymentWebApplicationFirewallToHclTerraform(struct?: DataAzurermNginxDeploymentWebApplicationFirewall): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1021,7 +1021,7 @@ export class DataAzurermNginxDeploymentWebApplicationFirewallList extends cdktn.
 }
 export interface DataAzurermNginxDeploymentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/nginx_deployment#read DataAzurermNginxDeployment#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/nginx_deployment#read DataAzurermNginxDeployment#read}
   */
   readonly read?: string;
 }
@@ -1029,7 +1029,7 @@ export interface DataAzurermNginxDeploymentTimeouts {
 export function dataAzurermNginxDeploymentTimeoutsToTerraform(struct?: DataAzurermNginxDeploymentTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     read: cdktn.stringToTerraform(struct!.read),
@@ -1040,7 +1040,7 @@ export function dataAzurermNginxDeploymentTimeoutsToTerraform(struct?: DataAzure
 export function dataAzurermNginxDeploymentTimeoutsToHclTerraform(struct?: DataAzurermNginxDeploymentTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     read: {
@@ -1115,7 +1115,7 @@ export class DataAzurermNginxDeploymentTimeoutsOutputReference extends cdktn.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/nginx_deployment azurerm_nginx_deployment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/nginx_deployment azurerm_nginx_deployment}
 */
 export class DataAzurermNginxDeployment extends cdktn.TerraformDataSource {
 
@@ -1131,7 +1131,7 @@ export class DataAzurermNginxDeployment extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAzurermNginxDeployment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermNginxDeployment to import
-  * @param importFromId The id of the existing DataAzurermNginxDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/nginx_deployment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzurermNginxDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/nginx_deployment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermNginxDeployment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1143,7 +1143,7 @@ export class DataAzurermNginxDeployment extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/nginx_deployment azurerm_nginx_deployment} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/nginx_deployment azurerm_nginx_deployment} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1154,7 +1154,7 @@ export class DataAzurermNginxDeployment extends cdktn.TerraformDataSource {
       terraformResourceType: 'azurerm_nginx_deployment',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

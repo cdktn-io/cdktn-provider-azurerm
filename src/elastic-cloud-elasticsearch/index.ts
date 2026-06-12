@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/elastic_cloud_elasticsearch
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/elastic_cloud_elasticsearch
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,64 +13,64 @@ import * as cdktn from 'cdktn';
 
 export interface ElasticCloudElasticsearchConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/elastic_cloud_elasticsearch#elastic_cloud_email_address ElasticCloudElasticsearch#elastic_cloud_email_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/elastic_cloud_elasticsearch#elastic_cloud_email_address ElasticCloudElasticsearch#elastic_cloud_email_address}
   */
   readonly elasticCloudEmailAddress: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/elastic_cloud_elasticsearch#id ElasticCloudElasticsearch#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/elastic_cloud_elasticsearch#id ElasticCloudElasticsearch#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/elastic_cloud_elasticsearch#location ElasticCloudElasticsearch#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/elastic_cloud_elasticsearch#location ElasticCloudElasticsearch#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/elastic_cloud_elasticsearch#monitoring_enabled ElasticCloudElasticsearch#monitoring_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/elastic_cloud_elasticsearch#monitoring_enabled ElasticCloudElasticsearch#monitoring_enabled}
   */
   readonly monitoringEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/elastic_cloud_elasticsearch#name ElasticCloudElasticsearch#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/elastic_cloud_elasticsearch#name ElasticCloudElasticsearch#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/elastic_cloud_elasticsearch#resource_group_name ElasticCloudElasticsearch#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/elastic_cloud_elasticsearch#resource_group_name ElasticCloudElasticsearch#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/elastic_cloud_elasticsearch#sku_name ElasticCloudElasticsearch#sku_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/elastic_cloud_elasticsearch#sku_name ElasticCloudElasticsearch#sku_name}
   */
   readonly skuName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/elastic_cloud_elasticsearch#tags ElasticCloudElasticsearch#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/elastic_cloud_elasticsearch#tags ElasticCloudElasticsearch#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * logs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/elastic_cloud_elasticsearch#logs ElasticCloudElasticsearch#logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/elastic_cloud_elasticsearch#logs ElasticCloudElasticsearch#logs}
   */
   readonly logs?: ElasticCloudElasticsearchLogs;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/elastic_cloud_elasticsearch#timeouts ElasticCloudElasticsearch#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/elastic_cloud_elasticsearch#timeouts ElasticCloudElasticsearch#timeouts}
   */
   readonly timeouts?: ElasticCloudElasticsearchTimeouts;
 }
 export interface ElasticCloudElasticsearchLogsFilteringTag {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/elastic_cloud_elasticsearch#action ElasticCloudElasticsearch#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/elastic_cloud_elasticsearch#action ElasticCloudElasticsearch#action}
   */
   readonly action: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/elastic_cloud_elasticsearch#name ElasticCloudElasticsearch#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/elastic_cloud_elasticsearch#name ElasticCloudElasticsearch#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/elastic_cloud_elasticsearch#value ElasticCloudElasticsearch#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/elastic_cloud_elasticsearch#value ElasticCloudElasticsearch#value}
   */
   readonly value: string;
 }
@@ -78,7 +78,7 @@ export interface ElasticCloudElasticsearchLogsFilteringTag {
 export function elasticCloudElasticsearchLogsFilteringTagToTerraform(struct?: ElasticCloudElasticsearchLogsFilteringTag | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     action: cdktn.stringToTerraform(struct!.action),
@@ -91,7 +91,7 @@ export function elasticCloudElasticsearchLogsFilteringTagToTerraform(struct?: El
 export function elasticCloudElasticsearchLogsFilteringTagToHclTerraform(struct?: ElasticCloudElasticsearchLogsFilteringTag | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     action: {
@@ -235,21 +235,21 @@ export class ElasticCloudElasticsearchLogsFilteringTagList extends cdktn.Complex
 }
 export interface ElasticCloudElasticsearchLogs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/elastic_cloud_elasticsearch#send_activity_logs ElasticCloudElasticsearch#send_activity_logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/elastic_cloud_elasticsearch#send_activity_logs ElasticCloudElasticsearch#send_activity_logs}
   */
   readonly sendActivityLogs?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/elastic_cloud_elasticsearch#send_azuread_logs ElasticCloudElasticsearch#send_azuread_logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/elastic_cloud_elasticsearch#send_azuread_logs ElasticCloudElasticsearch#send_azuread_logs}
   */
   readonly sendAzureadLogs?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/elastic_cloud_elasticsearch#send_subscription_logs ElasticCloudElasticsearch#send_subscription_logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/elastic_cloud_elasticsearch#send_subscription_logs ElasticCloudElasticsearch#send_subscription_logs}
   */
   readonly sendSubscriptionLogs?: boolean | cdktn.IResolvable;
   /**
   * filtering_tag block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/elastic_cloud_elasticsearch#filtering_tag ElasticCloudElasticsearch#filtering_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/elastic_cloud_elasticsearch#filtering_tag ElasticCloudElasticsearch#filtering_tag}
   */
   readonly filteringTag?: ElasticCloudElasticsearchLogsFilteringTag[] | cdktn.IResolvable;
 }
@@ -257,7 +257,7 @@ export interface ElasticCloudElasticsearchLogs {
 export function elasticCloudElasticsearchLogsToTerraform(struct?: ElasticCloudElasticsearchLogsOutputReference | ElasticCloudElasticsearchLogs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     send_activity_logs: cdktn.booleanToTerraform(struct!.sendActivityLogs),
@@ -271,7 +271,7 @@ export function elasticCloudElasticsearchLogsToTerraform(struct?: ElasticCloudEl
 export function elasticCloudElasticsearchLogsToHclTerraform(struct?: ElasticCloudElasticsearchLogsOutputReference | ElasticCloudElasticsearchLogs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     send_activity_logs: {
@@ -420,19 +420,19 @@ export class ElasticCloudElasticsearchLogsOutputReference extends cdktn.ComplexO
 }
 export interface ElasticCloudElasticsearchTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/elastic_cloud_elasticsearch#create ElasticCloudElasticsearch#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/elastic_cloud_elasticsearch#create ElasticCloudElasticsearch#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/elastic_cloud_elasticsearch#delete ElasticCloudElasticsearch#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/elastic_cloud_elasticsearch#delete ElasticCloudElasticsearch#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/elastic_cloud_elasticsearch#read ElasticCloudElasticsearch#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/elastic_cloud_elasticsearch#read ElasticCloudElasticsearch#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/elastic_cloud_elasticsearch#update ElasticCloudElasticsearch#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/elastic_cloud_elasticsearch#update ElasticCloudElasticsearch#update}
   */
   readonly update?: string;
 }
@@ -440,7 +440,7 @@ export interface ElasticCloudElasticsearchTimeouts {
 export function elasticCloudElasticsearchTimeoutsToTerraform(struct?: ElasticCloudElasticsearchTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -454,7 +454,7 @@ export function elasticCloudElasticsearchTimeoutsToTerraform(struct?: ElasticClo
 export function elasticCloudElasticsearchTimeoutsToHclTerraform(struct?: ElasticCloudElasticsearchTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -613,7 +613,7 @@ export class ElasticCloudElasticsearchTimeoutsOutputReference extends cdktn.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/elastic_cloud_elasticsearch azurerm_elastic_cloud_elasticsearch}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/elastic_cloud_elasticsearch azurerm_elastic_cloud_elasticsearch}
 */
 export class ElasticCloudElasticsearch extends cdktn.TerraformResource {
 
@@ -629,7 +629,7 @@ export class ElasticCloudElasticsearch extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ElasticCloudElasticsearch resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ElasticCloudElasticsearch to import
-  * @param importFromId The id of the existing ElasticCloudElasticsearch that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/elastic_cloud_elasticsearch#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ElasticCloudElasticsearch that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/elastic_cloud_elasticsearch#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ElasticCloudElasticsearch to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -641,7 +641,7 @@ export class ElasticCloudElasticsearch extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/elastic_cloud_elasticsearch azurerm_elastic_cloud_elasticsearch} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/elastic_cloud_elasticsearch azurerm_elastic_cloud_elasticsearch} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -652,7 +652,7 @@ export class ElasticCloudElasticsearch extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_elastic_cloud_elasticsearch',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

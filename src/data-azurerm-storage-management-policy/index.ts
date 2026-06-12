@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/storage_management_policy
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/storage_management_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,20 +13,20 @@ import * as cdktn from 'cdktn';
 
 export interface DataAzurermStorageManagementPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/storage_management_policy#id DataAzurermStorageManagementPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/storage_management_policy#id DataAzurermStorageManagementPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/storage_management_policy#storage_account_id DataAzurermStorageManagementPolicy#storage_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/storage_management_policy#storage_account_id DataAzurermStorageManagementPolicy#storage_account_id}
   */
   readonly storageAccountId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/storage_management_policy#timeouts DataAzurermStorageManagementPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/storage_management_policy#timeouts DataAzurermStorageManagementPolicy#timeouts}
   */
   readonly timeouts?: DataAzurermStorageManagementPolicyTimeouts;
 }
@@ -36,7 +36,7 @@ export interface DataAzurermStorageManagementPolicyRuleActionsBaseBlob {
 export function dataAzurermStorageManagementPolicyRuleActionsBaseBlobToTerraform(struct?: DataAzurermStorageManagementPolicyRuleActionsBaseBlob): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -46,7 +46,7 @@ export function dataAzurermStorageManagementPolicyRuleActionsBaseBlobToTerraform
 export function dataAzurermStorageManagementPolicyRuleActionsBaseBlobToHclTerraform(struct?: DataAzurermStorageManagementPolicyRuleActionsBaseBlob): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -176,7 +176,7 @@ export interface DataAzurermStorageManagementPolicyRuleActionsSnapshot {
 export function dataAzurermStorageManagementPolicyRuleActionsSnapshotToTerraform(struct?: DataAzurermStorageManagementPolicyRuleActionsSnapshot): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -186,7 +186,7 @@ export function dataAzurermStorageManagementPolicyRuleActionsSnapshotToTerraform
 export function dataAzurermStorageManagementPolicyRuleActionsSnapshotToHclTerraform(struct?: DataAzurermStorageManagementPolicyRuleActionsSnapshot): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -271,7 +271,7 @@ export interface DataAzurermStorageManagementPolicyRuleActionsVersion {
 export function dataAzurermStorageManagementPolicyRuleActionsVersionToTerraform(struct?: DataAzurermStorageManagementPolicyRuleActionsVersion): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -281,7 +281,7 @@ export function dataAzurermStorageManagementPolicyRuleActionsVersionToTerraform(
 export function dataAzurermStorageManagementPolicyRuleActionsVersionToHclTerraform(struct?: DataAzurermStorageManagementPolicyRuleActionsVersion): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -366,7 +366,7 @@ export interface DataAzurermStorageManagementPolicyRuleActions {
 export function dataAzurermStorageManagementPolicyRuleActionsToTerraform(struct?: DataAzurermStorageManagementPolicyRuleActions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -376,7 +376,7 @@ export function dataAzurermStorageManagementPolicyRuleActionsToTerraform(struct?
 export function dataAzurermStorageManagementPolicyRuleActionsToHclTerraform(struct?: DataAzurermStorageManagementPolicyRuleActions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -454,7 +454,7 @@ export interface DataAzurermStorageManagementPolicyRuleFiltersMatchBlobIndexTag 
 export function dataAzurermStorageManagementPolicyRuleFiltersMatchBlobIndexTagToTerraform(struct?: DataAzurermStorageManagementPolicyRuleFiltersMatchBlobIndexTag): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -464,7 +464,7 @@ export function dataAzurermStorageManagementPolicyRuleFiltersMatchBlobIndexTagTo
 export function dataAzurermStorageManagementPolicyRuleFiltersMatchBlobIndexTagToHclTerraform(struct?: DataAzurermStorageManagementPolicyRuleFiltersMatchBlobIndexTag): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -539,7 +539,7 @@ export interface DataAzurermStorageManagementPolicyRuleFilters {
 export function dataAzurermStorageManagementPolicyRuleFiltersToTerraform(struct?: DataAzurermStorageManagementPolicyRuleFilters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -549,7 +549,7 @@ export function dataAzurermStorageManagementPolicyRuleFiltersToTerraform(struct?
 export function dataAzurermStorageManagementPolicyRuleFiltersToHclTerraform(struct?: DataAzurermStorageManagementPolicyRuleFilters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -625,7 +625,7 @@ export interface DataAzurermStorageManagementPolicyRule {
 export function dataAzurermStorageManagementPolicyRuleToTerraform(struct?: DataAzurermStorageManagementPolicyRule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -635,7 +635,7 @@ export function dataAzurermStorageManagementPolicyRuleToTerraform(struct?: DataA
 export function dataAzurermStorageManagementPolicyRuleToHclTerraform(struct?: DataAzurermStorageManagementPolicyRule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -713,7 +713,7 @@ export class DataAzurermStorageManagementPolicyRuleList extends cdktn.ComplexLis
 }
 export interface DataAzurermStorageManagementPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/storage_management_policy#read DataAzurermStorageManagementPolicy#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/storage_management_policy#read DataAzurermStorageManagementPolicy#read}
   */
   readonly read?: string;
 }
@@ -721,7 +721,7 @@ export interface DataAzurermStorageManagementPolicyTimeouts {
 export function dataAzurermStorageManagementPolicyTimeoutsToTerraform(struct?: DataAzurermStorageManagementPolicyTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     read: cdktn.stringToTerraform(struct!.read),
@@ -732,7 +732,7 @@ export function dataAzurermStorageManagementPolicyTimeoutsToTerraform(struct?: D
 export function dataAzurermStorageManagementPolicyTimeoutsToHclTerraform(struct?: DataAzurermStorageManagementPolicyTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     read: {
@@ -807,7 +807,7 @@ export class DataAzurermStorageManagementPolicyTimeoutsOutputReference extends c
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/storage_management_policy azurerm_storage_management_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/storage_management_policy azurerm_storage_management_policy}
 */
 export class DataAzurermStorageManagementPolicy extends cdktn.TerraformDataSource {
 
@@ -823,7 +823,7 @@ export class DataAzurermStorageManagementPolicy extends cdktn.TerraformDataSourc
   * Generates CDKTN code for importing a DataAzurermStorageManagementPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermStorageManagementPolicy to import
-  * @param importFromId The id of the existing DataAzurermStorageManagementPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/storage_management_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzurermStorageManagementPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/storage_management_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermStorageManagementPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -835,7 +835,7 @@ export class DataAzurermStorageManagementPolicy extends cdktn.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/storage_management_policy azurerm_storage_management_policy} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/storage_management_policy azurerm_storage_management_policy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -846,7 +846,7 @@ export class DataAzurermStorageManagementPolicy extends cdktn.TerraformDataSourc
       terraformResourceType: 'azurerm_storage_management_policy',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

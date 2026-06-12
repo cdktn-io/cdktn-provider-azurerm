@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/linux_web_app
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/linux_web_app
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktn from 'cdktn';
 
 export interface DataAzurermLinuxWebAppConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/linux_web_app#id DataAzurermLinuxWebApp#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/linux_web_app#id DataAzurermLinuxWebApp#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/linux_web_app#name DataAzurermLinuxWebApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/linux_web_app#name DataAzurermLinuxWebApp#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/linux_web_app#resource_group_name DataAzurermLinuxWebApp#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/linux_web_app#resource_group_name DataAzurermLinuxWebApp#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/linux_web_app#timeouts DataAzurermLinuxWebApp#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/linux_web_app#timeouts DataAzurermLinuxWebApp#timeouts}
   */
   readonly timeouts?: DataAzurermLinuxWebAppTimeouts;
 }
@@ -40,7 +40,7 @@ export interface DataAzurermLinuxWebAppAuthSettingsActiveDirectory {
 export function dataAzurermLinuxWebAppAuthSettingsActiveDirectoryToTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsActiveDirectory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -50,7 +50,7 @@ export function dataAzurermLinuxWebAppAuthSettingsActiveDirectoryToTerraform(str
 export function dataAzurermLinuxWebAppAuthSettingsActiveDirectoryToHclTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsActiveDirectory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -130,7 +130,7 @@ export interface DataAzurermLinuxWebAppAuthSettingsFacebook {
 export function dataAzurermLinuxWebAppAuthSettingsFacebookToTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsFacebook): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -140,7 +140,7 @@ export function dataAzurermLinuxWebAppAuthSettingsFacebookToTerraform(struct?: D
 export function dataAzurermLinuxWebAppAuthSettingsFacebookToHclTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsFacebook): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -220,7 +220,7 @@ export interface DataAzurermLinuxWebAppAuthSettingsGithub {
 export function dataAzurermLinuxWebAppAuthSettingsGithubToTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsGithub): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -230,7 +230,7 @@ export function dataAzurermLinuxWebAppAuthSettingsGithubToTerraform(struct?: Dat
 export function dataAzurermLinuxWebAppAuthSettingsGithubToHclTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsGithub): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -310,7 +310,7 @@ export interface DataAzurermLinuxWebAppAuthSettingsGoogle {
 export function dataAzurermLinuxWebAppAuthSettingsGoogleToTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsGoogle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -320,7 +320,7 @@ export function dataAzurermLinuxWebAppAuthSettingsGoogleToTerraform(struct?: Dat
 export function dataAzurermLinuxWebAppAuthSettingsGoogleToHclTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsGoogle): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -400,7 +400,7 @@ export interface DataAzurermLinuxWebAppAuthSettingsMicrosoft {
 export function dataAzurermLinuxWebAppAuthSettingsMicrosoftToTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsMicrosoft): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -410,7 +410,7 @@ export function dataAzurermLinuxWebAppAuthSettingsMicrosoftToTerraform(struct?: 
 export function dataAzurermLinuxWebAppAuthSettingsMicrosoftToHclTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsMicrosoft): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -490,7 +490,7 @@ export interface DataAzurermLinuxWebAppAuthSettingsTwitter {
 export function dataAzurermLinuxWebAppAuthSettingsTwitterToTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsTwitter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -500,7 +500,7 @@ export function dataAzurermLinuxWebAppAuthSettingsTwitterToTerraform(struct?: Da
 export function dataAzurermLinuxWebAppAuthSettingsTwitterToHclTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsTwitter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -575,7 +575,7 @@ export interface DataAzurermLinuxWebAppAuthSettings {
 export function dataAzurermLinuxWebAppAuthSettingsToTerraform(struct?: DataAzurermLinuxWebAppAuthSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -585,7 +585,7 @@ export function dataAzurermLinuxWebAppAuthSettingsToTerraform(struct?: DataAzure
 export function dataAzurermLinuxWebAppAuthSettingsToHclTerraform(struct?: DataAzurermLinuxWebAppAuthSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -727,7 +727,7 @@ export interface DataAzurermLinuxWebAppAuthSettingsV2ActiveDirectoryV2 {
 export function dataAzurermLinuxWebAppAuthSettingsV2ActiveDirectoryV2ToTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2ActiveDirectoryV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -737,7 +737,7 @@ export function dataAzurermLinuxWebAppAuthSettingsV2ActiveDirectoryV2ToTerraform
 export function dataAzurermLinuxWebAppAuthSettingsV2ActiveDirectoryV2ToHclTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2ActiveDirectoryV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -858,7 +858,7 @@ export interface DataAzurermLinuxWebAppAuthSettingsV2AppleV2 {
 export function dataAzurermLinuxWebAppAuthSettingsV2AppleV2ToTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2AppleV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -868,7 +868,7 @@ export function dataAzurermLinuxWebAppAuthSettingsV2AppleV2ToTerraform(struct?: 
 export function dataAzurermLinuxWebAppAuthSettingsV2AppleV2ToHclTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2AppleV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -943,7 +943,7 @@ export interface DataAzurermLinuxWebAppAuthSettingsV2AzureStaticWebAppV2 {
 export function dataAzurermLinuxWebAppAuthSettingsV2AzureStaticWebAppV2ToTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2AzureStaticWebAppV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -953,7 +953,7 @@ export function dataAzurermLinuxWebAppAuthSettingsV2AzureStaticWebAppV2ToTerrafo
 export function dataAzurermLinuxWebAppAuthSettingsV2AzureStaticWebAppV2ToHclTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2AzureStaticWebAppV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1018,7 +1018,7 @@ export interface DataAzurermLinuxWebAppAuthSettingsV2CustomOidcV2 {
 export function dataAzurermLinuxWebAppAuthSettingsV2CustomOidcV2ToTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2CustomOidcV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1028,7 +1028,7 @@ export function dataAzurermLinuxWebAppAuthSettingsV2CustomOidcV2ToTerraform(stru
 export function dataAzurermLinuxWebAppAuthSettingsV2CustomOidcV2ToHclTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2CustomOidcV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1143,7 +1143,7 @@ export interface DataAzurermLinuxWebAppAuthSettingsV2FacebookV2 {
 export function dataAzurermLinuxWebAppAuthSettingsV2FacebookV2ToTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2FacebookV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1153,7 +1153,7 @@ export function dataAzurermLinuxWebAppAuthSettingsV2FacebookV2ToTerraform(struct
 export function dataAzurermLinuxWebAppAuthSettingsV2FacebookV2ToHclTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2FacebookV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1233,7 +1233,7 @@ export interface DataAzurermLinuxWebAppAuthSettingsV2GithubV2 {
 export function dataAzurermLinuxWebAppAuthSettingsV2GithubV2ToTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2GithubV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1243,7 +1243,7 @@ export function dataAzurermLinuxWebAppAuthSettingsV2GithubV2ToTerraform(struct?:
 export function dataAzurermLinuxWebAppAuthSettingsV2GithubV2ToHclTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2GithubV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1318,7 +1318,7 @@ export interface DataAzurermLinuxWebAppAuthSettingsV2GoogleV2 {
 export function dataAzurermLinuxWebAppAuthSettingsV2GoogleV2ToTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2GoogleV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1328,7 +1328,7 @@ export function dataAzurermLinuxWebAppAuthSettingsV2GoogleV2ToTerraform(struct?:
 export function dataAzurermLinuxWebAppAuthSettingsV2GoogleV2ToHclTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2GoogleV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1408,7 +1408,7 @@ export interface DataAzurermLinuxWebAppAuthSettingsV2Login {
 export function dataAzurermLinuxWebAppAuthSettingsV2LoginToTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2Login): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1418,7 +1418,7 @@ export function dataAzurermLinuxWebAppAuthSettingsV2LoginToTerraform(struct?: Da
 export function dataAzurermLinuxWebAppAuthSettingsV2LoginToHclTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2Login): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1533,7 +1533,7 @@ export interface DataAzurermLinuxWebAppAuthSettingsV2MicrosoftV2 {
 export function dataAzurermLinuxWebAppAuthSettingsV2MicrosoftV2ToTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2MicrosoftV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1543,7 +1543,7 @@ export function dataAzurermLinuxWebAppAuthSettingsV2MicrosoftV2ToTerraform(struc
 export function dataAzurermLinuxWebAppAuthSettingsV2MicrosoftV2ToHclTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2MicrosoftV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1623,7 +1623,7 @@ export interface DataAzurermLinuxWebAppAuthSettingsV2TwitterV2 {
 export function dataAzurermLinuxWebAppAuthSettingsV2TwitterV2ToTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2TwitterV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1633,7 +1633,7 @@ export function dataAzurermLinuxWebAppAuthSettingsV2TwitterV2ToTerraform(struct?
 export function dataAzurermLinuxWebAppAuthSettingsV2TwitterV2ToHclTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2TwitterV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1703,7 +1703,7 @@ export interface DataAzurermLinuxWebAppAuthSettingsV2 {
 export function dataAzurermLinuxWebAppAuthSettingsV2ToTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1713,7 +1713,7 @@ export function dataAzurermLinuxWebAppAuthSettingsV2ToTerraform(struct?: DataAzu
 export function dataAzurermLinuxWebAppAuthSettingsV2ToHclTerraform(struct?: DataAzurermLinuxWebAppAuthSettingsV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1893,7 +1893,7 @@ export interface DataAzurermLinuxWebAppBackupSchedule {
 export function dataAzurermLinuxWebAppBackupScheduleToTerraform(struct?: DataAzurermLinuxWebAppBackupSchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1903,7 +1903,7 @@ export function dataAzurermLinuxWebAppBackupScheduleToTerraform(struct?: DataAzu
 export function dataAzurermLinuxWebAppBackupScheduleToHclTerraform(struct?: DataAzurermLinuxWebAppBackupSchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1993,7 +1993,7 @@ export interface DataAzurermLinuxWebAppBackup {
 export function dataAzurermLinuxWebAppBackupToTerraform(struct?: DataAzurermLinuxWebAppBackup): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2003,7 +2003,7 @@ export function dataAzurermLinuxWebAppBackupToTerraform(struct?: DataAzurermLinu
 export function dataAzurermLinuxWebAppBackupToHclTerraform(struct?: DataAzurermLinuxWebAppBackup): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2084,7 +2084,7 @@ export interface DataAzurermLinuxWebAppConnectionString {
 export function dataAzurermLinuxWebAppConnectionStringToTerraform(struct?: DataAzurermLinuxWebAppConnectionString): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2094,7 +2094,7 @@ export function dataAzurermLinuxWebAppConnectionStringToTerraform(struct?: DataA
 export function dataAzurermLinuxWebAppConnectionStringToHclTerraform(struct?: DataAzurermLinuxWebAppConnectionString): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2169,7 +2169,7 @@ export interface DataAzurermLinuxWebAppIdentity {
 export function dataAzurermLinuxWebAppIdentityToTerraform(struct?: DataAzurermLinuxWebAppIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2179,7 +2179,7 @@ export function dataAzurermLinuxWebAppIdentityToTerraform(struct?: DataAzurermLi
 export function dataAzurermLinuxWebAppIdentityToHclTerraform(struct?: DataAzurermLinuxWebAppIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2259,7 +2259,7 @@ export interface DataAzurermLinuxWebAppLogsApplicationLogsAzureBlobStorage {
 export function dataAzurermLinuxWebAppLogsApplicationLogsAzureBlobStorageToTerraform(struct?: DataAzurermLinuxWebAppLogsApplicationLogsAzureBlobStorage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2269,7 +2269,7 @@ export function dataAzurermLinuxWebAppLogsApplicationLogsAzureBlobStorageToTerra
 export function dataAzurermLinuxWebAppLogsApplicationLogsAzureBlobStorageToHclTerraform(struct?: DataAzurermLinuxWebAppLogsApplicationLogsAzureBlobStorage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2344,7 +2344,7 @@ export interface DataAzurermLinuxWebAppLogsApplicationLogs {
 export function dataAzurermLinuxWebAppLogsApplicationLogsToTerraform(struct?: DataAzurermLinuxWebAppLogsApplicationLogs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2354,7 +2354,7 @@ export function dataAzurermLinuxWebAppLogsApplicationLogsToTerraform(struct?: Da
 export function dataAzurermLinuxWebAppLogsApplicationLogsToHclTerraform(struct?: DataAzurermLinuxWebAppLogsApplicationLogs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2425,7 +2425,7 @@ export interface DataAzurermLinuxWebAppLogsHttpLogsAzureBlobStorage {
 export function dataAzurermLinuxWebAppLogsHttpLogsAzureBlobStorageToTerraform(struct?: DataAzurermLinuxWebAppLogsHttpLogsAzureBlobStorage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2435,7 +2435,7 @@ export function dataAzurermLinuxWebAppLogsHttpLogsAzureBlobStorageToTerraform(st
 export function dataAzurermLinuxWebAppLogsHttpLogsAzureBlobStorageToHclTerraform(struct?: DataAzurermLinuxWebAppLogsHttpLogsAzureBlobStorage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2505,7 +2505,7 @@ export interface DataAzurermLinuxWebAppLogsHttpLogsFileSystem {
 export function dataAzurermLinuxWebAppLogsHttpLogsFileSystemToTerraform(struct?: DataAzurermLinuxWebAppLogsHttpLogsFileSystem): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2515,7 +2515,7 @@ export function dataAzurermLinuxWebAppLogsHttpLogsFileSystemToTerraform(struct?:
 export function dataAzurermLinuxWebAppLogsHttpLogsFileSystemToHclTerraform(struct?: DataAzurermLinuxWebAppLogsHttpLogsFileSystem): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2585,7 +2585,7 @@ export interface DataAzurermLinuxWebAppLogsHttpLogs {
 export function dataAzurermLinuxWebAppLogsHttpLogsToTerraform(struct?: DataAzurermLinuxWebAppLogsHttpLogs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2595,7 +2595,7 @@ export function dataAzurermLinuxWebAppLogsHttpLogsToTerraform(struct?: DataAzure
 export function dataAzurermLinuxWebAppLogsHttpLogsToHclTerraform(struct?: DataAzurermLinuxWebAppLogsHttpLogs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2667,7 +2667,7 @@ export interface DataAzurermLinuxWebAppLogs {
 export function dataAzurermLinuxWebAppLogsToTerraform(struct?: DataAzurermLinuxWebAppLogs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2677,7 +2677,7 @@ export function dataAzurermLinuxWebAppLogsToTerraform(struct?: DataAzurermLinuxW
 export function dataAzurermLinuxWebAppLogsToHclTerraform(struct?: DataAzurermLinuxWebAppLogs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2759,7 +2759,7 @@ export interface DataAzurermLinuxWebAppSiteConfigApplicationStack {
 export function dataAzurermLinuxWebAppSiteConfigApplicationStackToTerraform(struct?: DataAzurermLinuxWebAppSiteConfigApplicationStack): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2769,7 +2769,7 @@ export function dataAzurermLinuxWebAppSiteConfigApplicationStackToTerraform(stru
 export function dataAzurermLinuxWebAppSiteConfigApplicationStackToHclTerraform(struct?: DataAzurermLinuxWebAppSiteConfigApplicationStack): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2894,7 +2894,7 @@ export interface DataAzurermLinuxWebAppSiteConfigAutoHealSettingAction {
 export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingActionToTerraform(struct?: DataAzurermLinuxWebAppSiteConfigAutoHealSettingAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2904,7 +2904,7 @@ export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingActionToTerraform
 export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingActionToHclTerraform(struct?: DataAzurermLinuxWebAppSiteConfigAutoHealSettingAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2974,7 +2974,7 @@ export interface DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerRequests 
 export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerRequestsToTerraform(struct?: DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerRequests): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2984,7 +2984,7 @@ export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerRequestsTo
 export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerRequestsToHclTerraform(struct?: DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerRequests): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3054,7 +3054,7 @@ export interface DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowReque
 export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestToTerraform(struct?: DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3064,7 +3064,7 @@ export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowReques
 export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestToHclTerraform(struct?: DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3139,7 +3139,7 @@ export interface DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowReque
 export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPathToTerraform(struct?: DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPath): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3149,7 +3149,7 @@ export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowReques
 export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPathToHclTerraform(struct?: DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerSlowRequestWithPath): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3229,7 +3229,7 @@ export interface DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerStatusCod
 export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerStatusCodeToTerraform(struct?: DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerStatusCode): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3239,7 +3239,7 @@ export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerStatusCode
 export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerStatusCodeToHclTerraform(struct?: DataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerStatusCode): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3329,7 +3329,7 @@ export interface DataAzurermLinuxWebAppSiteConfigAutoHealSettingTrigger {
 export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerToTerraform(struct?: DataAzurermLinuxWebAppSiteConfigAutoHealSettingTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3339,7 +3339,7 @@ export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerToTerrafor
 export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingTriggerToHclTerraform(struct?: DataAzurermLinuxWebAppSiteConfigAutoHealSettingTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3423,7 +3423,7 @@ export interface DataAzurermLinuxWebAppSiteConfigAutoHealSetting {
 export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingToTerraform(struct?: DataAzurermLinuxWebAppSiteConfigAutoHealSetting): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3433,7 +3433,7 @@ export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingToTerraform(struc
 export function dataAzurermLinuxWebAppSiteConfigAutoHealSettingToHclTerraform(struct?: DataAzurermLinuxWebAppSiteConfigAutoHealSetting): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3505,7 +3505,7 @@ export interface DataAzurermLinuxWebAppSiteConfigCors {
 export function dataAzurermLinuxWebAppSiteConfigCorsToTerraform(struct?: DataAzurermLinuxWebAppSiteConfigCors): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3515,7 +3515,7 @@ export function dataAzurermLinuxWebAppSiteConfigCorsToTerraform(struct?: DataAzu
 export function dataAzurermLinuxWebAppSiteConfigCorsToHclTerraform(struct?: DataAzurermLinuxWebAppSiteConfigCors): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3585,7 +3585,7 @@ export interface DataAzurermLinuxWebAppSiteConfigIpRestrictionHeaders {
 export function dataAzurermLinuxWebAppSiteConfigIpRestrictionHeadersToTerraform(struct?: DataAzurermLinuxWebAppSiteConfigIpRestrictionHeaders): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3595,7 +3595,7 @@ export function dataAzurermLinuxWebAppSiteConfigIpRestrictionHeadersToTerraform(
 export function dataAzurermLinuxWebAppSiteConfigIpRestrictionHeadersToHclTerraform(struct?: DataAzurermLinuxWebAppSiteConfigIpRestrictionHeaders): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3675,7 +3675,7 @@ export interface DataAzurermLinuxWebAppSiteConfigIpRestriction {
 export function dataAzurermLinuxWebAppSiteConfigIpRestrictionToTerraform(struct?: DataAzurermLinuxWebAppSiteConfigIpRestriction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3685,7 +3685,7 @@ export function dataAzurermLinuxWebAppSiteConfigIpRestrictionToTerraform(struct?
 export function dataAzurermLinuxWebAppSiteConfigIpRestrictionToHclTerraform(struct?: DataAzurermLinuxWebAppSiteConfigIpRestriction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3786,7 +3786,7 @@ export interface DataAzurermLinuxWebAppSiteConfigScmIpRestrictionHeaders {
 export function dataAzurermLinuxWebAppSiteConfigScmIpRestrictionHeadersToTerraform(struct?: DataAzurermLinuxWebAppSiteConfigScmIpRestrictionHeaders): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3796,7 +3796,7 @@ export function dataAzurermLinuxWebAppSiteConfigScmIpRestrictionHeadersToTerrafo
 export function dataAzurermLinuxWebAppSiteConfigScmIpRestrictionHeadersToHclTerraform(struct?: DataAzurermLinuxWebAppSiteConfigScmIpRestrictionHeaders): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3876,7 +3876,7 @@ export interface DataAzurermLinuxWebAppSiteConfigScmIpRestriction {
 export function dataAzurermLinuxWebAppSiteConfigScmIpRestrictionToTerraform(struct?: DataAzurermLinuxWebAppSiteConfigScmIpRestriction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3886,7 +3886,7 @@ export function dataAzurermLinuxWebAppSiteConfigScmIpRestrictionToTerraform(stru
 export function dataAzurermLinuxWebAppSiteConfigScmIpRestrictionToHclTerraform(struct?: DataAzurermLinuxWebAppSiteConfigScmIpRestriction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3987,7 +3987,7 @@ export interface DataAzurermLinuxWebAppSiteConfig {
 export function dataAzurermLinuxWebAppSiteConfigToTerraform(struct?: DataAzurermLinuxWebAppSiteConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3997,7 +3997,7 @@ export function dataAzurermLinuxWebAppSiteConfigToTerraform(struct?: DataAzurerm
 export function dataAzurermLinuxWebAppSiteConfigToHclTerraform(struct?: DataAzurermLinuxWebAppSiteConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4232,7 +4232,7 @@ export interface DataAzurermLinuxWebAppSiteCredential {
 export function dataAzurermLinuxWebAppSiteCredentialToTerraform(struct?: DataAzurermLinuxWebAppSiteCredential): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4242,7 +4242,7 @@ export function dataAzurermLinuxWebAppSiteCredentialToTerraform(struct?: DataAzu
 export function dataAzurermLinuxWebAppSiteCredentialToHclTerraform(struct?: DataAzurermLinuxWebAppSiteCredential): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4312,7 +4312,7 @@ export interface DataAzurermLinuxWebAppStickySettings {
 export function dataAzurermLinuxWebAppStickySettingsToTerraform(struct?: DataAzurermLinuxWebAppStickySettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4322,7 +4322,7 @@ export function dataAzurermLinuxWebAppStickySettingsToTerraform(struct?: DataAzu
 export function dataAzurermLinuxWebAppStickySettingsToHclTerraform(struct?: DataAzurermLinuxWebAppStickySettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4392,7 +4392,7 @@ export interface DataAzurermLinuxWebAppStorageAccount {
 export function dataAzurermLinuxWebAppStorageAccountToTerraform(struct?: DataAzurermLinuxWebAppStorageAccount): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4402,7 +4402,7 @@ export function dataAzurermLinuxWebAppStorageAccountToTerraform(struct?: DataAzu
 export function dataAzurermLinuxWebAppStorageAccountToHclTerraform(struct?: DataAzurermLinuxWebAppStorageAccount): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4488,7 +4488,7 @@ export class DataAzurermLinuxWebAppStorageAccountList extends cdktn.ComplexList 
 }
 export interface DataAzurermLinuxWebAppTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/linux_web_app#read DataAzurermLinuxWebApp#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/linux_web_app#read DataAzurermLinuxWebApp#read}
   */
   readonly read?: string;
 }
@@ -4496,7 +4496,7 @@ export interface DataAzurermLinuxWebAppTimeouts {
 export function dataAzurermLinuxWebAppTimeoutsToTerraform(struct?: DataAzurermLinuxWebAppTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     read: cdktn.stringToTerraform(struct!.read),
@@ -4507,7 +4507,7 @@ export function dataAzurermLinuxWebAppTimeoutsToTerraform(struct?: DataAzurermLi
 export function dataAzurermLinuxWebAppTimeoutsToHclTerraform(struct?: DataAzurermLinuxWebAppTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     read: {
@@ -4582,7 +4582,7 @@ export class DataAzurermLinuxWebAppTimeoutsOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/linux_web_app azurerm_linux_web_app}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/linux_web_app azurerm_linux_web_app}
 */
 export class DataAzurermLinuxWebApp extends cdktn.TerraformDataSource {
 
@@ -4598,7 +4598,7 @@ export class DataAzurermLinuxWebApp extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAzurermLinuxWebApp resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermLinuxWebApp to import
-  * @param importFromId The id of the existing DataAzurermLinuxWebApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/linux_web_app#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzurermLinuxWebApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/linux_web_app#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermLinuxWebApp to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -4610,7 +4610,7 @@ export class DataAzurermLinuxWebApp extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/linux_web_app azurerm_linux_web_app} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/linux_web_app azurerm_linux_web_app} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -4621,7 +4621,7 @@ export class DataAzurermLinuxWebApp extends cdktn.TerraformDataSource {
       terraformResourceType: 'azurerm_linux_web_app',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

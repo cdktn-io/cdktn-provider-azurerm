@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/pim_active_role_assignment
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/pim_active_role_assignment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface PimActiveRoleAssignmentConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/pim_active_role_assignment#id PimActiveRoleAssignment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/pim_active_role_assignment#id PimActiveRoleAssignment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,43 +22,43 @@ export interface PimActiveRoleAssignmentConfig extends cdktn.TerraformMetaArgume
   /**
   * The justification for this role assignment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/pim_active_role_assignment#justification PimActiveRoleAssignment#justification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/pim_active_role_assignment#justification PimActiveRoleAssignment#justification}
   */
   readonly justification?: string;
   /**
   * Object ID of the principal for this role assignment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/pim_active_role_assignment#principal_id PimActiveRoleAssignment#principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/pim_active_role_assignment#principal_id PimActiveRoleAssignment#principal_id}
   */
   readonly principalId: string;
   /**
   * Role definition ID for this role assignment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/pim_active_role_assignment#role_definition_id PimActiveRoleAssignment#role_definition_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/pim_active_role_assignment#role_definition_id PimActiveRoleAssignment#role_definition_id}
   */
   readonly roleDefinitionId: string;
   /**
   * Scope for this role assignment, should be a valid resource ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/pim_active_role_assignment#scope PimActiveRoleAssignment#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/pim_active_role_assignment#scope PimActiveRoleAssignment#scope}
   */
   readonly scope: string;
   /**
   * schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/pim_active_role_assignment#schedule PimActiveRoleAssignment#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/pim_active_role_assignment#schedule PimActiveRoleAssignment#schedule}
   */
   readonly schedule?: PimActiveRoleAssignmentSchedule;
   /**
   * ticket block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/pim_active_role_assignment#ticket PimActiveRoleAssignment#ticket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/pim_active_role_assignment#ticket PimActiveRoleAssignment#ticket}
   */
   readonly ticket?: PimActiveRoleAssignmentTicket;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/pim_active_role_assignment#timeouts PimActiveRoleAssignment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/pim_active_role_assignment#timeouts PimActiveRoleAssignment#timeouts}
   */
   readonly timeouts?: PimActiveRoleAssignmentTimeouts;
 }
@@ -66,19 +66,19 @@ export interface PimActiveRoleAssignmentScheduleExpiration {
   /**
   * The duration of the role assignment in days
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/pim_active_role_assignment#duration_days PimActiveRoleAssignment#duration_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/pim_active_role_assignment#duration_days PimActiveRoleAssignment#duration_days}
   */
   readonly durationDays?: number;
   /**
   * The duration of the role assignment in hours
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/pim_active_role_assignment#duration_hours PimActiveRoleAssignment#duration_hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/pim_active_role_assignment#duration_hours PimActiveRoleAssignment#duration_hours}
   */
   readonly durationHours?: number;
   /**
   * The end date/time of the role assignment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/pim_active_role_assignment#end_date_time PimActiveRoleAssignment#end_date_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/pim_active_role_assignment#end_date_time PimActiveRoleAssignment#end_date_time}
   */
   readonly endDateTime?: string;
 }
@@ -86,7 +86,7 @@ export interface PimActiveRoleAssignmentScheduleExpiration {
 export function pimActiveRoleAssignmentScheduleExpirationToTerraform(struct?: PimActiveRoleAssignmentScheduleExpirationOutputReference | PimActiveRoleAssignmentScheduleExpiration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     duration_days: cdktn.numberToTerraform(struct!.durationDays),
@@ -99,7 +99,7 @@ export function pimActiveRoleAssignmentScheduleExpirationToTerraform(struct?: Pi
 export function pimActiveRoleAssignmentScheduleExpirationToHclTerraform(struct?: PimActiveRoleAssignmentScheduleExpirationOutputReference | PimActiveRoleAssignmentScheduleExpiration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     duration_days: {
@@ -222,13 +222,13 @@ export interface PimActiveRoleAssignmentSchedule {
   /**
   * The start date/time of the role assignment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/pim_active_role_assignment#start_date_time PimActiveRoleAssignment#start_date_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/pim_active_role_assignment#start_date_time PimActiveRoleAssignment#start_date_time}
   */
   readonly startDateTime?: string;
   /**
   * expiration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/pim_active_role_assignment#expiration PimActiveRoleAssignment#expiration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/pim_active_role_assignment#expiration PimActiveRoleAssignment#expiration}
   */
   readonly expiration?: PimActiveRoleAssignmentScheduleExpiration;
 }
@@ -236,7 +236,7 @@ export interface PimActiveRoleAssignmentSchedule {
 export function pimActiveRoleAssignmentScheduleToTerraform(struct?: PimActiveRoleAssignmentScheduleOutputReference | PimActiveRoleAssignmentSchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     start_date_time: cdktn.stringToTerraform(struct!.startDateTime),
@@ -248,7 +248,7 @@ export function pimActiveRoleAssignmentScheduleToTerraform(struct?: PimActiveRol
 export function pimActiveRoleAssignmentScheduleToHclTerraform(struct?: PimActiveRoleAssignmentScheduleOutputReference | PimActiveRoleAssignmentSchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     start_date_time: {
@@ -343,13 +343,13 @@ export interface PimActiveRoleAssignmentTicket {
   /**
   * User-supplied ticket number to be included with the request
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/pim_active_role_assignment#number PimActiveRoleAssignment#number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/pim_active_role_assignment#number PimActiveRoleAssignment#number}
   */
   readonly number?: string;
   /**
   * User-supplied ticket system name to be included with the request
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/pim_active_role_assignment#system PimActiveRoleAssignment#system}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/pim_active_role_assignment#system PimActiveRoleAssignment#system}
   */
   readonly systemAttribute?: string;
 }
@@ -357,7 +357,7 @@ export interface PimActiveRoleAssignmentTicket {
 export function pimActiveRoleAssignmentTicketToTerraform(struct?: PimActiveRoleAssignmentTicketOutputReference | PimActiveRoleAssignmentTicket): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     number: cdktn.stringToTerraform(struct!.number),
@@ -369,7 +369,7 @@ export function pimActiveRoleAssignmentTicketToTerraform(struct?: PimActiveRoleA
 export function pimActiveRoleAssignmentTicketToHclTerraform(struct?: PimActiveRoleAssignmentTicketOutputReference | PimActiveRoleAssignmentTicket): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     number: {
@@ -462,15 +462,15 @@ export class PimActiveRoleAssignmentTicketOutputReference extends cdktn.ComplexO
 }
 export interface PimActiveRoleAssignmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/pim_active_role_assignment#create PimActiveRoleAssignment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/pim_active_role_assignment#create PimActiveRoleAssignment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/pim_active_role_assignment#delete PimActiveRoleAssignment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/pim_active_role_assignment#delete PimActiveRoleAssignment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/pim_active_role_assignment#read PimActiveRoleAssignment#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/pim_active_role_assignment#read PimActiveRoleAssignment#read}
   */
   readonly read?: string;
 }
@@ -478,7 +478,7 @@ export interface PimActiveRoleAssignmentTimeouts {
 export function pimActiveRoleAssignmentTimeoutsToTerraform(struct?: PimActiveRoleAssignmentTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -491,7 +491,7 @@ export function pimActiveRoleAssignmentTimeoutsToTerraform(struct?: PimActiveRol
 export function pimActiveRoleAssignmentTimeoutsToHclTerraform(struct?: PimActiveRoleAssignmentTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -622,7 +622,7 @@ export class PimActiveRoleAssignmentTimeoutsOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/pim_active_role_assignment azurerm_pim_active_role_assignment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/pim_active_role_assignment azurerm_pim_active_role_assignment}
 */
 export class PimActiveRoleAssignment extends cdktn.TerraformResource {
 
@@ -638,7 +638,7 @@ export class PimActiveRoleAssignment extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a PimActiveRoleAssignment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PimActiveRoleAssignment to import
-  * @param importFromId The id of the existing PimActiveRoleAssignment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/pim_active_role_assignment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PimActiveRoleAssignment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/pim_active_role_assignment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PimActiveRoleAssignment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -650,7 +650,7 @@ export class PimActiveRoleAssignment extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/pim_active_role_assignment azurerm_pim_active_role_assignment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/pim_active_role_assignment azurerm_pim_active_role_assignment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -661,7 +661,7 @@ export class PimActiveRoleAssignment extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_pim_active_role_assignment',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

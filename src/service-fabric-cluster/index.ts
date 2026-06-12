@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,144 +13,144 @@ import * as cdktn from 'cdktn';
 
 export interface ServiceFabricClusterConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#add_on_features ServiceFabricCluster#add_on_features}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#add_on_features ServiceFabricCluster#add_on_features}
   */
   readonly addOnFeatures?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#cluster_code_version ServiceFabricCluster#cluster_code_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#cluster_code_version ServiceFabricCluster#cluster_code_version}
   */
   readonly clusterCodeVersion?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#id ServiceFabricCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#id ServiceFabricCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#location ServiceFabricCluster#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#location ServiceFabricCluster#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#management_endpoint ServiceFabricCluster#management_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#management_endpoint ServiceFabricCluster#management_endpoint}
   */
   readonly managementEndpoint: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#name ServiceFabricCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#name ServiceFabricCluster#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#reliability_level ServiceFabricCluster#reliability_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#reliability_level ServiceFabricCluster#reliability_level}
   */
   readonly reliabilityLevel: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#resource_group_name ServiceFabricCluster#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#resource_group_name ServiceFabricCluster#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#service_fabric_zonal_upgrade_mode ServiceFabricCluster#service_fabric_zonal_upgrade_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#service_fabric_zonal_upgrade_mode ServiceFabricCluster#service_fabric_zonal_upgrade_mode}
   */
   readonly serviceFabricZonalUpgradeMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#tags ServiceFabricCluster#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#tags ServiceFabricCluster#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#upgrade_mode ServiceFabricCluster#upgrade_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#upgrade_mode ServiceFabricCluster#upgrade_mode}
   */
   readonly upgradeMode: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#vm_image ServiceFabricCluster#vm_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#vm_image ServiceFabricCluster#vm_image}
   */
   readonly vmImage: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#vmss_zonal_upgrade_mode ServiceFabricCluster#vmss_zonal_upgrade_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#vmss_zonal_upgrade_mode ServiceFabricCluster#vmss_zonal_upgrade_mode}
   */
   readonly vmssZonalUpgradeMode?: string;
   /**
   * azure_active_directory block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#azure_active_directory ServiceFabricCluster#azure_active_directory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#azure_active_directory ServiceFabricCluster#azure_active_directory}
   */
   readonly azureActiveDirectory?: ServiceFabricClusterAzureActiveDirectory;
   /**
   * certificate block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#certificate ServiceFabricCluster#certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#certificate ServiceFabricCluster#certificate}
   */
   readonly certificate?: ServiceFabricClusterCertificate;
   /**
   * certificate_common_names block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#certificate_common_names ServiceFabricCluster#certificate_common_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#certificate_common_names ServiceFabricCluster#certificate_common_names}
   */
   readonly certificateCommonNames?: ServiceFabricClusterCertificateCommonNames;
   /**
   * client_certificate_common_name block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#client_certificate_common_name ServiceFabricCluster#client_certificate_common_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#client_certificate_common_name ServiceFabricCluster#client_certificate_common_name}
   */
   readonly clientCertificateCommonName?: ServiceFabricClusterClientCertificateCommonName[] | cdktn.IResolvable;
   /**
   * client_certificate_thumbprint block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#client_certificate_thumbprint ServiceFabricCluster#client_certificate_thumbprint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#client_certificate_thumbprint ServiceFabricCluster#client_certificate_thumbprint}
   */
   readonly clientCertificateThumbprint?: ServiceFabricClusterClientCertificateThumbprint[] | cdktn.IResolvable;
   /**
   * diagnostics_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#diagnostics_config ServiceFabricCluster#diagnostics_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#diagnostics_config ServiceFabricCluster#diagnostics_config}
   */
   readonly diagnosticsConfig?: ServiceFabricClusterDiagnosticsConfig;
   /**
   * fabric_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#fabric_settings ServiceFabricCluster#fabric_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#fabric_settings ServiceFabricCluster#fabric_settings}
   */
   readonly fabricSettings?: ServiceFabricClusterFabricSettings[] | cdktn.IResolvable;
   /**
   * node_type block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#node_type ServiceFabricCluster#node_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#node_type ServiceFabricCluster#node_type}
   */
   readonly nodeType: ServiceFabricClusterNodeType[] | cdktn.IResolvable;
   /**
   * reverse_proxy_certificate block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#reverse_proxy_certificate ServiceFabricCluster#reverse_proxy_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#reverse_proxy_certificate ServiceFabricCluster#reverse_proxy_certificate}
   */
   readonly reverseProxyCertificate?: ServiceFabricClusterReverseProxyCertificate;
   /**
   * reverse_proxy_certificate_common_names block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#reverse_proxy_certificate_common_names ServiceFabricCluster#reverse_proxy_certificate_common_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#reverse_proxy_certificate_common_names ServiceFabricCluster#reverse_proxy_certificate_common_names}
   */
   readonly reverseProxyCertificateCommonNames?: ServiceFabricClusterReverseProxyCertificateCommonNames;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#timeouts ServiceFabricCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#timeouts ServiceFabricCluster#timeouts}
   */
   readonly timeouts?: ServiceFabricClusterTimeouts;
   /**
   * upgrade_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#upgrade_policy ServiceFabricCluster#upgrade_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#upgrade_policy ServiceFabricCluster#upgrade_policy}
   */
   readonly upgradePolicy?: ServiceFabricClusterUpgradePolicy;
 }
 export interface ServiceFabricClusterAzureActiveDirectory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#client_application_id ServiceFabricCluster#client_application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#client_application_id ServiceFabricCluster#client_application_id}
   */
   readonly clientApplicationId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#cluster_application_id ServiceFabricCluster#cluster_application_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#cluster_application_id ServiceFabricCluster#cluster_application_id}
   */
   readonly clusterApplicationId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#tenant_id ServiceFabricCluster#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#tenant_id ServiceFabricCluster#tenant_id}
   */
   readonly tenantId: string;
 }
@@ -158,7 +158,7 @@ export interface ServiceFabricClusterAzureActiveDirectory {
 export function serviceFabricClusterAzureActiveDirectoryToTerraform(struct?: ServiceFabricClusterAzureActiveDirectoryOutputReference | ServiceFabricClusterAzureActiveDirectory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     client_application_id: cdktn.stringToTerraform(struct!.clientApplicationId),
@@ -171,7 +171,7 @@ export function serviceFabricClusterAzureActiveDirectoryToTerraform(struct?: Ser
 export function serviceFabricClusterAzureActiveDirectoryToHclTerraform(struct?: ServiceFabricClusterAzureActiveDirectoryOutputReference | ServiceFabricClusterAzureActiveDirectory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     client_application_id: {
@@ -283,15 +283,15 @@ export class ServiceFabricClusterAzureActiveDirectoryOutputReference extends cdk
 }
 export interface ServiceFabricClusterCertificate {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#thumbprint ServiceFabricCluster#thumbprint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#thumbprint ServiceFabricCluster#thumbprint}
   */
   readonly thumbprint: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#thumbprint_secondary ServiceFabricCluster#thumbprint_secondary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#thumbprint_secondary ServiceFabricCluster#thumbprint_secondary}
   */
   readonly thumbprintSecondary?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#x509_store_name ServiceFabricCluster#x509_store_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#x509_store_name ServiceFabricCluster#x509_store_name}
   */
   readonly x509StoreName: string;
 }
@@ -299,7 +299,7 @@ export interface ServiceFabricClusterCertificate {
 export function serviceFabricClusterCertificateToTerraform(struct?: ServiceFabricClusterCertificateOutputReference | ServiceFabricClusterCertificate): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     thumbprint: cdktn.stringToTerraform(struct!.thumbprint),
@@ -312,7 +312,7 @@ export function serviceFabricClusterCertificateToTerraform(struct?: ServiceFabri
 export function serviceFabricClusterCertificateToHclTerraform(struct?: ServiceFabricClusterCertificateOutputReference | ServiceFabricClusterCertificate): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     thumbprint: {
@@ -427,11 +427,11 @@ export class ServiceFabricClusterCertificateOutputReference extends cdktn.Comple
 }
 export interface ServiceFabricClusterCertificateCommonNamesCommonNames {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#certificate_common_name ServiceFabricCluster#certificate_common_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#certificate_common_name ServiceFabricCluster#certificate_common_name}
   */
   readonly certificateCommonName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#certificate_issuer_thumbprint ServiceFabricCluster#certificate_issuer_thumbprint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#certificate_issuer_thumbprint ServiceFabricCluster#certificate_issuer_thumbprint}
   */
   readonly certificateIssuerThumbprint?: string;
 }
@@ -439,7 +439,7 @@ export interface ServiceFabricClusterCertificateCommonNamesCommonNames {
 export function serviceFabricClusterCertificateCommonNamesCommonNamesToTerraform(struct?: ServiceFabricClusterCertificateCommonNamesCommonNames | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     certificate_common_name: cdktn.stringToTerraform(struct!.certificateCommonName),
@@ -451,7 +451,7 @@ export function serviceFabricClusterCertificateCommonNamesCommonNamesToTerraform
 export function serviceFabricClusterCertificateCommonNamesCommonNamesToHclTerraform(struct?: ServiceFabricClusterCertificateCommonNamesCommonNames | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     certificate_common_name: {
@@ -573,13 +573,13 @@ export class ServiceFabricClusterCertificateCommonNamesCommonNamesList extends c
 }
 export interface ServiceFabricClusterCertificateCommonNames {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#x509_store_name ServiceFabricCluster#x509_store_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#x509_store_name ServiceFabricCluster#x509_store_name}
   */
   readonly x509StoreName: string;
   /**
   * common_names block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#common_names ServiceFabricCluster#common_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#common_names ServiceFabricCluster#common_names}
   */
   readonly commonNames: ServiceFabricClusterCertificateCommonNamesCommonNames[] | cdktn.IResolvable;
 }
@@ -587,7 +587,7 @@ export interface ServiceFabricClusterCertificateCommonNames {
 export function serviceFabricClusterCertificateCommonNamesToTerraform(struct?: ServiceFabricClusterCertificateCommonNamesOutputReference | ServiceFabricClusterCertificateCommonNames): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     x509_store_name: cdktn.stringToTerraform(struct!.x509StoreName),
@@ -599,7 +599,7 @@ export function serviceFabricClusterCertificateCommonNamesToTerraform(struct?: S
 export function serviceFabricClusterCertificateCommonNamesToHclTerraform(struct?: ServiceFabricClusterCertificateCommonNamesOutputReference | ServiceFabricClusterCertificateCommonNames): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     x509_store_name: {
@@ -686,15 +686,15 @@ export class ServiceFabricClusterCertificateCommonNamesOutputReference extends c
 }
 export interface ServiceFabricClusterClientCertificateCommonName {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#common_name ServiceFabricCluster#common_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#common_name ServiceFabricCluster#common_name}
   */
   readonly commonName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#is_admin ServiceFabricCluster#is_admin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#is_admin ServiceFabricCluster#is_admin}
   */
   readonly isAdmin: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#issuer_thumbprint ServiceFabricCluster#issuer_thumbprint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#issuer_thumbprint ServiceFabricCluster#issuer_thumbprint}
   */
   readonly issuerThumbprint?: string;
 }
@@ -702,7 +702,7 @@ export interface ServiceFabricClusterClientCertificateCommonName {
 export function serviceFabricClusterClientCertificateCommonNameToTerraform(struct?: ServiceFabricClusterClientCertificateCommonName | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     common_name: cdktn.stringToTerraform(struct!.commonName),
@@ -715,7 +715,7 @@ export function serviceFabricClusterClientCertificateCommonNameToTerraform(struc
 export function serviceFabricClusterClientCertificateCommonNameToHclTerraform(struct?: ServiceFabricClusterClientCertificateCommonName | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     common_name: {
@@ -862,11 +862,11 @@ export class ServiceFabricClusterClientCertificateCommonNameList extends cdktn.C
 }
 export interface ServiceFabricClusterClientCertificateThumbprint {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#is_admin ServiceFabricCluster#is_admin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#is_admin ServiceFabricCluster#is_admin}
   */
   readonly isAdmin: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#thumbprint ServiceFabricCluster#thumbprint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#thumbprint ServiceFabricCluster#thumbprint}
   */
   readonly thumbprint: string;
 }
@@ -874,7 +874,7 @@ export interface ServiceFabricClusterClientCertificateThumbprint {
 export function serviceFabricClusterClientCertificateThumbprintToTerraform(struct?: ServiceFabricClusterClientCertificateThumbprint | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     is_admin: cdktn.booleanToTerraform(struct!.isAdmin),
@@ -886,7 +886,7 @@ export function serviceFabricClusterClientCertificateThumbprintToTerraform(struc
 export function serviceFabricClusterClientCertificateThumbprintToHclTerraform(struct?: ServiceFabricClusterClientCertificateThumbprint | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     is_admin: {
@@ -1005,23 +1005,23 @@ export class ServiceFabricClusterClientCertificateThumbprintList extends cdktn.C
 }
 export interface ServiceFabricClusterDiagnosticsConfig {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#blob_endpoint ServiceFabricCluster#blob_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#blob_endpoint ServiceFabricCluster#blob_endpoint}
   */
   readonly blobEndpoint: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#protected_account_key_name ServiceFabricCluster#protected_account_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#protected_account_key_name ServiceFabricCluster#protected_account_key_name}
   */
   readonly protectedAccountKeyName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#queue_endpoint ServiceFabricCluster#queue_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#queue_endpoint ServiceFabricCluster#queue_endpoint}
   */
   readonly queueEndpoint: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#storage_account_name ServiceFabricCluster#storage_account_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#storage_account_name ServiceFabricCluster#storage_account_name}
   */
   readonly storageAccountName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#table_endpoint ServiceFabricCluster#table_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#table_endpoint ServiceFabricCluster#table_endpoint}
   */
   readonly tableEndpoint: string;
 }
@@ -1029,7 +1029,7 @@ export interface ServiceFabricClusterDiagnosticsConfig {
 export function serviceFabricClusterDiagnosticsConfigToTerraform(struct?: ServiceFabricClusterDiagnosticsConfigOutputReference | ServiceFabricClusterDiagnosticsConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     blob_endpoint: cdktn.stringToTerraform(struct!.blobEndpoint),
@@ -1044,7 +1044,7 @@ export function serviceFabricClusterDiagnosticsConfigToTerraform(struct?: Servic
 export function serviceFabricClusterDiagnosticsConfigToHclTerraform(struct?: ServiceFabricClusterDiagnosticsConfigOutputReference | ServiceFabricClusterDiagnosticsConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     blob_endpoint: {
@@ -1206,11 +1206,11 @@ export class ServiceFabricClusterDiagnosticsConfigOutputReference extends cdktn.
 }
 export interface ServiceFabricClusterFabricSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#name ServiceFabricCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#name ServiceFabricCluster#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#parameters ServiceFabricCluster#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#parameters ServiceFabricCluster#parameters}
   */
   readonly parameters?: { [key: string]: string };
 }
@@ -1218,7 +1218,7 @@ export interface ServiceFabricClusterFabricSettings {
 export function serviceFabricClusterFabricSettingsToTerraform(struct?: ServiceFabricClusterFabricSettings | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -1230,7 +1230,7 @@ export function serviceFabricClusterFabricSettingsToTerraform(struct?: ServiceFa
 export function serviceFabricClusterFabricSettingsToHclTerraform(struct?: ServiceFabricClusterFabricSettings | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -1352,11 +1352,11 @@ export class ServiceFabricClusterFabricSettingsList extends cdktn.ComplexList {
 }
 export interface ServiceFabricClusterNodeTypeApplicationPorts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#end_port ServiceFabricCluster#end_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#end_port ServiceFabricCluster#end_port}
   */
   readonly endPort: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#start_port ServiceFabricCluster#start_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#start_port ServiceFabricCluster#start_port}
   */
   readonly startPort: number;
 }
@@ -1364,7 +1364,7 @@ export interface ServiceFabricClusterNodeTypeApplicationPorts {
 export function serviceFabricClusterNodeTypeApplicationPortsToTerraform(struct?: ServiceFabricClusterNodeTypeApplicationPortsOutputReference | ServiceFabricClusterNodeTypeApplicationPorts): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     end_port: cdktn.numberToTerraform(struct!.endPort),
@@ -1376,7 +1376,7 @@ export function serviceFabricClusterNodeTypeApplicationPortsToTerraform(struct?:
 export function serviceFabricClusterNodeTypeApplicationPortsToHclTerraform(struct?: ServiceFabricClusterNodeTypeApplicationPortsOutputReference | ServiceFabricClusterNodeTypeApplicationPorts): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     end_port: {
@@ -1463,11 +1463,11 @@ export class ServiceFabricClusterNodeTypeApplicationPortsOutputReference extends
 }
 export interface ServiceFabricClusterNodeTypeEphemeralPorts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#end_port ServiceFabricCluster#end_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#end_port ServiceFabricCluster#end_port}
   */
   readonly endPort: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#start_port ServiceFabricCluster#start_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#start_port ServiceFabricCluster#start_port}
   */
   readonly startPort: number;
 }
@@ -1475,7 +1475,7 @@ export interface ServiceFabricClusterNodeTypeEphemeralPorts {
 export function serviceFabricClusterNodeTypeEphemeralPortsToTerraform(struct?: ServiceFabricClusterNodeTypeEphemeralPortsOutputReference | ServiceFabricClusterNodeTypeEphemeralPorts): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     end_port: cdktn.numberToTerraform(struct!.endPort),
@@ -1487,7 +1487,7 @@ export function serviceFabricClusterNodeTypeEphemeralPortsToTerraform(struct?: S
 export function serviceFabricClusterNodeTypeEphemeralPortsToHclTerraform(struct?: ServiceFabricClusterNodeTypeEphemeralPortsOutputReference | ServiceFabricClusterNodeTypeEphemeralPorts): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     end_port: {
@@ -1574,59 +1574,59 @@ export class ServiceFabricClusterNodeTypeEphemeralPortsOutputReference extends c
 }
 export interface ServiceFabricClusterNodeType {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#capacities ServiceFabricCluster#capacities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#capacities ServiceFabricCluster#capacities}
   */
   readonly capacities?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#client_endpoint_port ServiceFabricCluster#client_endpoint_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#client_endpoint_port ServiceFabricCluster#client_endpoint_port}
   */
   readonly clientEndpointPort: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#durability_level ServiceFabricCluster#durability_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#durability_level ServiceFabricCluster#durability_level}
   */
   readonly durabilityLevel?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#http_endpoint_port ServiceFabricCluster#http_endpoint_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#http_endpoint_port ServiceFabricCluster#http_endpoint_port}
   */
   readonly httpEndpointPort: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#instance_count ServiceFabricCluster#instance_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#instance_count ServiceFabricCluster#instance_count}
   */
   readonly instanceCount: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#is_primary ServiceFabricCluster#is_primary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#is_primary ServiceFabricCluster#is_primary}
   */
   readonly isPrimary: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#is_stateless ServiceFabricCluster#is_stateless}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#is_stateless ServiceFabricCluster#is_stateless}
   */
   readonly isStateless?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#multiple_availability_zones ServiceFabricCluster#multiple_availability_zones}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#multiple_availability_zones ServiceFabricCluster#multiple_availability_zones}
   */
   readonly multipleAvailabilityZones?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#name ServiceFabricCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#name ServiceFabricCluster#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#placement_properties ServiceFabricCluster#placement_properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#placement_properties ServiceFabricCluster#placement_properties}
   */
   readonly placementProperties?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#reverse_proxy_endpoint_port ServiceFabricCluster#reverse_proxy_endpoint_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#reverse_proxy_endpoint_port ServiceFabricCluster#reverse_proxy_endpoint_port}
   */
   readonly reverseProxyEndpointPort?: number;
   /**
   * application_ports block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#application_ports ServiceFabricCluster#application_ports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#application_ports ServiceFabricCluster#application_ports}
   */
   readonly applicationPorts?: ServiceFabricClusterNodeTypeApplicationPorts;
   /**
   * ephemeral_ports block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#ephemeral_ports ServiceFabricCluster#ephemeral_ports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#ephemeral_ports ServiceFabricCluster#ephemeral_ports}
   */
   readonly ephemeralPorts?: ServiceFabricClusterNodeTypeEphemeralPorts;
 }
@@ -1634,7 +1634,7 @@ export interface ServiceFabricClusterNodeType {
 export function serviceFabricClusterNodeTypeToTerraform(struct?: ServiceFabricClusterNodeType | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     capacities: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.capacities),
@@ -1657,7 +1657,7 @@ export function serviceFabricClusterNodeTypeToTerraform(struct?: ServiceFabricCl
 export function serviceFabricClusterNodeTypeToHclTerraform(struct?: ServiceFabricClusterNodeType | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     capacities: {
@@ -2075,15 +2075,15 @@ export class ServiceFabricClusterNodeTypeList extends cdktn.ComplexList {
 }
 export interface ServiceFabricClusterReverseProxyCertificate {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#thumbprint ServiceFabricCluster#thumbprint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#thumbprint ServiceFabricCluster#thumbprint}
   */
   readonly thumbprint: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#thumbprint_secondary ServiceFabricCluster#thumbprint_secondary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#thumbprint_secondary ServiceFabricCluster#thumbprint_secondary}
   */
   readonly thumbprintSecondary?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#x509_store_name ServiceFabricCluster#x509_store_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#x509_store_name ServiceFabricCluster#x509_store_name}
   */
   readonly x509StoreName: string;
 }
@@ -2091,7 +2091,7 @@ export interface ServiceFabricClusterReverseProxyCertificate {
 export function serviceFabricClusterReverseProxyCertificateToTerraform(struct?: ServiceFabricClusterReverseProxyCertificateOutputReference | ServiceFabricClusterReverseProxyCertificate): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     thumbprint: cdktn.stringToTerraform(struct!.thumbprint),
@@ -2104,7 +2104,7 @@ export function serviceFabricClusterReverseProxyCertificateToTerraform(struct?: 
 export function serviceFabricClusterReverseProxyCertificateToHclTerraform(struct?: ServiceFabricClusterReverseProxyCertificateOutputReference | ServiceFabricClusterReverseProxyCertificate): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     thumbprint: {
@@ -2219,11 +2219,11 @@ export class ServiceFabricClusterReverseProxyCertificateOutputReference extends 
 }
 export interface ServiceFabricClusterReverseProxyCertificateCommonNamesCommonNames {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#certificate_common_name ServiceFabricCluster#certificate_common_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#certificate_common_name ServiceFabricCluster#certificate_common_name}
   */
   readonly certificateCommonName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#certificate_issuer_thumbprint ServiceFabricCluster#certificate_issuer_thumbprint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#certificate_issuer_thumbprint ServiceFabricCluster#certificate_issuer_thumbprint}
   */
   readonly certificateIssuerThumbprint?: string;
 }
@@ -2231,7 +2231,7 @@ export interface ServiceFabricClusterReverseProxyCertificateCommonNamesCommonNam
 export function serviceFabricClusterReverseProxyCertificateCommonNamesCommonNamesToTerraform(struct?: ServiceFabricClusterReverseProxyCertificateCommonNamesCommonNames | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     certificate_common_name: cdktn.stringToTerraform(struct!.certificateCommonName),
@@ -2243,7 +2243,7 @@ export function serviceFabricClusterReverseProxyCertificateCommonNamesCommonName
 export function serviceFabricClusterReverseProxyCertificateCommonNamesCommonNamesToHclTerraform(struct?: ServiceFabricClusterReverseProxyCertificateCommonNamesCommonNames | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     certificate_common_name: {
@@ -2365,13 +2365,13 @@ export class ServiceFabricClusterReverseProxyCertificateCommonNamesCommonNamesLi
 }
 export interface ServiceFabricClusterReverseProxyCertificateCommonNames {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#x509_store_name ServiceFabricCluster#x509_store_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#x509_store_name ServiceFabricCluster#x509_store_name}
   */
   readonly x509StoreName: string;
   /**
   * common_names block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#common_names ServiceFabricCluster#common_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#common_names ServiceFabricCluster#common_names}
   */
   readonly commonNames: ServiceFabricClusterReverseProxyCertificateCommonNamesCommonNames[] | cdktn.IResolvable;
 }
@@ -2379,7 +2379,7 @@ export interface ServiceFabricClusterReverseProxyCertificateCommonNames {
 export function serviceFabricClusterReverseProxyCertificateCommonNamesToTerraform(struct?: ServiceFabricClusterReverseProxyCertificateCommonNamesOutputReference | ServiceFabricClusterReverseProxyCertificateCommonNames): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     x509_store_name: cdktn.stringToTerraform(struct!.x509StoreName),
@@ -2391,7 +2391,7 @@ export function serviceFabricClusterReverseProxyCertificateCommonNamesToTerrafor
 export function serviceFabricClusterReverseProxyCertificateCommonNamesToHclTerraform(struct?: ServiceFabricClusterReverseProxyCertificateCommonNamesOutputReference | ServiceFabricClusterReverseProxyCertificateCommonNames): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     x509_store_name: {
@@ -2478,19 +2478,19 @@ export class ServiceFabricClusterReverseProxyCertificateCommonNamesOutputReferen
 }
 export interface ServiceFabricClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#create ServiceFabricCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#create ServiceFabricCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#delete ServiceFabricCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#delete ServiceFabricCluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#read ServiceFabricCluster#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#read ServiceFabricCluster#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#update ServiceFabricCluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#update ServiceFabricCluster#update}
   */
   readonly update?: string;
 }
@@ -2498,7 +2498,7 @@ export interface ServiceFabricClusterTimeouts {
 export function serviceFabricClusterTimeoutsToTerraform(struct?: ServiceFabricClusterTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -2512,7 +2512,7 @@ export function serviceFabricClusterTimeoutsToTerraform(struct?: ServiceFabricCl
 export function serviceFabricClusterTimeoutsToHclTerraform(struct?: ServiceFabricClusterTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -2671,15 +2671,15 @@ export class ServiceFabricClusterTimeoutsOutputReference extends cdktn.ComplexOb
 }
 export interface ServiceFabricClusterUpgradePolicyDeltaHealthPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#max_delta_unhealthy_applications_percent ServiceFabricCluster#max_delta_unhealthy_applications_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#max_delta_unhealthy_applications_percent ServiceFabricCluster#max_delta_unhealthy_applications_percent}
   */
   readonly maxDeltaUnhealthyApplicationsPercent?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#max_delta_unhealthy_nodes_percent ServiceFabricCluster#max_delta_unhealthy_nodes_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#max_delta_unhealthy_nodes_percent ServiceFabricCluster#max_delta_unhealthy_nodes_percent}
   */
   readonly maxDeltaUnhealthyNodesPercent?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#max_upgrade_domain_delta_unhealthy_nodes_percent ServiceFabricCluster#max_upgrade_domain_delta_unhealthy_nodes_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#max_upgrade_domain_delta_unhealthy_nodes_percent ServiceFabricCluster#max_upgrade_domain_delta_unhealthy_nodes_percent}
   */
   readonly maxUpgradeDomainDeltaUnhealthyNodesPercent?: number;
 }
@@ -2687,7 +2687,7 @@ export interface ServiceFabricClusterUpgradePolicyDeltaHealthPolicy {
 export function serviceFabricClusterUpgradePolicyDeltaHealthPolicyToTerraform(struct?: ServiceFabricClusterUpgradePolicyDeltaHealthPolicyOutputReference | ServiceFabricClusterUpgradePolicyDeltaHealthPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_delta_unhealthy_applications_percent: cdktn.numberToTerraform(struct!.maxDeltaUnhealthyApplicationsPercent),
@@ -2700,7 +2700,7 @@ export function serviceFabricClusterUpgradePolicyDeltaHealthPolicyToTerraform(st
 export function serviceFabricClusterUpgradePolicyDeltaHealthPolicyToHclTerraform(struct?: ServiceFabricClusterUpgradePolicyDeltaHealthPolicyOutputReference | ServiceFabricClusterUpgradePolicyDeltaHealthPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_delta_unhealthy_applications_percent: {
@@ -2821,11 +2821,11 @@ export class ServiceFabricClusterUpgradePolicyDeltaHealthPolicyOutputReference e
 }
 export interface ServiceFabricClusterUpgradePolicyHealthPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#max_unhealthy_applications_percent ServiceFabricCluster#max_unhealthy_applications_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#max_unhealthy_applications_percent ServiceFabricCluster#max_unhealthy_applications_percent}
   */
   readonly maxUnhealthyApplicationsPercent?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#max_unhealthy_nodes_percent ServiceFabricCluster#max_unhealthy_nodes_percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#max_unhealthy_nodes_percent ServiceFabricCluster#max_unhealthy_nodes_percent}
   */
   readonly maxUnhealthyNodesPercent?: number;
 }
@@ -2833,7 +2833,7 @@ export interface ServiceFabricClusterUpgradePolicyHealthPolicy {
 export function serviceFabricClusterUpgradePolicyHealthPolicyToTerraform(struct?: ServiceFabricClusterUpgradePolicyHealthPolicyOutputReference | ServiceFabricClusterUpgradePolicyHealthPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_unhealthy_applications_percent: cdktn.numberToTerraform(struct!.maxUnhealthyApplicationsPercent),
@@ -2845,7 +2845,7 @@ export function serviceFabricClusterUpgradePolicyHealthPolicyToTerraform(struct?
 export function serviceFabricClusterUpgradePolicyHealthPolicyToHclTerraform(struct?: ServiceFabricClusterUpgradePolicyHealthPolicyOutputReference | ServiceFabricClusterUpgradePolicyHealthPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_unhealthy_applications_percent: {
@@ -2938,43 +2938,43 @@ export class ServiceFabricClusterUpgradePolicyHealthPolicyOutputReference extend
 }
 export interface ServiceFabricClusterUpgradePolicy {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#force_restart_enabled ServiceFabricCluster#force_restart_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#force_restart_enabled ServiceFabricCluster#force_restart_enabled}
   */
   readonly forceRestartEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#health_check_retry_timeout ServiceFabricCluster#health_check_retry_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#health_check_retry_timeout ServiceFabricCluster#health_check_retry_timeout}
   */
   readonly healthCheckRetryTimeout?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#health_check_stable_duration ServiceFabricCluster#health_check_stable_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#health_check_stable_duration ServiceFabricCluster#health_check_stable_duration}
   */
   readonly healthCheckStableDuration?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#health_check_wait_duration ServiceFabricCluster#health_check_wait_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#health_check_wait_duration ServiceFabricCluster#health_check_wait_duration}
   */
   readonly healthCheckWaitDuration?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#upgrade_domain_timeout ServiceFabricCluster#upgrade_domain_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#upgrade_domain_timeout ServiceFabricCluster#upgrade_domain_timeout}
   */
   readonly upgradeDomainTimeout?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#upgrade_replica_set_check_timeout ServiceFabricCluster#upgrade_replica_set_check_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#upgrade_replica_set_check_timeout ServiceFabricCluster#upgrade_replica_set_check_timeout}
   */
   readonly upgradeReplicaSetCheckTimeout?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#upgrade_timeout ServiceFabricCluster#upgrade_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#upgrade_timeout ServiceFabricCluster#upgrade_timeout}
   */
   readonly upgradeTimeout?: string;
   /**
   * delta_health_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#delta_health_policy ServiceFabricCluster#delta_health_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#delta_health_policy ServiceFabricCluster#delta_health_policy}
   */
   readonly deltaHealthPolicy?: ServiceFabricClusterUpgradePolicyDeltaHealthPolicy;
   /**
   * health_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#health_policy ServiceFabricCluster#health_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#health_policy ServiceFabricCluster#health_policy}
   */
   readonly healthPolicy?: ServiceFabricClusterUpgradePolicyHealthPolicy;
 }
@@ -2982,7 +2982,7 @@ export interface ServiceFabricClusterUpgradePolicy {
 export function serviceFabricClusterUpgradePolicyToTerraform(struct?: ServiceFabricClusterUpgradePolicyOutputReference | ServiceFabricClusterUpgradePolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     force_restart_enabled: cdktn.booleanToTerraform(struct!.forceRestartEnabled),
@@ -3001,7 +3001,7 @@ export function serviceFabricClusterUpgradePolicyToTerraform(struct?: ServiceFab
 export function serviceFabricClusterUpgradePolicyToHclTerraform(struct?: ServiceFabricClusterUpgradePolicyOutputReference | ServiceFabricClusterUpgradePolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     force_restart_enabled: {
@@ -3290,7 +3290,7 @@ export class ServiceFabricClusterUpgradePolicyOutputReference extends cdktn.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster azurerm_service_fabric_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster azurerm_service_fabric_cluster}
 */
 export class ServiceFabricCluster extends cdktn.TerraformResource {
 
@@ -3306,7 +3306,7 @@ export class ServiceFabricCluster extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ServiceFabricCluster resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ServiceFabricCluster to import
-  * @param importFromId The id of the existing ServiceFabricCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ServiceFabricCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ServiceFabricCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -3318,7 +3318,7 @@ export class ServiceFabricCluster extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/service_fabric_cluster azurerm_service_fabric_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/service_fabric_cluster azurerm_service_fabric_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3329,7 +3329,7 @@ export class ServiceFabricCluster extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_service_fabric_cluster',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

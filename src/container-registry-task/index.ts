@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,114 +13,114 @@ import * as cdktn from 'cdktn';
 
 export interface ContainerRegistryTaskConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#agent_pool_name ContainerRegistryTask#agent_pool_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#agent_pool_name ContainerRegistryTask#agent_pool_name}
   */
   readonly agentPoolName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#container_registry_id ContainerRegistryTask#container_registry_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#container_registry_id ContainerRegistryTask#container_registry_id}
   */
   readonly containerRegistryId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#enabled ContainerRegistryTask#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#enabled ContainerRegistryTask#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#id ContainerRegistryTask#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#id ContainerRegistryTask#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#is_system_task ContainerRegistryTask#is_system_task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#is_system_task ContainerRegistryTask#is_system_task}
   */
   readonly isSystemTask?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#log_template ContainerRegistryTask#log_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#log_template ContainerRegistryTask#log_template}
   */
   readonly logTemplate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#name ContainerRegistryTask#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#name ContainerRegistryTask#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#tags ContainerRegistryTask#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#tags ContainerRegistryTask#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#timeout_in_seconds ContainerRegistryTask#timeout_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#timeout_in_seconds ContainerRegistryTask#timeout_in_seconds}
   */
   readonly timeoutInSeconds?: number;
   /**
   * agent_setting block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#agent_setting ContainerRegistryTask#agent_setting}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#agent_setting ContainerRegistryTask#agent_setting}
   */
   readonly agentSetting?: ContainerRegistryTaskAgentSetting;
   /**
   * base_image_trigger block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#base_image_trigger ContainerRegistryTask#base_image_trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#base_image_trigger ContainerRegistryTask#base_image_trigger}
   */
   readonly baseImageTrigger?: ContainerRegistryTaskBaseImageTrigger;
   /**
   * docker_step block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#docker_step ContainerRegistryTask#docker_step}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#docker_step ContainerRegistryTask#docker_step}
   */
   readonly dockerStep?: ContainerRegistryTaskDockerStep;
   /**
   * encoded_step block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#encoded_step ContainerRegistryTask#encoded_step}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#encoded_step ContainerRegistryTask#encoded_step}
   */
   readonly encodedStep?: ContainerRegistryTaskEncodedStep;
   /**
   * file_step block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#file_step ContainerRegistryTask#file_step}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#file_step ContainerRegistryTask#file_step}
   */
   readonly fileStep?: ContainerRegistryTaskFileStep;
   /**
   * identity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#identity ContainerRegistryTask#identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#identity ContainerRegistryTask#identity}
   */
   readonly identity?: ContainerRegistryTaskIdentity;
   /**
   * platform block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#platform ContainerRegistryTask#platform}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#platform ContainerRegistryTask#platform}
   */
   readonly platform?: ContainerRegistryTaskPlatform;
   /**
   * registry_credential block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#registry_credential ContainerRegistryTask#registry_credential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#registry_credential ContainerRegistryTask#registry_credential}
   */
   readonly registryCredential?: ContainerRegistryTaskRegistryCredential;
   /**
   * source_trigger block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#source_trigger ContainerRegistryTask#source_trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#source_trigger ContainerRegistryTask#source_trigger}
   */
   readonly sourceTrigger?: ContainerRegistryTaskSourceTrigger[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#timeouts ContainerRegistryTask#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#timeouts ContainerRegistryTask#timeouts}
   */
   readonly timeouts?: ContainerRegistryTaskTimeouts;
   /**
   * timer_trigger block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#timer_trigger ContainerRegistryTask#timer_trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#timer_trigger ContainerRegistryTask#timer_trigger}
   */
   readonly timerTrigger?: ContainerRegistryTaskTimerTrigger[] | cdktn.IResolvable;
 }
 export interface ContainerRegistryTaskAgentSetting {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#cpu ContainerRegistryTask#cpu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#cpu ContainerRegistryTask#cpu}
   */
   readonly cpu: number;
 }
@@ -128,7 +128,7 @@ export interface ContainerRegistryTaskAgentSetting {
 export function containerRegistryTaskAgentSettingToTerraform(struct?: ContainerRegistryTaskAgentSettingOutputReference | ContainerRegistryTaskAgentSetting): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cpu: cdktn.numberToTerraform(struct!.cpu),
@@ -139,7 +139,7 @@ export function containerRegistryTaskAgentSettingToTerraform(struct?: ContainerR
 export function containerRegistryTaskAgentSettingToHclTerraform(struct?: ContainerRegistryTaskAgentSettingOutputReference | ContainerRegistryTaskAgentSetting): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cpu: {
@@ -201,23 +201,23 @@ export class ContainerRegistryTaskAgentSettingOutputReference extends cdktn.Comp
 }
 export interface ContainerRegistryTaskBaseImageTrigger {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#enabled ContainerRegistryTask#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#enabled ContainerRegistryTask#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#name ContainerRegistryTask#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#name ContainerRegistryTask#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#type ContainerRegistryTask#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#type ContainerRegistryTask#type}
   */
   readonly type: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#update_trigger_endpoint ContainerRegistryTask#update_trigger_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#update_trigger_endpoint ContainerRegistryTask#update_trigger_endpoint}
   */
   readonly updateTriggerEndpoint?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#update_trigger_payload_type ContainerRegistryTask#update_trigger_payload_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#update_trigger_payload_type ContainerRegistryTask#update_trigger_payload_type}
   */
   readonly updateTriggerPayloadType?: string;
 }
@@ -225,7 +225,7 @@ export interface ContainerRegistryTaskBaseImageTrigger {
 export function containerRegistryTaskBaseImageTriggerToTerraform(struct?: ContainerRegistryTaskBaseImageTriggerOutputReference | ContainerRegistryTaskBaseImageTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -240,7 +240,7 @@ export function containerRegistryTaskBaseImageTriggerToTerraform(struct?: Contai
 export function containerRegistryTaskBaseImageTriggerToHclTerraform(struct?: ContainerRegistryTaskBaseImageTriggerOutputReference | ContainerRegistryTaskBaseImageTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -411,39 +411,39 @@ export class ContainerRegistryTaskBaseImageTriggerOutputReference extends cdktn.
 }
 export interface ContainerRegistryTaskDockerStep {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#arguments ContainerRegistryTask#arguments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#arguments ContainerRegistryTask#arguments}
   */
   readonly arguments?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#cache_enabled ContainerRegistryTask#cache_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#cache_enabled ContainerRegistryTask#cache_enabled}
   */
   readonly cacheEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#context_access_token ContainerRegistryTask#context_access_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#context_access_token ContainerRegistryTask#context_access_token}
   */
   readonly contextAccessToken: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#context_path ContainerRegistryTask#context_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#context_path ContainerRegistryTask#context_path}
   */
   readonly contextPath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#dockerfile_path ContainerRegistryTask#dockerfile_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#dockerfile_path ContainerRegistryTask#dockerfile_path}
   */
   readonly dockerfilePath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#image_names ContainerRegistryTask#image_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#image_names ContainerRegistryTask#image_names}
   */
   readonly imageNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#push_enabled ContainerRegistryTask#push_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#push_enabled ContainerRegistryTask#push_enabled}
   */
   readonly pushEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#secret_arguments ContainerRegistryTask#secret_arguments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#secret_arguments ContainerRegistryTask#secret_arguments}
   */
   readonly secretArguments?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#target ContainerRegistryTask#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#target ContainerRegistryTask#target}
   */
   readonly target?: string;
 }
@@ -451,7 +451,7 @@ export interface ContainerRegistryTaskDockerStep {
 export function containerRegistryTaskDockerStepToTerraform(struct?: ContainerRegistryTaskDockerStepOutputReference | ContainerRegistryTaskDockerStep): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     arguments: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.arguments),
@@ -470,7 +470,7 @@ export function containerRegistryTaskDockerStepToTerraform(struct?: ContainerReg
 export function containerRegistryTaskDockerStepToHclTerraform(struct?: ContainerRegistryTaskDockerStepOutputReference | ContainerRegistryTaskDockerStep): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     arguments: {
@@ -750,27 +750,27 @@ export class ContainerRegistryTaskDockerStepOutputReference extends cdktn.Comple
 }
 export interface ContainerRegistryTaskEncodedStep {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#context_access_token ContainerRegistryTask#context_access_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#context_access_token ContainerRegistryTask#context_access_token}
   */
   readonly contextAccessToken?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#context_path ContainerRegistryTask#context_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#context_path ContainerRegistryTask#context_path}
   */
   readonly contextPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#secret_values ContainerRegistryTask#secret_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#secret_values ContainerRegistryTask#secret_values}
   */
   readonly secretValues?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#task_content ContainerRegistryTask#task_content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#task_content ContainerRegistryTask#task_content}
   */
   readonly taskContent: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#value_content ContainerRegistryTask#value_content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#value_content ContainerRegistryTask#value_content}
   */
   readonly valueContent?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#values ContainerRegistryTask#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#values ContainerRegistryTask#values}
   */
   readonly values?: { [key: string]: string };
 }
@@ -778,7 +778,7 @@ export interface ContainerRegistryTaskEncodedStep {
 export function containerRegistryTaskEncodedStepToTerraform(struct?: ContainerRegistryTaskEncodedStepOutputReference | ContainerRegistryTaskEncodedStep): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     context_access_token: cdktn.stringToTerraform(struct!.contextAccessToken),
@@ -794,7 +794,7 @@ export function containerRegistryTaskEncodedStepToTerraform(struct?: ContainerRe
 export function containerRegistryTaskEncodedStepToHclTerraform(struct?: ContainerRegistryTaskEncodedStepOutputReference | ContainerRegistryTaskEncodedStep): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     context_access_token: {
@@ -996,27 +996,27 @@ export class ContainerRegistryTaskEncodedStepOutputReference extends cdktn.Compl
 }
 export interface ContainerRegistryTaskFileStep {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#context_access_token ContainerRegistryTask#context_access_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#context_access_token ContainerRegistryTask#context_access_token}
   */
   readonly contextAccessToken?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#context_path ContainerRegistryTask#context_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#context_path ContainerRegistryTask#context_path}
   */
   readonly contextPath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#secret_values ContainerRegistryTask#secret_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#secret_values ContainerRegistryTask#secret_values}
   */
   readonly secretValues?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#task_file_path ContainerRegistryTask#task_file_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#task_file_path ContainerRegistryTask#task_file_path}
   */
   readonly taskFilePath: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#value_file_path ContainerRegistryTask#value_file_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#value_file_path ContainerRegistryTask#value_file_path}
   */
   readonly valueFilePath?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#values ContainerRegistryTask#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#values ContainerRegistryTask#values}
   */
   readonly values?: { [key: string]: string };
 }
@@ -1024,7 +1024,7 @@ export interface ContainerRegistryTaskFileStep {
 export function containerRegistryTaskFileStepToTerraform(struct?: ContainerRegistryTaskFileStepOutputReference | ContainerRegistryTaskFileStep): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     context_access_token: cdktn.stringToTerraform(struct!.contextAccessToken),
@@ -1040,7 +1040,7 @@ export function containerRegistryTaskFileStepToTerraform(struct?: ContainerRegis
 export function containerRegistryTaskFileStepToHclTerraform(struct?: ContainerRegistryTaskFileStepOutputReference | ContainerRegistryTaskFileStep): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     context_access_token: {
@@ -1242,11 +1242,11 @@ export class ContainerRegistryTaskFileStepOutputReference extends cdktn.ComplexO
 }
 export interface ContainerRegistryTaskIdentity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#identity_ids ContainerRegistryTask#identity_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#identity_ids ContainerRegistryTask#identity_ids}
   */
   readonly identityIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#type ContainerRegistryTask#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#type ContainerRegistryTask#type}
   */
   readonly type: string;
 }
@@ -1254,7 +1254,7 @@ export interface ContainerRegistryTaskIdentity {
 export function containerRegistryTaskIdentityToTerraform(struct?: ContainerRegistryTaskIdentityOutputReference | ContainerRegistryTaskIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
@@ -1266,7 +1266,7 @@ export function containerRegistryTaskIdentityToTerraform(struct?: ContainerRegis
 export function containerRegistryTaskIdentityToHclTerraform(struct?: ContainerRegistryTaskIdentityOutputReference | ContainerRegistryTaskIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     identity_ids: {
@@ -1366,15 +1366,15 @@ export class ContainerRegistryTaskIdentityOutputReference extends cdktn.ComplexO
 }
 export interface ContainerRegistryTaskPlatform {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#architecture ContainerRegistryTask#architecture}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#architecture ContainerRegistryTask#architecture}
   */
   readonly architecture?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#os ContainerRegistryTask#os}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#os ContainerRegistryTask#os}
   */
   readonly os: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#variant ContainerRegistryTask#variant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#variant ContainerRegistryTask#variant}
   */
   readonly variant?: string;
 }
@@ -1382,7 +1382,7 @@ export interface ContainerRegistryTaskPlatform {
 export function containerRegistryTaskPlatformToTerraform(struct?: ContainerRegistryTaskPlatformOutputReference | ContainerRegistryTaskPlatform): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     architecture: cdktn.stringToTerraform(struct!.architecture),
@@ -1395,7 +1395,7 @@ export function containerRegistryTaskPlatformToTerraform(struct?: ContainerRegis
 export function containerRegistryTaskPlatformToHclTerraform(struct?: ContainerRegistryTaskPlatformOutputReference | ContainerRegistryTaskPlatform): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     architecture: {
@@ -1513,19 +1513,19 @@ export class ContainerRegistryTaskPlatformOutputReference extends cdktn.ComplexO
 }
 export interface ContainerRegistryTaskRegistryCredentialCustom {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#identity ContainerRegistryTask#identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#identity ContainerRegistryTask#identity}
   */
   readonly identity?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#login_server ContainerRegistryTask#login_server}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#login_server ContainerRegistryTask#login_server}
   */
   readonly loginServer: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#password ContainerRegistryTask#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#password ContainerRegistryTask#password}
   */
   readonly password?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#username ContainerRegistryTask#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#username ContainerRegistryTask#username}
   */
   readonly username?: string;
 }
@@ -1533,7 +1533,7 @@ export interface ContainerRegistryTaskRegistryCredentialCustom {
 export function containerRegistryTaskRegistryCredentialCustomToTerraform(struct?: ContainerRegistryTaskRegistryCredentialCustom | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     identity: cdktn.stringToTerraform(struct!.identity),
@@ -1547,7 +1547,7 @@ export function containerRegistryTaskRegistryCredentialCustomToTerraform(struct?
 export function containerRegistryTaskRegistryCredentialCustomToHclTerraform(struct?: ContainerRegistryTaskRegistryCredentialCustom | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     identity: {
@@ -1725,7 +1725,7 @@ export class ContainerRegistryTaskRegistryCredentialCustomList extends cdktn.Com
 }
 export interface ContainerRegistryTaskRegistryCredentialSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#login_mode ContainerRegistryTask#login_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#login_mode ContainerRegistryTask#login_mode}
   */
   readonly loginMode: string;
 }
@@ -1733,7 +1733,7 @@ export interface ContainerRegistryTaskRegistryCredentialSource {
 export function containerRegistryTaskRegistryCredentialSourceToTerraform(struct?: ContainerRegistryTaskRegistryCredentialSourceOutputReference | ContainerRegistryTaskRegistryCredentialSource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     login_mode: cdktn.stringToTerraform(struct!.loginMode),
@@ -1744,7 +1744,7 @@ export function containerRegistryTaskRegistryCredentialSourceToTerraform(struct?
 export function containerRegistryTaskRegistryCredentialSourceToHclTerraform(struct?: ContainerRegistryTaskRegistryCredentialSourceOutputReference | ContainerRegistryTaskRegistryCredentialSource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     login_mode: {
@@ -1808,13 +1808,13 @@ export interface ContainerRegistryTaskRegistryCredential {
   /**
   * custom block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#custom ContainerRegistryTask#custom}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#custom ContainerRegistryTask#custom}
   */
   readonly custom?: ContainerRegistryTaskRegistryCredentialCustom[] | cdktn.IResolvable;
   /**
   * source block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#source ContainerRegistryTask#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#source ContainerRegistryTask#source}
   */
   readonly source?: ContainerRegistryTaskRegistryCredentialSource;
 }
@@ -1822,7 +1822,7 @@ export interface ContainerRegistryTaskRegistryCredential {
 export function containerRegistryTaskRegistryCredentialToTerraform(struct?: ContainerRegistryTaskRegistryCredentialOutputReference | ContainerRegistryTaskRegistryCredential): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     custom: cdktn.listMapper(containerRegistryTaskRegistryCredentialCustomToTerraform, true)(struct!.custom),
@@ -1834,7 +1834,7 @@ export function containerRegistryTaskRegistryCredentialToTerraform(struct?: Cont
 export function containerRegistryTaskRegistryCredentialToHclTerraform(struct?: ContainerRegistryTaskRegistryCredentialOutputReference | ContainerRegistryTaskRegistryCredential): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     custom: {
@@ -1927,23 +1927,23 @@ export class ContainerRegistryTaskRegistryCredentialOutputReference extends cdkt
 }
 export interface ContainerRegistryTaskSourceTriggerAuthentication {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#expire_in_seconds ContainerRegistryTask#expire_in_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#expire_in_seconds ContainerRegistryTask#expire_in_seconds}
   */
   readonly expireInSeconds?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#refresh_token ContainerRegistryTask#refresh_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#refresh_token ContainerRegistryTask#refresh_token}
   */
   readonly refreshToken?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#scope ContainerRegistryTask#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#scope ContainerRegistryTask#scope}
   */
   readonly scope?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#token ContainerRegistryTask#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#token ContainerRegistryTask#token}
   */
   readonly token: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#token_type ContainerRegistryTask#token_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#token_type ContainerRegistryTask#token_type}
   */
   readonly tokenType: string;
 }
@@ -1951,7 +1951,7 @@ export interface ContainerRegistryTaskSourceTriggerAuthentication {
 export function containerRegistryTaskSourceTriggerAuthenticationToTerraform(struct?: ContainerRegistryTaskSourceTriggerAuthenticationOutputReference | ContainerRegistryTaskSourceTriggerAuthentication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     expire_in_seconds: cdktn.numberToTerraform(struct!.expireInSeconds),
@@ -1966,7 +1966,7 @@ export function containerRegistryTaskSourceTriggerAuthenticationToTerraform(stru
 export function containerRegistryTaskSourceTriggerAuthenticationToHclTerraform(struct?: ContainerRegistryTaskSourceTriggerAuthenticationOutputReference | ContainerRegistryTaskSourceTriggerAuthentication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     expire_in_seconds: {
@@ -2137,33 +2137,33 @@ export class ContainerRegistryTaskSourceTriggerAuthenticationOutputReference ext
 }
 export interface ContainerRegistryTaskSourceTrigger {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#branch ContainerRegistryTask#branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#branch ContainerRegistryTask#branch}
   */
   readonly branch?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#enabled ContainerRegistryTask#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#enabled ContainerRegistryTask#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#events ContainerRegistryTask#events}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#events ContainerRegistryTask#events}
   */
   readonly events: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#name ContainerRegistryTask#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#name ContainerRegistryTask#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#repository_url ContainerRegistryTask#repository_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#repository_url ContainerRegistryTask#repository_url}
   */
   readonly repositoryUrl: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#source_type ContainerRegistryTask#source_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#source_type ContainerRegistryTask#source_type}
   */
   readonly sourceType: string;
   /**
   * authentication block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#authentication ContainerRegistryTask#authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#authentication ContainerRegistryTask#authentication}
   */
   readonly authentication?: ContainerRegistryTaskSourceTriggerAuthentication;
 }
@@ -2171,7 +2171,7 @@ export interface ContainerRegistryTaskSourceTrigger {
 export function containerRegistryTaskSourceTriggerToTerraform(struct?: ContainerRegistryTaskSourceTrigger | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     branch: cdktn.stringToTerraform(struct!.branch),
@@ -2188,7 +2188,7 @@ export function containerRegistryTaskSourceTriggerToTerraform(struct?: Container
 export function containerRegistryTaskSourceTriggerToHclTerraform(struct?: ContainerRegistryTaskSourceTrigger | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     branch: {
@@ -2441,19 +2441,19 @@ export class ContainerRegistryTaskSourceTriggerList extends cdktn.ComplexList {
 }
 export interface ContainerRegistryTaskTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#create ContainerRegistryTask#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#create ContainerRegistryTask#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#delete ContainerRegistryTask#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#delete ContainerRegistryTask#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#read ContainerRegistryTask#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#read ContainerRegistryTask#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#update ContainerRegistryTask#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#update ContainerRegistryTask#update}
   */
   readonly update?: string;
 }
@@ -2461,7 +2461,7 @@ export interface ContainerRegistryTaskTimeouts {
 export function containerRegistryTaskTimeoutsToTerraform(struct?: ContainerRegistryTaskTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -2475,7 +2475,7 @@ export function containerRegistryTaskTimeoutsToTerraform(struct?: ContainerRegis
 export function containerRegistryTaskTimeoutsToHclTerraform(struct?: ContainerRegistryTaskTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -2634,15 +2634,15 @@ export class ContainerRegistryTaskTimeoutsOutputReference extends cdktn.ComplexO
 }
 export interface ContainerRegistryTaskTimerTrigger {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#enabled ContainerRegistryTask#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#enabled ContainerRegistryTask#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#name ContainerRegistryTask#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#name ContainerRegistryTask#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#schedule ContainerRegistryTask#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#schedule ContainerRegistryTask#schedule}
   */
   readonly schedule: string;
 }
@@ -2650,7 +2650,7 @@ export interface ContainerRegistryTaskTimerTrigger {
 export function containerRegistryTaskTimerTriggerToTerraform(struct?: ContainerRegistryTaskTimerTrigger | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -2663,7 +2663,7 @@ export function containerRegistryTaskTimerTriggerToTerraform(struct?: ContainerR
 export function containerRegistryTaskTimerTriggerToHclTerraform(struct?: ContainerRegistryTaskTimerTrigger | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -2810,7 +2810,7 @@ export class ContainerRegistryTaskTimerTriggerList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task azurerm_container_registry_task}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task azurerm_container_registry_task}
 */
 export class ContainerRegistryTask extends cdktn.TerraformResource {
 
@@ -2826,7 +2826,7 @@ export class ContainerRegistryTask extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ContainerRegistryTask resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ContainerRegistryTask to import
-  * @param importFromId The id of the existing ContainerRegistryTask that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ContainerRegistryTask that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ContainerRegistryTask to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2838,7 +2838,7 @@ export class ContainerRegistryTask extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/container_registry_task azurerm_container_registry_task} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/container_registry_task azurerm_container_registry_task} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2849,7 +2849,7 @@ export class ContainerRegistryTask extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_container_registry_task',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

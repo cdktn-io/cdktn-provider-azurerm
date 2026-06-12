@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/key_vault_certificate
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/key_vault_certificate
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +13,28 @@ import * as cdktn from 'cdktn';
 
 export interface DataAzurermKeyVaultCertificateConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/key_vault_certificate#id DataAzurermKeyVaultCertificate#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/key_vault_certificate#id DataAzurermKeyVaultCertificate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/key_vault_certificate#key_vault_id DataAzurermKeyVaultCertificate#key_vault_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/key_vault_certificate#key_vault_id DataAzurermKeyVaultCertificate#key_vault_id}
   */
   readonly keyVaultId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/key_vault_certificate#name DataAzurermKeyVaultCertificate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/key_vault_certificate#name DataAzurermKeyVaultCertificate#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/key_vault_certificate#version DataAzurermKeyVaultCertificate#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/key_vault_certificate#version DataAzurermKeyVaultCertificate#version}
   */
   readonly version?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/key_vault_certificate#timeouts DataAzurermKeyVaultCertificate#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/key_vault_certificate#timeouts DataAzurermKeyVaultCertificate#timeouts}
   */
   readonly timeouts?: DataAzurermKeyVaultCertificateTimeouts;
 }
@@ -44,7 +44,7 @@ export interface DataAzurermKeyVaultCertificateCertificatePolicyIssuerParameters
 export function dataAzurermKeyVaultCertificateCertificatePolicyIssuerParametersToTerraform(struct?: DataAzurermKeyVaultCertificateCertificatePolicyIssuerParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -54,7 +54,7 @@ export function dataAzurermKeyVaultCertificateCertificatePolicyIssuerParametersT
 export function dataAzurermKeyVaultCertificateCertificatePolicyIssuerParametersToHclTerraform(struct?: DataAzurermKeyVaultCertificateCertificatePolicyIssuerParameters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -119,7 +119,7 @@ export interface DataAzurermKeyVaultCertificateCertificatePolicyKeyProperties {
 export function dataAzurermKeyVaultCertificateCertificatePolicyKeyPropertiesToTerraform(struct?: DataAzurermKeyVaultCertificateCertificatePolicyKeyProperties): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -129,7 +129,7 @@ export function dataAzurermKeyVaultCertificateCertificatePolicyKeyPropertiesToTe
 export function dataAzurermKeyVaultCertificateCertificatePolicyKeyPropertiesToHclTerraform(struct?: DataAzurermKeyVaultCertificateCertificatePolicyKeyProperties): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -214,7 +214,7 @@ export interface DataAzurermKeyVaultCertificateCertificatePolicyLifetimeActionAc
 export function dataAzurermKeyVaultCertificateCertificatePolicyLifetimeActionActionToTerraform(struct?: DataAzurermKeyVaultCertificateCertificatePolicyLifetimeActionAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -224,7 +224,7 @@ export function dataAzurermKeyVaultCertificateCertificatePolicyLifetimeActionAct
 export function dataAzurermKeyVaultCertificateCertificatePolicyLifetimeActionActionToHclTerraform(struct?: DataAzurermKeyVaultCertificateCertificatePolicyLifetimeActionAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -289,7 +289,7 @@ export interface DataAzurermKeyVaultCertificateCertificatePolicyLifetimeActionTr
 export function dataAzurermKeyVaultCertificateCertificatePolicyLifetimeActionTriggerToTerraform(struct?: DataAzurermKeyVaultCertificateCertificatePolicyLifetimeActionTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -299,7 +299,7 @@ export function dataAzurermKeyVaultCertificateCertificatePolicyLifetimeActionTri
 export function dataAzurermKeyVaultCertificateCertificatePolicyLifetimeActionTriggerToHclTerraform(struct?: DataAzurermKeyVaultCertificateCertificatePolicyLifetimeActionTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -369,7 +369,7 @@ export interface DataAzurermKeyVaultCertificateCertificatePolicyLifetimeAction {
 export function dataAzurermKeyVaultCertificateCertificatePolicyLifetimeActionToTerraform(struct?: DataAzurermKeyVaultCertificateCertificatePolicyLifetimeAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -379,7 +379,7 @@ export function dataAzurermKeyVaultCertificateCertificatePolicyLifetimeActionToT
 export function dataAzurermKeyVaultCertificateCertificatePolicyLifetimeActionToHclTerraform(struct?: DataAzurermKeyVaultCertificateCertificatePolicyLifetimeAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -451,7 +451,7 @@ export interface DataAzurermKeyVaultCertificateCertificatePolicySecretProperties
 export function dataAzurermKeyVaultCertificateCertificatePolicySecretPropertiesToTerraform(struct?: DataAzurermKeyVaultCertificateCertificatePolicySecretProperties): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -461,7 +461,7 @@ export function dataAzurermKeyVaultCertificateCertificatePolicySecretPropertiesT
 export function dataAzurermKeyVaultCertificateCertificatePolicySecretPropertiesToHclTerraform(struct?: DataAzurermKeyVaultCertificateCertificatePolicySecretProperties): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -526,7 +526,7 @@ export interface DataAzurermKeyVaultCertificateCertificatePolicyX509CertificateP
 export function dataAzurermKeyVaultCertificateCertificatePolicyX509CertificatePropertiesSubjectAlternativeNamesToTerraform(struct?: DataAzurermKeyVaultCertificateCertificatePolicyX509CertificatePropertiesSubjectAlternativeNames): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -536,7 +536,7 @@ export function dataAzurermKeyVaultCertificateCertificatePolicyX509CertificatePr
 export function dataAzurermKeyVaultCertificateCertificatePolicyX509CertificatePropertiesSubjectAlternativeNamesToHclTerraform(struct?: DataAzurermKeyVaultCertificateCertificatePolicyX509CertificatePropertiesSubjectAlternativeNames): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -611,7 +611,7 @@ export interface DataAzurermKeyVaultCertificateCertificatePolicyX509CertificateP
 export function dataAzurermKeyVaultCertificateCertificatePolicyX509CertificatePropertiesToTerraform(struct?: DataAzurermKeyVaultCertificateCertificatePolicyX509CertificateProperties): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -621,7 +621,7 @@ export function dataAzurermKeyVaultCertificateCertificatePolicyX509CertificatePr
 export function dataAzurermKeyVaultCertificateCertificatePolicyX509CertificatePropertiesToHclTerraform(struct?: DataAzurermKeyVaultCertificateCertificatePolicyX509CertificateProperties): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -707,7 +707,7 @@ export interface DataAzurermKeyVaultCertificateCertificatePolicy {
 export function dataAzurermKeyVaultCertificateCertificatePolicyToTerraform(struct?: DataAzurermKeyVaultCertificateCertificatePolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -717,7 +717,7 @@ export function dataAzurermKeyVaultCertificateCertificatePolicyToTerraform(struc
 export function dataAzurermKeyVaultCertificateCertificatePolicyToHclTerraform(struct?: DataAzurermKeyVaultCertificateCertificatePolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -803,7 +803,7 @@ export class DataAzurermKeyVaultCertificateCertificatePolicyList extends cdktn.C
 }
 export interface DataAzurermKeyVaultCertificateTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/key_vault_certificate#read DataAzurermKeyVaultCertificate#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/key_vault_certificate#read DataAzurermKeyVaultCertificate#read}
   */
   readonly read?: string;
 }
@@ -811,7 +811,7 @@ export interface DataAzurermKeyVaultCertificateTimeouts {
 export function dataAzurermKeyVaultCertificateTimeoutsToTerraform(struct?: DataAzurermKeyVaultCertificateTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     read: cdktn.stringToTerraform(struct!.read),
@@ -822,7 +822,7 @@ export function dataAzurermKeyVaultCertificateTimeoutsToTerraform(struct?: DataA
 export function dataAzurermKeyVaultCertificateTimeoutsToHclTerraform(struct?: DataAzurermKeyVaultCertificateTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     read: {
@@ -897,7 +897,7 @@ export class DataAzurermKeyVaultCertificateTimeoutsOutputReference extends cdktn
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/key_vault_certificate azurerm_key_vault_certificate}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/key_vault_certificate azurerm_key_vault_certificate}
 */
 export class DataAzurermKeyVaultCertificate extends cdktn.TerraformDataSource {
 
@@ -913,7 +913,7 @@ export class DataAzurermKeyVaultCertificate extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAzurermKeyVaultCertificate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermKeyVaultCertificate to import
-  * @param importFromId The id of the existing DataAzurermKeyVaultCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/key_vault_certificate#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzurermKeyVaultCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/key_vault_certificate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermKeyVaultCertificate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -925,7 +925,7 @@ export class DataAzurermKeyVaultCertificate extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/key_vault_certificate azurerm_key_vault_certificate} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/key_vault_certificate azurerm_key_vault_certificate} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -936,7 +936,7 @@ export class DataAzurermKeyVaultCertificate extends cdktn.TerraformDataSource {
       terraformResourceType: 'azurerm_key_vault_certificate',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

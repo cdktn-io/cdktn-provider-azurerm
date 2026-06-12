@@ -1109,8 +1109,6 @@ export * as vmwareCluster from './vmware-cluster/index';
 export * as vmwareExpressRouteAuthorization from './vmware-express-route-authorization/index';
 export * as vmwareNetappVolumeAttachment from './vmware-netapp-volume-attachment/index';
 export * as vmwarePrivateCloud from './vmware-private-cloud/index';
-export * as voiceServicesCommunicationsGateway from './voice-services-communications-gateway/index';
-export * as voiceServicesCommunicationsGatewayTestLine from './voice-services-communications-gateway-test-line/index';
 export * as vpnGateway from './vpn-gateway/index';
 export * as vpnGatewayConnection from './vpn-gateway-connection/index';
 export * as vpnGatewayNatRule from './vpn-gateway-nat-rule/index';

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/mssql_elasticpool
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/mssql_elasticpool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,86 +13,86 @@ import * as cdktn from 'cdktn';
 
 export interface MssqlElasticpoolConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/mssql_elasticpool#enclave_type MssqlElasticpool#enclave_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/mssql_elasticpool#enclave_type MssqlElasticpool#enclave_type}
   */
   readonly enclaveType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/mssql_elasticpool#high_availability_replica_count MssqlElasticpool#high_availability_replica_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/mssql_elasticpool#high_availability_replica_count MssqlElasticpool#high_availability_replica_count}
   */
   readonly highAvailabilityReplicaCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/mssql_elasticpool#id MssqlElasticpool#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/mssql_elasticpool#id MssqlElasticpool#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/mssql_elasticpool#license_type MssqlElasticpool#license_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/mssql_elasticpool#license_type MssqlElasticpool#license_type}
   */
   readonly licenseType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/mssql_elasticpool#location MssqlElasticpool#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/mssql_elasticpool#location MssqlElasticpool#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/mssql_elasticpool#maintenance_configuration_name MssqlElasticpool#maintenance_configuration_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/mssql_elasticpool#maintenance_configuration_name MssqlElasticpool#maintenance_configuration_name}
   */
   readonly maintenanceConfigurationName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/mssql_elasticpool#max_size_bytes MssqlElasticpool#max_size_bytes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/mssql_elasticpool#max_size_bytes MssqlElasticpool#max_size_bytes}
   */
   readonly maxSizeBytes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/mssql_elasticpool#max_size_gb MssqlElasticpool#max_size_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/mssql_elasticpool#max_size_gb MssqlElasticpool#max_size_gb}
   */
   readonly maxSizeGb?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/mssql_elasticpool#name MssqlElasticpool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/mssql_elasticpool#name MssqlElasticpool#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/mssql_elasticpool#resource_group_name MssqlElasticpool#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/mssql_elasticpool#resource_group_name MssqlElasticpool#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/mssql_elasticpool#server_name MssqlElasticpool#server_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/mssql_elasticpool#server_name MssqlElasticpool#server_name}
   */
   readonly serverName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/mssql_elasticpool#tags MssqlElasticpool#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/mssql_elasticpool#tags MssqlElasticpool#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/mssql_elasticpool#zone_redundant MssqlElasticpool#zone_redundant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/mssql_elasticpool#zone_redundant MssqlElasticpool#zone_redundant}
   */
   readonly zoneRedundant?: boolean | cdktn.IResolvable;
   /**
   * per_database_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/mssql_elasticpool#per_database_settings MssqlElasticpool#per_database_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/mssql_elasticpool#per_database_settings MssqlElasticpool#per_database_settings}
   */
   readonly perDatabaseSettings: MssqlElasticpoolPerDatabaseSettings;
   /**
   * sku block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/mssql_elasticpool#sku MssqlElasticpool#sku}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/mssql_elasticpool#sku MssqlElasticpool#sku}
   */
   readonly sku: MssqlElasticpoolSku;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/mssql_elasticpool#timeouts MssqlElasticpool#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/mssql_elasticpool#timeouts MssqlElasticpool#timeouts}
   */
   readonly timeouts?: MssqlElasticpoolTimeouts;
 }
 export interface MssqlElasticpoolPerDatabaseSettings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/mssql_elasticpool#max_capacity MssqlElasticpool#max_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/mssql_elasticpool#max_capacity MssqlElasticpool#max_capacity}
   */
   readonly maxCapacity: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/mssql_elasticpool#min_capacity MssqlElasticpool#min_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/mssql_elasticpool#min_capacity MssqlElasticpool#min_capacity}
   */
   readonly minCapacity: number;
 }
@@ -100,7 +100,7 @@ export interface MssqlElasticpoolPerDatabaseSettings {
 export function mssqlElasticpoolPerDatabaseSettingsToTerraform(struct?: MssqlElasticpoolPerDatabaseSettingsOutputReference | MssqlElasticpoolPerDatabaseSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_capacity: cdktn.numberToTerraform(struct!.maxCapacity),
@@ -112,7 +112,7 @@ export function mssqlElasticpoolPerDatabaseSettingsToTerraform(struct?: MssqlEla
 export function mssqlElasticpoolPerDatabaseSettingsToHclTerraform(struct?: MssqlElasticpoolPerDatabaseSettingsOutputReference | MssqlElasticpoolPerDatabaseSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_capacity: {
@@ -199,19 +199,19 @@ export class MssqlElasticpoolPerDatabaseSettingsOutputReference extends cdktn.Co
 }
 export interface MssqlElasticpoolSku {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/mssql_elasticpool#capacity MssqlElasticpool#capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/mssql_elasticpool#capacity MssqlElasticpool#capacity}
   */
   readonly capacity: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/mssql_elasticpool#family MssqlElasticpool#family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/mssql_elasticpool#family MssqlElasticpool#family}
   */
   readonly family?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/mssql_elasticpool#name MssqlElasticpool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/mssql_elasticpool#name MssqlElasticpool#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/mssql_elasticpool#tier MssqlElasticpool#tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/mssql_elasticpool#tier MssqlElasticpool#tier}
   */
   readonly tier: string;
 }
@@ -219,7 +219,7 @@ export interface MssqlElasticpoolSku {
 export function mssqlElasticpoolSkuToTerraform(struct?: MssqlElasticpoolSkuOutputReference | MssqlElasticpoolSku): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     capacity: cdktn.numberToTerraform(struct!.capacity),
@@ -233,7 +233,7 @@ export function mssqlElasticpoolSkuToTerraform(struct?: MssqlElasticpoolSkuOutpu
 export function mssqlElasticpoolSkuToHclTerraform(struct?: MssqlElasticpoolSkuOutputReference | MssqlElasticpoolSku): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     capacity: {
@@ -373,19 +373,19 @@ export class MssqlElasticpoolSkuOutputReference extends cdktn.ComplexObject {
 }
 export interface MssqlElasticpoolTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/mssql_elasticpool#create MssqlElasticpool#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/mssql_elasticpool#create MssqlElasticpool#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/mssql_elasticpool#delete MssqlElasticpool#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/mssql_elasticpool#delete MssqlElasticpool#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/mssql_elasticpool#read MssqlElasticpool#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/mssql_elasticpool#read MssqlElasticpool#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/mssql_elasticpool#update MssqlElasticpool#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/mssql_elasticpool#update MssqlElasticpool#update}
   */
   readonly update?: string;
 }
@@ -393,7 +393,7 @@ export interface MssqlElasticpoolTimeouts {
 export function mssqlElasticpoolTimeoutsToTerraform(struct?: MssqlElasticpoolTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -407,7 +407,7 @@ export function mssqlElasticpoolTimeoutsToTerraform(struct?: MssqlElasticpoolTim
 export function mssqlElasticpoolTimeoutsToHclTerraform(struct?: MssqlElasticpoolTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -566,7 +566,7 @@ export class MssqlElasticpoolTimeoutsOutputReference extends cdktn.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/mssql_elasticpool azurerm_mssql_elasticpool}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/mssql_elasticpool azurerm_mssql_elasticpool}
 */
 export class MssqlElasticpool extends cdktn.TerraformResource {
 
@@ -582,7 +582,7 @@ export class MssqlElasticpool extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a MssqlElasticpool resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MssqlElasticpool to import
-  * @param importFromId The id of the existing MssqlElasticpool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/mssql_elasticpool#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MssqlElasticpool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/mssql_elasticpool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MssqlElasticpool to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -594,7 +594,7 @@ export class MssqlElasticpool extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/mssql_elasticpool azurerm_mssql_elasticpool} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/mssql_elasticpool azurerm_mssql_elasticpool} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -605,7 +605,7 @@ export class MssqlElasticpool extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_mssql_elasticpool',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

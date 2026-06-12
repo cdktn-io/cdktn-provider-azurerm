@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_configuration
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +13,50 @@ import * as cdktn from 'cdktn';
 
 export interface NginxConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_configuration#id NginxConfiguration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#id NginxConfiguration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_configuration#nginx_deployment_id NginxConfiguration#nginx_deployment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#nginx_deployment_id NginxConfiguration#nginx_deployment_id}
   */
   readonly nginxDeploymentId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_configuration#package_data NginxConfiguration#package_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#package_data NginxConfiguration#package_data}
   */
   readonly packageData?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_configuration#root_file NginxConfiguration#root_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#root_file NginxConfiguration#root_file}
   */
   readonly rootFile: string;
   /**
   * config_file block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_configuration#config_file NginxConfiguration#config_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#config_file NginxConfiguration#config_file}
   */
   readonly configFile?: NginxConfigurationConfigFile[] | cdktn.IResolvable;
   /**
   * protected_file block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_configuration#protected_file NginxConfiguration#protected_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#protected_file NginxConfiguration#protected_file}
   */
   readonly protectedFile?: NginxConfigurationProtectedFile[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_configuration#timeouts NginxConfiguration#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#timeouts NginxConfiguration#timeouts}
   */
   readonly timeouts?: NginxConfigurationTimeouts;
 }
 export interface NginxConfigurationConfigFile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_configuration#content NginxConfiguration#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#content NginxConfiguration#content}
   */
   readonly content: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_configuration#virtual_path NginxConfiguration#virtual_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#virtual_path NginxConfiguration#virtual_path}
   */
   readonly virtualPath: string;
 }
@@ -64,7 +64,7 @@ export interface NginxConfigurationConfigFile {
 export function nginxConfigurationConfigFileToTerraform(struct?: NginxConfigurationConfigFile | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     content: cdktn.stringToTerraform(struct!.content),
@@ -76,7 +76,7 @@ export function nginxConfigurationConfigFileToTerraform(struct?: NginxConfigurat
 export function nginxConfigurationConfigFileToHclTerraform(struct?: NginxConfigurationConfigFile | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     content: {
@@ -195,11 +195,11 @@ export class NginxConfigurationConfigFileList extends cdktn.ComplexList {
 }
 export interface NginxConfigurationProtectedFile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_configuration#content NginxConfiguration#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#content NginxConfiguration#content}
   */
   readonly content: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_configuration#virtual_path NginxConfiguration#virtual_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#virtual_path NginxConfiguration#virtual_path}
   */
   readonly virtualPath: string;
 }
@@ -207,7 +207,7 @@ export interface NginxConfigurationProtectedFile {
 export function nginxConfigurationProtectedFileToTerraform(struct?: NginxConfigurationProtectedFile | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     content: cdktn.stringToTerraform(struct!.content),
@@ -219,7 +219,7 @@ export function nginxConfigurationProtectedFileToTerraform(struct?: NginxConfigu
 export function nginxConfigurationProtectedFileToHclTerraform(struct?: NginxConfigurationProtectedFile | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     content: {
@@ -343,19 +343,19 @@ export class NginxConfigurationProtectedFileList extends cdktn.ComplexList {
 }
 export interface NginxConfigurationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_configuration#create NginxConfiguration#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#create NginxConfiguration#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_configuration#delete NginxConfiguration#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#delete NginxConfiguration#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_configuration#read NginxConfiguration#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#read NginxConfiguration#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_configuration#update NginxConfiguration#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#update NginxConfiguration#update}
   */
   readonly update?: string;
 }
@@ -363,7 +363,7 @@ export interface NginxConfigurationTimeouts {
 export function nginxConfigurationTimeoutsToTerraform(struct?: NginxConfigurationTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -377,7 +377,7 @@ export function nginxConfigurationTimeoutsToTerraform(struct?: NginxConfiguratio
 export function nginxConfigurationTimeoutsToHclTerraform(struct?: NginxConfigurationTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -536,7 +536,7 @@ export class NginxConfigurationTimeoutsOutputReference extends cdktn.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_configuration azurerm_nginx_configuration}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration azurerm_nginx_configuration}
 */
 export class NginxConfiguration extends cdktn.TerraformResource {
 
@@ -552,7 +552,7 @@ export class NginxConfiguration extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a NginxConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NginxConfiguration to import
-  * @param importFromId The id of the existing NginxConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_configuration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NginxConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NginxConfiguration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -564,7 +564,7 @@ export class NginxConfiguration extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_configuration azurerm_nginx_configuration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_configuration azurerm_nginx_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -575,7 +575,7 @@ export class NginxConfiguration extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_nginx_configuration',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

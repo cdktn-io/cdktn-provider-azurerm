@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/private_endpoint_connection
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/private_endpoint_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktn from 'cdktn';
 
 export interface DataAzurermPrivateEndpointConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/private_endpoint_connection#id DataAzurermPrivateEndpointConnection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/private_endpoint_connection#id DataAzurermPrivateEndpointConnection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/private_endpoint_connection#name DataAzurermPrivateEndpointConnection#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/private_endpoint_connection#name DataAzurermPrivateEndpointConnection#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/private_endpoint_connection#resource_group_name DataAzurermPrivateEndpointConnection#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/private_endpoint_connection#resource_group_name DataAzurermPrivateEndpointConnection#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/private_endpoint_connection#timeouts DataAzurermPrivateEndpointConnection#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/private_endpoint_connection#timeouts DataAzurermPrivateEndpointConnection#timeouts}
   */
   readonly timeouts?: DataAzurermPrivateEndpointConnectionTimeouts;
 }
@@ -40,7 +40,7 @@ export interface DataAzurermPrivateEndpointConnectionNetworkInterface {
 export function dataAzurermPrivateEndpointConnectionNetworkInterfaceToTerraform(struct?: DataAzurermPrivateEndpointConnectionNetworkInterface): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -50,7 +50,7 @@ export function dataAzurermPrivateEndpointConnectionNetworkInterfaceToTerraform(
 export function dataAzurermPrivateEndpointConnectionNetworkInterfaceToHclTerraform(struct?: DataAzurermPrivateEndpointConnectionNetworkInterface): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -120,7 +120,7 @@ export interface DataAzurermPrivateEndpointConnectionPrivateServiceConnection {
 export function dataAzurermPrivateEndpointConnectionPrivateServiceConnectionToTerraform(struct?: DataAzurermPrivateEndpointConnectionPrivateServiceConnection): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -130,7 +130,7 @@ export function dataAzurermPrivateEndpointConnectionPrivateServiceConnectionToTe
 export function dataAzurermPrivateEndpointConnectionPrivateServiceConnectionToHclTerraform(struct?: DataAzurermPrivateEndpointConnectionPrivateServiceConnection): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -206,7 +206,7 @@ export class DataAzurermPrivateEndpointConnectionPrivateServiceConnectionList ex
 }
 export interface DataAzurermPrivateEndpointConnectionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/private_endpoint_connection#read DataAzurermPrivateEndpointConnection#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/private_endpoint_connection#read DataAzurermPrivateEndpointConnection#read}
   */
   readonly read?: string;
 }
@@ -214,7 +214,7 @@ export interface DataAzurermPrivateEndpointConnectionTimeouts {
 export function dataAzurermPrivateEndpointConnectionTimeoutsToTerraform(struct?: DataAzurermPrivateEndpointConnectionTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     read: cdktn.stringToTerraform(struct!.read),
@@ -225,7 +225,7 @@ export function dataAzurermPrivateEndpointConnectionTimeoutsToTerraform(struct?:
 export function dataAzurermPrivateEndpointConnectionTimeoutsToHclTerraform(struct?: DataAzurermPrivateEndpointConnectionTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     read: {
@@ -300,7 +300,7 @@ export class DataAzurermPrivateEndpointConnectionTimeoutsOutputReference extends
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/private_endpoint_connection azurerm_private_endpoint_connection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/private_endpoint_connection azurerm_private_endpoint_connection}
 */
 export class DataAzurermPrivateEndpointConnection extends cdktn.TerraformDataSource {
 
@@ -316,7 +316,7 @@ export class DataAzurermPrivateEndpointConnection extends cdktn.TerraformDataSou
   * Generates CDKTN code for importing a DataAzurermPrivateEndpointConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermPrivateEndpointConnection to import
-  * @param importFromId The id of the existing DataAzurermPrivateEndpointConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/private_endpoint_connection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzurermPrivateEndpointConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/private_endpoint_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermPrivateEndpointConnection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -328,7 +328,7 @@ export class DataAzurermPrivateEndpointConnection extends cdktn.TerraformDataSou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/private_endpoint_connection azurerm_private_endpoint_connection} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/private_endpoint_connection azurerm_private_endpoint_connection} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -339,7 +339,7 @@ export class DataAzurermPrivateEndpointConnection extends cdktn.TerraformDataSou
       terraformResourceType: 'azurerm_private_endpoint_connection',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

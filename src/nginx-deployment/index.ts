@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,112 +13,112 @@ import * as cdktn from 'cdktn';
 
 export interface NginxDeploymentConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment#automatic_upgrade_channel NginxDeployment#automatic_upgrade_channel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment#automatic_upgrade_channel NginxDeployment#automatic_upgrade_channel}
   */
   readonly automaticUpgradeChannel?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment#capacity NginxDeployment#capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment#capacity NginxDeployment#capacity}
   */
   readonly capacity?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment#diagnose_support_enabled NginxDeployment#diagnose_support_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment#diagnose_support_enabled NginxDeployment#diagnose_support_enabled}
   */
   readonly diagnoseSupportEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment#email NginxDeployment#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment#email NginxDeployment#email}
   */
   readonly email?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment#id NginxDeployment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment#id NginxDeployment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment#location NginxDeployment#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment#location NginxDeployment#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment#managed_resource_group NginxDeployment#managed_resource_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment#managed_resource_group NginxDeployment#managed_resource_group}
   */
   readonly managedResourceGroup?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment#name NginxDeployment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment#name NginxDeployment#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment#resource_group_name NginxDeployment#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment#resource_group_name NginxDeployment#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment#sku NginxDeployment#sku}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment#sku NginxDeployment#sku}
   */
   readonly sku: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment#tags NginxDeployment#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment#tags NginxDeployment#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * auto_scale_profile block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment#auto_scale_profile NginxDeployment#auto_scale_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment#auto_scale_profile NginxDeployment#auto_scale_profile}
   */
   readonly autoScaleProfile?: NginxDeploymentAutoScaleProfile[] | cdktn.IResolvable;
   /**
   * frontend_private block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment#frontend_private NginxDeployment#frontend_private}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment#frontend_private NginxDeployment#frontend_private}
   */
   readonly frontendPrivate?: NginxDeploymentFrontendPrivate[] | cdktn.IResolvable;
   /**
   * frontend_public block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment#frontend_public NginxDeployment#frontend_public}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment#frontend_public NginxDeployment#frontend_public}
   */
   readonly frontendPublic?: NginxDeploymentFrontendPublic;
   /**
   * identity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment#identity NginxDeployment#identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment#identity NginxDeployment#identity}
   */
   readonly identity?: NginxDeploymentIdentity;
   /**
   * logging_storage_account block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment#logging_storage_account NginxDeployment#logging_storage_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment#logging_storage_account NginxDeployment#logging_storage_account}
   */
   readonly loggingStorageAccount?: NginxDeploymentLoggingStorageAccount[] | cdktn.IResolvable;
   /**
   * network_interface block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment#network_interface NginxDeployment#network_interface}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment#network_interface NginxDeployment#network_interface}
   */
   readonly networkInterface?: NginxDeploymentNetworkInterface[] | cdktn.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment#timeouts NginxDeployment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment#timeouts NginxDeployment#timeouts}
   */
   readonly timeouts?: NginxDeploymentTimeouts;
   /**
   * web_application_firewall block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment#web_application_firewall NginxDeployment#web_application_firewall}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment#web_application_firewall NginxDeployment#web_application_firewall}
   */
   readonly webApplicationFirewall?: NginxDeploymentWebApplicationFirewall;
 }
 export interface NginxDeploymentAutoScaleProfile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment#max_capacity NginxDeployment#max_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment#max_capacity NginxDeployment#max_capacity}
   */
   readonly maxCapacity: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment#min_capacity NginxDeployment#min_capacity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment#min_capacity NginxDeployment#min_capacity}
   */
   readonly minCapacity: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment#name NginxDeployment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment#name NginxDeployment#name}
   */
   readonly name: string;
 }
@@ -126,7 +126,7 @@ export interface NginxDeploymentAutoScaleProfile {
 export function nginxDeploymentAutoScaleProfileToTerraform(struct?: NginxDeploymentAutoScaleProfile | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_capacity: cdktn.numberToTerraform(struct!.maxCapacity),
@@ -139,7 +139,7 @@ export function nginxDeploymentAutoScaleProfileToTerraform(struct?: NginxDeploym
 export function nginxDeploymentAutoScaleProfileToHclTerraform(struct?: NginxDeploymentAutoScaleProfile | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_capacity: {
@@ -283,15 +283,15 @@ export class NginxDeploymentAutoScaleProfileList extends cdktn.ComplexList {
 }
 export interface NginxDeploymentFrontendPrivate {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment#allocation_method NginxDeployment#allocation_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment#allocation_method NginxDeployment#allocation_method}
   */
   readonly allocationMethod: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment#ip_address NginxDeployment#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment#ip_address NginxDeployment#ip_address}
   */
   readonly ipAddress: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment#subnet_id NginxDeployment#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment#subnet_id NginxDeployment#subnet_id}
   */
   readonly subnetId: string;
 }
@@ -299,7 +299,7 @@ export interface NginxDeploymentFrontendPrivate {
 export function nginxDeploymentFrontendPrivateToTerraform(struct?: NginxDeploymentFrontendPrivate | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     allocation_method: cdktn.stringToTerraform(struct!.allocationMethod),
@@ -312,7 +312,7 @@ export function nginxDeploymentFrontendPrivateToTerraform(struct?: NginxDeployme
 export function nginxDeploymentFrontendPrivateToHclTerraform(struct?: NginxDeploymentFrontendPrivate | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     allocation_method: {
@@ -456,7 +456,7 @@ export class NginxDeploymentFrontendPrivateList extends cdktn.ComplexList {
 }
 export interface NginxDeploymentFrontendPublic {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment#ip_address NginxDeployment#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment#ip_address NginxDeployment#ip_address}
   */
   readonly ipAddress?: string[];
 }
@@ -464,7 +464,7 @@ export interface NginxDeploymentFrontendPublic {
 export function nginxDeploymentFrontendPublicToTerraform(struct?: NginxDeploymentFrontendPublicOutputReference | NginxDeploymentFrontendPublic): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ip_address: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.ipAddress),
@@ -475,7 +475,7 @@ export function nginxDeploymentFrontendPublicToTerraform(struct?: NginxDeploymen
 export function nginxDeploymentFrontendPublicToHclTerraform(struct?: NginxDeploymentFrontendPublicOutputReference | NginxDeploymentFrontendPublic): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ip_address: {
@@ -540,11 +540,11 @@ export class NginxDeploymentFrontendPublicOutputReference extends cdktn.ComplexO
 }
 export interface NginxDeploymentIdentity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment#identity_ids NginxDeployment#identity_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment#identity_ids NginxDeployment#identity_ids}
   */
   readonly identityIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment#type NginxDeployment#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment#type NginxDeployment#type}
   */
   readonly type: string;
 }
@@ -552,7 +552,7 @@ export interface NginxDeploymentIdentity {
 export function nginxDeploymentIdentityToTerraform(struct?: NginxDeploymentIdentityOutputReference | NginxDeploymentIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
@@ -564,7 +564,7 @@ export function nginxDeploymentIdentityToTerraform(struct?: NginxDeploymentIdent
 export function nginxDeploymentIdentityToHclTerraform(struct?: NginxDeploymentIdentityOutputReference | NginxDeploymentIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     identity_ids: {
@@ -664,11 +664,11 @@ export class NginxDeploymentIdentityOutputReference extends cdktn.ComplexObject 
 }
 export interface NginxDeploymentLoggingStorageAccount {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment#container_name NginxDeployment#container_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment#container_name NginxDeployment#container_name}
   */
   readonly containerName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment#name NginxDeployment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment#name NginxDeployment#name}
   */
   readonly name?: string;
 }
@@ -676,7 +676,7 @@ export interface NginxDeploymentLoggingStorageAccount {
 export function nginxDeploymentLoggingStorageAccountToTerraform(struct?: NginxDeploymentLoggingStorageAccount | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     container_name: cdktn.stringToTerraform(struct!.containerName),
@@ -688,7 +688,7 @@ export function nginxDeploymentLoggingStorageAccountToTerraform(struct?: NginxDe
 export function nginxDeploymentLoggingStorageAccountToHclTerraform(struct?: NginxDeploymentLoggingStorageAccount | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     container_name: {
@@ -813,7 +813,7 @@ export class NginxDeploymentLoggingStorageAccountList extends cdktn.ComplexList 
 }
 export interface NginxDeploymentNetworkInterface {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment#subnet_id NginxDeployment#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment#subnet_id NginxDeployment#subnet_id}
   */
   readonly subnetId: string;
 }
@@ -821,7 +821,7 @@ export interface NginxDeploymentNetworkInterface {
 export function nginxDeploymentNetworkInterfaceToTerraform(struct?: NginxDeploymentNetworkInterface | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     subnet_id: cdktn.stringToTerraform(struct!.subnetId),
@@ -832,7 +832,7 @@ export function nginxDeploymentNetworkInterfaceToTerraform(struct?: NginxDeploym
 export function nginxDeploymentNetworkInterfaceToHclTerraform(struct?: NginxDeploymentNetworkInterface | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     subnet_id: {
@@ -926,19 +926,19 @@ export class NginxDeploymentNetworkInterfaceList extends cdktn.ComplexList {
 }
 export interface NginxDeploymentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment#create NginxDeployment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment#create NginxDeployment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment#delete NginxDeployment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment#delete NginxDeployment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment#read NginxDeployment#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment#read NginxDeployment#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment#update NginxDeployment#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment#update NginxDeployment#update}
   */
   readonly update?: string;
 }
@@ -946,7 +946,7 @@ export interface NginxDeploymentTimeouts {
 export function nginxDeploymentTimeoutsToTerraform(struct?: NginxDeploymentTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -960,7 +960,7 @@ export function nginxDeploymentTimeoutsToTerraform(struct?: NginxDeploymentTimeo
 export function nginxDeploymentTimeoutsToHclTerraform(struct?: NginxDeploymentTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -1123,7 +1123,7 @@ export interface NginxDeploymentWebApplicationFirewallStatusAttackSignaturesPack
 export function nginxDeploymentWebApplicationFirewallStatusAttackSignaturesPackageToTerraform(struct?: NginxDeploymentWebApplicationFirewallStatusAttackSignaturesPackage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1133,7 +1133,7 @@ export function nginxDeploymentWebApplicationFirewallStatusAttackSignaturesPacka
 export function nginxDeploymentWebApplicationFirewallStatusAttackSignaturesPackageToHclTerraform(struct?: NginxDeploymentWebApplicationFirewallStatusAttackSignaturesPackage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1203,7 +1203,7 @@ export interface NginxDeploymentWebApplicationFirewallStatusBotSignaturesPackage
 export function nginxDeploymentWebApplicationFirewallStatusBotSignaturesPackageToTerraform(struct?: NginxDeploymentWebApplicationFirewallStatusBotSignaturesPackage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1213,7 +1213,7 @@ export function nginxDeploymentWebApplicationFirewallStatusBotSignaturesPackageT
 export function nginxDeploymentWebApplicationFirewallStatusBotSignaturesPackageToHclTerraform(struct?: NginxDeploymentWebApplicationFirewallStatusBotSignaturesPackage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1283,7 +1283,7 @@ export interface NginxDeploymentWebApplicationFirewallStatusComponentVersions {
 export function nginxDeploymentWebApplicationFirewallStatusComponentVersionsToTerraform(struct?: NginxDeploymentWebApplicationFirewallStatusComponentVersions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1293,7 +1293,7 @@ export function nginxDeploymentWebApplicationFirewallStatusComponentVersionsToTe
 export function nginxDeploymentWebApplicationFirewallStatusComponentVersionsToHclTerraform(struct?: NginxDeploymentWebApplicationFirewallStatusComponentVersions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1363,7 +1363,7 @@ export interface NginxDeploymentWebApplicationFirewallStatusThreatCampaignsPacka
 export function nginxDeploymentWebApplicationFirewallStatusThreatCampaignsPackageToTerraform(struct?: NginxDeploymentWebApplicationFirewallStatusThreatCampaignsPackage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1373,7 +1373,7 @@ export function nginxDeploymentWebApplicationFirewallStatusThreatCampaignsPackag
 export function nginxDeploymentWebApplicationFirewallStatusThreatCampaignsPackageToHclTerraform(struct?: NginxDeploymentWebApplicationFirewallStatusThreatCampaignsPackage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1443,7 +1443,7 @@ export interface NginxDeploymentWebApplicationFirewallStatus {
 export function nginxDeploymentWebApplicationFirewallStatusToTerraform(struct?: NginxDeploymentWebApplicationFirewallStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1453,7 +1453,7 @@ export function nginxDeploymentWebApplicationFirewallStatusToTerraform(struct?: 
 export function nginxDeploymentWebApplicationFirewallStatusToHclTerraform(struct?: NginxDeploymentWebApplicationFirewallStatus): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1533,7 +1533,7 @@ export class NginxDeploymentWebApplicationFirewallStatusList extends cdktn.Compl
 }
 export interface NginxDeploymentWebApplicationFirewall {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment#activation_state_enabled NginxDeployment#activation_state_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment#activation_state_enabled NginxDeployment#activation_state_enabled}
   */
   readonly activationStateEnabled: boolean | cdktn.IResolvable;
 }
@@ -1541,7 +1541,7 @@ export interface NginxDeploymentWebApplicationFirewall {
 export function nginxDeploymentWebApplicationFirewallToTerraform(struct?: NginxDeploymentWebApplicationFirewallOutputReference | NginxDeploymentWebApplicationFirewall): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     activation_state_enabled: cdktn.booleanToTerraform(struct!.activationStateEnabled),
@@ -1552,7 +1552,7 @@ export function nginxDeploymentWebApplicationFirewallToTerraform(struct?: NginxD
 export function nginxDeploymentWebApplicationFirewallToHclTerraform(struct?: NginxDeploymentWebApplicationFirewallOutputReference | NginxDeploymentWebApplicationFirewall): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     activation_state_enabled: {
@@ -1620,7 +1620,7 @@ export class NginxDeploymentWebApplicationFirewallOutputReference extends cdktn.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment azurerm_nginx_deployment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment azurerm_nginx_deployment}
 */
 export class NginxDeployment extends cdktn.TerraformResource {
 
@@ -1636,7 +1636,7 @@ export class NginxDeployment extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a NginxDeployment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NginxDeployment to import
-  * @param importFromId The id of the existing NginxDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NginxDeployment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NginxDeployment to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1648,7 +1648,7 @@ export class NginxDeployment extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/nginx_deployment azurerm_nginx_deployment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/nginx_deployment azurerm_nginx_deployment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1659,7 +1659,7 @@ export class NginxDeployment extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_nginx_deployment',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

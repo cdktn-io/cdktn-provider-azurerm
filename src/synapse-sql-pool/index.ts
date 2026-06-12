@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/synapse_sql_pool
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/synapse_sql_pool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,72 +13,72 @@ import * as cdktn from 'cdktn';
 
 export interface SynapseSqlPoolConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/synapse_sql_pool#collation SynapseSqlPool#collation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/synapse_sql_pool#collation SynapseSqlPool#collation}
   */
   readonly collation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/synapse_sql_pool#create_mode SynapseSqlPool#create_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/synapse_sql_pool#create_mode SynapseSqlPool#create_mode}
   */
   readonly createMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/synapse_sql_pool#data_encrypted SynapseSqlPool#data_encrypted}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/synapse_sql_pool#data_encrypted SynapseSqlPool#data_encrypted}
   */
   readonly dataEncrypted?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/synapse_sql_pool#geo_backup_policy_enabled SynapseSqlPool#geo_backup_policy_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/synapse_sql_pool#geo_backup_policy_enabled SynapseSqlPool#geo_backup_policy_enabled}
   */
   readonly geoBackupPolicyEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/synapse_sql_pool#id SynapseSqlPool#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/synapse_sql_pool#id SynapseSqlPool#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/synapse_sql_pool#name SynapseSqlPool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/synapse_sql_pool#name SynapseSqlPool#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/synapse_sql_pool#recovery_database_id SynapseSqlPool#recovery_database_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/synapse_sql_pool#recovery_database_id SynapseSqlPool#recovery_database_id}
   */
   readonly recoveryDatabaseId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/synapse_sql_pool#sku_name SynapseSqlPool#sku_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/synapse_sql_pool#sku_name SynapseSqlPool#sku_name}
   */
   readonly skuName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/synapse_sql_pool#storage_account_type SynapseSqlPool#storage_account_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/synapse_sql_pool#storage_account_type SynapseSqlPool#storage_account_type}
   */
   readonly storageAccountType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/synapse_sql_pool#synapse_workspace_id SynapseSqlPool#synapse_workspace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/synapse_sql_pool#synapse_workspace_id SynapseSqlPool#synapse_workspace_id}
   */
   readonly synapseWorkspaceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/synapse_sql_pool#tags SynapseSqlPool#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/synapse_sql_pool#tags SynapseSqlPool#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * restore block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/synapse_sql_pool#restore SynapseSqlPool#restore}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/synapse_sql_pool#restore SynapseSqlPool#restore}
   */
   readonly restore?: SynapseSqlPoolRestore;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/synapse_sql_pool#timeouts SynapseSqlPool#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/synapse_sql_pool#timeouts SynapseSqlPool#timeouts}
   */
   readonly timeouts?: SynapseSqlPoolTimeouts;
 }
 export interface SynapseSqlPoolRestore {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/synapse_sql_pool#point_in_time SynapseSqlPool#point_in_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/synapse_sql_pool#point_in_time SynapseSqlPool#point_in_time}
   */
   readonly pointInTime: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/synapse_sql_pool#source_database_id SynapseSqlPool#source_database_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/synapse_sql_pool#source_database_id SynapseSqlPool#source_database_id}
   */
   readonly sourceDatabaseId: string;
 }
@@ -86,7 +86,7 @@ export interface SynapseSqlPoolRestore {
 export function synapseSqlPoolRestoreToTerraform(struct?: SynapseSqlPoolRestoreOutputReference | SynapseSqlPoolRestore): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     point_in_time: cdktn.stringToTerraform(struct!.pointInTime),
@@ -98,7 +98,7 @@ export function synapseSqlPoolRestoreToTerraform(struct?: SynapseSqlPoolRestoreO
 export function synapseSqlPoolRestoreToHclTerraform(struct?: SynapseSqlPoolRestoreOutputReference | SynapseSqlPoolRestore): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     point_in_time: {
@@ -185,19 +185,19 @@ export class SynapseSqlPoolRestoreOutputReference extends cdktn.ComplexObject {
 }
 export interface SynapseSqlPoolTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/synapse_sql_pool#create SynapseSqlPool#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/synapse_sql_pool#create SynapseSqlPool#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/synapse_sql_pool#delete SynapseSqlPool#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/synapse_sql_pool#delete SynapseSqlPool#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/synapse_sql_pool#read SynapseSqlPool#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/synapse_sql_pool#read SynapseSqlPool#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/synapse_sql_pool#update SynapseSqlPool#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/synapse_sql_pool#update SynapseSqlPool#update}
   */
   readonly update?: string;
 }
@@ -205,7 +205,7 @@ export interface SynapseSqlPoolTimeouts {
 export function synapseSqlPoolTimeoutsToTerraform(struct?: SynapseSqlPoolTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -219,7 +219,7 @@ export function synapseSqlPoolTimeoutsToTerraform(struct?: SynapseSqlPoolTimeout
 export function synapseSqlPoolTimeoutsToHclTerraform(struct?: SynapseSqlPoolTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -378,7 +378,7 @@ export class SynapseSqlPoolTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/synapse_sql_pool azurerm_synapse_sql_pool}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/synapse_sql_pool azurerm_synapse_sql_pool}
 */
 export class SynapseSqlPool extends cdktn.TerraformResource {
 
@@ -394,7 +394,7 @@ export class SynapseSqlPool extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SynapseSqlPool resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SynapseSqlPool to import
-  * @param importFromId The id of the existing SynapseSqlPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/synapse_sql_pool#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SynapseSqlPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/synapse_sql_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SynapseSqlPool to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -406,7 +406,7 @@ export class SynapseSqlPool extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/synapse_sql_pool azurerm_synapse_sql_pool} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/synapse_sql_pool azurerm_synapse_sql_pool} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -417,7 +417,7 @@ export class SynapseSqlPool extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_synapse_sql_pool',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

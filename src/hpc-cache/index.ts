@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,130 +13,130 @@ import * as cdktn from 'cdktn';
 
 export interface HpcCacheConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#automatically_rotate_key_to_latest_enabled HpcCache#automatically_rotate_key_to_latest_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#automatically_rotate_key_to_latest_enabled HpcCache#automatically_rotate_key_to_latest_enabled}
   */
   readonly automaticallyRotateKeyToLatestEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#cache_size_in_gb HpcCache#cache_size_in_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#cache_size_in_gb HpcCache#cache_size_in_gb}
   */
   readonly cacheSizeInGb: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#id HpcCache#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#id HpcCache#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#key_vault_key_id HpcCache#key_vault_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#key_vault_key_id HpcCache#key_vault_key_id}
   */
   readonly keyVaultKeyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#location HpcCache#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#location HpcCache#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#mtu HpcCache#mtu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#mtu HpcCache#mtu}
   */
   readonly mtu?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#name HpcCache#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#name HpcCache#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#ntp_server HpcCache#ntp_server}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#ntp_server HpcCache#ntp_server}
   */
   readonly ntpServer?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#resource_group_name HpcCache#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#resource_group_name HpcCache#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#sku_name HpcCache#sku_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#sku_name HpcCache#sku_name}
   */
   readonly skuName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#subnet_id HpcCache#subnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#subnet_id HpcCache#subnet_id}
   */
   readonly subnetId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#tags HpcCache#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#tags HpcCache#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * default_access_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#default_access_policy HpcCache#default_access_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#default_access_policy HpcCache#default_access_policy}
   */
   readonly defaultAccessPolicy?: HpcCacheDefaultAccessPolicy;
   /**
   * directory_active_directory block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#directory_active_directory HpcCache#directory_active_directory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#directory_active_directory HpcCache#directory_active_directory}
   */
   readonly directoryActiveDirectory?: HpcCacheDirectoryActiveDirectory;
   /**
   * directory_flat_file block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#directory_flat_file HpcCache#directory_flat_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#directory_flat_file HpcCache#directory_flat_file}
   */
   readonly directoryFlatFile?: HpcCacheDirectoryFlatFile;
   /**
   * directory_ldap block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#directory_ldap HpcCache#directory_ldap}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#directory_ldap HpcCache#directory_ldap}
   */
   readonly directoryLdap?: HpcCacheDirectoryLdap;
   /**
   * dns block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#dns HpcCache#dns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#dns HpcCache#dns}
   */
   readonly dns?: HpcCacheDns;
   /**
   * identity block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#identity HpcCache#identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#identity HpcCache#identity}
   */
   readonly identity?: HpcCacheIdentity;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#timeouts HpcCache#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#timeouts HpcCache#timeouts}
   */
   readonly timeouts?: HpcCacheTimeouts;
 }
 export interface HpcCacheDefaultAccessPolicyAccessRule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#access HpcCache#access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#access HpcCache#access}
   */
   readonly access: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#anonymous_gid HpcCache#anonymous_gid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#anonymous_gid HpcCache#anonymous_gid}
   */
   readonly anonymousGid?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#anonymous_uid HpcCache#anonymous_uid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#anonymous_uid HpcCache#anonymous_uid}
   */
   readonly anonymousUid?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#filter HpcCache#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#filter HpcCache#filter}
   */
   readonly filter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#root_squash_enabled HpcCache#root_squash_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#root_squash_enabled HpcCache#root_squash_enabled}
   */
   readonly rootSquashEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#scope HpcCache#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#scope HpcCache#scope}
   */
   readonly scope: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#submount_access_enabled HpcCache#submount_access_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#submount_access_enabled HpcCache#submount_access_enabled}
   */
   readonly submountAccessEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#suid_enabled HpcCache#suid_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#suid_enabled HpcCache#suid_enabled}
   */
   readonly suidEnabled?: boolean | cdktn.IResolvable;
 }
@@ -144,7 +144,7 @@ export interface HpcCacheDefaultAccessPolicyAccessRule {
 export function hpcCacheDefaultAccessPolicyAccessRuleToTerraform(struct?: HpcCacheDefaultAccessPolicyAccessRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     access: cdktn.stringToTerraform(struct!.access),
@@ -162,7 +162,7 @@ export function hpcCacheDefaultAccessPolicyAccessRuleToTerraform(struct?: HpcCac
 export function hpcCacheDefaultAccessPolicyAccessRuleToHclTerraform(struct?: HpcCacheDefaultAccessPolicyAccessRule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     access: {
@@ -451,7 +451,7 @@ export interface HpcCacheDefaultAccessPolicy {
   /**
   * access_rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#access_rule HpcCache#access_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#access_rule HpcCache#access_rule}
   */
   readonly accessRule: HpcCacheDefaultAccessPolicyAccessRule[] | cdktn.IResolvable;
 }
@@ -459,7 +459,7 @@ export interface HpcCacheDefaultAccessPolicy {
 export function hpcCacheDefaultAccessPolicyToTerraform(struct?: HpcCacheDefaultAccessPolicyOutputReference | HpcCacheDefaultAccessPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     access_rule: cdktn.listMapper(hpcCacheDefaultAccessPolicyAccessRuleToTerraform, true)(struct!.accessRule),
@@ -470,7 +470,7 @@ export function hpcCacheDefaultAccessPolicyToTerraform(struct?: HpcCacheDefaultA
 export function hpcCacheDefaultAccessPolicyToHclTerraform(struct?: HpcCacheDefaultAccessPolicyOutputReference | HpcCacheDefaultAccessPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     access_rule: {
@@ -532,31 +532,31 @@ export class HpcCacheDefaultAccessPolicyOutputReference extends cdktn.ComplexObj
 }
 export interface HpcCacheDirectoryActiveDirectory {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#cache_netbios_name HpcCache#cache_netbios_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#cache_netbios_name HpcCache#cache_netbios_name}
   */
   readonly cacheNetbiosName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#dns_primary_ip HpcCache#dns_primary_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#dns_primary_ip HpcCache#dns_primary_ip}
   */
   readonly dnsPrimaryIp: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#dns_secondary_ip HpcCache#dns_secondary_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#dns_secondary_ip HpcCache#dns_secondary_ip}
   */
   readonly dnsSecondaryIp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#domain_name HpcCache#domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#domain_name HpcCache#domain_name}
   */
   readonly domainName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#domain_netbios_name HpcCache#domain_netbios_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#domain_netbios_name HpcCache#domain_netbios_name}
   */
   readonly domainNetbiosName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#password HpcCache#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#password HpcCache#password}
   */
   readonly password: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#username HpcCache#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#username HpcCache#username}
   */
   readonly username: string;
 }
@@ -564,7 +564,7 @@ export interface HpcCacheDirectoryActiveDirectory {
 export function hpcCacheDirectoryActiveDirectoryToTerraform(struct?: HpcCacheDirectoryActiveDirectoryOutputReference | HpcCacheDirectoryActiveDirectory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cache_netbios_name: cdktn.stringToTerraform(struct!.cacheNetbiosName),
@@ -581,7 +581,7 @@ export function hpcCacheDirectoryActiveDirectoryToTerraform(struct?: HpcCacheDir
 export function hpcCacheDirectoryActiveDirectoryToHclTerraform(struct?: HpcCacheDirectoryActiveDirectoryOutputReference | HpcCacheDirectoryActiveDirectory): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cache_netbios_name: {
@@ -796,11 +796,11 @@ export class HpcCacheDirectoryActiveDirectoryOutputReference extends cdktn.Compl
 }
 export interface HpcCacheDirectoryFlatFile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#group_file_uri HpcCache#group_file_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#group_file_uri HpcCache#group_file_uri}
   */
   readonly groupFileUri: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#password_file_uri HpcCache#password_file_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#password_file_uri HpcCache#password_file_uri}
   */
   readonly passwordFileUri: string;
 }
@@ -808,7 +808,7 @@ export interface HpcCacheDirectoryFlatFile {
 export function hpcCacheDirectoryFlatFileToTerraform(struct?: HpcCacheDirectoryFlatFileOutputReference | HpcCacheDirectoryFlatFile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     group_file_uri: cdktn.stringToTerraform(struct!.groupFileUri),
@@ -820,7 +820,7 @@ export function hpcCacheDirectoryFlatFileToTerraform(struct?: HpcCacheDirectoryF
 export function hpcCacheDirectoryFlatFileToHclTerraform(struct?: HpcCacheDirectoryFlatFileOutputReference | HpcCacheDirectoryFlatFile): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     group_file_uri: {
@@ -907,11 +907,11 @@ export class HpcCacheDirectoryFlatFileOutputReference extends cdktn.ComplexObjec
 }
 export interface HpcCacheDirectoryLdapBind {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#dn HpcCache#dn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#dn HpcCache#dn}
   */
   readonly dn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#password HpcCache#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#password HpcCache#password}
   */
   readonly password: string;
 }
@@ -919,7 +919,7 @@ export interface HpcCacheDirectoryLdapBind {
 export function hpcCacheDirectoryLdapBindToTerraform(struct?: HpcCacheDirectoryLdapBindOutputReference | HpcCacheDirectoryLdapBind): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     dn: cdktn.stringToTerraform(struct!.dn),
@@ -931,7 +931,7 @@ export function hpcCacheDirectoryLdapBindToTerraform(struct?: HpcCacheDirectoryL
 export function hpcCacheDirectoryLdapBindToHclTerraform(struct?: HpcCacheDirectoryLdapBindOutputReference | HpcCacheDirectoryLdapBind): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     dn: {
@@ -1018,29 +1018,29 @@ export class HpcCacheDirectoryLdapBindOutputReference extends cdktn.ComplexObjec
 }
 export interface HpcCacheDirectoryLdap {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#base_dn HpcCache#base_dn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#base_dn HpcCache#base_dn}
   */
   readonly baseDn: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#certificate_validation_uri HpcCache#certificate_validation_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#certificate_validation_uri HpcCache#certificate_validation_uri}
   */
   readonly certificateValidationUri?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#download_certificate_automatically HpcCache#download_certificate_automatically}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#download_certificate_automatically HpcCache#download_certificate_automatically}
   */
   readonly downloadCertificateAutomatically?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#encrypted HpcCache#encrypted}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#encrypted HpcCache#encrypted}
   */
   readonly encrypted?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#server HpcCache#server}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#server HpcCache#server}
   */
   readonly server: string;
   /**
   * bind block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#bind HpcCache#bind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#bind HpcCache#bind}
   */
   readonly bind?: HpcCacheDirectoryLdapBind;
 }
@@ -1048,7 +1048,7 @@ export interface HpcCacheDirectoryLdap {
 export function hpcCacheDirectoryLdapToTerraform(struct?: HpcCacheDirectoryLdapOutputReference | HpcCacheDirectoryLdap): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     base_dn: cdktn.stringToTerraform(struct!.baseDn),
@@ -1064,7 +1064,7 @@ export function hpcCacheDirectoryLdapToTerraform(struct?: HpcCacheDirectoryLdapO
 export function hpcCacheDirectoryLdapToHclTerraform(struct?: HpcCacheDirectoryLdapOutputReference | HpcCacheDirectoryLdap): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     base_dn: {
@@ -1263,11 +1263,11 @@ export class HpcCacheDirectoryLdapOutputReference extends cdktn.ComplexObject {
 }
 export interface HpcCacheDns {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#search_domain HpcCache#search_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#search_domain HpcCache#search_domain}
   */
   readonly searchDomain?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#servers HpcCache#servers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#servers HpcCache#servers}
   */
   readonly servers: string[];
 }
@@ -1275,7 +1275,7 @@ export interface HpcCacheDns {
 export function hpcCacheDnsToTerraform(struct?: HpcCacheDnsOutputReference | HpcCacheDns): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     search_domain: cdktn.stringToTerraform(struct!.searchDomain),
@@ -1287,7 +1287,7 @@ export function hpcCacheDnsToTerraform(struct?: HpcCacheDnsOutputReference | Hpc
 export function hpcCacheDnsToHclTerraform(struct?: HpcCacheDnsOutputReference | HpcCacheDns): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     search_domain: {
@@ -1377,11 +1377,11 @@ export class HpcCacheDnsOutputReference extends cdktn.ComplexObject {
 }
 export interface HpcCacheIdentity {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#identity_ids HpcCache#identity_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#identity_ids HpcCache#identity_ids}
   */
   readonly identityIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#type HpcCache#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#type HpcCache#type}
   */
   readonly type: string;
 }
@@ -1389,7 +1389,7 @@ export interface HpcCacheIdentity {
 export function hpcCacheIdentityToTerraform(struct?: HpcCacheIdentityOutputReference | HpcCacheIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     identity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.identityIds),
@@ -1401,7 +1401,7 @@ export function hpcCacheIdentityToTerraform(struct?: HpcCacheIdentityOutputRefer
 export function hpcCacheIdentityToHclTerraform(struct?: HpcCacheIdentityOutputReference | HpcCacheIdentity): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     identity_ids: {
@@ -1501,19 +1501,19 @@ export class HpcCacheIdentityOutputReference extends cdktn.ComplexObject {
 }
 export interface HpcCacheTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#create HpcCache#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#create HpcCache#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#delete HpcCache#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#delete HpcCache#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#read HpcCache#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#read HpcCache#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#update HpcCache#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#update HpcCache#update}
   */
   readonly update?: string;
 }
@@ -1521,7 +1521,7 @@ export interface HpcCacheTimeouts {
 export function hpcCacheTimeoutsToTerraform(struct?: HpcCacheTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -1535,7 +1535,7 @@ export function hpcCacheTimeoutsToTerraform(struct?: HpcCacheTimeouts | cdktn.IR
 export function hpcCacheTimeoutsToHclTerraform(struct?: HpcCacheTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -1694,7 +1694,7 @@ export class HpcCacheTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache azurerm_hpc_cache}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache azurerm_hpc_cache}
 */
 export class HpcCache extends cdktn.TerraformResource {
 
@@ -1710,7 +1710,7 @@ export class HpcCache extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a HpcCache resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the HpcCache to import
-  * @param importFromId The id of the existing HpcCache that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing HpcCache that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the HpcCache to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1722,7 +1722,7 @@ export class HpcCache extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/hpc_cache azurerm_hpc_cache} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/hpc_cache azurerm_hpc_cache} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1733,7 +1733,7 @@ export class HpcCache extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_hpc_cache',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/mssql_managed_database
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/mssql_managed_database
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktn from 'cdktn';
 
 export interface DataAzurermMssqlManagedDatabaseConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/mssql_managed_database#id DataAzurermMssqlManagedDatabase#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/mssql_managed_database#id DataAzurermMssqlManagedDatabase#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/mssql_managed_database#managed_instance_id DataAzurermMssqlManagedDatabase#managed_instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/mssql_managed_database#managed_instance_id DataAzurermMssqlManagedDatabase#managed_instance_id}
   */
   readonly managedInstanceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/mssql_managed_database#name DataAzurermMssqlManagedDatabase#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/mssql_managed_database#name DataAzurermMssqlManagedDatabase#name}
   */
   readonly name: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/mssql_managed_database#timeouts DataAzurermMssqlManagedDatabase#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/mssql_managed_database#timeouts DataAzurermMssqlManagedDatabase#timeouts}
   */
   readonly timeouts?: DataAzurermMssqlManagedDatabaseTimeouts;
 }
@@ -40,7 +40,7 @@ export interface DataAzurermMssqlManagedDatabaseLongTermRetentionPolicy {
 export function dataAzurermMssqlManagedDatabaseLongTermRetentionPolicyToTerraform(struct?: DataAzurermMssqlManagedDatabaseLongTermRetentionPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -50,7 +50,7 @@ export function dataAzurermMssqlManagedDatabaseLongTermRetentionPolicyToTerrafor
 export function dataAzurermMssqlManagedDatabaseLongTermRetentionPolicyToHclTerraform(struct?: DataAzurermMssqlManagedDatabaseLongTermRetentionPolicy): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -135,7 +135,7 @@ export interface DataAzurermMssqlManagedDatabasePointInTimeRestore {
 export function dataAzurermMssqlManagedDatabasePointInTimeRestoreToTerraform(struct?: DataAzurermMssqlManagedDatabasePointInTimeRestore): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -145,7 +145,7 @@ export function dataAzurermMssqlManagedDatabasePointInTimeRestoreToTerraform(str
 export function dataAzurermMssqlManagedDatabasePointInTimeRestoreToHclTerraform(struct?: DataAzurermMssqlManagedDatabasePointInTimeRestore): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -211,7 +211,7 @@ export class DataAzurermMssqlManagedDatabasePointInTimeRestoreList extends cdktn
 }
 export interface DataAzurermMssqlManagedDatabaseTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/mssql_managed_database#read DataAzurermMssqlManagedDatabase#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/mssql_managed_database#read DataAzurermMssqlManagedDatabase#read}
   */
   readonly read?: string;
 }
@@ -219,7 +219,7 @@ export interface DataAzurermMssqlManagedDatabaseTimeouts {
 export function dataAzurermMssqlManagedDatabaseTimeoutsToTerraform(struct?: DataAzurermMssqlManagedDatabaseTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     read: cdktn.stringToTerraform(struct!.read),
@@ -230,7 +230,7 @@ export function dataAzurermMssqlManagedDatabaseTimeoutsToTerraform(struct?: Data
 export function dataAzurermMssqlManagedDatabaseTimeoutsToHclTerraform(struct?: DataAzurermMssqlManagedDatabaseTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     read: {
@@ -305,7 +305,7 @@ export class DataAzurermMssqlManagedDatabaseTimeoutsOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/mssql_managed_database azurerm_mssql_managed_database}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/mssql_managed_database azurerm_mssql_managed_database}
 */
 export class DataAzurermMssqlManagedDatabase extends cdktn.TerraformDataSource {
 
@@ -321,7 +321,7 @@ export class DataAzurermMssqlManagedDatabase extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataAzurermMssqlManagedDatabase resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataAzurermMssqlManagedDatabase to import
-  * @param importFromId The id of the existing DataAzurermMssqlManagedDatabase that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/mssql_managed_database#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataAzurermMssqlManagedDatabase that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/mssql_managed_database#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataAzurermMssqlManagedDatabase to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -333,7 +333,7 @@ export class DataAzurermMssqlManagedDatabase extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/data-sources/mssql_managed_database azurerm_mssql_managed_database} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/data-sources/mssql_managed_database azurerm_mssql_managed_database} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -344,7 +344,7 @@ export class DataAzurermMssqlManagedDatabase extends cdktn.TerraformDataSource {
       terraformResourceType: 'azurerm_mssql_managed_database',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

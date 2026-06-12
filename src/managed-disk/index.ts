@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,168 +13,168 @@ import * as cdktn from 'cdktn';
 
 export interface ManagedDiskConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#create_option ManagedDisk#create_option}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#create_option ManagedDisk#create_option}
   */
   readonly createOption: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#disk_access_id ManagedDisk#disk_access_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#disk_access_id ManagedDisk#disk_access_id}
   */
   readonly diskAccessId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#disk_encryption_set_id ManagedDisk#disk_encryption_set_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#disk_encryption_set_id ManagedDisk#disk_encryption_set_id}
   */
   readonly diskEncryptionSetId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#disk_iops_read_only ManagedDisk#disk_iops_read_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#disk_iops_read_only ManagedDisk#disk_iops_read_only}
   */
   readonly diskIopsReadOnly?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#disk_iops_read_write ManagedDisk#disk_iops_read_write}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#disk_iops_read_write ManagedDisk#disk_iops_read_write}
   */
   readonly diskIopsReadWrite?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#disk_mbps_read_only ManagedDisk#disk_mbps_read_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#disk_mbps_read_only ManagedDisk#disk_mbps_read_only}
   */
   readonly diskMbpsReadOnly?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#disk_mbps_read_write ManagedDisk#disk_mbps_read_write}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#disk_mbps_read_write ManagedDisk#disk_mbps_read_write}
   */
   readonly diskMbpsReadWrite?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#disk_size_gb ManagedDisk#disk_size_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#disk_size_gb ManagedDisk#disk_size_gb}
   */
   readonly diskSizeGb?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#edge_zone ManagedDisk#edge_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#edge_zone ManagedDisk#edge_zone}
   */
   readonly edgeZone?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#gallery_image_reference_id ManagedDisk#gallery_image_reference_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#gallery_image_reference_id ManagedDisk#gallery_image_reference_id}
   */
   readonly galleryImageReferenceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#hyper_v_generation ManagedDisk#hyper_v_generation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#hyper_v_generation ManagedDisk#hyper_v_generation}
   */
   readonly hyperVGeneration?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#id ManagedDisk#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#id ManagedDisk#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#image_reference_id ManagedDisk#image_reference_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#image_reference_id ManagedDisk#image_reference_id}
   */
   readonly imageReferenceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#location ManagedDisk#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#location ManagedDisk#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#logical_sector_size ManagedDisk#logical_sector_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#logical_sector_size ManagedDisk#logical_sector_size}
   */
   readonly logicalSectorSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#max_shares ManagedDisk#max_shares}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#max_shares ManagedDisk#max_shares}
   */
   readonly maxShares?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#name ManagedDisk#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#name ManagedDisk#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#network_access_policy ManagedDisk#network_access_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#network_access_policy ManagedDisk#network_access_policy}
   */
   readonly networkAccessPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#on_demand_bursting_enabled ManagedDisk#on_demand_bursting_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#on_demand_bursting_enabled ManagedDisk#on_demand_bursting_enabled}
   */
   readonly onDemandBurstingEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#optimized_frequent_attach_enabled ManagedDisk#optimized_frequent_attach_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#optimized_frequent_attach_enabled ManagedDisk#optimized_frequent_attach_enabled}
   */
   readonly optimizedFrequentAttachEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#os_type ManagedDisk#os_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#os_type ManagedDisk#os_type}
   */
   readonly osType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#performance_plus_enabled ManagedDisk#performance_plus_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#performance_plus_enabled ManagedDisk#performance_plus_enabled}
   */
   readonly performancePlusEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#public_network_access_enabled ManagedDisk#public_network_access_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#public_network_access_enabled ManagedDisk#public_network_access_enabled}
   */
   readonly publicNetworkAccessEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#resource_group_name ManagedDisk#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#resource_group_name ManagedDisk#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#secure_vm_disk_encryption_set_id ManagedDisk#secure_vm_disk_encryption_set_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#secure_vm_disk_encryption_set_id ManagedDisk#secure_vm_disk_encryption_set_id}
   */
   readonly secureVmDiskEncryptionSetId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#security_type ManagedDisk#security_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#security_type ManagedDisk#security_type}
   */
   readonly securityType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#source_resource_id ManagedDisk#source_resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#source_resource_id ManagedDisk#source_resource_id}
   */
   readonly sourceResourceId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#source_uri ManagedDisk#source_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#source_uri ManagedDisk#source_uri}
   */
   readonly sourceUri?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#storage_account_id ManagedDisk#storage_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#storage_account_id ManagedDisk#storage_account_id}
   */
   readonly storageAccountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#storage_account_type ManagedDisk#storage_account_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#storage_account_type ManagedDisk#storage_account_type}
   */
   readonly storageAccountType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#tags ManagedDisk#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#tags ManagedDisk#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#tier ManagedDisk#tier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#tier ManagedDisk#tier}
   */
   readonly tier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#trusted_launch_enabled ManagedDisk#trusted_launch_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#trusted_launch_enabled ManagedDisk#trusted_launch_enabled}
   */
   readonly trustedLaunchEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#upload_size_bytes ManagedDisk#upload_size_bytes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#upload_size_bytes ManagedDisk#upload_size_bytes}
   */
   readonly uploadSizeBytes?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#zone ManagedDisk#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#zone ManagedDisk#zone}
   */
   readonly zone?: string;
   /**
   * encryption_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#encryption_settings ManagedDisk#encryption_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#encryption_settings ManagedDisk#encryption_settings}
   */
   readonly encryptionSettings?: ManagedDiskEncryptionSettings;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#timeouts ManagedDisk#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#timeouts ManagedDisk#timeouts}
   */
   readonly timeouts?: ManagedDiskTimeouts;
 }
 export interface ManagedDiskEncryptionSettingsDiskEncryptionKey {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#secret_url ManagedDisk#secret_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#secret_url ManagedDisk#secret_url}
   */
   readonly secretUrl: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#source_vault_id ManagedDisk#source_vault_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#source_vault_id ManagedDisk#source_vault_id}
   */
   readonly sourceVaultId: string;
 }
@@ -182,7 +182,7 @@ export interface ManagedDiskEncryptionSettingsDiskEncryptionKey {
 export function managedDiskEncryptionSettingsDiskEncryptionKeyToTerraform(struct?: ManagedDiskEncryptionSettingsDiskEncryptionKeyOutputReference | ManagedDiskEncryptionSettingsDiskEncryptionKey): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     secret_url: cdktn.stringToTerraform(struct!.secretUrl),
@@ -194,7 +194,7 @@ export function managedDiskEncryptionSettingsDiskEncryptionKeyToTerraform(struct
 export function managedDiskEncryptionSettingsDiskEncryptionKeyToHclTerraform(struct?: ManagedDiskEncryptionSettingsDiskEncryptionKeyOutputReference | ManagedDiskEncryptionSettingsDiskEncryptionKey): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     secret_url: {
@@ -281,11 +281,11 @@ export class ManagedDiskEncryptionSettingsDiskEncryptionKeyOutputReference exten
 }
 export interface ManagedDiskEncryptionSettingsKeyEncryptionKey {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#key_url ManagedDisk#key_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#key_url ManagedDisk#key_url}
   */
   readonly keyUrl: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#source_vault_id ManagedDisk#source_vault_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#source_vault_id ManagedDisk#source_vault_id}
   */
   readonly sourceVaultId: string;
 }
@@ -293,7 +293,7 @@ export interface ManagedDiskEncryptionSettingsKeyEncryptionKey {
 export function managedDiskEncryptionSettingsKeyEncryptionKeyToTerraform(struct?: ManagedDiskEncryptionSettingsKeyEncryptionKeyOutputReference | ManagedDiskEncryptionSettingsKeyEncryptionKey): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key_url: cdktn.stringToTerraform(struct!.keyUrl),
@@ -305,7 +305,7 @@ export function managedDiskEncryptionSettingsKeyEncryptionKeyToTerraform(struct?
 export function managedDiskEncryptionSettingsKeyEncryptionKeyToHclTerraform(struct?: ManagedDiskEncryptionSettingsKeyEncryptionKeyOutputReference | ManagedDiskEncryptionSettingsKeyEncryptionKey): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key_url: {
@@ -394,13 +394,13 @@ export interface ManagedDiskEncryptionSettings {
   /**
   * disk_encryption_key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#disk_encryption_key ManagedDisk#disk_encryption_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#disk_encryption_key ManagedDisk#disk_encryption_key}
   */
   readonly diskEncryptionKey: ManagedDiskEncryptionSettingsDiskEncryptionKey;
   /**
   * key_encryption_key block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#key_encryption_key ManagedDisk#key_encryption_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#key_encryption_key ManagedDisk#key_encryption_key}
   */
   readonly keyEncryptionKey?: ManagedDiskEncryptionSettingsKeyEncryptionKey;
 }
@@ -408,7 +408,7 @@ export interface ManagedDiskEncryptionSettings {
 export function managedDiskEncryptionSettingsToTerraform(struct?: ManagedDiskEncryptionSettingsOutputReference | ManagedDiskEncryptionSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     disk_encryption_key: managedDiskEncryptionSettingsDiskEncryptionKeyToTerraform(struct!.diskEncryptionKey),
@@ -420,7 +420,7 @@ export function managedDiskEncryptionSettingsToTerraform(struct?: ManagedDiskEnc
 export function managedDiskEncryptionSettingsToHclTerraform(struct?: ManagedDiskEncryptionSettingsOutputReference | ManagedDiskEncryptionSettings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     disk_encryption_key: {
@@ -510,19 +510,19 @@ export class ManagedDiskEncryptionSettingsOutputReference extends cdktn.ComplexO
 }
 export interface ManagedDiskTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#create ManagedDisk#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#create ManagedDisk#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#delete ManagedDisk#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#delete ManagedDisk#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#read ManagedDisk#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#read ManagedDisk#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#update ManagedDisk#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#update ManagedDisk#update}
   */
   readonly update?: string;
 }
@@ -530,7 +530,7 @@ export interface ManagedDiskTimeouts {
 export function managedDiskTimeoutsToTerraform(struct?: ManagedDiskTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -544,7 +544,7 @@ export function managedDiskTimeoutsToTerraform(struct?: ManagedDiskTimeouts | cd
 export function managedDiskTimeoutsToHclTerraform(struct?: ManagedDiskTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -703,7 +703,7 @@ export class ManagedDiskTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk azurerm_managed_disk}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk azurerm_managed_disk}
 */
 export class ManagedDisk extends cdktn.TerraformResource {
 
@@ -719,7 +719,7 @@ export class ManagedDisk extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ManagedDisk resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ManagedDisk to import
-  * @param importFromId The id of the existing ManagedDisk that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ManagedDisk that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ManagedDisk to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -731,7 +731,7 @@ export class ManagedDisk extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/managed_disk azurerm_managed_disk} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/managed_disk azurerm_managed_disk} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -742,7 +742,7 @@ export class ManagedDisk extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_managed_disk',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

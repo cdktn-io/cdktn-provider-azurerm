@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/spring_cloud_connection
+// https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,78 +13,78 @@ import * as cdktn from 'cdktn';
 
 export interface SpringCloudConnectionConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/spring_cloud_connection#client_type SpringCloudConnection#client_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_connection#client_type SpringCloudConnection#client_type}
   */
   readonly clientType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/spring_cloud_connection#id SpringCloudConnection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_connection#id SpringCloudConnection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/spring_cloud_connection#name SpringCloudConnection#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_connection#name SpringCloudConnection#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/spring_cloud_connection#spring_cloud_id SpringCloudConnection#spring_cloud_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_connection#spring_cloud_id SpringCloudConnection#spring_cloud_id}
   */
   readonly springCloudId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/spring_cloud_connection#target_resource_id SpringCloudConnection#target_resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_connection#target_resource_id SpringCloudConnection#target_resource_id}
   */
   readonly targetResourceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/spring_cloud_connection#vnet_solution SpringCloudConnection#vnet_solution}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_connection#vnet_solution SpringCloudConnection#vnet_solution}
   */
   readonly vnetSolution?: string;
   /**
   * authentication block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/spring_cloud_connection#authentication SpringCloudConnection#authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_connection#authentication SpringCloudConnection#authentication}
   */
   readonly authentication: SpringCloudConnectionAuthentication;
   /**
   * secret_store block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/spring_cloud_connection#secret_store SpringCloudConnection#secret_store}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_connection#secret_store SpringCloudConnection#secret_store}
   */
   readonly secretStore?: SpringCloudConnectionSecretStore;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/spring_cloud_connection#timeouts SpringCloudConnection#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_connection#timeouts SpringCloudConnection#timeouts}
   */
   readonly timeouts?: SpringCloudConnectionTimeouts;
 }
 export interface SpringCloudConnectionAuthentication {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/spring_cloud_connection#certificate SpringCloudConnection#certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_connection#certificate SpringCloudConnection#certificate}
   */
   readonly certificate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/spring_cloud_connection#client_id SpringCloudConnection#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_connection#client_id SpringCloudConnection#client_id}
   */
   readonly clientId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/spring_cloud_connection#name SpringCloudConnection#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_connection#name SpringCloudConnection#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/spring_cloud_connection#principal_id SpringCloudConnection#principal_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_connection#principal_id SpringCloudConnection#principal_id}
   */
   readonly principalId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/spring_cloud_connection#secret SpringCloudConnection#secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_connection#secret SpringCloudConnection#secret}
   */
   readonly secret?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/spring_cloud_connection#subscription_id SpringCloudConnection#subscription_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_connection#subscription_id SpringCloudConnection#subscription_id}
   */
   readonly subscriptionId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/spring_cloud_connection#type SpringCloudConnection#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_connection#type SpringCloudConnection#type}
   */
   readonly type: string;
 }
@@ -92,7 +92,7 @@ export interface SpringCloudConnectionAuthentication {
 export function springCloudConnectionAuthenticationToTerraform(struct?: SpringCloudConnectionAuthenticationOutputReference | SpringCloudConnectionAuthentication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     certificate: cdktn.stringToTerraform(struct!.certificate),
@@ -109,7 +109,7 @@ export function springCloudConnectionAuthenticationToTerraform(struct?: SpringCl
 export function springCloudConnectionAuthenticationToHclTerraform(struct?: SpringCloudConnectionAuthenticationOutputReference | SpringCloudConnectionAuthentication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     certificate: {
@@ -339,7 +339,7 @@ export class SpringCloudConnectionAuthenticationOutputReference extends cdktn.Co
 }
 export interface SpringCloudConnectionSecretStore {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/spring_cloud_connection#key_vault_id SpringCloudConnection#key_vault_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_connection#key_vault_id SpringCloudConnection#key_vault_id}
   */
   readonly keyVaultId: string;
 }
@@ -347,7 +347,7 @@ export interface SpringCloudConnectionSecretStore {
 export function springCloudConnectionSecretStoreToTerraform(struct?: SpringCloudConnectionSecretStoreOutputReference | SpringCloudConnectionSecretStore): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key_vault_id: cdktn.stringToTerraform(struct!.keyVaultId),
@@ -358,7 +358,7 @@ export function springCloudConnectionSecretStoreToTerraform(struct?: SpringCloud
 export function springCloudConnectionSecretStoreToHclTerraform(struct?: SpringCloudConnectionSecretStoreOutputReference | SpringCloudConnectionSecretStore): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key_vault_id: {
@@ -420,19 +420,19 @@ export class SpringCloudConnectionSecretStoreOutputReference extends cdktn.Compl
 }
 export interface SpringCloudConnectionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/spring_cloud_connection#create SpringCloudConnection#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_connection#create SpringCloudConnection#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/spring_cloud_connection#delete SpringCloudConnection#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_connection#delete SpringCloudConnection#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/spring_cloud_connection#read SpringCloudConnection#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_connection#read SpringCloudConnection#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/spring_cloud_connection#update SpringCloudConnection#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_connection#update SpringCloudConnection#update}
   */
   readonly update?: string;
 }
@@ -440,7 +440,7 @@ export interface SpringCloudConnectionTimeouts {
 export function springCloudConnectionTimeoutsToTerraform(struct?: SpringCloudConnectionTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     create: cdktn.stringToTerraform(struct!.create),
@@ -454,7 +454,7 @@ export function springCloudConnectionTimeoutsToTerraform(struct?: SpringCloudCon
 export function springCloudConnectionTimeoutsToHclTerraform(struct?: SpringCloudConnectionTimeouts | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     create: {
@@ -613,7 +613,7 @@ export class SpringCloudConnectionTimeoutsOutputReference extends cdktn.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/spring_cloud_connection azurerm_spring_cloud_connection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_connection azurerm_spring_cloud_connection}
 */
 export class SpringCloudConnection extends cdktn.TerraformResource {
 
@@ -629,7 +629,7 @@ export class SpringCloudConnection extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SpringCloudConnection resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SpringCloudConnection to import
-  * @param importFromId The id of the existing SpringCloudConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/spring_cloud_connection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SpringCloudConnection that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_connection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SpringCloudConnection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -641,7 +641,7 @@ export class SpringCloudConnection extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.76.0/docs/resources/spring_cloud_connection azurerm_spring_cloud_connection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/azurerm/4.77.0/docs/resources/spring_cloud_connection azurerm_spring_cloud_connection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -652,7 +652,7 @@ export class SpringCloudConnection extends cdktn.TerraformResource {
       terraformResourceType: 'azurerm_spring_cloud_connection',
       terraformGeneratorMetadata: {
         providerName: 'azurerm',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
